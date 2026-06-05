@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescriptor base="." xmlns="http://www.oxygenxml.com/ns/xmlproj">
+  <meta>
+    <filters directoryPatterns=".git .venv .pdm-build .pytest_cache .mypy_cache .ruff_cache"/>
+  </meta>
+  <transformation-scenarios>
+    <scenario name="normalize-cts" type="XSLT">
+      <xslt-processor>saxon-he</xslt-processor>
+      <xsl-location>${pd}/xslt/normalize-cts.xsl</xsl-location>
+      <output>${cfn}-normalized.xml</output>
+    </scenario>
+  </transformation-scenarios>
+</projectDescriptor>

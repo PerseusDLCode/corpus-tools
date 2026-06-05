@@ -53,4 +53,8 @@ class TEIDocument:
     @property
     def default_refsDecl(self):
         return self.root.xpath("//tei:teiHeader/tei:encodingDesc/tei:refsDecl[@default='true']", namespaces=NS)
-    
+
+    def transform(self, stylesheet: str, **params: str) -> str:
+        from transformer import transform
+        return transform(self._path, stylesheet, **params)
+

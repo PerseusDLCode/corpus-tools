@@ -15,33 +15,31 @@ from .auditor import Auditor
 class ReferenceAuditReport:
     path: Path
     base_urn: str
-    body_urn: str
-    has_cite_structure: bool
-    has_default: bool
     refsDecls: list[etree._Element]
+    cite_structures: list[etree._Element]
+    default_refsDecls: list[etree._Element]
+
     issues: list[str]
 
     def render_text(self) -> str:
+        XML_ID_ATTR = "{http://www.w3.org/XML/1998/namespace}id"
         lines = [
             f"\n{'='*70}",
             f"FILE: {self.path.name}  [reference audit]",
             f"{'='*70}",
-            f"Edition URN:      {self.base_urn or '(none)'}",
-            f"Body @n URN:      {self.body_urn or '(absent)'}",
-            f"Has citeStructure: {self.has_cite_structure}",
-            f"Has default refsDecl: {self.has_default}",
+            f"Edition URN:         {self.base_urn or '(none)'}",
+            f"Has citeStructure:   {bool(self.cite_structures)}",
+            f"Has default refsDecl:{bool(self.default_refsDecls)}",
             "\nREFSDECLS:",
         ]
         for rd in self.refsDecls:
+            xml_id = rd.get(XML_ID_ATTR, "(none)")
+            n = rd.get("n", "(none)")
+            default = rd.get("default", "false")
+            has_cs = bool(rd.xpath("tei:citeStructure", namespaces=NS))
             lines.append(
-                f"  id={rd.xml_id or '(none)'} n={rd.n or '(none)'} "
-                f"default={rd.default} "
-                f"citeStructure={rd.has_cite_structure}"
+                f"  id={xml_id} n={n} default={default} citeStructure={has_cs}"
             )
-            if rd.cite_units:
-                lines.append(f"    cite units: {', '.join(rd.cite_units)}")
-            if rd.cref_pattern_names:
-                lines.append(f"    cRefPatterns: {', '.join(rd.cref_pattern_names)}")
         if self.issues:
             lines.append("\nISSUES:")
             for issue in self.issues:
@@ -102,11 +100,11 @@ class ReferenceAuditor(Auditor[ReferenceAuditReport]):
                 "ReferenceParser cannot auto-select a declaration"
             )
 
-        # return ReferenceAuditReport(
-        #     path=self._doc.path,
-        #     base_urn=base_urn,
-        #     has_cite_structure=has_cite_structure,
-        #     has_default=has_default,
-        #     refsDecls=refsDecls,
-        #     issues=issues,
-        # )
+        return ReferenceAuditReport(
+            path=self._doc.path,
+            base_urn=self._doc.base_urn,
+            refsDecls=self._doc.refsDecls,
+            cite_structures= self._doc.cite_structures,
+            default_refsDecls= self._doc.default_refsDecl,
+            issues=issues,
+        )

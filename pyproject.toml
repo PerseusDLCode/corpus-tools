@@ -1,9 +1,9 @@
 [project]
-name = "python-project-template"
+name = "corpus-tools"
 version = "0.1.0"
-description = "Python project template"
+description = "Tools for editing and manipulating Perseus Corpora"
 authors = [
-    {name = "Cliff Wulfman", email = "cwulfman@princeton.edu"},
+    {name = "Cliff Wulfman", email = "Clifford.Wulfman@tufts.edu"},
 ]
 dependencies = []
 requires-python = ">=3.12"
@@ -21,7 +21,6 @@ package-dir = "src"
 
 
 [tool.pdm.scripts]
-start = "python -m my_python_project.main"
 test = "pytest"
 test_verbose = "pytest -v"
 cov = "pytest --cov=my_python_project --cov-report=html"

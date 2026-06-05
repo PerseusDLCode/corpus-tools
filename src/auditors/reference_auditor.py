@@ -76,7 +76,10 @@ class ReferenceAuditor(Auditor[ReferenceAuditReport]):
     def default_refsDecl_is_citeStructure(self) -> bool:
         default_refsDecls = self._doc.default_refsDecl
         citestructures = self._doc.cite_structures
-        return len(default_refsDecls) > 0 and len(citestructures) > 0 and citestructures[0].xpath("./parent::tei:refsDecl", namespaces = NS) == default_refsDecls[0]
+        if not default_refsDecls or not citestructures:
+            return False
+        parent = citestructures[0].xpath("./parent::tei:refsDecl", namespaces=NS)
+        return bool(parent) and parent[0] == default_refsDecls[0]
 
             
 

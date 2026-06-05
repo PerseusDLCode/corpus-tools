@@ -7,7 +7,7 @@ from pathlib import Path
 from lxml import etree
 
 from tei import TEIDocument, NS, XML_BASE, XML_ID
-from .auditor import Auditor, CitationLevel, MilestoneInfo, RefsDecl
+from .auditor import Auditor, CitationLevel, MilestoneInfo
 
 
 @dataclass

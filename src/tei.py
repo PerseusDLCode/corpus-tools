@@ -38,10 +38,7 @@ class TEIDocument:
     @property
     def base_urn(self) -> str:
         xml_bases = self.root.xpath("//tei:body/@xml:base", namespaces=NS)
-        if xml_bases is not None:
-            return xml_bases[0]
-        else:
-            return None
+        return xml_bases[0] if xml_bases else ""
 
     @property
     def refsDecls(self):

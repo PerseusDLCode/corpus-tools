@@ -1,15 +1,14 @@
 from __future__ import annotations
 
 import json
-from abc import ABC, abstractmethod
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Generic, TypeVar
 
 from lxml import etree
+from lxml.etree import _Element
 
 from tei import TEIDocument, NS, XML_BASE, XML_ID
-from auditor import Auditor, RefsDecl
+from .auditor import Auditor
 
 
 @dataclass
@@ -17,9 +16,9 @@ class ReferenceAuditReport:
     path: Path
     base_urn: str
     body_urn: str
-    Has_structure: bool
+    has_cite_structure: bool
     has_default: bool
-    refsDecls: list[RefsDecl]
+    refsDecls: list[etree._Element]
     issues: list[str]
 
     def render_text(self) -> str:
@@ -64,71 +63,47 @@ class ReferenceAuditReport:
 
 class ReferenceAuditor(Auditor[ReferenceAuditReport]):
 
-    def audit(self) -> ReferenceAuditReport:
-        root = self._doc.root
-        base_urn = self._doc.extract_base_urn()
-        body_urn = self._extract_body_urn(root)
+        
+    def doc_has_refsDecls(self) -> bool:
+        return len(self._doc.refsDecls) > 0
 
-        refsDecls = self._parse_refs_decls(root)
-        has_cite_structure = any(rd.has_cite_structure for rd in refsDecls)
-        has_default = any(rd.default for rd in refsDecls)
+    def doc_has_cite_structures(self) -> bool:
+        return len(self._doc.cite_structures) > 0
+
+    def doc_has_default_refsDecl(self) -> bool:
+        return len(self._doc.default_refsDecl) > 0
+        
+    def default_refsDecl_is_citeStructure(self) -> bool:
+        default_refsDecls = self._doc.default_refsDecl
+        citestructures = self._doc.cite_structures
+        return len(default_refsDecls) > 0 and len(citestructures) > 0 and citestructures[0].xpath("./parent::tei:refsDecl", namespaces = NS) == default_refsDecls[0]
+
+            
+
+    def audit(self) -> ReferenceAuditReport:
 
         issues: list[str] = []
-        if not body_urn:
+        if not self._doc.base_urn:
             issues.append(
                 "WARNING: CTS URN not found on <body>/@xml:base — "
                 "ReferenceParser requires it there, not on <div type='edition'>/@n"
             )
-        if not has_cite_structure:
+        if not self.doc_has_cite_structures():
             issues.append(
                 "INFO: no <citeStructure> elements found; "
                 "only legacy <cRefPattern> declarations present"
             )
-        if has_cite_structure and not has_default:
+        if not self.doc_has_default_refsDecl():
             issues.append(
                 "WARNING: <citeStructure> present but no <refsDecl default='true'>; "
                 "ReferenceParser cannot auto-select a declaration"
             )
 
-        return ReferenceAuditReport(
-            path=self._doc.path,
-            base_urn=base_urn,
-            body_urn=body_urn,
-            has_cite_structure=has_cite_structure,
-            has_default=has_default,
-            refsDecls=refsDecls,
-            issues=issues,
-        )
-
-    def _extract_body_urn(self, root: etree._Element) -> str:
-        body = root.find(".//tei:text/tei:body", NS)
-        if body is not None:
-            urn = body.get(XML_BASE, "")
-            if urn.startswith("urn:cts:"):
-                return urn
-        return ""
-
-    def _parse_refs_decls(self, root: etree._Element) -> list[RefsDecl]:
-        result: list[RefsDecl] = []
-        for rd_elem in root.xpath("//tei:encodingDesc/tei:refsDecl", namespaces=NS):
-            xml_id = rd_elem.get("{http://www.w3.org/XML/1998/namespace}id", "")
-            n = rd_elem.get("n", "")
-            default = rd_elem.get("default", "").lower() == "true"
-
-            cs_elems = rd_elem.xpath(".//tei:citeStructure", namespaces=NS)
-            cite_units = [e.get("unit", "") for e in cs_elems if e.get("unit")]
-            has_cs = bool(cs_elems)
-
-            cref_names = list(rd_elem.xpath(
-                "tei:cRefPattern/@n", namespaces=NS
-            ))
-
-            result.append(RefsDecl(
-                xml_id=xml_id,
-                n=n,
-                default=default,
-                has_cite_structure=has_cs,
-                cite_units=cite_units,
-                cref_pattern_names=cref_names,
-            ))
-        return result
+        # return ReferenceAuditReport(
+        #     path=self._doc.path,
+        #     base_urn=base_urn,
+        #     has_cite_structure=has_cite_structure,
+        #     has_default=has_default,
+        #     refsDecls=refsDecls,
+        #     issues=issues,
+        # )

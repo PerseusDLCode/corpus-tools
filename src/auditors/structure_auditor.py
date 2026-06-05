@@ -1,15 +1,13 @@
 from __future__ import annotations
 
 import json
-from abc import ABC, abstractmethod
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Generic, TypeVar
 
 from lxml import etree
 
 from tei import TEIDocument, NS, XML_BASE, XML_ID
-from .auditor import Auditor, RefsDecl
+from .auditor import Auditor, CitationLevel, MilestoneInfo, RefsDecl
 
 
 @dataclass

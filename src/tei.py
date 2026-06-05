@@ -34,12 +34,26 @@ class TEIDocument:
     @property
     def root(self) -> etree._Element:
         return self.tree.getroot()
-        
+
+    @property
+    def base_urn(self) -> str:
+        xml_bases = self.root.xpath("//tei:body/@xml:base", namespaces=NS)
+        if xml_bases is not None:
+            return xml_bases[0]
+        else:
+            return None
+
+    @property
+    def refsDecls(self):
+        return self.root.xpath("//tei:teiHeader/tei:encodingDesc/tei:refsDecl", namespaces=NS)
 
 
+    @property
+    def cite_structures(self):
+        return self.root.xpath("//tei:teiHeader/tei:encodingDesc/tei:refsDecl/tei:citeStructure", namespaces=NS)
 
 
-test_doc = Path("/Users/wulfmanc/repos/gh/PerseusDLCode/canonicalLit/canonical-greekLit/data/tlg0031/tlg001/tlg0031.tlg001.perseus-grc2.xml")
-    
-
+    @property
+    def default_refsDecl(self):
+        return self.root.xpath("//tei:teiHeader/tei:encodingDesc/tei:refsDecl[@default='true']", namespaces=NS)
     

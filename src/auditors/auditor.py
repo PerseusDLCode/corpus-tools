@@ -37,15 +37,6 @@ class MilestoneInfo:
     count: int
 
 
-@dataclass
-class RefsDecl:
-    xml_id: str
-    n: str
-    default: bool
-    has_cite_structure: bool
-    cite_units: list[str]
-    cref_pattern_names: list[str]
-
 
 
 # ---------------------------------------------------------------------------

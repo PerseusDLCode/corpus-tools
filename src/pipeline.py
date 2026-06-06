@@ -93,6 +93,21 @@ def compute_cts_urn(source_path: Path) -> str:
     return ""
 
 
+def read_existing_cts_urn(source_path: Path) -> str:
+    """Return the CTS URN already on body/@xml:base, or '' if absent or invalid.
+
+    normalize-cts.xsl strips @xml:base, so this must be read from the original
+    source file before the pipeline starts.
+    """
+    tree = etree.parse(str(source_path))
+    attrs = tree.xpath(
+        "//tei:body/@xml:base",
+        namespaces={"tei": _TEI_NS},
+    )
+    urn = str(attrs[0]) if attrs else ""
+    return urn if urn.startswith("urn:cts:") else ""
+
+
 def _step_params(step: Step, overrides: dict[str, str]) -> dict[str, str]:
     return {**step.params, **{k: v for k, v in overrides.items() if k in step.params}}
 
@@ -112,7 +127,8 @@ def run_pipeline(
     effective = dict(overrides)
     effective.setdefault("source-uri", source_path.resolve().as_uri())
     if not effective.get("cts-base"):
-        urn = compute_cts_urn(source_path)
+        urn = (compute_cts_urn(source_path)
+               or read_existing_cts_urn(source_path))
         if urn:
             effective["cts-base"] = urn
 

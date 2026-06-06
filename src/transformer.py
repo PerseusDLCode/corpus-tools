@@ -17,3 +17,13 @@ def transform(source: Path, stylesheet: str, **params: str) -> str:
         source_file=str(source), stylesheet_file=str(xsl_path)
     )
     return result or ""
+
+
+def transform_xml(proc: PySaxonProcessor, xml: str, stylesheet: str, **params: str) -> str:
+    """Transform an in-memory XML string using a shared PySaxonProcessor."""
+    xsl_path = XSLT_DIR / stylesheet
+    xslt = proc.new_xslt30_processor()
+    for k, v in params.items():
+        xslt.set_parameter(k, proc.make_string_value(v))
+    result = xslt.transform_to_string(xml_text=xml, stylesheet_file=str(xsl_path))
+    return result or ""

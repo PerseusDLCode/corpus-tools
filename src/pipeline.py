@@ -23,20 +23,20 @@ PIPELINES: dict[str, list[Step]] = {
     "normalize-prose": [
         Step("normalize-cts.xsl"),
         Step("set-cts-urn.xsl", dict(_CTS_URN_STEP)),
-        Step("add-citeStructure.xsl", {"genre": "prose"}),
+        Step("add-citeStructure.xsl"),
         Step("set-schema.xsl", {"tei-schema": "perseus_prose"}),
     ],
     "normalize-verse": [
         Step("normalize-cts.xsl"),
         Step("set-cts-urn.xsl", dict(_CTS_URN_STEP)),
-        Step("add-citeStructure.xsl", {"genre": "verse-epic"}),
+        Step("add-citeStructure.xsl"),
         Step("fix-verse.xsl"),
         Step("set-schema.xsl", {"tei-schema": "perseus_verse"}),
     ],
     "normalize-drama": [
         Step("normalize-cts.xsl"),
         Step("set-cts-urn.xsl", dict(_CTS_URN_STEP)),
-        Step("add-citeStructure.xsl", {"genre": "drama"}),
+        Step("add-citeStructure.xsl"),
         Step("set-schema.xsl", {"tei-schema": "perseus_drama"}),
     ],
 }

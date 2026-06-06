@@ -1,0 +1,3 @@
+[submodule "vendor/schxslt"]
+	path = vendor/schxslt
+	url = https://github.com/Arithmeticus/schxslt.git

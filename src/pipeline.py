@@ -128,7 +128,34 @@ def main() -> None:
             help="Override the schema name written into the xml-model PI.",
         )
 
+    val = subparsers.add_parser(
+        "validate",
+        help="Validate normalized documents against Schematron rules.",
+    )
+    val.add_argument("files", nargs="+", type=Path, metavar="FILE")
+    val.add_argument(
+        "--schema", type=Path, metavar="SCH",
+        help="Schematron schema (default: schematron/perseus_normalized.sch).",
+    )
+
     args = parser.parse_args()
+
+    if args.pipeline == "validate":
+        from validate import validate_file, SCHEMATRON_DIR
+        sch = args.schema or SCHEMATRON_DIR / "perseus_normalized.sch"
+        errors = 0
+        for source in args.files:
+            failures = validate_file(source, sch)
+            if failures:
+                print(f"INVALID: {source.name}")
+                for f in failures:
+                    print(f"  [{f['type']}] {f['location']}")
+                    print(f"    {f['message']}")
+                errors += 1
+            else:
+                print(f"OK: {source.name}")
+        sys.exit(errors)
+
     pipeline = PIPELINES[args.pipeline]
     files: list[Path] = args.files
     batch = len(files) > 1

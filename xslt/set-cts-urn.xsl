@@ -10,14 +10,25 @@
 
     <!-- Override only when the auto-computed URN would be wrong (e.g. pdlrefwk) -->
     <xsl:param name="cts-base" as="xs:string" select="''"/>
+    <!-- Injected by the pipeline so temp-file base-uri() is never used for computation -->
+    <xsl:param name="source-uri" as="xs:string" select="''"/>
+
+    <xsl:variable name="doc-uri" as="xs:string"
+        select="if ($source-uri != '') then $source-uri else base-uri(/)"/>
+
+    <xsl:variable name="computed-namespace" as="xs:string" select="
+        if (matches($doc-uri, 'canonical[-_][^/]+/'))
+        then replace($doc-uri, '^.*canonical[-_]([^/]+)/.*$', '$1')
+        else ''"/>
+
+    <xsl:variable name="computed-work-id" as="xs:string"
+        select="replace($doc-uri, '^.*/([^/]+)\.xml$', '$1')"/>
 
     <xsl:variable name="effective-cts-base" as="xs:string" select="
         if ($cts-base != '') then $cts-base
-        else concat(
-            'urn:cts:',
-            replace(base-uri(/), '^.*canonical[-_]([^/]+)/.*$', '$1'),
-            ':',
-            replace(base-uri(/), '^.*/([^/]+)\.xml$', '$1'))"/>
+        else if ($computed-namespace != '')
+             then concat('urn:cts:', $computed-namespace, ':', $computed-work-id)
+        else $computed-work-id"/>
 
     <xsl:template match="body">
         <xsl:copy>

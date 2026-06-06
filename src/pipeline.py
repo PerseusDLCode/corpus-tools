@@ -17,23 +17,25 @@ class Step:
     params: dict[str, str] = field(default_factory=dict)
 
 
+_CTS_URN_STEP = {"cts-base": "", "source-uri": ""}
+
 PIPELINES: dict[str, list[Step]] = {
     "normalize-prose": [
         Step("normalize-cts.xsl"),
-        Step("set-cts-urn.xsl", {"cts-base": ""}),
+        Step("set-cts-urn.xsl", dict(_CTS_URN_STEP)),
         Step("add-citeStructure.xsl", {"genre": "prose"}),
         Step("set-schema.xsl", {"tei-schema": "perseus_prose"}),
     ],
     "normalize-verse": [
         Step("normalize-cts.xsl"),
-        Step("set-cts-urn.xsl", {"cts-base": ""}),
-        Step("add-citeStructure.xsl", {"genre": "verse"}),
+        Step("set-cts-urn.xsl", dict(_CTS_URN_STEP)),
+        Step("add-citeStructure.xsl", {"genre": "verse-epic"}),
         Step("fix-verse.xsl"),
         Step("set-schema.xsl", {"tei-schema": "perseus_verse"}),
     ],
     "normalize-drama": [
         Step("normalize-cts.xsl"),
-        Step("set-cts-urn.xsl", {"cts-base": ""}),
+        Step("set-cts-urn.xsl", dict(_CTS_URN_STEP)),
         Step("add-citeStructure.xsl", {"genre": "drama"}),
         Step("set-schema.xsl", {"tei-schema": "perseus_drama"}),
     ],
@@ -68,6 +70,7 @@ def run_pipeline(
     injected as an explicit parameter so the XSLT never needs to call base-uri().
     """
     effective = dict(overrides)
+    effective.setdefault("source-uri", source_path.resolve().as_uri())
     if not effective.get("cts-base"):
         urn = compute_cts_urn(source_path)
         if urn:
@@ -96,7 +99,7 @@ def _resolve_output(source: Path, output_arg: str | None, batch: bool) -> Path:
     if output_arg is None:
         return source
     out = Path(output_arg)
-    if batch:
+    if batch or out.is_dir():
         out.mkdir(parents=True, exist_ok=True)
         return out / source.name
     return out

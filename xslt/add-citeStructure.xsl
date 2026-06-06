@@ -23,8 +23,17 @@
         </refsDecl>
     </xsl:template>
 
-    <!-- REVIEW: adjust match/unit hierarchy for your verse texts -->
+    <!-- Flat verse (lyric, didactic): lines directly in body, no numbered divs above them -->
     <xsl:template name="verse-citestructure">
+        <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="line" delim="." match="l" use="@n"/>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- Epic verse: lines grouped in numbered book divs -->
+    <xsl:template name="verse-epic-citestructure">
         <refsDecl n="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                 <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
@@ -34,8 +43,17 @@
         </refsDecl>
     </xsl:template>
 
-    <!-- REVIEW: adjust match/unit hierarchy for your drama texts -->
+    <!-- Greek/Roman drama: lines nested inside unnumbered structural divs; cite by line only -->
     <xsl:template name="drama-citestructure">
+        <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="line" delim="." match=".//l" use="@n"/>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- Early-modern drama: act → scene → line -->
+    <xsl:template name="drama-early-modern-citestructure">
         <refsDecl n="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                 <citeStructure unit="act" delim=":" match="div[@type='act']" use="@n">
@@ -51,8 +69,14 @@
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
             <xsl:choose>
+                <xsl:when test="$genre = 'verse-epic'">
+                    <xsl:call-template name="verse-epic-citestructure"/>
+                </xsl:when>
                 <xsl:when test="$genre = 'verse'">
                     <xsl:call-template name="verse-citestructure"/>
+                </xsl:when>
+                <xsl:when test="$genre = 'drama-early-modern'">
+                    <xsl:call-template name="drama-early-modern-citestructure"/>
                 </xsl:when>
                 <xsl:when test="$genre = 'drama'">
                     <xsl:call-template name="drama-citestructure"/>

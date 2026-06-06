@@ -14,7 +14,7 @@
     <xsl:param name="schema-path-base" as="xs:string" select="'https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/'" />
 
     <xsl:variable name="schema-path" as="xs:string"
-        select="concat($schema-path-base, normalize-space(translate($tei-schema, &quot;'&quot;, '')), '.rnc')"/>
+        select="concat($schema-path-base, normalize-space(translate($tei-schema, &quot;'&quot;, '')), '.rng')"/>
 
     <!-- Match the xml-model PI and replace the href -->
     <xsl:template match="processing-instruction('xml-model')">

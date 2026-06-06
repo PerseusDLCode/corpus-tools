@@ -17,8 +17,8 @@
         select="if ($source-uri != '') then $source-uri else base-uri(/)"/>
 
     <xsl:variable name="computed-namespace" as="xs:string" select="
-        if (matches($doc-uri, 'canonical[-_][^/]+/'))
-        then replace($doc-uri, '^.*canonical[-_]([^/]+)/.*$', '$1')
+        if (matches($doc-uri, 'canonical[-_][^/]+/data/'))
+        then replace($doc-uri, '^.*canonical[-_]([^/]+)/data/.*$', '$1')
         else ''"/>
 
     <xsl:variable name="computed-work-id" as="xs:string"
@@ -28,7 +28,19 @@
         if ($cts-base != '') then $cts-base
         else if ($computed-namespace != '')
              then concat('urn:cts:', $computed-namespace, ':', $computed-work-id)
-        else $computed-work-id"/>
+        else ''"/>
+
+    <xsl:template match="/">
+        <xsl:if test="$effective-cts-base = ''">
+            <xsl:message terminate="yes">
+set-cts-urn.xsl: cannot compute CTS URN.
+Source file is not in a canonical-{{namespace}}/data/ path and no --cts-base was provided.
+Provide --cts-base explicitly, e.g.:
+  --cts-base urn:cts:greekLit:tlg0003.tlg001.1st1K-eng1
+            </xsl:message>
+        </xsl:if>
+        <xsl:apply-templates/>
+    </xsl:template>
 
     <xsl:template match="body">
         <xsl:copy>

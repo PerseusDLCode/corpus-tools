@@ -149,6 +149,9 @@ _UNKNOWN_GENRE = """\
 """
 
 
+_TEST_URN = "urn:cts:greekLit:test.test1"
+
+
 def _write(tmp_path: Path, name: str, content: str) -> Path:
     p = tmp_path / name
     p.write_text(content, encoding="utf-8")
@@ -231,28 +234,28 @@ class TestRunPipeline:
     def test_prose_pipeline_sets_schema_pi(self, tmp_path):
         src = _write(tmp_path, "test.xml", _PROSE)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-prose"], src, out)
+        run_pipeline(PIPELINES["normalize-prose"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert "perseus_prose.rnc" in result
 
     def test_prose_pipeline_sets_cts_idno(self, tmp_path):
         src = _write(tmp_path, "test.xml", _PROSE)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-prose"], src, out)
+        run_pipeline(PIPELINES["normalize-prose"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert 'idno type="CTS"' in result
 
     def test_prose_pipeline_sets_xml_base_on_body(self, tmp_path):
         src = _write(tmp_path, "test.xml", _PROSE)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-prose"], src, out)
+        run_pipeline(PIPELINES["normalize-prose"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert "xml:base=" in result
 
     def test_prose_pipeline_adds_book_chapter_section_citestructure(self, tmp_path):
         src = _write(tmp_path, "test.xml", _PROSE)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-prose"], src, out)
+        run_pipeline(PIPELINES["normalize-prose"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert 'unit="book"' in result
         assert 'unit="chapter"' in result
@@ -261,35 +264,35 @@ class TestRunPipeline:
     def test_prose_pipeline_removes_edition_wrapper(self, tmp_path):
         src = _write(tmp_path, "test.xml", _PROSE)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-prose"], src, out)
+        run_pipeline(PIPELINES["normalize-prose"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert 'type="edition"' not in result
 
     def test_drama_pipeline_sets_schema_pi(self, tmp_path):
         src = _write(tmp_path, "test.xml", _DRAMA)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-drama"], src, out)
+        run_pipeline(PIPELINES["normalize-drama"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert "perseus_drama.rnc" in result
 
     def test_drama_pipeline_uses_descendant_line_match(self, tmp_path):
         src = _write(tmp_path, "test.xml", _DRAMA)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-drama"], src, out)
+        run_pipeline(PIPELINES["normalize-drama"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert 'match=".//l"' in result
 
     def test_verse_pipeline_sets_schema_pi(self, tmp_path):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-verse"], src, out)
+        run_pipeline(PIPELINES["normalize-verse"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert "perseus_verse.rnc" in result
 
     def test_verse_pipeline_adds_book_line_citestructure(self, tmp_path):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-verse"], src, out)
+        run_pipeline(PIPELINES["normalize-verse"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert 'unit="book"' in result
         assert 'unit="line"' in result
@@ -297,7 +300,7 @@ class TestRunPipeline:
     def test_verse_pipeline_normalizes_ana_to_met(self, tmp_path):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-verse"], src, out)
+        run_pipeline(PIPELINES["normalize-verse"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert 'met="dactylic-hexameter"' in result
         assert "ana=" not in result
@@ -305,7 +308,7 @@ class TestRunPipeline:
     def test_verse_pipeline_strips_placeholder_met(self, tmp_path):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-verse"], src, out)
+        run_pipeline(PIPELINES["normalize-verse"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert 'met="u"' not in result
 
@@ -323,10 +326,16 @@ class TestRunPipeline:
         src = _write(tmp_path, "test.xml", _UNANNOTATED)
         out = tmp_path / "out.xml"
         with pytest.raises(Exception, match="xsl:message"):
-            run_pipeline(PIPELINES["normalize-prose"], src, out)
+            run_pipeline(PIPELINES["normalize-prose"], src, out, **{"cts-base": _TEST_URN})
 
     def test_unknown_genre_category_raises(self, tmp_path):
         src = _write(tmp_path, "test.xml", _UNKNOWN_GENRE)
+        out = tmp_path / "out.xml"
+        with pytest.raises(Exception, match="xsl:message"):
+            run_pipeline(PIPELINES["normalize-prose"], src, out, **{"cts-base": _TEST_URN})
+
+    def test_non_canonical_path_without_cts_base_raises(self, tmp_path):
+        src = _write(tmp_path, "test.xml", _PROSE)
         out = tmp_path / "out.xml"
         with pytest.raises(Exception, match="xsl:message"):
             run_pipeline(PIPELINES["normalize-prose"], src, out)
@@ -334,7 +343,7 @@ class TestRunPipeline:
     def test_output_file_is_written(self, tmp_path):
         src = _write(tmp_path, "test.xml", _PROSE)
         out = tmp_path / "out.xml"
-        run_pipeline(PIPELINES["normalize-prose"], src, out)
+        run_pipeline(PIPELINES["normalize-prose"], src, out, **{"cts-base": _TEST_URN})
         assert out.exists()
         assert out.stat().st_size > 0
 
@@ -343,6 +352,6 @@ class TestRunPipeline:
         out = tmp_path / "out.xml"
         import tempfile
         before = set(Path(tempfile.gettempdir()).glob("tmp*.xml"))
-        run_pipeline(PIPELINES["normalize-prose"], src, out)
+        run_pipeline(PIPELINES["normalize-prose"], src, out, **{"cts-base": _TEST_URN})
         after = set(Path(tempfile.gettempdir()).glob("tmp*.xml"))
         assert after == before

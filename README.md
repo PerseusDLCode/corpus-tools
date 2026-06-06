@@ -5,13 +5,15 @@ pdm install
 ```
 
 # Tools
-1. [analyze-milestones]](#analyze-milestones)
+1. [analysis]](#analyze-milestones)
+2. [transformers](#transformers)
 
 
 
 
+## analysis
 
-## analyze-milestones
+### analyze-milestones
 
 Traverse a TEI corpus and compile per-document JSON reports on `<milestone>`,
 `<div>`, and structural element usage.
@@ -31,3 +33,11 @@ Each output file (`<stem>.json`) contains:
   ]
 }
 ```
+
+## transformers
+
+### stylesheets
+
+
+### command-line tools
+Use these scripts to invoke XSLT pipelines

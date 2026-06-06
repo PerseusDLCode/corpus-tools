@@ -7,34 +7,32 @@
     version="4.0">
     <xsl:output method="xml" indent="yes"/>
     <xsl:mode on-no-match="shallow-copy"/>
-    
+
     <!--
-        Meter is properly encoded using the met attribute;
-        Persesus texts sometimes use the ana attribute.
-        
-        TODO: establish fixed vocabulary for Greek and Latin
-        meter in the schemas.
+        Normalize metrical encoding in Perseus verse texts.
+
+        - @ana='#met-*' values are converted to @met using the controlled
+          vocabulary defined in perseus_verse.odd.
+        - Placeholder @met values ('u', 'U') are stripped: they carry no
+          metrical information and were used by encoders when the meter was
+          unknown or inapplicable (e.g. English translations of Greek verse).
     -->
-        
-    
-    <!-- properly encode dactylic meter -->
-    <xsl:template match="l[@ana='#met-dact']">
+
+    <!-- @ana-based meter annotations -->
+    <xsl:template match="l[@ana='#met-dact'] | l[@ana='#met-hexameter']">
         <xsl:copy>
             <xsl:apply-templates select="@* except @ana"/>
-            <xsl:attribute name="met">dact</xsl:attribute>
+            <xsl:attribute name="met">dactylic-hexameter</xsl:attribute>
             <xsl:apply-templates/>
         </xsl:copy>
     </xsl:template>
 
-    <!-- properly encode hexameter -->
-    <xsl:template match="l[@ana='#met-hexameter']">
+    <!-- Strip placeholder met values ('u', 'U' = unknown/unannotated) -->
+    <xsl:template match="l[@met = ('u', 'U')]">
         <xsl:copy>
-            <xsl:apply-templates select="@* except @ana"/>
-            <xsl:attribute name="met">hexameter</xsl:attribute>
+            <xsl:apply-templates select="@* except @met"/>
             <xsl:apply-templates/>
         </xsl:copy>
     </xsl:template>
-    
-    
-    
+
 </xsl:stylesheet>

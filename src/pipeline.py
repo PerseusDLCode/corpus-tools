@@ -45,7 +45,7 @@ PIPELINES: dict[str, list[Step]] = {
 def compute_cts_urn(source_path: Path) -> str:
     """Derive CTS URN from filesystem path, mirroring the logic in set-cts-urn.xsl."""
     uri = source_path.resolve().as_uri()
-    ns_match = re.search(r"canonical[-_]([^/]+)/", uri)
+    ns_match = re.search(r"canonical[-_]([^/]+)/data/", uri)
     namespace = ns_match.group(1) if ns_match else ""
     work_id = source_path.stem
     if namespace and work_id:

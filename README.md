@@ -1,99 +1,228 @@
-# Setup
+# corpus-tools
+
+Tools for normalizing and auditing Perseus TEI corpora.
+
+## Setup
 
 ```bash
 pdm install
+# or
+uv sync
 ```
 
-# Tools
-
-1. [analysis](#analysis)
-2. [transformers](#transformers)
+With the virtualenv activated, all commands below are available directly.
+For Makefile-driven batch workflows, see [Makefile](#makefile).
 
 ---
 
-## analysis
+## Commands
 
-### analyze-milestones
+### Pipeline: `corpus-tools`
 
-Traverse a TEI corpus and compile per-document JSON reports on `<milestone>`,
-`<div>`, and structural element usage.
+Transforms TEI documents through a normalization pipeline. Operates on one
+or more files; without `-o`, output overwrites the source in-place.
+
+#### `set-genre`
+
+Annotates a document with its Perseus genre category. Must be run before
+`normalize`.
 
 ```bash
-pdm run analyze-milestones --source_dir data/canonical-greekLit --output_dir milestone-reports/
+corpus-tools set-genre FILE [FILE ...] --genre GENRE [-o PATH]
 ```
 
-Each output file (`<stem>.json`) contains:
+Valid genres: `prose-historiography`, `prose-philosophy`, `prose-dialogue`,
+`prose-oratory`, `prose-biography`, `prose-epistolary`, `prose-geography`,
+`verse-epic`, `verse-didactic`, `verse-elegiac`, `verse-lyric-choral`,
+`verse-lyric-pindaric`, `verse-lyric-monodic`, `verse-satiric`,
+`verse-epigram`, `verse-iambic`, `attic-tragedy`, `attic-comedy`,
+`roman-comedy`, `roman-tragedy`, `early-modern-drama`.
 
-```json
-{
-  "filename": "tlg0011.tlg001.perseus-grc2",
-  "milestones": [{"unit": "card", "frequency": 42}],
-  "divs": [
-    {"div_type": "textpart", "subtypes": [{"subtype": "book", "frequency": 3}]}
-  ]
-}
+```bash
+# Annotate in-place
+corpus-tools set-genre tlg0003.tlg001.1st1K-eng1.xml --genre prose-historiography
+
+# Annotate a batch, writing into a separate directory
+corpus-tools set-genre -o annotated/ canonical-greekLit/data/tlg0003/tlg001/*.xml \
+    --genre prose-historiography
+```
+
+#### `normalize`
+
+Runs a genre-appropriate XSLT pipeline on a genre-annotated document. The
+genre must already be set (via `set-genre` or manually).
+
+```bash
+corpus-tools normalize FILE [FILE ...] [-o PATH] [--cts-base URN] [--tei-schema NAME]
+```
+
+| Option | Description |
+|---|---|
+| `-o PATH` | Output file (single input) or directory (batch). Default: overwrite in-place. |
+| `--cts-base URN` | Override the auto-computed CTS URN (needed for `pdlrefwk` texts). |
+| `--tei-schema NAME` | Override the schema name written into the `<?xml-model?>` PI. |
+
+The pipeline applied depends on genre family:
+
+| Genre family | Steps |
+|---|---|
+| prose | normalize-cts → set-cts-urn → add-citeStructure → set-schema(perseus_prose) |
+| verse | normalize-cts → set-cts-urn → add-citeStructure → fix-verse → set-schema(perseus_verse) |
+| drama | normalize-cts → set-cts-urn → add-citeStructure → set-schema(perseus_drama) |
+
+```bash
+# Normalize a single file in-place (genre must already be set)
+corpus-tools normalize tlg0003.tlg001.1st1K-eng1.xml
+
+# Full workflow: annotate then normalize into a separate directory
+corpus-tools set-genre --genre prose-historiography tlg0003.tlg001.1st1K-eng1.xml
+corpus-tools normalize -o normalized/ tlg0003.tlg001.1st1K-eng1.xml
+```
+
+#### `validate`
+
+Validates normalized documents against a Schematron schema. Exits non-zero
+if any assertion fails.
+
+```bash
+corpus-tools validate FILE [FILE ...] [--schema SCH]
+```
+
+The default schema is `schematron/perseus_normalized.sch`, which checks that
+all pipeline steps have been applied (genre annotation, CTS URN, citeStructure,
+schema PI).
+
+```bash
+corpus-tools validate normalized/tlg0003.tlg001.1st1K-eng1.xml
+corpus-tools validate --schema schematron/perseus_encoding.sch *.xml
 ```
 
 ---
 
-## transformers
+### Audit commands
 
-### stylesheets
+Read-only inspection tools that run auditors against documents and produce
+structured reports. Unlike `validate`, findings do not affect the exit code —
+the commands exit 1 only if a file cannot be parsed.
 
-All stylesheets are in `xslt/` and require Saxon (XSLT 4.0). They use
-`on-no-match="shallow-copy"`, so only matched nodes are transformed.
+All three commands share the same flags:
+
+| Flag | Description |
+|---|---|
+| `--format text\|json` | Output format (default: `text`). |
+| `-o DIR` | Write one report file per input into DIR instead of stdout. |
+
+Output filenames in `-o DIR` mode follow the pattern `<stem>-{refs,structure,schema}.{txt,json}`,
+so all three audit commands can safely write to the same directory.
+
+#### `audit-refs`
+
+Checks citation reference declarations: CTS URN on `<body>`, presence of
+`<citeStructure>`, and `<refsDecl default="true">`.
+
+```bash
+audit-refs FILE [FILE ...] [--format text|json] [-o DIR]
+```
+
+```bash
+audit-refs tlg0003.tlg001.perseus-grc2.xml
+audit-refs --format json -o reports/ canonical-greekLit/data/**/*.xml
+```
+
+#### `audit-structure`
+
+Introspects the document's `<div type="textpart">` hierarchy and `<milestone>`
+elements. Reports citation levels (depth, count, attribute coverage), proposes
+a `citeStructure` fragment, and flags structural anomalies.
+
+```bash
+audit-structure FILE [FILE ...] [--format text|json] [-o DIR]
+```
+
+```bash
+audit-structure tlg0003.tlg001.perseus-grc2.xml
+audit-structure --format json -o reports/ canonical-greekLit/data/**/*.xml
+```
+
+#### `audit-schema`
+
+Runs a Schematron schema against documents and reports all findings, including
+advisory warnings and info messages (not just hard errors). `--schema` is
+required.
+
+```bash
+audit-schema FILE [FILE ...] --schema SCH [--format text|json] [-o DIR]
+```
+
+```bash
+# Check for encoding anomalies (e.g. empty <s/> milestone abuse)
+audit-schema --schema schematron/perseus_encoding.sch tlg0003.tlg001.1st1K-eng1.xml
+
+# Batch audit into a reports directory
+audit-schema --schema schematron/perseus_encoding.sch \
+    --format json -o reports/ canonical-greekLit/data/**/*.xml
+```
+
+---
+
+### Makefile
+
+A `Makefile` at the project root provides convenience targets for common
+batch operations. Pass `FILES="..."` and optionally `OUT=dir/`.
+
+```bash
+make help                   # list all targets
+
+# Pipeline
+make set-genre FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" GENRE=prose-historiography
+make normalize FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=normalized/
+make validate  FILES="normalized/*.xml"
+make pipeline  FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" GENRE=prose-historiography OUT=normalized/
+
+# Audit
+make audit          FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml"         # all three auditors
+make audit-refs     FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=reports/
+make audit-structure FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml"
+make audit-schema   FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=reports/
+```
+
+---
+
+## XSLT stylesheets
+
+All stylesheets are in `xslt/` and require Saxon (XSLT 2.0 via saxonche).
+They use `on-no-match="shallow-copy"`, so only matched nodes are transformed.
+The pipeline commands above invoke them in sequence; they can also be run
+individually via `corpus-tools normalize --tei-schema` overrides.
 
 | Stylesheet | Purpose | Parameters |
 |---|---|---|
 | `normalize-cts.xsl` | Remove EpiDoc `div[@type='edition']` wrappers; hoist `@subtype` to `@type` on textpart divs; strip `@xml:base` attributes | — |
 | `set-cts-urn.xsl` | Set `@xml:base` on `<body>` and add `<idno type="CTS">` to `<publicationStmt>` | `cts-base` (default: auto-computed from path) |
-| `add-citeStructure.xsl` | Append a genre-appropriate `<refsDecl>` to `<encodingDesc>` | `genre` (`prose`\|`verse`\|`drama`, default: `prose`) |
+| `add-citeStructure.xsl` | Append a genre-appropriate `<refsDecl>` with `<citeStructure>` to `<encodingDesc>` | `genre` (`prose`\|`verse`\|`drama`) |
 | `fix-verse.xsl` | Convert `@ana`-encoded meter values to `@met`; strip placeholder `met="u"/"U"` | — |
-| `set-schema.xsl` | Update the `<?xml-model?>` PI to point to a Perseus schema | `tei-schema` (default: `perseus_base`), `schema-path-base` |
+| `set-schema.xsl` | Update the `<?xml-model?>` PI to point to a Perseus schema (.rng) | `tei-schema` (default: `perseus_base`) |
+| `set-genre.xsl` | Add `<catRef scheme="#perseus-genre">` to `<profileDesc>` | `genre` |
 
 `set-cts-urn.xsl` derives the CTS URN from the document's filesystem path when
-`cts-base` is empty. It expects the path to follow the Perseus convention:
-`canonical-{namespace}/data/{author}/{work}/{filename}.xml`, where the filename
-encodes the full CTS work identifier (e.g. `tlg0003.tlg001.1st1K-eng1`).
+`cts-base` is not supplied. It expects the path to follow the Perseus convention:
+`canonical-{namespace}/data/{author}/{work}/{filename}.xml`.
 
-### command-line pipelines
+---
 
-`corpus-tools` provides three named pipelines that chain the stylesheets above.
-Install with `pdm install`, then run via `pdm run corpus-tools` (or `corpus-tools`
-with the virtualenv activated).
+## Schematron schemas
 
-```
-corpus-tools {normalize-prose|normalize-verse|normalize-drama} [OPTIONS] FILE [FILE ...]
-```
+Two schemas live in `schematron/`:
 
-**Pipelines:**
-
-| Pipeline | Steps |
+| Schema | Purpose |
 |---|---|
-| `normalize-prose` | normalize-cts → set-cts-urn → add-citeStructure(prose) → set-schema(perseus_prose) |
-| `normalize-verse` | normalize-cts → set-cts-urn → add-citeStructure(verse) → fix-verse → set-schema(perseus_verse) |
-| `normalize-drama` | normalize-cts → set-cts-urn → add-citeStructure(drama) → set-schema(perseus_drama) |
+| `perseus_normalized.sch` | Validates that all pipeline steps have been applied (genre, CTS URN, citeStructure, schema PI). Used by `corpus-tools validate`. |
+| `perseus_encoding.sch` | Advisory checks for encoding anomalies requiring human review before correction (e.g. empty `<s/>` used as a milestone). Used by `audit-schema`. |
 
-**Options:**
+---
 
-| Option | Description |
-|---|---|
-| `-o PATH` | Output file (single input) or directory (batch). Default: overwrite in-place. |
-| `--cts-base URN` | Override auto-computed CTS URN (e.g. for `pdlrefwk` texts). |
-| `--tei-schema NAME` | Override the schema name written into the `<?xml-model?>` PI. |
+## Auditors (programmatic API)
 
-**Examples:**
-
-```bash
-# Normalize a single prose file in-place
-corpus-tools normalize-prose canonical-greekLit/data/tlg0003/tlg001/tlg0003.tlg001.1st1K-eng1.xml
-
-# Normalize a verse file, writing output separately
-corpus-tools normalize-verse -o /tmp/out.xml canonical-greekLit/data/tlg0012/tlg001/tlg0012.tlg001.perseus-grc2.xml
-
-# Batch-normalize all Latin prose files into a separate directory
-corpus-tools normalize-prose -o normalized/ canonical-latinLit/data/**/*.xml
-
-# Override URN for a reference work
-corpus-tools normalize-prose --cts-base urn:cts:pdlrefwk:viaf88890045.phi001.perseus-eng1 myfile.xml
-```
+The `auditors` package provides an object-oriented API for document inspection,
+used by the audit commands and available for scripting. See
+[`src/auditors/README.md`](src/auditors/README.md).

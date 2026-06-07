@@ -11,7 +11,10 @@ readme = "README.md"
 license = {text = "MIT"}
 
 [project.scripts]
-corpus-tools = "pipeline:main"
+corpus-tools    = "pipeline:main"
+audit-refs      = "commands.audit_refs:main"
+audit-structure = "commands.audit_structure:main"
+audit-schema    = "commands.audit_schema:main"
 
 [build-system]
 requires = ["pdm-backend"]

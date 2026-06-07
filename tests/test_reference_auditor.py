@@ -1,7 +1,7 @@
+import json
 from pathlib import Path
 
 import pytest
-from lxml import etree
 
 from auditors import ReferenceAuditor
 from auditors.reference_auditor import ReferenceAuditReport
@@ -48,7 +48,6 @@ class TestDocHasDefaultRefsDecl:
 
 class TestDefaultRefsDecIsACiteStructure:
     def test_true_thucydides(self, thucydides_grc):
-        # tlg0003 has one refsDecl[@default='true'] that contains a citeStructure
         assert ReferenceAuditor(thucydides_grc).default_refsDecl_is_citeStructure()
 
     def test_false_no_default_refs_decl(self, phi1017_phi007_perseus_lat2):
@@ -79,29 +78,25 @@ class TestAudit:
         report = ReferenceAuditor(phi2331_phi013_perseus_lat2).audit()
         assert report.base_urn == ""
 
-    def test_report_refs_decls_are_elements(self, thucydides_grc):
-        report = ReferenceAuditor(thucydides_grc).audit()
-        assert all(isinstance(rd, etree._Element) for rd in report.refsDecls)
-
     def test_report_refs_decls_count(self, thucydides_grc):
         report = ReferenceAuditor(thucydides_grc).audit()
-        assert len(report.refsDecls) == 1
+        assert report.refsDecl_count == 1
 
-    def test_report_cite_structures(self, thucydides_grc):
+    def test_report_has_cite_structures_true(self, thucydides_grc):
         report = ReferenceAuditor(thucydides_grc).audit()
-        assert len(report.cite_structures) == 1
+        assert report.has_cite_structures is True
 
-    def test_report_cite_structures_empty(self, tlg0011_tlg001_perseus_grc2):
+    def test_report_has_cite_structures_false(self, tlg0011_tlg001_perseus_grc2):
         report = ReferenceAuditor(tlg0011_tlg001_perseus_grc2).audit()
-        assert report.cite_structures == []
+        assert report.has_cite_structures is False
 
-    def test_report_default_refs_decls(self, thucydides_grc):
+    def test_report_has_default_refsDecl_true(self, thucydides_grc):
         report = ReferenceAuditor(thucydides_grc).audit()
-        assert len(report.default_refsDecls) == 1
+        assert report.has_default_refsDecl is True
 
-    def test_report_default_refs_decls_empty(self, phi1017_phi007_perseus_lat2):
+    def test_report_has_default_refsDecl_false(self, phi1017_phi007_perseus_lat2):
         report = ReferenceAuditor(phi1017_phi007_perseus_lat2).audit()
-        assert report.default_refsDecls == []
+        assert report.has_default_refsDecl is False
 
     def test_no_issues_thucydides(self, thucydides_grc):
         report = ReferenceAuditor(thucydides_grc).audit()
@@ -152,3 +147,22 @@ class TestRenderText:
     def test_none_value_when_urn_absent(self, phi2331_phi013_perseus_lat2):
         text = ReferenceAuditor(phi2331_phi013_perseus_lat2).audit().render_text()
         assert "(none)" in text
+
+
+class TestToJson:
+    def test_returns_valid_json(self, thucydides_grc):
+        result = ReferenceAuditor(thucydides_grc).audit().to_json()
+        data = json.loads(result)
+        assert "path" in data
+
+    def test_json_contains_path(self, thucydides_grc):
+        data = json.loads(ReferenceAuditor(thucydides_grc).audit().to_json())
+        assert "tlg0003.tlg001.perseus-grc2.xml" in data["path"]
+
+    def test_json_contains_base_urn(self, thucydides_grc):
+        data = json.loads(ReferenceAuditor(thucydides_grc).audit().to_json())
+        assert data["base_urn"] == "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2"
+
+    def test_json_refs_decl_count(self, thucydides_grc):
+        data = json.loads(ReferenceAuditor(thucydides_grc).audit().to_json())
+        assert data["refsDecl_count"] == 1

@@ -82,11 +82,38 @@ def _parse_svrl(svrl: str) -> list[dict[str, str]]:
     return failures
 
 
+def _parse_svrl_all(svrl: str) -> list[dict[str, str]]:
+    """Like _parse_svrl but captures all findings, including non-error reports."""
+    root = etree.fromstring(svrl.encode("utf-8"))
+    ns = {"svrl": _SVRL_NS}
+    findings = []
+    for el in root.xpath("//svrl:failed-assert | //svrl:successful-report", namespaces=ns):
+        text_el = el.find(f"{{{_SVRL_NS}}}text")
+        findings.append({
+            "type": el.tag.split("}")[-1],
+            "role": el.get("role", ""),
+            "location": el.get("location", ""),
+            "test": el.get("test", ""),
+            "message": " ".join((text_el.text or "").split()) if text_el is not None else "",
+        })
+    return findings
+
+
 def validate_file(doc_path: Path, sch_path: Path) -> list[dict[str, str]]:
     """Compile sch_path and validate doc_path; return list of failure dicts."""
     validator_xsl = _compile(sch_path)
     try:
         svrl = _run(validator_xsl, doc_path)
         return _parse_svrl(svrl)
+    finally:
+        validator_xsl.unlink(missing_ok=True)
+
+
+def validate_file_all(doc_path: Path, sch_path: Path) -> list[dict[str, str]]:
+    """Compile sch_path and validate doc_path; return all findings including advisory reports."""
+    validator_xsl = _compile(sch_path)
+    try:
+        svrl = _run(validator_xsl, doc_path)
+        return _parse_svrl_all(svrl)
     finally:
         validator_xsl.unlink(missing_ok=True)

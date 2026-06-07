@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>The Peloponnesian War (fragment)</title>
+        <author>Thucydides</author>
+      </titleStmt>
+      <publicationStmt>
+        <idno type="CTS">urn:cts:greekLit:tlg0003.tlg001.1st1K-eng1</idno>
+      </publicationStmt>
+      <sourceDesc><p>Test fixture.</p></sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl n="CTS" default="true">
+        <citeStructure unit="book" use="@n" xpath="//div[@type='book']">
+          <citeStructure unit="section" use="@n" xpath="div[@type='section']"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <catRef scheme="#perseus-genre" target="#prose-historiography"/>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body xml:base="urn:cts:greekLit:tlg0003.tlg001.1st1K-eng1">
+      <div type="book" n="1">
+        <div type="section" n="1">
+          <p>
+            <s/>Thucydides, an Athenian, wrote the history of the war.
+            <s/>He began the task at the very outset of the war.
+          </p>
+        </div>
+        <div type="section" n="2">
+          <p>
+            <s/>For this was the greatest movement that had ever stirred the Hellenes.
+          </p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -289,7 +289,7 @@ class TestRunPipeline:
         out = tmp_path / "out.xml"
         run_pipeline(PIPELINES["prose"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
-        assert "perseus_prose.rnc" in result
+        assert "perseus_prose.rng" in result
 
     def test_prose_pipeline_sets_cts_idno(self, tmp_path):
         src = _write(tmp_path, "test.xml", _PROSE)
@@ -326,7 +326,7 @@ class TestRunPipeline:
         out = tmp_path / "out.xml"
         run_pipeline(PIPELINES["drama"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
-        assert "perseus_drama.rnc" in result
+        assert "perseus_drama.rng" in result
 
     def test_drama_pipeline_uses_descendant_line_match(self, tmp_path):
         src = _write(tmp_path, "test.xml", _DRAMA)
@@ -340,7 +340,7 @@ class TestRunPipeline:
         out = tmp_path / "out.xml"
         run_pipeline(PIPELINES["verse"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
-        assert "perseus_verse.rnc" in result
+        assert "perseus_verse.rng" in result
 
     def test_verse_pipeline_adds_book_line_citestructure(self, tmp_path):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)
@@ -435,7 +435,7 @@ class TestSetGenreAndNormalize:
         family = genre_family(genre)
         run_pipeline(PIPELINES[family], annotated, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
-        assert "perseus_prose.rnc" in result
+        assert "perseus_prose.rng" in result
 
     def test_normalize_dispatch_uses_correct_pipeline_for_drama(self, tmp_path):
         src = _write(tmp_path, "test.xml", _DRAMA)
@@ -444,7 +444,7 @@ class TestSetGenreAndNormalize:
         family = genre_family(genre)
         run_pipeline(PIPELINES[family], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
-        assert "perseus_drama.rnc" in result
+        assert "perseus_drama.rng" in result
 
     def test_normalize_dispatch_uses_correct_pipeline_for_verse(self, tmp_path):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)
@@ -453,4 +453,4 @@ class TestSetGenreAndNormalize:
         family = genre_family(genre)
         run_pipeline(PIPELINES[family], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
-        assert "perseus_verse.rnc" in result
+        assert "perseus_verse.rng" in result

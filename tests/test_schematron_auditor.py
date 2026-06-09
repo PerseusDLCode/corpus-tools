@@ -40,6 +40,35 @@ class TestSchematronAuditor:
         assert report.findings == []
 
 
+class TestLegacyElements:
+    def test_detects_all_legacy_elements(self, thucydides_eng1_legacy):
+        # 2 said + 1 docAuthor + 1 reg, no empty <s/>
+        report = SchematronAuditor(thucydides_eng1_legacy, ENCODING_SCH).audit()
+        assert len(report.findings) == 4
+
+    def test_legacy_findings_are_warnings(self, thucydides_eng1_legacy):
+        report = SchematronAuditor(thucydides_eng1_legacy, ENCODING_SCH).audit()
+        assert all(f.role == "warning" for f in report.findings)
+        assert report.errors() == []
+
+    def test_detects_said(self, thucydides_eng1_legacy):
+        report = SchematronAuditor(thucydides_eng1_legacy, ENCODING_SCH).audit()
+        said = [f for f in report.findings if "said" in f.message]
+        assert len(said) == 2
+        assert all("<q>" in f.message for f in said)
+
+    def test_detects_docAuthor(self, thucydides_eng1_legacy):
+        report = SchematronAuditor(thucydides_eng1_legacy, ENCODING_SCH).audit()
+        doc = [f for f in report.findings if "docAuthor" in f.message]
+        assert len(doc) == 1
+        assert "<author>" in doc[0].message
+
+    def test_detects_reg(self, thucydides_eng1_legacy):
+        report = SchematronAuditor(thucydides_eng1_legacy, ENCODING_SCH).audit()
+        reg = [f for f in report.findings if "reg" in f.message and "choice" in f.message]
+        assert len(reg) == 1
+
+
 class TestSchematronAuditReport:
     def test_errors_excludes_warnings(self, thucydides_eng1_fragment):
         report = SchematronAuditor(thucydides_eng1_fragment, ENCODING_SCH).audit()

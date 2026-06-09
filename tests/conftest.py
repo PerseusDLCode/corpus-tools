@@ -76,3 +76,8 @@ def phi2331_phi013_perseus_lat2(shared_datadir):
 @pytest.fixture
 def thucydides_eng1_fragment(shared_datadir):
     return TEIDocument(shared_datadir / "tlg0003.tlg001.1st1K-eng1-fragment.xml")
+
+
+@pytest.fixture
+def thucydides_eng1_legacy(shared_datadir):
+    return TEIDocument(shared_datadir / "tlg0003.tlg001.1st1K-eng1-legacy.xml")

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>The Peloponnesian War (legacy fixture)</title>
+        <docAuthor>Thucydides</docAuthor>
+      </titleStmt>
+      <publicationStmt>
+        <idno type="CTS">urn:cts:greekLit:tlg0003.tlg001.1st1K-eng1</idno>
+      </publicationStmt>
+      <sourceDesc><p>Test fixture exercising P4 legacy elements.</p></sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl n="CTS" default="true">
+        <citeStructure unit="book" use="@n" xpath="//div[@type='book']">
+          <citeStructure unit="section" use="@n" xpath="div[@type='section']"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <catRef scheme="#perseus-genre" target="#prose-historiography"/>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body xml:base="urn:cts:greekLit:tlg0003.tlg001.1st1K-eng1">
+      <div type="book" n="1">
+        <div type="section" n="1">
+          <p>
+            <said direct="true" who="#pericles">We are a free democracy.</said>
+            <said direct="false">He said the city was great.</said>
+            The herald gave the name <reg>Lacedaemon</reg> for the place.
+          </p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

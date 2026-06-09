@@ -140,7 +140,7 @@ annotate-genres DATA_DIR --odd ODD [--model MODEL] [--dry-run]
 | Option | Description |
 |---|---|
 | `--odd ODD` | Path to `perseus_base.odd`. Required. |
-| `--model MODEL` | Claude model id. Default: `claude-haiku-4-5-20251001` (~$0.43 for the full greekLit corpus). |
+| `--model MODEL` | Claude model id. Default: `claude-haiku-4-5-20251001` |
 | `--dry-run` | Print suggestions without writing to disk. |
 
 **Confidence levels**
@@ -311,6 +311,119 @@ audit-schema --schema schematron/perseus_encoding.sch \
 
 ---
 
+### Schema development workflow
+
+These commands support an iterative, data-driven approach to tightening the
+Perseus schemas: first survey what is actually in the corpus (descriptive),
+then validate against the target schemas to find gaps, then edit the ODDs and
+repeat.
+
+```
+survey-corpus  →  validate-corpus  →  edit ODDs  →  make -C ../perseus-schemas  →  repeat
+```
+
+Both commands determine each file's target schema from the genre annotation in
+the sibling work-level `__cts__.xml` (written by `annotate-genres`), or from a
+`genres.csv`-style map passed via `--genre-map`.
+
+#### `survey-corpus`
+
+Walks all TEI files in the corpus and extracts element and attribute vocabulary
+grouped by genre. Useful for understanding what markup is actually present before
+deciding what to allow or require in the schemas.
+
+```bash
+survey-corpus DATA_DIR [--output-dir DIR] [--odd ODD] [--genre GENRE]
+```
+
+| Option | Description |
+|---|---|
+| `--output-dir DIR` | Where to write output CSVs (default: `survey/`). |
+| `--odd ODD` | Path to `perseus_base.odd` for genre taxonomy (default: `../perseus-schemas/perseus_base.odd`). |
+| `--genre GENRE` | Restrict output to files annotated with a single genre leaf. |
+
+**Output CSVs**
+
+| File | Contents |
+|---|---|
+| `elements.csv` | One row per `(element, genre)` pair: `element`, `genre`, `file_count`, `instance_count`. Sorted by `instance_count` descending. |
+| `attributes.csv` | Controlled-vocabulary attribute values: `element`, `attribute`, `genre`, `value`, `count`. Covers `@type`, `@subtype`, `@unit`, `@met`, `@rend`, `@place`, `@role`, `@ident`, `@ed`, `@lang`. Up to 30 most-frequent values per `(element, attribute, genre)` triple. |
+| `structure.csv` | Per-file citation structure via `StructureAuditor`: URN, genre, structural type, div subtypes, milestone units, and any structural issues. |
+
+```bash
+# Survey the full corpus (writes to survey/)
+survey-corpus ../data-local/canonical-greekLit/data \
+    --odd ../perseus-schemas/perseus_base.odd
+
+# Restrict to a single genre for focused review
+survey-corpus ../data-local/canonical-greekLit/data \
+    --odd ../perseus-schemas/perseus_base.odd \
+    --genre verse-epic
+```
+
+---
+
+#### `validate-corpus`
+
+Validates every TEI file against its target Perseus RELAX NG schema using
+[`jing`](https://relaxng.org/jclark/) (must be installed: `brew install
+jing-trang`). Files are batched by schema family for efficiency (~5× faster
+than per-file invocations). Errors are aggregated across files so systemic
+gaps — elements present in the corpus but missing from the schema — rise to
+the top.
+
+```bash
+validate-corpus DATA_DIR [--schema-dir DIR] [--output-dir DIR] [--odd ODD] [--genre-map CSV]
+```
+
+| Option | Description |
+|---|---|
+| `--schema-dir DIR` | Directory containing compiled `.rng` files (default: `../perseus-schemas`). Compile schemas first with `make -C ../perseus-schemas`. |
+| `--output-dir DIR` | Where to write `rng_errors.csv` (default: `survey/`). |
+| `--odd ODD` | Path to `perseus_base.odd` for genre taxonomy. |
+| `--genre-map CSV` | `genres.csv`-style file used as fallback when a file has no genre annotation in `__cts__.xml`. |
+
+**Output**
+
+`rng_errors.csv` — one row per distinct error type:
+
+| Column | Description |
+|---|---|
+| `family` | Schema family (`prose`, `verse`, or `drama`). |
+| `element` | Element or attribute name extracted from the jing error message. |
+| `message` | Normalized jing error (trailing `; expected …` clause stripped). |
+| `instance_count` | Total occurrences across all files. |
+| `file_count` | Number of distinct files where this error appears. |
+
+```bash
+# Full validation pass (compile schemas first if ODDs have changed)
+make -C ../perseus-schemas
+
+validate-corpus ../data-local/canonical-greekLit/data \
+    --odd ../perseus-schemas/perseus_base.odd
+
+# With a genre-map fallback for files not yet genre-annotated
+validate-corpus ../data-local/canonical-greekLit/data \
+    --odd ../perseus-schemas/perseus_base.odd \
+    --genre-map genres.csv
+```
+
+---
+
+#### Makefile targets
+
+```bash
+# Survey element/attribute vocabulary (OUT_DIR defaults to survey/)
+make survey-corpus DATA_DIR=../data-local/canonical-greekLit/data
+make survey-corpus DATA_DIR=../data-local/canonical-greekLit/data OUT_DIR=survey/ GENRE=verse-epic
+
+# Validate against target Perseus schemas
+make validate-corpus DATA_DIR=../data-local/canonical-greekLit/data
+make validate-corpus DATA_DIR=../data-local/canonical-greekLit/data GENRE_MAP=genres.csv
+```
+
+---
+
 ### Makefile
 
 A `Makefile` at the project root provides convenience targets for common
@@ -335,6 +448,10 @@ make audit           FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml"   # al
 make audit-refs      FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=reports/
 make audit-structure FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml"
 make audit-schema    FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=reports/
+
+# Schema development
+make survey-corpus    DATA_DIR=../data-local/canonical-greekLit/data OUT_DIR=survey/
+make validate-corpus  DATA_DIR=../data-local/canonical-greekLit/data OUT_DIR=survey/
 ```
 
 ---

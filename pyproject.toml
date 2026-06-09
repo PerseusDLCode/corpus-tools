@@ -18,6 +18,8 @@ apply-genre-map    = "commands.apply_genre_map:main"
 audit-refs      = "commands.audit_refs:main"
 audit-structure = "commands.audit_structure:main"
 audit-schema    = "commands.audit_schema:main"
+survey-corpus   = "commands.survey_corpus:main"
+validate-corpus = "commands.validate_corpus:main"
 
 [build-system]
 requires = ["pdm-backend"]

@@ -12,15 +12,19 @@ ANNOTATE_GENRES  := .venv/bin/annotate-genres
 GENERATE_GENRES  := .venv/bin/generate-genre-map
 APPLY_GENRES     := .venv/bin/apply-genre-map
 AUDIT_REF        := .venv/bin/audit-refs
-AUDIT_STR := .venv/bin/audit-structure
-AUDIT_SCH := .venv/bin/audit-schema
-SCH          := schematron/perseus_normalized.sch
-ENCODING_SCH := schematron/perseus_encoding.sch
+AUDIT_STR        := .venv/bin/audit-structure
+AUDIT_SCH        := .venv/bin/audit-schema
+SURVEY           := .venv/bin/survey-corpus
+VALIDATE_CORPUS  := .venv/bin/validate-corpus
+SCH              := schematron/perseus_normalized.sch
+ENCODING_SCH     := schematron/perseus_encoding.sch
+SCHEMA_DIR       ?= ../perseus-schemas
 
-FILES ?= $(error FILES is required: make <target> FILES="path/to/*.xml")
-GENRE ?= $(error GENRE is required for set-genre: make set-genre FILES=... GENRE=prose-historiography)
-ODD   ?= ../perseus-schemas/perseus_base.odd
-OUT   ?=
+FILES     ?= $(error FILES is required: make <target> FILES="path/to/*.xml")
+GENRE     ?= $(error GENRE is required for set-genre: make set-genre FILES=... GENRE=prose-historiography)
+ODD       ?= ../perseus-schemas/perseus_base.odd
+OUT       ?=
+OUT_DIR   ?= survey
 
 # --- genre annotation --------------------------------------------------------
 
@@ -69,6 +73,16 @@ audit-schema:  ## Audit encoding anomalies (Schematron): FILES="..." [OUT=dir/]
 
 .PHONY: audit
 audit: audit-refs audit-structure audit-schema  ## Run all auditors: FILES="..." [OUT=dir/]
+
+# --- schema development ------------------------------------------------------
+
+.PHONY: survey-corpus
+survey-corpus:  ## Survey corpus element/attribute vocabulary: DATA_DIR=... [OUT_DIR=survey/] [GENRE=...]
+	$(SURVEY) $(DATA_DIR) --output-dir $(OUT_DIR) --odd $(ODD) $(if $(GENRE),--genre $(GENRE))
+
+.PHONY: validate-corpus
+validate-corpus:  ## Validate corpus against target Perseus schemas: DATA_DIR=... [OUT_DIR=survey/] [GENRE_MAP=...]
+	$(VALIDATE_CORPUS) $(DATA_DIR) --schema-dir $(SCHEMA_DIR) --output-dir $(OUT_DIR) --odd $(ODD) $(if $(GENRE_MAP),--genre-map $(GENRE_MAP))
 
 # --- dev ---------------------------------------------------------------------
 

@@ -178,3 +178,5 @@ cython_debug/
 
 # Oxygen XML Editor project files (machine-specific; belong in data repos)
 *.xpr
+.env
+.envrc

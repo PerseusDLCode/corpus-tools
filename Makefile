@@ -78,7 +78,7 @@ audit: audit-refs audit-structure audit-schema  ## Run all auditors: FILES="..."
 
 .PHONY: survey-corpus
 survey-corpus:  ## Survey corpus element/attribute vocabulary: DATA_DIR=... [OUT_DIR=survey/] [GENRE=...]
-	$(SURVEY) $(DATA_DIR) --output-dir $(OUT_DIR) --odd $(ODD) $(if $(GENRE),--genre $(GENRE))
+	$(SURVEY) $(DATA_DIR) --output-dir $(OUT_DIR) $(if $(GENRE),--genre $(GENRE))
 
 .PHONY: validate-corpus
 validate-corpus:  ## Validate corpus against target Perseus schemas: DATA_DIR=... [OUT_DIR=survey/] [GENRE_MAP=...]

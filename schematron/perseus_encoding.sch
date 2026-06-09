@@ -25,4 +25,46 @@
     </sch:rule>
   </sch:pattern>
 
+  <!-- ============================================================
+       Legacy (TEI P4) elements
+       Elements carried over from the P4 corpus that are not part of
+       the curated Perseus P5 schema. They are flagged here so editors
+       can migrate them by hand; they remain invalid against the RNG.
+       Together these account for ~99% of remaining validate-corpus
+       errors on canonical-greekLit (said ~101K, docAuthor ~8.4K, reg ~4.3K).
+       ============================================================ -->
+
+  <sch:pattern id="legacy-said">
+    <sch:title>P4 legacy element: said</sch:title>
+    <sch:rule context="tei:said">
+      <sch:report test="true()" role="warning">
+        &lt;said&gt; is a TEI P4 element not in the Perseus P5 schema.
+        Migrate to &lt;q&gt; for quoted speech. Review @direct (direct vs.
+        reported discourse) and preserve @who before converting.
+      </sch:report>
+    </sch:rule>
+  </sch:pattern>
+
+  <sch:pattern id="legacy-docAuthor">
+    <sch:title>P4 legacy element: docAuthor</sch:title>
+    <sch:rule context="tei:docAuthor">
+      <sch:report test="true()" role="warning">
+        &lt;docAuthor&gt; is not part of the curated Perseus P5 schema.
+        For a work's author, use &lt;author&gt; inside titleStmt. Check the
+        containing context before converting (title page vs. bibliographic).
+      </sch:report>
+    </sch:rule>
+  </sch:pattern>
+
+  <sch:pattern id="legacy-reg">
+    <sch:title>P4 legacy element: reg</sch:title>
+    <sch:rule context="tei:reg">
+      <sch:report test="true()" role="warning">
+        Standalone &lt;reg&gt; is not allowed in the Perseus P5 schema.
+        Pair the regularization with the original reading inside a choice:
+        &lt;choice&gt;&lt;orig&gt;…&lt;/orig&gt;&lt;reg&gt;…&lt;/reg&gt;&lt;/choice&gt;.
+      </sch:report>
+    </sch:rule>
+  </sch:pattern>
+
 </sch:schema>

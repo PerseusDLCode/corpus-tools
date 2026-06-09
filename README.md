@@ -25,26 +25,23 @@ or more files; without `-o`, output overwrites the source in-place.
 #### `set-genre`
 
 Annotates a document with its Perseus genre category. Must be run before
-`normalize`.
+`normalize`. Valid genre ids are defined in `perseus_base.odd`; pass its path
+via `--odd`.
 
 ```bash
-corpus-tools set-genre FILE [FILE ...] --genre GENRE [-o PATH]
+corpus-tools set-genre FILE [FILE ...] --genre GENRE --odd ODD [-o PATH]
 ```
-
-Valid genres: `prose-historiography`, `prose-philosophy`, `prose-dialogue`,
-`prose-oratory`, `prose-biography`, `prose-epistolary`, `prose-geography`,
-`verse-epic`, `verse-didactic`, `verse-elegiac`, `verse-lyric-choral`,
-`verse-lyric-pindaric`, `verse-lyric-monodic`, `verse-satiric`,
-`verse-epigram`, `verse-iambic`, `attic-tragedy`, `attic-comedy`,
-`roman-comedy`, `roman-tragedy`, `early-modern-drama`.
 
 ```bash
 # Annotate in-place
-corpus-tools set-genre tlg0003.tlg001.1st1K-eng1.xml --genre prose-historiography
+corpus-tools set-genre tlg0003.tlg001.1st1K-eng1.xml \
+    --genre prose-historiography \
+    --odd ../perseus-schemas/perseus_base.odd
 
 # Annotate a batch, writing into a separate directory
 corpus-tools set-genre -o annotated/ canonical-greekLit/data/tlg0003/tlg001/*.xml \
-    --genre prose-historiography
+    --genre prose-historiography \
+    --odd ../perseus-schemas/perseus_base.odd
 ```
 
 #### `normalize`
@@ -53,11 +50,12 @@ Runs a genre-appropriate XSLT pipeline on a genre-annotated document. The
 genre must already be set (via `set-genre` or manually).
 
 ```bash
-corpus-tools normalize FILE [FILE ...] [-o PATH] [--cts-base URN] [--tei-schema NAME]
+corpus-tools normalize FILE [FILE ...] --odd ODD [-o PATH] [--cts-base URN] [--tei-schema NAME]
 ```
 
 | Option | Description |
 |---|---|
+| `--odd ODD` | Path to `perseus_base.odd` (authoritative genre taxonomy). Required. |
 | `-o PATH` | Output file (single input) or directory (batch). Default: overwrite in-place. |
 | `--cts-base URN` | Override the auto-computed CTS URN (needed for `pdlrefwk` texts). |
 | `--tei-schema NAME` | Override the schema name written into the `<?xml-model?>` PI. |
@@ -72,11 +70,14 @@ The pipeline applied depends on genre family:
 
 ```bash
 # Normalize a single file in-place (genre must already be set)
-corpus-tools normalize tlg0003.tlg001.1st1K-eng1.xml
+corpus-tools normalize tlg0003.tlg001.1st1K-eng1.xml \
+    --odd ../perseus-schemas/perseus_base.odd
 
 # Full workflow: annotate then normalize into a separate directory
-corpus-tools set-genre --genre prose-historiography tlg0003.tlg001.1st1K-eng1.xml
-corpus-tools normalize -o normalized/ tlg0003.tlg001.1st1K-eng1.xml
+corpus-tools set-genre --genre prose-historiography --odd ../perseus-schemas/perseus_base.odd \
+    tlg0003.tlg001.1st1K-eng1.xml
+corpus-tools normalize -o normalized/ --odd ../perseus-schemas/perseus_base.odd \
+    tlg0003.tlg001.1st1K-eng1.xml
 ```
 
 #### `validate`
@@ -95,6 +96,151 @@ schema PI).
 ```bash
 corpus-tools validate normalized/tlg0003.tlg001.1st1K-eng1.xml
 corpus-tools validate --schema schematron/perseus_encoding.sch *.xml
+```
+
+---
+
+### Genre annotation workflow
+
+Before the normalization pipeline can run on a corpus at scale, every text
+needs a genre assignment. This three-step workflow uses the Claude API to
+suggest genres, produces a CSV for editorial review, and then applies the
+reviewed assignments.
+
+**Overview**
+
+```
+annotate-genres  →  review CSV  →  apply-genre-map  →  corpus-tools set-genre / normalize
+```
+
+Genre assignments are stored as `<ti:genre confidence="…">GENRE_ID</ti:genre>`
+in each work-level `__cts__.xml` file. This keeps genre metadata with the
+CTS work record rather than buried in individual TEI files, and means the
+`__cts__.xml` files are the authoritative genre source for the corpus.
+
+The genre taxonomy itself lives in `perseus_base.odd` (the `perseus-genre`
+taxonomy); all three commands read it via `--odd` so there is no hardcoded
+list to keep in sync.
+
+---
+
+#### `annotate-genres`
+
+Walks every work-level `__cts__.xml`, collects structural signals from the
+TEI files in that directory (counts of `<sp>`, `<l>`, `<p>` elements; `<div>`
+types), calls the Claude API with the work's author, title, description, and
+signals, and writes `<ti:genre confidence="high|medium|low">GENRE_ID</ti:genre>`
+back to the `__cts__.xml`. **Resumable**: any file that already has `<ti:genre>`
+is skipped, so the command can be interrupted and rerun safely.
+
+```bash
+annotate-genres DATA_DIR --odd ODD [--model MODEL] [--dry-run]
+```
+
+| Option | Description |
+|---|---|
+| `--odd ODD` | Path to `perseus_base.odd`. Required. |
+| `--model MODEL` | Claude model id. Default: `claude-haiku-4-5-20251001` (~$0.43 for the full greekLit corpus). |
+| `--dry-run` | Print suggestions without writing to disk. |
+
+**Confidence levels**
+
+| Value | Meaning |
+|---|---|
+| `high` | Structural signal (drama/verse/prose family) and API suggestion agree. |
+| `medium` | One signal absent, or structural family and API family disagree. Flag for closer review. |
+| `low` | API returned a value not in the taxonomy. Genre written as `unknown`. |
+
+```bash
+# Annotate the full corpus (takes ~30–40 min; resumable if interrupted)
+annotate-genres ../data-local/canonical-greekLit/data \
+    --odd ../perseus-schemas/perseus_base.odd
+
+# Dry run to preview suggestions without writing
+annotate-genres ../data-local/canonical-greekLit/data \
+    --odd ../perseus-schemas/perseus_base.odd \
+    --dry-run
+```
+
+---
+
+#### `generate-genre-map`
+
+Reads the annotated `__cts__.xml` files and emits one CSV row per TEI text
+file. The `recommended_genre` column is pre-filled with `suggested_genre`;
+classicists edit this column to correct any mistakes before the next step.
+
+```bash
+generate-genre-map DATA_DIR OUTPUT_CSV
+```
+
+**CSV columns**
+
+| Column | Description |
+|---|---|
+| `urn` | CTS URN (from `body/@xml:base` if present, else derived from path). |
+| `path` | Path to TEI file, relative to `DATA_DIR`. |
+| `author` | Author name from the textgroup `__cts__.xml`. |
+| `title` | Work title from the work `__cts__.xml`. |
+| `suggested_genre` | Genre id suggested by `annotate-genres`. Blank if not yet annotated. |
+| `confidence` | `high`, `medium`, or `low`. |
+| `recommended_genre` | **Classicist edits this column.** Pre-filled with `suggested_genre`. |
+| `notes` | Free text for editorial notes. |
+
+```bash
+generate-genre-map ../data-local/canonical-greekLit/data genres.csv
+```
+
+Send `genres.csv` to classicists. They correct the `recommended_genre` column,
+leaving it blank for any text they are not yet ready to classify.
+
+---
+
+#### `apply-genre-map`
+
+Reads a reviewed CSV and applies `set-genre` to each TEI file in-place.
+**All `recommended_genre` values are validated against the ODD taxonomy before
+any file is touched** — if any value is invalid, the command prints every
+bad value and exits without modifying anything.
+
+Run this on a working branch so the changes can be reviewed and rolled back
+if needed.
+
+```bash
+apply-genre-map CSV_FILE DATA_DIR --odd ODD
+```
+
+```bash
+# On a working branch
+git checkout -b genre-assignments
+
+apply-genre-map genres.csv ../data-local/canonical-greekLit/data \
+    --odd ../perseus-schemas/perseus_base.odd
+
+# Review the diff, then commit or reset
+git diff --stat
+```
+
+Rows with a blank `recommended_genre` are skipped. Rows where the file is
+missing or the transform fails are logged as errors; other rows continue
+processing and the exit code reflects the error count.
+
+---
+
+#### Makefile targets
+
+The `ODD` variable defaults to `../perseus-schemas/perseus_base.odd`.
+
+```bash
+# Annotate (set DATA_DIR; optionally override MODEL or add DRY_RUN=1)
+make annotate-genres DATA_DIR=../data-local/canonical-greekLit/data
+make annotate-genres DATA_DIR=../data-local/canonical-greekLit/data DRY_RUN=1
+
+# Generate the review CSV
+make generate-genre-map DATA_DIR=../data-local/canonical-greekLit/data OUTPUT_CSV=genres.csv
+
+# Apply after classicist review (run on a working branch)
+make apply-genre-map CSV_FILE=genres.csv DATA_DIR=../data-local/canonical-greekLit/data
 ```
 
 ---
@@ -173,6 +319,11 @@ batch operations. Pass `FILES="..."` and optionally `OUT=dir/`.
 ```bash
 make help                   # list all targets
 
+# Genre annotation (ODD defaults to ../perseus-schemas/perseus_base.odd)
+make annotate-genres   DATA_DIR=../data-local/canonical-greekLit/data
+make generate-genre-map DATA_DIR=../data-local/canonical-greekLit/data OUTPUT_CSV=genres.csv
+make apply-genre-map   CSV_FILE=genres.csv DATA_DIR=../data-local/canonical-greekLit/data
+
 # Pipeline
 make set-genre FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" GENRE=prose-historiography
 make normalize FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=normalized/
@@ -180,10 +331,10 @@ make validate  FILES="normalized/*.xml"
 make pipeline  FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" GENRE=prose-historiography OUT=normalized/
 
 # Audit
-make audit          FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml"         # all three auditors
-make audit-refs     FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=reports/
+make audit           FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml"   # all three auditors
+make audit-refs      FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=reports/
 make audit-structure FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml"
-make audit-schema   FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=reports/
+make audit-schema    FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=reports/
 ```
 
 ---

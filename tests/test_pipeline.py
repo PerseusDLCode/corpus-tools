@@ -6,11 +6,9 @@ from pathlib import Path
 import pytest
 
 from pipeline import (
-    ALL_GENRES,
     PIPELINES,
     _resolve_output,
     compute_cts_urn,
-    genre_family,
     read_genre,
     run_pipeline,
 )
@@ -193,22 +191,22 @@ class TestReadGenre:
 # ---------------------------------------------------------------------------
 
 class TestGenreFamily:
-    def test_prose_genre_maps_to_prose(self):
-        assert genre_family("prose-historiography") == "prose"
+    def test_prose_genre_maps_to_prose(self, genre_taxonomy):
+        assert genre_taxonomy.family("prose-historiography") == "prose"
 
-    def test_verse_genre_maps_to_verse(self):
-        assert genre_family("verse-epic") == "verse"
+    def test_verse_genre_maps_to_verse(self, genre_taxonomy):
+        assert genre_taxonomy.family("verse-epic") == "verse"
 
-    def test_drama_genre_maps_to_drama(self):
-        assert genre_family("attic-tragedy") == "drama"
+    def test_drama_genre_maps_to_drama(self, genre_taxonomy):
+        assert genre_taxonomy.family("attic-tragedy") == "drama"
 
-    def test_all_genres_map_to_a_family(self):
-        for g in ALL_GENRES:
-            assert genre_family(g) in {"prose", "verse", "drama"}
+    def test_all_genres_map_to_a_family(self, genre_taxonomy):
+        for g in genre_taxonomy.valid:
+            assert genre_taxonomy.family(g) in {"prose", "verse", "drama"}
 
-    def test_unknown_genre_raises(self):
+    def test_unknown_genre_raises(self, genre_taxonomy):
         with pytest.raises(ValueError, match="Unknown genre"):
-            genre_family("not-a-genre")
+            genre_taxonomy.family("not-a-genre")
 
 
 # ---------------------------------------------------------------------------
@@ -423,7 +421,7 @@ class TestSetGenreAndNormalize:
         out.write_text(xml, encoding="utf-8")
         assert read_genre(out) == "prose-historiography"
 
-    def test_set_genre_then_normalize_dispatches_to_prose(self, tmp_path):
+    def test_set_genre_then_normalize_dispatches_to_prose(self, tmp_path, genre_taxonomy):
         src = _write(tmp_path, "test.xml", _UNANNOTATED)
         annotated = tmp_path / "annotated.xml"
         from transformer import transform
@@ -432,25 +430,25 @@ class TestSetGenreAndNormalize:
 
         out = tmp_path / "out.xml"
         genre = read_genre(annotated)
-        family = genre_family(genre)
+        family = genre_taxonomy.family(genre)
         run_pipeline(PIPELINES[family], annotated, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert "perseus_prose.rng" in result
 
-    def test_normalize_dispatch_uses_correct_pipeline_for_drama(self, tmp_path):
+    def test_normalize_dispatch_uses_correct_pipeline_for_drama(self, tmp_path, genre_taxonomy):
         src = _write(tmp_path, "test.xml", _DRAMA)
         out = tmp_path / "out.xml"
         genre = read_genre(src)
-        family = genre_family(genre)
+        family = genre_taxonomy.family(genre)
         run_pipeline(PIPELINES[family], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert "perseus_drama.rng" in result
 
-    def test_normalize_dispatch_uses_correct_pipeline_for_verse(self, tmp_path):
+    def test_normalize_dispatch_uses_correct_pipeline_for_verse(self, tmp_path, genre_taxonomy):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)
         out = tmp_path / "out.xml"
         genre = read_genre(src)
-        family = genre_family(genre)
+        family = genre_taxonomy.family(genre)
         run_pipeline(PIPELINES[family], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert "perseus_verse.rng" in result

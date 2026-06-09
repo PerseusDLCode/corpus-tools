@@ -7,8 +7,11 @@
 #   make validate FILES="path/to/*.xml"
 #   make pipeline FILES="path/to/*.xml" GENRE=verse-epic OUT=normalized/
 
-CT        := .venv/bin/corpus-tools
-AUDIT_REF := .venv/bin/audit-refs
+CT               := .venv/bin/corpus-tools
+ANNOTATE_GENRES  := .venv/bin/annotate-genres
+GENERATE_GENRES  := .venv/bin/generate-genre-map
+APPLY_GENRES     := .venv/bin/apply-genre-map
+AUDIT_REF        := .venv/bin/audit-refs
 AUDIT_STR := .venv/bin/audit-structure
 AUDIT_SCH := .venv/bin/audit-schema
 SCH          := schematron/perseus_normalized.sch
@@ -16,17 +19,32 @@ ENCODING_SCH := schematron/perseus_encoding.sch
 
 FILES ?= $(error FILES is required: make <target> FILES="path/to/*.xml")
 GENRE ?= $(error GENRE is required for set-genre: make set-genre FILES=... GENRE=prose-historiography)
+ODD   ?= ../perseus-schemas/perseus_base.odd
 OUT   ?=
+
+# --- genre annotation --------------------------------------------------------
+
+.PHONY: annotate-genres
+annotate-genres:  ## Suggest genres for all CTS works via Claude API: DATA_DIR=... [MODEL=...] [DRY_RUN=1]
+	$(ANNOTATE_GENRES) $(DATA_DIR) --odd $(ODD) $(if $(MODEL),--model $(MODEL)) $(if $(DRY_RUN),--dry-run)
+
+.PHONY: generate-genre-map
+generate-genre-map:  ## Generate genre review CSV: DATA_DIR=... OUTPUT_CSV=genres.csv
+	$(GENERATE_GENRES) $(DATA_DIR) $(OUTPUT_CSV)
+
+.PHONY: apply-genre-map
+apply-genre-map:  ## Apply reviewed genres to TEI files in-place: CSV_FILE=... DATA_DIR=...
+	$(APPLY_GENRES) $(CSV_FILE) $(DATA_DIR) --odd $(ODD)
 
 # --- pipeline ----------------------------------------------------------------
 
 .PHONY: set-genre
 set-genre:  ## Annotate files with Perseus genre: FILES="..." GENRE=prose-historiography [OUT=dir/]
-	$(CT) set-genre $(FILES) --genre $(GENRE) $(if $(OUT),-o $(OUT))
+	$(CT) set-genre $(FILES) --genre $(GENRE) --odd $(ODD) $(if $(OUT),-o $(OUT))
 
 .PHONY: normalize
 normalize:  ## Run normalization pipeline: FILES="..." [OUT=dir/]
-	$(CT) normalize $(FILES) $(if $(OUT),-o $(OUT))
+	$(CT) normalize $(FILES) --odd $(ODD) $(if $(OUT),-o $(OUT))
 
 .PHONY: validate
 validate:  ## Validate normalized files against pipeline schema: FILES="..."

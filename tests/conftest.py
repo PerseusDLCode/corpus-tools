@@ -3,6 +3,7 @@ from pathlib import Path
 import pytest
 
 from tei import TEIDocument
+from genres import load as load_genres
 
 
 # Add project root to Python path
@@ -12,6 +13,19 @@ sys.path.insert(0, str(project_root))
 # Also add the src directory
 src_path = project_root / "src"
 sys.path.insert(0, str(src_path))
+
+
+@pytest.fixture(scope="session")
+def odd_path():
+    p = Path(__file__).parent.parent.parent / "perseus-schemas" / "perseus_base.odd"
+    if not p.exists():
+        pytest.skip(f"perseus-schemas ODD not found at {p}")
+    return p
+
+
+@pytest.fixture(scope="session")
+def genre_taxonomy(odd_path):
+    return load_genres(odd_path)
 
 
 @pytest.fixture

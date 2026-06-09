@@ -10,6 +10,7 @@ from pathlib import Path
 
 from lxml import etree
 from transformer import transform
+from genres import load as load_genres
 
 
 @dataclass
@@ -19,21 +20,6 @@ class Step:
 
 
 _TEI_NS = "http://www.tei-c.org/ns/1.0"
-
-_DRAMA_GENRES = frozenset({
-    "attic-tragedy", "attic-comedy", "roman-comedy", "roman-tragedy", "early-modern-drama",
-})
-_VERSE_GENRES = frozenset({
-    "verse-epic", "verse-didactic", "verse-elegiac",
-    "verse-lyric-choral", "verse-lyric-pindaric", "verse-lyric-monodic",
-    "verse-satiric", "verse-epigram", "verse-iambic",
-})
-_PROSE_GENRES = frozenset({
-    "prose-historiography", "prose-philosophy", "prose-dialogue",
-    "prose-oratory", "prose-biography", "prose-epistolary", "prose-geography",
-})
-
-ALL_GENRES: frozenset[str] = _DRAMA_GENRES | _VERSE_GENRES | _PROSE_GENRES
 
 _CTS_URN_STEP = {"cts-base": "", "source-uri": ""}
 
@@ -69,17 +55,6 @@ def read_genre(source: Path) -> str:
         namespaces={"tei": _TEI_NS},
     )
     return str(targets[0]).lstrip("#") if targets else ""
-
-
-def genre_family(genre: str) -> str:
-    """Map a genre id to its pipeline family (prose/verse/drama)."""
-    if genre in _DRAMA_GENRES:
-        return "drama"
-    if genre in _VERSE_GENRES:
-        return "verse"
-    if genre in _PROSE_GENRES:
-        return "prose"
-    raise ValueError(f"Unknown genre {genre!r}. Valid genres: {sorted(ALL_GENRES)}")
 
 
 def compute_cts_urn(source_path: Path) -> str:
@@ -176,10 +151,11 @@ def main() -> None:
     sg.add_argument("files", nargs="+", type=Path, metavar="FILE")
     sg.add_argument(
         "--genre", required=True, metavar="GENRE",
-        help=(
-            "Genre category id (e.g. prose-historiography, verse-epic, attic-tragedy). "
-            f"Valid values: {', '.join(sorted(ALL_GENRES))}"
-        ),
+        help="Genre category id (e.g. prose-historiography, verse-epic, attic-tragedy).",
+    )
+    sg.add_argument(
+        "--odd", required=True, type=Path, metavar="ODD",
+        help="Path to perseus_base.odd (authoritative genre taxonomy).",
     )
     sg.add_argument(
         "-o", "--output", metavar="PATH",
@@ -195,6 +171,10 @@ def main() -> None:
         ),
     )
     norm.add_argument("files", nargs="+", type=Path, metavar="FILE")
+    norm.add_argument(
+        "--odd", required=True, type=Path, metavar="ODD",
+        help="Path to perseus_base.odd (authoritative genre taxonomy).",
+    )
     norm.add_argument(
         "-o", "--output", metavar="PATH",
         help="Output file (single input) or directory (batch). Default: overwrite in-place.",
@@ -241,10 +221,11 @@ def main() -> None:
     # --- set-genre -----------------------------------------------------------
     if args.command == "set-genre":
         genre = args.genre
-        if genre not in ALL_GENRES:
+        tax = load_genres(args.odd)
+        if genre not in tax.valid:
             print(
                 f"ERROR: {genre!r} is not a valid genre.\n"
-                f"Valid genres: {', '.join(sorted(ALL_GENRES))}",
+                f"Valid genres: {', '.join(sorted(tax.valid))}",
                 file=sys.stderr,
             )
             sys.exit(1)
@@ -265,6 +246,7 @@ def main() -> None:
     if args.command == "normalize":
         files = args.files
         batch = len(files) > 1
+        tax = load_genres(args.odd)
         overrides: dict[str, str] = {}
         if args.cts_base:
             overrides["cts-base"] = args.cts_base
@@ -280,7 +262,7 @@ def main() -> None:
                         "No genre catRef found. "
                         "Run 'corpus-tools set-genre --genre GENRE' first."
                     )
-                family = genre_family(genre)
+                family = tax.family(genre)
                 pipeline = PIPELINES[family]
                 output = _resolve_output(source, args.output, batch)
                 run_pipeline(pipeline, source, output, **overrides)

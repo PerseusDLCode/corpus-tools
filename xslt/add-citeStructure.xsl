@@ -23,8 +23,8 @@
             (//profileDesc/textClass/catRef[@scheme='#perseus-genre']/@target)[1],
             '^#', '')"/>
 
-    <!-- Flat verse (lyric, didactic): lines directly in body, no numbered divs above them -->
-    <xsl:template name="verse-citestructure">
+    <!-- verse-stichic: lines directly in body, no numbered divs above them -->
+    <xsl:template name="verse-stichic-cs">
         <refsDecl n="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                 <citeStructure unit="line" delim="." match="l" use="@n"/>
@@ -32,8 +32,8 @@
         </refsDecl>
     </xsl:template>
 
-    <!-- Epic verse: lines grouped in numbered book divs -->
-    <xsl:template name="verse-epic-citestructure">
+    <!-- verse-book-line (epic): lines grouped in numbered book divs -->
+    <xsl:template name="verse-book-line-cs">
         <refsDecl n="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                 <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
@@ -43,8 +43,8 @@
         </refsDecl>
     </xsl:template>
 
-    <!-- Greek/Roman drama: lines nested inside unnumbered structural divs; cite by line only -->
-    <xsl:template name="drama-citestructure">
+    <!-- drama-line (classical): lines nested inside unnumbered structural divs; cite by line only -->
+    <xsl:template name="drama-line-cs">
         <refsDecl n="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                 <citeStructure unit="line" delim="." match=".//l" use="@n"/>
@@ -52,8 +52,8 @@
         </refsDecl>
     </xsl:template>
 
-    <!-- Early-modern drama: act → scene → line -->
-    <xsl:template name="drama-early-modern-citestructure">
+    <!-- drama-act-scene-line (early modern): act → scene → line -->
+    <xsl:template name="drama-act-scene-line-cs">
         <refsDecl n="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                 <citeStructure unit="act" delim=":" match="div[@type='act']" use="@n">
@@ -65,8 +65,8 @@
         </refsDecl>
     </xsl:template>
 
-    <!-- Prose: book → chapter → section -->
-    <xsl:template name="prose-citestructure">
+    <!-- prose-standard: book → chapter → section -->
+    <xsl:template name="prose-standard-cs">
         <refsDecl n="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                 <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
@@ -74,6 +74,57 @@
                         <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
                     </citeStructure>
                 </citeStructure>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- prose-chapter-section: chapter → section (no book) -->
+    <xsl:template name="prose-chapter-section-cs">
+        <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="chapter" delim=":" match="div[@type='chapter']" use="@n">
+                    <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+                </citeStructure>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- prose-book-section: book → section (no chapter) -->
+    <xsl:template name="prose-book-section-cs">
+        <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                    <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+                </citeStructure>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- prose-book-chapter: book → chapter (no section) -->
+    <xsl:template name="prose-book-chapter-cs">
+        <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                    <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+                </citeStructure>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- prose-chapter: single chapter level -->
+    <xsl:template name="prose-chapter-cs">
+        <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- prose-section: single section level -->
+    <xsl:template name="prose-section-cs">
+        <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
             </citeStructure>
         </refsDecl>
     </xsl:template>
@@ -90,26 +141,47 @@ Valid categories are defined in the perseus-genre taxonomy in perseus_base.odd.
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
             <xsl:choose>
-                <xsl:when test="$genre-target = 'verse-epic'">
-                    <xsl:call-template name="verse-epic-citestructure"/>
+                <!-- structural subclasses -->
+                <xsl:when test="$genre-target = 'verse-book-line'">
+                    <xsl:call-template name="verse-book-line-cs"/>
                 </xsl:when>
-                <xsl:when test="$genre-target = ('verse-didactic', 'verse-elegiac',
-                                'verse-lyric-choral', 'verse-lyric-pindaric',
-                                'verse-lyric-monodic', 'verse-satiric',
-                                'verse-epigram', 'verse-iambic')">
-                    <xsl:call-template name="verse-citestructure"/>
+                <xsl:when test="$genre-target = 'verse-stichic'">
+                    <xsl:call-template name="verse-stichic-cs"/>
                 </xsl:when>
-                <xsl:when test="$genre-target = 'early-modern-drama'">
-                    <xsl:call-template name="drama-early-modern-citestructure"/>
+                <xsl:when test="$genre-target = 'drama-act-scene-line'">
+                    <xsl:call-template name="drama-act-scene-line-cs"/>
                 </xsl:when>
-                <xsl:when test="$genre-target = ('attic-tragedy', 'attic-comedy',
-                                'roman-comedy', 'roman-tragedy')">
-                    <xsl:call-template name="drama-citestructure"/>
+                <xsl:when test="$genre-target = 'drama-line'">
+                    <xsl:call-template name="drama-line-cs"/>
                 </xsl:when>
-                <xsl:when test="$genre-target = ('prose-historiography', 'prose-philosophy',
-                                'prose-dialogue', 'prose-oratory', 'prose-biography',
-                                'prose-epistolary', 'prose-geography')">
-                    <xsl:call-template name="prose-citestructure"/>
+                <xsl:when test="$genre-target = 'prose-standard'">
+                    <xsl:call-template name="prose-standard-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose-chapter-section'">
+                    <xsl:call-template name="prose-chapter-section-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose-book-section'">
+                    <xsl:call-template name="prose-book-section-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose-book-chapter'">
+                    <xsl:call-template name="prose-book-chapter-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose-chapter'">
+                    <xsl:call-template name="prose-chapter-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose-section'">
+                    <xsl:call-template name="prose-section-cs"/>
+                </xsl:when>
+                <!-- bare family targets: apply the family default citeStructure
+                     (the catRef is separately marked cert="low" / needs review) -->
+                <xsl:when test="$genre-target = 'verse'">
+                    <xsl:call-template name="verse-stichic-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'drama'">
+                    <xsl:call-template name="drama-line-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose'">
+                    <xsl:call-template name="prose-standard-cs"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:message terminate="yes">

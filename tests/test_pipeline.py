@@ -31,7 +31,7 @@ _PROSE = """\
     <encodingDesc/>
     <profileDesc>
       <textClass>
-        <catRef scheme="#perseus-genre" target="#prose-historiography"/>
+        <catRef scheme="#perseus-genre" target="#prose-standard"/>
       </textClass>
     </profileDesc>
   </teiHeader>
@@ -62,7 +62,7 @@ _VERSE_EPIC = """\
     <encodingDesc/>
     <profileDesc>
       <textClass>
-        <catRef scheme="#perseus-genre" target="#verse-epic"/>
+        <catRef scheme="#perseus-genre" target="#verse-book-line"/>
       </textClass>
     </profileDesc>
   </teiHeader>
@@ -93,7 +93,7 @@ _DRAMA = """\
     <encodingDesc/>
     <profileDesc>
       <textClass>
-        <catRef scheme="#perseus-genre" target="#attic-tragedy"/>
+        <catRef scheme="#perseus-genre" target="#drama-line"/>
       </textClass>
     </profileDesc>
   </teiHeader>
@@ -171,15 +171,15 @@ def _write(tmp_path: Path, name: str, content: str) -> Path:
 class TestReadGenre:
     def test_reads_prose_genre(self, tmp_path):
         src = _write(tmp_path, "test.xml", _PROSE)
-        assert read_genre(src) == "prose-historiography"
+        assert read_genre(src) == "prose-standard"
 
     def test_reads_verse_genre(self, tmp_path):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)
-        assert read_genre(src) == "verse-epic"
+        assert read_genre(src) == "verse-book-line"
 
     def test_reads_drama_genre(self, tmp_path):
         src = _write(tmp_path, "test.xml", _DRAMA)
-        assert read_genre(src) == "attic-tragedy"
+        assert read_genre(src) == "drama-line"
 
     def test_returns_empty_when_unannotated(self, tmp_path):
         src = _write(tmp_path, "test.xml", _UNANNOTATED)
@@ -192,13 +192,13 @@ class TestReadGenre:
 
 class TestGenreFamily:
     def test_prose_genre_maps_to_prose(self, genre_taxonomy):
-        assert genre_taxonomy.family("prose-historiography") == "prose"
+        assert genre_taxonomy.family("prose-standard") == "prose"
 
     def test_verse_genre_maps_to_verse(self, genre_taxonomy):
-        assert genre_taxonomy.family("verse-epic") == "verse"
+        assert genre_taxonomy.family("verse-book-line") == "verse"
 
     def test_drama_genre_maps_to_drama(self, genre_taxonomy):
-        assert genre_taxonomy.family("attic-tragedy") == "drama"
+        assert genre_taxonomy.family("drama-line") == "drama"
 
     def test_all_genres_map_to_a_family(self, genre_taxonomy):
         for g in genre_taxonomy.valid:
@@ -319,6 +319,25 @@ class TestRunPipeline:
         result = out.read_text()
         assert 'type="edition"' not in result
 
+    def test_prose_section_pipeline_adds_single_section_citestructure(self, tmp_path):
+        section_doc = _PROSE.replace(
+            'target="#prose-standard"', 'target="#prose-section"'
+        ).replace(
+            '<div type="textpart" subtype="book" n="1">\n'
+            '          <div type="textpart" subtype="chapter" n="1">\n'
+            '            <div type="textpart" subtype="section" n="1"><p>Test.</p></div>\n'
+            '          </div>\n'
+            '        </div>',
+            '<div type="textpart" subtype="section" n="1"><p>Test.</p></div>',
+        )
+        src = _write(tmp_path, "test.xml", section_doc)
+        out = tmp_path / "out.xml"
+        run_pipeline(PIPELINES["prose"], src, out, **{"cts-base": _TEST_URN})
+        result = out.read_text()
+        assert 'unit="section"' in result
+        assert 'unit="book"' not in result
+        assert 'unit="chapter"' not in result
+
     def test_drama_pipeline_sets_schema_pi(self, tmp_path):
         src = _write(tmp_path, "test.xml", _DRAMA)
         out = tmp_path / "out.xml"
@@ -417,15 +436,15 @@ class TestSetGenreAndNormalize:
         src = _write(tmp_path, "test.xml", _UNANNOTATED)
         out = tmp_path / "out.xml"
         from transformer import transform
-        xml = transform(src, "set-genre.xsl", target="prose-historiography")
+        xml = transform(src, "set-genre.xsl", target="prose-standard")
         out.write_text(xml, encoding="utf-8")
-        assert read_genre(out) == "prose-historiography"
+        assert read_genre(out) == "prose-standard"
 
     def test_set_genre_then_normalize_dispatches_to_prose(self, tmp_path, genre_taxonomy):
         src = _write(tmp_path, "test.xml", _UNANNOTATED)
         annotated = tmp_path / "annotated.xml"
         from transformer import transform
-        xml = transform(src, "set-genre.xsl", target="prose-historiography")
+        xml = transform(src, "set-genre.xsl", target="prose-standard")
         annotated.write_text(xml, encoding="utf-8")
 
         out = tmp_path / "out.xml"

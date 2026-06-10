@@ -1,4 +1,4 @@
-"""Tests for genres.py — ODD parsing, family mapping, error handling."""
+"""Tests for genres.py — ODD parsing, family/subclass mapping, error handling."""
 from __future__ import annotations
 
 import textwrap
@@ -16,16 +16,15 @@ _MINIMAL_ODD = textwrap.dedent("""\
           <classDecl>
             <taxonomy xml:id="perseus-genre">
               <category xml:id="drama">
-                <category xml:id="attic-tragedy"/>
-                <category xml:id="attic-comedy"/>
+                <category xml:id="drama-line"/>
+                <category xml:id="drama-act-scene-line"/>
               </category>
               <category xml:id="verse">
-                <category xml:id="verse-epic"/>
-                <category xml:id="verse-didactic"/>
+                <category xml:id="verse-stichic"/>
+                <category xml:id="verse-book-line"/>
               </category>
               <category xml:id="prose">
-                <category xml:id="prose-historiography"/>
-                <category xml:id="prose-dialogue"/>
+                <category xml:id="prose-standard"/>
               </category>
             </taxonomy>
           </classDecl>
@@ -34,6 +33,13 @@ _MINIMAL_ODD = textwrap.dedent("""\
       <text><body><p/></body></text>
     </TEI>
 """)
+
+_SUBCLASSES = {
+    "drama-line", "drama-act-scene-line",
+    "verse-stichic", "verse-book-line",
+    "prose-standard",
+}
+_FAMILIES = {"drama", "verse", "prose"}
 
 
 @pytest.fixture
@@ -48,19 +54,22 @@ class TestLoad:
         tax = load(minimal_odd)
         assert isinstance(tax, GenreTaxonomy)
 
-    def test_valid_contains_leaf_genres(self, minimal_odd):
-        tax = load(minimal_odd)
-        assert tax.valid == {
-            "attic-tragedy", "attic-comedy",
-            "verse-epic", "verse-didactic",
-            "prose-historiography", "prose-dialogue",
-        }
+    def test_subclasses(self, minimal_odd):
+        assert load(minimal_odd).subclasses == _SUBCLASSES
 
-    def test_family_categories_not_in_valid(self, minimal_odd):
+    def test_families(self, minimal_odd):
+        assert load(minimal_odd).families == _FAMILIES
+
+    def test_valid_is_subclasses_plus_families(self, minimal_odd):
         tax = load(minimal_odd)
-        assert "drama" not in tax.valid
-        assert "verse" not in tax.valid
-        assert "prose" not in tax.valid
+        assert tax.valid == _SUBCLASSES | _FAMILIES
+
+    def test_family_defaults(self, minimal_odd):
+        assert load(minimal_odd).family_default == {
+            "drama": "drama-line",
+            "verse": "verse-stichic",
+            "prose": "prose-standard",
+        }
 
     def test_missing_taxonomy_raises(self, tmp_path):
         p = tmp_path / "empty.odd"
@@ -72,44 +81,71 @@ class TestLoad:
         with pytest.raises(ValueError, match="No <taxonomy"):
             load(p)
 
+    def test_missing_family_default_raises(self, tmp_path):
+        # verse family present but its default subclass (verse-stichic) absent
+        odd = _MINIMAL_ODD.replace('<category xml:id="verse-stichic"/>', "")
+        p = tmp_path / "bad.odd"
+        p.write_text(odd, encoding="utf-8")
+        with pytest.raises(ValueError, match="verse-stichic"):
+            load(p)
 
-class TestGenreTaxonomyFamily:
-    def test_drama_leaf_maps_to_drama(self, minimal_odd):
-        tax = load(minimal_odd)
-        assert tax.family("attic-tragedy") == "drama"
-        assert tax.family("attic-comedy") == "drama"
 
-    def test_verse_leaf_maps_to_verse(self, minimal_odd):
+class TestFamily:
+    def test_subclass_maps_to_family(self, minimal_odd):
         tax = load(minimal_odd)
-        assert tax.family("verse-epic") == "verse"
-        assert tax.family("verse-didactic") == "verse"
+        assert tax.family("verse-book-line") == "verse"
+        assert tax.family("drama-act-scene-line") == "drama"
+        assert tax.family("prose-standard") == "prose"
 
-    def test_prose_leaf_maps_to_prose(self, minimal_odd):
+    def test_family_id_maps_to_itself(self, minimal_odd):
         tax = load(minimal_odd)
-        assert tax.family("prose-historiography") == "prose"
-        assert tax.family("prose-dialogue") == "prose"
+        assert tax.family("verse") == "verse"
+        assert tax.family("drama") == "drama"
 
-    def test_unknown_genre_raises_value_error(self, minimal_odd):
+    def test_unknown_target_raises_value_error(self, minimal_odd):
         tax = load(minimal_odd)
-        with pytest.raises(ValueError, match="Unknown genre"):
+        with pytest.raises(ValueError, match="Unknown genre target"):
             tax.family("not-a-genre")
 
-    def test_error_message_includes_valid_genres(self, minimal_odd):
+    def test_error_message_includes_valid_targets(self, minimal_odd):
         tax = load(minimal_odd)
-        with pytest.raises(ValueError, match="attic-tragedy"):
+        with pytest.raises(ValueError, match="verse-stichic"):
             tax.family("not-a-genre")
+
+
+class TestIsFamily:
+    def test_bare_family_is_family(self, minimal_odd):
+        assert load(minimal_odd).is_family("verse") is True
+
+    def test_subclass_is_not_family(self, minimal_odd):
+        assert load(minimal_odd).is_family("verse-stichic") is False
+
+
+class TestSubclassFor:
+    def test_subclass_returns_itself(self, minimal_odd):
+        assert load(minimal_odd).subclass_for("verse-book-line") == "verse-book-line"
+
+    def test_family_returns_default(self, minimal_odd):
+        tax = load(minimal_odd)
+        assert tax.subclass_for("verse") == "verse-stichic"
+        assert tax.subclass_for("drama") == "drama-line"
+        assert tax.subclass_for("prose") == "prose-standard"
+
+    def test_unknown_raises(self, minimal_odd):
+        with pytest.raises(ValueError):
+            load(minimal_odd).subclass_for("not-a-genre")
 
 
 class TestLoadFullOdd:
     """Smoke-test against the real perseus_base.odd when available."""
 
-    def test_full_taxonomy_has_expected_genres(self, genre_taxonomy):
+    def test_full_taxonomy_has_expected_subclasses(self, genre_taxonomy):
         expected = {
-            "attic-tragedy", "verse-epic", "prose-historiography",
-            "prose-dialogue", "attic-comedy", "roman-comedy",
+            "drama-line", "drama-act-scene-line",
+            "verse-stichic", "verse-book-line", "prose-standard",
         }
         assert expected <= genre_taxonomy.valid
 
-    def test_all_genres_have_known_family(self, genre_taxonomy):
-        for g in genre_taxonomy.valid:
+    def test_all_subclasses_have_known_family(self, genre_taxonomy):
+        for g in genre_taxonomy.subclasses:
             assert genre_taxonomy.family(g) in {"drama", "verse", "prose"}

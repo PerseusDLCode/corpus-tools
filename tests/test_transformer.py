@@ -28,6 +28,26 @@ class TestTransform:
         result = transform(thucydides_grc.path, "normalize-cts.xsl")
         assert 'type="edition"' not in result
 
+    def test_normalize_cts_hoists_and_lowercases_subtype(self, tmp_path):
+        # EpiDoc textpart/@subtype is hoisted to @type and lower-cased so a
+        # capitalized subtype="Book" (e.g. Homer) becomes type="book".
+        doc = tmp_path / "epic.xml"
+        doc.write_text(
+            '<TEI xmlns="http://www.tei-c.org/ns/1.0"><text>'
+            '<body xml:base="urn:cts:test">'
+            '<div type="edition">'
+            '<div type="textpart" subtype="Book" n="1">'
+            '<l n="1">x</l></div></div>'
+            "</body></text></TEI>",
+            encoding="utf-8",
+        )
+        result = transform(doc, "normalize-cts.xsl")
+        assert 'type="book"' in result
+        assert 'type="Book"' not in result
+        assert "subtype=" not in result
+        assert 'type="edition"' not in result
+        assert 'type="textpart"' not in result
+
     def test_all_eight_documents_transform_without_error(
         self,
         tlg0001_tlg001_perseus_grc2,

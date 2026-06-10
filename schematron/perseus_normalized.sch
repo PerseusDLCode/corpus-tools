@@ -27,17 +27,16 @@
     <sch:title>Genre category value</sch:title>
     <sch:rule context="tei:catRef[@scheme='#perseus-genre']">
       <sch:let name="valid-genres" value="(
-        'attic-tragedy', 'attic-comedy', 'roman-comedy', 'roman-tragedy', 'early-modern-drama',
-        'verse-epic', 'verse-didactic', 'verse-elegiac',
-        'verse-lyric-choral', 'verse-lyric-pindaric', 'verse-lyric-monodic',
-        'verse-satiric', 'verse-epigram', 'verse-iambic',
-        'prose-historiography', 'prose-philosophy', 'prose-dialogue',
-        'prose-oratory', 'prose-biography', 'prose-epistolary', 'prose-geography'
+        'drama-line', 'drama-act-scene-line',
+        'verse-stichic', 'verse-book-line',
+        'prose-standard', 'prose-chapter-section', 'prose-book-section',
+        'prose-book-chapter', 'prose-chapter', 'prose-section',
+        'drama', 'verse', 'prose'
       )"/>
       <sch:assert test="substring-after(@target, '#') = $valid-genres" role="error">
         catRef target '<sch:value-of select="@target"/>' is not a recognized
-        perseus-genre category. Valid categories are defined in the
-        perseus-genre taxonomy in perseus_base.odd.
+        perseus-genre category. Valid targets are the structural subclasses and the
+        bare family ids defined in the perseus-genre taxonomy in perseus_base.odd.
       </sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -151,11 +151,17 @@ def main() -> None:
     sg.add_argument("files", nargs="+", type=Path, metavar="FILE")
     sg.add_argument(
         "--genre", required=True, metavar="GENRE",
-        help="Genre category id (e.g. prose-historiography, verse-epic, attic-tragedy).",
+        help="Structural subclass id (e.g. verse-book-line, verse-stichic, drama-line, "
+             "drama-act-scene-line, prose-standard) or a bare family (verse, drama, prose).",
     )
     sg.add_argument(
         "--odd", required=True, type=Path, metavar="ODD",
         help="Path to perseus_base.odd (authoritative genre taxonomy).",
+    )
+    sg.add_argument(
+        "--cert", default="", metavar="CERT",
+        help="Mark the catRef cert=CERT resp='#corpus-tools' (e.g. 'low') to flag a "
+             "needs-review classification. Default: no flag.",
     )
     sg.add_argument(
         "-o", "--output", metavar="PATH",
@@ -235,7 +241,7 @@ def main() -> None:
         for source in files:
             output = _resolve_output(source, args.output, batch)
             try:
-                xml = transform(source, "set-genre.xsl", target=genre)
+                xml = transform(source, "set-genre.xsl", target=genre, cert=args.cert)
                 output.write_text(xml, encoding="utf-8")
             except Exception as exc:
                 print(f"ERROR: {source}: {exc}", file=sys.stderr)

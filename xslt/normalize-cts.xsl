@@ -14,11 +14,12 @@
         <xsl:apply-templates />
     </xsl:template>
     
-    <!-- hoist div subtypes to types -->
+    <!-- hoist div subtypes to types; lower-case so subtype="Book" -> type="book"
+         (citeStructure match patterns and the structural matcher expect lowercase units) -->
     <xsl:template match="div[@type='textpart' and @subtype]">
         <xsl:copy>
             <xsl:apply-templates select="@* except (@type, @subtype)"/>
-            <xsl:attribute name="type" select="@subtype"/>
+            <xsl:attribute name="type" select="lower-case(@subtype)"/>
             <xsl:apply-templates/>
         </xsl:copy>
     </xsl:template>

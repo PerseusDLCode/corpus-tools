@@ -34,24 +34,24 @@ _MINIMAL_ODD = textwrap.dedent("""\
           <classDecl>
             <taxonomy xml:id="perseus-genre">
               <category xml:id="drama">
-                <category xml:id="attic-tragedy">
-                  <catDesc>Attic tragedy (Aeschylus, Sophocles, Euripides).</catDesc>
+                <category xml:id="drama-line">
+                  <catDesc>Classical drama cited by line (Aeschylus, Sophocles, Euripides).</catDesc>
                 </category>
-                <category xml:id="attic-comedy">
-                  <catDesc>Attic comedy (Aristophanes, Menander).</catDesc>
+                <category xml:id="drama-act-scene-line">
+                  <catDesc>Drama cited act, scene, line.</catDesc>
                 </category>
               </category>
               <category xml:id="verse">
-                <category xml:id="verse-epic">
-                  <catDesc>Epic verse (Homer, Virgil).</catDesc>
+                <category xml:id="verse-stichic">
+                  <catDesc>Stichic verse cited by line.</catDesc>
+                </category>
+                <category xml:id="verse-book-line">
+                  <catDesc>Epic verse cited book, line (Homer, Virgil).</catDesc>
                 </category>
               </category>
               <category xml:id="prose">
-                <category xml:id="prose-historiography">
-                  <catDesc>Historiography (Thucydides, Herodotus).</catDesc>
-                </category>
-                <category xml:id="prose-dialogue">
-                  <catDesc>Platonic dialogue.</catDesc>
+                <category xml:id="prose-standard">
+                  <catDesc>Prose cited book, chapter, section (Thucydides, Herodotus).</catDesc>
                 </category>
               </category>
             </taxonomy>
@@ -88,7 +88,7 @@ _WORK_CTS_WITH_GENRE = textwrap.dedent("""\
     <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
              urn="urn:cts:greekLit:tlg0011.tlg001" xml:lang="grc">
       <ti:title xml:lang="eng">Medea</ti:title>
-      <ti:genre confidence="high">attic-tragedy</ti:genre>
+      <ti:genre confidence="high">drama-line</ti:genre>
     </ti:work>
 """)
 
@@ -281,8 +281,8 @@ class TestReadHelpers:
 class TestLoadGenreDescriptions:
     def test_returns_descriptions_for_leaf_genres(self, odd_file):
         descs = load_genre_descriptions(odd_file)
-        assert "attic-tragedy" in descs
-        assert "Aeschylus" in descs["attic-tragedy"]
+        assert "drama-line" in descs
+        assert "Aeschylus" in descs["drama-line"]
 
     def test_does_not_include_family_categories(self, odd_file):
         descs = load_genre_descriptions(odd_file)
@@ -307,17 +307,17 @@ class TestComputeConfidence:
     def test_high_when_structural_and_api_agree(self, odd_file):
         tax = load_genres(odd_file)
         signals = StructuralSignals(p_count=50)
-        assert compute_confidence("prose-historiography", signals, tax) == "high"
+        assert compute_confidence("prose-standard", signals, tax) == "high"
 
     def test_medium_when_structural_and_api_disagree(self, odd_file):
         tax = load_genres(odd_file)
         signals = StructuralSignals(p_count=50)
-        assert compute_confidence("attic-tragedy", signals, tax) == "medium"
+        assert compute_confidence("drama-line", signals, tax) == "medium"
 
     def test_medium_when_no_structural_signal(self, odd_file):
         tax = load_genres(odd_file)
         signals = StructuralSignals()
-        assert compute_confidence("verse-epic", signals, tax) == "medium"
+        assert compute_confidence("verse-book-line", signals, tax) == "medium"
 
     def test_low_for_unknown_genre(self, odd_file):
         tax = load_genres(odd_file)
@@ -332,28 +332,28 @@ class TestComputeConfidence:
 class TestWriteGenre:
     def test_writes_genre_element(self, prose_work_dir):
         _, work_cts = prose_work_dir
-        write_genre(work_cts, "prose-historiography", "high")
+        write_genre(work_cts, "prose-standard", "high")
         tree = etree.parse(str(work_cts))
         genres = tree.xpath(
             "//ti:genre", namespaces={"ti": "http://chs.harvard.edu/xmlns/cts"}
         )
         assert len(genres) == 1
-        assert genres[0].text == "prose-historiography"
+        assert genres[0].text == "prose-standard"
         assert genres[0].get("confidence") == "high"
 
     def test_overwrites_existing_genre(self, annotated_work_dir):
         _, work_cts = annotated_work_dir
-        write_genre(work_cts, "attic-comedy", "medium")
+        write_genre(work_cts, "drama-act-scene-line", "medium")
         tree = etree.parse(str(work_cts))
         genres = tree.xpath(
             "//ti:genre", namespaces={"ti": "http://chs.harvard.edu/xmlns/cts"}
         )
         assert len(genres) == 1
-        assert genres[0].text == "attic-comedy"
+        assert genres[0].text == "drama-act-scene-line"
 
     def test_preserves_other_elements(self, prose_work_dir):
         _, work_cts = prose_work_dir
-        write_genre(work_cts, "prose-historiography", "high")
+        write_genre(work_cts, "prose-standard", "high")
         tree = etree.parse(str(work_cts))
         titles = tree.xpath(
             "//ti:title", namespaces={"ti": "http://chs.harvard.edu/xmlns/cts"}
@@ -370,7 +370,7 @@ class TestAnnotateWork:
         _, work_cts = annotated_work_dir
         tax = load_genres(odd_file)
         descs = load_genre_descriptions(odd_file)
-        client = _mock_client("prose-historiography")
+        client = _mock_client("prose-standard")
         result = annotate_work(work_cts, client, tax, descs, "test-model", dry_run=False)
         assert result is None
         client.messages.create.assert_not_called()
@@ -379,12 +379,12 @@ class TestAnnotateWork:
         _, work_cts = prose_work_dir
         tax = load_genres(odd_file)
         descs = load_genre_descriptions(odd_file)
-        client = _mock_client("prose-historiography")
+        client = _mock_client("prose-standard")
 
         genre, confidence = annotate_work(
             work_cts, client, tax, descs, "test-model", dry_run=False
         )
-        assert genre == "prose-historiography"
+        assert genre == "prose-standard"
         assert confidence in {"high", "medium", "low"}
         client.messages.create.assert_called_once()
 
@@ -393,7 +393,7 @@ class TestAnnotateWork:
         genres = tree.xpath(
             "//ti:genre", namespaces={"ti": "http://chs.harvard.edu/xmlns/cts"}
         )
-        assert genres[0].text == "prose-historiography"
+        assert genres[0].text == "prose-standard"
 
     def test_invalid_api_response_writes_unknown(self, prose_work_dir, odd_file):
         _, work_cts = prose_work_dir
@@ -412,7 +412,7 @@ class TestAnnotateWork:
         original = work_cts.read_text()
         tax = load_genres(odd_file)
         descs = load_genre_descriptions(odd_file)
-        client = _mock_client("prose-historiography")
+        client = _mock_client("prose-standard")
 
         annotate_work(work_cts, client, tax, descs, "test-model", dry_run=True)
         assert work_cts.read_text() == original
@@ -421,7 +421,7 @@ class TestAnnotateWork:
         _, work_cts = prose_work_dir
         tax = load_genres(odd_file)
         descs = load_genre_descriptions(odd_file)
-        client = _mock_client("prose-historiography")
+        client = _mock_client("prose-standard")
 
         annotate_work(work_cts, client, tax, descs, "claude-opus-test", dry_run=True)
         call_kwargs = client.messages.create.call_args

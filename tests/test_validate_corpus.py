@@ -29,7 +29,7 @@ _VERSE_TEI = textwrap.dedent("""\
         </fileDesc>
         <profileDesc>
           <textClass>
-            <catRef scheme="#perseus-genre" target="#verse-epic"/>
+            <catRef scheme="#perseus-genre" target="#verse-book-line"/>
           </textClass>
         </profileDesc>
       </teiHeader>
@@ -54,13 +54,13 @@ _WORK_CTS = textwrap.dedent("""\
     <?xml version="1.0" encoding="UTF-8"?>
     <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
              urn="urn:cts:greekLit:tlg0003.tlg001">
-      <ti:genre confidence="high">prose-historiography</ti:genre>
+      <ti:genre confidence="high">prose-standard</ti:genre>
     </ti:work>
 """)
 
 _GENRES_CSV = textwrap.dedent("""\
     urn,path,author,title,suggested_genre,confidence,recommended_genre,notes
-    urn:cts:greekLit:tlg0003.tlg001.perseus-grc2,tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml,Thucydides,Histories,prose-historiography,high,prose-historiography,
+    urn:cts:greekLit:tlg0003.tlg001.perseus-grc2,tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml,Thucydides,Histories,prose-standard,high,prose-standard,
 """)
 
 
@@ -138,7 +138,7 @@ class TestGenreFromTei:
     def test_reads_catref_target(self, tmp_path):
         f = tmp_path / "verse.xml"
         f.write_text(_VERSE_TEI, encoding="utf-8")
-        assert _genre_from_tei(f) == "verse-epic"
+        assert _genre_from_tei(f) == "verse-book-line"
 
     def test_returns_empty_for_no_catref(self, tmp_path):
         f = tmp_path / "prose.xml"
@@ -162,7 +162,7 @@ class TestGenreFromCts:
         (work_dir / "__cts__.xml").write_text(_WORK_CTS, encoding="utf-8")
         f = work_dir / "text.xml"
         f.write_text(_PROSE_TEI, encoding="utf-8")
-        assert _genre_from_cts(f) == "prose-historiography"
+        assert _genre_from_cts(f) == "prose-standard"
 
     def test_returns_empty_when_no_cts_file(self, tmp_path):
         f = tmp_path / "text.xml"
@@ -179,7 +179,7 @@ class TestParseGenreMap:
         csv_path = tmp_path / "genres.csv"
         csv_path.write_text(_GENRES_CSV, encoding="utf-8")
         mapping = _parse_genre_map(csv_path)
-        assert mapping.get("tlg0003.tlg001.perseus-grc2") == "prose-historiography"
+        assert mapping.get("tlg0003.tlg001.perseus-grc2") == "prose-standard"
 
     def test_empty_recommended_genre_excluded(self, tmp_path):
         csv_path = tmp_path / "genres.csv"

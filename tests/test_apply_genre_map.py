@@ -22,14 +22,15 @@ _MINIMAL_ODD = textwrap.dedent("""\
           <classDecl>
             <taxonomy xml:id="perseus-genre">
               <category xml:id="drama">
-                <category xml:id="attic-tragedy"/>
+                <category xml:id="drama-line"/>
+                <category xml:id="drama-act-scene-line"/>
               </category>
               <category xml:id="verse">
-                <category xml:id="verse-epic"/>
+                <category xml:id="verse-stichic"/>
+                <category xml:id="verse-book-line"/>
               </category>
               <category xml:id="prose">
-                <category xml:id="prose-historiography"/>
-                <category xml:id="prose-dialogue"/>
+                <category xml:id="prose-standard"/>
               </category>
             </taxonomy>
           </classDecl>
@@ -74,8 +75,9 @@ def data_dir(tmp_path) -> Path:
 
 
 def _write_csv(path: Path, rows: list[dict]) -> Path:
-    fieldnames = ["urn", "path", "author", "title",
-                  "suggested_genre", "confidence", "recommended_genre", "notes"]
+    fieldnames = ["urn", "path", "author", "title", "suggested_genre", "confidence",
+                  "family", "proposed_subclass", "structure_signature", "match",
+                  "needs_review", "recommended_genre", "notes"]
     with path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -123,7 +125,7 @@ class TestPreValidation:
     def test_no_files_modified_when_validation_fails(self, tmp_path, data_dir, odd_file):
         csv_path = _write_csv(tmp_path / "g.csv", [
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-eng4.xml",
              "recommended_genre": "totally-invalid"},
         ])
@@ -150,9 +152,9 @@ class TestApplication:
     def test_applies_genre_to_each_non_blank_row(self, tmp_path, data_dir, odd_file):
         csv_path = _write_csv(tmp_path / "g.csv", [
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-eng4.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
         ])
         with patch("commands.apply_genre_map.apply_genre_to_file") as mock_apply:
             code = _invoke(["apply-genre-map", str(csv_path), str(data_dir), "--odd", str(odd_file)])
@@ -162,21 +164,21 @@ class TestApplication:
     def test_passes_correct_path_and_genre(self, tmp_path, data_dir, odd_file):
         csv_path = _write_csv(tmp_path / "g.csv", [
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
         ])
         with patch("commands.apply_genre_map.apply_genre_to_file") as mock_apply:
             _invoke(["apply-genre-map", str(csv_path), str(data_dir), "--odd", str(odd_file)])
         expected_path = data_dir / "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml"
-        mock_apply.assert_called_once_with(expected_path, "prose-historiography")
+        mock_apply.assert_called_once_with(expected_path, "prose-standard", "")
 
     def test_skips_blank_recommended_genre(self, tmp_path, data_dir, odd_file):
         csv_path = _write_csv(tmp_path / "g.csv", [
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-eng4.xml",
              "recommended_genre": ""},
             {"path": "tlg0006/tlg001/tlg0006.tlg001.perseus-grc2.xml",
-             "recommended_genre": "attic-tragedy"},
+             "recommended_genre": "drama-line"},
         ])
         with patch("commands.apply_genre_map.apply_genre_to_file") as mock_apply:
             _invoke(["apply-genre-map", str(csv_path), str(data_dir), "--odd", str(odd_file)])
@@ -185,9 +187,9 @@ class TestApplication:
     def test_missing_file_is_error_not_crash(self, tmp_path, data_dir, odd_file):
         csv_path = _write_csv(tmp_path / "g.csv", [
             {"path": "tlg9999/tlg001/missing.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
         ])
         with patch("commands.apply_genre_map.apply_genre_to_file") as mock_apply:
             code = _invoke(["apply-genre-map", str(csv_path), str(data_dir), "--odd", str(odd_file)])
@@ -198,11 +200,11 @@ class TestApplication:
     def test_transform_exception_is_error_not_crash(self, tmp_path, data_dir, odd_file):
         csv_path = _write_csv(tmp_path / "g.csv", [
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-eng4.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
         ])
-        def fail_first(path, genre):
+        def fail_first(path, genre, cert=""):
             if "grc2" in str(path):
                 raise RuntimeError("XSLT failure")
 
@@ -213,7 +215,7 @@ class TestApplication:
     def test_exit_0_on_all_success(self, tmp_path, data_dir, odd_file):
         csv_path = _write_csv(tmp_path / "g.csv", [
             {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
-             "recommended_genre": "prose-historiography"},
+             "recommended_genre": "prose-standard"},
         ])
         with patch("commands.apply_genre_map.apply_genre_to_file"):
             code = _invoke(["apply-genre-map", str(csv_path), str(data_dir), "--odd", str(odd_file)])
@@ -225,3 +227,35 @@ class TestApplication:
             code = _invoke(["apply-genre-map", str(csv_path), str(data_dir), "--odd", str(odd_file)])
         assert code == 0
         mock_apply.assert_not_called()
+
+
+class TestNeedsReviewFlag:
+    def test_bare_family_target_gets_cert_low(self, tmp_path, data_dir, odd_file):
+        csv_path = _write_csv(tmp_path / "g.csv", [
+            {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
+             "recommended_genre": "prose"},
+        ])
+        with patch("commands.apply_genre_map.apply_genre_to_file") as mock_apply:
+            _invoke(["apply-genre-map", str(csv_path), str(data_dir), "--odd", str(odd_file)])
+        expected_path = data_dir / "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml"
+        mock_apply.assert_called_once_with(expected_path, "prose", "low")
+
+    def test_needs_review_row_gets_cert_low(self, tmp_path, data_dir, odd_file):
+        csv_path = _write_csv(tmp_path / "g.csv", [
+            {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
+             "recommended_genre": "prose-standard", "needs_review": "true"},
+        ])
+        with patch("commands.apply_genre_map.apply_genre_to_file") as mock_apply:
+            _invoke(["apply-genre-map", str(csv_path), str(data_dir), "--odd", str(odd_file)])
+        expected_path = data_dir / "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml"
+        mock_apply.assert_called_once_with(expected_path, "prose-standard", "low")
+
+    def test_verified_subclass_gets_no_cert(self, tmp_path, data_dir, odd_file):
+        csv_path = _write_csv(tmp_path / "g.csv", [
+            {"path": "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml",
+             "recommended_genre": "prose-standard", "needs_review": "false"},
+        ])
+        with patch("commands.apply_genre_map.apply_genre_to_file") as mock_apply:
+            _invoke(["apply-genre-map", str(csv_path), str(data_dir), "--odd", str(odd_file)])
+        expected_path = data_dir / "tlg0003/tlg001/tlg0003.tlg001.perseus-grc2.xml"
+        mock_apply.assert_called_once_with(expected_path, "prose-standard", "")

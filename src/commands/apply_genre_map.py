@@ -9,9 +9,13 @@ from genres import load as load_genres
 from transformer import transform
 
 
-def apply_genre_to_file(tei_path: Path, genre: str) -> None:
-    xml = transform(tei_path, "set-genre.xsl", target=genre)
+def apply_genre_to_file(tei_path: Path, genre: str, cert: str = "") -> None:
+    xml = transform(tei_path, "set-genre.xsl", target=genre, cert=cert)
     tei_path.write_text(xml, encoding="utf-8")
+
+
+def _truthy(value: str) -> bool:
+    return value.strip().lower() in ("true", "1", "yes")
 
 
 def main() -> None:
@@ -70,9 +74,14 @@ def main() -> None:
             errors += 1
             continue
 
+        # Flag needs-review classifications: a bare family target (family default
+        # applied) or a row the verification step marked for review.
+        cert = "low" if (taxonomy.is_family(genre) or _truthy(row.get("needs_review", ""))) else ""
+
         try:
-            apply_genre_to_file(tei_path, genre)
-            print(f"{row['path']} → {genre}")
+            apply_genre_to_file(tei_path, genre, cert)
+            suffix = "  [needs review]" if cert else ""
+            print(f"{row['path']} → {genre}{suffix}")
             applied += 1
         except Exception as exc:
             print(f"ERROR: {tei_path}: {exc}", file=sys.stderr)

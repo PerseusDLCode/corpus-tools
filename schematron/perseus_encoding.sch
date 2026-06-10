@@ -67,4 +67,21 @@
     </sch:rule>
   </sch:pattern>
 
+  <!-- ============================================================
+       Genre classification needs review
+       ============================================================ -->
+
+  <sch:pattern id="genre-needs-review">
+    <sch:title>Genre set to family default / unverified subclass</sch:title>
+    <sch:rule context="tei:catRef[@scheme='#perseus-genre']">
+      <sch:report test="@cert='low' or substring-after(@target, '#') = ('drama', 'verse', 'prose')"
+                  role="warning">
+        Genre classification needs review: the catRef targets a bare family
+        ('<sch:value-of select="substring-after(@target, '#')"/>') or is marked
+        cert="low". The family-default citeStructure was applied but no structural
+        subclass has been verified against the document's actual citation structure.
+      </sch:report>
+    </sch:rule>
+  </sch:pattern>
+
 </sch:schema>

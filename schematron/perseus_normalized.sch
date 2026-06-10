@@ -29,7 +29,8 @@
       <sch:let name="valid-genres" value="(
         'drama-line', 'drama-act-scene-line',
         'verse-stichic', 'verse-book-line',
-        'prose-standard', 'prose-chapter-section', 'prose-book-section', 'prose-section',
+        'prose-standard', 'prose-chapter-section', 'prose-book-section',
+        'prose-book-chapter', 'prose-chapter', 'prose-section',
         'drama', 'verse', 'prose'
       )"/>
       <sch:assert test="substring-after(@target, '#') = $valid-genres" role="error">

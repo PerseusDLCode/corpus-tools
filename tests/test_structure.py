@@ -8,7 +8,8 @@ from structure import (
     signature_from_xml,
 )
 
-_PROSE_FAMILY = ["prose-standard", "prose-chapter-section", "prose-book-section", "prose-section"]
+_PROSE_FAMILY = ["prose-standard", "prose-chapter-section", "prose-book-section",
+                 "prose-book-chapter", "prose-chapter", "prose-section"]
 _VERSE_FAMILY = ["verse-stichic", "verse-book-line"]
 
 
@@ -35,6 +36,10 @@ PROSE_CHAPTER_SECTION = _doc(
 PROSE_BOOK_SECTION = _doc(
     '<div type="book" n="1"><div type="section" n="1"><p>x</p></div></div>'
 )
+PROSE_BOOK_CHAPTER = _doc(
+    '<div type="book" n="1"><div type="chapter" n="1"><p>x</p></div></div>'
+)
+PROSE_CHAPTER_ONLY = _doc('<div type="chapter" n="1"><p>x</p></div>')
 DRAMA_LINE = _doc('<div type="episode"><sp><speaker>A</speaker><l n="1">x</l></sp></div>')
 DRAMA_ACT_SCENE = _doc(
     '<div type="act" n="1"><div type="scene" n="1"><l n="1">x</l></div></div>'
@@ -184,6 +189,20 @@ class TestBestFit:
         # structureless prose body fits no prose subclass
         empty = signature_from_xml(_doc("<p>x</p>"))
         assert best_fit(_PROSE_FAMILY, empty) is None
+
+    def test_book_chapter_resolves(self):
+        assert best_fit(_PROSE_FAMILY, signature_from_xml(PROSE_BOOK_CHAPTER)) == "prose-book-chapter"
+
+    def test_chapter_only_resolves(self):
+        assert best_fit(_PROSE_FAMILY, signature_from_xml(PROSE_CHAPTER_ONLY)) == "prose-chapter"
+
+    def test_full_nesting_still_resolves_to_standard(self):
+        # with the extra subclasses, book->chapter->section must still win as deepest
+        assert best_fit(_PROSE_FAMILY, signature_from_xml(PROSE_STANDARD)) == "prose-standard"
+
+    def test_chapter_section_still_resolves(self):
+        # chapter->section must not be shadowed by the new chapter-only subclass
+        assert best_fit(_PROSE_FAMILY, signature_from_xml(PROSE_CHAPTER_SECTION)) == "prose-chapter-section"
 
 
 class TestDescribe:

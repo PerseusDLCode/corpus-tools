@@ -111,6 +111,17 @@
         </refsDecl>
     </xsl:template>
 
+    <!-- prose-chapter-verse: chapter → verse (New Testament and biblical-style texts) -->
+    <xsl:template name="prose-chapter-verse-cs">
+        <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="chapter" delim=":" match="div[@type='chapter']" use="@n">
+                    <citeStructure unit="verse" delim="." match="div[@type='verse']" use="@n"/>
+                </citeStructure>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
     <!-- prose-chapter: single chapter level -->
     <xsl:template name="prose-chapter-cs">
         <refsDecl n="CTS">
@@ -128,6 +139,9 @@
             </citeStructure>
         </refsDecl>
     </xsl:template>
+
+    <!-- Suppress existing CTS refsDecl; encodingDesc template emits a fresh one -->
+    <xsl:template match="encodingDesc/refsDecl[@n='CTS']"/>
 
     <xsl:template match="encodingDesc">
         <xsl:if test="$genre-target = ''">
@@ -165,6 +179,9 @@ Valid categories are defined in the perseus-genre taxonomy in perseus_base.odd.
                 </xsl:when>
                 <xsl:when test="$genre-target = 'prose-book-chapter'">
                     <xsl:call-template name="prose-book-chapter-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose-chapter-verse'">
+                    <xsl:call-template name="prose-chapter-verse-cs"/>
                 </xsl:when>
                 <xsl:when test="$genre-target = 'prose-chapter'">
                     <xsl:call-template name="prose-chapter-cs"/>

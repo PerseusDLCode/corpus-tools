@@ -30,7 +30,7 @@
         'drama-line', 'drama-act-scene-line',
         'verse-stichic', 'verse-book-line',
         'prose-standard', 'prose-chapter-section', 'prose-book-section',
-        'prose-book-chapter', 'prose-chapter', 'prose-chapter-verse', 'prose-epistle', 'prose-fragment', 'prose-section',
+        'prose-book-chapter', 'prose-chapter', 'prose-chapter-verse', 'prose-epistle', 'prose-fragment', 'prose-paragraph', 'prose-section',
         'drama', 'verse', 'prose'
       )"/>
       <sch:assert test="substring-after(@target, '#') = $valid-genres" role="error">

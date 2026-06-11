@@ -131,6 +131,15 @@
         </refsDecl>
     </xsl:template>
 
+    <!-- prose-paragraph: single paragraph level (EpiDoc div[@type='textpart'][@subtype='paragraph']) -->
+    <xsl:template name="prose-paragraph-cs">
+        <refsDecl n="CTS" xml:id="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="paragraph" delim="." match=".//div[@type='textpart'][@subtype='paragraph']" use="@n"/>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
     <!-- prose-fragment: single fragment level (EpiDoc div[@type='textpart'][@subtype='fragment']) -->
     <xsl:template name="prose-fragment-cs">
         <refsDecl n="CTS" xml:id="CTS">
@@ -206,6 +215,9 @@ Valid categories are defined in the perseus-genre taxonomy in perseus_base.odd.
                 </xsl:when>
                 <xsl:when test="$genre-target = 'prose-fragment'">
                     <xsl:call-template name="prose-fragment-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose-paragraph'">
+                    <xsl:call-template name="prose-paragraph-cs"/>
                 </xsl:when>
                 <xsl:when test="$genre-target = 'prose-chapter'">
                     <xsl:call-template name="prose-chapter-cs"/>

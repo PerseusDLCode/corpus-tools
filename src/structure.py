@@ -60,6 +60,7 @@ HIERARCHY: dict[str, list[str]] = {
     "prose-chapter-verse": ["chapter", "verse"],
     "prose-epistle": ["epistle"],
     "prose-fragment": ["fragment"],
+    "prose-paragraph": ["paragraph"],
     "prose-section": ["section"],
     "verse-book-line": ["book", LINE],
     "verse-stichic": [LINE],

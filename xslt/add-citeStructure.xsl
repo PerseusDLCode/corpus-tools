@@ -122,6 +122,15 @@
         </refsDecl>
     </xsl:template>
 
+    <!-- prose-fragment: single fragment level (EpiDoc div[@type='textpart'][@subtype='fragment']) -->
+    <xsl:template name="prose-fragment-cs">
+        <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="fragment" delim="." match=".//div[@type='textpart'][@subtype='fragment']" use="@n"/>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
     <!-- prose-chapter: single chapter level -->
     <xsl:template name="prose-chapter-cs">
         <refsDecl n="CTS">
@@ -182,6 +191,9 @@ Valid categories are defined in the perseus-genre taxonomy in perseus_base.odd.
                 </xsl:when>
                 <xsl:when test="$genre-target = 'prose-chapter-verse'">
                     <xsl:call-template name="prose-chapter-verse-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose-fragment'">
+                    <xsl:call-template name="prose-fragment-cs"/>
                 </xsl:when>
                 <xsl:when test="$genre-target = 'prose-chapter'">
                     <xsl:call-template name="prose-chapter-cs"/>

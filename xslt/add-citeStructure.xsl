@@ -27,7 +27,7 @@
     <xsl:template name="verse-stichic-cs">
         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-                <citeStructure unit="line" delim="." match="l" use="@n"/>
+                <citeStructure unit="line" delim=":" match="l" use="@n"/>
             </citeStructure>
         </refsDecl>
     </xsl:template>
@@ -47,7 +47,7 @@
     <xsl:template name="drama-line-cs">
         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-                <citeStructure unit="line" delim="." match=".//l" use="@n"/>
+                <citeStructure unit="line" delim=":" match=".//l" use="@n"/>
             </citeStructure>
         </refsDecl>
     </xsl:template>
@@ -126,7 +126,7 @@
     <xsl:template name="prose-epistle-cs">
         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-                <citeStructure unit="epistle" delim="." match=".//div[@type='textpart'][@subtype='epistle' or @subtype='letter']" use="@n"/>
+                <citeStructure unit="epistle" delim=":" match=".//div[@type='textpart'][@subtype='epistle' or @subtype='letter']" use="@n"/>
             </citeStructure>
         </refsDecl>
     </xsl:template>
@@ -135,7 +135,7 @@
     <xsl:template name="prose-paragraph-cs">
         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-                <citeStructure unit="paragraph" delim="." match=".//div[@type='textpart'][@subtype='paragraph']" use="@n"/>
+                <citeStructure unit="paragraph" delim=":" match=".//div[@type='textpart'][@subtype='paragraph']" use="@n"/>
             </citeStructure>
         </refsDecl>
     </xsl:template>
@@ -144,7 +144,7 @@
     <xsl:template name="prose-fragment-cs">
         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-                <citeStructure unit="fragment" delim="." match=".//div[@type='textpart'][@subtype='fragment']" use="@n"/>
+                <citeStructure unit="fragment" delim=":" match=".//div[@type='textpart'][@subtype='fragment']" use="@n"/>
             </citeStructure>
         </refsDecl>
     </xsl:template>
@@ -153,7 +153,7 @@
     <xsl:template name="prose-chapter-cs">
         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+                <citeStructure unit="chapter" delim=":" match="div[@type='chapter']" use="@n"/>
             </citeStructure>
         </refsDecl>
     </xsl:template>
@@ -162,7 +162,7 @@
     <xsl:template name="prose-section-cs">
         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-                <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+                <citeStructure unit="section" delim=":" match="div[@type='section']" use="@n"/>
             </citeStructure>
         </refsDecl>
     </xsl:template>

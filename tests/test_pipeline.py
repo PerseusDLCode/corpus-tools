@@ -1,7 +1,9 @@
 """Tests for pipeline.py — genre helpers, CTS URN computation, output resolution, and pipeline runs."""
 from __future__ import annotations
 
+import sys
 from pathlib import Path
+from unittest.mock import patch
 
 import pytest
 
@@ -471,3 +473,82 @@ class TestSetGenreAndNormalize:
         run_pipeline(PIPELINES[family], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert "perseus_verse.rng" in result
+
+
+# ---------------------------------------------------------------------------
+# main() CLI dispatch
+# ---------------------------------------------------------------------------
+
+class TestMainDispatch:
+    """Test the argparse layer and sys.argv routing in pipeline.main()."""
+
+    def test_no_subcommand_exits_nonzero(self):
+        from pipeline import main
+        with patch.object(sys, "argv", ["corpus-tools"]):
+            with pytest.raises(SystemExit) as exc:
+                main()
+        assert exc.value.code != 0
+
+    def test_set_genre_writes_catref(self, tmp_path, odd_path):
+        from pipeline import main
+        src = _write(tmp_path, "test.xml", _UNANNOTATED)
+        out = tmp_path / "out.xml"
+        with patch.object(sys, "argv", [
+            "corpus-tools", "set-genre",
+            "--genre", "prose-standard",
+            "--odd", str(odd_path),
+            "-o", str(out),
+            str(src),
+        ]):
+            with pytest.raises(SystemExit) as exc:
+                main()
+        assert exc.value.code == 0
+        assert read_genre(out) == "prose-standard"
+
+    def test_set_genre_invalid_genre_exits_nonzero(self, tmp_path, odd_path):
+        from pipeline import main
+        src = _write(tmp_path, "test.xml", _UNANNOTATED)
+        with patch.object(sys, "argv", [
+            "corpus-tools", "set-genre",
+            "--genre", "not-a-real-genre",
+            "--odd", str(odd_path),
+            str(src),
+        ]):
+            with pytest.raises(SystemExit) as exc:
+                main()
+        assert exc.value.code != 0
+
+    def test_normalize_dispatches_and_writes_output(self, tmp_path, odd_path):
+        from pipeline import main
+        src = _write(tmp_path, "test.xml", _PROSE)
+        out = tmp_path / "out.xml"
+        with patch.object(sys, "argv", [
+            "corpus-tools", "normalize",
+            "--odd", str(odd_path),
+            "--cts-base", _TEST_URN,
+            "-o", str(out),
+            str(src),
+        ]):
+            with pytest.raises(SystemExit) as exc:
+                main()
+        assert exc.value.code == 0
+        assert "perseus_prose.rng" in out.read_text()
+
+    def test_validate_valid_file_exits_zero(self, tmp_path):
+        from pipeline import main
+        src = _write(tmp_path, "test.xml", _PROSE)
+        with patch("validate.validate_file", return_value=[]):
+            with patch.object(sys, "argv", ["corpus-tools", "validate", str(src)]):
+                with pytest.raises(SystemExit) as exc:
+                    main()
+        assert exc.value.code == 0
+
+    def test_validate_invalid_file_exits_nonzero(self, tmp_path):
+        from pipeline import main
+        src = _write(tmp_path, "test.xml", _PROSE)
+        fake_failure = {"type": "failed-assert", "location": "/TEI[1]", "test": "x", "message": "Missing"}
+        with patch("validate.validate_file", return_value=[fake_failure]):
+            with patch.object(sys, "argv", ["corpus-tools", "validate", str(src)]):
+                with pytest.raises(SystemExit) as exc:
+                    main()
+        assert exc.value.code != 0

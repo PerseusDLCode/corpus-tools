@@ -167,6 +167,41 @@
         </refsDecl>
     </xsl:template>
 
+    <!-- verse-poem-line: lines grouped in numbered poem divs (Catullus, Martial) -->
+    <xsl:template name="verse-poem-line-cs">
+        <refsDecl n="CTS" xml:id="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="poem" delim=":" match="div[@type='poem']" use="@n">
+                    <citeStructure unit="line" delim="." match="l" use="@n"/>
+                </citeStructure>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- verse-book-poem-line: lines in poems in books (Horace Odes, Ovid Amores) -->
+    <xsl:template name="verse-book-poem-line-cs">
+        <refsDecl n="CTS" xml:id="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                    <citeStructure unit="poem" delim="." match="div[@type='poem']" use="@n">
+                        <citeStructure unit="line" delim="." match="l" use="@n"/>
+                    </citeStructure>
+                </citeStructure>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- prose-commentary-section: commentary → section (scholia, commentarii) -->
+    <xsl:template name="prose-commentary-section-cs">
+        <refsDecl n="CTS" xml:id="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="commentary" delim=":" match="div[@type='commentary']" use="@n">
+                    <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+                </citeStructure>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
     <!-- Suppress existing CTS refsDecl; encodingDesc template emits a fresh one -->
     <xsl:template match="encodingDesc/refsDecl[@n='CTS']"/>
 
@@ -185,6 +220,12 @@ Valid categories are defined in the perseus-genre taxonomy in perseus_base.odd.
                 <!-- structural subclasses -->
                 <xsl:when test="$genre-target = 'verse-book-line'">
                     <xsl:call-template name="verse-book-line-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'verse-book-poem-line'">
+                    <xsl:call-template name="verse-book-poem-line-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'verse-poem-line'">
+                    <xsl:call-template name="verse-poem-line-cs"/>
                 </xsl:when>
                 <xsl:when test="$genre-target = 'verse-stichic'">
                     <xsl:call-template name="verse-stichic-cs"/>
@@ -221,6 +262,9 @@ Valid categories are defined in the perseus-genre taxonomy in perseus_base.odd.
                 </xsl:when>
                 <xsl:when test="$genre-target = 'prose-chapter'">
                     <xsl:call-template name="prose-chapter-cs"/>
+                </xsl:when>
+                <xsl:when test="$genre-target = 'prose-commentary-section'">
+                    <xsl:call-template name="prose-commentary-section-cs"/>
                 </xsl:when>
                 <xsl:when test="$genre-target = 'prose-section'">
                     <xsl:call-template name="prose-section-cs"/>

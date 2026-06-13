@@ -3,9 +3,9 @@
 # Usage:
 #   make audit FILES="path/to/*.xml"
 #   make audit-refs FILES="path/to/*.xml" OUT=reports/
-#   make normalize FILES="path/to/*.xml" GENRE=prose-historiography OUT=normalized/
+#   make normalize FILES="path/to/*.xml" GENRE=prose-standard OUT=normalized/
 #   make validate FILES="path/to/*.xml"
-#   make pipeline FILES="path/to/*.xml" GENRE=verse-epic OUT=normalized/
+#   make pipeline FILES="path/to/*.xml" GENRE=verse-stichic OUT=normalized/
 
 CT               := .venv/bin/corpus-tools
 ANNOTATE_GENRES  := .venv/bin/annotate-genres
@@ -21,7 +21,7 @@ ENCODING_SCH     := schematron/perseus_encoding.sch
 SCHEMA_DIR       ?= ../perseus-schemas
 
 FILES     ?= $(error FILES is required: make <target> FILES="path/to/*.xml")
-GENRE     ?= $(error GENRE is required for set-genre: make set-genre FILES=... GENRE=prose-historiography)
+GENRE     ?= $(error GENRE is required for set-genre: make set-genre FILES=... GENRE=prose-standard)
 ODD       ?= ../perseus-schemas/perseus_base.odd
 OUT       ?=
 OUT_DIR   ?= survey
@@ -34,7 +34,7 @@ annotate-genres:  ## Suggest genres for all CTS works via Claude API: DATA_DIR=.
 
 .PHONY: generate-genre-map
 generate-genre-map:  ## Generate genre review CSV: DATA_DIR=... OUTPUT_CSV=genres.csv
-	$(GENERATE_GENRES) $(DATA_DIR) $(OUTPUT_CSV)
+	$(GENERATE_GENRES) $(DATA_DIR) $(OUTPUT_CSV) --odd $(ODD)
 
 .PHONY: apply-genre-map
 apply-genre-map:  ## Apply reviewed genres to TEI files in-place: CSV_FILE=... DATA_DIR=...
@@ -43,7 +43,7 @@ apply-genre-map:  ## Apply reviewed genres to TEI files in-place: CSV_FILE=... D
 # --- pipeline ----------------------------------------------------------------
 
 .PHONY: set-genre
-set-genre:  ## Annotate files with Perseus genre: FILES="..." GENRE=prose-historiography [OUT=dir/]
+set-genre:  ## Annotate files with Perseus genre: FILES="..." GENRE=prose-standard [OUT=dir/]
 	$(CT) set-genre $(FILES) --genre $(GENRE) --odd $(ODD) $(if $(OUT),-o $(OUT))
 
 .PHONY: normalize

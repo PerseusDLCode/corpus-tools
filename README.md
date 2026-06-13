@@ -35,12 +35,12 @@ corpus-tools set-genre FILE [FILE ...] --genre GENRE --odd ODD [-o PATH]
 ```bash
 # Annotate in-place
 corpus-tools set-genre tlg0003.tlg001.1st1K-eng1.xml \
-    --genre prose-historiography \
+    --genre prose-standard \
     --odd ../perseus-schemas/perseus_base.odd
 
 # Annotate a batch, writing into a separate directory
 corpus-tools set-genre -o annotated/ canonical-greekLit/data/tlg0003/tlg001/*.xml \
-    --genre prose-historiography \
+    --genre prose-standard \
     --odd ../perseus-schemas/perseus_base.odd
 ```
 
@@ -74,7 +74,7 @@ corpus-tools normalize tlg0003.tlg001.1st1K-eng1.xml \
     --odd ../perseus-schemas/perseus_base.odd
 
 # Full workflow: annotate then normalize into a separate directory
-corpus-tools set-genre --genre prose-historiography --odd ../perseus-schemas/perseus_base.odd \
+corpus-tools set-genre --genre prose-standard --odd ../perseus-schemas/perseus_base.odd \
     tlg0003.tlg001.1st1K-eng1.xml
 corpus-tools normalize -o normalized/ --odd ../perseus-schemas/perseus_base.odd \
     tlg0003.tlg001.1st1K-eng1.xml
@@ -171,7 +171,7 @@ file. The `recommended_genre` column is pre-filled with `suggested_genre`;
 classicists edit this column to correct any mistakes before the next step.
 
 ```bash
-generate-genre-map DATA_DIR OUTPUT_CSV
+generate-genre-map DATA_DIR OUTPUT_CSV --odd ODD
 ```
 
 **CSV columns**
@@ -188,7 +188,8 @@ generate-genre-map DATA_DIR OUTPUT_CSV
 | `notes` | Free text for editorial notes. |
 
 ```bash
-generate-genre-map ../data-local/canonical-greekLit/data genres.csv
+generate-genre-map ../data-local/canonical-greekLit/data genres.csv \
+    --odd ../perseus-schemas/perseus_base.odd
 ```
 
 Send `genres.csv` to classicists. They correct the `recommended_genre` column,
@@ -358,7 +359,7 @@ survey-corpus ../data-local/canonical-greekLit/data \
 # Restrict to a single genre for focused review
 survey-corpus ../data-local/canonical-greekLit/data \
     --odd ../perseus-schemas/perseus_base.odd \
-    --genre verse-epic
+    --genre verse-book-line
 ```
 
 ---
@@ -415,7 +416,7 @@ validate-corpus ../data-local/canonical-greekLit/data \
 ```bash
 # Survey element/attribute vocabulary (OUT_DIR defaults to survey/)
 make survey-corpus DATA_DIR=../data-local/canonical-greekLit/data
-make survey-corpus DATA_DIR=../data-local/canonical-greekLit/data OUT_DIR=survey/ GENRE=verse-epic
+make survey-corpus DATA_DIR=../data-local/canonical-greekLit/data OUT_DIR=survey/ GENRE=verse-book-line
 
 # Validate against target Perseus schemas
 make validate-corpus DATA_DIR=../data-local/canonical-greekLit/data
@@ -438,10 +439,10 @@ make generate-genre-map DATA_DIR=../data-local/canonical-greekLit/data OUTPUT_CS
 make apply-genre-map   CSV_FILE=genres.csv DATA_DIR=../data-local/canonical-greekLit/data
 
 # Pipeline
-make set-genre FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" GENRE=prose-historiography
+make set-genre FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" GENRE=prose-standard
 make normalize FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" OUT=normalized/
 make validate  FILES="normalized/*.xml"
-make pipeline  FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" GENRE=prose-historiography OUT=normalized/
+make pipeline  FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml" GENRE=prose-standard OUT=normalized/
 
 # Audit
 make audit           FILES="canonical-greekLit/data/tlg0003/tlg001/*.xml"   # all three auditors

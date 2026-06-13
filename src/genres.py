@@ -5,9 +5,7 @@ from pathlib import Path
 
 from lxml import etree
 
-_TEI_NS = "http://www.tei-c.org/ns/1.0"
-_XML_NS = "http://www.w3.org/XML/1998/namespace"
-_NS = {"tei": _TEI_NS, "xml": _XML_NS}
+from tei import NS, XML_NS
 _FAMILY_IDS = {"drama", "verse", "prose"}
 
 # Each family's default structural subclass. A document classified only by family
@@ -83,7 +81,7 @@ def load(odd_path: Path) -> GenreTaxonomy:
     tree = etree.parse(str(odd_path))
     results = tree.xpath(
         "//tei:taxonomy[@xml:id='perseus-genre']",
-        namespaces=_NS,
+        namespaces=NS,
     )
     if not results:
         raise ValueError(f"No <taxonomy xml:id='perseus-genre'> found in {odd_path}")
@@ -91,15 +89,15 @@ def load(odd_path: Path) -> GenreTaxonomy:
 
     families: set[str] = set()
     subclass_family: dict[str, str] = {}
-    for family_cat in taxonomy.xpath("tei:category", namespaces=_NS):
-        fid = family_cat.get(f"{{{_XML_NS}}}id")
+    for family_cat in taxonomy.xpath("tei:category", namespaces=NS):
+        fid = family_cat.get(f"{{{XML_NS}}}id")
         if fid not in _FAMILY_IDS:
             continue
         families.add(fid)
         for leaf in family_cat.xpath(
-            ".//tei:category[not(tei:category)]", namespaces=_NS
+            ".//tei:category[not(tei:category)]", namespaces=NS
         ):
-            lid = leaf.get(f"{{{_XML_NS}}}id")
+            lid = leaf.get(f"{{{XML_NS}}}id")
             if lid:
                 subclass_family[lid] = fid
 

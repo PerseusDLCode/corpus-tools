@@ -9,10 +9,7 @@ from pathlib import Path
 from lxml import etree
 
 from auditors import StructureAuditor
-from tei import TEIDocument, NS
-
-_CTS_NS = "http://chs.harvard.edu/xmlns/cts"
-_CTS = {"ti": _CTS_NS}
+from tei import TEIDocument, NS, CTS_NS
 
 # Attribute names (namespace-stripped) whose value vocabulary is worth capturing.
 _VALUE_ATTRS = {
@@ -37,7 +34,7 @@ def _genre_from_cts(xml_path: Path) -> str:
     if not work_cts.exists():
         return ""
     try:
-        genres = etree.parse(str(work_cts)).xpath("//ti:genre", namespaces=_CTS)
+        genres = etree.parse(str(work_cts)).xpath("//ti:genre", namespaces={"ti": CTS_NS})
         if genres:
             return (genres[0].text or "").strip()
     except Exception:

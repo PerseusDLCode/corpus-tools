@@ -23,10 +23,10 @@ from dataclasses import dataclass
 
 from lxml import etree
 
-_TEI_NS = "http://www.tei-c.org/ns/1.0"
-_NS = {"tei": _TEI_NS}
-_DIV = f"{{{_TEI_NS}}}div"
-_L = f"{{{_TEI_NS}}}l"
+from tei import TEI_NS, NS
+
+_DIV = f"{{{TEI_NS}}}div"
+_L = f"{{{TEI_NS}}}l"
 
 # div @type values that are structural wrappers, never citation units. The matcher
 # descends through them but does not count them.
@@ -92,10 +92,10 @@ class StructureSignature:
 
 
 def _body(root: etree._Element) -> etree._Element:
-    bodies = root.xpath("//tei:body", namespaces=_NS)
+    bodies = root.xpath("//tei:body", namespaces=NS)
     if bodies:
         return bodies[0]
-    texts = root.xpath("//tei:text", namespaces=_NS)
+    texts = root.xpath("//tei:text", namespaces=NS)
     return texts[0] if texts else root
 
 

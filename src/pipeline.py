@@ -11,15 +11,13 @@ from pathlib import Path
 from lxml import etree
 from transformer import transform
 from genres import load as load_genres
+from tei import TEI_NS
 
 
 @dataclass
 class Step:
     stylesheet: str
     params: dict[str, str] = field(default_factory=dict)
-
-
-_TEI_NS = "http://www.tei-c.org/ns/1.0"
 
 _CTS_URN_STEP = {"cts-base": "", "source-uri": ""}
 
@@ -52,7 +50,7 @@ def read_genre(source: Path) -> str:
     tree = etree.parse(str(source))
     targets = tree.xpath(
         "//tei:catRef[@scheme='#perseus-genre']/@target",
-        namespaces={"tei": _TEI_NS},
+        namespaces={"tei": TEI_NS},
     )
     return str(targets[0]).lstrip("#") if targets else ""
 
@@ -77,7 +75,7 @@ def read_existing_cts_urn(source_path: Path) -> str:
     tree = etree.parse(str(source_path))
     attrs = tree.xpath(
         "//tei:body/@xml:base",
-        namespaces={"tei": _TEI_NS},
+        namespaces={"tei": TEI_NS},
     )
     urn = str(attrs[0]) if attrs else ""
     return urn if urn.startswith("urn:cts:") else ""

@@ -16,10 +16,11 @@
     <xsl:variable name="schema-path" as="xs:string"
         select="concat($schema-path-base, normalize-space(translate($tei-schema, &quot;'&quot;, '')), '.rng')"/>
 
-    <!-- Match the xml-model PI and replace the href -->
-    <xsl:template match="processing-instruction('xml-model')">
+    <!-- Replace the first xml-model PI with the correct schema href; suppress extras -->
+    <xsl:template match="processing-instruction('xml-model')[1]">
         <xsl:processing-instruction name="xml-model"
             select="concat('href=&quot;', $schema-path, '&quot; schematypens=&quot;http://relaxng.org/ns/structure/1.0&quot;')"/>
     </xsl:template>
+    <xsl:template match="processing-instruction('xml-model')[position() gt 1]"/>
 
 </xsl:stylesheet>

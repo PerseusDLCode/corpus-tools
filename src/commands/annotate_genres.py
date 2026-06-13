@@ -9,6 +9,23 @@ from lxml import etree
 
 from genres import GenreTaxonomy, load as load_genres
 
+def _load_dotenv() -> None:
+    """Load ANTHROPIC_API_KEY from the project-root .env without requiring python-dotenv."""
+    import os
+    root = Path(__file__).parent.parent.parent  # src/commands -> src -> project root
+    env_file = root / ".env"
+    if not env_file.exists():
+        return
+    for line in env_file.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        if key and key not in os.environ:
+            os.environ[key] = value.strip()
+
+
 _CTS_NS = "http://chs.harvard.edu/xmlns/cts"
 _TEI_NS = "http://www.tei-c.org/ns/1.0"
 _XML_NS = "http://www.w3.org/XML/1998/namespace"
@@ -286,6 +303,8 @@ def main() -> None:
             file=sys.stderr,
         )
         sys.exit(1)
+
+    _load_dotenv()
 
     taxonomy = load_genres(args.odd)
     descriptions = load_genre_descriptions(args.odd)

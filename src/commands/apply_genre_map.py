@@ -5,6 +5,8 @@ import csv
 import sys
 from pathlib import Path
 
+from lxml import etree
+
 from genres import load as load_genres
 from transformer import transform
 
@@ -60,7 +62,7 @@ def main() -> None:
         print(f"\nValid genres: {', '.join(sorted(taxonomy.valid))}", file=sys.stderr)
         sys.exit(1)
 
-    applied = skipped = errors = 0
+    applied = skipped = p4_skipped = errors = 0
 
     for row in rows:
         genre = row.get("recommended_genre", "").strip()
@@ -72,6 +74,18 @@ def main() -> None:
         if not tei_path.exists():
             print(f"ERROR: {tei_path}: file not found", file=sys.stderr)
             errors += 1
+            continue
+
+        # Detect P4 documents — set-genre.xsl is TEI P5-only and silently no-ops on <TEI.2>.
+        try:
+            root_tag = etree.parse(str(tei_path)).getroot().tag
+        except etree.XMLSyntaxError as exc:
+            print(f"ERROR: {tei_path}: {exc}", file=sys.stderr)
+            errors += 1
+            continue
+        if root_tag == "TEI.2":
+            print(f"SKIP (P4 <TEI.2>): {row['path']}", file=sys.stderr)
+            p4_skipped += 1
             continue
 
         # Flag needs-review classifications: a bare family target (family default
@@ -88,7 +102,8 @@ def main() -> None:
             errors += 1
 
     print(
-        f"\nDone. {applied} applied, {skipped} skipped (blank), {errors} errors.",
+        f"\nDone. {applied} applied, {skipped} skipped (blank), "
+        f"{p4_skipped} skipped (P4), {errors} errors.",
         file=sys.stderr,
     )
     sys.exit(errors)

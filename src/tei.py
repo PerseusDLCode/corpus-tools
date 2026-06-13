@@ -8,8 +8,10 @@ from lxml import etree
 # Constants
 TEI_NS = "http://www.tei-c.org/ns/1.0"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
+CTS_NS = "http://chs.harvard.edu/xmlns/cts"
 
-NS = {"tei": TEI_NS, "xml": XML_NS}
+NAMESPACES = {"tei": TEI_NS, "ti": CTS_NS, "xml": XML_NS}
+NS = NAMESPACES
 
 XML_BASE = f"{{{XML_NS}}}base"
 XML_ID   = f"{{{XML_NS}}}id"

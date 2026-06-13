@@ -11,9 +11,7 @@ from genres import load as load_genres
 from genre_map import family_of
 from pipeline import compute_cts_urn, read_existing_cts_urn
 from structure import best_fit, classify_structure
-
-_CTS_NS = "http://chs.harvard.edu/xmlns/cts"
-_CTS = {"ti": _CTS_NS}
+from tei import CTS_NS
 
 FIELDNAMES = [
     "urn",
@@ -38,7 +36,7 @@ FIELDNAMES = [
 
 def _read_groupname(textgroup_cts: Path) -> str:
     try:
-        names = etree.parse(str(textgroup_cts)).xpath("//ti:groupname", namespaces=_CTS)
+        names = etree.parse(str(textgroup_cts)).xpath("//ti:groupname", namespaces={"ti": CTS_NS})
         return names[0].text.strip() if names and names[0].text else ""
     except Exception:
         return ""
@@ -46,7 +44,7 @@ def _read_groupname(textgroup_cts: Path) -> str:
 
 def _read_work_title(work_cts: Path) -> str:
     try:
-        titles = etree.parse(str(work_cts)).xpath("//ti:title", namespaces=_CTS)
+        titles = etree.parse(str(work_cts)).xpath("//ti:title", namespaces={"ti": CTS_NS})
         return titles[0].text.strip() if titles and titles[0].text else ""
     except Exception:
         return ""
@@ -55,7 +53,7 @@ def _read_work_title(work_cts: Path) -> str:
 def _read_genre_annotation(work_cts: Path) -> tuple[str, str]:
     """Return (genre_id, confidence) from <ti:genre>, or ('', '') if absent."""
     try:
-        genres = etree.parse(str(work_cts)).xpath("//ti:genre", namespaces=_CTS)
+        genres = etree.parse(str(work_cts)).xpath("//ti:genre", namespaces={"ti": CTS_NS})
         if genres:
             return genres[0].text or "", genres[0].get("confidence", "")
         return "", ""

@@ -11,11 +11,7 @@ from pathlib import Path
 from lxml import etree
 
 from genres import load as load_genres
-
-_CTS_NS = "http://chs.harvard.edu/xmlns/cts"
-_CTS = {"ti": _CTS_NS}
-_TEI_NS = "http://www.tei-c.org/ns/1.0"
-_NS = {"tei": _TEI_NS}
+from tei import NS, CTS_NS
 
 _FAMILY_SCHEMA = {
     "prose": "perseus_prose.rng",
@@ -41,7 +37,7 @@ def _genre_from_tei(xml_path: Path) -> str:
         root = etree.parse(str(xml_path)).getroot()
         refs = root.xpath(
             "//tei:profileDesc/tei:textClass/tei:catRef[@scheme='#perseus-genre']/@target",
-            namespaces=_NS,
+            namespaces=NS,
         )
         return str(refs[0]).lstrip("#") if refs else ""
     except Exception:
@@ -53,7 +49,7 @@ def _genre_from_cts(xml_path: Path) -> str:
     if not work_cts.exists():
         return ""
     try:
-        genres = etree.parse(str(work_cts)).xpath("//ti:genre", namespaces=_CTS)
+        genres = etree.parse(str(work_cts)).xpath("//ti:genre", namespaces={"ti": CTS_NS})
         if genres:
             return (genres[0].text or "").strip()
     except Exception:

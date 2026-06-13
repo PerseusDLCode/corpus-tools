@@ -74,7 +74,6 @@ class ReferenceAuditReport:
     issues: list[str]
 
     def render_text(self) -> str:
-        XML_ID_ATTR = "{http://www.w3.org/XML/1998/namespace}id"
         lines = [
             f"\n{'='*70}",
             f"FILE: {self.path.name}  [reference audit]",
@@ -127,14 +126,13 @@ class ReferenceAuditor(Auditor[ReferenceAuditReport]):
     def audit(self) -> ReferenceAuditReport:
         rule_report = RuleAuditor(self._doc, _REFERENCE_RULES).audit()
 
-        XML_ID_ATTR = "{http://www.w3.org/XML/1998/namespace}id"
         refsDecls = self._doc.refsDecls
 
         return ReferenceAuditReport(
             path=self._doc.path,
             base_urn=self._doc.base_urn,
             refsDecl_count=len(refsDecls),
-            refsDecl_ids=[rd.get(XML_ID_ATTR, "") for rd in refsDecls],
+            refsDecl_ids=[rd.get(XML_ID, "") for rd in refsDecls],
             refsDecl_has_cite_structure=[
                 bool(rd.xpath("tei:citeStructure", namespaces=NS)) for rd in refsDecls
             ],

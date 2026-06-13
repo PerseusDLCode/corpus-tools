@@ -8,6 +8,7 @@ from pathlib import Path
 from lxml import etree
 
 from genres import GenreTaxonomy, load as load_genres
+from tei import CTS_NS, TEI_NS, XML_NS, NS
 
 def _load_dotenv() -> None:
     """Load ANTHROPIC_API_KEY from the project-root .env without requiring python-dotenv."""
@@ -24,13 +25,6 @@ def _load_dotenv() -> None:
         key = key.strip()
         if key and key not in os.environ:
             os.environ[key] = value.strip()
-
-
-_CTS_NS = "http://chs.harvard.edu/xmlns/cts"
-_TEI_NS = "http://www.tei-c.org/ns/1.0"
-_XML_NS = "http://www.w3.org/XML/1998/namespace"
-_CTS = {"ti": _CTS_NS}
-_TEI = {"tei": _TEI_NS}
 
 
 # ---------------------------------------------------------------------------
@@ -63,10 +57,10 @@ def gather_signals(work_dir: Path) -> StructuralSignals:
             tree = etree.parse(str(xml_file))
         except etree.XMLSyntaxError:
             continue
-        signals.sp_count += len(tree.xpath("//tei:sp", namespaces=_TEI))
-        signals.l_count += len(tree.xpath("//tei:l | //tei:lg", namespaces=_TEI))
-        signals.p_count += len(tree.xpath("//tei:text//tei:p", namespaces=_TEI))
-        for div_type in tree.xpath("//tei:div/@type", namespaces=_TEI):
+        signals.sp_count += len(tree.xpath("//tei:sp", namespaces=NS))
+        signals.l_count += len(tree.xpath("//tei:l | //tei:lg", namespaces=NS))
+        signals.p_count += len(tree.xpath("//tei:text//tei:p", namespaces=NS))
+        for div_type in tree.xpath("//tei:div/@type", namespaces=NS):
             t = str(div_type)
             if t not in signals.div_types:
                 signals.div_types.append(t)
@@ -80,7 +74,7 @@ def gather_signals(work_dir: Path) -> StructuralSignals:
 def read_groupname(textgroup_cts: Path) -> str:
     try:
         tree = etree.parse(str(textgroup_cts))
-        names = tree.xpath("//ti:groupname", namespaces=_CTS)
+        names = tree.xpath("//ti:groupname", namespaces=NS)
         return names[0].text.strip() if names and names[0].text else ""
     except Exception:
         return ""
@@ -93,12 +87,12 @@ def read_work_metadata(work_cts: Path) -> tuple[str, str]:
     except Exception:
         return "", ""
 
-    titles = tree.xpath("//ti:title", namespaces=_CTS)
+    titles = tree.xpath("//ti:title", namespaces=NS)
     title = titles[0].text.strip() if titles and titles[0].text else ""
 
     eng_descs = tree.xpath(
         "//ti:description[@xml:lang='eng'] | //ti:description[@xml:lang='mul']",
-        namespaces={"ti": _CTS_NS, "xml": _XML_NS},
+        namespaces=NS,
     )
     description = eng_descs[0].text.strip() if eng_descs and eng_descs[0].text else ""
     return title, description
@@ -111,14 +105,13 @@ def read_work_metadata(work_cts: Path) -> tuple[str, str]:
 def load_genre_descriptions(odd_path: Path) -> dict[str, str]:
     """Return {genre_id: catDesc_text} for all leaf genres in the ODD."""
     tree = etree.parse(str(odd_path))
-    ns = {"tei": _TEI_NS, "xml": _XML_NS}
-    results = tree.xpath("//tei:taxonomy[@xml:id='perseus-genre']", namespaces=ns)
+    results = tree.xpath("//tei:taxonomy[@xml:id='perseus-genre']", namespaces=NS)
     if not results:
         return {}
     descriptions: dict[str, str] = {}
-    for cat in results[0].xpath(".//tei:category[not(tei:category)]", namespaces=ns):
-        cid = cat.get(f"{{{_XML_NS}}}id")
-        desc_el = cat.find(f"{{{_TEI_NS}}}catDesc")
+    for cat in results[0].xpath(".//tei:category[not(tei:category)]", namespaces=NS):
+        cid = cat.get(f"{{{XML_NS}}}id")
+        desc_el = cat.find(f"{{{TEI_NS}}}catDesc")
         if cid and desc_el is not None and desc_el.text:
             descriptions[cid] = " ".join(desc_el.text.split())
     return descriptions
@@ -187,10 +180,10 @@ def write_genre(work_cts: Path, genre: str, confidence: str) -> None:
     root = tree.getroot()
 
     # Remove any existing ti:genre element
-    for old in root.findall(f"{{{_CTS_NS}}}genre"):
+    for old in root.findall(f"{{{CTS_NS}}}genre"):
         root.remove(old)
 
-    genre_el = etree.SubElement(root, f"{{{_CTS_NS}}}genre")
+    genre_el = etree.SubElement(root, f"{{{CTS_NS}}}genre")
     genre_el.set("confidence", confidence)
     genre_el.text = genre
 
@@ -216,7 +209,7 @@ def annotate_work(
 ) -> tuple[str, str] | None:
     """Annotate one work. Returns (genre, confidence), or None if already annotated."""
     tree = etree.parse(str(work_cts))
-    existing = tree.xpath("//ti:genre", namespaces=_CTS)
+    existing = tree.xpath("//ti:genre", namespaces=NS)
     if existing:
         return None  # already annotated, skip
 

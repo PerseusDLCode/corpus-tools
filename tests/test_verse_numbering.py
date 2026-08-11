@@ -3,7 +3,7 @@ from __future__ import annotations
 from lxml import etree
 
 from tei import NS
-from verse_numbering import number_document, number_scene, collect_scene_lines
+from verse_numbering import number_document, number_scene, collect_scene_lines, collect_act_direct_lines
 
 TEI_NS = NS["tei"]
 
@@ -236,6 +236,51 @@ class TestStageExclusion:
         number_scene(scene, "test.xml")
         assert stage_l.get("n") is None
         assert l2.get("n") == "11"
+
+
+class TestActLevelChorus:
+    """Prologue/Epilogue speeches sitting directly under <div type="act">
+    with no <div type="scene"> wrapper (real corpus cases: h5, h8, tro).
+    """
+
+    def _build_prologue(self) -> etree._Element:
+        root = etree.Element(_tei("TEI"), nsmap={None: TEI_NS})
+        body = etree.SubElement(root, _tei("body"))
+        act = etree.SubElement(body, _tei("div"), type="act", n="prologue")
+        sp = etree.SubElement(act, _tei("sp"))
+        for text in ["a", "b", "c"]:
+            line_el = etree.SubElement(sp, _tei("l"))
+            line_el.text = text
+        # a proper scene elsewhere, to make sure it isn't double-processed
+        act2 = etree.SubElement(body, _tei("div"), type="act", n="1")
+        scene = etree.SubElement(act2, _tei("div"), type="scene", n="1")
+        sp2 = etree.SubElement(scene, _tei("sp"))
+        etree.SubElement(sp2, _tei("l")).text = "x"
+        return root
+
+    def test_direct_lines_collected(self):
+        root = self._build_prologue()
+        act = root.xpath("//tei:div[@type='act'][@n='prologue']", namespaces=NS)[0]
+        lines = collect_act_direct_lines(act)
+        assert [line.text for line in lines] == ["a", "b", "c"]
+
+    def test_numbered_by_number_document(self):
+        root = self._build_prologue()
+        warnings, collisions = number_document(root, "test.xml")
+        act = root.xpath("//tei:div[@type='act'][@n='prologue']", namespaces=NS)[0]
+        lines = list(act.iter(_tei("l")))
+        assert [line.get("n") for line in lines] == ["1", "2", "3"]
+
+    def test_scene_wrapped_lines_excluded_from_act_direct_lines(self):
+        root = self._build_prologue()
+        act_with_scene = root.xpath("//tei:div[@type='act'][@n='1']", namespaces=NS)[0]
+        assert collect_act_direct_lines(act_with_scene) == []
+
+    def test_scene_and_prologue_both_numbered_independently(self):
+        root = self._build_prologue()
+        number_document(root, "test.xml")
+        scene_line = root.xpath("//tei:div[@type='scene']//tei:l", namespaces=NS)[0]
+        assert scene_line.get("n") == "1"
 
 
 class TestNumberDocument:

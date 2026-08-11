@@ -4,6 +4,8 @@ import argparse
 import sys
 from pathlib import Path
 
+from lxml import etree
+
 from tei import TEIDocument
 from verse_numbering import number_document, render_collision_table
 
@@ -16,6 +18,15 @@ def _resolve_output(source: Path, output_arg: str | None, batch: bool) -> Path:
         out.mkdir(parents=True, exist_ok=True)
         return out / source.name
     return out
+
+
+def _write(tree: etree._ElementTree, output: Path) -> None:
+    # lxml's own xml_declaration writes single-quoted attrs and forces a
+    # newline before the root element/PIs; this corpus's convention is a
+    # single-line double-quoted declaration with no gap, so build it by hand
+    # to keep the diff to just the added @n attributes.
+    body = etree.tostring(tree, xml_declaration=False, encoding="UTF-8", pretty_print=False)
+    output.write_bytes(b'<?xml version="1.0" encoding="UTF-8"?>' + body)
 
 
 def main() -> None:
@@ -53,9 +64,7 @@ def main() -> None:
 
             if not args.dry_run:
                 output = _resolve_output(source, args.output, batch)
-                doc.tree.write(
-                    str(output), xml_declaration=True, encoding="UTF-8", pretty_print=True,
-                )
+                _write(doc.tree, output)
         except Exception as exc:
             print(f"ERROR: {source}: {exc}", file=sys.stderr)
             errors += 1

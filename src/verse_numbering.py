@@ -65,20 +65,39 @@ def collect_scene_lines(scene: etree._Element) -> list[etree._Element]:
     return [line for line in scene.iter(TEI_L) if not _has_stage_ancestor(line, scene)]
 
 
+def collect_act_direct_lines(act: etree._Element) -> list[etree._Element]:
+    """<l> descendants of an act not already inside a nested scene div or <stage>.
+
+    Covers Chorus/Prologue/Epilogue speeches encoded directly under
+    <div type="act" n="prologue"/"epilogue"> with no scene wrapper (e.g. h5,
+    h8, tro), which would otherwise be silently skipped entirely.
+    """
+    lines = []
+    for line in act.iter(TEI_L):
+        node = line.getparent()
+        in_nested_scene = False
+        while node is not None and node is not act:
+            if node.tag == TEI_DIV and node.get("type") == "scene":
+                in_nested_scene = True
+                break
+            node = node.getparent()
+        if not in_nested_scene and not _has_stage_ancestor(line, act):
+            lines.append(line)
+    return lines
+
+
 def scene_label(scene: etree._Element) -> tuple[str, str]:
     act_n = scene.xpath("ancestor::tei:div[@type='act'][1]/@n", namespaces=NS)
     return (str(act_n[0]) if act_n else "?", scene.get("n", "?"))
 
 
-def number_scene(
-    scene: etree._Element, play: str
+def _number_lines(
+    all_lines: list[etree._Element], play: str, act: str, scene_n: str
 ) -> tuple[list[NumberingWarning], list[CollisionReport]]:
-    """Assign @n to every <l> in a scene missing it. Mutates the tree in place."""
+    """Assign @n to every <l> in all_lines missing it. Mutates the tree in place."""
     warnings: list[NumberingWarning] = []
     collisions: list[CollisionReport] = []
-    act, scene_n = scene_label(scene)
 
-    all_lines = collect_scene_lines(scene)
     if not all_lines:
         warnings.append(NumberingWarning(play, act, scene_n, "no <l> elements (prose-only scene)"))
         return warnings, collisions
@@ -164,6 +183,14 @@ def number_scene(
     return warnings, collisions
 
 
+def number_scene(
+    scene: etree._Element, play: str
+) -> tuple[list[NumberingWarning], list[CollisionReport]]:
+    """Assign @n to every <l> in a scene missing it. Mutates the tree in place."""
+    act, scene_n = scene_label(scene)
+    return _number_lines(collect_scene_lines(scene), play, act, scene_n)
+
+
 def number_document(
     root: etree._Element, play: str
 ) -> tuple[list[NumberingWarning], list[CollisionReport]]:
@@ -175,6 +202,17 @@ def number_document(
         w, c = number_scene(scene, play)
         warnings.extend(w)
         collisions.extend(c)
+
+    for act in root.iter(TEI_DIV):
+        if act.get("type") != "act":
+            continue
+        direct_lines = collect_act_direct_lines(act)
+        if not direct_lines:
+            continue
+        w, c = _number_lines(direct_lines, play, act.get("n", "?"), "(act-level, no scene wrapper)")
+        warnings.extend(w)
+        collisions.extend(c)
+
     return warnings, collisions
 
 

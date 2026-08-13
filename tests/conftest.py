@@ -28,6 +28,22 @@ def genre_taxonomy(odd_path):
     return load_genres(odd_path)
 
 
+@pytest.fixture(scope="session")
+def shakedracor_tei_dir():
+    p = Path(__file__).parent.parent.parent.parent / "shakedracor" / "tei"
+    if not p.exists():
+        pytest.skip(f"shakedracor repo not found at {p}")
+    return p
+
+
+@pytest.fixture(scope="session")
+def canonical_englit_shakespeare_dir():
+    p = Path(__file__).parent.parent.parent / "canonical-engLit" / "data" / "shakespeare"
+    if not p.exists():
+        pytest.skip(f"canonical-engLit repo not found at {p}")
+    return p
+
+
 @pytest.fixture
 def tlg0001_tlg001_perseus_grc2(shared_datadir):
     return TEIDocument(shared_datadir / "tlg0001.tlg001.perseus-grc2.xml")

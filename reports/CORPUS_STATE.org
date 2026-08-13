@@ -1,0 +1,267 @@
+#+title: The State of the Perseus Corpus
+#+date: <2026-06-14 Sun>
+#+author: Clifford Wulfman
+#+email: clifford.wulfman@tufts.edu
+#+language: en
+
+* Introduction
+:PROPERTIES:
+:CUSTOM_ID: introduction
+:END:
+Perseus has been encoding Greek and Latin texts, critical commentary,
+and lexica since the 1980s, first in SGML and then in XML, using
+schemas based on the Guidelines of the Text Encoding Initiative.
+Perseus's text encoding has been and continues to be ground-breaking
+and innovative, as Perseus's researchers investigate the affordances
+of machine-readable text, and the variety of its methods can be found
+throughout the corpora today.
+
+As Perseus develops a new generation of research tools and reading
+environments, it is working through its texts to normalize their
+encoding and produce a controlled schema and encoding guidelines. This
+standardization will greatly simplify automated large-scale
+processing, which has often been hampered by the number and variety of
+edge cases.  This project will result in a new Perseus edition, whose
+encoded texts will be distinct from earlier versions (which will
+continue to be available indefinitely as legacy editions). (See [[https://github.com/PerseusDLCode/MinimumViablePerseus/discussions/56][discussion]].)
+
+This normalization takes three forms:
+
+- Structural Normalization :: Perseus has exercised many strategies to
+  encode the structure of written works.  Some encodings have
+  attempted simply to capture the /logical structure/ of a work,
+  independent of printed source text: its generic sequences of prose
+  blocks and verse lines, organized into equally generic divisions
+  (chapters; scenes; stanzas).  Others have tried to encode both the
+  /logical structure/ of the work and the /physical structure/ of the
+  source edition: line breaks; pagination; headings; notes and
+  annotations.
+
+  Several years ago, Perseus experimented with adopting the EpiDoc
+  schema for all of its texts, regardless of source or genre, in an
+  attempt to standardize its encoded structures with a ready-made
+  TEI customization.  EpiDoc was developed to encode inscriptions and
+  papyri, however, and has turned out to be a less-than-perfect fit
+  for printed books.  Perseus is now developing its own TEI
+  customizations (the approved way of using the TEI's collections of
+  elements and attributes for serious encoding projects) based on the
+  logical structure of various text genres.  These customizations form
+  a family of schemas that will be applied to encoded texts based on
+  their genre.
+
+  Because so many of the works in Perseus's corpora are well known,
+  and because many of them already encode generic structural patterns,
+  we have been able to develop tools (found in this repository) to
+  assign schemas to about 90% of the corpus automatically.  The
+  remaining texts are few in number, and we anticipate human editors
+  will have no trouble assigning appropriate schemas to them.
+
+- Semantic Normalization :: The TEI is notorious for providing an
+  abundance of elements and attributes encoders may use to capture
+  textual semantics.  Perseus's encoders have experimented with them
+  all, in pursuit of encodings that enable them to process texts for
+  particular purposes.  For the Perseus Project, those purposes have
+  been primarily hypertextual and linguistic: to instantiate links
+  between primary and secondary texts, and to capture syntactic and
+  morphological features that can be used in natural language
+  processing.  Again, the heterogeneity of encoding practices applied
+  to particular texts for particular purposes has made it challenging
+  to work with the corpus as a whole.
+
+- Normalization of TEI Usage :: The first TEI schema was developed in
+  1987, and it has undergone many changes since them, some large and
+  some small.  As the schema has evolved, so too have "best practices"
+  for using it: recommended uses for elements and attributes to
+  capture particular features.  In many cases, new elements and
+  attributes have been added to the schema to facilitate uses that
+  were awkward or impossible before.  Perseus's text base embodies the
+  history of this evolution, and one of the more delicate parts of the
+  normalization project is identifying long-used encoding patterns for
+  which there are now better, or more accepted alternatives.
+
+  The development of Perseus-specific schemas is part of this
+  normalization process.  While we have crafted the Perseus schemas to
+  be rather loose to start with -- in order to facilitate the release
+  of Minimum Viable Perseus -- our aim is to refine the schemas to
+  capture all and only the elements, attributes, and attribute values
+  germane to the Perseus corpora.  This has long been the chief
+  function of schemas: to assist editors in the consistent encoding of
+  texts with schema-aware software.
+
+  The remainder of this document is a survey of the corpus, conducted
+  using Claude.  It should be read as one would read any AI-generated
+  report: sometimes overly detailed, sometimes pedantic; sometimes
+  misleading.  It is, however, a useful snapshot of where the
+  normalization project stands today.
+
+
+** Corpora Covered
+:PROPERTIES:
+:CUSTOM_ID: corpora-covered
+:END:
+Three corpora were surveyed and normalized in this effort:
+
+| Corpus          | Repo                 | Files surveyed | Files normalized | Files deferred         |
+|-----------------+----------------------+----------------+------------------+------------------------|
+| Greek canonical | =canonical-greekLit= | 1,612          | 1,492 (93%)      | 95 + 109 flagged       |
+| Greek First1K   | =First1KGreek=       | 1,204          | 1,045 (87%)      | 159                    |
+| Latin canonical | =canonical-latinLit= | 494            | 429 (87%)        | 65 flagged             |
+| Latin CSEL      | =csel-dev=           | ~26+           | 0                | 26 explicitly deferred |
+
+*Overall: approximately 90% of surveyed Greek and Latin files have been
+normalized through the full pipeline.*
+
+--------------
+
+** Survey Data
+:PROPERTIES:
+:CUSTOM_ID: survey-data
+:END:
+The following CSV files in this repository document the state of the
+corpus as of June 2026. They are the primary record of what was found
+and what was decided.
+
+| File                            | Contents                                                                                                                                                                   |
+|---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| =structure-map.csv=             | Per-file genre assignment, structure signature, proposed citeStructure subclass, and normalization status (=ready= / =review=) for the Greek canonical corpus (1,612 rows) |
+| =canonical-latinLit-genres.csv= | Same, for the Latin canonical corpus (494 rows)                                                                                                                            |
+| =genres.csv=                    | Genre survey of the First1KGreek corpus (1,204 rows), with suggested and recommended genres and confidence ratings                                                         |
+| =structure.csv=                 | Structural analysis of First1KGreek: structural type (div-based / milestone-based / mixed), div subtypes, milestone units, and issues                                      |
+| =unnormalized.csv=              | Files explicitly not normalized, with their structure signatures (280 rows across all repos)                                                                               |
+| =rng_errors.csv=                | RNG validation findings after normalization: elements flagged by the current Perseus schemas, with instance and file counts (117 rows)                                     |
+| =csel-flat-review.csv=          | CSEL files with flat =<p[@n]>= structure and no subdivisions, requiring editorial decisions (20 rows)                                                                      |
+| =elements.csv=                  | Elements used in the corpus, broken down by genre family and file/instance counts                                                                                          |
+| =attributes.csv=                | Attribute/value pairs used in the corpus, broken down by genre family                                                                                                      |
+
+--------------
+
+** Citation Structure Subclasses
+:PROPERTIES:
+:CUSTOM_ID: citation-structure-subclasses
+:END:
+The normalization pipeline assigns each file a =proposed_subclass= --- a
+finer classification within its genre family --- which determines the
+citeStructure template injected by =add-citeStructure.xsl=. The
+subclasses observed across the Greek canonical corpus are:
+
+| Subclass                | Count | Description                                     |
+|-------------------------+-------+-------------------------------------------------|
+| =prose-section=         | 863   | Prose with section-level citation only          |
+| =prose-chapter-section= | 198   | Prose with chapter → section hierarchy          |
+| =prose-standard=        | 143   | Prose with book → chapter → section             |
+| =verse-stichic=         | 137   | Verse with line-level citation                  |
+| =drama-line=            | 84    | Drama with act → scene → line                   |
+| =prose-chapter-verse=   | 69    | Prose with chapter → verse (primarily biblical) |
+| =prose-book-section=    | 46    | Prose with book → section                       |
+| =prose-book-chapter=    | 28    | Prose with book → chapter                       |
+| =prose-chapter=         | 21    | Prose with chapter-level citation only          |
+| =verse-book-line=       | 12    | Verse with book → line hierarchy                |
+
+The Latin canonical corpus follows the same subclass taxonomy.
+
+--------------
+
+** Deferred Files and Known Problem Categories
+:PROPERTIES:
+:CUSTOM_ID: deferred-files-and-known-problem-categories
+:END:
+Files were deferred (not normalized) for the following structural
+reasons. These are not random failures --- they are coherent categories
+that require decisions before normalization can proceed.
+
+*** =jebb_page= (54 files, canonical-greekLit)
+:PROPERTIES:
+:CUSTOM_ID: jebb_page-54-files-canonical-greeklit
+:END:
+The Sophocles texts (tlg0284.*) use a page-based citation scheme derived
+from Jebb's edition: =milestone[@unit='jebb_page']= rather than
+act/scene/line. This is a legitimate but non-standard scheme that the
+current citeStructure templates don't handle.
+
+*** =fragment= (67+ files, multiple repos)
+:PROPERTIES:
+:CUSTOM_ID: fragment-67-files-multiple-repos
+:END:
+Fragment collections don't fit the standard hierarchical citeStructure
+patterns. They may be single =<div type="textpart" subtype="fragment">=
+with no subdivisions, or complex multi-level fragment collections.
+Decisions needed per collection; no one-size-fits-all template exists.
+
+*** =chapter+verse= (14 files, canonical-greekLit)
+:PROPERTIES:
+:CUSTOM_ID: chapterverse-14-files-canonical-greeklit
+:END:
+Primarily biblical texts (Hebrew Bible translations). The chapter/verse
+structure is standard but the current pipeline doesn't generate a
+=prose-chapter-verse= citeStructure template with sufficient confidence
+to normalize automatically. Review each work and confirm the assignment.
+
+*** =bekker_page+book+l= (2 files)
+:PROPERTIES:
+:CUSTOM_ID: bekker_pagebookl-2-files
+:END:
+Bekker page milestones --- the standard citation scheme for Aristotle.
+Like Jebb pages, these are real scholarly citation units that appear as
+milestones in the text.  We need to develop a standard way of encoding
+edition-page milestones (see, for example, [[https://github.com/PerseusDLCode/MinimumViablePerseus/discussions/42][another discussion]]).
+
+*** =(none)= / =work= / =sentence= / =paragraph= / =section= (Latin: 42+)
+:PROPERTIES:
+:CUSTOM_ID: none-work-sentence-paragraph-section-latin-42
+:END:
+These are texts with either no structural subdivision (flat editions,
+single =<body>= with no =<div>=) or atypical single-level structures.
+The CSEL corpus in particular has 20 flat =<p[@n]>= editions
+(=csel-flat-review.csv=) where the citation scheme is
+=edition → paragraph= with no further hierarchy. These require
+individual editorial decisions about the appropriate citeStructure.
+
+*** =epistle= / =letter= (11+ files)
+:PROPERTIES:
+:CUSTOM_ID: epistle-letter-11-files
+:END:
+Epistolary texts that may use letter number as the primary citation
+unit, sometimes combined with section or verse. Need a
+=prose-epistolary= subclass and template.
+
+*** =book+card= (4 files, canonical-greekLit)
+:PROPERTIES:
+:CUSTOM_ID: bookcard-4-files-canonical-greeklit
+:END:
+The card milestone scheme from the Homer texts (Iliad, Odyssey) --- a
+Perseus-specific citation unit that divides books into “cards” for
+paging. These predate citeStructure.
+
+
+** Open Questions and Next Steps
+:PROPERTIES:
+:CUSTOM_ID: open-questions-and-next-steps
+:END:
+*** Immediate (before any further normalization)
+:PROPERTIES:
+:CUSTOM_ID: immediate-before-any-further-normalization
+:END:
+
+- Decide on =jebb_page= and =bekker_page= :: Add citeStructure templates
+  for these scholarly citation units, then normalize the 54 Sophocles
+  and 2 Aristotle files.
+
+- Decide on how to handle =book+card= :: Based on what MVP expects.
+
+- Process =chapter+verse= files :: These are likely straightforward;
+  confirm the genre assignment and normalize.
+
+*** Schema work (medium term)
+:PROPERTIES:
+:CUSTOM_ID: schema-work-medium-term
+:END:
+
+- Tailor the schemas to fit desired encoding practices.
+- Develop Schematron rules to facilitate encoding correction.
+
+*** Reference Works
+Reference works like LSJ, Allen & Greenough, and commentaries are
+structurally far more complex than the primary texts and have decades
+of divergent encoding history. They are out of scope for the current
+normalization effort and require dedicated design work before any
+pipeline can touch them.

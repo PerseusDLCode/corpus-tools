@@ -4,35 +4,56 @@ import re
 
 import pytest
 
+from tei import TEIDocument
 from tln_globe_map import CorpusMap, build_corpus_map
 
 
 # Schmidt's Shakespeare Lexicon (canonical-engLit/data/schmidt) cites plays
 # as `<bibl n="shak. {siglum} {act}.{scene}.{line}">`, using the same
 # lowercase sigla and Globe act.scene.line format as the ShakeDraCor-derived
-# corpus map. This module exercises the map against ~178k real citations
+# corpus map. This module exercises the map against ~205k real citations
 # pulled from the lexicon, as an end-to-end check independent of the
 # hand-built fixtures in test_tln_globe_map.py.
-CITATION_RE = re.compile(r'<bibl n="shak\. ([a-z0-9]+) ([^"]*)">')
+#
+# Citations are extracted by parsing @n on every <bibl> element, not by
+# regex over the raw XML text: an earlier version of this fixture required
+# `<bibl n="` to be textually adjacent and silently missed every citation
+# whose source XML wraps the n= attribute onto its own line, undercounting
+# the true citation count by ~26k. corpus-tools's repair-schmidt-citations
+# command (src/schmidt_citations.py) parses citations the same way.
+CITATION_ATTR_RE = re.compile(r'^shak\. ([a-z0-9]+) (.+)$')
 CLEAN_GLOBE_REF_RE = re.compile(r'^\d+\.\d+\.\d+$')
 
 # Schmidt sigla for non-dramatic works (poems), which have no counterpart
 # in ShakeDraCor's plays-only corpus.
 NON_DRAMATIC_SIGLA = {"e3", "lc", "luc", "pht", "pp", "son", "ven"}
 
-# Observed 2026-08-18: 178,215 clean act.scene.line citations, 168,177
-# resolved (94.37%). The shortfall traces to small gaps in ShakeDraCor's
-# own Folger through-line sequence (see test_wiv_4_4_9_is_a_known_source_gap
-# below), not defects in the map. Thresholds sit with headroom below the
-# observed numbers so the test guards against regressions, not noise.
-MIN_RESOLUTION_RATE = 0.94
-MIN_CLEAN_CITATIONS = 150_000
+# Observed 2026-08-18, after running repair-schmidt-citations (which fixes
+# the single-scene-Act collapse bug -- see schmidt-lexicon-tln-crosswalk
+# project memory): 204,766 clean act.scene.line citations, 196,012 resolved
+# (95.72%). The remaining shortfall is a mix of causes documented in
+# canonical-engLit/doc/schmidt-lexicon-tln-crosswalk-report.org (small gaps
+# in ShakeDraCor's own Folger through-line sequence -- see
+# test_wiv_4_4_9_is_a_known_source_gap below -- plus still-undiagnosed
+# patterns this repair pass deliberately left alone). Thresholds sit with
+# headroom below the observed numbers so the test guards against
+# regressions, not noise.
+MIN_RESOLUTION_RATE = 0.955
+MIN_CLEAN_CITATIONS = 200_000
 
 
 @pytest.fixture(scope="session")
 def schmidt_citations(schmidt_lexicon_path):
-    text = schmidt_lexicon_path.read_text(encoding="utf-8")
-    return CITATION_RE.findall(text)
+    doc = TEIDocument(schmidt_lexicon_path)
+    citations = []
+    for bibl in doc.root.iter("{http://www.tei-c.org/ns/1.0}bibl"):
+        n = bibl.get("n")
+        if n is None:
+            continue
+        m = CITATION_ATTR_RE.match(n)
+        if m:
+            citations.append((m.group(1), m.group(2)))
+    return citations
 
 
 @pytest.fixture(scope="session")

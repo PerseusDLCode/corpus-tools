@@ -22,6 +22,7 @@ survey-corpus   = "commands.survey_corpus:main"
 validate-corpus = "commands.validate_corpus:main"
 number-verse-lines = "commands.number_verse_lines:main"
 generate-line-map  = "commands.generate_line_map:main"
+repair-schmidt-citations = "commands.repair_schmidt_citations:main"
 
 [build-system]
 requires = ["pdm-backend"]

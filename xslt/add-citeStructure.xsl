@@ -23,6 +23,11 @@
             (//profileDesc/textClass/catRef[@scheme='#perseus-genre']/@target)[1],
             '^#', '')"/>
 
+    <!-- When non-empty, also emit the throughline-cs refsDecl (see below)
+         alongside whatever the genre's primary citeStructure is. Only
+         meaningful for editions carrying ftln ids. -->
+    <xsl:param name="include-tln-refsdecl" as="xs:string" select="''"/>
+
     <!-- verse-stichic: lines directly in body, no numbered divs above them -->
     <xsl:template name="verse-stichic-cs">
         <refsDecl n="CTS" xml:id="CTS">
@@ -52,7 +57,13 @@
         </refsDecl>
     </xsl:template>
 
-    <!-- drama-act-scene-line (early modern): act → scene → line -->
+    <!-- drama-act-scene-line (early modern): act → scene → line.
+         Some early modern plays (esp. ShakeDraCor-derived editions) also have
+         top-level divs outside the numbered acts: induction, prologue,
+         epilogue, and per-act chorus speeches. These are flat (no scene
+         sub-level) but are citable units in their own right (e.g. "H5 Chor.
+         4.9", "2H4 Ind. 15"). Each gets its own sibling branch, act/scene/line
+         alongside a flat {div}/line. -->
     <xsl:template name="drama-act-scene-line-cs">
         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
@@ -61,6 +72,33 @@
                         <citeStructure unit="line" delim="." match="l" use="@n"/>
                     </citeStructure>
                 </citeStructure>
+                <citeStructure unit="induction" delim=":" match="div[@type='induction']" use="@n">
+                    <citeStructure unit="line" delim="." match="l" use="@n"/>
+                </citeStructure>
+                <citeStructure unit="prologue" delim=":" match="div[@type='prologue']" use="@n">
+                    <citeStructure unit="line" delim="." match="l" use="@n"/>
+                </citeStructure>
+                <citeStructure unit="epilogue" delim=":" match="div[@type='epilogue']" use="@n">
+                    <citeStructure unit="line" delim="." match="l" use="@n"/>
+                </citeStructure>
+                <citeStructure unit="chorus" delim=":" match="div[@type='chorus']" use="@n">
+                    <citeStructure unit="line" delim="." match="l" use="@n"/>
+                </citeStructure>
+            </citeStructure>
+        </refsDecl>
+    </xsl:template>
+
+    <!-- throughline (Folger TLN): flat, cites every l/lb by its Folger
+         Through-Line-Number, derived from xml:id="ftln-NNNN" (leading zeros
+         stripped). Opt-in via $include-tln-refsdecl: only meaningful for
+         editions carrying ftln ids (ShakeDraCor-derived); emitted alongside
+         the primary act.scene.line refsDecl, not in place of it. -->
+    <xsl:template name="throughline-cs">
+        <refsDecl n="CTS-tln" xml:id="CTS-tln">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+                <citeStructure unit="line" delim=":"
+                    match=".//l[starts-with(@xml:id, 'ftln-')] | .//lb[starts-with(@xml:id, 'ftln-')]"
+                    use="string(number(substring-after(@xml:id, 'ftln-')))"/>
             </citeStructure>
         </refsDecl>
     </xsl:template>
@@ -313,6 +351,9 @@ Valid categories are defined in the perseus-genre taxonomy in perseus_base.odd.
                     </xsl:message>
                 </xsl:otherwise>
             </xsl:choose>
+            <xsl:if test="$include-tln-refsdecl != ''">
+                <xsl:call-template name="throughline-cs"/>
+            </xsl:if>
         </xsl:copy>
     </xsl:template>
 

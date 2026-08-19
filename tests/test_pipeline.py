@@ -112,6 +112,41 @@ _DRAMA = """\
 </TEI>
 """
 
+_DRAMA_EARLY_MODERN = """\
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="old-schema.rnc"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title>Test Early Modern Drama</title></titleStmt>
+      <publicationStmt><p>Test</p></publicationStmt>
+      <sourceDesc><p>Test</p></sourceDesc>
+    </fileDesc>
+    <encodingDesc/>
+    <profileDesc>
+      <textClass>
+        <catRef scheme="#perseus-genre" target="#drama-act-scene-line"/>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="induction" n="IND">
+        <l xml:id="ftln-0001" n="1">Induction line.</l>
+      </div>
+      <div type="act" n="1">
+        <div type="scene" n="1">
+          <l xml:id="ftln-0002" n="1">Act one line.</l>
+        </div>
+      </div>
+      <div type="chorus" n="2.CHO">
+        <l xml:id="ftln-0003" n="1">Chorus line.</l>
+      </div>
+    </body>
+  </text>
+</TEI>
+"""
+
 _UNANNOTATED = """\
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="old-schema.rnc"?>
@@ -353,6 +388,36 @@ class TestRunPipeline:
         run_pipeline(PIPELINES["drama"], src, out, **{"cts-base": _TEST_URN})
         result = out.read_text()
         assert 'match=".//l"' in result
+
+    def test_drama_act_scene_line_pipeline_adds_induction_and_chorus_branches(self, tmp_path):
+        src = _write(tmp_path, "test.xml", _DRAMA_EARLY_MODERN)
+        out = tmp_path / "out.xml"
+        run_pipeline(PIPELINES["drama"], src, out, **{"cts-base": _TEST_URN})
+        result = out.read_text()
+        assert 'unit="induction"' in result
+        assert 'unit="prologue"' in result
+        assert 'unit="epilogue"' in result
+        assert 'unit="chorus"' in result
+        assert "div[@type='induction']" in result
+        assert "div[@type='chorus']" in result
+
+    def test_drama_pipeline_omits_throughline_refsdecl_by_default(self, tmp_path):
+        src = _write(tmp_path, "test.xml", _DRAMA_EARLY_MODERN)
+        out = tmp_path / "out.xml"
+        run_pipeline(PIPELINES["drama"], src, out, **{"cts-base": _TEST_URN})
+        result = out.read_text()
+        assert "CTS-tln" not in result
+
+    def test_drama_pipeline_adds_throughline_refsdecl_when_requested(self, tmp_path):
+        src = _write(tmp_path, "test.xml", _DRAMA_EARLY_MODERN)
+        out = tmp_path / "out.xml"
+        run_pipeline(
+            PIPELINES["drama"], src, out,
+            **{"cts-base": _TEST_URN, "include-tln-refsdecl": "true"},
+        )
+        result = out.read_text()
+        assert 'xml:id="CTS-tln"' in result
+        assert "starts-with(@xml:id, 'ftln-')" in result
 
     def test_verse_pipeline_sets_schema_pi(self, tmp_path):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)

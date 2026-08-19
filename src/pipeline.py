@@ -39,7 +39,10 @@ PIPELINES: dict[str, list[Step]] = {
     "drama": [
         Step("normalize-cts.xsl"),
         Step("set-cts-urn.xsl", dict(_CTS_URN_STEP)),
-        Step("add-citeStructure.xsl"),
+        # include-tln-refsdecl is a pass-through no-op unless the caller
+        # overrides it (e.g. import_shakedracor.py, for editions carrying
+        # Folger ftln ids) -- see add-citeStructure.xsl's throughline-cs.
+        Step("add-citeStructure.xsl", {"include-tln-refsdecl": ""}),
         Step("set-schema.xsl", {"tei-schema": "perseus_drama"}),
     ],
 }

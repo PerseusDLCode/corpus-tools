@@ -25,6 +25,7 @@ generate-line-map  = "commands.generate_line_map:main"
 repair-schmidt-citations = "commands.repair_schmidt_citations:main"
 unwrap-schmidt-cit = "commands.unwrap_schmidt_cit:main"
 flatten-lexicon-sections = "commands.flatten_lexicon_sections:main"
+collapse-schmidt-duplicate-citations = "commands.collapse_schmidt_duplicate_citations:main"
 import-shakedracor = "commands.import_shakedracor:main"
 
 [build-system]

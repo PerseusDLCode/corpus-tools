@@ -26,6 +26,8 @@ repair-schmidt-citations = "commands.repair_schmidt_citations:main"
 unwrap-schmidt-cit = "commands.unwrap_schmidt_cit:main"
 flatten-lexicon-sections = "commands.flatten_lexicon_sections:main"
 collapse-schmidt-duplicate-citations = "commands.collapse_schmidt_duplicate_citations:main"
+strip-schmidt-urn-edition = "commands.strip_schmidt_urn_edition:main"
+recover-schmidt-line-numbers = "commands.recover_schmidt_line_numbers:main"
 import-shakedracor = "commands.import_shakedracor:main"
 
 [build-system]

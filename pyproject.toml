@@ -29,6 +29,7 @@ collapse-schmidt-duplicate-citations = "commands.collapse_schmidt_duplicate_cita
 strip-schmidt-urn-edition = "commands.strip_schmidt_urn_edition:main"
 recover-schmidt-line-numbers = "commands.recover_schmidt_line_numbers:main"
 merge-schmidt-orphaned-citations = "commands.merge_schmidt_orphaned_citations:main"
+survey-schmidt-senses = "commands.survey_schmidt_senses:main"
 import-shakedracor = "commands.import_shakedracor:main"
 
 [build-system]

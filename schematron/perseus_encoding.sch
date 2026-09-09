@@ -58,7 +58,7 @@
 
   <sch:pattern id="legacy-reg">
     <sch:title>P4 legacy element: reg</sch:title>
-    <sch:rule context="tei:reg">
+    <sch:rule context="tei:reg[not(parent::tei:choice) or not(parent::tei:choice/tei:orig)]">
       <sch:report test="true()" role="warning">
         Standalone &lt;reg&gt; is not allowed in the Perseus P5 schema.
         Pair the regularization with the original reading inside a choice:

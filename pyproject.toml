@@ -31,6 +31,7 @@ recover-schmidt-line-numbers = "commands.recover_schmidt_line_numbers:main"
 merge-schmidt-orphaned-citations = "commands.merge_schmidt_orphaned_citations:main"
 survey-schmidt-senses = "commands.survey_schmidt_senses:main"
 import-shakedracor = "commands.import_shakedracor:main"
+rederive-globe-lineation = "commands.rederive_globe_lineation:main"
 
 [build-system]
 requires = ["pdm-backend"]

@@ -14,8 +14,11 @@ This module re-derives the body from the P4 source directly:
   the P4 source actually transcribed a number. Do not invent numbers.
 - Every F1 <lb ed="F1" n="..."/> becomes
   <milestone unit="line" ed="F1" n="..."/>.
-- <reg orig="X">Y</reg> (P4's hyphenation-regularization shorthand, not
-  valid P5) becomes <choice><orig>X</orig><reg>Y</reg></choice>.
+- <reg orig="X">Y</reg> (P4's hyphenation-regularization shorthand)
+  becomes plain text Y -- the regularized reading P4 itself displays.
+  <orig>/<reg> are not in the Perseus P5 schema and the P4-shape @orig
+  isn't valid TEI P5 either way; this is corpus-wide practice for
+  print-hyphenation noise, not something worth a schema change for.
 - Named entities used in the P4 source (DTD loading is deliberately off,
   per canonical-engLit's CLAUDE.md, so entities are not defined by a DTD)
   are resolved via ENTITY_MAP rather than left unexpanded.
@@ -75,7 +78,7 @@ class ConversionStats:
     milestone_globe_unnumbered: int = 0
     milestone_f1: int = 0
     l_stray_n_stripped: list = field(default_factory=list)
-    reg_choice_wrapped: int = 0
+    reg_collapsed_to_text: list = field(default_factory=list)
     entities_resolved: dict = field(default_factory=dict)
     element_counts_in: dict = field(default_factory=dict)
     element_counts_out: dict = field(default_factory=dict)
@@ -88,7 +91,7 @@ class ConversionStats:
             f"{self.milestone_globe_unnumbered} unnumbered Globe milestones, "
             f"{self.milestone_f1} F1 milestones. "
             f"{len(self.l_stray_n_stripped)} stray <l @n> stripped. "
-            f"{self.reg_choice_wrapped} <reg @orig> wrapped as <choice>. "
+            f"{len(self.reg_collapsed_to_text)} <reg @orig> collapsed to plain text. "
             f"entities resolved: {self.entities_resolved or '(none)'}. "
             f"{len(self.synthesized_leading_milestones)} leading milestones synthesized "
             "(start-forward repositioning, no tag at that position in P4)"
@@ -126,6 +129,14 @@ def convert_children(old_el, new_el, stats: ConversionStats, ctx: str) -> None:
             continue
         if isinstance(child, etree._ProcessingInstruction):
             raise ConversionError(f"Unexpected processing instruction in body at {ctx}")
+        if child.tag == "reg":
+            # P4's <reg orig="X">Y</reg> hyphenation-regularization shorthand collapses to
+            # plain text Y (the regularized reading P4 itself displays) -- <orig>/<reg> are
+            # not in the Perseus P5 schema, so this can't become an element at all.
+            reg_text = _reg_text(child, stats, ctx)
+            last_new_child = _emit_text(new_el, last_new_child, reg_text)
+            last_new_child = _emit_text(new_el, last_new_child, child.tail)
+            continue
         converted = convert_element(child, stats, ctx)
         new_el.append(converted)
         last_new_child = converted
@@ -148,8 +159,6 @@ def convert_element(old, stats: ConversionStats, ctx: str):
         new = _convert_l(old, stats, ctx)
     elif tag == "role":
         new = _convert_role(old, stats, ctx)
-    elif tag == "reg":
-        new = _convert_reg(old, stats, ctx)
     elif tag in PASSTHROUGH_ATTRS:
         new = _convert_passthrough(old, stats, ctx, tag)
     else:
@@ -235,20 +244,19 @@ def _convert_role(old, stats: ConversionStats, ctx: str):
     return new
 
 
-def _convert_reg(old, stats: ConversionStats, ctx: str):
+def _reg_text(old, stats: ConversionStats, ctx: str) -> str:
     orig = old.get("orig")
     if orig is None:
         raise ConversionError(f"<reg> missing @orig at {ctx}")
     extra = set(old.attrib.keys()) - {"orig"}
     if extra:
         raise ConversionError(f"<reg> has unexpected attributes {extra} at {ctx}")
-    choice = etree.Element(q("choice"))
-    orig_el = etree.SubElement(choice, q("orig"))
-    orig_el.text = orig
-    reg_el = etree.SubElement(choice, q("reg"))
-    convert_children(old, reg_el, stats, ctx)
-    stats.reg_choice_wrapped += 1
-    return choice
+    if len(old) > 0:
+        raise ConversionError(f"<reg> unexpectedly has child elements at {ctx} (expected plain text only)")
+    text = old.text or ""
+    stats.element_counts_in["reg"] = stats.element_counts_in.get("reg", 0) + 1
+    stats.reg_collapsed_to_text.append((ctx, orig, text))
+    return text
 
 
 def _convert_passthrough(old, stats: ConversionStats, ctx: str, tag: str):

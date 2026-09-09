@@ -92,17 +92,20 @@ class TestLConversion:
 
 
 class TestRegConversion:
-    def test_reg_orig_becomes_choice(self):
+    def test_reg_orig_collapses_to_plain_text(self):
         body, stats = _convert('<div1 type="act" n="1"><div2 type="scene" n="1">'
-                                '<p>any further <reg orig="de-lay">delay</reg></p>'
+                                '<p>any further <reg orig="de-lay">delay</reg> please</p>'
                                 '</div2></div1>')
-        choice = body.find(f".//{q('choice')}")
-        assert choice is not None
-        orig = choice.find(q("orig"))
-        reg = choice.find(q("reg"))
-        assert orig.text == "de-lay"
-        assert reg.text == "delay"
-        assert stats.reg_choice_wrapped == 1
+        p = body.find(f".//{q('p')}")
+        # <orig>/<reg> are not in the Perseus P5 schema; the P4 shorthand collapses to
+        # plain text (the regularized reading P4 itself displays), no wrapper element.
+        assert p.find(q("choice")) is None
+        assert p.find(q("reg")) is None
+        assert p.find(q("orig")) is None
+        assert "".join(p.itertext()) == "any further delay please"
+        assert stats.reg_collapsed_to_text == [(
+            "Act 1, Scene 1", "de-lay", "delay",
+        )]
 
     def test_reg_missing_orig_raises(self):
         try:

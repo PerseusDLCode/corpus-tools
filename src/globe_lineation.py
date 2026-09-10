@@ -53,6 +53,8 @@ class ConversionError(Exception):
 # silently emitting an undefined/unresolved reference into P5 output.
 ENTITY_MAP = {
     "AElig": "Æ",
+    "aelig": "æ",
+    "mdash": "—",
 }
 
 # Elements copied through with tag name preserved and exactly this
@@ -78,6 +80,7 @@ class ConversionStats:
     milestone_globe_unnumbered: int = 0
     milestone_f1: int = 0
     l_stray_n_stripped: list = field(default_factory=list)
+    sp_stray_n_stripped: list = field(default_factory=list)
     reg_collapsed_to_text: list = field(default_factory=list)
     entities_resolved: dict = field(default_factory=dict)
     element_counts_in: dict = field(default_factory=dict)
@@ -91,6 +94,7 @@ class ConversionStats:
             f"{self.milestone_globe_unnumbered} unnumbered Globe milestones, "
             f"{self.milestone_f1} F1 milestones. "
             f"{len(self.l_stray_n_stripped)} stray <l @n> stripped. "
+            f"{len(self.sp_stray_n_stripped)} stray <sp @n> stripped. "
             f"{len(self.reg_collapsed_to_text)} <reg @orig> collapsed to plain text. "
             f"entities resolved: {self.entities_resolved or '(none)'}. "
             f"{len(self.synthesized_leading_milestones)} leading milestones synthesized "
@@ -261,12 +265,21 @@ def _reg_text(old, stats: ConversionStats, ctx: str) -> str:
 
 def _convert_passthrough(old, stats: ConversionStats, ctx: str, tag: str):
     allowed = PASSTHROUGH_ATTRS[tag]
-    extra = set(old.attrib.keys()) - allowed
+    attribs = dict(old.attrib)
+    if tag == "sp" and "n" in attribs:
+        # A single stray @n on <sp> is known to occur in the Antony P4 source
+        # (<sp who="ant-1" n="20">) -- not a legal P5 attribute for <sp>, but data,
+        # not noise: strip and log it rather than raise, mirroring _convert_l's
+        # stray-@n handling.
+        stray_n = attribs.pop("n")
+        snippet = "".join(old.itertext()).strip()[:60]
+        stats.sp_stray_n_stripped.append((ctx, stray_n, snippet))
+    extra = set(attribs.keys()) - allowed
     if extra:
         raise ConversionError(f"<{tag}> has unexpected attributes {extra} at {ctx}")
     new = etree.Element(q(tag))
     for a in sorted(allowed):
-        v = old.get(a)
+        v = attribs.get(a)
         if v is not None:
             new.set(a, v)
     child_ctx = ctx

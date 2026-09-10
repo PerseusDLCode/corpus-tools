@@ -45,6 +45,10 @@ def main() -> None:
         print("Stray <l @n> stripped (P4 encoding oddities, not carried into P5):", file=sys.stderr)
         for ctx, n, snippet in stats.l_stray_n_stripped:
             print(f"  {ctx}: n={n!r} ({snippet!r})", file=sys.stderr)
+    if stats.sp_stray_n_stripped:
+        print("Stray <sp @n> stripped (P4 encoding oddities, not carried into P5):", file=sys.stderr)
+        for ctx, n, snippet in stats.sp_stray_n_stripped:
+            print(f"  {ctx}: n={n!r} ({snippet!r})", file=sys.stderr)
 
     in_counts = {t: n for t, n in stats.element_counts_in.items()}
     out_counts = stats.element_counts_out

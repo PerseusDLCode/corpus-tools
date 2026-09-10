@@ -91,6 +91,29 @@ class TestLConversion:
         assert len(stats.l_stray_n_stripped) == 1
 
 
+class TestSpConversion:
+    def test_stray_n_stripped_and_reported(self):
+        # Antony and Cleopatra's P4 source has one <sp who="..." n="20">
+        # (Renaissance/Shakespeare/opensource/ant.xml) -- @n is not a legal P5
+        # attribute for <sp>; it must be stripped and logged, not raise.
+        body, stats = _convert('<div1 type="act" n="1"><div2 type="scene" n="1">'
+                                '<sp who="ant-1" n="20"><speaker>Ant.</speaker>'
+                                "<p>Nay, but this dotage of our general's</p>"
+                                "</sp></div2></div1>")
+        sp = body.find(f".//{q('sp')}")
+        assert sp.get("who") == "ant-1"
+        assert sp.get("n") is None
+        assert len(stats.sp_stray_n_stripped) == 1
+        ctx, n, snippet = stats.sp_stray_n_stripped[0]
+        assert n == "20"
+
+    def test_no_stray_n_no_report(self):
+        body, stats = _convert('<div1 type="act" n="1"><div2 type="scene" n="1">'
+                                '<sp who="ant-1"><speaker>Ant.</speaker>'
+                                "<p>text</p></sp></div2></div1>")
+        assert stats.sp_stray_n_stripped == []
+
+
 class TestRegConversion:
     def test_reg_orig_collapses_to_plain_text(self):
         body, stats = _convert('<div1 type="act" n="1"><div2 type="scene" n="1">'
@@ -149,6 +172,37 @@ class TestEntitiesAndUnknown:
         head = body.find(f".//{q('head')}")
         assert head.text == "PERSONÆ" or "".join(head.itertext()) == "PERSONÆ"
         assert stats.entities_resolved.get("AElig") == 1
+
+    def test_lowercase_aelig_entity_resolved(self):
+        # Antony and Cleopatra's P4 source spells "Caesar" as "C&aelig;sar"
+        # throughout (hundreds of instances) -- the lowercase form of the
+        # existing AElig entity, not a separate character.
+        p4_doc = (
+            '<!DOCTYPE TEI.2 [<!ENTITY aelig "ae">]>'
+            '<TEI.2><text><body><div1 type="act" n="1"><head>C&aelig;sar</head>'
+            "</div1></body></text></TEI.2>"
+        )
+        root = etree.fromstring(p4_doc.encode("utf-8"), P4_PARSER)
+        stats = ConversionStats()
+        body = convert_body(root, stats)
+        head = body.find(f".//{q('head')}")
+        assert "".join(head.itertext()) == "Cæsar"
+        assert stats.entities_resolved.get("aelig") == 1
+
+    def test_mdash_entity_resolved(self):
+        # Antony and Cleopatra's P4 source uses &mdash; 75 times (Lear's
+        # doesn't use it at all -- genuinely new, not previously covered).
+        p4_doc = (
+            '<!DOCTYPE TEI.2 [<!ENTITY mdash "--">]>'
+            '<TEI.2><text><body><div1 type="act" n="1"><head>Give me leave&mdash;</head>'
+            "</div1></body></text></TEI.2>"
+        )
+        root = etree.fromstring(p4_doc.encode("utf-8"), P4_PARSER)
+        stats = ConversionStats()
+        body = convert_body(root, stats)
+        head = body.find(f".//{q('head')}")
+        assert "".join(head.itertext()) == "Give me leave—"
+        assert stats.entities_resolved.get("mdash") == 1
 
     def test_unhandled_element_raises(self):
         try:

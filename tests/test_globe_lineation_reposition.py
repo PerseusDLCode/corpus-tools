@@ -117,6 +117,87 @@ class TestVerseRepositioning:
         assert trailing.get("n") is None and trailing.tail is None
 
 
+class TestProseRepositioning:
+    """Mirrors TestVerseRepositioning's scenarios with <p> targets instead of <l> --
+    confirms the terminal-relocation path (_move_milestone_forward) treats <p> the
+    same as <l>, since Antony and Cleopatra's P4 source has zero <l> elements at
+    all (verse encoded entirely as <p>)."""
+
+    def test_numbered_boundary_moves_to_lead_the_paragraph_it_labels(self):
+        body = _body(
+            '<div type="act" n="1"><div type="scene" n="1">'
+            '<p>In three our kingdom <milestone unit="line" ed="Globe"/></p>'
+            '<p>To shake all cares <milestone unit="line" ed="Globe" n="41"/></p>'
+            '<p>Conferring them <milestone unit="line" ed="Globe"/></p>'
+            "</div></div>"
+        )
+        stats = ConversionStats()
+        reposition_milestones_start_forward(body, stats)
+        paras = body.findall(f".//{q('p')}")
+        assert len(paras) == 3
+
+        assert len(paras[0]) == 0
+        assert _text_of(paras[0]) == "In three our kingdom"
+
+        assert len(paras[1]) == 1
+        ms1 = paras[1][0]
+        assert ms1.get("ed") == "Globe" and ms1.get("n") == "41"
+        assert ms1.tail.strip() == "To shake all cares"
+
+        assert len(paras[2]) == 2
+        leading, trailing = paras[2]
+        assert leading.get("ed") == "Globe" and leading.get("n") is None
+        assert leading.tail.strip() == "Conferring them"
+        assert trailing.get("ed") == "Globe" and trailing.get("n") is None
+        assert trailing.tail is None
+
+    def test_leading_milestone_synthesized_when_first_boundary_was_numbered(self):
+        body = _body(
+            '<div type="act" n="1"><div type="scene" n="1">'
+            '<p>first para <milestone unit="line" ed="Globe" n="10"/></p>'
+            '<p>second para <milestone unit="line" ed="Globe" n="11"/></p>'
+            "</div></div>"
+        )
+        stats = ConversionStats()
+        reposition_milestones_start_forward(body, stats)
+        first_p = body.find(f".//{q('p')}")
+        assert first_p.text is None
+        leading_ms = first_p[0]
+        assert leading_ms.get("ed") == "Globe"
+        assert leading_ms.get("n") == "10"
+        assert leading_ms.tail.strip() == "first para"
+        assert len(stats.synthesized_leading_milestones) == 1
+        assert stats.synthesized_leading_milestones[0][2] == "10"
+
+    def test_no_leading_milestone_when_first_boundary_unnumbered(self):
+        body = _body(
+            '<div type="act" n="1"><div type="scene" n="1">'
+            '<p>first para <milestone unit="line" ed="Globe"/></p>'
+            '<p>second para <milestone unit="line" ed="Globe" n="11"/></p>'
+            "</div></div>"
+        )
+        stats = ConversionStats()
+        reposition_milestones_start_forward(body, stats)
+        first_p = body.find(f".//{q('p')}")
+        assert first_p.text == "first para "
+        assert stats.synthesized_leading_milestones == []
+
+    def test_last_paragraph_of_scope_keeps_its_own_now_unnumbered_marker(self):
+        body = _body(
+            '<div type="act" n="1"><div type="scene" n="1">'
+            '<p>only numbered para <milestone unit="line" ed="Globe" n="7"/></p>'
+            '<p>last para <milestone unit="line" ed="Globe"/></p>'
+            "</div></div>"
+        )
+        stats = ConversionStats()
+        reposition_milestones_start_forward(body, stats)
+        paras = body.findall(f".//{q('p')}")
+        assert len(paras[1]) == 2
+        leading, trailing = paras[1]
+        assert leading.get("n") is None and leading.tail.strip() == "last para"
+        assert trailing.get("n") is None and trailing.tail is None
+
+
 class TestGlobeScopedPerScene:
     def test_globe_numbering_does_not_cross_scene_boundary(self):
         body = _body(

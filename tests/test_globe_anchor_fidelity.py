@@ -31,7 +31,21 @@ from pathlib import Path
 import pytest
 from lxml import etree
 
-from globe_lineation import q, rederive, parse_p4, ConversionStats, convert_body, reposition_milestones_start_forward, ENTITY_MAP
+from globe_lineation import (
+    q,
+    rederive,
+    parse_p4,
+    ConversionStats,
+    convert_body,
+    reposition_milestones_start_forward,
+    ENTITY_MAP,
+    GLOBE_EDITION_SOURCE,
+    NS,
+    _has_content_after,
+    _move_milestone_forward,
+    _first_l_or_p,
+    _insert_leading,
+)
 
 P5_NS = "http://www.tei-c.org/ns/1.0"
 LEAD_CHARS = 40
@@ -302,6 +316,97 @@ def assert_transcribed_anchors_precede_same_text(p4_root, p5_root, lead_chars: i
     assert not f1_mismatches, f"F1 anchor(s) lead the wrong text: {f1_mismatches}"
 
 
+# -- Parallel check: @source must travel with the transcribed @n value ------
+#
+# doc/agenda.org phase1/milestone-source-provenance, verbatim: "add the
+# parallel assertion that every @n of transcribed origin, and only those,
+# carries @source after repositioning." globe_expected_texts' own key set is
+# already exactly "every Globe anchor transcribed in the P4 source" (a key
+# only exists there when the P4 <lb> itself carried @n), so it doubles as the
+# expected-transcribed set here -- no separate P4 walk needed.
+
+
+def globe_actual_sources(p5_root) -> dict[tuple[str, str, str], str | None]:
+    """{(act_n, scene_n, n): @source value (or None)}, for every Globe
+    milestone that carries @n in the converted P5 tree -- keyed exactly like
+    globe_actual_texts, so it can be compared key-for-key against
+    globe_expected_texts' key set."""
+    actual: dict[tuple[str, str, str], str | None] = {}
+    for act in p5_root.iter(q("div")):
+        if act.get("type") != "act":
+            continue
+        act_n = act.get("n")
+        for scene in act.iter(q("div")):
+            if scene.get("type") != "scene":
+                continue
+            scene_n = scene.get("n")
+            for ms in scene.iter(q("milestone")):
+                if ms.get("ed") != "Globe":
+                    continue
+                n = ms.get("n")
+                if n is None:
+                    continue
+                actual[(act_n, scene_n, n)] = ms.get("source")
+    return actual
+
+
+def globe_unnumbered_with_source(p5_root) -> list[tuple[str, str]]:
+    """(act_n, scene_n) of any unnumbered Globe milestone (no @n) that
+    nonetheless carries @source -- should always be empty. @source only ever
+    belongs alongside a transcribed @n."""
+    offenders: list[tuple[str, str]] = []
+    for act in p5_root.iter(q("div")):
+        if act.get("type") != "act":
+            continue
+        act_n = act.get("n")
+        for scene in act.iter(q("div")):
+            if scene.get("type") != "scene":
+                continue
+            scene_n = scene.get("n")
+            for ms in scene.iter(q("milestone")):
+                if ms.get("ed") == "Globe" and ms.get("n") is None and ms.get("source") is not None:
+                    offenders.append((act_n, scene_n))
+    return offenders
+
+
+def f1_milestones_with_source(p5_root) -> list[str | None]:
+    """@n values of any F1 milestone that carries @source -- should always be
+    empty. Every F1 anchor arrives by the same route (all numbered, none
+    interpolated), so none of them discriminate evidence from inference the
+    way a Globe @source does; see the globe_lineation module docstring."""
+    body = p5_root.find(f"{q('text')}/{q('body')}")
+    return [ms.get("n") for ms in body.iter(q("milestone")) if ms.get("ed") == "F1" and ms.get("source") is not None]
+
+
+def assert_transcribed_anchors_have_source(p4_root, p5_root) -> None:
+    """Parallel to assert_transcribed_anchors_precede_same_text: every Globe
+    anchor transcribed in the P4 source must carry source=GLOBE_EDITION_SOURCE
+    in the converted P5 tree, and only those -- no unnumbered Globe milestone
+    and no F1 milestone may carry @source. Both directions matter: a bug that
+    just always sets @source would pass a source-only-present check
+    trivially."""
+    expected_keys = set(globe_expected_texts(p4_root).keys())
+    actual_sources = globe_actual_sources(p5_root)
+
+    missing = {key for key in expected_keys if actual_sources.get(key) != GLOBE_EDITION_SOURCE}
+    assert not missing, f"transcribed Globe anchor(s) missing source={GLOBE_EDITION_SOURCE!r}: {missing}"
+
+    extra = {
+        key: source
+        for key, source in actual_sources.items()
+        if key not in expected_keys and source is not None
+    }
+    assert not extra, f"Globe anchor(s) outside the transcribed set unexpectedly carry @source: {extra}"
+
+    unnumbered_offenders = globe_unnumbered_with_source(p5_root)
+    assert not unnumbered_offenders, (
+        f"unnumbered Globe milestone(s) unexpectedly carry @source: {unnumbered_offenders}"
+    )
+
+    f1_offenders = f1_milestones_with_source(p5_root)
+    assert not f1_offenders, f"F1 milestone(s) unexpectedly carry @source: {f1_offenders}"
+
+
 # -- Unit-level proof the check has teeth -----------------------------------
 #
 # A small synthetic P4 fixture, converted correctly (via the real pipeline)
@@ -355,6 +460,80 @@ class TestFidelityCheckHasTeeth:
             assert_transcribed_anchors_precede_same_text(p4_root, p5_root)
 
 
+def _broken_shift_scope_source_stuck(scope_el, ed: str, scope_label: str, stats: ConversionStats) -> None:
+    """A deliberately reintroduced version of the exact bug
+    doc/agenda.org phase1/milestone-source-provenance warns about: @n shifts
+    correctly (identical logic, and reuse of the real move/relabel helpers,
+    to globe_lineation._shift_scope_to_start_forward), but @source is never
+    read, shifted, or cleared -- it is simply left wherever _convert_lb put
+    it, stranding it one boundary-slot behind every shifted @n. This is *not*
+    a copy-paste of an old version of the fixed function; it's the bug the
+    fix specifically guards against, reconstructed to prove the new check
+    catches it."""
+    milestones = [m for m in scope_el.iter(q("milestone")) if m.get("ed") == ed]
+    if not milestones:
+        return
+    original_values = [m.get("n") for m in milestones]
+    shifted_values = original_values[1:] + [None]
+    for m, new_n in zip(milestones, shifted_values):
+        embedded_in_prose = _has_content_after(m)
+        if new_n is not None:
+            m.set("n", new_n)
+        elif "n" in m.attrib:
+            del m.attrib["n"]
+        # @source deliberately untouched here -- this is the bug.
+        if not embedded_in_prose:
+            _move_milestone_forward(m, scope_el)
+    leading_value = original_values[0]
+    if leading_value is not None:
+        new_ms = etree.Element(q("milestone"))
+        new_ms.set("unit", "line")
+        new_ms.set("ed", ed)
+        new_ms.set("n", leading_value)
+        # @source deliberately not inherited here either -- same bug.
+        target = _first_l_or_p(scope_el)
+        _insert_leading(target, new_ms)
+        stats.synthesized_leading_milestones.append((ed, scope_label, leading_value))
+
+
+def _broken_reposition_source_stuck(new_body, stats: ConversionStats) -> None:
+    """Same scope-selection order as reposition_milestones_start_forward, but
+    using the source-stuck broken shift above instead of the real one."""
+    _broken_shift_scope_source_stuck(new_body, "F1", "(whole play)", stats)
+    for scene in new_body.iter(q("div")):
+        if scene.get("type") != "scene":
+            continue
+        act_n = scene.xpath("ancestor::tei:div[@type='act'][1]/@n", namespaces=NS)
+        label = f"Act {act_n[0] if act_n else '?'}, Scene {scene.get('n')}"
+        _broken_shift_scope_source_stuck(scene, "Globe", label, stats)
+
+
+class TestSourceCheckHasTeeth:
+    def test_passes_when_source_travels_with_the_shifted_value(self):
+        p4_root = _synthetic_p4_root()
+        stats = ConversionStats()
+        p5_body = convert_body(p4_root, stats)
+        reposition_milestones_start_forward(p5_body, stats)  # real, fixed repositioning
+        p5_root = etree.Element(q("TEI"))
+        text_el = etree.SubElement(p5_root, q("text"))
+        text_el.append(p5_body)
+
+        # Should not raise: @source shifted in lockstep with @n.
+        assert_transcribed_anchors_have_source(p4_root, p5_root)
+
+    def test_fails_when_source_stays_on_the_original_element(self):
+        p4_root = _synthetic_p4_root()
+        stats = ConversionStats()
+        p5_body = convert_body(p4_root, stats)
+        _broken_reposition_source_stuck(p5_body, stats)  # deliberately broken repositioning
+        p5_root = etree.Element(q("TEI"))
+        text_el = etree.SubElement(p5_root, q("text"))
+        text_el.append(p5_body)
+
+        with pytest.raises(AssertionError):
+            assert_transcribed_anchors_have_source(p4_root, p5_root)
+
+
 # -- Retroactive regression guard against the real, already-shipped Lear pair --
 
 LEAR_P4 = Path(__file__).parent.parent.parent / "canonical-engLit" / "Renaissance" / "Shakespeare" / "opensource" / "lr.xml"
@@ -369,6 +548,14 @@ def test_real_lear_anchors_precede_same_text_as_p4():
     assert_transcribed_anchors_precede_same_text(p4_root, p5_root)
 
 
+@pytest.mark.skipif(not LEAR_P4.exists() or not LEAR_P5.exists(), reason="canonical-engLit sibling repo not found")
+def test_real_lear_transcribed_anchors_have_source():
+    p4_root = parse_p4(LEAR_P4)
+    p5_parser = etree.XMLParser(load_dtd=False, resolve_entities=False, no_network=True)
+    p5_root = etree.parse(str(LEAR_P5), p5_parser).getroot()
+    assert_transcribed_anchors_have_source(p4_root, p5_root)
+
+
 ANTONY_P4 = Path(__file__).parent.parent.parent / "canonical-engLit" / "Renaissance" / "Shakespeare" / "opensource" / "ant.xml"
 ANTONY_P5 = Path(__file__).parent.parent.parent / "canonical-engLit" / "data" / "shakespeare" / "ant" / "shakespeare.ant.globe.xml"
 
@@ -379,3 +566,11 @@ def test_real_antony_anchors_precede_same_text_as_p4():
     p5_parser = etree.XMLParser(load_dtd=False, resolve_entities=False, no_network=True)
     p5_root = etree.parse(str(ANTONY_P5), p5_parser).getroot()
     assert_transcribed_anchors_precede_same_text(p4_root, p5_root)
+
+
+@pytest.mark.skipif(not ANTONY_P4.exists() or not ANTONY_P5.exists(), reason="canonical-engLit sibling repo not found")
+def test_real_antony_transcribed_anchors_have_source():
+    p4_root = parse_p4(ANTONY_P4)
+    p5_parser = etree.XMLParser(load_dtd=False, resolve_entities=False, no_network=True)
+    p5_root = etree.parse(str(ANTONY_P5), p5_parser).getroot()
+    assert_transcribed_anchors_have_source(p4_root, p5_root)

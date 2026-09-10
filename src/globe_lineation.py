@@ -12,8 +12,22 @@ This module re-derives the body from the P4 source directly:
 - Every Globe <lb ed="G"/> (numbered or not) becomes
   <milestone unit="line" ed="Globe" [n="..."]/> -- @n present only where
   the P4 source actually transcribed a number. Do not invent numbers.
+- A Globe milestone whose @n was transcribed from the page also carries
+  source="#globe-edition", pointing at the <bibl xml:id="globe-edition">
+  in the existing P5 file's <sourceDesc> that describes the Globe edition
+  itself (Clark & Wright, Macmillan). A Globe milestone whose @n arose any
+  other way (future interpolation/oracle fit), and any Globe milestone
+  with no @n at all, carries no @source. @source is the durable marker of
+  evidence vs. inference; @n-presence alone stops discriminating the
+  moment something starts interpolating numbers. See
+  canonical-engLit/doc/forum.org #citations/globe-recap and
+  doc/agenda.org phase1/milestone-source-provenance.
 - Every F1 <lb ed="F1" n="..."/> becomes
-  <milestone unit="line" ed="F1" n="..."/>.
+  <milestone unit="line" ed="F1" n="..."/>. F1 milestones never carry
+  @source: every one of them is numbered by the same route, so there is
+  no discriminating subset -- F1's unidentified provenance is recorded
+  once per document, not per milestone (see the play file's <sourceDesc>/
+  <encodingDesc>).
 - <reg orig="X">Y</reg> (P4's hyphenation-regularization shorthand)
   becomes plain text Y -- the regularized reading P4 itself displays.
   <orig>/<reg> are not in the Perseus P5 schema and the P4-shape @orig
@@ -37,6 +51,12 @@ from lxml import etree
 from tei import NS, XML_ID, XML_BASE
 
 TEI_URI = NS["tei"]
+
+# Pointer target for @source on a transcribed Globe milestone: a
+# <bibl xml:id="globe-edition"> in the play file's <sourceDesc>, describing
+# the Globe edition itself (not a specific digitized copy). See the module
+# docstring and canonical-engLit/doc/agenda.org phase1/milestone-source-provenance.
+GLOBE_EDITION_SOURCE = "#globe-edition"
 
 
 def q(tag: str) -> str:
@@ -185,6 +205,7 @@ def _convert_lb(old, stats: ConversionStats, ctx: str):
         new.set("ed", "Globe")
         if n is not None:
             new.set("n", n)
+            new.set("source", GLOBE_EDITION_SOURCE)
             stats.milestone_globe_numbered += 1
         else:
             stats.milestone_globe_unnumbered += 1
@@ -395,26 +416,43 @@ def _shift_scope_to_start_forward(scope_el, ed: str, scope_label: str, stats: Co
     Only the scope's leading boundary (the P4 source never marks one at the true start
     of a scene/the play) needs a brand new milestone inserted, when that boundary was
     itself transcribed.
+
+    @source travels with the @n value, not with the element: it is captured and
+    shifted in lockstep with @n below. Setting @source in _convert_lb and then
+    leaving it on the element here would strand it one boundary-slot behind every
+    shifted @n -- the identical failure the historical Lear anchor displacement
+    had, just for a different attribute. (F1 milestones never carry @source in
+    the first place, so this shifting is a no-op for F1 scopes -- nothing special
+    needs to gate that off.)
     """
     milestones = [m for m in scope_el.iter(q("milestone")) if m.get("ed") == ed]
     if not milestones:
         return
     original_values = [m.get("n") for m in milestones]
+    original_sources = [m.get("source") for m in milestones]
     shifted_values = original_values[1:] + [None]
-    for m, new_n in zip(milestones, shifted_values):
+    shifted_sources = original_sources[1:] + [None]
+    for m, new_n, new_source in zip(milestones, shifted_values, shifted_sources):
         embedded_in_prose = _has_content_after(m)
         if new_n is not None:
             m.set("n", new_n)
         elif "n" in m.attrib:
             del m.attrib["n"]
+        if new_source is not None:
+            m.set("source", new_source)
+        elif "source" in m.attrib:
+            del m.attrib["source"]
         if not embedded_in_prose:
             _move_milestone_forward(m, scope_el)
     leading_value = original_values[0]
+    leading_source = original_sources[0]
     if leading_value is not None:
         new_ms = etree.Element(q("milestone"))
         new_ms.set("unit", "line")
         new_ms.set("ed", ed)
         new_ms.set("n", leading_value)
+        if leading_source is not None:
+            new_ms.set("source", leading_source)
         target = _first_l_or_p(scope_el)
         if target is None:
             raise ConversionError(f"no <l>/<p> found to anchor a leading milestone in {scope_label}")

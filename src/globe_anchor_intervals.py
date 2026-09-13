@@ -27,6 +27,7 @@ class Boundary:
     position: int  # 1-based position among this scene's Globe milestones
     n: str | None  # transcribed number, if any
     leads_into: str  # start of the text this boundary marks the beginning of
+    flagged: bool = False  # sits in an <l> with an unpaired/asymmetric @part
 
 
 @dataclass
@@ -47,6 +48,10 @@ class Interval:
     def closes(self) -> bool:
         return self.excess == 0
 
+    @property
+    def has_flagged_boundary(self) -> bool:
+        return any(b.flagged for b in self.boundaries)
+
 
 def _following_text(milestone) -> str:
     """Text that begins the line/content a (start-forward) milestone leads --
@@ -65,11 +70,41 @@ def _following_text(milestone) -> str:
         node = nxt
 
 
+def _unpaired_part_ls(scope_el) -> set:
+    """<l> elements bearing @part='I'/'F' that are not part of a clean
+    adjacent I->F pair -- the same split-line class
+    globe_lineation._dedupe_shared_verse_lines deliberately leaves
+    unresolved rather than guess at (doc/agenda.org
+    phase1/fix-globe-anchor-placement, Defect 3). Recomputed read-only,
+    directly from the final tree, rather than threaded through from
+    ConversionStats -- keeps this module a pure function of the XML, as it
+    already is for everything else it reports."""
+    all_l = scope_el.xpath(".//tei:l", namespaces=NS)
+    unpaired = set()
+    i, n = 0, len(all_l)
+    while i < n:
+        l = all_l[i]
+        part = l.get("part")
+        if part == "I" and i + 1 < n and all_l[i + 1].get("part") == "F":
+            i += 2
+            continue
+        if part in ("I", "F"):
+            unpaired.add(l)
+        i += 1
+    return unpaired
+
+
+def _boundary_is_flagged(milestone, unpaired_ls: set) -> bool:
+    parent = milestone.getparent()
+    return parent is not None and parent in unpaired_ls
+
+
 def compute_scene_intervals(scene_div) -> list[Interval]:
     milestones = scene_div.xpath(".//tei:milestone[@ed='Globe']", namespaces=NS)
     act_n_vals = scene_div.xpath("ancestor::tei:div[@type='act'][1]/@n", namespaces=NS)
     act_n = str(act_n_vals[0]) if act_n_vals else "?"
     scene_n = scene_div.get("n", "?")
+    unpaired_ls = _unpaired_part_ls(scene_div)
 
     numbered_positions = [
         (i, int(m.get("n"))) for i, m in enumerate(milestones) if m.get("n") is not None
@@ -78,7 +113,10 @@ def compute_scene_intervals(scene_div) -> list[Interval]:
     intervals: list[Interval] = []
     for (i, a), (j, b) in zip(numbered_positions, numbered_positions[1:]):
         boundaries = [
-            Boundary(position=k - i, n=milestones[k].get("n"), leads_into=_following_text(milestones[k]))
+            Boundary(
+                position=k - i, n=milestones[k].get("n"), leads_into=_following_text(milestones[k]),
+                flagged=_boundary_is_flagged(milestones[k], unpaired_ls),
+            )
             for k in range(i + 1, j + 1)
         ]
         intervals.append(

@@ -49,6 +49,36 @@ def main() -> None:
         print("Stray <sp @n> stripped (P4 encoding oddities, not carried into P5):", file=sys.stderr)
         for ctx, n, snippet in stats.sp_stray_n_stripped:
             print(f"  {ctx}: n={n!r} ({snippet!r})", file=sys.stderr)
+    if stats.recovered_transcribed_anchors:
+        print(
+            f"Recovered transcribed anchors (stray <l @n> restored as Globe milestones -- "
+            f"insertions): {len(stats.recovered_transcribed_anchors)}",
+            file=sys.stderr,
+        )
+        for ctx, n in stats.recovered_transcribed_anchors:
+            print(f"  {ctx}: n={n!r}", file=sys.stderr)
+    if stats.split_line_boundaries_deleted:
+        print(
+            f"Shared verse-line split boundaries deleted (spurious duplicate removed): "
+            f"{len(stats.split_line_boundaries_deleted)}",
+            file=sys.stderr,
+        )
+        for i_snip, f_snip in stats.split_line_boundaries_deleted:
+            print(f"  {i_snip!r} / {f_snip!r}", file=sys.stderr)
+    if stats.split_line_pairs_already_clean:
+        print(
+            f"Shared verse-line pairs already clean (no boundary to delete): "
+            f"{len(stats.split_line_pairs_already_clean)}",
+            file=sys.stderr,
+        )
+    if stats.unpaired_part_markers:
+        print(
+            f"Unpaired/asymmetric @part markers left unresolved, flagged for the "
+            f"alignment-oracle task: {len(stats.unpaired_part_markers)}",
+            file=sys.stderr,
+        )
+        for snip, part in stats.unpaired_part_markers:
+            print(f"  part={part!r}: {snip!r}", file=sys.stderr)
 
     in_counts = {t: n for t, n in stats.element_counts_in.items()}
     out_counts = stats.element_counts_out
@@ -70,22 +100,34 @@ def main() -> None:
     for excess, count in sorted(hist.items()):
         print(f"  excess {excess:+d}: {count}", file=sys.stderr)
 
+    flagged_count = sum(1 for iv in intervals if not iv.closes and iv.has_flagged_boundary)
+    if flagged_count:
+        print(
+            f"  of which {flagged_count} non-closing interval(s) contain an "
+            "unpaired/asymmetric @part boundary (flagged for the oracle, not guessed at here)",
+            file=sys.stderr,
+        )
+
     if args.intervals_csv:
         with args.intervals_csv.open("w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerow([
                 "act", "scene", "anchor_a", "anchor_b", "gap", "boundaries_between",
-                "excess", "closes", "boundary_position", "boundary_n", "leads_into",
+                "excess", "closes", "interval_flagged",
+                "boundary_position", "boundary_n", "leads_into", "boundary_flagged",
             ])
             for iv in intervals:
+                interval_flagged = "yes" if iv.has_flagged_boundary else "no"
                 if iv.closes:
                     writer.writerow([iv.act, iv.scene, iv.anchor_a, iv.anchor_b, iv.gap,
-                                      iv.boundaries_between, iv.excess, "yes", "", "", ""])
+                                      iv.boundaries_between, iv.excess, "yes", interval_flagged,
+                                      "", "", "", ""])
                 else:
                     for b in iv.boundaries:
                         writer.writerow([iv.act, iv.scene, iv.anchor_a, iv.anchor_b, iv.gap,
-                                          iv.boundaries_between, iv.excess, "no",
-                                          b.position, b.n or "", b.leads_into])
+                                          iv.boundaries_between, iv.excess, "no", interval_flagged,
+                                          b.position, b.n or "", b.leads_into,
+                                          "yes" if b.flagged else "no"])
         print(f"Wrote {len(intervals)}-interval closure audit to {args.intervals_csv}", file=sys.stderr)
 
 

@@ -82,13 +82,47 @@ class TestLConversion:
         assert l.get("part") == "I"
         assert l.get("n") is None
 
-    def test_stray_n_stripped_and_reported(self):
+    def test_stray_n_stripped_and_reported_when_no_preceding_line(self):
+        # No preceding <l> in scope to corroborate against (this is the
+        # scene's first line) -- treated conservatively as noise, not staged
+        # for recovery.
         body, stats = _convert('<div1 type="act" n="1"><div2 type="scene" n="1">'
                                 '<l n="111" part="I">Is he pursued?</l></div2></div1>')
         l = body.find(f".//{q('l')}")
         assert l.get("n") is None
         assert l.get("part") == "I"
         assert len(stats.l_stray_n_stripped) == 1
+        assert stats.pending_anchor_recovery == []
+
+    def test_stray_n_staged_for_recovery_when_preceding_line_lacks_boundary(self):
+        # doc/agenda.org phase1/fix-globe-anchor-placement, Defect 2: a stray
+        # @n whose immediately preceding <l> has no <lb ed="G"> of its own is
+        # a transcribed Globe anchor recorded in the wrong slot, not noise --
+        # staged for recovery (applied later, post-repositioning) rather than
+        # stripped.
+        body, stats = _convert('<div1 type="act" n="1"><div2 type="scene" n="1">'
+                                '<l>preceding line, no Globe boundary</l>'
+                                '<l n="111" part="I">Is he pursued?</l></div2></div1>')
+        l = body.findall(f".//{q('l')}")[1]
+        assert l.get("n") is None  # not written directly onto the <l> either way
+        assert stats.l_stray_n_stripped == []
+        assert len(stats.pending_anchor_recovery) == 1
+        ctx, n, target = stats.pending_anchor_recovery[0]
+        assert n == "111"
+        assert target is l
+
+    def test_stray_n_still_stripped_when_preceding_line_has_boundary(self):
+        # The ordinary case (2,548 of the corpus's 2,550 stray <l @n>
+        # instances): the preceding line already carries its own <lb
+        # ed="G">, so this @n is an interpolated leftover, not a recorded
+        # anchor -- still stripped as noise.
+        body, stats = _convert('<div1 type="act" n="1"><div2 type="scene" n="1">'
+                                '<l>preceding line <lb n="12" ed="G"/></l>'
+                                '<l n="13">next line</l></div2></div1>')
+        l = body.findall(f".//{q('l')}")[1]
+        assert l.get("n") is None
+        assert len(stats.l_stray_n_stripped) == 1
+        assert stats.pending_anchor_recovery == []
 
 
 class TestSpConversion:

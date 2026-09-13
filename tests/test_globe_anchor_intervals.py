@@ -124,3 +124,56 @@ class TestIntervalClosure:
         intervals = compute_document_intervals(root)
         assert len(intervals) == 2
         assert {iv.scene for iv in intervals} == {"1", "2"}
+
+
+class TestUnpairedPartFlagging:
+    """doc/agenda.org phase1/fix-globe-anchor-placement, Defect 3: an interval
+    whose non-closure traces to an unpaired/asymmetric @part marker (left
+    unresolved by globe_lineation._dedupe_shared_verse_lines) is flagged for
+    the alignment-oracle task, distinct from an ordinary unexplained gap."""
+
+    def test_unpaired_part_boundary_flags_its_interval(self):
+        scene = (
+            '<div type="scene" n="1">'
+            '<l>a <milestone unit="line" ed="Globe" n="10"/></l>'
+            '<l part="I">b <milestone unit="line" ed="Globe"/></l>'
+            '<l>c <milestone unit="line" ed="Globe"/></l>'
+            '<l>d <milestone unit="line" ed="Globe" n="12"/></l>'
+            "</div>"
+        )
+        root = _doc(scene)
+        iv = compute_document_intervals(root)[0]
+        assert not iv.closes
+        assert iv.has_flagged_boundary
+        assert iv.boundaries[0].flagged
+
+    def test_clean_pair_does_not_flag(self):
+        scene = (
+            '<div type="scene" n="1">'
+            '<l>a <milestone unit="line" ed="Globe" n="10"/></l>'
+            '<l part="I">b <milestone unit="line" ed="Globe"/></l>'
+            '<l part="F">c <milestone unit="line" ed="Globe"/></l>'
+            '<l>d <milestone unit="line" ed="Globe" n="12"/></l>'
+            "</div>"
+        )
+        root = _doc(scene)
+        iv = compute_document_intervals(root)[0]
+        assert not iv.has_flagged_boundary
+        assert all(not b.flagged for b in iv.boundaries)
+
+    def test_no_part_at_all_does_not_flag(self):
+        # The known real case (Lear II.4's "Return you to my sister."/"Never,
+        # Regan:") -- no @part anywhere, so nothing for this mechanism to
+        # detect; it is a real unresolved split, but a different, silent
+        # kind that this flag (by design) does not claim to catch.
+        scene = (
+            '<div type="scene" n="1">'
+            '<l>a <milestone unit="line" ed="Globe" n="10"/></l>'
+            '<l>b <milestone unit="line" ed="Globe"/></l>'
+            '<l>c <milestone unit="line" ed="Globe"/></l>'
+            '<l>d <milestone unit="line" ed="Globe" n="12"/></l>'
+            "</div>"
+        )
+        root = _doc(scene)
+        iv = compute_document_intervals(root)[0]
+        assert not iv.has_flagged_boundary

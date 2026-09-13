@@ -106,6 +106,24 @@ class ConversionStats:
     element_counts_in: dict = field(default_factory=dict)
     element_counts_out: dict = field(default_factory=dict)
     synthesized_leading_milestones: list = field(default_factory=list)
+    # Defect 2 (doc/agenda.org phase1/fix-globe-anchor-placement): a stray @n on
+    # <l> whose immediately preceding <l> (in document order, crossing <sp>
+    # boundaries) lacks its own <lb ed="G"> is a transcribed Globe anchor
+    # recorded in the wrong slot, not P4 encoding noise. Recovery is deferred:
+    # entries here are (ctx, n, target_l_element), applied by
+    # _recover_pending_anchors after repositioning, so a recovered anchor never
+    # enters the shift-chain arithmetic.
+    pending_anchor_recovery: list = field(default_factory=list)
+    recovered_transcribed_anchors: list = field(default_factory=list)
+    # Defect 3: a verse line split between two speakers (<l part="I">/<l
+    # part="F">) gets one Globe milestone, on the I-half; a spurious duplicate
+    # on the F-half is deleted (transferring its value first, if numbered).
+    split_line_boundaries_deleted: list = field(default_factory=list)
+    split_line_pairs_already_clean: list = field(default_factory=list)
+    # An <l> carrying @part="I"/"F" that isn't part of a clean adjacent pair --
+    # left unresolved deliberately (see _dedupe_shared_verse_lines), flagged for
+    # the alignment-oracle task rather than guessed at here.
+    unpaired_part_markers: list = field(default_factory=list)
 
     def summary(self) -> str:
         return (
@@ -118,7 +136,14 @@ class ConversionStats:
             f"{len(self.reg_collapsed_to_text)} <reg @orig> collapsed to plain text. "
             f"entities resolved: {self.entities_resolved or '(none)'}. "
             f"{len(self.synthesized_leading_milestones)} leading milestones synthesized "
-            "(start-forward repositioning, no tag at that position in P4)"
+            "(start-forward repositioning, no tag at that position in P4). "
+            f"{len(self.recovered_transcribed_anchors)} transcribed anchors recovered "
+            "(stray <l @n>, restored rather than stripped). "
+            f"{len(self.split_line_boundaries_deleted)} shared verse-line split "
+            f"boundaries deleted, {len(self.split_line_pairs_already_clean)} pairs "
+            "already clean. "
+            f"{len(self.unpaired_part_markers)} unpaired/asymmetric @part markers "
+            "flagged, left unresolved."
         )
 
 
@@ -241,19 +266,52 @@ def _convert_div(old, stats: ConversionStats, ctx: str, expected_type: str):
     return new
 
 
+def _preceding_l_in_scene(old):
+    """The nearest preceding <l> in document order within old's enclosing P4
+    scene (<div2>, or <div1> if there's no div2), crossing <sp> boundaries --
+    a shared verse line routinely splits across a change of speaker, so the
+    "preceding line" a Globe boundary would sit after is not necessarily a
+    direct XML sibling. None if old is the scene's first <l>."""
+    scope = old.getparent()
+    while scope is not None and scope.tag not in ("div2", "div1"):
+        scope = scope.getparent()
+    if scope is None:
+        return None
+    siblings = list(scope.iter("l"))
+    idx = siblings.index(old)
+    return siblings[idx - 1] if idx > 0 else None
+
+
+def _stray_n_is_recoverable(old) -> bool:
+    """A stray @n on <l> is a transcribed Globe anchor recorded in the wrong
+    slot -- not P4 encoding noise -- iff the immediately preceding <l> lacks
+    the <lb ed="G"/> every ordinary line has (doc/agenda.org
+    phase1/fix-globe-anchor-placement, Defect 2). No preceding line (this is
+    the scene's first <l>) leaves nothing to corroborate against, so treat
+    conservatively as noise -- this is the 2,550-instance ordinary case, not
+    the two known real ones."""
+    prev = _preceding_l_in_scene(old)
+    if prev is None:
+        return False
+    return not any(c.tag == "lb" and c.get("ed") == "G" for c in prev)
+
+
 def _convert_l(old, stats: ConversionStats, ctx: str):
     part = old.get("part")
     stray_n = old.get("n")
     extra = set(old.attrib.keys()) - {"part", "n"}
     if extra:
         raise ConversionError(f"<l> has unexpected attributes {extra} at {ctx}")
-    if stray_n is not None:
-        snippet = "".join(old.itertext()).strip()[:60]
-        stats.l_stray_n_stripped.append((ctx, stray_n, snippet))
     new = etree.Element(q("l"))
     if part is not None:
         new.set("part", part)
     convert_children(old, new, stats, ctx)
+    if stray_n is not None:
+        if _stray_n_is_recoverable(old):
+            stats.pending_anchor_recovery.append((ctx, stray_n, new))
+        else:
+            snippet = "".join(old.itertext()).strip()[:60]
+            stats.l_stray_n_stripped.append((ctx, stray_n, snippet))
     return new
 
 
@@ -331,13 +389,29 @@ def _local(tag) -> str:
     return etree.QName(tag).localname
 
 
-def _first_l_or_p(scope_el):
+def _first_by_tag(scope_el, tag: str):
     for el in scope_el.iter():
         if el is scope_el:
             continue
-        if _local(el.tag) in ("l", "p"):
+        if _local(el.tag) == tag:
             return el
     return None
+
+
+def _is_verse_milestone(m) -> bool:
+    """True iff m's direct parent is <l>. P4's verse convention (trailing
+    marker, belongs to the *next* line) only ever applies to a milestone
+    produced from an <lb> that was nested inside <l> -- everywhere else
+    (<p>, or the corpus's rarer shapes: an <lb> sitting directly in <div1>/
+    <div2> before any <sp> at all, marking an act/scene's opening boundary;
+    an <lb> embedded inside a <stage> direction) already carries P4's prose
+    convention (marker leads the text it numbers) or is otherwise already at
+    the position P4 itself placed it. Excluding every non-<l> case from the
+    shift chain, rather than enumerating each shape, is the same "don't touch
+    what P4 already got right" principle Defect 1 states for prose --
+    generalized to whatever isn't verse, not just to <p> specifically."""
+    parent = m.getparent()
+    return parent is not None and _local(parent.tag) == "l"
 
 
 def _insert_leading(target, new_ms) -> None:
@@ -367,31 +441,38 @@ def _has_content_after(m) -> bool:
         node = nxt
 
 
-def _next_content_element(node, scope_el):
-    """First <l>/<p> in document order strictly after node, within scope_el."""
+def _next_content_element(node, scope_el, tag: str):
+    """First element with local name tag in document order strictly after node,
+    within scope_el. Restricted to a single tag (not "<l>/<p>") because a
+    verse-chain milestone must never be relocated onto a <p> -- P4's prose
+    convention already places its own markers correctly (Defect 1), and
+    injecting a moved-in verse boundary into an already-correct paragraph
+    would fabricate a spurious extra one there."""
     found_self = False
     for el in scope_el.iter():
         if el is node:
             found_self = True
             continue
-        if found_self and _local(el.tag) in ("l", "p"):
+        if found_self and _local(el.tag) == tag:
             return el
     return None
 
 
-def _move_milestone_forward(m, scope_el) -> None:
+def _move_milestone_forward(m, scope_el, tag: str) -> None:
     """Relocate a terminal boundary marker (nothing meaningful follows it within its
-    current parent) to lead the next <l>/<p> in the scope, so it's structurally, not
-    just positionally, the start of the content it now describes. A milestone embedded
-    mid-sentence in running prose (real text in its .tail) is left untouched -- it
-    already sits at the exact character offset that begins the content it describes;
-    there is no separate element to relocate it into."""
-    target = _next_content_element(m, scope_el)
+    current parent) to lead the next element of the given tag in the scope, so it's
+    structurally, not just positionally, the start of the content it now describes.
+    A milestone embedded mid-sentence in running prose (real text in its .tail) is
+    left untouched -- it already sits at the exact character offset that begins the
+    content it describes; there is no separate element to relocate it into."""
+    target = _next_content_element(m, scope_el, tag)
     parent = m.getparent()
     parent.remove(m)
     if target is None:
-        # Nothing follows within scope (the scene's/play's final boundary) -- put it
-        # back where it was; there is nowhere forward to move it to.
+        # Nothing of this tag follows within scope (the scene's/play's final
+        # boundary, or -- for a verse milestone -- nothing but a trailing prose
+        # paragraph) -- put it back where it was; there is nowhere forward to
+        # move it to that this chain is allowed to touch.
         parent.append(m)
         m.tail = None
         return
@@ -405,13 +486,23 @@ def _shift_scope_to_start_forward(scope_el, ed: str, scope_label: str, stats: Co
     see canonical-engLit/CLAUDE.md) and perseus_cts's resolver, which walks *forward*
     from a matched milestone to the next one to build its cited span.
 
+    Mode-aware (doc/agenda.org phase1/fix-globe-anchor-placement, Defect 1): only
+    milestones whose direct parent is <l> (verse) enter the shift chain. P4's verse
+    convention trails a boundary marker at the *end* of the line it labels (the
+    marginal number belongs to the line that follows); its prose convention already
+    places the marker immediately before the text it numbers -- correct as it stands,
+    no shift, no move. Applying the verse rule to prose (or the reverse) is exactly
+    the historical bug: a marker's value/position shifted uniformly regardless of
+    which P4 convention actually placed it. A scope with no verse-parented milestones
+    of this @ed (e.g. Antony's currently all-<p> scenes) is therefore a no-op here.
+
     Relabeling @n alone would be document-order-correct but leave each marker nested
     inside the *previous* line's element -- not what "beginning of the line it labels"
     means structurally. So a terminal boundary (nothing meaningful after it within its
     current parent -- the normal shape for every verse-line-ending marker) is also
-    physically relocated to lead the next <l>/<p>. A boundary embedded mid-sentence in
-    prose is relabeled in place only, since it already sits at the exact character
-    offset where the content it now describes begins.
+    physically relocated to lead the next <l>. A boundary embedded mid-sentence within
+    a verse line is relabeled in place only, since it already sits at the exact
+    character offset where the content it now describes begins.
 
     Only the scope's leading boundary (the P4 source never marks one at the true start
     of a scene/the play) needs a brand new milestone inserted, when that boundary was
@@ -425,7 +516,8 @@ def _shift_scope_to_start_forward(scope_el, ed: str, scope_label: str, stats: Co
     the first place, so this shifting is a no-op for F1 scopes -- nothing special
     needs to gate that off.)
     """
-    milestones = [m for m in scope_el.iter(q("milestone")) if m.get("ed") == ed]
+    all_ed_milestones = [m for m in scope_el.iter(q("milestone")) if m.get("ed") == ed]
+    milestones = [m for m in all_ed_milestones if _is_verse_milestone(m)]
     if not milestones:
         return
     original_values = [m.get("n") for m in milestones]
@@ -433,7 +525,7 @@ def _shift_scope_to_start_forward(scope_el, ed: str, scope_label: str, stats: Co
     shifted_values = original_values[1:] + [None]
     shifted_sources = original_sources[1:] + [None]
     for m, new_n, new_source in zip(milestones, shifted_values, shifted_sources):
-        embedded_in_prose = _has_content_after(m)
+        has_content_after = _has_content_after(m)
         if new_n is not None:
             m.set("n", new_n)
         elif "n" in m.attrib:
@@ -442,8 +534,8 @@ def _shift_scope_to_start_forward(scope_el, ed: str, scope_label: str, stats: Co
             m.set("source", new_source)
         elif "source" in m.attrib:
             del m.attrib["source"]
-        if not embedded_in_prose:
-            _move_milestone_forward(m, scope_el)
+        if not has_content_after:
+            _move_milestone_forward(m, scope_el, "l")
     leading_value = original_values[0]
     leading_source = original_sources[0]
     if leading_value is not None:
@@ -453,9 +545,9 @@ def _shift_scope_to_start_forward(scope_el, ed: str, scope_label: str, stats: Co
         new_ms.set("n", leading_value)
         if leading_source is not None:
             new_ms.set("source", leading_source)
-        target = _first_l_or_p(scope_el)
+        target = _first_by_tag(scope_el, "l")
         if target is None:
-            raise ConversionError(f"no <l>/<p> found to anchor a leading milestone in {scope_label}")
+            raise ConversionError(f"no <l> found to anchor a leading milestone in {scope_label}")
         _insert_leading(target, new_ms)
         stats.synthesized_leading_milestones.append((ed, scope_label, leading_value))
 
@@ -474,6 +566,132 @@ def reposition_milestones_start_forward(new_body, stats: ConversionStats) -> Non
         _shift_scope_to_start_forward(scene, "Globe", label, stats)
 
 
+def _recover_pending_anchors(stats: ConversionStats) -> None:
+    """Apply Defect 2's deferred recoveries: a stray @n found on <l> during
+    conversion (staged in stats.pending_anchor_recovery as (ctx, n,
+    target_l)) becomes a leading Globe milestone on that same <l>, carrying
+    @source since it is by construction a transcribed number. Run after
+    repositioning so the recovery is layered onto the shift chain's already-
+    settled result, not folded into its arithmetic.
+
+    target_l very often already has its own leading Globe milestone by this
+    point -- the ordinary (unnumbered) one the shift chain moved in from the
+    previous line -- since a stray @n is data recorded *in addition to*, not
+    instead of, the P4 <lb ed="G"/> most such lines also carry (both known
+    cases do). Update that milestone's value in place rather than inserting a
+    second one, which would otherwise leave the <l> with two Globe milestones
+    and its own text stranded between them.
+
+    A recovered anchor may land on the F-half of a shared verse-line split
+    (P4 records the compositor's choice, not the model's -- see Defect 3);
+    _dedupe_shared_verse_lines, run immediately after this, relocates any
+    such value onto the I-half where Defect 3 says the single resulting
+    milestone belongs. This function does not need to know about that; it
+    only restores the number to the slot where P4 recorded it.
+    """
+    for ctx, n, target_l in stats.pending_anchor_recovery:
+        existing = _leading_milestone(target_l, "Globe")
+        if existing is not None:
+            existing.set("n", n)
+            existing.set("source", GLOBE_EDITION_SOURCE)
+        else:
+            new_ms = etree.Element(q("milestone"))
+            new_ms.set("unit", "line")
+            new_ms.set("ed", "Globe")
+            new_ms.set("n", n)
+            new_ms.set("source", GLOBE_EDITION_SOURCE)
+            _insert_leading(target_l, new_ms)
+            stats.milestone_globe_numbered += 1
+        stats.recovered_transcribed_anchors.append((ctx, n))
+
+
+def _l_snippet(l_el) -> str:
+    return "".join(l_el.itertext()).strip()[:60]
+
+
+def _leading_milestone(l_el, ed: str):
+    """l_el's first child, if it is a <milestone> of the given @ed -- else None."""
+    if len(l_el) == 0:
+        return None
+    first = l_el[0]
+    if _local(first.tag) == "milestone" and first.get("ed") == ed:
+        return first
+    return None
+
+
+def _remove_leading_milestone(l_el, ms) -> None:
+    """Delete ms, l_el's leading (first) child, folding any text it carried
+    in its .tail back into l_el's own leading text so nothing is lost."""
+    tail = ms.tail or ""
+    l_el.remove(ms)
+    l_el.text = tail + (l_el.text or "")
+
+
+def _merge_split_pair(i_half, f_half, stats: ConversionStats) -> None:
+    """A verse line split between two speakers is one Globe line (Defect 3):
+    the single resulting milestone belongs on the I-half; any Globe milestone
+    on the F-half is a duplicate of the same boundary and is deleted, not
+    left unnumbered. P4 sometimes records the transcribed number on the
+    F-half instead of the I-half (the compositor's choice, not the model's --
+    confirmed for both known cases: Lear II.1's 111 sits on the I-half, III.7's
+    100 on the F-half) -- if the F-half's milestone is numbered, its value and
+    @source transfer onto the I-half's (creating one there if none exists)
+    before the F-half's is removed, so the number is preserved rather than
+    silently deleted along with the duplicate slot.
+
+    Two numbered milestones with *different* values is a genuine conflict,
+    not something to guess about -- raise rather than pick one.
+    """
+    i_ms = _leading_milestone(i_half, "Globe")
+    f_ms = _leading_milestone(f_half, "Globe")
+    if f_ms is None:
+        stats.split_line_pairs_already_clean.append((_l_snippet(i_half), _l_snippet(f_half)))
+        return
+    if (
+        i_ms is not None
+        and i_ms.get("n") is not None
+        and f_ms.get("n") is not None
+        and i_ms.get("n") != f_ms.get("n")
+    ):
+        raise ConversionError(
+            f"split pair {_l_snippet(i_half)!r} / {_l_snippet(f_half)!r}: conflicting "
+            f"numbered Globe boundaries ({i_ms.get('n')!r} on the I-half vs "
+            f"{f_ms.get('n')!r} on the F-half) -- needs human review, not a guessed merge"
+        )
+    if f_ms.get("n") is not None:
+        if i_ms is None:
+            i_ms = etree.Element(q("milestone"))
+            i_ms.set("unit", "line")
+            i_ms.set("ed", "Globe")
+            _insert_leading(i_half, i_ms)
+        i_ms.set("n", f_ms.get("n"))
+        if f_ms.get("source") is not None:
+            i_ms.set("source", f_ms.get("source"))
+    _remove_leading_milestone(f_half, f_ms)
+    stats.split_line_boundaries_deleted.append((_l_snippet(i_half), _l_snippet(f_half)))
+
+
+def _dedupe_shared_verse_lines(new_body, stats: ConversionStats) -> None:
+    """Walk <l> elements in document order; an adjacent part="I" -> part="F"
+    pair is a shared verse line and gets merged (Defect 3). @part is
+    incomplete and sometimes asymmetric in this corpus (Lear: 221 "I" vs 224
+    "F", plus splits with no @part at all) -- do not guess at an unpaired or
+    asymmetric marker; leave both boundaries in place and record it so the
+    interval report can flag it for the alignment-oracle task instead."""
+    all_l = list(new_body.iter(q("l")))
+    i, n = 0, len(all_l)
+    while i < n:
+        l = all_l[i]
+        part = l.get("part")
+        if part == "I" and i + 1 < n and all_l[i + 1].get("part") == "F":
+            _merge_split_pair(l, all_l[i + 1], stats)
+            i += 2
+            continue
+        if part in ("I", "F"):
+            stats.unpaired_part_markers.append((_l_snippet(l), part))
+        i += 1
+
+
 def rederive(p4_path, existing_p5_path) -> tuple[etree._ElementTree, ConversionStats]:
     """Build a re-derived P5 tree: existing P5 teiHeader (refsDecl leaf level rewritten to
     address Globe milestones) + a body converted fresh from the P4 source."""
@@ -481,6 +699,8 @@ def rederive(p4_path, existing_p5_path) -> tuple[etree._ElementTree, ConversionS
     p4_root = parse_p4(p4_path)
     new_body = convert_body(p4_root, stats)
     reposition_milestones_start_forward(new_body, stats)
+    _recover_pending_anchors(stats)
+    _dedupe_shared_verse_lines(new_body, stats)
 
     p5_parser = etree.XMLParser(load_dtd=False, resolve_entities=False, no_network=True)
     p5_tree = etree.parse(str(existing_p5_path), p5_parser)

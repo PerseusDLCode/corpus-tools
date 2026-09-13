@@ -54,15 +54,26 @@ def _text_of(el) -> str:
 
 
 class TestVerseRepositioning:
-    def test_numbered_boundary_moves_to_lead_the_line_it_labels(self):
-        # Globe 41 currently trails "To shake..." (P4/END convention: it labels the
-        # content before it). After repositioning it should physically become the
-        # LEADING child of that same line's <l> -- not just document-order-adjacent,
-        # actually nested inside the <l> whose content it describes.
+    """A terminal verse marker (nothing follows within its own <l>) moves to
+    lead the NEXT <l>, carrying its OWN original @n/@source unchanged --
+    never relabeled with some other marker's value. Confirmed against the
+    real Lear P4 (doc/agenda.org phase1/fix-globe-anchor-placement, review
+    [2026-09-12]): a marker trailing line k already carries the number that
+    belongs to line k+1 (P4's own convention), so once the marker is
+    physically moved forward, its own value is already correct -- no
+    relabeling step exists in the corrected model at all."""
+
+    def test_numbered_boundary_moves_to_lead_the_NEXT_line_keeping_its_own_value(self):
+        # This is the direct regression guard for the historical bug: a
+        # naive "shift the value list by one, then move" implementation
+        # relabels line 2's marker with line 3's original value and moves
+        # it to lead line 2 itself -- i.e. Globe 41 ends up leading "To
+        # shake all cares" (the line it trails), not "Conferring them" (the
+        # line P4's own convention says it belongs to).
         body = _body(
             '<div type="act" n="1"><div type="scene" n="1">'
             '<l>In three our kingdom <milestone unit="line" ed="Globe"/></l>'
-            '<l>To shake all cares <milestone unit="line" ed="Globe" n="41"/></l>'
+            '<l>To shake all cares <milestone unit="line" ed="Globe" n="41" source="#globe-edition"/></l>'
             '<l>Conferring them <milestone unit="line" ed="Globe"/></l>'
             "</div></div>"
         )
@@ -71,31 +82,33 @@ class TestVerseRepositioning:
         lines = body.findall(f".//{q('l')}")
         assert len(lines) == 3
 
-        # Line 1 ("In three our kingdom") now has NO milestone of its own -- its
-        # original (unnumbered) trailing marker moved forward to lead line 2.
+        # Line 1's own (unnumbered) trailing marker moved forward to lead line 2.
         assert len(lines[0]) == 0
         assert _text_of(lines[0]) == "In three our kingdom"
 
-        # Line 2 ("To shake all cares") now LEADS with Globe 41, moved in from
-        # line 1's old trailing position.
+        # Line 2 leads with the marker moved in from line 1 (unnumbered) --
+        # NOT with "41", which belongs to line 3.
         assert len(lines[1]) == 1
         ms1 = lines[1][0]
-        assert ms1.get("ed") == "Globe" and ms1.get("n") == "41"
+        assert ms1.get("ed") == "Globe" and ms1.get("n") is None
         assert ms1.tail.strip() == "To shake all cares"
 
-        # Line 3 leads with an unnumbered marker (moved in from line 2's old,
-        # already-unnumbered, trailing position) *and* keeps its own original
-        # marker trailing after it -- that one is the scope's genuine terminal
-        # boundary (nothing follows it in scope to shift its number from, and
-        # nowhere forward to move it to), also now unnumbered.
+        # Line 3 leads with "41" (its own value, unchanged, source intact --
+        # moved here from trailing line 2) and keeps its own original
+        # (unnumbered) marker trailing after it: the scope's genuine
+        # terminal boundary, nowhere forward to move to.
         assert len(lines[2]) == 2
         leading, trailing = lines[2]
-        assert leading.get("ed") == "Globe" and leading.get("n") is None
+        assert leading.get("ed") == "Globe" and leading.get("n") == "41"
+        assert leading.get("source") == "#globe-edition"
         assert leading.tail.strip() == "Conferring them"
         assert trailing.get("ed") == "Globe" and trailing.get("n") is None
         assert trailing.tail is None
 
-    def test_leading_milestone_synthesized_when_first_boundary_was_numbered(self):
+    def test_first_lines_own_numbered_boundary_moves_to_the_second_line_no_synthesis(self):
+        # No "leading milestone synthesis" exists in the corrected model --
+        # a scope's first line simply ends up with no marker of its own if
+        # its boundary moves away, exactly like any other terminal marker.
         body = _body(
             '<div type="act" n="1"><div type="scene" n="1">'
             '<l>first line <milestone unit="line" ed="Globe" n="10"/></l>'
@@ -104,16 +117,16 @@ class TestVerseRepositioning:
         )
         stats = ConversionStats()
         reposition_milestones_start_forward(body, stats)
-        first_l = body.find(f".//{q('l')}")
-        assert first_l.text is None
-        leading_ms = first_l[0]
-        assert leading_ms.get("ed") == "Globe"
-        assert leading_ms.get("n") == "10"
-        assert leading_ms.tail.strip() == "first line"
-        assert len(stats.synthesized_leading_milestones) == 1
-        assert stats.synthesized_leading_milestones[0][2] == "10"
+        lines = body.findall(f".//{q('l')}")
+        assert len(lines[0]) == 0
+        assert _text_of(lines[0]) == "first line"
 
-    def test_no_leading_milestone_when_first_boundary_unnumbered(self):
+        assert len(lines[1]) == 2
+        leading, trailing = lines[1]
+        assert leading.get("n") == "10" and leading.tail.strip() == "second line"
+        assert trailing.get("n") == "11" and trailing.tail is None
+
+    def test_first_lines_own_unnumbered_boundary_moves_too(self):
         body = _body(
             '<div type="act" n="1"><div type="scene" n="1">'
             '<l>first line <milestone unit="line" ed="Globe"/></l>'
@@ -122,14 +135,17 @@ class TestVerseRepositioning:
         )
         stats = ConversionStats()
         reposition_milestones_start_forward(body, stats)
-        first_l = body.find(f".//{q('l')}")
-        assert first_l.text == "first line "
-        assert stats.synthesized_leading_milestones == []
+        lines = body.findall(f".//{q('l')}")
+        assert len(lines[0]) == 0
+        assert len(lines[1]) == 2
+        leading, trailing = lines[1]
+        assert leading.get("n") is None and leading.tail.strip() == "second line"
+        assert trailing.get("n") == "11" and trailing.tail is None
 
-    def test_last_line_of_scope_keeps_its_own_now_unnumbered_marker(self):
-        # The very last boundary in scope has nothing to shift into it and nowhere
-        # forward to move to -- it stays trailing its own line, unnumbered, alongside
-        # the (also unnumbered) marker moved in to lead that same last line.
+    def test_last_line_of_scope_keeps_its_own_now_terminal_marker(self):
+        # The very last boundary in scope has nowhere forward to move to --
+        # it stays trailing its own line, value unchanged, alongside the
+        # marker moved in to lead that same last line.
         body = _body(
             '<div type="act" n="1"><div type="scene" n="1">'
             '<l>only numbered line <milestone unit="line" ed="Globe" n="7"/></l>'
@@ -139,10 +155,128 @@ class TestVerseRepositioning:
         stats = ConversionStats()
         reposition_milestones_start_forward(body, stats)
         lines = body.findall(f".//{q('l')}")
+        assert len(lines[0]) == 0
         assert len(lines[1]) == 2
         leading, trailing = lines[1]
-        assert leading.get("n") is None and leading.tail.strip() == "last line"
+        assert leading.get("n") == "7" and leading.tail.strip() == "last line"
         assert trailing.get("n") is None and trailing.tail is None
+
+
+class TestEmbeddedNumberedGlobeMarker:
+    """Found regenerating the real Lear file (review [2026-09-12]): the
+    interval-closure histogram moved far more than a placement-only fix
+    should, isolated to Act III Scene 4. Root cause: Globe numbers whole
+    verse lines and never typeset sub-lines the way F1 does, so a
+    *numbered* Globe marker embedded mid-<l> is never already correct the
+    way an embedded F1 marker is -- P4 recorded it roughly where the
+    marginal decade-mark visually fell, which can land mid-line even for a
+    single, unwrapped verse line (confirmed against the printed Globe page,
+    p. 864: Globe 70 numbers the *whole* line "Hang fated o'er men's faults
+    light on thy daughters!", even though P4 embeds the tag before
+    "daughters!"). It must move to lead its own containing <l>, not stay
+    embedded and not move to the next <l> either. The same <l>'s own
+    separate (usually unnumbered) terminal marker is a different boundary
+    -- the genuine one to the *next* <l> -- and goes through the ordinary
+    terminal-shift path untouched by this."""
+
+    def test_embedded_numbered_globe_marker_moves_to_lead_its_own_line(self):
+        # Mirrors the real Lear shape exactly: "Hang fated o'er men's
+        # faults light on thy <lb n="70" ed="G"/>daughters! <lb ed="G"/>".
+        body = _body(
+            '<div type="act" n="1"><div type="scene" n="1">'
+            '<l>Hang fated o\'er men\'s faults light on thy '
+            '<milestone unit="line" ed="Globe" n="70" source="#globe-edition"/>'
+            "daughters! "
+            '<milestone unit="line" ed="Globe"/></l>'
+            "<l>He hath no daughters, sir. "
+            '<milestone unit="line" ed="Globe"/></l>'
+            "</div></div>"
+        )
+        stats = ConversionStats()
+        reposition_milestones_start_forward(body, stats)
+        lines = body.findall(f".//{q('l')}")
+
+        # Line 1 now leads with "70" (moved from mid-line to the front),
+        # carrying the FULL original text as its tail, and keeps its own
+        # separate terminal marker (unnumbered) -- which has itself moved
+        # forward to lead line 2, per the ordinary terminal-shift rule.
+        assert len(lines[0]) == 1
+        leading = lines[0][0]
+        assert leading.get("n") == "70" and leading.get("source") == "#globe-edition"
+        assert leading.tail.strip() == "Hang fated o'er men's faults light on thy daughters!"
+
+        assert len(lines[1]) == 2
+        l2_leading, l2_trailing = lines[1]
+        assert l2_leading.get("n") is None  # the moved-in terminal boundary from line 1
+        assert l2_leading.tail.strip() == "He hath no daughters, sir."
+        assert l2_trailing.get("n") is None  # line 2's own terminal boundary
+        assert l2_trailing.tail is None
+
+    def test_own_line_terminal_marker_still_escapes_when_a_prior_pass_already_moved_an_f1_marker_in(self):
+        # Regression: mirrors the real Lear shape exactly (F1 1923 already
+        # moved in from the preceding line by F1's own earlier pass, before
+        # Globe's embedded "150" and Globe's OWN separate terminal marker
+        # are classified). A first cut of this fix interleaved the two
+        # move kinds and, processing "150" before the terminal marker,
+        # left the terminal one stranded in the wrong <l> -- moving "150"
+        # to the front made the terminal marker's very next sibling an F1
+        # marker with real trailing text, which _has_content_after
+        # (correctly, in general) reads as "content follows", misclassifying
+        # a genuine terminal boundary as embedded. Classifying everything
+        # before either kind of move runs (see _shift_scope_to_start_forward)
+        # fixes this: the terminal marker must still escape to lead the
+        # next <l>, independent of what happens to "150".
+        body = _body(
+            '<div type="act" n="1"><div type="scene" n="1">'
+            '<l>Before line <milestone unit="line" ed="F1" n="1922"/></l>'
+            '<l>Our flesh and blood is grown so '
+            '<milestone unit="line" ed="F1" n="1923"/>'
+            "vile, "
+            '<milestone unit="line" ed="Globe" n="150" source="#globe-edition"/>'
+            "my lord, "
+            '<milestone unit="line" ed="Globe"/></l>'
+            "<l>That it doth hate what gets it. "
+            '<milestone unit="line" ed="Globe"/></l>'
+            "</div></div>"
+        )
+        stats = ConversionStats()
+        reposition_milestones_start_forward(body, stats)
+        lines = body.findall(f".//{q('l')}")
+
+        assert len(lines[0]) == 0  # "Before line": F1 1922 moved out
+
+        middle = lines[1]
+        assert len(middle) == 3
+        assert middle[0].get("ed") == "Globe" and middle[0].get("n") == "150"
+        assert middle[0].get("source") == "#globe-edition"
+        # No text lost across the reshuffle, regardless of which sibling
+        # ends up carrying which fragment.
+        assert _text_of(middle) == "Our flesh and blood is grown so vile, my lord,"
+
+        # The critical assertion: the terminal Globe marker from "Our
+        # flesh..." must have escaped to LEAD "That it doth hate...",
+        # not been stranded in the wrong <l>.
+        last = lines[2]
+        assert last[0].get("ed") == "Globe" and last[0].get("n") is None
+        assert last[0].tail.strip() == "That it doth hate what gets it."
+
+    def test_embedded_unnumbered_globe_marker_is_untouched(self):
+        # An embedded marker with no @n carries no citable value and
+        # affects no interval count either way -- left exactly where P4
+        # put it, same as any other embedded marker.
+        body = _body(
+            '<div type="act" n="1"><div type="scene" n="1">'
+            '<l>some text <milestone unit="line" ed="Globe"/>more text '
+            '<milestone unit="line" ed="Globe"/></l>'
+            "</div></div>"
+        )
+        stats = ConversionStats()
+        reposition_milestones_start_forward(body, stats)
+        line = body.find(f".//{q('l')}")
+        assert len(line) == 2
+        embedded, trailing = line
+        assert embedded.tail.strip() == "more text"
+        assert line.text == "some text "
 
 
 class TestProseRepositioning:
@@ -183,13 +317,10 @@ class TestProseRepositioning:
         assert ms2.get("ed") == "Globe" and ms2.get("n") is None
         assert ms2.tail is None
 
-        assert stats.synthesized_leading_milestones == []
-
-    def test_no_leading_milestone_synthesized_even_when_first_boundary_numbered(self):
+    def test_prose_untouched_even_when_first_boundary_numbered(self):
         # Contrast with TestVerseRepositioning's identical-shape scenario: a
-        # verse scope synthesizes a leading milestone here; a prose scope
-        # never does, since prose milestones are never part of the shift
-        # chain that motivates synthesizing one in the first place.
+        # verse scope moves its first line's own boundary forward here; a
+        # prose scope never moves anything at all.
         body = _body(
             '<div type="act" n="1"><div type="scene" n="1">'
             '<p>first para <milestone unit="line" ed="Globe" n="10"/></p>'
@@ -201,7 +332,6 @@ class TestProseRepositioning:
         first_p = body.find(f".//{q('p')}")
         assert first_p.text == "first para "
         assert first_p[0].get("n") == "10"
-        assert stats.synthesized_leading_milestones == []
 
     def test_last_paragraph_of_scope_keeps_its_own_marker_untouched(self):
         body = _body(
@@ -221,29 +351,36 @@ class TestProseRepositioning:
 
 class TestGlobeScopedPerScene:
     def test_globe_numbering_does_not_cross_scene_boundary(self):
+        # Two lines per scene, so a boundary would visibly cross into the
+        # next scene if scoping weren't respected -- scene 1's second line
+        # ("a2") must not receive anything from scene 2 (there is nothing
+        # before it in its own scope to receive), and scene 1's own "5"
+        # must not leak into scene 2's first line ("b1").
         body = _body(
             '<div type="act" n="1">'
             '<div type="scene" n="1">'
-            '<l>a <milestone unit="line" ed="Globe" n="5"/></l>'
+            '<l>a1 <milestone unit="line" ed="Globe" n="5"/></l>'
+            '<l>a2 <milestone unit="line" ed="Globe"/></l>'
             "</div>"
             '<div type="scene" n="2">'
-            '<l>b <milestone unit="line" ed="Globe" n="1"/></l>'
+            '<l>b1 <milestone unit="line" ed="Globe" n="1"/></l>'
+            '<l>b2 <milestone unit="line" ed="Globe"/></l>'
             "</div>"
             "</div>"
         )
         stats = ConversionStats()
         reposition_milestones_start_forward(body, stats)
         scenes = body.findall(f".//{q('div')}[@type='scene']")
-        # Each scene's single line is both the first and last content element of its
-        # own scope, so it ends up with two markers: the synthesized leading one
-        # (carrying the scene's own transcribed number) and its own original,
-        # now-unnumbered terminal one -- and scene 2 never inherits scene 1's "5".
-        assert _globe_ns(scenes[0]) == ["5", None]
+        lines1 = scenes[0].findall(f".//{q('l')}")
+        lines2 = scenes[1].findall(f".//{q('l')}")
+
+        assert len(lines1[0]) == 0  # a1: own boundary moved to a2
+        assert _globe_ns(scenes[0]) == ["5", None]  # a2 leads with 5, keeps its own terminal
+        assert lines1[1][0].get("n") == "5"
+
+        assert len(lines2[0]) == 0  # b1: own boundary moved to b2 -- not scene 1's "5"
         assert _globe_ns(scenes[1]) == ["1", None]
-        assert stats.synthesized_leading_milestones == [
-            ("Globe", "Act 1, Scene 1", "5"),
-            ("Globe", "Act 1, Scene 2", "1"),
-        ]
+        assert lines2[1][0].get("n") == "1"
 
 
 class TestF1WholePlayScope:
@@ -263,15 +400,14 @@ class TestF1WholePlayScope:
         scenes = body.findall(f".//{q('div')}[@type='scene']")
         f1_scene1 = [m.get("n") for m in scenes[0].iter(q("milestone")) if m.get("ed") == "F1"]
         f1_scene2 = [m.get("n") for m in scenes[1].iter(q("milestone")) if m.get("ed") == "F1"]
-        # scene 1's own boundary moved forward -- across the scene boundary, since F1
-        # does not reset -- to lead scene 2's line, now carrying scene 2's number (11).
-        # Scene 1 keeps only the synthesized leading marker (its own boundary moved
-        # away entirely); scene 2's line, being both first and last of the F1 scope's
-        # remaining content, keeps both the moved-in "11" and its own now-unnumbered
-        # terminal marker.
-        assert f1_scene1 == ["10"]
-        assert f1_scene2 == ["11", None]
-        assert stats.synthesized_leading_milestones == [("F1", "(whole play)", "10")]
+        # Scene 1's own marker ("10") moves forward across the scene
+        # boundary -- since F1 is a single whole-play scope, not per-scene
+        # -- to lead scene 2's line, carrying its OWN value (10), unchanged.
+        # Scene 1 ends with nothing; scene 2 leads with the moved-in "10"
+        # and keeps its own "11" trailing, terminal (nothing follows in the
+        # whole-play scope).
+        assert f1_scene1 == []
+        assert f1_scene2 == ["10", "11"]
 
 
 class TestProseEmbedded:
@@ -327,8 +463,11 @@ class TestProseEmbedded:
 class TestMixedModeScope:
     def test_prose_milestone_interleaved_in_a_verse_scene_is_skipped_by_the_chain(self):
         # A scene that's mostly verse but has one prose interjection: the <p>
-        # milestone must not enter the <l> shift chain at all -- neither
-        # contributing its value to it nor receiving a shifted-in one.
+        # milestone must not enter the <l> chain at all -- neither
+        # contributing to it nor receiving anything from it. The verse
+        # chain's own forward-move must also skip straight past the <p>
+        # (searching specifically for the next <l>, never a <p>) rather
+        # than mistaking it for a valid move target.
         body = _body(
             '<div type="act" n="1"><div type="scene" n="1">'
             '<l>a <milestone unit="line" ed="Globe" n="10"/></l>'
@@ -342,12 +481,13 @@ class TestMixedModeScope:
         assert len(p) == 1 and p[0].get("n") == "99"
         assert _text_of(p) == "an aside"
         lines = body.findall(f".//{q('l')}")
-        # "a" and "b" shift as an ordinary verse pair (10 -> 11 moves onto
-        # line b; a synthesized leading marker restores 10 to the scope's
-        # own first position, same as any single-verse-chain scope) -- the
-        # prose milestone's "99" plays no part in that arithmetic.
-        assert lines[0][0].get("n") == "10"
-        assert lines[1][0].get("n") == "11"
+        # "a"'s own boundary (10) moves forward past the <p> to lead "b",
+        # carrying its own value unchanged; "b" keeps its own "11" trailing
+        # (terminal, nothing follows in scope). The prose "99" is untouched.
+        assert len(lines[0]) == 0
+        assert len(lines[1]) == 2
+        leading, trailing = lines[1]
+        assert leading.get("n") == "10" and trailing.get("n") == "11"
 
 
 class TestStrayAnchorRecovery:

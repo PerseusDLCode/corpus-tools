@@ -105,7 +105,6 @@ class ConversionStats:
     entities_resolved: dict = field(default_factory=dict)
     element_counts_in: dict = field(default_factory=dict)
     element_counts_out: dict = field(default_factory=dict)
-    synthesized_leading_milestones: list = field(default_factory=list)
     # Defect 2 (doc/agenda.org phase1/fix-globe-anchor-placement): a stray @n on
     # <l> whose immediately preceding <l> (in document order, crossing <sp>
     # boundaries) lacks its own <lb ed="G"> is a transcribed Globe anchor
@@ -135,8 +134,6 @@ class ConversionStats:
             f"{len(self.sp_stray_n_stripped)} stray <sp @n> stripped. "
             f"{len(self.reg_collapsed_to_text)} <reg @orig> collapsed to plain text. "
             f"entities resolved: {self.entities_resolved or '(none)'}. "
-            f"{len(self.synthesized_leading_milestones)} leading milestones synthesized "
-            "(start-forward repositioning, no tag at that position in P4). "
             f"{len(self.recovered_transcribed_anchors)} transcribed anchors recovered "
             "(stray <l @n>, restored rather than stripped). "
             f"{len(self.split_line_boundaries_deleted)} shared verse-line split "
@@ -389,15 +386,6 @@ def _local(tag) -> str:
     return etree.QName(tag).localname
 
 
-def _first_by_tag(scope_el, tag: str):
-    for el in scope_el.iter():
-        if el is scope_el:
-            continue
-        if _local(el.tag) == tag:
-            return el
-    return None
-
-
 def _is_verse_milestone(m) -> bool:
     """True iff m's direct parent is <l>. P4's verse convention (trailing
     marker, belongs to the *next* line) only ever applies to a milestone
@@ -479,77 +467,110 @@ def _move_milestone_forward(m, scope_el, tag: str) -> None:
     _insert_leading(target, m)
 
 
+def _move_milestone_to_own_line_start(m) -> None:
+    """Relocate m, embedded mid-<l>, to lead that SAME <l> instead -- for a
+    Globe marker specifically (review [2026-09-12], found regenerating the
+    real Lear file: the interval-closure histogram moved far more than a
+    placement-only fix should, isolated to Act III Scene 4). Globe numbers
+    whole verse lines, never typeset sub-lines the way F1 does, so an
+    embedded *numbered* Globe marker is never "already correctly
+    positioned" the way an embedded F1 one is -- it is P4 recording
+    (inconsistently, but confirmed uniform across all 9 real instances)
+    roughly where the marginal decade-mark visually fell, which can land
+    mid-line even for a single, unwrapped verse line. Confirmed directly
+    against the printed page (Internet Archive scan p. 864): Globe 70
+    numbers the *whole* line "Hang fated o'er men's faults light on thy
+    daughters!", even though P4 embeds the tag before "daughters!" -- and
+    that same <l> separately carries its own unnumbered terminal <lb
+    ed="G">, the genuine boundary to the *next* <l>, unaffected by this
+    move and still handled by the ordinary terminal-shift path."""
+    parent = m.getparent()
+    prev = m.getprevious()
+    tail = m.tail
+    parent.remove(m)
+    if prev is not None:
+        prev.tail = (prev.tail or "") + (tail or "")
+    else:
+        parent.text = (parent.text or "") + (tail or "")
+    _insert_leading(parent, m)
+
+
 def _shift_scope_to_start_forward(scope_el, ed: str, scope_label: str, stats: ConversionStats) -> None:
-    """Shift ed's milestone @n values back by one boundary-slot within scope_el, so a
-    milestone marks the start of the span it describes rather than the end -- matching
-    TEI P5's own <lb> "beginning of the line" convention (already settled corpus-wide,
-    see canonical-engLit/CLAUDE.md) and perseus_cts's resolver, which walks *forward*
-    from a matched milestone to the next one to build its cited span.
+    """Reposition ed's milestones within scope_el so each one marks the start of the
+    span it describes rather than the end -- matching TEI P5's own <lb> "beginning of
+    the line" convention (already settled corpus-wide, see canonical-engLit/CLAUDE.md)
+    and perseus_cts's resolver, which walks *forward* from a matched milestone to the
+    next one to build its cited span.
 
     Mode-aware (doc/agenda.org phase1/fix-globe-anchor-placement, Defect 1): only
-    milestones whose direct parent is <l> (verse) enter the shift chain. P4's verse
-    convention trails a boundary marker at the *end* of the line it labels (the
-    marginal number belongs to the line that follows); its prose convention already
-    places the marker immediately before the text it numbers -- correct as it stands,
-    no shift, no move. Applying the verse rule to prose (or the reverse) is exactly
-    the historical bug: a marker's value/position shifted uniformly regardless of
-    which P4 convention actually placed it. A scope with no verse-parented milestones
-    of this @ed (e.g. Antony's currently all-<p> scenes) is therefore a no-op here.
+    milestones whose direct parent is <l> (verse) enter this pass. P4's prose
+    convention already places its marker immediately before the text it numbers --
+    correct as it stands, no shift, no move -- so a scope with no verse-parented
+    milestones of this @ed (e.g. Antony's currently all-<p> scenes) is a no-op here.
 
-    Relabeling @n alone would be document-order-correct but leave each marker nested
-    inside the *previous* line's element -- not what "beginning of the line it labels"
-    means structurally. So a terminal boundary (nothing meaningful after it within its
-    current parent -- the normal shape for every verse-line-ending marker) is also
-    physically relocated to lead the next <l>. A boundary embedded mid-sentence within
-    a verse line is relabeled in place only, since it already sits at the exact
-    character offset where the content it now describes begins.
+    Pure relocation, no relabeling (review [2026-09-12], corrected from an earlier
+    cut of this function that shifted @n/@source one slot down the marker list *and*
+    moved each marker forward from its own position -- two operations that don't
+    compose: they land the value that belongs to line k+1 back onto line k+1's own
+    original position, one line early, exactly cancelling the "move forward" they
+    were meant to achieve). P4's own trailing marker at the end of line k *already
+    carries the number that belongs to line k+1* -- confirmed directly against the
+    printed Globe page (Lear I.1: printed line 40 is "To shake all cares...", and P4
+    encodes its trailing <lb> as n="41", the number of the next line). So the fix is
+    only ever a physical move: a terminal marker (nothing meaningful after it within
+    its own <l>) relocates, whole and unchanged -- same @n, same @source -- to lead
+    the next <l>.
 
-    Only the scope's leading boundary (the P4 source never marks one at the true start
-    of a scene/the play) needs a brand new milestone inserted, when that boundary was
-    itself transcribed.
+    An embedded marker (real content follows within the same <l>) is handled two
+    different ways depending on @ed, not one -- found necessary after this fix
+    initially shipped and the interval-closure histogram moved far more than a
+    placement-only change should, isolated to Act III Scene 4. F1 counts typeset
+    lines, not verse lines, so an embedded F1 marker (e.g. mid-verse-line) already
+    correctly marks the start of its own throughline -- left untouched, same as
+    prose. Globe counts whole verse lines and never sub-line units, so an embedded
+    *numbered* Globe marker is never already correct the way F1's is: it is P4
+    recording where the marginal decade-mark happened to fall typographically
+    (confirmed uniform across all 9 real instances in Lear -- always paired with a
+    separate unnumbered terminal <lb ed="G"> at the line's true end) -- moved to
+    lead its own containing <l> instead (_move_milestone_to_own_line_start), not
+    the next one. An embedded *unnumbered* Globe marker carries no citable value and
+    affects no interval count either way, so it is left untouched like any other
+    embedded marker -- only a numbered one needs this treatment.
 
-    @source travels with the @n value, not with the element: it is captured and
-    shifted in lockstep with @n below. Setting @source in _convert_lb and then
-    leaving it on the element here would strand it one boundary-slot behind every
-    shifted @n -- the identical failure the historical Lear anchor displacement
-    had, just for a different attribute. (F1 milestones never carry @source in
-    the first place, so this shifting is a no-op for F1 scopes -- nothing special
-    needs to gate that off.)
+    Nothing is ever synthesized: a scope's first marker, if terminal, simply moves
+    forward like any other -- there is no chain-wide value redistribution left to
+    strand a "first slot" value that needs restoring separately.
     """
-    all_ed_milestones = [m for m in scope_el.iter(q("milestone")) if m.get("ed") == ed]
-    milestones = [m for m in all_ed_milestones if _is_verse_milestone(m)]
-    if not milestones:
-        return
-    original_values = [m.get("n") for m in milestones]
-    original_sources = [m.get("source") for m in milestones]
-    shifted_values = original_values[1:] + [None]
-    shifted_sources = original_sources[1:] + [None]
-    for m, new_n, new_source in zip(milestones, shifted_values, shifted_sources):
-        has_content_after = _has_content_after(m)
-        if new_n is not None:
-            m.set("n", new_n)
-        elif "n" in m.attrib:
-            del m.attrib["n"]
-        if new_source is not None:
-            m.set("source", new_source)
-        elif "source" in m.attrib:
-            del m.attrib["source"]
-        if not has_content_after:
-            _move_milestone_forward(m, scope_el, "l")
-    leading_value = original_values[0]
-    leading_source = original_sources[0]
-    if leading_value is not None:
-        new_ms = etree.Element(q("milestone"))
-        new_ms.set("unit", "line")
-        new_ms.set("ed", ed)
-        new_ms.set("n", leading_value)
-        if leading_source is not None:
-            new_ms.set("source", leading_source)
-        target = _first_by_tag(scope_el, "l")
-        if target is None:
-            raise ConversionError(f"no <l> found to anchor a leading milestone in {scope_label}")
-        _insert_leading(target, new_ms)
-        stats.synthesized_leading_milestones.append((ed, scope_label, leading_value))
+    # Classified in one pass over the untouched tree, *before* either kind of
+    # move runs -- not interleaved. A <l> can legitimately hold both a
+    # terminal marker and an embedded numbered Globe marker at once (P4's
+    # own shape for every one of the 9 real cases: the embedded number, plus
+    # a separate plain <lb ed="G"> at the true end). Interleaving the two
+    # move kinds was tried and is wrong: inserting the embedded marker at
+    # the front of its <l> changes what _has_content_after sees for the
+    # *other*, not-yet-processed terminal marker in the same <l> (it now
+    # finds a moved-in F1 marker's real tail text sitting adjacent to it),
+    # misclassifying a genuine terminal boundary as embedded and stranding
+    # it in the wrong line. Classifying everything first, then running all
+    # terminal moves, then all own-line-start moves, removes the ordering
+    # dependency entirely.
+    milestones = [
+        m for m in scope_el.iter(q("milestone"))
+        if m.get("ed") == ed and _is_verse_milestone(m)
+    ]
+    terminal = []
+    embedded_numbered_globe = []
+    for m in milestones:
+        if not _has_content_after(m):
+            terminal.append(m)
+        elif ed == "Globe" and m.get("n") is not None:
+            embedded_numbered_globe.append(m)
+        # else: F1 embedded, or unnumbered Globe embedded -- already/harmlessly
+        # positioned, left untouched.
+    for m in terminal:
+        _move_milestone_forward(m, scope_el, "l")
+    for m in embedded_numbered_globe:
+        _move_milestone_to_own_line_start(m)
 
 
 def reposition_milestones_start_forward(new_body, stats: ConversionStats) -> None:

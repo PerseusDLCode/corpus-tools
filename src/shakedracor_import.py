@@ -7,8 +7,7 @@ from pathlib import Path
 
 from lxml import etree
 
-from tei import NS, TEI_NS
-from tln_globe_map import PlayMapper
+from tei import NS, TEI_NS, TEIDocument
 
 TEI_L = f"{{{TEI_NS}}}l"
 TEI_LB = f"{{{TEI_NS}}}lb"
@@ -131,19 +130,43 @@ def build_header(title: str) -> etree.Element:
     return header
 
 
-def convert_play(source_path: Path) -> tuple[etree._ElementTree, PlayMapper, list[Anomaly]]:
+class ShakeDraCorPlay:
+    """A ShakeDraCor play file and the header facts the import needs: its
+    title and its playid (the Folger idno, lowercased)."""
+
+    def __init__(self, file_path: Path | str) -> None:
+        self.doc = TEIDocument(file_path)
+
+    @property
+    def title(self) -> str | None:
+        titles = self.doc.root.xpath(
+            "/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1]/text()",
+            namespaces=NS,
+        )
+        return titles[0] if titles else None
+
+    @property
+    def playid(self) -> str | None:
+        idnos = self.doc.root.xpath(
+            "/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[not(@type)][1]/text()",
+            namespaces=NS,
+        )
+        return idnos[0].lower() if idnos else None
+
+
+def convert_play(source_path: Path) -> tuple[etree._ElementTree, ShakeDraCorPlay, list[Anomaly]]:
     """Convert one ShakeDraCor play file into the Perseus-normalized shape
     (minus genre/citeStructure/schema/CTS-URN, which the existing set-genre
     and normalize pipeline steps add -- see commands/import_shakedracor.py)."""
-    mapper = PlayMapper(source_path)
-    if mapper.playid is None:
+    play = ShakeDraCorPlay(source_path)
+    if play.playid is None:
         raise ValueError(f"{source_path}: no Folger idno found; cannot derive playid")
 
-    new_tree = copy.deepcopy(mapper.doc.tree)
+    new_tree = copy.deepcopy(play.doc.tree)
     root = new_tree.getroot()
 
     old_header = root.find(TEI_HEADER)
-    new_header = build_header(mapper.title or mapper.playid)
+    new_header = build_header(play.title or play.playid)
     root.replace(old_header, new_header)
 
     # ShakeDraCor-specific metadata (Wikidata event/relation links) that
@@ -153,6 +176,6 @@ def convert_play(source_path: Path) -> tuple[etree._ElementTree, PlayMapper, lis
         root.remove(standoff)
 
     body = root.find(f".//{TEI_BODY}")
-    anomalies = strip_line_number_prefixes(body, mapper.playid)
+    anomalies = strip_line_number_prefixes(body, play.playid)
 
-    return new_tree, mapper, anomalies
+    return new_tree, play, anomalies

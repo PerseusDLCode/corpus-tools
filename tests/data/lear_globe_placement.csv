@@ -1,9 +1,0 @@
-act,scene,n,leads_into,source_image,note
-1,1,11,"him, that now I am brazed to it.",globe_edition/works/lr/0863.jpg,prose; already correct before this fix
-1,1,31,"you better.",globe_edition/works/lr/0863.jpg,prose; already correct before this fix
-1,1,41,"Conferring them on younger strengths, while we",globe_edition/works/lr/0863.jpg,verse; corrected by phase1/fix-globe-anchor-placement review [2026-09-12]
-1,1,50,"Since now we will divest us, both of rule,",globe_edition/works/lr/0863.jpg,verse; corrected by phase1/fix-globe-anchor-placement review [2026-09-12]
-1,1,70,"Sir, I am made",globe_edition/works/lr/0863.jpg;globe_edition/works/lr/0864.jpg,verse; corrected by phase1/fix-globe-anchor-placement review [2026-09-12]
-2,1,111,"Is he pursued?",globe_edition/works/lr/0872.jpg,verse; recovered stray anchor (Defect 2); already correct
-2,1,,"I'll not be there, / Nor I, assure thee, Regan.",globe_edition/works/lr/0872.jpg,NOT ASSERTED: confirmed by counting from decade marks 100/110 (106 = 100+6) but not itself a printed marginal number and not transcribed anywhere in the P4 <lb ed="G">; not addressable by this pipeline until phase1/globe-anchor-fixture/the alignment oracle adds it as new evidence
-2,1,,"A child-like office. / 'Twas my duty, sir.",globe_edition/works/lr/0872.jpg,NOT ASSERTED: same as n=106 above, confirmed by count (108 = 100+8), not printed, not transcribed, left for phase1/globe-anchor-fixture

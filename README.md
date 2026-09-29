@@ -38,6 +38,27 @@ Valid genre ids are structural subclasses like `prose-standard`,
 
 ---
 
+## Globe lineation
+
+Earlier attempts to derive the Globe Shakespeare's line numbering here
+failed and have been removed: re-deriving it from the P4's `<lb>`
+boundaries (`rederive-globe-lineation` and its anchor-interval audit),
+interpolating `@n` onto `<l>` (`number-verse-lines`), and mapping Globe
+citations to Folger through-line numbers (`generate-line-map`, with the
+Schmidt citation repairs built on it, `repair-schmidt-citations` and
+`recover-schmidt-line-numbers`, which checked Globe citations against
+the Folger text's lineation). The code is kept under the tag
+`archive/globe-rederive`. Globe lineation is now regenerated from page
+images of the printed edition by the witness-page pipeline developed in
+`globe-lineation-workshop`, which moves here; ShakeDraCor editions are
+cited by their own through-line numbers, and no mapping between the two
+numberings is planned.
+`strip-schmidt-urn-edition`, which removed the edition token from
+Schmidt's citation URNs so they could resolve to either edition, is
+removed too: Schmidt cites the Globe, and its URNs should say so.
+
+---
+
 ## Workflows
 
 ### Normalizing a new corpus

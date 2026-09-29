@@ -16,7 +16,6 @@ AUDIT_STR        := .venv/bin/audit-structure
 AUDIT_SCH        := .venv/bin/audit-schema
 SURVEY           := .venv/bin/survey-corpus
 VALIDATE_CORPUS  := .venv/bin/validate-corpus
-NUMBER_VERSE     := .venv/bin/number-verse-lines
 SCH              := schematron/perseus_normalized.sch
 ENCODING_SCH     := schematron/perseus_encoding.sch
 SCHEMA_DIR       ?= ../perseus-schemas
@@ -74,10 +73,6 @@ audit-schema:  ## Audit encoding anomalies (Schematron): FILES="..." [OUT=dir/]
 
 .PHONY: audit
 audit: audit-refs audit-structure audit-schema  ## Run all auditors: FILES="..." [OUT=dir/]
-
-.PHONY: number-verse-lines
-number-verse-lines:  ## Interpolate Globe scene-relative line numbers onto <l>: FILES="..." [DRY_RUN=1] [OUT=dir/]
-	$(NUMBER_VERSE) $(FILES) $(if $(DRY_RUN),--dry-run) $(if $(OUT),-o $(OUT))
 
 # --- schema development ------------------------------------------------------
 

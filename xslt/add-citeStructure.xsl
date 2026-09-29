@@ -63,27 +63,35 @@
          epilogue, and per-act chorus speeches. These are flat (no scene
          sub-level) but are citable units in their own right (e.g. "H5 Chor.
          4.9", "2H4 Ind. 15"). Each gets its own sibling branch, act/scene/line
-         alongside a flat {div}/line. -->
+         alongside a flat {div}/line.
+
+         With $include-tln-refsdecl (ShakeDraCor editions), lines are cited
+         only by Folger TLN, through throughline-cs: this scheme stops at the
+         scene and the flat divs, and the scene is the chunk. The Folger's own
+         act.scene.line has the Globe's shape but not its numbering, so it is
+         not offered as a citation (canonical-engLit doc/forum.org
+         #encoding/shakespeare-citestructures). -->
     <xsl:template name="drama-act-scene-line-cs">
+        <xsl:variable name="lines" as="xs:boolean" select="$include-tln-refsdecl = ''"/>
         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                 <citeStructure unit="act" delim=":" match="div[@type='act']" use="@n">
                     <citeStructure unit="scene" delim="." match="div[@type='scene']" use="@n">
-                        <citeStructure unit="line" delim="." match="l" use="@n"/>
+                        <xsl:if test="not($lines)">
+                            <xsl:attribute name="n">chunk</xsl:attribute>
+                        </xsl:if>
+                        <xsl:if test="$lines">
+                            <citeStructure unit="line" delim="." match="l" use="@n"/>
+                        </xsl:if>
                     </citeStructure>
                 </citeStructure>
-                <citeStructure unit="induction" delim=":" match="div[@type='induction']" use="@n">
-                    <citeStructure unit="line" delim="." match="l" use="@n"/>
-                </citeStructure>
-                <citeStructure unit="prologue" delim=":" match="div[@type='prologue']" use="@n">
-                    <citeStructure unit="line" delim="." match="l" use="@n"/>
-                </citeStructure>
-                <citeStructure unit="epilogue" delim=":" match="div[@type='epilogue']" use="@n">
-                    <citeStructure unit="line" delim="." match="l" use="@n"/>
-                </citeStructure>
-                <citeStructure unit="chorus" delim=":" match="div[@type='chorus']" use="@n">
-                    <citeStructure unit="line" delim="." match="l" use="@n"/>
-                </citeStructure>
+                <xsl:for-each select="('induction', 'prologue', 'epilogue', 'chorus')">
+                    <citeStructure unit="{.}" delim=":" match="div[@type='{.}']" use="@n">
+                        <xsl:if test="$lines">
+                            <citeStructure unit="line" delim="." match="l" use="@n"/>
+                        </xsl:if>
+                    </citeStructure>
+                </xsl:for-each>
             </citeStructure>
         </refsDecl>
     </xsl:template>
@@ -92,11 +100,12 @@
          Through-Line-Number, derived from xml:id="ftln-NNNN" (leading zeros
          stripped). Opt-in via $include-tln-refsdecl: only meaningful for
          editions carrying ftln ids (ShakeDraCor-derived); emitted alongside
-         the primary act.scene.line refsDecl, not in place of it. -->
+         the primary refsDecl, which then stops at the scene. Each line is a
+         chunk (n="chunk"), as on the imported files since 2026-08-27. -->
     <xsl:template name="throughline-cs">
         <refsDecl n="CTS-tln" xml:id="CTS-tln">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-                <citeStructure unit="line" delim=":"
+                <citeStructure unit="line" n="chunk" delim=":"
                     match=".//l[starts-with(@xml:id, 'ftln-')] | .//lb[starts-with(@xml:id, 'ftln-')]"
                     use="string(number(substring-after(@xml:id, 'ftln-')))"/>
             </citeStructure>

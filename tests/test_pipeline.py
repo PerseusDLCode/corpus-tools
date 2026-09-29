@@ -419,6 +419,39 @@ class TestRunPipeline:
         assert 'xml:id="CTS-tln"' in result
         assert "starts-with(@xml:id, 'ftln-')" in result
 
+    @staticmethod
+    def _refsdecl(result: str, xml_id: str):
+        from lxml import etree
+        ns = {"tei": "http://www.tei-c.org/ns/1.0"}
+        return etree.fromstring(result.encode()).xpath(
+            f"//tei:refsDecl[@xml:id='{xml_id}']", namespaces=ns)[0], ns
+
+    def test_tln_editions_cite_lines_only_by_tln(self, tmp_path):
+        """canonical-engLit forum #encoding/shakespeare-citestructures: the
+        Folger's act.scene.line looks like the Globe's but is not, so a
+        ShakeDraCor edition's CTS scheme stops at the scene (the chunk) and
+        its lines are cited only through CTS-tln, each a chunk."""
+        src = _write(tmp_path, "test.xml", _DRAMA_EARLY_MODERN)
+        out = tmp_path / "out.xml"
+        run_pipeline(
+            PIPELINES["drama"], src, out,
+            **{"cts-base": _TEST_URN, "include-tln-refsdecl": "true"},
+        )
+        cts, ns = self._refsdecl(out.read_text(), "CTS")
+        assert cts.xpath(".//tei:citeStructure[@unit='line']", namespaces=ns) == []
+        assert cts.xpath(".//tei:citeStructure[@unit='scene']/@n", namespaces=ns) == ["chunk"]
+        assert len(cts.xpath(".//tei:citeStructure[@unit='induction']", namespaces=ns)) == 1
+        tln, _ = self._refsdecl(out.read_text(), "CTS-tln")
+        assert tln.xpath(".//tei:citeStructure[@unit='line']/@n", namespaces=ns) == ["chunk"]
+
+    def test_other_early_modern_drama_keeps_its_act_scene_line(self, tmp_path):
+        src = _write(tmp_path, "test.xml", _DRAMA_EARLY_MODERN)
+        out = tmp_path / "out.xml"
+        run_pipeline(PIPELINES["drama"], src, out, **{"cts-base": _TEST_URN})
+        cts, ns = self._refsdecl(out.read_text(), "CTS")
+        assert len(cts.xpath(".//tei:citeStructure[@unit='line']", namespaces=ns)) == 5
+        assert cts.xpath(".//tei:citeStructure[@n='chunk']", namespaces=ns) == []
+
     def test_verse_pipeline_sets_schema_pi(self, tmp_path):
         src = _write(tmp_path, "test.xml", _VERSE_EPIC)
         out = tmp_path / "out.xml"

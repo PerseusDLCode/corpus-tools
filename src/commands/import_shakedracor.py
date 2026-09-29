@@ -80,13 +80,13 @@ def main() -> None:
 
     for source in sources:
         try:
-            tree, mapper, anomalies = convert_play(source)
+            tree, play, anomalies = convert_play(source)
         except Exception as exc:
             print(f"ERROR: {source}: {exc}", file=sys.stderr)
             errors += 1
             continue
 
-        work = mapper.playid
+        work = play.playid
         if wanted is not None and work not in wanted:
             continue
 
@@ -117,7 +117,7 @@ def main() -> None:
                 **{"cts-base": cts_base, "include-tln-refsdecl": "true"},
             )
 
-        _write_work_cts(args.output_dir, work, mapper.title or work)
+        _write_work_cts(args.output_dir, work, play.title or work)
         print(f"{work}: wrote {final_output}", file=sys.stderr)
         converted += 1
 

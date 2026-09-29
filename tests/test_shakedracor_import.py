@@ -120,12 +120,12 @@ def test_build_header_shape():
 
 def test_convert_play_replaces_header_and_strips_line_numbers(tmp_path):
     source = _write(tmp_path)
-    tree, mapper, anomalies = convert_play(source)
+    tree, play, anomalies = convert_play(source)
     root = tree.getroot()
     ns = {"tei": TEI_NS}
 
-    assert mapper.playid == "tst"
-    assert mapper.title == "Test Play"
+    assert play.playid == "tst"
+    assert play.title == "Test Play"
 
     assert root.xpath("string(.//tei:titleStmt/tei:title)", namespaces=ns) == "Test Play"
     assert root.xpath("string(.//tei:titleStmt/tei:author)", namespaces=ns) == "William Shakespeare"
@@ -141,13 +141,13 @@ def test_convert_play_strips_standoff(tmp_path):
     # ShakeDraCor's standOff (Wikidata event/relation links) isn't modeled by
     # perseus_drama.rng and has no use in Perseus -- must not survive conversion.
     source = _write(tmp_path)
-    tree, _mapper, _anomalies = convert_play(source)
+    tree, _play, _anomalies = convert_play(source)
     assert tree.getroot().find(f"{{{TEI_NS}}}standOff") is None
 
 
 def test_convert_play_does_not_mutate_original_source(tmp_path):
     source = _write(tmp_path)
     convert_play(source)
-    # PlayMapper re-reads the file fresh, so this only guards against convert_play
+    # ShakeDraCorPlay re-reads the file fresh, so this only guards against convert_play
     # writing back to disk -- it shouldn't touch the source file at all.
     assert source.read_text() == PLAY_TEI

@@ -53,6 +53,9 @@ images of the printed edition by the witness-page pipeline developed in
 `globe-lineation-workshop`, which moves here; ShakeDraCor editions are
 cited by their own through-line numbers, and no mapping between the two
 numberings is planned.
+`strip-schmidt-urn-edition`, which removed the edition token from
+Schmidt's citation URNs so they could resolve to either edition, is
+removed too: Schmidt cites the Globe, and its URNs should say so.
 
 ---
 

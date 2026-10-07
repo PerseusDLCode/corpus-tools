@@ -1,0 +1,99 @@
+"""doc/globe-lineation.org: the witness manifest pins what the build reads,
+and globe-verify compares a build with the published file stamp aside.
+
+Added with the move into corpus-tools; not among the workshop's tests.
+"""
+
+from pathlib import Path
+
+import pytest
+
+from commands.globe_lineation import without_stamp
+from globe import manifest, witnesses
+from globe.manifest import ManifestError
+
+REGISTRY_TOML = """
+[toy]
+catalog = { ia = "toy_item" }
+scans = { dir = "Toy/scans", pattern = "s_{leaf}.jpg" }
+leaves = "data/leaves-toy.tsv"
+
+[toy.ocr.kraken]
+format = "kraken-alto"
+dir = "Toy/kraken"
+pattern = "{leaf}.xml"
+"""
+ORDER = [("toy", "kraken")]
+
+
+def setup(tmp_path: Path):
+    """Witness files under root, the leaf table and registry under repo."""
+    root, repo = tmp_path / "witnesses", tmp_path / "repo"
+    (root / "Toy/scans").mkdir(parents=True)
+    (root / "Toy/kraken").mkdir(parents=True)
+    (repo / "data").mkdir(parents=True)
+    rows = ""
+    for leaf, printed in [("001", 10), ("002", 11), ("003", 12)]:
+        (root / f"Toy/scans/s_{leaf}.jpg").write_bytes(b"x")
+        (root / f"Toy/kraken/{leaf}.xml").write_text(f"<alto n='{leaf}'/>")
+        rows += f"{leaf}\ts_{leaf}.jpg\t{printed}\taudit\t\n"
+    (repo / "data/leaves-toy.tsv").write_text("leaf\tfile\tprinted\tbasis\tnote\n" + rows)
+    (repo / "witnesses.toml").write_text(REGISTRY_TOML)
+    reg = witnesses.load(registry=repo / "witnesses.toml", repo=repo, root=root)
+    return reg, root, repo, repo / "manifest.tsv"
+
+
+def test_the_manifest_lists_the_leaf_table_and_one_alto_per_page(tmp_path):
+    reg, root, repo, m = setup(tmp_path)
+    assert manifest.write("toy", reg, ORDER, 10, 11, m, root, repo) == 3
+    got = [(r["base"], r["path"], r["catalog"]) for r in manifest.read(m)]
+    assert got == [("repo", "data/leaves-toy.tsv", "ia=toy_item"),
+                   ("GLOBE_WITNESSES", "Toy/kraken/001.xml", "ia=toy_item"),
+                   ("GLOBE_WITNESSES", "Toy/kraken/002.xml", "ia=toy_item")]
+    manifest.verify("toy", reg, ORDER, 10, 11, m, root, repo)
+
+
+def test_a_changed_leaf_is_refused_and_named(tmp_path):
+    reg, root, repo, m = setup(tmp_path)
+    manifest.write("toy", reg, ORDER, 10, 11, m, root, repo)
+    (root / "Toy/kraken/002.xml").write_text("<alto n='edited'/>")
+    with pytest.raises(ManifestError, match=r"sha256 differs.*Toy/kraken/002\.xml"):
+        manifest.verify("toy", reg, ORDER, 10, 11, m, root, repo)
+
+
+def test_a_page_the_manifest_does_not_pin_is_refused(tmp_path):
+    reg, root, repo, m = setup(tmp_path)
+    manifest.write("toy", reg, ORDER, 10, 11, m, root, repo)
+    with pytest.raises(ManifestError, match=r"not in the manifest.*Toy/kraken/003\.xml"):
+        manifest.verify("toy", reg, ORDER, 10, 12, m, root, repo)
+
+
+def test_rewriting_one_play_keeps_the_others_rows(tmp_path):
+    reg, root, repo, m = setup(tmp_path)
+    manifest.write("toy", reg, ORDER, 10, 11, m, root, repo)
+    manifest.write("other", reg, ORDER, 12, 12, m, root, repo)
+    manifest.write("toy", reg, ORDER, 10, 10, m, root, repo)
+    assert [r["play"] for r in manifest.read(m)] == ["other", "other", "toy", "toy"]
+
+
+STAMPED = (b'<revisionDesc><change when="{when}"><ab>Globe lineation regenerated from the witness '
+           b'pages by regenerate.py 0.1.0 at {commit}; sources: x. Generated file: DO NOT EDIT.</ab>'
+           b'</change><change><ab>converted to TEI P5</ab></change></revisionDesc><body>{body}</body>')
+
+
+def stamped(when=b"2026-09-29", commit=b"commit b413a28", body=b"text") -> bytes:
+    return STAMPED.replace(b"{when}", when).replace(b"{commit}", commit).replace(b"{body}", body)
+
+
+def test_verify_ignores_the_stamp_and_nothing_else():
+    a = stamped()
+    assert without_stamp(a) == without_stamp(stamped(b"2026-10-07", b"corpus-tools commit 1234567"))
+    assert without_stamp(a) != without_stamp(stamped(body=b"texts"))
+    assert b"converted to TEI P5" in without_stamp(a)
+
+
+def test_verify_refuses_a_file_without_exactly_one_stamp():
+    with pytest.raises(ValueError, match="found 0"):
+        without_stamp(b"<revisionDesc/>")
+    with pytest.raises(ValueError, match="found 2"):
+        without_stamp(stamped() + stamped())

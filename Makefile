@@ -16,6 +16,7 @@ AUDIT_STR        := .venv/bin/audit-structure
 AUDIT_SCH        := .venv/bin/audit-schema
 SURVEY           := .venv/bin/survey-corpus
 VALIDATE_CORPUS  := .venv/bin/validate-corpus
+GLOBE            := .venv/bin/globe-lineation
 SCH              := schematron/perseus_normalized.sch
 ENCODING_SCH     := schematron/perseus_encoding.sch
 SCHEMA_DIR       ?= ../perseus-schemas
@@ -25,6 +26,7 @@ GENRE     ?= $(error GENRE is required for set-genre: make set-genre FILES=... G
 ODD       ?= ../perseus-schemas/perseus_base.odd
 OUT       ?=
 OUT_DIR   ?= survey
+PLAY      ?= $(error PLAY is required: make <target> PLAY=lr)
 
 # --- genre annotation --------------------------------------------------------
 
@@ -83,6 +85,18 @@ survey-corpus:  ## Survey corpus element/attribute vocabulary: DATA_DIR=... [OUT
 .PHONY: validate-corpus
 validate-corpus:  ## Validate corpus against target Perseus schemas: DATA_DIR=... [OUT_DIR=survey/] [GENRE_MAP=...]
 	$(VALIDATE_CORPUS) $(DATA_DIR) --schema-dir $(SCHEMA_DIR) --output-dir $(OUT_DIR) --odd $(ODD) $(if $(GENRE_MAP),--genre-map $(GENRE_MAP))
+
+# --- Globe lineation (doc/globe-lineation.org) -------------------------------
+# Witnesses are read from $$GLOBE_WITNESSES (default ../globe-witnesses);
+# canonical-engLit must have mvp checked out.
+
+.PHONY: globe-regenerate
+globe-regenerate:  ## Regenerate a play into out/globe/ and reports/globe/ (refuses on a dirty tree): PLAY=lr
+	$(GLOBE) regenerate $(PLAY)
+
+.PHONY: globe-verify
+globe-verify:  ## Build to a temp dir; compare with canonical-engLit's published file, stamp aside: PLAY=lr
+	$(GLOBE) verify $(PLAY)
 
 # --- dev ---------------------------------------------------------------------
 

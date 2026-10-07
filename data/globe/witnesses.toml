@@ -1,0 +1,48 @@
+# Where every witness input lives. Read by src/globe/witnesses.py, which every
+# script that touches a witness goes through; no script names a witness
+# path itself. Witness paths are relative to GLOBE_WITNESSES (default
+# ../globe-witnesses); leaf tables are relative to the repo root.
+#
+# Provenance (what each witness is, how it was obtained and processed)
+# belongs in doc/witnesses.org, not here. This file says where things are
+# and how leaf names are formed, nothing else.
+#
+# A witness is a printing. An OCR layer is one reading of that witness's
+# scans. Code names a (witness, layer) pair. Ids are per witness and never
+# shared: "miun" is the Michigan download we use; "mdp" (the same physical
+# book, scanned twice) is retired.
+#
+# {leaf} is the leaf number exactly as it appears in the scan's filename
+# (zero-padded), and is the key in the leaf table.
+
+[trent]
+catalog = { ia = "worksofwilliamsh0000shak_y3h8", ark = "ark:/13960/t2h78660m" }
+scans = { dir = "Trent/scans", pattern = "worksofwilliamsh0000shak_y3h8_{leaf}.jp2" }
+leaves = "data/globe/leaves-trent.tsv"
+
+# Other files the scripts read. IA's own leaf -> printed page guess, kept
+# to be compared against the leaf table, never to replace it.
+[trent.metadata]
+page_numbers = "Trent/metadata/worksofwilliamsh0000shak_y3h8_page_numbers.json"
+
+# IA's text layer (ABBYY), one file for the whole volume, front matter
+# included, indexed by IA leaf through each OBJECT's usemap.
+[trent.ocr.djvu]
+format = "djvu"
+path = "Trent/ocr/djvu.xml"
+key = "worksofwilliamsh0000shak_y3h8_{leaf}.djvu"
+
+[trent.ocr.kraken]
+format = "kraken-alto"
+dir = "Trent/ocr/kraken"
+pattern = "worksofwilliamsh0000shak_y3h8_{leaf}.xml"
+
+[miun]
+catalog = { hathitrust = "miun.aba6868.0001.001", record = "000241315" }
+scans = { dir = "Michigan/scans", pattern = "{leaf}.jpg" }
+leaves = "data/globe/leaves-miun.tsv"
+
+[miun.ocr.kraken]
+format = "kraken-alto"
+dir = "Michigan/ocr/kraken"
+pattern = "{leaf}.xml"

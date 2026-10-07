@@ -181,3 +181,7 @@ cython_debug/
 .claude/
 
 
+
+# Globe lineation: the canonical build's home is canonical-engLit; only the
+# review build is tracked here (doc/globe-lineation.org).
+out/globe/*/*.globe.xml

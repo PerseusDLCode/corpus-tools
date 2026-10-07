@@ -1,0 +1,462 @@
+#+TITLE: Globe lineation: witnesses
+#+DATE: 2026-09-21
+#+OPTIONS: toc:t num:nil
+
+* What this file is
+
+How each page-image witness used by this repo was obtained, trimmed,
+mapped to printed pages, and OCR'd -- enough to rebuild =witnesses/=
+from nothing, and to know what any file in it is evidence /of/.
+
+Moved here from =globe-lineation-workshop= with the witness-page
+pipeline (=doc/globe-lineation.org=). The Layout section below gives
+the paths as they are now. Elsewhere, paths are the workshop's:
+=witnesses/= is now =$GLOBE_WITNESSES=; =data/witnesses.toml=, the leaf
+tables and =data/witness-offsets.tsv= are under =data/globe/=, and
+=src/witnesses.py= is =src/globe/witnesses.py=. The witness-preparation
+tools (=src/ocr*.py=, =binarize_page.py=, =prune_alto.py=,
+=build_leaf_tables.py=, =running_head_audit.py=), =data/alto-low-gc-*.tsv=,
+=data/head-audit-review.tsv=, the =doubleday_*= modules, every =reports/=
+file cited here, and =doc/forum.org= stayed in the workshop, and are
+cited at its tag.
+
+This is a record of provenance and processing, not of decisions.
+/Why/ a witness was chosen, kept or retired is argued in
+=doc/forum.org=; this file points there rather than repeating it.
+
+Two witnesses are in use:
+
+| Witness  | Printing                      | Copy            | Images                    | OCR layers                    |
+|----------+-------------------------------+-----------------+---------------------------+-------------------------------|
+| Trent    | London: Macmillan, 1887       | Trent Univ.     | IA JP2, 8-bit, 1538x2395  | Kraken ALTO; IA djvu (ABBYY)  |
+| Michigan | Cambridge/London: Macmillan, 1866 | Univ. of Michigan | HathiTrust =miun= JPEG, grayscale | Kraken ALTO             |
+
+They are different printings, so agreement between them is
+corroboration across printings. Trent carries two OCR layers over the
+/same pixels/, so disagreement between those two localises to the
+recognizer rather than the page. Two witnesses have been retired
+(Illinois, Michigan =mdp=); see [[*Retired witnesses]].
+
+A third book, the Doubleday comparandum, is discussed separately below
+([[*Doubleday]]) and is not a witness -- see =doc/forum.org=
+=#lineation/word-authority=.
+
+* Layout
+
+The witnesses live outside any repository, under =$GLOBE_WITNESSES=
+(default =../globe-witnesses/=; until the workshop is frozen they are
+still at =globe-lineation-workshop/witnesses/=). The files the build
+reads are pinned by sha256 in =data/globe/witness-manifest.tsv=. Small,
+hand-verified derived data lives in =data/globe/= and is tracked.
+
+#+BEGIN_EXAMPLE
+  $GLOBE_WITNESSES/
+    Trent/
+      scans/          1,054 JP2, IA leaves 0017-1070, IA filenames unchanged
+      ocr/kraken/     Kraken ALTO, one file per leaf
+      ocr/kraken-full.tar.gz    Full alto files with Glyph data
+      ocr/kraken-full.tar.gz.sha256  checksum
+      ocr/djvu.xml    IA's text layer, whole volume
+      metadata/       IA _meta.xml, _marc.xml, _files.xml, _page_numbers.json
+    Michigan/
+      scans/          1,054 JPEG, leaves 00000015-00001068, HathiTrust names unchanged
+      ocr/kraken/     Kraken ALTO, one file per leaf
+      ocr/kraken-full.tar.gz    Full alto files with Glyph data
+      ocr/kraken-full.tar.gz.sha256  checksum
+      metadata/       HathiTrust catalog record 000241315
+  data/globe/
+    witnesses.toml        the registry: where each witness's scans and OCR layers are
+    witness-manifest.tsv  sha256 of every witness file the build reads, per play
+    witness-offsets.tsv   offsets and exceptions per witness (running-head audit)
+    leaves-trent.tsv      leaf -> printed page
+    leaves-miun.tsv       leaf -> printed page
+#+END_EXAMPLE
+
+*No script names these paths.* They go through the registry
+(=data/globe/witnesses.toml=), which =src/globe/witnesses.py= loads and validates: it
+refuses to run if a path is missing or the scans, an OCR layer and the
+leaf table disagree in count or membership. Code names a (witness, layer)
+pair: =trent/djvu=, =trent/kraken=, =miun/kraken=. The leaf tables carry a
+=basis= column (=audit=, =reviewed=, =offset=) saying where each row's
+printed number comes from. Task: =doc/agenda.org= =#phase0/witness-registry=.
+
+*Files keep their leaf names; they are never renamed to printed page
+numbers.* Two reasons: the djvu layer is indexed internally by IA leaf
+(=usemap="worksofwilliamsh0000shak_y3h8_0876.djvu"=), so renamed scans
+would disagree with their own text layer; and the leaf-to-page mapping
+is not a constant offset everywhere (see the Michigan transposition), so
+it belongs in a table that can record exceptions, not in filenames that
+cannot.
+
+*The ALTO =<fileName>= paths predate this layout.* Every ALTO file
+records its source image as a repo-relative path from before the
+reorganisation (e.g.
+=witnesses/Trent/worksofwilliamsh0000shak_y3h8_jp2/..._0667.jp2=,
+=witnesses/Michigan/miun-aba6868-0001-001-1789678210/00000874.jpg=).
+Resolve by basename. The files have not been rewritten to match, and
+should not be silently: the path is part of what the run recorded.
+
+* Trent
+:PROPERTIES:
+:CUSTOM_ID: trent
+:END:
+
+** Identity
+From IA's own metadata (=metadata/..._meta.xml=, =..._marc.xml=),
+quoted as recorded, typos included:
+
+| Field             | Value                                                                  |
+|-------------------+------------------------------------------------------------------------|
+| IA identifier     | =worksofwilliamsh0000shak_y3h8=                                        |
+| URL               | https://archive.org/details/worksofwilliamsh0000shak_y3h8              |
+| ARK               | =ark:/13960/t2h78660m=                                                 |
+| Imprint           | London : Macmillllan & Co., 1887 (MARC 260)                            |
+| Edition statement | "The Globe Edition" (MARC 250)                                         |
+| Extent            | 1054 p. ; 17 cm                                                        |
+| Holding library   | Trent University (=collection_set= trent; call no. PR/2753/C5/1887)    |
+| OCLC              | 1158473505                                                             |
+| Scanned           | 2019-07-11, IA Cebu, Sony Alpha-A6300, 300 ppi; 1,164 images           |
+| IA scan notes     | "Cut-off text due to tight." / "Key-stoning"                           |
+
+The MARC also carries a 500 note: "The text has been taken from the
+Globe Shakespeare, edited by William George Clarke and William Aldis
+Wright." That is an odd thing to say of a Globe printing proper, and
+worth keeping in mind if Trent ever disagrees with Michigan on text
+rather than lineation. Not investigated.
+
+** Retrieval
+Harvested from the Internet Archive 2026-09-14 (=witnesses/README.txt=,
+now folded into this file). Downloaded artifacts:
+
+| Artifact                                  | Kept                  | sha256 |
+|-------------------------------------------+-----------------------+--------|
+| =worksofwilliamsh0000shak_y3h8_jp2.zip=   | archive, outside repo | TODO   |
+| =Trent.pdf= (IA derivative)               | deleted, re-fetchable | --     |
+| =..._djvu.xml=, =_meta.xml=, =_marc.xml=, =_files.xml=, =_page_numbers.json= | =metadata/=, =ocr/= | TODO |
+
+*The old =checksums= file does not cover what is on disk.* It lists
+=Trent.pdf= and =worksofwilliamsh0000shak_y3h8_orig_jp2.tar=; the JP2
+archive actually held is =..._jp2.zip=. Recompute from the files kept,
+and check them against the backups before anything is deleted.
+
+** Trimming
+Leaves kept: *0017-1070* (1,054 files), from the first page of /The
+Tempest/ (printed 1) to the last page of /The Phoenix and the Turtle/
+(printed 1054). Front matter and everything after 1054 removed by hand,
+2026-09-21; the full set remains in the archived zip.
+
+** Leaf to printed page
+Offset *+16* (leaf number minus printed page), verified at printed 860 =
+leaf 0876 only. *Not yet audited across the volume.* The running-head
+audit (=src/running_head_audit.py=) was run on the two Michigan scans,
+not on Trent; Trent is a different printing and may have its own plates
+or transpositions. Until it is audited, =data/leaves-trent.tsv= is a
+constant-offset table with one verified row, and should say so.
+
+IA's =_page_numbers.json= is a second, independent guess at the same
+mapping (the probe established the p.860 offset from it); worth
+reconciling against the audit rather than trusting either alone.
+
+** OCR layer 1: IA djvu (ABBYY FineReader)
+=ocr/djvu.xml= is IA's own text layer for the whole volume, front
+matter included, indexed by IA leaf. IA's metadata gives the engine as
+*ABBYY FineReader 11.0 (Extended OCR)*, converted with
+=abbyy-to-hocr 1.1.7=. Not produced here; not modified.
+
+Retained as a cross-check on the Kraken layer: it reads the same pixels
+with a different engine and a different line segmentation. Known
+behaviour on Lear p.860 (=reports/page-alignment-probe-lr-860-report.md=):
+9 of 10 marginal numbers found, one (=140=, read =i4o=) only after
+homoglyph correction, and =211= missed outright, split across two
+word-boxes. djvu keeps a speaker prefix and its dialogue on one line,
+so it produces no same-row split fragments.
+
+** OCR layer 2: Kraken ALTO
+Whole-volume run with =src/ocr-volume.py= (introduced =3956219=;
+=--timeout= added =3f7cb83=), over the unmodified JP2s. Per page:
+
+#+BEGIN_EXAMPLE
+kraken -a -i <leaf>.jp2 <leaf>.xml segment -bl ocr -m catmus-print-fondue-large.mlmodel
+#+END_EXAMPLE
+
+| Setting      | Value                                                            |
+|--------------+------------------------------------------------------------------|
+| kraken       | 6.0.3 (from the ALTO =<Processing>= records)                     |
+| Segmenter    | =blla.mlmodel= (kraken default), baseline mode                   |
+| Recognizer   | CATMuS Print Fondue Large, DOI =10.5281/zenodo.10592716=         |
+| Preprocessing| *none* -- no =binarize= step (but see the two exceptions below)  |
+| Timeout      | 120 s per page (default)                                         |
+| Output       | 1,054 ALTO v4 files, ~1.7 GB, ~73% of it =<Glyph>= elements      |
+
+*Two pages were binarized before OCR.* Leaves *0667* (/Troilus and
+Cressida/, printed 651) and *1043* (/Lucrece/, printed 1027): kraken's
+baseline segmenter does not terminate on either original image (no
+output after 240 s with recognition disabled, ~8.5 GB resident by 10
+min). Ruled out: the timeout, JP2 decoding, resolution, the two-column
+layout. Cause not established. Fixed by a local Sauvola threshold
+(window 51, k 0.2) plus removal of 8-connected ink components under 6
+px, via =src/binarize_page.py= at =3f7cb83=; global Otsu fixed 0667 but
+not 1043. Recognition ran on the binarized PNG; coordinates are those of
+the original scan (same 1538x2395 pixels). Each of the two files
+records this in a =<Processing ID="BINARIZE_INPUT">= element in its own
+=<Description>=, so the provenance travels with the file. Neither page is
+in Lear or Antony; =tro= is a Group C play. Full account: =doc/agenda.org=
+=#phase0/trent-bulk-ocr=.
+
+* Michigan
+:PROPERTIES:
+:CUSTOM_ID: michigan
+:END:
+
+** Identity
+From HathiTrust catalog record *000241315* (=metadata/=; saved as the
+HTML "MARC view" page, not as MARCXML):
+
+| Field           | Value                                                                        |
+|-----------------+------------------------------------------------------------------------------|
+| HathiTrust ID   | =miun.aba6868.0001.001= (https://hdl.handle.net/2027/miun.aba6868.0001.001)  |
+| Imprint         | Cambridge ; London : Macmillan and co.; Philadelphia : Lippincott and co., 1866 |
+| Extent          | viii, 1075 p. ; 18 cm                                                        |
+| Notes           | "Glossary by J. M. Jephson." / "At head of title: The Globe edition."        |
+| Barcode         | 39015043613598                                                               |
+| OCLC            | 8230861                                                                      |
+| HathiTrust ingest | =miun= 2025-01-14; =mdp= 2026-07-23 (MARC 974)                             |
+
+*One physical copy, two HathiTrust items.* The same record holds both
+=miun.aba6868.0001.001= (used) and =mdp.39015043613598= (retired). The
+running-head audit confirmed it is one book scanned twice: same spine
+accession label =A 504467=, same bookplate and Rolfe inscription, a pen
+mark at p.941 in both, and the same leaf transposition
+(=reports/miun-damage-audit-report.md=).
+
+Pages 1055-1075 are, on the evidence of the MARC's glossary note and
+Trent's 1054-page extent, Jephson's glossary. Inferred, not checked
+against the images; outside the trimmed range either way.
+
+The record also lists two Harvard copies of the 1866 printing, both
+Google scans (=hvd.32044020564670=, =hvd.hwnqsk=). Further witnesses to
+the /same/ printing as Michigan, not a third one. Noted, not pursued.
+
+** Retrieval
+Downloaded from HathiTrust as a page-image zip. The Unix timestamp in
+the filename (=miun-aba6868-0001-001-1789678210=) decodes to
+2026-09-17; no other record of the download date exists.
+
+| Artifact                                     | Kept                  | sha256 |
+|----------------------------------------------+-----------------------+--------|
+| =miun-aba6868-0001-001-1789678210.zip= (3.49 GB) | archive, outside repo | TODO |
+| catalog record 000241315 (HTML)              | =metadata/=           | TODO   |
+
+The images are grayscale JPEG; printed 860 (leaf 00000874) is
+2959x3950. No coordinate OCR is available from HathiTrust by any
+current route (=doc/forum.org= =#witnesses/michigan-princeton-sampled=),
+so Kraken is the only OCR layer.
+
+*The download is flagged by Michigan.* Leaf 00000003 is a
+digitisation-shop insert: "Best Copy Available. The following title is
+missing pages or has damaged text." The audit found no missing,
+duplicated or illegible leaf anywhere in the printed sequence, and
+nothing in Lear or Antony. What the insert refers to is not
+established. The =mdp= capture of the same book carries no such flag,
+but does carry visible damage (see [[*Retired witnesses]]).
+
+** Trimming
+Leaves kept: *00000015-00001068* (1,054 files), printed 1-1054, same
+bounds as Trent. Removed by hand, 2026-09-21: leaves 1-14 (including the
+"Best Copy Available" insert and three blank inserts at leaves 3-6) and
+everything after printed 1054, i.e. the glossary. The full set remains
+in the archived zip.
+
+** Leaf to printed page
+Offset *+14*, constant across every readable leaf from the running-head
+audit (=data/witness-offsets.tsv=; review verdicts in
+=data/head-audit-review.tsv=), with *one exception*:
+
+| Leaf     | Printed | Note                                                  |
+|----------+---------+-------------------------------------------------------|
+| 00000267 | 254     | unnumbered: opening page of /All's Well/              |
+| 00000268 | 253     | last page of /Taming of the Shrew/, bound after 254   |
+
+A binding transposition in the physical book, present identically in
+=mdp=. A constant-offset rename would mislabel exactly these two files;
+=data/leaves-miun.tsv= records them explicitly.
+
+Lear is leaves 00000861-00000892 (printed 847-878; 861 is the
+unnumbered title page). Antony is 00000925-00000957 (printed 911-943).
+
+** OCR: Kraken ALTO
+Same script, command, kraken version, segmenter, recognizer and
+timeout as Trent's Kraken layer (above), over the unmodified JPEGs.
+No =binarize= step. No timeouts are recorded for this run --
+*confirm*, since the agenda records Trent's failures and is silent on
+Michigan's.
+
+* The single-page Kraken runs on Lear p.860 are a different process
+:PROPERTIES:
+:CUSTOM_ID: p860-single-page-runs
+:END:
+
+The Phase 0 findings on page 860 -- =#phase0/baseline-merge=,
+=#phase0/per-column-thresholds=, the miun 10/10 marginal-number result
+-- were measured on ALTO from earlier one-page runs, not from the volume
+runs above. Those one-page files record a *kraken =binarize= (nlbin)
+preprocessing step* (threshold 0.5, zoom 0.5, escale 1.0, border 0.1,
+perc 80, range 20, low 5, high 90) before segmentation. The volume runs
+have none.
+
+So the page-860 figures -- the 128 merged lines on miun, its 5-7 px
+left-edge jitter, the 0.86/0.89 word confidences on =200= and =220= --
+describe binarized input, and do not necessarily hold for the ALTO now
+in =ocr/kraken/=. Checked for the miun single-page file
+(=miun.aba6868.0001.001-leaf_874-alto.xml=); the Trent and =mdp=
+single-page files were not examined. The single-page files were removed
+from =witnesses/= in the 2026-09-21 cleanup; whether they survive in
+the archive: TODO. Either way, re-baseline page 860 on the volume ALTO
+before comparing anything to the earlier numbers.
+
+* Pruning
+=src/prune_alto.py= (added at =ca04812=) removes =<Glyph>= elements
+(94% have =WIDTH="0"= and a degenerate polygon; their text is redundant
+with the =String= =CONTENT=), keeps any glyph with GC below 0.9 in a
+TSV sidecar, verifies each pruned file equals its source minus the
+glyphs, and stamps a =<Processing ID="PRUNE_GLYPHS">= element naming the
+commit. Other =<Processing>= elements, including =BINARIZE_INPUT=, are
+kept. Full ALTO is the archive; pruned ALTO is what code reads.
+
+*Status:* both witnesses pruned at =ca04812=. The stamp was checked on
+Trent leaf 0667 only (which also keeps its =BINARIZE_INPUT= record);
+that the rest are pruned is inferred from file sizes (largest 538 KB),
+not checked file by file. Results:
+
+| Witness | Files | Pruned size | Sidecar                        | Sidecar size |
+|---------+-------+-------------+--------------------------------+--------------|
+| Trent   | 1,054 | 431 MB      | =data/alto-low-gc-trent.tsv=   | 13.3 MB      |
+| miun    | 1,054 | 439 MB      | =data/alto-low-gc-miun.tsv=    | 8.1 MB       |
+
+The sidecars are tracked in git (commit =f4d7164=). The full,
+unpruned ALTO is the archive; its location: TODO.
+
+* Doubleday
+:PROPERTIES:
+:CUSTOM_ID: doubleday
+:END:
+
+*Not a witness.* Nothing here enters the registry (=data/witnesses.toml=),
+a leaf table, or =data/= generally, and no pipeline code
+(=src/regenerate.py= etc.) may read it. =witnesses/Doubleday/= is a
+historical directory name, not a claim of witness status. It is the P4's
+/copy-text/ -- evidence about where the encoded words came from, argued in
+=doc/forum.org= =#lineation/word-authority= -- investigated read-only under
+=doc/agenda.org= =#compare/doubleday=; full findings and every quoted
+reading: =reports/doubleday-comparison.md=.
+
+** Identity
+/The complete works of William Shakespeare/, ed. W. G. Clark and W. Aldis
+Wright, "arranged in their chronological order," Garden City, N.Y.: Nelson
+Doubleday. A genuine two-volume book-club set -- *not* one book scanned
+twice, an error in an earlier draft of this section. Both volumes print
+the whole set's table of contents in their own front matter (normal for a
+multi-volume set), but each volume's body holds only its own half. Two
+columns; running heads give the play title and a sequential printed page
+number (1-1075ish); marginal Globe-style line numbers are printed, set
+flush-right within the column at the end of a line rather than in a true
+margin gutter. King Lear is in Volume Two: printed pages 758-791
+(Introduction 758, dramatis personae 759, Act I opens on 759-760).
+
+Confirmed against the Tufts Tisch Library catalog (Cliff): OCLC 08687211
+matches this edition exactly -- "Garden City, New York: Nelson Doubleday",
+2 volumes, 22cm, "with an introd. to each play adapted from the
+Shakespearean primer of Professor Dowden" (word for word against Volume
+Two's scanned title page) -- but gives no year (=Creation Date: 19--=). A
+second, related OCLC record (11438984, "Programmed Classics series",
+publisher not identified) indicates this edition was reissued more than
+once under different branding.
+
+*The two volumes may not be the same printing.* Per Cliff, reading the IA
+item pages directly: Volume One (=bwb_KT-315-451_1=) is dated 1950;
+Volume Two (=bwb_S0-ATQ-198=, the one with Lear) is dated 1893. Neither
+figure is independently confirmed here -- IA's own metadata API is
+self-contradictory (1950 for Volume One, but an impossible "1853" for
+Volume Two -- Nelson Doubleday did not exist in 1853), and no date is
+printed anywhere in Volume Two's scanned front matter (checked: title
+page, its verso, surrounding leaves). If Volume Two does preserve an
+1893-vintage typesetting under later Doubleday branding, that would put
+it much closer in age to Trent (1887) than to a 1950s reprint -- a live
+hypothesis for the word-choice findings in
+=reports/doubleday-comparison.md= =#2=, not one this investigation tested.
+
+Same title-page boilerplate ("arranged in their chronological order") that
+=doc/background.org= records as a since-corrected misattribution to Trent
+-- the phrase belongs to this book, not that one.
+
+** Retrieval
+Two IA copies, downloaded by Cliff, each as PDF, a JP2 zip (one member per
+leaf, =<item>_jp2/<item>_NNNN.jp2=, 0000-0585 = 586 leaves), and gzipped IA
+CHOCR (per-character hOCR; =src/doubleday_chocr.py= reads it streamed,
+never fully unpacked):
+
+| Item | Role | Files |
+|------+------+-------|
+| =bwb_KT-315-451_1= | "Volume One" (Titus Andronicus - Twelfth Night; no Lear) | pdf, jp2.zip, chocr.html.gz |
+| =bwb_S0-ATQ-198= | "Volume Two" -- holds King Lear | pdf, jp2.zip, chocr.html.gz |
+
+A CHOCR page's own =title= attribute names the exact JP2 file it was OCR'd
+against, so the CHOCR page index and the JP2 zip member are already the
+same correspondence recorded in the file: page index /n/ -> leaf
+=..._NNNN.jp2= (=n= zero-padded to 4 digits), no offset-hunting needed.
+Printed page = CHOCR/JP2 index + 560 for =bwb_S0-ATQ-198=, verified at four
+points spanning the whole play (11->571, 198->758, 200->760, 204->764).
+
+=witnesses/Doubleday/vol1.txt=, an earlier ad hoc CHOCR tag-strip already
+on disk, is unusable -- it splits between per-character =ocrx_cinfo= spans
+without rejoining them into words ("4 j S s e r r..."). Not read by
+anything here; superseded by =src/doubleday_chocr.py=.
+
+Copyright: a 20th-century publication (Volume One 1950; Volume Two, which
+holds Lear, 1893 per Cliff -- see this section's =** Identity= above).
+Extracted text stays under this gitignored
+directory and never lands in a tracked file beyond a short quoted reading
+and its immediate context (=reports/doubleday-lr-readings.tsv=, capped at
+four words either side).
+
+* Retired witnesses
+:PROPERTIES:
+:CUSTOM_ID: retired
+:END:
+
+** Illinois
+IA =worksofwilliamsh00shak_0=, =ark:/13960/t2m66sg1j=. Discarded
+2026-09-15: the processed JP2s crop text off the right edge of column 2
+(sixteen lines on Lear p.860, all four missing marginal numbers
+explained), with skew and gutter distortion elsewhere, consistent with a
+volume scanned without disbinding. Reasoning: =doc/forum.org=
+=#witnesses/illinois-discarded=; evidence in
+=reports/page-alignment-probe-lr-860-report.md=. Files deleted
+2026-09-21; re-fetchable from the identifier above.
+
+** Michigan =mdp=
+HathiTrust =mdp.39015043613598=, 1-bit Group 4 TIFF, 600 dpi (2616x4030
+at printed 860); download =mdp-39015043613598-1789829069.zip=, whose
+timestamp decodes to 2026-09-19. Same physical copy as =miun=. Its p.860
+ALTO was the first Kraken result validated in this repo. Retired
+2026-09-21 in favour of =miun=. Visible damage found by the audit:
+black patches over text on Othello pp.905-906 and Cymbeline pp.963-964
+(clean in =miun=), skewed captures on Titus pp.701-702, and four
+sub-threshold skewed leaves inside Antony (printed 930-932, 938). Files
+deleted 2026-09-21; the reports built from its p.860 ALTO stay in git.
+
+** Princeton (sampled, never adopted)
+Figgy, one page only (p.860, 5792x7451 8-bit colour TIFF including
+backdrop). Identifier never confirmed against a catalog record. See
+=doc/forum.org= =#witnesses/michigan-princeton-sampled=.
+
+* Open items
+- Running-head audit of Trent; then replace the =offset= rows of
+  =data/leaves-trent.tsv= (a constant +16 with one reviewed row, p.860)
+  with what it finds. =src/build_leaf_tables.py= builds the table.
+- sha256 for every kept artifact; check the archived zips against the
+  backups before deleting local copies.
+- Confirm whether the Michigan volume run had any timeouts.
+- Diff the miun single-page p.860 ALTO against the volume ALTO, if the
+  single-page file survives in the archive.
+- Fetch MARCXML for record 000241315 to replace the saved HTML page.

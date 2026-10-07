@@ -1,0 +1,148 @@
+#+TITLE: Globe lineation: the witness-page pipeline
+#+DATE: 2026-10-07
+#+OPTIONS: toc:nil num:nil
+
+* What this is
+
+=src/globe/= regenerates a play's Globe Shakespeare line numbering from
+page images of the printed Globe, and writes the play's Globe edition
+for canonical-engLit. It was developed in =globe-lineation-workshop=
+and moved here unchanged except in imports and paths; the workshop is
+frozen, once this move is accepted, as the record of how it was built
+(see [[*References to the workshop]]).
+
+King Lear is built and published (canonical-engLit =mvp=,
+=data/shakespeare/lr/shakespeare.lr.globe.xml=). Antony is next. The
+open tasks are carried to canonical-engLit =doc/agenda.org= when the
+workshop is frozen.
+
+* The method
+
+Words and structure come from the P4 (=Renaissance/Shakespeare/opensource/=
+in canonical-engLit, read-only), converted to P5 by =p4_convert.py=.
+Line starts come from the page:
+
+1. Each printed page is read from a witness's Kraken ALTO
+   (=page_rows.py=). Rows are classified by their offset from the
+   column margin, in units of row pitch: start, turnover, indented,
+   displaced. The page's own marginal numbers are taken off and
+   attached to the last row of their line.
+2. The rows are aligned to the P4's words (=align_play.py=,
+   =tokens.py=), so every row knows the word it starts at.
+3. A Globe line is a start-band row carrying speech plus every turnover
+   or displaced row after it (=lineate.py=). Lines are counted from
+   each scene's start, across page breaks.
+4. The P5 is written with a =<milestone unit="line" ed="Globe" n=…/>=
+   at the start of every Globe line and an =<lb/>= at every other
+   printed row (=emit_tei.py=), under the existing P5's header,
+   rewritten (=tei_header.py=).
+
+Two witnesses, both 1,054 leaves, OCR'd whole: =miun= (Michigan, 1866)
+and =trent= (Trent, 1887). They share plates, so either is authoritative
+for line breaks. Page by page, =miun= is tried first and =trent= if
+=miun= does not close (=regenerate.ORDER=). Their provenance is in
+=doc/witnesses.org=.
+
+* The gate
+
+The printed marginal numbers number nothing; they are the check. Every
+printed number must equal the count of its line, counted from the scene
+start. If any page fails, the play is not written; the reports are, so
+the failures can be read. Lear: 32/32 pages, 0 failing intervals,
+3,332 Globe lines.
+
+Regeneration moves no words: the output's word stream must equal the
+P4's, or the build stops.
+
+* The tables (=data/globe/=)
+
+| Table                  | What it says                                                     | Who changes it                       |
+|------------------------+------------------------------------------------------------------+--------------------------------------|
+| =witnesses.toml=       | where each witness's scans and OCR layers are, under =GLOBE_WITNESSES= | when a witness is added or moved |
+| =leaves-miun.tsv=, =leaves-trent.tsv= | leaf -> printed page, with the basis of each row  | reviewed; built by the workshop's =build_leaf_tables.py= |
+| =witness-offsets.tsv=  | the running-head audit's offsets per witness; the source of the leaf tables, not read by the build | as above |
+| =shared-lines.tsv=     | junctions the page cannot show, and numerals both witnesses misread | rows proposed by the build or from the Folger; =checked= is filled by Cliff, after looking at the page image |
+| =witness-manifest.tsv= | sha256 of every witness file the build reads, per play           | =globe-lineation manifest PLAY=, deliberately |
+
+*=checked= is Cliff's.* The canonical build refuses to use a
+=shared-lines.tsv= row whose =checked= is empty; the review build is
+still written (=--allow-pending= overrides, for development only).
+
+*The manifest pins the witnesses.* The build refuses a leaf (or leaf
+table) that is not in =witness-manifest.tsv= or whose sha256 differs.
+Rewriting a play's rows is how a deliberate change to a witness is
+recorded.
+
+* The two builds and the reports
+
+- Canonical: =out/globe/PLAY/shakespeare.PLAY.globe.xml=. Not tracked
+  here: its home is canonical-engLit, where it is copied to publish.
+- Review: =shakespeare.PLAY.globe.review.xml=, the canonical with XML
+  comments for a reader checking it against the page: each page's
+  witness and leaf, where one witness was taken over the other, each
+  =shared-lines.tsv= row applied, and the rows the reports flag (word
+  disagreements, P4 anchors, verse/prose, borderline rows). Tracked.
+  Stripping the comments must give the canonical bytes, or the build
+  stops.
+- Reports: =reports/globe/regenerate-PLAY-*.tsv= (gate, intervals, word
+  disagreements, old-vs-new P4 anchors, verse/prose, borderline rows,
+  Folger check, @part against the page), and the Schmidt smoke test,
+  =schmidt-smoke-lr.{tsv,md}=, which records the edition's sha256.
+
+Each build carries a stamp in =<revisionDesc>=: the tool, its version,
+the corpus-tools commit, and the sha256 of the P4, =shared-lines.tsv=
+and the shell. A published edition is the shell of its next build, and
+its earlier regeneration stamp is replaced, not added to.
+
+* Running it
+
+Inputs, as siblings of this repository:
+- =../canonical-engLit=, with =mvp= checked out (the build refuses
+  otherwise: the P4 and the shell are read from its working tree);
+- the witnesses, at =$GLOBE_WITNESSES= (default =../globe-witnesses=);
+- =../schmidt-lexicon-workshop/out/= for the smoke test;
+- the Folger (DraCor) Lear at the absolute path in =shared_lines.FOLGER=,
+  for the Folger report only; skipped if absent.
+
+#+begin_src sh
+make globe-verify PLAY=lr      # build to a temp dir; equal to the published file, stamp aside?
+make globe-regenerate PLAY=lr  # write out/globe/lr and reports/globe; refuses on a dirty tree
+.venv/bin/globe-lineation smoke          # Schmidt's Lear citations against out/globe/lr
+.venv/bin/globe-lineation manifest lr    # re-pin the witness files the build reads
+.venv/bin/globe-lineation regenerate lr --scratch=DIR   # a development build, anywhere
+#+end_src
+
+*Verify* is the fixed-point check: built from the published file as its
+shell, the play must come back byte for byte, except the stamp's
+=<change>= (its date, commit and shell sha256).
+
+*Regenerate refuses a dirty tree* rather than stamp a commit that does
+not describe the code. A rebuild that changes nothing still changes the
+review build's stamp, so commit or discard it.
+
+Serialisation is what byte identity tests: lxml is locked at 6.1.3
+(libxml2 2.14.6), as it was in the workshop.
+
+* Adding a play
+
+=regenerate.PLAYS= has one entry, Lear: the P4 path, the P5 shell and
+the first and last printed page. A play also needs its rows in
+=witness-manifest.tsv=, and its shared lines reviewed into
+=shared-lines.tsv=. The per-play table that should replace =PLAYS= and
+=shared_lines.FOLGER= is the first task carried to canonical-engLit.
+
+* References to the workshop
+
+The code and tests cite the workshop's deliberation in the form
+=doc/agenda.org #id= and =doc/forum.org #id=, and some of its reports
+(=reports/doubleday-comparison.md=, the page-alignment and baseline-merge
+reports). These are to =globe-lineation-workshop= at its tag =v1.0= (made
+when it is frozen; the move was made from its commit =9aeea3a=), not to
+files in this repository. Likewise =CLAUDE.md= in a code comment is
+the workshop's. =spikes/2026-09-21-regeneration= and the witness
+preparation tools (OCR, binarisation, ALTO pruning, the leaf-table
+builder and the running-head audit) stayed there.
+
+=p4_convert.py= is this repository's own =src/globe_lineation.py= at
+=10a6f74= (P4->P5 conversion only), which the workshop vendored; the
+original is under the tag =archive/globe-rederive=.

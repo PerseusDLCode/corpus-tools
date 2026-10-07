@@ -1,0 +1,7 @@
+# One row per play the Globe build knows: src/globe/plays.py, doc/globe-lineation.org.
+# p4 and shell are relative to canonical-engLit; first_page and last_page are the
+# play's printed pages in the Globe; dracor is relative to the ShakeDraCor clone
+# (SHAKEDRACOR, default ../../shakedracor).
+play	p4	shell	first_page	last_page	dracor
+lr	Renaissance/Shakespeare/opensource/lr.xml	data/shakespeare/lr/shakespeare.lr.globe.xml	847	878	tei/king-lear.xml
+ant	Renaissance/Shakespeare/opensource/ant.xml	data/shakespeare/ant/shakespeare.ant.globe.xml	911	943	tei/antony-and-cleopatra.xml

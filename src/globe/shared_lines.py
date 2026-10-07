@@ -38,7 +38,6 @@ from globe.tokens import norm
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 XML_ID = "{http://www.w3.org/XML/1998/namespace}id"
-FOLGER = Path("/Users/wulfmanc/repos/gh/shakedracor/tei/king-lear.xml")
 TABLE = Path(__file__).resolve().parent.parent.parent / "data/globe/shared-lines.tsv"
 
 COLUMNS = ["scene", "page", "kind", "first_half", "second_half", "line", "basis",
@@ -89,9 +88,10 @@ def first_words(text: str, n: int | None = MATCH_WORDS) -> tuple[str, ...]:
     return tuple(out)
 
 
-def read_folger(path: Path = FOLGER) -> list[Pair]:
-    """Every I/F pair, by its words. Folger text is read here and never kept:
-    only the xml:ids leave this function."""
+def read_folger(path: Path) -> list[Pair]:
+    """Every I/F pair in a play's Folger file (plays.Play.dracor_path), by its
+    words. Folger text is read here and never kept: only the xml:ids leave
+    this function."""
     root = etree.parse(str(path)).getroot()
     lines = [el for el in root.iter(TEI + "l")]
     pairs = []
@@ -125,15 +125,15 @@ def line_words(lines, k: int, toks, n: int | None = MATCH_WORDS) -> tuple[str, .
     return tuple(out)
 
 
-def propose(lines, toks, failing, pairs: list[Pair] | None = None) -> list[Row]:
+def propose(lines, toks, failing, pairs: list[Pair]) -> list[Row]:
     """A row for every +1 interval holding a junction the Folger marks I/F.
 
-    `failing` is the driver's failing intervals. Only adjacent line pairs
+    `failing` is the driver's failing intervals, `pairs` the play's Folger
+    pairs (read_folger). Only adjacent line pairs
     inside a failing interval are considered, and a junction is proposed only
     where both halves match a Folger pair on their first words. Folger
     spelling is modernised, so a half of three words matches when one
     differs; shorter halves must match exactly (see _matches)."""
-    pairs = read_folger() if pairs is None else pairs
     by_line = {}
     for k, ln in enumerate(lines):
         by_line[(ln.div, ln.n)] = k

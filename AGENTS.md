@@ -63,8 +63,9 @@ Regenerates a play's Globe line numbering from page images of the printed Globe.
 
 - `make globe-verify PLAY=lr` — build to a temp dir and compare with canonical-engLit's published file, ignoring only the regeneration stamp. Run it after any change to `src/globe/`.
 - `make globe-regenerate PLAY=lr` — writes `out/globe/lr/` and `reports/globe/`; **refuses on a dirty tree**. The canonical build (`out/globe/*/*.globe.xml`) is gitignored: its home is canonical-engLit.
-- Sibling inputs: `../canonical-engLit` (P4 sources and the published edition, which is also the shell of the next build), the witnesses, the `PerseusDLCode/globe-witnesses` repository, at `$GLOBE_WITNESSES` (default `../globe-witnesses`; never commit its `Doubleday/`; pinned by `data/globe/witness-manifest.tsv`, and the build refuses a file that differs), `../schmidt-lexicon-workshop/out/` (smoke test only).
+- Sibling inputs: `../canonical-engLit` (P4 sources and the published edition, which is also the shell of the next build), the witnesses, the `PerseusDLCode/globe-witnesses` repository, at `$GLOBE_WITNESSES` (default `../globe-witnesses`; never commit its `Doubleday/`; pinned by `data/globe/witness-manifest.tsv`, and the build refuses a file that differs), `../schmidt-lexicon-workshop/out/` (smoke test only), the ShakeDraCor clone at `$SHAKEDRACOR` (default `../../shakedracor`; Folger report only, skipped if absent).
 - **canonical-engLit: `mvp` only.** The build refuses unless canonical-engLit has `mvp` checked out. Work only in the `PerseusDLCode` fork (`origin`), from `mvp`; never commit to, branch from, merge into or compare against its `main`, and never push to `upstream`.
+- A play's P4 source, shell, printed pages and DraCor file are its row in `data/globe/plays.tsv` (`src/globe/plays.py`); name them nowhere else.
 - `shared-lines.tsv`'s `checked` column is filled by Cliff after looking at the page image; never fill it. The canonical build refuses unchecked rows.
 - Byte identity depends on serialisation: keep lxml at the locked 6.1.3.
 

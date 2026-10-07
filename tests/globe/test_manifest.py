@@ -4,6 +4,7 @@ and globe-verify compares a build with the published file stamp aside.
 Added with the move into corpus-tools; not among the workshop's tests.
 """
 
+import subprocess
 from pathlib import Path
 
 import pytest
@@ -74,6 +75,83 @@ def test_rewriting_one_play_keeps_the_others_rows(tmp_path):
     manifest.write("other", reg, ORDER, 12, 12, m, root, repo)
     manifest.write("toy", reg, ORDER, 10, 10, m, root, repo)
     assert [r["play"] for r in manifest.read(m)] == ["other", "other", "toy", "toy"]
+
+
+def dracor_clone(tmp_path: Path) -> tuple[Path, str]:
+    """A git clone with one committed play file; returns it and its commit."""
+    clone = tmp_path / "shakedracor"
+    (clone / "tei").mkdir(parents=True)
+    (clone / "tei/toy.xml").write_text('<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shake000099"/>')
+
+    def git(*args):
+        return subprocess.run(["git", "-C", str(clone), "-c", "user.name=t", "-c", "user.email=t@example.org",
+                               *args], check=True, capture_output=True, text=True).stdout.strip()
+    git("init", "-q")
+    git("add", "tei/toy.xml")
+    git("commit", "-q", "-m", "toy")
+    return clone, git("rev-parse", "--short=7", "HEAD")
+
+
+def pinned(tmp_path):
+    """The toy play's manifest, with its ShakeDraCor file pinned."""
+    reg, root, repo, m = setup(tmp_path)
+    clone, commit = dracor_clone(tmp_path)
+    n = manifest.write("toy", reg, ORDER, 10, 11, m, root, repo, dracor="tei/toy.xml", clone=clone)
+    return reg, root, repo, m, clone, commit, n
+
+
+def test_the_dracor_file_is_pinned_with_its_commit_and_play_id(tmp_path):
+    """canonical-engLit doc/agenda.org #globe/pin-dracor."""
+    reg, root, repo, m, clone, commit, n = pinned(tmp_path)
+    assert n == 4
+    row = manifest.read(m)[-1]
+    assert (row["witness"], row["file"], row["base"], row["path"]) == (
+        "dracor", "folger", "SHAKEDRACOR", "tei/toy.xml")
+    assert row["catalog"] == f"github=dracor-org/shakedracor commit={commit} play=shake000099"
+    assert row["sha256"] == manifest.sha256(clone / "tei/toy.xml")
+    pin = manifest.dracor_pin("toy", m)
+    assert (pin["commit"], pin["play"], pin["path"]) == (commit, "shake000099", "tei/toy.xml")
+    manifest.verify("toy", reg, ORDER, 10, 11, m, root, repo, dracor="tei/toy.xml", clone=clone)
+
+
+def test_a_changed_dracor_file_is_refused_and_named(tmp_path):
+    """The build read whatever the clone had checked out; now it must be the
+    pinned bytes."""
+    reg, root, repo, m, clone, _, _ = pinned(tmp_path)
+    (clone / "tei/toy.xml").write_text("<TEI xml:id='edited'/>")
+    with pytest.raises(ManifestError, match=r"sha256 differs.*SHAKEDRACOR/tei/toy\.xml"):
+        manifest.verify("toy", reg, ORDER, 10, 11, m, root, repo, dracor="tei/toy.xml", clone=clone)
+
+
+def test_an_absent_clone_is_not_refused_but_an_unpinned_dracor_file_is(tmp_path):
+    """Without the clone the Folger report is skipped, as before; the pin
+    itself is required, since the header is written from it."""
+    reg, root, repo, m, clone, _, _ = pinned(tmp_path)
+    manifest.verify("toy", reg, ORDER, 10, 11, m, root, repo, dracor="tei/toy.xml",
+                    clone=tmp_path / "nowhere")
+    manifest.write("toy", reg, ORDER, 10, 11, m, root, repo)  # rewritten without the pin
+    with pytest.raises(ManifestError, match=r"not in the manifest: SHAKEDRACOR/tei/toy\.xml"):
+        manifest.verify("toy", reg, ORDER, 10, 11, m, root, repo, dracor="tei/toy.xml", clone=clone)
+    with pytest.raises(ManifestError, match="0 ShakeDraCor rows for toy"):
+        manifest.dracor_pin("toy", m)
+
+
+def test_a_dracor_file_is_pinned_only_as_it_is_committed(tmp_path):
+    """The commit recorded must be true of the bytes pinned beside it."""
+    reg, root, repo, m = setup(tmp_path)
+    clone, commit = dracor_clone(tmp_path)
+    (clone / "tei/toy.xml").write_text("<TEI xml:id='edited'/>")
+    with pytest.raises(ManifestError, match=rf"differs from the clone's commit {commit}"):
+        manifest.write("toy", reg, ORDER, 10, 11, m, root, repo, dracor="tei/toy.xml", clone=clone)
+    with pytest.raises(ManifestError, match="is not on this machine"):
+        manifest.write("toy", reg, ORDER, 10, 11, m, root, repo, dracor="tei/toy.xml",
+                       clone=tmp_path / "nowhere")
+    assert not m.exists()  # a refused pin writes nothing
+
+
+def test_lear_is_pinned_at_the_commit_its_published_header_names():
+    pin = manifest.dracor_pin("lr")
+    assert (pin["commit"], pin["play"], pin["path"]) == ("c34c2d4", "shake000033", "tei/king-lear.xml")
 
 
 STAMPED = (b'<revisionDesc><change when="{when}"><ab>Globe lineation regenerated from the witness '

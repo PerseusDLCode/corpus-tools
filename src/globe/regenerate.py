@@ -188,7 +188,8 @@ def build(play: str, table: list[shared_lines.Row] | None = None):
     grams = align_play.trigram_index(enc)
     speakers = tokens.speaker_names(toks)
     reg = witnesses.load(sorted({w for w, _ in ORDER}))
-    manifest.verify(play, reg, ORDER, first, last)  # refuse a witness file that is not as pinned
+    # refuse a witness file, or the play's ShakeDraCor file, that is not as pinned
+    manifest.verify(play, reg, ORDER, first, last, dracor=entry.dracor)
 
     # every page of every witness, aligned in order
     pages: dict[tuple[str, int], tuple[page_rows.Page, align_play.PageAlignment]] = {}
@@ -676,6 +677,9 @@ def main(play: str = "lr", *flags) -> int:
               f"{folger['pairs']} I/F pairs {folger['together']} fall in one Globe line, "
               f"{folger['split']} across two ({folger['aligned']:.0%} of its words aligned)",
               file=sys.stderr)
+    else:
+        print(f"folger: {plays.get(play).dracor_path} is not on this machine; "
+              f"the Folger report was not written", file=sys.stderr)
     for iv in failing:
         print(f"  p.{iv['page']} {iv['witness']} {iv['div']} {iv['frm']} -> {iv['to']}: "
               f"counted {iv['counted_gap']}, printed {iv['printed_gap']} ({iv['error']:+d})", file=sys.stderr)

@@ -26,6 +26,7 @@ collapse-schmidt-duplicate-citations = "commands.collapse_schmidt_duplicate_cita
 merge-schmidt-orphaned-citations = "commands.merge_schmidt_orphaned_citations:main"
 survey-schmidt-senses = "commands.survey_schmidt_senses:main"
 import-shakedracor = "commands.import_shakedracor:main"
+globe-lineation = "commands.globe_lineation:main"
 
 [build-system]
 requires = ["pdm-backend"]

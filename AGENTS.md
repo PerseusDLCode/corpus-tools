@@ -18,6 +18,7 @@ All entry-point commands land in `.venv/bin/`. Use `corpus-tools` as the main en
 - `apply-genre-map` — apply reviewed CSV to files
 - `audit-refs / audit-structure / audit-schema` — read-only inspection
 - `survey-corpus / validate-corpus` — schema development support
+- `globe-lineation regenerate / verify / manifest / smoke` — Globe Shakespeare lineation from the witness pages (`make globe-regenerate PLAY=lr`, `make globe-verify PLAY=lr`); see below
 
 ## Key conventions
 
@@ -55,6 +56,17 @@ pdm run test        # or: .venv/bin/pytest
 ```
 
 357 tests (as of 2026-06-13). Tests live in `tests/`. No mocking of external tools — integration tests call real XSLT via saxonche.
+
+## Globe lineation (`src/globe/`)
+
+Regenerates a play's Globe line numbering from page images of the printed Globe. Design, tables and how to run it: `doc/globe-lineation.org`; witness provenance: `doc/witnesses.org`. Moved from `globe-lineation-workshop`, frozen at its tag `v1.0`; `doc/agenda.org #id` and `doc/forum.org #id` in this code refer to that workshop, not to files here. Open tasks are in canonical-engLit `doc/agenda.org` on `mvp`.
+
+- `make globe-verify PLAY=lr` — build to a temp dir and compare with canonical-engLit's published file, ignoring only the regeneration stamp. Run it after any change to `src/globe/`.
+- `make globe-regenerate PLAY=lr` — writes `out/globe/lr/` and `reports/globe/`; **refuses on a dirty tree**. The canonical build (`out/globe/*/*.globe.xml`) is gitignored: its home is canonical-engLit.
+- Sibling inputs: `../canonical-engLit` (P4 sources and the published edition, which is also the shell of the next build), the witnesses, the `PerseusDLCode/globe-witnesses` repository, at `$GLOBE_WITNESSES` (default `../globe-witnesses`; never commit its `Doubleday/`; pinned by `data/globe/witness-manifest.tsv`, and the build refuses a file that differs), `../schmidt-lexicon-workshop/out/` (smoke test only).
+- **canonical-engLit: `mvp` only.** The build refuses unless canonical-engLit has `mvp` checked out. Work only in the `PerseusDLCode` fork (`origin`), from `mvp`; never commit to, branch from, merge into or compare against its `main`, and never push to `upstream`.
+- `shared-lines.tsv`'s `checked` column is filled by Cliff after looking at the page image; never fill it. The canonical build refuses unchecked rows.
+- Byte identity depends on serialisation: keep lxml at the locked 6.1.3.
 
 ## Related repos (siblings)
 

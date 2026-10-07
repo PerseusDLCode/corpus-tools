@@ -1,0 +1,9 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in lr.xml (sha256 ef4bd51326cb54fa); not the shell's milestones or <l n>
+# transcribed anchors: 274; mapped (the row begins a line): 221; of those, carrying the same number: 219
+# in scenes that pass the gate: 221 mapped; agreeing: 219
+# unmapped (the row begins inside a line): 53; the P4's number is the containing line's for 28, the next line's for 24, neither for 1
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.4	340	disagree	339				take the fool with thee. A
+4.7	99	disagree	98				Or well or ill, as this
+5.3	161	unmapped (neither)		159	160		Alb. Most monstrous! oh! Know'st thou

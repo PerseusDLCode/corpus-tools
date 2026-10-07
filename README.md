@@ -50,7 +50,8 @@ Schmidt citation repairs built on it, `repair-schmidt-citations` and
 the Folger text's lineation). The code is kept under the tag
 `archive/globe-rederive`. Globe lineation is now regenerated from page
 images of the printed edition by the witness-page pipeline developed in
-`globe-lineation-workshop`, which moves here; ShakeDraCor editions are
+`globe-lineation-workshop`, which lives here (`src/globe/`,
+`doc/globe-lineation.org`); ShakeDraCor editions are
 cited by their own through-line numbers, and no mapping between the two
 numberings is planned.
 `strip-schmidt-urn-edition`, which removed the edition token from

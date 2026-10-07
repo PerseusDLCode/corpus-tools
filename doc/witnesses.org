@@ -11,14 +11,14 @@ from nothing, and to know what any file in it is evidence /of/.
 Moved here from =globe-lineation-workshop= with the witness-page
 pipeline (=doc/globe-lineation.org=). The Layout section below gives
 the paths as they are now. Elsewhere, paths are the workshop's:
-=witnesses/= is now =$GLOBE_WITNESSES=; =data/witnesses.toml=, the leaf
+=witnesses/= is now =$GLOBE_WITNESSES=, the =globe-witnesses= repository; =data/witnesses.toml=, the leaf
 tables and =data/witness-offsets.tsv= are under =data/globe/=, and
 =src/witnesses.py= is =src/globe/witnesses.py=. The witness-preparation
 tools (=src/ocr*.py=, =binarize_page.py=, =prune_alto.py=,
 =build_leaf_tables.py=, =running_head_audit.py=), =data/alto-low-gc-*.tsv=,
 =data/head-audit-review.tsv=, the =doubleday_*= modules, every =reports/=
 file cited here, and =doc/forum.org= stayed in the workshop, and are
-cited at its tag.
+cited at its tag =v1.0=.
 
 This is a record of provenance and processing, not of decisions.
 /Why/ a witness was chosen, kept or retired is argued in
@@ -43,14 +43,20 @@ A third book, the Doubleday comparandum, is discussed separately below
 
 * Layout
 
-The witnesses live outside any repository, under =$GLOBE_WITNESSES=
-(default =../globe-witnesses/=; until the workshop is frozen they are
-still at =globe-lineation-workshop/witnesses/=). The files the build
-reads are pinned by sha256 in =data/globe/witness-manifest.tsv=. Small,
-hand-verified derived data lives in =data/globe/= and is tracked.
+The witnesses are their own repository, =PerseusDLCode/globe-witnesses=,
+checked out as a sibling and found through =$GLOBE_WITNESSES= (default
+=../globe-witnesses/=). It tracks the Kraken ALTO, which is our own
+output and cannot be downloaded again, and the catalogue metadata. The
+scans and IA's =djvu.xml= are on disk but gitignored (re-downloadable);
+the unpruned Kraken tarballs are gitignored too and attached to its
+release =v1.0=, their =.sha256= files tracked. =Doubleday/= sits there,
+untracked and ignored: it is in copyright and is never committed. The
+files the build reads are pinned by sha256 in
+=data/globe/witness-manifest.tsv=. Small, hand-verified derived data
+lives in =data/globe/= and is tracked.
 
 #+BEGIN_EXAMPLE
-  $GLOBE_WITNESSES/
+  $GLOBE_WITNESSES/  (globe-witnesses; scans, djvu.xml, tarballs and Doubleday/ untracked)
     Trent/
       scans/          1,054 JP2, IA leaves 0017-1070, IA filenames unchanged
       ocr/kraken/     Kraken ALTO, one file per leaf

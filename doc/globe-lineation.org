@@ -8,13 +8,12 @@
 page images of the printed Globe, and writes the play's Globe edition
 for canonical-engLit. It was developed in =globe-lineation-workshop=
 and moved here unchanged except in imports and paths; the workshop is
-frozen, once this move is accepted, as the record of how it was built
-(see [[*References to the workshop]]).
+frozen at its tag =v1.0= as the record of how it was built (see
+[[*References to the workshop]]).
 
 King Lear is built and published (canonical-engLit =mvp=,
 =data/shakespeare/lr/shakespeare.lr.globe.xml=). Antony is next. The
-open tasks are carried to canonical-engLit =doc/agenda.org= when the
-workshop is frozen.
+open tasks are in canonical-engLit =doc/agenda.org= on =mvp=.
 
 * The method
 
@@ -99,7 +98,8 @@ its earlier regeneration stamp is replaced, not added to.
 Inputs, as siblings of this repository:
 - =../canonical-engLit=, with =mvp= checked out (the build refuses
   otherwise: the P4 and the shell are read from its working tree);
-- the witnesses, at =$GLOBE_WITNESSES= (default =../globe-witnesses=);
+- the witnesses: the =PerseusDLCode/globe-witnesses= repository, at
+  =$GLOBE_WITNESSES= (default =../globe-witnesses=; =doc/witnesses.org=);
 - =../schmidt-lexicon-workshop/out/= for the smoke test;
 - the Folger (DraCor) Lear at the absolute path in =shared_lines.FOLGER=,
   for the Folger report only; skipped if absent.
@@ -136,9 +136,9 @@ the first and last printed page. A play also needs its rows in
 The code and tests cite the workshop's deliberation in the form
 =doc/agenda.org #id= and =doc/forum.org #id=, and some of its reports
 (=reports/doubleday-comparison.md=, the page-alignment and baseline-merge
-reports). These are to =globe-lineation-workshop= at its tag =v1.0= (made
-when it is frozen; the move was made from its commit =9aeea3a=), not to
-files in this repository. Likewise =CLAUDE.md= in a code comment is
+reports). These are to =globe-lineation-workshop= at its tag =v1.0= (the
+move was made from its commit =9aeea3a=; nothing in the code changed
+after), not to files in this repository. Likewise =CLAUDE.md= in a code comment is
 the workshop's. =spikes/2026-09-21-regeneration= and the witness
 preparation tools (OCR, binarisation, ALTO pruning, the leaf-table
 builder and the running-head audit) stayed there.

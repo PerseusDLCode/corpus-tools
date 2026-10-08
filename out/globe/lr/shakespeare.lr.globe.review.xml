@@ -88,7 +88,7 @@
         <tei:language xmlns:tei="http://www.tei-c.org/ns/1.0" ident="eng"> English </tei:language>
       </langUsage>
     </profileDesc>
-    <revisionDesc><change when="2026-10-08"><ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit bd8affa; sources: lr.xml sha256 ef4bd51326cb54fa; shared-lines.tsv sha256 031852c68b705d2c; shell data/shakespeare/lr/shakespeare.lr.globe.xml sha256 0a1272e67d3bd8ff. Generated file: DO NOT EDIT.</ab></change><change><ab>converted to TEI P5</ab></change></revisionDesc>
+    <revisionDesc><change when="2026-10-08"><ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit b3cbd43; sources: lr.xml sha256 ef4bd51326cb54fa; shared-lines.tsv sha256 6a981986d9c12a44; shell data/shakespeare/lr/shakespeare.lr.globe.xml sha256 0a1272e67d3bd8ff. Generated file: DO NOT EDIT.</ab></change><change><ab>converted to TEI P5</ab></change></revisionDesc>
   </teiHeader>
   <text xml:lang="eng">
     <body xml:base="urn:cts:engLit:shakespeare.lr.globe">

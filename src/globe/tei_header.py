@@ -32,7 +32,10 @@ from globe import witnesses
 TEI_XMLNS = "http://www.tei-c.org/ns/1.0"
 
 PLAY_TITLES = {
+    "1h4": "King Henry IV, Part I",
+    "1h6": "King Henry VI, Part I",
     "lr": "King Lear",
+    "ant": "Antony and Cleopatra",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -44,6 +47,7 @@ PLAY_TITLES = {
 # reports/doubleday-comparison.md, not the header (#build/header-fixes).
 COPY_TEXT = {
     "lr": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="758-791"),
+    "ant": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="816-849"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

@@ -113,13 +113,27 @@ def test_displaced_song_line_is_a_line():
 
 
 def test_displaced_row_in_the_same_paragraph_is_prose():
-    # Goneril's letter, p.873: "'Affectionate servant," set in, inside one <p>
-    p = etree.Element("p")
+    # Goneril's letter, p.873: "'Affectionate servant," set in, inside one <p>,
+    # in a text that marks its verse with <l>
+    body = etree.fromstring("<body><sp><l>verse</l></sp><sp><p/></sp></body>")
+    p = body.find("sp/p")
     prev = row(2.8, "'Your--wife, so I would say--", right_u=15.5)
     r = row(8.9, "'Affectionate servant,", right_u=18.1)
     prev.extra["cont"] = r.extra["cont"] = p
     assert not lineate.continues(prev, r)
     r.extra["cont"] = etree.Element("l")  # the same geometry in verse would be a shared half
+    assert lineate.continues(prev, r)
+
+
+def test_a_paragraph_says_nothing_where_the_p4_marks_no_verse():
+    # Antony I.1, p.911: "To cool a gipsy's lust." / [stage direction] /
+    # "Look, where they come:", set to follow on, one Globe line (10). The
+    # P4 has no <l> at all: the speech is one <p>, verse and all.
+    body = etree.fromstring("<body><sp><p/></sp></body>")
+    p = body.find("sp/p")
+    prev = row(0.0, "To cool a gipsy's lust.", right_u=9.9)
+    r = row(9.6, "Look, where they come:", right_u=20.9)
+    prev.extra["cont"] = r.extra["cont"] = p
     assert lineate.continues(prev, r)
 
 
@@ -225,3 +239,51 @@ def test_stripping_a_milestone_keeps_the_words_around_it():
     assert source_text.strip_line_milestones(p) == {"Globe": 1, "F1": 1}
     assert len(p) == 0
     assert tokens.word_stream(p) == before
+
+
+# ---------------------------------------------------------------- alignment
+
+
+def test_a_stray_match_at_the_page_foot_does_not_end_the_page():
+    """Antony p.929 ends "pinion of his wing,"; the P4 reads "off his", and
+    "of his" matched "Lord of his fortunes" 60 words on, so p.930's first nine
+    rows fell before its floor. Page word index -> P4 token index."""
+    from globe.align_play import page_end
+    page = {k: 15190 + k for k in range(16)}  # ... "he sends so poor a pinion"
+    assert page_end(page) == 15205
+    assert page_end({**page, 16: 15266, 17: 15267}) == 15205  # "of his", 60 on
+    assert page_end({**page, 18: 15297}) == 15205  # the watermark's "OF" (p.915)
+    held = {**page, 16: 15266, 17: 15267, 18: 15268}  # three in a run: the page's own
+    assert page_end(held) == 15268
+    assert page_end({k: 100 + k for k in range(5)}) == 104  # no jump: the last match
+
+
+def test_the_scanners_watermark_is_furniture_wherever_the_foot_rule_misses_it():
+    """Antony p.915 (Michigan): the text and a printer's signature run so low
+    that no 2u gap stands above the watermark, and its "OF" was counted as a
+    line. A row in the foot zone like a watermark line, OCR errors and all."""
+    marks = ["Digitized by", "UNIVERSITY OF MICHIGAN", "Original from"]
+    rows = [Row(0, 3688, 0, [Word(0, 1, "That"), Word(0, 1, "he")]),
+            Row(0, 3785, 0, [Word(0, 1, "8–2")]),
+            Row(0, 3833, 0, [Word(0, 1, "Original"), Word(0, 1, "fro")]),
+            Row(0, 3894, 0, [Word(0, 1, "JNIVERSITY"), Word(0, 1, "OF"), Word(0, 1, "MICHIGA")]),
+            Row(0, 100, 0, [Word(0, 1, "UNIVERSITY"), Word(0, 1, "OF"), Word(0, 1, "MICHIGAN")])]
+    text, off = pr.split_watermark(rows, marks, 3950)
+    assert [r.text for r in off] == ["Original fro", "JNIVERSITY OF MICHIGA"]
+    assert [r.y for r in text] == [3688, 3785, 100]  # the signature stays; nothing above the foot zone goes
+    assert pr.split_watermark(rows, (), 3950) == (rows, [])  # Trent declares no watermark
+
+
+def test_the_margin_follows_a_column_that_drifts():
+    """Trent, Antony p.923: flush rows drift from x=37 to x=48 down the
+    column (pitch 30), and a turnover near the foot, 2.7u in from the local
+    margin, read past 2.8u from the column's one margin: indented, a line."""
+    pitch = 30.0
+    body = [Row(37 + 11 * k / 59, 100 + 30 * k, 600, [Word(0, 1, "x")]) for k in range(60)]
+    turnover = Row(48 + 2.65 * pitch, 100 + 30 * 58 + 15, 300, [Word(0, 1, "fortunes.")])
+    margins = pr.local_margins(body + [turnover], pitch)
+    assert abs(margins[0] - 37) < 1 and abs(margins[59] - 48) < 1
+    assert 2.4 < (turnover.x - margins[-1]) / pitch < 2.8  # the turnover band
+    assert (turnover.x - pr.column_margin(body, pitch)) / pitch > 2.8  # one margin: indented
+    few = body[:10]
+    assert pr.local_margins(few, pitch) == [pr.column_margin(few, pitch)] * 10

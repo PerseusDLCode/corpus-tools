@@ -16,6 +16,7 @@ printed number is checked by the next numbered page of the same scene.
 """
 from __future__ import annotations
 
+import functools
 from dataclasses import dataclass, field
 
 from lxml import etree
@@ -25,6 +26,15 @@ from globe.tokens import Token
 
 FULL_MEASURE_U = 1.0  # a row this close to the measure is full
 SHARED_REACH_U = 9.0  # a shared half starts no further left of the first half's end than this
+
+
+@functools.lru_cache(maxsize=8)
+def marks_verse(root) -> bool:
+    """Does this text mark verse with <l> anywhere? Only then does a <p> mean
+    prose. Seven P4s -- 1h4, 1h6, 2h4, 2h6, 3h6, ant and aww -- set every
+    speech in <p>, verse or prose, so their <p> says nothing either way
+    (canonical-engLit doc/agenda.org #build/regenerate-ant)."""
+    return bool(root.xpath("boolean(//*[local-name()='l'])"))
 
 
 def continues(prev: Row, r: Row) -> bool:
@@ -48,10 +58,14 @@ def continues(prev: Row, r: Row) -> bool:
         return True
     if r.band == "displaced":
         cont = r.extra.get("cont")
-        if cont is not None and etree.QName(cont).localname == "p" and prev.extra.get("cont") is cont:
+        if (cont is not None and etree.QName(cont).localname == "p" and prev.extra.get("cont") is cont
+                and marks_verse(cont.getroottree().getroot())):
             # a displaced row within the same P4 paragraph as the row above is
-            # prose (a letter's subscription, IV.6): shared halves are verse,
-            # and in prose every printed row is a line
+            # prose (a letter's subscription, Lear IV.6): shared halves are
+            # verse, and in prose every printed row is a line. Only where the
+            # P4 marks verse: in Antony the same paragraph holds a verse line
+            # split by a stage direction ("To cool a gipsy's lust." /
+            # "Look, where they come:", I.1), set to follow on like a shared half
             return False
         # in pitches from each row's own column margin, so a shared half at the
         # top of a column is measured against the foot of the previous one

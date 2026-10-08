@@ -22,6 +22,8 @@ from globe.page_rows import PREFIX, Page, Row
 from globe.tokens import Token, norm
 
 WINDOW_SLACK = 150  # tokens after the voted offset
+STRAY_JUMP = 10  # matched words this much further apart in the P4 than on the page have jumped
+STRAY_RUN = 3  # a run of fewer matches after a jump, at the page's end, is stray
 
 
 @dataclass
@@ -111,17 +113,45 @@ def align_page(page: Page, toks: list[Token], enc: list[str], grams: dict, floor
             r.start += 1
         r.extra["cont"] = toks[r.start].cont
         # a row is spoken text if it opens with speech ("Capt. Sound, trumpet!
-        # [A trumpet sounds.") or is mostly speech ("[Rising] Never, Regan:")
+        # [A trumpet sounds."), is mostly speech ("[Rising] Never, Regan:"), or
+        # is set where a speech begins (at the margin, or after a speaker
+        # prefix) and ends in speech after a longer stage direction ("[To
+        # Proculeius and the Guard] Guard her till", Antony V.2, p.940; "Eno.
+        # [Aside to Agr.] Will Cæsar weep?", III.2, p.925). A row set in, that
+        # opens with a stage direction, is the end of a line the direction
+        # interrupts ("[Trumpets within.] So;", III.2, p.925): not a line.
         kinds = Counter(toks[m[k]].kind for k in hits)
         r.speech = (toks[m[k0]].kind == "speech"
-                    or kinds["speech"] > kinds["stage"] + kinds["head"])
+                    or kinds["speech"] > kinds["stage"] + kinds["head"]
+                    or (r.band in ("start", "displaced") and toks[m[hits[-1]]].kind == "speech"))
         # where the row's speech ends: a trailing stage direction runs further
         spoken = [k for k in hits if toks[m[k]].kind == "speech"]
         r.extra["speech_r"] = _word_right(r, ow, ks, spoken[-1]) if spoken else r.r
 
     disagreements = _disagreements(page, rows, ow, sm, lo, toks, speakers, m)
     ms = sorted(m.values())
-    return PageAlignment(page, ms[0], ms[-1], len(m), len(ow), m, ow, disagreements)
+    return PageAlignment(page, ms[0], page_end(m), len(m), len(ow), m, ow, disagreements)
+
+
+def page_end(m: dict[int, int]) -> int:
+    """The last P4 token the page holds: the next page's floor.
+
+    Not simply the last match. The window runs on past the page, and a word
+    or two at its foot can match there: the Michigan watermark's "OF" (p.915),
+    or "of his" in "pinion of his wing" matched to "Lord of his fortunes" nine
+    rows on (p.929, where the P4 reads "off his"). Either moved the next page's
+    floor past its own first rows, which then could not align (canonical-engLit
+    doc/agenda.org #build/regenerate-ant). So a run of fewer than STRAY_RUN
+    matches that follows a jump of more than STRAY_JUMP tokens, at the page's
+    end, is dropped, and so on until the page ends in a run that holds."""
+    pairs = sorted(m.items())  # in the page's word order
+    while True:
+        jumps = [i for i in range(1, len(pairs))
+                 if (pairs[i][1] - pairs[i - 1][1]) - (pairs[i][0] - pairs[i - 1][0]) > STRAY_JUMP]
+        if jumps and len(pairs) - jumps[-1] < STRAY_RUN:
+            del pairs[jumps[-1]:]
+        else:
+            return pairs[-1][1]
 
 
 def _word_right(r: Row, ow, ks: list[int], k: int) -> float:

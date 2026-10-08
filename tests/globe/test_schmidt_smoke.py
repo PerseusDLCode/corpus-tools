@@ -114,26 +114,43 @@ def test_a_verse_word_one_line_off_is_reported(scenes):
     assert r["verdict"] == "headword off by 1" and r["found_at"] == "1.2.7"
 
 
-def test_another_play_or_scene_is_not_a_lear_citation(scenes):
-    assert verdict(scenes, "4.1.94", "Doubtful,", display="Shr. Ind. 1, 94.")["verdict"] == \
-        "not a Lear citation"
-    assert verdict(scenes, "5.154.2", "Brand,", display="154, 2")["verdict"] == "not a Lear citation"
+def test_another_play_or_scene_is_not_a_citation_of_this_play(scenes):
+    assert verdict(scenes, "4.1.94", "Doubtful,", display="Shr. Ind. 1, 94.")["verdict"] == sm.NOT_THIS_PLAY
+    assert verdict(scenes, "5.154.2", "Brand,", display="154, 2")["verdict"] == sm.NOT_THIS_PLAY
+
+
+def test_the_plays_own_abbreviation_is_read_from_its_citations():
+    cits = [{"p4_display_text": d} for d in ("Lr. I, 4, 138", "Lr. II, 4, 161", "IV, 2, 3", "Shr. Ind. 1, 94.")]
+    assert sm.own_abbreviation(cits) == "Lr."
+    assert sm.own_abbreviation([{"p4_display_text": "H6A I, 1, 98"}]) is None
+
+
+def test_a_run_of_citations_off_by_one_amount_is_reported():
+    """Antony II.7: Schmidt's citations ran five ahead of ours from 69 to 118."""
+    def row(cited, verdict, offset=""):
+        return {"cited": cited, "verdict": verdict, "offset": offset}
+    rows = [row("2.7.60", "quotation on cited line"),
+            row("2.7.69", "quotation elsewhere in scene", 5), row("2.7.72", "headword off by 1", 1),
+            row("2.7.74", "quotation elsewhere in scene", 5), row("2.7.78", "quotation elsewhere in scene", 5),
+            row("2.7.82", "quotation elsewhere in scene", 5), row("2.7.88", "quotation on cited line"),
+            row("2.7.90", "prose row break", 1), row("3.1.4", "not a citation of this play")]
+    assert sm.runs(rows) == [dict(scene="2.7", first=74, last=82, offset=5, citations=3)]
 
 
 def test_nothing_on_or_near_the_line(scenes):
     assert verdict(scenes, "1.2.1", "Acheron,")["verdict"] == "headword not found near cited line"
 
 
-INPUTS = [sm.EDITION, sm.SCHMIDT / "citations.tsv", sm.SCHMIDT / "citation_quotes.tsv"]
+INPUTS = [sm.edition_for("lr"), sm.SCHMIDT / "citations.tsv", sm.SCHMIDT / "citation_quotes.tsv"]
 
 
 @pytest.mark.skipif(not all(p.is_file() for p in INPUTS), reason="Schmidt tables or Lear build not on disk")
 def test_real_lear_as_recorded():
     """The figures in the agenda status of #validate/schmidt-smoke."""
     from collections import Counter
-    rows, _ = sm.run()
+    rows, _ = sm.run("lr")
     counts = Counter(r["verdict"] for r in rows)
     assert len(rows) == 2286
     assert sum(counts[v] for v in sm.PASS) == 2163
-    assert counts["not a Lear citation"] == 30
+    assert counts[sm.NOT_THIS_PLAY] == 30
     assert counts["prose row break"] == 14

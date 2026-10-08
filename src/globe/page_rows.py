@@ -30,6 +30,7 @@ src/globe/witnesses.py.
 """
 from __future__ import annotations
 
+import difflib
 import re
 import statistics
 import xml.etree.ElementTree as ET
@@ -59,7 +60,7 @@ class Word:
 @dataclass
 class Row:
     x: float  # left edge
-    y: float  # vertical centre
+    y: float  # baseline height, deskewed (read_rows); the box centre where ALTO gives no baseline
     r: float  # right edge
     words: list[Word]
     col: int = 0
@@ -118,23 +119,51 @@ class Page:
 # ---------------------------------------------------------------- reading
 
 
+SLOPE_MIN_SPAN = 300  # pixels: baselines this long or longer measure the page's skew
+
+
+def baseline(tl) -> list[tuple[float, float]]:
+    """A TextLine's BASELINE polyline ("x1 y1 x2 y2 ...", or with commas)."""
+    v = [float(t) for t in (tl.get("BASELINE") or "").replace(",", " ").split()]
+    return list(zip(v[0::2], v[1::2]))
+
+
 def read_rows(path: Path) -> tuple[list[Row], float, float]:
-    """Every non-empty TextLine as a Row, and the page width and height from ALTO."""
+    """Every non-empty TextLine as a Row, and the page width and height from ALTO.
+
+    A row's y is its baseline, carried to the middle of the page along the
+    page's skew (the median slope of its long baselines). A marginal number is
+    set on its line's baseline, but its box is smaller than the line's, and an
+    italic speaker prefix moves a box centre too: on Trent's small, skewed
+    leaves box centres put a number nearer the next row than its own (Antony
+    p.929, "Eros. See you here, sir?" 30; canonical-engLit doc/agenda.org
+    #build/regenerate-ant). A TextLine without a baseline keeps its box centre."""
     tree = ET.parse(path)
     page = tree.find(".//a:Page", ALTO)
     width = float(page.get("WIDTH"))
     height = float(page.get("HEIGHT"))
-    rows = []
+    found, slopes = [], []
     for tl in tree.iterfind(".//a:TextLine", ALTO):
         ws = [Word(float(s.get("HPOS")), float(s.get("WIDTH")), s.get("CONTENT"))
               for s in tl.findall("a:String", ALTO)
               if (s.get("CONTENT") or "").strip() and s.get("HPOS") is not None]  # kraken emits some empty, unplaced Strings
         if ws:
             ws.sort(key=lambda w: w.x)  # kraken does not always emit Strings left to right
-            # the row's extent is its words', not the TextLine's box, which can
-            # start well before the first word ("justicer;", p.865)
-            rows.append(Row(x=ws[0].x, y=float(tl.get("VPOS")) + float(tl.get("HEIGHT")) / 2,
-                            r=max(w.x + w.w for w in ws), words=ws))
+            pts = baseline(tl)
+            if len(pts) >= 2 and pts[-1][0] - pts[0][0] >= SLOPE_MIN_SPAN:
+                slopes.append((pts[-1][1] - pts[0][1]) / (pts[-1][0] - pts[0][0]))
+            found.append((tl, ws, pts))
+    slope = statistics.median(slopes) if slopes else 0.0
+    rows = []
+    for tl, ws, pts in found:
+        if pts:
+            mx, my = sum(x for x, _ in pts) / len(pts), sum(y for _, y in pts) / len(pts)
+            y = my + slope * (width / 2 - mx)
+        else:
+            y = float(tl.get("VPOS")) + float(tl.get("HEIGHT")) / 2
+        # the row's extent is its words', not the TextLine's box, which can
+        # start well before the first word ("justicer;", p.865)
+        rows.append(Row(x=ws[0].x, y=y, r=max(w.x + w.w for w in ws), words=ws))
     return rows, width, height
 
 
@@ -171,6 +200,30 @@ def split_furniture(rows: list[Row], pitch: float, height: float) -> tuple[list[
             rows = rows[:k]
             break
     return rows, furniture
+
+
+WATERMARK_RATIO = 0.75  # a row this like a watermark line, in the foot zone, is the watermark
+
+
+def split_watermark(rows: list[Row], watermark, height: float) -> tuple[list[Row], list[Row]]:
+    """Take off the scanner's watermark where the foot rule did not: the
+    Michigan scans print "Digitized by / UNIVERSITY OF MICHIGAN" and "Original
+    from / UNIVERSITY OF MICHIGAN" under every leaf, and on Antony p.915 the
+    text and the printer's signature run so low that no gap of FOOT_GAP_U
+    pitches stands above them, so the watermark stayed in the text and its "OF"
+    counted as a line (canonical-engLit doc/agenda.org #build/regenerate-ant).
+    A row in the foot zone whose text is like a watermark line, OCR errors and
+    all ("JNIVERSITY OF MICHIGA", "Original fro"), is furniture. Returns (text
+    rows, watermark rows)."""
+    marks = [m.lower() for m in watermark]
+
+    def like(r: Row) -> bool:
+        t = r.text.lower()
+        return any(difflib.SequenceMatcher(None, t, m).ratio() >= WATERMARK_RATIO for m in marks)
+    if not marks:
+        return rows, []
+    off = [r for r in rows if r.y > FOOT_ZONE * height and like(r)]
+    return [r for r in rows if not any(r is o for o in off)], off
 
 
 def split_columns(rows: list[Row]) -> list[list[Row]]:
@@ -290,6 +343,37 @@ def column_margin(body: list[Row], pitch: float) -> float:
     return statistics.median(x for x in xs if x < base + MARGIN_BAND_U * pitch)
 
 
+MARGIN_NEAR = 10  # flush rows either side of a row that give its local margin
+
+
+def local_margins(body: list[Row], pitch: float) -> list[float]:
+    """Each row's left margin: a line fitted to the flush rows nearest it.
+
+    The column's margin is not one x for the whole column. On Trent's leaves
+    it drifts about half a pitch from top to bottom (Antony p.923: flush rows
+    at x=37 near the head, 48 near the foot), which put turnovers at the foot
+    of the column (2.3-2.65u) past the indented band's edge (2.8u) and made
+    lines of them (canonical-engLit doc/agenda.org #build/regenerate-ant). The
+    flush rows are the body cluster (column_margin); for each row, the
+    2*MARGIN_NEAR of them nearest it in height give a local slope (least
+    squares) and a robust level (the median of x - slope*y), so a stray row
+    moves nothing. A column with too few flush rows keeps one margin. A line
+    over the whole column was tried and failed: the top of a page of prose,
+    with few flush rows, set its slope (p.943)."""
+    m0 = column_margin(body, pitch)
+    flush = [(r.y, r.x) for r in body if abs(r.x - m0) < MARGIN_BAND_U * pitch]
+    if len(flush) < 2 * MARGIN_NEAR:
+        return [m0] * len(body)
+    out = []
+    for r in body:
+        near = sorted(flush, key=lambda p: abs(p[0] - r.y))[:2 * MARGIN_NEAR]
+        my = statistics.mean(y for y, _ in near)
+        vy = sum((y - my) ** 2 for y, _ in near)
+        b = sum((y - my) * x for y, x in near) / vy if vy else 0.0
+        out.append(statistics.median(x - b * y for y, x in near) + b * r.y)
+    return out
+
+
 def column_measure(body: list[Row]) -> float:
     """The column's full measure: the 90th-percentile row right edge."""
     rs = sorted(r.r for r in body)
@@ -369,23 +453,26 @@ def prepare_column(col: list[Row], speakers: set[str] = frozenset()):
     body = merge_same_row(body, pitch)
     join_hyphenation(body)
     body = [r for r in body if r.words]
-    margin = column_margin(body, pitch)
+    margin = column_margin(body, pitch)  # the column's, for the Page; each row has its own
     measure = column_measure(body)
     nums, annotations = split_annotations(nums, measure, pitch)
     attach_numbers(body, nums)
-    for r in body:
-        r.pitch, r.margin, r.measure = pitch, margin, measure
+    for r, local in zip(body, local_margins(body, pitch)):
+        r.pitch, r.margin, r.measure = pitch, local, measure
         r.prefix_len = prefix_length(r, speakers)
-        r.offset_u = (r.x - margin) / pitch
+        r.offset_u = (r.x - local) / pitch
         gap = prefix_gap(r)
         r.band = classify_band(r.offset_u, None if gap is None else gap / pitch)
     return body, pitch, margin, nums, annotations
 
 
-def read_page(path: Path, printed: int, witness: str, leaf: str, speakers: set[str] = frozenset()) -> Page:
+def read_page(path: Path, printed: int, witness: str, leaf: str, speakers: set[str] = frozenset(),
+              watermark=()) -> Page:
     rows, width, height = read_rows(path)
     rough = statistics.median(row_pitch(c) for c in split_columns(rows))
     rows, furniture = split_furniture(rows, rough, height)
+    rows, marks = split_watermark(rows, watermark, height)
+    furniture += marks
     cols, pitches, margins, numbers, annotations = [], [], [], [], []
     for c, col in enumerate(split_columns(rows)):
         body, pitch, margin, nums, notes = prepare_column(col, speakers)

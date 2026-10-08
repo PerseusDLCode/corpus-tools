@@ -1,8 +1,15 @@
-"""Schmidt's Lear citations against the regenerated edition.
+"""Schmidt's citations of a play against its regenerated edition.
 
-doc/agenda.org #validate/schmidt-smoke. The only validation that comes from
-outside the page: does the line Schmidt cites contain what he quotes, or, for a
-citation without a quotation, his headword?
+doc/agenda.org #validate/schmidt-smoke (the workshop's, for Lear), made a
+standing check for every play in canonical-engLit doc/agenda.org
+#build/regenerate-ant. The only validation that comes from outside the page:
+does the line Schmidt cites contain what he quotes, or, for a citation without
+a quotation, his headword? regenerate runs it on every build it writes.
+
+Schmidt's citations are Globe line numbers, so a run of them off by the same
+amount in a scene says where the count went wrong, and by how much: Antony
+II.7 ran five ahead from line 69 to 118, which located the table rows that
+closed it. The report lists such runs first.
 
 This module reports, it never fixes. A failure can come from our numbering,
 Schmidt's citation, a printing he used that differs, or a word the P4 has
@@ -10,12 +17,14 @@ wrong, and telling them apart is the point of looking.
 
 Usage (from the repo root):
 
-    pdm run python -m globe.schmidt_smoke [OUT_DIR]
+    .venv/bin/globe-lineation smoke PLAY [OUT_DIR]
 
-Reads out/globe/lr/shakespeare.lr.globe.xml and the sibling
-schmidt-lexicon-workshop's out/citations.tsv and out/citation_quotes.tsv;
-writes schmidt-smoke-lr.tsv (every citation) and schmidt-smoke-lr.md
-(the summary and every failure) to OUT_DIR, default reports/globe/.
+Reads out/globe/PLAY/shakespeare.PLAY.globe.xml (or the review build, if
+the canonical one was refused) and the sibling schmidt-lexicon-workshop's
+out/citations.tsv and out/citation_quotes.tsv, taking the citations whose
+target is the play's; writes schmidt-smoke-PLAY.tsv (every citation) and
+schmidt-smoke-PLAY.md (the summary, runs, and every failure) to OUT_DIR,
+default reports/globe/.
 """
 from __future__ import annotations
 
@@ -34,7 +43,6 @@ from lxml import etree
 from globe.tokens import norm
 
 REPO = Path(__file__).resolve().parent.parent.parent
-EDITION = REPO / "out" / "globe" / "lr" / "shakespeare.lr.globe.xml"
 SCHMIDT = REPO.parent / "schmidt-lexicon-workshop" / "out"
 TEI = "{http://www.tei-c.org/ns/1.0}"
 SKIP = {f"{TEI}speaker", f"{TEI}stage", f"{TEI}head", f"{TEI}castList", f"{TEI}note"}
@@ -43,7 +51,25 @@ FUZZY = 0.6  # share of a quotation's words that must align, in order, for a mat
 DASH = re.compile(r"--+|[\u2013\u2014]")
 ELLIPSIS = re.compile(r"(?:\.\s*){3,}")
 SUFFIXES = ("", "s", "es", "d", "ed", "ing", "st", "est", "th", "eth", "n", "en", "er")
-OTHER_PLAY = re.compile(r"^\s*(?!Lr\.)[A-Z][a-z]+\.")  # a display naming a play other than Lear
+ABBR = re.compile(r"^\s*([A-Z][a-z]+\.)")  # a display that names its play ("Lr. I, 4, 138")
+RUN = 3  # citations in a row, in one scene, off by the same amount: the count went wrong there
+NOT_THIS_PLAY = "not a citation of this play"
+
+
+def edition_for(play: str) -> Path:
+    """The play's canonical build, or its review build when the canonical one
+    was refused (unchecked table rows): the comments change nothing here."""
+    d = REPO / "out" / "globe" / play
+    canonical = d / f"shakespeare.{play}.globe.xml"
+    return canonical if canonical.is_file() else d / f"shakespeare.{play}.globe.review.xml"
+
+
+def own_abbreviation(cits: list[dict]) -> str | None:
+    """The play's own abbreviation in Schmidt ("Lr.", "Ant."): the commonest
+    that the play's citations name. Read from the data, so no table of them
+    is kept here."""
+    names = Counter(m.group(1) for c in cits if (m := ABBR.match(c["p4_display_text"])))
+    return names.most_common(1)[0][0] if names else None
 
 
 def words(text: str) -> list[str]:
@@ -222,20 +248,21 @@ def fuzzy(q: list[str], scene: "Scene", n: int):
     return got / len(q), lines, missing, extra
 
 
-def check(cit: dict, quote: dict, scenes: dict[str, Scene]) -> dict:
+def check(cit: dict, quote: dict, scenes: dict[str, Scene], own: str | None = "Lr.") -> dict:
     ref = cit["p5_ref_target"].rsplit(":", 1)[1]
     out = {"key": quote["key"], "headword": quote["headword"], "cited": ref,
            "display": cit["p4_display_text"], "quote": quote["quote_expanded"],
            "verdict": "", "found_at": "", "offset": "", "match": "", "missing": "", "extra": "",
            "our_line": ""}
     parts = ref.split(".")
-    other_play = OTHER_PLAY.match(cit["p4_display_text"])
+    named = ABBR.match(cit["p4_display_text"])
+    other_play = named is not None and named.group(1) != own
     if other_play or len(parts) != 3 or not all(p.isdigit() for p in parts) \
             or f"{parts[0]}.{parts[1]}" not in scenes:
-        # a citation extracted into Lear's scope that is not Lear's: another
+        # a citation extracted into the play's scope that is not the play's: another
         # play named ("Shr. Ind. 1, 94"), a sonnet ("154, 2"), a Pericles
         # chorus ("IV Prol. 40") -- an extraction question, not a lineation one
-        out["verdict"] = "not a Lear citation"
+        out["verdict"] = NOT_THIS_PLAY
         return out
     scene_id, n = f"{parts[0]}.{parts[1]}", int(parts[2])
     scene = scenes[scene_id]
@@ -312,24 +339,59 @@ def row_break(scene: "Scene", n: int, off: int, match) -> bool:
 PASS = ("quotation on cited line", "quotation on cited line, with differences", "headword on cited line")
 
 
-def run(edition: Path = EDITION, schmidt: Path = SCHMIDT) -> tuple[list[dict], dict]:
+def run(play: str, edition: Path | None = None, schmidt: Path = SCHMIDT) -> tuple[list[dict], dict]:
+    edition = edition or edition_for(play)
+    prefix = f"urn:cts:engLit:shakespeare.{play}:"
     scenes = read_edition(edition)
-    cits = {(r["key"], r["ordinal"], r["cit_ordinal"]): r for r in read_tsv(schmidt / "citations.tsv")}
-    quotes = read_tsv(schmidt / "citation_quotes.tsv")
-    rows = [check(cits[(q["key"], q["ordinal"], q["cit_ordinal"])], q, scenes) for q in quotes]
+    cits = {(r["key"], r["ordinal"], r["cit_ordinal"]): r for r in read_tsv(schmidt / "citations.tsv")
+            if r["p5_ref_target"].startswith(prefix)}
+    own = own_abbreviation(list(cits.values()))
+    quotes = [q for q in read_tsv(schmidt / "citation_quotes.tsv")
+              if (q["key"], q["ordinal"], q["cit_ordinal"]) in cits]
+    rows = [check(cits[(q["key"], q["ordinal"], q["cit_ordinal"])], q, scenes, own) for q in quotes]
     sources = {p.name: hashlib.sha256(p.read_bytes()).hexdigest()[:16]
                for p in (edition, schmidt / "citations.tsv", schmidt / "citation_quotes.tsv")}
     return rows, sources
+
+
+def runs(rows: list[dict]) -> list[dict]:
+    """Stretches of a scene where RUN or more of Schmidt's citations in a row
+    (ordered by the cited line) are off by the same amount: where our count
+    and the Globe's part, and by how much. A citation that passes ends a run."""
+    by_scene: dict[str, list[tuple[int, int | None]]] = {}
+    for r in rows:
+        parts = r["cited"].split(".")
+        if r["verdict"] == NOT_THIS_PLAY or len(parts) != 3:
+            continue
+        off = r["offset"] if isinstance(r["offset"], int) and r["verdict"] not in PASS else None
+        if r["verdict"] in PASS or r["verdict"] == "prose row break":
+            off = 0  # a prose row break is the printing's, not a count
+        by_scene.setdefault(f"{parts[0]}.{parts[1]}", []).append((int(parts[2]), off))
+    out = []
+    for scene, cs in by_scene.items():
+        cs.sort(key=lambda c: c[0])
+        k = 0
+        while k < len(cs):
+            n, off = cs[k]
+            j = k
+            while j + 1 < len(cs) and cs[j + 1][1] is not None and cs[j + 1][1] == off:
+                j += 1
+            if off not in (None, 0) and j - k + 1 >= RUN:
+                out.append(dict(scene=scene, first=n, last=cs[j][0], offset=off, citations=j - k + 1))
+            k = j + 1
+    return sorted(out, key=lambda r: [int(x) for x in r["scene"].split(".")] + [r["first"]])
 
 
 COLUMNS = ["key", "headword", "cited", "display", "verdict", "found_at", "offset", "match",
            "missing", "extra", "quote", "our_line"]
 
 
-def write(rows: list[dict], sources: dict, out_dir: Path) -> None:
+def write(rows: list[dict], sources: dict, out_dir: Path, play: str = "lr") -> None:
+    from globe.tei_header import PLAY_TITLES
     out_dir.mkdir(parents=True, exist_ok=True)
     stamp = "; ".join(f"{k} sha256 {v}" for k, v in sources.items())
-    with (out_dir / "schmidt-smoke-lr.tsv").open("w", newline="", encoding="utf-8") as f:
+    title = PLAY_TITLES.get(play, play)
+    with (out_dir / f"schmidt-smoke-{play}.tsv").open("w", newline="", encoding="utf-8") as f:
         f.write(f"# schmidt_smoke.py; sources: {stamp}\n")
         w = csv.DictWriter(f, COLUMNS, delimiter="\t", lineterminator="\n", extrasaction="ignore")
         w.writeheader()
@@ -339,11 +401,11 @@ def write(rows: list[dict], sources: dict, out_dir: Path) -> None:
     bare = [r for r in rows if not r["quote"]]
     ok = lambda rs: sum(r["verdict"] in PASS for r in rs)  # noqa: E731
     lines = [
-        "# Schmidt smoke test: King Lear",
+        f"# Schmidt smoke test: {title}",
         "",
         f"Sources: {stamp}.",
         "",
-        "Every Lear citation in Schmidt's *Shakespeare-Lexicon*, checked against the "
+        f"Every citation of {title} in Schmidt's *Shakespeare-Lexicon*, checked against the "
         "regenerated edition: does the cited line contain the quotation, or (for a "
         "citation without one) the headword? Report only; nothing is fixed.",
         "",
@@ -357,6 +419,16 @@ def write(rows: list[dict], sources: dict, out_dir: Path) -> None:
         "|---|---|",
         *[f"| {v} | {c} |" for v, c in counts.most_common()],
         "",
+        "## Runs",
+        "",
+        f"Stretches where {RUN} or more citations in a row, in one scene, are off by the "
+        "same amount: where our count and the Globe's part. A positive offset means "
+        "the quotation is on a later line of ours than Schmidt cites.",
+        "",
+        *(["| Scene | Cited lines | Offset | Citations |", "|---|---|---|---|",
+           *[f"| {r['scene']} | {r['first']}-{r['last']} | {r['offset']:+d} | {r['citations']} |"
+             for r in runs(rows)]] if runs(rows) else ["None."]),
+        "",
         "## Every failure",
         "",
         "| Cited | Schmidt | Headword | Verdict | Found at | Quotation | Our line |",
@@ -367,13 +439,21 @@ def write(rows: list[dict], sources: dict, out_dir: Path) -> None:
             cells = [r["cited"], r["display"], r["headword"].rstrip(","), r["verdict"], r["found_at"],
                      r["quote"], r["our_line"]]
             lines.append("| " + " | ".join(c.replace("|", "/") for c in map(str, cells)) + " |")
-    (out_dir / "schmidt-smoke-lr.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (out_dir / f"schmidt-smoke-{play}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def summary(rows: list[dict]) -> str:
+    rs = runs(rows)
+    head = f"{sum(r['verdict'] in PASS for r in rows)}/{len(rows)} pass"
+    return head + (f"; {len(rs)} runs off by a constant: " + ", ".join(
+        f"{r['scene']}.{r['first']}-{r['last']} {r['offset']:+d}" for r in rs) if rs else "; no runs")
 
 
 if __name__ == "__main__":
-    out = Path(sys.argv[1]) if len(sys.argv) > 1 else REPO / "reports" / "globe"
-    rows, sources = run()
-    write(rows, sources, out)
+    play = sys.argv[1] if len(sys.argv) > 1 else "lr"
+    out = Path(sys.argv[2]) if len(sys.argv) > 2 else REPO / "reports" / "globe"
+    rows, sources = run(play)
+    write(rows, sources, out, play)
     counts = Counter(r["verdict"] for r in rows)
     print(f"{sum(r['verdict'] in PASS for r in rows)}/{len(rows)} pass", file=sys.stderr)
     for v, c in counts.most_common():

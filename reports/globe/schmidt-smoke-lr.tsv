@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.lr.globe.xml sha256 35b91fd984c085f8; citations.tsv sha256 938621e58f06cb03; citation_quotes.tsv sha256 572cbe3671e850c1
+# schmidt_smoke.py; sources: shakespeare.lr.globe.xml sha256 6c3286b393ca0c93; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 A7	A,	1.4.138	Lr. I, 4, 138	quotation on cited line, with differences			spacing			leave thy drink and thy whore, and keep in a door,	and keep inadoor
 Abate	Abate,	2.4.161	Lr. II, 4, 161	quotation on cited line						she hath abated me of half my train,	she hath abated me of half my train
@@ -16,7 +16,7 @@ Acheron	Acheron,	3.6.8	Lr. III, 6, 8	headword not found near cited line							is
 Acknowledge	Acknowledge,	1.1.10	Lr. I, 1, 10	headword on cited line							charge i have so often blushed to acknowledge
 Acknowledge	Acknowledge,	4.7.4	Lr. IV, 7, 4	headword on cited line							to be acknowledged madam is oerpaid
 Acknowledge	Acknowledge,	1.1.216	Lr. I, 1, 216	headword on cited line							almost to acknowledge hers this is most strange
-Acre	Acre,	4.4	Lr. IV, 4, 7	not a Lear citation						searchevery acre in the high-grown field,	
+Acre	Acre,	4.4	Lr. IV, 4, 7	not a citation of this play						searchevery acre in the high-grown field,	
 Action-taking	Action-taking,	2.2.18	Lr. II, 2, 18	headword on cited line							knave a lilylivered actiontaking knave a
 Address	Address,	1.1.193	Lr. I, 1, 193	quotation on cited line						we first address towards you,	we first address towards you who with this king
 Admirable	Admirable,	1.2.137	Lr. I, 2, 137	quotation on cited line						an admirable evasion,	thrusting on an admirable evasion of
@@ -35,7 +35,7 @@ Aidant	Aidant,	4.4.17	Lr. IV, 4, 17	quotation on cited line						be aidant and r
 Alarum2	Alarum,	2.1.55	Lr. II, 1, 55	quotation on cited line, with differences			80%	d encounter	alarumed bold in the quarrels right	he saw my best --'d spirits roused to the encounter,	but when he saw my best alarumed spirits
 Alate	Alate,	1.4.208	Lr. I, 4, 208	quotation on cited line, with differences			89%	alate	of late	methinks you are too much alate i' the frown,	frontlet on methinks you are too much of late
 Albany	Albany:	1.1.2	Lr. I, 1, 2	headword on cited line							the duke of albany than cornwall
-Alce	Al'ce,	3.2.112	Shr. Ind. 2, 112.	not a Lear citation						Alice:	
+Alce	Al'ce,	3.2.112	Shr. Ind. 2, 112.	not a citation of this play						Alice:	
 Alight	Alight,	3.4.127	Lr. III, 4, 127	quotation on cited line						bid her a., and her troth plight,	bid her alight
 Allay1	Allay,	1.2.179	Lr. I, 2, 179	quotation on cited line						the heat of his displeasure . . . would scarcely allay	person it would scarcely allay
 All-licensed	All-licensed,	1.4.220	Lr. I, 4, 220	quotation on cited line						this your all-licensed fool,	not only sir this your alllicensed fool
@@ -168,7 +168,7 @@ Benefit1	Benefit,	4.6.61	IV, 6, 61	headword on cited line							is wretchedness 
 Benefit2	Benefit,	4.2.45	Lr. IV, 2, 45	quotation on cited line						a man, a prince, by him so benefited,	a man a prince by him so benefited
 Benison	Benison,	1.1.268	Lr. I, 1, 268	headword on cited line							without our grace our love our benison
 Benison	Benison,	4.6.229	IV, 6, 229	headword on cited line							the bounty and the benison of heaven
-Benison	Benison,	2.0	II Prol. 10	not a Lear citation							
+Benison	Benison,	2.0	II Prol. 10	not a citation of this play							
 Besort1	Besort,	1.4.272	Lr. I, 4, 272	quotation on cited line						such men as may besort your age,	to be such men as may besort your age
 Bespeak	Bespeak.	5.3.89	Lr. V, 3, 89	headword on cited line							my lady is bespoke an interlude
 Bespeak	Bespeak.	5.3.89	Lr. V, 3, 89	quotation on cited line						my lady is bespoke,	my lady is bespoke an interlude
@@ -177,7 +177,7 @@ Bestir	Bestir,	2.2.58	Lr. II, 2, 58	quotation on cited line, with differences			
 Bethink	Bethink	1.2.174	Lr. I, 2, 174	quotation on cited line						bethink yourself wherein you may have offended him,	bethink yourself wherein you may have
 Bethought	Bethought,	2.3.6	Lr. II, 3, 6	quotation on cited line						and am bethought to take the basest and most poorest shape,	i will preserve myself and am bethought
 Better4	Better,	1.4.369	Lr. I, 4, 369	quotation on cited line						striving to b., oft we mar what's well,	striving to better oft we mar whats well
-Better4	Better,	1.91.8	91, 8	not a Lear citation						all these I better in one general best,	
+Better4	Better,	1.91.8	91, 8	not a citation of this play						all these I better in one general best,	
 Better-spoken	Better-spoken,	4.6.10	Lr. IV, 6, 10	headword on cited line							but in my garments methinks youre better spoken
 Better-spoken	Better-spoken,	4.6.10	Lr. IV, 6, 10	headword on cited line							but in my garments methinks youre better spoken
 Beware	Beware,	3.4.146	Lr. III, 4, 146	headword on cited line							beware my follower peace smulkin peace thou fiend
@@ -203,13 +203,13 @@ Bite	Bite,	2.2.80	II, 2, 80	quotation on cited line						atwain,	like rats oft b
 Bite	Bite,	5.3.276	Lr. V, 3, 276	headword on cited line							i have seen the day with my good biting falchion
 Bitter	Bitter,	1.4.150	Lr. I, 4, 150	quotation on cited line						a bitter fool,	a bitter fool
 Bitter	Bitter,	1.2.49	Lr. I, 2, 49	quotation on cited line						makes the world bitter to the best of our times,	age makes the world bitter to the best of our
-Black2	Black,	2.132.3	132, 3	not a Lear citation						have put on black	
+Black2	Black,	2.132.3	132, 3	not a citation of this play						have put on black	
 Blame1	Blame,	2.4.147	Lr. II, 4, 147	headword on cited line							as clears her from all blame
 Blame1	Blame,	2.4.293	Lr. II, 4, 293	quotation on cited line						'tis his own blame	tis his own blame hath put himself from rest
 Blame1	Blame,	5.3.254	V, 3, 254	quotation on cited line						to lay the blame upon her own despair,	to lay the blame upon her own despair
-Blame2	Blame,	5.58.14	58, 14	not a Lear citation							
-Blame2	Blame,	5.70.1	70, 1	not a Lear citation							
-Blame2	Blame,	5.103.5	103, 5	not a Lear citation							
+Blame2	Blame,	5.58.14	58, 14	not a citation of this play							
+Blame2	Blame,	5.70.1	70, 1	not a citation of this play							
+Blame2	Blame,	5.103.5	103, 5	not a citation of this play							
 Blame2	Blame,	1.2.44	Lr. I, 2, 44	headword on cited line							are to blame
 Blame2	Blame,	1.2.44	Lr. I, 2, 44	headword on cited line							are to blame
 Blank1	Blank,	1.1.161	Lr. I, 1, 161	quotation on cited line						let me still remain the true blank of thine eye,	the true blank of thine eye
@@ -225,8 +225,8 @@ Bluntness	Bluntness,	2.2.102	Lr. II, 2, 102	quotation on cited line						who, ha
 Boarish	Boarish,	3.7.58	Lr. III, 7, 58	quotation on cited line						boarish fangs,	in his anointed flesh stick boarish fangs
 Boast1	Boast,	3.6.62	Lr. III, 6, 62	quotation on cited line, with differences			100%		now	the patience that you so oft have boasted to retain,	that you so oft have boasted to retain
 Boast1	Boast,	3.7.19	III, 7, 19	headword on cited line							are gone with him towards dover where they boast
-Boast1	Boast,	3.86.11	86, 11	not a Lear citation							
-Boast1	Boast,	3.91.12	91, 12	not a Lear citation							
+Boast1	Boast,	3.86.11	86, 11	not a citation of this play							
+Boast1	Boast,	3.91.12	91, 12	not a citation of this play							
 Bobtail	Bobtail,	3.6.73	Lr. III, 6, 73	quotation on cited line, with differences			75%	tike	tyke	bobtail tike or trundle-tail,	or bobtail tyke or trundletail
 Bog	Bog,	3.4.54	Lr. III, 4, 54	headword on cited line							oer bog and quagmire that hath laid knives
 Bold2	Bold,	5.1.26	Lr. V, 1, 26	quotation on cited line						it toucheth us, as France invades our land, not bolds the king,	not bolds the king with others whom i fear
@@ -245,7 +245,7 @@ Bow2	Bow,	3.6.116	Lr. III, 6, 116	quotation on cited line						that which makes 
 Brach	Brach,	3.6.72	Lr. III, 6, 72	quotation on cited line						hound or spaniel, brach or lym,	hound or spaniel brach or lym
 Brach	Brach,	1.4.125	Lr. I, 4, 125	quotation on cited line, with differences			95%	lady	lady	dog must to kennel; he must be whipped out, when the lady brach may stand by the fire and stink,	be whipped out when lady the brach may stand
 Brand1	Brand,	5.3.22	Lr. V, 3, 22	headword on cited line							he that parts us shall bring a brand from heaven
-Brand1	Brand,	5.154.2	154, 2	not a Lear citation						his heart-inflaming brand	
+Brand1	Brand,	5.154.2	154, 2	not a citation of this play						his heart-inflaming brand	
 Brand2	Brand,	1.2.9	Lr. I, 2, 9	headword on cited line							as honest madams issue why brand they us
 Bravely	Bravely,	4.6.202	Lr. IV, 6, 202	headword on cited line							i will die bravely like a bridegroom what
 Braze	Braze,	1.1.11	Lr. I, 1, 11	quotation on cited line						I have so often blushed to acknowledge him, that now I am brazed to it,	him that now i am brazed to it
@@ -518,13 +518,13 @@ Deal2	Deal,	4.7.62	IV, 7, 62	quotation on cited line						and, to deal plainly, 
 Deal2	Deal,	4.3.34	Lr. IV, 3, 34	quotation on cited line						away she started to deal with grief alone,	to deal with grief alone it is the stars
 Dealing	Dealing	3.3.2	Lr. III, 3, 2	headword on cited line							unnatural dealing when i desire their leave
 Dearn	Dearn,	3.7.63	Lr. III, 7, 63	quotation on cited line, with differences			90%	dearn	stern	if wolves had at thy gate howled that dearn time,	if wolves had at thy gate howled that stern time
-Dearn	Dearn,	3.0	III Prol. 15	not a Lear citation							
+Dearn	Dearn,	3.0	III Prol. 15	not a citation of this play							
 Death-practised	Death-practised,	4.6.284	Lr. IV, 6, 284	headword on cited line							of the deathpractised duke for him tis well
 Deaths-man	Deaths-man,	4.6.263	Lr. IV, 6, 263	headword on cited line							he had no other deathsman let us see
 Deboshed	Deboshed	1.4.263	Lr. I, 4, 263	quotation on cited line						men so disordered, so deboshed and bold,	men so disordered so deboshed and bold
 Decay1	Decay,	5.3.288	Lr. V, 3, 288	headword on cited line							that from your first of difference and decay
 Decay1	Decay,	5.3.297	Lr. V, 3, 297	quotation on cited line						what comfort to this great decay may come,	what comfort to this great decay may come
-Decay1	Decay,	5.80.14	80, 14	not a Lear citation						my love was my decay	
+Decay1	Decay,	5.80.14	80, 14	not a citation of this play						my love was my decay	
 Decline	Decline,	4.2.22	Lr. IV, 2, 22	quotation on cited line						decline your head,	decline your head this kiss if it durst speak
 Decline	Decline,	1.2.78	Lr. I, 2, 78	quotation on cited line, with differences			86%	declineing		sons at perfect age, and fathers declineing,	and fathers declining the father should be as
 Deep2	Deep,	4.1.77	Lr. IV, 1, 77	headword on cited line							looks fearfully in the confined deep
@@ -637,7 +637,7 @@ Domestic1	Domestic,	5.1.30	Lr. V, 1, 30	quotation on cited line						broils,	for
 Dominion	Dominion,	1.1.180	Lr. I, 1, 180	headword on cited line							thy banished trunk be found in our dominions
 Door-particulars	Door-particulars,	5.1.30	Lr. V, 1, 30	quotation on cited line, with differences			88%	doorparticulars	and particular broils	these domestic door-particulars are not the question here,	for these domestic and particular broils
 Doubtful	Doubtful,	4.7.65	Lr. IV, 7, 65	quotation on cited line						yet I am doubtful	yet i am doubtful for i am mainly ignorant
-Doubtful	Doubtful,	4.1.94	Shr. Ind. 1, 94.	not a Lear citation						I am doubtful of your modesties,	
+Doubtful	Doubtful,	4.1.94	Shr. Ind. 1, 94.	not a citation of this play						I am doubtful of your modesties,	
 Doubtful	Doubtful,	5.1.12	Lr. V, 1, 12	quotation on cited line						I am doubtful that you have been conjunct and bosomed with her,	i am doubtful that you have been conjunct
 Dover	Dover,	3.1.36	Lr. III, 1, 36	headword on cited line							to make your speed to dover you shall find
 Dover	Dover,	3.6.98	III, 6, 98	headword on cited line							and drive towards dover friend where thou shalt meet
@@ -723,10 +723,10 @@ Exploit	Exploit,	2.2.130	Lr. II, 2, 130	headword on cited line							and in the 
 Expose	Expose,	3.4.34	Lr. III, 4, 34	headword on cited line							expose thyself to feel what wretches feel
 Expose	Expose,	4.7.32	Lr. IV, 7, 32	quotation on cited line, with differences			86%	exposed	opposed	to be exposed against the warring winds,	to be opposed against the warring winds
 Express2	Express,	4.3.19	Lr. IV, 3, 19	quotation on cited line						patience and sorrow strove who should express her goodliest,	who should express her goodliest you have seen
-Express2	Express,	4.105.8	105, 8	not a Lear citation							
-Express2	Express,	4.106.7	106, 7	not a Lear citation							
-Express2	Express,	4.108.4	108, 4	not a Lear citation							
-Express2	Express,	4.140.3	140, 3	not a Lear citation							
+Express2	Express,	4.105.8	105, 8	not a citation of this play							
+Express2	Express,	4.106.7	106, 7	not a citation of this play							
+Express2	Express,	4.108.4	108, 4	not a citation of this play							
+Express2	Express,	4.140.3	140, 3	not a citation of this play							
 Express2	Express,	1.1.37	Lr. I, 1, 37	headword on cited line							meantime we shall express our darker purpose
 Extend	Extend,	1.1.53	Lr. I, 1, 53	quotation on cited line, with differences			86%	we		that we our largest bounty may extend	that our largest bounty may extend
 Extrme	Extréme,	5.3.198	Lr. V, 3, 198	quotation on cited line, with differences			100%		flawed alack too weak the conflict to support	his heart, twixt two extrémes of passion, joy and grief, burst smilingly,	twixt two extremes of passion joy and grief
@@ -791,7 +791,7 @@ Fix	Fix,	3.4.8	Lr. III, 4, 8	quotation on cited line						where the greater mala
 Flake	Flake,	4.7.30	Lr. IV, 7, 30	quotation on cited line						these white flakes,	had you not been their father these white flakes
 Flame1	Flame,	3.4.53	Lr. III, 4, 53	quotation on cited line						through fire and through flame	through flame through ford and whirlipool
 Flame1	Flame,	2.4.167	Lr. II, 4, 167	headword on cited line							you nimble lightnings dart your blinding flames
-Flame1	Flame,	2.115.4	115, 4	not a Lear citation							
+Flame1	Flame,	2.115.4	115, 4	not a citation of this play							
 Flash2	Flash,	1.3.4	Lr. I, 3, 4	quotation on cited line						he flashes into one gross crime or other,	he flashes into one gross crime or other
 Flat2	Flat,	3.2.7	Lr. III, 2, 7	quotation on cited line, with differences			75%	of earth	o	smite flat the thick rotundity of the earth,	smite flat the thick rotundity o the world
 Flattery	Flattery,	1.3.20	Lr. I, 3, 20	headword on cited line							with checks as flatteries when they are seen abused
@@ -890,7 +890,7 @@ Goatish	Goatish,	1.2.138	Lr. I, 2, 138	headword on cited line							whoremaster 
 Godson	Godson,	2.1.93	Lr. II, 1, 93	headword on cited line							what did my fathers godson seek your life
 Goneril	Goneril,	1.1.54	Lr. I, 1, 54	headword on cited line							where nature doth with merit challenge goneril
 Good-man	Good-man	2.2.48	Lr. II, 2, 48	headword on cited line							with you goodman boy an you please
-Good-man	Good-man	2.2.107	Shr. Ind. 2, 107.	not a Lear citation						my men should call me lord: I am your good-man	
+Good-man	Good-man	2.2.107	Shr. Ind. 2, 107.	not a citation of this play						my men should call me lord: I am your good-man	
 Good-year	Good-year	5.3.24	Lr. V, 3, 24	quotation on cited line						the good-years shall devour them,	the goodyears shall devour them flesh and fell
 Gore2	Gore,	5.3.320	Lr. V, 3, 320	headword on cited line							rule in this realm and the gored state sustain
 Gorge2	Gorge,	1.1.120	Lr. I, 1, 120	headword on cited line							to gorge his appetite shall to my bosom
@@ -1152,7 +1152,7 @@ Lendings	Lendings,	3.4.113	Lr. III, 4, 113	quotation on cited line						off, off
 Less1	Less,	1.1.83	Lr. I, 1, 83	quotation on cited line						no less in space,	no less in space validity and pleasure
 Less1	Less,	5.3.167	Lr. V, 3, 167	headword on cited line							i am no less in blood than thou art edmund
 Less1	Less,	1.4.132	Lr. I, 4, 132	headword on cited line							speak less than thou knowest
-Less2	Less,	1.102.2	102, 2	not a Lear citation						I love not less	
+Less2	Less,	1.102.2	102, 2	not a citation of this play						I love not less	
 Lesser1	Lesser,	3.4.9	Lr. III, 4, 9	headword on cited line	3.4.8		100%			malady,	the lesser is scarce felt thouldst shun a bear
 Let-alone	Let-alone,	5.3.79	Lr. V, 3, 79	quotation on cited line, with differences			100%		not	the let-alone lies not in your good will,	the letalone lies not not in your good will
 Lethargied	Lethargied,	1.4.249	Lr. I, 4, 249	quotation on cited line						his discernings are lethargied	are lethargied ha waking tis not so
@@ -1228,7 +1228,7 @@ Meiny	Meiny,	2.4.35	Lr. II, 4, 35	quotation on cited line						they summoned up 
 Melt	Melt	4.7.48	Lr. IV, 7, 48	headword not found near cited line							do scald like molten lead sir do you know me
 Menaces	Menaces,	1.2.159	Lr. I, 2, 159	prose row break	1.2.160	1					dissolutions of ancient amities divisions in state
 Mere	Mere,	2.4.90	Lr. II, 4, 90	quotation on cited line						mere fetches,	they have travelled all the night mere fetches
-Mere	Mere,	1.22.90	I, 22	not a Lear citation							
+Mere	Mere,	1.22.90	I, 22	not a citation of this play							
 Mere	Mere,	5.3.151	V, 3, 151	quotation on cited line, with differences			75%	mere		this is mere practice,	save him save him this is practice gloucester
 Merit1	Merit,	1.1.54	Lr. I, 1, 54	headword on cited line							where nature doth with merit challenge goneril
 Merit1	Merit,	3.5.8	Lr. III, 5, 8	quotation on cited line						it was not altogether your brother's evil disposition made him seek his death, but a provoking m., set a-work by a reproveable badness in himself,	death but a provoking merit set awork by a
@@ -1538,7 +1538,7 @@ Predominance	Predominance,	1.2.134	Lr. I, 2, 134	quotation on cited line						kn
 Pre-eminence	Pre-eminence,	1.1.133	Lr. I, 1, 133	headword on cited line							preeminence and all the large effects
 Prefer	Prefer,	1.1.277	Lr. I, 1, 277	quotation on cited line						stood I within his grace, I would prefer him to a better place,	i would prefer him to a better place
 Pregnant	Pregnant,	2.1.78	Lr. II, 1, 78	quotation on cited line						the profits of my death were very pregnant and potential spurs to make thee seek it,	were very pregnant and potential spurs
-Pregnant	Pregnant,	4.0	IV Prol. 44	not a Lear citation							
+Pregnant	Pregnant,	4.0	IV Prol. 44	not a citation of this play							
 Pregnant	Pregnant,	4.6.227	Lr. IV, 6, 227	quotation on cited line						who, by the art of known and feeling sorrows, am pregnant to good pity,	am pregnant to good pity give me your hand
 Prescribe	Prescribe,	1.1.279	Lr. I, 1, 279	quotation on cited line						prescribe not us our duties,	prescribe not us our duties let your study
 Prescribe	Prescribe,	1.2.24	Lr. I, 2, 24	headword not found near cited line							and the king gone tonight subscribed his power
@@ -1803,7 +1803,7 @@ Skip	Skip,	5.3.277	Lr. V, 3, 277	headword on cited line							i would have made 
 Slack1	Slack,	1.3.9	Lr. I, 3, 9	quotation on cited line						if you come slack of former services,	if you come slack of former services
 Slack2	Slack,	2.4.248	Lr. II, 4, 248	quotation on cited line						if then they chanced to slack you, we could control them,	why not my lord if then they chanced to slack you
 Slaughter1	Slaughter,	1.4.342	Lr. I, 4, 342	headword on cited line							should sure to the slaughter
-Slaughter1	Slaughter,	4.0	IV Prol. 40	not a Lear citation							
+Slaughter1	Slaughter,	4.0	IV Prol. 40	not a citation of this play							
 Slaughter1	Slaughter,	4.3.2	IV, 3, 2	headword not found near cited line							gone back know you the reason
 Slave2	Slave,	4.1.71	Lr. IV, 1, 71	quotation on cited line, with differences			100%		that will not see because he doth not feel	let the superfluous and lust-dieted man, that slaves your ordinance, feel your power quickly,	that slaves your ordinance that will not see
 Slayer	Slayer,	4.2.57	Lr. IV, 2, 57	quotation on cited line, with differences			86%	slayer	state	with plumed helm thy slayer begins threats,	with plumed helm thy state begins threats
@@ -1895,7 +1895,7 @@ Stock-punished	Stock-punished,	3.4.140	Lr. III, 4, 140	headword on cited line			
 Stone-cutter	Stone-cutter,	2.2.63	Lr. II, 2, 63	headword on cited line							ay a tailor sir a stonecutter or a
 Stoop3	Stoop,	1.1.151	Lr. I, 1, 151	quotation on cited line						when majesty stoops to folly,	when majesty stoops to folly reverse thy doom
 Store1	Store,	3.6.57	Lr. III, 6, 57	quotation on cited line						whose warped looks proclaim what store her heart is made on,	what store her heart is made on stop her there
-Store2	Store,	3.68.13	68, 13	not a Lear citation						him as for a map doth nature s., to show false art what beauty was of yore,	
+Store2	Store,	3.68.13	68, 13	not a citation of this play						him as for a map doth nature s., to show false art what beauty was of yore,	
 Store2	Store,	2.4.164	Lr. II, 4, 164	quotation on cited line						all the stored vengeances of heaven,	all the stored vengeances of heaven fall
 Strain1	Strain,	5.3.40	Lr. V, 3, 40	quotation on cited line						you have shown to-day your valiant strain	sir you have shown today your valiant strain
 Strain2	Strain,	1.1.172	Lr. I, 1, 172	quotation on cited line						with strained pride to come between our sentence and our power,	which we durst never yet and with strained pride
@@ -1958,7 +1958,7 @@ Swallow2	Swallow,	3.4.137	Lr. III, 4, 137	headword on cited line							foul fien
 Sway1	Sway,	4.7.20	Lr. IV, 7, 20	quotation on cited line, with differences			spacing			proceed i'the sway of your own will,	i the sway of your own will is he arrayed
 Sway1	Sway,	1.1.139	Lr. I, 1, 139	headword on cited line							the sway revenue execution of the rest
 Sway1	Sway,	2.4.193	II, 4, 193	headword on cited line							if you do love old men if your sweet sway
-Sway2	Sway,	2.150.2	150, 2	not a Lear citation						with insufficiency my heart to sway	
+Sway2	Sway,	2.150.2	150, 2	not a citation of this play						with insufficiency my heart to sway	
 Sway2	Sway,	1.2.53	Lr. I, 2, 53	quotation on cited line						who sways, not as it hath power,	who sways not as it hath power but as it is
 Sweeten	Sweeten,	4.6.6	Lr. IV, 6	quotation elsewhere in scene	4.6.132-133	126	100%		good apothecary	an ounce of civet, to sweeten my imagination,	by your eyes anguish so may it be indeed
 Sweeten	Sweeten,	4.6.6	Lr. IV, 6	headword not found near cited line							by your eyes anguish so may it be indeed
@@ -1980,7 +1980,7 @@ Taste2	Taste,	2.4.294	Lr. II, 4, 294	quotation on cited line						hath put himse
 Taste2	Taste,	5.3.302	V, 3, 302	quotation on cited line						all friends shall taste the wages of their virtue, and all foes the cup of their deservings,	have more than merited all friends shall taste
 Taste2	Taste,	1.5.18	Lr. I, 5, 18	quotation on cited line						she will taste as like this as a crab does to a crab,	she will taste as like this as a crab does
 Taste2	Taste,	4.1.192	IV, 1, 192	headword not found near cited line							(no such line)
-Tattered	Tattered	4.26.11	26, 11	not a Lear citation						puts apparel on my tattered loving,	
+Tattered	Tattered	4.26.11	26, 11	not a citation of this play						puts apparel on my tattered loving,	
 Tattered	Tattered	4.6.168	Lr. IV, 6, 168	quotation on cited line						through tattered clothes small vices do appear,	through tattered clothes small vices do appear
 Tax2	Tax,	3.2.16	Lr. III, 2, 16	quotation on cited line						I tax not you, you elements, with unkindness,	i tax not you you elements with unkindness
 Tear2	Tear,	3.1.7	Lr. III, 1, 7	headword on cited line							that things might change or cease tears his white hair
@@ -2015,7 +2015,7 @@ That1	That,	2.4.259	II, 4, 259	headword not found near cited line							those wi
 That1	That,	1.1.99	Lr. I, 1, 99	quotation on cited line						I return those duties back as are right fit,	return those duties back as are right fit
 That1	That,	1.4.63	I, 4, 63	quotation on cited line						entertained with that ceremonious affection as you were wont,	not entertained with that ceremonious affection
 That1	That,	1.4.279	Lr. I, 4, 279	quotation on cited line						woe that too late repents,	woe that too late repents o sir are you come
-That1	That,	1.121.9	121, 9	not a Lear citation						I am that I am,	
+That1	That,	1.121.9	121, 9	not a citation of this play						I am that I am,	
 Theban	Theban,	3.4.162	Lr. III, 4, 162	headword on cited line							ill talk a word with this same learned theban
 Thereat	Thereat,	4.2.75	Lr. IV, 2, 75	quotation on cited line						thereat enraged,	to his great master who thereat enraged
 Thereto	Thereto,	1.4.361	Lr. I, 4, 361	headword on cited line							and thereto add such reasons of your own
@@ -2149,7 +2149,7 @@ Unsubstantial	Unsubstantial,	4.1.7	Lr. IV, 1, 7	quotation on cited line						tho
 Untender	Untender,	1.1.108	Lr. I, 1, 108	headword on cited line							so young and so untender
 Untented	Untented,	1.4.322	Lr. I, 4, 322	quotation on cited line						the untented woundings of a father's curse,	the untented woundings of a fathers curse
 Unthread	Unthread,	2.1.121	Lr. II, 1, 121	quotation on cited line, with differences			spacing			threading dark-eyed night,	thus out of season threading dark eyed night
-Unthrift1	Unthrift,	2.13.13	13, 13	not a Lear citation							
+Unthrift1	Unthrift,	2.13.13	13, 13	not a citation of this play							
 Untimely1	Untimely,	4.6.256	Lr. IV, 6, 256	quotation on cited line						O untimely death!	upon the british party o untimely death
 Untimely2	Untimely,	3.7.98	Lr. III, 7, 98	quotation on cited line						untimely comes this hurt,	untimely comes this hurt give me your arm
 Untune	Untune,	4.7.16	Lr. IV, 7, 16	quotation on cited line						the untuned and jarring senses,	the untuned and jarring senses o wind up
@@ -2175,7 +2175,7 @@ Usage	Usage,	2.4.26	Lr. II, 4, 26	headword on cited line							thou mightst dese
 Use1	Use,	2.1.123	Lr. II, 1, 123	quotation on cited line						we must have use of your advice,	wherein we must have use of your advice
 Use1	Use,	2.1.123	Lr. II, 1, 123	headword on cited line	2.1.130		100%			craves the instant use	wherein we must have use of your advice
 Vail2	Vail,	2.2.129	Lr. II, 2, 129	headword not found near cited line							for him attempting who was selfsubdued
-Vail2	Vail,	4.0	IV Prol. 29	not a Lear citation							
+Vail2	Vail,	4.0	IV Prol. 29	not a citation of this play							
 Validity	Validity,	1.1.83	Lr. I, 1, 83	quotation on cited line						no less in space, validity and pleasure,	no less in space validity and pleasure
 Value2	Value,	1.1.58	Lr. I, 1, 58	headword on cited line							beyond what can be valued rich or rare
 Value2	Value,	2.2.153	II, 2, 153	headword on cited line							that hes so slightly valued in his messenger

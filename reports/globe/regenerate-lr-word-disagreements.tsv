@@ -15,7 +15,7 @@ page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
 848	miun/kraken	2	33	replace	thy	thine	thy	
 848	miun/kraken	2	42	replace	[Laying	LLaying	Laying	
 848	miun/kraken	2	42	replace	sword.	swvord.	savord. Alo.	
-848	miun/kraken	2	44	replace	Dear sir, forbear. Corn.	Com.f	savord. Alo. Corn.	
+848	miun/kraken	2	44	replace	Dear sir, forbear. Corn.	Com.f	savord. Alo. Dear sir, forbear. Corn.	
 848	miun/kraken	2	49	replace	I'll	L’ll	I’ll	
 848	miun/kraken	2	53	replace	strain'd	strain d	strain d	same
 848	miun/kraken	2	68	replace	[To	ITo	17° Cordelial	
@@ -344,8 +344,8 @@ page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
 868	miun/kraken	2	36	replace	it	its	it	
 868	miun/kraken	2	68	delete		t		
 868	miun/kraken	2	68	replace	state	slayer	state	
-869	miun/kraken	1	3	replace	Alb.			
-869	miun/kraken	1	9	replace	Were't	Were 't		
+869	miun/kraken	1	3	replace	Alb.		Alb.	
+869	miun/kraken	1	9	replace	Were't	Were 't	Were 't	same
 869	miun/kraken	1	21	replace	Alb.		Alb.	
 869	miun/kraken	1	35	replace	your	vour	your	
 869	miun/kraken	1	36	replace	[Aside]	[Asidel	[Aside)	

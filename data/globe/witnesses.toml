@@ -4,8 +4,9 @@
 # ../globe-witnesses); leaf tables are relative to the repo root.
 #
 # Provenance (what each witness is, how it was obtained and processed)
-# belongs in doc/witnesses.org, not here. This file says where things are
-# and how leaf names are formed, nothing else.
+# belongs in doc/witnesses.org, not here. This file says where things are,
+# how leaf names are formed, and what the scanner printed on every leaf
+# (`watermark`, which the page reader takes off with the foot), nothing else.
 #
 # A witness is a printing. An OCR layer is one reading of that witness's
 # scans. Code names a (witness, layer) pair. Ids are per witness and never
@@ -41,6 +42,7 @@ pattern = "worksofwilliamsh0000shak_y3h8_{leaf}.xml"
 catalog = { hathitrust = "miun.aba6868.0001.001", record = "000241315" }
 scans = { dir = "Michigan/scans", pattern = "{leaf}.jpg" }
 leaves = "data/globe/leaves-miun.tsv"
+watermark = ["Digitized by", "UNIVERSITY OF MICHIGAN", "Original from", "UNIVERSITY OF MICHIGAN"]
 
 [miun.ocr.kraken]
 format = "kraken-alto"

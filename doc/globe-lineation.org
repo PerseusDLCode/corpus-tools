@@ -61,12 +61,17 @@ P4's, or the build stops.
 | =witnesses.toml=       | where each witness's scans and OCR layers are, under =GLOBE_WITNESSES= | when a witness is added or moved |
 | =leaves-miun.tsv=, =leaves-trent.tsv= | leaf -> printed page, with the basis of each row  | reviewed; built by the workshop's =build_leaf_tables.py= |
 | =witness-offsets.tsv=  | the running-head audit's offsets per witness; the source of the leaf tables, not read by the build | as above |
-| =shared-lines.tsv=     | junctions the page cannot show, and numerals both witnesses misread, each row naming its play and one of its pages | rows proposed by the build or from the Folger; =checked= is filled by Cliff, after looking at the page image |
+| =shared-lines.tsv=     | junctions the page cannot show -- folded (=shared=, =turnover=) or cut (=separate=) -- and numerals both witnesses misread, each row naming its play and one of its pages | rows proposed by the build or from the Folger; =checked= is filled by Cliff, after looking at the page image |
 | =witness-manifest.tsv= | sha256 of every witness file the build reads, per play, and of the play's DraCor file with its commit | =globe-lineation manifest PLAY=, deliberately |
 
 *=checked= is Cliff's.* The canonical build refuses to use a
 =shared-lines.tsv= row whose =checked= is empty; the review build is
 still written (=--allow-pending= overrides, for development only).
+
+*A row is tried in each witness.* A row that does not apply in a witness
+(its words are not on that witness's lines) rules the witness out for
+the page, and the next is tried; the gate report shows it as
+=witness:table=. Only a row that applies in no witness stops the build.
 
 *The manifest pins the witnesses.* The build refuses a leaf (or leaf
 table) that is not in =witness-manifest.tsv= or whose sha256 differs.
@@ -96,7 +101,19 @@ pinned at =c34c2d4=, the commit its published header already named.
 - Reports: =reports/globe/regenerate-PLAY-*.tsv= (gate, intervals, word
   disagreements, old-vs-new P4 anchors, verse/prose, borderline rows,
   Folger check, @part against the page), and the Schmidt smoke test,
-  =schmidt-smoke-lr.{tsv,md}=, which records the edition's sha256.
+  =schmidt-smoke-PLAY.{tsv,md}=, which records the edition's sha256.
+
+*Schmidt is a standing check.* Every build regenerate writes is checked
+against Schmidt's citations of the play (=schmidt_smoke.py=): does the
+cited line hold his quotation, or his headword? It reports and never
+gates (Schmidt has his own slips: Lear passes 94.6%, Antony 93.9%). Its
+report opens with *runs*: three or more citations in a row, in one
+scene, off by the same amount, which is where our count and the Globe's
+part and by how much (Antony II.7 ran +5 from 69 to 118 before its table
+rows). The citations and quotations are the schmidt-lexicon-workshop's
+=out/citations.tsv= and =out/citation_quotes.tsv=, every play's since
+its =quotes/corpus-wide= branch; without them the check is skipped, and
+the build says so.
 
 Each build carries a stamp in =<revisionDesc>=: the tool, its version,
 the corpus-tools commit, and the sha256 of the P4, =shared-lines.tsv=
@@ -110,7 +127,8 @@ Inputs, as siblings of this repository:
   otherwise: the P4 and the shell are read from its working tree);
 - the witnesses: the =PerseusDLCode/globe-witnesses= repository, at
   =$GLOBE_WITNESSES= (default =../globe-witnesses=; =doc/witnesses.org=);
-- =../schmidt-lexicon-workshop/out/= for the smoke test;
+- =../schmidt-lexicon-workshop/out/= for the Schmidt check (every play's
+  quotations: the workshop's =quotes/corpus-wide= branch);
 - the ShakeDraCor clone at =$SHAKEDRACOR= (default =../../shakedracor=,
   beside the =PerseusDLCode= directory), for the play's Folger file named
   in =plays.tsv=: the Folger report only. If the clone is absent the
@@ -120,7 +138,7 @@ Inputs, as siblings of this repository:
 #+begin_src sh
 make globe-verify PLAY=lr      # build to a temp dir; equal to the published file, stamp aside?
 make globe-regenerate PLAY=lr  # write out/globe/lr and reports/globe; refuses on a dirty tree
-.venv/bin/globe-lineation smoke          # Schmidt's Lear citations against out/globe/lr
+.venv/bin/globe-lineation smoke lr       # Schmidt's Lear citations against out/globe/lr (regenerate runs it too)
 .venv/bin/globe-lineation manifest lr    # re-pin the witness files and the DraCor file the build reads
 .venv/bin/globe-lineation regenerate lr --scratch=DIR   # a development build, anywhere
 #+end_src

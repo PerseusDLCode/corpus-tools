@@ -1,0 +1,14 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in ant.xml (sha256 8e235e2c4ae6f375); not the shell's milestones or <l n>
+# transcribed anchors: 273; mapped (the row begins a line): 210; of those, carrying the same number: 203
+# in scenes that pass the gate: 210 mapped; agreeing: 203
+# unmapped (the row begins inside a line): 63; the P4's number is the containing line's for 55, the next line's for 7, neither for 1
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.2	50	disagree	49				Char. E'en as the o'erflowing Nilus
+1.2	60	disagree	59				Iras. Am I not an inch
+2.1	40	disagree	41				His brother warr'd upon him; although,
+2.2	110	disagree	109				Eno. That truth should be silent
+2.2	190	disagree	189				Mec. She's a most triumphant lady,
+2.6	120	disagree	121				Eno. 'Tis true. Men. Then is
+3.2	60	unmapped (neither)		61	62		Ant. Come, sir, come; I'll wrestle
+5.2	220	disagree	221				I' the posture of a whore.

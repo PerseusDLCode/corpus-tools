@@ -1,0 +1,34 @@
+page	witness_used	tried(witness:total_error)	lines_starting_here	first_line	last_line	printed_numbers	counted_numbers	verdict
+911	miun/kraken	miun/kraken:0	52	1.1.1	1.1.52	10 20 40 50	10 20 40 50	pass
+912	miun/kraken	miun/kraken:0	107	1.1.53	1.2.97	60 10 21 30 40 50 60	60 10 21 30 40 50 60	pass
+913	miun/kraken	miun/kraken:0	108	1.2.98	1.3.1	99 110 120 129 140 150 190 199	99 110 120 129 140 150 190 199	pass
+914	miun/kraken	miun/kraken:0	97	1.3.2	1.3.98	10 20 30 40 50 60 70 80 90	10 20 30 40 50 60 70 80 90	pass
+915	miun/kraken	miun/kraken:0	98	1.3.99	1.5.7	100 10 19 30 41 50 61 70 80	100 10 19 30 41 50 61 70 80	pass
+916	miun/kraken	miun/kraken:0	99	1.5.8	2.1.28	20 30 39 50 60 71 11 21	20 30 39 50 60 71 11 21	pass
+917	miun/kraken	miun/kraken:0	96	2.1.29	2.2.72	30 10 20 30 40 60 70	30 10 20 30 40 60 70	pass
+918	trent/kraken	miun/kraken:1 trent/kraken:0	108	2.2.73	2.2.180	80 110 121 130 140 150 160 170 180	80 110 121 130 140 150 160 170 180	pass
+919	miun/kraken	miun/kraken:0	108	2.2.181	2.3.38	201 210 220 230 240 249 10 20 30	201 210 220 230 240 249 10 20 30	pass
+920	miun/kraken	miun/kraken:0	84	2.3.39	2.5.70	40 10 11 20 30 40 60 70	40 10 11 20 30 40 60 70	pass
+921	miun/kraken	miun/kraken:0	92	2.5.71	2.6.43	80 90 100 110 10 19 30 40	80 90 100 110 10 19 30 40	pass
+922	miun/kraken	miun/kraken:0	111	2.6.44	2.7.9	50 60 70 80 90 101 110 120 131 140	50 60 70 80 90 101 110 120 131 140	pass
+923	trent/kraken	miun/kraken:119 trent/kraken:0	101	2.7.10	2.7.110	20 31 41 51 61 69 80 90 100	20 31 41 51 61 69 80 90 100	pass
+924	trent/kraken	miun/kraken:4 trent/kraken:0	87	2.7.111	3.2.18	111 120 131 141 10 19 30 10	111 120 131 141 10 19 30 10	pass
+925	miun/kraken	miun/kraken:0	85	3.2.19	3.3.37	30 40 50 61 10 20 30	30 40 50 61 10 20 30	pass
+926	miun/kraken	miun/kraken:0	97	3.3.38	3.6.21	40 50 10 20 31 20 10 20	40 50 10 20 31 20 10 20	pass
+927	trent/kraken	miun/kraken:1 trent/kraken:0	103	3.6.22	3.7.26	30 39 49 60 70 79 90 10 20	30 39 49 60 70 79 90 10 20	pass
+928	miun/kraken	miun/kraken:0	83	3.7.27	3.10.17	30 40 50 61 70 80 10	30 40 50 61 70 80 10	pass
+929	miun/kraken	miun/kraken:0	98	3.10.18	3.12.4	21 30 10 21 30 41 50 60 70	21 30 10 21 30 41 50 60 70	pass
+930	miun/kraken	miun/kraken:0	89	3.12.5	3.13.57	10 20 19 29 40	10 20 19 29 40	pass
+931	miun/kraken	miun/kraken:0	101	3.13.58	3.13.158	60 70 80 90 100 110 120 131 140 151	60 70 80 90 100 110 120 131 140 151	pass
+932	miun/kraken	miun/kraken:0	94	3.13.159	4.2.35	161 170 180 190 200 10 20 30	161 170 180 190 200 10 20 30	pass
+933	miun/kraken	miun/kraken:0	75	4.2.36	4.5.4	40 20 10 20 31	40 20 10 20 31	pass
+934	miun/kraken	miun/kraken:0	81	4.5.5	4.8.13	10 10 20 30 10 10	10 10 20 30 10 10	pass
+935	miun/kraken	miun/kraken:0	89	4.8.14	4.12.15	20 30 39 10 20 31 9 10	20 30 39 10 20 31 9 10	pass
+936	miun/kraken	miun/kraken:0	95	4.12.16	4.14.52	21 30 40 10 10 20 30 40	21 30 40 10 10 20 30 40	pass
+937	trent/kraken	miun/kraken:table trent/kraken:0	88	4.14.53	4.14.140	60 70 80 90 100 109 120 130 140	60 70 80 90 100 109 120 130 140	pass
+938	miun/kraken	miun/kraken:0	93	4.15.1	5.1.2	10 20 31 40 50 60 70 80	10 20 31 40 50 60 70 80	pass
+939	trent/kraken	miun/kraken:59 trent/kraken:0	103	5.1.3	5.2.28	10 20 30 40 50 60 70 10 20	10 20 30 40 50 60 70 10 20	pass
+940	trent/kraken	miun/kraken:146 trent/kraken:0	91	5.2.29	5.2.119	30 40 50 60 70 80 90 100 110	30 40 50 60 70 80 90 100 110	pass
+941	trent/kraken	miun/kraken:table trent/kraken:0	98	5.2.120	5.2.217	120 130 141 160 170 180 190 200	120 130 141 160 170 180 190 200	pass
+942	trent/kraken	miun/kraken:440 trent/kraken:0	105	5.2.218	5.2.322	220 230 240 249 260 271 280 289 300 310 320	220 230 240 249 260 271 280 289 300 310 320	pass
+943	miun/kraken	miun/kraken:0	47	5.2.323	5.2.369	330 339 350 360	330 339 350 360	pass

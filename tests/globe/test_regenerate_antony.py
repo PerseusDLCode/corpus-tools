@@ -114,3 +114,18 @@ def test_a_row_that_applies_in_no_witness_stops_the_build_naming_each():
     from globe import regenerate
     with pytest.raises(TableError, match=r"miun/kraken: .*matches 0 junctions.*; trent/kraken: "):
         regenerate.build("ant", [R("5.2", 941, "shared", "no such half", "nor this one")])
+
+
+@needs_inputs
+def test_a_speech_row_that_opens_with_a_longer_stage_direction_is_a_line():
+    """V.2, p.940: "[To Proculeius and the Guard] Guard her till / Cæsar
+    come." was read as stage direction, and its line lost. III.2, p.925:
+    "[Trumpets within.] So;" set in, ends Enobarbus's line; not a line."""
+    from globe import regenerate
+    _, toks, _, lines, _ = regenerate.build("ant", [])
+    guard = [ln for ln in lines if ln.page == 940
+             and [t.t for t in toks[ln.start:ln.start + 2]] == ["to", "proculeius"]]
+    assert len(guard) == 1 and len(guard[0].rows) == 2  # the row, and its turnover "Cæsar come."
+    so = [i for i in range(1, len(toks)) if toks[i].t == "so" and toks[i - 1].kind == "stage"
+          and toks[i - 1].t == "within"]  # "[Trumpets within.] So;"
+    assert len(so) == 1 and not [ln for ln in lines if so[0] - 3 <= ln.start <= so[0]]

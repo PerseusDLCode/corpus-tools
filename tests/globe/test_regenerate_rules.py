@@ -256,3 +256,19 @@ def test_a_stray_match_at_the_page_foot_does_not_end_the_page():
     held = {**page, 16: 15266, 17: 15267, 18: 15268}  # three in a run: the page's own
     assert page_end(held) == 15268
     assert page_end({k: 100 + k for k in range(5)}) == 104  # no jump: the last match
+
+
+def test_the_scanners_watermark_is_furniture_wherever_the_foot_rule_misses_it():
+    """Antony p.915 (Michigan): the text and a printer's signature run so low
+    that no 2u gap stands above the watermark, and its "OF" was counted as a
+    line. A row in the foot zone like a watermark line, OCR errors and all."""
+    marks = ["Digitized by", "UNIVERSITY OF MICHIGAN", "Original from"]
+    rows = [Row(0, 3688, 0, [Word(0, 1, "That"), Word(0, 1, "he")]),
+            Row(0, 3785, 0, [Word(0, 1, "8–2")]),
+            Row(0, 3833, 0, [Word(0, 1, "Original"), Word(0, 1, "fro")]),
+            Row(0, 3894, 0, [Word(0, 1, "JNIVERSITY"), Word(0, 1, "OF"), Word(0, 1, "MICHIGA")]),
+            Row(0, 100, 0, [Word(0, 1, "UNIVERSITY"), Word(0, 1, "OF"), Word(0, 1, "MICHIGAN")])]
+    text, off = pr.split_watermark(rows, marks, 3950)
+    assert [r.text for r in off] == ["Original fro", "JNIVERSITY OF MICHIGA"]
+    assert [r.y for r in text] == [3688, 3785, 100]  # the signature stays; nothing above the foot zone goes
+    assert pr.split_watermark(rows, (), 3950) == (rows, [])  # Trent declares no watermark

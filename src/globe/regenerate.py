@@ -258,7 +258,7 @@ def build(play: str, table: list[shared_lines.Row] | None = None):
         floor = 0
         for p in range(first, last + 1):
             leaf = w.leaves.leaf_for_printed(p)
-            pg = page_rows.read_page(L.file_for(leaf), p, f"{wid}/{layer}", leaf, speakers)
+            pg = page_rows.read_page(L.file_for(leaf), p, f"{wid}/{layer}", leaf, speakers, w.watermark)
             al = align_play.align_page(pg, toks, enc, grams, floor, speakers)
             floor = al.last + 1
             pages[(f"{wid}/{layer}", p)] = (pg, al)

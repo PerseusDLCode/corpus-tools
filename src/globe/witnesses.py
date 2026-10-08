@@ -103,6 +103,7 @@ class Witness:
     leaves: LeafTable
     layers: dict[str, OcrLayer] = field(default_factory=dict)
     metadata: dict[str, Path] = field(default_factory=dict)  # named files other than scans and OCR
+    watermark: tuple[str, ...] = ()  # lines the scanner printed on every leaf, below the page
 
     def scan_path(self, leaf: str) -> Path:
         return self.scans_dir / self.scan_pattern.format(leaf=leaf)
@@ -267,6 +268,7 @@ def load(only: list[str] | None = None, registry: Path = REGISTRY, repo: Path = 
                     name: _layer(wid, name, lspec, root) for name, lspec in spec.get("ocr", {}).items()
                 },
                 metadata={name: root / rel for name, rel in spec.get("metadata", {}).items()},
+                watermark=tuple(spec.get("watermark", ())),
             )
         except KeyError as e:
             raise RegistryError(f"{wid}: registry entry lacks {e.args[0]!r}") from None

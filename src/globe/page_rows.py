@@ -30,6 +30,7 @@ src/globe/witnesses.py.
 """
 from __future__ import annotations
 
+import difflib
 import re
 import statistics
 import xml.etree.ElementTree as ET
@@ -199,6 +200,30 @@ def split_furniture(rows: list[Row], pitch: float, height: float) -> tuple[list[
             rows = rows[:k]
             break
     return rows, furniture
+
+
+WATERMARK_RATIO = 0.75  # a row this like a watermark line, in the foot zone, is the watermark
+
+
+def split_watermark(rows: list[Row], watermark, height: float) -> tuple[list[Row], list[Row]]:
+    """Take off the scanner's watermark where the foot rule did not: the
+    Michigan scans print "Digitized by / UNIVERSITY OF MICHIGAN" and "Original
+    from / UNIVERSITY OF MICHIGAN" under every leaf, and on Antony p.915 the
+    text and the printer's signature run so low that no gap of FOOT_GAP_U
+    pitches stands above them, so the watermark stayed in the text and its "OF"
+    counted as a line (canonical-engLit doc/agenda.org #build/regenerate-ant).
+    A row in the foot zone whose text is like a watermark line, OCR errors and
+    all ("JNIVERSITY OF MICHIGA", "Original fro"), is furniture. Returns (text
+    rows, watermark rows)."""
+    marks = [m.lower() for m in watermark]
+
+    def like(r: Row) -> bool:
+        t = r.text.lower()
+        return any(difflib.SequenceMatcher(None, t, m).ratio() >= WATERMARK_RATIO for m in marks)
+    if not marks:
+        return rows, []
+    off = [r for r in rows if r.y > FOOT_ZONE * height and like(r)]
+    return [r for r in rows if not any(r is o for o in off)], off
 
 
 def split_columns(rows: list[Row]) -> list[list[Row]]:
@@ -410,10 +435,13 @@ def prepare_column(col: list[Row], speakers: set[str] = frozenset()):
     return body, pitch, margin, nums, annotations
 
 
-def read_page(path: Path, printed: int, witness: str, leaf: str, speakers: set[str] = frozenset()) -> Page:
+def read_page(path: Path, printed: int, witness: str, leaf: str, speakers: set[str] = frozenset(),
+              watermark=()) -> Page:
     rows, width, height = read_rows(path)
     rough = statistics.median(row_pitch(c) for c in split_columns(rows))
     rows, furniture = split_furniture(rows, rough, height)
+    rows, marks = split_watermark(rows, watermark, height)
+    furniture += marks
     cols, pitches, margins, numbers, annotations = [], [], [], [], []
     for c, col in enumerate(split_columns(rows)):
         body, pitch, margin, nums, notes = prepare_column(col, speakers)

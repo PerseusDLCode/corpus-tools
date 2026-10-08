@@ -59,7 +59,7 @@ class Word:
 @dataclass
 class Row:
     x: float  # left edge
-    y: float  # vertical centre
+    y: float  # baseline height, deskewed (read_rows); the box centre where ALTO gives no baseline
     r: float  # right edge
     words: list[Word]
     col: int = 0
@@ -118,23 +118,51 @@ class Page:
 # ---------------------------------------------------------------- reading
 
 
+SLOPE_MIN_SPAN = 300  # pixels: baselines this long or longer measure the page's skew
+
+
+def baseline(tl) -> list[tuple[float, float]]:
+    """A TextLine's BASELINE polyline ("x1 y1 x2 y2 ...", or with commas)."""
+    v = [float(t) for t in (tl.get("BASELINE") or "").replace(",", " ").split()]
+    return list(zip(v[0::2], v[1::2]))
+
+
 def read_rows(path: Path) -> tuple[list[Row], float, float]:
-    """Every non-empty TextLine as a Row, and the page width and height from ALTO."""
+    """Every non-empty TextLine as a Row, and the page width and height from ALTO.
+
+    A row's y is its baseline, carried to the middle of the page along the
+    page's skew (the median slope of its long baselines). A marginal number is
+    set on its line's baseline, but its box is smaller than the line's, and an
+    italic speaker prefix moves a box centre too: on Trent's small, skewed
+    leaves box centres put a number nearer the next row than its own (Antony
+    p.929, "Eros. See you here, sir?" 30; canonical-engLit doc/agenda.org
+    #build/regenerate-ant). A TextLine without a baseline keeps its box centre."""
     tree = ET.parse(path)
     page = tree.find(".//a:Page", ALTO)
     width = float(page.get("WIDTH"))
     height = float(page.get("HEIGHT"))
-    rows = []
+    found, slopes = [], []
     for tl in tree.iterfind(".//a:TextLine", ALTO):
         ws = [Word(float(s.get("HPOS")), float(s.get("WIDTH")), s.get("CONTENT"))
               for s in tl.findall("a:String", ALTO)
               if (s.get("CONTENT") or "").strip() and s.get("HPOS") is not None]  # kraken emits some empty, unplaced Strings
         if ws:
             ws.sort(key=lambda w: w.x)  # kraken does not always emit Strings left to right
-            # the row's extent is its words', not the TextLine's box, which can
-            # start well before the first word ("justicer;", p.865)
-            rows.append(Row(x=ws[0].x, y=float(tl.get("VPOS")) + float(tl.get("HEIGHT")) / 2,
-                            r=max(w.x + w.w for w in ws), words=ws))
+            pts = baseline(tl)
+            if len(pts) >= 2 and pts[-1][0] - pts[0][0] >= SLOPE_MIN_SPAN:
+                slopes.append((pts[-1][1] - pts[0][1]) / (pts[-1][0] - pts[0][0]))
+            found.append((tl, ws, pts))
+    slope = statistics.median(slopes) if slopes else 0.0
+    rows = []
+    for tl, ws, pts in found:
+        if pts:
+            mx, my = sum(x for x, _ in pts) / len(pts), sum(y for _, y in pts) / len(pts)
+            y = my + slope * (width / 2 - mx)
+        else:
+            y = float(tl.get("VPOS")) + float(tl.get("HEIGHT")) / 2
+        # the row's extent is its words', not the TextLine's box, which can
+        # start well before the first word ("justicer;", p.865)
+        rows.append(Row(x=ws[0].x, y=y, r=max(w.x + w.w for w in ws), words=ws))
     return rows, width, height
 
 

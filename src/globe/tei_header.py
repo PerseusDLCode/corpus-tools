@@ -271,7 +271,7 @@ def rewrite(root, play: str, table: list[shared_lines.Row]) -> None:
     for child in list(encoding_desc):
         encoding_desc.remove(child)
     encoding_desc.append(build_refs_decl())
-    encoding_desc.append(build_editorial_decl(play, count_junctions(table),
-                                              manifest.dracor_pin(play)))
+    junctions = count_junctions(shared_lines.for_play(table, play))
+    encoding_desc.append(build_editorial_decl(play, junctions, manifest.dracor_pin(play)))
     for p in build_encoding_ps():
         encoding_desc.append(p)

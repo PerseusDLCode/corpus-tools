@@ -18,6 +18,10 @@ into one:
             take my sword," / "Give it the captain.");
   numeral   a marginal number both witnesses misread.
 
+Every row names its play, and its page must be one of that play's printed
+pages (data/globe/plays.tsv): the build reads only the play's own rows, and
+the header's junction count is the play's.
+
 Rows can be *proposed* from the Folger (DraCor) edition, which marks shared
 lines with @part. The Folger sits below the page, never beside it: it is
 consulted for @part at a junction and nothing else -- never for counts, line
@@ -34,13 +38,14 @@ from pathlib import Path
 
 from lxml import etree
 
+from globe import plays
 from globe.tokens import norm
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 XML_ID = "{http://www.w3.org/XML/1998/namespace}id"
 TABLE = Path(__file__).resolve().parent.parent.parent / "data/globe/shared-lines.tsv"
 
-COLUMNS = ["scene", "page", "kind", "first_half", "second_half", "line", "basis",
+COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line", "basis",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
 
@@ -51,6 +56,7 @@ class TableError(Exception):
 
 @dataclass
 class Row:
+    play: str  # the play's id in data/globe/plays.tsv
     scene: str
     page: int
     kind: str  # "shared" | "turnover" | "numeral"
@@ -125,7 +131,7 @@ def line_words(lines, k: int, toks, n: int | None = MATCH_WORDS) -> tuple[str, .
     return tuple(out)
 
 
-def propose(lines, toks, failing, pairs: list[Pair]) -> list[Row]:
+def propose(play: str, lines, toks, failing, pairs: list[Pair]) -> list[Row]:
     """A row for every +1 interval holding a junction the Folger marks I/F.
 
     `failing` is the driver's failing intervals, `pairs` the play's Folger
@@ -150,7 +156,7 @@ def propose(lines, toks, failing, pairs: list[Pair]) -> list[Row]:
             aw, bw = line_words(lines, k, toks, None), line_words(lines, k + 1, toks, None)
             hit = next((p for p in pairs if _same_line(p.i_words, aw) and _same_line(p.f_words, bw)), None)
             if hit is not None:
-                out.append(Row(iv["div"], b.page, "shared",
+                out.append(Row(play, iv["div"], b.page, "shared",
                                " ".join(aw[:MATCH_WORDS]), " ".join(bw[:MATCH_WORDS]), "",
                                "folger", f"{hit.i_id} {hit.f_id}", "",
                                "proposed from the Folger; check the image"))
@@ -211,19 +217,32 @@ def read_table(path: Path = TABLE) -> list[Row]:
     if missing:
         raise TableError(f"{path.name}: header lacks {', '.join(missing)} (has: "
                          f"{', '.join(c for c in header if c) or 'nothing'})")
+    known = plays.read()
     rows = []
     for line, cells in enumerate(raw[1:], start=2):
         r = dict(zip(header, [c.strip() for c in cells]))
+        if r["play"] not in known:
+            raise TableError(f"{path.name} row {line}: play {r['play']!r} is not in "
+                             f"{plays.TABLE.name} (it has: {', '.join(known)})")
         if r["kind"] not in ("shared", "turnover", "numeral"):
             raise TableError(f"{path.name} row {line}: unknown kind {r['kind']!r}")
         try:
             page = int(r["page"])
         except ValueError:
             raise TableError(f"{path.name} row {line}: page {r['page']!r} is not a number") from None
-        rows.append(Row(r["scene"], page, r["kind"], r["first_half"], r["second_half"],
+        pl = known[r["play"]]
+        if not pl.first <= page <= pl.last:
+            raise TableError(f"{path.name} row {line}: page {page} is not one of {pl.id}'s "
+                             f"printed pages ({pl.first}-{pl.last})")
+        rows.append(Row(r["play"], r["scene"], page, r["kind"], r["first_half"], r["second_half"],
                         r.get("line", ""), r["basis"], r.get("folger_ids", ""),
                         r.get("checked", ""), r.get("note", "")))
     return rows
+
+
+def for_play(rows: list[Row], play: str) -> list[Row]:
+    """The play's own rows: what the build applies, and what the header counts."""
+    return [r for r in rows if r.play == play]
 
 
 def write_table(rows: list[Row], path: Path = TABLE, header_note: str = "") -> None:
@@ -237,5 +256,5 @@ def write_table(rows: list[Row], path: Path = TABLE, header_note: str = "") -> N
         w = csv.writer(f, delimiter="\t", lineterminator="\n")
         w.writerow(COLUMNS)
         for r in rows:
-            w.writerow([r.scene, r.page, r.kind, r.first_half, r.second_half, r.line,
+            w.writerow([r.play, r.scene, r.page, r.kind, r.first_half, r.second_half, r.line,
                         r.basis, r.folger_ids, r.checked, r.note])

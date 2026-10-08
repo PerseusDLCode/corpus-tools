@@ -162,7 +162,7 @@ def test_the_output_is_the_p4_text_with_a_milestone_on_every_line(lear, tmp_path
     import re
 
     from globe import tei_header
-    count = tei_header.count_junctions(shared_lines.read_table())
+    count = tei_header.count_junctions(shared_lines.for_play(shared_lines.read_table(), "lr"))
     assert f"{tei_header._spell(count).capitalize()} junctions" in editorial_decl
     assert f"{count} junctions" not in editorial_decl  # spelled, not a digit
 

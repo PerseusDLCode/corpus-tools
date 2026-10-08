@@ -9,12 +9,12 @@ from pathlib import Path
 
 import pytest
 
-from globe import shared_lines
+from globe import plays, shared_lines
 from globe.shared_lines import Pair, Row, TableError
 
 REPO = Path(__file__).resolve().parent.parent.parent
 
-FOLGER = shared_lines.FOLGER
+FOLGER = plays.get("lr").dracor_path
 P4 = REPO.parent / "canonical-engLit/Renaissance/Shakespeare/opensource/lr.xml"
 
 
@@ -53,7 +53,7 @@ def test_a_short_half_must_match_exactly():
 
 @pytest.mark.skipif(not FOLGER.is_file(), reason="Folger edition not on disk")
 def test_folger_pairs_are_read_as_ids_and_first_words():
-    pairs = shared_lines.read_folger()
+    pairs = shared_lines.read_folger(FOLGER)
     assert len(pairs) > 150
     hit = next(p for p in pairs if p.i_id == "ftln-2484")
     assert hit.f_id == "ftln-2485"
@@ -72,7 +72,7 @@ def test_the_proposer_reproduces_the_hand_check():
 
     text, toks, pages, lines, results = regenerate.build("lr", table=[])
     failing = [iv for r in results for iv in r.failing]
-    rows = shared_lines.propose(lines, toks, failing)
+    rows = shared_lines.propose(lines, toks, failing, shared_lines.read_folger(FOLGER))
     assert [(r.scene, r.second_half, r.folger_ids) for r in rows] == [
         ("4.2", "then shall you", "ftln-2484 ftln-2485"),
         ("4.6", "o you mighty", "ftln-2775 ftln-2776"),
@@ -176,7 +176,7 @@ def test_the_folger_check_measures_how_far_short_can_be_trusted():
     from globe import regenerate
 
     _, toks, _, lines, _ = regenerate.build("lr", shared_lines.read_table())
-    result = folger_check.compare(lines, toks)
+    result = folger_check.compare(lines, toks, FOLGER)
     assert result["aligned"] > 0.9
     c = result["counts"]
     assert c["part"] == 183 and c["short"] == 41 and c["silent"] == 7

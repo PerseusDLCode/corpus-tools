@@ -34,6 +34,7 @@ from globe import manifest
 from globe import emit_tei
 from globe import folger_check
 from globe import page_rows
+from globe import plays
 from globe import shared_lines
 from globe import source_text
 from globe import tei_header
@@ -42,11 +43,6 @@ from globe import witnesses
 
 REPO = Path(__file__).resolve().parent.parent.parent
 CORPUS = REPO.parent / "canonical-engLit"
-PLAYS = {
-    # play: (P4 source, current P5, first and last printed page)
-    "lr": ("Renaissance/Shakespeare/opensource/lr.xml",
-           "data/shakespeare/lr/shakespeare.lr.globe.xml", 847, 878),
-}
 CORPUS_BRANCH = "mvp"  # doc/agenda.org #build/retire-rederive: build only from mvp
 ORDER = [("miun", "kraken"), ("trent", "kraken")]
 BORDERLINE_SHORT_U = (0.6, 1.4)  # turnover-band rows whose row above is this far short: review
@@ -183,9 +179,10 @@ def apply_table(new, prev_last, toks, table, page: int):
 
 
 def build(play: str, table: list[shared_lines.Row] | None = None):
-    p4_rel, p5_rel, first, last = PLAYS[play]
+    entry = plays.get(play)  # data/globe/plays.tsv: P4, shell, printed pages, DraCor file
+    first, last = entry.first, entry.last
     table = shared_lines.read_table() if table is None else table
-    text = source_text.load_p4(CORPUS / p4_rel)
+    text = source_text.load_p4(CORPUS / entry.p4)
     toks = tokens.tokenize(text.body)
     enc = [t.t for t in toks]
     grams = align_play.trigram_index(enc)
@@ -496,13 +493,13 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
     """Write the canonical and review builds. The canonical build is refused
     while any table row it applies is unchecked (doc/forum.org
     #lineation/shared-lines-table)."""
-    p4_rel, p5_rel, *_ = PLAYS[play]
-    p4_path, p5_path = CORPUS / p4_rel, CORPUS / p5_rel
+    entry = plays.get(play)
+    p4_path, p5_path = CORPUS / entry.p4, CORPUS / entry.shell
     commit = commit or emit_tei.workshop_commit(REPO)  # main() reads it before writing reports
     when = emit_tei.commit_date(REPO)
-    sources = {"lr.xml": emit_tei.sha256(p4_path)[:16],
+    sources = {p4_path.name: emit_tei.sha256(p4_path)[:16],
                "shared-lines.tsv": emit_tei.sha256(shared_lines.TABLE)[:16],
-               f"shell {p5_rel}": emit_tei.sha256(p5_path)[:16]}
+               f"shell {entry.shell}": emit_tei.sha256(p5_path)[:16]}
     applied = [row for r in results for _, row in r.applied]
     pending = [row for row in applied if row.pending]
 
@@ -540,6 +537,7 @@ def write_reports(play: str, rep: Path, pages, lines, results, toks, body=None, 
     main and by the tests, so the review build a test sees is the real one."""
     rep.mkdir(parents=True, exist_ok=True)
     stem = f"regenerate-{play}"
+    entry = plays.get(play)
     report_gate(rep / f"{stem}-gate.tsv", results)
     report_intervals(rep / f"{stem}-intervals.tsv", results)
     reviews = build_reviews(results, lines, toks)
@@ -547,11 +545,11 @@ def write_reports(play: str, rep: Path, pages, lines, results, toks, body=None, 
     failing_scenes = {iv["div"] for r in results for iv in r.failing}
     ovn, anchor_reviews = report_old_vs_new(
         rep / f"{stem}-old-vs-new.tsv", rep / f"{stem}-old-vs-new-anchors.tsv",
-        CORPUS / PLAYS[play][0], toks, lines, failing_scenes)
+        CORPUS / entry.p4, toks, lines, failing_scenes)
     reviews += anchor_reviews
     reviews += report_verse_prose(rep / f"{stem}-verse-prose.tsv", lines)
     reviews += report_borderline(rep / f"{stem}-borderline-rows.tsv", lines)
-    folger = report_folger(rep / f"{stem}-folger-check.tsv", lines, toks)
+    folger = report_folger(rep / f"{stem}-folger-check.tsv", lines, toks, entry.dracor_path)
     if body is not None:
         report_part_vs_page(rep / f"{stem}-part-vs-page.tsv", lines, toks, body, table)
     return ovn, reviews, folger
@@ -616,13 +614,13 @@ def report_part_vs_page(out: Path, lines, toks, body, table) -> list[list]:
     return rows
 
 
-def report_folger(out: Path, lines, toks) -> dict:
+def report_folger(out: Path, lines, toks, folger: Path) -> dict:
     """The shared-line structure against the Folger's @part and #short. A
     report only: the page decides (doc/forum.org #lineation/shared-lines-table),
     and these numbers are the reason -- the Folger marks a half of many of our
     shared lines as standing alone."""
     try:
-        result = folger_check.compare(lines, toks)
+        result = folger_check.compare(lines, toks, folger)
     except OSError:  # the Folger edition is not on this machine
         return {}
     write_tsv(out, ["scene", "line", "page", "finding", "folger", "folger_ids", "rows"],

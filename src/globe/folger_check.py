@@ -24,7 +24,6 @@ from pathlib import Path
 
 from lxml import etree
 
-from globe import shared_lines
 from globe.tokens import norm
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
@@ -40,9 +39,10 @@ class FolgerLine:
     our: int | None = None  # index of the Globe line it falls in
 
 
-def read_lines(path: Path | None = None) -> tuple[list[str], list[FolgerLine]]:
-    """The Folger's spoken word stream, and its verse lines within it."""
-    root = etree.parse(str(path or shared_lines.FOLGER)).getroot()
+def read_lines(path: Path) -> tuple[list[str], list[FolgerLine]]:
+    """The Folger's spoken word stream, and its verse lines within it, from
+    the play's file in the ShakeDraCor clone (plays.Play.dracor_path)."""
+    root = etree.parse(str(path)).getroot()
     words: list[str] = []
     lines: list[FolgerLine] = []
     for sp in root.iter(TEI + "sp"):
@@ -97,7 +97,7 @@ def folds(lines, toks) -> list[tuple[int, object]]:
     return out
 
 
-def compare(lines, toks, path: Path | None = None) -> dict:
+def compare(lines, toks, path: Path) -> dict:
     """What the Folger says about our shared lines, and ours about its pairs."""
     words, flines = read_lines(path)
     aligned = locate(words, flines, toks, lines)

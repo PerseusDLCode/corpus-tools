@@ -127,6 +127,7 @@ def test_the_output_is_the_p4_text_with_a_milestone_on_every_line(lear, tmp_path
     """The build's own checks, end to end: the word stream is the P4's, every
     Globe line has one numbered milestone, no F1 milestone survives, and the
     review build reduces to the canonical one."""
+    from globe import plays
     from globe import regenerate
     from globe import shared_lines
     from globe import tokens as tk
@@ -174,9 +175,9 @@ def test_the_output_is_the_p4_text_with_a_milestone_on_every_line(lear, tmp_path
     change = header.find(f".//{{{TEI_NS}}}revisionDesc/{{{TEI_NS}}}change")
     assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", change.get("when"))
     # the shell is pinned beside the other sources (#build/old-vs-new-from-p4)
-    shell = regenerate.CORPUS / regenerate.PLAYS["lr"][1]
+    shell_rel = plays.get("lr").shell
     stamp = "".join(change.itertext())
-    assert f"shell {regenerate.PLAYS['lr'][1]} sha256 {emit_tei.sha256(shell)[:16]}" in stamp
+    assert f"shell {shell_rel} sha256 {emit_tei.sha256(regenerate.CORPUS / shell_rel)[:16]}" in stamp
     refs_decl = header.find(f".//{{{TEI_NS}}}refsDecl")
     assert refs_decl.find(f"{{{TEI_NS}}}citeStructure").get("match") == "/TEI/text/body"
     # every Globe line is citable through it, and the cast list is not an act

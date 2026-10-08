@@ -57,6 +57,7 @@ P4's, or the build stops.
 
 | Table                  | What it says                                                     | Who changes it                       |
 |------------------------+------------------------------------------------------------------+--------------------------------------|
+| =plays.tsv=            | each play's P4 source, shell, first and last printed page, and DraCor file | when a play is added (=plays.py=) |
 | =witnesses.toml=       | where each witness's scans and OCR layers are, under =GLOBE_WITNESSES= | when a witness is added or moved |
 | =leaves-miun.tsv=, =leaves-trent.tsv= | leaf -> printed page, with the basis of each row  | reviewed; built by the workshop's =build_leaf_tables.py= |
 | =witness-offsets.tsv=  | the running-head audit's offsets per witness; the source of the leaf tables, not read by the build | as above |
@@ -101,8 +102,9 @@ Inputs, as siblings of this repository:
 - the witnesses: the =PerseusDLCode/globe-witnesses= repository, at
   =$GLOBE_WITNESSES= (default =../globe-witnesses=; =doc/witnesses.org=);
 - =../schmidt-lexicon-workshop/out/= for the smoke test;
-- the Folger (DraCor) Lear at the absolute path in =shared_lines.FOLGER=,
-  for the Folger report only; skipped if absent.
+- the ShakeDraCor clone at =$SHAKEDRACOR= (default =../../shakedracor=,
+  beside the =PerseusDLCode= directory), for the play's Folger file named
+  in =plays.tsv=: the Folger report only; skipped if absent.
 
 #+begin_src sh
 make globe-verify PLAY=lr      # build to a temp dir; equal to the published file, stamp aside?
@@ -125,11 +127,13 @@ Serialisation is what byte identity tests: lxml is locked at 6.1.3
 
 * Adding a play
 
-=regenerate.PLAYS= has one entry, Lear: the P4 path, the P5 shell and
-the first and last printed page. A play also needs its rows in
-=witness-manifest.tsv=, and its shared lines reviewed into
-=shared-lines.tsv=. The per-play table that should replace =PLAYS= and
-=shared_lines.FOLGER= is the first task carried to canonical-engLit.
+A play is a row in =data/globe/plays.tsv=: its P4 source and its P5
+shell (both relative to canonical-engLit), its first and last printed
+page, and its file in the ShakeDraCor clone. Lear and Antony have rows.
+A play also needs its rows in =witness-manifest.tsv=
+(=globe-lineation manifest PLAY=), its shared lines reviewed into
+=shared-lines.tsv=, and its title and copy-text in =tei_header.py=
+(=PLAY_TITLES=, =COPY_TEXT=), which the table does not yet hold.
 
 * References to the workshop
 

@@ -6,7 +6,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from globe import emit_tei, manifest, regenerate, schmidt_smoke
+from globe import emit_tei, manifest, plays, regenerate, schmidt_smoke
 
 # The regeneration stamp: the one <change> in <revisionDesc> that may differ
 # between a build and the published file (its date, commit and the shell's
@@ -25,7 +25,7 @@ def without_stamp(xml: bytes) -> bytes:
 def verify(play: str, flags: list[str]) -> int:
     """Build into a temporary directory and compare the canonical build with
     canonical-engLit's published file, ignoring only the regeneration stamp."""
-    published = regenerate.CORPUS / regenerate.PLAYS[play][1]
+    published = regenerate.CORPUS / plays.get(play).shell
     with tempfile.TemporaryDirectory(prefix=f"globe-verify-{play}-") as tmp:
         if regenerate.main(play, f"--scratch={tmp}", *flags) != 0:
             print(f"globe verify {play}: the build failed", file=sys.stderr)

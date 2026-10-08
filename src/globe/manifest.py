@@ -120,10 +120,10 @@ def write(play: str, reg: witnesses.Registry, order, first: int, last: int,
 
 
 def main(play: str = "lr") -> int:
-    from globe import regenerate  # regenerate imports this module
-    _, _, first, last = regenerate.PLAYS[play]
+    from globe import plays, regenerate  # regenerate imports this module
+    entry = plays.get(play)
     reg = witnesses.load(sorted({w for w, _ in regenerate.ORDER}))
-    n = write(play, reg, regenerate.ORDER, first, last)
+    n = write(play, reg, regenerate.ORDER, entry.first, entry.last)
     print(f"{MANIFEST.relative_to(witnesses.REPO)}: {n} rows for {play}", file=sys.stderr)
     return 0
 

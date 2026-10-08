@@ -9,7 +9,7 @@ First Folio TLNs.
 
 sourceDesc's copy-text facts beyond OCLC 08687211 are per-play (which
 Doubleday volume, its pages) and go in COPY_TEXT -- a future play needs its
-own entry there, the same way PLAYS (src/globe/regenerate.py) and
+own entry there, the same way data/globe/plays.tsv and
 data/globe/shared-lines.tsv do. The witness bibls are built from the registry
 (src/globe/witnesses.py), not hand-duplicated, so they can't drift from what the
 rest of the pipeline trusts. publicationStmt's filename and CTS idno are

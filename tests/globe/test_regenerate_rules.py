@@ -239,3 +239,20 @@ def test_stripping_a_milestone_keeps_the_words_around_it():
     assert source_text.strip_line_milestones(p) == {"Globe": 1, "F1": 1}
     assert len(p) == 0
     assert tokens.word_stream(p) == before
+
+
+# ---------------------------------------------------------------- alignment
+
+
+def test_a_stray_match_at_the_page_foot_does_not_end_the_page():
+    """Antony p.929 ends "pinion of his wing,"; the P4 reads "off his", and
+    "of his" matched "Lord of his fortunes" 60 words on, so p.930's first nine
+    rows fell before its floor. Page word index -> P4 token index."""
+    from globe.align_play import page_end
+    page = {k: 15190 + k for k in range(16)}  # ... "he sends so poor a pinion"
+    assert page_end(page) == 15205
+    assert page_end({**page, 16: 15266, 17: 15267}) == 15205  # "of his", 60 on
+    assert page_end({**page, 18: 15297}) == 15205  # the watermark's "OF" (p.915)
+    held = {**page, 16: 15266, 17: 15267, 18: 15268}  # three in a run: the page's own
+    assert page_end(held) == 15268
+    assert page_end({k: 100 + k for k in range(5)}) == 104  # no jump: the last match

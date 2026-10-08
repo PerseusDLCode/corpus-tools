@@ -7,6 +7,10 @@ encodingDesc's editorialDecl (plus its two new convention <p>s) because
 lineation now comes from the witnesses, not the P4's own boundaries or
 First Folio TLNs.
 
+The Folger citation in editorialDecl is written from the play's ShakeDraCor
+pin (src/globe/manifest.py), so the commit and DraCor id it names are the
+pinned file's.
+
 sourceDesc's copy-text facts beyond OCLC 08687211 are per-play (which
 Doubleday volume, its pages) and go in COPY_TEXT -- a future play needs its
 own entry there, the same way data/globe/plays.tsv and
@@ -21,6 +25,7 @@ from __future__ import annotations
 
 from lxml import etree
 
+from globe import manifest
 from globe import shared_lines
 from globe import witnesses
 
@@ -106,8 +111,12 @@ def build_source_desc(play: str, catalogs: dict[str, dict]) -> etree.Element:
     return _fragment(xml)
 
 
-def build_editorial_decl(play: str, junction_count: int) -> etree.Element:
+def build_editorial_decl(play: str, junction_count: int, dracor: dict[str, str]) -> etree.Element:
+    """`dracor` is the play's ShakeDraCor pin (manifest.dracor_pin): the
+    Folger citation names the commit and DraCor id the manifest records,
+    which are those of the file the build checks, never typed here."""
     count_word = _spell(junction_count).capitalize()
+    title = PLAY_TITLES[play]
     xml = f"""
     <editorialDecl>
       <p>Words and structure -- divisions, speakers, speeches, stage
@@ -124,11 +133,11 @@ def build_editorial_decl(play: str, junction_count: int) -> etree.Element:
       may share a verse line but the page's typography does not show whether
       they do, were decided individually, from the page images and, where the
       page is silent, from the line division of the Folger edition,
-      <bibl xml:id="folger-dracor">King Lear, ed. Barbara A. Mowat and Paul
+      <bibl xml:id="folger-dracor">{title}, ed. Barbara A. Mowat and Paul
       Werstine, Folger Digital Texts, version 0.5 (Washington, DC: Folger
       Shakespeare Library, 2015), as distributed in the Shakespeare Drama
-      Corpus (ShakeDraCor, play shake000033; github.com/dracor-org/shakedracor,
-      commit c34c2d4)</bibl>. The Folger was consulted only for its division
+      Corpus (ShakeDraCor, play {dracor['play']}; github.com/dracor-org/shakedracor,
+      commit {dracor['commit']})</bibl>. The Folger was consulted only for its division
       of shared lines, never for words or numbers. Each decision is recorded
       in the project's data tables.</p>
       <p>The Globe line numbers previously carried by the Perseus edition were
@@ -262,6 +271,7 @@ def rewrite(root, play: str, table: list[shared_lines.Row]) -> None:
     for child in list(encoding_desc):
         encoding_desc.remove(child)
     encoding_desc.append(build_refs_decl())
-    encoding_desc.append(build_editorial_decl(play, count_junctions(table)))
+    encoding_desc.append(build_editorial_decl(play, count_junctions(table),
+                                              manifest.dracor_pin(play)))
     for p in build_encoding_ps():
         encoding_desc.append(p)

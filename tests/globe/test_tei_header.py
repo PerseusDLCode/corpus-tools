@@ -24,6 +24,9 @@ CATALOGS = {
 }
 
 
+PIN = {"commit": "c34c2d4", "play": "shake000033"}
+
+
 def _row(kind: str) -> shared_lines.Row:
     return shared_lines.Row(scene="1.1", page=1, kind=kind, first_half="a",
                             second_half="b", line="", basis="image", checked="x")
@@ -55,17 +58,29 @@ def test_source_desc_cites_both_witnesses_from_the_registry_not_hardcoded():
 
 
 def test_editorial_decl_states_the_computed_junction_count_not_a_fixed_one():
-    text5 = etree.tostring(tei_header.build_editorial_decl("lr", 5), encoding="unicode")
-    text8 = etree.tostring(tei_header.build_editorial_decl("lr", 8), encoding="unicode")
+    text5 = etree.tostring(tei_header.build_editorial_decl("lr", 5, PIN), encoding="unicode")
+    text8 = etree.tostring(tei_header.build_editorial_decl("lr", 8, PIN), encoding="unicode")
     assert "Five junctions" in text5
     assert "Eight junctions" in text8
     assert "5 junctions" not in text5 and "8 junctions" not in text8  # spelled, not a digit
 
 
 def test_editorial_decl_drops_f1_provenance_and_states_f1_is_not_carried():
-    text = etree.tostring(tei_header.build_editorial_decl("lr", 8), encoding="unicode")
+    text = etree.tostring(tei_header.build_editorial_decl("lr", 8, PIN), encoding="unicode")
     assert "Bodleian" not in text and "Through-Line-Number" not in text  # old provenance disclaimer
     assert "not carried by this edition" in text
+
+
+def test_editorial_decl_cites_the_folger_at_the_pinned_commit_not_a_typed_one():
+    """canonical-engLit doc/agenda.org #globe/pin-dracor: the commit and the
+    DraCor id come from the manifest's row for the play's ShakeDraCor file."""
+    text = " ".join(etree.tostring(tei_header.build_editorial_decl("lr", 8, PIN),
+                                   encoding="unicode").split())
+    assert "(ShakeDraCor, play shake000033; github.com/dracor-org/shakedracor, commit c34c2d4)" in text
+    other = " ".join(etree.tostring(tei_header.build_editorial_decl(
+        "lr", 8, {"commit": "abc1234", "play": "shake000099"}), encoding="unicode").split())
+    assert "play shake000099; github.com/dracor-org/shakedracor, commit abc1234)" in other
+    assert "c34c2d4" not in other and "shake000033" not in other
 
 
 def test_canonical_and_review_filenames_follow_the_play():

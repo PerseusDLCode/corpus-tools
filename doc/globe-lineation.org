@@ -62,7 +62,7 @@ P4's, or the build stops.
 | =leaves-miun.tsv=, =leaves-trent.tsv= | leaf -> printed page, with the basis of each row  | reviewed; built by the workshop's =build_leaf_tables.py= |
 | =witness-offsets.tsv=  | the running-head audit's offsets per witness; the source of the leaf tables, not read by the build | as above |
 | =shared-lines.tsv=     | junctions the page cannot show, and numerals both witnesses misread | rows proposed by the build or from the Folger; =checked= is filled by Cliff, after looking at the page image |
-| =witness-manifest.tsv= | sha256 of every witness file the build reads, per play           | =globe-lineation manifest PLAY=, deliberately |
+| =witness-manifest.tsv= | sha256 of every witness file the build reads, per play, and of the play's DraCor file with its commit | =globe-lineation manifest PLAY=, deliberately |
 
 *=checked= is Cliff's.* The canonical build refuses to use a
 =shared-lines.tsv= row whose =checked= is empty; the review build is
@@ -72,6 +72,15 @@ still written (=--allow-pending= overrides, for development only).
 table) that is not in =witness-manifest.tsv= or whose sha256 differs.
 Rewriting a play's rows is how a deliberate change to a witness is
 recorded.
+
+*And the play's ShakeDraCor file.* Its row (witness =dracor=) holds the
+file's sha256 and, in =catalog=, the clone's commit and the play's
+DraCor id as they were when the row was written; a file that differs
+from the clone's commit cannot be pinned. The build refuses the file if
+it is there and its sha256 differs, and refuses a play with no such
+row: the header's Folger citation is written from it, so the commit the
+edition names is the commit of the bytes the build checked. Lear is
+pinned at =c34c2d4=, the commit its published header already named.
 
 * The two builds and the reports
 
@@ -104,13 +113,15 @@ Inputs, as siblings of this repository:
 - =../schmidt-lexicon-workshop/out/= for the smoke test;
 - the ShakeDraCor clone at =$SHAKEDRACOR= (default =../../shakedracor=,
   beside the =PerseusDLCode= directory), for the play's Folger file named
-  in =plays.tsv=: the Folger report only; skipped if absent.
+  in =plays.tsv=: the Folger report only. If the clone is absent the
+  report is skipped, and the build says so; if the file is there, it
+  must be as =witness-manifest.tsv= pins it.
 
 #+begin_src sh
 make globe-verify PLAY=lr      # build to a temp dir; equal to the published file, stamp aside?
 make globe-regenerate PLAY=lr  # write out/globe/lr and reports/globe; refuses on a dirty tree
 .venv/bin/globe-lineation smoke          # Schmidt's Lear citations against out/globe/lr
-.venv/bin/globe-lineation manifest lr    # re-pin the witness files the build reads
+.venv/bin/globe-lineation manifest lr    # re-pin the witness files and the DraCor file the build reads
 .venv/bin/globe-lineation regenerate lr --scratch=DIR   # a development build, anywhere
 #+end_src
 
@@ -131,7 +142,8 @@ A play is a row in =data/globe/plays.tsv=: its P4 source and its P5
 shell (both relative to canonical-engLit), its first and last printed
 page, and its file in the ShakeDraCor clone. Lear and Antony have rows.
 A play also needs its rows in =witness-manifest.tsv=
-(=globe-lineation manifest PLAY=), its shared lines reviewed into
+(=globe-lineation manifest PLAY=, which pins its DraCor file too and
+so needs the clone), its shared lines reviewed into
 =shared-lines.tsv=, and its title and copy-text in =tei_header.py=
 (=PLAY_TITLES=, =COPY_TEXT=), which the table does not yet hold.
 

@@ -88,7 +88,7 @@
         <tei:language xmlns:tei="http://www.tei-c.org/ns/1.0" ident="eng"> English </tei:language>
       </langUsage>
     </profileDesc>
-    <revisionDesc><change when="2026-09-29"><ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at commit b413a28; sources: lr.xml sha256 ef4bd51326cb54fa; shared-lines.tsv sha256 455b63e10cb34352; shell data/shakespeare/lr/shakespeare.lr.globe.xml sha256 d4b4c0d5d6c08eba. Generated file: DO NOT EDIT.</ab></change><change><ab>converted to TEI P5</ab></change></revisionDesc>
+    <revisionDesc><change when="2026-10-08"><ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit bd8affa; sources: lr.xml sha256 ef4bd51326cb54fa; shared-lines.tsv sha256 031852c68b705d2c; shell data/shakespeare/lr/shakespeare.lr.globe.xml sha256 0a1272e67d3bd8ff. Generated file: DO NOT EDIT.</ab></change><change><ab>converted to TEI P5</ab></change></revisionDesc>
   </teiHeader>
   <text xml:lang="eng">
     <body xml:base="urn:cts:engLit:shakespeare.lr.globe">
@@ -4046,7 +4046,7 @@
       <sp who="lr-12">
         <speaker>Reg.</speaker>
         <l>
-          <!-- REVIEW turnover: row above ends 0.93u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="140"/>I pray you, sir, take patience: I have <lb/>hope </l>
+          <!-- REVIEW turnover: row above ends 0.91u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="140"/>I pray you, sir, take patience: I have <lb/>hope </l>
         <l>
           <milestone unit="line" ed="Globe" n="141"/>You less know how to value her desert </l>
         <l part="I">
@@ -6810,7 +6810,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="62"/>Thou changed and self-cover'd thing, <lb/>for shame, </l>
         <l>
-          <milestone unit="line" ed="Globe" n="63"/>Be-monster not thy feature. Were't my fitness </l>
+          <!-- REVIEW words: both witnesses read "Were 't"; the P4 reads "Were't" --><milestone unit="line" ed="Globe" n="63"/>Be-monster not thy feature. Were't my fitness </l>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>To let these hands obey my blood, </l>
         <l>
@@ -7921,7 +7921,7 @@
       <sp who="lr-11">
         <speaker>Lear.</speaker>
         <l>
-          <!-- REVIEW turnover: row above ends 0.63u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="194"/>No rescue? What, a prisoner? I am <lb/>even </l>
+          <!-- REVIEW turnover: row above ends 0.61u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="194"/>No rescue? What, a prisoner? I am <lb/>even </l>
         <l>
           <milestone unit="line" ed="Globe" n="195"/>The natural fool of fortune. Use me well; </l>
         <l>

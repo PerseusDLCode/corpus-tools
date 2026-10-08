@@ -272,3 +272,18 @@ def test_the_scanners_watermark_is_furniture_wherever_the_foot_rule_misses_it():
     assert [r.text for r in off] == ["Original fro", "JNIVERSITY OF MICHIGA"]
     assert [r.y for r in text] == [3688, 3785, 100]  # the signature stays; nothing above the foot zone goes
     assert pr.split_watermark(rows, (), 3950) == (rows, [])  # Trent declares no watermark
+
+
+def test_the_margin_follows_a_column_that_drifts():
+    """Trent, Antony p.923: flush rows drift from x=37 to x=48 down the
+    column (pitch 30), and a turnover near the foot, 2.7u in from the local
+    margin, read past 2.8u from the column's one margin: indented, a line."""
+    pitch = 30.0
+    body = [Row(37 + 11 * k / 59, 100 + 30 * k, 600, [Word(0, 1, "x")]) for k in range(60)]
+    turnover = Row(48 + 2.65 * pitch, 100 + 30 * 58 + 15, 300, [Word(0, 1, "fortunes.")])
+    margins = pr.local_margins(body + [turnover], pitch)
+    assert abs(margins[0] - 37) < 1 and abs(margins[59] - 48) < 1
+    assert 2.4 < (turnover.x - margins[-1]) / pitch < 2.8  # the turnover band
+    assert (turnover.x - pr.column_margin(body, pitch)) / pitch > 2.8  # one margin: indented
+    few = body[:10]
+    assert pr.local_margins(few, pitch) == [pr.column_margin(few, pitch)] * 10

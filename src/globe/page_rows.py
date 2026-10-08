@@ -343,6 +343,37 @@ def column_margin(body: list[Row], pitch: float) -> float:
     return statistics.median(x for x in xs if x < base + MARGIN_BAND_U * pitch)
 
 
+MARGIN_NEAR = 10  # flush rows either side of a row that give its local margin
+
+
+def local_margins(body: list[Row], pitch: float) -> list[float]:
+    """Each row's left margin: a line fitted to the flush rows nearest it.
+
+    The column's margin is not one x for the whole column. On Trent's leaves
+    it drifts about half a pitch from top to bottom (Antony p.923: flush rows
+    at x=37 near the head, 48 near the foot), which put turnovers at the foot
+    of the column (2.3-2.65u) past the indented band's edge (2.8u) and made
+    lines of them (canonical-engLit doc/agenda.org #build/regenerate-ant). The
+    flush rows are the body cluster (column_margin); for each row, the
+    2*MARGIN_NEAR of them nearest it in height give a local slope (least
+    squares) and a robust level (the median of x - slope*y), so a stray row
+    moves nothing. A column with too few flush rows keeps one margin. A line
+    over the whole column was tried and failed: the top of a page of prose,
+    with few flush rows, set its slope (p.943)."""
+    m0 = column_margin(body, pitch)
+    flush = [(r.y, r.x) for r in body if abs(r.x - m0) < MARGIN_BAND_U * pitch]
+    if len(flush) < 2 * MARGIN_NEAR:
+        return [m0] * len(body)
+    out = []
+    for r in body:
+        near = sorted(flush, key=lambda p: abs(p[0] - r.y))[:2 * MARGIN_NEAR]
+        my = statistics.mean(y for y, _ in near)
+        vy = sum((y - my) ** 2 for y, _ in near)
+        b = sum((y - my) * x for y, x in near) / vy if vy else 0.0
+        out.append(statistics.median(x - b * y for y, x in near) + b * r.y)
+    return out
+
+
 def column_measure(body: list[Row]) -> float:
     """The column's full measure: the 90th-percentile row right edge."""
     rs = sorted(r.r for r in body)
@@ -422,14 +453,14 @@ def prepare_column(col: list[Row], speakers: set[str] = frozenset()):
     body = merge_same_row(body, pitch)
     join_hyphenation(body)
     body = [r for r in body if r.words]
-    margin = column_margin(body, pitch)
+    margin = column_margin(body, pitch)  # the column's, for the Page; each row has its own
     measure = column_measure(body)
     nums, annotations = split_annotations(nums, measure, pitch)
     attach_numbers(body, nums)
-    for r in body:
-        r.pitch, r.margin, r.measure = pitch, margin, measure
+    for r, local in zip(body, local_margins(body, pitch)):
+        r.pitch, r.margin, r.measure = pitch, local, measure
         r.prefix_len = prefix_length(r, speakers)
-        r.offset_u = (r.x - margin) / pitch
+        r.offset_u = (r.x - local) / pitch
         gap = prefix_gap(r)
         r.band = classify_band(r.offset_u, None if gap is None else gap / pitch)
     return body, pitch, margin, nums, annotations

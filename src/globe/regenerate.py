@@ -35,6 +35,7 @@ from globe import emit_tei
 from globe import folger_check
 from globe import page_rows
 from globe import plays
+from globe import schmidt_smoke
 from globe import shared_lines
 from globe import source_text
 from globe import tei_header
@@ -772,7 +773,22 @@ def main(play: str = "lr", *flags) -> int:
     written = emit_builds(play, lines, results, toks, reviews, out_dir, allow_pending, table, commit)
     for kind, path in written.items():
         print(f"{kind}: {path.relative_to(REPO) if REPO in path.parents else path}", file=sys.stderr)
+    smoke(play, written.get("canonical") or written["review"], reports_dir)
     return 0
+
+
+def smoke(play: str, edition: Path, reports_dir: Path) -> None:
+    """The standing Schmidt check on the build just written: a report, never
+    a gate (Schmidt has his own errors; Lear passes 94.6%). Skipped, and said
+    so, without the schmidt-lexicon-workshop tables."""
+    tables = [schmidt_smoke.SCHMIDT / "citations.tsv", schmidt_smoke.SCHMIDT / "citation_quotes.tsv"]
+    if not all(t.is_file() for t in tables):
+        print(f"schmidt: {schmidt_smoke.SCHMIDT} has no citation tables; the smoke test was not run",
+              file=sys.stderr)
+        return
+    rows, sources = schmidt_smoke.run(play, edition)
+    schmidt_smoke.write(rows, sources, reports_dir, play)
+    print(f"schmidt: {schmidt_smoke.summary(rows)}", file=sys.stderr)
 
 
 if __name__ == "__main__":

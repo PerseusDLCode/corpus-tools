@@ -65,16 +65,17 @@ def main() -> None:
             p.add_argument("--scratch", metavar="DIR", help="write builds and reports under DIR instead")
     p = sub.add_parser("manifest", help="rewrite the play's rows in data/globe/witness-manifest.tsv")
     p.add_argument("play")
-    p = sub.add_parser("smoke", help="check Schmidt's Lear citations against out/globe/lr")
+    p = sub.add_parser("smoke", help="check Schmidt's citations of PLAY against out/globe/PLAY")
+    p.add_argument("play")
     p.add_argument("out_dir", nargs="?", type=Path, default=regenerate.REPO / "reports" / "globe")
     args = parser.parse_args()
 
     if args.command == "manifest":
         sys.exit(manifest.main(args.play))
     if args.command == "smoke":
-        rows, sources = schmidt_smoke.run()
-        schmidt_smoke.write(rows, sources, args.out_dir)
-        print(f"{sum(r['verdict'] in schmidt_smoke.PASS for r in rows)}/{len(rows)} pass", file=sys.stderr)
+        rows, sources = schmidt_smoke.run(args.play)
+        schmidt_smoke.write(rows, sources, args.out_dir, args.play)
+        print(schmidt_smoke.summary(rows), file=sys.stderr)
         sys.exit(0)
     flags = [f for f, on in [("--allow-pending", args.allow_pending),
                              ("--any-corpus-branch", args.any_corpus_branch)] if on]

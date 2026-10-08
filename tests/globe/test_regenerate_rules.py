@@ -113,13 +113,27 @@ def test_displaced_song_line_is_a_line():
 
 
 def test_displaced_row_in_the_same_paragraph_is_prose():
-    # Goneril's letter, p.873: "'Affectionate servant," set in, inside one <p>
-    p = etree.Element("p")
+    # Goneril's letter, p.873: "'Affectionate servant," set in, inside one <p>,
+    # in a text that marks its verse with <l>
+    body = etree.fromstring("<body><sp><l>verse</l></sp><sp><p/></sp></body>")
+    p = body.find("sp/p")
     prev = row(2.8, "'Your--wife, so I would say--", right_u=15.5)
     r = row(8.9, "'Affectionate servant,", right_u=18.1)
     prev.extra["cont"] = r.extra["cont"] = p
     assert not lineate.continues(prev, r)
     r.extra["cont"] = etree.Element("l")  # the same geometry in verse would be a shared half
+    assert lineate.continues(prev, r)
+
+
+def test_a_paragraph_says_nothing_where_the_p4_marks_no_verse():
+    # Antony I.1, p.911: "To cool a gipsy's lust." / [stage direction] /
+    # "Look, where they come:", set to follow on, one Globe line (10). The
+    # P4 has no <l> at all: the speech is one <p>, verse and all.
+    body = etree.fromstring("<body><sp><p/></sp></body>")
+    p = body.find("sp/p")
+    prev = row(0.0, "To cool a gipsy's lust.", right_u=9.9)
+    r = row(9.6, "Look, where they come:", right_u=20.9)
+    prev.extra["cont"] = r.extra["cont"] = p
     assert lineate.continues(prev, r)
 
 

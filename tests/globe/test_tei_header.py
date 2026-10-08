@@ -28,7 +28,7 @@ PIN = {"commit": "c34c2d4", "play": "shake000033"}
 
 
 def _row(kind: str) -> shared_lines.Row:
-    return shared_lines.Row(scene="1.1", page=1, kind=kind, first_half="a",
+    return shared_lines.Row(play="lr", scene="1.1", page=1, kind=kind, first_half="a",
                             second_half="b", line="", basis="image", checked="x")
 
 
@@ -128,7 +128,7 @@ def _header_tree():
 
 
 def _rewrite(root):
-    table = [shared_lines.Row("1.1", 1, "shared", "a", "b", "", "image", checked="x")]
+    table = [shared_lines.Row("lr", "1.1", 1, "shared", "a", "b", "", "image", checked="x")]
     import unittest.mock as mock
     with mock.patch("globe.tei_header.witnesses.load") as load:
         w = mock.Mock()
@@ -183,7 +183,7 @@ def test_a_line_in_the_cast_list_stops_the_build():
 
 def test_rewrite_replaces_source_desc_and_editorial_decl():
     root = _header_tree()
-    table = [shared_lines.Row("1.1", 1, "shared", "a", "b", "", "image", checked="x")]
+    table = [shared_lines.Row("lr", "1.1", 1, "shared", "a", "b", "", "image", checked="x")]
     import unittest.mock as mock
     with mock.patch("globe.tei_header.witnesses.load") as load:
         w = mock.Mock()

@@ -72,7 +72,7 @@ def test_the_proposer_reproduces_the_hand_check():
 
     text, toks, pages, lines, results = regenerate.build("lr", table=[])
     failing = [iv for r in results for iv in r.failing]
-    rows = shared_lines.propose(lines, toks, failing, shared_lines.read_folger(FOLGER))
+    rows = shared_lines.propose("lr", lines, toks, failing, shared_lines.read_folger(FOLGER))
     assert [(r.scene, r.second_half, r.folger_ids) for r in rows] == [
         ("4.2", "then shall you", "ftln-2484 ftln-2485"),
         ("4.6", "o you mighty", "ftln-2775 ftln-2776"),
@@ -89,7 +89,7 @@ def test_the_table_on_disk_closes_every_interval():
     does not close its interval is an error, not a fix."""
     from globe import regenerate
 
-    table = shared_lines.read_table()
+    table = shared_lines.for_play(shared_lines.read_table(), "lr")
     assert len(table) == 9
     assert sorted(r.kind for r in table) == (["numeral"] + ["shared"] * 6 + ["turnover"] * 2)
     *_, results = regenerate.build("lr", table)
@@ -103,7 +103,7 @@ def test_a_row_that_matches_no_junction_is_an_error():
     from globe import regenerate
 
     table = shared_lines.read_table() + [
-        Row("5.3", 878, "shared", "no such half", "nor this one", "", "image", "", "", "")]
+        Row("lr", "5.3", 878, "shared", "no such half", "nor this one", "", "image", "", "", "")]
     with pytest.raises(TableError, match="matches 0 junctions"):
         regenerate.build("lr", table)
 
@@ -113,7 +113,7 @@ def test_a_numeral_row_must_name_one_line():
     from globe import regenerate
 
     table = [r for r in shared_lines.read_table() if r.kind != "numeral"]
-    table.append(Row("1.4", 852, "numeral", "39", "30", "not a line here", "image", "", "", ""))
+    table.append(Row("lr", "1.4", 852, "numeral", "39", "30", "not a line here", "image", "", "", ""))
     with pytest.raises(TableError, match="matches 0 lines"):
         regenerate.build("lr", table)
 
@@ -161,8 +161,8 @@ def test_an_unmarked_turnover_row_folds_the_row_below_into_its_line():
 
 
 def test_pending_rows_are_those_with_an_empty_checked_column():
-    assert Row("5.3", 878, "shared", "a", "b", "", "image", "", "", "").pending
-    assert not Row("5.3", 878, "shared", "a", "b", "", "image", "", "2026-09-22 cliff", "").pending
+    assert Row("lr", "5.3", 878, "shared", "a", "b", "", "image", "", "", "").pending
+    assert not Row("lr", "5.3", 878, "shared", "a", "b", "", "image", "", "2026-09-22 cliff", "").pending
 
 
 @needs_inputs
@@ -194,17 +194,46 @@ def test_the_table_survives_a_spreadsheet_round_trip(tmp_path):
     p.write_text(
         '# doc/forum.org #lineation/shared-lines-table\t\t\t\t\t\t\t\t\t\n'
         '"# cannot show, or numeral both witnesses misread"\t\t\t\t\t\t\t\t\t\n'
-        "scene\tpage\tkind\tfirst_half\tsecond_half\tline\tbasis\tfolger_ids\tchecked\tnote\n"
-        "4.2\t868\tshared\twhat like offensive\tthen shall you\t\tfolger\tftln-1 ftln-2\t2026-09-22 cliff\tseen\n"
+        "play\tscene\tpage\tkind\tfirst_half\tsecond_half\tline\tbasis\tfolger_ids\tchecked\tnote\n"
+        "lr\t4.2\t868\tshared\twhat like offensive\tthen shall you\t\tfolger\tftln-1 ftln-2\t2026-09-22 cliff\tseen\n"
         "\t\t\t\t\t\t\t\t\t\n")
     rows = shared_lines.read_table(p)
     assert len(rows) == 1
-    assert rows[0].scene == "4.2" and rows[0].page == 868 and not rows[0].pending
+    assert rows[0].play == "lr" and rows[0].scene == "4.2" and rows[0].page == 868
+    assert not rows[0].pending
+
+
+HEADER = "play\tscene\tpage\tkind\tfirst_half\tsecond_half\tline\tbasis\tfolger_ids\tchecked\tnote\n"
+
+
+@pytest.mark.parametrize("row, message", [
+    ("oth\t1.1\t880\tshared\ta\tb\t\timage\t\t\t\n", r"row 2: play 'oth' is not in plays.tsv"),
+    ("ant\t5.3\t878\tshared\ta\tb\t\timage\t\t\t\n", r"row 2: page 878 is not one of ant's printed pages \(911-943\)"),
+])
+def test_a_row_must_name_a_play_and_one_of_its_pages(tmp_path, row, message):
+    """Rows are per play: the build applies, and the header counts, only the
+    play's own."""
+    p = tmp_path / "t.tsv"
+    p.write_text(HEADER + row)
+    with pytest.raises(TableError, match=message):
+        shared_lines.read_table(p)
+
+
+def test_only_the_plays_own_rows_are_its_junctions():
+    """The header's junction count was every row in the table."""
+    from globe import tei_header
+    rows = [Row("lr", "4.2", 868, "shared", "a", "b", "", "image", "", "x", ""),
+            Row("lr", "1.4", 852, "numeral", "39", "30", "c", "image", "", "x", ""),
+            Row("ant", "1.1", 912, "shared", "a", "b", "", "image", "", "x", ""),
+            Row("ant", "2.2", 918, "turnover", "a", "b", "", "image", "", "x", "")]
+    assert [r.page for r in shared_lines.for_play(rows, "ant")] == [912, 918]
+    assert tei_header.count_junctions(shared_lines.for_play(rows, "lr")) == 1
+    assert tei_header.count_junctions(shared_lines.for_play(rows, "ant")) == 2
 
 
 def test_a_table_without_its_header_says_so(tmp_path):
     p = tmp_path / "t.tsv"
-    p.write_text("4.2\t868\tshared\ta\tb\t\tfolger\t\t\t\n")
+    p.write_text("lr\t4.2\t868\tshared\ta\tb\t\tfolger\t\t\t\n")
     with pytest.raises(TableError, match="header lacks"):
         shared_lines.read_table(p)
 

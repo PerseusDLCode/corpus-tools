@@ -181,7 +181,7 @@ def apply_table(new, prev_last, toks, table, page: int):
 def build(play: str, table: list[shared_lines.Row] | None = None):
     entry = plays.get(play)  # data/globe/plays.tsv: P4, shell, printed pages, DraCor file
     first, last = entry.first, entry.last
-    table = shared_lines.read_table() if table is None else table
+    table = shared_lines.for_play(shared_lines.read_table() if table is None else table, play)
     text = source_text.load_p4(CORPUS / entry.p4)
     toks = tokens.tokenize(text.body)
     enc = [t.t for t in toks]
@@ -660,7 +660,7 @@ def main(play: str = "lr", *flags) -> int:
         print("refusing to write out/ or reports/ from a dirty tree (CLAUDE.md: no -DIRTY "
               "stamp); use --scratch=DIR for a development run", file=sys.stderr)
         return 1
-    table = shared_lines.read_table()
+    table = shared_lines.for_play(shared_lines.read_table(), play)
     text, toks, pages, lines, results = build(play, table)
     reports_dir = Path(scratch) / "reports" if scratch else REPO / "reports" / "globe"
     ovn, reviews, folger = write_reports(play, reports_dir, pages, lines, results, toks,

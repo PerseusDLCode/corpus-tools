@@ -61,12 +61,17 @@ P4's, or the build stops.
 | =witnesses.toml=       | where each witness's scans and OCR layers are, under =GLOBE_WITNESSES= | when a witness is added or moved |
 | =leaves-miun.tsv=, =leaves-trent.tsv= | leaf -> printed page, with the basis of each row  | reviewed; built by the workshop's =build_leaf_tables.py= |
 | =witness-offsets.tsv=  | the running-head audit's offsets per witness; the source of the leaf tables, not read by the build | as above |
-| =shared-lines.tsv=     | junctions the page cannot show, and numerals both witnesses misread, each row naming its play and one of its pages | rows proposed by the build or from the Folger; =checked= is filled by Cliff, after looking at the page image |
+| =shared-lines.tsv=     | junctions the page cannot show -- folded (=shared=, =turnover=) or cut (=separate=) -- and numerals both witnesses misread, each row naming its play and one of its pages | rows proposed by the build or from the Folger; =checked= is filled by Cliff, after looking at the page image |
 | =witness-manifest.tsv= | sha256 of every witness file the build reads, per play, and of the play's DraCor file with its commit | =globe-lineation manifest PLAY=, deliberately |
 
 *=checked= is Cliff's.* The canonical build refuses to use a
 =shared-lines.tsv= row whose =checked= is empty; the review build is
 still written (=--allow-pending= overrides, for development only).
+
+*A row is tried in each witness.* A row that does not apply in a witness
+(its words are not on that witness's lines) rules the witness out for
+the page, and the next is tried; the gate report shows it as
+=witness:table=. Only a row that applies in no witness stops the build.
 
 *The manifest pins the witnesses.* The build refuses a leaf (or leaf
 table) that is not in =witness-manifest.tsv= or whose sha256 differs.

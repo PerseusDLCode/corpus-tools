@@ -9,13 +9,19 @@ junction and the P4 does not mark it, so neither authority can decide it.
 Such lines are recorded in data/globe/shared-lines.tsv, one row per junction,
 checked on the page image before the canonical build uses them.
 
-Three kinds of row, all read by the build, two of them folding two lines
-into one:
+Four kinds of row, all read by the build: two fold two lines into one, one
+cuts one line in two, and one corrects a number:
   shared    a shared verse line, its second half undisplaceable;
   turnover  one speaker's verse line continued on a row the page sets
             flush at the margin instead of at the turnover indent, so the
             layout gives no sign that it continues (V.3 "Well thought on:
             take my sword," / "Give it the captain.");
+  separate  the opposite of those two: a row the page displaces, as if it completed the
+            line above, but which the Globe numbers as a line of its own
+            (Antony II.6 "Well;", V.2 "Sole sir o' the world,", "All
+            dead."); first_half is the first words of the line above,
+            second_half of the row. The Folger is no guide here: it joins
+            two of those three;
   numeral   a marginal number both witnesses misread.
 
 Every row names its play, and its page must be one of that play's printed
@@ -48,6 +54,7 @@ TABLE = Path(__file__).resolve().parent.parent.parent / "data/globe/shared-lines
 COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line", "basis",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
+KINDS = ("shared", "turnover", "separate", "numeral")
 
 
 class TableError(Exception):
@@ -59,7 +66,7 @@ class Row:
     play: str  # the play's id in data/globe/plays.tsv
     scene: str
     page: int
-    kind: str  # "shared" | "turnover" | "numeral"
+    kind: str  # "shared" | "turnover" | "separate" | "numeral"
     first_half: str  # shared: first words of the first half; numeral: the printed value
     second_half: str  # shared: first words of the second half; numeral: the value read
     line: str  # numeral: first words of the line the numeral sits on; shared: empty
@@ -224,7 +231,7 @@ def read_table(path: Path = TABLE) -> list[Row]:
         if r["play"] not in known:
             raise TableError(f"{path.name} row {line}: play {r['play']!r} is not in "
                              f"{plays.TABLE.name} (it has: {', '.join(known)})")
-        if r["kind"] not in ("shared", "turnover", "numeral"):
+        if r["kind"] not in KINDS:
             raise TableError(f"{path.name} row {line}: unknown kind {r['kind']!r}")
         try:
             page = int(r["page"])

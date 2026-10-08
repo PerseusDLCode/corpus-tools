@@ -58,7 +58,7 @@ class PageResult:
     joined_previous: bool  # first row continued the previous page's last line
     applied: list[tuple[int, shared_lines.Row]] = field(default_factory=list)  # (line index in page, row)
     leaf: str = ""
-    tried: list[tuple[str, int]] = field(default_factory=list)  # (witness, total count error)
+    tried: list[tuple[str, int | str]] = field(default_factory=list)  # (witness, total count error, or "table")
 
     @property
     def failing(self) -> list[dict]:
@@ -130,19 +130,75 @@ def fold(first, second) -> None:
     first.num = nums[-1] if nums else None
 
 
-def apply_table(new, prev_last, toks, table, page: int):
-    """Fold the junctions the table records (shared halves and unmarked
-    turnovers), and take its numeral readings. Returns the page's lines and
-    the rows applied.
+def row_words(rows, j: int, end: int, toks, n: int) -> tuple[str, ...]:
+    """The first `n` spoken words of a line's row `j`; `end` is the token
+    where the line ends."""
+    stop = rows[j + 1].start if j + 1 < len(rows) else end
+    return tuple(t.t for t in toks[rows[j].start:stop] if t.kind == "speech")[:n]
+
+
+def separates(first, second_rows, j: int, end: int, toks, r: shared_lines.Row) -> bool:
+    """Does `r` name the junction before row `j` of `second_rows`, in a line
+    that begins as `first` does?"""
+    want_a, want_b = tuple(r.first_half.split()), tuple(r.second_half.split())
+    return (first.div in (r.scene, "")
+            and shared_lines.line_words([first], 0, toks, len(want_a)) == want_a
+            and row_words(second_rows, j, end, toks, len(want_b)) == want_b)
+
+
+def separate_at_top(prev_last, new, toks, table, page: int):
+    """The `separate` row, if any, that keeps this page's first line, `new[0]`,
+    from continuing the previous page's last ("Sole sir o' the world," at the
+    head of Antony p.941, which the Globe numbers 120 on its own)."""
+    if prev_last is None or not new:
+        return None
+    end = new[1].start if len(new) > 1 else len(toks)
+    return next((r for r in table if r.page == page and r.kind == "separate"
+                 and separates(prev_last, new[0].rows, 0, end, toks, r)), None)
+
+
+def split(line, j: int) -> lineate.Line:
+    """Cut a line before its row `j`; the cut-off rows are a line of their own.
+    A marginal number goes with the part it sits on."""
+    second = lineate.Line(line.rows[j:], line.page)
+    line.rows = line.rows[:j]
+    for ln in (line, second):
+        nums = [r.num for r in ln.rows if r.num is not None]
+        ln.num = nums[-1] if nums else None
+    return second
+
+
+def apply_table(new, prev_last, toks, table, page: int, done=()):
+    """Split the junctions the table records as `separate`, fold those it
+    records as shared halves and unmarked turnovers, and take its numeral
+    readings. Returns the page's lines and the rows applied. Rows in `done`
+    were applied by the caller (a `separate` at the head of the page).
 
     A junction is located by the first spoken words of each half, within the
     page. A junction across a page break (the first half being the previous
     page's last line) is returned in `carry` and applied by the caller, once
     a witness has been chosen for the page, so that trying a witness never
     alters the pages already built. doc/forum.org #lineation/shared-lines-table."""
-    rows = [r for r in table if r.page == page]
+    rows = [r for r in table if r.page == page and not any(r is d for d in done)]
     applied, carry = [], None
+    # a displaced row the Globe numbers as a line of its own: the page shows
+    # it as a shared half, so the rows were joined; cut them apart first, so
+    # that the other rows find the lines the Globe has
+    for r in [r for r in rows if r.kind == "separate"]:
+        hits = []
+        for k, ln in enumerate(new):
+            end = new[k + 1].start if k + 1 < len(new) else len(toks)
+            hits += [(k, j) for j in range(1, len(ln.rows)) if separates(ln, ln.rows, j, end, toks, r)]
+        if len(hits) != 1:
+            raise shared_lines.TableError(
+                f"shared-lines.tsv: p.{page} separate {r.first_half!r} / {r.second_half!r} "
+                f"matches {len(hits)} junctions on this page, expected 1")
+        k, j = hits[0]
+        new.insert(k + 1, split(new[k], j))
+        applied.append((new[k + 1], r))
     for r in rows:
+        if r.kind == "separate":
+            continue
         if r.kind == "numeral":
             printed, read = int(r.first_half), int(r.second_half)
             want = tuple(r.line.split())
@@ -153,11 +209,10 @@ def apply_table(new, prev_last, toks, table, page: int):
                     f"shared-lines.tsv: p.{page} numeral {read} on {r.line!r} matches "
                     f"{len(hits)} lines, expected 1")
             new[hits[0]].num = printed
-            applied.append((hits[0], r))
+            applied.append((new[hits[0]], r))
             continue
         want_a, want_b = tuple(r.first_half.split()), tuple(r.second_half.split())
         seq = ([prev_last] if prev_last is not None else []) + new
-        off = 1 if prev_last is not None else 0
         hits = [k for k in range(len(seq) - 1)
                 if seq[k].div == r.scene or seq[k].div == ""
                 if shared_lines.line_words(seq, k, toks, len(want_a)) == want_a
@@ -174,8 +229,12 @@ def apply_table(new, prev_last, toks, table, page: int):
             continue
         fold(first, second)
         new.remove(second)
-        applied.append((k - off, r))
-    return new, applied, carry
+        applied.append((first, r))
+    # each row applied, by the index of its line once every row is applied:
+    # a split or a fold moves the lines after it
+    def index(ln) -> int:  # a line folded into another is found in the line that holds its rows
+        return next(i for i, x in enumerate(new) if x is ln or any(rr is ln.rows[0] for rr in x.rows))
+    return new, [(index(ln), r) for ln, r in applied], carry
 
 
 def build(play: str, table: list[shared_lines.Row] | None = None):
@@ -209,14 +268,29 @@ def build(play: str, table: list[shared_lines.Row] | None = None):
     results: list[PageResult] = []
     for p in range(first, last + 1):
         best = None
-        tried = []
+        tried, refused = [], []
         for wid, layer in ORDER:
             key = f"{wid}/{layer}"
             pg, _ = pages[(key, p)]
             new = lineate.globe_lines(pg.rows, p)
             joined = bool(new and lines and lineate.continues(lines[-1].rows[-1], new[0].rows[0]))
+            top = separate_at_top(lines[-1] if lines else None, new, toks, table, p) if joined else None
+            if top is not None:
+                joined = False
             head = new.pop(0) if joined else None
-            new, applied, carry = apply_table(new, lines[-1] if lines else None, toks, table, p)
+            try:
+                new, applied, carry = apply_table(new, lines[-1] if lines else None, toks, table, p,
+                                                  done=(top,) if top is not None else ())
+            except shared_lines.TableError as e:
+                # a row that does not apply in this witness rules the witness
+                # out for the page, not the build: Michigan pp.939-942 carry a
+                # reader's pencilled numbers and fail anyway, and Trent must
+                # still be tried with the rows (doc/globe-lineation.org)
+                refused.append(f"{key}: {e}")
+                tried.append((key, "table"))
+                continue
+            if top is not None:
+                applied.insert(0, (0, top))
             alt = {}
             for owid, olayer in ORDER:
                 okey = f"{owid}/{olayer}"
@@ -234,6 +308,8 @@ def build(play: str, table: list[shared_lines.Row] | None = None):
                 best = res
             if not res.failing:
                 break
+        if best is None:
+            raise shared_lines.TableError("; ".join(refused))
         best.tried = tried
         if best._head is not None:
             lines[-1].rows += best._head.rows
@@ -465,6 +541,11 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                     "turnover", f"shared-lines.tsv: this line continues on a row the page sets "
                                 f"flush, not at the turnover indent; it begins "
                                 f"{row.second_half!r} (basis {row.basis}{ids}, {state})")))
+            elif row.kind == "separate":
+                out.append((ln.start, emit_tei.review_comment(
+                    "separate", f"shared-lines.tsv: the page sets this row displaced, as if it "
+                                f"completed the line above, but numbers it as a line of its own "
+                                f"(basis {row.basis}{ids}, {state})")))
             else:
                 out.append((ln.start, emit_tei.review_comment(
                     "shared", f"shared-lines.tsv: this line ends with a half the page cannot show "

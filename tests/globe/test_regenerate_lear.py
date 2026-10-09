@@ -163,8 +163,8 @@ def test_the_output_is_the_p4_text_with_a_milestone_on_every_line(lear, tmp_path
 
     from globe import tei_header
     count = tei_header.count_junctions(shared_lines.for_play(shared_lines.read_table(), "lr"))
-    assert f"{tei_header._spell(count).capitalize()} junctions" in editorial_decl
-    assert f"{count} junctions" not in editorial_decl  # spelled, not a digit
+    assert f"In {tei_header._spell(count)} {'place' if count == 1 else 'places'} in this play" in " ".join(editorial_decl.split())
+    assert f"{count} places" not in editorial_decl  # spelled, not a digit
 
     pub_stmt = etree.tostring(header.find(f".//{{{TEI_NS}}}publicationStmt"), encoding="unicode")
     assert f'idno type="filename">{written["canonical"].name}<' in pub_stmt

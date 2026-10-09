@@ -60,9 +60,9 @@ def test_source_desc_cites_both_witnesses_from_the_registry_not_hardcoded():
 def test_editorial_decl_states_the_computed_junction_count_not_a_fixed_one():
     text5 = etree.tostring(tei_header.build_editorial_decl("lr", 5, PIN), encoding="unicode")
     text8 = etree.tostring(tei_header.build_editorial_decl("lr", 8, PIN), encoding="unicode")
-    assert "Five junctions" in text5
-    assert "Eight junctions" in text8
-    assert "5 junctions" not in text5 and "8 junctions" not in text8  # spelled, not a digit
+    assert "In five places in this play" in text5
+    assert "In eight places in this play" in text8
+    assert "5 places" not in text5 and "8 places" not in text8  # spelled, not a digit
 
 
 def test_editorial_decl_drops_f1_provenance_and_states_f1_is_not_carried():
@@ -202,6 +202,6 @@ def test_rewrite_replaces_source_desc_and_editorial_decl():
     assert 'idno type="CTS">urn:cts:engLit:shakespeare.lr.globe<' in pub_text
     assert "STALE-SOURCEDESC" not in source_text
     assert "old F1 provenance disclaimer" not in editorial_text
-    assert "One junctions" in editorial_text  # one shared row in the fake table, spelled out
+    assert "In one place in this play" in " ".join(editorial_text.split())  # one shared row, singular
     ps = root.findall(f"{{{TEI}}}teiHeader/{{{TEI}}}encodingDesc/{{{TEI}}}p")
     assert len(ps) == 2

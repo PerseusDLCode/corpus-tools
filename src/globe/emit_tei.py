@@ -24,9 +24,11 @@ from __future__ import annotations
 
 import hashlib
 import re
+import string
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 from lxml import etree
 
@@ -180,6 +182,18 @@ def commit_date(repo: Path) -> str:
 
 
 STAMP_PREFIX = "Globe lineation regenerated from the witness pages"
+TEMPLATE = Path(__file__).resolve().parent.parent.parent / "data/globe/edition-template.xml"
+
+
+def shell(play: str, template: Path = TEMPLATE) -> bytes:
+    """The edition's shell, made from the template and the play's facts: its
+    title (tei_header.PLAY_TITLES) and its CTS URN, which the body's @xml:base
+    carries and the header's CTS idno is read from. canonical-engLit doc/agenda.org
+    #globe/shell-template: an edition is built from sources, never from its
+    last output."""
+    text = string.Template(template.read_text(encoding="utf-8")).substitute(
+        title=escape(tei_header.PLAY_TITLES[play]), urn=f"urn:cts:engLit:shakespeare.{play}.globe")
+    return text.encode("utf-8")
 
 
 def stamp(root, tool: str, version: str, commit: str, when: str, sources: dict[str, str]) -> None:
@@ -192,9 +206,9 @@ def stamp(root, tool: str, version: str, commit: str, when: str, sources: dict[s
     rev = root.find(f"{TEI}teiHeader/{TEI}revisionDesc")
     if rev is None:
         raise ValueError("no <revisionDesc> in the header to stamp")
-    # A published edition is the shell of its next build, so an earlier
-    # regeneration stamp would otherwise pile up: this build's stamp replaces
-    # it. Older history (the 2025 conversion) is kept.
+    # A shell holding an earlier regeneration stamp (the published editions
+    # were their own next shells until #globe/shell-template) has it
+    # replaced, not added to. Older history (the 2025 conversion) is kept.
     for old in rev.findall(q("change")):
         if (old.findtext(q("ab")) or "").startswith(STAMP_PREFIX):
             rev.remove(old)
@@ -211,28 +225,35 @@ def serialize(tree) -> bytes:
     return etree.tostring(tree, xml_declaration=True, encoding="UTF-8")
 
 
-def emit(p5_path: Path, body, toks, marks, tool: str, version: str, commit: str, when: str,
+def emit(shell_xml: bytes, body, toks, marks, tool: str, version: str, commit: str, when: str,
          sources: dict[str, str], play: str, table: list,
          reviews: list[Mark] | None = None) -> bytes:
-    """The existing P5 header, its sourceDesc/publicationStmt/editorialDecl
-    rewritten, with a freshly marked body under it.
+    """The shell's header (shell()), its sourceDesc/publicationStmt/
+    encodingDesc written, with a freshly marked body under it.
 
     Review comments go in after the body is indented, so that removing them
     gives back the canonical bytes: indenting a tree that already holds them
     would leave their line breaks behind."""
     apply_marks(toks, marks)
-    parser = etree.XMLParser(load_dtd=False, resolve_entities=False, no_network=True)
-    tree = etree.parse(str(p5_path), parser)
+    parser = etree.XMLParser(load_dtd=False, resolve_entities=False, no_network=True,
+                             remove_blank_text=True)
+    tree = etree.ElementTree(etree.fromstring(shell_xml, parser))
     root = tree.getroot()
     old_body = root.find(f"{TEI}text/{TEI}body")
     if old_body is None:
-        raise ValueError(f"no <body> in {p5_path}")
+        raise ValueError("no <body> in the shell")
     xml_base = old_body.get("{http://www.w3.org/XML/1998/namespace}base")
     if xml_base:
         body.set("{http://www.w3.org/XML/1998/namespace}base", xml_base)
     old_body.getparent().replace(old_body, body)
     tei_header.rewrite(root, play, table)
     stamp(root, tool, version, commit, when, sources)
+    header = root.find(f"{TEI}teiHeader")
+    etree.indent(header, space="  ", level=1)
+    header.tail = "\n  "
+    root.text = "\n  "
+    text_el = root.find(f"{TEI}text")
+    text_el.text, text_el.tail = "\n    ", "\n"
     etree.indent(body, space="  ")
     if reviews:
         apply_marks(toks, reviews)

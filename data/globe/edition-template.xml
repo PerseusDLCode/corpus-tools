@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_drama.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>$title</title>
+        <author>William Shakespeare</author>
+        <editor>W. G. Clark</editor>
+        <editor>W. Aldis Wright</editor>
+      </titleStmt>
+      <publicationStmt/>
+      <sourceDesc/>
+    </fileDesc>
+    <encodingDesc/>
+    <profileDesc>
+      <langUsage>
+        <language ident="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change><ab>converted to TEI P5</ab></change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="eng">
+    <body xml:base="$urn"/>
+  </text>
+</TEI>

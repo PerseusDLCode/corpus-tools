@@ -174,10 +174,11 @@ def test_the_output_is_the_p4_text_with_a_milestone_on_every_line(lear, tmp_path
 
     change = header.find(f".//{{{TEI_NS}}}revisionDesc/{{{TEI_NS}}}change")
     assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", change.get("when"))
-    # the shell is pinned beside the other sources (#build/old-vs-new-from-p4)
-    shell_rel = plays.get("lr").shell
+    # the template is pinned beside the other sources; the published edition
+    # is not read (#globe/shell-template)
     stamp = "".join(change.itertext())
-    assert f"shell {shell_rel} sha256 {emit_tei.sha256(regenerate.CORPUS / shell_rel)[:16]}" in stamp
+    assert f"edition-template.xml sha256 {emit_tei.sha256(emit_tei.TEMPLATE)[:16]}" in stamp
+    assert plays.get("lr").edition not in stamp
     refs_decl = header.find(f".//{{{TEI_NS}}}refsDecl")
     assert refs_decl.find(f"{{{TEI_NS}}}citeStructure").get("match") == "/TEI/text/body"
     # every Globe line is citable through it, and the cast list is not an act

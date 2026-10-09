@@ -1,8 +1,9 @@
 """The per-play table: canonical-engLit doc/agenda.org #globe/per-play-table.
 
 data/globe/plays.tsv says where each play's inputs are, one row per play:
-the P4 source and the shell (the P5 file the build writes under), both
-relative to canonical-engLit; the play's first and last printed page in
+the P4 source and the published edition (what verify compares a build with,
+and where it is published; the build does not read it), both relative to
+canonical-engLit; the play's first and last printed page in
 the Globe; and its file in the ShakeDraCor clone, relative to that clone.
 Every script that needs one of these reads it here; none names a play's
 path or pages itself.
@@ -26,7 +27,7 @@ REPO = Path(__file__).resolve().parent.parent.parent
 TABLE = REPO / "data/globe/plays.tsv"
 DRACOR = Path(os.environ.get("SHAKEDRACOR", REPO.parent.parent / "shakedracor"))
 
-COLUMNS = ["play", "p4", "shell", "first_page", "last_page", "dracor"]
+COLUMNS = ["play", "p4", "edition", "first_page", "last_page", "dracor"]
 
 
 class PlayTableError(Exception):
@@ -37,7 +38,7 @@ class PlayTableError(Exception):
 class Play:
     id: str
     p4: str  # the P4 source, relative to canonical-engLit
-    shell: str  # the P5 file the build writes under, relative to canonical-engLit
+    edition: str  # the published edition, relative to canonical-engLit; not read by the build
     first: int  # first printed page
     last: int  # last printed page
     dracor: str  # the play's file, relative to the ShakeDraCor clone
@@ -74,7 +75,7 @@ def read(path: Path = TABLE) -> dict[str, Play]:
             raise PlayTableError(f"{path.name} row {line}: first page {first} is after last page {last}")
         if r["play"] in plays:
             raise PlayTableError(f"{path.name} row {line}: {r['play']} has a row already")
-        plays[r["play"]] = Play(r["play"], r["p4"], r["shell"], first, last, r["dracor"])
+        plays[r["play"]] = Play(r["play"], r["p4"], r["edition"], first, last, r["dracor"])
     return plays
 
 

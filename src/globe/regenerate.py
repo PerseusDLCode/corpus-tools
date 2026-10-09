@@ -239,7 +239,7 @@ def apply_table(new, prev_last, toks, table, page: int, done=()):
 
 
 def build(play: str, table: list[shared_lines.Row] | None = None):
-    entry = plays.get(play)  # data/globe/plays.tsv: P4, shell, printed pages, DraCor file
+    entry = plays.get(play)  # data/globe/plays.tsv: P4, edition, printed pages, DraCor file
     first, last = entry.first, entry.last
     table = shared_lines.for_play(shared_lines.read_table() if table is None else table, play)
     text = source_text.load_p4(CORPUS / entry.p4)
@@ -577,12 +577,13 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
     while any table row it applies is unchecked (doc/forum.org
     #lineation/shared-lines-table)."""
     entry = plays.get(play)
-    p4_path, p5_path = CORPUS / entry.p4, CORPUS / entry.shell
+    p4_path = CORPUS / entry.p4
+    shell = emit_tei.shell(play)  # the template, not the published edition: #globe/shell-template
     commit = commit or emit_tei.workshop_commit(REPO)  # main() reads it before writing reports
     when = emit_tei.commit_date(REPO)
     sources = {p4_path.name: emit_tei.sha256(p4_path)[:16],
                "shared-lines.tsv": emit_tei.sha256(shared_lines.TABLE)[:16],
-               f"shell {entry.shell}": emit_tei.sha256(p5_path)[:16]}
+               emit_tei.TEMPLATE.name: emit_tei.sha256(emit_tei.TEMPLATE)[:16]}
     applied = [row for r in results for _, row in r.applied]
     pending = [row for row in applied if row.pending]
 
@@ -591,7 +592,7 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
         fresh = tokens.tokenize(text.body)
         rows_in_order = [r for res in results for r in res.rows]
         marks = emit_tei.build_marks(lines, rows_in_order)
-        return emit_tei.emit(p5_path, text.body, fresh, marks, "regenerate.py", "0.1.0",
+        return emit_tei.emit(shell, text.body, fresh, marks, "regenerate.py", "0.1.0",
                              commit, when, sources, play, table,
                              emit_tei.review_marks(reviews) if with_reviews else None)
 
@@ -714,7 +715,7 @@ def report_folger(out: Path, lines, toks, folger: Path) -> dict:
 def corpus_branch_refusal(corpus: Path, flags) -> str | None:
     """Why the build must not run against canonical-engLit's checkout, or None.
 
-    The P4 and the shell are read from its working tree, so they change with
+    The P4 is read from its working tree, so it changes with
     whatever is checked out; every out/lr/ build before 2026-09-28 was made
     from alignment-oracles by accident (doc/agenda.org #build/old-vs-new-from-p4)."""
     if "--any-corpus-branch" in flags:
@@ -724,7 +725,7 @@ def corpus_branch_refusal(corpus: Path, flags) -> str | None:
     if branch == CORPUS_BRANCH:
         return None
     return (f"refusing to build: {corpus} has {branch or 'a detached HEAD'!s} checked out, "
-            f"not {CORPUS_BRANCH}; the P4 and the shell are read from its working tree. "
+            f"not {CORPUS_BRANCH}; the P4 is read from its working tree. "
             f"Check out {CORPUS_BRANCH}, or pass --any-corpus-branch for a development run")
 
 

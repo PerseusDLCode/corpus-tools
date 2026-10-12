@@ -37,6 +37,7 @@ PLAY_TITLES = {
     "lr": "King Lear",
     "ant": "Antony and Cleopatra",
     "tit": "Titus Andronicus",
+    "r2": "King Richard II",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -53,6 +54,9 @@ COPY_TEXT = {
     # introduction is printed 1, and 1 Henry VI's is 27 (CHOCR index 11-36,
     # printed = index - 10, read off the page numbers at 12, 18, 26, 34).
     "tit": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="1-26"),
+    # Introduction printed 278 (contents: 278), V.6 on 305; King John's
+    # introduction is 306 (CHOCR index 288-315; printed = index - 10).
+    "r2": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="278-305"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
@@ -87,7 +91,7 @@ def count_junctions(table: list[shared_lines.Row]) -> int:
     """Rows that decide where a Globe line begins -- shared, turnover and
     separate -- and not a `numeral` row, which corrects a misread marginal
     number (canonical-engLit doc/agenda.org #build/header-junctions)."""
-    return sum(1 for r in table if r.kind != "numeral")
+    return sum(1 for r in table if r.kind in shared_lines.JUNCTION_KINDS)
 
 
 def build_source_desc(play: str, catalogs: dict[str, dict]) -> etree.Element:

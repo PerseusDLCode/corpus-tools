@@ -1,0 +1,393 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+356	trent/kraken	1	25	replace	Rich.		Rich.	
+356	trent/kraken	1	25	replace	time-honor'd	time-honour'd	time-honour'd	same
+356	trent/kraken	1	54	replace	Rich.		Rich.	
+356	trent/kraken	2	1	delete		II. PERSONÆ. LORD LORD WILLOUGHBY. LORD FITZWATER. Bishop of Carlisle. of Westminster. Lord SIR STEPHEN SIR PIERCE of Captain of a band of Welshmen. to King DUCHESS OF DUCHESS OF GLOUCESTER. attending on the Lords, Heralds, Officers, Soldiers, two Gardeners, Keeper, Messenger, and other Attendants. SCENE: England and	II. PERSONÆ. LORD ROSS. LORD WILLOUGHBY. LORD FITZWATER. Bishop of Carlisle. Abbot of Westminster. Lord Marshal. SIR STEPHEN SCROOP. SIR PIERCE of Exton. Captain of a band of Welshmen. QUEEN to King Richard. DUCHESS OF YORK. DUCHESS OF GLOUCESTER. Lady attending on the Queen. Lords. Heralds, Officers, Soldiers, two Gardeners, Keeper, Messenger, Groom, and other Attendants. SCENE: England and Wales.	
+356	trent/kraken	2	46	replace	clamor	clamour	clamour	same
+356	trent/kraken	2	50	replace	no right	nought	nought	same
+357	miun/kraken	1	15	replace	honor's	honour’s	honour’s	same
+357	miun/kraken	1	23	delete		I	I	same
+357	miun/kraken	1	33	replace	lending	lendings	lendings	same
+357	miun/kraken	1	41	replace	Mowbray	Mowbrax	Mowbray	
+357	miun/kraken	1	44	replace	this	his	his	same
+357	miun/kraken	1	46	delete		I01		
+357	miun/kraken	1	66	replace	neighbor	neighbour	neighbour	same
+357	miun/kraken	1	67	delete		z2o		
+357	miun/kraken	2	16	replace	honorable	honourable	honourable	same
+357	miun/kraken	2	23	replace	rancor	rancour	rancour	same
+357	miun/kraken	2	24	replace	recreant and	recreant:and	recreant and	
+357	miun/kraken	2	40	replace	We'll	We’h	We ’ll	
+357	miun/kraken	2	40	replace	son.	som	son.	
+357	miun/kraken	2	55	replace	dishonor's use	dishonour’suse	dishonour’s use	
+357	miun/kraken	2	56	replace	baffled	haffled	baffled	
+357	miun/kraken	2	62	replace	take	tale	take	
+357	miun/kraken	2	68	replace	ten-times-barr'd-up	ten-times-barr' d-up	ten-times-barr’d-up	
+358	miun/kraken	1	1	replace	honor	honour	honour	same
+358	miun/kraken	1	2	replace	honor	honour	honour	same
+358	miun/kraken	1	3	replace	honor	honour	honour	same
+358	miun/kraken	1	12	replace	honor	honour	honour	same
+358	miun/kraken	1	16	replace	harbor,	harbour,	harbour,	same
+358	miun/kraken	1	17	replace	[Exit	IExit	IExit	same
+358	miun/kraken	1	23	delete		z0o		
+358	miun/kraken	1	29	replace	DUKE	DUxE	DUKE	
+358	miun/kraken	1	29	replace	palace.		Balace.	
+358	miun/kraken	1	30	replace	with	wvith	with	
+358	miun/kraken	2	47	replace	office,	offices,	offices,	same
+358	miun/kraken	2	54	replace	[Exeunt.	LE xeunt.	IExeunt.	
+358	miun/kraken	2	56	replace	DUKE OF	DUxE OE	DUxE Or	
+359	miun/kraken	1	2	replace	BAGOT,GREEN,		BAGOT, GREEN,	
+359	miun/kraken	1	3	replace	set,enter MOWBRAY	set, enter BRAY	set, enter Mow¬ BRAY	
+359	miun/kraken	1	16	replace	valor!	valour!	valour	
+359	miun/kraken	1	28	replace	BOLINGBROKE,appellant,	BOLINGBRORE, appellant,	BOLINGBROnE, appellant,	
+359	miun/kraken	1	29	replace	armor,	armour,	armour, zith	
+359	miun/kraken	1	44	replace	valor,	valour,	valour,	same
+359	miun/kraken	1	47	replace	in	of	of	same
+359	miun/kraken	2	13	replace	youthful	vouthful	youthful	
+359	miun/kraken	2	14	replace	vigor	vigour	vigour	same
+359	miun/kraken	2	16	replace	armor	armour	armour	same
+359	miun/kraken	2	20	replace	havior	haviour	haviour	same
+359	miun/kraken	2	44	replace	valor	valour	valour	same
+359	miun/kraken	2	69	replace	[A	IA	(A	
+360	miun/kraken	1	1	replace	has	hath	hath	same
+360	miun/kraken	1	7	replace	[A	IA	LA	
+360	miun/kraken	1	14	replace	neighbors'	neighbours	neighbours'	
+360	miun/kraken	1	24	replace	harsh resounding	harsh-resounding	harsh-resounding	same
+360	miun/kraken	1	30	replace	enriched	enrich’d	enrich’d	same
+360	miun/kraken	1	31	replace	regret	regreet	regreet	same
+360	miun/kraken	1	41	replace	Thy	he	The	
+360	miun/kraken	1	50	replace	your	vour	your	
+360	miun/kraken	1	51	replace	learned	learn’d	learn’d	same
+360	miun/kraken	1	52	delete		must	must	same
+360	miun/kraken	2	25	replace	fly	fiy	fly	
+360	miun/kraken	2	27	replace	burden	burthen	burthen	same
+360	miun/kraken	2	35	replace	[Exit.	IE xit.	IExit.	
+361	miun/kraken	1	8	replace	destroyed.	destroy’d.	destroy’d.	same
+361	miun/kraken	1	27	replace	dolor	dolour	dolour	same
+361	miun/kraken	1	34	replace	takes	takest	takest	same
+361	miun/kraken	1	53	replace	heavier sit,	heaviersit,	heavier sit,	
+361	miun/kraken	1	55	replace	honor	honour	honour	same
+361	miun/kraken	2	9	replace	it	he	he	same
+361	miun/kraken	2	10	replace	I'll	I’Il	I’ll	
+361	miun/kraken	2	18	replace	[Exeunt.	LExeunt.	LE xeunt.	
+361	miun/kraken	2	55	replace	craftsmen	crastsmen	craftsmen	
+361	miun/kraken	2	61	replace	'Thanks,	“Thanles,	“Thanks,	
+362	miun/kraken	1	1	replace	yield	vield	yield	
+362	miun/kraken	1	20	replace	post	pest	post	
+362	miun/kraken	1	31	delete		IE xeunt.	(Exeunt.	
+362	miun/kraken	1	34	replace	sick,	sicke,	Sick, wvith	
+362	miun/kraken	1	34	replace	DUKE OF	DUrE Or	DuxE on	
+362	miun/kraken	1	39	replace	York.		York.	
+362	miun/kraken	1	40	replace	your	vour	your	
+362	miun/kraken	1	49	replace	listen'd	listen d	listen'd	
+362	miun/kraken	1	52	replace	mark'd	marke'd	mark’d	
+362	miun/kraken	1	59	replace	York.		York.	
+362	miun/kraken	2	44	replace	blot	blots	inley blots	
+362	miun/kraken	2	52	replace	York.		Vork.	
+362	miun/kraken	2	53	replace	youth;	vouth;	youth;	
+362	miun/kraken	2	54	replace	raged	fraged	traged	
+363	trent/kraken	1	1	replace	naught	nought	nought	same
+363	trent/kraken	1	33	replace	posess'd	possess’d	possess’d	same
+363	trent/kraken	1	65	replace	honor	honour	honour	same
+363	trent/kraken	1	66	replace	[Exit,	IE xit,	[Exit,	
+363	trent/kraken	2	1	replace	York.		Vork.	
+363	trent/kraken	2	16	replace	York.		Vork.	
+363	trent/kraken	2	27	replace	sieze	seize	seize tous	
+363	trent/kraken	2	28	replace	moveable,	moveables,	moveables,	same
+363	trent/kraken	2	29	replace	posess'd. York.	possess’d.	possess’d. Vork.	
+363	trent/kraken	2	38	replace	not	nor	nor	same
+363	trent/kraken	2	40	replace	wrinkle	wrinlle	wrinkle	
+363	trent/kraken	2	42	replace	my	thy	thy	same
+363	trent/kraken	2	50	delete		1Co		
+363	trent/kraken	2	57	replace	York.		Vork.	
+364	miun/kraken	1	11	replace	honor	honour	honour	same
+364	miun/kraken	1	15	replace	York.		Vork.	
+364	miun/kraken	1	19	replace	[Exit.	LExit.	[Exit.	
+364	miun/kraken	1	24	replace	and 'tis	and'tis	and ’tis	
+364	miun/kraken	1	30	replace	[Flourish.	FFlourish.	FFlourish.	same
+364	miun/kraken	1	31	replace	Bushy,	Breshy,	Bushy,	
+364	miun/kraken	1	35	replace	revenues.	revenue.	revenue.	same
+364	miun/kraken	1	56	replace	'gaint	'gainst	’gainst	
+364	miun/kraken	1	61	replace	And	tAnd	tAnd	same
+364	miun/kraken	1	65	replace	benevolence,	benevolences,	benevolences,	same
+364	miun/kraken	1	65	delete		2so		
+364	miun/kraken	1	69	replace	yielded	vielded	yielded	
+364	miun/kraken	2	11	replace	taxation	taxations	taxations	same
+364	miun/kraken	2	14	replace	king	kzing!	king!	
+364	miun/kraken	2	27	replace	Willo.	W'illa.	Willo.	
+364	miun/kraken	2	38	replace	Duke	Duire	Duke	
+364	miun/kraken	2	39	replace	Sir Thomas,	His brother,	His brother,	same
+364	miun/kraken	2	60	replace	[Exeunt.	LExeunt.	(Exeunt.	
+364	miun/kraken	2	63	replace	Bushy.		Bushy.	
+365	miun/kraken	1	36	replace	had	hath	hath	same
+365	miun/kraken	2	16	replace	YORK.	YORR.	YoRk.	
+365	miun/kraken	2	21	replace	York.		Vork.	
+365	miun/kraken	2	34	replace	York.		Vork.	
+365	miun/kraken	2	47	replace	York.		Vork.	
+365	miun/kraken	2	47	replace	is 't,	is’t,	is’t,	same
+365	miun/kraken	2	50	replace	York.		Vork.	
+365	miun/kraken	2	55	replace	dispatched	dispatch'd	dispatch’d	
+365	miun/kraken	2	60	replace	armor	armour	armour	same
+365	miun/kraken	2	61	replace	[Exit	LExit	[Exit	
+365	miun/kraken	2	63	replace	If	IIf	If	
+366	miun/kraken	1	3	replace	I'll	I’Il	I’Il	same
+366	miun/kraken	1	10	replace	York	Vork	Vork	same
+366	miun/kraken	1	47	replace	[Exeunt.	IExeunt.	IExeunt.	same
+366	miun/kraken	1	49	replace	BOLINGBROKE	BOLINGBRORE	BOLINGBROKE	
+366	miun/kraken	1	50	replace	with	vith	wvith	
+366	miun/kraken	1	65	replace	sweetened	swectened	sweetened	
+366	miun/kraken	1	66	replace	benefit which	bencsit whielr	benefit which	
+366	miun/kraken	1	67	replace	little	littie	little	
+366	miun/kraken	2	36	replace	you	vou	you ne	
+366	miun/kraken	2	48	delete		c		
+366	miun/kraken	2	66	replace	labor's	labour's	labour’s	
+367	miun/kraken	1	3	replace	labor	labour	eur labour	
+367	miun/kraken	1	19	replace	honor	honour	honour	same
+367	miun/kraken	1	30	replace	York.		Vork.	
+367	miun/kraken	1	34	replace	York.		Vork.	
+367	miun/kraken	1	36	replace	I am	Iam	tam	
+367	miun/kraken	1	38	delete		oo		
+367	miun/kraken	1	49	delete		roo	roo	same
+367	miun/kraken	1	59	replace	York.		Vork.	
+367	miun/kraken	1	63	replace	against thy	against'thy	against thy	
+367	miun/kraken	1	67	replace	your	vour	your	
+367	miun/kraken	2	20	delete		my	my	same
+367	miun/kraken	2	28	replace	York.		Vork.	
+367	miun/kraken	2	30	replace	labor'd	laboured	laboured	same
+367	miun/kraken	2	34	replace	to	do	do	same
+367	miun/kraken	2	36	replace	North.		North.	
+367	miun/kraken	2	41	replace	York.		York.	
+367	miun/kraken	2	54	replace	Gagot		Bagot	
+367	miun/kraken	2	57	replace	York.		Vork.	
+367	miun/kraken	2	58	replace	I'll	I’Il	I’Il	same
+367	miun/kraken	2	62	replace	[Exeunt.	IExeunt.	LExeunt.	
+367	miun/kraken	2	63	replace	camp	cams	camp	
+368	trent/kraken	1	24	replace	[Exit.	IExit.	IExit.	same
+368	trent/kraken	1	27	replace	NORTHUMBERLAND,	NORTHUMBER¬ LAND,	NORTHUMBER¬ LAND,	same
+368	trent/kraken	1	28	replace	with	wvILA	WILLOUGHRY, avith	
+368	trent/kraken	2	7	replace	with	avith	vith	
+368	trent/kraken	2	12	replace	York.		Vorke.	
+368	trent/kraken	2	16	replace	complies:	complices	complices:	
+368	trent/kraken	2	20	replace	flourish	Hourish	flourish	
+368	trent/kraken	2	20	replace	colors.	colours.	colours.	same
+368	trent/kraken	2	21	replace	and	the	the	same
+368	trent/kraken	2	37	replace	favors	favours	favours	same
+368	trent/kraken	2	43	replace	ursuping	usurping	usurping	same
+368	trent/kraken	2	58	replace	refuse,	resuse,	refuse,	
+368	trent/kraken	2	59	replace	succor	succour	succour	same
+369	miun/kraken	1	5	replace	terrestrial	terrestriai	terrestrial	
+369	miun/kraken	1	18	replace	self-affrighed	self-affrighted	self-affrighted	same
+369	miun/kraken	1	29	replace	Enter	Entez	Enter	
+369	miun/kraken	1	33	replace	weak	wealz	weak	
+369	miun/kraken	1	61	replace	favorites	favourites	favourites	same
+369	miun/kraken	2	9	replace	We'll	We ’Il	We ’Il	same
+369	miun/kraken	2	14	replace	Scroop.		Scroop.	
+369	miun/kraken	2	26	replace	Against	Agamst	Against	
+369	miun/kraken	2	28	replace	unwieldy	unwieldly	unwieldy	
+369	miun/kraken	2	31	replace	distaff women	distaff-women	distaff-women	same
+369	miun/kraken	2	43	replace	Scroop.		Scroop.	
+369	miun/kraken	2	63	replace	Scroop.		Scroop.	
+370	miun/kraken	1	25	replace	humor'd	humour'd	humour’d	
+370	miun/kraken	1	32	delete		t	4	
+370	miun/kraken	1	61	replace	joined	join'd	join’d	
+370	miun/kraken	1	62	replace	yielded	vielded	yielded	
+370	miun/kraken	1	67	replace	[To Aumerle.	ITo	UTo Aumerle.	
+370	miun/kraken	2	3	replace	I'll	I’’Il	I’Il	
+370	miun/kraken	2	14	replace	[Exeunt.	IExeunt.	LExeunt.	
+370	miun/kraken	2	16	replace	with	vith	with	
+370	miun/kraken	2	16	replace	colors,	colours,	colours, BOLINGBRORE,	
+370	miun/kraken	2	26	replace	York.		Vork.	
+370	miun/kraken	2	32	replace	York.	Vorḱ.	Vork.	
+370	miun/kraken	2	32	replace	bath	hath	hath	same
+370	miun/kraken	2	38	replace	York.		Vork.	
+370	miun/kraken	2	46	delete		is	is	same
+371	miun/kraken	1	4	replace	I'll	I’Il	I’Il	same
+371	miun/kraken	1	21	replace	slumbering	thundering	thundering	same
+371	miun/kraken	1	23	replace	I'll	I’Il	I’Il	same
+371	miun/kraken	1	23	replace	yielding	vielding	yielding	
+371	miun/kraken	1	24	delete		the	the	same
+371	miun/kraken	1	27	replace	answer	ansaver	answer voithin.	
+371	miun/kraken	1	28	replace	flourish.	Mlourish.	Mlourish.	same
+371	miun/kraken	1	28	replace	walls,	valls,	voalls,	
+371	miun/kraken	1	37	replace	York.		Vork.	
+371	miun/kraken	1	45	replace	[To	ITo	(To	
+371	miun/kraken	2	10	replace	honorable	honourable	honourable	same
+371	miun/kraken	2	15	replace	honor	honour	honour	same
+371	miun/kraken	2	30	replace	accomplished	accomplish’d	accomplish’d	same
+371	miun/kraken	2	34	replace	[To	ITo	To	
+371	miun/kraken	2	47	replace	in	is	is	same
+371	miun/kraken	2	50	replace	I'll	I’Il	I’Il	same
+371	miun/kraken	2	60	replace	I'll	L'll	I’ll	
+372	miun/kraken	1	5	replace	We'll	We 'Il	We ’Il	
+372	miun/kraken	1	29	replace	king	kings	kings	same
+372	miun/kraken	1	40	replace	attendant	attendants	attendants belowv.	
+372	miun/kraken	1	43	replace	[He kneels down.	HHe Rneels dowmn.	(He kneels dowm.	
+372	miun/kraken	1	47	replace	kising	kissing	kissing	same
+372	miun/kraken	1	51	replace	knee	lenee	knee	
+372	miun/kraken	1	58	replace	your	vour	your	
+372	miun/kraken	1	61	replace	strongest	strong st	strong’st	
+372	miun/kraken	1	66	replace	I'll	I’Il	I’Il	same
+372	miun/kraken	2	4	replace	[Flourish.	FFlourish.	(Flourish.	
+372	miun/kraken	2	5	replace	YORK's	YORR'S	YORR'S ganden.	
+372	miun/kraken	2	7	replace	two	tavo	tavo	same
+372	miun/kraken	2	8	replace	devie	devise	devise	same
+372	miun/kraken	2	14	replace	rubs	runs	runs	same
+372	miun/kraken	2	15	replace	we'll	we’Il	we’ll	
+372	miun/kraken	2	19	replace	we'll	we ’Il	we’ll	
+372	miun/kraken	2	29	replace	I'll	I’Il	I’Il	same
+372	miun/kraken	2	42	replace	They'll	They ’Il	They’Il tall	
+372	miun/kraken	2	61	replace	upturned,	unpruned,	unpruned,	same
+373	miun/kraken	1	1	replace	disorderly	disorder'd	disorder’d	
+373	miun/kraken	1	22	replace	Serv.	SServ.	Serv.	
+373	miun/kraken	1	24	replace	he's	he is	he is	same
+373	miun/kraken	1	28	replace	pressed	press’d	press’d	same
+373	miun/kraken	1	29	replace	[Coming	IComing	(Coming forioant.	
+373	miun/kraken	1	37	replace	downfall?	downfal?	downfal?	same
+373	miun/kraken	1	49	delete		9o		
+373	miun/kraken	1	62	replace	[Exeunt	UExeunt	IE xveunt	
+373	miun/kraken	1	68	replace	ruth,	ruch,	ruth,	
+373	miun/kraken	1	69	replace	weeping queen. [Exeunt.	weepingqueen. LExeunt.	weeping queen. IExeunt.	
+373	miun/kraken	2	3	replace	BOLINGBROKE,	BOLINGBRORE,	BoLINGBRORE,	
+373	miun/kraken	2	4	replace	FITZWATER,	WATER,	FITZ¬ WATER,	
+373	miun/kraken	2	19	replace	deliver'd.	deliver' d.	deliver'd.	
+373	miun/kraken	2	23	replace	reaches	reacheth	reacheth	same
+373	miun/kraken	2	31	replace	Aum.		Aum.	
+373	miun/kraken	2	33	replace	dishonor	dishonour	dishonour	same
+373	miun/kraken	2	35	replace	honor	honour	honour	same
+373	miun/kraken	2	43	delete		o		
+373	miun/kraken	2	46	replace	valor	valour	valour	same
+373	miun/kraken	2	50	replace	spakest it,	spakestit,	spakestit,	same
+373	miun/kraken	2	55	replace	Aum.		Aum.	
+373	miun/kraken	2	61	replace	honor	honour	honour	same
+373	miun/kraken	2	61	replace	as true	astrue	as true	
+374	miun/kraken	1	6	replace	honor's	honour’s	honour's	
+374	miun/kraken	1	8	replace	I'll	I’Il	I’Il	same
+374	miun/kraken	1	19	replace	Fitz.		Fitz.	
+374	miun/kraken	1	19	replace	list.	liest.	liest.	same
+374	miun/kraken	1	20	replace	Dishonorable	Dishonourable	Dishonourable	same
+374	miun/kraken	1	25	replace	honor's	honour’s	honour's	
+374	miun/kraken	1	34	replace	I	L	I	
+374	miun/kraken	1	42	replace	honor.	honour.	honour.	same
+374	miun/kraken	1	49	replace	honorable	honourable	honourable	same
+374	miun/kraken	1	58	replace	colors	colours	colours	same
+374	miun/kraken	1	66	replace	YORK.	YoRx,	YORK,	
+374	miun/kraken	1	67	replace	York.		Vork.	
+374	miun/kraken	2	7	replace	I'll	I’Il	I’Il	same
+374	miun/kraken	2	57	replace	York.		Vork.	
+374	miun/kraken	2	58	delete		are	are	same
+374	miun/kraken	2	63	replace	YORK,	YORR,	YORK, vvith	
+375	miun/kraken	1	3	replace	favors	favours	favours	same
+375	miun/kraken	1	13	replace	York.		Vork.	
+375	miun/kraken	1	29	replace	crown	crovn	crown	
+375	miun/kraken	1	49	replace	unwieldy	unwieldly	unwieldy	
+375	miun/kraken	1	66	replace	sunhine	sunshine	sunshine	same
+375	miun/kraken	2	33	replace	North.		North.	
+375	miun/kraken	2	38	replace	But 'tis	But’tis	But ’tis	
+375	miun/kraken	2	40	replace	myrelf!	myself!	myself	
+375	miun/kraken	2	50	replace	[Exit	IExit	IE vit	
+375	miun/kraken	2	51	replace	thi	this	this	same
+375	miun/kraken	2	54	delete		o		
+375	miun/kraken	2	59	replace	I'll	I'Il	I’ll	
+376	trent/kraken	1	26	replace	I'll	I’Il	I’Il	same
+376	trent/kraken	1	32	delete		a	a	same
+376	trent/kraken	1	48	replace	[Exeunt	LE xeunt	LE xeunt	same
+376	trent/kraken	1	53	replace	[Exeunt	LExeunt	[Exeunt	
+376	trent/kraken	1	54	replace	Westminsler	W’estminster,	Westminster, und	
+376	trent/kraken	1	54	replace	Aumerle.		Westminster, und Aumerle.	
+376	trent/kraken	1	68	replace	I'll	I ’Il	I ’Il	same
+376	trent/kraken	2	1	replace	ACT V	ACTV.	IExeunt. ACTV.	
+376	trent/kraken	2	7	replace	Caesar's	Cæsar's	Cæsar's	same
+376	trent/kraken	2	18	replace	honor,	honour,	honour,	same
+376	trent/kraken	2	20	replace	hard-favor'd	hard-favour’d	hard-favour'd	
+376	trent/kraken	2	29	replace	Will	WilT	Will	
+376	trent/kraken	2	52	replace	folks	folles	folks	
+377	miun/kraken	1	24	replace	marriage, 'twixt	marriage,'twixt	marriage, ’twixt	
+377	miun/kraken	1	63	replace	[Exeunt.	LExeunt.	LExeunt.	same
+377	miun/kraken	1	64	replace	DUKE	DURE	DURE	same
+377	miun/kraken	1	64	replace	YORK'S palace.	YORR'S	YORE'S palace.	
+377	miun/kraken	1	65	replace	YORK	YORX	Yorx	
+377	miun/kraken	2	3	replace	York.	Vorḱ.	Vork.	
+377	miun/kraken	2	7	replace	York.		Vork.	
+377	miun/kraken	2	15	replace	young	voung	young	
+377	miun/kraken	2	22	replace	you,	vou,	you,	
+377	miun/kraken	2	26	replace	York.		Vork.	
+377	miun/kraken	2	40	replace	itelf	itself	itself	same
+377	miun/kraken	2	44	replace	honor	honour	honour	same
+377	miun/kraken	2	46	replace	York.	Vorḱ.	Fork.	
+377	miun/kraken	2	50	replace	new-made	new made	new made	same
+377	miun/kraken	2	58	replace	York.		York.	
+377	miun/kraken	2	64	replace	York.		Vork.	
+377	miun/kraken	2	66	replace	York.		Vork.	
+378	miun/kraken	1	2	replace	York.		York.	
+378	miun/kraken	1	7	replace	York.		Vork.	
+378	miun/kraken	1	14	replace	York.		Vork.	
+378	miun/kraken	1	20	replace	York.		Vorke.	
+378	miun/kraken	1	21	replace	[He plucks	HHe pluckes	HHe plucks	
+378	miun/kraken	1	24	replace	York.	Vorḱ.	York.	
+378	miun/kraken	1	29	replace	York.		Vork.	
+378	miun/kraken	1	31	replace	honor,	honour,	honour,	same
+378	miun/kraken	1	34	replace	York.		Vork.	
+378	miun/kraken	1	41	replace	York.		York.	
+378	miun/kraken	1	43	replace	with	vith	vith	same
+378	miun/kraken	1	47	replace	York.		York.	
+378	miun/kraken	1	50	delete		o0		
+378	miun/kraken	1	55	replace	York.		Vork.	
+378	miun/kraken	1	61	replace	We'll	We 'Il	We ’Il	
+378	miun/kraken	1	62	replace	York.		York.	
+378	miun/kraken	2	7	replace	York.		York.	
+378	miun/kraken	2	13	replace	I'll	I’Il	I’Il	same
+378	miun/kraken	2	17	replace	[Exeunt.	LExeunt.	[E xeunt.	
+378	miun/kraken	2	19	replace	BOLINGBROKE,	BOLINGBRORE,	BoLiNGBRoKE,	
+378	miun/kraken	2	23	replace	hangs	hang	hang	same
+378	miun/kraken	2	31	replace	honor	honour	honour	same
+378	miun/kraken	2	40	replace	favor;	favour;	favour;	same
+379	miun/kraken	1	3	replace	York. [Within]	[Withinl	Vork. [Withinl	
+379	miun/kraken	1	6	replace	I'll	I’Il	I’Il	same
+379	miun/kraken	1	10	replace	York.		Vork. [Withinl	
+379	miun/kraken	1	14	replace	YORK.	YORR.	YoRK.	
+379	miun/kraken	1	18	replace	York.		Vork.	
+379	miun/kraken	1	23	replace	there;	thare;	there;	
+379	miun/kraken	1	25	replace	York.		Vork.	
+379	miun/kraken	1	40	replace	digresing	digressing	digressing	same
+379	miun/kraken	1	41	replace	York.		Vork.	
+379	miun/kraken	1	42	replace	honor	honour	honour	same
+379	miun/kraken	1	44	replace	honor	honour	honour	same
+379	miun/kraken	1	45	replace	dishonor	dishonour	dishonour	same
+379	miun/kraken	1	47	replace	man's	man ’s	man’s	
+379	miun/kraken	1	48	replace	Y. [Within]	IWithin]	[Withinl	
+379	miun/kraken	1	55	replace	begger	beggar	beggar	same
+379	miun/kraken	1	60	replace	York.		Vork.	
+379	miun/kraken	2	1	replace	York.		Vork.	
+379	miun/kraken	2	8	replace	walk	wallz	walk	
+379	miun/kraken	2	14	replace	York.		Vork.	
+379	miun/kraken	2	39	replace	York.		Vork.	
+379	miun/kraken	2	68	replace	where'er	where’ er	where’er	
+380	miun/kraken	1	5	replace	[Exeunt.	IExeunt.	(Exeunt.	
+380	miun/kraken	1	12	replace	Serv.		Ser.	
+380	miun/kraken	1	19	replace	And	As	As	same
+380	miun/kraken	1	23	replace	[Exeunt.	LExeunt.	LE veunt.	
+380	miun/kraken	1	31	replace	I'll	I’Il	I’Il	same
+380	miun/kraken	1	32	replace	I'll	I’Il	I'Il	
+380	miun/kraken	1	36	replace	humors	humours	humours	same
+380	miun/kraken	1	59	replace	with	wish	wish	same
+380	miun/kraken	1	63	replace	Think	Thinle	Think	
+380	miun/kraken	1	63	replace	unking'd	unking d	unking’d	
+380	miun/kraken	2	26	replace	round	sound	sound	same
+381	miun/kraken	1	7	replace	[Exit. Keep.	LExit.	[Exit. Keep.	
+381	miun/kraken	1	17	replace	[Beats	[Beais	(Beats	
+381	miun/kraken	1	17	replace	keeper. Keep.	heeper.	Kecper. Kecg.	
+381	miun/kraken	1	24	replace	[Snatching	ISnatching	[natching	
+381	miun/kraken	1	25	replace	killing	Filling	hilling	
+381	miun/kraken	1	27	replace	[He	HHe	He	
+381	miun/kraken	1	27	replace	strikes	striles	Ea ton strikes	
+381	miun/kraken	1	37	replace	valor	valour	valour	same
+381	miun/kraken	1	42	replace	I'll	I’Il	I’Il	same
+381	miun/kraken	1	44	replace	[Exeunt.	IExeunt.	WExeunt.	
+381	miun/kraken	1	46	replace	BOLINGBROKE,	BOLINGBRORE,	BoLINGBRORE, YORE,	
+381	miun/kraken	2	23	replace	kingly doom	kingly-doom	kingly doom	
+381	miun/kraken	2	30	replace	honor	honour	honour	same
+381	miun/kraken	2	41	replace	your	vour	your	
+381	miun/kraken	2	47	replace	labor,	labour,	labour,	same
+381	miun/kraken	2	48	replace	favor:	favour:	favour	
+381	miun/kraken	2	49	replace	through	thorough	thorough	same
+381	miun/kraken	2	55	replace	I'll	I'Il	I’ll	
+381	miun/kraken	2	56	delete		so	so	same

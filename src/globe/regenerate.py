@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import bisect
 import csv
+import re
 import subprocess
 import sys
 from dataclasses import dataclass, field
@@ -110,7 +111,8 @@ def number_page(lines, toks, state: NumberState, page: int, witness: str, carrie
         base, base_n = (0, 0) if st.last_num is None else (st.last_num, st.last_num_n)
         frm = "scene start" if st.last_num is None else f"{st.last_num} (p.{st.last_num_page})"
         reading = ""
-        if (n - base_n) != (num - base) and alt and ln is not None and ln.start in alt:
+        if ((n - base_n) != (num - base) and alt and ln is not None and ln.lacuna_at is None
+                and ln.start in alt):
             other_w, other = alt[ln.start]
             if other != num and (n - base_n) == (other - base):
                 reading = f"{witness} read {num}; {other_w} read {other}"
@@ -169,7 +171,44 @@ def split(line, j: int) -> lineate.Line:
     return second
 
 
-def apply_table(new, prev_last, toks, table, page: int, done=()):
+LETTER = re.compile(r"[A-Za-z]")
+
+
+def lacuna_line(new, toks, page: int, page_rows_, r: shared_lines.Row):
+    """(index, line) for a `lacuna` row: the line after the one whose first
+    words are r.first_half, made of the page's one row between the two that
+    carries no letters (". ." beside its numeral), and starting where the next
+    line does. The P4 must have a wordless <l> there too (doc/forum.org
+    #lineation/shared-lines-table): the page and the P4 must agree."""
+    want = tuple(r.first_half.split())
+    hits = [k for k in range(len(new) - 1) if shared_lines.line_words(new, k, toks, len(want)) == want]
+    if len(hits) != 1:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} lacuna after {r.first_half!r} matches {len(hits)} lines "
+            f"with a line after them on this page, expected 1")
+    k = hits[0]
+    above, below = new[k], new[k + 1]
+    order = {id(x): i for i, x in enumerate(page_rows_)}
+    lo, hi = order.get(id(above.rows[-1])), order.get(id(below.rows[0]))
+    between = [] if lo is None or hi is None else [
+        x for x in page_rows_[lo + 1:hi] if not LETTER.search(x.text)]
+    if len(between) != 1:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} lacuna after {r.first_half!r}: {len(between)} rows "
+            f"without letters between it and the next line, expected 1")
+    if emit_tei.wordless_l_before(toks, below.start) is None:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} lacuna after {r.first_half!r}: the P4 has no wordless "
+            f"<l> before the next line")
+    dots = between[0]
+    return k + 1, lineate.Line([dots], page, num=dots.num, lacuna_at=below.start)
+
+
+def new_index_of_lacuna(new) -> int:
+    return max(i for i, ln in enumerate(new) if ln.lacuna_at is not None)
+
+
+def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
     """Split the junctions the table records as `separate`, fold those it
     records as shared halves and unmarked turnovers, and take its numeral
     readings. Returns the page's lines and the rows applied. Rows in `done`
@@ -197,8 +236,28 @@ def apply_table(new, prev_last, toks, table, page: int, done=()):
         k, j = hits[0]
         new.insert(k + 1, split(new[k], j))
         applied.append((new[k + 1], r))
+    # a line the page prints without words (the Globe's row of dots): it is
+    # no row of speech, so it was never a line; insert it after the named line
+    for r in [r for r in rows if r.kind == "lacuna"]:
+        new.insert(*lacuna_line(new, toks, page, page_rows_, r))
+        applied.append((new[new_index_of_lacuna(new)], r))
     for r in rows:
-        if r.kind == "separate":
+        if r.kind in ("separate", "lacuna"):
+            continue
+        if r.kind == "misplaced":
+            printed = int(r.first_half)
+            beside, owner = tuple(r.second_half.split()), tuple(r.line.split())
+            on = [k for k, ln in enumerate(new)
+                  if ln.num == printed and shared_lines.line_words(new, k, toks, len(beside)) == beside]
+            to = [k for k, ln in enumerate(new)
+                  if shared_lines.line_words(new, k, toks, len(owner)) == owner]
+            if len(on) != 1 or len(to) != 1 or abs(on[0] - to[0]) != 1:
+                raise shared_lines.TableError(
+                    f"shared-lines.tsv: p.{page} misplaced {printed} beside {r.second_half!r}, "
+                    f"numbering {r.line!r}: matches {len(on)} and {len(to)} lines, expected one "
+                    f"each, next to each other")
+            new[to[0]].num, new[on[0]].num = printed, None
+            applied.append((new[to[0]], r))
             continue
         if r.kind == "numeral":
             printed, read = int(r.first_half), int(r.second_half)
@@ -281,7 +340,8 @@ def build(play: str, table: list[shared_lines.Row] | None = None):
             head = new.pop(0) if joined else None
             try:
                 new, applied, carry = apply_table(new, lines[-1] if lines else None, toks, table, p,
-                                                  done=(top,) if top is not None else ())
+                                                  done=(top,) if top is not None else (),
+                                                  page_rows_=pg.rows)
             except shared_lines.TableError as e:
                 # a row that does not apply in this witness rules the witness
                 # out for the page, not the build: Michigan pp.939-942 carry a
@@ -409,11 +469,16 @@ def report_old_vs_new(out: Path, summary: Path, p4_path: Path, toks, lines, fail
     rows, listed, reviews = [], [], []
     stats = {"anchors": 0, "mapped": 0, "agree": 0, "clean": 0, "agree_clean": 0,
              "unmapped": 0, "containing": 0, "next": 0, "neither": 0}
+    # a lacuna line shares its start with the next line (lineate.Line.lacuna_at);
+    # the P4 numbers its row of dots, a row with no word in it
+    lacunae = {ln.start: ln for ln in lines if ln.lacuna_at is not None}
     for a in anchors:
         first = next((k for k in range(a.row_start, a.row_end) if toks[k].kind == "speech"), a.row_start)
         i = bisect.bisect_right(order, first) - 1
         containing = starts[order[i]] if i >= 0 else None
         following = starts[order[i + 1]] if i + 1 < len(order) else None
+        if a.row_start == a.row_end and a.row_start in lacunae:
+            containing, following = lacunae[a.row_start], containing
         ctx = " ".join(t.raw for t in toks[a.row_start:a.row_start + 6])
         clean = a.div not in failing_scenes
         stats["anchors"] += 1
@@ -542,6 +607,16 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                     "turnover", f"shared-lines.tsv: this line continues on a row the page sets "
                                 f"flush, not at the turnover indent; it begins "
                                 f"{row.second_half!r} (basis {row.basis}{ids}, {state})")))
+            elif row.kind == "lacuna":
+                out.append((ln.start, emit_tei.review_comment(
+                    "lacuna", f"shared-lines.tsv: the page prints line {ln.n} without words, a row "
+                              f"of dots, which the Globe numbers; it is the P4's wordless line "
+                              f"(basis {row.basis}, {state})")))
+            elif row.kind == "misplaced":
+                out.append((ln.start, emit_tei.review_comment(
+                    "misplaced", f"shared-lines.tsv: the page prints {row.first_half}, this line's "
+                                 f"number, beside the line next to it ({row.second_half!r}) "
+                                 f"(basis {row.basis}, {state})")))
             elif row.kind == "separate":
                 out.append((ln.start, emit_tei.review_comment(
                     "separate", f"shared-lines.tsv: the page sets this row displaced, as if it "
@@ -647,6 +722,7 @@ def report_part_vs_page(out: Path, lines, toks, body, table) -> list[list]:
     authority and is not infallible. The page decides
     (doc/forum.org #witnesses/division-of-authority); this report is the
     evidence for what that costs the markup, and nothing is retagged."""
+    lines = [ln for ln in lines if ln.lacuna_at is None]  # no P4 container of its own
     folds = folger_check.folds(lines, toks)
 
     def container(ti):
@@ -654,7 +730,7 @@ def report_part_vs_page(out: Path, lines, toks, body, table) -> list[list]:
 
     def from_table(ln):
         for r in table or []:
-            if r.kind == "numeral" or r.scene != ln.div:
+            if r.kind not in shared_lines.JUNCTION_KINDS or r.scene != ln.div:
                 continue
             want = tuple(r.first_half.split())
             k = next((i for i, l in enumerate(lines) if l is ln), None)

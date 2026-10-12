@@ -287,3 +287,35 @@ def test_the_margin_follows_a_column_that_drifts():
     assert (turnover.x - pr.column_margin(body, pitch)) / pitch > 2.8  # one margin: indented
     few = body[:10]
     assert pr.local_margins(few, pitch) == [pr.column_margin(few, pitch)] * 10
+
+
+def _row(band, r=1000.0, cont=None, **extra):
+    from globe.page_rows import Row
+    row = Row(x=0.0, y=0.0, r=r, words=[], band=band, pitch=50.0, margin=0.0, measure=1000.0)
+    row.extra.update(extra)
+    if cont is not None:
+        row.extra["cont"] = cont
+    return row
+
+
+def test_a_row_completing_a_broken_word_continues_past_the_turnover_indent():
+    """Richard II II.1: "flat-" / "terest me." sits at 2.82u, past the
+    turnover band, and continues its line (canonical-engLit doc/agenda.org
+    #build/batch-remaining)."""
+    from globe import lineate
+    prev = _row("start", r=987.0)
+    assert lineate.continues(prev, _row("indented", completes_word=True))
+    assert not lineate.continues(prev, _row("indented"))
+
+
+def test_a_turnover_in_the_same_l_continues_however_short_the_row_above():
+    """Richard II I.4: the row above "friends;" is 1.30u short; a song line,
+    in an <l> of its own, after a row as short does not continue."""
+    from lxml import etree
+    from globe import lineate
+    from globe.p4_convert import q
+    l1, l2, p = etree.Element(q("l")), etree.Element(q("l")), etree.Element(q("p"))
+    short = 1000.0 - 1.30 * 50.0
+    assert lineate.continues(_row("start", r=short, cont=l1), _row("turnover", cont=l1))
+    assert not lineate.continues(_row("start", r=short, cont=l1), _row("turnover", cont=l2))
+    assert not lineate.continues(_row("start", r=short, cont=p), _row("turnover", cont=p))

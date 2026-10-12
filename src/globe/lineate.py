@@ -51,11 +51,28 @@ def continues(prev: Row, r: Row) -> bool:
     turnovers follow rows at most 0.93u short of the measure, song lines in
     the turnover band follow rows at least 1.07u short -- a thin margin, so
     rows near it are listed for review; shared halves start within 8.4u of the
-    first half's end, song lines at least 10u before it."""
+    first half's end, song lines at least 10u before it.
+
+    Two exceptions, both from Richard II (canonical-engLit doc/agenda.org
+    #build/batch-remaining), where the margin did not hold:
+    - a row that completes a word broken at the end of the row above
+      ("flat-" / "terest me.", II.1) continues it, at the turnover indent
+      or a little past it (2.82u there; the column's other turnovers sit
+      at 2.13-2.63u);
+    - a turnover-band row in the same P4 <l> as the row above continues
+      it however short that row stops ("With 'Thanks, my countrymen, my
+      loving" is 1.30u short, I.4): a song line is an <l> of its own.
+      Only where the P4 marks verse, since seven P4s set verse in <p>."""
+    if r.band in ("turnover", "indented") and r.extra.get("completes_word"):
+        return True
     if r.band in ("start", "indented"):
         return False
     if r.band == "turnover" and prev.short_u < FULL_MEASURE_U:
         return True
+    if r.band == "turnover":
+        cont = r.extra.get("cont")
+        return (cont is not None and etree.QName(cont).localname == "l"
+                and prev.extra.get("cont") is cont)
     if r.band == "displaced":
         cont = r.extra.get("cont")
         if (cont is not None and etree.QName(cont).localname == "p" and prev.extra.get("cont") is cont
@@ -82,10 +99,15 @@ class Line:
     n: int = 0
     num: int | None = None  # printed marginal number on this line, if any
     num_page: int | None = None
+    # A line the page prints without words, the Globe's row of dots
+    # (shared-lines.tsv kind `lacuna`): it has no token of its own, so it
+    # starts where the next line does, and its milestone goes in the P4's
+    # wordless <l> (emit_tei.wordless_l_before).
+    lacuna_at: int | None = None
 
     @property
     def start(self) -> int:
-        return self.rows[0].start
+        return self.lacuna_at if self.lacuna_at is not None else self.rows[0].start
 
 
 @dataclass

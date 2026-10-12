@@ -8,7 +8,9 @@
 # directions, <lb> -> milestone) and _rewrite_line_cite_structure. None of
 # its lineation passes: lineation is regenerated from the witness pages
 # (doc/agenda.org #build/regenerate-lear). Code below the marker is
-# unchanged except for the tei import. It came home with the witness-page
+# unchanged except for the tei import and the inline elements the other
+# plays' P4s use (<gap>, <foreign>, <q>, <quote>, <hi>, <seg>, <closer>,
+# <signed>: canonical-engLit doc/agenda.org #build/batch-remaining). It came home with the witness-page
 # pipeline (doc/globe-lineation.org) unchanged; it is not folded back into
 # src/tei.py. The original module, with the failed re-derivation it
 # belonged to, is kept under the tag archive/globe-rederive.
@@ -67,6 +69,7 @@ from lxml import etree
 NS = {"tei": "http://www.tei-c.org/ns/1.0", "ti": "http://chs.harvard.edu/xmlns/cts", "xml": "http://www.w3.org/XML/1998/namespace"}
 XML_BASE = "{http://www.w3.org/XML/1998/namespace}base"
 XML_ID = "{http://www.w3.org/XML/1998/namespace}id"
+XML_LANG = "{http://www.w3.org/XML/1998/namespace}lang"
 
 TEI_URI = NS["tei"]
 
@@ -108,7 +111,21 @@ PASSTHROUGH_ATTRS: dict[str, set[str]] = {
     "castGroup": set(),
     "castItem": {"type"},
     "roleDesc": set(),
+    # Inline in the other plays' P4s; none starts or ends a row. <lg> and a
+    # <text> inside the body (songs, masques, letters) are not here: whether
+    # the Globe numbers their rows is undecided (canonical-engLit
+    # doc/agenda.org #build/inset-numbering), so they still raise.
+    "gap": set(),  # Titus III.1, the Globe's lacuna; its dots are text, kept
+    "hi": {"rend"},
+    "quote": {"rend"},
+    "seg": set(),
+    "closer": set(),
+    "signed": set(),
 }
+
+# P4's <q direct="unspecified"> is its default value, not a reading; P5's <q>
+# has no @direct.
+Q_DIRECT_DEFAULT = "unspecified"
 
 
 @dataclass
@@ -120,6 +137,7 @@ class ConversionStats:
     l_stray_n_stripped: list = field(default_factory=list)
     sp_stray_n_stripped: list = field(default_factory=list)
     reg_collapsed_to_text: list = field(default_factory=list)
+    q_direct_dropped: int = 0
     entities_resolved: dict = field(default_factory=dict)
     element_counts_in: dict = field(default_factory=dict)
     element_counts_out: dict = field(default_factory=dict)
@@ -223,6 +241,10 @@ def convert_element(old, stats: ConversionStats, ctx: str):
         new = _convert_l(old, stats, ctx)
     elif tag == "role":
         new = _convert_role(old, stats, ctx)
+    elif tag == "foreign":
+        new = _convert_foreign(old, stats, ctx)
+    elif tag == "q":
+        new = _convert_q(old, stats, ctx)
     elif tag in PASSTHROUGH_ATTRS:
         new = _convert_passthrough(old, stats, ctx, tag)
     else:
@@ -342,6 +364,33 @@ def _convert_role(old, stats: ConversionStats, ctx: str):
     return new
 
 
+def _convert_foreign(old, stats: ConversionStats, ctx: str):
+    """P4's @lang is P5's @xml:lang."""
+    extra = set(old.attrib.keys()) - {"lang"}
+    if extra:
+        raise ConversionError(f"<foreign> has unexpected attributes {extra} at {ctx}")
+    new = etree.Element(q("foreign"))
+    lang = old.get("lang")
+    if lang is not None:
+        new.set(XML_LANG, lang)
+    convert_children(old, new, stats, ctx)
+    return new
+
+
+def _convert_q(old, stats: ConversionStats, ctx: str):
+    extra = set(old.attrib.keys()) - {"direct"}
+    if extra:
+        raise ConversionError(f"<q> has unexpected attributes {extra} at {ctx}")
+    direct = old.get("direct")
+    if direct is not None:
+        if direct != Q_DIRECT_DEFAULT:
+            raise ConversionError(f"<q direct={direct!r}> at {ctx}: only the default is known")
+        stats.q_direct_dropped += 1
+    new = etree.Element(q("q"))
+    convert_children(old, new, stats, ctx)
+    return new
+
+
 def _reg_text(old, stats: ConversionStats, ctx: str) -> str:
     orig = old.get("orig")
     if orig is None:
@@ -371,6 +420,8 @@ def _convert_passthrough(old, stats: ConversionStats, ctx: str, tag: str):
     extra = set(attribs.keys()) - allowed
     if extra:
         raise ConversionError(f"<{tag}> has unexpected attributes {extra} at {ctx}")
+    if tag == "gap" and (old.text or len(old)):
+        raise ConversionError(f"<gap> unexpectedly has content at {ctx}")
     new = etree.Element(q(tag))
     for a in sorted(allowed):
         v = attribs.get(a)

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.ant.globe.xml sha256 47bc8bc71dc890c5; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.ant.globe.xml sha256 32d4f831f956bb14; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abhorring	Abhorring,	5.2.60	Ant. V, 2, 60	quotation on cited line						blow me into abhorring	blow me into abhorring rather make
 Abode1	Abode,	1.2.182	Ant. I, 2, 182	headword on cited line							cleopatras which wholly depends on your abode

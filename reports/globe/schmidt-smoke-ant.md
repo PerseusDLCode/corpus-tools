@@ -1,6 +1,6 @@
 # Schmidt smoke test: Antony and Cleopatra
 
-Sources: shakespeare.ant.globe.xml sha256 47bc8bc71dc890c5; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.ant.globe.xml sha256 32d4f831f956bb14; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Antony and Cleopatra in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

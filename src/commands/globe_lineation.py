@@ -11,8 +11,8 @@ from globe import emit_tei, manifest, plays, regenerate, schmidt_smoke
 # The regeneration stamp: the one <change> in <revisionDesc> that may differ
 # between a build and the published file (its date, commit and the sources'
 # sha256s). Everything else must be byte-identical.
-STAMP = re.compile(rb'<change when="[^"]*"><ab>' + re.escape(emit_tei.STAMP_PREFIX.encode())
-                   + rb"[^<]*</ab></change>")
+STAMP = re.compile(rb'<change when="[^"]*">\s*<ab>' + re.escape(emit_tei.STAMP_PREFIX.encode())
+                   + rb"[^<]*</ab>\s*</change>")
 
 
 def without_stamp(xml: bytes) -> bytes:

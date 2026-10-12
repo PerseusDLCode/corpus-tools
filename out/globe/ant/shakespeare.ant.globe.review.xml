@@ -1,24 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_drama.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
-      <teiHeader xml:lang="eng">
-            <fileDesc>
-                  <titleStmt>
-                        <title>Antony and Cleopatra</title>
-                        <author>William Shakespeare</author>
-                        <editor>W. G. Clark</editor>
-                        <editor>W. Aldis Wright</editor>  
-                  </titleStmt> <publicationStmt>
-       <publisher>Trustees of Tufts University</publisher>
-       <pubPlace>Medford, MA</pubPlace>
-       <authority>Perseus Project</authority>
-       <idno type="filename">shakespeare.ant.globe.xml</idno>
-       <idno type="CTS">urn:cts:engLit:shakespeare.ant.globe</idno>
-       <availability>
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>Antony and Cleopatra</title>
+        <author>William Shakespeare</author>
+        <editor>W. G. Clark</editor>
+        <editor>W. Aldis Wright</editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+        <idno type="filename">shakespeare.ant.globe.xml</idno>
+        <idno type="CTS">urn:cts:engLit:shakespeare.ant.globe</idno>
+        <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
              Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-       </availability>
-    </publicationStmt><sourceDesc>
-      <p>The text of this edition is the Perseus Project's double-keyboarded
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>The text of this edition is the Perseus Project's double-keyboarded
       transcription (c. 2003) of <bibl xml:id="copy-text">The Complete Works of
       William Shakespeare, ed. William George Clark and William Aldis Wright
       (Garden City, New York: Nelson Doubleday, Inc.), 2 vols. (OCLC 08687211;
@@ -30,7 +32,7 @@
       American spellings, which the transcription keeps. In some readings the
       transcription departs from both the copy-text and the Globe; the cause
       has not been established.</p>
-      <p>The Globe line numbering is not taken from the copy-text. It is read
+        <p>The Globe line numbering is not taken from the copy-text. It is read
       from two page-image witnesses to the Globe itself, printed from the same
       plates two decades apart:
       <bibl xml:id="witness-miun">The Works of William Shakespeare, Cambridge
@@ -39,25 +41,37 @@
       <bibl xml:id="witness-trent">The Works of William Shakespeare, London:
       Macmillan, 1887 (Internet Archive worksofwilliamsh0000shak_y3h8, Trent University copy,
       OCLC 1158473505)</bibl>.</p>
-    </sourceDesc></fileDesc>
-
-            <encodingDesc>
-                  <refsDecl n="CTS" xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="act" delim=":" match="div[@type='act'][@n != 'cast']" use="@n"><citeStructure unit="scene" delim="." match="div[@type='scene']" use="@n" n="chunk"><citeStructure unit="line" delim="." match=".//milestone[@unit='line'][@ed='Globe']" use="@n"/></citeStructure><citeStructure unit="line" delim="." match="sp//milestone[@unit='line'][@ed='Globe']" use="@n"/></citeStructure></citeStructure></refsDecl>
-    <editorialDecl>
-      <p>Words and structure -- divisions, speakers, speeches, stage
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl n="CTS" xml:id="CTS">
+        <citeStructure match="/TEI/text/body" use="@xml:base">
+          <citeStructure unit="act" delim=":" match="div[@type='act'][@n != 'cast']" use="@n">
+            <citeStructure unit="scene" delim="." match="div[@type='scene']" use="@n" n="chunk">
+              <citeStructure unit="line" delim="." match=".//milestone[@unit='line'][@ed='Globe']" use="@n"/>
+            </citeStructure>
+            <citeStructure unit="line" delim="." match="sp//milestone[@unit='line'][@ed='Globe']" use="@n"/>
+          </citeStructure>
+        </citeStructure>
+      </refsDecl>
+      <editorialDecl>
+        <p>Words and structure -- divisions, speakers, speeches, stage
       directions, and verse lines where the copy-text sets verse -- are the
       double-keyboarded text, unaltered. Where a witness page disagrees with
       it over a word, the transcription stands and the disagreement is
       recorded in the project's reports.</p>
-      <p>The Globe lineation was regenerated from the witnesses in 2026. Each
+        <p>The Globe lineation was regenerated from the witnesses in 2026. Each
       printed row of the witness page was classified by its typography, Globe
       lines were assembled from those rows, and the resulting count was
       checked on every page against every line number printed in that page's
       margins; a page whose count disagreed with any printed number was not
-      accepted. Seventeen junctions in this play, where two speeches
-      may share a verse line but the page's typography does not show whether
-      they do, were decided individually, from the page images and, where the
-      page is silent, from the line division of the Folger edition,
+      accepted. In seventeen places in this play the page's typography does
+      not show where a Globe line begins: two speeches that may share a verse
+      line, a speech's line continued on a row set flush with the margin, or
+      a row set as though it completed the line above which the Globe numbers
+      as a line of its own. These were decided individually, from the page
+      images and the printed line numbers and, where the page is silent, from
+      the line division of the Folger edition,
       <bibl xml:id="folger-dracor">Antony and Cleopatra, ed. Barbara A. Mowat and Paul
       Werstine, Folger Digital Texts, version 0.5 (Washington, DC: Folger
       Shakespeare Library, 2015), as distributed in the Shakespeare Drama
@@ -65,35 +79,41 @@
       commit c34c2d4)</bibl>. The Folger was consulted only for its division
       of shared lines, never for words or numbers. Each decision is recorded
       in the project's data tables.</p>
-      <p>The Globe line numbers previously carried by the Perseus edition were
+        <p>The Globe line numbers previously carried by the Perseus edition were
       transcribed from the copy-text and are not retained. They are consistent
       with the numbering below, but were placed by a different convention.</p>
-      <p>First Folio through-line numbers are not carried by this edition.
+        <p>First Folio through-line numbers are not carried by this edition.
       They remain in the Perseus P4 edition.</p>
-    </editorialDecl><p>&lt;milestone unit="line" ed="Globe"&gt; marks the first word of a
+      </editorialDecl>
+      <p>&lt;milestone unit="line" ed="Globe"&gt; marks the first word of a
     Globe line, and every Globe line carries one, numbered. A Globe line may
     occupy more than one printed row: a verse line too long for the column,
     or a line shared between two speakers. &lt;lb/&gt; marks each printed row
     that begins no Globe line. A Globe milestone therefore also marks the
     start of a printed row, and reconstructing the page's rows requires
     reading both elements.</p>
-    <p>The @part attribute, which marks the parts of a verse line shared
+      <p>The @part attribute, which marks the parts of a verse line shared
     between speakers, is retained from the Perseus P4 edition and was not
     regenerated. It does not always agree with the Globe's division of
     shared lines; where the two differ, the Globe milestones govern the
-    numbering.</p></encodingDesc>
-
-            <profileDesc>
-                  <langUsage>
-                        <tei:language xmlns:tei="http://www.tei-c.org/ns/1.0" ident="eng"> English </tei:language>
-                  </langUsage>
-            </profileDesc>
-
-            <revisionDesc><change when="2026-10-08"><ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 9ef4109; sources: ant.xml sha256 8e235e2c4ae6f375; shared-lines.tsv sha256 13bad8e33133c54d; shell data/shakespeare/ant/shakespeare.ant.globe.xml sha256 099959e630ef73cc. Generated file: DO NOT EDIT.</ab></change><change><ab>converted to TEI P5</ab></change></revisionDesc>
-      </teiHeader>
-
-      <text xml:lang="eng">
-            <body xml:base="urn:cts:engLit:shakespeare.ant.globe">
+    numbering.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-09">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 0895746; sources: ant.xml sha256 8e235e2c4ae6f375; shared-lines.tsv sha256 a026b04dcb9fb1b9; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      </change>
+      <change>
+        <ab>converted to TEI P5</ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="eng">
+    <body xml:base="urn:cts:engLit:shakespeare.ant.globe">
   <div type="act" n="cast">
     <head>DRAMATIS PERSONÆ</head>
     <castList>

@@ -79,8 +79,9 @@ def _fragment(xml: str) -> etree.Element:
 
 
 def count_junctions(table: list[shared_lines.Row]) -> int:
-    """Shared-line and turnover rows -- not a `numeral` row, which corrects a
-    misread marginal number, not a shared-line decision."""
+    """Rows that decide where a Globe line begins -- shared, turnover and
+    separate -- and not a `numeral` row, which corrects a misread marginal
+    number (canonical-engLit doc/agenda.org #build/header-junctions)."""
     return sum(1 for r in table if r.kind != "numeral")
 
 
@@ -119,7 +120,8 @@ def build_editorial_decl(play: str, junction_count: int, dracor: dict[str, str])
     """`dracor` is the play's ShakeDraCor pin (manifest.dracor_pin): the
     Folger citation names the commit and DraCor id the manifest records,
     which are those of the file the build checks, never typed here."""
-    count_word = _spell(junction_count).capitalize()
+    count_word = _spell(junction_count)
+    places = "place" if junction_count == 1 else "places"
     title = PLAY_TITLES[play]
     xml = f"""
     <editorialDecl>
@@ -133,10 +135,13 @@ def build_editorial_decl(play: str, junction_count: int, dracor: dict[str, str])
       lines were assembled from those rows, and the resulting count was
       checked on every page against every line number printed in that page's
       margins; a page whose count disagreed with any printed number was not
-      accepted. {count_word} junctions in this play, where two speeches
-      may share a verse line but the page's typography does not show whether
-      they do, were decided individually, from the page images and, where the
-      page is silent, from the line division of the Folger edition,
+      accepted. In {count_word} {places} in this play the page's typography does
+      not show where a Globe line begins: two speeches that may share a verse
+      line, a speech's line continued on a row set flush with the margin, or
+      a row set as though it completed the line above which the Globe numbers
+      as a line of its own. These were decided individually, from the page
+      images and the printed line numbers and, where the page is silent, from
+      the line division of the Folger edition,
       <bibl xml:id="folger-dracor">{title}, ed. Barbara A. Mowat and Paul
       Werstine, Folger Digital Texts, version 0.5 (Washington, DC: Folger
       Shakespeare Library, 2015), as distributed in the Shakespeare Drama

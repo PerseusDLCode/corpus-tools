@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.lr.globe.xml sha256 6c3286b393ca0c93; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.lr.globe.xml sha256 74268b2a92174fd4; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 A7	A,	1.4.138	Lr. I, 4, 138	quotation on cited line, with differences			spacing			leave thy drink and thy whore, and keep in a door,	and keep inadoor
 Abate	Abate,	2.4.161	Lr. II, 4, 161	quotation on cited line						she hath abated me of half my train,	she hath abated me of half my train

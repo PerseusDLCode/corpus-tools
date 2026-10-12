@@ -9,10 +9,10 @@ from pathlib import Path
 from globe import emit_tei, manifest, plays, regenerate, schmidt_smoke
 
 # The regeneration stamp: the one <change> in <revisionDesc> that may differ
-# between a build and the published file (its date, commit and the shell's
-# sha256). Everything else must be byte-identical.
-STAMP = re.compile(rb'<change when="[^"]*"><ab>' + re.escape(emit_tei.STAMP_PREFIX.encode())
-                   + rb"[^<]*</ab></change>")
+# between a build and the published file (its date, commit and the sources'
+# sha256s). Everything else must be byte-identical.
+STAMP = re.compile(rb'<change when="[^"]*">\s*<ab>' + re.escape(emit_tei.STAMP_PREFIX.encode())
+                   + rb"[^<]*</ab>\s*</change>")
 
 
 def without_stamp(xml: bytes) -> bytes:
@@ -25,7 +25,7 @@ def without_stamp(xml: bytes) -> bytes:
 def verify(play: str, flags: list[str]) -> int:
     """Build into a temporary directory and compare the canonical build with
     canonical-engLit's published file, ignoring only the regeneration stamp."""
-    published = regenerate.CORPUS / plays.get(play).shell
+    published = regenerate.CORPUS / plays.get(play).edition
     with tempfile.TemporaryDirectory(prefix=f"globe-verify-{play}-") as tmp:
         if regenerate.main(play, f"--scratch={tmp}", *flags) != 0:
             print(f"globe verify {play}: the build failed", file=sys.stderr)

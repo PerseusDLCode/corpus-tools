@@ -1,5 +1,5 @@
 """canonical-engLit doc/agenda.org #globe/per-play-table: data/globe/plays.tsv
-is where a play's P4, shell, printed pages and DraCor file are named.
+is where a play's P4, published edition, printed pages and DraCor file are named.
 
 Added in corpus-tools; not among the workshop's tests.
 """
@@ -9,7 +9,7 @@ import pytest
 from globe import plays
 from globe.plays import PlayTableError
 
-HEADER = "play\tp4\tshell\tfirst_page\tlast_page\tdracor\n"
+HEADER = "play\tp4\tedition\tfirst_page\tlast_page\tdracor\n"
 
 
 def table(tmp_path, body: str, header: str = HEADER):
@@ -21,7 +21,7 @@ def table(tmp_path, body: str, header: str = HEADER):
 def test_lear_is_where_the_code_used_to_say():
     """What regenerate.PLAYS and shared_lines.FOLGER held before the table."""
     lr = plays.get("lr")
-    assert (lr.p4, lr.shell, lr.first, lr.last) == (
+    assert (lr.p4, lr.edition, lr.first, lr.last) == (
         "Renaissance/Shakespeare/opensource/lr.xml",
         "data/shakespeare/lr/shakespeare.lr.globe.xml", 847, 878)
     assert lr.dracor == "tei/king-lear.xml"
@@ -31,7 +31,7 @@ def test_lear_is_where_the_code_used_to_say():
 def test_antony_is_printed_pages_911_to_943():
     ant = plays.get("ant")
     assert (ant.first, ant.last) == (911, 943)
-    assert ant.p4.endswith("/ant.xml") and ant.shell.endswith("/shakespeare.ant.globe.xml")
+    assert ant.p4.endswith("/ant.xml") and ant.edition.endswith("/shakespeare.ant.globe.xml")
 
 
 def test_the_dracor_clone_is_read_where_it_is_now(monkeypatch, tmp_path):
@@ -56,7 +56,7 @@ def test_what_a_spreadsheet_does_to_the_table_is_tolerated(tmp_path):
 
 
 @pytest.mark.parametrize("header, body, message", [
-    ("play\tp4\tshell\tfirst_page\tlast_page\n", "lr\ta\tb\t1\t2\n", "header lacks dracor"),
+    ("play\tp4\tedition\tfirst_page\tlast_page\n", "lr\ta\tb\t1\t2\n", "header lacks dracor"),
     (HEADER, "lr\ta\tb\t1\t2\t\n", "row 2: no dracor"),
     (HEADER, "lr\ta\tb\tx\t2\tc\n", "row 2: pages 'x'-'2' are not numbers"),
     (HEADER, "lr\ta\tb\t9\t2\tc\n", "row 2: first page 9 is after last page 2"),

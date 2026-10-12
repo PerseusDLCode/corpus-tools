@@ -145,3 +145,15 @@ def test_a_rebuild_replaces_the_previous_stamp():
     emit_tei.stamp(root, "regenerate.py", "0.1.0", "def5678", "2026-09-29", {"lr.xml": "deadbeef"})
     texts = [c.findtext(f"{{{TEI}}}ab") for c in root.iter(f"{{{TEI}}}change")]
     assert len(texts) == 2 and "def5678" in texts[0] and texts[1] == "converted to TEI P5"
+
+
+def test_the_shell_is_the_template_filled_for_the_play():
+    """canonical-engLit doc/agenda.org #globe/shell-template: an edition is
+    built from sources, never from its last output."""
+    from lxml import etree as et
+    root = et.fromstring(emit_tei.shell("ant"))
+    assert root.findtext(f"{{{TEI}}}teiHeader/{{{TEI}}}fileDesc/{{{TEI}}}titleStmt/{{{TEI}}}title") \
+        == "Antony and Cleopatra"
+    body = root.find(f"{{{TEI}}}text/{{{TEI}}}body")
+    assert body.get("{http://www.w3.org/XML/1998/namespace}base") == "urn:cts:engLit:shakespeare.ant.globe"
+    assert [c.findtext(f"{{{TEI}}}ab") for c in root.iter(f"{{{TEI}}}change")] == ["converted to TEI P5"]

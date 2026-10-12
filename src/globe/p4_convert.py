@@ -9,7 +9,7 @@
 # its lineation passes: lineation is regenerated from the witness pages
 # (doc/agenda.org #build/regenerate-lear). Code below the marker is
 # unchanged except for the tei import and the inline elements the other
-# plays' P4s use (<gap>, <foreign>, <q>, <quote>, <hi>, <seg>, <closer>,
+# plays' P4s use (<gap> as <ellipsis>, <foreign>, <q>, <quote>, <hi>, <seg>, <closer>,
 # <signed>: canonical-engLit doc/agenda.org #build/batch-remaining). It came home with the witness-page
 # pipeline (doc/globe-lineation.org) unchanged; it is not folded back into
 # src/tei.py. The original module, with the failed re-derivation it
@@ -62,6 +62,7 @@ this task exists to fix.
 """
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 
 from lxml import etree
@@ -120,13 +121,18 @@ PASSTHROUGH_ATTRS: dict[str, set[str]] = {
     # <text> inside the body (songs, masques, letters) are not here: whether
     # the Globe numbers their rows is undecided (canonical-engLit
     # doc/agenda.org #build/inset-numbering), so they still raise.
-    "gap": set(),  # Titus III.1, the Globe's lacuna; its dots are text, kept
     "hi": {"rend"},
     "quote": {"rend"},
     "seg": set(),
     "closer": set(),
     "signed": set(),
 }
+
+# The P4's <gap/> is the Globe's lacuna, its row of dots following it as text
+# (Titus III.1.36, "And bootless unto them<gap/> . . . . . . . . ."). The
+# source marks that omission itself, so it is P5's <ellipsis>, not <gap>
+# (which is for what the encoder leaves out); the dots are its <metamark>.
+LACUNA_DOTS = re.compile(r"^\s*(?:\.\s*)+")
 
 # P4's <q direct="unspecified"> is its default value, not a reading; P5's <q>
 # has no @direct.
@@ -229,6 +235,9 @@ def convert_children(old_el, new_el, stats: ConversionStats, ctx: str) -> None:
             continue
         if isinstance(child, etree._ProcessingInstruction):
             raise ConversionError(f"Unexpected processing instruction in body at {ctx}")
+        if child.tag == "gap":
+            last_new_child = _convert_gap(child, new_el, stats, ctx)
+            continue
         if child.tag == "reg":
             # P4's <reg orig="X">Y</reg> hyphenation-regularization shorthand collapses to
             # plain text Y (the regularized reading P4 itself displays) -- <orig>/<reg> are
@@ -388,6 +397,25 @@ def _convert_role(old, stats: ConversionStats, ctx: str):
     return new
 
 
+def _convert_gap(old, new_parent, stats: ConversionStats, ctx: str):
+    """<gap/> and the dots after it -> <ellipsis><metamark>dots</metamark></ellipsis>;
+    whatever follows the dots stays the ellipsis's tail. Returns the ellipsis."""
+    if old.attrib or old.text or len(old):
+        raise ConversionError(f"<gap> unexpectedly has attributes or content at {ctx}")
+    tail = old.tail or ""
+    m = LACUNA_DOTS.match(tail)
+    if m is None:
+        raise ConversionError(f"<gap> at {ctx} is not followed by the Globe's dots")
+    stats.element_counts_in["gap"] = stats.element_counts_in.get("gap", 0) + 1
+    ellipsis = etree.SubElement(new_parent, q("ellipsis"))
+    metamark = etree.SubElement(ellipsis, q("metamark"))
+    metamark.set("function", "ellipsis")
+    metamark.text = m.group()
+    ellipsis.tail = tail[m.end():]
+    stats.element_counts_out["ellipsis"] = stats.element_counts_out.get("ellipsis", 0) + 1
+    return ellipsis
+
+
 def _convert_foreign(old, stats: ConversionStats, ctx: str):
     """P4's @lang is P5's @xml:lang."""
     extra = set(old.attrib.keys()) - {"lang"}
@@ -445,8 +473,6 @@ def _convert_passthrough(old, stats: ConversionStats, ctx: str, tag: str):
     extra = set(attribs.keys()) - allowed
     if extra:
         raise ConversionError(f"<{tag}> has unexpected attributes {extra} at {ctx}")
-    if tag == "gap" and (old.text or len(old)):
-        raise ConversionError(f"<gap> unexpectedly has content at {ctx}")
     new = etree.Element(q(tag))
     for a in sorted(allowed):
         v = attribs.get(a)

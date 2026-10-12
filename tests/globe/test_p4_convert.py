@@ -17,16 +17,22 @@ def convert(line: str):
     return p4_convert.convert_body(root, stats), stats
 
 
-def test_gap_is_kept_with_the_dots_after_it():
-    """Titus III.1: the Globe's lacuna. The dots are text and stay."""
+def test_the_globe_lacuna_is_an_ellipsis_holding_its_dots():
+    """Titus III.1.36: the source marks the omission itself, so <ellipsis>,
+    not <gap>; the dots are its <metamark>, and what follows them its tail."""
     body, _ = convert('<l>And bootless unto them<gap/> . . . . <lb ed="G"/></l>')
-    gap = body.find(f".//{q('gap')}")
-    assert gap is not None and gap.tail == " . . . . "
+    assert body.find(f".//{q('gap')}") is None
+    e = body.find(f".//{q('ellipsis')}")
+    m = e.find(q("metamark"))
+    assert (m.get("function"), m.text) == ("ellipsis", " . . . . ")
+    assert not (e.tail or "").strip()
 
 
-def test_a_gap_with_content_raises():
-    with pytest.raises(p4_convert.ConversionError, match="<gap> unexpectedly has content"):
-        convert("<l>word<gap>lost</gap></l>")
+def test_a_gap_with_content_or_without_dots_raises():
+    with pytest.raises(p4_convert.ConversionError, match="unexpectedly has"):
+        convert("<l>word<gap>lost</gap> . .</l>")
+    with pytest.raises(p4_convert.ConversionError, match="not followed by the Globe's dots"):
+        convert("<l>word<gap/> more words</l>")
 
 
 def test_foreign_lang_becomes_xml_lang():

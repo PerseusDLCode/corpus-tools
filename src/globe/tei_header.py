@@ -37,7 +37,7 @@ PLAY_TITLES = {
     "lr": "King Lear",
     "ant": "Antony and Cleopatra",
     "tit": "Titus Andronicus",
-    "r2": "King Richard II",
+    "r2": "Richard II",  # as its __cts__.xml names it
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):

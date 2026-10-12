@@ -207,7 +207,7 @@ HEADER = "play\tscene\tpage\tkind\tfirst_half\tsecond_half\tline\tbasis\tfolger_
 
 
 @pytest.mark.parametrize("row, message", [
-    ("oth\t1.1\t880\tshared\ta\tb\t\timage\t\t\t\n", r"row 2: play 'oth' is not in plays.tsv"),
+    ("zz\t1.1\t880\tshared\ta\tb\t\timage\t\t\t\n", r"row 2: play 'zz' is not in plays.tsv"),
     ("ant\t5.3\t878\tshared\ta\tb\t\timage\t\t\t\n", r"row 2: page 878 is not one of ant's printed pages \(911-943\)"),
 ])
 def test_a_row_must_name_a_play_and_one_of_its_pages(tmp_path, row, message):

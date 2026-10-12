@@ -139,6 +139,11 @@ class ConversionStats:
     milestone_globe_numbered: int = 0
     milestone_globe_unnumbered: int = 0
     milestone_f1: int = 0
+    # <lb> with no @ed, read as a Globe marker (canonical-engLit doc/agenda.org
+    # #build/p4-coverage): Pericles and Troilus mark their Globe rows this way
+    # almost throughout, and elsewhere a numbered one falls in the play's
+    # ed="G" number sequence (Othello II.3 70, 81, 100; Timon IV.3 299, 319, 350).
+    lb_no_ed_read_as_globe: int = 0
     l_stray_n_stripped: list = field(default_factory=list)
     sp_stray_n_stripped: list = field(default_factory=list)
     reg_collapsed_to_text: list = field(default_factory=list)
@@ -170,7 +175,8 @@ class ConversionStats:
             f"lb: {self.lb_total} total -> "
             f"{self.milestone_globe_numbered} numbered Globe milestones, "
             f"{self.milestone_globe_unnumbered} unnumbered Globe milestones, "
-            f"{self.milestone_f1} F1 milestones. "
+            f"{self.milestone_f1} F1 milestones "
+            f"({self.lb_no_ed_read_as_globe} <lb> with no @ed read as Globe). "
             f"{len(self.l_stray_n_stripped)} stray <l @n> stripped. "
             f"{len(self.sp_stray_n_stripped)} stray <sp @n> stripped. "
             f"{len(self.reg_collapsed_to_text)} <reg @orig> collapsed to plain text. "
@@ -264,10 +270,16 @@ def _convert_lb(old, stats: ConversionStats, ctx: str):
     stats.lb_total += 1
     if old.text or len(old) > 0:
         raise ConversionError(f"<lb> unexpectedly has content at {ctx}")
+    extra = set(old.attrib.keys()) - {"ed", "n"}
+    if extra:
+        raise ConversionError(f"<lb> has unexpected attributes {extra} at {ctx}")
     ed = old.get("ed")
     n = old.get("n")
     new = etree.Element(q("milestone"))
     new.set("unit", "line")
+    if ed is None:
+        stats.lb_no_ed_read_as_globe += 1
+        ed = "G"
     if ed == "G":
         new.set("ed", "Globe")
         if n is not None:

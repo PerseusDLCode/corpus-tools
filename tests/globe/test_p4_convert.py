@@ -58,3 +58,18 @@ def test_the_other_plays_entities_resolve(tmp_path):
                  '</sp></div2></div1></body></text></TEI.2>')
     body = p4_convert.convert_body(p4_convert.parse_p4(p), p4_convert.ConversionStats())
     assert body.find(f".//{q('p')}").text == "‘Tis’ manœuvre voilà"
+
+
+def test_an_lb_with_no_ed_is_read_as_a_globe_marker():
+    """#build/p4-coverage: Pericles and Troilus mark Globe rows with a bare
+    <lb>; a numbered one is a transcribed Globe number, like <lb ed="G" n=...>."""
+    body, stats = convert('<p>Ever at the best, hearing well <lb n="30"/>of your lordship. <lb/>Go.</p>')
+    ms = body.findall(f".//{q('milestone')}")
+    assert [(m.get("ed"), m.get("n"), m.get("source")) for m in ms] == [
+        ("Globe", "30", p4_convert.GLOBE_EDITION_SOURCE), ("Globe", None, None)]
+    assert stats.lb_no_ed_read_as_globe == 2
+
+
+def test_an_lb_with_another_attribute_raises():
+    with pytest.raises(p4_convert.ConversionError, match="unexpected attributes"):
+        convert('<l>x <lb rend="centered"/></l>')

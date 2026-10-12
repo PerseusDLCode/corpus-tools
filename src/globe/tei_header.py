@@ -36,6 +36,7 @@ PLAY_TITLES = {
     "1h6": "King Henry VI, Part I",
     "lr": "King Lear",
     "ant": "Antony and Cleopatra",
+    "tit": "Titus Andronicus",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -48,6 +49,10 @@ PLAY_TITLES = {
 COPY_TEXT = {
     "lr": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="758-791"),
     "ant": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="816-849"),
+    # Volume One opens with Titus (contents: "Titus Andronicus ... 1"); its
+    # introduction is printed 1, and 1 Henry VI's is 27 (CHOCR index 11-36,
+    # printed = index - 10, read off the page numbers at 12, 18, 26, 34).
+    "tit": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="1-26"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

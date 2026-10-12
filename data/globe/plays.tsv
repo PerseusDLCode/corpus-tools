@@ -3,6 +3,43 @@
 # build does not read it) are relative to canonical-engLit; first_page and
 # last_page are the play's printed pages in the Globe; dracor is relative to the
 # ShakeDraCor clone (SHAKEDRACOR, default ../../shakedracor).
+# Rows are in the Globe's order. Each play opens on a page of its own (its title
+# and Dramatis Personae) and ends on the page before the next opens.
 play	p4	edition	first_page	last_page	dracor
+tmp	Renaissance/Shakespeare/opensource/tmp.xml	data/shakespeare/tmp/shakespeare.tmp.globe.xml	1	20	tei/the-tempest.xml
+tgv	Renaissance/Shakespeare/opensource/tgv.xml	data/shakespeare/tgv/shakespeare.tgv.globe.xml	21	41	tei/two-gentlemen-of-verona.xml
+wiv	Renaissance/Shakespeare/opensource/wiv.xml	data/shakespeare/wiv/shakespeare.wiv.globe.xml	42	66	tei/the-merry-wives-of-windsor.xml
+mm	Renaissance/Shakespeare/opensource/mm.xml	data/shakespeare/mm/shakespeare.mm.globe.xml	67	92	tei/measure-for-measure.xml
+err	Renaissance/Shakespeare/opensource/err.xml	data/shakespeare/err/shakespeare.err.globe.xml	93	110	tei/the-comedy-of-errors.xml
+ado	Renaissance/Shakespeare/opensource/ado.xml	data/shakespeare/ado/shakespeare.ado.globe.xml	111	134	tei/much-ado-about-nothing.xml
+lll	Renaissance/Shakespeare/opensource/lll.xml	data/shakespeare/lll/shakespeare.lll.globe.xml	135	160	tei/loves-labors-lost.xml
+mnd	Renaissance/Shakespeare/opensource/mnd.xml	data/shakespeare/mnd/shakespeare.mnd.globe.xml	161	180	tei/a-midsummer-nights-dream.xml
+mv	Renaissance/Shakespeare/opensource/mv.xml	data/shakespeare/mv/shakespeare.mv.globe.xml	181	204	tei/the-merchant-of-venice.xml
+ayl	Renaissance/Shakespeare/opensource/ayl.xml	data/shakespeare/ayl/shakespeare.ayl.globe.xml	205	228	tei/as-you-like-it.xml
+shr	Renaissance/Shakespeare/opensource/shr.xml	data/shakespeare/shr/shakespeare.shr.globe.xml	229	253	tei/the-taming-of-the-shrew.xml
+aww	Renaissance/Shakespeare/opensource/aww.xml	data/shakespeare/aww/shakespeare.aww.globe.xml	254	280	tei/alls-well-that-ends-well.xml
+tn	Renaissance/Shakespeare/opensource/tn.xml	data/shakespeare/tn/shakespeare.tn.globe.xml	281	303	tei/twelfth-night.xml
+wt	Renaissance/Shakespeare/opensource/wt.xml	data/shakespeare/wt/shakespeare.wt.globe.xml	304	331	tei/the-winters-tale.xml
+jn	Renaissance/Shakespeare/opensource/jn.xml	data/shakespeare/jn/shakespeare.jn.globe.xml	332	355	tei/king-john.xml
+r2	Renaissance/Shakespeare/opensource/r2.xml	data/shakespeare/r2/shakespeare.r2.globe.xml	356	381	tei/richard-ii.xml
+1h4	Renaissance/Shakespeare/opensource/1h4.xml	data/shakespeare/1h4/shakespeare.1h4.globe.xml	382	408	tei/henry-iv-part-1.xml
+2h4	Renaissance/Shakespeare/opensource/2h4.xml	data/shakespeare/2h4/shakespeare.2h4.globe.xml	409	438	tei/henry-iv-part-2.xml
+h5	Renaissance/Shakespeare/opensource/h5.xml	data/shakespeare/h5/shakespeare.h5.globe.xml	439	468	tei/henry-v.xml
+1h6	Renaissance/Shakespeare/opensource/1h6.xml	data/shakespeare/1h6/shakespeare.1h6.globe.xml	469	495	tei/henry-vi-part-1.xml
+2h6	Renaissance/Shakespeare/opensource/2h6.xml	data/shakespeare/2h6/shakespeare.2h6.globe.xml	496	525	tei/henry-vi-part-2.xml
+3h6	Renaissance/Shakespeare/opensource/3h6.xml	data/shakespeare/3h6/shakespeare.3h6.globe.xml	526	555	tei/henry-vi-part-3.xml
+r3	Renaissance/Shakespeare/opensource/r3.xml	data/shakespeare/r3/shakespeare.r3.globe.xml	556	591	tei/richard-iii.xml
+h8	Renaissance/Shakespeare/opensource/h8.xml	data/shakespeare/h8/shakespeare.h8.globe.xml	592	621	tei/henry-viii.xml
+tro	Renaissance/Shakespeare/opensource/tro.xml	data/shakespeare/tro/shakespeare.tro.globe.xml	622	653	tei/troilus-and-cressida.xml
+cor	Renaissance/Shakespeare/opensource/cor.xml	data/shakespeare/cor/shakespeare.cor.globe.xml	654	687	tei/coriolanus.xml
+tit	Renaissance/Shakespeare/opensource/tit.xml	data/shakespeare/tit/shakespeare.tit.globe.xml	688	711	tei/titus-andronicus.xml
+rom	Renaissance/Shakespeare/opensource/rom.xml	data/shakespeare/rom/shakespeare.rom.globe.xml	712	740	tei/romeo-and-juliet.xml
+tim	Renaissance/Shakespeare/opensource/tim.xml	data/shakespeare/tim/shakespeare.tim.globe.xml	741	763	tei/timon-of-athens.xml
+jc	Renaissance/Shakespeare/opensource/jc.xml	data/shakespeare/jc/shakespeare.jc.globe.xml	764	787	tei/julius-caesar.xml
+mac	Renaissance/Shakespeare/opensource/mac.xml	data/shakespeare/mac/shakespeare.mac.globe.xml	788	810	tei/macbeth.xml
+ham	Renaissance/Shakespeare/opensource/ham.xml	data/shakespeare/ham/shakespeare.ham.globe.xml	811	846	tei/hamlet.xml
 lr	Renaissance/Shakespeare/opensource/lr.xml	data/shakespeare/lr/shakespeare.lr.globe.xml	847	878	tei/king-lear.xml
+oth	Renaissance/Shakespeare/opensource/oth.xml	data/shakespeare/oth/shakespeare.oth.globe.xml	879	910	tei/othello.xml
 ant	Renaissance/Shakespeare/opensource/ant.xml	data/shakespeare/ant/shakespeare.ant.globe.xml	911	943	tei/antony-and-cleopatra.xml
+cym	Renaissance/Shakespeare/opensource/cym.xml	data/shakespeare/cym/shakespeare.cym.globe.xml	944	976	tei/cymbeline.xml
+per	Renaissance/Shakespeare/opensource/per.xml	data/shakespeare/per/shakespeare.per.globe.xml	977	999	tei/pericles.xml

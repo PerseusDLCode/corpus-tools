@@ -7,13 +7,14 @@ scene	line	page	finding	folger	folger_ids	rows
 1.1	383	692	our shared line	part	ftln-0390 ftln-0391	Be barr'd his entrance here. / Tit. Rise, Marcus, rise.
 1.1	389	692	our shared line	silent	ftln-0397	All. [Kneelingl No man shed tears for no / Mutius;
 2.1	37	693	our shared line	silent	ftln-0542	Aar. [Aside] Clubs, clubs! these lovers  / not keep the peace.
-2.1	54	693	our shared line	part	ftln-0559 ftln-0560	For shame, put up. / Dem. Not I, till I have sheathed
-2.1	80	693	our shared line	part	ftln-0586 ftln-0587	By this device. / Chi. Aaron, a thousand deaths
-2.1	82	693	our shared line	part	ftln-0589 ftln-0590	Aar. To achieve her! how? / Dem. Why makest thou it so strange?
-2.1	91	693	our shared line	silent	ftln-0599	Aar. [Asidel Ay, and as good as Saturnin / may.
-2.1	97	693	our shared line	part	ftln-0605 ftln-0606	Would serve your turns. / Chi. Ay, so the turn were served.
-2.1	98	693	our shared line	short	ftln-0607 ftln-0608	Dem. Aaron, thou hast hit it. / Aar. Would you had hit it too!
-2.1	103	693	our shared line	part	ftln-0613 ftln-0614	Chi. Faith, not me. / Dem. Nor me, so I were one.
+2.1	45	693	our shared line	part	ftln-0550 ftln-0551	Dem. Ay, boy, grow ye so brave? [They dr / Aar. [Coming forward ] Why, how now, lor
+2.1	53	693	our shared line	part	ftln-0559 ftln-0560	For shame, put up. / Dem. Not I, till I have sheathed
+2.1	79	693	our shared line	part	ftln-0586 ftln-0587	By this device. / Chi. Aaron, a thousand deaths
+2.1	81	693	our shared line	part	ftln-0589 ftln-0590	Aar. To achieve her! how? / Dem. Why makest thou it so strange?
+2.1	90	693	our shared line	silent	ftln-0599	Aar. [Asidel Ay, and as good as Saturnin / may.
+2.1	96	693	our shared line	part	ftln-0605 ftln-0606	Would serve your turns. / Chi. Ay, so the turn were served.
+2.1	97	693	our shared line	short	ftln-0607 ftln-0608	Dem. Aaron, thou hast hit it. / Aar. Would you had hit it too!
+2.1	102	693	our shared line	part	ftln-0613 ftln-0614	Chi. Faith, not me. / Dem. Nor me, so I were one.
 2.2	16	694	our shared line	part	ftln-0664 ftln-0665	Bas. Lavinia, how say you? / Lav. I say, no;
 2.2	20	694	our shared line	part	ftln-0670 ftln-0671	Our Roman hunting. / Marc. I have dogs, my lord,
 2.3	206	696	our shared line	silent	ftln-0884	Aar. [Asidel Now will I fetch the king t / them here,
@@ -29,4 +30,3 @@ scene	line	page	finding	folger	folger_ids	rows
 4.2	62	703	our shared line	short	ftln-1627 ftln-1628	Aar. To whom? / Nur. I mean, she is brought a-bed.
 4.2	170	704	our shared line	part	ftln-1738 ftln-1739	With secrets. / Dem. For this care of Tamora,
 5.1	53	706	our shared line	part	ftln-2042 ftln-2043	Get me a ladder. / Aar. Lucius, save the child,
-2.1	45	693	folger pair split across our lines	differ	ftln-0550 ftln-0551	Dem. Ay, boy, grow ye so brave? [They dr / Aar. [Coming forward ] Why, how now, lor

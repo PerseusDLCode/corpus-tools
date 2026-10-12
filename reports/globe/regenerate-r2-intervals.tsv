@@ -55,7 +55,7 @@ page	witness	scene	from	to	printed_gap	counted_gap	error	numeral_reading
 361	miun/kraken	1.4	scene start	10	10	10	0	
 361	miun/kraken	1.4	10 (p.361)	20	10	10	0	
 361	miun/kraken	1.4	20 (p.361)	30	10	10	0	
-362	miun/kraken	1.4	30 (p.361)	40	10	11	+1	
+362	miun/kraken	1.4	30 (p.361)	40	10	10	0	
 362	miun/kraken	1.4	40 (p.362)	51	11	11	0	
 362	miun/kraken	1.4	51 (p.362)	60	9	9	0	
 362	miun/kraken	2.1	scene start	10	10	10	0	
@@ -66,10 +66,10 @@ page	witness	scene	from	to	printed_gap	counted_gap	error	numeral_reading
 362	miun/kraken	2.1	50 (p.362)	60	10	10	0	
 362	miun/kraken	2.1	60 (p.362)	69	9	9	0	
 362	miun/kraken	2.1	69 (p.362)	80	11	11	0	
-363	trent/kraken	2.1	80 (p.362)	90	10	11	+1	
+363	trent/kraken	2.1	80 (p.362)	90	10	10	0	
 363	trent/kraken	2.1	90 (p.363)	100	10	10	0	
 363	trent/kraken	2.1	100 (p.363)	110	10	10	0	
-363	trent/kraken	2.1	110 (p.363)	120	10	11	+1	
+363	trent/kraken	2.1	110 (p.363)	120	10	10	0	
 363	trent/kraken	2.1	120 (p.363)	130	10	10	0	
 363	trent/kraken	2.1	130 (p.363)	141	11	11	0	
 363	trent/kraken	2.1	141 (p.363)	150	9	9	0	
@@ -83,7 +83,8 @@ page	witness	scene	from	to	printed_gap	counted_gap	error	numeral_reading
 364	miun/kraken	2.1	230 (p.364)	240	10	10	0	
 364	miun/kraken	2.1	240 (p.364)	260	20	20	0	
 364	miun/kraken	2.1	260 (p.364)	270	10	10	0	
-364	miun/kraken	2.1	270 (p.364)	290	20	19	-1	
+364	miun/kraken	2.1	270 (p.364)	280	10	10	0	
+364	miun/kraken	2.1	280 (p.364)	290	10	10	0	
 364	miun/kraken	2.1	290 (p.364)	300	10	10	0	
 365	miun/kraken	2.2	scene start	11	11	11	0	
 365	miun/kraken	2.2	11 (p.365)	20	9	9	0	
@@ -138,8 +139,8 @@ page	witness	scene	from	to	printed_gap	counted_gap	error	numeral_reading
 370	miun/kraken	3.2	179 (p.370)	190	11	11	0	
 370	miun/kraken	3.2	190 (p.370)	200	10	10	0	
 370	miun/kraken	3.2	200 (p.370)	210	10	10	0	
-370	miun/kraken	3.3	scene start	10	10	11	+1	
-370	miun/kraken	3.3	10 (p.370)	19	9	8	-1	
+370	miun/kraken	3.3	scene start	10	10	10	0	
+370	miun/kraken	3.3	10 (p.370)	19	9	9	0	
 370	miun/kraken	3.3	19 (p.370)	31	12	12	0	
 371	miun/kraken	3.3	31 (p.370)	40	9	9	0	
 371	miun/kraken	3.3	40 (p.371)	50	10	10	0	

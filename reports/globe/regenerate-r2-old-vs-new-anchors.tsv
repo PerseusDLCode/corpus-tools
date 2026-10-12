@@ -1,32 +1,10 @@
 # baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in r2.xml (sha256 fdaf120cc0ea253b); not the shell's milestones or <l n>
-# transcribed anchors: 248; mapped (the row begins a line): 246; of those, carrying the same number: 221
-# in scenes that pass the gate: 194 mapped; agreeing: 192
+# transcribed anchors: 248; mapped (the row begins a line): 246; of those, carrying the same number: 243
+# in scenes that pass the gate: 246 mapped; agreeing: 243
 # unmapped (the row begins inside a line): 2; the P4's number is the containing line's for 1, the next line's for 0, neither for 1
 # listed: every disagreement, and every unmapped anchor whose number is neither
 scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
 1.3	191	disagree	192				Mow. And I, to keep all
-1.4	40	disagree	41			scene fails the gate	Ere further leisure yield them further
-1.4	50	disagree	51			scene fails the gate	They shall subscribe them for large
-1.4	60	disagree	61			scene fails the gate	To help him to his grave
-2.1	301	disagree	30			scene fails the gate	'Tis breath thou lack'st, and that
-2.1	100	disagree	101			scene fails the gate	A thousand flatterers sit within thy
-2.1	110	disagree	111			scene fails the gate	It were a shame to let
-2.1	120	disagree	122			scene fails the gate	Now, by my seat's right royal
-2.1	130	disagree	132			scene fails the gate	May be a precedent and witness
-2.1	141	disagree	143			scene fails the gate	York. I do beseech your majesty,
-2.1	151	disagree	153			scene fails the gate	York. Be York the next that
-2.1	160	disagree	162			scene fails the gate	Towards our assistance we do sieze
-2.1	190	disagree	192			scene fails the gate	The royalties and rights of banish'd
-2.1	200	disagree	202			scene fails the gate	Now, afore God--God forbid I say
-2.1	211	disagree	213			scene fails the gate	York. I'll not be by the
-2.1	220	disagree	222			scene fails the gate	Our uncle York lord governor of
-2.1	230	disagree	232			scene fails the gate	North. Nay, speak thy mind; and
-2.1	240	disagree	242			scene fails the gate	Of noble blood in this declining
-2.1	251	disagree	253			scene fails the gate	But what, o' God's name, doth
-2.1	260	disagree	262			scene fails the gate	His burthenous taxation notwithstanding, But by
-2.1	270	disagree	272			scene fails the gate	North. Not so; even through the
-2.1	280	disagree	282			scene fails the gate	That late broke from the Duke
-2.1	290	disagree	291			scene fails the gate	The first departing of the king
-2.1	295	disagree	296			scene fails the gate	And make high majesty look like
-3.3	210	unmapped (neither)		209	1	scene fails the gate	K. Rich. Then I must not
+2.1	301	disagree	30				'Tis breath thou lack'st, and that
+3.3	210	unmapped (neither)		209	1		K. Rich. Then I must not
 4.1	310	disagree	312				Boling. You shall. K. Rich. Then

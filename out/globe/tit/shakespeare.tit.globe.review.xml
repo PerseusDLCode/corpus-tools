@@ -105,7 +105,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-12">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 2e79eed; sources: tit.xml sha256 f2d3fc4d62914ba0; shared-lines.tsv sha256 9aa76c2a4206cc9c; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 5efc258; sources: tit.xml sha256 f2d3fc4d62914ba0; shared-lines.tsv sha256 9aa76c2a4206cc9c; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -3162,7 +3162,10 @@
         <l>
           <milestone unit="line" ed="Globe" n="35"/>They would not pity me, yet plead I must; </l>
         <l><!-- REVIEW words: both witnesses read 'tAnd'; the P4 reads 'And' -->
-          <milestone unit="line" ed="Globe" n="36"/>And bootless unto them<gap/> . . . . . . . . . </l>
+          <milestone unit="line" ed="Globe" n="36"/>And bootless unto them<ellipsis>
+            <metamark function="ellipsis"> . . . . . . . . . </metamark>
+          </ellipsis>
+        </l>
         <l>
           <milestone unit="line" ed="Globe" n="37"/>Therefore I tell my sorrows to the stones; </l>
         <l>

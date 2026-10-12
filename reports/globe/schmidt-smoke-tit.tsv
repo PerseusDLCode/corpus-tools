@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.tit.globe.xml sha256 190b433cb8aa2d5b; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.tit.globe.xml sha256 70757880de355b9a; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Aaron	Aaron,	2.1.12	Tit. II, 1, 12	headword on cited line							then aaron arm thy heart and fit thy thoughts
 Abandon	Abandon,	2.3.58	Tit. II, 3, 58	quotation on cited line						abandoned her holy groves,	who hath abandoned her holy groves

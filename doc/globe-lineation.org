@@ -11,13 +11,14 @@ and moved here unchanged except in imports and paths; the workshop is
 frozen at its tag =v1.0= as the record of how it was built (see
 [[*References to the workshop]]).
 
-King Lear, Antony and Cleopatra and Titus Andronicus are built and
-published (canonical-engLit =mvp=,
-=data/shakespeare/{lr,ant,tit}/shakespeare.*.globe.xml=). Titus was the
-first cold test: 22 of 24 pages with the classifier unchanged, every page
-with two checked rows. Richard II, the second, waits on the P4
-conversion (=#build/p4-coverage=). The open tasks are in canonical-engLit
-=doc/agenda.org= on =mvp=.
+King Lear, Antony and Cleopatra, Titus Andronicus and Richard II are
+built and published (canonical-engLit =mvp=,
+=data/shakespeare/{lr,ant,tit,r2}/shakespeare.*.globe.xml=). Titus and
+Richard II were the cold tests: Titus passed 22 of 24 pages with the
+classifier unchanged and needed only table rows; Richard II passed 22 of
+26 and needed two turnover rules and two new table kinds (=lacuna=,
+=misplaced=). The open tasks are in canonical-engLit =doc/agenda.org= on
+=mvp=.
 
 * The method
 
@@ -53,7 +54,8 @@ printed number must equal the count of its line, counted from the scene
 start. If any page fails, the play is not written; the reports are, so
 the failures can be read. Lear: 32/32 pages, 0 failing intervals,
 3,332 Globe lines. Antony: 33/33 pages, 3,063 Globe lines. Titus:
-24/24 pages, 2,523 Globe lines.
+24/24 pages, 2,523 Globe lines. Richard II: 26/26 pages, 2,756 Globe
+lines.
 
 Regeneration moves no words: the output's word stream must equal the
 P4's, or the build stops.

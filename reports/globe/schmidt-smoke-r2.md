@@ -1,8 +1,8 @@
-# Schmidt smoke test: King Richard II
+# Schmidt smoke test: Richard II
 
-Sources: shakespeare.r2.globe.xml sha256 a7262d5a101a5a9e; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.r2.globe.xml sha256 4c48678db8cee27f; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
-Every citation of King Richard II in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
+Every citation of Richard II in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 
 - **All citations:** 1758/1811 (97.1%) pass.
 - **With a quotation:** 1026/1049 (97.8%) have it on the cited line.

@@ -3,7 +3,7 @@
   <teiHeader xml:lang="eng">
     <fileDesc>
       <titleStmt>
-        <title>King Richard II</title>
+        <title>Richard II</title>
         <author>William Shakespeare</author>
         <editor>W. G. Clark</editor>
         <editor>W. Aldis Wright</editor>
@@ -25,7 +25,7 @@
       William Shakespeare, ed. William George Clark and William Aldis Wright
       (Garden City, New York: Nelson Doubleday, Inc.), 2 vols. (OCLC 08687211;
       Tufts University's Tisch Library holds two catalog records for this set,
-      both giving the date only as "19--")</bibl>. King Richard II is in volume 1,
+      both giving the date only as "19--")</bibl>. Richard II is in volume 1,
       consulted in the Internet Archive copy bwb_KT-315-451_1 (pp. 278-305);
       its date of printing is not confirmed.
       That edition reprints the Globe text in a setting of its own, with
@@ -72,7 +72,7 @@
       as a line of its own. These were decided individually, from the page
       images and the printed line numbers and, where the page is silent, from
       the line division of the Folger edition,
-      <bibl xml:id="folger-dracor">King Richard II, ed. Barbara A. Mowat and Paul
+      <bibl xml:id="folger-dracor">Richard II, ed. Barbara A. Mowat and Paul
       Werstine, Folger Digital Texts, version 0.5 (Washington, DC: Folger
       Shakespeare Library, 2015), as distributed in the Shakespeare Drama
       Corpus (ShakeDraCor, play shake000016; github.com/dracor-org/shakedracor,
@@ -105,7 +105,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-12">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 50f1e36; sources: r2.xml sha256 fdaf120cc0ea253b; shared-lines.tsv sha256 e67037e721e21f16; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 300bf5d; sources: r2.xml sha256 fdaf120cc0ea253b; shared-lines.tsv sha256 e67037e721e21f16; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>

@@ -105,7 +105,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-12">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 6f1dd65; sources: tit.xml sha256 f2d3fc4d62914ba0; shared-lines.tsv sha256 f63b7ef1731c11bd; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 2e79eed; sources: tit.xml sha256 f2d3fc4d62914ba0; shared-lines.tsv sha256 9aa76c2a4206cc9c; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -1657,7 +1657,7 @@
       </sp>
       <sp who="tit-10">
         <speaker>Dem.</speaker>
-        <l part="I"><!-- REVIEW shared: shared-lines.tsv: this line ends with a half the page cannot show as shared; second half begins 'why how now' (basis image+folger ftln-0550 ftln-0551, PENDING) -->
+        <l part="I"><!-- REVIEW shared: shared-lines.tsv: this line ends with a half the page cannot show as shared; second half begins 'why how now' (basis image+folger ftln-0550 ftln-0551, checked 2026-10-12 cliff) -->
           <milestone unit="line" ed="Globe" n="45"/>Ay, boy, grow ye so brave? <stage>They draw.</stage>
         </l>
       </sp>
@@ -5059,7 +5059,7 @@
           <milestone unit="line" ed="Globe" n="177"/>I'll make you feed on berries and on roots, </l>
         <l>
           <milestone unit="line" ed="Globe" n="178"/>And feed on curds and whey, and suck the goat, </l>
-        <l><!-- REVIEW numeral: shared-lines.tsv: the page prints 179; both witnesses read 176 (image, PENDING) -->
+        <l><!-- REVIEW numeral: shared-lines.tsv: the page prints 179; both witnesses read 176 (image, checked 2026-10-12 cliff) -->
           <milestone unit="line" ed="Globe" n="179"/>And cabin in a cave, and bring you up </l>
         <l>
           <milestone unit="line" ed="Globe" n="180"/>To be a warrior, and command a camp. <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads 'Exit.' --><stage type="exit">Exit.</stage>

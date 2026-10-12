@@ -146,6 +146,12 @@ class ConversionStats:
     lb_no_ed_read_as_globe: int = 0
     l_stray_n_stripped: list = field(default_factory=list)
     sp_stray_n_stripped: list = field(default_factory=list)
+    # A <p @n> is the Globe number of the speech's first row, recorded on the
+    # paragraph because the P4 had no marker to carry it: every one of the 78
+    # in the plays falls in order in its scene's Globe sequence (canonical-engLit
+    # doc/agenda.org #build/p4-coverage). Recovered as a transcribed Globe
+    # milestone opening the <p>; entries are (ctx, n, snippet).
+    p_n_recovered: list = field(default_factory=list)
     reg_collapsed_to_text: list = field(default_factory=list)
     q_direct_dropped: int = 0
     entities_resolved: dict = field(default_factory=dict)
@@ -179,6 +185,7 @@ class ConversionStats:
             f"({self.lb_no_ed_read_as_globe} <lb> with no @ed read as Globe). "
             f"{len(self.l_stray_n_stripped)} stray <l @n> stripped. "
             f"{len(self.sp_stray_n_stripped)} stray <sp @n> stripped. "
+            f"{len(self.p_n_recovered)} <p @n> recovered as Globe anchors. "
             f"{len(self.reg_collapsed_to_text)} <reg @orig> collapsed to plain text. "
             f"entities resolved: {self.entities_resolved or '(none)'}. "
             f"{len(self.recovered_transcribed_anchors)} transcribed anchors recovered "
@@ -434,6 +441,7 @@ def _convert_passthrough(old, stats: ConversionStats, ctx: str, tag: str):
         stray_n = attribs.pop("n")
         snippet = "".join(old.itertext()).strip()[:60]
         stats.sp_stray_n_stripped.append((ctx, stray_n, snippet))
+    p_n = attribs.pop("n") if tag == "p" and "n" in attribs else None
     extra = set(attribs.keys()) - allowed
     if extra:
         raise ConversionError(f"<{tag}> has unexpected attributes {extra} at {ctx}")
@@ -448,6 +456,17 @@ def _convert_passthrough(old, stats: ConversionStats, ctx: str, tag: str):
     if tag == "sp":
         child_ctx = f"{ctx} sp[@who={old.get('who')!r}]"
     convert_children(old, new, stats, child_ctx)
+    if p_n is not None:
+        anchor = etree.Element(q("milestone"))
+        anchor.set("unit", "line")
+        anchor.set("ed", "Globe")
+        anchor.set("n", p_n)
+        anchor.set("source", GLOBE_EDITION_SOURCE)
+        anchor.tail, new.text = new.text, None
+        new.insert(0, anchor)
+        stats.milestone_globe_numbered += 1
+        snippet = "".join(old.itertext()).strip()[:60]
+        stats.p_n_recovered.append((ctx, p_n, snippet))
     return new
 
 

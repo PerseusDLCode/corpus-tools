@@ -73,3 +73,14 @@ def test_an_lb_with_no_ed_is_read_as_a_globe_marker():
 def test_an_lb_with_another_attribute_raises():
     with pytest.raises(p4_convert.ConversionError, match="unexpected attributes"):
         convert('<l>x <lb rend="centered"/></l>')
+
+
+def test_a_p_n_is_recovered_as_the_globe_anchor_opening_the_speech():
+    """#build/p4-coverage: R2 II.3 '<p n="40">Then learn to know him now'."""
+    body, stats = convert('<p n="40">Then learn to know him now; <lb ed="G"/>this is the duke.</p>')
+    p = body.find(f".//{q('p')}")
+    first = p[0]
+    assert p.get("n") is None and p.text is None
+    assert (first.get("ed"), first.get("n"), first.get("source")) == ("Globe", "40", p4_convert.GLOBE_EDITION_SOURCE)
+    assert first.tail == "Then learn to know him now; "
+    assert [n for _, n, _ in stats.p_n_recovered] == ["40"]

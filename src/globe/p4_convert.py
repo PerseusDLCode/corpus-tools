@@ -96,6 +96,11 @@ ENTITY_MAP = {
     "AElig": "Æ",
     "aelig": "æ",
     "mdash": "—",
+    # The other plays' P4s (canonical-engLit doc/agenda.org #build/p4-coverage)
+    "lsquo": "\u2018",  # ham, 1h4, cor
+    "rsquo": "\u2019",
+    "oelig": "œ",  # 2h6
+    "agrave": "à",  # 1h6
 }
 
 # Elements copied through with tag name preserved and exactly this
@@ -134,8 +139,19 @@ class ConversionStats:
     milestone_globe_numbered: int = 0
     milestone_globe_unnumbered: int = 0
     milestone_f1: int = 0
+    # <lb> with no @ed, read as a Globe marker (canonical-engLit doc/agenda.org
+    # #build/p4-coverage): Pericles and Troilus mark their Globe rows this way
+    # almost throughout, and elsewhere a numbered one falls in the play's
+    # ed="G" number sequence (Othello II.3 70, 81, 100; Timon IV.3 299, 319, 350).
+    lb_no_ed_read_as_globe: int = 0
     l_stray_n_stripped: list = field(default_factory=list)
     sp_stray_n_stripped: list = field(default_factory=list)
+    # A <p @n> is the Globe number of the speech's first row, recorded on the
+    # paragraph because the P4 had no marker to carry it: every one of the 78
+    # in the plays falls in order in its scene's Globe sequence (canonical-engLit
+    # doc/agenda.org #build/p4-coverage). Recovered as a transcribed Globe
+    # milestone opening the <p>; entries are (ctx, n, snippet).
+    p_n_recovered: list = field(default_factory=list)
     reg_collapsed_to_text: list = field(default_factory=list)
     q_direct_dropped: int = 0
     entities_resolved: dict = field(default_factory=dict)
@@ -165,9 +181,11 @@ class ConversionStats:
             f"lb: {self.lb_total} total -> "
             f"{self.milestone_globe_numbered} numbered Globe milestones, "
             f"{self.milestone_globe_unnumbered} unnumbered Globe milestones, "
-            f"{self.milestone_f1} F1 milestones. "
+            f"{self.milestone_f1} F1 milestones "
+            f"({self.lb_no_ed_read_as_globe} <lb> with no @ed read as Globe). "
             f"{len(self.l_stray_n_stripped)} stray <l @n> stripped. "
             f"{len(self.sp_stray_n_stripped)} stray <sp @n> stripped. "
+            f"{len(self.p_n_recovered)} <p @n> recovered as Globe anchors. "
             f"{len(self.reg_collapsed_to_text)} <reg @orig> collapsed to plain text. "
             f"entities resolved: {self.entities_resolved or '(none)'}. "
             f"{len(self.recovered_transcribed_anchors)} transcribed anchors recovered "
@@ -259,10 +277,16 @@ def _convert_lb(old, stats: ConversionStats, ctx: str):
     stats.lb_total += 1
     if old.text or len(old) > 0:
         raise ConversionError(f"<lb> unexpectedly has content at {ctx}")
+    extra = set(old.attrib.keys()) - {"ed", "n"}
+    if extra:
+        raise ConversionError(f"<lb> has unexpected attributes {extra} at {ctx}")
     ed = old.get("ed")
     n = old.get("n")
     new = etree.Element(q("milestone"))
     new.set("unit", "line")
+    if ed is None:
+        stats.lb_no_ed_read_as_globe += 1
+        ed = "G"
     if ed == "G":
         new.set("ed", "Globe")
         if n is not None:
@@ -417,6 +441,7 @@ def _convert_passthrough(old, stats: ConversionStats, ctx: str, tag: str):
         stray_n = attribs.pop("n")
         snippet = "".join(old.itertext()).strip()[:60]
         stats.sp_stray_n_stripped.append((ctx, stray_n, snippet))
+    p_n = attribs.pop("n") if tag == "p" and "n" in attribs else None
     extra = set(attribs.keys()) - allowed
     if extra:
         raise ConversionError(f"<{tag}> has unexpected attributes {extra} at {ctx}")
@@ -431,6 +456,17 @@ def _convert_passthrough(old, stats: ConversionStats, ctx: str, tag: str):
     if tag == "sp":
         child_ctx = f"{ctx} sp[@who={old.get('who')!r}]"
     convert_children(old, new, stats, child_ctx)
+    if p_n is not None:
+        anchor = etree.Element(q("milestone"))
+        anchor.set("unit", "line")
+        anchor.set("ed", "Globe")
+        anchor.set("n", p_n)
+        anchor.set("source", GLOBE_EDITION_SOURCE)
+        anchor.tail, new.text = new.text, None
+        new.insert(0, anchor)
+        stats.milestone_globe_numbered += 1
+        snippet = "".join(old.itertext()).strip()[:60]
+        stats.p_n_recovered.append((ctx, p_n, snippet))
     return new
 
 

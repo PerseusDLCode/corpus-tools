@@ -47,3 +47,40 @@ def test_inset_songs_and_letters_still_raise(tag):
     """Undecided: whether the Globe numbers their rows (#build/inset-numbering)."""
     with pytest.raises(p4_convert.ConversionError, match=f"Unhandled element <{tag}>"):
         convert(f"<{tag}><l>x</l></{tag}>")
+
+
+def test_the_other_plays_entities_resolve(tmp_path):
+    """#build/p4-coverage: &lsquo; &rsquo; (ham, 1h4, cor), &oelig; (2h6),
+    &agrave; (1h6). The P4s name an external DTD, which is never loaded."""
+    p = tmp_path / "p4.xml"
+    p.write_text('<!DOCTYPE TEI.2 SYSTEM "tei2.dtd"><TEI.2><text><body><div1 type="act" n="1">'
+                 '<div2 type="scene" n="1"><sp who="a"><p>&lsquo;Tis&rsquo; man&oelig;uvre voil&agrave;</p>'
+                 '</sp></div2></div1></body></text></TEI.2>')
+    body = p4_convert.convert_body(p4_convert.parse_p4(p), p4_convert.ConversionStats())
+    assert body.find(f".//{q('p')}").text == "‘Tis’ manœuvre voilà"
+
+
+def test_an_lb_with_no_ed_is_read_as_a_globe_marker():
+    """#build/p4-coverage: Pericles and Troilus mark Globe rows with a bare
+    <lb>; a numbered one is a transcribed Globe number, like <lb ed="G" n=...>."""
+    body, stats = convert('<p>Ever at the best, hearing well <lb n="30"/>of your lordship. <lb/>Go.</p>')
+    ms = body.findall(f".//{q('milestone')}")
+    assert [(m.get("ed"), m.get("n"), m.get("source")) for m in ms] == [
+        ("Globe", "30", p4_convert.GLOBE_EDITION_SOURCE), ("Globe", None, None)]
+    assert stats.lb_no_ed_read_as_globe == 2
+
+
+def test_an_lb_with_another_attribute_raises():
+    with pytest.raises(p4_convert.ConversionError, match="unexpected attributes"):
+        convert('<l>x <lb rend="centered"/></l>')
+
+
+def test_a_p_n_is_recovered_as_the_globe_anchor_opening_the_speech():
+    """#build/p4-coverage: R2 II.3 '<p n="40">Then learn to know him now'."""
+    body, stats = convert('<p n="40">Then learn to know him now; <lb ed="G"/>this is the duke.</p>')
+    p = body.find(f".//{q('p')}")
+    first = p[0]
+    assert p.get("n") is None and p.text is None
+    assert (first.get("ed"), first.get("n"), first.get("source")) == ("Globe", "40", p4_convert.GLOBE_EDITION_SOURCE)
+    assert first.tail == "Then learn to know him now; "
+    assert [n for _, n, _ in stats.p_n_recovered] == ["40"]

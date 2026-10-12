@@ -1,0 +1,9 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tit.xml (sha256 f2d3fc4d62914ba0); not the shell's milestones or <l n>
+# transcribed anchors: 236; mapped (the row begins a line): 230; of those, carrying the same number: 227
+# in scenes that pass the gate: 230 mapped; agreeing: 227
+# unmapped (the row begins inside a line): 6; the P4's number is the containing line's for 4, the next line's for 2, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.1	289	disagree	290				Mut. My lord, you pass not
+4.2	71	disagree	70				And bids thee christen it with
+4.2	81	disagree	80				Chi. It shall not live. Aar.

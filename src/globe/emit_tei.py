@@ -34,7 +34,7 @@ from lxml import etree
 
 from globe.p4_convert import q
 from globe import tei_header
-from globe.tokens import Token
+from globe.tokens import Token, norm
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 CONTAINERS = ("p", "l")  # a milestone inside these is the first child, never before them
@@ -49,6 +49,20 @@ class Mark:
     n: int | None = None
     text: str = ""  # review comments
     order: int = 0  # ties at one token: lower first
+
+
+def wordless_l_before(toks: list[Token], at: int):
+    """The P4's wordless <l> (the Globe's row of dots, as an <ellipsis>)
+    immediately before the <l> holding token `at`, or None."""
+    cont = toks[at].cont
+    prev = cont.getprevious() if cont is not None else None
+    while prev is not None and not isinstance(prev.tag, str):
+        prev = prev.getprevious()
+    if prev is None or _local(prev) != "l":
+        return None
+    if any(norm(w) for w in "".join(prev.itertext()).split()):
+        return None
+    return prev
 
 
 def _local(el) -> str:
@@ -100,7 +114,7 @@ def build_marks(lines, rows_in_order) -> list[Mark]:
     marks: list[Mark] = []
     line_start = set()
     for ln in lines:
-        marks.append(Mark(ln.start, "milestone", ln.n, order=0))
+        marks.append(Mark(ln.start, "lacuna" if ln.lacuna_at is not None else "milestone", ln.n, order=0))
         line_start.add(id(ln.rows[0]))
     for r in rows_in_order:
         if r.start is None or id(r) in line_start:
@@ -121,6 +135,17 @@ def _target(toks: list[Token], at: int) -> Token:
 def apply_marks(toks: list[Token], marks: list[Mark]) -> None:
     """Insert every mark. Later tokens first, so earlier offsets stay valid."""
     for m in sorted(marks, key=lambda m: (-m.at, -m.order)):
+        if m.kind == "lacuna":  # no token of its own: the milestone opens the wordless <l>
+            lac = wordless_l_before(toks, m.at)
+            if lac is None:
+                raise ValueError(f"lacuna line {m.n}: no wordless <l> before token {m.at}")
+            el = etree.Element(q("milestone"))
+            el.set("unit", "line")
+            el.set("ed", "Globe")
+            el.set("n", str(m.n))
+            el.tail, lac.text = lac.text, None
+            lac.insert(0, el)
+            continue
         if m.kind == "milestone":
             el = etree.Element(q("milestone"))
             el.set("unit", "line")

@@ -23,6 +23,13 @@ cuts one line in two, and one corrects a number:
             second_half of the row. The Folger is no guide here: it joins
             two of those three;
   numeral   a marginal number both witnesses misread.
+  lacuna    a line the page prints without words, a row of dots the Globe
+            numbers (Richard II II.1.280); first_half is the first words of
+            the line above. The P4 must have a wordless <l> there too.
+  misplaced a marginal number the page prints beside a row of the line next
+            to the one it numbers (Richard II III.3, 10); first_half is the
+            printed value, second_half the first words of the line it is
+            printed beside, `line` the first words of the line it numbers.
 
 Every row names its play, and its page must be one of that play's printed
 pages (data/globe/plays.tsv): the build reads only the play's own rows, and
@@ -54,7 +61,11 @@ TABLE = Path(__file__).resolve().parent.parent.parent / "data/globe/shared-lines
 COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line", "basis",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
-KINDS = ("shared", "turnover", "separate", "numeral")
+KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced")
+# The kinds that decide where a Globe line begins, which the header counts
+# (canonical-engLit doc/agenda.org #build/header-junctions): not the numeral
+# kinds, and not a lacuna, which the page prints as a line of its own.
+JUNCTION_KINDS = ("shared", "turnover", "separate")
 
 
 class TableError(Exception):
@@ -66,7 +77,7 @@ class Row:
     play: str  # the play's id in data/globe/plays.tsv
     scene: str
     page: int
-    kind: str  # "shared" | "turnover" | "separate" | "numeral"
+    kind: str  # one of KINDS
     first_half: str  # shared: first words of the first half; numeral: the printed value
     second_half: str  # shared: first words of the second half; numeral: the value read
     line: str  # numeral: first words of the line the numeral sits on; shared: empty

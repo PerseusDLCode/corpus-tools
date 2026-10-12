@@ -99,10 +99,15 @@ class Line:
     n: int = 0
     num: int | None = None  # printed marginal number on this line, if any
     num_page: int | None = None
+    # A line the page prints without words, the Globe's row of dots
+    # (shared-lines.tsv kind `lacuna`): it has no token of its own, so it
+    # starts where the next line does, and its milestone goes in the P4's
+    # wordless <l> (emit_tei.wordless_l_before).
+    lacuna_at: int | None = None
 
     @property
     def start(self) -> int:
-        return self.rows[0].start
+        return self.lacuna_at if self.lacuna_at is not None else self.rows[0].start
 
 
 @dataclass

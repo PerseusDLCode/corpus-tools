@@ -91,7 +91,7 @@ def count_junctions(table: list[shared_lines.Row]) -> int:
     """Rows that decide where a Globe line begins -- shared, turnover and
     separate -- and not a `numeral` row, which corrects a misread marginal
     number (canonical-engLit doc/agenda.org #build/header-junctions)."""
-    return sum(1 for r in table if r.kind != "numeral")
+    return sum(1 for r in table if r.kind in shared_lines.JUNCTION_KINDS)
 
 
 def build_source_desc(play: str, catalogs: dict[str, dict]) -> etree.Element:

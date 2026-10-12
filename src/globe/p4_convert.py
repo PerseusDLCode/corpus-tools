@@ -376,6 +376,7 @@ def _convert_l(old, stats: ConversionStats, ctx: str):
     if part is not None:
         new.set("part", part)
     convert_children(old, new, stats, ctx)
+    _wordless_l_to_ellipsis(new, stats)
     if stray_n is not None:
         if _stray_n_is_recoverable(old):
             stats.pending_anchor_recovery.append((ctx, stray_n, new))
@@ -395,6 +396,22 @@ def _convert_role(old, stats: ConversionStats, ctx: str):
         new.set(XML_ID, rid)
     convert_children(old, new, stats, ctx)
     return new
+
+
+def _wordless_l_to_ellipsis(new, stats: ConversionStats) -> None:
+    """A verse line that is only the Globe's dots, with no <gap/> before them
+    (Richard II II.1.280, "<l>...................</l>"): the whole line is the
+    lacuna, so its dots are an <ellipsis> too, as Titus's are."""
+    if not new.text or not LACUNA_DOTS.fullmatch(new.text):
+        return
+    if any(etree.QName(c).localname != "milestone" or (c.tail or "").strip() for c in new):
+        return
+    ellipsis = etree.Element(q("ellipsis"))
+    metamark = etree.SubElement(ellipsis, q("metamark"))
+    metamark.set("function", "ellipsis")
+    metamark.text, new.text = new.text, None
+    new.insert(0, ellipsis)
+    stats.element_counts_out["ellipsis"] = stats.element_counts_out.get("ellipsis", 0) + 1
 
 
 def _convert_gap(old, new_parent, stats: ConversionStats, ctx: str):

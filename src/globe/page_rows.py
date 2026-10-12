@@ -328,6 +328,7 @@ def join_hyphenation(body: list[Row]) -> None:
             frag = a.words.pop().t[:-1]
             first = b.words[0]
             b.words[0] = Word(first.x, first.w, frag + first.t)
+            b.extra["completes_word"] = True  # lineate.continues
 
 
 MARGIN_BAND_U = 0.75  # rows this close to the 10th-percentile edge make up the body cluster

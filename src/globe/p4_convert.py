@@ -96,6 +96,11 @@ ENTITY_MAP = {
     "AElig": "Æ",
     "aelig": "æ",
     "mdash": "—",
+    # The other plays' P4s (canonical-engLit doc/agenda.org #build/p4-coverage)
+    "lsquo": "\u2018",  # ham, 1h4, cor
+    "rsquo": "\u2019",
+    "oelig": "œ",  # 2h6
+    "agrave": "à",  # 1h6
 }
 
 # Elements copied through with tag name preserved and exactly this

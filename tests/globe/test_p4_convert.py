@@ -47,3 +47,14 @@ def test_inset_songs_and_letters_still_raise(tag):
     """Undecided: whether the Globe numbers their rows (#build/inset-numbering)."""
     with pytest.raises(p4_convert.ConversionError, match=f"Unhandled element <{tag}>"):
         convert(f"<{tag}><l>x</l></{tag}>")
+
+
+def test_the_other_plays_entities_resolve(tmp_path):
+    """#build/p4-coverage: &lsquo; &rsquo; (ham, 1h4, cor), &oelig; (2h6),
+    &agrave; (1h6). The P4s name an external DTD, which is never loaded."""
+    p = tmp_path / "p4.xml"
+    p.write_text('<!DOCTYPE TEI.2 SYSTEM "tei2.dtd"><TEI.2><text><body><div1 type="act" n="1">'
+                 '<div2 type="scene" n="1"><sp who="a"><p>&lsquo;Tis&rsquo; man&oelig;uvre voil&agrave;</p>'
+                 '</sp></div2></div1></body></text></TEI.2>')
+    body = p4_convert.convert_body(p4_convert.parse_p4(p), p4_convert.ConversionStats())
+    assert body.find(f".//{q('p')}").text == "‘Tis’ manœuvre voilà"

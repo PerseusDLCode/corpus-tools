@@ -40,6 +40,7 @@ PLAY_TITLES = {
     "r2": "Richard II",  # as its __cts__.xml names it
     "tgv": "Two Gentlemen of Verona",  # as its __cts__.xml names it
     "mm": "Measure for Measure",
+    "err": "The Comedy of Errors",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -65,6 +66,9 @@ COPY_TEXT = {
     # Introduction printed 663 (CHOCR index 103), V.1 ends on 689 (index
     # 129); Troilus's introduction is 690 (printed = index + 560).
     "mm": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="663-689"),
+    # Introduction printed 84 (contents: 84; CHOCR index 94), V.1 ends on 102
+    # (index 112); Two Gentlemen's introduction is 103 (printed = index - 10).
+    "err": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="84-102"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

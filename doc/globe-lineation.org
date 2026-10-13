@@ -11,15 +11,17 @@ and moved here unchanged except in imports and paths; the workshop is
 frozen at its tag =v1.0= as the record of how it was built (see
 [[*References to the workshop]]).
 
-King Lear, Antony and Cleopatra, Titus Andronicus, Richard II and Two
-Gentlemen of Verona are built and published (canonical-engLit =mvp=,
-=data/shakespeare/{lr,ant,tit,r2,tgv}/shakespeare.*.globe.xml=). Titus and
+King Lear, Antony and Cleopatra, Titus Andronicus, Richard II, Two
+Gentlemen of Verona and Measure for Measure are built and published
+(canonical-engLit =mvp=,
+=data/shakespeare/{lr,ant,tit,r2,tgv,mm}/shakespeare.*.globe.xml=). Titus and
 Richard II were the cold tests: Titus passed 22 of 24 pages with the
 classifier unchanged and needed only table rows; Richard II passed 22 of
 26 and needed two turnover rules and two new table kinds (=lacuna=,
 =misplaced=). Two Gentlemen, the first of the batch, passed 17 of 21 and
 needed two rules (one-word rows spelt otherwise in the P4; turnovers
-set past the band) and two =separate= rows. The open tasks are in canonical-engLit =doc/agenda.org= on
+set past the band) and two =separate= rows. Measure for Measure passed 26 of 26 with no
+rule change and nine table rows. The open tasks are in canonical-engLit =doc/agenda.org= on
 =mvp=.
 
 * The method

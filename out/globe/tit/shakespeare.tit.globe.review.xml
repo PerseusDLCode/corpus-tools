@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-12">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 5efc258; sources: tit.xml sha256 f2d3fc4d62914ba0; shared-lines.tsv sha256 9aa76c2a4206cc9c; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-13">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 7316fb7; sources: tit.xml sha256 f2d3fc4d62914ba0; shared-lines.tsv sha256 faf45a0fa3999f0c; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -487,7 +487,7 @@
       <sp who="tit-13">
         <speaker>Luc.</speaker>
         <l>
-          <!-- REVIEW words: both witnesses read 'perform’d'; the P4 reads 'performed' --><milestone unit="line" ed="Globe" n="142"/>See, lord and father, how we have performed </l>
+          <!-- REVIEW words: both witnesses read 'perform’d'; the P4 reads 'performed' --><milestone unit="line" ed="Globe" n="142"/>See, lord and father, how we have <lb/>performed </l>
         <l>
           <milestone unit="line" ed="Globe" n="143"/>Our Roman rites: Alarbus' limbs are lopp'd, </l>
         <l>
@@ -843,7 +843,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="274"/>Ransomless here we set our prisoners free: </l>
         <l>
-          <milestone unit="line" ed="Globe" n="275"/>Proclaim our honours, lords, with trump and drum. <lb/>
+          <milestone unit="line" ed="Globe" n="275"/>Proclaim our honours, lords, with trump and <lb/>drum. <lb/>
           <stage>Flourish. Saturninus courts
                 Tamora <lb/>in dumb show. </stage>
         </l>
@@ -2966,7 +2966,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="12"/>Cousin, a word; where is your husband? </l>
         <l>
-          <milestone unit="line" ed="Globe" n="13"/>If I do dream, would all my wealth would wake mel </l>
+          <milestone unit="line" ed="Globe" n="13"/>If I do dream, would all my wealth would wake <lb/>mel </l>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>If I do wake, some planet strike me down, </l>
         <l>
@@ -3604,7 +3604,7 @@
       <sp who="tit-25">
         <speaker>Tit.</speaker>
         <l>
-          <!-- REVIEW words: both witnesses read 'dispatch’d.'; the P4 reads 'dispatched.' --><milestone unit="line" ed="Globe" n="193"/>Now stay your strife: what shall be is dispatched. </l>
+          <!-- REVIEW words: both witnesses read 'dispatch’d.'; the P4 reads 'dispatched.' --><milestone unit="line" ed="Globe" n="193"/>Now stay your strife: what shall be is <lb/>dispatched. </l>
         <l>
           <milestone unit="line" ed="Globe" n="194"/>Good Aaron, give his majesty my hand: </l>
         <l>
@@ -6312,7 +6312,7 @@
       <sp who="tit-25">
         <speaker>Tit.</speaker>
         <l>
-          <milestone unit="line" ed="Globe" n="61"/>Are these thy ministers? what are they called? </l>
+          <milestone unit="line" ed="Globe" n="61"/>Are these thy ministers? what are they <lb/>called? </l>
       </sp>
       <sp who="tit-24">
         <speaker>Tam.</speaker>

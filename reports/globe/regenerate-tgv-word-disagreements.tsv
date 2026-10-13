@@ -1,0 +1,249 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+21	miun/kraken	1	13	replace	An	Au	An	
+21	miun/kraken	1	18	replace	honor'd	honour'd	honour'd	same
+21	miun/kraken	1	32	replace	thee,	tree,	thee,	
+21	miun/kraken	1	36	replace	I'll	I’Il	I’Il	same
+21	miun/kraken	1	54	replace	labor	labour	labour	same
+21	miun/kraken	2	1	delete		OF VERONA. PERSONÆ. the like to PANTHINO, Servant to JULIA, beloved of SILVIA, beloved of Valentine. LUCETTA, waiting-woman to Servants, Musicians. SCENE, Verona; Milan; the frontiers of	OF VERONA. PERSONÆ. LAUNCE, the like to Proteus. PANTHINO, Servant to Antonio. JULIA, beloved of Proteus. SILVIA, beloved of Valentine. LUCETTA, waiting-woman to Julia. Servants, Musicians. SCENE, Verona; Milan; the frontiers of Mantua.	
+21	miun/kraken	2	12	replace	you'll	you’Il	you’ll	
+21	miun/kraken	2	15	replace	Val.		Val.	
+21	miun/kraken	2	23	replace	so by	so-by	so by	
+21	miun/kraken	2	39	replace	so,farewell. [Exit.	so, farewell. IExit.	so, farewell. [Exit.	
+21	miun/kraken	2	41	replace	honor	honour	honour	same
+21	miun/kraken	2	54	replace	Speed.		Speed.	
+21	miun/kraken	2	54	replace	to one	toone	to one	
+22	miun/kraken	1	2	replace	You	Vou	Vou	same
+22	miun/kraken	1	8	replace	Speed.	SBeed.	Speed.	
+22	miun/kraken	1	12	replace	I'll	I’Il	I’ll	
+22	miun/kraken	1	30	replace	labor.	labour.	labour.	same
+22	miun/kraken	1	48	replace	Speed.		Speed.	
+22	miun/kraken	1	69	replace	Speed.		Soced.	
+22	miun/kraken	1	69	replace	you'll	you’Il	you’ll	
+22	miun/kraken	2	6	replace	your	vour	your	
+22	miun/kraken	2	6	replace	she'll	she’Il	she ’ll	
+22	miun/kraken	2	8	replace	she's	she ’s	she ’s	same
+22	miun/kraken	2	13	replace	I'll	1’II	I’Il	
+22	miun/kraken	2	19	replace	[Exit	IExit	(Exit	
+22	miun/kraken	2	23	replace	SCENE II	SCENEII.	SCENEII.	same
+22	miun/kraken	2	25	replace	Jul.		Jul.	
+22	miun/kraken	2	29	replace	Jul.		Yul.	
+22	miun/kraken	2	32	replace	I'll	I’Il	I’Il	same
+22	miun/kraken	2	57	replace	Jul.		Jul.	
+22	miun/kraken	2	60	replace	ye.	re	ye.	
+22	miun/kraken	2	63	replace	Luc.		Luc.	
+23	miun/kraken	1	5	replace	who	wno	vno	
+23	miun/kraken	1	13	replace	harbor	harbour	harbour	same
+23	miun/kraken	1	24	replace	overlooked	o’erlooked	o'erlooked	
+23	miun/kraken	1	44	replace	Jul.		Jul.	
+23	miun/kraken	1	45	replace	Luc.		Luc.	
+23	miun/kraken	1	50	replace	Jul.		Jul.	
+23	miun/kraken	2	3	replace	Jul.	ful.	Jul.	
+23	miun/kraken	2	3	replace	your	vour	your	
+23	miun/kraken	2	4	replace	Keep	Kcep	Keep	
+23	miun/kraken	2	16	replace	Jul.		Jul.	
+23	miun/kraken	2	21	replace	Luc.		Luc.	
+23	miun/kraken	2	28	replace	yield	vield	yield	
+23	miun/kraken	2	47	replace	I'll	I’Il	I’Il	same
+23	miun/kraken	2	62	replace	Jul.		Jud.	
+23	miun/kraken	2	66	replace	Jul.		Jud.	
+24	miun/kraken	1	12	replace	of	to	to	same
+24	miun/kraken	1	57	replace	honor's	honour’s	honour’s	same
+24	miun/kraken	2	7	replace	your	vour	your	
+24	miun/kraken	2	23	replace	you	vou	you	
+24	miun/kraken	2	23	replace	employ'd	empioy’d	employ’d	
+24	miun/kraken	2	42	replace	Exeunt.	IExeunt.	(Exeunt.	
+24	miun/kraken	2	44	replace	DUKE'S palace.	Dukr’s salace.	DUKE'S palace.	
+24	miun/kraken	2	58	replace	you'll	you ’ll	you ’Il	
+25	miun/kraken	1	2	replace	your	vour	your	
+25	miun/kraken	1	5	replace	A B C;	ABC;	ABC;	same
+25	miun/kraken	1	16	replace	And	Are	Are	same
+25	miun/kraken	1	32	replace	Speed.	S5eed.	Speed.	
+25	miun/kraken	1	35	replace	hard-favored,	hard-favoured,	hard-favoured,	same
+25	miun/kraken	1	36	replace	well-favored.	well-favoured.	well-favoured.	same
+25	miun/kraken	1	40	replace	favored.	favoured.	favoured.	same
+25	miun/kraken	1	42	replace	favor	favour	favour	same
+25	miun/kraken	1	43	replace	That 's	That’s	That’s	same
+25	miun/kraken	1	56	replace	Speed.		Speed.	
+25	miun/kraken	2	8	replace	Speed.		Speed.	
+25	miun/kraken	2	13	replace	[Aside]	[Asidel	[Aside]	
+25	miun/kraken	2	18	replace	[Aside]	[Asidel	[Asidel	same
+25	miun/kraken	2	22	replace	[Aside]	[Asidel	[Aside)	
+25	miun/kraken	2	44	replace	[Aside]	IAsidel	[Asidel	
+25	miun/kraken	2	62	replace	labor:	labour:	labour	
+26	miun/kraken	1	10	replace	from	for	from	
+26	miun/kraken	1	21	replace	Speed.		Speed.	
+26	miun/kraken	1	29	replace	I'll	I’Il	I’Il	same
+26	miun/kraken	1	54	replace	[Giving	IGiving	[Giving	
+26	miun/kraken	1	57	replace	Jul.	9uil.	Jul.	
+26	miun/kraken	2	7	replace	[Exeunt.	LExeunt.	[Exeunt.	
+26	miun/kraken	2	20	replace	pebblestone,	pebble stone,	pebble stone,	same
+26	miun/kraken	2	34	replace	dog --Oh!	dog-Oh!	dog–Oh	
+26	miun/kraken	2	40	replace	here 's	here’s	here’s	same
+27	miun/kraken	1	10	replace	[Exeunt.	LExeunt.	LExeunt.	same
+27	miun/kraken	1	13	replace	Sil.	SSil.	Sil.	
+27	miun/kraken	1	15	replace	Speed.		Speed.	
+27	miun/kraken	1	17	replace	Speed.		Speed.	
+27	miun/kraken	1	33	replace	I'll	I’Il	I’Il	same
+27	miun/kraken	1	36	replace	color?	colour	colour	same
+27	miun/kraken	1	61	replace	DUKE.	DURE.	DURE.	same
+27	miun/kraken	2	11	replace	honor	honour	honour	same
+27	miun/kraken	2	22	delete		7o		
+27	miun/kraken	2	27	replace	Duke.		Duke.	
+27	miun/kraken	2	61	delete		LExit THURIO.	IExit THURIO.	
+27	miun/kraken	2	64	replace	favor.	favour.	favour.	same
+28	miun/kraken	1	7	delete		1ro		
+28	miun/kraken	1	11	replace	I'll	I’Il	I ’ll	
+28	miun/kraken	1	20	replace	I'll	I’Il	I’Il	same
+28	miun/kraken	1	23	replace	Silvia	Siloia	LExeunt Silvia	
+28	miun/kraken	1	45	replace	This	There	There	same
+28	miun/kraken	1	47	replace	of	ot	ot	same
+28	miun/kraken	2	1	replace	honor--	honour–	honour–	same
+28	miun/kraken	2	4	replace	favor	favour	favour	same
+28	miun/kraken	2	30	replace	and 'greed	and’greed	and ’greed	
+28	miun/kraken	2	36	replace	I'll	I’Il	I’Il	same
+28	miun/kraken	2	43	replace	Is	tIs	tIs	same
+28	miun/kraken	2	51	replace	I	E	I	
+28	miun/kraken	2	61	replace	I'll	I’Il	I’Il	same
+29	miun/kraken	1	4	replace	I'll	I’Il	I’Il	same
+29	miun/kraken	1	27	replace	I'll	L’ll	I’ll	
+29	miun/kraken	1	31	replace	will 't	will't	will’t	
+29	miun/kraken	1	42	replace	Speed.		Speed.	
+29	miun/kraken	1	59	replace	[Exeunt.	IExeunt.	[Exeunt.	
+29	miun/kraken	2	23	replace	I'll	I’Il	I’Il	same
+29	miun/kraken	2	30	replace	I'll	I’Il	I’Il	same
+29	miun/kraken	2	34	replace	I'll	I’Il	I’Il	same
+29	miun/kraken	2	37	replace	[Exit.	lExit.	[Exit.	
+29	miun/kraken	2	49	delete		ro		
+30	miun/kraken	1	10	replace	I'll	I 'll	I’il	
+30	miun/kraken	1	13	replace	I'll	I’Il	I’Il	same
+30	miun/kraken	1	22	replace	I'll	I’Il	I’Il lenit	
+30	miun/kraken	1	34	replace	ill-favor'd.	illfavour'd.	illfavour’d.	
+30	miun/kraken	2	7	replace	DUKE'S palace.	Duxe’s	Duxe's palace.	
+30	miun/kraken	2	11	replace	[Exit	IR.xit	[Exit	
+30	miun/kraken	2	12	replace	what's your	what’syoer	what’s your	
+30	miun/kraken	2	13	delete		I	I	same
+30	miun/kraken	2	36	delete		o		
+30	miun/kraken	2	44	replace	mayest	mayst	mayst	same
+30	miun/kraken	2	63	replace	[Exit.	IExit.	IExit.	same
+31	miun/kraken	1	4	replace	Duke.		Duke.	
+31	miun/kraken	1	5	replace	tenor	tenour	tenour	same
+31	miun/kraken	1	7	replace	Duke.		Duke.	
+31	miun/kraken	1	15	replace	honorable;	honourable;	honourable;	same
+31	miun/kraken	1	39	replace	Now	N r	Now	
+31	miun/kraken	1	40	replace	For long	E ong	For long agonc	
+31	miun/kraken	1	41	replace	Besides,	Be sides,	Besides,	
+31	miun/kraken	1	68	replace	day to	day-to	day to	
+31	miun/kraken	2	2	delete		III		
+31	miun/kraken	2	15	replace	Duke.		Duke.	
+31	miun/kraken	2	21	replace	everything	every thing	every thing	same
+31	miun/kraken	2	42	replace	I'll	I’Il	I'll	
+31	miun/kraken	2	43	replace	harbor	harbour	harbour	same
+31	miun/kraken	2	47	replace	lying!	Iying!	Iying	
+31	miun/kraken	2	67	replace	for	ior	for	
+32	miun/kraken	1	7	replace	[Exit.	LExit.	Exit.	
+32	miun/kraken	1	32	replace	on 's	on’s	on’s	same
+32	miun/kraken	1	44	replace	I'll	I’Il	I’ll	
+32	miun/kraken	1	65	replace	already,a	already,	already,	same
+32	miun/kraken	2	20	replace	life:	dife:	life	
+32	miun/kraken	2	35	replace	I'll	I’Il	I’Il	same
+32	miun/kraken	2	37	replace	love-afairs.	love-affairs.	love-affairs.	same
+32	miun/kraken	2	53	replace	who 'tis	who’tis	who ’tis	
+32	miun/kraken	2	68	replace	your	vour	your	
+33	trent/kraken	1	22	replace	milk.'	"milke."""	milk.	
+33	trent/kraken	1	46	replace	Speed. 'Item:	Speed.“Item	Speed. “Item:	
+33	trent/kraken	1	68	replace	teeth	tecth	teeth	
+33	trent/kraken	2	9	replace	I'll	I’Il	I’Il	same
+33	trent/kraken	2	15	replace	I'll	I’Il	I’Il	same
+33	trent/kraken	2	24	replace	Speed. 'And	Speed.And	Speed. And	
+33	trent/kraken	2	45	replace	I'll	I’Il	I’Il	same
+33	trent/kraken	2	46	replace	[Exit.	IExit.	LExit.	
+33	trent/kraken	2	47	replace	DUKE'S	DuxE's	Duxe’s	
+34	miun/kraken	1	11	replace	Duke.		Dukee.	
+34	miun/kraken	1	15	replace	Duke.		Duke.	
+34	miun/kraken	1	21	replace	she'll	she ’Il	she ’ll	
+34	miun/kraken	1	33	replace	cannot	never can	never can	same
+34	miun/kraken	1	38	replace	aught	ought	'aught	
+34	miun/kraken	2	13	replace	Duke.		Duke.	
+34	miun/kraken	2	15	replace	I'll	I’Il	I’Il	same
+34	miun/kraken	2	23	replace	We'll	We’Il	We’ll	
+34	miun/kraken	2	43	replace	your	vour	your	
+34	miun/kraken	2	45	replace	we'll	we’Il	we’ll	
+35	miun/kraken	1	8	replace	you	vou	you	
+35	miun/kraken	1	15	replace	We'll	We ’ll	We ’ll	same
+35	miun/kraken	1	17	replace	honorable	honourable	honourable	same
+35	miun/kraken	1	35	replace	excused	excus'd	excused	
+35	miun/kraken	1	46	replace	Third	Thind	Third	
+35	miun/kraken	1	48	delete		the	the	same
+35	miun/kraken	1	49	replace	We'll	We ’ll	We’ll	
+35	miun/kraken	1	55	replace	your	vour	your	
+35	miun/kraken	1	60	replace	we'll	we 'll	we’Il	
+35	miun/kraken	1	63	replace	[Exeunt.	IExeunt.	IExeunt.	same
+35	miun/kraken	2	9	delete		1o		
+35	miun/kraken	2	24	replace	not here.	nothere.	not here.	
+35	miun/kraken	2	37	replace	we'll	we ’ll	we’ll	
+35	miun/kraken	2	37	replace	I'll	I'Il	I’ll	
+36	miun/kraken	1	26	replace	you:	vou	you	
+36	miun/kraken	1	31	replace	[Exeunt	LExeunt	(Exeunt	
+36	miun/kraken	1	58	replace	[Aside]	[sidel	Yul. (Asidel	
+36	miun/kraken	1	62	replace	bethroth'd:	betroth’d:	betroth’d	
+36	miun/kraken	2	2	replace	[Aside]	[Asidel]	[Asidel	
+36	miun/kraken	2	6	replace	I'll	I’Il	I’Il	same
+36	miun/kraken	2	6	replace	I'll	I’Il	I’Il	same
+36	miun/kraken	2	10	replace	[Aside] If 'twere	[Asidel If’twere	[Asidel If’twere	same
+36	miun/kraken	2	13	replace	your	vour	your	
+36	miun/kraken	2	16	replace	I'll	I’Il	I’Il	same
+36	miun/kraken	2	18	replace	overnight	o’ernight	o’ernight	same
+36	miun/kraken	2	20	replace	[Exeunt	LExeunt	[E xeunt	
+36	miun/kraken	2	23	replace	Jul.		Jul.	
+36	miun/kraken	2	28	replace	[Exeunt.	IExeunt.	(Exeunt.	
+36	miun/kraken	2	33	replace	she'ld	she ’ld	she ’ld	same
+36	miun/kraken	2	38	replace	your	vour	your	
+36	miun/kraken	2	63	replace	justice	jjustice	justice	
+37	miun/kraken	1	16	replace	Egl.		Egl.	
+37	miun/kraken	1	34	replace	upon	upou	upon	
+37	miun/kraken	1	38	replace	for 't;	for’t;	for’t;	same
+37	miun/kraken	2	1	replace	I'll	I’Il	I’ll	
+37	miun/kraken	2	2	replace	[To Launce]	ITo Launcel	ITo Launcel	same
+37	miun/kraken	2	47	replace	well	vell	well	
+37	miun/kraken	2	57	replace	[Exit.	IExit.	[Exit.	
+38	miun/kraken	1	19	replace	your	vour	your	
+38	miun/kraken	1	41	replace	Sil.		Sil.	
+38	miun/kraken	1	42	replace	tender her.	tenderher.	tender her.	
+38	miun/kraken	1	50	replace	Jul.		Jul.	
+38	miun/kraken	1	50	replace	cause	eause	cause	
+38	miun/kraken	1	62	replace	Jul.		Jul.	
+38	miun/kraken	2	16	replace	[Exit	IExit	(Exit	
+38	miun/kraken	2	30	replace	I'll	L’Il	I’Il	
+38	miun/kraken	2	32	replace	forehead 's	forehead’s	forehead’s	same
+38	miun/kraken	2	32	replace	mine's	mine ’s	mine ’s	same
+38	miun/kraken	2	41	replace	I'll	I'Il	I’ll	
+38	miun/kraken	2	44	replace	Exit. ACT V	LExit. ACTV.	(É xit. ACTV.	
+39	miun/kraken	1	1	replace	DUKE'S palace.	Dukr's salace.	Duxe'S palace.	
+39	miun/kraken	1	20	replace	[Aside]	IAsidel	[Asidel	
+39	miun/kraken	1	27	replace	Aside	[Asidel	[Asidel	same
+39	miun/kraken	1	29	replace	valor?	valour?	valour?	same
+39	miun/kraken	1	31	replace	[Aside]	IAsidel	LAside]	
+39	miun/kraken	1	35	replace	[Aside]	(Asidel	[Asidel	
+39	miun/kraken	1	39	replace	Thu.		Thu.	
+39	miun/kraken	1	40	replace	[Aside]	IAsidel	IAsidel	same
+39	miun/kraken	1	42	replace	That they	That.they	That they	
+39	miun/kraken	1	63	replace	not to	not-to	not to	
+39	miun/kraken	1	67	replace	[Exit.	IExit.	[Exit.	
+39	miun/kraken	2	3	replace	I'll	L’Il	I’ll	
+39	miun/kraken	2	4	replace	[Exit.	LExit.	[Exit.	
+39	miun/kraken	2	6	replace	[Exit.	IExit.	[Exit.	
+39	miun/kraken	2	12	replace	with	witk	with	
+39	miun/kraken	2	25	replace	we'll	we’Il	we ’Il	
+39	miun/kraken	2	30	replace	honorable	honourable	honourable	same
+39	miun/kraken	2	33	replace	[Exeunt.	LExeunt.	LE xeunt.	
+39	miun/kraken	2	60	replace	honor	honour	honour	same
+40	miun/kraken	1	1	replace	[Aside]	[Asidel	[Asidel	same
+40	miun/kraken	1	9	replace	[Aside]	[Asidel	[Aside)	
+40	miun/kraken	1	15	replace	life's	life ’s	life ’s	same
+40	miun/kraken	1	40	replace	I'll	L’Il	I’Il	
+40	miun/kraken	1	43	replace	yield	vield	yield	
+40	miun/kraken	1	51	replace	eye	e	eye	
+40	miun/kraken	1	64	replace	tender't	tender 't	tender 't	same
+40	miun/kraken	2	40	replace	eye?	eve?	eye	
+40	miun/kraken	2	62	replace	Thu.		Thu.	
+41	miun/kraken	2	17	replace	your	vour	your	

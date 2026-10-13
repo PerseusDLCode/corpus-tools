@@ -1,0 +1,179 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tgv.xml (sha256 a99f2c976dcd4e07); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	10	row begins a line	10			agree	Even as I would when I
+1.1	20	row begins a line	20			agree	Pro. Upon some book I love
+1.1	30	row begins a line	30			agree	Coy looks with heart-sore sighs; one
+1.1	40	row begins a line	40			agree	And he that is so yoked
+1.1	50	row begins a line	50			agree	And all the fair effects of
+1.1	60	row begins a line	60			agree	And I likewise will visit thee
+1.1	70	row begins a line	70			agree	Speed. Sir Proteus, save you! Saw
+1.1	80	row begins a line	80			agree	whether I wake or sleep. Pro.
+1.1	91	row begins inside a line		90	91	unmapped (P4 number is the next line)	I am no sheep. Pro. The
+1.1	100	row begins a line	100			agree	letter to Julia? Speed. Ay, sir:
+1.1	110	row begins inside a line		109	110	unmapped (P4 number is the next line)	best pound you. Speed. Nay, sir,
+1.1	121	row begins inside a line		121	122	unmapped (P4 number is the containing line)	say, 'Ay.' Pro. And that set
+1.1	140	row begins inside a line		139	140	unmapped (P4 number is the next line)	What said she? Speed. Truly, sir,
+1.1	150	row begins a line	150			agree	Pro. What said she? nothing? Speed.
+1.1	160	row begins a line	160			agree	I fear my Julia would not
+1.2	10	row begins a line	10			agree	Luc. As of a knight well-spoken,
+1.2	30	row begins a line	30			agree	Luc. Fire that's closest kept burns
+1.2	40	row begins a line	40			agree	Did in your name receive it:
+1.2	50	row begins a line	50			agree	Jul. And yet I would I
+1.2	60	row begins a line	60			agree	How churlishly I chid Lucetta hence,
+1.2	70	row begins a line	69			disagree	And not upon your maid. Jul.
+1.2	81	row begins a line	81			agree	Give me a note: your ladyship
+1.2	90	row begins a line	90			agree	And yet methinks I do not
+1.2	100	row begins a line	100			agree	Go get you gone, and let
+1.2	110	row begins a line	110			agree	As in revenge of thy ingratitude,
+1.2	120	row begins a line	120			agree	Except mine own name: that some
+1.2	130	row begins a line	130			agree	Luc. Madam, Dinner is ready, and
+1.3	10	row begins a line	10			agree	Some to the studious universities. For
+1.3	20	row begins a line	20			agree	And how he cannot be a
+1.3	40	row begins a line	40			agree	With other gentlemen of good esteem
+1.3	50	row begins a line	50			agree	O heavenly Julia! Ant. How now!
+1.3	60	row begins a line	60			agree	Ant. And how stand you affected
+1.3	70	row begins a line	70			agree	To-morrow be in readiness to go:
+1.3	80	row begins a line	80			agree	I fear'd to show my father
+2.1	10	row begins a line	10			agree	Speed. Your worship, sir; or else
+2.1	50	row begins inside a line		49	50	unmapped (P4 number is the next line)	Speed. Why, sir, I know her
+2.1	60	row begins inside a line		59	60	unmapped (P4 number is the next line)	but her favor infinite. Speed. That
+2.1	71	row begins inside a line		70	71	unmapped (P4 number is the next line)	Speed. Ever since you loved her.
+2.1	80	row begins inside a line		79	80	unmapped (P4 number is the next line)	Val. What should I see then?
+2.1	99	row begins a line	99			agree	Peace! here she comes. Speed. [Aside]
+2.1	121	row begins a line	121			agree	And yet-- Sil. A pretty period!
+2.1	130	row begins a line	130			agree	Nay, take them. Val. Madam, they
+2.1	140	row begins a line	140			agree	And so, good morrow, servant. Exit.
+2.1	150	row begins inside a line		149	150	unmapped (P4 number is the next line)	have the reason. Val. To do
+2.1	160	row begins inside a line		159	160	unmapped (P4 number is the next line)	perceive the jest? Val. No, believe
+2.1	170	row begins inside a line		169	170	unmapped (P4 number is the next line)	Speed. I'll warrant you, 'tis as
+2.2	10	row begins a line	10			agree	Wherein I sigh not, Julia, for
+2.2	20	row begins a line	20			agree	Pro. Go; I come, I come.
+2.3	51	row begins a line	51			agree	mouth? Launce. For fear thou shouldst
+2.3	60	row begins inside a line		59	60	unmapped (P4 number is the next line)	could drive the boat with my
+2.4	10	row begins a line	10			agree	Thu. Seem you that you are
+2.4	20	row begins a line	20			agree	Thu. My jerkin is a doublet.
+2.4	29	row begins a line	29			agree	Val. You have said, sir. Thu.
+2.4	40	row begins inside a line		39	40	unmapped (P4 number is the next line)	kindly in your company. Thu. Sir,
+2.4	60	row begins a line	60			agree	The honor and regard of such
+2.4	71	row begins a line	71			agree	And, in a word, for far
+2.4	81	row begins a line	81			agree	I think 'tis no unwelcome news
+2.4	90	row begins a line	90			agree	Sil. Belike that now she hath
+2.4	100	row begins a line	100			agree	Val. Welcome, dear Proteus! Mistress, I
+2.4	110	row begins a line	110			agree	Sweet lady, entertain him for your
+2.4	119	row begins a line	119			agree	I'll leave you to confer of
+2.4	140	row begins a line	140			agree	Now no discourse, except it be
+2.4	150	row begins a line	150			agree	And I must minister the like
+2.4	161	row begins a line	161			agree	And, of so great a favor
+2.4	170	row begins a line	170			agree	As twenty seas, if all their
+2.4	180	row begins a line	180			agree	With all the cunning manner of
+2.4	190	row begins a line	190			agree	Val. Will you make haste? Pro.
+2.4	201	row begins a line	201			agree	Which, like a waxen image 'gainst
+2.5	19	row begins a line	19			agree	Speed. What, are they broken? Launce.
+2.5	31	row begins a line	31			agree	I'll but lean, and my staff
+2.5	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	me. Launce. Why, fool, I meant
+2.5	59	row begins a line	59			agree	Speed. Why? Launce. Because thou hast
+2.6	10	row begins a line	10			agree	But now I worship a celestial
+2.6	20	row begins a line	20			agree	If I keep them, I needs
+2.6	30	row begins a line	30			agree	Aiming at Silvia as a sweeter
+2.6	40	row begins a line	40			agree	But, Valentine being gone, I'll quickly
+2.7	10	row begins a line	10			agree	To measure kingdoms with his feeble
+2.7	30	row begins a line	30			agree	He overtaketh in his pilgrimage, And
+2.7	41	row begins a line	41			agree	The loose encounters of lascivious men:
+2.7	50	row begins a line	50			agree	Jul. That fits as well as
+2.7	60	row begins a line	60			agree	For undertaking so unstaid a journey?
+2.7	70	row begins a line	70			agree	And instances of infinite of love
+2.7	80	row begins a line	80			agree	Jul. Now, as thou lovest me,
+2.7	90	row begins a line	90			agree	I am impatient of my tarriance.
+3.1	9	row begins a line	9			agree	Which else no worldly good should
+3.1	20	row begins a line	20			agree	A pack of sorrows which would
+3.1	30	row begins a line	30			agree	A rashness that I ever yet
+3.1	40	row begins a line	40			agree	And with a corded ladder fetch
+3.1	60	row begins a line	60			agree	That touch me near, wherein thou
+3.1	70	row begins a line	70			agree	Neither regarding that she is my
+3.1	80	row begins a line	80			agree	Val. What would your grace have
+3.1	90	row begins a line	90			agree	Dumb jewels often in their silent
+3.1	100	row begins a line	100			agree	Take no repulse, whatever she doth
+3.1	110	row begins a line	110			agree	Val. Why, then, I would resort
+3.1	120	row begins a line	120			agree	So bold Leander would adventure it.
+3.1	130	row begins a line	130			agree	Under a cloak that is of
+3.1	140	row begins a line	139			disagree	I'll be so bold to break
+3.1	150	row begins a line	150			agree	What's here? 'Silvia, this night I
+3.1	166	row begins a line	160			disagree	Is privilege for thy departure hence:
+3.1	180	row begins a line	180			agree	Unless I look on Silvia in
+3.1	200	row begins a line	200			agree	Pro. Who wouldst thou strike? Launce.
+3.1	210	row begins a line	210			agree	Pro. No, Valentine. Val. No Valentine,
+3.1	231	row begins a line	231			agree	Could penetrate her uncompassionate sire; But
+3.1	240	row begins a line	240			agree	As ending anthem of my endless
+3.1	259	row begins a line	259			agree	Pro. Go, sirrah, find him out.
+3.1	280	row begins inside a line		279	280	unmapped (P4 number is the next line)	news with your mastership? Launce. With
+3.1	290	row begins a line	289			disagree	Speed. Let me read them. Launce.
+3.1	310	row begins a line	310			agree	Speed. 'Item: She can knit.' Launce.
+3.1	320	row begins a line	320			agree	virtues.' Launce. That's as much as
+3.1	340	row begins a line	340			agree	for her chief virtue. Speed. 'Item:
+3.1	351	row begins a line	351			agree	liquor.' Launce. If her liquor be
+3.1	360	row begins inside a line		359	360	unmapped (P4 number is the next line)	Well, proceed. Speed. 'Item: She hath
+3.1	380	row begins a line	380			agree	Speed. What then? Launce. Why, then
+3.1	391	row begins inside a line		390	391	unmapped (P4 number is the next line)	of your love-letters! [Exit. Launce. Now
+3.2	10	row begins a line	10			agree	And worthless Valentine shall be forgot.
+3.2	21	row begins a line	21			agree	Let me not live to look
+3.2	30	row begins a line	30			agree	The love of Valentine and love
+3.2	40	row begins a line	40			agree	'Tis an ill office for a
+3.2	50	row begins a line	50			agree	It follows not that she will
+3.2	60	row begins a line	60			agree	Upon this warrant shall you have
+3.2	71	row begins a line	71			agree	Duke. Ay, Much is the force
+3.2	80	row begins a line	80			agree	Make tigers tame and huge leviathans
+3.2	91	row begins a line	91			agree	Let us into the city presently
+4.1	10	row begins a line	10			agree	Third Out. Ay, by my beard,
+4.1	30	row begins a line	30			agree	First Out. Why, ne'er repent it,
+4.1	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	kind of thievery. Val. Peace, villain!
+4.1	50	row begins a line	50			agree	Sec. Out. And I from Mantua,
+4.1	71	row begins a line	71			agree	Provided that you do no outrages
+4.2	11	row begins a line	11			agree	In breaking faith with Julia whom
+4.2	20	row begins a line	20			agree	Will creep in service where it
+4.2	50	row begins a line	50			agree	That Silvia is excelling; She excels
+4.2	60	row begins a line	60			agree	Host. How? out of tune on
+4.2	70	row begins a line	69			disagree	Jul. Ay, that change is the
+4.2	80	row begins inside a line		79	80	unmapped (P4 number is the next line)	carry for a present to his
+4.2	90	row begins a line	90			agree	Sil. Sir Proteus, as I take
+4.2	101	row begins a line	101			agree	I am so far from granting
+4.2	110	row begins a line	110			agree	Survives; to whom, thyself art witness,
+4.2	141	row begins a line	141			agree	That e'er I watch'd and the
+4.3	10	row begins a line	10			agree	It is your pleasure to command
+4.3	20	row begins a line	20			agree	As when thy lady and thy
+4.3	30	row begins a line	30			agree	To keep me from a most
+4.3	40	row begins a line	40			agree	Recking as little what betideth me
+4.4	50	row begins a line	50			agree	the dog you bade me. Pro.
+4.4	71	row begins a line	71			agree	For 'tis no trusting to yond
+4.4	81	row begins a line	81			agree	Jul. Alas! Pro. Why dost thou
+4.4	100	row begins a line	100			agree	Because he loves her, he despiseth
+4.4	110	row begins a line	110			agree	Unless I prove false traitor to
+4.4	120	row begins a line	120			agree	Sil. O, he sends you for
+4.4	140	row begins a line	140			agree	His Julia gave it him at
+4.4	150	row begins a line	150			agree	That I have wept a hundred
+4.4	160	row begins a line	160			agree	And pinch'd the lily-tincture of her
+4.4	170	row begins a line	170			agree	And at that time I made
+4.4	180	row begins a line	180			agree	I weep myself to think upon
+4.4	190	row begins a line	190			agree	If I had such a tire,
+4.4	200	row begins a line	200			agree	But I can make respective in
+5.1	10	row begins a line	10			agree	I fear I am attended by
+5.2	10	row begins a line	10			agree	Thu. Nay then, the wanton lies;
+5.2	20	row begins a line	20			agree	Pro. O, sir, she makes no
+5.2	30	row begins a line	30			agree	Jul. Here comes the duke. Enter
+5.2	40	row begins a line	40			agree	But, being mask'd, he was not
+5.2	50	row begins a line	50			agree	That flies her fortune when it
+5.3	10	row begins a line	10			agree	There is our captain: we'll follow
+5.4	10	row begins a line	10			agree	And leave no memory of what
+5.4	20	row begins a line	20			agree	Though you respect not aught your
+5.4	30	row begins a line	30			agree	But by my coming I have
+5.4	40	row begins a line	40			agree	Therefore be gone; solicit me no
+5.4	50	row begins a line	50			agree	Thou hast no faith left now,
+5.4	61	row begins inside a line		61	62	unmapped (P4 number is the containing line)	Pro. Valentine! Val. Thou common friend,
+5.4	90	row begins inside a line		89	90	unmapped (P4 number is the next line)	my neglect, was never done. Pro.
+5.4	100	row begins a line	100			agree	Pro. How! Julia! Jul. Behold her
+5.4	110	row begins a line	110			agree	Pro. Than men their minds! 'tis
+5.4	120	row begins a line	120			agree	Jul. And I mine. Enter Outlaws,
+5.4	130	row begins a line	130			agree	Take but possession of her with
+5.4	140	row begins a line	140			agree	I do applaud thy spirit, Valentine,
+5.4	150	row begins a line	150			agree	To grant one boon that I
+5.4	160	row begins a line	160			agree	Come, let us go: we will

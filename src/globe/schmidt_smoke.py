@@ -72,6 +72,16 @@ def own_abbreviation(cits: list[dict]) -> str | None:
     return names.most_common(1)[0][0] if names else None
 
 
+def same_play(name: str, own: str | None) -> bool:
+    """Does an abbreviation name the play whose own is `own`? Schmidt writes
+    some two ways, one extending the other: Two Gentlemen is "Gent." and
+    "Gentl." (761 and 374 of its citations)."""
+    if own is None:
+        return False
+    a, b = name.rstrip("."), own.rstrip(".")
+    return a.startswith(b) or b.startswith(a)
+
+
 def words(text: str) -> list[str]:
     """Normalised words. Accents are folded first ("compáct" -> "compact"),
     which tokens.norm alone would drop as non-letters, and a dash separates
@@ -256,7 +266,7 @@ def check(cit: dict, quote: dict, scenes: dict[str, Scene], own: str | None = "L
            "our_line": ""}
     parts = ref.split(".")
     named = ABBR.match(cit["p4_display_text"])
-    other_play = named is not None and named.group(1) != own
+    other_play = named is not None and not same_play(named.group(1), own)
     if other_play or len(parts) != 3 or not all(p.isdigit() for p in parts) \
             or f"{parts[0]}.{parts[1]}" not in scenes:
         # a citation extracted into the play's scope that is not the play's: another

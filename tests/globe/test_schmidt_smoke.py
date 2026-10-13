@@ -154,3 +154,10 @@ def test_real_lear_as_recorded():
     assert sum(counts[v] for v in sm.PASS) == 2163
     assert counts[sm.NOT_THIS_PLAY] == 30
     assert counts["prose row break"] == 14
+
+
+def test_an_abbreviation_written_two_ways_names_one_play():
+    """Schmidt cites Two Gentlemen as "Gent." and as "Gentl."."""
+    from globe.schmidt_smoke import same_play
+    assert same_play("Gentl.", "Gent.") and same_play("Gent.", "Gentl.")
+    assert not same_play("Shr.", "Gent.") and not same_play("Lr.", None)

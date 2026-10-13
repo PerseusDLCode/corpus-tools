@@ -39,6 +39,7 @@ PLAY_TITLES = {
     "tit": "Titus Andronicus",
     "r2": "Richard II",  # as its __cts__.xml names it
     "tgv": "Two Gentlemen of Verona",  # as its __cts__.xml names it
+    "mm": "Measure for Measure",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -61,6 +62,9 @@ COPY_TEXT = {
     # Introduction printed 103 (CHOCR index 113), V.4 ends on 124 (index
     # 134); A Midsummer Night's Dream's introduction is 125 (printed = index - 10).
     "tgv": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="103-124"),
+    # Introduction printed 663 (CHOCR index 103), V.1 ends on 689 (index
+    # 129); Troilus's introduction is 690 (printed = index + 560).
+    "mm": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="663-689"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

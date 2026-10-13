@@ -19,7 +19,9 @@ cuts one line in two, and one corrects a number:
   separate  the opposite of those two: a row the page displaces, as if it completed the
             line above, but which the Globe numbers as a line of its own
             (Antony II.6 "Well;", V.2 "Sole sir o' the world,", "All
-            dead."); first_half is the first words of the line above,
+            dead."), or sets in at the turnover indent although the line is
+            prose (Two Gentlemen I.1 "shepherd then and I a sheep?");
+            first_half is the first words of the line above,
             second_half of the row. The Folger is no guide here: it joins
             two of those three;
   numeral   a marginal number both witnesses misread.

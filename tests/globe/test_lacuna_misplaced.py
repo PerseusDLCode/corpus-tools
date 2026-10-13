@@ -76,3 +76,16 @@ def test_neither_kind_counts_as_a_junction_in_the_header():
     kinds = ["shared", "turnover", "separate", "numeral", "lacuna", "misplaced"]
     table = [shared_lines.Row("r2", "1.1", 356, k, "a", "b", "", "image") for k in kinds]
     assert tei_header.count_junctions(table) == 3
+
+
+
+def test_a_numeral_row_with_no_printed_value_removes_the_reading():
+    """Measure V.1 p.92: "even now, I" -- the "I" both witnesses read as a 1."""
+    body = body_of('<l>me to a whore. Your highness said even now, I <lb ed="G"/></l>'
+                   '<l>made you a duke <lb ed="G"/></l>')
+    toks, rows = page(body, ["me to a whore. Your highness said even now,", "made you a duke"])
+    rows[0].num = 1
+    new = lineate.globe_lines(rows, 92)
+    table = [shared_lines.Row("mm", "5.1", 92, "numeral", "", "1", "me to a whore", "image")]
+    new, applied, _ = regenerate.apply_table(new, None, toks, table, 92)
+    assert [ln.num for ln in new] == [None, None] and applied == [(0, table[0])]

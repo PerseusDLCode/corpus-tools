@@ -1,0 +1,297 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+67	trent/kraken	1	17	replace	DUKE'S	DUxE'S	DuxE'S	
+67	trent/kraken	1	26	replace	But	tBut	tBut	same
+67	trent/kraken	1	29	delete		II		
+67	trent/kraken	2	1	delete		MEASURE. PERSONÆ. POMPEY, servant to Mistress Overdone. ABHORSON, an executioner. BARNARDINE, a dissolute prisoner. ISABElla, sister to MARIANA, betrothed to JULIET, beloved of FRANCISCA, a nun. MISTRESS OVERDONE, a bawd. Lords, Officers, Citizens, and Attendants. SCENE	MEASURE. PERSONÆ. POMPEY, servant to Mistress Overdone. ABHORSON, an executioner. BARNARDINE, a dissolute prisoner. ISABELLA, sister to Claudio. MARIANA, betrothed to Angelo. JULIET, beloved of Claudio. FRANCISCA, a nun. MISTRESS OVERDONE, a bawd. Lords, Officers, Citizens, Boy, and Attendants. SCENE Vienna.	
+67	trent/kraken	2	45	replace	way.	wvay.	way.	
+68	miun/kraken	1	16	replace	[Exeunt.	IExeunt.	(Exeunt.	
+68	miun/kraken	1	18	replace	Lucio	Lucto	Lucio	
+68	miun/kraken	1	18	replace	two	tuo	tao	
+68	miun/kraken	1	51	replace	thou'rt	thou 'rt	thou 'rt	same
+68	miun/kraken	2	10	replace	OVERDONE.	QVERDONE.	OVERDONE.	
+68	miun/kraken	2	19	replace	prison? 'tis	prison?’tis	prison? 'tis	
+68	miun/kraken	2	26	replace	of it:	ofit:	ofit	
+68	miun/kraken	2	29	replace	hour?	hours	hours	same
+68	miun/kraken	2	36	replace	Exeunt	IE xeunt	LE xeunt	
+68	miun/kraken	2	54	replace	in the suburbs	must	must	same
+68	miun/kraken	2	54	replace	pulled	plucked	plucked	same
+68	miun/kraken	2	59	replace	Ov.		Ov.	
+69	miun/kraken	1	43	replace	they'll	they’Il	they’ll	
+69	miun/kraken	1	49	replace	deunciation	denunciation	denunciation	same
+69	miun/kraken	2	29	replace	I'll	I’Il	I’Il	same
+69	miun/kraken	2	33	replace	[Exeunt.	LExeunt.	IE xeunt.	
+70	miun/kraken	1	8	replace	Sith 'twas	Sith’twas	Sith 'twas	
+70	miun/kraken	1	22	replace	Moe	More	Moe	
+70	miun/kraken	1	29	replace	Exeunt.	IExeunt.	IExeunt.	same
+70	miun/kraken	1	40	replace	know	lenow	know	
+70	miun/kraken	1	50	replace	Lucio.		Lucio.	
+70	miun/kraken	2	4	replace	not--though 'tis	not–though’tis	not–though ’tis	
+70	miun/kraken	2	7	replace	ensky'd	ensky d	ensky’d	
+70	miun/kraken	2	29	delete		so		
+70	miun/kraken	2	67	replace	I'll	I’Il	I’ll	
+71	miun/kraken	1	4	replace	I'll	I’Il	I’ll	
+71	miun/kraken	1	7	replace	[Exeunt. ACT II	LE xeunt. ACTII.	IExeunt. ACTII.	
+71	miun/kraken	1	39	delete		t		
+71	miun/kraken	1	50	replace	your	vour	your	
+71	miun/kraken	1	57	replace	[Exit	LExit	(Exit	
+71	miun/kraken	1	63	replace	FROTH	FRoTn	FRoTH	
+71	miun/kraken	2	8	replace	your	vour	your	
+71	miun/kraken	2	18	replace	though	thou	thou	same
+71	miun/kraken	2	21	replace	Elb.		Elb.	
+71	miun/kraken	2	57	replace	you	vou	you	
+71	miun/kraken	2	66	replace	Froth.		Froth.	
+72	miun/kraken	1	18	replace	a	at	at	same
+72	miun/kraken	1	20	replace	truth.	truths.	truths.	same
+72	miun/kraken	1	24	replace	I	J	I	
+72	miun/kraken	1	29	replace	I'll	I’Il	I’ll	
+72	miun/kraken	1	34	replace	your	vour	your	
+72	miun/kraken	1	35	replace	[Exit	LExit	IExit	
+72	miun/kraken	1	48	replace	mark	marle	mark	
+72	miun/kraken	1	50	replace	ycu,	you,	you,	same
+72	miun/kraken	1	64	replace	mistress	misti ess	mistress	
+72	miun/kraken	2	14	replace	your	vour	your	
+72	miun/kraken	2	37	delete			Froth.	
+72	miun/kraken	2	45	replace	[Exit	IExit	[Exit	
+73	miun/kraken	1	8	replace	I'll	I’Il	I’Il	same
+73	miun/kraken	1	16	replace	you	vou	you	
+73	miun/kraken	1	17	replace	Caesar	Cæsar	Cæsar	same
+73	miun/kraken	1	21	replace	[Aside]	[Asidel	[Asidel	same
+73	miun/kraken	1	24	replace	heart's	heart is	heart’s	
+73	miun/kraken	1	25	replace	[Exit.	IExit.	[Exit.	
+73	miun/kraken	1	43	replace	worship's	worship’'s	worship’s	
+73	miun/kraken	1	45	replace	[Exit	IExit	IExit Elboru.	
+73	miun/kraken	1	57	replace	[Exeunt.	IExeunt.	WExeunt.	
+73	miun/kraken	1	62	replace	I'll	I'Il	I’Il	
+73	miun/kraken	1	63	replace	[Exit	IExit	[Exit	
+73	miun/kraken	1	64	replace	I'll	I'Il	I’Il	
+73	miun/kraken	2	17	replace	your	vour	your	
+73	miun/kraken	2	27	delete		zo		
+73	miun/kraken	2	32	replace	you	vou	you	
+73	miun/kraken	2	36	replace	your	vour	your	
+73	miun/kraken	2	37	replace	To	ITo	[To	
+73	miun/kraken	2	39	replace	Isab.		Isab.	
+73	miun/kraken	2	51	replace	[Aside]	[Asidel	[Asidel	same
+74	miun/kraken	1	36	replace	Isab.		Isab.	
+74	miun/kraken	1	64	replace	now 'tis	now’tis	now ’tis	
+74	miun/kraken	2	33	replace	[Aside]	[Asidel	(Asidel	
+74	miun/kraken	2	54	replace	[Aside]	[Asidel	(Asidel	
+74	miun/kraken	2	57	replace	Isab.		Isab.	
+74	miun/kraken	2	59	replace	I'll	I’Il	I’Il	same
+74	miun/kraken	2	62	replace	Isab.		Isab.	
+74	miun/kraken	2	66	replace	Isab.		Isao.	
+75	miun/kraken	1	7	replace	[Aside]	[Asidel	Aside]	
+75	miun/kraken	1	11	replace	worship?	lordship?	lordship	
+75	miun/kraken	1	14	replace	[Exeunt	LExeunt	IExeunt	
+75	miun/kraken	1	14	replace	Luclo,		Lucio,	
+75	miun/kraken	1	20	replace	lying	Iving	lying	
+75	miun/kraken	1	45	replace	III	IIL.	III.	
+75	miun/kraken	1	46	replace	DUKE	DURE	DUxe	
+75	miun/kraken	1	51	replace	blest order,	blestorder,	blestorder,	same
+75	miun/kraken	1	58	replace	needed.	needful.	needful.	same
+75	miun/kraken	1	60	delete		ro		
+75	miun/kraken	1	62	replace	blister'd	blister' d	blister' d	same
+75	miun/kraken	1	64	replace	office	offence	offence	same
+75	miun/kraken	1	65	replace	tor	for	for	same
+75	miun/kraken	2	3	replace	for	sor	for	
+75	miun/kraken	2	3	replace	[To Juliet.]	[ToJuliet.	(ToJuliet.	
+75	miun/kraken	2	9	replace	Duke.		Duke. I’Il	
+75	miun/kraken	2	13	replace	I'll	I’Il	I’ll	
+75	miun/kraken	2	27	replace	toward	towards	toward	
+75	miun/kraken	2	36	replace	[Exit.	IExit.	IExit.	same
+75	miun/kraken	2	40	replace	[Exeunt.	IExeunt.	IExeunt.	same
+75	miun/kraken	2	41	replace	house.	hoκse.	house.	
+75	miun/kraken	2	63	replace	Now	How	How	same
+76	miun/kraken	1	1	replace	[Exit	IExit	IExit	same
+76	miun/kraken	1	53	replace	can speak	canspeak	can speak	
+76	miun/kraken	1	60	replace	I'll	I’Il	I'll	
+76	miun/kraken	1	66	replace	I'll	I’Il	I’ll	
+76	miun/kraken	2	12	replace	I'll	I’Il	I’Il	same
+76	miun/kraken	2	20	replace	you,	vou,	you,	
+76	miun/kraken	2	34	replace	I'ld	I’Id vield	I 'ld yield	
+76	miun/kraken	2	57	replace	Isab.		Isab.	
+77	miun/kraken	1	5	replace	you're	you re	you’re	
+77	miun/kraken	1	14	replace	Isab.		Isab.	
+77	miun/kraken	1	28	replace	I'll	I’Il	I’’Il	
+77	miun/kraken	1	42	replace	yielding	vielding	yielding	
+77	miun/kraken	1	47	replace	I'll	I’Il	I’ll	
+77	miun/kraken	1	48	replace	your	vour	your	
+77	miun/kraken	1	49	replace	[Exit.	IExit.	IExxit.	
+77	miun/kraken	1	67	replace	I'll	I'Il	I'll	
+77	miun/kraken	2	9	replace	I've	L’ve	I’ve	
+77	miun/kraken	2	28	replace	provokes;	provokest;	provokest;	same
+77	miun/kraken	2	37	replace	thou'rt	thou ’rt	thou ’rt	same
+77	miun/kraken	2	47	replace	ail	all	all	same
+77	miun/kraken	2	62	replace	I'll	I’Il	I’Il	same
+78	miun/kraken	1	2	replace	your	vour	your	
+78	miun/kraken	1	6	replace	[Exeunt	[E xeunt	[Exeunt	
+78	miun/kraken	1	8	replace	Isab.		Isab.	
+78	miun/kraken	1	23	replace	you'll	you’Il	you’ll	
+78	miun/kraken	1	31	replace	trunk	trunke	trunk	
+78	miun/kraken	1	66	delete		r00		
+78	miun/kraken	2	41	replace	wretchl	wretch!	wretch	
+78	miun/kraken	2	51	replace	I'll	I’Il	I’ll	
+78	miun/kraken	2	59	replace	DUKE.	DURE.	DUKE.	
+79	miun/kraken	1	2	replace	[Walks	IWalkes	[Walkes	
+79	miun/kraken	1	4	replace	your	vour	your	
+79	miun/kraken	1	11	replace	yourself	vourself	yourself	
+79	miun/kraken	1	13	replace	your	vour	your	
+79	miun/kraken	1	18	replace	[Exit Claudio.	IExit Claudio.1	IExit Claudio.]	
+79	miun/kraken	1	27	replace	Exit	IExit	[Exit	
+79	miun/kraken	1	27	replace	sabella	Isabella	Isabella	same
+79	miun/kraken	1	27	replace	forward.	forvvard.	forward.	
+79	miun/kraken	2	16	replace	Isab.		Isab.	
+79	miun/kraken	2	36	replace	your	vour	your	
+79	miun/kraken	2	43	replace	this	his	his	same
+79	miun/kraken	2	56	replace	you	vou	you	
+79	miun/kraken	2	59	replace	DUKE	DURE	DUxE	
+79	miun/kraken	2	60	replace	with	vith	with	
+80	miun/kraken	1	4	delete		II		
+80	miun/kraken	1	36	delete		1	4	
+80	miun/kraken	1	36	replace	fault	faults,	faults,	same
+80	miun/kraken	1	43	replace	Caesar?	Cæsar?	Cæsar?	same
+80	miun/kraken	1	54	replace	mis- tress?	mistress?	mistress?	same
+80	miun/kraken	1	58	replace	your	vour	your	
+80	miun/kraken	1	68	replace	doubtless,	doubtlexs,	doubtless,	
+80	miun/kraken	1	68	replace	bawd-born.	bawd¬ born.	bawd¬ born.	same
+80	miun/kraken	2	18	replace	to kennel,	tokennel,	to kennel,	
+80	miun/kraken	2	18	replace	[Exeunt	IExeunt	[Exeunt	
+80	miun/kraken	2	27	replace	him to	himto	him to	
+80	miun/kraken	2	44	replace	report a	report-a	report a	
+80	miun/kraken	2	48	delete		t	t	same
+81	miun/kraken	1	37	replace	you'll	you ’Il	you’ll	
+81	miun/kraken	1	56	replace	[Exit.	LExit.	[Exit.	
+81	miun/kraken	1	62	replace	with	vitk	with	
+81	miun/kraken	1	63	replace	OVERDONE.	QVERDONE.	OVERDONE.	
+81	miun/kraken	2	10	replace	see	sce	see	
+81	miun/kraken	2	14	replace	with	vith	avith	
+81	miun/kraken	2	44	replace	Duke.		Duke.	
+81	miun/kraken	2	47	replace	gentlemen	gentleman	gentleman	same
+81	miun/kraken	2	65	replace	of	ofe	of	
+82	miun/kraken	1	2	replace	[Exeunt	LExeunt	LExeunt	same
+82	miun/kraken	1	6	delete		t	t	same
+82	miun/kraken	1	22	delete		t	t	same
+82	miun/kraken	1	26	replace	LUKE'S.	LURE'S.	LUKE'S.	
+82	miun/kraken	1	34	replace	seal'd	sealed	seal’d	
+82	miun/kraken	1	34	replace	seal'd	sealed	seal’d	
+82	miun/kraken	1	40	replace	DUKE	DUxE	DUkE	
+82	miun/kraken	2	22	replace	Duke.		Dicke.	
+82	miun/kraken	2	29	replace	yourself	vourself	yourself	
+82	miun/kraken	2	38	replace	Will 't	Will’t	Will’t	same
+82	miun/kraken	2	39	replace	[Exeunt	LExeunt	[E xennt	
+82	miun/kraken	2	49	replace	She'll	She ’Il	She ’ll	
+82	miun/kraken	2	64	replace	corn's	corn ’s	corn’s	
+83	miun/kraken	1	1	replace	prison.		prison.	
+83	miun/kraken	1	3	replace	you	syou	you	
+83	miun/kraken	1	7	replace	of	off	off	same
+83	miun/kraken	1	19	replace	yet	vet	yet	
+83	miun/kraken	1	22	replace	Where's Abhorson,	Where’sAbhorson,	Where’s Abhorson,	
+83	miun/kraken	1	35	replace	[Exit.	IExit.	IExit.	same
+83	miun/kraken	1	48	replace	Pom.		Pom.	
+83	miun/kraken	1	50	replace	your	vour	your	
+83	miun/kraken	1	57	replace	your	vour	your	
+83	miun/kraken	1	59	replace	Prov.		Prov.	
+83	miun/kraken	2	1	replace	Prov.		Prov.	
+83	miun/kraken	2	17	replace	[Exit	LExit	[Exit	
+83	miun/kraken	2	21	replace	DUKE	DURE	DURE	same
+83	miun/kraken	2	42	replace	[Exit	LExit	IExit	
+83	miun/kraken	2	45	replace	[Knocking within.]	IKnocking vvithin.	[Knocking within.	
+83	miun/kraken	2	46	replace	possess'd	possessed	possess’d	
+83	miun/kraken	2	51	replace	Prov.		Prov.	
+84	miun/kraken	1	3	replace	Claudlo's	Claudio’s	Claudio’s	same
+84	miun/kraken	1	10	replace	Aside.	[Asidel	(Asidel	
+84	miun/kraken	1	20	replace	putting on;	putting-on;	putting-on;	same
+84	miun/kraken	1	35	replace	Prov.		asternoon? Prov.	
+84	miun/kraken	1	37	replace	Duke.		Duke.	
+84	miun/kraken	2	44	replace	your	vour	your	
+84	miun/kraken	2	46	replace	days he	days-he	days he	
+84	miun/kraken	2	47	replace	day receives	dayreceives	dayreceives	same
+85	miun/kraken	1	14	replace	now 'for	now“for	now “for	
+85	miun/kraken	1	24	replace	[Within]	IW ithin]	[Within]	
+85	miun/kraken	1	42	replace	for't.	for 't.	for 't.	same
+85	miun/kraken	1	50	replace	hasty	hastily	hastily	same
+85	miun/kraken	1	62	replace	anything	any thing	any thing	same
+85	miun/kraken	1	64	replace	[Exit.	IExit.	IExit.	same
+85	miun/kraken	2	3	replace	[Exeunt	LExeunt	[Exeunt	
+85	miun/kraken	2	4	replace	Enter	Re-enter	Enter	
+85	miun/kraken	2	39	replace	[Exit	LExit	(Exit	
+85	miun/kraken	2	44	replace	I'll	I’Il	I’Il	same
+85	miun/kraken	2	50	replace	I'll	I’Il	I’ll	
+85	miun/kraken	2	51	replace	Duke.		Duke.	
+85	miun/kraken	2	54	replace	I'll	I’Il	I’ll	
+85	miun/kraken	2	54	replace	[Exit.	IExit.	LExit.	
+86	miun/kraken	1	10	replace	Duke.		Duke.	
+86	miun/kraken	1	20	replace	convent,	covent,	covent,	same
+86	miun/kraken	1	28	replace	revenge	revenges	revenges	same
+86	miun/kraken	1	36	replace	I'll	I’Il	I’ll	
+86	miun/kraken	1	56	replace	[Exit	LExit	[Exit	
+86	miun/kraken	1	61	replace	well	vrell	well	
+86	miun/kraken	1	63	replace	you'll	you’Il	you’ll	
+86	miun/kraken	1	65	replace	I'll	I’Il	I’ll	
+86	miun/kraken	2	9	replace	Duke.		Duke.	
+86	miun/kraken	2	11	replace	I'll	I’Il	I’Il	same
+86	miun/kraken	2	12	replace	we'll	we ’ll	we ’Il	
+86	miun/kraken	2	34	replace	I'll	I’Il	I’Il	same
+86	miun/kraken	2	38	replace	[Exit	IExit	[Exit	
+86	miun/kraken	2	58	replace	[Exit.	IExit	WExit.	
+86	miun/kraken	2	60	replace	DUKE	DURE	DUxE	
+86	miun/kraken	2	60	replace	own	oron	oun	
+87	miun/kraken	1	7	replace	[Exit.	IExit.	IExit.	same
+87	miun/kraken	1	13	replace	[Exeunt.		IExeunt.	
+87	miun/kraken	1	25	replace	Peter--	Peter–y	Peter–	
+87	miun/kraken	1	36	replace	Exeunt. ACT V	LExeunt. ACTV.	[Exeunt. ACTV.	
+87	miun/kraken	1	43	replace	Duke.	Dusée.	Duke.	
+87	miun/kraken	1	46	delete			Escal.	
+87	miun/kraken	2	37	replace	Duke.	Dukée.	Duke.	
+87	miun/kraken	2	38	replace	Isab.		Isab.	
+87	miun/kraken	2	42	replace	Duke.		Duke.	
+87	miun/kraken	2	59	replace	mad,--as	mad,– as	mad,–as	
+88	miun/kraken	1	21	replace	your	vour	your	
+88	miun/kraken	1	27	replace	i' the	i'the	i’the	
+88	miun/kraken	1	34	replace	Duke.		Duke.	
+88	miun/kraken	1	45	replace	yield	vield	yield	
+88	miun/kraken	1	60	replace	have	haye	have	
+88	miun/kraken	1	67	replace	wrap't	wrapt	wrapt	same
+88	miun/kraken	2	6	replace	near us?	nearus?	near us?	
+88	miun/kraken	2	28	replace	your	vour	your	
+88	miun/kraken	2	55	replace	Isabella	LIsabella	IIsabella	
+88	miun/kraken	2	60	replace	I'll	I’Il	I’Il	same
+89	miun/kraken	1	26	replace	I'll	I ’Il	I’Il	
+89	miun/kraken	1	46	replace	Duke.		Duke.	
+89	miun/kraken	1	59	replace	with her,	withher,	with her,	
+89	miun/kraken	1	59	replace	from her,	fromher,	from her,	
+89	miun/kraken	1	66	replace	up vows:	upvows	up vows:	
+89	miun/kraken	2	20	replace	whence 'tis	whence'tis	whence ’tis	
+89	miun/kraken	2	28	replace	[Exit	LExit	[Exit	
+89	miun/kraken	2	36	replace	[Exit	IExit	(Exit	
+89	miun/kraken	2	49	replace	I'll handle	I’Il handie	I’Il handle	
+89	miun/kraken	2	54	replace	she'll	she’Il	she’ll	
+89	miun/kraken	2	59	replace	DUKE	DUxE	DUxE	same
+90	miun/kraken	1	13	replace	Duke.	Dusée.	Duke.	
+90	miun/kraken	1	28	replace	We'll	We’Il	We’Il	same
+90	miun/kraken	1	43	replace	Escal.		Escat.	
+90	miun/kraken	1	50	replace	Duke.		Dukee.	
+90	miun/kraken	2	5	replace	[To	ITo	[To	
+90	miun/kraken	2	12	replace	Pulls	IPulls	Pulls	
+90	miun/kraken	2	17	replace	[To Lucio]	ITo Luciol	1T° Luciol	
+90	miun/kraken	2	23	replace	We'll	We’Il	We’ll	
+90	miun/kraken	2	23	replace	[To Angelo]	ITo Angelol	ITo Angelol	same
+90	miun/kraken	2	39	replace	e'er	e' er	e’er	
+90	miun/kraken	2	45	replace	[Exeunt	[E xeunt	LE xeunt	
+90	miun/kraken	2	50	replace	Duke.		Duke.	
+90	miun/kraken	2	56	replace	employ'd	employ d	employ’d	
+90	miun/kraken	2	62	replace	Laboring	Labouring	Labouring	same
+91	miun/kraken	1	7	replace	Duke.	Dukée.	Duke.	
+91	miun/kraken	1	9	replace	wrong'd	wrong d	wrong’d	
+91	miun/kraken	1	47	replace	Lucio]	Luciol	ITo Luciol	
+91	miun/kraken	1	60	replace	I'll	I’Il	I’Il	same
+91	miun/kraken	2	17	replace	Prov.		Prou.	
+91	miun/kraken	2	32	replace	Prov.		Prov.	
+91	miun/kraken	2	35	replace	[Exit Provost.	IExit Progoost.	IExit Provost.	
+91	miun/kraken	2	41	replace	I	1	I	
+91	miun/kraken	2	49	replace	Prov.		Prov.	
+91	miun/kraken	2	63	replace	[Unmuffles	IUnmuffles	[Unmuffles	
+91	miun/kraken	2	64	replace	[To	ITo	ITo Isabellal	
+92	miun/kraken	1	9	replace	[To Lucio]	ITo Luciol	ITo Luciol	same
+92	miun/kraken	2	11	replace	wrong'd,	wrong d,	wrong’d,	
+92	miun/kraken	2	23	replace	you'll	you’Il	you’Il	same
+92	miun/kraken	2	25	replace	we'll	we ’ll	we’ll	

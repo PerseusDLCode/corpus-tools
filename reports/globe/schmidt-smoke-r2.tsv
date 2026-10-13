@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.r2.globe.xml sha256 4c48678db8cee27f; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.r2.globe.xml sha256 c8d8b91b1ae3a96c; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abel	Abel,	1.1.104	R2 I, 1, 104	headword on cited line							which blood like sacrificing abels cries
 Abet	Abet,	2.3.146	R2 II, 3, 146	headword on cited line							and you that to abet him in this kind

@@ -1,10 +1,9 @@
 page	witness	scene	from	to	printed_gap	counted_gap	error	numeral_reading
-356	trent/kraken	1.1	scene start	10	10	10	0	
-356	trent/kraken	1.1	10 (p.356)	20	10	10	0	
-356	trent/kraken	1.1	20 (p.356)	30	10	10	0	
-356	trent/kraken	1.1	30 (p.356)	40	10	10	0	
-356	trent/kraken	1.1	40 (p.356)	50	10	10	0	
-356	trent/kraken	1.1	50 (p.356)	60	10	10	0	
+356	miun/kraken	1.1	scene start	20	20	20	0	
+356	miun/kraken	1.1	20 (p.356)	30	10	10	0	
+356	miun/kraken	1.1	30 (p.356)	40	10	10	0	
+356	miun/kraken	1.1	40 (p.356)	50	10	10	0	
+356	miun/kraken	1.1	50 (p.356)	60	10	10	0	
 357	miun/kraken	1.1	60 (p.356)	70	10	10	0	
 357	miun/kraken	1.1	70 (p.357)	80	10	10	0	
 357	miun/kraken	1.1	80 (p.357)	91	11	11	0	

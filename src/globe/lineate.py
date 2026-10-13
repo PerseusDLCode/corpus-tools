@@ -62,8 +62,15 @@ def continues(prev: Row, r: Row) -> bool:
     - a turnover-band row in the same P4 <l> as the row above continues
       it however short that row stops ("With 'Thanks, my countrymen, my
       loving" is 1.30u short, I.4): a song line is an <l> of its own.
-      Only where the P4 marks verse, since seven P4s set verse in <p>."""
+      Only where the P4 marks verse, since seven P4s set verse in <p>.
+
+    One more from Two Gentlemen (the same section): an indented-band row in
+    the same <l> as a full-measure row above continues it, where the P4
+    marks verse: turnovers set a little deeper than the band ("the" /
+    "match", "sullen," / "froward,", 2.89u, III.1, beside 2.28-2.37u)."""
     if r.band in ("turnover", "indented") and r.extra.get("completes_word"):
+        return True
+    if r.band == "indented" and prev.short_u < FULL_MEASURE_U and _same_container(prev, r, "l"):
         return True
     if r.band in ("start", "indented"):
         return False
@@ -89,6 +96,13 @@ def continues(prev: Row, r: Row) -> bool:
         after = r.u(r.text_x) - prev.u(prev.extra.get("speech_r", prev.r))
         return after >= -SHARED_REACH_U or r.short_u < FULL_MEASURE_U
     return False
+
+
+def _same_container(prev: Row, r: Row, tag: str) -> bool:
+    """Do both rows start in the same P4 <tag>, in a P4 that marks verse?"""
+    cont = r.extra.get("cont")
+    return (cont is not None and etree.QName(cont).localname == tag and prev.extra.get("cont") is cont
+            and marks_verse(cont.getroottree().getroot()))
 
 
 @dataclass

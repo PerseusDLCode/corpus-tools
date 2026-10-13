@@ -1,0 +1,49 @@
+scene	line	page	finding	folger	folger_ids	rows
+1.1	28	21	our shared line	part	ftln-0028 ftln-0029	Val. No, I will not, for it boots thee n / Pro. What?
+1.2	49	23	our shared line	part	ftln-0206 ftln-0207	Jul. Will ye be gone? / Luc. That you may ruminate.
+1.2	66	23	our shared line	part	ftln-0224 ftln-0225	What ho! Lucetta! / Luc. What would your ladyship?
+1.2	67	23	our shared line	part	ftln-0227	Jud. Is’t near dinner-time? / Latc. I would it were,
+1.2	87	23	our shared line	part	ftln-0247 ftln-0248	Jul. And why not you ? / Luc. I cannot reach so high.
+1.2	91	23	our shared line	short	ftln-0252 ftln-0253	Jul. You do not? / Luc. No, madam; it is too sharp.
+1.3	4	24	our shared line	part	ftln-0305 ftln-0306	Ant. Why, what of him? / Pan. He wonder’d that your lordship
+2.1	1	24	our shared line	part	ftln-0394 ftln-0395	Speed. Sir, your glove. / Val. Not mine; my gloves are on.
+2.1	126	25	our shared line	silent	ftln-0514	"Speed. IAsidel And yet you will; and yet / another ""yet."
+2.4	52	27	our shared line	part	ftln-0708 ftln-0709	Of much good news? / Val. My lord, I will be thankful
+2.4	115	28	our shared line	short	ftln-0772 ftln-0773	Sil. That you are welcome? / Pro. That you are worthless.
+2.4	124	28	our shared line	part	ftln-0784 ftln-0785	Val. And how do yours? / Pro. I left them all in health.
+2.4	147	28	our shared line	part	ftln-0809 ftln-0810	Val. Call her divine. / Pro. I will not flatter her.
+2.4	154	28	our shared line	part	ftln-0817 ftln-0818	Pro. Except my mistress. / Val. Sweet, except not any;
+2.4	167	28	our shared line	short	ftln-0832 ftln-0833	She is alone. / Pro. Then let her alone.
+3.1	132	31	our shared line	part	ftln-1199 ftln-1200	Val. Ay, my good lord. / Duke. Then let me see thy cloak:
+4.2	23	35	our shared line	part	ftln-1648 ftln-1649	Thu. Who? Silvia? / Pro. Ay, Silvia; for your sake.
+4.2	84	36	our shared line	part	ftln-1711 ftln-1712 ftln-1713	Thu. Where meet we? / Pro. At Saint Gregory’s well. / Thu. Farewell.
+4.2	92	36	our shared line	part	ftln-1721 ftln-1722	Sil. What’s your will? / Pro. That I may compass yours.
+4.2	133	36	our shared line	part	ftln-1763 ftln-1764	And so, good rest. / Pro. As wretches have o’ernight
+4.3	4	36	our shared line	short	ftln-1776 ftln-1777 ftln-1778	Madam, madam! / Sil. Who calls? / Egl. Your servant and your friend;
+4.3	42	37	our shared line	part	ftln-1816 ftln-1817	When will you go? / Sil This evening coming.
+4.3	43	37	our shared line	part	ftln-1818 ftln-1819	Egl. Where shall I meet you? / Sil. At Friar Patrick’s cell,
+4.4	80	37	our shared line	part	ftln-1900 ftln-1901	She is dead, belike? / Pro. Not so; I think she lives.
+4.4	82	37	our shared line	short	ftln-1903 ftln-1904	Pro. Why dost thou cry “alas? / Jul. I cannot choose
+4.4	83	37	our shared line	short	ftln-1905	But pity her. / Pro. Wherefore shouldst thou pity her?
+5.2	7	39	our shared line	silent	ftln-2058	Jul. [Aside] But love will not be spurr' / what it loathes.
+5.2	13	39	our shared line	silent	ftln-2064	Jul. IAsidel “Tis true; such pearls as p / ladies' eyes;
+5.2	18	39	our shared line	silent	ftln-2069	Jul. [Asidel But better, indeed, when yo / hold your peace.
+5.2	21	39	our shared line	silent	ftln-2072	Jul. IAsidel She needs not, when she kno / it cowardice.
+5.2	24	39	our shared line	short	ftln-2075	Jul. (Asidel True; from a gentleman to a / fool.
+5.2	28	39	our shared line	part	ftln-2079 ftln-2080	Jul. IAsidel That such an ass should owe / them.
+5.2	33	39	our shared line	part	ftln-2084 ftln-2085 ftln-2086 ftln-2087	Thu. Not I. / Pro. Nor I. / Duke. Saw you my daughter? / Pro. Neither.
+5.4	26	40	our shared line	silent	ftln-2150	Val. [Asidel How like a dream is this I  / and hear!
+5.4	32	40	our shared line	silent	ftln-2156	Jul. [Asidel And me, when he approacheth / to your presence.
+5.4	53	40	our shared line	part	ftln-2177 ftln-2178	Thou counterfeit to thy true friend! / Pro. In love
+5.4	54	40	our shared line	part	ftln-2179 ftln-2180	Who respects friend? / Sil. All men but Proteus.
+5.4	59	40	our shared line	part	ftln-2185 ftln-2186	Sil. O heaven! / Pro. I'll force thee vield to my desire.
+5.4	61	40	our shared line	part	ftln-2188 ftln-2189	Thou friend of an ill fashion! / Pro. Valentine!
+5.4	77	40	our shared line	part	ftln-2206 ftln-2207	As e’er I did commit. / Val. Then I am paid;
+5.4	91	40	our shared line	silent	p-2222 p-2223	Pro. Where is that ring, boy? / Jul. Here 'tis; this is it.
+5.4	124	40	our shared line	part	ftln-2259 ftln-2260	Banished Valentine. / Duke. Sir Valentine!
+2.1	130	25	folger pair split across our lines	differ	ftln-0518 ftln-0519	Nay, take them. / Val. Madam, they are for you.
+4.2	106	36	folger pair split across our lines	differ	ftln-1736 ftln-1737	But she is dead. / Jul. [sidel Twere false, if I should spe
+5.2	28	39	folger pair split across our lines	differ	ftln-2080 ftln-2081	Jul. IAsidel That such an ass should owe / them. / Jul. Here comes the duke.
+5.4	85	40	folger pair split across our lines	differ	ftln-2215 ftln-2216	Pro. Look to the boy. / Val. Why, boy! why, wag! how now! what’s
+5.4	120	40	folger pair split across our lines	differ	ftln-2255 ftln-2256	Jul. And I mine. / Outlaws. A prize, a prize, a prize!
+5.4	124	40	folger pair split across our lines	differ	ftln-2260 ftln-2261	Banished Valentine. / Duke. Sir Valentine! / Thu. Yonder is Silvia; and Silvia’s mine

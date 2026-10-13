@@ -24,6 +24,7 @@ from globe.tokens import Token, norm
 WINDOW_SLACK = 150  # tokens after the voted offset
 STRAY_JUMP = 10  # matched words this much further apart in the P4 than on the page have jumped
 STRAY_RUN = 3  # a run of fewer matches after a jump, at the page's end, is stray
+SPELLING_RATIO = 0.6  # an unmatched one-word row and the one word left over are this alike
 
 
 @dataclass
@@ -109,6 +110,7 @@ def align_page(page: Page, toks: list[Token], enc: list[str], grams: dict, floor
         lead = sum(1 for k in ks[r.prefix_len:] if k < k0 and k not in m)
         r.start = max(m[k0] - lead, prev_end + 1)
         prev_end = m[hits[-1]]
+        r.extra["last"] = prev_end
         while toks[r.start].kind == "speaker":  # never start a row on a speaker name
             r.start += 1
         r.extra["cont"] = toks[r.start].cont
@@ -128,9 +130,34 @@ def align_page(page: Page, toks: list[Token], enc: list[str], grams: dict, floor
         spoken = [k for k in hits if toks[m[k]].kind == "speech"]
         r.extra["speech_r"] = _word_right(r, ow, ks, spoken[-1]) if spoken else r.r
 
+    infer_unmatched(rows, toks)
     disagreements = _disagreements(page, rows, ow, sm, lo, toks, speakers, m)
     ms = sorted(m.values())
     return PageAlignment(page, ms[0], page_end(m), len(m), len(ow), m, ow, disagreements)
+
+
+def infer_unmatched(rows: list[Row], toks: list[Token]) -> None:
+    """A one-word row that did not match, between two rows that did, starts
+    at the one word of speech left over between them, if the two are spelt
+    alike (SPELLING_RATIO). The row is a speech's last, spelt otherwise in
+    the P4 ("labour." / "labor.",
+    "favoured." / "well-favored.", "colour?" / "color?", Two Gentlemen I.1,
+    II.1, II.4; canonical-engLit doc/agenda.org #build/batch-remaining)."""
+    for prev, r, nxt in zip(rows, rows[1:], rows[2:]):
+        if r.start is not None or prev.start is None or nxt.start is None or "last" not in prev.extra:
+            continue
+        lo, hi = prev.extra["last"] + 1, nxt.start
+        gap = [t for t in toks[lo:hi] if t.kind != "speaker"]
+        words = [norm(w.t) for w in r.words if norm(w.t)]  # "colour ?" is one word
+        if (len(gap) != 1 or gap[0].kind != "speech" or len(words) != 1 or r.prefix_len
+                or difflib.SequenceMatcher(None, words[0], gap[0].t).ratio() < SPELLING_RATIO):
+            continue
+        r.start = gap[0].i
+        r.speech = True
+        r.extra["cont"] = gap[0].cont
+        r.extra["last"] = gap[-1].i
+        r.extra["speech_r"] = r.r
+        r.extra["inferred"] = True
 
 
 def page_end(m: dict[int, int]) -> int:

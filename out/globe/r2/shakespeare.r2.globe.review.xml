@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-12">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 300bf5d; sources: r2.xml sha256 fdaf120cc0ea253b; shared-lines.tsv sha256 e67037e721e21f16; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-13">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 5cfccf2; sources: r2.xml sha256 fdaf120cc0ea253b; shared-lines.tsv sha256 faf45a0fa3999f0c; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -352,6 +352,7 @@
     </castList>
   </div>
   <div type="act" n="1">
+    <lb/>
     <head>ACT I</head>
     <div type="scene" n="1">
       <lb/>
@@ -361,7 +362,7 @@
       <stage type="entrance">Enter KING RICHARD, JOHN OF GAUNT, with <lb/>other Nobles and Attendants.</stage>
       <sp who="r2-5">
         <speaker>K. Rich.</speaker>
-        <l><!-- REVIEW witness: p.356 taken from trent/kraken: miun/kraken:1 trent/kraken:0 (total count error) --><!-- REVIEW page: p.356 trent/kraken leaf 0372 -->
+        <l><!-- REVIEW page: p.356 miun/kraken leaf 00000370 -->
           <!-- REVIEW words: both witnesses read "time-honour'd"; the P4 reads "time-honor'd" --><milestone unit="line" ed="Globe" n="1"/>Old John of Gaunt, time-honor'd <lb/>Lancaster. </l>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>Hast thou, according to thy oath and band, </l>
@@ -382,7 +383,7 @@
       <sp who="r2-5">
         <speaker>K. Rich.</speaker>
         <l>
-          <!-- REVIEW turnover: row above ends 0.66u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="8"/>Tell me, moreover, hast thou sounded <lb/>him, </l>
+          <milestone unit="line" ed="Globe" n="8"/>Tell me, moreover, hast thou sounded <lb/>him, </l>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>If he appeal the duke on ancient malice; </l>
         <l>
@@ -433,7 +434,7 @@
       <sp who="r2-5">
         <speaker>K. Rich.</speaker>
         <l>
-          <!-- REVIEW turnover: row above ends 0.69u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="25"/>We thank you both: yet one but <lb/>flatters us, </l>
+          <milestone unit="line" ed="Globe" n="25"/>We thank you both: yet one but <lb/>flatters us, </l>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>As well appeareth by the cause you come: </l>
         <l>
@@ -2747,7 +2748,7 @@
       <sp who="r2-14">
         <speaker>North.</speaker>
         <l>
-          <milestone unit="line" ed="Globe" n="262"/>His noble kinsman: most degenerate king ! </l>
+          <milestone unit="line" ed="Globe" n="262"/>His noble kinsman: most degenerate <lb/>king ! </l>
         <l>
           <milestone unit="line" ed="Globe" n="263"/>But, lords, we hear this fearful tempest sing, </l>
         <l>

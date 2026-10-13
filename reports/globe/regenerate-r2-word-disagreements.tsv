@@ -1,10 +1,15 @@
 page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
-356	trent/kraken	1	25	replace	Rich.		Rich.	
-356	trent/kraken	1	25	replace	time-honor'd	time-honour'd	time-honour'd	same
-356	trent/kraken	1	54	replace	Rich.		Rich.	
-356	trent/kraken	2	1	delete		II. PERSONÆ. LORD LORD WILLOUGHBY. LORD FITZWATER. Bishop of Carlisle. of Westminster. Lord SIR STEPHEN SIR PIERCE of Captain of a band of Welshmen. to King DUCHESS OF DUCHESS OF GLOUCESTER. attending on the Lords, Heralds, Officers, Soldiers, two Gardeners, Keeper, Messenger, and other Attendants. SCENE: England and	II. PERSONÆ. LORD ROSS. LORD WILLOUGHBY. LORD FITZWATER. Bishop of Carlisle. Abbot of Westminster. Lord Marshal. SIR STEPHEN SCROOP. SIR PIERCE of Exton. Captain of a band of Welshmen. QUEEN to King Richard. DUCHESS OF YORK. DUCHESS OF GLOUCESTER. Lady attending on the Queen. Lords. Heralds, Officers, Soldiers, two Gardeners, Keeper, Messenger, Groom, and other Attendants. SCENE: England and Wales.	
-356	trent/kraken	2	46	replace	clamor	clamour	clamour	same
-356	trent/kraken	2	50	replace	no right	nought	nought	same
+356	miun/kraken	1	23	replace	with	qvith	with	
+356	miun/kraken	1	25	replace	time-honor'd	time-honour'd	time-honour'd	same
+356	miun/kraken	1	35	replace	duke	dulce	duke	
+356	miun/kraken	1	36	delete		r0		
+356	miun/kraken	1	38	replace	sift	sit	sift	
+356	miun/kraken	1	48	replace	BOLINGBROKE	BOLINGBRORE	BoLiNGBRoKE	
+356	miun/kraken	2	1	delete		II. PERSONÆ. LORD LORD WILLOUGHBY. LORD FITZWATER. Bishop of Carlisle. of Westminster. Lord SIR STEPHEN SIR PIERCE of Captain of a band of Welshmen. to King DUCHESS OF DUCHESS OF GLOUCESTER. attending on the Heralds, Officers, Soldiers, two Gardeners, Keeper, Messenger, and other Attendants. SCENE: England and	II. PERSONÆ. LORD ROSS. LORD WILLOUGHBY. LORD FITZWATER. Bishop of Carlisle. Abbot of Westminster. Lord Marshal. SIR STEPHEN SCROOP. SIR PIERCE of Exton. Captain of a band of Welshmen. QUEEN to King Richard. DUCHESS OF YORK. DUCHESS OF GLOUCESTER. Lady attending on the Queen. Lords, Heralds, Officers, Soldiers, two Gardeners, Keeper, Messenger, Groom, and other Attendants. SCENE: England and Wales.	
+356	miun/kraken	2	21	replace	each	ench	each	
+356	miun/kraken	2	23	replace	Norfolk,	Norfokk,	Norfolk,	
+356	miun/kraken	2	46	replace	clamor	clamour	clamour	same
+356	miun/kraken	2	50	replace	no right	nought	nought	same
 357	miun/kraken	1	15	replace	honor's	honour’s	honour’s	same
 357	miun/kraken	1	23	delete		I	I	same
 357	miun/kraken	1	33	replace	lending	lendings	lendings	same

@@ -1,0 +1,1318 @@
+# schmidt_smoke.py; sources: shakespeare.tgv.globe.xml sha256 feac8f0bb57f2742; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
+Abbey-wall	Abbey-wall,	5.1.9	Gent. V, 1, 9	headword on cited line							out at the postern by the abbeywall
+A B C	A B C,	2.1.23	Gent. II, 1, 23	headword not found near cited line							schoolboy that had lost his a b c to weep like a
+Abode1	Abode,	4.3.23	Gent. IV, 3, 23	headword on cited line							to mantua where i hear he makes abode
+Abridge	Abridge,	3.1.245	Gent. III, 1, 245	headword on cited line							besides thy staying will abridge thy life
+Accord2	Accord,	1.3.90	Gent. I, 3, 90	headword on cited line	1.3.81		100%			to:	why this it is my heart accords thereto
+Accursed2	Accursed	5.4.71	Gent. V, 4, 71	quotation on cited line, with differences			75%	accursed		O time most accursed	the private wound is deepest o time most accurst
+Ado	Ado,	4.4.31	Gent. IV, 4, 31	quotation on cited line						he makes me no more ado but whips me out of the chamber,	more ado but whips me out of the chamber
+Adventure2	Adventure,	3.1.120	Gent. III, 1, 120	quotation on cited line						Leander would adventure it,	so bold leander would adventure it
+Adversity	Adversity,	4.1.12	Gent. IV, 1, 12	headword on cited line							a man i am crossed with adversity
+Affected	Affected,	2.1.90	Gent. II, 1, 90	quotation on cited line						I stand affected to her,	in conclusion i stand affected to her
+Affected	Affected,	1.3.60	Gent. I, 3, 60	quotation on cited line						how stand you affected to his wish?	and how stand you affected to his wish
+After3	After,	2.5.13	Gent. II, 5, 13	quotation on cited line, with differences			100%		very fairly	after they closed in earnest, they parted in jest,	marry after they closed in earnest
+After-love	After-love,	3.1.95	Gent. III, 1, 95	headword on cited line							for scorn at first makes afterlove the more
+Afterward	Afterward,	3.2.97	Gent. III, 2, 97	headword on cited line							and afterward determine our proceedings
+Agent	Agent,	1.3.46	Gentl. I, 3, 46	quotation on cited line						here is her hand, the agent of her heart,	here is her hand the agent of her heart
+Agone	Agone	3.1.85	Gentl. III, 1, 85	quotation on cited line						long agone	for long agone i have forgot to court
+Agood	Agood,	4.4.170	Gentl. IV, 4, 170	quotation on cited line						I made her weep agood	and at that time i made her weep agood
+Aid2	Aid,	2.4.185	Gentl. II, 4, 185	quotation on cited line						to aid me with thy counsel,	in these affairs to aid me with thy counsel
+Aim1	Aim,	5.4.101	Gentl. V, 4, 101	quotation on cited line						her that gave aim to all thy oaths,	behold her that gave aim to all thy oaths
+Aim1	Aim,	3.1.28	Gentl. III, 1, 28	headword on cited line							but fearing lest my jealous aim might err
+Aim2	Aim,	2.6.30	Gentl. II, 6, 30	quotation on cited line						aiming at Silvia,	aiming at silvia as a sweeter friend
+Aim2	Aim,	3.1.45	Gentl. III, 1, 45	quotation on cited line						that my discovery be not aimed at,	that my discovery be not aimed at
+Ale	Ale,	3.1.304	Gentl. III, 1, 304	quotation on cited line						She brews good ale And thereof comes the proverb: Blessing of your heart, you brew good ale	item she brews good ale
+Ale	Ale,	2.5.61	Gentl. II, 5, 61	headword on cited line							charity in thee as to go to the ale with a christian
+Ally2	Ally,	4.1.49	Gentl. IV, 1, 49	headword on cited line							an heir and near allied unto the duke
+Allycholly	Allycholly,	4.2.27	Gentl. IV, 2, 27	headword on cited line							allycholly i pray you why is it
+Alphonso	Alphonso,	1.3.39	Gentl. I, 3, 39	headword on cited line							tomorrow may it please you don alphonso
+Altar	Altar,	3.2.73	Gentl. III, 2, 73	headword on cited line							say that upon the altar of her beauty
+Amen	Amen,	5.1.8	Gentl. V, 1, 8	quotation on cited line						Amen, amen!	amen amen go on good eglamour
+Amends	Amends,	1.2.108	Gentl. I, 2, 108	quotation on cited line						I'll kiss each several paper for amends	ill kiss each several paper for amends
+Amends	Amends,	3.1.331	Gentl. III, 1, 331	headword on cited line						make amends for sth.:	that makes amends for her sour
+Amends	Amends,	4.2.99	Gentl. IV, 2, 99	headword on cited line						To make a p. a.: make thy love amends	return return and make thy love amends
+Ancestry	Ancestry,	5.4.139	Gentl. V, 4, 139	quotation on cited line						by the honour of my ancestry	now by the honour of my ancestry
+Anchor3	Anchor,	3.1.118	Gentl. III, 1, 118	quotation on cited line						a pair of anchoring hooks,	to cast up with a pair of anchoring hooks
+Angel-like	Angel-like,	2.4.66	Gentl. II, 4, 66	quotation on cited line						angel-like perfection,	to clothe mine age with angellike perfection
+Anger1	Anger,	4.3.27	Gentl. IV, 3, 27	headword on cited line							urge not my fathers anger eglamour
+Angerly	Angerly,	1.2.62	Gentl. I, 2, 62	quotation on cited line						how angerly I taught my brow to frown,	how angerly i taught my brow to frown
+Answer1	Answer,	1.1.81	Gentl. I, 1, 81	headword on cited line							a silly answer and fitting well a sheep
+Anthem	Anthem,	3.1.240	Gentl. III, 1, 240	headword on cited line							as ending anthem of my endless dolour
+Apparent1	Apparent,	3.1.116	Gentl. III, 1, 116	quotation on cited line						one cannot climb it without apparent hazard of his life,	without apparent hazard of his life
+Appease	Appease,	5.4.81	Gentl. V, 4, 81	quotation on cited line						the Eternal's wrath's appeased,	by penitence the eternals wraths appeased
+Approach2	Approach,	5.4.31	Gentl. V, 4, 31	quotation on cited line						by thy approach thou makest me most unhappy,	by thy approach thou makest me most unhappy
+April	April,	1.3.85	Gentl. I, 3, 85	headword on cited line							the uncertain glory of an april day
+Ariadne	Ariadne,	4.4.172	Gentl. IV, 4, 172	headword on cited line							madam twas ariadne passioning
+Ascend	Ascend,	3.1.39	Gentl. III, 1, 39	quotation on cited line, with differences			67%	ascend		ascend her chamber-window,	how he her chamberwindow will ascend
+Aspire	Aspire,	3.1.154	Gentl. III, 1, 154	quotation on cited line						aspire to guide the heavenly car,	wilt thou aspire to guide the heavenly car
+Astray	Astray,	1.1.109	Gentl. I, 1, 109	quotation on cited line						you are astray	nay in that you are astray twere best
+At	At,	3.1.258	Gentl. III, 1, 258	quotation on cited line						meet me at the North-gate,	bid him make haste and meet me at the northgate
+At	At,	1.1.53	Gentl. I, 1, 53	quotation on cited line						at the road,	once more adieu my father at the road
+At	At,	3.1.225	Gentl. III, 1, 225	quotation on cited line						at her father's churlish feet,	those at her fathers churlish feet she tendered
+At	At,	3.1.325	Gentl. III, 1, 325	quotation on cited line						close at the heels,	close at the heels of her virtues
+At	At,	3.1.113	Gentl. III, 1, 113	quotation on cited line						at her window,	what lets but one may enter at her window
+At	At,	5.1.9	Gentl. V, 1, 9	quotation on cited line						out at the postern,	out at the postern by the abbeywall
+At	At,	2.6.30	Gentl. II, 6, 30	quotation on cited line						aiming at Silvia,	aiming at silvia as a sweeter friend
+At	At,	2.1.27	Gentl. II, 1, 27	quotation on cited line						at Hallowmas,	at hallowmas you were wont when you
+At	At,	4.4.163	IV, 4, 163	quotation on cited line						at Pentecost,	about my stature for at pentecost
+At	At,	4.4.140	Gentl. IV, 4, 140	quotation on cited line						at his departure,	his julia gave it him at his departure
+At	At,	2.1.132	Gentl. II, 1, 132	headword on cited line							ay ay you writ them sir at my request
+At	At,	2.1.46	Gentl. II, 1, 46	quotation on cited line						at supper,	she that you gaze on so as she sits at
+At	At,	4.4.14	Gentl. IV, 4, 14	quotation on cited line						a dog at all things,	to be as it were a dog at all things if i had
+At	At,	1.2.16	Gentl. I, 2, 16	quotation on cited line						this passion at his name,	how now what means this passion at his name
+At	At,	1.1.38	I, 1, 38	quotation on cited line						'tis love you cavil at,	tis love you cavil at i am not love
+At	At,	2.1.78	II, 1, 78	quotation on cited line						when you chid at Sir Proteus,	they were wont to have when you chid at sir
+At	At,	2.3.14	II, 3, 14	quotation on cited line						wept herself blind at my parting,	having no eyes look you wept herself blind at
+At	At,	3.2.4	III, 2, 4	quotation on cited line						railed at me,	forsworn my company and railed at me
+At	At,	5.2.3	V, 2, 3	quotation on cited line						takes exceptions at your person,	and yet she takes exceptions at your person
+Auburn	Auburn,	4.4.194	Gentl. IV, 4, 194	quotation on cited line						her hair is a., mine is perfect yellow,	her hair is auburn mine is perfect yellow
+Augury	Augury,	4.4.73	Gentl. IV, 4, 73	quotation on cited line						if my augury deceive me not,	which if my augury deceive me not
+Away	Away,	1.1.75	Gentl. I, 1, 75	quotation on cited line						if the shepherd be a while away	an if the shepherd be a while away
+Away	Away,	1.3.9	I, 3, 9	quotation on cited line						to discover islands far away	some to discover islands far away
+Away	Away,	1.2.118	Gentl. I, 2, 118	quotation on cited line						blow not a word away	be calm good wind blow not a word away
+Away	Away,	3.1.11	III, 1, 11	quotation on cited line						to steal away your daughter,	this night intends to steal away your daughter
+Away	Away,	1.2.125	Gentl. I, 2, 125	headword on cited line							to the sweet julia that ill tear away
+Away	Away,	2.3.36	Gentl. II, 3, 36	headword on cited line							launce away away aboard thy master
+Away	Away,	3.1.101	III, 1, 101	headword on cited line							for get you gone she doth not mean away
+Away	Away,	4.4.66	IV, 4, 66	headword on cited line							away i say stayst thou to vex me here
+Away	Away,	3.1.51	Gentl. III, 1, 51	quotation on cited line						whither away so fast?	sir valentine whither away so fast
+Awful	Awful,	4.1.46	Gentl. IV, 1, 46	quotation on cited line						thrust from the company of awful men,	thrust from the company of awful men
+Awful	Awful,	2.0	II Prol. 4	not a citation of this play							
+Baa	Baa,	1.1.98	Gentl. I, 1, 98	quotation on cited line						will make me cry baa,	baa
+Babble1	Babble,	1.2.98	Gentl. I, 2, 98	quotation on cited line						this babble shall not henceforth trouble me,	this babble shall not henceforth trouble me
+Bare2	Bare,	4.1.36	Gentl. IV, 1, 36	headword on cited line							by the bare scalp of robin hoods fat friar
+Bare2	Bare,	3.1.272	III, 1, 272	headword on cited line							which is much in a bare christian
+Bare2	Bare,	2.4.45	Gentl. II, 4, 45	quotation on cited line						it appears by their bare liveries,	give your followers for it appears by their bare
+Bare2	Bare,	2.4.46	Gentl. II, 4, 46	quotation on cited line						they live by your bare words,	liveries that they live by your bare words
+Bare2	Bare,	3.1.272	III, 1, 272	quotation on cited line						which is much in a bare Christian,	which is much in a bare christian
+Bargain1	Bargain,	2.2.7	Gentl. II, 2, 7	headword on cited line							and seal the bargain with a holy kiss
+Base2	Base,	1.2.96	Gentl. I, 2, 96	quotation on cited line, with differences			100%		bass indeed i bid the	the mean is drowned with your unruly base	the mean is drowned with your unruly bass
+Base3	Base,	1.2.97	Gentl. I, 2, 97	quotation on cited line						I bid the base for Proteus,	indeed i bid the base for proteus
+Bastard3	Bastard,	3.1.321	Gentl. III, 1, 321	quotation on cited line						bastard virtues,	thats as much as to say bastard
+Beadsman	Beadsman,	1.1.18	Gentl. I, 1, 18	quotation on cited line						I will be thy beadsman	for i will be thy beadsman valentine
+Beautiful	Beautiful,	2.1.73	Gentl. II, 1, 73	headword on cited line							and still i see her beautiful
+Beautiful	Beautiful,	4.4.185	IV, 4, 185	headword on cited line							a virtuous gentlewoman mild and beautiful
+Beautify	Beautify,	4.1.55	Gentl. IV, 1, 55	quotation on cited line, with differences			86%	ied	beautified	seeing you are --ied with goodly shape,	and partly seeing you are beautified
+Bechance	Bechance,	1.1.61	Gentl. I, 1, 61	quotation on cited line						all happiness bechance to thee in Milan!	all happiness bechance to thee in milan
+Befortune	Befortune,	4.3.41	Gentl. IV, 3, 41	quotation on cited line						all good befortune you,	as much i wish all good befortune you
+Behaviour	Behaviour,	4.4.72	Gentl. IV, 4, 72	quotation on cited line						for thy face and thy behaviour	but chiefly for thy face and thy behaviour
+Behind	Behind.	2.4.71	Gentl. II, 4, 71	headword on cited line							and in a word for far behind his worth
+Benefit1	Benefit,	2.4.65	Gentl. II, 4, 65	quotation on cited line						omitting the sweet benefit of time to clothe mine age with angel-like perfection,	omitting the sweet benefit of time
+Beseem	Beseem,	2.7.43	Gentl. II, 7, 43	headword on cited line							as may beseem some wellreputed page
+Beseem	Beseem,	3.1.66	III, 1, 66	headword on cited line							beseeming such a wife as your fair daughter
+Beset	Beset,	5.3.11	Gentl. V, 3, 11	quotation on cited line						the thicket is b., he cannot scape,	the thicket is beset he cannot scape
+Beset	Beset,	2.4.49	Gentl. II, 4, 49	quotation on cited line						now, daughter Silvia, you are hard beset	now daughter silvia you are hard beset
+Beshrew	Beshrew,	1.1.132	Gentl. I, 1, 132	quotation on cited line						beshrew me, but you have a quick wit,	beshrew me but you have a quick wit
+Beshrew	Beshrew,	2.4.75	II, 4, 75	quotation on cited line						beshrew me, sir, but if he make this good, he is as worthy for an empress' love,	beshrew me sir but if he make this good
+Betroth	Betroth,	4.2.111	Gentl. IV, 2, 111	quotation on cited line, with differences			80%	betrothed	thyself art witness	to whom I am betrothed,	i am bethrothed and art thou not ashamed
+Betroth	Betroth,	2.4.179	Gentl. II, 4, 179	quotation on cited line						we are betrothed,	ay and we are betrothed nay more our marriagehour
+Better2	Better,	5.2.18	Gentl. V, 2, 18	headword on cited line							but better indeed when you hold your peace
+Better2	Better,	5.4.3	V, 4, 3	headword on cited line							i better brook than flourishing peopled towns
+Better2	Better,	3.2.19	Gentl. III, 2, 19	quotation on cited line, with differences			88%	you		makes me the better to confer with you,	makes me the better to confer with thee
+Big	Big,	4.4.62	Gentl. IV, 4, 62	quotation on cited line						a dog as big as ten of yours,	dog as big as ten of yours and therefore the gift
+Birth	Birth,	2.7.74	Gentl. II, 7, 74	quotation on cited line						truer stars did govern Proteus' b.,	but truer stars did govern proteus birth
+Birth	Birth,	1.3.33	Gentl. I, 3, 33	headword on cited line							worthy his youth and nobleness of birth
+Birth	Birth,	5.2.22	V, 2, 22	headword on cited line							what says she to my birth
+Bite	Bite,	3.1.349	Gentl. III, 1, 349	quotation on cited line						she hath no teeth to bite	to bite
+Bitter	Bitter,	2.4.149	Gentl. II, 4, 149	quotation on cited line						pills,	when i was sick you gave me bitter pills
+Bitter	Bitter,	3.1.236	Gentl. III, 1, 236	quotation on cited line						threats,	with many bitter threats of biding there
+Bitter	Bitter,	3.1.236	Gentl. III, 1, 236	headword on cited line							with many bitter threats of biding there
+Bitter	Bitter,	2.4.131	Gentl. II, 4, 131	quotation on cited line						bitter fasts,	with bitter fasts with penitential groans
+Blast2	Blast,	1.1.48	Gentl. I, 1, 48	quotation on cited line						blasting in the bud,	is turned to folly blasting in the bud
+Blindness	Blindness,	4.2.47	Gentl. IV, 2, 47	headword on cited line							to help him of his blindness
+Blot1	Blot,	5.4.108	Gentl. V, 4, 108	headword on cited line							it is the lesser blot modesty finds
+Blow2	Blow,	1.1.46	Gentl. I, 1, 46	quotation on cited line						eaten by the canker ere it blow	is eaten by the canker ere it blow
+Blunt1	Blunt,	2.6.41	Gentl. II, 6, 41	quotation on cited line, with differences			spacing			blunt Thurio,	by some sly trick blunt thurios dull proceeding
+Blunt1	Blunt,	2.6.41	Gentl. II, 6, 41	headword on cited line							by some sly trick blunt thurios dull proceeding
+Boast1	Boast,	2.4.111	Gentl. II, 4, 111	headword on cited line							my duty will i boast of nothing else
+Boot4	Boot,	1.1.28	Gentl. I, 1, 28	quotation on cited line						it boots thee not,	no i will not for it boots thee not what
+Bottom3	Bottom,	3.2.53	Gentl. III, 2, 53	quotation on cited line, with differences			100%		lest it should ravel and be good to none	as you unwind her love from him, you must provide to bottom it on me,	you must provide to bottom it on me
+Bound3	Bound,	2.7.23	Gentl. II, 7, 23	quotation on cited line						above the bounds of reason,	lest it should burn above the bounds of reason
+Braggardism	Braggardism,	2.4.164	Gentl. II, 4, 164	headword on cited line							why valentine what braggardism is this
+Breakfast	Breakfast,	3.1.329	Gentl. III, 1, 329	headword on cited line							a breakfast read on
+Breakfast	Breakfast,	5.4.34	V, 4, 34	headword on cited line							i would have been a breakfast to the beast
+Breech1	Breech,	2.7.49	Gentl. II, 7, 49	quotation on cited line						Breeches:	what fashion madam shall i make your breeches
+Breeder	Breeder,	3.1.243	Gentl. III, 1, 243	quotation on cited line						time is the nurse and breeder of all good,	time is the nurse and breeder of all good
+Brew	Brew,	3.1.304	Gentl. III, 1, 304	quotation on cited line						she brews good ale,	item she brews good ale
+Brew	Brew,	3.1.304	Gentl. III, 1, 304	headword on cited line	3.1.305-306		100%			the proverb 'Blessing of your heart, you brew good ale,'	item she brews good ale
+Bringing-up	Bringing-up,	4.4.74	Gentl. IV, 4, 74	headword on cited line	4.4.52-53		67%	bringingup	cur and tells you currish thanks is	a good bringing-up	witness good bringing up fortune and truth
+Broker	Broker,	1.2.41	Gentl. I, 2, 41	quotation on cited line						a goodly broker	now by my modesty a goodly broker
+Brow	Brow,	1.2.62	Gentl. I, 2, 62	headword on cited line							how angerly i taught my brow to frown
+Bruise1	Bruise,	1.2.111	Gentl. I, 2, 111	quotation on cited line, with differences			88%	bruiseing	bruising	I throw thy name against the bruiseing stones,	i throw thy name against the bruising stones
+Building	Building,	5.4.9	Gentl. V, 4, 9	headword on cited line							lest growing ruinous the building fall
+Burn	Burn	3.1.155	Gentl. III, 1, 155	headword on cited line							and with thy daring folly burn the world
+Burn	Burn	2.5.56	Gentl. II, 5, 56	headword on cited line							he burn himself in love if thou wilt go with me
+Burn	Burn	2.5.56	Gentl. II, 5, 56	quotation on cited line						though he burn himself in love,	he burn himself in love if thou wilt go with me
+Burn	Burn	1.2.30	Gentl. I, 2, 30	headword on cited line							fire thats closest kept burns most of all
+Burn	Burn	2.7.23	II, 7, 23	headword on cited line							lest it should burn above the bounds of reason
+Burn	Burn	1.3.78	Gentl. I, 3, 78	quotation on cited line						thus have I shunned the fire for fear of burning,	thus have i shunned the fire for fear of burning
+By3	By,	3.1.175	Gentl. III, 1, 175	headword on cited line							what joy is joy if silvia be not by
+By3	By,	1.3.87	Gentl. I, 3, 87	headword on cited line							and by and by a cloud takes all away
+By3	By,	4.2.103	IV, 2, 103	headword on cited line							and by and by intend to chide myself
+Calm1	Calm,	1.2.118	Gentl. I, 2, 118	quotation on cited line						be c., good wind,	be calm good wind blow not a word away
+Calm1	Calm,	5.4.42	Gentl. V, 4, 42	quotation on cited line, with differences			100%		stood it next to death	what dangerous action would I not undergo for one calm look,	would i not undergo for one calm look
+Cancel1	Cancel,	5.4.143	Gentl. V, 4, 143	quotation on cited line						cancel all grudge,	cancel all grudge repeal thee home again
+Canker1	Canker,	1.1.43	Gentl. I, 1, 43	quotation on cited line						in the sweetest bud the eating canker dwells,	the eating canker dwells so eating love
+Car1	Car,	3.1.154	Gentl. III, 1, 154	headword on cited line							wilt thou aspire to guide the heavenly car
+Care1	Care,	3.1.22	Gentl. III, 1, 22	quotation on cited line						I thank thee for thine honest care	proteus i thank thee for thine honest care
+Cast1	Cast,	3.1.118	Gentl. III, 1, 118	quotation on cited line, with differences			100%		quaintly anchoring	a ladder made of cords, to cast up, with a pair of hooks,	to cast up with a pair of anchoring hooks
+Cast1	Cast,	1.2.26	Gentl I, 2, 26	quotation on cited line						if you thought your love not cast away,	ay if you thought your love not cast away
+Cast1	Cast,	1.2.25	Gentl. I, 2, 25	quotation on cited line						wouldst thou have me cast my love on him?	and wouldst thou have me cast my love on him
+Catalogue	Catalogue,	3.1.273	Gentl. III, 1, 273	quotation on cited line						catelog,	here is the catelog of her condition
+Cate-log	Cate-log	3.1.273	Gentl. III, 1, 273	headword on cited line						catalogue:	here is the catelog of her condition
+Cavil1	Cavil,	1.1.38	Gentl. I, 1, 38	quotation on cited line						'tis love you cavil at,	tis love you cavil at i am not love
+Censure2	Censure,	1.2.19	Gentl. I, 2, 19	quotation on cited line, with differences			100%		unworthy body as i am	that I should censure thus on lovely gentlemen,	should censure thus on lovely gentlemen
+Chafe2	Chafe,	3.1.233	Gentl. III, 1, 233	quotation on cited line						chafed him so,	besides her intercession chafed him so
+Chain2	Chain,	1.1.3	Gentl. I, 1, 3	quotation on cited line, with differences			92%	honoured	honored	affection chains thy tender days to the sweet glances of thy honoured love,	weret not affection chains thy tender days
+Chameleon	Chameleon,	2.1.178	Gentl. II, 1, 178	quotation on cited line						the chameleon Love can feed on the air,	ay but hearken sir though the
+Chameleon	Chameleon,	2.4.26	II, 4, 26	quotation on cited line, with differences			92%	colour	color madam	do you change colour? Give him leave; he is a kind of chameleon	chameleon
+Chance2	Chance,	2.4.160	Gentl. II, 4, 160	quotation on cited line						lest the base earth should from her vesture chance to steal a kiss,	should from her vesture chance to steal a kiss
+Change1	Change,	4.2.69	Gentl. IV, 2, 69	quotation on cited line						that change is the spite,	ay that change is the spite
+Change1	Change,	4.2.68	Gentl. IV, 2, 68	quotation on cited line						what fine change is in the music!	hark what fine change is in the music
+Character2	Character,	2.7.4	Gentl. II, 7, 4	quotation on cited line						the table wherein all my thoughts are visibly charactered and engraved,	are visibly charactered and engraved
+Chase2	Chase,	2.4.134	Gentl. II, 4, 134	headword on cited line							love hath chased sleep from my enthralled eyes
+Check2	Check,	2.4.213	Gentl. II, 4, 213	quotation on cited line						if I can check my erring love, I will,	if i can check my erring love i will
+Cheek-roses	Cheek-roses,	4.4.159	Gentl. IV, 4, 159	headword not found near cited line							the air hath starved the roses in her cheeks
+Cherish	Cherish,	3.1.75	Gentl. III, 1, 75	quotation on cited line						should have been cherished by her child-like duty,	should have been cherished by her childlike duty
+Cherish	Cherish,	3.1.184	Gentl. III, 1, 184	quotation on cited line						I leave to be, if I be not by her fair influence fostered, illumined, cherished, kept alive,	fostered illumined cherished kept alive
+Cherish	Cherish,	5.4.12	V, 4, 12	quotation on cited line						repair me with thy presence, Silvia; thou gentle nymph, cherish thy forlorn swain,	thou gentle nymph cherish thy forlorn swain
+Childlike	Childlike,	3.1.75	Gentl. III, 1, 75	quotation on cited line						cherished by her childlike duty,	should have been cherished by her childlike duty
+Chronicle2	Chronicle,	1.1.41	Gentl. I, 1, 41	quotation on cited line						should not be chronicled for wise,	methinks should not be chronicled for wise
+Churlish	Churlish,	3.1.225	Gentl. III, 1, 225	quotation on cited line						at her father's churlish feet she tendered,	those at her fathers churlish feet she tendered
+Churlishly	Churlishly,	1.2.60	Gentl. I, 2, 60	quotation on cited line						how churlishly I chid Lucetta hence,	how churlishly i chid lucetta hence
+Cite	Cite,	2.4.85	Gentl. II, 4, 85	quotation on cited line						for Valentine, I need not cite him to it,	for valentine i need not cite him to it
+Cite	Cite,	4.1.53	Gentl. IV, 1, 53	quotation on cited line						we cite our faults, that they may hold excused our lawless lives,	but to the purpose for we cite our faults
+City-gate	City-gate:	3.1.252	Gentl. III, 1, 252	headword on cited line							come ill convey thee through the citygate
+Civil	Civil,	5.4.156	Gentl. V, 4, 156	quotation on cited line						they are reformed, c., full of good,	they are reformed civil full of good
+Clean1	Clean,	3.1.278	Gentl. III, 1, 278	headword on cited line							virtue in a maid with clean hands
+Cleave2	Cleave	5.4.103	Gentl. V, 4, 103	headword not found near cited line							how oft hast thou with perjury cleft the root
+Cleave2	Cleave	5.4.103	Gentl. V, 4, 103	headword not found near cited line							how oft hast thou with perjury cleft the root
+Clerkly2	Clerkly,	2.1.115	Gentl. II, 1, 115	quotation off by 1	2.1.114	-1	100%			'tis very clerkly done,	now trust me madam it came hardly off
+Cloister1	Cloister,	1.3.2	Gentl. I, 3, 2	headword on cited line							wherewith my brother held you in the cloister
+Close1	Close,	5.4.117	Gentl. V, 4, 117	quotation on cited line						let me be blest to make this happy close	let me be blest to make this happy close
+Close2	Close,	3.1.235	Gentl. III, 1, 235	quotation on cited line						close prison,	that to close prison he commanded her
+Close4	Close,	2.5.13	Gentl. II, 5, 13	quotation on cited line						after they closed in earnest, they parted very fairly in jest,	marry after they closed in earnest
+Clothe	Clothe,	2.4.66	Gentl. II, 4, 66	quotation on cited line						to clothe mine age with angel-like perfection,	to clothe mine age with angellike perfection
+Coil	Coil,	1.2.99	Gentl. I, 2, 99	quotation on cited line						here is a coil with protestation,	here is a coil with protestation
+Cold2	Cold,	1.2.136	Gentl. I, 2, 136	headword on cited line						to catch c.:	yet here they shall not lie for catching cold
+Coldly	Coldly,	4.4.111	Gentl. IV, 4, 111	quotation on cited line						yet will I woo for him, but yet so coldly	yet will i woo for him but yet so coldly
+Coloured	Coloured,	4.4.196	Gentl. IV, 4, 196	quotation on cited line						such a coloured periwig,	ill get me such a coloured periwig
+Commander	Commander,	4.1.67	Gentl. IV, 1, 67	headword on cited line							love thee as our commander and our king
+Comment2	Comment,	2.1.42	Gentl. II, 1, 42	quotation on cited line, with differences			88%	upon	on	is a physician to comment upon your malady,	you but is a physician to comment on your
+Companion1	Companion,	1.3.26	Gentl. I, 3, 26	quotation on cited line						his c., youthful Valentine, attends the emperor,	how his companion youthful valentine
+Compass2	Compass,	2.4.214	Gentl. II, 4, 214	quotation on cited line						to compass her I'll use my skill,	if not to compass her ill use my skill
+Compass2	Compass,	4.2.92	IV, 2, 92	headword on cited line							whats your will that i may compass yours
+Competitor	Competitor,	2.6.35	Gentl. II, 6, 35	headword on cited line							myself in counsel his competitor
+Complain	Complain,	1.2.127	Gentl. I, 2, 127	headword on cited line							he couples it to his complaining names
+Complain	Complain,	5.4.5	V, 4, 5	headword on cited line							and to the nightingales complaining notes
+Conceit1	Conceit,	3.2.17	Gentl. III, 2, 17	quotation on cited line						the good conceit I hold of thee,	proteus the good conceit i hold of thee
+Conceitless	Conceitless,	4.2.96	Gentl. IV, 2, 96	quotation on cited line						so shallow, so conceitless	thinkst thou i am so shallow so conceitless
+Concert	Concert	3.2.84	Gentl. III, 2, 84	headword on cited line							with some sweet concert to their instruments
+Concord	Concord,	1.2.94	Gentl. I, 2, 94	headword on cited line							and mar the concord with too harsh a descant
+Confer	Confer,	3.2.19	Gentl. III, 2, 19	quotation on cited line						to confer with thee,	makes me the better to confer with thee
+Confer	Confer,	3.2.19	Gentl. III, 2, 19	headword on cited line							makes me the better to confer with thee
+Confer	Confer,	3.1.2	Gentl. III, 1, 2	quotation on cited line						we have some secrets to confer about,	we have some secrets to confer about
+Confer	Confer,	2.4.119	Gentl. II, 4, 119	quotation on cited line						to confer of home affairs,	ill leave you to confer of home affairs
+Confer	Confer,	3.1.253	III, 1, 253	headword on cited line							and ere i part with thee confer at large
+Confession	Confession,	4.3.44	Gentl. IV, 3, 44	headword on cited line							where i intend holy confession
+Confession	Confession,	5.2.41	V, 2, 41	headword on cited line							besides she did intend confession
+Confirm	Confirm,	2.4.101	Gentl. II, 4, 101	quotation on cited line, with differences			86%	favour		confirm his welcome with some special favour,	confirm his welcome with some special favor
+Confirm	Confirm,	5.2.43	Gentl. V, 2, 43	quotation on cited line						these likelihoods confirm her flight,	these likelihoods confirm her flight from hence
+Consider	Consider,	1.3.19	Gentl. I, 3, 19	headword on cited line							i have considered well his loss of time
+Consider	Consider,	5.2.25	V, 2, 25	headword on cited line							considers she my possessions
+Consort1	Consort,	4.1.64	Gentl. IV, 1, 64	quotation on cited line, with differences			83%	will		will thou be of our c.?	what sayst thou wilt thou be of our consort
+Consort1	Consort,	3.2.84	Gentl. III, 2, 84	quotation on cited line, with differences			90%	consort		visit by night your lady's chamber-window with some sweet consort	with some sweet concert to their instruments
+Conspire	Conspire,	1.2.43	Gentl. I, 2, 43	quotation on cited line						to whisper and conspire against my youth,	to whisper and conspire against my youth
+Construe	Construe	1.2.56	Gentl. I, 2, 56	headword on cited line							which they would have the profferer construe ay
+Contemptuously	Contemptuously,	1.2.112	Gentl. I, 2, 112	quotation on cited line						trampling contemptuously on thy disdain,	trampling contemptuously on thy disdain
+Contend	Contend,	1.2.129	Gentl. I, 2, 129	headword on cited line							now kiss embrace contend do what you will
+Continue	Continue,	3.2.48	Gentl. III, 2, 48	quotation on cited line						she shall not long continue love to him,	she shall not long continue love to him
+Contrary2	Contrary,	4.4.88	Gentl. IV, 4, 88	quotation on cited line						'tis pity love should be so contrary	tis pity love should be so contrary
+Converse2	Converse,	1.3.31	Gentl. I, 3, 31	headword on cited line							hear sweet discourse converse with noblemen
+Converse2	Converse,	2.4.63	II, 4, 63	headword on cited line							we have conversed and spent our hours together
+Corded	Corded,	2.6.33	Gentl. II, 6, 33	quotation on cited line						a corded ladder,	this night he meaneth with a corded ladder
+Corded	Corded,	3.1.40	III, 1, 40	headword on cited line							and with a corded ladder fetch her down
+Correction	Correction,	2.4.138	Gentl. II, 4, 138	headword on cited line							this is no woe to his correction
+Correction	Correction,	3.1.395	III, 1, 395	headword on cited line							boys correction
+Corrupt1	Corrupt,	4.2.6	Gentl. IV, 2, 6	headword on cited line							to be corrupted with my worthless gifts
+Counsel2	Counsel,	2.7.1	Gentl. II, 7, 1	quotation on cited line						c., Lucetta,	counsel lucetta gentle girl assist me
+Counsel2	Counsel,	1.1.51	Gentl. I, 1, 51	headword on cited line							but wherefore waste i time to counsel thee
+Counsel2	Counsel,	1.2.2	I, 2, 2	headword on cited line							wouldst thou then counsel me to fall in love
+Counsellor	Counsellor,	2.4.77	Gentl. II, 4, 77	headword on cited line							as meet to be an emperors counsellor
+Counterfeit1	Counterfeit,	2.4.12	Gentl. II, 4, 12	quotation on cited line						seem you that you are not? Haply I do. So do counterfeits,	so do counterfeits
+Counterfeit1	Counterfeit,	5.4.53	Gentl. V, 4, 53	quotation on cited line						thou counterfeit to thy true friend!	thou counterfeit to thy true friend in love
+Couple2	Couple,	1.2.127	Gentl. I, 2, 127	headword on cited line							he couples it to his complaining names
+Court2	Court,	3.1.85	Gentl. III, 1, 85	quotation on cited line						I have forgot to court	for long agone i have forgot to court
+Cover1	Cover,	3.1.369	Gentl. III, 1, 369	quotation on cited line						the cover of the salt hides the salt,	ill prove it the cover of the salt hides the
+Cowardice	Cowardice,	3.2.32	Gentl. III, 2, 32	headword on cited line							with falsehood cowardice and poor descent
+Cowardice	Cowardice,	5.2.21	V, 2, 21	headword on cited line							she needs not when she knows it cowardice
+Coy1	Coy,	1.1.30	Gentl. I, 1, 30	quotation on cited line						scorn is bought with groans, coy looks with heart-sore sighs,	coy looks with heartsore sighs one fading moments mirth
+Coy1	Coy,	3.1.82	III, 1, 82	quotation on cited line						but she is nice and coy	whom i affect but she is nice and coy
+Crew	Crew,	4.1.74	Gentl. IV, 1, 74	quotation on cited line						we'll bring thee to our crews,	come go with us well bring thee to our crews
+Crooked	Crooked,	4.1.22	Gentl. IV, 1, 22	quotation on cited line						if crooked fortune had not thwarted me,	if crooked fortune had not thwarted me
+Cruel-hearted	Cruel-hearted:	2.3.10	Gentl. II, 3, 10	headword on cited line							did not this cruelhearted cur shed one tear he
+Cruelly	Cruelly,	2.3.10	Gentl. II, 3, 10	headword on cited line							did not this cruelhearted cur shed one tear he
+Crust1	Crust,	3.1.346	Gentl. III, 1, 346	headword on cited line							i love crusts
+Cunning2	Cunning,	4.2.83	Gentl. IV, 2, 83	quotation on cited line						I will so plead that you shall say my cunning drift excels,	that you shall say my cunning drift excels
+Cunning2	Cunning,	2.4.180	Gentl. II, 4, 180	quotation on cited line						the cunning manner of our flight,	with all the cunning manner of our flight
+Cunningly	Cunningly,	3.1.44	Gentl. III, 1, 44	headword on cited line							but good my lord do it so cunningly
+Currish	Currish,	4.4.53	Gentl. IV, 4, 53	quotation on cited line						she says your dog was a cur, and tells you currish thanks is good enough for such a present,	and tells you currish thanks is good enough for
+Dam3	Dam,	2.7.24	Gentl. II, 7, 24	quotation on cited line						up, the more it burns,	the more thou dammst it up the more it burns
+Daring	Daring,	3.1.155	Gentl. III, 1, 155	headword on cited line							and with thy daring folly burn the world
+Dazzle	Dazzle,	2.4.210	Gentl. II, 4, 210	headword on cited line							and that hath dazzled my reasons light
+Dazzle	Dazzle,	1.2.279	I, 2, 279	headword not found near cited line							(no such line)
+Dazzled	Dazzled	2.4.210	Gentl. II, 4, 210	headword on cited line							and that hath dazzled my reasons light
+Dazzled	Dazzled	2.4.210	Gentl. II, 4, 210	headword on cited line							and that hath dazzled my reasons light
+Deadly1	Deadly,	3.1.173	Gentl. III, 1, 173	quotation on cited line						banishment,	is self from self a deadly banishment
+Deadly1	Deadly,	3.1.173	Gentl. III, 1, 173	headword on cited line	3.1.185		100%			doom,	is self from self a deadly banishment
+Deceitful	Deceitful,	2.7.72	Gentl. II, 7, 72	headword on cited line							all these are servants to deceitful men
+Deck2	Deck,	2.1.4	Gentl. II, 1, 4	quotation on cited line						sweet ornament that decks a thing divine,	sweet ornament that decks a thing divine
+Deck2	Deck,	2.1.4	Gentl. II, 1, 4	headword on cited line						'tis your thoughts that now must deck our kings,	sweet ornament that decks a thing divine
+Deep2	Deep,	3.2.81	Gentl. III, 2, 81	quotation on cited line						deeps:	forsake unsounded deeps to dance on sands
+Deeply	Deeply,	5.4.102	Gentl. V, 4, 102	quotation on cited line, with differences			67%	them heart	em her heart how oft hast thou with perjury cleft	entertained them deeply in the heart,	and entertained em deeply in her heart
+Deformity	Deformity,	2.1.82	Gentl. II, 1, 82	headword on cited line							deformity for he being in love could not see to
+Degenerate	Degenerate,	5.4.136	Gentl. V, 4, 136	quotation on cited line						the more degenerate and base art thou,	the more degenerate and base art thou
+Deign	Deign,	1.1.160	Gentl. I, 1, 160	quotation on cited line						Julia would not deign my lines,	i fear my julia would not deign my lines
+Deliberate1	Deliberate,	1.3.73	Gentl. I, 3, 73	quotation on cited line						deliberate a day or two,	please you deliberate a day or two
+Depart1	Depart,	5.4.96	Gentl. V, 4, 96	quotation on cited line						at my d.:	but how camest thou by this ring at my depart
+Depend	Depend,	1.3.62	Gentl. I, 3, 62	headword on cited line							and not depending on his friendly wish
+Deplore	Deplore,	3.2.85	Gentl. III, 2, 85	quotation on cited line, with differences			86%	deploreing	deploring	to their instruments tune a deploreing dump,	tune a deploring dump the nights dead silence
+Descant	Descant,	1.2.94	Gentl. I, 2, 94	quotation on cited line						and mar the concord with too harsh a descant,	and mar the concord with too harsh a descant
+Desert2	Désert,	5.4.2	Gentl. V, 4, 2	headword on cited line							this shadowy desert unfrequented woods
+Desolate	Desolate,	4.4.179	Gentl. IV, 4, 179	quotation on cited line						alas, poor lady, desolate and left,	alas poor lady desolate and left
+Destined	Destined,	1.1.158	Gentl. I, 1, 158	quotation on cited line						being destined to a drier death,	being destined to a drier death on shore
+Determine	Determine,	3.2.97	Gentl. III, 2, 97	quotation on cited line						determine our proceedings,	and afterward determine our proceedings
+Determine	Determine,	3.1.13	Gentl. III, 1, 13	quotation on cited line						you have determined to bestow her on Thurio,	i know you have determined to bestow her
+Determine	Determine,	2.4.181	Gentl. II, 4, 181	quotation on cited line, with differences			60%	marriage hour	flight	our marriage hour determined of,	determined of how i must climb her window
+Devote1	Devote,	2.7.9	Gentl. II, 7, 9	quotation not found; headword not found near cited line						a true devoteed pilgrim,	a truedevoted pilgrim is not weary
+Devote1	Devote,	4.2.125	IV, 2, 125	quotation on cited line, with differences			89%	devoteed		the substance of your perfect self is else devoteed,	is else devoted i am but a shadow
+Diet1	Diet,	2.1.25	Gentl. II, 1, 25	quotation on cited line						to fast like one that takes diet	fast like one that takes diet to watch like one
+Difference	Difference,	4.4.195	Gentl. IV, 4, 195	headword on cited line							if that be all the difference in his love
+Dignify	Dignify,	2.4.158	Gentl. II, 4, 158	quotation on cited line, with differences			85%	dignifyed honour	dignified honor	she shall be dignifyed with this high honour, to bear my lady's train,	she shall be dignified with this high honor
+Dignify	Dignify,	1.1.64	Gentl. I, 1, 64	headword on cited line							he leaves his friends to dignify them more
+Dining-chamber	Dining-chamber,	4.4.9	Gentl. IV, 4, 9	headword on cited line							sooner into the diningchamber but he steps me
+Dinner	Dinner,	1.2.131	Gentl. I, 2, 131	headword on cited line							dinner is ready and your father stays
+Dinner	Dinner,	2.1.30	II, 1, 30	headword on cited line							was presently after dinner when you looked
+Direction-giver	Direction-giver,	3.2.90	Gentl. III, 2, 90	headword on cited line							therefore sweet proteus my directiongiver
+Dire-lamenting	Dire-lamenting,	3.2.82	Gentl. III, 2, 82	quotation on cited line						dire-lamenting elegies,	after your direlamenting elegies
+Disability	Disability,	2.4.109	Gentl. II, 4, 109	headword on cited line							leave off discourse of disability
+Discourse1	Discourse,	2.4.140	Gentl. II, 4, 140	quotation on cited line						now no d., except it be of love,	now no discourse except it be of love
+Discourse1	Discourse,	5.4.163	Gentl. V, 4, 163	quotation on cited line						I dare be bold with our discourse to make your grace to smile,	with our discourse to make your grace to smile
+Discourse1	Discourse,	2.4.109	Gentl. II, 4, 109	quotation on cited line						leave off discourse of disability,	leave off discourse of disability
+Discourse1	Discourse,	1.3.31	Gentl. I, 3, 31	quotation on cited line						hear sweet d., converse with noblemen,	hear sweet discourse converse with noblemen
+Discourse1	Discourse,	5.2.15	V, 2, 15	quotation on cited line						how likes she my d.?	how likes she my discourse
+Discourse2	Discourse,	5.2.44	Gentl. V, 2, 44	quotation on cited line						stand not to discourse	therefore i pray you stand not to discourse
+Discourse2	Discourse,	5.2.17	Gentl. V, 2, 17	quotation on cited line						when I discourse of love and peace,	but well when i discourse of love and peace
+Discovery	Discovery,	3.1.45	Gentl. III, 1, 45	quotation on cited line						do it so cunningly that my discovery be not aimed at,	that my discovery be not aimed at
+Disembark	Disembark,	2.4.187	Gentl. II, 4, 187	headword on cited line							i must unto the road to disembark
+Disfurnish	Disfurnish,	4.1.14	Gentl. IV, 1, 14	quotation on cited line						disfurnish me,	of which if you should here disfurnish me
+Disguise1	Disguise,	5.4.107	Gentl. V, 4, 107	headword on cited line							in a disguise of love
+Disobedient	Disobedient,	3.1.69	Gentl. III, 1, 69	headword on cited line							proud disobedient stubborn lacking duty
+Displeased	Displeased	2.7.66	Gentl. II, 7, 66	headword on cited line							no matter whos displeased when you are gone
+Dispose1	Dispose,	2.7.86	Gentl. II, 7, 86	quotation on cited line						all that is mine I leave at thy dispose	all that is mine i leave at thy dispose
+Dispose1	Dispose,	4.1.76	IV, 1, 76	quotation on cited line						which, with ourselves, all rest at thy dispose	which with ourselves all rest at thy dispose
+Dispose2	Dispose,	5.4.159	Gentl. V, 4, 159	quotation on cited line, with differences			88%	knowest	knowst	dispose of them as thou knowest their deserts,	dispose of them as thou knowst their deserts
+Dispraise1	Dispraise,	3.2.47	Gentl. III, 2, 47	headword on cited line							by aught that i can speak in his dispraise
+Disprove	Disprove,	5.4.66	Gentl. V, 4, 66	headword on cited line							i have one friend alive thou wouldst disprove me
+Dissolve	Dissolve,	3.2.8	Gentl. III, 2, 8	headword on cited line							dissolves to water and doth lose his form
+Don1	Don,	1.3.39	Gentl. I, 3, 39	quotation on cited line						Don Alphonso,	tomorrow may it please you don alphonso
+Don1	Don,	2.4.54	II, 4, 54	quotation on cited line						Don Antonio,	know ye don antonio your countryman
+Doubtfully	Doubtfully,	2.1.118	Gentl. II, 1, 118	quotation off by 1	2.1.117	-1	100%			I writ at random, very doubtfully	perchance you think too much of so much pains
+Down3	Down,	3.1.40	Gentl. III, 1, 40	quotation on cited line						fetch her down	and with a corded ladder fetch her down
+Down3	Down,	3.1.20	Gentl. III, 1, 20	quotation on cited line						a pack of sorrows which would press you down	a pack of sorrows which would press you down
+Down3	Down,	1.2.135	Gentl. I, 2, 135	quotation on cited line						laying them down	nay i was taken up for laying them down
+Down3	Down,	3.0	III Prol. 50	not a citation of this play							
+Down3	Down,	4.1.2	Gentl. IV, 1, 2	quotation on cited line						down with 'em,	if there be ten shrink not but down with em
+Down3	Down,	2.3.59	Gentl. II, 3, 59	headword on cited line							with my tears if the wind were down i could
+Down3	Down,	1.2.117	Gentl. I, 2, 117	headword on cited line							but twice or thrice was proteus written down
+Down3	Down,	3.1.337	Gentl. III, 1, 337	quotation on cited line						O villain, that set this down among her vices,	o villain that set this down among
+Down3	Down,	2.3.32	Gentl. II, 3, 32	quotation on cited line, with differences			spacing			here's my mother's breath up and down	my mothers breath up and down now come i
+Drift	Drift,	2.6.43	Gentl. II, 6, 43	quotation on cited line						love, lend me wings to make my purpose swift, as thou hast lent me wit to plot this drift	as thou hast lent me wit to plot this drift
+Drift	Drift,	3.1.18	III, 1, 18	quotation on cited line						cross my friend in his intended drift	to cross my friend in his intended drift
+Drift	Drift,	4.2.83	IV, 2, 83	quotation on cited line						you shall say my cunning drift excels,	that you shall say my cunning drift excels
+Dry1	Dry,	2.3.58	Gentl. II, 3, 58	quotation on cited line						if the river were dry	man if the river were dry i am able to fill it
+Dry1	Dry,	3.2.75	III, 2, 75	headword on cited line							write till your ink be dry and with your tears
+Dry1	Dry,	1.1.158	Gentl. I, 1, 158	quotation on cited line						a drier death,	being destined to a drier death on shore
+Dully	Dully,	1.1.7	Gentl. I, 1, 7	quotation on cited line						dully sluggardized at home,	than living dully sluggardized at home
+Dump	Dump,	3.2.85	Gentl. III, 2, 85	quotation on cited line						tune a deploring dump	tune a deploring dump the nights dead silence
+Earnest2	Earnest,	2.1.163	Gentl. II, 1, 163	quotation on cited line						did you perceive her e.?	did you perceive her earnest
+Earnest2	Earnest,	2.5.13	Gentl. II, 5, 13	quotation on cited line						in e.:	marry after they closed in earnest
+Earthly	Earthly,	2.4.146	Gentl. II, 4, 146	quotation on cited line						an earthly paragon,	no but she is an earthly paragon
+Effectual	Effectual,	3.1.223	Gentl. III, 1, 223	quotation on cited line						the doom, which, unreversed, stands in effectual force,	which unreversed stands in effectual force
+Eglamour	Eglamour,	1.2.9	Gentl. I, 2, 9	headword on cited line							what thinkst thou of the fair sir eglamour
+Eglamour	Eglamour,	4.3.6	IV, 3, 6	headword on cited line							sir eglamour a thousand times good morrow
+Eglamour	Eglamour,	5.1.8	V, 1, 8	headword on cited line							amen amen go on good eglamour
+Eglamour	Eglamour,	5.2.32	V, 2, 32	headword on cited line							which of you saw sir eglamour of late
+Elegy	Elegy,	3.2.82	Gentl. III, 2, 82	headword on cited line							after your direlamenting elegies
+Elysium	Elysium,	2.7.38	Gentl. II, 7, 38	headword on cited line							a blessed soul doth in elysium
+Enamelled	Enamelled,	2.7.28	Gentl. II, 7, 28	headword on cited line							he makes sweet music with the enamelled stones
+Encounter1	Encounter,	2.7.41	Gentl. II, 7, 41	headword on cited line							the loose encounters of lascivious men
+Encounter2	Encounter,	1.2.5	Gentl. I, 2, 5	headword on cited line							that every day with parle encounter me
+Endamage	Endamage,	3.2.43	Gentl. III, 2, 43	headword on cited line							your slander cannot endamage him
+Endanger	Endanger,	5.4.133	Gentl. V, 4, 133	headword on cited line							i hold him but a fool that will endanger
+Endless	Endless,	3.1.240	Gentl. III, 1, 240	quotation on cited line						my endless dolour,	as ending anthem of my endless dolour
+Enfranchise	Enfranchise,	2.4.90	Gentl. II, 4, 90	headword on cited line							belike that now she hath enfranchised them
+Enfranchise	Enfranchise,	3.1.151	III, 1, 151	headword on cited line							silvia this night i will enfranchise thee
+Engine	Engine,	3.1.138	Gentl. III, 1, 138	quotation on cited line						an engine fit for my proceeding,	and here an engine fit for my proceeding
+Engrave	Engrave,	2.7.4	Gentl. II, 7, 4	quotation on cited line						engraved:	are visibly charactered and engraved
+Enjoin	Enjoin,	2.1.93	Gentl. II, 1, 93	quotation on cited line						she enjoined me to write some lines,	last night she enjoined me to write
+Enjoin	Enjoin,	2.1.93	Gentl. II, 1, 93	headword on cited line							last night she enjoined me to write
+Enrage	Enrage,	2.6.38	Gentl. II, 6, 38	headword on cited line							who all enraged will banish valentine
+Enthralled	Enthralled,	2.4.134	Gentl. II, 4, 134	quotation on cited line						my enthralled eyes,	love hath chased sleep from my enthralled eyes
+Environ	Environ,	1.1.16	Gentl. I, 1, 16	headword on cited line							if ever danger do environ thee
+Equal1	Equal,	3.1.158	Gentl. III, 1, 158	quotation on cited line						bestow thy fawning smiles on equal mates,	bestow thy fawning smiles on equal mates
+Err	Err,	2.4.213	Gentl. II, 4, 213	quotation on cited line						if I can check my erring love, I will,	if i can check my erring love i will
+Err	Err,	3.1.28	III, 1, 28	quotation on cited line						my jealous aim might err	but fearing lest my jealous aim might err
+Especially	Especially,	3.2.41	Gentl. III, 2, 41	headword on cited line							especially against his very friend
+Essence	Essence,	3.1.182	Gentl. III, 1, 182	quotation on cited line						she is my essence	she is my essence and i leave to be
+Esteem1	Esteem,	1.3.40	Gentl. I, 3, 40	quotation on cited line						of good esteem	with other gentlemen of good esteem
+Estimation	Estimation,	2.4.56	Gentl. II, 4, 56	quotation on cited line						to be of worth and worthy estimation	to be of worth and worthy estimation
+Eternal1	Eternal,	5.4.81	Gentl. V, 4, 81	headword on cited line						by penitence the --'s wrath is appeased,	by penitence the eternals wraths appeased
+Ethiop	Ethiop,	2.6.26	Gentl. II, 6, 26	headword on cited line							shows julia but a swarthy ethiope
+Eve1	Eve,	3.1.342	Gentl. III, 1, 342	headword on cited line							out with that too it was eves
+Even1	Even,	5.2.42	Gentl. V, 2, 42	quotation on cited line						this even	at patricks cell this even and there she was not
+Even1	Even,	2.1.104	Gentl. II, 1, 104	quotation on cited line						good even	o give ye good even heres
+Even1	Even,	4.2.85	IV, 2, 85	headword on cited line							madam good even to your ladyship
+Evening	Evening,	4.2.17	Gentl. IV, 2, 17	headword on cited line							and give some evening music to her ear
+Evening	Evening,	4.3.42	IV, 3, 42	headword on cited line							when will you go this evening coming
+Evening	Evening,	5.1.7	V, 1, 7	headword on cited line							see where she comes lady a happy evening
+Everlastingly	Everlastingly,	2.4.163	Gentl. II, 4, 163	headword on cited line							and make rough winter everlastingly
+Except1	Except,	2.4.154	Gentl. II, 4, 154	quotation on cited line						except not any,	except my mistress sweet except not any
+Except1	Except,	1.3.83	Gentl. I, 3, 83	quotation on cited line						against:	hath he excepted most against my love
+Except1	Except,	2.4.155	II, 4, 155	headword on cited line							except thou wilt except against my love
+Except2	Except,	1.2.120	Gentl. I, 2, 120	headword on cited line							except mine own name that some whirlwind bear
+Except2	Except,	2.1.164	II, 1, 164	headword on cited line							she gave me none except an angry word
+Except2	Except,	2.4.154	II, 4, 154	headword on cited line							except my mistress sweet except not any
+Exception	Exception,	5.2.3	Gentl. V, 2, 3	quotation on cited line						at:	and yet she takes exceptions at your person
+Exception	Exception,	1.3.81	Gentl. I, 3, 81	quotation on cited line						to:	lest he should take exceptions to my love
+Excess	Excess,	3.1.220	Gentl. III, 1, 220	quotation on cited line						of:	and now excess of it will make me surfeit
+Exchange2	Exchange,	2.6.13	Gentl. II, 6, 13	quotation on cited line						exchange the bad for better,	to learn his wit to exchange the bad for better
+Exercise1	Exercise,	1.3.11	Gentl. I, 3, 11	headword on cited line							for any or for all these exercises
+Exercise1	Exercise,	1.3.11	Gentl. I, 3, 11	headword on cited line	1.3.32-33		100%			be in eye of every exercise worthy his youth,	for any or for all these exercises
+Exhibition	Exhibition,	1.3.69	Gentl. I, 3, 69	headword on cited line							like exhibition thou shalt have from me
+Expel	Expel,	2.4.192	Gentl. II, 4, 192	quotation on cited line						another heat,	even as one heat another heat expels
+Expostulate	Expostulate,	3.1.251	Gentl. III, 1, 251	quotation on cited line						the time now serves not to expostulate	the time now serves not to expostulate
+Exquisite	Exquisite,	2.1.59	Gentl. II, 1, 59	quotation on cited line						her beauty is exquisite	i mean that her beauty is exquisite but
+Extol	Extol,	3.1.102	Gentl. III, 1, 102	headword on cited line							flatter and praise commend extol their graces
+Fade	Fade,	1.1.30	Gentl. I, 1, 30	quotation on cited line, with differences			75%	fadeing	fading	one fadeing moment's mirth,	coy looks with heartsore sighs one fading moments mirth
+Fairly	Fairly,	2.5.14	Gentl. II, 5, 14	quotation on cited line						they parted very fairly in jest,	they parted very fairly in jest
+False2	False,	4.2.59	Gentl. IV, 2, 59	quotation on cited line, with differences			100%		father	he plays false How? out of tune on the strings?	he plays false father
+False2	False,	4.2.59	Gentl. IV, 2, 59	headword on cited line							he plays false father
+Fancy2	Fancy,	3.1.67	Gentl. III, 1, 67	quotation on cited line						win her to fancy him,	cannot your grace win her to fancy him
+Fantastic	Fantastic,	2.7.47	Gentl. II, 7, 47	quotation on cited line						to be fantastic may become a youth,	to be fantastic may become a youth
+Farthingale	Farthingale,	2.7.51	Gentl. II, 7, 51	headword on cited line							what compass will you wear your farthingale
+Farthingale	Farthingale,	4.4.42	IV, 4, 42	headword on cited line							farthingale didst thou ever see me do such a
+Fashion2	Fashion,	3.1.135	Gentl. III, 1, 135	quotation on cited line						how shall I fashion me to wear a cloak,	how shall i fashion me to wear a cloak
+Fast1	Fast,	2.4.131	Gentl. II, 4, 131	quotation on cited line						fasts:	with bitter fasts with penitential groans
+Fast1	Fast,	2.4.141	Gentl. II, 4, 141	headword on cited line							now can i break my fast dine sup and sleep
+Favour2	Favour,	2.1.58	Gentl. II, 1, 58	headword on cited line							favored
+Fawn3	Fawn,	3.1.158	Gentl. III, 1, 158	quotation on cited line						thy fawning smiles,	bestow thy fawning smiles on equal mates
+Fawn3	Fawn,	4.2.15	Gentl. IV, 2, 15	headword on cited line							the more it grows and fawneth on her still
+Fealty	Fealty,	2.4.91	Gentl. II, 4, 91	headword on cited line							upon some other pawn for fealty
+Feature	Feature,	2.4.73	Gentl. II, 4, 73	quotation on cited line						complete in feature and in mind,	he is complete in feature and in mind
+Feeble	Feeble,	2.7.10	Gentl. II, 7, 10	headword on cited line							to measure kingdoms with his feeble steps
+Fight1	Fight,	4.1.28	Gentl. IV, 1, 28	headword on cited line							but yet i slew him manfully in fight
+Figure1	Figure,	3.2.6	Gentl. III, 2, 6	quotation on cited line						a figure trenched in ice,	this weak impress of love is as a figure
+Figure1	Figure,	2.1.154	Gentl. II, 1, 154	quotation on cited line						she wooes you by a figure	to yourself why she wooes you by a figure
+Fill3	Fill,	1.2.95	Gentl. I, 2, 95	headword on cited line							there wanteth but a mean to fill your song
+Fill3	Fill,	2.3.58	Gentl. II, 3, 58	headword on cited line							man if the river were dry i am able to fill it
+Fill3	Fill,	5.4.112	V, 4, 112	headword on cited line							fills him with faults makes him run through all the sins
+Fine3	Fine,	1.1.44	Gentl. I, 1, 44	headword on cited line							inhabits in the finest wits of all
+Fine3	Fine,	1.2.10	Gentl. I, 2, 10	quotation on cited line						a knight well-spoken, neat and fine	as of a knight wellspoken neat and fine
+Fine3	Fine,	4.2.68	IV, 2, 68	quotation on cited line, with differences			100%		is	fine change in the music,	hark what fine change is in the music
+Fine3	Fine,	2.4.33	Gentl. II, 4, 33	quotation on cited line						a fine volley of words,	a fine volley of words gentlemen and
+Finger2	Finger,	1.2.101	Gentl. I, 2, 101	headword on cited line							you would be fingering them to anger me
+Firm	Firm,	3.2.58	Gentl. III, 2, 58	quotation on cited line						love's firm votary,	you are already loves firm votary
+Fit2	Fit,	4.4.167	Gentl. IV, 4, 167	quotation on cited line, with differences			100%		by all mens judgements	Julia's gown which served me as fit as if the garment had been made for me,	which served me as fit by all mens judgements
+Fit2	Fit,	1.2.45	Gentl. I, 2, 45	quotation on cited line						an officer fit for the place,	and you an officer fit for the place
+Fit2	Fit,	3.1.138	III, 1, 138	quotation on cited line						an engine fit for my proceeding,	and here an engine fit for my proceeding
+Fit2	Fit,	5.4.157	V, 4, 157	headword on cited line							and fit for great employment worthy lord
+Flat2	Flat,	1.2.93	Gentl. I, 2, 93	quotation on cited line						now you are too flat and mar the concord,	nay now you are too flat
+Flattery	Flattery,	4.2.97	Gentl. IV, 2, 97	headword on cited line							to be seduced by thy flattery
+Fodder	Fodder,	1.1.92	Gentl. I, 1, 92	headword on cited line							the sheep for fodder follow the
+Fold3	Fold,	1.2.128	Gentl. I, 2, 128	quotation on cited line						thus will I fold them one upon another,	thus will i fold them one upon another
+Fold3	Fold,	1.1.115	Gentl. I, 1, 115	quotation on cited line						from a pound to a pin? fold it over and over, 'tis threefold too little for carrying a letter,	from a pound to a pin fold it over and over
+Foolish	Foolish,	1.2.57	Gentl. I, 2, 57	headword on cited line							fie fie how wayward is this foolish love
+Foolish	Foolish,	2.4.174	Gentl. II, 4, 174	headword on cited line							my foolish rival that her father likes
+Foolish	Foolish,	4.4.71	IV, 4, 71	headword on cited line							for tis no trusting to yond foolish lout
+Forgetfulness	Forgetfulness,	2.2.12	Gentl. II, 2, 12	quotation on cited line						my love's forgetfulness	torment me for my loves forgetfulness
+Forsake	Forsake	3.2.81	Gentl. III, 2, 81	quotation on cited line						leviathans forsake unsounded deeps to dance on sands,	forsake unsounded deeps to dance on sands
+Forsake	Forsake	4.4.151	Gentl. IV, 4, 151	headword on cited line							belike she thinks that proteus hath forsook her
+Fortune2	Fortune,	5.4.169	Gentl. V, 4, 169	quotation on cited line						you will wonder what hath fortuned,	that you will wonder what hath fortuned
+Forward1	Forward,	2.1.11	Gentl. II, 1, 11	quotation on cited line						you'll still be too forward	well youll still be too forward
+Forward1	Forward,	1.1.45	Gentl. I, 1, 45	quotation on cited line						the most forward bud,	and writers say as the most forward bud
+Foster	Foster,	3.1.184	Gentl. III, 1, 184	headword on cited line							fostered illumined cherished kept alive
+Fraud	Fraud,	2.7.78	Gentl. II, 7, 78	quotation on cited line						his heart as far from fraud as heaven from earth,	his heart as far from fraud as heaven from earth
+Friendly1	Friendly,	1.3.62	Gentl. I, 3, 62	headword on cited line							and not depending on his friendly wish
+Full2	Full,	4.4.191	Gentl. IV, 4, 191	headword on cited line						deserve as f., as fortunate a bed). full as lovely,	were full as lovely as is this of hers
+Full2	Full,	5.4.38	V, 4, 38	headword on cited line							and full as much for more there cannot be
+Full2	Full,	3.1.76	Gentl. III, 1, 76	quotation on cited line, with differences			80%	now	now	I am now full resolved,	i now am full resolved to take a wife
+Fury	Fury,	4.1.45	Gentl. IV, 1, 45	headword on cited line							such as the fury of ungoverned youth
+Future2	Future,	1.1.50	Gentl. I, 1, 50	headword on cited line							and all the fair effects of future hopes
+Garter2	Garter,	2.1.83	Gentl. II, 1, 83	headword on cited line							garter his hose and you being in love cannot
+Gentleman-like	Gentleman-like,	4.4.19	Gent. IV, 4, 19	headword on cited line							company of three or four gentlemanlike dogs under
+Gld	Gíld	5.1.1	Gent. V, 1, 1	headword on cited line							the sun begins to gild the western sky
+Gingerly	Gingerly,	1.2.70	Gent. I, 2, 70	quotation on cited line						what is't that you took up so g.?	what ist that you took up so gingerly
+Girl	Girl,	2.7.1	Gent. II, 7, 1	headword on cited line							counsel lucetta gentle girl assist me
+Girl	Girl,	3.2.29	III, 2, 29	headword on cited line							what might we do to make the girl forget
+Girl	Girl,	5.2.49	V, 2, 49	headword on cited line							why this it is to be a peevish girl
+Girl	Girl,	5.4.134	V, 4, 134	headword on cited line							his body for a girl that loves him not
+Giver	Giver,	2.4.35	Gent. II, 4, 35	headword on cited line							tis indeed madam we thank the giver
+Glance1	Glance,	1.1.4	Gent. I, 1, 4	headword on cited line							to the sweet glances of thy honored love
+Glide2	Glide,	2.7.25	Gent. II, 7, 25	headword on cited line							the current that with gentle murmur glides
+Good-morrow	Good-morrow,	2.1.102	Gent. II, 1, 102	headword off by 1	2.1.103	1					madam and mistress a thousand
+Gossip1	Gossip,	3.1.269	Gent. III, 1, 269	quotation on cited line						'tis not a maid, for she hath had gossips,	maid for she hath had gossips yet tis a maid
+Govern	Govern,	2.7.74	Gent. II, 7, 74	quotation on cited line						truer stars did govern Proteus' birth,	but truer stars did govern proteus birth
+Grandmother	Grandmother,	3.1.297	Gent. III, 1, 297	headword on cited line							of thy grandmother this proves that thou canst
+Gree	Gree,	2.4.183	Gent. II, 4, 183	quotation on cited line						all the means plotted and greed on,	plotted and greed on for my happiness
+Grievance	Grievance,	1.1.17	Gent. I, 1, 17	quotation on cited line, with differences			100%		if ever danger do environ thee	in thy danger commend thy grievance to my holy prayers,	commend thy grievance to my holy prayers
+Grievance	Grievance,	4.3.37	IV, 3, 37	quotation on cited line						I pity much your grievances, which since I know they virtuously are placed,	madam i pity much your grievances
+Grievance	Grievance,	3.2.86	III, 2, 86	quotation on cited line						the night's dead silence will well become such sweet-complaining grievance	will well become such sweetcomplaining grievance
+Grievously	Grievously,	3.2.14	Gent. III, 2, 14	quotation on cited line						my daughter takes his going grievously	my daughter takes his going grievously
+Grievously	Grievously,	1.53.14	I, 53	not a citation of this play							
+Guess2	Guess,	2.1.122	Gent. II, 1, 122	quotation on cited line						I guess the sequel,	a pretty period well i guess the sequel
+Guess2	Guess,	5.2.39	Gent. V, 2, 39	quotation on cited line						guessed that it was she,	him he knew well and guessed that it was she
+Habiliment	Habiliment,	4.1.13	Gent. IV, 1, 13	quotation on cited line						habiliments:	my riches are these poor habiliments
+Halidom	Halidom	4.2.136	Gent. IV, 2, 136	quotation on cited line						by my h., I was fast asleep,	by my halidom i was fast asleep
+Hallo	Hallo,	5.4.13	Gent. V, 4, 13	headword on cited line							what halloing and what stir is this today
+Hallowmas	Hallowmas,	2.1.27	Gent. II, 1, 27	quotation on cited line						to speak puling, like a beggar at Hallowmas	at hallowmas you were wont when you
+Hammer2	Hammer,	1.3.18	Gent. I, 3, 18	quotation on cited line, with differences			100%		this month	whereon I have been hammering,	whereon this month i have been hammering
+Hapless	Hapless,	1.1.32	Gent. I, 1, 32	headword on cited line							if haply won perhaps a hapless gain
+Hapless	Hapless,	3.1.260	III, 1, 260	headword on cited line							o my dear silvia hapless valentine
+Haply	Haply	1.1.32	Gent. I, 1, 32	quotation on cited line						if haply won, perhaps a hapless gain,	if haply won perhaps a hapless gain
+Haply	Haply	1.1.12	Gent. I, 1, 12	headword on cited line							think on thy proteus when thou haply seest
+Haply	Haply	2.4.11	II, 4, 11	headword on cited line							haply i do
+Haply	Haply	5.60.11	V, 60	not a citation of this play							
+Haply	Haply	5.1.136	Shr. Ind. 1, 136.	not a citation of this play							
+Haply	Haply	5.2.171	V, 2, 171	headword not found near cited line							(no such line)
+Haply	Haply	3.1.25	Gent. III, 1, 25	quotation on cited line						this love of theirs myself have often seen, haply when they have judged me fast asleep,	haply when they have judged me fast asleep
+Hard2	Hard,	4.4.2	Gent. IV, 4, 2	quotation on cited line, with differences			100%		look you	when a man's servant shall play the cur with him, it goes hard	cur with him look you it goes hard one that i
+Hard2	Hard,	1.1.86	Gent. I, 1, 86	quotation on cited line						it shall go hard but I'll prove it,	it shall go hard but ill prove it by
+Hard2	Hard,	2.4.49	Gent. II, 4, 49	quotation on cited line						you are hard beset,	now daughter silvia you are hard beset
+Hardly	Hardly,	2.1.115	Gent. II, 1, 115	quotation on cited line						it came hardly off,	now trust me madam it came hardly off
+Hardly	Hardly,	2.1.33	Gent. II, 1, 33	headword on cited line							look on you i can hardly think you my master
+Hardly	Hardly,	1.1.141	Gent. I, 1, 141	quotation on cited line						I think you'll hardly win her,	truly sir i think youll hardly win her
+Harsh	Harsh,	1.2.94	Gent. I, 2, 94	quotation on cited line						too harsh a descant,	and mar the concord with too harsh a descant
+Harsh	Harsh,	3.1.208	III, 1, 208	headword on cited line							for they are harsh untuneable and bad
+Hasten	Hasten,	1.3.77	Gent. I, 3, 77	quotation on cited line						on:	to hasten on his expedition
+Hastily	Hastily,	1.3.77	Gent. I, 3, 77	headword on cited line							to hasten on his expedition
+Hazard1	Hazard,	3.1.116	Gent. III, 1, 116	quotation on cited line						without apparent hazard of his life,	without apparent hazard of his life
+Heal	Heal,	1.2.115	Gent. I, 2, 115	headword on cited line							shall lodge thee till thy wound be throughly healed
+Heap2	Heap,	3.1.19	Gent. III, 1, 19	headword on cited line							than by concealing it heap on your head
+Hearken	Hearken,	2.1.178	Gent. II, 1, 178	quotation on cited line						h., sir,	ay but hearken sir though the
+Heart-sore	Heart-sore,	1.1.30	Gent. I, 1, 30	quotation on cited line						heart-sore sighs,	coy looks with heartsore sighs one fading moments mirth
+Heart-sore	Heart-sore,	2.4.132	II, 4, 132	headword on cited line							with nightly tears and daily heartsore sighs
+Heart-strings	Heart-strings,	4.2.62	Gent. IV, 2, 62	headword on cited line							my very heartstrings
+Hearty	Hearty,	5.4.74	Gent. V, 4, 74	headword on cited line							forgive me valentine if hearty sorrow
+Heaven-bred	Heaven-bred,	3.2.72	Gent. III, 2, 72	quotation on cited line						heaven-bred poesy,	much is the force of heavenbred poesy
+Heedfully	Heedfully,	2.6.11	Gent. II, 6, 11	quotation on cited line						unheedful vows may heedfully be broken,	unheedful vows may heedfully be broken
+Height	Height,	4.4.169	Gent. IV, 4, 169	quotation on cited line						she is about my height	therefore i know she is about my height
+Hers	Hers,	4.2.117	Gent. IV, 2, 117	headword on cited line							go to thy ladys grave and call hers thence
+Hers	Hers,	3.1.72	Gent. III, 1, 72	quotation on cited line						this pride of hers	and may i say to thee this pride of hers
+Hers	Hers,	4.4.191	IV, 4, 191	quotation on cited line						this face of mine were full as lovely as is this of hers	were full as lovely as is this of hers
+Herself	Herself	2.1.174	Gent. II, 1, 174	quotation on cited line						herself hath taught her love,	herself hath taught her love himself to write unto her lover
+Herself	Herself	5.4.98	Gent. V, 4, 98	headword on cited line							and julia herself did give it me
+Herself	Herself	2.3.14	Gent. II, 3, 14	headword on cited line							having no eyes look you wept herself blind at
+High3	High,	1.2.87	Gent. I, 2, 87	quotation on cited line						I cannot reach so high	and why not you i cannot reach so high
+Himself	Himself,	1.2.13	Gent. I, 2, 13	quotation on cited line						of himself	well of his wealth but of himself so so
+Himself	Himself,	2.3.24	II, 3, 24	quotation on cited line						the dog is himself	maid i am the dog no the dog is himself and
+Himself	Himself,	3.1.143	III, 1, 143	quotation on cited line						himself would lodge,	himself would lodge where senseless they are lying
+Himself	Himself,	2.1.146	II, 1, 146	headword on cited line							that my master being scribe to himself should write the letter
+Himself	Himself,	2.1.174	Gent. II, 1, 174	headword on cited line							herself hath taught her love himself to write unto her lover
+Himself	Himself,	3.1.394	Gent. III, 1, 394	headword on cited line							himself into secrets ill after to rejoice in the
+Homage	Homage,	4.1.66	Gent. IV, 1, 66	headword on cited line							well do thee homage and be ruled by thee
+Home-keeping	Home-keeping,	1.1.2	Gent. I, 1, 2	headword on cited line							homekeeping youth have ever homely wits
+Homely	Homely,	1.1.2	Gent. I, 1, 2	quotation on cited line						home-keeping youth have ever homely wits,	homekeeping youth have ever homely wits
+Homely	Homely,	2.4.98	Gent. II, 4, 98	quotation on cited line						upon a homely object Love can wink,	upon a homely object love can wink
+Hood1	Hood,	4.1.36	Gent. IV, 1, 36	headword on cited line							by the bare scalp of robin hoods fat friar
+However	However,	1.1.34	Gent. I, 1, 34	quotation on cited line, with differences			95%	labour	labor	if haply won, perhaps a hapless gain; if lost, why then a grievous labour won; h., but a folly bought with wit,	however but a folly bought with wit
+Howl2	Howl,	2.3.8	Gent. II, 3, 8	headword on cited line							crying our maid howling our cat wringing her
+Humble2	Humble,	1.2.59	Gent. I, 2, 59	headword on cited line							and presently all humbled kiss the rod
+Humble2	Humble,	2.4.137	II, 4, 137	headword on cited line							and hath so humbled me as i confess
+Hundred	Hundred,	4.4.150	Gent. IV, 4, 150	quotation on cited line						a hundred several times,	that i have wept a hundred several times
+Hungry	Hungry,	5.4.33	Gent. V, 4, 33	headword on cited line							had i been seized by a hungry lion
+Ice	Ice,	3.2.7	Gent. III, 2, 7	headword on cited line							trenched in ice which with an hours heat
+Idle1	Idle,	2.1.172	Gent. II, 1, 172	headword on cited line							or else for want of idle time could not again reply
+Idle1	Idle,	2.4.64	II, 4, 64	headword on cited line							and though myself have been an idle truant
+Idleness	Idleness,	1.1.8	Gent. I, 1, 8	headword on cited line							wear out thy youth with shapeless idleness
+Idol	Idol,	4.2.129	Gent. IV, 2, 129	headword on cited line							i am very loath to be your idol sir
+Idol	Idol,	2.4.144	Gent. II, 4, 144	headword on cited line							was this the idol that you worship so
+Idolatry	Idolatry,	4.4.205	Gent. IV, 4, 205	headword on cited line							and were there sense in his idolatry
+Ill-favoured	Ill-favoured,	2.7.54	Gent. II, 7, 54	quotation on cited line, with differences			67%	illfavoured		will be ill-favoured	out out lucetta that will be illfavored
+Illiterate	Illiterate,	3.1.296	Gent. III, 1, 296	headword on cited line							o illiterate loiterer it was the son
+Illumine	Illumine,	3.1.184	Gent. III, 1, 184	quotation on cited line						fostered, illumined, cherished,	fostered illumined cherished kept alive
+Immaculate	Immaculate,	2.7.76	Gent. II, 7, 76	headword on cited line							his love sincere his thoughts immaculate
+Immodest	Immodest,	5.4.106	Gent. V, 4, 106	quotation on cited line						I have took upon me such an immodest raiment,	such an immodest raiment if shame live
+Impatient	Impatient	2.7.90	Gent. II, 7, 90	quotation on cited line						I am impatient of my tarriance,	i am impatient of my tarriance
+Impatiently	Impatiently,	2.7.26	Gent. II, 7, 26	quotation on cited line, with differences			100%		that with gentle murmur glides thou knowst	the current, being stopped, impatiently doth rage,	thou knowst being stopped impatiently doth rage
+Impeachment	Impeachment,	1.3.15	Gent. I, 3, 15	headword on cited line							which would be great impeachment to his age
+Imperial	Imperial,	2.3.5	Gent. II, 3, 5	headword on cited line							proteus to the imperials court i think crab
+Imperious	Imperious,	2.4.130	Gent. II, 4, 130	headword on cited line							whose high imperious thoughts have punished me
+Import1	Impórt,	3.1.55	Gent. III, 1, 55	quotation on cited line						of much i.?	be they of much import
+Importnacy	Importúnacy,	4.2.112	Gent. IV, 2, 112	headword on cited line							to wrong him with thy importunacy
+Impose1	Impose,	4.3.8	Gent. IV, 3, 8	quotation on cited line						according to your ladyship's impose	according to your ladyships impose
+Impossible	Impossible,	3.1.379	Gent. III, 1, 379	headword on cited line							match as nothing is impossible
+Impress2	Impréss,	3.2.6	Gent. III, 2, 6	quotation on cited line						this weak impréss of love,	this weak impress of love is as a figure
+Impression	Impression,	2.4.202	Gent. II, 4, 202	quotation on cited line, with differences			94%	the	a	which like a waxen image 'gainst the fire bears no impression of the thing it was,	bears no impression of the thing it was
+Include	Include,	5.4.160	Gent. V, 4, 160	quotation on cited line						we will include all jars with triumphs,	come let us go we will include all jars
+Inconstancy	Inconstancy,	5.4.113	Gent. V, 4, 113	headword on cited line							inconstancy falls off ere it begins
+Indifferent1	Indifferent,	3.2.44	Gent. III, 2, 44	quotation on cited line, with differences			89%	never can	cannot	where your good word cannot advantage him, your slander never can endamage him; therefore the office is indifferent	therefore the office is indifferent
+Indue	Indue	5.4.153	Gent. V, 4, 153	quotation on cited line, with differences			80%	indued	endued	men indued with worthy qualities,	are men endued with worthy qualities
+Industry	Industry,	1.3.22	Gent. I, 3, 22	headword on cited line							experience is by industry achieved
+Infancy	Infancy,	2.4.62	Gent. II, 4, 62	headword on cited line							i know him as myself for from our infancy
+Infinite2	Infinite,	2.7.70	Gent. II, 7, 70	quotation on cited line						instances of infinite of love,	and instances of infinite of love
+Influence	Influence,	3.1.183	Gent. III, 1, 183	quotation on cited line						I leave to be, if I be not by her fair influence fostered, illumined, cherished, kept alive,	if i be not by her fair influence
+Ingratitude	Ingratitude,	1.2.110	Gent. I, 2, 110	headword on cited line							as in revenge of thy ingratitude
+Inhabit	Inhabit	1.1.44	Gent. I, 1, 44	headword on cited line							inhabits in the finest wits of all
+Inhabit	Inhabit	4.2.48	IV, 2, 48	headword on cited line							and being helped inhabits there
+Inhabit	Inhabit	5.4.7	V, 4, 7	headword on cited line							o thou that dost inhabit in my breast
+Inherit	Inherit,	3.2.87	Gent. III, 2, 87	quotation on cited line						this, or else nothing, will inherit her,	this or else nothing will inherit her
+Injurious	Injurious,	1.2.106	Gent. I, 2, 106	quotation on cited line						injurious wasps, to feed on such sweet honey and kill the bees,	injurious wasps to feed on such sweet honey
+Inly1	Inly,	2.7.18	Gent. II, 7, 18	quotation on cited line						the inly touch of love,	didst thou but know the inly touch of love
+Inquire2	Inquire,	2.4.186	Gent. II, 4, 186	quotation on cited line						I shall inquire you forth,	go on before i shall inquire you forth
+Inscrutable	Inscrutable,	2.1.141	Gent. II, 1, 141	headword on cited line							o jest unseen inscrutable invisible
+Integrity	Integrity,	3.2.77	Gent. III, 2, 77	headword on cited line							that may discover such integrity
+Intercept	Intercept,	3.1.43	Gent. III, 1, 43	headword on cited line							where if it please you you may intercept him
+Intercession	Intercession,	3.1.233	Gent. III, 1, 233	headword on cited line							besides her intercession chafed him so
+Interpret	Interpret,	2.1.101	Gent. II, 1, 101	quotation on cited line						O excellent motion! O exceeding puppet! now will he interpret to her,	exceeding puppet now will he interpret to her
+Intruder	Intruder,	3.1.157	Gent. III, 1, 157	headword on cited line							go base intruder overweening slave
+Itself	Itself	2.6.24	Gent. II, 6, 24	quotation on cited line						most precious in itself	for love is still most precious in itself
+Itself	Itself	4.4.188	IV, 4, 188	headword on cited line							alas how love can trifle with itself
+Jar1	Jar,	5.4.160	Gent. V, 4, 160	quotation on cited line						include all jars with triumphs,	come let us go we will include all jars
+Jar2	Jar,	4.2.67	Gent. IV, 2, 67	quotation on cited line						you delight not in music. Not a whit, when it jars so,	not a whit when it jars so
+Jolt-head	Jolt-head,	3.1.290	Gent. III, 1, 290	headword on cited line							fie on thee jolthead thou canst
+Journey2	Journey,	1.3.41	Gent. I, 3, 41	headword on cited line							are journeying to salute the emperor
+Keep2	Keep,	2.6.20	Gent. II, 6, 20	quotation on cited line						if I keep them, I needs must lose myself,	if i keep them i needs must lose myself
+Keep2	Keep,	3.1.36	Gent. III, 1, 36	quotation on cited line						the key whereof myself have ever kept,	the key whereof myself have ever kept
+Keep2	Keep,	3.1.36	Gent. III, 1, 36	quotation elsewhere in scene	3.1.111	75	100%			keys kept safe,	the key whereof myself have ever kept
+Keep2	Keep,	4.3.30	Gent. IV, 3, 30	quotation on cited line						to keep me from a most unholy match,	to keep me from a most unholy match
+Keep2	Keep,	2.2.5	Gent. II, 2, 5	quotation on cited line						keep this remembrance,	keep this remembrance for thy julias sake
+Keep2	Keep,	1.2.30	Gent. I, 2, 30	quotation on cited line						fire that's closest kept,	fire thats closest kept burns most of all
+Keep2	Keep,	3.1.184	III, 1, 184	quotation on cited line						kept alive,	fostered illumined cherished kept alive
+Keep2	Keep,	3.1.184	III, 1, 184	quotation elsewhere in scene	3.1.358	174	100%			that I'll keep shut,	fostered illumined cherished kept alive
+Keep2	Keep,	1.2.89	Gent. I, 2, 89	quotation on cited line						keep tune,	keep tune there still so you will sing it out
+Keep2	Keep,	4.4.11	Gent. IV, 4, 11	quotation on cited line						'tis a foul thing when a cur cannot keep himself in all companies,	tis a foul thing when a cur cannot keep himself
+Keep2	Keep,	3.1.108	Gent. III, 1, 108	quotation on cited line						kept severely from resort of men,	and kept severely from resort of men
+Keep2	Keep,	5.4.17	V, 4, 17	quotation on cited line						to keep them from uncivil outrages,	to keep them from uncivil outrages
+Keep2	Keep,	5.4.152	Gent. V, 4, 152	quotation on cited line						these banished men that I have kept withal,	these banished men that i have kept withal
+Kindle1	Kindle,	2.7.19	Gent. II, 7, 19	headword on cited line							thou wouldst as soon go kindle fire with snow
+Kiss1	Kiss,	1.2.116	Gent. I, 2, 116	headword on cited line							and thus i search it with a sovereign kiss
+Kiss1	Kiss,	2.2.7	II, 2, 7	headword on cited line							and seal the bargain with a holy kiss
+Kiss1	Kiss,	2.4.160	II, 4, 160	headword on cited line							should from her vesture chance to steal a kiss
+Kiss1	Kiss,	2.7.29	II, 7, 29	headword on cited line							giving a gentle kiss to every sedge
+Knit2	Knit,	3.1.310	Gent. III, 1, 310	headword on cited line							item she can knit
+Knit2	Knit,	2.7.45	Gent. II, 7, 45	quotation on cited line						up in silken strings,	no girl ill knit it up in silken strings
+Laced mutton	Laced mutton,	1.1.102	Gent. I, 1, 102	quotation on cited line, with differences			83%	lacedmutton labour	laced mutton	she, a l., gave me, a lost mutton, nothing for my labour,	letter to her a laced mutton and she a laced
+Lamely	Lamely,	2.1.97	Gent. II, 1, 97	quotation on cited line						lamely writ,	are they not lamely writ
+Large	Large,	3.1.253	Gent. III, 1, 253	headword on cited line							and ere i part with thee confer at large
+Large	Large,	3.2.61	III, 2, 61	headword on cited line							where you with silvia may confer at large
+Last3	Last,	2.1.12	Gent. II, 1, 12	quotation on cited line						and yet I was last chidden for being too slow,	and yet i was last chidden for being
+Lawless	Lawless,	4.1.54	Gent. IV, 1, 54	quotation on cited line						our lawless lives,	that they may hold excused our lawless lives
+Lawlessly	Lawlessly,	5.3.14	Gent. V, 3, 14	quotation on cited line						use a woman lawlessly	and will not use a woman lawlessly
+Leander	Leander,	1.1.22	Gent. I, 1, 22	headword on cited line							how young leander crossed the hellespont
+Leander	Leander,	3.1.120	III, 1, 120	headword on cited line							so bold leander would adventure it
+Lease	Lease,	5.2.29	Gent. V, 2, 29	quotation on cited line						they are out by lease	they are out by lease
+Least2	Least,	1.2.32	Gent. I, 2, 32	headword on cited line							o they love least that let men know their love
+Left	Left,	2.3.16	Gent. II, 3, 16	headword on cited line							it this shoe is my father no this left shoe is
+Legacy	Legacy,	3.1.343	Gent. III, 1, 343	headword on cited line							legacy and cannot be taen from her
+Less1	Less,	3.1.372	Gent. III, 1, 372	quotation on cited line						the greater hides the less	for the greater hides the less whats next
+Less1	Less,	1.1.111	Gent. I, 1, 111	quotation on cited line						less than a pound shall serve me,	nay sir less than a pound shall serve
+Less1	Less,	5.4.25	V, 4, 25	headword on cited line							and less than this i am sure you cannot give
+Less2	Less,	2.7.11	Gent. II, 7, 11	headword on cited line							much less shall she that hath loves wings to fly
+Lesser1	Lesser,	5.4.108	Gent. V, 4, 108	headword on cited line							it is the lesser blot modesty finds
+Lesson2	Lesson,	2.7.5	Gent. II, 7, 5	quotation on cited line						to lesson me and tell me some good mean,	to lesson me and tell me some good mean
+Let2	Let,	3.1.113	Gent. III, 1, 113	quotation on cited line						what lets but one may enter at her window?	what lets but one may enter at her window
+Leviathan	Leviathan,	3.2.80	Gent. III, 2, 80	quotation on cited line, with differences			89%	leviathanes	leviathans	huge leviathanes forsake unsounded deeps to dance on sands,	make tigers tame and huge leviathans
+Lieu	Lieu	2.7.88	Gent. II, 7, 88	quotation on cited line						in lieu thereof dispatch me hence,	only in lieu thereof dispatch me hence
+Lightly	Lightly,	3.1.142	Gent. III, 1, 142	headword on cited line							o could their master come and go as lightly
+Light o'love	Light o'love,	1.2.83	Gent. I, 2, 83	headword on cited line							best sing it to the tune of light o love
+Like2	Like,	2.4.150	Gent. II, 4, 150	quotation on cited line						I must minister the like to you,	and i must minister the like to you
+Likelihood	Likelihood,	5.2.43	Gent. V, 2, 43	quotation on cited line						these likelihoods confirm her flight from hence,	these likelihoods confirm her flight from hence
+Linger	Linger,	3.1.163	Gent. III, 1, 163	quotation on cited line						if thou linger in my territories,	but if thou linger in my territories
+Linguist	Linguist,	4.1.57	Gent. IV, 1, 57	headword on cited line							a linguist and a man of such perfection
+Little2	Little,	2.4.206	Gent. II, 4, 206	quotation on cited line						I love him so little	and thats the reason i love him so little
+Little2	Little,	4.3.40	IV, 3, 40	quotation on cited line, with differences			83%	him		recking as little what betideth him,	recking as little what betideth me
+Lively2	Lively,	4.4.174	Gent. IV, 4, 174	quotation on cited line						which I so lively acted,	which i so lively acted with my tears
+Lively2	Lively,	4.2.58	Shr. Ind. 2, 58.	not a citation of this play						as lively painted as the deed was done,	
+Living	Living,	3.1.318	Gent. III, 1, 318	quotation on cited line						she can spin for her living	when she can spin for her living
+Loath	Loath,	3.2.39	Gent. III, 2, 39	quotation on cited line, with differences			100%		my lord	that I shall be loath to do,	and that my lord i shall be loath to do
+Loath	Loath,	4.2.129	IV, 2, 129	quotation on cited line						I am very loath to be your idol,	i am very loath to be your idol sir
+Loiter	Loiter,	4.4.48	Gent. IV, 4, 48	headword on cited line							where have you been these two days loitering
+Loiterer	Loiterer,	3.1.296	Gent. III, 1, 296	headword on cited line							o illiterate loiterer it was the son
+Looking-glass	Looking-glass,	4.4.157	Gent. IV, 4, 157	headword on cited line							but since she did neglect her lookingglass
+Loose1	Loose,	2.7.41	Gent. II, 7, 41	quotation on cited line						the loose encounters of lascivious men,	the loose encounters of lascivious men
+Lout	Lout,	4.4.71	Gent. IV, 4, 71	headword on cited line							for tis no trusting to yond foolish lout
+Love-affairs	Love-affairs:	3.1.254	Gent. III, 1, 254	headword not found near cited line							of all that may concern thy loveafairs
+Love-book	Love-book,	1.1.19	Gent. I, 1, 19	headword on cited line							and on a lovebook pray for my success
+Love-discourse	Love-discourse,	2.4.127	Gent. II, 4, 127	headword on cited line							i know you joy not in a lovediscourse
+Love-letters	Love-letters,	3.1.391	Gent. III, 1, 391	headword on cited line							your loveletters
+Love-wounded	Love-wounded,	1.2.113	Gent. I, 2, 113	headword on cited line							and here is writ lovewounded proteus
+Low1	Low,	4.4.198	Gent. IV, 4, 198	headword on cited line							ay but her forehead s low and mines as high
+Low1	Low,	2.4.106	Gent. II, 4, 106	quotation on cited line						too low a mistress for so high a servant,	too low a mistress for so high a servant
+Lubber	Lubber,	2.5.47	Gent. II, 5, 47	headword on cited line							a notable lubber as thou reportest
+Lumpish	Lumpish,	3.2.62	Gent. III, 2, 62	quotation on cited line						she is l., heavy, melancholy,	for she is lumpish heavy melancholy
+Lustily	Lustily,	4.2.25	Gent. IV, 2, 25	quotation on cited line						let's tune, and to it lustily awhile,	lets tune and to it lustily awhile
+Madcap	Madcap,	2.5.8	Gent. II, 5, 8	headword on cited line							come on you madcap ill to the
+Maintenance	Maintenance,	1.3.68	Gent. I, 3, 68	headword on cited line							what maintenance he from his friends receives
+Malecontent2	Malecontent,	2.1.20	Gent. II, 1, 20	quotation on cited line						to wreathe your arms like a malecontent	your arms like a malecontent to relish a
+Malignant	Malignant,	3.1.238	Gent. III, 1, 238	quotation on cited line, with differences			100%		that thou speakst	unless the next word have some malignant power upon my life,	have some malignant power upon my life
+Manage2	Manage,	3.1.247	Gent. III, 1, 247	quotation on cited line						against despairing thoughts,	and manage it against despairing thoughts
+Manfully	Manfully,	4.1.28	Gent. IV, 1, 28	headword on cited line							but yet i slew him manfully in fight
+Mannerly1	Mannerly,	2.7.58	Gent. II, 7, 58	quotation on cited line						let me have what thou thinkest meet and is most mannerly,	what thou thinkest meet and is most mannerly
+Mansion	Mansion,	5.4.8	Gent. V, 4, 8	headword on cited line							leave not the mansion so long tenantless
+Master2	Master,	1.1.39	Gent. I, 1, 39	quotation on cited line						Love is your master, for he masters you,	love is your master for he masters you
+Mastership	Mastership,	3.1.280	Gent. III, 1, 280	quotation on cited line						what news with your m.?	with your mastership
+Match2	Match,	3.1.62	Gent. III, 1, 62	quotation on cited line, with differences			100%		my friend	to match Sir Thurio to my daughter,	to match my friend sir thurio to my daughter
+Mate1	Mate,	3.1.158	Gent. III, 1, 158	quotation on cited line						bestow thy fawning smiles on equal mates,	bestow thy fawning smiles on equal mates
+Mate1	Mate,	5.4.14	V, 4, 14	quotation on cited line						these are my mates,	these are my mates that make their wills their law
+Measure1	Measure,	5.4.127	Gent. V, 4, 127	quotation on cited line						come not within the measure of my wrath,	come not within the measure of my wrath
+Meed	Meed,	2.4.112	Gent. II, 4, 112	quotation on cited line						duty never yet did want his meed	and duty never yet did want his meed
+Meed	Meed,	5.4.23	V, 4, 23	quotation on cited line						for my meed	vouchsafe me for my meed but one fair look
+Melt	Melt	3.2.9	Gent. III, 2, 9	quotation on cited line						this weak impress of love is as a figure trenched in ice, which with an hour's heat dissolves to water and doth lose his form. A little time will melt her frozen thoughts, and worthless Valentine shall be forgot,	a little time will melt her frozen thoughts
+Melt	Melt	3.1.224	Gent. III, 1, 224	quotation on cited line						a sea of melting pearl, which some call tears,	a sea of melting pearl which some call tears
+Melt	Melt	3.2.9	Gent. III, 2, 9	headword on cited line							a little time will melt her frozen thoughts
+Mercatio	Mercatio,	1.2.12	Gent. I, 2, 12	headword on cited line							what thinkst thou of the rich mercatio
+Merit1	Merit,	5.4.144	Gent. V, 4, 144	headword on cited line							plead a new state in thy unrivaled merit
+Merops	Merops,	3.1.153	Gent. III, 1, 153	headword on cited line							why phaethon for thou art merops son
+Metamorphose	Metamorphose,	1.1.66	Gent. I, 1, 66	headword on cited line							thou julia thou hast metamorphosed me
+Metamorphose	Metamorphose,	2.1.32	II, 1, 32	headword on cited line							are metamorphosed with a mistress that when i
+Mien	Mien,	2.4.196	Gent. II, 4, 196	headword not found near cited line							is it mine or valentines praise
+Milk-maid	Milk-maid,	3.1.268	Gent. III, 1, 268	headword on cited line							myself and yet tis a milkmaid yet tis not a
+Milk-white	Milk-white,	3.1.250	Gent. III, 1, 250	headword on cited line							even in the milkwhite bosom of thy love
+Million	Million	2.1.105	Gent. II, 1, 105	quotation on cited line						a million of manners,	a million of manners
+Minion	Minion,	1.2.88	Gent. I, 2, 88	quotation on cited line						how now, m.!	lets see your song how now minion
+Minion	Minion,	1.2.88	Gent. I, 2, 88	headword on cited line	1.2.92		100%			you, m., are too saucy,	lets see your song how now minion
+Minister2	Minister,	2.4.150	Gent. II, 4, 150	quotation on cited line						you gave me bitter pills, and I must minister the like to you,	and i must minister the like to you
+Mistake	Mistake,	5.4.94	Gent. V, 4, 94	quotation on cited line						I have mistook: this is the ring you sent to Silvia,	o cry you mercy sir i have mistook
+Mistake	Mistake,	1.1.113	Gent. I, 1, 113	quotation on cited line						you mistake	you mistake i mean the pound a
+Mistake	Mistake,	1.1.113	Gent. I, 1, 113	headword on cited line	1.1.120		100%			you mistook,	you mistake i mean the pound a
+Mistake	Mistake,	2.1.10	II, 1, 10	quotation on cited line						or else I mistook,	your worship sir or else i mistook
+Mistake	Mistake,	4.2.57	IV, 2, 57	headword on cited line							you mistake the musician likes me not
+Mistake	Mistake,	2.5.49	Gent. II, 5, 49	quotation on cited line						thou mistakest me,	why thou whoreson ass thou
+Mistake	Mistake,	3.1.283	III, 1, 283	quotation on cited line						mistake the word,	well your old vice still mistake the
+Moist2	Moist,	3.2.76	Gent. III, 2, 76	quotation on cited line						with your tears moist it again,	moist it again and frame some feeling line
+Mongst	'Mongst	5.4.72	Gent. V, 4, 72	headword on cited line							mongst all foes that a friend should be the worst
+Mood	Mood,	4.1.51	Gent. IV, 1, 51	quotation on cited line						who, in my m., I stabbed unto the heart,	who in my mood i stabbed unto the heart
+Movingly	Movingly,	2.1.134	Gent. II, 1, 134	quotation on cited line						I would have had them writ more movingly	i would have had them writ more movingly
+Moyses	Moyses,	5.3.8	Gent. V, 3, 8	headword on cited line							but moyses and valerius follow him
+Murmur1	Murmur,	2.7.25	Gent. II, 7, 25	quotation on cited line						the current that with gentle murmur glides,	the current that with gentle murmur glides
+Muse2	Muse,	2.1.176	Gent. II, 1, 176	quotation on cited line						why muse you?	why muse you sir tis dinnertime
+Muse2	Muse,	1.1.69	Gent. I, 1, 69	quotation on cited line, with differences			75%	museing	wit musing	made with museing weak,	made wit with musing weak heart sick with thought
+Muse2	Muse,	1.3.64	Gent. I, 3, 64	quotation on cited line						muse not that I thus suddenly proceed,	muse not that i thus suddenly proceed
+Mutual	Mutual,	5.4.173	Gent. V, 4, 173	quotation on cited line						one feast, one house, one mutual happiness,	one feast one house one mutual happiness
+Nameless	Nameless,	2.1.111	Gent. II, 1, 111	quotation on cited line						the secret nameless friend of yours,	unto the secret nameless friend of yours
+Nameless	Nameless,	3.1.319	Gent. III, 1, 319	quotation on cited line						she hath many nameless virtues,	item she hath many nameless
+Neat2	Neat,	1.2.10	Gent. I, 2, 10	quotation on cited line						a knight well-spoken, neat and fine,	as of a knight wellspoken neat and fine
+Necessaries	Necessaries,	2.4.188	Gent. II, 4, 188	headword on cited line							some necessaries that i needs must use
+Nectar	Nectar,	2.4.171	Gent. II, 4, 171	headword on cited line							the water nectar and the rocks pure gold
+Neglect1	Neglect,	5.4.90	Gent. V, 4, 90	quotation on cited line						which, out of my n., was never done,	neglect was never done
+Neglect2	Neglect,	1.1.67	Gent. I, 1, 67	quotation on cited line						neglect my studies,	made me neglect my studies lose my time
+Neglect2	Neglect,	4.4.157	IV, 4, 157	quotation on cited line						she did neglect her looking-glass,	but since she did neglect her lookingglass
+Neither	Neither,	3.1.70	Gent. III, 1, 70	headword on cited line							neither regarding that she is my child
+Neither	Neither,	3.1.229	Gent. III, 1, 229	quotation on cited line						neither bended knees, pure hands held up, sad sighs, deep groans, nor silver-shedding tears,	but neither bended knees pure hands held up
+Neither	Neither,	2.5.18	Gent. II, 5, 18	quotation on cited line						shall she marry him? No. How then? shall he marry her? No, neither	no neither
+Neither	Neither,	3.1.196	III, 1, 196	quotation on cited line						Valentine? No. Who then? his spirit? Neither	neither
+Neither	Neither,	5.2.33	V, 2, 33	quotation on cited line						which of you saw Sir Eglamour of late? Not I. Nor I. Saw you my daughter? Neither	not i nor i saw you my daughter neither
+Neither	Neither,	2.3.18	Gent. II, 3, 18	quotation on cited line						that cannot be so neither	nay that cannot be so neither yes it is so it is
+Neither	Neither,	3.1.345	III, 1, 345	quotation on cited line						I care not for that neither	i care not for that neither because
+New1	New,	2.4.195	Gent. II, 4, 195	quotation on cited line						the remembrance of my former love is by a newer object quite forgotten,	is by a newer object quite forgotten
+New1	New,	5.4.144	Gent. V, 4, 144	quotation on cited line, with differences			88%	unrivalled	unrivaled	plead a new state in thy unrivalled merit,	plead a new state in thy unrivaled merit
+New1	New,	2.4.118	Gent. II, 4, 118	quotation on cited line						once more, new servant, welcome,	go with me once more new servant welcome
+New2	New,	4.4.134	Gent. IV, 4, 134	quotation off by 1	4.4.135	1	60%	new found	newfound	full of new found oaths,	i know they are stuffed with protestations
+New-found	New-found:	4.4.134	Gent. IV, 4, 134	headword off by 1	4.4.135	1					i know they are stuffed with protestations
+Next1	Next,	3.1.237	Gent. III, 1, 237	quotation on cited line, with differences			83%	speakest		the next word that thou speakest,	no more unless the next word that thou speakst
+Next1	Next,	3.1.237	Gent. III, 1, 237	headword on cited line	3.1.372		100%			what's n.?	no more unless the next word that thou speakst
+Next2	Next,	5.4.41	Gent. V, 4, 41	quotation on cited line						stood it next to death,	what dangerous action stood it next to death
+Next2	Next,	2.2.11	Gent. II, 2, 11	quotation on cited line						the next ensuing hour,	the next ensuing hour some foul mischance
+Nice	Nice,	3.1.82	Gent. III, 1, 82	quotation on cited line						she is nice and coy,	whom i affect but she is nice and coy
+Nick2	Nick,	4.2.76	Gent. IV, 2, 76	quotation on cited line						he loved her out of all nick	me he loved her out of all nick
+Nightly1	Nightly,	2.4.132	Gent. II, 4, 132	quotation on cited line						nightly tears,	with nightly tears and daily heartsore sighs
+Nightly2	Nightly,	3.1.35	Gent. III, 1, 35	quotation on cited line						I nightly lodge her in an upper tower,	i nightly lodge her in an upper tower
+Nightly2	Nightly,	3.1.35	Gent. III, 1, 35	headword on cited line	3.1.140		88%	harbour	harbor	my thoughts do harbour with my Silvia nightly	i nightly lodge her in an upper tower
+Nimble-footed	Nimble-footed,	5.3.7	Gent. V, 3, 7	headword on cited line							being nimblefooted he hath outrun us
+Nobleman	Nobleman,	1.3.31	Gent. I, 3, 31	headword on cited line							hear sweet discourse converse with noblemen
+Nod1	Nod,	1.1.119	Gent. I, 1, 119	quotation on cited line						n., ay, why, that's noddy,	nod ay why thats noddy
+Nod2	Nod,	1.1.120	Gent. I, 1, 120	quotation on cited line						she did nod	you mistook sir i say she did nod
+Nod2	Nod,	1.1.120	Gent. I, 1, 120	headword on cited line							you mistook sir i say she did nod
+Noddy	Noddy,	1.1.119	Gent. I, 1, 119	quotation on cited line, with differences			94%	i nodi i	ay nod ay ay	but what said she? I. Nod-I, why that's noddy You mistook, sir; I say, she did nod: and you ask me if she did nod; and I say I. And that set together is noddy Now you have taken the pains to set it together, take it for your pains,	nod ay why thats noddy
+Noddy	Noddy,	1.1.119	Gent. I, 1, 119	headword on cited line							nod ay why thats noddy
+None	None,	2.1.38	Gent. II, 1, 38	quotation on cited line						without you were so simple, none else would,	without you were so simple none else would
+None	None,	2.1.164	Gent. II, 1, 164	headword on cited line							she gave me none except an angry word
+None	None,	5.4.51	V, 4, 51	headword on cited line							and thats far worse than none better have none
+None	None,	3.2.52	Gent. III, 2, 52	quotation on cited line						should ravel and be good to none	lest it should ravel and be good to none
+None	None,	2.1.133	Gent. II, 1, 133	quotation on cited line, with differences			100%		sir at my request	you writ them; but I will none of them,	but i will none of them they are for you
+Nook	Nook,	2.7.31	Gent. II, 7, 31	quotation on cited line						by many winding nooks he strays,	and so by many winding nooks he strays
+Notable	Notable,	2.5.44	Gent. II, 5, 44	quotation on cited line						my master is become a notable lover,	notable lover
+Notable	Notable,	2.5.44	Gent. II, 5, 44	headword on cited line	2.5.47		100%			a notable lubber,	notable lover
+Note-worthy	Note-worthy,	1.1.13	Gent. I, 1, 13	headword on cited line							some rare noteworthy object in thy travel
+Notice	Notice,	2.6.36	Gent. II, 6, 36	quotation on cited line, with differences			75%	to	her father	to give notice of:	now presently ill give her father notice
+Notwithstanding2	Notwithstanding,	4.2.12	Gent. IV, 2, 12	headword on cited line							and notwithstanding all her sudden quips
+O4	O',	1.2.83	Gent. I, 2, 83	quotation on cited line						light o' love,	best sing it to the tune of light o love
+Oar1	Oar,	2.3.37	Gent. II, 3, 37	headword on cited line							is shipped and thou art to post after with oars
+Obdrate	Obdúrate,	4.2.120	Gent. IV, 2, 120	quotation on cited line						if your heart be so obdúrate	madam if your heart be so obdurate
+Odd-conceited	Odd-conceited,	2.7.46	Gent. II, 7, 46	headword on cited line							with twenty oddconceited truelove knots
+Oerlook	O'erlook,	1.2.50	Gent. I, 2, 50	headword not found near cited line							and yet i would i had overlooked the letter
+Oernight	O'ernight,	4.2.133	Gent. IV, 2, 133	quotation on cited line, with differences			91%	oernight	overnight	as wretches have o'ernight that wait for execution in the morn,	and so good rest as wretches have overnight
+Oerslip	O'erslip,	2.2.9	Gent. II, 2, 9	quotation on cited line						when that hour o'erslips me in the day wherein I sigh not,	and when that hour oerslips me in the day
+Omit	Omit,	2.4.65	Gent. II, 4, 65	quotation on cited line, with differences			83%	omiting		omiting the sweet benefit of time,	omitting the sweet benefit of time
+On2	On,	2.1.1	Gent. II, 1, 1	quotation on cited line						my gloves are on,	sir your glove not mine my gloves are on
+On2	On,	1.3.77	Gent. I, 3, 77	quotation on cited line, with differences			80%	this	his	to hasten on this expedition,	to hasten on his expedition
+On2	On,	3.1.8	III, 1, 8	quotation on cited line						my duty pricks me on,	my duty pricks me on to utter that
+On2	On,	1.3.76	Gent. I, 3, 76	quotation on cited line						come on, Panthino,	come on panthino you shall be employed
+On2	On,	2.4.186	II, 4, 186	quotation on cited line						go on before,	go on before i shall inquire you forth
+On2	On,	5.1.8	V, 1, 8	quotation on cited line, with differences			100%		good eglamour	go on, out at the postern,	amen amen go on good eglamour
+On2	On,	2.3.29	Gent. II, 3, 29	quotation on cited line						he weeps on,	father well he weeps on now come i to my
+On2	On,	3.1.329	III, 1, 329	quotation on cited line						read on,	a breakfast read on
+Once2	Once,	5.4.78	Gent. V, 4, 78	headword on cited line							and once again i do receive thee honest
+Once2	Once,	1.1.53	Gent. I, 1, 53	quotation on cited line						once more,	once more adieu my father at the road
+Once2	Once,	3.1.139	Gent. III, 1, 139	quotation on cited line						I'll be so bold to break the seal for once	ill be so bold to break the seal for once
+Once2	Once,	1.1.138	Gent. I, 1, 138	quotation on cited line						that the money and the matter may be both at once delivered,	the matter may be both at once delivered
+Onset	Onset,	3.2.94	Gent. III, 2, 94	quotation on cited line						I have a sonnet that will serve the turn to give the onset to thy good advice,	to give the onset to thy good advice
+Oppose	Oppose,	3.2.26	Gent. III, 2, 26	quotation on cited line						she opposes her against my will,	how she opposes her against my will
+Orderly2	Orderly,	1.1.130	Gent. I, 1, 130	quotation on cited line						how do you bear with me? Marry, sir, the letter, very orderly	marry sir the letter very orderly
+Orpheus	Orpheus,	3.2.78	Gent. III, 2, 78	headword on cited line							for orpheus lute was strung with poets sinews
+Otherwise	Otherwise,	2.5.45	Gent. II, 5, 45	quotation on cited line						I never knew him otherwise	i never knew him otherwise
+Otherwise	Otherwise,	4.4.34	Gent. IV, 4, 34	quotation on cited line						I have sat in the stocks for puddings he hath stolen, otherwise he had been executed,	puddings he hath stolen otherwise he had been
+Ourselves	Ourselves,	4.1.76	Gent. IV, 1, 76	headword on cited line							which with ourselves all rest at thy dispose
+Outrage	Outrage,	5.4.17	Gent. V, 4, 17	headword on cited line							to keep them from uncivil outrages
+Outrage	Outrage,	4.1.71	Gent. IV, 1, 71	headword on cited line						to do outrage on:	provided that you do no outrages
+Outrun	Outrun,	5.3.7	Gent. V, 3, 7	headword on cited line							being nimblefooted he hath outrun us
+Over1	Over	4.2.133	Gent. IV, 2, 133	quotation not found; headword not found near cited line						o'er night,	and so good rest as wretches have overnight
+Over1	Over	1.1.24	Gent. I, 1, 24	quotation on cited line						he was more than over shoes in love,	for he was more than over shoes in love
+Over1	Over	1.1.24	Gent. I, 1, 24	headword on cited line							for he was more than over shoes in love
+Overcharged	Overcharged	1.1.107	Gent. I, 1, 107	headword on cited line							if the ground be overcharged you
+Overtake	Overtake	1.1.133	Gent. I, 1, 133	headword on cited line							and yet it cannot overtake your slow
+Overtake	Overtake	2.7.30	Gent. II, 7, 30	quotation on cited line, with differences			92%	th	overtaketh	giving a gentle kiss to every sedge he --th in his pilgrimage,	he overtaketh in his pilgrimage
+Overween	Overween	3.1.157	Gent. III, 1, 157	headword on cited line							go base intruder overweening slave
+Pageant1	Pageant,	4.4.164	Gent. IV, 4, 164	quotation on cited line, with differences			100%		all	when our pageants of delight were played,	when all our pageants of delight were played
+Parable	Parable,	2.5.41	Gent. II, 5, 41	quotation on cited line						thou shalt never get such a secret from me but by a parable	from me but by a parable
+Paragon1	Paragon,	2.4.146	Gent. II, 4, 146	headword on cited line							no but she is an earthly paragon
+Parle1	Parle,	1.2.5	Gent. I, 2, 5	quotation on cited line, with differences			100%		fair resort of	the gentlemen that every day with parle encounter me,	that every day with parle encounter me
+Parley2	Parley,	4.1.60	Gent. IV, 1, 60	quotation on cited line, with differences			100%		above the rest	therefore we parley to you: are you content to be our general?	therefore above the rest we parley to you
+Partaker	Partaker,	1.1.14	Gent. I, 1, 14	quotation on cited line						partaker in thy happiness,	wish me partaker in thy happiness
+Passion2	Passion,	4.4.172	Gent. IV, 4, 172	quotation on cited line						Ariadne passioning for Theseus' perjury,	madam twas ariadne passioning
+Passionate1	Passionate,	1.2.124	Gent. I, 2, 124	quotation on cited line						poor forlorn Proteus, passionate Proteus,	poor forlorn proteus passionate proteus
+Past1	Past,	1.2.65	Gent. I, 2, 65	quotation on cited line						my folly past	and ask remission for my folly past
+Pastime	Pastime,	2.7.35	Gent. II, 7, 35	headword on cited line							and make a pastime of each weary step
+Patrick	Patrick,	4.3.43	Gent. IV, 3, 43	headword on cited line							where shall i meet you at friar patricks cell
+Patrick	Patrick,	5.1.3	V, 1, 3	headword on cited line							that silvia at friar patricks cell should meet me
+Patrick	Patrick,	5.2.42	V, 2, 42	headword on cited line							at patricks cell this even and there she was not
+Pearl	Pearl,	5.2.11	Gent. V, 2, 11	headword on cited line							but pearls are fair and the old saying is
+Pearl	Pearl,	2.4.170	Gent. II, 4, 170	headword on cited line							as twenty seas if all their sand were pearl
+Pearl	Pearl,	3.1.224	III, 1, 224	headword on cited line							a sea of melting pearl which some call tears
+Pearl	Pearl,	3.1.224	Gent. III, 1, 224	headword on cited line							a sea of melting pearl which some call tears
+Pearl	Pearl,	5.2.12	Gent. V, 2, 12	quotation on cited line						black men are pearls in beauteous ladies' eyes,	black men are pearls in beauteous ladies eyes
+Peasant	Peasant,	4.4.47	Gent. IV, 4, 47	headword on cited line							i hope thou wilt how now you whoreson peasant
+Peasant	Peasant,	5.2.35	V, 2, 35	headword on cited line							shes fled unto that peasant valentine
+Pebble	Pebble	2.3.11	Gent. II, 3, 11	quotation on cited line, with differences			67%	pebble		a pebble stone:	is a stone a very pebblestone and has no more
+Peevish	Peevish,	5.2.49	Gent. V, 2, 49	quotation on cited line						this it is to be a peevish girl that flies her fortune,	why this it is to be a peevish girl
+Peevish	Peevish,	3.1.68	Gent. III, 1, 68	quotation on cited line						she is p., sullen, froward,	no trust me she is peevish sullen froward
+Penetrate	Penetrate,	3.1.231	Gent. III, 1, 231	quotation on cited line						could penetrate her uncompassionate sire,	could penetrate her uncompassionate sire
+Penitence	Penitence,	5.4.81	Gent. V, 4, 81	quotation on cited line						by penitence the Eternal's wrath's appeased,	by penitence the eternals wraths appeased
+Penitential	Penitential,	2.4.131	Gent. II, 4, 131	quotation on cited line						have punished me with bitter fasts, with penitential groans,	with bitter fasts with penitential groans
+Pentecost	Pentecost,	4.4.163	Gent. IV, 4, 163	headword on cited line							about my stature for at pentecost
+People2	People,	5.4.3	Gent. V, 4, 3	headword on cited line							i better brook than flourishing peopled towns
+Peremptory	Peremptory,	1.3.71	Gent. I, 3, 71	headword on cited line							excuse it not for i am peremptory
+Perfect1	Perfect,	4.2.124	Gent. IV, 2, 124	headword on cited line							for since the substance of your perfect self
+Perfect1	Perfect,	5.4.111	V, 4, 111	headword on cited line							but constant he were perfect that one error
+Perfect1	Perfect,	1.3.20	Gent. I, 3, 20	quotation on cited line						he cannot be a perfect man, not being tried and tutored in the world,	and how he cannot be a perfect man
+Perfect1	Perfect,	4.4.194	IV, 4, 194	quotation on cited line						her hair is auburn, mine is perfect yellow,	her hair is auburn mine is perfect yellow
+Perfect2	Pérfect,	1.3.23	Gent. I, 3, 23	quotation on cited line						experience is by industry achieved and pérfected by the swift course of time,	and perfected by the swift course of time
+Perhaps	Perhaps,	1.1.32	Gent. I, 1, 32	headword on cited line							if haply won perhaps a hapless gain
+Period1	Period,	2.1.122	Gent. II, 1, 122	quotation on cited line						a pretty period	a pretty period well i guess the sequel
+Periwig	Periwig,	4.4.196	Gent. IV, 4, 196	headword on cited line							ill get me such a coloured periwig
+Perplexity	Perplexity,	2.3.9	Gent. II, 3, 9	headword on cited line							hands and all our house in a great perplexity yet
+Persever	Perséver,	3.2.28	Gent. III, 2, 28	headword on cited line							ay and perversely she persevers so
+Persuade	Persuade,	5.4.65	Gent. V, 4, 65	headword on cited line							could have persuaded me now i dare not say
+Persuade	Persuade,	1.1.1	Gent. I, 1, 1	quotation on cited line						cease to persuade	cease to persuade my loving proteus
+Persuasion	Persuasion,	3.2.64	Gent. III, 2, 64	quotation on cited line						where you may temper her by your persuasion	where you may temper her by your persuasion
+Peruse	Peruse,	1.2.34	Gent. I, 2, 34	headword on cited line							peruse this paper madam
+Peruse	Peruse,	4.4.126	IV, 4, 126	headword on cited line							madam please you peruse this letter
+Perversely	Perversely,	3.2.28	Gent. III, 2, 28	headword on cited line							ay and perversely she persevers so
+Pestilence	Pestilence,	2.1.22	Gent. II, 1, 22	quotation on cited line, with differences			75%	have	walk alone like one that had	to have the pestilence	one that had the pestilence to sigh like a
+Phaethon	Phaethon	3.1.153	Gent. III, 1, 153	headword on cited line							why phaethon for thou art merops son
+Physician	Physician,	2.1.42	Gent. II, 1, 42	headword on cited line							you but is a physician to comment on your
+Pill1	Pill,	2.4.149	Gent. II, 4, 149	headword on cited line							when i was sick you gave me bitter pills
+Pillory	Pillory,	4.4.35	Gent. IV, 4, 35	quotation on cited line						I have stood on the pillory	executed i have stood on the pillory for geese
+Pin1	Pin,	2.7.56	Gent. II, 7, 56	headword on cited line							unless you have a codpiece to stick pins on
+Pin1	Pin,	1.1.115	Gent. I, 1, 115	headword on cited line							from a pound to a pin fold it over and over
+Pin1	Pin,	2.7.55	II, 7, 55	headword on cited line							a round hose madam nows not worth a pin
+Pine2	Pine,	2.7.16	Gent. II, 7, 16	quotation on cited line						the dearth that I have pined in,	pity the dearth that i have pined in
+Pinfold	Pinfold,	1.1.114	Gent. I, 1, 114	headword on cited line							pinfold
+Piss2	Piss,	4.4.21	Gent. IV, 4, 21	headword on cited line							the mark a pissing while but all the chamber
+Place2	Place,	4.3.38	Gent. IV, 3, 38	quotation on cited line						which since I know they virtuously are placed,	which since i know they virtuously are placed
+Place2	Place,	3.1.339	Gent. III, 1, 339	quotation on cited line						place it for her chief virtue,	only virtue i pray thee out witht and place it
+Plot2	Plot,	2.4.183	Gent. II, 4, 183	headword on cited line							plotted and greed on for my happiness
+Plot2	Plot,	2.6.43	II, 6, 43	headword on cited line							as thou hast lent me wit to plot this drift
+Plural	Plural,	5.4.52	Gent. V, 4, 52	quotation on cited line						better have none than plural faith,	than plural faith which is too much by one
+Poesy	Poesy,	3.2.72	Gent. III, 2, 72	quotation on cited line						much is the force of heaven-bred poesy	much is the force of heavenbred poesy
+Possess	Possess,	3.1.206	Gent. III, 1, 206	quotation on cited line						my ears are stopt and cannot hear good news, so much of bad already hath possessed them,	so much of bad already hath possessed them
+Possibly	Possibly,	2.2.3	Gent. II, 2, 3	headword on cited line							when possibly i can i will return
+Potentate	Potentate,	2.4.79	Gent. II, 4, 79	quotation on cited line						this gentleman is come to me, with commendation from great potentates,	with commendation from great potentates
+Pound2	Pound,	1.1.113	Gent. I, 1, 113	headword on cited line							you mistake i mean the pound a
+Pound3	Pound,	1.1.110	Gent. I, 1, 110	quotation on cited line						'twere best pound you,	pound you
+Pox	Pox,	3.1.390	Gent. III, 1, 390	quotation on cited line						pox of your love-letters,	why didst not tell me sooner pox of
+Practise	Practise,	1.3.30	Gent. I, 3, 30	quotation on cited line						there shall he practise tilts and tournaments,	there shall he practise tilts and tournaments
+Practise	Practise,	4.1.48	Gent. IV, 1, 48	quotation on cited line, with differences			86%	practiseing	practising	for practiseing to steal away a lady,	for practising to steal away a lady
+Precisely	Precisely,	4.4.6	Gent. IV, 4, 6	quotation on cited line						I have taught him, even as one would say p., 'thus I would teach a dog',	as one would say precisely thus i would teach a
+Prefer	Prefer,	2.4.156	Gent. II, 4, 156	quotation on cited line						have I not reason to prefer mine own?	have i not reason to prefer mine own
+Prefer	Prefer,	2.6.15	Gent. II, 6, 15	quotation on cited line, with differences			94%	prefered	preferred	to call her bad, whose sovereignty so oft thou hast prefered with twenty thousand soul-confirming oaths,	whose sovereignty so oft thou hast preferred
+Prefer	Prefer,	2.4.157	Gent. II, 4, 157	quotation on cited line						I will help thee to prefer her too,	and i will help thee to prefer her too
+Prefer	Prefer,	4.2.4	IV, 2, 4	quotation on cited line						under the colour of commending him I have access my own love to prefer	i have access my own love to prefer
+Pretence	Pretence,	3.1.47	Gent. III, 1, 47	quotation on cited line						hath made me publisher of this pretence	hath made me publisher of this pretence
+Pretend	Pretend,	2.6.37	Gent. II, 6, 37	quotation on cited line, with differences			100%		disguising and	their pretended flight,	of their disguising and pretended flight
+Prettily	Prettily,	1.2.126	Gent. I, 2, 126	headword on cited line							and yet i will not sith so prettily
+Prevail	Prevail,	3.2.46	Gent. III, 2, 46	quotation on cited line						you have prevailed,	you have prevailed my lord if i can do it
+Prevail	Prevail,	5.4.158	V, 4, 158	headword on cited line							thou hast prevailed i pardon them and thee
+Prime2	Prime,	1.1.49	Gent. I, 1, 49	quotation on cited line, with differences			86%	this	his	losing this verdure even in the prime	losing his verdure even in the prime
+Principality	Principality,	2.4.152	Gent. II, 4, 152	quotation on cited line						if not divine, yet let her be a p., sovereign to all the creatures on the earth,	yet let her be a principality
+Print1	Print,	2.1.175	Gent. II, 1, 175	quotation on cited line						all this I speak in p., for in print I found it,	all this i speak in print for in print i found it
+Private1	Private,	5.4.71	Gent. V, 4, 71	quotation on cited line						the private wound is deepest,	the private wound is deepest o time most accurst
+Privy	Privy,	3.1.12	Gent. III, 1, 12	headword on cited line							myself am one made privy to the plot
+Prodigal	Prodigal,	2.3.4	Gent. II, 3, 4	headword on cited line							like the prodigious son and am going with sir
+Prodigious	Prodigious,	2.3.4	Gent. II, 3, 4	headword on cited line						prodigal:	like the prodigious son and am going with sir
+Profferer	Profferer,	1.2.56	Gent. I, 2, 56	headword on cited line							which they would have the profferer construe ay
+Promise1	Promise,	4.4.92	Gent. IV, 4, 92	quotation on cited line						the promise for her heavenly picture,	i claim the promise for her heavenly picture
+Promise1	Promise,	4.4.92	Gent. IV, 4, 92	headword on cited line							i claim the promise for her heavenly picture
+Proportion1	Proportion,	2.3.3	Gent. II, 3, 3	quotation on cited line						I have received my proportion	this very fault i have received my proportion
+Protestation	Protestation,	1.2.99	Gent. I, 2, 99	quotation on cited line						here is a coil with protestation	here is a coil with protestation
+Protestation	Protestation,	4.4.133	IV, 4, 133	quotation off by 1	4.4.134	1	100%			stuffed with protestations,	i will not look upon your masters lines
+Proud1	Proud,	2.4.161	Gent. II, 4, 161	headword on cited line							and of so great a favor growing proud
+Proud1	Proud,	3.1.69	Gent. III, 1, 69	quotation on cited line						p., disobedient, stubborn,	proud disobedient stubborn lacking duty
+Proud1	Proud,	3.1.69	Gent. III, 1, 69	headword on cited line	3.1.341-343		100%			she is proud Out with that too; it was Eve's legacy and cannot be ta'en from her,	proud disobedient stubborn lacking duty
+Provide	Provide,	4.1.71	Gent. IV, 1, 71	headword on cited line							provided that you do no outrages
+Provide	Provide,	3.2.53	Gent. III, 2, 53	quotation on cited line						on me,	you must provide to bottom it on me
+Provide	Provide,	1.3.72	Gent. I, 3, 72	quotation on cited line						I cannot be so soon provided,	my lord i cannot be so soon provided
+Publisher	Publisher,	3.1.47	Gent. III, 1, 47	quotation on cited line						love of you, not hate unto my friend, hath made me publisher of this pretence,	hath made me publisher of this pretence
+Pudding	Pudding,	4.4.34	Gent. IV, 4, 34	headword on cited line							puddings he hath stolen otherwise he had been
+Puling	Puling,	2.1.26	Gent. II, 1, 26	headword on cited line							that fears robbing to speak puling like a beggar
+Puppy	Puppy,	4.4.3	Gent. IV, 4, 3	headword on cited line							brought up of a puppy one that i saved from
+Quaintly	Quaintly,	2.1.128	Gent. II, 1, 128	quotation on cited line						the lines are very quaintly writ,	yes yes the lines are very quaintly writ
+Quaintly	Quaintly,	3.1.117	III, 1, 117	quotation on cited line						a ladder quaintly made of cords,	why then a ladder quaintly made of cords
+Qualify	Qualify,	2.7.22	Gent. II, 7, 22	quotation on cited line, with differences			100%		extreme	the fire's rage,	but qualify the fires extreme rage
+Quality	Quality,	3.1.65	Gent. III, 1, 65	quotation on cited line, with differences			91%	qualityes	qualities	full of virtue, bounty, worth and qualityes beseeming such a wife,	is full of virtue bounty worth and qualities
+Quality	Quality,	5.4.153	V, 4, 153	quotation on cited line, with differences			75%	qualityes		endued with worthy qualityes,	are men endued with worthy qualities
+Quality	Quality,	3.1.271	Gent. III, 1, 271	quotation on cited line, with differences			71%	has qualityes	hath qualities	she has more qualityes than a water-spaniel,	she hath more qualities than a waterspaniel
+Quality	Quality,	4.1.58	Gent. IV, 1, 58	quotation on cited line						a man of such perfection as we do in our quality much want,	as we do in our quality much want
+Quality	Quality,	3.1.271	Gent. III, 1, 271	headword on cited line							she hath more qualities than a waterspaniel
+Quell2	Quell,	4.2.13	Gent. IV, 2, 13	headword on cited line							the least whereof would quell a lovers hope
+Quip	Quip,	4.2.12	Gent. IV, 2, 12	quotation on cited line						her sudden quips, the least whereof would quell a lover's hope,	and notwithstanding all her sudden quips
+Quote	Quote,	4.2.18	Gent. IV, 2, 18	headword not found near cited line							how now sir proteus are you crept before us
+Quote	Quote,	2.4.18	Gent. II, 4, 18	quotation on cited line						how quote you my folly? I quote it in your jerkin,	and how quote you my folly
+Quote	Quote,	2.4.18	Gent. II, 4, 18	headword on cited line							and how quote you my folly
+Ragged	Ragged,	1.2.121	Gent. I, 2, 121	quotation on cited line, with differences			spacing			a ragged fearful hanging rock,	unto a ragged fearfulhanging rock
+Rake2	Rake,	4.2.116	Gent. IV, 2, 116	quotation on cited line						let me rake it from the earth,	sweet lady let me rake it from the earth
+Random	Random;	2.1.117	Gent. II, 1, 117	headword on cited line							i writ at random very doubtfully
+Rashness	Rashness,	3.1.30	Gent. III, 1, 30	headword on cited line							a rashness that i ever yet have shunned
+Rather	Rather,	1.1.5	Gent. I, 1, 5	quotation on cited line						I rather would entreat thy company,	i rather would entreat thy company
+Rather	Rather,	3.1.97	III, 1, 97	quotation on cited line						'tis not in hate of you, but rather to beget more love in you,	but rather to beget more love in you
+Rather	Rather,	3.1.17	Gent. III, 1, 17	quotation on cited line						I rather chose to cross my friend,	thus for my dutys sake i rather chose
+Rather	Rather,	3.1.17	Gent. III, 1, 17	headword on cited line	3.1.170		100%			why not death rather than living torment?	thus for my dutys sake i rather chose
+Rather	Rather,	5.4.35	Gent. V, 4, 35	quotation on cited line						I would have been a breakfast to the beast rather than have false Proteus rescue me,	rather than have false proteus rescue me
+Rather	Rather,	5.2.14	Gent. V, 2, 14	quotation on cited line, with differences			88%	thee		I had rather wink than look on thee,	for i had rather wink than look on them
+Ravel	Ravel,	3.2.52	Gent. III, 2, 52	quotation on cited line, with differences			100%		and be good to none	as you unwind her love from him, lest it should r., you must provide to bottom it on me,	lest it should ravel and be good to none
+Reach2	Reach,	3.1.156	Gent. III, 1, 156	quotation on cited line						wilt thou reach stars, because they shine on thee?	wilt thou reach stars because they shine on thee
+Reach2	Reach,	1.2.87	Gent. I, 2, 87	quotation on cited line						I cannot reach so high,	and why not you i cannot reach so high
+Readiness	Readiness,	1.3.70	Gent. I, 3, 70	headword on cited line							tomorrow be in readiness to go
+Reason2	Reason,	2.4.198	Gent. II, 4, 198	quotation on cited line						that makes me reasonless to reason thus,	that makes me reasonless to reason thus
+Reason2	Reason,	2.1.147	Gent. II, 1, 147	quotation on cited line						what are you reasoning with yourself?	how now sir what are you reasoning
+Reasonless	Reasonless,	2.4.198	Gent. II, 4, 198	headword on cited line							that makes me reasonless to reason thus
+Recall	Recall,	5.4.155	Gent. V, 4, 155	quotation on cited line						recalled from their exile,	and let them be recalled from their exile
+Reck	Reck	4.3.40	Gent. IV, 3, 40	quotation on cited line						recking as little what betideth me,	recking as little what betideth me
+Reckless	Reckless	5.2.52	Gent. V, 2, 52	quotation on cited line						the love of reckless Silvia,	than for the love of reckless silvia
+Reckon	Reckon,	2.5.4	Gent. II, 5, 4	quotation on cited line						I reckon this always that a man is never undone till he be hanged,	for i am not welcome i reckon this always
+Record2	Record,	5.4.6	Gent. V, 4, 6	quotation on cited line, with differences			100%		sit alone unseen of any and	here can I to the nightingale's complaining notes tune my distresses and record my woes,	tune my distresses and record my woes
+Record2	Record,	4.0	IV Prol. 27	not a citation of this play							
+Recourse	Recourse,	3.1.112	Gent. III, 1, 112	quotation on cited line						no man hath recourse to her by night,	that no man hath recourse to her by night
+Redbreast	Redbreast,	2.1.21	Gent. II, 1, 21	quotation on cited line, with differences			spacing			to relish a love-song like a robin redbreast	lovesong like a robinredbreast to walk alone like
+Reform	Reform,	5.4.156	Gent. V, 4, 156	quotation on cited line						they are reformed, civil, full of good,	they are reformed civil full of good
+Regard1	Regard,	2.4.60	Gent. II, 4, 60	quotation on cited line, with differences			92%	honour	honor	a son that well deserves the honour and regard of such a father,	the honor and regard of such a father
+Rejoice	Rejoice,	3.1.394	Gent. III, 1, 394	quotation on cited line						in:	himself into secrets ill after to rejoice in the
+Relish2	Relish,	2.1.20	Gent. II, 1, 20	quotation on cited line						to relish a love-song,	your arms like a malecontent to relish a
+Rely	Rely,	1.3.61	Gent. I, 3, 61	quotation on cited line						as one relying on your lordship's will, and not depending on his friendly wish,	as one relying on your lordships will
+Remission	Remission,	1.2.65	Gent. I, 2, 65	headword on cited line							and ask remission for my folly past
+Remnant	Remnant,	3.1.74	Gent. III, 1, 74	quotation on cited line						the remnant of mine age,	and where i thought the remnant of mine age
+Remorseful	Remorseful,	4.3.13	Gent. IV, 3, 13	headword on cited line							valiant wise remorseful well accomplished
+Rend	Rend,	5.4.47	Gent. V, 4, 47	quotation on cited line, with differences			100%		then	thou didst rend thy faith into a thousand oaths,	for whose dear sake thou didst then rend thy faith
+Repair3	Repair,	5.4.11	Gent. V, 4, 11	headword on cited line							repair me with thy presence silvia
+Repeal1	Repeal,	3.1.234	Gent. III, 1, 234	quotation on cited line						when she for thy repeal was suppliant,	when she for thy repeal was suppliant
+Repeal2	Repeal,	5.4.143	Gent. V, 4, 143	quotation on cited line						repeal thee home again,	cancel all grudge repeal thee home again
+Repeat	Repeat,	1.2.7	Gent. I, 2, 7	quotation on cited line						repeat their names,	please you repeat their names ill show my mind
+Report1	Report,	4.1.56	Gent. IV, 1, 56	quotation on cited line						by your own report a linguist,	with goodly shape and by your own report
+Report1	Report,	3.2.57	Gent. III, 2, 57	quotation on cited line						we know on Valentine's report	because we know on valentines report
+Repulse1	Repulse,	3.1.100	Gent. III, 1, 100	headword on cited line							take no repulse whatever she doth say
+Requital	Requital,	1.1.153	Gent. I, 1, 153	quotation on cited line, with differences			67%	of		in requital of:	have testerned me in requital whereof
+Requite	Requite,	3.1.23	Gent. III, 1, 23	headword on cited line							which to requite command me while i live
+Resort1	Resort,	3.1.108	Gent. III, 1, 108	quotation on cited line						kept severely from resort of men,	and kept severely from resort of men
+Resort1	Resort,	1.2.4	Gent. I, 2, 4	quotation on cited line						of all the fair resort of gentlemen that every day with parle encounter me, in thy opinion which is worthiest love?	of all the fair resort of gentlemen
+Resort2	Resort,	3.1.110	Gent. III, 1, 110	quotation on cited line						I would resort to her by night,	why then i would resort to her by night
+Resort2	Resort,	4.2.74	IV, 2, 74	quotation on cited line, with differences			100%		that we talk on	doth this Sir Proteus often resort unto this gentlewoman?	often resort unto this gentlewoman
+Respect1	Respect,	3.1.327	Gent. III, 1, 327	quotation on cited line						she is not to be kissed fasting, in respect of her breath,	in respect of her breath
+Respect2	Respect,	1.2.134	Gent. I, 2, 134	quotation on cited line						best to take them up,	if you respect them best to take them up
+Respect2	Respect,	3.1.89	III, 1, 89	quotation on cited line						win her with gifts, if she respect not words,	win her with gifts if she respect not words
+Respect2	Respect,	5.4.20	V, 4, 20	quotation on cited line						though you respect not aught your servant doth,	though you respect not aught your servant doth
+Respect2	Respect,	5.4.20	V, 4, 20	headword on cited line	5.4.53-54		100%			in love who respects friend?	though you respect not aught your servant doth
+Respect2	Respect,	4.4.187	IV, 4, 187	quotation on cited line						since she respects my mistress' love so much,	since she respects my mistress love so much
+Respect2	Respect,	4.4.187	IV, 4, 187	headword on cited line	4.4.199		100%			what should it be that he respects in her,	since she respects my mistress love so much
+Respective	Respective,	4.4.200	Gent. IV, 4, 200	quotation on cited line						what should it be that he respects in her but I can make respective in myself,	but i can make respective in myself
+Rest4	Rest,	4.1.76	Gent. IV, 1, 76	quotation on cited line						which with ourselves all rest at thy dispose,	which with ourselves all rest at thy dispose
+Return1	Return,	2.7.14	Gent. II, 7, 14	quotation on cited line, with differences			67%	to		to make return	better forbear till proteus make return
+Revolt2	Revolt,	3.2.59	Gent. III, 2, 59	quotation on cited line, with differences			100%		already	you are love's firm votary and cannot soon revolt	and cannot soon revolt and change your mind
+Rhyme2	Rhyme,	2.1.149	Gent. II, 1, 149	headword on cited line							nay i was rhyming tis you that have
+Rifle	Rifle,	4.1.4	Gent. IV, 1, 4	headword on cited line							if not well make you sit and rifle you
+Right2	Right,	5.4.67	Gent. V, 4, 67	headword on cited line							who should be trusted when ones own right hand
+Road	Road,	1.1.53	Gent. I, 1, 53	quotation on cited line						my father at the road expects my coming,	once more adieu my father at the road
+Road	Road,	2.4.187	II, 4, 187	quotation on cited line						I must unto the r., to disembark some necessaries,	i must unto the road to disembark
+Robin-redbreast	Robin-redbreast,	2.1.21	Gent. II, 1, 21	quotation on cited line						to relish a love-song like a robin-redbreast	lovesong like a robinredbreast to walk alone like
+Root2	Root,	2.4.162	Gent. II, 4, 162	quotation on cited line						lest the base earth . . . disdain to root the summer-swelling flower,	disdain to root the summerswelling flower
+Round1	Round,	2.7.55	Gent. II, 7, 55	quotation on cited line						a round hose,	a round hose madam nows not worth a pin
+Round1	Round,	5.2.6	Gent. V, 2, 6	quotation on cited line						somewhat rounder,	ill wear a boot to make it somewhat rounder
+Rude	Rude,	5.4.60	Gent. V, 4, 60	quotation on cited line						let go that rude uncivil touch,	ruffian let go that rude uncivil touch
+Ruffian1	Ruffian,	5.4.60	Gent. V, 4, 60	headword on cited line							ruffian let go that rude uncivil touch
+Ruinous	Ruinous,	5.4.9	Gent. V, 4, 9	headword on cited line							lest growing ruinous the building fall
+Sacrifice2	Sacrifice,	3.2.74	Gent. III, 2, 74	headword on cited line							you sacrifice your tears your sighs your heart
+Salt1	Salt,	3.1.369	Gent. III, 1, 369	headword on cited line							ill prove it the cover of the salt hides the
+Sand	Sand,	2.4.170	Gent. II, 4, 170	quotation on cited line						twenty seas, if all their sand were pearl,	as twenty seas if all their sand were pearl
+Sand	Sand,	3.2.81	Gent. III, 2, 81	headword on cited line							forsake unsounded deeps to dance on sands
+Sand	Sand,	4.3.33	IV, 3, 33	headword on cited line							as full of sorrows as the sea of sands
+Saucy	Saucy,	1.2.92	Gent. I, 2, 92	headword on cited line							you minion are too saucy
+Saying	Saying,	5.4.167	Gent. V, 4, 167	quotation on cited line						what mean you by that s.?	what mean you by that saying
+Saying	Saying,	5.2.11	Gent. V, 2, 11	headword on cited line							but pearls are fair and the old saying is
+Scale2	Scale,	3.1.119	Gent. III, 1, 119	headword on cited line							would serve to scale another heros tower
+Scalp	Scalp,	4.1.36	Gent. IV, 1, 36	quotation on cited line						by the bare scalp of Robin Hood's fat friar,	by the bare scalp of robin hoods fat friar
+Scandalized	Scandalized,	2.7.61	Gent. II, 7, 61	quotation on cited line						it will make me scandalized	i fear me it will make me scandalized
+Schoolboy	Schoolboy,	2.1.22	Gent. II, 1, 22	prose row break	2.1.23	1					one that had the pestilence to sigh like a
+Scour1	Scour,	3.1.313	Gent. III, 1, 313	quotation on cited line						she can wash and scour	item she can wash and scour
+Scour1	Scour,	3.1.315	Gent. III, 1, 315	headword on cited line							not be washed and scoured
+Scribe	Scribe,	2.1.146	Gent. II, 1, 146	quotation on cited line						that my master, being s., to himself should write the letter,	that my master being scribe to himself should write the letter
+Secret2	Secret,	2.1.111	Gent. II, 1, 111	quotation on cited line						the secret nameless friend of yours,	unto the secret nameless friend of yours
+Secret2	Secret,	3.1.60	Gent. III, 1, 60	quotation on cited line						wherein thou must be secret	that touch me near wherein thou must be secret
+Seduce	Seduce,	4.2.97	Gent. IV, 2, 97	headword on cited line							to be seduced by thy flattery
+Self1	Self	3.1.173	Gent. III, 1, 173	quotation on cited line						banished from her is self from self	is self from self a deadly banishment
+Self1	Self	3.1.226	Gent. III, 1, 226	quotation on cited line						her humble self	with them upon her knees her humble self
+Self1	Self	4.2.124	Gent. IV, 2, 124	quotation on cited line						your perfect self	for since the substance of your perfect self
+Senseless	Senseless,	3.1.143	Gent. III, 1, 143	headword on cited line							himself would lodge where senseless they are lying
+Senseless	Senseless,	4.4.203	IV, 4, 203	headword on cited line							for tis thy rival o thou senseless form
+Sepulchre2	Sepulchre,	4.2.118	Gent. IV, 2, 118	headword on cited line							or at the least in hers sepulchre thine
+Sequel	Sequel,	2.1.122	Gent. II, 1, 122	quotation on cited line						I guess the sequel	a pretty period well i guess the sequel
+Serviceable	Serviceable,	3.2.70	Gent. III, 2, 70	quotation on cited line, with differences			spacing			whose composed rhymes should be full fraught with serviceable vows,	should be fullfraught with serviceable vows
+Severely	Severely,	3.1.108	Gent. III, 1, 108	quotation on cited line						kept severely from resort of men,	and kept severely from resort of men
+Sew2	Sew	3.1.307	Gent. III, 1, 307	headword on cited line							item she can sew
+Shadowy	Shadowy,	5.4.2	Gent. V, 4, 2	headword on cited line							this shadowy desert unfrequented woods
+Shapeless	Shapeless,	1.1.8	Gent. I, 1, 8	quotation on cited line						wear out thy youth with shapeless idleness,	wear out thy youth with shapeless idleness
+Shelving	Shelving,	3.1.115	Gent. III, 1, 115	quotation on cited line						her chamber is aloft, far from the ground, and built so shelving that one cannot climb it without apparent hazard of his life,	and built so shelving that one cannot climb it
+Ship2	Ship,	1.1.54	Gent. I, 1, 54	quotation on cited line, with differences			75%	shiped		to see me shiped,	expects my coming there to see me shipped
+Ship2	Ship,	1.1.54	Gent. I, 1, 54	headword on cited line							expects my coming there to see me shipped
+Ship2	Ship,	2.3.37	II, 3, 37	headword on cited line							is shipped and thou art to post after with oars
+Shrink	Shrink	4.1.2	Gent. IV, 1, 2	quotation on cited line						if there be ten, shrink not,	if there be ten shrink not but down with em
+Significant	Significant,	3.1.56	Gent. III, 1, 56	headword not found near cited line							the tenor of them doth but signify
+Silly	Silly	4.1.72	Gent. IV, 1, 72	quotation on cited line						do no outrages on silly women,	on silly women or poor passengers
+Silly	Silly	1.1.81	Gent. I, 1, 81	quotation on cited line						a silly answer, and fitting well a sheep,	a silly answer and fitting well a sheep
+Silver-shedding	Silver-shedding,	3.1.230	Gent. III, 1, 230	quotation on cited line, with differences			spacing			sad sighs, deep groans, nor silver shedding tears, could penetrate her uncompassionate sire,	sad sighs deep groans nor silvershedding tears
+Silvia	Silvia,	2.1.5	Gent. II, 1, 5	headword on cited line							ah silvia silvia
+Sixteen	Sixteen,	4.1.21	Gent. IV, 1, 21	headword on cited line							some sixteen months and longer might have stayed
+Skilled	Skilled,	3.2.92	Gent. III, 2, 92	quotation on cited line						in:	to sort some gentlemen well skilled in music
+Slender1	Slender,	1.3.6	Gent. I, 3, 6	quotation on cited line						of slender reputation,	while other men of slender reputation
+Sluggardized	Sluggardized,	1.1.7	Gent. I, 1, 7	headword on cited line							than living dully sluggardized at home
+Sly2	Sly,	2.6.41	Gent. II, 6, 41	headword on cited line							by some sly trick blunt thurios dull proceeding
+Smell2	Smell,	4.4.22	Gent. IV, 4, 22	quotation on cited line						all the chamber smelt him,	smelt him out with the dog says one what
+Soften	Soften,	3.2.79	Gent. III, 2, 79	headword on cited line							whose golden touch could soften steel and stones
+Soho	Soho,	3.1.189	Gent. III, 1, 189	headword on cited line							soho soho
+Sojourn2	Sojourn,	4.1.20	Gent. IV, 1, 20	headword on cited line							have you long sojourned there
+Sole1	Sole,	2.3.19	Gent. II, 3, 19	headword on cited line							so it hath the worser sole this shoe with the
+Solicit2	Solicit,	5.4.40	Gent. V, 4, 40	quotation on cited line						solicit me no more,	therefore be gone solicit me no more
+Solitary	Solitary,	4.4.94	Gent. IV, 4, 94	headword on cited line							where thou shalt find me sad and solitary
+Somewhat	Somewhat,	5.2.6	Gent. V, 2, 6	headword on cited line							ill wear a boot to make it somewhat rounder
+Sonnet	Sonnet,	3.2.69	Gent. III, 2, 69	quotation on cited line						to tangle her desires by wailful sonnets, whose composed rhymes should be full-fraught with serviceable vows,	by wailful sonnets whose composed rhymes
+Sonnet	Sonnet,	3.2.69	Gent. III, 2, 69	headword on cited line	3.2.93		100%			I have a sonnet that will serve the turn,	by wailful sonnets whose composed rhymes
+Sort3	Sort,	3.2.92	Gent. III, 2, 92	quotation on cited line						to sort some gentlemen well skilled in music,	to sort some gentlemen well skilled in music
+Sort3	Sort,	1.3.63	Gent. I, 3, 63	quotation on cited line						my will is something sorted with his wish,	my will is something sorted with his wish
+Soul-confirming	Soul-confirming,	2.6.16	Gent. II, 6, 16	quotation on cited line						with twenty thousand soul-confirming oaths,	with twenty thousand soulconfirming oaths
+Sour1	Sour,	3.1.331	Gent. III, 1, 331	quotation on cited line						sour breath,	that makes amends for her sour
+Sourest-natured	Sourest-natured,	2.3.6	Gent. II, 3, 6	headword on cited line							my dog be the sourestnatured dog that lives my
+Spaniel-like	Spaniel-like,	4.2.14	Gent. IV, 2, 14	headword on cited line							yet spaniellike the more she spurns my love
+Speed2	Speed,	4.4.112	Gent. IV, 4, 112	quotation on cited line						I would not have him speed	as heaven it knows i would not have him speed
+Spin	Spin	3.1.316	Gent. III, 1, 316	headword on cited line							item she can spin
+Spite1	Spite,	4.2.69	Gent. IV, 2, 69	quotation on cited line						that change is the spite	ay that change is the spite
+Spokesman	Spokesman,	2.1.152	Gent. II, 1, 152	quotation on cited line, with differences			94%	for	from	to be a spokesman for Madam Silvia. To whom? To yourself: why, she wooes you by a figure,	to be a spokesman from madam silvia
+Spur2	Spur,	5.2.7	Gent. V, 2, 7	quotation on cited line, with differences			89%	spured	spurred	love will not be spured to what it loathes,	but love will not be spurred to what it loathes
+Spur2	Spur,	5.1.6	Gent. V, 1, 6	quotation on cited line						so much they spur their expedition,	so much they spur their expedition
+Spy1	Spy,	5.1.10	Gent. V, 1, 10	headword on cited line							i fear i am attended by some spies
+Squirrel	Squirrel,	4.4.59	Gent. IV, 4, 59	headword on cited line							ay sir the other squirrel was stolen
+Stand-under	Stand-under,	2.5.33	Gent. II, 5, 33	headword on cited line							why standunder and understand
+Stature	Stature,	4.4.163	Gent. IV, 4, 163	headword on cited line							about my stature for at pentecost
+Stead1	Stead,	4.4.206	Gent. IV, 4, 206	quotation on cited line						in:	my substance should be statue in thy stead
+Stead2	Stead,	2.1.119	Gent. II, 1, 119	quotation on cited line						so it stead you, I will write,	no madam so it stead you i will write
+Steeple	Steeple,	2.1.142	Gent. II, 1, 142	headword on cited line							as a nose on a mans face or a weathercock on a steeple
+Step2	Step,	4.4.9	Gent. IV, 4, 9	quotation on cited line						he steps me to her trencher,	sooner into the diningchamber but he steps me
+Stick2	Stick,	1.1.108	Gent. I, 1, 108	quotation on cited line						you were best stick her,	were best stick her
+Stick2	Stick,	2.7.56	Gent. II, 7, 56	quotation on cited line						a codpiece to stick pins on,	unless you have a codpiece to stick pins on
+Stir1	Stir,	5.4.13	Gent. V, 4, 13	quotation on cited line						what halloing and what stir is this to-day?	what halloing and what stir is this today
+Stoop3	Stoop,	1.2.72	Gent. I, 2, 72	headword on cited line							why didst thou stoop then
+Store1	Store,	1.1.105	Gent. I, 1, 105	quotation on cited line						too small a pasture for such store of muttons,	heres too small a pasture for such store
+Stray2	Stray,	1.1.74	Gent. I, 1, 74	headword on cited line							indeed a sheep doth very often stray
+Stray2	Stray,	2.7.31	II, 7, 31	headword on cited line							and so by many winding nooks he strays
+Stream1	Stream,	2.7.34	Gent. II, 7, 34	headword on cited line							ill be as patient as a gentle stream
+String1	String,	2.7.45	Gent. II, 7, 45	quotation on cited line						up in silken strings,	no girl ill knit it up in silken strings
+String1	String,	4.2.60	Gent. IV, 2, 60	headword on cited line							how out of tune on the strings
+String2	String,	3.2.78	Gent. III, 2, 78	quotation on cited line						Orpheus' lute was strung with poets' sinews,	for orpheus lute was strung with poets sinews
+Stubborn	Stubborn,	3.1.69	Gent. III, 1, 69	quotation on cited line						proud, disobedient, s., lacking duty,	proud disobedient stubborn lacking duty
+Studious	Studious,	1.3.10	Gent. I, 3, 10	quotation on cited line						the studious universities,	some to the studious universities
+Stumble	Stumble,	1.2.3	Gent. I, 2, 3	quotation on cited line						so you stumble not unheedfully,	ay madam so you stumble not unheedfully
+Subscribe	Subscribe,	5.4.145	Gent. V, 4, 145	headword on cited line							to which i thus subscribe sir valentine
+Substance	Substance,	4.2.124	Gent. IV, 2, 124	quotation on cited line						since the substance of your perfect self is else devoted, I am but a shadow,	for since the substance of your perfect self
+Substance	Substance,	4.2.124	Gent. IV, 2, 124	headword on cited line							for since the substance of your perfect self
+Substance	Substance,	4.4.206	IV, 4, 206	quotation on cited line						my substance should be statue in thy stead,	my substance should be statue in thy stead
+Substance	Substance,	4.1.15	Gent. IV, 1, 15	quotation on cited line						you take the sum and substance that I have,	you take the sum and substance that i have
+Subtle	Subtle,	4.2.95	Gent. IV, 2, 95	quotation on cited line						thou s., perjured, false, disloyal man,	thou subtle perjured false disloyal man
+Sudden	Sudden,	4.2.12	Gent. IV, 2, 12	quotation on cited line						all her sudden quips,	and notwithstanding all her sudden quips
+Suggest	Suggest,	3.1.34	Gent. III, 1, 34	quotation on cited line						tender youth is soon suggested,	knowing that tender youth is soon suggested
+Sullen	Sullen,	3.1.68	Gent. III, 1, 68	quotation on cited line						she is peevish, s., froward,	no trust me she is peevish sullen froward
+Summer-swelling	Summer-swelling,	2.4.162	Gent. II, 4, 162	quotation on cited line						the summer-swelling flower,	disdain to root the summerswelling flower
+Sun-bright	Sun-bright,	3.1.88	Gent. III, 1, 88	quotation on cited line						her sun-bright eye,	to be regarded in her sunbright eye
+Sun-expelling	Sun-expelling,	4.4.158	Gent. IV, 4, 158	quotation on cited line						her sun-expelling mask,	and threw her sunexpelling mask away
+Suppliant1	Suppliant,	3.1.234	Gent. III, 1, 234	quotation on cited line						when she for thy repeal was suppliant	when she for thy repeal was suppliant
+Suppose2	Suppose,	4.2.114	Gent. IV, 2, 114	quotation on cited line, with differences			100%		likewise	I hear that Valentine is dead. And so suppose am I,	and so suppose am i for in his grave
+Surfeit2	Surfeit,	3.1.220	Gent. III, 1, 220	quotation on cited line						excess of it will make me surfeit	and now excess of it will make me surfeit
+Swarthy	Swarthy,	2.6.26	Gent. II, 6, 26	quotation on cited line						a swarthy Ethiope,	shows julia but a swarthy ethiope
+Sweet-suggesting	Sweet-suggesting,	2.6.7	Gent. II, 6, 7	headword on cited line							o sweetsuggesting love if thou hast sinned
+Swinge	Swinge,	2.1.88	Gent. II, 1, 88	quotation on cited line						you swinged me for my love,	i thank you you swinged me for my love which
+Swinge	Swinge,	3.1.392	III, 1, 392	quotation on cited line						now will he be swinged for reading my letter,	now will he be swinged for reading
+Tangle	Tangle,	3.2.68	Gent. III, 2, 68	quotation on cited line						lay lime to tangle her desires,	you must lay lime to tangle her desires
+Tarriance	Tarriance,	2.7.90	Gent. II, 7, 90	quotation on cited line						I am impatient of my tarriance	i am impatient of my tarriance
+Team	Team,	3.1.265	Gent. III, 1, 265	headword on cited line							yet i am in love but a team of horse shall not
+Tear2	Tear,	1.2.125	Gent. I, 2, 125	quotation on cited line						that I'll tear away,	to the sweet julia that ill tear away
+Tear2	Tear,	1.2.105	Gent. I, 2, 105	headword on cited line							o hateful hands to tear such loving words
+Tear2	Tear,	4.4.136	IV, 4, 136	headword on cited line							as easily as i do tear his paper
+Tell-tale	Tell-tale,	1.2.133	Gent. I, 2, 133	headword on cited line							what shall these papers lie like telltales here
+Temper2	Temper,	3.2.64	Gent. III, 2, 64	quotation on cited line						where you may temper her by your persuasion to hate young Valentine,	where you may temper her by your persuasion
+Ten	Ten,	4.1.2	Gent. IV, 1, 2	headword on cited line							if there be ten shrink not but down with em
+Ten	Ten,	4.4.62	IV, 4, 62	headword on cited line							dog as big as ten of yours and therefore the gift
+Tenantless	Tenantless,	5.4.8	Gent. V, 4, 8	quotation on cited line						leave not the mansion so long tenantless	leave not the mansion so long tenantless
+Tender4	Tender,	3.1.225	Gent. III, 1, 225	quotation on cited line						at her father's churlish feet she tendered,	those at her fathers churlish feet she tendered
+Tender4	Tender,	5.4.76	V, 4, 76	quotation on cited line, with differences			spacing			if hearty sorrow be a sufficient ransom for offence, I tender 't here,	i tendert here i do as truly suffer
+Tender5	Tender,	4.4.145	Gent. IV, 4, 145	quotation on cited line, with differences			100%		madam	I thank you that you tender her,	i thank you madam that you tender her
+Tenour	Tenour	3.1.56	Gent. III, 1, 56	headword on cited line							the tenor of them doth but signify
+Testern	Testern,	1.1.153	Gent. I, 1, 153	quotation on cited line						you have testerned me,	have testerned me in requital whereof
+Testify	Testify	1.1.152	Gent. I, 1, 152	quotation on cited line						to testify your bounty, I thank you, you have testerned me,	pains to testify your bounty i thank you you
+Testy	Testy,	1.2.58	Gent. I, 2, 58	headword on cited line							that like a testy babe will scratch the nurse
+Thankful	Thankful,	2.4.52	Gent. II, 4, 52	headword on cited line	2.4.53		100%			to:	of much good news my lord i will be thankful
+That1	That,	3.1.225	Gent. III, 1, 225	quotation on cited line, with differences			86%	churly	churlish	at her father's churly feet she tendered,	those at her fathers churlish feet she tendered
+That1	That,	1.2.76	Gent. I, 2, 76	quotation on cited line						let it lie for those that it concerns,	then let it lie for those that it concerns
+That1	That,	4.2.87	Gent. IV, 2, 87	quotation on cited line						who is that that spake?	who is that that spake
+That1	That,	5.2.35	Gent. V, 2, 35	quotation on cited line						she's fled unto that peasant Valentine,	shes fled unto that peasant valentine
+That1	That,	2.4.10	Gent. II, 4, 10	quotation on cited line						seem you that you are not?	seem you that you are not
+That1	That,	3.1.241	III, 1, 241	quotation on cited line						cease to lament for that thou canst not help,	cease to lament for that thou canst not help
+That1	That,	4.1.3	IV, 1, 3	quotation on cited line						throw us that you have about ye,	stand sir and throw us that you have about ye
+Thaw2	Thaw,	2.4.200	Gent. II, 4, 200	quotation on cited line						now my love is thawed,	that i did love for now my love is thawed
+Theirs	Theirs,	3.1.24	Gent. III, 1, 24	headword on cited line							this love of theirs myself have often seen
+Thereby	Thereby,	3.1.31	Gent. III, 1, 31	headword on cited line							i gave him gentle looks thereby to find
+Thereto	Thereto,	1.3.90	Gent. I, 3, 90	quotation on cited line						accords thereto	why this it is my heart accords thereto
+Therewithal	Therewithal,	4.4.90	Gent. IV, 4, 90	quotation on cited line						give her that ring and therewithal this letter,	well give her that ring and therewithal
+Therewithal	Therewithal,	4.4.90	Gent. IV, 4, 90	headword on cited line	4.4.175		100%			moved therewithal	well give her that ring and therewithal
+Theseus	Theseus,	4.4.173	Gent. IV, 4, 173	headword on cited line							for theseus perjury and unjust flight
+Thicket	Thicket,	5.3.11	Gent. V, 3, 11	headword on cited line							the thicket is beset he cannot scape
+Thievery	Thievery,	4.1.40	Gent. IV, 1, 40	quotation on cited line, with differences			83%	honourable	honorable	it's an honourable kind of thievery	honorable kind of thievery
+Thing	Thing,	2.4.202	Gent. II, 4, 202	quotation on cited line						bears no impression of the thing it was,	bears no impression of the thing it was
+Thing	Thing,	3.1.353	III, 1, 353	quotation on cited line						good things should be praised,	she will not i will for good things should be
+Thing	Thing,	3.1.353	III, 1, 353	headword on cited line							she will not i will for good things should be
+Thing	Thing,	4.2.71	IV, 2, 71	quotation on cited line						you would have them always play but one thing	one thing
+Thing	Thing,	2.1.4	Gent. II, 1, 4	quotation on cited line						sweet ornament that decks a thing divine,	sweet ornament that decks a thing divine
+Thing	Thing,	4.2.51	IV, 2, 51	quotation on cited line						she excels each mortal thing upon the dull earth dwelling,	she excels each mortal thing
+Thing	Thing,	1.2.139	Gent. I, 2, 139	quotation on cited line						I see things too, although you judge I wink,	i see things too although you judge i wink
+Thing	Thing,	2.1.34	II, 1, 34	quotation on cited line, with differences			100%		metamorphosed with a mistress that when i look on you i can hardly think you my master and	are all these things perceived in me?	and all these things perceived in me
+Thing	Thing,	3.2.33	III, 2, 33	quotation on cited line						three things that women highly hold in hate,	three things that women highly hold in hate
+Thing	Thing,	4.4.11	IV, 4, 11	quotation on cited line						'tis a foul thing when a cur cannot keep himself in all companies,	tis a foul thing when a cur cannot keep himself
+Thing	Thing,	4.4.11	IV, 4, 11	headword on cited line	4.4.13-14		100%		a dog indeed to be as it were	to be a dog at all things,	tis a foul thing when a cur cannot keep himself
+Thing	Thing,	4.4.30	Gent. IV, 4, 30	quotation on cited line						'twas I did the thing you wot of,	did the thing you wot of he makes me no
+Thing	Thing,	2.4.82	Gent. II, 4, 82	quotation on cited line						should I have wished a t., it had been he,	should i have wished a thing it had been he
+Though1	Though,	2.1.178	Gent. II, 1, 178	headword on cited line							ay but hearken sir though the
+Though1	Though,	2.4.64	II, 4, 64	headword on cited line							and though myself have been an idle truant
+Though1	Though,	5.4.20	V, 4, 20	headword on cited line							though you respect not aught your servant doth
+Though1	Though,	3.1.103	Gent. III, 1, 103	headword on cited line							though neer so black say they have angels faces
+Though1	Though,	3.1.248	Gent. III, 1, 248	quotation on cited line						thy letters may be here, though thou art hence,	thy letters may be here though thou art hence
+Though1	Though,	4.4.141	Gent. IV, 4, 141	quotation on cited line						though his false finger have profaned the ring, mine shall not do his Julia so much wrong,	though his false finger have profaned the ring
+Though1	Though,	2.5.55	Gent. II, 5, 55	quotation on cited line						I care not though he burn himself in love,	why i tell thee i care not though
+Threefold	Threefold,	2.6.5	Gent. II, 6, 5	quotation on cited line						this threefold perjury,	provokes me to this threefold perjury
+Threefold	Threefold,	1.1.116	Gent. I, 1, 116	quotation on cited line						'tis threefold too little,	tis threefold too little for carrying a letter to your lover
+Thrive	Thrive	1.1.9	Gent. I, 1, 9	quotation on cited line						love still and thrive therein,	but since thou lovest love still and thrive therein
+Thrive	Thrive	2.4.125	Gent. II, 4, 125	quotation on cited line						how thrives your love?	how does your lady and how thrives your love
+Through1	Through,	5.2.38	Gent. V, 2, 38	quotation on cited line						wandered through the forest,	as he in penance wandered through the forest
+Through1	Through,	2.1.40	Gent. II, 1, 40	quotation on cited line						these follies are within you and shine through you like the water in an urinal,	follies are within you and shine through you like
+Through1	Through,	3.1.252	III, 1, 252	quotation on cited line						I'll convey thee through the city-gate,	come ill convey thee through the citygate
+Throughly	Throughly,	1.2.115	Gent. I, 2, 115	quotation on cited line						till thy wound be throughly healed,	shall lodge thee till thy wound be throughly healed
+Throughly	Throughly,	1.1.4	1, 4	headword not found near cited line							to the sweet glances of thy honored love
+Throughly	Throughly,	1.1.4	1, 4	headword not found near cited line							to the sweet glances of thy honored love
+Thrust2	Thrust,	3.1.393	Gent. III, 1, 393	quotation on cited line						an unmannerly slave, that will thrust himself into secrets,	my letter an unmannerly slave that will thrust
+Thrust2	Thrust,	4.4.18	IV, 4, 18	quotation on cited line						he thrusts me himself into the company of three or four gentlemanlike dogs,	shall judge he thrusts me himself into the
+Thrust2	Thrust,	4.1.46	Gent. IV, 1, 46	quotation on cited line						such as the fury of ungoverned youth thrust from the company of awful men,	thrust from the company of awful men
+Thurio	Thurio,	2.4.3	Gent. II, 4, 3	headword on cited line							master sir thurio frowns on you
+Thwart2	Thwart,	4.1.22	Gent. IV, 1, 22	quotation on cited line						if crooked fortune had not thwarted me,	if crooked fortune had not thwarted me
+Tilt1	Tilt,	1.3.30	Gent. I, 3, 30	quotation on cited line						practise tilts and tournaments,	there shall he practise tilts and tournaments
+Timeless	Timeless,	3.1.21	Gent. III, 1, 21	quotation on cited line						a pack of sorrows which would press you down . . . to your timeless grave,	being unprevented to your timeless grave
+Tincture	Tincture,	4.4.160	Gent. IV, 4, 160	quotation on cited line, with differences			spacing			the lily tincture of her face,	and pinched the lilytincture of her face
+Tire1	Tire,	4.4.190	Gent. IV, 4, 190	quotation on cited line						if I had such a t., this face of mine were full as lovely,	if i had such a tire this face of mine
+To-day	To-day,	5.4.13	Gent. V, 4, 13	headword on cited line							what halloing and what stir is this today
+Touch1	Touch,	5.4.60	Gent. V, 4, 60	quotation on cited line						let go that rude uncivil touch	ruffian let go that rude uncivil touch
+Touch1	Touch,	5.4.60	Gent. V, 4, 60	headword on cited line							ruffian let go that rude uncivil touch
+Touch1	Touch,	2.7.18	Gent. II, 7, 18	quotation on cited line						didst thou but know the inly touch of love,	didst thou but know the inly touch of love
+Touch1	Touch,	3.2.79	Gent. III, 2, 79	quotation on cited line, with differences			100%		was strung with poets sinews	Orpheus' lute, whose golden touch could soften steel and stones,	whose golden touch could soften steel and stones
+Tournament	Tournament,	1.3.30	Gent. I, 3, 30	quotation on cited line						tilts and tournaments,	there shall he practise tilts and tournaments
+Toward3	Toward,	5.2.47	Gent. V, 2, 47	quotation on cited line						leads toward Mantua,	that leads toward mantua whither they are fled
+Toy1	Toy,	1.2.82	Gent. I, 2, 82	quotation on cited line, with differences			100%		may be	as little by such toys as possible,	as little by such toys as may be possible
+Trample	Trample,	1.2.112	Gent. I, 2, 112	quotation on cited line, with differences			80%	trampleing		trampleing contemptuously on thy disdain,	trampling contemptuously on thy disdain
+Travail1	Travail	1.1.13	Gent. I, 1, 13	headword on cited line							some rare noteworthy object in thy travel
+Travail1	Travail	1.3.16	I, 3, 16	headword on cited line							in having known no travel in his youth
+Travail1	Travail	4.1.34	Gent. IV, 1, 34	quotation on cited line, with differences			86%	travail	travel	my youthful travail therein made me happy,	my youthful travel therein made me happy
+Travail2	Travail	4.1.16	Gent. IV, 1, 16	quotation on cited line, with differences			67%	travail	travel	whither travail you?	whither travel you
+Trench2	Trench,	3.2.7	Gent. III, 2, 7	quotation on cited line						a figure trenched in ice,	trenched in ice which with an hours heat
+Trencher	Trencher,	4.4.10	Gent. IV, 4, 10	quotation on cited line						he steps me to her trencher and steals her capon's leg,	to her trencher and steals her capons leg o
+Trick1	Trick,	2.6.41	Gent. II, 6, 41	quotation on cited line						I'll quickly cross by some sly trick blunt Thurio's dull proceeding,	by some sly trick blunt thurios dull proceeding
+Trick1	Trick,	4.4.43	Gent. IV, 4, 43	quotation on cited line						didst thou ever see me do such a t.?	trick
+Trick1	Trick,	4.4.38	Gent. IV, 4, 38	quotation on cited line						the trick you served me,	the trick you served me when i took my leave of
+Trifle2	Trifle,	4.4.188	Gent. IV, 4, 188	quotation on cited line						how love can trifle with itself,	alas how love can trifle with itself
+Truant1	Truant,	2.4.64	Gent. II, 4, 64	quotation on cited line						myself have been an idle t., omitting the sweet benefit of time,	and though myself have been an idle truant
+True-confirmed	True-confirmed	4.4.108	Gent. IV, 4, 108	quotation on cited line						I am my master's true-confirmed love,	i am my masters trueconfirmed love
+True-devoted	True-devoted,	2.7.9	Gent. II, 7, 9	quotation on cited line						a true-devoted pilgrim,	a truedevoted pilgrim is not weary
+True-love	True-love	2.7.46	Gent. II, 7, 46	quotation on cited line						true-love knots,	with twenty oddconceited truelove knots
+Tune2	Tune,	4.2.25	Gent. IV, 2, 25	quotation on cited line						let's t., and to it lustily awhile,	lets tune and to it lustily awhile
+Tune2	Tune,	3.2.85	Gent. III, 2, 85	quotation on cited line						to their instruments tune a deploring dump,	tune a deploring dump the nights dead silence
+Tune2	Tune,	5.4.6	V, 4, 6	quotation on cited line						and to the nightingale's complaining notes tune my distresses and record my woes,	tune my distresses and record my woes
+Turmoil	Turmoil,	2.7.37	Gent. II, 7, 37	quotation on cited line						there I'll rest, as after much turmoil a blessed soul doth in Elysium,	and there ill rest as after much turmoil
+Tutor2	Tutor,	1.3.21	Gent. I, 3, 21	headword on cited line							not being tried and tutored in the world
+Twinkle	Twinkle,	2.6.9	Gent. II, 6, 9	headword on cited line							at first i did adore a twinkling star
+Twit	Twit,	4.2.8	Gent. IV, 2, 8	quotation on cited line						she twits me with my falsehood to my friend,	she twits me with my falsehood to my friend
+Unadvised	Unadvised,	4.4.127	Gent. IV, 4, 127	quotation on cited line						I have unadvised delivered you a paper that I should not,	pardon me madam i have unadvised
+Uncertain	Uncertain	1.3.85	Gent. I, 3, 85	quotation on cited line						the uncertain glory of an April day,	the uncertain glory of an april day
+Uncivil	Uncivil,	5.4.17	Gent. V, 4, 17	quotation on cited line						uncivil outrages,	to keep them from uncivil outrages
+Uncivil	Uncivil,	5.4.17	Gent. V, 4, 17	headword on cited line	5.4.60		100%			that rude uncivil touch,	to keep them from uncivil outrages
+Uncompassionate	Uncompassionate,	3.1.231	Gent. III, 1, 231	headword on cited line							could penetrate her uncompassionate sire
+Under2	Under,	2.5.33	Gent. II, 5, 33	quotation on cited line, with differences			spacing			stand under and understand is all one,	why standunder and understand
+Undergo	Undergo	5.4.42	Gent. V, 4, 42	quotation on cited line, with differences			100%		stood it next to death	what dangerous action would I not undergo	would i not undergo for one calm look
+Undeserving1	Undeserving,	3.1.7	Gent. III, 1, 7	quotation on cited line, with differences			100%		gracious	your favours done to me, undeserving as I am,	done to me undeserving as i am
+Unfrequented	Unfrequented,	5.4.2	Gent. V, 4, 2	headword on cited line							this shadowy desert unfrequented woods
+Ungartered	Ungartered,	2.1.79	Gent II, 1, 79	headword on cited line							proteus for going ungartered
+Ungoverned	Ungoverned,	4.1.45	Gent. IV, 1, 45	quotation on cited line						the fury of ungoverned youth,	such as the fury of ungoverned youth
+Unheedful	Unheedful,	2.6.11	Gent. II, 6, 11	quotation on cited line						unheedful vows may heedfully be broken,	unheedful vows may heedfully be broken
+Unheedfully	Unheedfully,	1.2.3	Gent. I, 2, 3	quotation on cited line						so you stumble not unheedfully	ay madam so you stumble not unheedfully
+Unholy	Unholy,	4.3.30	Gent. IV, 3, 30	quotation on cited line						a most unholy match,	to keep me from a most unholy match
+University	University,	1.3.10	Gent. I, 3, 10	headword on cited line							some to the studious universities
+Unmannerly1	Unmannerly,	3.1.393	Gent. III, 1, 393	headword on cited line							my letter an unmannerly slave that will thrust
+Unmellowed	Unmellowed,	2.4.70	Gent. II, 4, 70	headword on cited line							his head unmellowed but his judgement ripe
+Unprevented	Unprevented,	3.1.21	Gent. III, 1, 21	headword on cited line							being unprevented to your timeless grave
+Unreverend	Unreverend	2.6.14	Gent. II, 6, 14	headword on cited line							fie fie unreverend tongue to call her bad
+Unreversed	Unreversed,	3.1.223	Gent. III, 1, 223	headword on cited line							which unreversed stands in effectual force
+Unrivalled	Unrivalled,	5.4.144	Gent. V, 4, 144	headword on cited line							plead a new state in thy unrivaled merit
+Unruly	Unruly,	1.2.96	Gent. I, 2, 96	headword on cited line							the mean is drowned with your unruly bass
+Unseeing	Unseeing,	4.4.209	Gent. IV, 4, 209	headword on cited line							i should have scratched out your unseeing eyes
+Unsounded	Unsounded,	3.2.81	Gent. III, 2, 81	headword on cited line							forsake unsounded deeps to dance on sands
+Unstaid	Unstaid	2.7.60	Gent. II, 7, 60	quotation on cited line						for undertaking so unstaid a journey,	for undertaking so unstaid a journey
+Untunable	Untunable,	3.1.208	Gent. III, 1, 208	quotation on cited line, with differences			80%	untunable	untuneable	are harsh, untunable and bad,	for they are harsh untuneable and bad
+Unwelcome	Unwelcome,	2.4.81	Gent. II, 4, 81	headword on cited line							i think tis no unwelcome news to you
+Unwilling	Unwilling,	2.1.112	Gent. II, 1, 112	headword on cited line							which i was much unwilling to proceed in
+Unwillingly	Unwillingly,	2.1.129	Gent. II, 1, 129	headword on cited line							but since unwillingly take them again
+Unwind	Unwind,	3.2.51	Gent. III, 2, 51	quotation on cited line						as you unwind her love from him, . . . you must provide to bottom it on me,	therefore as you unwind her love from him
+Unworthily	Unworthily,	3.1.29	Gent. III, 1, 29	quotation on cited line						and so unworthily disgrace the man,	and so unworthily disgrace the man
+Upon1	Upon,	3.2.73	Gent. III, 2, 73	quotation on cited line						upon the altar of her beauty,	say that upon the altar of her beauty
+Upon1	Upon,	4.2.52	IV, 2, 52	quotation on cited line						each mortal thing upon the dull earth dwelling,	upon the dull earth dwelling
+Upon1	Upon,	4.3.21	IV, 3, 21	quotation on cited line, with differences			86%	vowedst	vowdst	upon whose grave thou vowedst pure chastity,	upon whose grave thou vowdst pure chastity
+Upon1	Upon,	3.1.136	Gent. III, 1, 136	quotation on cited line						let me feel thy cloak upon me,	i pray thee let me feel thy cloak upon me
+Upon1	Upon,	3.1.226	Gent. III, 1, 226	quotation on cited line						upon her knees,	with them upon her knees her humble self
+Upon1	Upon,	4.4.13	Gent. IV, 4, 13	quotation on cited line						one that takes upon him to be a dog indeed,	say one that takes upon him to be a dog indeed
+Upon1	Upon,	3.1.48	Gent. III, 1, 48	headword on cited line							upon mine honour he shall never know
+Upon1	Upon,	3.1.73	Gent. III, 1, 73	quotation on cited line						this pride of hers, upon advice, hath drawn my love from her,	upon advice hath drawn my love from her
+Upon1	Upon,	3.1.181	Gent. III, 1, 181	quotation on cited line						there is no day for me to look upon	there is no day for me to look upon
+Upon1	Upon,	3.2.21	III, 2, 21	headword on cited line							let me not live to look upon your grace
+Upon1	Upon,	2.4.98	Gent. II, 4, 98	quotation on cited line						upon a homely object love can wink,	upon a homely object love can wink
+Upon1	Upon,	1.2.69	Gent. I, 2, 69	quotation on cited line						that you might kill your stomach on your meat, and not upon your maid,	and not upon your maid
+Upon1	Upon,	2.4.141	Gent. II, 4, 141	quotation on cited line						dine, sup and sleep upon the very naked name of love,	now can i break my fast dine sup and sleep
+Upon1	Upon,	3.1.219	III, 1, 219	quotation on cited line, with differences			spacing			I have fed upon this woe already,	o i have fed upon this woe alreadya
+Upon1	Upon,	2.4.173	Gent. II, 4, 173	quotation on cited line						thou seest me dote upon my love,	because thou seest me dote upon my love
+Upon1	Upon,	3.1.238	Gent. III, 1, 238	quotation on cited line						have some malignant power upon my life,	have some malignant power upon my life
+Upon1	Upon,	1.1.20	Gent. I, 1, 20	quotation on cited line						upon some book I love I'll pray for thee,	upon some book i love ill pray for thee
+Upon1	Upon,	4.3.28	Gent. IV, 3, 28	quotation on cited line						think upon my grief,	but think upon my grief a ladys grief
+Upon1	Upon,	2.4.113	Gent. II, 4, 113	headword not found near cited line							servant you are welcome to a worthless mistress
+Upper	Upper,	3.1.35	Gent. III, 1, 35	quotation on cited line						I nightly lodge her in an upper tower,	i nightly lodge her in an upper tower
+Urge	Urge,	4.3.27	Gent. IV, 3, 27	quotation on cited line, with differences			100%		eglamour	urge not my father's anger, but think upon my grief,	urge not my fathers anger eglamour
+Use1	Use,	2.4.68	Gent. II, 4, 68	quotation on cited line						made use and fair advantage of his days,	made use and fair advantage of his days
+Use1	Use,	5.4.1	Gent. V, 4, 1	quotation on cited line						how use doth breed a habit in a man,	how use doth breed a habit in a man
+Valentinus	Valentinus,	1.3.67	Gent. I, 3, 67	headword on cited line							with valentinus in the emperors court
+Valentinus	Valentinus,	2.4.196	Gent. II, 4, 196	headword on cited line							is it mine or valentines praise
+Valerius	Valerius,	5.3.8	Gent. V, 3, 8	headword on cited line							but moyses and valerius follow him
+Vanish	Vanish,	3.1.216	Gent. III, 1, 216	headword on cited line							sir there is a proclamation that you are vanished
+Vantage1	Vantage,	1.3.82	Gent. I, 3, 82	quotation on cited line						with the vantage of mine own excuse hath he excepted most against my love,	and with the vantage of mine own excuse
+Vantage1	Vantage,	4.1.29	IV, 1, 29	quotation on cited line						I slew him . . . without false vantage	without false vantage or base treachery
+Verdure	Verdure,	1.1.49	Gent. I, 1, 49	quotation on cited line						by love the young and tender wit is turned to folly, blasting in the bud, losing his verdure even in the prime,	losing his verdure even in the prime
+Very1	Very,	2.3.11	Gent. II, 3, 11	quotation on cited line, with differences			spacing			he is a stone, a very pebble stone,	is a stone a very pebblestone and has no more
+Very1	Very,	3.2.41	III, 2, 41	quotation on cited line						'tis an ill office for a gentleman, especially against his very friend,	especially against his very friend
+Very1	Very,	3.1.124	Gent. III, 1, 124	quotation on cited line, with differences			100%		pray sir tell me that	when would you use it? This very night,	this very night for love is like a child
+Very1	Very,	5.1.2	V, 1, 2	quotation on cited line, with differences			100%		at friar patricks cell	it is about the very hour that Silvia should meet me,	and now it is about the very hour
+Very1	Very,	2.3.3	Gent. II, 3, 3	quotation on cited line						all the kind of the Launces have this very fault,	this very fault i have received my proportion
+Very1	Very,	2.4.142	Gent. II, 4, 142	quotation on cited line, with differences			100%		break my fast sup and sleep	now can I . . . dine upon the very naked name of love,	upon the very naked name of love
+Vesture	Vesture,	2.4.160	Gent. II, 4, 160	headword on cited line							should from her vesture chance to steal a kiss
+Vex	Vex,	4.4.66	Gent. IV, 4, 66	quotation on cited line, with differences			83%	stayest		stayest thou to vex me here?	away i say stayst thou to vex me here
+Vexation	Vexation,	3.1.16	Gent. III, 1, 16	quotation on cited line						it would be much vexation to your age,	it would be much vexation to your age
+Victual1	Victual,	2.1.180	Gent. II, 1, 180	quotation on cited line						am nourished by my victuals,	am nourished by my victuals and would fain have
+View1	View,	1.2.54	Gent. I, 2, 54	quotation on cited line						would not force the letter to my view	and would not force the letter to my view
+Virtuously	Virtuously,	4.3.38	Gent. IV, 3, 38	headword on cited line							which since i know they virtuously are placed
+Visibly	Visibly,	2.7.4	Gent. II, 7, 4	quotation on cited line						who art the table wherein all my thoughts are visibly charactered and engraved,	are visibly charactered and engraved
+Volley1	Volley,	2.4.33	Gent. II, 4, 33	quotation on cited line, with differences			100%		gentlemen	a fine volley of words, and quickly shot off,	a fine volley of words gentlemen and
+Votary	Votary,	1.1.52	Gent. I, 1, 52	headword on cited line							that art a votary to fond desire
+Votary	Votary,	3.2.58	III, 2, 58	headword on cited line							you are already loves firm votary
+Vow2	Vow,	4.3.21	Gent. IV, 3, 21	headword not found near cited line							upon whose grave thou vowdst pure chastity
+Vow2	Vow,	4.4.208	Gent. IV, 4, 208	quotation on cited line, with differences			100%		unseeing	or else, by Jove I v., I should have scratched out your eyes,	that used me so or else by jove i vow
+Wailful	Wailful,	3.2.69	Gent. III, 2, 69	quotation on cited line						wailful sonnets,	by wailful sonnets whose composed rhymes
+Wand	Wand,	2.3.23	Gent. II, 3, 23	headword on cited line							and as small as a wand this hat is nan our
+Wanton2	Wanton,	5.2.10	Gent. V, 2, 10	quotation on cited line						nay then, the wanton lies,	nay then the wanton lies my face is black
+Wasp	Wasp,	1.2.106	Gent. I, 2, 106	headword on cited line							injurious wasps to feed on such sweet honey
+Waste3	Waste,	1.1.51	Gent. I, 1, 51	quotation on cited line						but wherefore waste I time to counsel thee,	but wherefore waste i time to counsel thee
+Watcher	Watcher,	2.4.135	Gent. II, 4, 135	quotation on cited line						love hath chased sleep from my enthralled eyes and made them watchers of mine own heart's sorrow,	and made them watchers of mine own hearts sorrow
+Water-spaniel	Water-spaniel,	3.1.271	Gent. III, 1, 271	quotation on cited line						she hath more qualities than a water-spaniel	she hath more qualities than a waterspaniel
+Wax2	Wax,	3.1.228	Gent. III, 1, 228	quotation on cited line						waxed:	as if but now they waxed pale for woe
+Wax2	Wax,	3.1.228	Gent. III, 1, 228	quotation on cited line						as if but now they waxed pale for woe,	as if but now they waxed pale for woe
+Waxen1	Waxen,	2.4.201	Gent. II, 4, 201	quotation on cited line						image,	which like a waxen image gainst a fire
+Wayward	Wayward,	1.2.57	Gent. I, 2, 57	headword on cited line							fie fie how wayward is this foolish love
+Wearisome	Wearisome,	2.7.8	Gent. II, 7, 8	headword on cited line							alas the way is wearisome and long
+Weathercock	Weathercock,	2.1.142	Gent. II, 1, 142	headword on cited line							as a nose on a mans face or a weathercock on a steeple
+Wedding-dower	Wedding-dower,	3.1.78	Gent. III, 1, 78	headword on cited line							then let her beauty be her weddingdower
+Weed3	Weed,	3.2.49	Gent. III, 2, 49	quotation on cited line						but say this weed her love from Valentine,	but say this weed her love from valentine
+Well1	Well,	4.2.84	Gent. IV, 2, 84	quotation on cited line						at Saint Gregory's well	where meet we at saint gregorys well farewell
+Well-accomplished	Well-accomplished,	4.3.13	Gent. IV, 3, 13	headword on cited line							valiant wise remorseful well accomplished
+Well-favoured	Well-favoured,	2.1.54	Gent. II, 1, 54	headword not found near cited line							not so fair boy as wellfavored
+Well-reputed	Well-reputed	2.7.43	Gent. II, 7, 43	quotation on cited line						such weeds as may beseem some well-reputed page,	as may beseem some wellreputed page
+Well-spoken	Well-spoken,	1.2.10	Gent. I, 2, 10	quotation on cited line						a knight w., neat and fine,	as of a knight wellspoken neat and fine
+West	West,	5.3.9	Gent. V, 3, 9	quotation on cited line						the west end of the wood,	go thou with her to the west end of the wood
+Whateer	Whate'er	5.4.151	Gent. V, 4, 151	headword on cited line							i grant it for thine own whateer it be
+Whence	Whence,	4.1.18	Gent. IV, 1, 18	quotation on cited line						whence came you,	whence came you
+Whence	Whence,	2.4.122	Gent. II, 4, 122	quotation on cited line						how do all from whence you came,	now tell me how do all from whence you came
+Whirlwind	Whirlwind,	1.2.120	Gent. I, 2, 120	quotation on cited line, with differences			100%		fearfulhanging	that some whirlwind bear unto a ragged rock,	except mine own name that some whirlwind bear
+Whit	Whit,	4.2.67	Gent. IV, 2, 67	quotation on cited line						not a whit	not a whit when it jars so
+Whiteness	Whiteness,	3.1.227	Gent. III, 1, 227	headword on cited line							wringing her hands whose whiteness so became them
+Wilderness	Wilderness,	4.1.63	Gent. IV, 1, 63	headword on cited line							and live as we do in this wilderness
+Wind3	Wind,	2.7.31	Gent. II, 7, 31	quotation on cited line						winding nooks,	and so by many winding nooks he strays
+Window	Window,	2.4.181	Gent. II, 4, 181	headword on cited line							determined of how i must climb her window
+Window	Window,	4.2.16	IV, 2, 16	headword on cited line							but here comes thurio now must we to her window
+Window	Window,	3.1.113	Gent. III, 1, 113	quotation on cited line						enter at her window	what lets but one may enter at her window
+Wipe2	Wipe,	2.1.86	Gent. II, 1, 86	quotation on cited line						to wipe my shoes,	last morning you could not see to wipe my shoes
+Wood2	Wood,	2.3.30	Gent. II, 3, 30	headword on cited line							mother o that she could speak now like a wood
+Worldly	Worldly,	3.1.9	Gent. III, 1, 9	quotation on cited line						my duty pricks me on to utter that which else no worldly good should draw from me,	which else no worldly good should draw from me
+Worship2	Worship,	2.4.144	Gent. II, 4, 144	headword on cited line							was this the idol that you worship so
+Worship2	Worship,	2.6.10	II, 6, 10	headword on cited line							but now i worship a celestial sun
+Worship2	Worship,	4.2.131	IV, 2, 131	headword on cited line							to worship shadows and adore false shapes
+Worship2	Worship,	4.4.204	IV, 4, 204	headword on cited line							thou shalt be worshipped kissed loved and adored
+Worthless	Worthless,	4.2.6	Gent IV, 2, 6	quotation on cited line						my worthless gifts,	to be corrupted with my worthless gifts
+Worthless	Worthless,	1.1.161	Gent. I, 1, 161	quotation on cited line						such a worthless post,	receiving them from such a worthless post
+Worthless	Worthless,	2.4.113	II, 4, 113	quotation on cited line						a worthless mistress,	servant you are welcome to a worthless mistress
+Worthless	Worthless,	2.4.113	II, 4, 113	headword on cited line							servant you are welcome to a worthless mistress
+Worthless	Worthless,	3.2.10	III, 2, 10	quotation on cited line						worthless Valentine,	and worthless valentine shall be forgot
+Wot	Wot,	4.4.30	Gent. IV, 4, 30	headword on cited line							did the thing you wot of he makes me no
+Wreathe	Wreathe,	2.1.19	Gent. II, 1, 19	quotation on cited line						to wreathe your arms,	you have learned like sir proteus to wreathe
+Wring	Wring	2.3.8	Gent. II, 3, 8	headword on cited line							crying our maid howling our cat wringing her
+Wring	Wring	3.1.227	III, 1, 227	headword on cited line							wringing her hands whose whiteness so became them
+Wrongful	Wrongful,	4.2.102	Gent. IV, 2, 102	quotation on cited line						I despise thee for thy wrongful suit,	that i despise thee for thy wrongful suit
+Yoke2	Yoke,	1.1.40	Gent. I, 1, 40	headword on cited line							and he that is so yoked by a fool
+Zeal	Zeal,	3.2.6	Gent. III, 2, 6	headword not found near cited line							this weak impress of love is as a figure
+Zeal	Zeal,	3.2.6	Gent. III, 2, 6	headword not found near cited line							this weak impress of love is as a figure
+Zeal	Zeal,	3.4.150	III, 4, 150	not a citation of this play							
+Zeal	Zeal,	2.4.203	Gent. II, 4, 203	quotation on cited line						my zeal to Valentine is cold,	methinks my zeal to valentine is cold

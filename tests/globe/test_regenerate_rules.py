@@ -319,3 +319,44 @@ def test_a_turnover_in_the_same_l_continues_however_short_the_row_above():
     assert lineate.continues(_row("start", r=short, cont=l1), _row("turnover", cont=l1))
     assert not lineate.continues(_row("start", r=short, cont=l1), _row("turnover", cont=l2))
     assert not lineate.continues(_row("start", r=short, cont=p), _row("turnover", cont=p))
+
+
+def test_an_indented_row_in_the_same_l_as_a_full_row_continues():
+    """Two Gentlemen III.1: "the" / "match" at 2.89u is a turnover set past
+    the band; a song line, an <l> of its own, after a full row does not
+    continue, nor does the same row after a short one."""
+    from lxml import etree
+    from globe import lineate
+    from globe.p4_convert import q
+    l1, l2 = etree.Element(q("l")), etree.Element(q("l"))
+    assert lineate.continues(_row("start", r=996.0, cont=l1), _row("indented", cont=l1))
+    assert not lineate.continues(_row("start", r=996.0, cont=l1), _row("indented", cont=l2))
+    assert not lineate.continues(_row("start", r=1000.0 - 1.30 * 50.0, cont=l1), _row("indented", cont=l1))
+
+
+def test_a_one_word_row_spelt_otherwise_in_the_p4_starts_at_the_word_left_over():
+    """Two Gentlemen I.1: "labour." does not match the P4's "labor.", so it
+    had no start and was no line. Between two matched rows, with one word of
+    speech left over and spelt alike, it starts there; a fragment unlike the
+    word left over ("re"), or a row with a speaker prefix, does not."""
+    from globe import align_play
+    from globe.tokens import Token
+
+    def toks(*ws):
+        return [Token(i, w, w, "speech", None, "text", 0, None, "1.1") for i, w in enumerate(ws)]
+
+    def rows(middle, prefix_len=0):
+        a = Row(0, 0, 0, [Word(0, 1, w) for w in "mutton nothing for my".split()])
+        b = Row(0, 1, 0, [Word(0, 1, w) for w in middle.split()], prefix_len=prefix_len)
+        c = Row(0, 2, 0, [Word(0, 1, w) for w in "Pro. Here's too small".split()])
+        a.start, a.extra["last"], c.start = 0, 3, 5
+        return [a, b, c]
+
+    ts = toks("mutton", "nothing", "for", "my", "labor", "heres", "too", "small")
+    rs = rows("labour.")
+    align_play.infer_unmatched(rs, ts)
+    assert (rs[1].start, rs[1].speech) == (4, True)
+    for middle, prefix_len in [("re", 0), ("Pro. labour.", 1)]:
+        rs = rows(middle, prefix_len)
+        align_play.infer_unmatched(rs, ts)
+        assert rs[1].start is None

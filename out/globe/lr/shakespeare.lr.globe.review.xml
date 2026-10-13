@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-12">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 2ae76c9; sources: lr.xml sha256 ef4bd51326cb54fa; shared-lines.tsv sha256 a026b04dcb9fb1b9; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-13">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit f4e71ae; sources: lr.xml sha256 ef4bd51326cb54fa; shared-lines.tsv sha256 faf45a0fa3999f0c; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -2187,7 +2187,7 @@
       <sp who="lr-8">
         <speaker>Gon.</speaker>
         <l>
-          <milestone unit="line" ed="Globe" n="258"/>This admiration, sir, is much o' the savor </l>
+          <milestone unit="line" ed="Globe" n="258"/>This admiration, sir, is much o' the <lb/>savor </l>
         <l>
           <milestone unit="line" ed="Globe" n="259"/>Of other your new pranks. I do beseech you </l>
         <l>
@@ -6603,7 +6603,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="73"/>So distribution should undo excess, </l>
         <l>
-          <milestone unit="line" ed="Globe" n="74"/>And each man have enough. Dost thou know Dover? </l>
+          <milestone unit="line" ed="Globe" n="74"/>And each man have enough. Dost thou know <lb/>Dover? </l>
       </sp>
       <sp who="lr-13">
         <speaker>Edg.</speaker>
@@ -7435,7 +7435,7 @@
       <sp who="lr-13">
         <speaker>Edg.</speaker>
         <l>
-          <!-- REVIEW words: both witnesses read 'impersect'; the P4 reads 'imperfect' --><milestone unit="line" ed="Globe" n="5"/>Why, then, your other senses grow imperfect </l>
+          <!-- REVIEW words: both witnesses read 'impersect'; the P4 reads 'imperfect' --><milestone unit="line" ed="Globe" n="5"/>Why, then, your other senses grow <lb/>imperfect </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="6"/>By your eyes' anguish. </l>
       </sp>
@@ -7661,7 +7661,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="72"/>It was some fiend; therefore, thou happy father, </l>
         <l>
-          <!-- REVIEW words: both witnesses read 'honours'; the P4 reads 'honors' --><milestone unit="line" ed="Globe" n="73"/>Think that the clearest gods, who make them honors </l>
+          <!-- REVIEW words: both witnesses read 'honours'; the P4 reads 'honors' --><milestone unit="line" ed="Globe" n="73"/>Think that the clearest gods, who make them <lb/>honors </l>
         <l>
           <milestone unit="line" ed="Globe" n="74"/>Of men's impossibilities, have preserved thee. </l>
       </sp>

@@ -38,6 +38,7 @@ PLAY_TITLES = {
     "ant": "Antony and Cleopatra",
     "tit": "Titus Andronicus",
     "r2": "Richard II",  # as its __cts__.xml names it
+    "tgv": "Two Gentlemen of Verona",  # as its __cts__.xml names it
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -57,6 +58,9 @@ COPY_TEXT = {
     # Introduction printed 278 (contents: 278), V.6 on 305; King John's
     # introduction is 306 (CHOCR index 288-315; printed = index - 10).
     "r2": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="278-305"),
+    # Introduction printed 103 (CHOCR index 113), V.4 ends on 124 (index
+    # 134); A Midsummer Night's Dream's introduction is 125 (printed = index - 10).
+    "tgv": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="103-124"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

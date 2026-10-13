@@ -24,7 +24,10 @@ cuts one line in two, and one corrects a number:
             first_half is the first words of the line above,
             second_half of the row. The Folger is no guide here: it joins
             two of those three;
-  numeral   a marginal number both witnesses misread.
+  numeral   a marginal number both witnesses misread: first_half the number
+            printed, second_half the reading, `line` the first words of its
+            line. An empty first_half: no number is printed there, and both
+            witnesses read a word as one (Measure V.1 "even now, I" as 1).
   lacuna    a line the page prints without words, a row of dots the Globe
             numbers (Richard II II.1.280); first_half is the first words of
             the line above. The P4 must have a wordless <l> there too.

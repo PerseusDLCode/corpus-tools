@@ -260,7 +260,10 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
             applied.append((new[to[0]], r))
             continue
         if r.kind == "numeral":
-            printed, read = int(r.first_half), int(r.second_half)
+            # an empty first_half: the page prints no number here, and both
+            # witnesses read a word as one ("now, I" as "1", Measure V.1, p.92)
+            printed = int(r.first_half) if r.first_half.strip() else None
+            read = int(r.second_half)
             want = tuple(r.line.split())
             hits = [k for k, ln in enumerate(new)
                     if ln.num == read and shared_lines.line_words(new, k, toks, len(want)) == want]
@@ -599,8 +602,10 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
             state = "checked " + row.checked if row.checked.strip() else "PENDING"
             ids = f" {row.folger_ids}" if row.folger_ids else ""
             if row.kind == "numeral":
+                printed = (f"the page prints {row.first_half}" if row.first_half.strip()
+                           else "the page prints no number here, but a word")
                 out.append((ln.start, emit_tei.review_comment(
-                    "numeral", f"shared-lines.tsv: the page prints {row.first_half}; both witnesses "
+                    "numeral", f"shared-lines.tsv: {printed}; both witnesses "
                                f"read {row.second_half} ({row.basis}, {state})")))
             elif row.kind == "turnover":
                 out.append((ln.start, emit_tei.review_comment(

@@ -104,3 +104,38 @@ def test_a_miscount_row_gives_two_printed_lines_one_number():
     table = [shared_lines.Row("err", "2.1", 108, "miscount", "my wife her", "of vile confederates", "", "image")]
     new, applied, _ = regenerate.apply_table(new, None, toks, table, 108)
     assert len(new) == 2 and len(new[0].rows) == 2 and applied == [(0, table[0])]
+
+
+def test_a_separate_row_may_start_at_words_the_witnesses_lost():
+    """Love's Labour's Lost III.1 p.142: "silly thought my spleen" heads the
+    right column, read "thought my spleen"; the line starts at "silly"."""
+    body = body_of('<p>By virtue, thou enforcest laughter; thy silly thought my spleen; <lb ed="G"/></p>')
+    toks = tokens.tokenize(body)
+    i = {t.t: t.i for t in toks if t.kind == "speech"}
+    a = Row(x=0.0, y=0.0, r=0.0, words=[Word(0.0, 0.0, w) for w in "By virtue, thou enforcest laughter; thy".split()],
+            band="start")
+    b = Row(x=0.0, y=0.0, r=0.0, words=[Word(0.0, 0.0, w) for w in "thought my spleen;".split()], band="turnover")
+    a.start, a.speech, a.extra["last"] = i["by"], True, i["thy"]
+    b.start, b.speech = i["thought"], True
+    new = [lineate.Line([a, b], 142)]
+    table = [shared_lines.Row("lll", "2.1", 142, "separate", "by virtue thou", "silly thought my", "", "image")]
+    new, applied, _ = regenerate.apply_table(new, None, toks, table, 142)
+    assert [toks[ln.start].t for ln in new] == ["by", "silly"] and applied == [(1, table[0])]
+
+
+def test_a_separate_row_for_all_splits_every_junction_with_its_words():
+    """Love's Labour's Lost V.2 p.160: the refrain 'Cuckoo;' under the same
+    line in both stanzas."""
+    body = body_of('<l part="I">Mocks married men; for thus sings he, <lb ed="G"/></l><l part="F">Cuckoo; <lb ed="G"/></l>'
+                   '<l>Unpleasing to a married ear! <lb ed="G"/></l>'
+                   '<l part="I">Mocks married men; for thus sings he, <lb ed="G"/></l><l part="F">Cuckoo; <lb ed="G"/></l>')
+    toks, rows = page(body, ["Mocks married men; for thus sings he,", "Cuckoo;", "Unpleasing to a married ear!",
+                             "Mocks married men; for thus sings he,", "Cuckoo;"])
+    new = [lineate.Line(rows[0:2], 160), lineate.Line([rows[2]], 160), lineate.Line(rows[3:5], 160)]
+    one = shared_lines.Row("lll", "2.1", 160, "separate", "mocks married men", "cuckoo", "", "image")
+    with pytest.raises(shared_lines.TableError, match="matches 2 junctions"):
+        regenerate.apply_table(list(new), None, toks, [one], 160)
+    new = [lineate.Line(rows[0:2], 160), lineate.Line([rows[2]], 160), lineate.Line(rows[3:5], 160)]
+    every = shared_lines.Row("lll", "2.1", 160, "separate", "mocks married men", "cuckoo", "all", "image")
+    new, applied, _ = regenerate.apply_table(new, None, toks, [every], 160)
+    assert [len(ln.rows) for ln in new] == [1, 1, 1, 1, 1] and sorted(k for k, _ in applied) == [1, 4]

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.err.globe.xml sha256 374acede74deedb4; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.err.globe.xml sha256 24bc7caa88bc56bb; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abbey-gate	Abbey-gate,	5.1.165	Err. V, 165	headword on cited line							go some of you knock at the abbeygate
 Abbey-wall	Abbey-wall,	5.1.265	Err. V, 265	headword on cited line							i never came within these abbeywalls

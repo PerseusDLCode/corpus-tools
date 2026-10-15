@@ -45,7 +45,6 @@ page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
 97	miun/kraken	1	11	replace	Dro.		Dro.	
 97	miun/kraken	1	34	replace	you,	vou,	you,	
 97	miun/kraken	1	65	replace	S.	SS.	S.	
-97	miun/kraken	1	66	delete		When		
 97	miun/kraken	1	67	delete		She		
 97	miun/kraken	2	9	replace	your	vour	your	
 97	miun/kraken	2	14	replace	knew 'twould	knew’twould	knew’twould	same

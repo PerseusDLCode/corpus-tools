@@ -1,6 +1,6 @@
 # Schmidt smoke test: The Comedy of Errors
 
-Sources: shakespeare.err.globe.xml sha256 374acede74deedb4; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.err.globe.xml sha256 24bc7caa88bc56bb; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of The Comedy of Errors in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

@@ -105,7 +105,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-15">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit c78976c; sources: err.xml sha256 d4e3e08d5b77eaf9; shared-lines.tsv sha256 2a2df246ec26fec6; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 970434b; sources: err.xml sha256 d4e3e08d5b77eaf9; shared-lines.tsv sha256 0edbbaf5772d3bd2; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -1632,7 +1632,8 @@
         <speaker>Luc.</speaker>
         <l>
           <!-- REVIEW turnover: row above ends 1.31u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="154"/>Fie, brother! how the world is changed <lb/>with you! </l>
-        <l>When <!-- REVIEW words: both witnesses read 'vou'; the P4 reads 'you' --><milestone unit="line" ed="Globe" n="155"/>were you wont to use my sister thus? </l>
+        <l>
+         <!-- REVIEW words: both witnesses read 'vou'; the P4 reads 'you' --> <milestone unit="line" ed="Globe" n="155"/>When were you wont to use my sister thus? </l>
         <l>She <milestone unit="line" ed="Globe" n="156"/>sent for you by Dromio home to dinner. </l>
       </sp>
       <sp who="ant.-s.">

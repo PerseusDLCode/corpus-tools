@@ -226,14 +226,45 @@ def split_watermark(rows: list[Row], watermark, height: float) -> tuple[list[Row
     return [r for r in rows if not any(r is o for o in off)], off
 
 
+GUTTER_REACH = 0.1  # the gutter is sought this fraction of the text width either side of the midpoint
+
+
+def gutter(rows: list[Row]) -> float:
+    """The x between the columns: the middle of the widest stretch, near the
+    midpoint of the 5th-percentile left edge and the 95th-percentile right
+    edge, that the fewest words cover (none, but for a running head across
+    the page). The midpoint alone is no gutter on a skewed leaf: Michigan's
+    Love's Labour's Lost p.141 puts its right column's foot at x=1430-1434,
+    left of a midpoint of 1433.5, and the first word of five of its rows
+    went to the left column ("to board. sense")."""
+    xs = sorted(r.x for r in rows)
+    rs = sorted(r.r for r in rows)
+    lo, hi = xs[len(xs) // 20], rs[-len(rs) // 20]
+    mid, reach = (lo + hi) / 2, GUTTER_REACH * (hi - lo)
+    a, b = int(mid - reach), int(mid + reach) + 1
+    cover = [0] * (b - a)
+    for r in rows:
+        for w in r.words:
+            for x in range(max(a, int(w.x)), min(b, int(w.x + w.w) + 1)):
+                cover[x - a] += 1
+    least = min(cover)
+    best, run = None, None  # (length, start) of the widest run at the least cover
+    for i, c in enumerate(cover + [least + 1]):
+        if c == least and run is None:
+            run = i
+        elif c != least and run is not None:
+            if best is None or i - run > best[0]:
+                best = (i - run, run)
+            run = None
+    return a + best[1] + best[0] / 2
+
+
 def split_columns(rows: list[Row]) -> list[list[Row]]:
     """Two columns, split midway between the 5th-percentile left edge and the
     95th-percentile right edge; each sorted top to bottom. A row whose words
     straddle the split is two rows: the segmenter sometimes runs one baseline
     across the gutter (p.866, "...but let them tion: we are bound...")."""
-    xs = sorted(r.x for r in rows)
-    rs = sorted(r.r for r in rows)
-    split = (xs[len(xs) // 20] + rs[-len(rs) // 20]) / 2
+    split = gutter(rows)
     pieces = []
     for r in rows:
         left = [w for w in r.words if w.x < split]
@@ -331,17 +362,29 @@ def join_hyphenation(body: list[Row]) -> None:
             b.extra["completes_word"] = True  # lineate.continues
 
 
-MARGIN_BAND_U = 0.75  # rows this close to the 10th-percentile edge make up the body cluster
+MARGIN_BAND_U = 0.75  # rows this close to the leftmost edge of the body cluster make it up
+
+
+MARGIN_MIN_ROWS = 4  # left edges within MARGIN_BAND_U of each other that make a margin
 
 
 def column_margin(body: list[Row], pitch: float) -> float:
-    """The column's left margin: the median left edge of the body cluster (rows
-    within MARGIN_BAND_U pitches of the 10th-percentile left edge). The
-    percentile alone sits left of the body when a few rows hang into the
-    margin, shifting every band edge (p.860 col 2, p.861 col 1)."""
+    """The column's left margin: the median left edge of the body cluster, the
+    leftmost MARGIN_MIN_ROWS or more rows whose left edges lie within
+    MARGIN_BAND_U pitches of each other. A few rows hanging into the margin
+    are not a cluster (p.860 col 2, p.861 col 1). The 10th-percentile edge,
+    used before, is not the margin where fewer rows than that are flush: the
+    left column of Love's Labour's Lost p.141 is one-row speeches set at the
+    speaker indent, with six rows flush of 70, and its turnovers read as
+    starts."""
     xs = sorted(r.x for r in body)
-    base = xs[len(xs) // 10]
-    return statistics.median(x for x in xs if x < base + MARGIN_BAND_U * pitch)
+    band = MARGIN_BAND_U * pitch
+    for i, base in enumerate(xs):
+        cluster = [x for x in xs[i:] if x < base + band]
+        if len(cluster) >= MARGIN_MIN_ROWS:
+            return statistics.median(cluster)
+    base = xs[len(xs) // 10]  # too few rows to cluster
+    return statistics.median(x for x in xs if x < base + band)
 
 
 MARGIN_NEAR = 10  # flush rows either side of a row that give its local margin

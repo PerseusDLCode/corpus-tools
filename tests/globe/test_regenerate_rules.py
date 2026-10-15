@@ -186,6 +186,18 @@ def test_a_row_across_the_gutter_is_split():
     assert not any("tion:" in r.text for r in cols[0])
 
 
+def test_the_columns_split_at_the_gutter_not_the_midpoint():
+    # Love's Labour's Lost p.141, Michigan: the right column's foot drifts left
+    # to x=1430, past the midpoint (1433.5) of the left and right edges; the
+    # first words of its rows went to the left column ("to board. sense")
+    left = [Row(301, y, 1380, [Word(301, 1079, "x")]) for y in range(0, 3000, 50)]
+    right = [Row(1455 - 25 * k / 59, 1000 + 50 * k, 2566,
+                 [Word(1455 - 25 * k / 59, 60, "sense"), Word(1530, 1036, "of")]) for k in range(60)]
+    cols = pr.split_columns(left + right)
+    assert all(r.words[0].t == "sense" for r in cols[1]) and len(cols[1]) == 60
+    assert not any("sense" in r.text for r in cols[0])
+
+
 def test_numeral_outside_the_frame_is_an_annotation():
     # miun p.861: a reader's "7" (read "1") 2.0u beyond the measure; print sits inside
     printed, notes = pr.split_annotations([(10, 290, 1000.0), (20, 1, 1100.0)], measure=1000.0, pitch=50.0)
@@ -287,6 +299,18 @@ def test_the_margin_follows_a_column_that_drifts():
     assert (turnover.x - pr.column_margin(body, pitch)) / pitch > 2.8  # one margin: indented
     few = body[:10]
     assert pr.local_margins(few, pitch) == [pr.column_margin(few, pitch)] * 10
+
+
+def test_the_margin_is_the_leftmost_cluster_of_flush_rows():
+    """Love's Labour's Lost p.141, left column: 64 one-row speeches at the
+    speaker indent (1u) and six flush rows. The 10th-percentile edge is the
+    speaker indent, which made the turnovers (2.4u) starts."""
+    pitch = 50.0
+    body = [Row(1.0 * pitch + (k % 3), 100 + 50 * k, 1000, [Word(0, 1, "Biron.")]) for k in range(64)]
+    body += [Row(0.0 + k, 4000 + 50 * k, 1000, [Word(0, 1, "She")]) for k in range(6)]
+    assert abs(pr.column_margin(body, pitch)) < 5
+    hanging = body + [Row(-0.6 * pitch, 50, 1000, [Word(0, 1, "‘")])]  # one row hangs: no cluster
+    assert abs(pr.column_margin(hanging, pitch)) < 5
 
 
 def _row(band, r=1000.0, cont=None, **extra):

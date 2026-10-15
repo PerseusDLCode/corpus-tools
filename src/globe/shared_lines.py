@@ -35,6 +35,12 @@ cuts one line in two, and one corrects a number:
             to the one it numbers (Richard II III.3, 10); first_half is the
             printed value, second_half the first words of the line it is
             printed beside, `line` the first words of the line it numbers.
+  miscount  two printed lines the Globe gives one number, though neither is
+            a turnover or a shared half: its own slip, kept so that its
+            numbers (and Schmidt's) hold (Errors V.1, eleven lines between
+            230 and 240, as in the 1864 printing). Folded like `shared`:
+            first_half the first words of the first line, second_half of the
+            second. Not a junction.
 
 Every row names its play, and its page must be one of that play's printed
 pages (data/globe/plays.tsv): the build reads only the play's own rows, and
@@ -66,7 +72,7 @@ TABLE = Path(__file__).resolve().parent.parent.parent / "data/globe/shared-lines
 COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line", "basis",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
-KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced")
+KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount")
 # The kinds that decide where a Globe line begins, which the header counts
 # (canonical-engLit doc/agenda.org #build/header-junctions): not the numeral
 # kinds, and not a lacuna, which the page prints as a line of its own.

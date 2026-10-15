@@ -73,7 +73,7 @@ def test_a_misplaced_numeral_moves_to_the_line_it_numbers():
 
 
 def test_neither_kind_counts_as_a_junction_in_the_header():
-    kinds = ["shared", "turnover", "separate", "numeral", "lacuna", "misplaced"]
+    kinds = ["shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount"]
     table = [shared_lines.Row("r2", "1.1", 356, k, "a", "b", "", "image") for k in kinds]
     assert tei_header.count_junctions(table) == 3
 
@@ -89,3 +89,18 @@ def test_a_numeral_row_with_no_printed_value_removes_the_reading():
     table = [shared_lines.Row("mm", "5.1", 92, "numeral", "", "1", "me to a whore", "image")]
     new, applied, _ = regenerate.apply_table(new, None, toks, table, 92)
     assert [ln.num for ln in new] == [None, None] and applied == [(0, table[0])]
+
+
+def test_a_miscount_row_gives_two_printed_lines_one_number():
+    """Errors V.1 p.108: eleven lines between 230 and 240, as in the 1864 printing."""
+    body = body_of('<l>My wife, her sister, and a rabble more <lb ed="G"/></l>'
+                   '<l>Of vile confederates. Along with them <lb ed="G"/></l>'
+                   '<l>They brought one Pinch, a hungry lean-faced villain, <lb ed="G"/></l>')
+    toks, rows = page(body, ["My wife, her sister, and a rabble more",
+                             "Of vile confederates. Along with them",
+                             "They brought one Pinch, a hungry lean-faced villain,"])
+    new = lineate.globe_lines(rows, 108)
+    assert len(new) == 3
+    table = [shared_lines.Row("err", "2.1", 108, "miscount", "my wife her", "of vile confederates", "", "image")]
+    new, applied, _ = regenerate.apply_table(new, None, toks, table, 108)
+    assert len(new) == 2 and len(new[0].rows) == 2 and applied == [(0, table[0])]

@@ -211,7 +211,8 @@ def new_index_of_lacuna(new) -> int:
 def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
     """Split the junctions the table records as `separate`, fold those it
     records as shared halves and unmarked turnovers, and take its numeral
-    readings. Returns the page's lines and the rows applied. Rows in `done`
+    readings. A `miscount` folds like a shared half. Returns the page's
+    lines and the rows applied. Rows in `done`
     were applied by the caller (a `separate` at the head of the page).
 
     A junction is located by the first spoken words of each half, within the
@@ -622,6 +623,11 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                     "misplaced", f"shared-lines.tsv: the page prints {row.first_half}, this line's "
                                  f"number, beside the line next to it ({row.second_half!r}) "
                                  f"(basis {row.basis}, {state})")))
+            elif row.kind == "miscount":
+                out.append((ln.start, emit_tei.review_comment(
+                    "miscount", f"shared-lines.tsv: the Globe gives this line and the next printed "
+                                f"line ({row.second_half!r}) one number, though the page sets them "
+                                f"as two (basis {row.basis}, {state})")))
             elif row.kind == "separate":
                 out.append((ln.start, emit_tei.review_comment(
                     "separate", f"shared-lines.tsv: the page sets this row displaced, as if it "

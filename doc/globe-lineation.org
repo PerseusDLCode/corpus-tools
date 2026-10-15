@@ -12,16 +12,17 @@ frozen at its tag =v1.0= as the record of how it was built (see
 [[*References to the workshop]]).
 
 King Lear, Antony and Cleopatra, Titus Andronicus, Richard II, Two
-Gentlemen of Verona and Measure for Measure are built and published
-(canonical-engLit =mvp=,
-=data/shakespeare/{lr,ant,tit,r2,tgv,mm}/shakespeare.*.globe.xml=). Titus and
+Gentlemen of Verona, Measure for Measure and The Comedy of Errors are
+built and published (canonical-engLit =mvp=,
+=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err}/shakespeare.*.globe.xml=). Titus and
 Richard II were the cold tests: Titus passed 22 of 24 pages with the
 classifier unchanged and needed only table rows; Richard II passed 22 of
 26 and needed two turnover rules and two new table kinds (=lacuna=,
 =misplaced=). Two Gentlemen, the first of the batch, passed 17 of 21 and
 needed two rules (one-word rows spelt otherwise in the P4; turnovers
 set past the band) and two =separate= rows. Measure for Measure passed 26 of 26 with no
-rule change and nine table rows. The open tasks are in canonical-engLit =doc/agenda.org= on
+rule change and nine table rows; The Comedy of Errors 18 of 18 with six,
+one of a new kind (=miscount=, the Globe's own slip in V.1). The open tasks are in canonical-engLit =doc/agenda.org= on
 =mvp=.
 
 * The method

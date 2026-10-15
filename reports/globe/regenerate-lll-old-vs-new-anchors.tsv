@@ -1,0 +1,18 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in lll.xml (sha256 4e29a001e78d7b2b); not the shell's milestones or <l n>
+# transcribed anchors: 213; mapped (the row begins a line): 189; of those, carrying the same number: 177
+# in scenes that pass the gate: 189 mapped; agreeing: 177
+# unmapped (the row begins inside a line): 24; the P4's number is the containing line's for 13, the next line's for 11, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.2	160	disagree	159				Moth. Come, you transgressing slave; away!
+2.1	250	disagree	251				Boyet. But to speak that in
+3.1	9	disagree	10				Arm. How meanest thou? brawling in
+3.1	89	disagree	88				Moth. I will add the l'envoy.
+4.2	150	disagree	149				Jaq. Good Costard, go with me.
+5.2	151	disagree	251				Long. Look, how you butt yourself
+5.2	181	disagree	381				Ros. But that you take what
+5.2	520	disagree	519				Dies in the zeal of that
+5.2	640	disagree	639				King. Hector was but a Troyan
+5.2	649	disagree	650				Arm. The armipotent Mars, of lances
+5.2	731	disagree	730				Biron. Worthies, away! the scene begins
+5.2	890	disagree	891				Dum. The worthy knight of Troy.

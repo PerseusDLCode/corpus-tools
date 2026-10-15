@@ -22,8 +22,11 @@ cuts one line in two, and one corrects a number:
             dead."), or sets in at the turnover indent although the line is
             prose (Two Gentlemen I.1 "shepherd then and I a sheep?");
             first_half is the first words of the line above,
-            second_half of the row. The Folger is no guide here: it joins
-            two of those three;
+            second_half of the row, which may begin with words the
+            witnesses lost from its head (Love's Labour's Lost III.1,
+            "silly thought my"). `line` "all": every such junction on the
+            page, where the words repeat (the songs' refrains, V.2). The
+            Folger is no guide here: it joins two of those three;
   numeral   a marginal number both witnesses misread: first_half the number
             printed, second_half the reading, `line` the first words of its
             line. An empty first_half: no number is printed there, and both

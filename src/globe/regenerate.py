@@ -140,13 +140,28 @@ def row_words(rows, j: int, end: int, toks, n: int) -> tuple[str, ...]:
     return tuple(t.t for t in toks[rows[j].start:stop] if t.kind == "speech")[:n]
 
 
-def separates(first, second_rows, j: int, end: int, toks, r: shared_lines.Row) -> bool:
+def separates(first, second_rows, j: int, end: int, toks, r: shared_lines.Row, before=None) -> int | None:
     """Does `r` name the junction before row `j` of `second_rows`, in a line
-    that begins as `first` does?"""
+    that begins as `first` does? The token the second line starts at, or None.
+
+    The second half may begin with words the witnesses lost from the head of
+    the row, which the aligner leaves unmatched after the row above (`before`
+    when row `j` is the first of `second_rows`): Love's Labour's Lost p.142,
+    "silly thought my spleen", read "thought my spleen", the row at the head
+    of a column. The row names the P4's words, and the line starts there."""
     want_a, want_b = tuple(r.first_half.split()), tuple(r.second_half.split())
-    return (first.div in (r.scene, "")
-            and shared_lines.line_words([first], 0, toks, len(want_a)) == want_a
-            and row_words(second_rows, j, end, toks, len(want_b)) == want_b)
+    if first.div not in (r.scene, "") or shared_lines.line_words([first], 0, toks, len(want_a)) != want_a:
+        return None
+    row = second_rows[j]
+    stop = second_rows[j + 1].start if j + 1 < len(second_rows) else end
+    above = second_rows[j - 1] if j > 0 else before
+    starts = [row.start]
+    if above is not None and "last" in above.extra:
+        starts += [t.i for t in toks[above.extra["last"] + 1:row.start] if t.kind == "speech"]
+    for s in starts:
+        if tuple(t.t for t in toks[s:stop] if t.kind == "speech")[:len(want_b)] == want_b:
+            return s
+    return None
 
 
 def separate_at_top(prev_last, new, toks, table, page: int):
@@ -157,7 +172,8 @@ def separate_at_top(prev_last, new, toks, table, page: int):
         return None
     end = new[1].start if len(new) > 1 else len(toks)
     return next((r for r in table if r.page == page and r.kind == "separate"
-                 and separates(prev_last, new[0].rows, 0, end, toks, r)), None)
+                 and separates(prev_last, new[0].rows, 0, end, toks, r, prev_last.rows[-1]) is not None),
+                None)
 
 
 def split(line, j: int) -> lineate.Line:
@@ -225,18 +241,25 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
     # a displaced row the Globe numbers as a line of its own: the page shows
     # it as a shared half, so the rows were joined; cut them apart first, so
     # that the other rows find the lines the Globe has
+    # `line` "all": every junction on the page with these words, where they
+    # repeat (the refrains of Love's Labour's Lost's songs, p.160)
     for r in [r for r in rows if r.kind == "separate"]:
         hits = []
         for k, ln in enumerate(new):
             end = new[k + 1].start if k + 1 < len(new) else len(toks)
-            hits += [(k, j) for j in range(1, len(ln.rows)) if separates(ln, ln.rows, j, end, toks, r)]
-        if len(hits) != 1:
+            for j in range(1, len(ln.rows)):
+                s = separates(ln, ln.rows, j, end, toks, r)
+                if s is not None:
+                    hits.append((k, j, s))
+        every = r.line.strip() == "all"
+        if (len(hits) < 1) if every else (len(hits) != 1):
             raise shared_lines.TableError(
                 f"shared-lines.tsv: p.{page} separate {r.first_half!r} / {r.second_half!r} "
-                f"matches {len(hits)} junctions on this page, expected 1")
-        k, j = hits[0]
-        new.insert(k + 1, split(new[k], j))
-        applied.append((new[k + 1], r))
+                f"matches {len(hits)} junctions on this page, expected {'at least 1' if every else 1}")
+        for k, j, s in reversed(hits):  # from the foot, so the indices above stay
+            new[k].rows[j].start = s
+            new.insert(k + 1, split(new[k], j))
+            applied.append((new[k + 1], r))
     # a line the page prints without words (the Globe's row of dots): it is
     # no row of speech, so it was never a line; insert it after the named line
     for r in [r for r in rows if r.kind == "lacuna"]:

@@ -122,12 +122,22 @@ def align_page(page: Page, toks: list[Token], enc: list[str], grams: dict, floor
         # [Aside to Agr.] Will Cæsar weep?", III.2, p.925). A row set in, that
         # opens with a stage direction, is the end of a line the direction
         # interrupts ("[Trumpets within.] So;", III.2, p.925): not a line.
+        # Or it opens a speech, its prefix matched to the speaker name the
+        # speech follows, and speaks at all: "Lion. [Roaring] Oh--- [Thisbe
+        # runs off.", A Midsummer Night's Dream V.1, p.178, which the Globe
+        # numbers 269 -- not the second name of a prefix set across two rows,
+        # "Quin. and" / "Mart. pany.", Titus I.1, p.691.
         kinds = Counter(toks[m[k]].kind for k in hits)
+        spoken = [k for k in hits if toks[m[k]].kind == "speech"]
+        opens = bool(spoken) and any(
+            k in m and toks[m[k]].kind == "speaker"
+            and all(t.kind != "speech" for t in toks[m[k] + 1:m[spoken[0]]])
+            for k in ks[:r.prefix_len])
         r.speech = (toks[m[k0]].kind == "speech"
                     or kinds["speech"] > kinds["stage"] + kinds["head"]
-                    or (r.band in ("start", "displaced") and toks[m[hits[-1]]].kind == "speech"))
+                    or (r.band in ("start", "displaced") and toks[m[hits[-1]]].kind == "speech")
+                    or (opens and kinds["speech"] > 0))
         # where the row's speech ends: a trailing stage direction runs further
-        spoken = [k for k in hits if toks[m[k]].kind == "speech"]
         r.extra["speech_r"] = _word_right(r, ow, ks, spoken[-1]) if spoken else r.r
 
     infer_unmatched(rows, toks)
@@ -137,20 +147,29 @@ def align_page(page: Page, toks: list[Token], enc: list[str], grams: dict, floor
 
 
 def infer_unmatched(rows: list[Row], toks: list[Token]) -> None:
-    """A one-word row that did not match, between two rows that did, starts
-    at the one word of speech left over between them, if the two are spelt
-    alike (SPELLING_RATIO). The row is a speech's last, spelt otherwise in
-    the P4 ("labour." / "labor.",
-    "favoured." / "well-favored.", "colour?" / "color?", Two Gentlemen I.1,
-    II.1, II.4; canonical-engLit doc/agenda.org #build/batch-remaining)."""
+    """A row that did not match, between two rows that did, starts at the
+    words of speech left over between them, if they are as many as the row's
+    own after its speaker prefix and each pair is spelt alike
+    (SPELLING_RATIO). The row is spelt otherwise in the P4 throughout: a
+    speech's last word ("labour." / "labor.", "favoured." /
+    "well-favored.", "colour?" / "color?", Two Gentlemen I.1, II.1, II.4;
+    canonical-engLit doc/agenda.org #build/batch-remaining), or a speech of
+    its own ("Quin. Odours, odours." / "Odors, odors.", A Midsummer Night's
+    Dream III.1, p.168)."""
     for prev, r, nxt in zip(rows, rows[1:], rows[2:]):
         if r.start is not None or prev.start is None or nxt.start is None or "last" not in prev.extra:
             continue
         lo, hi = prev.extra["last"] + 1, nxt.start
         gap = [t for t in toks[lo:hi] if t.kind != "speaker"]
-        words = [norm(w.t) for w in r.words if norm(w.t)]  # "colour ?" is one word
-        if (len(gap) != 1 or gap[0].kind != "speech" or len(words) != 1 or r.prefix_len
-                or difflib.SequenceMatcher(None, words[0], gap[0].t).ratio() < SPELLING_RATIO):
+        words = [norm(w.t) for w in r.words[r.prefix_len:] if norm(w.t)]  # "colour ?" is one word
+        # a row with a speaker prefix takes words that begin a speech, not the
+        # end of a word broken across rows under a prefix set across two
+        # ("Quin. and" / "Mart. pany.", Titus I.1, p.691)
+        opens = any(t.kind == "speaker" for t in toks[lo:gap[0].i]) if gap else False
+        if (not gap or len(gap) != len(words) or any(t.kind != "speech" for t in gap)
+                or (r.prefix_len and not opens)
+                or any(difflib.SequenceMatcher(None, w, t.t).ratio() < SPELLING_RATIO
+                       for w, t in zip(words, gap))):
             continue
         r.start = gap[0].i
         r.speech = True

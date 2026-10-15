@@ -187,6 +187,33 @@ def split(line, j: int) -> lineate.Line:
     return second
 
 
+def inset(new, toks, page: int, r: shared_lines.Row):
+    """The page's lines with every row of an `inset` passage a line of its
+    own, from the row whose first spoken words are r.first_half to the one
+    whose first words are r.second_half, each named row unique on the page;
+    and the passage's first line."""
+    want_a, want_b = tuple(r.first_half.split()), tuple(r.second_half.split())
+    n = max(len(want_a), len(want_b))
+    flat = []  # (line index, row index, the row's first spoken words)
+    for k, ln in enumerate(new):
+        end = new[k + 1].start if k + 1 < len(new) else len(toks)
+        for j in range(len(ln.rows)):
+            if ln.rows[j].start is not None:
+                flat.append((k, j, row_words(ln.rows, j, end, toks, n)))
+    a = [i for i, (_, _, w) in enumerate(flat) if w[:len(want_a)] == want_a]
+    b = [i for i, (_, _, w) in enumerate(flat) if w[:len(want_b)] == want_b]
+    if len(a) != 1 or len(b) != 1 or b[0] <= a[0]:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} inset {r.first_half!r} ... {r.second_half!r} matches "
+            f"{len(a)} first and {len(b)} last rows on this page, expected one each, in that order")
+    k0, j0, _ = flat[a[0]]
+    head = new[k0].rows[j0]
+    for k, j, _ in reversed(flat[a[0]:b[0] + 1]):  # from the foot, so the indices above stay
+        if j > 0:
+            new.insert(k + 1, split(new[k], j))
+    return new, next(ln for ln in new if ln.rows[0] is head)
+
+
 LETTER = re.compile(r"[A-Za-z]")
 
 
@@ -260,13 +287,20 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
             new[k].rows[j].start = s
             new.insert(k + 1, split(new[k], j))
             applied.append((new[k + 1], r))
+    # a passage set in, every printed row of which the Globe numbers (A
+    # Midsummer Night's Dream I.2, "The raging rocks" ... "The foolish
+    # Fates."): its short rows look like shared halves, so the rows were
+    # joined; cut every row from the first named to the last into a line
+    for r in [r for r in rows if r.kind == "inset"]:
+        new, head = inset(new, toks, page, r)
+        applied.append((head, r))
     # a line the page prints without words (the Globe's row of dots): it is
     # no row of speech, so it was never a line; insert it after the named line
     for r in [r for r in rows if r.kind == "lacuna"]:
         new.insert(*lacuna_line(new, toks, page, page_rows_, r))
         applied.append((new[new_index_of_lacuna(new)], r))
     for r in rows:
-        if r.kind in ("separate", "lacuna"):
+        if r.kind in ("separate", "lacuna", "inset"):
             continue
         if r.kind == "misplaced":
             printed = int(r.first_half)
@@ -651,6 +685,11 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                     "miscount", f"shared-lines.tsv: the Globe gives this line and the next printed "
                                 f"line ({row.second_half!r}) one number, though the page sets them "
                                 f"as two (basis {row.basis}, {state})")))
+            elif row.kind == "inset":
+                out.append((ln.start, emit_tei.review_comment(
+                    "inset", f"shared-lines.tsv: the page sets this line and those after it, "
+                             f"to {row.second_half!r}, in from the margin, and numbers every "
+                             f"row as a line (basis {row.basis}, {state})")))
             elif row.kind == "separate":
                 out.append((ln.start, emit_tei.review_comment(
                     "separate", f"shared-lines.tsv: the page sets this row displaced, as if it "

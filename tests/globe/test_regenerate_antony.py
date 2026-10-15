@@ -129,3 +129,16 @@ def test_a_speech_row_that_opens_with_a_longer_stage_direction_is_a_line():
     so = [i for i in range(1, len(toks)) if toks[i].t == "so" and toks[i - 1].kind == "stage"
           and toks[i - 1].t == "within"]  # "[Trumpets within.] So;"
     assert len(so) == 1 and not [ln for ln in lines if so[0] - 3 <= ln.start <= so[0]]
+
+
+@needs_inputs
+def test_a_row_that_opens_a_speech_with_one_word_between_directions_is_a_line():
+    """A Midsummer Night's Dream V.1, p.178: "Lion. [Roaring] Oh--- [Thisbe
+    runs off." is more stage direction than speech, but opens Lion's speech,
+    and the Globe numbers it 269."""
+    from globe import regenerate
+    _, toks, _, lines, _ = regenerate.build("mnd", [])
+    oh = [i for i in range(1, len(toks) - 1) if toks[i].t == "oh" and toks[i].kind == "speech"
+          and toks[i - 1].t == "roaring"]
+    assert len(oh) == 1
+    assert [ln for ln in lines if ln.page == 178 and oh[0] - 1 <= ln.start <= oh[0]]

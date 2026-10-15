@@ -44,6 +44,13 @@ cuts one line in two, and one corrects a number:
             230 and 240, as in the 1864 printing). Folded like `shared`:
             first_half the first words of the first line, second_half of the
             second. Not a junction.
+  inset     a passage set in from the margin, a song or a jingle, every
+            printed row of which the Globe numbers, though its short rows
+            look like shared halves (A Midsummer Night's Dream I.2, "The
+            raging rocks" ... "The foolish Fates.", eight rows to 40):
+            first_half the first words of its first row, second_half of its
+            last, both on the page. Not a junction: the page sets every row
+            a line, and the row says only that the build must take them so.
 
 Every row names its play, and its page must be one of that play's printed
 pages (data/globe/plays.tsv): the build reads only the play's own rows, and
@@ -75,7 +82,7 @@ TABLE = Path(__file__).resolve().parent.parent.parent / "data/globe/shared-lines
 COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line", "basis",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
-KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount")
+KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount", "inset")
 # The kinds that decide where a Globe line begins, which the header counts
 # (canonical-engLit doc/agenda.org #build/header-junctions): not the numeral
 # kinds, and not a lacuna, which the page prints as a line of its own.

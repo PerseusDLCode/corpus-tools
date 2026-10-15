@@ -73,7 +73,7 @@ def test_a_misplaced_numeral_moves_to_the_line_it_numbers():
 
 
 def test_neither_kind_counts_as_a_junction_in_the_header():
-    kinds = ["shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount"]
+    kinds = ["shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount", "inset"]
     table = [shared_lines.Row("r2", "1.1", 356, k, "a", "b", "", "image") for k in kinds]
     assert tei_header.count_junctions(table) == 3
 
@@ -139,3 +139,23 @@ def test_a_separate_row_for_all_splits_every_junction_with_its_words():
     every = shared_lines.Row("lll", "2.1", 160, "separate", "mocks married men", "cuckoo", "all", "image")
     new, applied, _ = regenerate.apply_table(new, None, toks, [every], 160)
     assert [len(ln.rows) for ln in new] == [1, 1, 1, 1, 1] and sorted(k for k, _ in applied) == [1, 4]
+
+
+def test_an_inset_row_makes_every_row_of_its_passage_a_line():
+    """A Midsummer Night's Dream I.2 p.163: Bottom's "The raging rocks", set
+    in, eight short rows the Globe numbers to 40; the build joins them in
+    pairs, as shared halves. Rows outside the passage are left as they are."""
+    body = body_of('<p>part to tear a cat in, to make all split. <lb ed="G"/></p>'
+                   '<l>The raging rocks <lb ed="G"/></l><l>And shivering shocks <lb ed="G"/></l>'
+                   '<l>Shall break the locks <lb ed="G"/></l><l>Of prison gates; <lb ed="G"/></l>'
+                   '<p>This was lofty! Now name the rest <lb ed="G"/></p>')
+    toks, rows = page(body, ["part to tear a cat in, to make all split.", "The raging rocks",
+                             "And shivering shocks", "Shall break the locks", "Of prison gates;",
+                             "This was lofty! Now name the rest"])
+    new = [lineate.Line(rows[0:3], 163), lineate.Line(rows[3:5], 163), lineate.Line(rows[5:6], 163)]
+    table = [shared_lines.Row("mnd", "2.1", 163, "inset", "the raging rocks", "of prison gates", "", "image")]
+    new, applied, _ = regenerate.apply_table(new, None, toks, table, 163)
+    assert [len(ln.rows) for ln in new] == [1, 1, 1, 1, 1, 1] and applied == [(1, table[0])]
+    with pytest.raises(shared_lines.TableError, match="inset .* matches 1 first and 0 last"):
+        regenerate.apply_table(new, None, toks, [shared_lines.Row(
+            "mnd", "2.1", 163, "inset", "the raging rocks", "no such row", "", "image")], 163)

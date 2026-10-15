@@ -41,6 +41,7 @@ PLAY_TITLES = {
     "tgv": "Two Gentlemen of Verona",  # as its __cts__.xml names it
     "mm": "Measure for Measure",
     "err": "The Comedy of Errors",
+    "lll": "Love's Labor's Lost",  # as its __cts__.xml names it
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -69,6 +70,9 @@ COPY_TEXT = {
     # Introduction printed 84 (contents: 84; CHOCR index 94), V.1 ends on 102
     # (index 112); Two Gentlemen's introduction is 103 (printed = index - 10).
     "err": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="84-102"),
+    # Introduction printed 56 (CHOCR index 66), V.2 ends on 83 (index 93);
+    # The Comedy of Errors' introduction is 84 (printed = index - 10).
+    "lll": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="56-83"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

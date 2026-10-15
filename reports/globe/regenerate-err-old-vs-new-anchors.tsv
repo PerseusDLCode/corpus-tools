@@ -1,0 +1,9 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in err.xml (sha256 d4e3e08d5b77eaf9); not the shell's milestones or <l n>
+# transcribed anchors: 154; mapped (the row begins a line): 149; of those, carrying the same number: 146
+# in scenes that pass the gate: 149 mapped; agreeing: 146
+# unmapped (the row begins inside a line): 5; the P4's number is the containing line's for 1, the next line's for 4, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+2.2	100	disagree	101				Ant. S. You would all this
+4.4	20	disagree	19				Off. Good sir, be patient. Dro.
+4.4	130	disagree	129				Ant. E. Out on thee, villain!

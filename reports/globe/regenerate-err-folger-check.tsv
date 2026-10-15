@@ -1,0 +1,38 @@
+scene	line	page	finding	folger	folger_ids	rows
+2.1	58	96	our shared line	part	ftln-0326	Adr. Horn-mad, thou villain! / Dro. E. I mean not cuckold-mad;
+2.2	200	98	our shared line	part	ftln-0597 ftln-0598	Ant. S. Thou hast thine own form. / Dro. S. No, I am an ape.
+3.1	15	98	our shared line	part	ftln-0636 ftln-0637	Ant. E. I think thou art an ass. / Dro. E. Marry, so it doth appear
+3.1	32	99	our shared line	silent	ftln-0662	Dro. S. [Within] Mome, malt-horse, capon / coxcomb, idiot, patch!
+3.1	37	99	our shared line	silent	ftln-0671	Dro. S. [Within] Let him walk from whenc / he came, lest he catch cold on’s feet.
+3.1	39	99	our shared line	silent	ftln-0674	Dro. S. [Within] Right, sir; I’Il tell y / when, an you ’ll tell me wherefore.
+3.1	41	99	our shared line	silent	ftln-0677	Dro. S. (Within] Nor to-day here you mus / not; come again when you may.
+3.1	43	99	our shared line	silent	ftln-0681	Dro. S. [Withinl The porter for this tim / sir, and my name is Dromio.
+3.1	48	99	our shared line	silent	ftln-0690	Luce. [Within] What a coil is there, Dro / who are those at the gate?
+3.1	49	99	our shared line	part	ftln-0692 ftln-0693 ftln-0694	Dro. E. Let my master in, Luce. / Luce. [Within] Faith, no; he comes too l
+3.1	50	99	our shared line	part	ftln-0695	!-... so tell your master. / Dro. E. O Lord, I must laugh!
+3.1	52	99	our shared line	silent	ftln-0697	Luce. [Within)] Have at you with another / that's–When? can you tell?
+3.1	53	99	our shared line	silent	ftln-0699	Dro. S. IWithin] If thy name be call’d L / Luce, thou hast answer'd him well.
+3.1	57	99	our shared line	part	ftln-0706 ftln-0707	Ant. E. Thou baggage, let me in. / Luce. (Within] Can you tell for whose sa
+3.1	58	99	our shared line	part	ftln-0708 ftln-0709	Dro. E. Master, knock the door hard. / Luce. [Within] Let him knock till it ach
+3.1	60	99	our shared line	silent	ftln-0711	Luce. [Within] What needs all that, and  / pair of stocks in the town?
+3.1	61	99	our shared line	silent	ftln-0713	Adr. (Within] Who is that at the door th / keeps all this noise?
+3.1	62	99	our shared line	silent	ftln-0714	Dro. S. [Within] By my troth, your town  / troubled with unruly boys.
+3.1	64	99	our shared line	silent	ftln-0717	Adr. (Within] Your wife, sir knave! go g / you from the door.
+3.1	74	99	our shared line	silent	ftln-0735	Dro. S. [Within] Break any breaking here / and I’ll break your knave’s pate.
+3.1	77	99	our shared line	silent	ftln-0741	Dro. S. [Within] It seems thou want’st / breaking: out upon thee, hind!
+3.1	79	99	our shared line	silent	ftln-0744	Dro. S. [Within] Ay, when fowls have no / feathers and fish have no fin.
+3.2	60	100	our shared line	part	ftln-0854 ftln-0855 ftln-0856	Ant. S. Thy sister’s sister. / Luc. That's my sister. / Ant. S. No;
+3.2	69	100	our shared line	part	ftln-0865 ftln-0866	Give me thy hand. / Luc. O, soft, sir! hold you still :
+3.2	170	101	our shared line	part	ftln-0973 ftln-0974	Ang. Master Antipholus, — / Ant. S. Ay, that’s my name.
+4.2	11	103	our shared line	part	ftln-1120 ftln-1121	Luc. Then pleaded I for you. / Adr. And what said he?
+4.2	16	103	our shared line	part	ftln-1127	Adr. Didst speak him fair? / Luc. Have patience, I beseech.
+4.2	30	103	our shared line	part	ftln-1143 ftln-1144	Luc. How hast thou lost thy breath? / Dro. S. By running fast.
+4.4	114	105	our shared line	part	ftln-1405 ftln-1406	To make a rescue? / Of. Masters, let him go:
+4.4	137	105	our shared line	part	ftln-1431 ftln-1432	Off. Two hundred ducats. / Adr Say, how grows it due?
+5.1	58	106	our shared line	part	ftln-1515 ftln-1516	Adr. Why, so I did. / Abb. Ay, but not rough enough.
+5.1	60	106	our shared line	part	ftln-1518 ftln-1519	Abb. Haply, in private. / Adr. And in assemblies too.
+5.1	302	109	our shared line	silent	p-1769 p-1770	Æge. Dromio, nor thou? / Dro. E. No, trust me, sir, nor I.
+5.1	370	109	our shared line	part	ftln-1838 ftln-1839	Ant. S. I, gentle mistress. / Adr. And are not you my husband?
+3.1	49	99	folger pair split across our lines	differ	ftln-0694 ftln-0695	Dro. E. Let my master in, Luce. / Luce. [Within] Faith, no; he comes too l / !-... so tell your master. / Dro. E. O Lord, I must laugh!
+4.3	49	104	folger pair split across our lines	differ	ftln-1240 ftln-1241	Dro. S. Master, is this Mistress Satan? / Ant. S. It is the devil.
+4.4	149	106	folger pair split across our lines	differ	ftln-1444 ftln-1445	Let’s call more help to have them bound  / Of. Away! they’Il kill us.

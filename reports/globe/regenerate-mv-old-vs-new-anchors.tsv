@@ -1,0 +1,10 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in mv.xml (sha256 ef93942935b8ac17); not the shell's milestones or <l n>
+# transcribed anchors: 180; mapped (the row begins a line): 162; of those, carrying the same number: 158
+# in scenes that pass the gate: 162 mapped; agreeing: 158
+# unmapped (the row begins inside a line): 18; the P4's number is the containing line's for 3, the next line's for 15, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+3.2	280	disagree	279				He plies the duke at morning
+3.2	290	disagree	289				Than twenty times the value of
+3.2	310	disagree	309				To pay the petty debt twenty
+3.2	330	disagree	329				No rest be interposer 'twixt us

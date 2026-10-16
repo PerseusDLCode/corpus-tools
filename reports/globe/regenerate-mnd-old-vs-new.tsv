@@ -1,0 +1,171 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in mnd.xml (sha256 09adab49695eabf9); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	10	row begins a line	9			disagree	And then the moon, like to
+1.1	21	row begins a line	21			agree	The. Thanks, good Egeus: what's the
+1.1	40	row begins a line	40			agree	Consent to marry with Demetrius, I
+1.1	50	row begins a line	50			agree	By him imprinted and within his
+1.1	60	row begins a line	60			agree	Nor how it may concern my
+1.1	70	row begins a line	70			agree	You can endure the livery of
+1.1	80	row begins a line	80			agree	Ere I will yield my virgin
+1.1	90	row begins a line	90			agree	For aye austerity and single life.
+1.1	101	row begins a line	101			agree	My fortunes every way as fairly
+1.1	110	row begins a line	110			agree	Upon this spotted and inconstant man.
+1.1	120	row begins a line	120			agree	Which by no means we may
+1.1	130	row begins a line	130			agree	Her. Belike for want of rain,
+1.1	140	row begins a line	140			agree	Her. O hell! to choose love
+1.1	150	row begins a line	150			agree	Her. If then true lovers have
+1.1	160	row begins a line	160			agree	And she respects me as her
+1.1	170	row begins a line	170			agree	By his best arrow with the
+1.1	180	row begins a line	180			agree	Her. God speed, fair Helena! whither
+1.1	191	row begins a line	191			agree	The rest I'd give to be
+1.1	201	row begins a line	201			agree	Hel. None, but your beauty: would
+1.1	210	row begins a line	210			agree	Her silver visage in the watery
+1.1	221	row begins a line	221			agree	And good luck grant thee thy
+1.1	230	row begins a line	230			agree	And as he errs, doting on
+1.1	241	row begins a line	241			agree	So the boy Love is perjured
+1.1	250	row begins a line	250			agree	But herein mean I to enrich
+1.2	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	actors, and so grow to a
+1.2	50	row begins inside a line		49	50	unmapped (P4 number is the next line)	I have a beard coming. Quin.
+1.2	60	row begins a line	60			agree	Quin. Robin Starveling, the tailor. Star.
+1.2	71	row begins a line	71			agree	nothing but roaring. Bot. Let me
+1.2	91	row begins inside a line		90	91	unmapped (P4 number is the next line)	you must needs play Pyramus. Bot.
+2.1	10	row begins a line	10			agree	The cowslips tall her pensioners be:
+2.1	20	row begins a line	20			agree	For Oberon is passing fell and
+2.1	31	row begins a line	31			agree	Creep into acorn-cups and hide them
+2.1	50	row begins a line	50			agree	And on her wither'd dewlap pour
+2.1	61	row begins a line	61			agree	Tita. What, jealous Oberon! Fairies, skip
+2.1	70	row begins a line	70			agree	But that, forsooth, the bouncing Amazon,
+2.1	80	row begins a line	80			agree	With Ariadne and Antiopa? Tita. These
+2.1	90	row begins a line	90			agree	Contagious fogs; which falling in the
+2.1	100	row begins a line	100			agree	For lack of tread are undistinguishable:
+2.1	110	row begins a line	110			agree	An odorous chaplet of sweet summer
+2.1	120	row begins a line	120			agree	I do but beg a little
+2.1	130	row begins a line	130			agree	Which she, with pretty and with
+2.1	140	row begins a line	140			agree	If you will patiently dance in
+2.1	149	row begins a line	149			agree	Since once I sat upon a
+2.1	161	row begins a line	161			agree	But I might see young Cupid's
+2.1	170	row begins a line	170			agree	The juice of it on sleeping
+2.1	180	row begins a line	180			agree	Be it on lion, bear, or
+2.1	190	row begins a line	190			agree	The one I'll slay, the other
+2.1	200	row begins a line	200			agree	Or, rather, do I not in
+2.1	210	row begins a line	210			agree	Than to be used as you
+2.1	221	row begins a line	221			agree	It is not night when I
+2.1	231	row begins a line	231			agree	Apollo flies, and Daphne holds the
+2.1	240	row begins a line	240			agree	Your wrongs do set a scandal
+2.1	260	row begins a line	260			agree	A sweet Athenian lady is in
+2.2	10	row begins a line	10			agree	Thorny hedgehogs, be not seen; Newts
+2.2	30	row begins a line	30			agree	Be it ounce, or cat, or
+2.2	40	row begins a line	40			agree	For I upon this bank will
+2.2	50	row begins a line	50			agree	So then two bosoms and a
+2.2	61	row begins a line	61			agree	Thy love ne'er alter till thy
+2.2	80	row begins a line	80			agree	When thou wakest, let love forbid
+2.2	90	row begins a line	90			agree	Happy is Hermia, wheresoe'er she lies;
+2.2	109	row begins a line	109			agree	What though he love your Hermia?
+2.2	120	row begins a line	120			agree	Reason becomes the marshal to my
+2.2	130	row begins a line	130			agree	In such disdainful manner me to
+2.2	140	row begins a line	140			agree	Are hated most of those they
+2.2	150	row begins a line	150			agree	And you sat smiling at his
+3.1	51	row begins inside a line		50	51	unmapped (P4 number is the next line)	Thisby meet by moonlight. Snout. Doth
+3.1	80	row begins a line	80			agree	So near the cradle of the
+3.1	91	row begins a line	91			agree	Flu. Must I speak now? Quin.
+3.1	99	row begins a line	99			agree	I'll meet thee, Pyramus, at Ninny's
+3.1	110	row begins a line	110			agree	Through bog, through bush, through brake,
+3.1	130	row begins a line	130			agree	The throstle with his note so
+3.1	141	row begins a line	141			agree	Mine ear is much enamour'd of
+3.1	150	row begins inside a line		149	150	unmapped (P4 number is the next line)	friends. Nay, I can gleek upon
+3.1	160	row begins a line	160			agree	I'll give thee fairies to attend
+3.1	169	row begins a line	169			agree	Feed him with apricocks and dewberries,
+3.1	180	row begins a line	180			agree	Moth. Hail! Mus. Hail! Bot. I
+3.1	189	row begins a line	189			agree	Peas. Peaseblossom. Bot. I pray you,
+3.1	201	row begins inside a line		201	202	unmapped (P4 number is the containing line)	tardseed. Tita. Come, wait upon him;
+3.2	10	row begins a line	10			agree	That work for bread upon Athenian
+3.2	20	row begins a line	20			agree	As wild geese that the creeping
+3.2	30	row begins a line	30			agree	Some sleeves, some hats, from yielders
+3.2	40	row begins a line	40			agree	That, when he waked, of force
+3.2	50	row begins a line	50			agree	The sun was not so true
+3.2	61	row begins a line	61			agree	As yonder Venus in her glimmering
+3.2	70	row begins a line	70			agree	And hast thou kill'd him sleeping?
+3.2	80	row begins a line	80			agree	And from thy hated presence part
+3.2	90	row begins a line	90			agree	Of thy misprision must perforce ensue
+3.2	100	row begins a line	100			agree	Puck. I go, I go; look
+3.2	121	row begins a line	121			agree	That befall preposterously. Enter Lysander and
+3.2	131	row begins a line	131			agree	Weigh oath with oath, and you
+3.2	139	row begins a line	139			agree	Crystal is muddy. O, how ripe
+3.2	150	row begins a line	150			agree	But you must join in souls
+3.2	160	row begins a line	160			agree	Would so offend a virgin, and
+3.2	170	row begins a line	170			agree	If e'er I loved her, all
+3.2	180	row begins a line	180			agree	It pays the hearing double recompense.
+3.2	191	row begins a line	191			agree	Her. You speak not as you
+3.2	200	row begins a line	200			agree	When we have chid the hasty-footed
+3.2	210	row begins a line	210			agree	But yet an union in partition;
+3.2	219	row begins a line	219			agree	Though I alone do feel the
+3.2	220	row begins a line	220			agree	Her. I am amazed at your
+3.2	230	row begins a line	230			agree	And tender me, forsooth, affection, But
+3.2	241	row begins a line	241			agree	If you have any pity, grace,
+3.2	250	row begins a line	250			agree	Thy threats have no more strength
+3.2	260	row begins a line	260			agree	Lys. Hang off, thou cat, thou
+3.2	270	row begins a line	270			agree	Although I hate her, I'll not
+3.2	280	row begins a line	280			agree	Be certain, nothing truer; 'tis no
+3.2	291	row begins a line	291			agree	Between our statures; she hath urged
+3.2	300	row begins a line	300			agree	Let her not hurt me: I
+3.2	310	row begins a line	310			agree	I told him of your stealth
+3.2	320	row begins inside a line		320	321	unmapped (P4 number is the containing line)	Hel. With Demetrius. Lys. Be not
+3.2	330	row begins inside a line		330	331	unmapped (P4 number is the containing line)	Dem. You are too officious In
+3.2	340	row begins inside a line		340	341	unmapped (P4 number is the containing line)	Hel. I will not trust you,
+3.2	350	row begins a line	350			agree	And so far blameless proves my
+3.2	361	row begins a line	361			agree	Then stir Demetrius up with bitter
+3.2	370	row begins a line	370			agree	When they next wake, all this
+3.2	380	row begins a line	380			agree	And yonder shines Aurora's harbinger: At
+3.2	390	row begins a line	390			agree	And, like a forester, the groves
+3.2	400	row begins a line	400			agree	Here comes one. Re-enter LYSANDER. Lys.
+3.2	410	row begins a line	410			agree	I'll whip thee with a rod;
+3.2	420	row begins a line	420			agree	I'll find Demetrius and revenge this
+3.2	421	row begins a line	421			agree	Puck. Ho, ho, ho! Coward, why
+3.2	430	row begins a line	430			agree	By day's approach look to be
+3.2	440	row begins a line	440			agree	Cupid is a knavish lad, Thus
+3.2	460	row begins a line	460			agree	In your waking shall be shown:
+4.1	19	row begins a line	19			agree	Mus. Ready. Bot. Give me your
+4.1	39	row begins a line	39			agree	Tita. I have a venturous fairy
+4.1	50	row begins a line	50			agree	O, how I love thee! how
+4.1	70	row begins a line	70			agree	From off the head of this
+4.1	80	row begins a line	82			disagree	Methought I was enamour'd of an
+4.1	90	row begins a line	90			agree	Obe. Sound, music! Come, my queen,
+4.1	110	row begins a line	110			agree	And since we have the vaward
+4.1	120	row begins a line	128			disagree	Slow in pursuit, but match'd in
+4.1	141	row begins a line	149			disagree	That hatred is so far from
+4.1	150	row begins a line	158			disagree	Without the peril of the Athenian
+4.1	170	row begins a line	178			disagree	But, like in sickness, did I
+4.1	180	row begins a line	188			disagree	Our purposed hunting shall be set
+4.2	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	any handicraft man in Athens. Quin.
+5.1	11	row begins a line	11			agree	Sees Helen's beauty in a brow
+5.1	20	row begins a line	20			agree	It comprehends some bringer of that
+5.1	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Lys. More than to us Wait
+5.1	40	row begins a line	40			agree	What masque? what music? How shall
+5.1	50	row begins a line	50			agree	That is an old device; and
+5.1	61	row begins a line	61			agree	Phil. A play there is, my
+5.1	70	row begins a line	70			agree	The passion of loud laughter never
+5.1	81	row begins inside a line		81	82	unmapped (P4 number is the containing line)	The. I will hear that play;
+5.1	89	row begins a line	89			agree	The. The kinder we, to give
+5.1	111	row begins a line	111			agree	That is the true beginning of
+5.1	141	row begins a line	141			agree	The trusty Thisby, coming first by
+5.1	161	row begins a line	161			agree	Did whisper often very secretly. This
+5.1	171	row begins a line	171			agree	Pyr. O grim-look'd night! O night
+5.1	180	row begins a line	180			agree	But what see I? No Thisby
+5.1	190	row begins a line	190			agree	This. O wall, full often hast
+5.1	199	row begins a line	199			agree	This. And I like Helen, till
+5.1	211	row begins inside a line		210	211	unmapped (P4 number is the next line)	so wilful to hear without warning.
+5.1	231	row begins a line	231			agree	conscience. Dem. The very best at
+5.1	260	row begins a line	260			agree	Lys. Proceed, Moon. Moon. All that
+5.1	270	row begins a line	270			agree	Dem. Well roared, Lion. The. Well
+5.1	300	row begins a line	300			agree	Come, tears, confound; Out, sword, and
+5.1	309	row begins a line	309			agree	Tongue, lose thy light; Moon, take
+5.1	321	row begins a line	321			agree	she comes; and her passion ends
+5.1	331	row begins a line	331			agree	This. Asleep, my love? What, dead,
+5.1	340	row begins a line	340			agree	Are gone, are gone: Lovers, make
+5.1	371	row begins a line	371			agree	Lovers, to bed; 'tis almost fairy
+5.1	390	row begins a line	390			agree	And we fairies, that do run
+5.1	410	row begins a line	410			agree	To the best bride-bed will we,
+5.1	420	row begins a line	420			agree	Despised in nativity, Shall upon their
+5.1	430	row begins a line	430			agree	Puck. If we shadows have offended,
+5.1	440	row begins a line	440			agree	Now to 'scape the serpent's tongue,

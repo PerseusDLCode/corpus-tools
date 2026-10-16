@@ -1,0 +1,237 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+161	miun/kraken	1	18	replace	palace	salace	palace ef	
+161	miun/kraken	1	22	replace	for	four	four	same
+161	miun/kraken	1	38	replace	[Exit	LExit	[Exit	
+161	miun/kraken	2	1	delete		DREAM. PERSONÆ. HERMIA, daughter to Egeus, in love with Lysander. HELENA, in love with Demetrius OBERON, king of fairies. TITANIA, queen of fairies. or Robin Goodfellow. PEASEBLOSSOM, CORWEB, fairies. MUSTARDSEED, Other fairies attending their King and Attendants on Theseus and Hippolyta. SCENE Athens, and a wood near it.	DREAM. PERSONÆ. HERMIA, daughter to Egeus, in love with Lysander. HELENA, in love with Demetrius. OBERON, king of the fairies. TITANIA, queen of the fairies. PUCK, or Robin Goodfellow. PEASEBLOSSOM, COBWEB, fairies. MoTH, MUSTARDSEED, Other fairies attending their King and Queen. Attendants on Theseus and Hippolyta. SCENE Athens, and a wvood near it.	
+161	miun/kraken	2	22	replace	messengers	messenjers	swectmeats, messengers	
+162	miun/kraken	1	16	replace	yield	vield	yield	
+162	miun/kraken	1	29	replace	yield,	vield	yield	
+162	miun/kraken	1	45	replace	I'll	I’Il	I’Il	same
+162	miun/kraken	1	58	replace	yourself	vourself	yourself	
+162	miun/kraken	2	40	replace	night;	nignt;	night;	
+162	miun/kraken	2	62	replace	tongue's sweet	tongue ssweet	tongue’s sweet	
+162	miun/kraken	2	65	replace	wheat is	wheatis	wheat is	
+162	miun/kraken	2	66	replace	favor	favour	favour	same
+163	miun/kraken	1	4	replace	I'd	I’ld	I’ld	same
+163	miun/kraken	1	26	replace	Phoebe	Phœbe	Phœbe	same
+163	miun/kraken	1	30	delete		we	we	same
+163	miun/kraken	1	41	replace	[Exit	LExit	[Exit	
+163	miun/kraken	1	43	replace	[Exit.	IExit.	[Exit.	
+163	miun/kraken	2	21	replace	you.	vou.	you.	
+163	miun/kraken	2	27	replace	tyrant?	tvrant?	tyrant	
+163	miun/kraken	2	28	replace	gal- lant	gallant	gallant	same
+163	miun/kraken	2	33	replace	humor	humour	humour	same
+163	miun/kraken	2	52	delete		me	me	same
+163	miun/kraken	2	57	replace	I'll	I’Il	I’Il	same
+163	miun/kraken	2	68	replace	Pyramus'father:	Pyramus' father:	Pyramus' father:	same
+164	miun/kraken	1	31	replace	straw-color	strawcolour	strawcolour	same
+164	miun/kraken	1	33	replace	French- crown-color	French-crowncolour	French-crowncolour	same
+164	miun/kraken	1	35	replace	bare- faced.	barefaced.	barefaced.	same
+164	miun/kraken	1	37	replace	you,	vou,	you,	
+164	miun/kraken	1	51	replace	ACT II	ACTII.	ACT II.	
+164	miun/kraken	1	52	replace	wood	wcod	wood	
+164	miun/kraken	1	53	replace	PUCK.	PUCR.	Puck.	
+164	miun/kraken	1	65	replace	favors,	favours,	favours,	same
+164	miun/kraken	1	66	replace	savors:	savours:	savours:	same
+164	miun/kraken	2	25	replace	viilagery;	villagery;	villagery;	same
+164	miun/kraken	2	26	replace	labor	labour	labour	same
+164	miun/kraken	2	52	replace	with	vvith	wvith	
+164	miun/kraken	2	53	replace	with	vvith	vvith	same
+165	miun/kraken	1	7	replace	AEgle	Ægle	Ægle	same
+165	miun/kraken	2	10	replace	[Exit	LExit	IE xit	
+165	miun/kraken	2	10	replace	with	voith	with	
+165	miun/kraken	2	14	replace	remembrest	rememberest	rememberest	same
+165	miun/kraken	2	43	replace	I'll	I’Il	I’Il	same
+165	miun/kraken	2	44	replace	[Exit.	LExit.	LExit.	same
+165	miun/kraken	2	54	replace	I'll	I’Il	I’ll	
+165	miun/kraken	2	60	replace	I'll	I’Il	I’Il	same
+166	miun/kraken	1	30	replace	I'll	I’Il	I’Il	same
+166	miun/kraken	1	38	replace	valor	valour	valour	same
+166	miun/kraken	1	47	replace	[Exit	IExit	[Exit	
+166	miun/kraken	1	48	replace	I'll	I’Il	I’Il	same
+166	miun/kraken	1	53	replace	PUCK.	PUCR.	PUCk.	
+166	miun/kraken	1	65	replace	I'll	I’Il	I’Il	same
+166	miun/kraken	2	9	replace	you	your	your	same
+166	miun/kraken	2	10	replace	[Exeunt.	IExeunt.	(Exeunt.	
+166	miun/kraken	2	12	replace	with	vith	wvith	
+166	miun/kraken	2	40	replace	Fai.	A	A Fairy.	
+166	miun/kraken	2	42	replace	sleeps.	sleeds.	slecfs.	
+166	miun/kraken	2	53	replace	[Exit.	IExit.	IExit.	same
+166	miun/kraken	2	55	replace	is	in	in	same
+166	miun/kraken	2	58	replace	We'll	We’Il	We ’Il	
+167	miun/kraken	1	17	replace	lying	Iying	lying	
+167	miun/kraken	1	26	delete		6r	Evs.	
+167	miun/kraken	1	50	replace	[Exit.	IExit.	IExit.	same
+167	miun/kraken	1	62	replace	blesssed	blessed	blessed	same
+167	miun/kraken	2	7	delete		roo		
+167	miun/kraken	2	44	replace	another therefore	anothertherefore	another therefore	
+167	miun/kraken	2	44	replace	[Exit.	IExit.	[Exit.	
+167	miun/kraken	2	55	replace	honor	honour	honour	same
+167	miun/kraken	2	69	replace	I'll	I’Il	I’ll	
+168	miun/kraken	1	2	replace	lying	lving	lying aslees.	
+168	miun/kraken	1	15	replace	him- self;	himself;	himself;	same
+168	miun/kraken	1	25	delete		them	them	same
+168	miun/kraken	1	30	replace	writ- ten	written	written	same
+168	miun/kraken	1	35	replace	us!--a	us !–a	us !—a	
+168	miun/kraken	1	44	replace	defect,--'Ladies,' --or	defect.— Ladies,––or	defect,— Ladies,’–or	
+168	miun/kraken	1	45	replace	you,'--or	you, –or	you, –or	same
+168	miun/kraken	1	46	replace	you,'--or	you,–or	you, –or	
+168	miun/kraken	1	46	replace	you, --not	you,–not	you,–not	same
+168	miun/kraken	1	50	replace	in- deed	indeed	indeed	same
+168	miun/kraken	1	59	replace	moon- shine.	moonshine.	moonshine.	same
+168	miun/kraken	2	12	replace	re- hearse	rehearse	rehearse	same
+168	miun/kraken	2	16	replace	PUCK	PUCE	Puex	
+168	miun/kraken	2	20	replace	I'll	I’Il	I’Il	same
+168	miun/kraken	2	23	replace	savors	savours	savours	same
+168	miun/kraken	2	25	replace	Odors, odors.	Odours, odours.	Odours, odours.	same
+168	miun/kraken	2	26	replace	---odors savors	odours savours	odours savours	same
+168	miun/kraken	2	31	replace	[Exit.	IExit.	IExit.	same
+168	miun/kraken	2	38	replace	color	colour	cciour	
+168	miun/kraken	2	42	replace	I'll	I'Il	I’ll	
+168	miun/kraken	2	54	replace	[Exeunt	LExeunt	LE xeunt	
+168	miun/kraken	2	56	replace	I'll	I’Il	I’Il	same
+168	miun/kraken	2	60	replace	I'll	I’Il	I’Il	same
+168	miun/kraken	2	65	replace	[Exit.	IExit.	LExit.	
+169	miun/kraken	1	2	replace	Snout.	S'nout.	Snout.	
+169	miun/kraken	1	4	replace	ass- head	ass-head	ass-head	same
+169	miun/kraken	1	8	replace	[Exit.	IExit.	[Exit.	
+169	miun/kraken	1	20	replace	[Sings]	[Singsl	[Singsl	same
+169	miun/kraken	1	35	replace	to- gether	together	together	same
+169	miun/kraken	1	37	replace	neighbors	neighbours	neighbours	same
+169	miun/kraken	1	48	replace	I'll	I’Il	I’ll	
+169	miun/kraken	2	7	replace	mortall	mortal!	mortal!	same
+169	miun/kraken	2	9	replace	Moth.		Moth.	
+169	miun/kraken	2	11	replace	worship's	worships	worships	same
+169	miun/kraken	2	12	replace	beeseech	beseech	beseech	same
+169	miun/kraken	2	14	replace	acquaint- ance,	acquaintance,	acquaintance,	same
+169	miun/kraken	2	19	replace	you,	vou,	you,	
+169	miun/kraken	2	26	replace	giant- like	giant-like	giant-like	same
+169	miun/kraken	2	30	replace	Mus- tardseed.	Mustardseed.	Mustardseed.	same
+169	miun/kraken	2	37	replace	[Exeunt.	LExeunt.	[Exeunt.	
+169	miun/kraken	2	43	replace	PUCK.	PUCE.	PUCk.	
+170	miun/kraken	1	15	replace	Puck.		Puck.	
+170	miun/kraken	1	25	replace	use thee	usethee	use thee	
+170	miun/kraken	1	33	replace	I'll	I ’Il	I ’Il	same
+170	miun/kraken	1	42	replace	you,	vou,	you,	
+170	miun/kraken	2	2	replace	[Exit.	IExit.	[Exit.	
+170	miun/kraken	2	10	replace	down	dovn	dovmn	
+170	miun/kraken	2	10	replace	sleeps.	sleets.	sleeps.	
+170	miun/kraken	2	26	delete		I00		
+170	miun/kraken	2	27	replace	[Exit.	IExit.	IExit.	same
+170	miun/kraken	2	30	replace	eye.	eve.	eye.	
+170	miun/kraken	2	37	replace	Puck.		Puck.	
+170	miun/kraken	2	48	replace	befall	befal	befal	same
+170	miun/kraken	2	59	replace	devilish holy	devilish-holy	devilish-holy	same
+170	miun/kraken	2	60	replace	you	ycu	you	
+171	miun/kraken	1	3	replace	[Awaking]	[Awakingl	[Awakingl	same
+171	miun/kraken	1	5	replace	eye?	eyne?	eyne?	same
+171	miun/kraken	1	19	replace	You	Y ou	You	
+171	miun/kraken	1	62	replace	you	yon	yon	same
+171	miun/kraken	1	65	replace	bear	boar	bear	
+171	miun/kraken	2	9	replace	us,--O,	us, —O,	us,— O,	
+171	miun/kraken	2	51	replace	well: 'tis	well:'tis	well: ’tis	
+171	miun/kraken	2	65	replace	Dem.		Dem.	
+172	trent/kraken	1	18	replace	I'll	I’Il	I’Il	same
+172	trent/kraken	1	39	replace	i'faith!	i’'faith!	i'faith!	
+172	trent/kraken	1	44	replace	that	'hat	that	
+172	trent/kraken	2	36	replace	I'll	I’Il	I’Il	same
+172	trent/kraken	2	37	replace	Lysander and	Lysanderand	Lysanderand	same
+172	trent/kraken	2	46	replace	This is	Thisis	Thisis	same
+172	trent/kraken	2	50	replace	garment	garments	garment	
+173	trent/kraken	1	8	replace	I'll	I’Il	I’ll	
+173	trent/kraken	1	10	replace	monster's	monster' s	monster’s	
+173	trent/kraken	1	26	replace	the	tne	the	
+173	trent/kraken	1	26	replace	fiery red,	fiery-red,	fiery-red,	same
+173	trent/kraken	1	59	replace	[Exeunt.	IExeunt.	IExeunt.	same
+173	trent/kraken	1	60	replace	LYSANDER.	LVSANDER.	LYSANDER.	
+173	trent/kraken	2	3	replace	PUCK	Pucx	PUCE	
+173	trent/kraken	2	17	replace	[Lies	LLies	ILies dovn	
+173	trent/kraken	2	25	replace	down	dovn	LLies down	
+173	trent/kraken	2	38	replace	down	dovon	dovn	
+173	trent/kraken	2	38	replace	sleeps.	sleebs.	sleens.	
+173	trent/kraken	2	56	replace	[Exit.	IExit.	IExit.	same
+173	trent/kraken	2	61	replace	COBWEB,	CORWEB,	COBWEB,	
+174	miun/kraken	1	15	replace	honey- bag,	honey-bag,	honey-bag,	same
+174	miun/kraken	1	19	replace	Mus- tardseed.	Mustardseed.	Mustardseed.	same
+174	miun/kraken	1	24	replace	monsieur;	mounsieur;	mounsieur;	same
+174	miun/kraken	1	24	replace	mar- vellous	marvellous	marvellous	same
+174	miun/kraken	1	46	replace	[Exeunt	LExeunt	[Exeunt	
+174	miun/kraken	1	48	replace	Gentle	Gently	Gently	same
+174	miun/kraken	1	52	replace	PUCK.	PUCE.	PUCK.	
+174	miun/kraken	1	53	replace	[Advancing]	[Advancingl	[Advancingl	same
+174	miun/kraken	1	54	replace	See'st	See' st	See’st	
+174	miun/kraken	1	57	replace	favors from	favours for	favours for	same
+174	miun/kraken	1	64	replace	Like	Lilce	Like	
+174	miun/kraken	2	40	delete				
+174	miun/kraken	2	47	replace	[Exeunt.	IExeunt.	LE xeunt.	
+174	miun/kraken	2	48	replace	winded within.	vinded witain.	zoinded within.	
+174	miun/kraken	2	49	replace	train.	traux.	train.	
+174	miun/kraken	2	50	replace	you,	ycu,	you,	
+174	miun/kraken	2	56	replace	[Exit	IExit	[Exit	
+175	trent/kraken	1	23	replace	shouts within.	shoutwithin.	shout voithin.	
+175	trent/kraken	1	28	delete		G		
+175	trent/kraken	1	57	replace	gaud	gawd	gaud	
+175	trent/kraken	2	28	replace	[Exeunt.	LExeunt.	IExeunt.	
+175	trent/kraken	2	29	replace	[Awaking]	[Awakingl	[Awaking]	
+175	trent/kraken	2	32	replace	Star- veling!	Starveling!	Starveling!	same
+175	trent/kraken	2	38	replace	Me- thought	Methought	Methought	same
+175	trent/kraken	2	47	replace	be- fore	before	before	same
+175	trent/kraken	2	49	replace	gracious,	gracious,t	gra¬ [cious,	
+176	miun/kraken	1	10	replace	I'll	I 'll	I’Il	
+176	miun/kraken	1	22	delete		that	that	same
+176	miun/kraken	1	27	replace	pre- ferred.	preferred.	preferred.	same
+176	miun/kraken	1	29	replace	pair	pare	pare	same
+176	miun/kraken	1	34	replace	[Exeunt. ACT V	IExeunt. ACTV.	(Exeunt. ACTV.	
+176	miun/kraken	1	39	replace	Hip.		Hip.	
+176	miun/kraken	2	6	replace	and	ared	and	
+176	miun/kraken	2	33	replace	We'll	We’Il	We’ll	
+176	miun/kraken	2	35	replace	[Reads] 'The	[Reads)]“The	[Reads) “The	
+176	miun/kraken	2	37	replace	play'd	play d	play’d	
+176	miun/kraken	2	39	replace	Reads	IReads]	(Readsl	
+176	miun/kraken	2	44	replace	Reads 'A	[Reads]A	(Reads]“A	
+176	miun/kraken	2	47	delete		t		
+176	miun/kraken	2	63	replace	labor'd	labour'd	labour'd	same
+177	miun/kraken	1	2	replace	Unless	U'nless	Unless	
+177	miun/kraken	1	9	replace	[Exit Philostrate.	IExit Phalostrate.	Exit Philostrate.	
+177	miun/kraken	1	18	delete		9o		
+177	miun/kraken	1	20	delete		t	4	
+177	miun/kraken	1	28	delete		r00		
+177	miun/kraken	1	30	delete		as	as	same
+177	miun/kraken	1	60	replace	PYRAMUS	PVRAMUS	PYRAMUS	
+177	miun/kraken	1	60	replace	WALL,MOONSHINE,	MOONSHINE,	WALL, MOONSHINE,	
+177	miun/kraken	2	25	replace	[Exeunt	LExeunt	LExeunt	same
+177	miun/kraken	2	25	replace	Lion,and	and	Lion, and	
+177	miun/kraken	2	45	replace	Re-enter	Enter	Re-enter	
+177	miun/kraken	2	47	replace	grim-look'd	grim-loole'd	grim-look’d	
+177	miun/kraken	2	57	replace	[Wall	IWall	LWall	
+177	miun/kraken	2	57	replace	up	u5	ug	
+177	miun/kraken	2	62	replace	Curst	Cursed	Cursed	same
+177	miun/kraken	2	66	replace	'De- ceiving	“Deceiving	“Deceiving	same
+178	miun/kraken	1	16	replace	This.		This.	
+178	miun/kraken	1	25	replace	[Exeunt	IE xeunt	[Exaunt	
+178	miun/kraken	1	28	replace	[Exit.	LExit.	[Æxit.	
+178	miun/kraken	1	33	replace	Hip.		Hip.	
+178	miun/kraken	1	40	replace	excel- lent	excellent	excellent	same
+178	miun/kraken	1	43	delete		Enter and MOONSHINE.	Re-enter LION and MOONSHINE.	
+178	miun/kraken	1	58	replace	valor.	valour.	valour.	same
+178	miun/kraken	1	60	replace	valor can- not	valour cannot	valour cannot	same
+178	miun/kraken	1	64	replace	valor;	valour;	valour;	same
+178	miun/kraken	2	12	replace	i'	j'	i'	
+178	miun/kraken	2	18	replace	dis- cretion,	discretion,	discretion,	same
+178	miun/kraken	2	25	replace	lan- thorn;	lanthorn;	lanthorn;	same
+178	miun/kraken	2	28	replace	Re-enter THISBE.	Enter THISRE.	Re-enter THISBE.	
+178	miun/kraken	2	31	replace	[Thisbe	IThisbe	[Thisbe	
+178	miun/kraken	2	40	replace	Re-enter PYRAMUS.	Enter PVRAMUS.	Re-enter PyRAMUS.	
+178	miun/kraken	2	45	replace	true	truest	truest	same
+178	miun/kraken	2	60	replace	Hip.		His.	
+179	miun/kraken	1	12	replace	[Dies.	IDies.	[Dies.	
+179	miun/kraken	1	19	replace	Hip.		Hip.	
+179	miun/kraken	1	19	replace	be- fore	before	before	same
+179	miun/kraken	1	24	replace	Hip.		Hip.	
+179	miun/kraken	1	54	replace	[Stabs	IStabs	[Stabs	
+179	miun/kraken	1	57	replace	[Dies.	IDies.	IDies.	same
+179	miun/kraken	1	61	replace	up]	uxl	[tarting up]	
+179	miun/kraken	2	14	replace	PUCK.	PUCR.	PUCK.	
+179	miun/kraken	2	35	replace	wlith their	vith theix	with their	
+179	miun/kraken	2	46	replace	[Song	ISong	[Song	
+180	miun/kraken	1	4	replace	[Exeunt	LExeunt	IE xeunt	

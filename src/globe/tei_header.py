@@ -42,6 +42,7 @@ PLAY_TITLES = {
     "mm": "Measure for Measure",
     "err": "The Comedy of Errors",
     "lll": "Love's Labor's Lost",  # as its __cts__.xml names it
+    "mnd": "A Midsummer Night's Dream",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -73,6 +74,9 @@ COPY_TEXT = {
     # Introduction printed 56 (CHOCR index 66), V.2 ends on 83 (index 93);
     # The Comedy of Errors' introduction is 84 (printed = index - 10).
     "lll": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="56-83"),
+    # Introduction printed 125 (CHOCR index 135), V.1 ends on 145 (index
+    # 155); 2 Henry VI's introduction is 146 (printed = index - 10).
+    "mnd": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="125-145"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

@@ -384,3 +384,36 @@ def test_a_one_word_row_spelt_otherwise_in_the_p4_starts_at_the_word_left_over()
         rs = rows(middle, prefix_len)
         align_play.infer_unmatched(rs, ts)
         assert rs[1].start is None
+
+
+def test_a_speech_spelt_otherwise_in_the_p4_starts_at_the_words_left_over():
+    """A Midsummer Night's Dream III.1, p.168: "Quin. Odours, odours." does
+    not match the P4's "Odors, odors.". A row with a speaker prefix takes the
+    words left over when they open a speech, one for one and each spelt
+    alike; not the end of a word broken under a prefix set across two rows
+    ("Quin. and" / "Mart. pany.", Titus I.1, p.691)."""
+    from globe import align_play
+    from globe.tokens import Token
+
+    def toks(*ws):
+        return [Token(i, w.strip("@"), w, "speaker" if w.startswith("@") else "speech", None, "text", 0,
+                      None, "3.1") for i, w in enumerate(ws)]
+
+    def rows(middle, last, nxt):
+        a = Row(0, 0, 0, [Word(0, 1, w) for w in "Bot. savors sweet".split()], prefix_len=1)
+        b = Row(0, 1, 0, [Word(0, 1, w) for w in middle.split()], prefix_len=1)
+        c = Row(0, 2, 0, [Word(0, 1, w) for w in "Bot. odors savors sweet".split()], prefix_len=1)
+        a.start, a.extra["last"], c.start = 1, last, nxt
+        return [a, b, c]
+
+    ts = toks("@bot", "savors", "sweet", "@quin", "odors", "odors", "@bot", "odors", "savors", "sweet")
+    rs = rows("Quin. Odours, odours.", 2, 7)
+    align_play.infer_unmatched(rs, ts)
+    assert (rs[1].start, rs[1].extra["last"], rs[1].speech) == (4, 5, True)
+    rs = rows("Quin. Odours.", 2, 7)  # one word for two
+    align_play.infer_unmatched(rs, ts)
+    assert rs[1].start is None
+    ts = toks("@quin", "and", "@mart", "and", "shall", "accompany", "@tit", "and")
+    rs = rows("Mart. pany.", 4, 7)  # "accompany" ends a speech, it does not open one
+    align_play.infer_unmatched(rs, ts)
+    assert rs[1].start is None

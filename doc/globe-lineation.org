@@ -13,8 +13,9 @@ frozen at its tag =v1.0= as the record of how it was built (see
 
 King Lear, Antony and Cleopatra, Titus Andronicus, Richard II, Two
 Gentlemen of Verona, Measure for Measure, The Comedy of Errors,
-Love's Labour's Lost and A Midsummer Night's Dream are built and published (canonical-engLit =mvp=,
-=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd}/shakespeare.*.globe.xml=). Titus and
+Love's Labour's Lost, A Midsummer Night's Dream and The Merchant of
+Venice are built and published (canonical-engLit =mvp=,
+=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv}/shakespeare.*.globe.xml=). Titus and
 Richard II were the cold tests: Titus passed 22 of 24 pages with the
 classifier unchanged and needed only table rows; Richard II passed 22 of
 26 and needed two turnover rules and two new table kinds (=lacuna=,
@@ -28,7 +29,8 @@ Labour's Lost passed 26 of 26 with nineteen rows after two rule changes
 rows; =separate= rows that name lost words, or every repeat on a page);
 Errors was republished with them, one milestone moved one word. A Midsummer Night's Dream passed 20 of 20
 with eleven rows after one rule change (a table kind =inset=, for songs
-whose every row is a line, and two aligner rules). The open tasks are in canonical-engLit =doc/agenda.org= on
+whose every row is a line, and two aligner rules). The Merchant of Venice passed 24 of 24 with six
+rows and no rule change. The open tasks are in canonical-engLit =doc/agenda.org= on
 =mvp=.
 
 * The method

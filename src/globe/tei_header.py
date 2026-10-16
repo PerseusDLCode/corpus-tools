@@ -43,6 +43,7 @@ PLAY_TITLES = {
     "err": "The Comedy of Errors",
     "lll": "Love's Labor's Lost",  # as its __cts__.xml names it
     "mnd": "A Midsummer Night's Dream",
+    "mv": "The Merchant of Venice",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -77,6 +78,9 @@ COPY_TEXT = {
     # Introduction printed 125 (CHOCR index 135), V.1 ends on 145 (index
     # 155); 2 Henry VI's introduction is 146 (printed = index - 10).
     "mnd": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="125-145"),
+    # Introduction printed 331 (contents: 331; CHOCR index 341), V.1 ends on 355
+    # (index 365); King Henry IV Part I's introduction is 356 (printed = index - 10).
+    "mv": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="331-355"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

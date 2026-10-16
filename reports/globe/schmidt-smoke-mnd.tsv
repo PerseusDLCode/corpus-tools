@@ -1,0 +1,1442 @@
+# schmidt_smoke.py; sources: shakespeare.mnd.globe.xml sha256 f0112443c2d96514; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
+Abate	Abate,	3.2.432	Mids. III, 2, 432	headword on cited line							abate thy hours shine comforts from the east
+Abjure	Abjure,	1.1.65	Mids. I, 1, 65	headword on cited line							either to die the death or to abjure
+Abound	Abound,	2.1.105	Mids. II, 1, 105	quotation on cited line						diseases do abound	that rheumatic diseases do abound
+Aby	Aby,	3.2.175	Mids. III, 2, 175	quotation on cited line, with differences			100%		to thy peril	lest thou aby it dear,	lest to thy peril thou aby it dear
+Accent	Accent,	5.1.97	Mids. V, 97	quotation on cited line						throttle their practised accent in their fears,	throttle their practised accent in their fears
+Ace	Ace,	5.1.312	Mids. V, 312	headword on cited line							no die but an ace for him for he is
+Acheron	Acheron,	3.2.357	Mids. III, 2, 357	headword on cited line							with drooping fog as black as acheron
+Acorn	Acorn,	2.1.31	Mids. II, 1, 31	headword on cited line							creep into acorncups and hide them there
+Acorn	Acorn,	3.2.330	III, 2, 330	headword on cited line							you bead you acorn you are too officious
+Adamant	Adamant,	2.1.195	Mids. II, 1, 195	quotation on cited line						you draw me, you hardhearted adamant	you draw me you hardhearted adamant
+Address	Address,	2.2.143	Mids. II, 2, 143	quotation on cited line, with differences			88%	honour	honor	address your love and might to honour Helen,	and all my powers address your love and might
+Address	Address,	5.1.107	Mids. V, 107	headword off by 1	5.1.106	-1					let him approach
+Admirable	Admirable,	5.1.27	Mids. V, 27	quotation on cited line						strange and admirable	but howsoever strange and admirable
+Aegle	Aegle	2.1.79	Mids. II, 1, 79	headword on cited line							and make him with fair aegle break his faith
+After-supper	After-supper,	5.1.34	Mids. V, 34	headword on cited line							between our aftersupper and bedtime
+Against2	Against,	3.2.99	Mids. III, 2, 99	quotation on cited line						I'll charm his eyes against she do appear,	ill charm his eyes against she do appear
+Aggravate	Aggravate,	1.2.84	Mids. I, 2, 84	quotation on cited line						I will aggravate my voice,	will aggravate my voice so that i will roar you
+Aim1	Aim,	2.1.157	Mids. II, 1, 157	quotation on cited line						a certain aim he took at . . .	cupid all armed a certain aim he took
+Air3	Air,	1.1.183	Mids. I, 1, 183	headword on cited line							your eyes are lodestars and your tongues sweet air
+Airy	Airy,	3.1.164	Mids. III, 1, 164	quotation on cited line						like an airy spirit,	that thou shalt like an airy spirit go
+Airy	Airy,	5.1.16	Mids. V, 16	quotation on cited line						airy nothing,	turns them to shapes and gives to airy nothing
+Ale	Ale,	2.1.50	Mids. II, 1, 50	headword on cited line							and on her withered dewlap pour the ale
+Almanac	Almanac,	3.1.54	Mids. III, 1, 54	prose row break	3.1.55	1					a calendar a calendar look in the
+Altar	Altar,	1.1.89	Mids. I, 1, 89	headword on cited line							or on dianas altar to protest
+Amazedly	Amazedly,	4.1.151	Mids. IV, 1, 151	quotation on cited line						I shall reply a., half sleep, half waking,	my lord i shall reply amazedly
+Amazon	Amazon,	2.1.70	Mids. II, 1, 70	headword on cited line							but that forsooth the bouncing amazon
+Amen	Amen,	2.2.62	Mids. II, 2, 62	headword on cited line							amen amen to that fair prayer say i
+Amen	Amen,	2.2.62	Mids. II, 2, 62	quotation on cited line						Amen, amen to that fair prayer say I,	amen amen to that fair prayer say i
+Amends	Amends,	5.1.445	Mids. V, 445	quotation on cited line						Robin shall restore amends	and robin shall restore amends
+Amends	Amends,	5.1.441	Mids. V, 441	headword on cited line							we will make amends ere long
+Amiable	Amiable,	4.1.2	Mids. IV, 1, 2	quotation on cited line						while I thy amiable cheeks do coy,	while i thy amiable cheeks do coy
+Amiss2	Amiss,	5.1.82	Mids. V, 82	quotation on cited line						never anything can be a., when simpleness and duty tender it,	for never anything can be amiss
+Amorous	Amorous,	2.1.68	Mids. II, 1, 68	quotation on cited line						amorous Phillida,	to amorous phillida why art thou here
+Anger1	Anger,	2.1.104	Mids. II, 1, 104	headword on cited line							pale in her anger washes all the air
+Anguish	Anguish,	5.1.37	Mids. V, 37	quotation on cited line						Is there no play to ease the anguish of a torturing hour?	to ease the anguish of a torturing hour
+Answer1	Answer,	3.2.287	Mids. III, 2, 287	headword on cited line							impatient answers from my gentle tongue
+Answer1	Answer,	4.1.141	Mids. IV, 1, 141	quotation on cited line						is not this the day that Hermia should give answer of her choice?	that hermia should give answer of her choice
+Antic1	Antic	5.1.3	Mids. V, 3	quotation on cited line, with differences			86%	antic	antique	I never may believe these antic fables,	these antique fables nor these fairy toys
+Antiopa	Antiopa,	2.1.80	Mids. II, 1, 80	headword on cited line							with ariadne and antiopa
+Antipodes	Antipodes,	3.2.55	Mids. III, 2, 55	headword on cited line							her brothers noontide with the antipodes
+Apace	Apace,	1.1.2	Mids. I, 1, 2	headword on cited line							draws on apace for happy days bring in
+Apace	Apace,	1.1.2	Mids. I, 1, 2	quotation on cited line						our nuptial hour draws on apace	draws on apace for happy days bring in
+Apollo	Apollo,	2.1.231	Mids. II, 1, 231	headword on cited line							apollo flies and daphne holds the chase
+Apollo	Apollo,	2.2.61	Shr. Ind. 2, 61.	not a citation of this play							
+Apple	Apple,	3.2.104	Mids. III, 2, 104	quotation on cited line						sink in apple of his eye,	sink in apple of his eye
+Apply	Apply,	3.2.450	Mids. III, 2, 450	quotation on cited line, with differences			80%	remedy	to	I'll apply your eye remedy,	ill apply
+Apprehension	Apprehension,	3.2.178	Mids. III, 2, 178	quotation on cited line, with differences			100%		that from the eye his function takes	dark night the ear more quick of apprehension makes,	the ear more quick of apprehension makes
+Approach2	Approach,	3.2.381	Mids. III, 2, 381	headword on cited line							at whose approach ghosts wandering here and there
+Apricock	Apricock,	3.1.169	Mids. III, 1, 169	headword on cited line							feed him with apricocks and dewberries
+Apt	Apt,	5.1.65	Mids. V, 65	quotation on cited line						in all the play there is not one word apt	there is not one word apt one player fitted
+Archery	Archery,	3.2.103	Mids. III, 2, 103	quotation on cited line						hit with Cupid's archery	hit with cupids archery
+Ariadne	Ariadne,	2.1.80	Mids. II, 1, 80	headword on cited line							with ariadne and antiopa
+Aright	Aright,	2.1.42	Mids. II, 1, 42	quotation on cited line						thou speak'st aright	are not you he thou speakst aright
+Artificial	Artificial,	3.2.203	Mids. III, 2, 203	quotation on cited line						like two artificial gods,	we hermia like two artificial gods
+Ass-head	Ass-head,	3.1.119	Mids. III, 1, 119	quotation on cited line, with differences			spacing			you see an ass-head of your own,	what do you see you see an ass head
+Assurance	Assurance,	3.1.21	Mids. III, 1, 21	quotation on cited line, with differences			92%	them	pyramus	for the more better assurance tell them that I am not Pyramus,	the more better assurance tell that i
+Astray	Astray,	3.2.358	Mids. III, 2, 358	quotation on cited line, with differences			100%		testy	lead these rivals so astray	and lead these testy rivals so astray
+Asunder	Asunder,	3.2.215	Mids. III, 2, 215	quotation on cited line						will you rent our ancient love a.?	and will you rent our ancient love asunder
+At	At,	1.2.113	Mids. I, 2, 113	quotation on cited line						at the duke's oak,	at the dukes oak we meet
+At	At,	3.1.173	Mids. III, 1, 173	quotation on cited line, with differences			100%		fiery	light them at the glow-worm's eyes,	and light them at the fiery glowworms eyes
+At	At,	1.1.30	Mids. I, 1, 30	headword on cited line							thou hast by moonlight at her window sung
+At	At,	3.1.59	Mids. III, 1, 59	quotation on cited line						shine in at the casement,	and the moon may shine in at the casement
+At	At,	2.1.158	Mids. II, 1, 158	quotation on cited line						a certain aim he took at a fair Vestal,	at a fair vestal throned by the west
+At	At,	5.1.232	Mids. V, 232	headword on cited line							the very best at a beast my lord that
+At	At,	2.1.152	Mids. II, 1, 152	quotation on cited line						grew civil at her song,	that the rude sea grew civil at her song
+At	At,	3.2.22	III, 2, 22	quotation on cited line						rising and cawing at the gun's report,	rising and cawing at the guns report
+At	At,	3.2.22	III, 2, 22	headword on cited line	3.2.24		100%			at his sight away his fellows fly,	rising and cawing at the guns report
+Attain	Attain,	2.1.95	Mids. II, 1, 95	quotation on cited line						ere his youth attained a beard,	hath rotted ere his youth attained a beard
+Attendant	Attendant,	2.1.21	Mids. II, 1, 21	headword on cited line							because that she as her attendant hath
+Attendant	Attendant,	2.1.21	Mids. II, 1, 21	headword on cited line							because that she as her attendant hath
+Attractive	Attractive,	2.2.91	Mids. II, 2, 91	quotation on cited line						attractive eyes,	for she hath blesssed and attractive eyes
+Audacious	Audacious,	5.1.103	Mids. V, 103	quotation on cited line						saucy and audacious eloquence,	of saucy and audacious eloquence
+Audience	Audience.	1.2.28	Mids. I, 2, 28	quotation on cited line						let the audience look to their eyes,	performing of it if i do it let the audience look to
+Auditor	Auditor,	3.1.81	Mids. III, 1, 81	quotation on cited line						a play toward! I'll be an auditor	what a play toward ill be an auditor
+Aurora	Aurora,	3.2.380	Mids. III, 2, 380	headword on cited line							and yonder shines auroras harbinger
+Austerity	Austerity,	1.1.90	Mids. I, 1, 90	quotation on cited line						austerity and single life,	for aye austerity and single life
+Autumn	Autumn,	2.1.112	Mids. II, 1, 112	headword on cited line							the childing autumn angry winter change
+Avouch1	Avouch,	1.1.106	Mids. I, 1, 106	quotation on cited line						I'll avouch it to his head,	demetrius ill avouch it to his head
+Away	Away,	4.1.46	Mids. IV, 1, 46	quotation on cited line						be all ways away	fairies be gone and be all ways away
+Away	Away,	1.1.8	Mids. I, 1, 8	quotation on cited line						dream away the time,	four nights will quickly dream away the time
+Away	Away,	4.1.189	Mids. IV, 1, 189	quotation on cited line						away with us to Athens,	away with us to athens three and three
+Away	Away,	1.1.180	Mids. I, 1, 180	quotation on cited line						whither a.?	god speed fair helena whither away
+Aweary	Aweary,	5.1.255	Mids. V, 255	quotation on cited line						I am aweary of this moon,	i am aweary of this moon would he
+Bacchanals	Bacchanals,	5.1.48	Mids. V, 48	quotation on cited line						the riot of the tipsy B., tearing the Thracian singer,	the riot of the tipsy bacchanals
+Bait3	Bait,	3.2.197	Mids. III, 2, 197	quotation on cited line						to bait me with this foul derision,	to bait me with this foul derision
+Balance1	Balance,	5.1.324	Mids. V, 324	quotation on cited line						a mote will turn the balance	a mote will turn the balance which
+Barber1	Barber,	4.1.25	Mids. IV, 1, 25	quotation on cited line, with differences			80%	s		I must to the --'s,	cavalery cobweb to scratch i must to the
+Barefaced	Barefaced,	1.2.100	Mids. I, 2, 100	quotation on cited line, with differences			spacing			some of your French crowns have no hair at all, and then you will play barefaced	hair at all and then you will play bare faced
+Bark4	Bark,	3.1.113	Mids. III, 1, 113	headword on cited line							and neigh and bark and grunt and roar and burn
+Barky	Barky,	4.1.49	Mids. IV, 1, 49	quotation on cited line						the female ivy so enrings the barky fingers of the elm,	enrings the barky fingers of the elm
+Barm	Barm,	2.1.38	Mids. II, 1, 38	quotation on cited line						and sometime make the drink to bear no barm	and sometime make the drink to bear no barm
+Bashfulness	Bashfulness,	3.2.286	Mids. III, 2, 286	quotation on cited line						no maiden shame, no touch of bashfulness	no touch of bashfulness what will you tear
+Bate2	Bate,	1.1.190	Mids. I, 1, 190	quotation on cited line, with differences			86%	this	the	were this world mine, Demetrius being bated,	were the world mine demetrius being bated
+Batty	Batty,	3.2.365	Mids. III, 2, 365	quotation on cited line						till o'er their brows death-counterfeiting sleep with leaden legs and batty wings doth creep,	with leaden legs and batty wings doth creep
+Bay6	Bay,	4.1.118	Mids. IV, 1, 118	quotation on cited line						they bayed the bear with hounds of Sparta,	when in a wood of crete they bayed the bear
+Beached	Beached,	2.1.85	Mids. II, 1, 85	quotation on cited line						in the beached margent of the sea,	or in the beached margent of the sea
+Bead	Bead,	3.2.330	Mids. III, 2, 330	quotation on cited line						you b., you acorn,	you bead you acorn you are too officious
+Bean-fed	Bean-fed,	2.1.45	Mids. II, 1, 45	quotation on cited line						a fat and bean-fed horse,	when i a fat and beanfed horse beguile
+Beautiful	Beautiful,	3.1.151	Mids. III, 1, 151	headword on cited line							thou art as wise as thou art beautiful
+Bedabble	Bedabble,	3.2.443	Mids. III, 2, 443	quotation on cited line						bedabbled with the dew,	bedabbled with the dew and torn with briers
+Bed-room	Bed-room,	2.2.51	Mids. II, 2, 51	quotation on cited line						then by your side no bed-room me deny,	then by your side no bedroom me deny
+Bed-time	Bed-time,	5.1.34	Mids. V, 34	headword on cited line							between our aftersupper and bedtime
+Beetle1	Beetle,	2.2.22	Mids. II, 2, 22	headword on cited line							beetles black approach not near
+Befall	Befall.	1.1.63	Mids. I, 1, 63	headword on cited line							the worst that may befall me in this case
+Befall	Befall.	3.2.121	Mids. III, 2, 121	quotation on cited line						those things do best please me that befall preposterously,	that befall preposterously
+Befall	Befall.	5.1.156	V, 156	headword on cited line							in this same interlude it doth befall
+Beggary	Beggary,	5.1.53	Mids. V, 53	headword on cited line							of learning late deceased in beggary
+Beginning	Beginning,	5.1.111	Mids. V, 111	quotation on cited line, with differences			67%	in	true	(in the b.).	that is the true beginning of our end
+Behalf	Behalf.	3.2.331	Mids. III, 2, 331	headword on cited line							in her behalf that scorns your services
+Behind	Behind.	3.2.319	Mids. III, 2, 319	headword on cited line							a foolish heart that i leave here behind
+Behind	Behind.	4.1.53	Mids. IV, 1, 53	headword on cited line							for meeting her of late behind the wood
+Behind	Behind.	5.1.397	V, 397	headword on cited line							to sweep the dust behind the door
+Behowl	Behowl,	5.1.379	Mids. V, 379	quotation on cited line						the wolf behowls the moon,	and the wolf behowls the moon
+Bellows-mender	Bellows-mender:	1.2.44	Mids. I, 2, 44	headword on cited line							francis flute the bellowsmender
+Bellows-mender	Bellows-mender:	4.1.207	IV, 1, 207	prose row break	4.1.208	1					pyramus heighho peter quince flute the
+Bergomask	Bergomask:	5.1.360	Mids. V, 360	quotation on cited line						a Bergomask dance,	you to see the epilogue or to hear a bergomask
+Bergomask	Bergomask:	5.1.360	Mids. V, 360	headword on cited line							you to see the epilogue or to hear a bergomask
+Beshrew	Beshrew,	2.2.54	Mids. II, 2, 54	headword on cited line							now much beshrew my manners and my pride
+Beshrew	Beshrew,	5.1.295	Mids. V, 295	quotation on cited line						beshrew my heart, but I pity the man,	beshrew my heart but i pity the man
+Beteem	Beteem,	1.1.131	Mids. I, 1, 131	quotation on cited line						rain, which I could well beteem them from the tempest of my eyes,	beteem them from the tempest of my eyes
+Bethink	Bethink	4.1.155	Mids. IV, 1, 155	quotation on cited line, with differences			83%	i	i	and now do I bethink me,	and now i do bethink me so it is
+Betroth	Betroth,	4.1.177	Mids. IV, 1, 177	headword on cited line							was i betrothed ere i saw hermia
+Better2	Better,	3.2.35	Mids. III, 2, 35	headword on cited line							this falls out better than i could devise
+Bewail	Bewail,	4.1.61	Mids. IV, 1, 61	headword on cited line							like tears that did their own disgrace bewail
+Big-bellied	Big-bellied,	2.1.129	Mids. II, 1, 129	quotation on cited line						to see the sails conceive and grow big-bellied with the wanton wind,	and grow bigbellied with the wanton wind
+Bill1	Bill,	3.1.129	Mids. III, 1, 129	headword on cited line							with orangetawny bill
+Bitter	Bitter,	3.2.44	Mids. III, 2, 44	quotation on cited line						your bitter foe,	lay breath so bitter on your bitter foe
+Bitter	Bitter,	3.2.44	Mids. III, 2, 44	quotation on cited line						breath,	lay breath so bitter on your bitter foe
+Bitter	Bitter,	3.2.361	Mids. III, 2, 361	quotation on cited line						wrong,	then stir demetrius up with bitter wrong
+Bitter	Bitter,	3.2.306	Mids. III, 2, 306	quotation on cited line						do not be so bitter with me,	good hermia do not be so bitter with me
+Blackbrowed	Blackbrowed,	3.2.387	Mids. III, 2, 387	quotation on cited line						blackbrowed night,	and must for aye consort with blackbrowed night
+Bladed	Bladed,	1.1.211	Mids. I, 1, 211	quotation on cited line						decking with liquid pearl the bladed grass,	decking with liquid pearl the bladed grass
+Blame2	Blame,	5.1.364	Mids. V, 364	headword on cited line							players are all dead there need none to be blamed
+Blameful	Blameful,	5.1.147	Mids. V, 147	quotation on cited line						with bloody blameful blade,	whereat with blade with bloody blameful blade
+Blameless	Blameless,	3.2.350	Mids. III, 2, 350	quotation on cited line						so far blameless proves my enterprise,	and so far blameless proves my enterprise
+Blessedness	Blessedness,	1.1.78	Mids. I, 1, 78	quotation on cited line						lives and dies in single blessedness	grows lives and dies in single blessedness
+Blindworm	Blindworm,	2.2.11	Mids. II, 2, 11	headword on cited line							newts and blindworms do no wrong
+Blink	Blink,	5.1.178	Mids. V, 178	quotation on cited line, with differences			90%	eye		show me thy chink, to blink through with mine eye,	show me thy chink to blink through with mine eyne
+Blot1	Blot,	5.1.416	Mids. V, 416	quotation on cited line						the blots of Nature's hand,	and the blots of natures hand
+Blow2	Blow,	2.1.249	Mids. II, 1, 249	headword on cited line							i know a bank where the wild thyme blows
+Board1	Board,	5.1.31	Mids. V, 31	quotation on cited line, with differences			67%	and	your	board and bed:	wait in your royal walks your board your bed
+Boast2	Boast,	1.1.103	Mids. I, 1, 103	headword on cited line							and which is more than all these boasts can be
+Bob1	Bob,	2.1.49	Mids. II, 1, 49	quotation on cited line						when she drinks, against her lips I bob	and when she drinks against her lips i bob
+Body2	Body,	5.14	Mids. V, 14	not a citation of this play						as imagination bodyies forth the form of things unknown,	
+Bog	Bog,	3.1.110	Mids. III, 1, 110	headword on cited line							through bog through bush through brake through brier
+Boil2	Boil,	5.1.148	Mids. V, 148	quotation on cited line						his boiling bloody breast,	he bravely broached his boiling bloody breast
+Bolt1	Bolt,	2.1.165	Mids. II, 1, 165	quotation on cited line						the bolt of Cupid,	yet marked i where the bolt of cupid fell
+Bone	Bone,	4.1.32	Mids. IV, 1, 32	quotation on cited line						let's have the tongs and the bones,	lets have the tongs and the bones
+Bootless2	Bootless,	2.1.37	Mids. II, 1, 37	headword on cited line							and bootless make the breathless housewife churn
+Bore2	Bore,	3.2.53	Mids. III, 2, 53	quotation on cited line						this whole earth may be bored,	this whole earth may be bored and that the moon
+Bounce1	Bounce,	2.1.70	Mids. II, 1, 70	quotation on cited line, with differences			67%	bounceing	bouncing	the bounceing Amazon,	but that forsooth the bouncing amazon
+Bound3	Bound,	3.2.65	Mids. III, 2, 65	quotation on cited line, with differences			100%		maidens	past the bounds of patience,	out dog out cur thou drivest me past the bounds
+Bower1	Bower,	3.1.202	Mids. III, 1, 202	headword on cited line							come wait upon him lead him to my bower
+Bower1	Bower,	3.2.7	III, 2, 7	headword on cited line							near to her close and consecrated bower
+Bower1	Bower,	4.1.66	IV, 1, 66	headword on cited line							to bear him to my bower in fairy land
+Bow-string	Bow-string,	1.2.114	Mids. I, 2, 114	quotation on cited line						hold or cut bow-strings,	enough hold or cut bowstrings
+Brand1	Brand,	5.1.382	Mids. V, 382	headword on cited line							now the wasted brands do glow
+Bravely	Bravely,	5.1.148	Mids. V, 148	quotation on cited line						he bravely broached his boiling bloody breast,	he bravely broached his boiling bloody breast
+Breathless	Breathless,	2.1.37	Mids. II, 1, 37	headword on cited line							and bootless make the breathless housewife churn
+Bride-bed	Bride-bed,	5.1.410	Mids. V, 410	headword on cited line							to the best bridebed will we
+Brief2	Brief,	5.1.42	Mids. V, 42	quotation on cited line						there is a brief how many sports are ripe,	there is a brief how many sports are ripe
+Bringer	Bringer,	5.1.20	Mids. V, 20	quotation on cited line						bringer of that joy,	it comprehends some bringer of that joy
+Brisky	Brisky,	3.1.97	Mids. III, 1, 97	quotation on cited line						most brisky juvenal,	most brisky juvenal and eke most lovely jew
+Bristle2	Bristle,	2.2.31	Mids. II, 2, 31	quotation on cited line						boar with bristled hair,	pard or boar with bristled hair
+Broach	Broach,	5.1.148	Mids. V, 148	quotation on cited line						he bravely broached his boiling bloody breast,	he bravely broached his boiling bloody breast
+Broom1	Broom,	5.1.396	Mids. V, 396	quotation on cited line						I am sent with broom before,	i am sent with broom before
+Brow	Brow,	3.2.364	Mids. III, 2, 364	quotation on cited line						till o'er their brows . . . sleep . . doth creep,	till oer their brows deathcounterfeiting sleep
+Brow	Brow,	5.1.11	V, 11	quotation on cited line						sees Helen's beauty in a brow of Egypt,	sees helens beauty in a brow of egypt
+Bully	Bully,	3.1.8	Mids. III, 1, 8	quotation on cited line						what sayest thou, bully Bottom?	what sayest thou bully bottom
+Bully	Bully,	4.2.19	IV, 2, 19	quotation on cited line						O sweet bully Bottom!	o sweet bully bottom thus hath he
+Bum	Bum,	2.1.53	Mids. II, 1, 53	headword on cited line							then slip i from her bum down topples she
+Burn	Burn	1.1.173	Mids. I, 1, 173	headword on cited line							and by that fire which burned the carthage queen
+Buskined	Buskined,	2.1.71	Mids. II, 1, 71	quotation on cited line						the bouncing Amazon, your buskined mistress,	your buskined mistress and your warrior love
+Busy1	Busy,	2.1.181	Mids. II, 1, 181	quotation on cited line						on meddling monkey or on busy ape,	on meddling monkey or on busy ape
+Butterfly	Butterfly,	3.1.175	Mids. III, 1, 175	headword on cited line							and pluck the wings from painted butterflies
+By1	By,	3.2.426	Mids. III, 2, 426	headword off by 1	3.2.427	1					nay then thou mockst me thou shalt buy this dear
+By3	By,	3.2.108	Mids. III, 2, 108	headword on cited line							when thou wakest if she be by
+By3	By,	3.1.89	Mids. III, 1, 89	headword on cited line							and by and by i will to thee appear
+By3	By,	4.1.185	IV, 1, 185	headword on cited line							for in the temple by and by with us
+Cadmus	Cadmus,	4.1.117	Mids. IV, 1, 117	headword on cited line							i was with hercules and cadmus once
+Calendar	Calendar,	3.1.54	Mids. III, 1, 54	headword on cited line							a calendar a calendar look in the
+Canker1	Canker,	2.2.3	Mids. II, 2, 3	quotation on cited line						kill cankers in the musk-rose buds,	some to kill cankers in the muskrose buds
+Canker-blossom	Canker-blossom,	3.2.282	Mids. III, 2, 282	quotation on cited line						O me! you juggler! you c.! you thief of love!	o me you juggler you cankerblossom
+Capacity	Capacity,	5.1.105	Mids. V, 105	headword on cited line							in least speak most to my capacity
+Car1	Car,	1.2.37	Mids. I, 2, 37	headword on cited line							and phibbus car
+Carcass	Carcass,	3.2.64	Mids. III, 2, 64	quotation on cited line						give his carcass to my hounds,	i had rather give his carcass to my hounds
+Care1	Care,	2.1.265	Mids. II, 1, 265	quotation on cited line						effect it with some care	effect it with some care that he may prove
+Care1	Care,	4.1.15	Mids. IV, 1, 15	quotation on cited line						have a care the honey-bag break not,	mounsieur and good mounsieur have a care the
+Carol	Carol,	2.1.102	Mids. II, 1, 102	quotation on cited line						no night is now with hymn or carol blest,	no night is now with hymn or carol blest
+Case1	Case,	1.1.45	Mids. I, 1, 45	headword on cited line							immediately provided in that case
+Case1	Case,	4.2.40	Mids. IV, 2, 40	headword on cited line							in any case let thisby have clean linen and let
+Cause2	Cause,	3.2.117	Mids. III, 2, 117	headword on cited line							will cause demetrius to awake
+Cavalery	Cavalery	4.1.25	Mids. IV, 1, 25	quotation on cited line						help cavalery Cobweb to scratch,	cavalery cobweb to scratch i must to the
+Caw	Caw,	3.2.22	Mids. III, 2, 22	quotation on cited line, with differences			100%		many in sort	choughs rising and cawing at the gun's report,	rising and cawing at the guns report
+Centre	Centre	3.2.54	Mids. III, 2, 54	quotation on cited line						the moon may through the centre creep and so displease her brother's noontide,	may through the centre creep and so displease
+Cephalus	Cephalus,	3.2.389	Mids. III, 2, 389	headword not found near cited line							i with the mornings love have oft made sport
+Cephalus	Cephalus,	5.1.200	V, 200	quotation on cited line						Shafalus:	not shafalus to procrus was so true
+Certain2	Certain,	5.1.131	Mids. V, 131	quotation on cited line						this beauteous lady Thisby is certain	this beauteous lady thisby is certain
+Chance2	Chance,	1.1.129	Mids. I, 1, 129	quotation on cited line						how chance the roses there do fade so fast?	how chance the roses there do fade so fast
+Chance2	Chance,	5.1.318	V, 318	quotation on cited line						how chance Moonshine is gone?	how chance moonshine is gone be fore
+Change1	Change,	3.2.262	Mids. III, 2, 262	quotation on cited line						why are you grown so rude? what change is this?	why are you grown so rude what change is this
+Changeling	Changeling,	2.1.23	Mids. II, 1, 23	quotation on cited line						she never had so sweet a changeling	she never had so sweet a changeling
+Changeling	Changeling,	2.1.23	Mids. II, 1, 23	headword on cited line	2.1.120		100%			a little changeling boy,	she never had so sweet a changeling
+Changeling	Changeling,	4.1.64	IV, 1, 64	quotation on cited line						her changeling child,	i then did ask of her her changeling child
+Chant	Chant,	1.1.73	Mids. I, 1, 73	quotation on cited line						chanting faint hymns to the cold fruitless moon,	chanting faint hymns to the cold fruitless moon
+Chaplet	Chaplet,	2.1.110	Mids. II, 1, 110	quotation on cited line						on old Hiems' thin and icy crown an odorous chaplet of sweet summer buds,	an odorous chaplet of sweet summer buds
+Charm3	Charm,	3.2.99	Mids. III, 2, 99	quotation on cited line						I'll charm his eyes against she do appear,	ill charm his eyes against she do appear
+Charm3	Charm,	3.2.99	Mids. III, 2, 99	headword on cited line							ill charm his eyes against she do appear
+Charm3	Charm,	4.1.88	Mids. IV, 1, 88	quotation on cited line						music such as charmeth sleep,	music ho music such as charmeth sleep
+Cheek-roses	Cheek-roses,	1.1.129	Mids. I, 1, 129	headword not found near cited line							how chance the roses there do fade so fast
+Cheer1	Cheer,	5.1.299	Mids. V, 299	quotation on cited line						that lived, that loved, that liked, that looked with cheer	that lived that loved that liked that looked with cheer
+Cheer1	Cheer,	1.1.122	Mids. I, 1, 122	headword on cited line							come my hippolyta what cheer my love
+Cheer1	Cheer,	3.2.96	Mids. III, 2, 96	quotation on cited line						all fancy-sick she is and pale of cheer	all fancysick she is and pale of cheer
+Childhood	Childhood,	4.1.173	Mids. IV, 1, 173	headword on cited line							which in my childhood i did dote upon
+Childhood	Childhood,	3.2.202	Mids. III, 2, 202	quotation on cited line						childhood innocence,	all schooldays friendship childhood innocence
+Childing	Childing,	2.1.112	Mids. II, 1, 112	quotation on cited line						the spring, the summer, the childing autumn, angry winter, change their wonted liveries,	the childing autumn angry winter change
+Chough	Chough,	3.2.21	Mids. III, 2, 21	quotation on cited line						russet-pated choughs,	or russetpated choughs many in sort
+Chronicle2	Chronicle,	3.2.240	Mids. III, 2, 240	quotation on cited line						this sport, well carried, shall be chronicled,	this sport well carried shall be chronicled
+Church-way	Church-way,	5.1.389	Mids. V, 389	quotation on cited line						every one lets forth his sprite, in the church-way paths to glide,	in the churchway paths to glide
+Churl	Churl,	2.2.78	Mids. II, 2, 78	quotation on cited line						c., upon thy eyes I throw all the power this charm doth owe,	churl upon thy eyes i throw
+Churn	Churn,	2.1.37	Mids. II, 1, 37	quotation on cited line						and bootless make the breathless housewife churn	and bootless make the breathless housewife churn
+Circumference	Circumference,	5.1.247	Mids. V, 247	quotation on cited line						his horns are invisible within the circumference	invisible within the circumference
+Civil	Civil,	2.1.152	Mids. II, 1, 152	quotation on cited line						the rude sea grew c.,	that the rude sea grew civil at her song
+Civil	Civil,	3.2.147	III, 2, 147	quotation on cited line						if you were civil and knew courtesy,	if you were civil and knew courtesy
+Clamorous	Clamorous,	2.2.6	Mids. II, 2, 6	quotation on cited line						the clamorous owl that nightly hoots and wonders . . .,	the clamorous owl that nightly hoots and wonders
+Claw1	Claw,	4.2.42	Mids. IV, 2, 42	headword on cited line							they shall hang out for the lions claws and
+Clean1	Clean,	4.2.40	Mids. IV, 2, 40	headword on cited line							in any case let thisby have clean linen and let
+Clear1	Clear,	2.1.29	Mids. II, 1, 29	quotation on cited line						by fountain clear	by fountain clear or spangled starlight sheen
+Clear1	Clear,	3.2.60	Mids. III, 2, 60	quotation on cited line						you, the murderer, look as bright. as c., as yonder Venus,	yet you the murderer look as bright as clear
+Cloister1	Cloister,	1.1.71	Mids. I, 1, 71	headword on cited line							for aye to be in shady cloister mewed
+Close2	Close,	3.2.7	Mids. III, 2, 7	quotation on cited line						near to her close and consecrated bower,	near to her close and consecrated bower
+Coffe	Coffe,	2.1.54	Mids. II, 1, 54	headword not found near cited line							and tailor cries and falls into a cough
+Coil	Coil,	3.2.339	Mids. III, 2, 339	quotation on cited line						all this coil is 'long of you,	you mistress all this coil is long of you
+Collied	Collied,	1.1.145	Mids. I, 1, 145	quotation on cited line						brief as the lightning in the collied night,	brief as the lightning in the collied night
+Coloured	Coloured,	1.2.98	Mids. I, 2, 98	quotation not found; headword not found near cited line						French crown coloured beard,	crowncolor beard your perfect yellow
+Colt1	Colt,	5.1.120	Mids. V, 120	headword on cited line							colt he knows not the stop a good moral my
+Compact3	Compáct,	5.1.8	Mids. V, 8	quotation on cited line						are of imagination all compáct	are of imagination all compact
+Companion1	Companion,	1.1.15	Mids. I, 1, 15	quotation on cited line						the pale companion is not for our pomp,	the pale companion is not for our pomp
+Compare1	Compare,	3.2.290	Mids. III, 2, 290	headword on cited line							now i perceive that she hath made compare
+Compass2	Compass,	4.1.102	Mids. IV, 1, 102	quotation on cited line						we the globe can compass soon,	we the globe can compass soon
+Compel	Compel,	3.2.248	Mids. III, 2, 248	quotation on cited line						if she cannot entreat, I can compel	if she cannot entreat i can compel
+Comprehend	Comprehend,	5.1.6	Mids. V, 6	quotation on cited line						shaping fantasies that apprehend more than cool reason ever comprehends,	more than cool reason ever comprehends
+Comprehend	Comprehend,	5.1.6	Mids. V, 6	headword on cited line	5.1.19-20		100%			if it would but apprehend some joy, it comprehends some bringer of that joy,	more than cool reason ever comprehends
+Con	Con,	1.2.102	Mids. I, 2, 102	headword on cited line							entreat you request you and desire you to con
+Con	Con,	5.1.80	V, 80	headword on cited line							extremely stretched and conned with cruel pain
+Conceit1	Conceit,	1.1.33	Mids. I, 1, 33	quotation on cited line						rings, gawds, conceits,	with bracelets of thy hair rings gawds conceits
+Conceive	Conceive,	2.1.128	Mids. II, 1, 128	quotation on cited line						to see the sails conceive and grow big-bellied,	when we have laughed to see the sails conceive
+Conceive	Conceive,	4.1.219	Mids. IV, 1, 219	headword on cited line							to conceive nor his heart to report what my
+Concord	Concord,	4.1.148	Mids. IV, 1, 148	headword on cited line							how comes this gentle concord in the world
+Concord	Concord,	5.1.60	V, 60	headword on cited line							how shall we find the concord of this discord
+Confederacy	Confederacy,	3.2.192	Mids. III, 2, 192	quotation on cited line						she is one of this confederacy	lo she is one of this confederacy
+Confer	Confer,	1.1.125	Mids. I, 1, 125	quotation on cited line						confer with you of something,	against our nuptial and confer with you
+Conference	Conference,	2.1.187	Mids. II, 1, 187	headword on cited line							and i will overhear their conference
+Conference	Conference,	2.2.46	II, 2, 46	headword on cited line							love takes the meaning in loves conference
+Congeal	Congeal,	3.2.141	Mids. III, 2, 141	quotation on cited line						congealed white, high Taurus' snow,	that pure congealed white high taurus snow
+Conjoin	Conjoin,	3.2.193	Mids. III, 2, 193	headword on cited line							now i perceive they have conjoined all three
+Conjunction	Conjunction,	4.1.116	Mids. IV, 1, 116	headword on cited line							of hounds and echo in conjunction
+Consecrate	Consecrate,	3.2.7	Mids. III, 2, 7	quotation on cited line						her close and consecrated bower,	near to her close and consecrated bower
+Consecrate	Consecrate,	5.1.422	Mids. V, 422	quotation on cited line						with this field-dew consecrate	with this fielddew consecrate
+Consider	Consider,	5.1.112	Mids. V, 112	headword on cited line							consider then we come but in despite
+Consider	Consider,	3.1.30	Mids. III, 1, 30	quotation on cited line						you ought to consider with yourselves,	masters you ought to consider with
+Consort2	Consórt,	3.2.387	Mids. III, 2, 387	headword on cited line							and must for aye consort with blackbrowed night
+Conspire	Conspire,	3.2.196	Mids. III, 2, 196	quotation on cited line						with:	have you conspired have you with these contrived
+Contagious	Contagious,	2.1.90	Mids. II, 1, 90	quotation on cited line						contagious fogs,	contagious fogs which falling in the land
+Continent1	Continent,	2.1.92	Mids. II, 1, 92	quotation on cited line						have overborne their continents,	that they have overborne their continents
+Contrive	Contrive,	3.2.196	Mids. III, 2, 196	quotation on cited line						have you with these contrived to bait me?	have you conspired have you with these contrived
+Convenient	Convenient,	3.1.2	Mids. III, 1, 2	prose row break	3.1.3	1	100%			convenient place,	pat pat and heres a marvellous
+Cool1	Cool,	5.1.6	Mids. V, 6	quotation on cited line						cool reason,	more than cool reason ever comprehends
+Cost2	Cost,	3.2.97	Mids. III, 2, 97	headword on cited line							with sighs of love that costs the fresh blood dear
+Cough1	Cough,	2.1.54	Mids. II, 1, 54	headword on cited line							and tailor cries and falls into a cough
+Counterfeit1	Counterfeit,	3.2.288	Mids. III, 2, 288	quotation on cited line						you c., you puppet,	fie fie you counterfeit you puppet you
+Country	Country,	3.2.458	Mids. III, 2, 458	quotation on cited line						proverb,	and the country proverb known
+Couple2	Couple,	4.1.145	Mids. IV, 1, 145	quotation on cited line						begin these woodbirds but to couple now?	begin these woodbirds but to couple now
+Courageous	Courageous,	4.2.27	Mids. IV, 2, 27	headword on cited line							bottom o most courageous day o
+Courageously	Courageously,	1.2.111	Mids. I, 2, 111	headword on cited line							rehearse most obscenely and courageously take
+Cowardice	Cowardice,	2.1.234	Mids. II, 1, 234	headword on cited line							when cowardice pursues and valor flies
+Cowardice	Cowardice,	3.2.302	III, 2, 302	headword on cited line							i am a right maid for my cowardice
+Cowardly1	Cowardly,	3.1.197	Mids. III, 1, 197	headword on cited line							patience well that same cowardly giant like
+Coy2	Coy,	4.1.2	Mids. IV, 1, 2	quotation on cited line						while I thy amiable cheeks do coy	while i thy amiable cheeks do coy
+Cradle1	Cradle,	3.1.80	Mids. III, 1, 80	quotation on cited line						so near the cradle of the fairy queen,	so near the cradle of the fairy queen
+Crannied	Crannied,	5.1.159	Mids. V, 159	quotation on cited line						that had in it a crannied hole or chink,	that had in it a crannied hole or chink
+Crawl	Crawl,	2.2.146	Mids. II, 2, 146	headword on cited line							to pluck this crawling serpent from my breast
+Crawl	Crawl,	3.2.444	III, 2, 444	headword on cited line							i can no further crawl no further go
+Craze	Craze,	1.1.92	Mids. I, 1, 92	quotation on cited line, with differences			75%	craze certair	crazed certain	yield thy craze title to my certair right,	thy crazed title to my certain right
+Create	Create,	3.2.204	Mids. III, 2, 204	headword on cited line							have with our needles created both one flower
+Create	Create,	5.1.412	Mids. V, 412	quotation on cited line						the issue there create	and the issue there create
+Credit1	Credit,	2.1.75	Mids. II, 1, 75	quotation on cited line, with differences			100%		for shame titania	how canst thou thus glance at my credit with Hippolyta?	glance at my credit with hippolyta
+Crescent1	Crescent,	5.1.246	Mids. V, 246	quotation on cited line						he is no crescent	he is no crescent and his horns are
+Crest1	Crest,	3.2.214	Mids. III, 2, 214	quotation on cited line						like coats in heraldry, due but to one and crowned with one crest	due but to one and crowned with one crest
+Crew	Crew,	3.2.9	Mids. III, 2, 9	quotation on cited line						a crew of patches,	a crew of patches rude mechanicals
+Critical	Critical,	5.1.54	Mids. V, 54	quotation on cited line						some satire, keen and critical	that is some satire keen and critical
+Crook-kneed	Crook-kneed,	4.1.127	Mids. IV, 1, 127	quotation on cited line, with differences			67%	crookkneed		crook-kneed and dew-lapped,	crookkneeed and dewlapped like thessalian bulls
+Crop2	Crop,	3.1.172	Mids. III, 1, 172	quotation on cited line						their waxen thighs,	and for nighttapers crop their waxen thighs
+Crossway	Crossway,	3.2.383	Mids. III, 2, 383	quotation on cited line						damned spirits all, that in crossways and floods have burial,	that in crossways and floods have burial
+Crown2	Crown,	2.1.27	Mids. II, 1, 27	quotation on cited line						crowns him with flowers,	crowns him with flowers and makes him all her joy
+Crown2	Crown,	3.2.214	Mids. III, 2, 214	quotation on cited line, with differences			100%		due but to one and	coats in heraldry crowned with one crest,	due but to one and crowned with one crest
+Crown2	Crown,	3.114.1	114, 1	not a citation of this play						whether doth my mind, being crowned with you, drink up the monarch's plague, this flattery,	
+Crown2	Crown,	3.107.7	107, 7	not a citation of this play						incertainties now crown themselves assured,	
+Crown2	Crown,	3.115.12	115, 12	not a citation of this play						crowning the present, doubting of the rest,	
+Crush	Crush,	3.2.366	Mids. III, 2, 366	quotation on cited line						crush this herb into Lysander's eye,	then crush this herb into lysanders eye
+Crush	Crush,	5.1.292	Mids. V, 292	headword on cited line							quail crush conclude and quell
+Crystal1	Crystal,	3.2.139	Mids. III, 2, 139	quotation on cited line, with differences			90%	eyne	my love eye	to what shall I compare thine eyne? crystal is muddy,	crystal is muddy o how ripe in show
+Cunning1	Cunning,	1.1.36	Mids. I, 1, 36	quotation on cited line						with cunning hast thou filched my daughter's heart,	with cunning hast thou filched my daughters heart
+Cunning1	Cunning,	3.2.128	Mids. III, 2, 128	quotation on cited line						you do advance your cunning more and more,	you do advance your cunning more and more
+Cushion	Cushion,	3.2.205	Mids. III, 2, 205	headword on cited line							both on one sampler sitting on one cushion
+Customary	Customary,	1.1.153	Mids. I, 1, 153	quotation on cited line						it is a customary cross,	because it is a customary cross
+Dainty2	Dainty,	5.1.286	Mids. V, 286	quotation on cited line						O dainty duck, O dear!	o dainty duck o dear
+Dank	Dank,	2.2.75	Mids. II, 2, 75	quotation on cited line						on the dank and dirty ground,	on the dank and dirty ground
+Daphne	Daphne,	2.1.231	Mids. II, 1, 231	headword on cited line							apollo flies and daphne holds the chase
+Daphne	Daphne,	2.2.59	Shr. Ind. 2, 59.	not a citation of this play							
+Dark1	Dark,	3.2.177	Mids. III, 2, 177	headword on cited line							dark night that from the eye his function takes
+Darkling	Darkling,	2.2.86	Mids. II, 2, 86	headword on cited line							o wilt thou darkling leave me do not so
+Death-counterfeiting	Death-counterfeiting,	3.2.364	Mids. III, 2, 364	quotation on cited line						death-counterfeiting sleep,	till oer their brows deathcounterfeiting sleep
+Debate1	Debate,	2.1.116	Mids. II, 1, 116	quotation on cited line						this same progeny of evils comes from our d., from our dissension,	from our debate from our dissension
+Deck2	Deck,	1.1.211	Mids. I, 1, 211	headword on cited line							decking with liquid pearl the bladed grass
+Deep2	Deep,	3.1.161	Mids. III, 1, 161	headword on cited line							and they shall fetch thee jewels from the deep
+Deep2	Deep,	3.2.48	III, 2, 48	headword on cited line							being oer shoes in blood plunge in the deep
+Defeat2	Defeat,	4.1.162	Mids. IV, 1, 162	quotation on cited line						to have defeated you and me, you of your wife and me of my consent,	thereby to have defeated you and me
+Deflower	Deflower	5.1.297	Mids. V, 297	headword on cited line							since lion vile hath here deflowered my dear
+Delay1	Delay,	5.1.205	Mids. V, 205	headword on cited line							tide life tide death i come without delay
+Delay1	Delay,	3.2.394	Mids. III, 2, 394	quotation on cited line						make no delay	but notwithstanding haste make no delay
+Desert3	Desert,	2.1.218	Mids. II, 1, 218	headword on cited line							and the ill counsel of a desert place
+Despite1	Despite,	5.1.112	Mids. V, 112	quotation on cited line						we come but in despite	consider then we come but in despite
+Devilish-holy	Devilish-holy	3.2.129	Mids. III, 2, 129	quotation on cited line, with differences			spacing			when truth kills truth, O devilish-holy fray!	when truth kills truth o devilish holy fray
+Devoutly	Devoutly,	1.1.109	Mids. I, 1, 109	quotation on cited line, with differences			100%		sweet lady dotes	she devoutly dotes, dotes in idolatry,	devoutly dotes dotes in idolatry
+Dew2	Dew,	2.1.9	Mids. II, 1, 9	headword on cited line							to dew her orbs upon the green
+Dewberry	Dewberry,	3.1.169	Mids. III, 1, 169	headword on cited line							feed him with apricocks and dewberries
+Dewdrop	Dewdrop,	2.1.14	Mids. II, 1, 14	headword on cited line							i must go seek some dewdrops here
+Dewlap	Dewlap	2.1.50	Mids. II, 1, 50	quotation on cited line						against her lips I bob and on her withered dewlap pour the ale,	and on her withered dewlap pour the ale
+Dewlapped	Dewlapped,	4.1.127	Mids. IV, 1, 127	quotation on cited line						dewlapped like Thessalian bulls,	crookkneeed and dewlapped like thessalian bulls
+Different	Different,	1.1.135	Mids. I, 1, 135	quotation on cited line						different in blood,	but either it was different in blood
+Dirty	Dirty,	2.2.75	Mids. II, 2, 75	headword on cited line							on the dank and dirty ground
+Discourse1	Discourse,	4.1.183	Mids. IV, 1, 183	headword on cited line							of this discourse we more will hear anon
+Discourse2	Discourse,	5.1.169	Mids. V, 169	quotation on cited line						it is the wittiest partition that ever I heard discourse	heard discourse my lord
+Discourse2	Discourse,	5.1.152	Mids. V, 152	quotation on cited line						at large discourse	at large discourse while here they do remain
+Discourse2	Discourse,	4.2.29	Mids. IV, 2, 29	quotation on cited line						I am to discourse wonders,	masters i am to discourse wonders but
+Disdainful	Disdainful,	2.1.261	Mids. II, 1, 261	headword on cited line							with a disdainful youth anoint his eyes
+Disdainful	Disdainful,	2.2.130	II, 2, 130	headword on cited line							in such disdainful manner me to woo
+Disfigure	Disfigure,	1.1.51	Mids. I, 1, 51	headword on cited line							to leave the figure or disfigure it
+Disfigure	Disfigure,	3.1.62	Mids. III, 1, 62	headword on cited line							disfigure or to present the person of moonshine
+Disobedience	Disobedience,	1.1.87	Mids. I, 1, 87	quotation on cited line						disobedience to your father's will,	for disobedience to your fathers will
+Disparage	Disparage,	3.2.174	Mids. III, 2, 174	quotation on cited line						disparage not the faith thou dost not know,	disparage not the faith thou dost not know
+Displease	Displease,	3.2.54	Mids. III, 2, 54	headword on cited line							may through the centre creep and so displease
+Dispose2	Dispose,	1.1.42	Mids. I, 1, 42	quotation on cited line						as she is mine, I may dispose of her, which shall be either to this gentleman or to her death,	as she is mine i may dispose of her
+Dissolve	Dissolve,	1.1.245	Mids. I, 1, 245	headword on cited line							so he dissolved and showers of oaths did melt
+Distant	Distant,	2.2.60	Mids. II, 2, 60	headword on cited line							so far be distant and good night sweet friend
+Distemperature	Distemperature,	2.1.106	Mids. II, 1, 106	quotation on cited line						thorough this distemperature we see the seasons alter,	and thorough this distemperature we see
+Distill	Distill,	1.1.76	Mids. I, 1, 76	quotation on cited line						earthlier happy is the rose distilled,	but earthlier happy is the rose distilled
+Distract	Distract,	3.2.31	Mids. III, 2, 31	quotation on cited line						in this distracted fear,	i led them on in this distracted fear
+Dog2	Dog,	1.2.106	Mids. I, 2, 106	quotation on cited line, with differences			83%	doged	dogged	we shall be doged with company,	the city we shall be dogged with company and
+Dole2	Dole,	5.1.283	Mids. V, 283	quotation on cited line						what dreadful dole is here!	what dreadful dole is here
+Dolphin	Dolphin,	2.1.150	Mids. II, 1, 150	headword on cited line							and heard a mermaid on a dolphins back
+Down3	Down,	5.1.359	Mids. V, 359	quotation on cited line						the wall is down that parted their fathers,	is down that parted their fathers will it please
+Down3	Down,	1.1.243	Mids. I, 1, 243	quotation on cited line						he hailed down oaths,	he hailed down oaths that he was only mine
+Down3	Down,	3.1.126	Mids. III, 1, 126	headword on cited line							will walk up and down here and i will sing that
+Down3	Down,	3.2.396	III, 2, 396	headword on cited line							up and down up and down
+Downright2	Downright,	2.1.145	Mids. II, 1, 145	headword on cited line							we shall chide downright if i longer stay
+Droop	Droop,	3.2.357	Mids. III, 2, 357	quotation on cited line						drooping fog,	with drooping fog as black as acheron
+Droop	Droop,	3.2.357	Mids. III, 2, 357	headword on cited line							with drooping fog as black as acheron
+Dry1	Dry,	4.1.36	Mids. IV, 1, 36	quotation on cited line						dry oats,	munch your good dry oats methinks i have a
+Dry2	Dry,	4.1.42	Mids. IV, 1, 42	headword on cited line						dryed peas,	dried peas but i pray you let none of your
+Dulcet	Dulcet,	2.1.151	Mids. II, 1, 151	quotation on cited line						such dulcet and harmonious breath,	uttering such dulcet and harmonious breath
+Dumbly	Dumbly,	5.1.98	Mids. V, 98	headword on cited line							and in conclusion dumbly have broke off
+Dwarf	Dwarf,	3.2.328	Mids. III, 2, 328	headword on cited line							let me come to her get you gone you dwarf
+Dwarfish	Dwarfish,	3.2.295	Mids. III, 2, 295	headword on cited line							because i am so dwarfish and so low
+Eagles	Eagles,	2.1.79	Mids. II, 1, 79	headword not found near cited line							and make him with fair aegle break his faith
+Earnest2	Earnest,	3.2.277	Mids. III, 2, 277	headword on cited line							in earnest shall i say ay by my life
+Earthly	Earthly,	1.1.76	Mids. I, 1, 76	headword on cited line						earthlyer happy,	but earthlier happy is the rose distilled
+Easy2	Easy,	5.1.22	Mids. V, 22	headword on cited line							how easy is a bush supposed a bear
+Echo1	Echo,	4.1.116	Mids. IV, 1, 116	headword on cited line							of hounds and echo in conjunction
+Echo1	Echo,	4.2.48	Shr. Ind. 2, 48	not a citation of this play							
+Eglantine	Eglantine,	2.1.252	Mids. II, 1, 252	headword on cited line							with sweet muskroses and with eglantine
+Eke1	Eke,	3.1.97	Mids. III, 1, 97	headword on cited line							most brisky juvenal and eke most lovely jew
+Elm	Elm,	4.1.49	Mids. IV, 1, 49	quotation on cited line						the female ivy so enrings the barky fingers of the elm	enrings the barky fingers of the elm
+Elsewhere	Elsewhere,	5.139.12	139, 12	not a citation of this play							
+Enamelled	Enamelled,	2.1.255	Mids. II, 1, 255	headword on cited line							and there the snake throws her enamelled skin
+Enamoured	Enamoured,	3.1.141	Mids. III, 1, 141	quotation on cited line						of:	mine ear is much enamoured of thy note
+Enamoured	Enamoured,	4.1.82	IV, 1, 82	headword on cited line							methought i was enamoured of an ass
+Engage	Engage,	1.1.138	Mids. I, 1, 138	quotation on cited line						too old, to be engaged to young,	o spite too old to be engaged to young
+Engild	Engild,	3.2.187	Mids. III, 2, 187	headword on cited line							fair helena who more engilds the night
+Enmity	Enmity,	4.1.150	Mids. IV, 1, 150	headword on cited line							to sleep by hate and fear no enmity
+Enmity	Enmity,	4.1.150	Mids. IV, 1, 150	headword on cited line							to sleep by hate and fear no enmity
+Enring	Enring,	4.1.49	Mids. IV, 1, 49	headword on cited line							enrings the barky fingers of the elm
+Enthralled	Enthralled,	1.1.136	Mids. I, 1, 136	quotation on cited line						too high to be enthralled to low,	o cross too high to be enthralled to low
+Enthralled	Enthralled,	3.1.142	III, 1, 142	quotation on cited line						so is mine eye enthralled to thy shape,	so is mine eye enthralled to thy shape
+Entice	Entice,	2.1.199	Mids. II, 1, 199	headword on cited line							do i entice you do i speak you fair
+Entwist	Entwist,	4.1.48	Mids. IV, 1, 48	headword on cited line							gentle entwist the female ivy so
+Ere2	Ere,	3.2.395	Mids. III, 2, 395	quotation on cited line						ere day,	we may effect this business yet ere day
+Ere2	Ere,	5.1.441	Mids. V, 441	headword on cited line							we will make amends ere long
+Ere2	Ere,	3.1.200	Mids. III, 1, 200	quotation on cited line						your kindred hath made my eyes water ere now,	my eyes water ere now i desire your more
+Erewhile	Erewhile,	3.2.274	Mids. III, 2, 274	headword on cited line							i am as fair now as i was erewhile
+Err	Err,	1.1.230	Mids. I, 1, 230	headword on cited line							and as he errs doting on hermias eyes
+Estate2	Estate,	1.1.98	Mids. I, 1, 98	quotation on cited line						all my right of her I do estate unto Demetrius,	i do estate unto demetrius
+Esteem1	Esteem,	3.2.294	Mids. III, 2, 294	quotation on cited line						high in his esteem	and are you grown so high in his esteem
+Eternally	Eternally,	4.1.186	Mids. IV, 1, 186	quotation on cited line						these couples shall eternally be knit,	these couples shall eternally be knit
+Ethiop	Ethiop,	3.2.257	Mids. III, 2, 257	headword on cited line							away you ethiope no no hell
+Even2	Even,	3.2.133	Mids. III, 2, 133	quotation on cited line, with differences			100%		put in two scales	your vows to her and me will even weigh,	will even weigh and both as light as tales
+Evening	Evening,	5.1.39	Mids. V, 39	headword on cited line							say what abridgement have you for this evening
+Everlasting	Everlasting,	1.1.85	Mids. I, 1, 85	headword on cited line							for everlasting bond of fellowship
+Everywhere	Everywhere,	2.1.6	Mids. II, 1, 6	headword not found near cited line							i do wander every where
+Everywhere	Everywhere,	1.1.241	Mids. I, 1, 241	quotation on cited line, with differences			spacing			the boy Love is perjured everywhere	so the boy love is perjured every where
+Exploit	Exploit,	3.2.157	Mids. III, 2, 157	headword on cited line							a trim exploit a manly enterprise
+Exposition	Exposition,	4.1.43	Mids. IV, 1, 43	headword on cited line						disposition:	people stir me i have an exposition of sleep
+Extenuate	Extenuate,	1.1.120	Mids. I, 1, 120	quotation on cited line						by no means we may extenuate	which by no means we may extenuate
+Extort	Extort,	3.2.160	Mids. III, 2, 160	quotation on cited line						extort a poor soul's patience,	would so offend a virgin and extort
+Extremely	Extremely,	5.1.80	Mids. V, 80	headword on cited line							extremely stretched and conned with cruel pain
+Eye2	Eye,	3.2.20	Mids. III, 2, 20	quotation on cited line						wild geese that the creeping fowler eye	as wild geese that the creeping fowler eye
+Eye2	Eye,	3.2.20	Mids. III, 2, 20	headword on cited line							as wild geese that the creeping fowler eye
+Eye-ball	Eye-ball,	3.2.369	Mids. III, 2, 369	headword on cited line							and make his eyeballs roll with wonted sight
+Eyelid	Eyelid,	2.1.170	Mids. II, 1, 170	headword on cited line							the juice of it on sleeping eyelids laid
+Eyelid	Eyelid,	2.2.81	II, 2, 81	headword on cited line							sleep his seat on thy eyelid
+Fable1	Fable,	5.1.3	Mids. V, 3	quotation on cited line						these antique fables,	these antique fables nor these fairy toys
+Fade	Fade,	1.1.129	Mids. I, 1, 129	headword on cited line							how chance the roses there do fade so fast
+Faint1	Faint,	1.1.215	Mids. I, 1, 215	quotation on cited line						upon faint primrose-beds,	upon faint primrosebeds were wont to lie
+Faint1	Faint,	1.1.73	Mids. I, 1, 73	quotation on cited line						chanting faint hymns to the cold fruitless moon,	chanting faint hymns to the cold fruitless moon
+Faint2	Faint,	2.2.35	Mids. II, 2, 35	headword on cited line							fair love you faint with wandering is the wood
+Faintness	Faintness,	3.2.428	Mids. III, 2, 428	headword on cited line							now go thy way faintness constraineth me
+Fair3	Fair,	2.1.199	Mids. II, 1, 199	headword on cited line							do i entice you do i speak you fair
+Fairly	Fairly,	1.1.101	Mids. I, 1, 101	quotation on cited line, with differences			100%		if not with vantage	my fortunes every way as fairly ranked as Demetrius',	my fortunes every way as fairly ranked
+Fancy-free	Fancy-free,	2.1.164	Mids. II, 1, 164	headword on cited line							in maiden meditation fancyfree
+Fancy-sick	Fancy-sick,	3.2.96	Mids. III, 2, 96	headword on cited line							all fancysick she is and pale of cheer
+Far-off	Far-off,	4.1.193	Mids. IV, 1, 193	quotation on cited line						like far-off mountains turned into clouds,	like faroff mountains turned into clouds
+Fashion2	Fashion,	3.2.194	Mids. III, 2, 194	quotation on cited line, with differences			100%		all three	they have conjoined to fashion this false sport,	to fashion this false sport in spite of me
+Fawn3	Fawn,	2.1.204	Mids. II, 1, 204	headword on cited line							the more you beat me i will fawn on you
+Fellowship	Fellowship,	1.1.85	Mids. I, 1, 85	quotation on cited line						everlasting bond of fellowship	for everlasting bond of fellowship
+Female2	Female,	4.1.48	Mids. IV, 1, 48	quotation on cited line						the female ivy,	gentle entwist the female ivy so
+Field-dew	Field-dew,	5.1.422	Mids. V, 422	headword on cited line							with this fielddew consecrate
+Fiery-red	Fiery-red,	3.2.391	Mids. III, 2, 391	quotation on cited line, with differences			spacing			the eastern gate, all fiery-red	even till the eastern gate all fiery red
+Figure1	Figure,	1.1.51	Mids. I, 1, 51	quotation on cited line						to leave the figure or disfigure it,	to leave the figure or disfigure it
+Figure2	Figure,	1.1.237	Mids. I, 1, 237	quotation on cited line						wings and no eyes figure unheedy haste,	wings and no eyes figure unheedy haste
+Filch	Filch,	1.1.36	Mids. I, 1, 36	headword on cited line							with cunning hast thou filched my daughters heart
+Fill3	Fill,	2.1.98	Mids. II, 1, 98	quotation on cited line						filled up with mud,	the nine mens morris is filled up with mud
+Filly foal	Filly foal,	2.1.46	Mids. II, 1, 46	headword on cited line							neighing in likeness of a filly foal
+Finch	Finch,	3.1.133	Mids. III, 1, 133	headword on cited line							the finch the sparrow and the lark
+Fine3	Fine,	5.1.12	Mids. V, 12	quotation on cited line						in a fine frenzy,	the poets eye in a fine frenzy rolling
+Fine3	Fine,	5.1.12	Mids. V, 12	headword on cited line	5.1.367		100%			a fine tragedy,	the poets eye in a fine frenzy rolling
+Fine3	Fine,	3.2.284	Mids. III, 2, 284	headword on cited line	3.2.126-127		67%	fine	me seem scorn to you bearing the badge of	f., in faith,	and stolen my loves heart from him fine ifaith
+Finish	Finish,	3.2.38	Mids. III, 2, 38	quotation on cited line						that is finished too,	i took him sleeping that is finished too
+Fit2	Fit,	2.2.106	Mids. II, 2, 106	quotation on cited line						how fit a word is that vile name to perish on my sword,	where is demetrius o how fit a word
+Fit2	Fit,	1.2.5	Mids. I, 2, 5	quotation on cited line, with differences			100%		through all athens	fit to play in our interlude,	which is thought fit through all athens to play
+Fix	Fix,	3.2.17	Mids. III, 2, 17	quotation on cited line						an ass's nole I fixed on his head,	an asss nole i fixed on his head
+Flewed	Flewed,	4.1.125	Mids. IV, 1, 125	quotation on cited line						my hounds are bred out of the Spartan kind, so f., so sanded,	so flewed so sanded and their heads are hung
+Floor	Floor,	5.1.223	Mids. V, 223	quotation on cited line						mouse that creeps on floor	the smallest monstrous mouse that creeps on floor
+Floweret	Floweret,	4.1.60	Mids. IV, 1, 60	headword on cited line							stood now within the pretty flowerets eyes
+Flowery	Flowery,	3.1.132	Mids. III, 1, 132	headword on cited line							what angel wakes me from my flowery bed
+Flowery	Flowery,	4.1.1	IV, 1, 1	headword on cited line							come sit thee down upon this flowery bed
+Foal1	Foal,	2.1.46	Mids. II, 1, 46	quotation on cited line						a filly foal	neighing in likeness of a filly foal
+Fog	Fog,	2.1.90	Mids. II, 1, 90	headword on cited line							contagious fogs which falling in the land
+Fog	Fog,	3.2.357	III, 2, 357	headword on cited line							with drooping fog as black as acheron
+Fold1	Fold,	2.1.96	Mids. II, 1, 96	headword on cited line							the fold stands empty in the drowned field
+Fond2	Fond,	3.2.114	III, 2, 114	headword on cited line							shall we their fond pageant see
+Foolish	Foolish,	3.2.319	Mids. III, 2, 319	headword on cited line							a foolish heart that i leave here behind
+Foolish	Foolish,	3.1.137	Mids. III, 1, 137	headword on cited line							for indeed who would set his wit to so foolish a
+Fordo	Fordo	5.1.381	Mids. V, 381	quotation on cited line, with differences			80%	ne		all with weary task --ne,	all with weary task fordone
+Forsake	Forsake	3.2.15	Mids. III, 2, 15	quotation on cited line						forsook his scene and entered in a brake,	forsook his scene and entered in a brake
+Forth2	Forth,	1.1.164	Mids. I, 1, 164	quotation on cited line						steal forth thy father's house,	steal forth thy fathers house tomorrow night
+Fortnight	Fortnight,	5.1.376	Mids. V, 376	headword on cited line							a fortnight hold we this solemnity
+Fortunate	Fortunate,	3.2.233	Mids. III, 2, 233	headword on cited line							so hung upon with love so fortunate
+Fortunate	Fortunate,	5.1.413	V, 413	headword on cited line							ever shall be fortunate
+Fortunately	Fortunately,	4.1.182	Mids. IV, 1, 182	headword on cited line							fair lovers you are fortunately met
+Forty	Forty,	2.1.176	Mids. II, 1, 176	quotation on cited line						in forty minutes,	in forty minutes having once this juice
+Fowler	Fowler,	3.2.20	Mids. III, 2, 20	headword on cited line							as wild geese that the creeping fowler eye
+Fragrant	Fragrant,	4.1.57	Mids. IV, 1, 57	headword on cited line							with coronet of fresh and fragrant flowers
+Frantic	Frantic,	5.1.10	Mids. V, 10	quotation on cited line						the lover, all as f., sees Helen's beauty in a brow of Egypt,	that is the madman the lover all as frantic
+Freckles	Freckles,	2.1.13	Mids. II, 1, 13	quotation on cited line, with differences			83%	savours		in those freckles live their savours,	in those freckles live their savors
+Frenzy	Frenzy,	5.1.12	Mids. V, 12	headword on cited line							the poets eye in a fine frenzy rolling
+Friendly1	Friendly,	3.2.217	Mids. III, 2, 217	headword on cited line							it is not friendly tis not maidenly
+Frolic	Frolic,	5.1.394	Mids. V, 394	quotation on cited line, with differences			60%	we fairies		we fairies now are frolic	now are frolic not a mouse
+Frost	Frost,	2.1.107	Mids. II, 1, 107	headword on cited line							the seasons alter hoaryheaded frosts
+Fruitless	Fruitless,	3.2.371	Mids. III, 2, 371	quotation on cited line						a dream and fruitless vision,	shall seem a dream and fruitless vision
+Fruitless	Fruitless,	1.1.73	Mids. I, 1, 73	quotation on cited line						chanting faint hymns to the cold fruitless moon,	chanting faint hymns to the cold fruitless moon
+Full2	Full,	3.2.379	Mids. III, 2, 379	quotation on cited line						full fast,	for nights swift dragons cut the clouds full fast
+Full2	Full,	3.1.135	Mids. III, 1, 135	headword on cited line							whose note full many a man doth mark
+Full2	Full,	2.1.125	Mids. II, 1, 125	quotation on cited line						often,	full often hath she gossiped by my side
+Full2	Full,	5.190.125	V, 190	not a citation of this play							
+Function	Function,	3.2.177	Mids. III, 2, 177	headword on cited line							dark night that from the eye his function takes
+Fury	Fury,	5.1.289	Mids. V, 289	headword on cited line						furyies:	approach ye furies fell
+Fury	Fury,	4.1.167	Mids. IV, 1, 167	headword on cited line							and i in fury hither followed them
+Gambol2	Gambol,	3.1.168	Mids. III, 1, 168	headword on cited line							hop in his walks and gambol in his eyes
+Game1	Game,	1.1.240	Mids. I, 1, 240	quotation on cited line						as waggish boys in game themselves forswear,	as waggish boys in game themselves forswear
+Game1	Game,	3.2.289	Mids. III, 2, 289	quotation on cited line						that way goes the game	puppet why so ay that way goes the game
+Gape	Gape,	5.1.387	Mids. V, 387	quotation on cited line, with differences			80%	gapeing	gaping	the graves all gapeing wide,	that the graves all gaping wide
+Garlic	Garlic,	4.2.43	Mids. IV, 2, 43	headword on cited line							most dear actors eat no onions nor garlic for we
+Gawd	Gawd,	1.1.33	Mids. I, 1, 33	quotation on cited line						rings, gawds, conceits,	with bracelets of thy hair rings gawds conceits
+Gawd	Gawd,	4.1.172	IV, 1, 172	quotation on cited line, with differences			93%	gawd	gaud	as the remembrance of an idle gawd which in my childhood I did dote upon,	as the remembrance of an idle gaud
+Generally	Generally,	1.2.2	Mids. I, 2, 2	quotation on cited line						generally	you were best to call them generally
+Gentleman-like	Gentleman-like,	1.2.90	Mids. I, 2, 90	headword on cited line							gentlemanlike man therefore you must needs
+Giant-like	Giant-like,	3.1.197	Mids. III, 1, 197	quotation on cited line, with differences			spacing			that same cowardly giant-like ox-beef hath devoured many a gentleman of your house,	patience well that same cowardly giant like
+Girdle1	Girdle,	2.1.175	Mids. II, 1, 175	quotation on cited line						I'll put a girdle round about the earth in forty minutes,	ill put a girdle round about the earth
+Glance2	Glance,	5.1.13	Mids. V, 13	quotation on cited line						doth glance from heaven to earth, from earth to heaven,	doth glance from heaven to earth from earth to heaven
+Glance2	Glance,	2.1.75	Mids. II, 1, 75	quotation on cited line, with differences			100%		thus for shame titania	how canst thou glance at my credit with Hippolyta?	glance at my credit with hippolyta
+Gleam1	Gleam,	5.1.279	Mids. V, 279	headword on cited line							for by thy gracious golden glittering gleams
+Gleam1	Gleam,	5.1.279	Mids. V, 279	headword on cited line							for by thy gracious golden glittering gleams
+Gleek2	Gleek,	3.1.150	Mids. III, 1, 150	quotation on cited line						I can gleek upon occasion,	can gleek upon occasion
+Glide2	Glide,	5.1.389	Mids. V, 389	headword on cited line							in the churchway paths to glide
+Glimmer2	Glimmer,	2.1.77	Mids. II, 1, 77	headword on cited line							didst thou not lead him through the glimmering night
+Glimmer2	Glimmer,	3.2.61	III, 2, 61	headword on cited line							as yonder venus in her glimmering sphere
+Glimmer2	Glimmer,	5.1.398	V, 398	headword on cited line							through the house give glimmering light
+Glittering	Glittering,	5.1.279	Mids. V, 279	headword on cited line							for by thy gracious golden glittering gleams
+Globe	Globe,	4.1.102	Mids. IV, 1, 102	headword on cited line							we the globe can compass soon
+Gloriously	Gloriously,	3.2.106	Mids. III, 2, 106	headword on cited line							let her shine as gloriously
+Glow2	Glow,	5.1.382	Mids. V, 382	headword on cited line							now the wasted brands do glow
+Glow-worm	Glow-worm,	3.1.173	Mids. III, 1, 173	headword on cited line							and light them at the fiery glowworms eyes
+Goblin	Goblin,	3.2.399	Mids. III, 2, 399	headword on cited line							goblin lead them up and down
+Gold2	Gold,	2.1.11	Mids. II, 1, 11	quotation on cited line						gold coats,	in their gold coats spots you see
+Goodfellow	Goodfellow,	2.1.34	Mids. II, 1, 34	headword on cited line							called robin goodfellow are not you he
+Gore1	Gore,	5.1.346	Mids. V, 346	headword on cited line							lay them in gore
+Gossip1	Gossip,	2.1.47	Mids. II, 1, 47	quotation on cited line, with differences			86%	s	gossips	sometime lurk I in a --'s bowl,	and sometime lurk i in a gossips bowl
+Gossip2	Gossip,	2.1.125	Mids. II, 1, 125	quotation on cited line						full often hath she gossiped by my side,	full often hath she gossiped by my side
+Governess	Governess,	2.1.103	Mids. II, 1, 103	quotation on cited line						the moon, the governess of floods,	therefore the moon the governess of floods
+Government	Government,	5.1.124	Mids. V, 124	quotation on cited line						a sound, but not in government	government
+Greet	Greet,	5.1.94	Mids. V, 94	quotation on cited line, with differences			83%	lines		to greet me with premeditated lines,	to greet me with premeditated welcomes
+Griffin	Griffin,	2.1.232	Mids. II, 1, 232	headword on cited line							the dove pursues the griffin the mild hind
+Grim-looked	Grim-looked,	5.1.171	Mids. V, 171	headword on cited line							o grimlooked night o night with hue so black
+Grisly	Grisly,	5.140	Mids. V, 140	not a citation of this play							
+Grossness	Grossness,	3.1.163	Mids. III, 1, 163	quotation on cited line						I will purge thy mortal grossness	and i will purge thy mortal grossness so
+Grunt	Grunt,	3.1.113	Mids. III, 1, 113	headword on cited line							and neigh and bark and grunt and roar and burn
+Guest-wise	Guest-wise,	3.2.171	Mids. III, 2, 171	quotation on cited line						my heart to her but as guest-wise sojourned, and now to Helen is it home returned,	my heart to her but as guestwise sojourned
+Habitation	Habitation,	5.1.17	Mids. V, 17	headword on cited line							a local habitation and a name
+Hail1	Hail,	1.1.244	Mids. I, 1, 244	headword on cited line							and when this hail some heat from hermia felt
+Hail1	Hail,	1.1.244	Mids. I, 1, 244	headword on cited line							and when this hail some heat from hermia felt
+Hail3	Hail,	1.1.243	Mids. I, 1, 243	headword on cited line							he hailed down oaths that he was only mine
+Half2	Half,	3.1.37	Mids. III, 1, 37	headword on cited line							nay you must name his name and half
+Half2	Half,	2.2.65	Mids. II, 2, 65	quotation on cited line						half that wish,	with half that wish the wishers eyes be pressed
+Hallow	Hallow,	5.1.395	Mids. V, 395	headword on cited line							shall disturb this hallowed house
+Handful	Handful,	4.1.41	Mids. IV, 1, 41	headword on cited line							i had rather have a handful or two of
+Handicraft-man	Handicraft-man	4.2.10	Mids. IV, 2, 10	headword on cited line							handicraft man in athens
+Harbinger	Harbinger,	3.2.380	Mids. III, 2, 380	headword on cited line							and yonder shines auroras harbinger
+Hard-handed	Hard-handed,	5.1.72	Mids. V, 72	headword on cited line							hardhanded men that work in athens here
+Hare-lip	Hare-lip,	5.1.418	Mids. V, 418	headword on cited line							never mole hare lip nor scar
+Harmonious	Harmonious,	2.1.151	Mids. II, 1, 151	headword on cited line							uttering such dulcet and harmonious breath
+Harp1	Harp,	5.1.45	Mids. V, 45	headword on cited line							by an athenian eunuch to the harp
+Harshness	Harshness,	1.1.38	Mids. I, 1, 38	quotation on cited line, with differences			100%		which is due to me	turned her obedience to stubborn harshness	to stubborn harshness and my gracious duke
+Hasty-footed	Hasty-footed,	3.2.200	Mids. III, 2, 200	headword on cited line							when we have chid the hastyfooted time
+Haunt1	Haunt,	2.1.142	Mids. II, 1, 142	quotation on cited line						will spare your haunts,	if not shun me and i will spare your haunts
+Haunt2	Haunt,	3.2.5	Mids. III, 2, 5	quotation on cited line						this haunted grove,	what nightrule now about this haunted grove
+Haunt2	Haunt,	3.1.108	Mids. III, 1, 108	quotation on cited line						we are haunted,	haunted pray masters fly masters help
+Haunt2	Haunt,	2.2.85	Mids. II, 2, 85	quotation on cited line						do not haunt me thus,	i charge thee hence and do not haunt me thus
+Hay1	Hay,	4.1.37	Mids. IV, 1, 37	headword on cited line							great desire to a bottle of hay good hay sweet
+Headless	Headless,	3.1.112	Mids. III, 1, 112	headword on cited line							a hog a headless bear sometime a fire
+Hearken	Hearken,	5.1.241	Mids. V, 241	headword not found near cited line							well leave it to his discretion and let us listen to
+Hecate	Hecate	5.1.391	Mids. V, 391	quotation on cited line, with differences			75%	s	hecates	the triple --'s team,	by the triple hecates team
+Hedgehog	Hedgehog,	2.2.10	Mids. II, 2, 10	headword on cited line							thorny hedgehogs be not seen
+Height	Height,	3.2.291	Mids. III, 2, 291	quotation on cited line						she hath urged her height	between our statures she hath urged her height
+Height	Height,	3.2.291	Mids. III, 2, 291	headword on cited line	3.2.292-293		100%		personage her tall personage her forsooth	with her height she hath prevailed with him,	between our statures she hath urged her height
+Hempen	Hempen,	3.1.79	Mids. III, 1, 79	quotation on cited line						hempen home-spuns,	what hempen homespuns have we swaggering here
+Henchman	Henchman,	2.1.121	Mids. II, 1, 121	headword on cited line							to be my henchman set your heart at rest
+Heraldry	Heraldry,	3.2.213	Mids. III, 2, 213	headword on cited line							two of the first like coats in heraldry
+Hermia	Hermia,	1.1.23	Mids. I, 1, 23	headword on cited line							against my child my daughter hermia
+Hers	Hers,	2.2.93	Mids II, 2, 93	headword on cited line							if so my eyes are oftener washed than hers
+Hiems	Hiems,	2.1.109	Mids. II, 1, 109	headword on cited line							and on old hiems thin and icy crown
+High2	High,	1.1.136	Mids. I, 1, 136	headword on cited line							o cross too high to be enthralled to low
+High3	High,	3.2.294	Mids. III, 2, 294	quotation on cited line						grown so high in his esteem,	and are you grown so high in his esteem
+Hight	Hight	5.140	Mids. V, 140	not a citation of this play						this grisly beast, which lion hight by name,	
+Hight	Hight	4.0	IV Prol. 18	not a citation of this play							
+Hind1	Hind,	2.1.232	Mids. II, 1, 232	headword on cited line							the dove pursues the griffin the mild hind
+History1	History,	1.1.133	Mids. I, 1, 133	quotation on cited line						could ever hear by tale or history	could ever hear by tale or history
+Hoard1	Hoard,	4.1.40	Mids. IV, 1, 40	headword on cited line							the squirrels hoard and fetch thee new nuts
+Hoary-headed	Hoary-headed,	2.1.107	Mids. II, 1, 107	quotation on cited line						hoary-headed frosts fall in the fresh lap of the crimson rose,	the seasons alter hoaryheaded frosts
+Hobgoblin	Hobgoblin,	2.1.40	Mids. II, 1, 40	headword on cited line							those that hobgoblin call you and sweet puck
+Holla2	Holla,	4.1.130	Mids. IV, 1, 130	quotation on cited line						a cry more tuneable was never hollaed to,	was never hollaed to nor cheered with horn
+Homespun	Homespun,	3.1.79	Mids. III, 1, 79	headword on cited line							what hempen homespuns have we swaggering here
+Honeysuckle	Honeysuckle,	4.1.47	Mids. IV, 1, 47	headword on cited line							so doth the woodbine the sweet honeysuckle
+Hoot	Hoot,	2.2.6	Mids. II, 2, 6	headword on cited line							the clamorous owl that nightly hoots and wonders
+Horned	Horned,	5.1.243	Mids. V, 243	quotation on cited line						the horned moon,	this lanthorn doth the horned moon present
+Housewife	Housewife	2.1.37	Mids. II, 1, 37	headword on cited line							and bootless make the breathless housewife churn
+Howsoever	Howsoever,	5.1.27	Mids. V, 27	quotation on cited line						but h., strange and admirable,	but howsoever strange and admirable
+Humane	Humane	2.1.101	Mids. II, 1, 101	quotation on cited line, with differences			67%	humane	human	the humane mortals,	the human mortals want their winter here
+Humane	Humane	2.2.119	II, 2, 119	headword on cited line						humane skill,	and touching now the point of human skill
+Humane	Humane	2.2.57	Mids. II, 2, 57	quotation on cited line, with differences			67%	humane	human	in humane modesty,	lie further off in human modesty
+Hundred	Hundred,	2.1.160	Mids. II, 1, 160	quotation on cited line						a hundred thousand hearts,	as it should pierce a hundred thousand hearts
+Hungry	Hungry,	5.1.378	Mids. V, 378	headword on cited line							now the hungry lion roars
+Hymn	Hymn,	1.1.73	Mids. I, 1, 73	headword on cited line							chanting faint hymns to the cold fruitless moon
+Hymn	Hymn,	2.1.102	II, 1, 102	headword on cited line							no night is now with hymn or carol blest
+Ice	Ice,	5.1.59	Mids. V, 59	headword on cited line							that is hot ice and wondrous strange snow
+Icy	Icy,	2.1.109	Mids. II, 1, 109	headword on cited line							and on old hiems thin and icy crown
+Idle1	Idle,	3.2.168	Mids. III, 2, 168	quotation on cited line						never did mockers waste more idle breath,	never did mockers waste more idle breath
+Idle1	Idle,	4.1.172	IV, 1, 172	quotation on cited line						as the remembrance of an idle gaud,	as the remembrance of an idle gaud
+Idle1	Idle,	5.1.434	V, 434	quotation on cited line						this weak and idle theme,	and this weak and idle theme
+Idleness	Idleness,	2.1.168	Mids. II, 1, 168	headword not found near cited line							and maidens call it loveinidleness
+Idolatry	Idolatry,	1.1.109	Mids. I, 1, 109	headword on cited line							devoutly dotes dotes in idolatry
+Illusion	Illusion,	3.2.98	Mids. III, 2, 98	headword on cited line							by some illusion see thou bring her here
+Imagine	Imagine,	5.1.21	Mids. V, 21	quotation on cited line, with differences			67%	imagine		imagine some fear,	or in the night imagining some fear
+Imagine	Imagine,	5.1.218	Mids. V, 218	quotation on cited line, with differences			spacing			if we imagine no worse of them than they of themselves, they may pass for excellent men,	if we imagine no worse of them than
+Imbrue	Imbrue	5.1.351	Mids. V, 351	quotation on cited line						come, blade, my breast imbrue	come blade my breast imbrue
+Impair2	Impair,	3.2.179	Mids. III, 2, 179	quotation on cited line						impair the seeing sense,	wherein it doth impair the seeing sense
+Impair2	Impair,	5.1.126	V, 126	quotation on cited line						like a tangled chain, nothing impaired, but all disordered,	nothing impaired but all disordered who is
+Impatient	Impatient	3.2.287	Mids. III, 2, 287	quotation on cited line, with differences			89%	hear	tear	will you hear impatient answers from my gentle tongue?	impatient answers from my gentle tongue
+Impeach2	Impeach,	2.1.214	Mids. II, 1, 214	quotation on cited line						you do impeach your modesty too much, to leave the city,	you do impeach your modesty too much
+Imperial	Imperial,	2.1.163	Mids. II, 1, 163	quotation on cited line						the imperial votaress,	and the imperial votaress passed on
+Impression	Impression,	1.1.32	Mids. I, 1, 32	quotation on cited line						and stolen the impression of her fantasy with bracelets of thy hair,	and stolen the impression of her fantasy
+Imprint2	Imprint,	1.1.50	Mids. I, 1, 50	quotation on cited line						as a form in wax by him imprinted,	by him imprinted and within his power
+Imprison	Imprison,	1.58.6	58, 6	not a citation of this play							
+In2	In,	5.1.84	Mids. V, 84	quotation on cited line						bring them in,	go bring them in and take your places ladies
+In2	In,	3.1.59	Mids. III, 1, 59	quotation on cited line						the moon may shine in at the casement,	and the moon may shine in at the casement
+Incorporate2	Incorporate,	3.2.208	Mids. III, 2, 208	quotation on cited line						as if our hands, our sides, voices and minds had been incorporate	had been incorporate so we grew together
+India	India,	2.1.69	Mids. II, 1, 69	headword on cited line							come from the farthest steppe of india
+Injurious	Injurious,	3.2.195	Mids. III, 2, 195	quotation on cited line						injurious Hermia!	injurious hermia most ungrateful maid
+Insufficiency	Insufficiency,	2.2.128	Mids. II, 2, 128	headword on cited line							but you must flout my insufficiency
+Interchained	Interchained,	2.2.49	Mids. II, 2, 49	quotation on cited line						two bosoms interchained with an oath,	two bosoms interchained with an oath
+Interchange2	Interchange,	1.1.29	Mids. I, 1, 29	quotation on cited line						interchanged love-tokens with my child,	and interchanged lovetokens with my child
+Interchange2	Interchange,	2.2.49	II, 2, 49	quotation on cited line, with differences			67%	interchanged		two bosoms interchanged,	two bosoms interchained with an oath
+Interlude	Interlude,	1.2.6	Mids. I, 2, 6	headword on cited line							in our interlude before the duke and the duchess
+Interlude	Interlude,	5.1.156	V, 156	headword on cited line							in this same interlude it doth befall
+Ivy	Ivy,	4.1.48	Mids. IV, 1, 48	headword on cited line							gentle entwist the female ivy so
+Jangle	Jangle,	3.2.353	Mids. III, 2, 353	quotation on cited line, with differences			83%	jangleing	jangling	their jangleing I esteem a sport,	as this their jangling i esteem a sport
+Jaw	Jaw,	1.1.148	Mids. I, 1, 148	headword on cited line							the jaws of darkness do devour it up
+Jill	Jill	3.2.461	Mids. III, 2, 461	quotation on cited line						Jack shall have Jill	jack shall have jill
+Joiner	Joiner,	1.2.66	Mids. I, 2, 66	headword on cited line							father snug the joiner you the lions part
+Joiner	Joiner,	3.1.47	III, 1, 47	headword on cited line							and tell them plainly he is snug the joiner
+Joiner	Joiner,	5.1.226	V, 226	headword on cited line							then know that i one snug the joiner am
+Jole	Jole	3.2.338	Mids. III, 2, 338	quotation on cited line						I'll go with thee, cheek by jole	follow nay ill go with thee cheek by jole
+Jollity	Jollity,	4.1.97	Mids. IV, 1, 97	headword on cited line							wedded with theseus all in jollity
+Jollity	Jollity,	5.1.377	V, 377	headword on cited line							in nightly revels and new jollity
+Juggler	Juggler,	3.2.282	Mids. III, 2, 282	quotation on cited line						O me, you juggler	o me you juggler you cankerblossom
+Juvenal	Juvenal	3.1.97	Mids. III, 1, 97	headword on cited line							most brisky juvenal and eke most lovely jew
+Keen	Keen,	2.2.123	Mids. II, 2, 123	quotation on cited line						this keen mockery,	wherefore was i to this keen mockery born
+Keen	Keen,	3.2.323	III, 2, 323	quotation on cited line, with differences			86%	shes	she is	when she's angry, she's keen and shrewd,	o when shes angry she is keen and shrewd
+Keen	Keen,	5.1.54	V, 54	quotation on cited line						some satire, keen and critical,	that is some satire keen and critical
+Keep2	Keep,	3.2.169	Mids. III, 2, 169	quotation on cited line						keep thy Hermia,	lysander keep thy hermia i will none
+Keep2	Keep,	3.2.308	Mids. III, 2, 308	headword on cited line							did ever keep your counsels never wronged you
+Keep2	Keep,	3.2.445	Mids. III, 2, 445	headword on cited line							my legs can keep no pace with my desires
+Keep2	Keep,	3.154.3	154, 3	not a citation of this play						vowed chaste life to keep	
+Keep2	Keep,	1.1.179	Mids. I, 1, 179	quotation on cited line, with differences			67%	to		to keep promise:	keep promise love look here comes helena
+Keep2	Keep,	1.1.222	Mids. I, 1, 222	quotation on cited line, with differences			67%	to		to keep word:	keep word lysander we must starve our sight
+Keep2	Keep,	3.2.266	III, 2, 266	headword on cited line							demetrius i will keep my word with thee
+Keep2	Keep,	2.2.5	Mids. II, 2, 5	quotation on cited line						some keep back the clamorous owl,	to make my small elves coats and some keep back
+Keep2	Keep,	2.1.18	Mids. II, 1, 18	headword on cited line							the king doth keep his revels here tonight
+Keep2	Keep,	3.1.147	Mids. III, 1, 147	headword on cited line							reason and love keep little company to gether
+Kill-courtesy	Kill-courtesy,	2.2.77	Mids. II, 2, 77	headword on cited line							near this lacklove this killcourtesy
+Killen	Killen,	2.0	II Prol. 20	not a citation of this play							
+Knavish	Knavish,	2.1.33	Mids. II, 1, 33	headword on cited line							or else you are that shrewd and knavish sprite
+Knavish	Knavish,	3.2.440	III, 2, 440	headword on cited line							cupid is a knavish lad
+Knit2	Knit,	1.1.172	Mids. I, 1, 172	quotation on cited line, with differences			71%	kniteth love	knitteth	that which kniteth souls and prospers love,	by that which knitteth souls and prospers loves
+Knit2	Knit,	4.1.186	IV, 1, 186	quotation on cited line						these couples shall eternally be knit	these couples shall eternally be knit
+Knit2	Knit,	5.1.193	Mids. V, 193	quotation on cited line						thy stones with lime and hair knit up in thee,	thy stones with lime and hair knit up in thee
+Knit2	Knit,	2.2.47	Mids. II, 2, 47	quotation on cited line						my heart unto yours is knit	i mean that my heart unto yours is knit
+Knot-grass	Knot-grass,	3.2.329	Mids. III, 2, 329	headword on cited line							you minimus of hindering knotgrass made
+Labour2	Labour,	2.1.36	Mids. II, 1, 36	quotation on cited line, with differences			75%	labour		labour in the quern,	skim milk and sometimes labor in the quern
+Labour2	Labour,	5.1.73	V, 73	quotation on cited line, with differences			80%	laboured	labored	never laboured in their minds,	which never labored in their minds till now
+Lack-love	Lack-love,	2.2.77	Mids. II, 2, 77	headword on cited line							near this lacklove this killcourtesy
+Lakin	Lakin,	3.1.14	Mids. III, 1, 14	headword on cited line							byr lakin a parlous fear
+Languish2	Languish,	2.2.29	Mids. II, 2, 29	headword on cited line							love and languish for his sake
+Large	Large,	4.1.4	Mids. IV, 1, 4	quotation on cited line						thy fair large ears,	and kiss thy fair large ears my gentle joy
+Large	Large,	5.1.152	Mids. V, 152	headword on cited line							at large discourse while here they do remain
+Last3	Last,	5.1.51	Mids. V, 51	quotation on cited line						when I from Thebes came last a conqueror,	when i from thebes came last a conqueror
+Latch2	Latch,	3.2.36	Mids. III, 2, 36	quotation on cited line						but hast thou yet latched the Athenian's eyes with the love-juice?	but hast thou yet latched the athenians eyes
+Latter	Latter,	4.1.223	Mids. IV, 1, 223	headword on cited line							sing it in the latter end of a play be fore the
+Leaden	Leaden,	3.2.365	Mids. III, 2, 365	quotation on cited line						sleep with leaden legs,	with leaden legs and batty wings doth creep
+Leander	Leander,	5.1.198	Mids. V, 198	headword not found near cited line							and like limander am i trusty still
+Leathern	Leathern,	2.2.4	Mids. II, 2, 4	headword on cited line							some war with reremice for their leathern wings
+Left	Left,	5.1.303	Mids. V, 303	headword on cited line							ay that left pap
+Lesser1	Lesser,	2.2.89	Mids. II, 2, 89	quotation on cited line						grace,	the more my prayer the lesser is my grace
+Leviathan	Leviathan,	2.1.174	Mids. II, 1, 174	quotation on cited line						ere the leviathan can swim a league,	ere the leviathan can swim a league
+Light4	Light,	5.1.401	Mids. V, 401	quotation on cited line						hop as light as bird from brier,	hop as light as bird from brier
+Light5	Light,	5.1.401	Mids. V, 401	headword on cited line							hop as light as bird from brier
+Light5	Light,	3.1.173	Mids. III, 1, 173	headword on cited line							and light them at the fiery glowworms eyes
+Lighter-heeled	Lighter-heeled,	3.2.415	Mids. III, 2, 415	headword on cited line							the villain is much lighterheeled than i
+Lightning	Lightning,	1.1.145	Mids. I, 1, 145	headword on cited line							brief as the lightning in the collied night
+Like4	Like,	4.1.178	Mids. IV, 1, 178	headword on cited line							but like in sickness did i loathe this food
+Lily-white	Lily-white,	3.1.95	Mids. III, 1, 95	headword on cited line							most radiant pyramus most lilywhite of hue
+Limander	Limander,	5.1.198	Mids. V, 198	headword on cited line						Leander:	and like limander am i trusty still
+Linger	Linger,	1.1.4	Mids. I, 1, 4	quotation on cited line						she lingers my desires,	this old moon wanes she lingers my desires
+Liquid	Liquid,	1.1.211	Mids. I, 1, 211	headword on cited line							decking with liquid pearl the bladed grass
+Listen	Listen,	5.1.241	Mids. V, 241	quotation on cited line						to:	well leave it to his discretion and let us listen to
+Little2	Little,	3.1.147	Mids. III, 1, 147	headword on cited line							reason and love keep little company to gether
+Live2	Live,	2.1.172	Mids. II, 1, 172	quotation on cited line						the next live creature,	upon the next live creature that it sees
+Loam	Loam,	3.1.70	Mids. III, 1, 70	headword on cited line							and let him have some plaster or some loam or
+Loam	Loam,	5.1.162	V, 162	headword on cited line							this loam this roughcast and this stone doth show
+Loath	Loath,	4.1.16	Mids. IV, 1, 16	headword on cited line							honeybag break not i would be loath to have you
+Lob	Lob,	2.1.16	Mids. II, 1, 16	quotation on cited line						thou lob of spirits,	farewell thou lob of spirits ill be gone
+Local	Local,	5.1.17	Mids. V, 17	quotation on cited line						gives to airy nothing a local habitation,	a local habitation and a name
+Lode-star	Lode-star,	1.1.183	Mids. I, 1, 183	headword on cited line							your eyes are lodestars and your tongues sweet air
+Loffe	Loffe,	2.1.55	Mids. II, 1, 55	headword not found near cited line							and then the whole quire hold their hips and laugh
+Lofty	Lofty,	1.2.41	Mids. I, 2, 41	quotation on cited line						this was lofty	this was lofty now name the rest of the
+Long3	Long	3.2.339	Mids. III, 2, 339	quotation on cited line						all this coil is long of you,	you mistress all this coil is long of you
+Long-legged	Long-legged,	2.2.21	Mids. II, 2, 21	headword on cited line							hence you longlegged spinners hence
+Loose1	Loose,	3.2.258	Mids. III, 2, 258	headword on cited line							seem to break loose take on as you would follow
+Loose1	Loose,	3.2.260	Mids. III, 2, 260	headword on cited line							hang off thou cat thou burr vile thing let loose
+Loose2	Loose,	2.1.159	Mids. II, 1, 159	quotation on cited line						loosed his love-shaft smartly from his bow,	and loosed his loveshaft smartly from his bow
+Loud2	Loud,	5.1.383	Mids. V, 383	headword on cited line							whilst the screechowl screeching loud
+Love-in-idleness	Love-in-idleness,	2.1.168	Mids. II, 1, 168	headword on cited line							and maidens call it loveinidleness
+Love-shaft	Love-shaft,	2.1.159	Mids. II, 1, 159	headword on cited line							and loosed his loveshaft smartly from his bow
+Love-tokens	Love-tokens,	1.1.29	Mids. I, 1, 29	headword on cited line							and interchanged lovetokens with my child
+Low1	Low,	3.2.295	Mids. III, 2, 295	headword on cited line							because i am so dwarfish and so low
+Low1	Low,	1.1.136	Mids. I, 1, 136	quotation on cited line						too high to be enthralled to low	o cross too high to be enthralled to low
+Lull	Lull,	2.1.254	Mids. II, 1, 254	headword on cited line							lulled in these flowers with dances and delight
+Lullaby	Lullaby,	2.2.14	Mids. II, 2, 14	quotation on cited line						Philomel, with melody sing in our sweet l.; lulla, lulla, lullaby,	sing in our sweet lullaby
+Lullaby	Lullaby,	2.2.14	Mids. II, 2, 14	headword on cited line							sing in our sweet lullaby
+Lullaby	Lullaby,	2.2.14	Mids. II, 2, 14	headword on cited line	2.2.19		100%			so good night with lullaby	sing in our sweet lullaby
+Lunatic2	Lunatic,	5.1.7	Mids. V, 7	headword on cited line							the lunatic the lover and the poet
+Luscious	Luscious,	2.1.251	Mids. II, 1, 251	quotation on cited line						overcanopied with luscious woodbine,	quite overcanopied with luscious woodbine
+Lysander	Lysander,	1.1.26	Mids. I, 1, 26	headword on cited line							stand forth lysander and my gracious duke
+Madly	Madly,	2.1.171	Mids. II, 1, 171	headword on cited line							will make or man or woman madly dote
+Madly	Madly,	2.1.153	Mids. II, 1, 153	headword on cited line							and certain stars shot madly from their spheres
+Madly	Madly,	3.2.23	III, 2, 23	headword on cited line							sever themselves and madly sweep the sky
+Maidenly	Maidenly,	3.2.217	Mids. III, 2, 217	quotation on cited line						it is not friendly, 'tis not maidenly	it is not friendly tis not maidenly
+Making	Making,	2.1.32	Mids. II, 1, 32	quotation on cited line						either I mistake your shape and making quite,	either i mistake your shape and making quite
+Manager	Manager,	5.35	Mids. V, 35	not a citation of this play						where is our usual manager of mirth?	
+Margent	Margent,	2.1.85	Mids. II, 1, 85	quotation on cited line						in the beached margent of the sea,	or in the beached margent of the sea
+Marvel1	Marvel,	2.2.96	Mids. II, 2, 96	quotation on cited line, with differences			100%		as a monster	no marvel though Demetrius do fly,	therefore no marvel though demetrius
+Marvellous2	Marvellous,	3.1.2	Mids. III, 1, 2	headword on cited line							pat pat and heres a marvellous
+Marvellous2	Marvellous,	4.1.26	IV, 1, 26	headword not found near cited line							barbers monsieur for methinks i am mar vellous
+Master2	Master,	1.1.74	Mids. I, 1, 74	quotation on cited line						they that master so their blood,	thriceblessed they that master so their blood
+Match2	Match,	4.1.128	Mids. IV, 1, 128	quotation on cited line						matched in mouth like bells,	slow in pursuit but matched in mouth like bells
+Match2	Match,	3.2.305	Mids. III, 2, 305	quotation on cited line						that I can match her,	that i can match her lower hark again
+May1	May,	1.1.167	Mids. I, 1, 167	headword on cited line							to do observance to a morn of may
+May1	May,	4.1.138	IV, 1, 138	headword on cited line							the rite of may and hearing our intent
+May-pole	May-pole,	3.2.296	Mids. III, 2, 296	quotation on cited line						thou painted may-pole	how low am i thou painted maypole speak
+Maze	Maze,	2.1.99	Mids. II, 1, 99	quotation on cited line						the quaint mazes in the wanton green,	and the quaint mazes in the wanton green
+Mazed	Mazed,	2.1.113	Mids. II, 1, 113	quotation on cited line, with differences			100%		by their increase	the mazed world now knows not which is which,	their wonted liveries and the mazed world
+Meadow	Meadow,	2.1.9	Mids. II, 1, 9	headword not found near cited line							to dew her orbs upon the green
+Mean3	Mean,	5.1.330	Mids. V, 330	quotation on cited line						and thus she means, videlicet,	and thus she means videlicet
+Measure1	Measure,	1.2.30	Mids. I, 2, 30	quotation on cited line						in some measure	some measure to the rest yet my chief humor
+Measure1	Measure,	3.2.86	Mids. III, 2, 86	quotation on cited line						in some slight measure	which now in some slight measure it will pay
+Mechanical1	Mechanical,	3.2.9	Mids. III, 2, 9	quotation on cited line						a crew of patches, rude mechanicals,	a crew of patches rude mechanicals
+Meddle	Meddle,	2.1.181	Mids. II, 1, 181	headword on cited line						meddleing monkey,	on meddling monkey or on busy ape
+Medicine1	Medicine,	3.2.264	Mids. III, 2, 264	headword on cited line							out loathed medicine hated potion hence
+Meditation	Meditation,	2.1.164	Mids. II, 1, 164	quotation on cited line						in maiden meditation	in maiden meditation fancyfree
+Melody	Melody,	1.1.189	Mids. I, 1, 189	headword on cited line							my tongue should catch your tongues sweet melody
+Melody	Melody,	2.2.13	II, 2, 13	headword on cited line							philomel with melody
+Melt	Melt	4.1.171	Mids. IV, 1, 171	quotation on cited line						my love to Hermia, melted as the snow,	melted as the snow seems to me now
+Melt	Melt	1.1.245	Mids. I, 1, 245	quotation on cited line						and showers of oaths did melt	so he dissolved and showers of oaths did melt
+Merchandize	Merchandize,	2.1.134	Mids. II, 1, 134	headword on cited line							as from a voyage rich with merchandise
+Merit1	Merit,	5.1.92	Mids. V, 92	headword on cited line							takes it in might not merit
+Merriment	Merriment,	1.1.12	Mids. I, 1, 12	quotation on cited line						stir up the Athenian youth to merriments,	stir up the athenian youth to merriments
+Merriment	Merriment,	3.2.146	III, 2, 146	quotation on cited line						for your merriment	to set against me for your merriment
+Mew1	Mew	1.1.71	Mids. I, 1, 71	headword on cited line							for aye to be in shady cloister mewed
+Middle2	Middle,	2.1.82	Mids. II, 1, 82	quotation on cited line						since the middle summer's spring,	and never since the middle summers spring
+Midst1	Midst,	5.1.96	Mids. V, 96	quotation on cited line						make periods in the midst of sentences,	make periods in the midst of sentences
+Might1	Might,	2.2.143	Mids. II, 2, 143	quotation on cited line, with differences			91%	honour	honor	all my powers, address your love and might to honour Helen,	and all my powers address your love and might
+Might1	Might,	3.2.368	III, 2, 368	quotation on cited line						to take from thence all error with his might	to take from thence all error with his might
+Might1	Might,	5.1.92	V, 92	quotation on cited line						what poor duty cannot do, noble respect takes it in m., not merit,	takes it in might not merit
+Milk-white	Milk-white,	2.1.167	Mids. II, 1, 167	headword on cited line							before milkwhite now purple with loves wound
+Million	Million	3.2.93	Mids. III, 2, 93	headword on cited line							a million fail confounding oath on oath
+Mimic	Mimic,	3.2.19	Mids. III, 2, 19	quotation on cited line						and forth my mimic comes,	and forth my mimic comes when they him spy
+Mind2	Mind,	5.1.113	Mids. V, 113	quotation on cited line						we do not come as minding to content you,	we do not come as minding to content you
+Minimus	Minimus,	3.2.329	Mids. III, 2, 329	quotation on cited line						you m., of hindering knot-grass made,	you minimus of hindering knotgrass made
+Misgraffed	Misgraffed,	1.1.137	Mids. I, 1, 137	quotation on cited line						misgraffed in respect of years,	or else misgraffed in respect of years
+Mislead	Mislead	2.1.39	Mids. II, 1, 39	headword on cited line							mislead nightwanderers laughing at their harm
+Misprised	Misprised,	3.2.74	Mids. III, 2, 74	quotation on cited line						you spend your passion on a misprised mood,	you spend your passion on a misprised mood
+Misprision	Misprision,	3.2.90	Mids. III, 2, 90	quotation on cited line						of thy misprision must perforce ensue some true love turned,	of thy misprision must perforce ensue
+Mistake	Mistake,	2.1.52	Mids. II, 1, 52	quotation on cited line, with differences			80%	th	mistaketh	for three-foot stool --th me,	sometime for threefoot stool mistaketh me
+Mistake	Mistake,	2.1.32	II, 1, 32	headword on cited line							either i mistake your shape and making quite
+Mistake	Mistake,	3.2.112	III, 2, 112	headword on cited line							and the youth mistook by me
+Mistake	Mistake,	3.2.88	Mids. III, 2, 88	quotation on cited line						thou hast mistaken quite,	what hast thou done thou hast mistaken quite
+Mistake	Mistake,	3.2.88	Mids. III, 2, 88	headword on cited line							what hast thou done thou hast mistaken quite
+Mistake	Mistake,	5.1.90	Mids. V, 90	quotation on cited line						our sport shall be to take what they mistake	our sport shall be to take what they mistake
+Moan2	Moan,	5.1.330	Mids. V, 330	headword not found near cited line							and thus she means videlicet
+Mocker	Mocker,	3.2.168	Mids. III, 2, 168	headword on cited line							never did mockers waste more idle breath
+Mockery	Mockery,	2.1.111	Mids. II, 1, 111	quotation on cited line						on Hiems' crown an odorous chaplet . . . is, as in m., set.	is as in mockery set the spring the summer
+Mockery	Mockery,	2.2.123	II, 2, 123	quotation on cited line						this keen mockery	wherefore was i to this keen mockery born
+Mole2	Mole,	5.1.418	Mids. V, 418	headword on cited line							never mole hare lip nor scar
+Momentany	Momentany,	1.1.143	Mids. I, 1, 143	quotation on cited line						making it momentany as a sound,	making it momentany as a sound
+Momentary	Momentary,	1.1.143	Mids. I, 1, 143	headword on cited line							making it momentany as a sound
+Mood	Mood,	3.2.74	Mids. III, 2, 74	quotation on cited line						you spend your passion on a misprised mood	you spend your passion on a misprised mood
+Moonbeams	Moonbeams,	3.1.176	Mids. III, 1, 176	headword on cited line							to fan the moonbeams from his sleeping eyes
+Morris	Morris,	2.1.98	Mids. II, 1, 98	headword on cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.1.98	Mids. II, 1, 98	headword not found near cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.1.98	Mids. II, 1, 98	headword not found near cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.1.98	Mids. II, 1, 98	headword not found near cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.1.98	Mids. II, 1, 98	headword not found near cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.1.98	Mids. II, 1, 98	headword not found near cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.1.98	Mids. II, 1, 98	headword not found near cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.1.98	Mids. II, 1, 98	headword not found near cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.1.98	Mids. II, 1, 98	headword not found near cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.1.98	Mids. II, 1, 98	headword not found near cited line							the nine mens morris is filled up with mud
+Morris-dance	Morris-dance,	2.10.11	10, 11	not a citation of this play							
+Morris-dance	Morris-dance,	2.10.11	10, 11	not a citation of this play							
+Mortal2	Mortal,	2.1.101	Mids. II, 1, 101	headword on cited line							the human mortals want their winter here
+Mortal2	Mortal,	3.1.140	III, 1, 140	headword on cited line						(human mortals).	i pray thee gentle mortal sing again
+Mortal2	Mortal,	3.1.140	III, 1, 140	headword on cited line							i pray thee gentle mortal sing again
+Mortal2	Mortal,	3.2.115	III, 2, 115	headword on cited line							lord what fools these mortals be
+Mortal2	Mortal,	4.1.107	IV, 1, 107	headword on cited line							with these mortals on the ground
+Mould2	Mould,	3.2.211	Mids. III, 2, 211	headword on cited line							two lovely berries moulded on one stem
+Mounsieur	Mounsieur,	4.1.8	Mids. IV, 1, 8	headword on cited line							mounsieur cobweb
+Mouse2	Mouse,	5.1.274	Mids. V, 274	quotation on cited line						well moused, lion,	well moused lion
+Mud1	Mud,	2.1.98	Mids. II, 1, 98	headword on cited line							the nine mens morris is filled up with mud
+Muddy	Muddy,	3.2.139	Mids. III, 2, 139	quotation on cited line						crystal is muddy	crystal is muddy o how ripe in show
+Mulberry	Mulberry,	5.1.149	Mids. V, 149	quotation on cited line						tarrying in mulberry shade,	and thisby tarrying in mulberry shade
+Mulberry	Mulberry,	3.1.170	Mids. III, 1, 170	headword on cited line							with purple grapes green figs and mulberries
+Munch	Munch,	4.1.36	Mids. IV, 1, 36	quotation on cited line						I could munch your good dry oats,	munch your good dry oats methinks i have a
+Mural	Mural,	5.1.208	Mids. V, 208	headword on cited line							now is the mural down between the two
+Murrain	Murrain,	2.1.97	Mids II, 1, 97	headword on cited line							and crows are fatted with the murrion flock
+Murrion	Murrion,	2.1.97	Mids. II, 1, 97	quotation on cited line						crows are fatted with the murrion flock,	and crows are fatted with the murrion flock
+Musk-rose	Musk-rose,	2.1.252	Mids. II, 1, 252	headword on cited line							with sweet muskroses and with eglantine
+Musk-rose	Musk-rose,	2.2.3	II, 2, 3	headword on cited line							some to kill cankers in the muskrose buds
+Musk-rose	Musk-rose,	4.1.3	IV, 1, 3	headword on cited line							and stick muskroses in thy sleek smooth head
+Mutual	Mutual,	4.1.122	Mids. IV, 1, 122	quotation on cited line						the skies, the fountains, every region near seemed all one mutual cry,	seemed all one mutual cry i never heard
+Nativity	Nativity,	3.2.125	Mids. III, 2, 125	quotation on cited line						vows so born, in their nativity all truth appears,	in their nativity all truth appears
+Nativity	Nativity,	5.1.420	V, 420	quotation on cited line						mark prodigious, such as are despised in nativity	despised in nativity
+Natural1	Natural,	4.1.179	Mids. IV, 1, 179	quotation on cited line						come to my natural taste,	but as in health come to my natural taste
+Neaf	Neaf	4.1.20	Mids. IV, 1, 20	quotation on cited line						give me your neaf	give me your neaf mounsieur mus
+Nearly	Nearly,	1.1.126	Mids. I, 1, 126	quotation on cited line						something nearly that concerns yourselves,	of something nearly that concerns yourselves
+Nedar	Nedar,	1.1.107	Mids. I, 1, 107	headword on cited line							made love to nedars daughter helena
+Nedar	Nedar,	4.1.135	IV, 1, 135	headword on cited line							this helena old nedars helena
+Neeld	Neeld,	3.2.204	Mids. III, 2, 204	headword not found near cited line							have with our needles created both one flower
+Neeze	Neeze,	2.1.56	Mids. II, 1, 56	headword on cited line							and waxen in their mirth and neeze and swear
+Neglect2	Neglect,	2.1.206	Mids. II, 1, 206	quotation on cited line						neglect me, lose me,	neglect me lose me only give me leave
+Neither	Neither,	3.1.152	Mids. III, 1, 152	quotation on cited line						thou art as wise as thou art beautiful. Not so neither	not so neither but if i had wit enough
+New1	New,	4.1.40	Mids. IV, 1, 40	quotation on cited line						nuts,	the squirrels hoard and fetch thee new nuts
+New1	New,	4.2.37	IV, 2, 37	quotation on cited line						ribbons,	new ribbons to your pumps meet presently at
+New1	New,	5.1.377	Mids. V, 377	quotation on cited line						a fortnight hold we this solemnity in nightly revels and new jollity,	in nightly revels and new jollity
+New1	New,	1.1.83	I, 1, 83	quotation on cited line						the next new moon,	take time to pause and by the next new moon
+New1	New,	1.1.219	Mids. I, 1, 219	quotation on cited line						to seek new friends,	to seek new friends and stranger companies
+New2	New,	1.1.10	Mids. I, 1, 10	quotation on cited line, with differences			spacing			a silver bow new bent in heaven,	newbent in heaven shall behold the night
+New2	New,	4.1.92	Mids. IV, 1, 92	quotation on cited line						now thou and I are new in amity,	now thou and i are new in amity
+New-bent	New-bent:	1.1.10	Mids. I, 1, 10	headword on cited line							newbent in heaven shall behold the night
+Newt	Newt,	2.2.11	Mids. II, 2, 11	headword on cited line							newts and blindworms do no wrong
+Next1	Next,	1.1.83	Mids. I, 1, 83	quotation on cited line						by the next new moon,	take time to pause and by the next new moon
+Next1	Next,	2.1.172	II, 1, 172	quotation on cited line						the next live creature that it sees,	upon the next live creature that it sees
+Next1	Next,	2.1.172	II, 1, 172	headword on cited line	2.1.262		100%			the next thing he espies,	upon the next live creature that it sees
+Next1	Next,	5.1.127	V, 127	quotation on cited line						who is n.?	next
+Next1	Next,	4.1.206	Mids. IV, 1, 206	headword on cited line							and i will answer my next is most fair
+Next2	Next,	3.2.2	Mids. III, 2, 2	quotation on cited line						what it was that next came in her eye,	then what it was that next came in her eye
+Next2	Next,	3.2.370	Mids. III, 2, 370	quotation on cited line						when they next wake, all this derision shall seem a dream,	when they next wake all this derision
+Nick1	Nick,	1.2.18	Mids. I, 2, 18	quotation on cited line						Nick Bottom,	answer as i call you nick bottom
+Nigh	Nigh,	2.2.18	Mids. II, 2, 18	quotation on cited line						never harm . . . come our lovely lady nigh	come our lovely lady nigh
+Nigh	Nigh,	2.2.155	Mids. II, 2, 155	headword on cited line							no then i well perceive you are not nigh
+Nightly1	Nightly,	5.1.377	Mids. V, 377	quotation on cited line						nightly revels,	in nightly revels and new jollity
+Nightly2	Nightly,	2.2.6	Mids. II, 2, 6	quotation on cited line, with differences			100%		clamorous	the owl that nightly hoots,	the clamorous owl that nightly hoots and wonders
+Night-rule	Night-rule,	3.2.5	Mids. III, 2, 5	quotation on cited line						what night-rule now about this haunted grove?	what nightrule now about this haunted grove
+Night-taper	Night-taper,	3.1.172	Mids. III, 1, 172	headword on cited line							and for nighttapers crop their waxen thighs
+Night-wanderer	Night-wanderer,	2.1.39	Mids. II, 1, 39	quotation on cited line						mislead night-wanderers,	mislead nightwanderers laughing at their harm
+Nimble	Nimble,	1.1.13	Mids. I, 1, 13	quotation on cited line						the pert and nimble spirit of mirth,	awake the pert and nimble spirit of mirth
+Ninus	Ninus,	3.1.100	Mids. III, 1, 100	headword on cited line							ninus tomb man why you must
+Ninus	Ninus,	5.1.139	V, 139	headword on cited line							to meet at ninus tomb there there to woo
+Nod2	Nod,	2.1.250	Mids. II, 1, 250	quotation on cited line, with differences			86%	noding	nodding	where oxlips and the noding violet grows,	where oxlips and the nodding violet grows
+Nod2	Nod,	3.1.177	Mids. III, 1, 177	quotation on cited line						nod to him, elves,	nod to him elves and do him courtesies
+Noint	'Noint,	3.2.351	Mids. III, 2, 351	quotation on cited line						I have 'nointed an Athenian's eyes,	that i have nointed an athenians eyes
+Nole	Nole	3.2.17	Mids. III, 2, 17	quotation on cited line						an ass's nole I fixed on his head,	an asss nole i fixed on his head
+None	None,	3.2.169	Mids. III, 2, 169	quotation on cited line						keep thy Hermia, I will none	lysander keep thy hermia i will none
+None	None,	5.1.46	Mids. V, 46	quotation on cited line						we'll none of that,	well none of that that have i told my love
+Noon-tide	Noon-tide,	3.2.55	Mids. III, 2, 55	quotation on cited line						displease her brother's noon-tide	her brothers noontide with the antipodes
+Nosegay	Nosegay,	1.1.34	Mids. I, 1, 34	headword on cited line							knacks trifles nosegays sweetmeats messengers
+Notably	Notably,	5.1.368	Mids. V, 368	quotation on cited line						it would have been a fine tragedy: and so it is, truly, and very notably discharged,	notably discharged but come your
+Now-a-days	Now-a-days,	3.1.148	Mids. III, 1, 148	headword on cited line							nowadays the more the pity that some honest
+Number2	Number,	3.2.67	Mids. III, 2, 67	quotation on cited line						henceforth be never numbered among men,	henceforth be never numbered among men
+Nuptial2	Nuptial,	1.1.1	Mids. I, 1, 1	quotation on cited line						our nuptial hour,	now fair hippolyta our nuptial hour
+Nuptial2	Nuptial,	3.2.12	III, 2, 12	headword on cited line	3.2.50		100%			day,	intended for great theseus nuptialday
+Nuptial2	Nuptial,	5.1.55	V, 55	quotation on cited line						ceremony,	not sorting with a nuptial ceremony
+Oats	Oats,	4.1.36	Mids. IV, 1, 36	headword on cited line							munch your good dry oats methinks i have a
+Obscenely	Obscenely,	1.2.111	Mids. I, 2, 111	quotation on cited line						there we may rehearse most obscenely and courageously,	rehearse most obscenely and courageously take
+Observance	Observance,	1.1.167	Mids. I, 1, 167	quotation on cited line						to do observance to a morn of May,	to do observance to a morn of may
+Observance	Observance,	4.1.137	IV, 1, 137	headword not found near cited line							no doubt they rose up early to observe
+Observation	Observation,	4.1.109	Mids. IV, 1, 109	quotation on cited line						our observation is performed,	for now our observation is performed
+Observation	Observation,	1.1.167	I, 1, 167	headword not found near cited line							to do observance to a morn of may
+Observation	Observation,	4.1.137	IV, 1, 137	headword not found near cited line							no doubt they rose up early to observe
+Occasion	Occasion,	3.1.150	Mids. III, 1, 150	quotation on cited line						I can gleek upon occasion	can gleek upon occasion
+Odious	Odious,	3.1.84	Mids. III, 1, 84	headword on cited line							thisby the flowers of odious savors sweet
+Odorous	Odorous,	2.1.110	Mids. II, 1, 110	headword on cited line							an odorous chaplet of sweet summer buds
+Odorous	Odorous,	3.1.84	Mids. III, 1, 84	headword off by 1	3.1.85	1					thisby the flowers of odious savors sweet
+Oercharge	O'ercharge,	5.1.85	Mids. V, 85	headword on cited line							i love not to see wretchedness oercharged
+Oerlook	O'erlook,	2.2.121	Mids. II, 2, 121	headword on cited line							and leads me to your eyes where i oerlook
+Officious	Officious,	3.2.330	Mids. III, 2, 330	headword on cited line							you bead you acorn you are too officious
+On2	On,	2.1.264	Mids. II, 1, 264	quotation on cited line						the Athenian garments he hath on,	by the athenian garments he hath on
+On2	On,	3.2.349	III, 2, 349	headword on cited line							by the athenian garment he had on
+On2	On,	3.2.413	Mids. III, 2, 413	quotation on cited line						dares me on,	he goes before me and still dares me on
+On2	On,	5.1.129	Mids. V, 129	quotation on cited line						wonder on,	but wonder on till truth make all things plain
+Once2	Once,	3.2.118	Mids. III, 2, 118	headword on cited line							then will two at once woo one
+Once2	Once,	3.1.102	Mids. III, 1, 102	quotation on cited line						you speak all your part at o., cues and all,	you speak all your part at once cues and all
+Once2	Once,	2.1.176	Mids. II, 1, 176	quotation on cited line						having once this juice, I'll watch Titania,	in forty minutes having once this juice
+Once2	Once,	3.2.68	Mids. III, 2, 68	quotation on cited line						O, once tell true, tell true, even for my sake,	o once tell true tell true even for my sake
+Once2	Once,	1.1.166	Mids. I, 1, 166	headword on cited line							where i did meet thee once with helena
+Once2	Once,	2.1.149	II, 1, 149	headword on cited line							since once i sat upon a promontory
+Once2	Once,	4.1.117	IV, 1, 117	headword on cited line							i was with hercules and cadmus once
+Onion	Onion,	4.2.43	Mids. IV, 2, 43	headword on cited line							most dear actors eat no onions nor garlic for we
+Onion	Onion,	4.1.126	Shr. Ind. 1, 126.	not a citation of this play							
+Orange-tawny	Orange-tawny,	1.2.96	Mids. I, 2, 96	quotation on cited line						your orange-tawny beard,	strawcolor beard your orangetawny beard your
+Orange-tawny	Orange-tawny,	3.1.129	III, 1, 129	quotation on cited line, with differences			100%		so black of hue	the ousel cock with orange-tawny bill,	with orangetawny bill
+Orb	Orb,	2.1.9	Mids. II, 1, 9	quotation on cited line						to dew her orbs upon the green,	to dew her orbs upon the green
+Orient2	Orient,	4.1.59	Mids. IV, 1, 59	headword on cited line							was wont to swell like round and orient pearls
+Original	Original,	2.1.117	Mids. II, 1, 117	quotation on cited line						we are their parents and original	we are their parents and original
+Ounce1	Ounce,	2.2.30	Mids. II, 2, 30	headword on cited line							be it ounce or cat or bear
+Ousel	Ousel,	3.1.128	Mids. III, 1, 128	headword on cited line							the ousel cock so black of hue
+Outsleep	Outsleep,	5.1.372	Mids. V, 372	quotation on cited line						we shall outsleep the coming morn,	i fear we shall outsleep the coming morn
+Over1	Over	2.1.2	Mids. II, 1, 2	quotation on cited line, with differences			100%		thorough bush thorough brier	over hill, over dale, over park, over pale,	over hill over dale
+Over1	Over	2.1.2	Mids. II, 1, 2	headword on cited line							over hill over dale
+Over1	Over	4.2.38	Mids. IV, 2, 38	quotation on cited line						every man look o'er his part,	the palace every man look oer his part for
+Over1	Over	4.1.78	Mids. IV, 1, 78	quotation on cited line						Dian's bud o'er Cupid's flower hath such force and blessed power,	dians bud oer cupids flower
+Over1	Over	3.2.48	Mids. III, 2, 48	quotation on cited line						o'er shoes in blood,	being oer shoes in blood plunge in the deep
+Over1	Over	1.1.126	Mids. I, 1, 126	quotation elsewhere in scene	1.1.226	100	100%			how happy some o'er other some can be,	of something nearly that concerns yourselves
+Overbear	Overbear	2.1.92	Mids. II, 1, 92	quotation on cited line						have overborne their continents,	that they have overborne their continents
+Overbear	Overbear	4.1.184	IV, 1, 184	quotation on cited line						I will overbear your will,	egeus i will overbear your will
+Over-canopied	Over-canopied,	2.1.251	Mids. II, 1, 251	headword on cited line							quite overcanopied with luscious woodbine
+Overcast	Overcast	3.2.355	Mids. III, 2, 355	quotation on cited line						overcast the night,	hie therefore robin overcast the night
+Overflow2	Overflow,	4.1.17	Mids. IV, 1, 17	quotation on cited line, with differences			spacing			I would be loath to have you overflown with a honey-bag,	overflown with a honey bag signior wheres
+Over-full	Over-full,	1.1.113	Mids. I, 1, 113	quotation on cited line						over-full of self-affairs,	but being overfull of selfaffairs
+Overhear	Overhear	2.1.187	Mids. II, 1, 187	headword on cited line							and i will overhear their conference
+Overwatch	Overwatch	5.1.373	Mids. V, 373	quotation on cited line						I fear we shall outsleep the coming morn, as much as we this night have overwatched,	as much as we this night have overwatched
+Ox-beef	Ox-beef,	3.1.197	Mids. III, 1, 197	prose row break	3.1.198	1					patience well that same cowardly giant like
+Oxlip	Oxlip,	2.1.250	Mids. II, 1, 250	headword on cited line							where oxlips and the nodding violet grows
+Pageant1	Pageant,	3.2.114	Mids. III, 2, 114	quotation on cited line						shall we their fond pageant see?	shall we their fond pageant see
+Pale1	Pale,	2.1.4	Mids. II, 1, 4	quotation on cited line						over park, over pale	over park over pale
+Palpable	Palpable,	5.1.374	Mids. V, 374	quotation on cited line, with differences			spacing			this palpable gross play,	this palpablegross play hath well beguiled
+Pap	Pap	5.1.302	Mids. V, 302	quotation on cited line						out, sword, and wound the pap of Pyramus,	the pap of pyramus
+Pap	Pap	5.1.302	Mids. V, 302	headword on cited line							the pap of pyramus
+Paradise	Paradise,	1.1.205	Mids. I, 1, 205	headword on cited line							seemed athens as a paradise to me
+Paragon1	Paragon,	4.2.13	Mids. IV, 2, 13	headword on cited line							you must say paragon a paramour is
+Paramour	Paramour,	4.2.12	Mids. IV, 2, 12	headword on cited line							is a very paramour for a sweet voice
+Parca	Parca,	5.1.343	Mids. V, 343	headword not found near cited line							o sisters three
+Pard	Pard,	2.2.31	Mids. II, 2, 31	headword on cited line							pard or boar with bristled hair
+Pare	Pare,	4.2.41	Mids. IV, 2, 41	quotation on cited line, with differences			83%	pare	that plays the lion pair	let not him pare his nails,	not him that plays the lion pair his nails for
+Parlous	Parlous,	3.1.14	Mids. III, 1, 14	quotation on cited line						a parlous fear,	byr lakin a parlous fear
+Partition	Partition,	3.2.210	Mids. III, 2, 210	quotation on cited line						like to a double cherry, seeming parted, but yet an union in partition	but yet an union in partition
+Partition	Partition,	5.1.168	Mids. V, 168	quotation on cited line						it is the wittiest partition that ever I heard discourse,	it is the wittiest partition that ever i
+Passionate1	Passionate,	3.2.220	Mids. III, 2, 220	headword on cited line							i am amazed at your passionate words
+Past1	Past,	3.1.103	Mids. III, 1, 103	quotation on cited line						your cue is past	pyramus enter your cue is past it is never
+Past1	Past,	4.1.144	IV, 1, 144	headword on cited line							good morrow friends saint valentine is past
+Past3	Past,	3.2.65	Mids. III, 2, 65	quotation on cited line						thou drivest me past the bounds of maiden's patience,	out dog out cur thou drivest me past the bounds
+Past3	Past,	4.1.211	Mids. IV, 1, 211	quotation on cited line						past the wit of man,	dream past the wit of man to say what dream it
+Pat	Pat,	3.1.2	Mids. III, 1, 2	quotation on cited line						are we all met? pat pat	pat pat and heres a marvellous
+Pat	Pat,	5.188.2	V, 188	not a citation of this play						it will fall pat as I told you,	
+Patch1	Patch,	3.2.9	Mids. III, 2, 9	quotation on cited line						a crew of patches, rude mechanicals,	a crew of patches rude mechanicals
+Patch2	Patch,	4.1.215	Mids. IV, 1, 215	quotation on cited line						a patched fool,	i had but man is but a patched fool if he will
+Patent	Patent,	1.1.80	Mids. I, 1, 80	headword on cited line							ere i will yield my virgin patent up
+Path1	Path,	5.1.389	Mids. V, 389	headword on cited line							in the churchway paths to glide
+Pause2	Pause,	1.1.83	Mids. I, 1, 83	quotation on cited line						take time to pause	take time to pause and by the next new moon
+Paved	Paved,	2.1.84	Mids. II, 1, 84	quotation on cited line						by paved fountain,	by paved fountain or by rushy brook
+Pea	Pea,	4.1.42	Mids. IV, 1, 42	headword on cited line							dried peas but i pray you let none of your
+Pearl	Pearl,	2.1.15	Mids. II, 1, 15	headword on cited line							and hang a pearl in every cowslips ear
+Pearl	Pearl,	4.1.59	Mids. IV, 1, 59	headword on cited line							was wont to swell like round and orient pearls
+Pearl	Pearl,	1.1.211	Mids. I, 1, 211	headword on cited line							decking with liquid pearl the bladed grass
+Pearl	Pearl,	1.2.44	Shr. Ind. 2, 44.	not a citation of this play							
+Pearl	Pearl,	2.355.44	II, 355	not a citation of this play							
+Pearl	Pearl,	5.1.77	V, 1, 77	headword not found near cited line							it is not for you i have heard it over
+Peascod	Peascod,	3.1.191	Mids. III, 1, 191	headword on cited line							squash your mother and to master peascod
+Peck1	Peck,	4.1.35	Mids. IV, 1, 35	headword on cited line							truly a peck of provender i could
+Peep2	Peep,	4.1.89	Mids. IV, 1, 89	quotation on cited line						when thou wakest, with thine own fool's eyes peep	now when thou wakest with thine own fools eyes peep
+Pelting	Pelting,	2.1.91	Mids. II, 1, 91	quotation on cited line						have every pelting river made so proud,	have every pelting river made so proud
+Pensioners	Pensioners,	2.1.10	Mids. II, 1, 10	headword on cited line							the cowslips tall her pensioners be
+Peradventure	Peradventure,	4.1.224	Mids. IV, 1, 224	headword on cited line							duke peradventure to make it the more
+Perfect1	Perfect,	3.2.137	Mids. III, 2, 137	headword on cited line							o helen goddess nymph perfect divine
+Perfect1	Perfect,	1.2.98	Mids. I, 2, 98	quotation on cited line						your perfect yellow,	crowncolor beard your perfect yellow
+Perfect1	Perfect,	1.2.112	Mids. I, 2, 112	quotation on cited line						take pains, be perfect	pains be perfect adieu
+Perhaps	Perhaps,	3.1.82	Mids. III, 1, 82	headword on cited line							an actor too perhaps if i see cause
+Perhaps	Perhaps,	3.2.303	III, 2, 303	headword on cited line							let her not strike me you perhaps may think
+Perigenia	Perigenia	2.1.78	Mids. II, 1, 78	headword on cited line							from perigenia whom he ravished
+Period1	Period,	5.1.96	Mids. V, 96	quotation on cited line						make periods in the midst of sentences,	make periods in the midst of sentences
+Persever	Perséver,	3.2.237	Mids. III, 2, 237	headword on cited line							ay do persever counterfeit sad looks
+Personage	Personage,	3.2.292	Mids. III, 2, 292	quotation on cited line						with her p., her tall personage	and with her personage her tall personage
+Persuasion	Persuasion,	1.1.156	Mids. I, 1, 156	quotation on cited line						a good persuasion	a good persuasion therefore hear me hermia
+Pert	Pert,	1.1.13	Mids. I, 1, 13	quotation on cited line						awake the pert and nimble spirit of mirth,	awake the pert and nimble spirit of mirth
+Phibbus	Phibbus,	1.2.37	Mids. I, 2, 37	headword on cited line							and phibbus car
+Phillida	Phillida,	2.1.68	Mids. II, 1, 68	headword on cited line							to amorous phillida why art thou here
+Philostrate	Philostrate,	1.1.11	Mids. I, 1, 11	headword on cited line							of our solemnities go philostrate
+Philostrate	Philostrate,	5.1.38	V, 38	headword on cited line							call philostrate here mighty theseus
+Phoebe	Phoebe	1.1.209	Mids. I, 1, 209	headword on cited line							tomorrow night when phoebe doth behold
+Pierce1	Pierce	2.1.160	Mids. II, 1, 160	headword on cited line							as it should pierce a hundred thousand hearts
+Pierce1	Pierce	3.2.59	III, 2, 59	headword on cited line							pierced through the heart with your stern cruelty
+Pipe2	Pipe,	2.1.88	Mids. II, 1, 88	quotation on cited line, with differences			86%	pipeing	piping	the winds, pipeing to us in vain,	therefore the winds piping to us in vain
+Plainly	Plainly,	3.1.47	Mids. III, 1, 47	quotation on cited line						tell them plainly he is Snug the joiner,	and tell them plainly he is snug the joiner
+Plain-song	Plain-song,	3.1.134	Mids. III, 1, 134	quotation on cited line						the plain-song cuckoo,	the plainsong cuckoo gray
+Plaster1	Plaster,	3.1.70	Mids. III, 1, 70	headword on cited line							and let him have some plaster or some loam or
+Ploughman	Ploughman,	2.1.94	Mids. II, 1, 94	headword on cited line							the ploughman lost his sweat and the green corn
+Ploughman	Ploughman,	5.1.380	V, 380	headword on cited line							whilst the heavy ploughman snores
+Plunge	Plunge,	3.2.48	Mids. III, 2, 48	headword on cited line							being oer shoes in blood plunge in the deep
+Possess	Possess,	1.1.100	Mids. I, 1, 100	quotation on cited line, with differences			100%		my lord he as	I am as well derived, as well possessed,	as well possessed my love is more than his
+Pour	Pour,	2.1.50	Mids. II, 1, 50	headword on cited line							and on her withered dewlap pour the ale
+Practise	Practise,	5.1.97	Mids. V, 97	quotation on cited line						throttle their practised accent in their fears,	throttle their practised accent in their fears
+Prefer	Prefer,	4.2.39	Mids. IV, 2, 39	quotation on cited line, with differences			75%	prefered		our play is prefered,	the short and the long is our play is pre ferred
+Premeditate	Premeditate,	5.1.94	Mids. V, 94	quotation on cited line						premeditated welcomes,	to greet me with premeditated welcomes
+Preposterously	Preposterously,	3.2.121	Mids. III, 2, 121	quotation on cited line, with differences			89%	befal	befall	those things do best please me that befal preposterously	that befall preposterously
+Prettily	Prettily,	2.2.53	Mids. II, 2, 53	headword on cited line							lysander riddles very prettily
+Prevail	Prevail,	3.2.293	Mids. III, 2, 293	quotation on cited line, with differences			100%		personage her tall	with her personage, her height, forsooth, she hath prevailed with him,	her height forsooth she hath prevailed with him
+Prevailment	Prevailment,	1.1.35	Mids. I, 1, 35	quotation on cited line						messengers of strong prevailment in unhardened youth,	of strong prevailment in unhardened youth
+Primrose	Primrose,	1.1.215	Mids. I, 1, 215	quotation on cited line, with differences			spacing			primrose beds,	upon faint primrosebeds were wont to lie
+Private1	Private,	1.1.116	Mids. I, 1, 116	headword on cited line							i have some private schooling for you both
+Prodigious	Prodigious,	5.1.419	Mids. V, 419	quotation on cited line						nor mark p., such as are despised in nativity,	nor mark prodigious such as are
+Progeny	Progeny,	2.1.115	Mids. II, 1, 115	quotation on cited line						this same progeny of evils comes from our debate,	and this same progeny of evils comes
+Promise1	Promise,	5.1.174	Mids. V, 174	headword on cited line							i fear my thisbys promise is forgot
+Promise1	Promise,	1.1.179	Mids. I, 1, 179	quotation on cited line, with differences			67%	to		to keep promise	keep promise love look here comes helena
+Promontory	Promontory,	2.1.149	Mids. II, 1, 149	headword on cited line							since once i sat upon a promontory
+Property1	Property,	3.2.367	Mids. III, 2, 367	quotation on cited line						whose liquor hath this virtuous property	whose liquor hath this virtuous property
+Property1	Property,	1.2.108	Mids. I, 2, 108	quotation on cited line, with differences			92%	propertyes	properties	I will draw a bill of propertyes, such as our play wants,	a bill of properties such as our play wants i
+Prosecute	Prosecute,	1.1.105	Mids. I, 1, 105	quotation on cited line						why should not I then prosecute my right?	why should not i then prosecute my right
+Prosper2	Prosper,	1.1.172	Mids. I, 1, 172	headword on cited line							by that which knitteth souls and prospers loves
+Prosperity	Prosperity,	2.1.73	Mids. II, 1, 73	headword on cited line						(a jest's p.).	to give their bed joy and prosperity
+Prosperity	Prosperity,	4.1.95	IV, 1, 95	headword on cited line							and bless it to all fair prosperity
+Proud1	Proud,	2.1.91	Mids. II, 1, 91	quotation on cited line						have every pelting river made so proud	have every pelting river made so proud
+Proud1	Proud,	2.1.60	Mids. II, 1, 60	quotation on cited line						proud Titania,	ill met by moonlight proud titania
+Provender	Provender,	4.1.35	Mids. IV, 1, 35	headword on cited line							truly a peck of provender i could
+Provide	Provide,	1.1.45	Mids. I, 1, 45	quotation on cited line						according to our law immediately provided in that case,	immediately provided in that case
+Fump	Fump,	4.2.37	Mids. IV, 2, 37	quotation on cited line, with differences			80%	fumps		new ribbons to your fumps,	new ribbons to your pumps meet presently at
+Purge2	Purge,	3.1.163	Mids. III, 1, 163	headword on cited line	3.1.164		100%			spirit go,	and i will purge thy mortal grossness so
+Purple2	Purple,	2.1.167	Mids. II, 1, 167	headword on cited line							before milkwhite now purple with loves wound
+Purple2	Purple,	3.2.102	III, 2, 102	headword on cited line							flower of this purple dye
+Purple2	Purple,	3.1.170	III, 1, 170	quotation on cited line						purple grapes,	with purple grapes green figs and mulberries
+Pyramus	Pyramus,	1.2.12	Mids. I, 2, 12	headword on cited line							lamentable comedy and most cruel death of pyramus
+Quail2	Quail,	5.1.292	Mids. V, 292	quotation on cited line						q., crush, conclude and quell,	quail crush conclude and quell
+Quaint	Quaint,	2.1.99	Mids. II, 1, 99	quotation on cited line						the quaint mazes in the wanton green,	and the quaint mazes in the wanton green
+Quaint	Quaint,	2.2.7	II, 2, 7	quotation on cited line, with differences			100%		clamorous that nightly hoots and	the owl wonders at our quaint spirits,	at our quaint spirits sing me now asleep
+Quality	Quality,	1.1.231	Mids. I, 1, 231	quotation on cited line, with differences			75%	qualityes		admiring of his qualityes,	so i admiring of his qualities
+Quantity	Quantity,	1.1.232	Mids. I, 1, 232	quotation on cited line						things base and vile, holding no q., love can transpose to form and dignity,	things base and vile holding no quantity
+Quell2	Quell,	5.1.292	Mids. V, 292	headword on cited line							quail crush conclude and quell
+Quern	Quern,	2.1.36	Mids. II, 1, 36	quotation on cited line, with differences			88%	labour	labor	skim milk, and sometimes labour in the quern	skim milk and sometimes labor in the quern
+Quest	Quest,	3.0	III Prol. 21	not a citation of this play							
+Question2	Question,	1.1.67	Mids. I, 1, 67	quotation on cited line						question your desires,	therefore fair hermia question your desires
+Quill	Quill,	3.1.131	Mids. III, 1, 131	quotation on cited line						the wren with little quill	the wren with little quill
+Quill	Quill,	3.85.3	85, 3	not a citation of this play							
+Quince	Quince,	1.2.8	Mids. I, 2, 8	headword on cited line							first good peter quince say what the
+Quire1	Quire,	2.1.55	Mids. II, 1, 55	quotation on cited line						the whole quire hold their hips and laugh,	and then the whole quire hold their hips and laugh
+Radiant	Radiant,	3.1.95	Mids. III, 1, 95	headword on cited line							most radiant pyramus most lilywhite of hue
+Rank3	Rank,	1.1.101	Mids. I, 1, 101	quotation on cited line, with differences			100%		if not with vantage	as fairly ranked as Demetrius',	my fortunes every way as fairly ranked
+Rarely	Rarely,	1.2.31	Mids. I, 2, 31	quotation on cited line						I could play Ercles rarely	is for a tyrant i could play ercles rarely or a
+Rate1	Rate,	3.1.157	Mids. III, 1, 157	quotation on cited line						I am a spirit of no common rate	i am a spirit of no common rate
+Rather	Rather,	3.2.235	Mids. III, 2, 235	quotation on cited line						this you should pity rather than despise,	this you should pity rather than despise
+Rather	Rather,	1.1.57	Mids. I, 1, 57	quotation on cited line, with differences			94%	judgment	judgement	I would my father looked but with my eyes. Rather your eyes must with his judgment look,	rather your eyes must with his judgement look
+Rather	Rather,	5.142.57	V, 142	not a citation of this play						did scare away, or rather did affright,	
+Rather	Rather,	2.1.200	Mids. II, 1, 200	quotation on cited line, with differences			100%		do not nor i	do I speak you fair? or rather do I not in plainest truth tell you I cannot love you?	or rather do i not in plainest truth
+Rather	Rather,	3.2.64	Mids. III, 2, 64	headword on cited line							i had rather give his carcass to my hounds
+Rather	Rather,	4.1.41	IV, 1, 41	headword on cited line							i had rather have a handful or two of
+Rattle2	Rattle,	5.1.102	Mids. V, 102	quotation on cited line, with differences			88%	rattleing	rattling	the rattleing tongue of saucy and audacious eloquence,	i read as much from the rattling tongue
+Raven1	Raven,	2.2.114	Mids. II, 2, 114	headword on cited line							who will not change a raven for a dove
+Reach2	Reach,	3.2.298	Mids. III, 2, 298	quotation on cited line						my nails can reach unto thine eyes,	but that my nails can reach unto thine eyes
+Rear2	Rear,	2.1.136	Mids. II, 1, 136	quotation on cited line						for her sake do I rear up her boy,	and for her sake do i rear up her boy
+Rear-mice	Rear-mice	2.2.4	Mids. II, 2, 4	headword not found near cited line							some war with reremice for their leathern wings
+Reasonable	Reasonable,	4.1.31	Mids. IV, 1, 31	headword on cited line							i have a reasonable good ear in music
+Rebuke2	Rebuke,	3.2.43	Mids. III, 2, 43	quotation on cited line						why rebuke you him that loves you so?	o why rebuke you him that loves you so
+Recreant2	Recreant,	3.2.409	Mids. III, 2, 409	quotation on cited line						come, r.; come, thou child,	and wilt not come come recreant come thou child
+Red-hipped	Red-hipped,	4.1.12	Mids. IV, 1, 12	quotation on cited line						a red-hipped humble-bee,	redhipped humblebee on the top of a thistle
+Region	Region,	4.1.121	Mids. IV, 1, 121	quotation on cited line						every region near seemed all one mutual cry,	the skies the fountains every region near
+Rehearsal	Rehearsal,	3.1.3	Mids. III, 1, 3	headword on cited line							convenient place for our rehearsal this green plot
+Release2	Release,	3.2.376	Mids. III, 2, 376	quotation on cited line						I will her charmed eye release from monster's view,	and then i will her charmed eye release
+Release2	Release,	4.1.75	IV, 1, 75	quotation on cited line						I will release the fairy queen,	but first i will release the fairy queen
+Remedy2	Remedy,	3.2.244	Mids. III, 2, 244	quotation on cited line						my own fault, which death or absence soon shall remedy	which death or absence soon shall remedy
+Remote	Remote,	1.1.159	Mids. I, 1, 159	quotation on cited line						from Athens is her house remote seven leagues,	from athens is her house remote seven leagues
+Rent3	Rent,	3.2.215	Mids. III, 2, 215	quotation on cited line						will you rent our ancient love asunder,	and will you rent our ancient love asunder
+Report1	Report,	3.2.22	Mids. III, 2, 22	quotation on cited line						rising and cawing at the gun's report	rising and cawing at the guns report
+Respect1	Respect,	2.1.224	Mids. II, 1, 224	quotation on cited line						you in my respect are all the world,	for you in my respect are all the world
+Respect1	Respect,	5.1.91	Mids. V, 91	quotation on cited line						what poor duty cannot do, noble respect takes it in might, not merit,	and what poor duty cannot do noble respect
+Respect1	Respect,	1.1.137	Mids. I, 1, 137	quotation on cited line						misgraffed in respect of years,	or else misgraffed in respect of years
+Respect1	Respect,	5.1.91	Mids. V, 91	headword on cited line							and what poor duty cannot do noble respect
+Respect1	Respect,	2.1.209	Mids. II, 1, 209	quotation on cited line						a place of high respect with me,	and yet a place of high respect with me
+Respect2	Respect,	1.1.160	Mids. I, 1, 160	quotation on cited line						she respects me as her only son,	and she respects me as her only son
+Revel2	Revel,	1.1.19	Mids. I, 1, 19	headword on cited line							with pomp with triumph and with revelling
+Rheumatic	Rheumatic,	2.1.105	Mids. II, 1, 105	quotation on cited line						that rheumatic diseases do abound,	that rheumatic diseases do abound
+Riddle2	Riddle,	2.2.53	Mids. II, 2, 53	headword on cited line							lysander riddles very prettily
+Rife	Rife,	5.1.42	Mids. V, 42	quotation on cited line, with differences			89%	rife		there is a brief how many sports are rife	there is a brief how many sports are ripe
+Right2	Right,	3.2.302	Mids. III, 2, 302	quotation on cited line						I am a right maid for my cowardice,	i am a right maid for my cowardice
+Right2	Right,	5.1.164	Mids. V, 164	quotation on cited line						this the cranny is, right and sinister,	and this the cranny is right and sinister
+Right2	Right,	5.5.103	5, 103	not a citation of this play							
+Ringlets	Ringlets,	2.1.86	Mids. II, 1, 86	headword on cited line							to dance our ringlets to the whistling wind
+Ripe2	Ripe,	2.2.118	Mids. II, 2, 118	quotation on cited line						so I, being young, till now ripe not to reason,	so i being young till now ripe not to reason
+Roast2	Roast,	2.1.48	Mids. II, 1, 48	headword on cited line							in very likeness of a roasted crab
+Rock2	Rock,	4.1.91	Mids. IV, 1, 91	quotation on cited line						take hands with me and rock the ground whereon these sleepers be,	and rock the ground whereon these sleepers be
+Roll2	Roll,	5.1.12	Mids. V, 12	quotation on cited line						the poet's eye, in a fine frenzy rolling,	the poets eye in a fine frenzy rolling
+Roll2	Roll,	3.2.369	Mids. III, 2, 369	quotation on cited line						make his eyeballs roll with wonted sight,	and make his eyeballs roll with wonted sight
+Rot2	Rot,	2.1.95	Mids. II, 1, 95	headword on cited line							hath rotted ere his youth attained a beard
+Rot2	Rot,	2.1.95	Mids. II, 1, 95	quotation on cited line, with differences			91%	roted	rotted	the green corn hath roted ere his youth attained a beard,	hath rotted ere his youth attained a beard
+Rote	Rote;	5.1.404	Mids. V, 404	quotation on cited line						rehearse your song by rote	first rehearse your song by rote
+Round1	Round,	4.1.59	Mids. IV, 1, 59	headword on cited line							was wont to swell like round and orient pearls
+Round2	Round,	3.1.109	Mids. III, 1, 109	quotation on cited line						I'll lead you about a round	ill follow you ill lead you about a round
+Round2	Round,	2.1.140	Mids. II, 1, 140	quotation on cited line						if you will patiently dance in our round	if you will patiently dance in our round
+Round5	Round,	4.1.56	Mids. IV, 1, 56	quotation on cited line						she his hairy temples then had rounded with coronet of fresh and fragrant flowers,	for she his hairy temples then had rounded
+Roundel	Roundel,	2.2.1	Mids. II, 2, 1	quotation on cited line						now a roundel and a fairy song,	come now a roundel and a fairy song
+Ruby	Ruby,	2.1.12	Mids. II, 1, 12	quotation on cited line, with differences			60%	rubyes favours	rubies	those be rubyes, fairy favours,	those be rubies fairy favors
+Rude	Rude,	2.1.152	Mids. II, 1, 152	quotation on cited line						the rude sea grew civil,	that the rude sea grew civil at her song
+Rude	Rude,	3.2.262	Mids. III, 2, 262	quotation on cited line						why are you grown so rude	why are you grown so rude what change is this
+Rude	Rude,	3.2.9	Mids. III, 2, 9	quotation on cited line						rude mechanicals,	a crew of patches rude mechanicals
+Runaway	Runaway,	3.2.405	Mids. III, 2, 405	quotation on cited line						thou r., thou coward, art thou fled?	thou runaway thou coward art thou fled
+Rushy	Rushy,	2.1.84	Mids. II, 1, 84	quotation on cited line						by rushy brook,	by paved fountain or by rushy brook
+Russet-pated	Russet-pated,	3.2.21	Mids. III, 2, 21	quotation on cited line						russet-pated choughs,	or russetpated choughs many in sort
+Sail2	Sail,	2.1.132	Mids. II, 1, 132	headword on cited line							would imitate and sail upon the land
+Sampler	Sampler,	3.2.205	Mids. III, 2, 205	headword on cited line							both on one sampler sitting on one cushion
+Sand	Sand,	2.1.126	Mids. II, 1, 126	headword on cited line							and sat with me on neptunes yellow sands
+Sanded	Sanded,	4.1.125	Mids. IV, 1, 125	headword on cited line							so flewed so sanded and their heads are hung
+Satire	Satire,	5.1.54	Mids. V, 54	headword on cited line							that is some satire keen and critical
+Saucy	Saucy,	5.1.103	Mids. V, 103	headword on cited line							of saucy and audacious eloquence
+Savour1	Savour,	2.1.13	Mids. II, 1, 13	headword on cited line						savours,	in those freckles live their savors
+Savour1	Savour,	3.1.84	III, 1, 84	quotation on cited line, with differences			83%	savours	savors	the flowers of odious savours sweet,	thisby the flowers of odious savors sweet
+Savour1	Savour,	3.2.73	Shr. Ind. 2, 73.	not a citation of this play						I smell sweet savours,	
+Scale1	Scale,	3.2.132	Mids. III, 2, 132	headword on cited line							your vows to her and me put in two scales
+Scalp	Scalp,	4.1.69	Mids. IV, 1, 69	quotation on cited line						take this transformed scalp from off the head of this Athenian swain,	and gentle puck take this transformed scalp
+Scandal1	Scandal,	2.1.240	Mids. II, 1, 240	quotation on cited line						your wrongs do set a scandal on my sex,	your wrongs do set a scandal on my sex
+Scar1	Scar,	5.1.418	Mids. V, 418	headword on cited line	5.1.419-421		60%	never mole harelip scar	mark prodigious such as are despised in nativity	never mole, hare-lip, nor scar shall upon their children be,	never mole hare lip nor scar
+Scare	Scare,	5.142	Mids. V, 142	not a citation of this play						to scare away:	
+School2	School,	1.1.116	Mids. I, 1, 116	quotation on cited line						I have some private schooling for you both,	i have some private schooling for you both
+School-days	School-days,	3.2.202	Mids. III, 2, 202	headword on cited line							all schooldays friendship childhood innocence
+Scornful	Scornful,	1.1.95	Mids. I, 1, 95	quotation on cited line						scornful Lysander,	scornful lysander true he hath my love
+Screech	Screech	5.1.383	Mids. V, 383	quotation on cited line						whilst the screech-owl, screeching loud,	whilst the screechowl screeching loud
+Screech-owl	Screech-owl,	5.1.383	Mids. V, 383	headword on cited line							whilst the screechowl screeching loud
+Scrip1	Scrip,	1.2.3	Mids. I, 2, 3	quotation on cited line						to call them generally, man by man, according to the scrip	man by man according to the scrip
+Scroll	Scroll,	1.2.4	Mids. I, 2, 4	quotation on cited line						here is the scroll of every man's name,	here is the scroll of every mans name
+Scroll	Scroll,	1.2.4	Mids. I, 2, 4	headword on cited line							here is the scroll of every mans name
+Sea-maid	Sea-maid,	2.1.154	Mids. II, 1, 154	headword on cited line							to hear the seamaids music i remember
+Season1	Season,	2.1.107	Mids. II, 1, 107	headword on cited line							the seasons alter hoaryheaded frosts
+Season1	Season,	2.2.117	II, 2, 117	headword on cited line							things growing are not ripe until their season
+Seethe	Seethe	5.1.4	Mids. V, 4	headword on cited line						seetheing brains,	lovers and madmen have such seething brains
+Self-affairs	Self-affairs,	1.1.113	Mids. I, 1, 113	headword on cited line							but being overfull of selfaffairs
+Senseless	Senseless,	3.2.28	Mids. III, 2, 28	headword on cited line							made senseless things begin to do them wrong
+Sensible	Sensible,	5.1.183	Mids. V, 183	quotation on cited line, with differences			100%		methinks	the wall, being s., should curse again,	the wall methinks being sensible should
+Sentinel1	Sentinel,	2.2.26	Mids. II, 2, 26	headword on cited line							one aloof stand sentinel
+Separation	Separation,	2.2.58	Mids. II, 2, 58	headword on cited line							such separation as may well be said
+Sever	Sever,	3.2.23	Mids. III, 2, 23	quotation on cited line						sever themselves,	sever themselves and madly sweep the sky
+Sex	Sex,	2.1.240	Mids. II, 1, 240	headword on cited line							your wrongs do set a scandal on my sex
+Sex	Sex,	3.2.218	III, 2, 218	headword on cited line							our sex as well as i may chide you for it
+Shady	Shady,	1.1.71	Mids. I, 1, 71	headword on cited line							for aye to be in shady cloister mewed
+Shafalus	Shafalus,	5.1.200	Mids. V, 200	headword on cited line						Cephalus:	not shafalus to procrus was so true
+Shaft	Shaft,	2.1.161	Mids. II, 1, 161	headword on cited line							but i might see young cupids fiery shaft
+Shape2	Shape,	5.1.5	Mids. V, 5	quotation on cited line, with differences			67%	shapeing	shaping	such shapeing fantasies,	such shaping fantasies that apprehend
+Share2	Share,	3.2.198	Mids. III, 2, 198	headword on cited line							is all the counsel that we two have shared
+Shear	Shear	5.1.347	Mids. V, 347	headword off by 1	5.1.348	1					since you have shore
+Shear	Shear	5.1.347	Mids. V, 347	quotation on cited line						have shore with shears his thread of silk,	since you have shore
+Shears	Shears,	5.1.348	Mids. V, 348	headword on cited line							with shears his thread of silk
+Sheen	Sheen,	2.1.29	Mids. II, 1, 29	quotation on cited line						they never meet in grove or green, by fountain clear, or spangled starlight s., but they do square,	by fountain clear or spangled starlight sheen
+Shield2	Shield,	3.1.31	Mids. III, 1, 31	quotation on cited line						God shield us!	yourselves to bring in god shield us a lion
+Shield2	Shield,	3.2.447	III, 2, 447	quotation on cited line						heavens shield Lysander,	heavens shield lysander if they mean a fray
+Shield2	Shield,	5.1.179	V, 179	quotation on cited line						Jove shield thee well for this,	thanks courteous wall jove shield thee well for this
+Shift2	Shift,	3.2.423	Mids. III, 2, 423	quotation on cited line, with differences			86%	runnest	runnst	thou runnest before me, shifting every place,	thou runnst before me shifting every place
+Shiver	Shiver,	1.2.34	Mids. I, 2, 34	quotation on cited line						shivering shocks,	and shivering shocks
+Shiver	Shiver,	5.1.95	Mids. V, 95	quotation on cited line						I have seen them shiver and look pale,	where i have seen them shiver and look pale
+Shock1	Shock,	1.2.34	Mids. I, 2, 34	quotation on cited line						shivering shocks,	and shivering shocks
+Shower1	Shower,	1.1.245	Mids. I, 1, 245	quotation on cited line						showers of oaths,	so he dissolved and showers of oaths did melt
+Shrewishness	Shrewishness,	3.2.301	Mids. III, 2, 301	headword on cited line							i have no gift at all in shrewishness
+Shriek2	Shriek,	1.2.78	Mids. I, 2, 78	headword on cited line							they would shriek and that were enough to
+Silently	Silently,	3.1.206	Mids. III, 1, 206	headword on cited line							tie up my loves tongue bring him silently
+Silk	Silk,	5.1.348	Mids. V, 348	headword on cited line							with shears his thread of silk
+Silly	Silly	5.1.212	Mids. V, 212	quotation on cited line, with differences			89%	sillyest	silliest	this is the sillyest stuff that ever I heard,	this is the silliest stuff that ever i heard
+Simpleness	Simpleness,	5.1.83	Mids. V, 83	quotation on cited line						never anything can be amiss, when simpleness and duty tender it,	when simpleness and duty tender it
+Simplicity	Simplicity,	1.1.171	Mids. I, 1, 171	quotation on cited line						by the simplicity of Venus' doves,	by the simplicity of venus doves
+Simplicity	Simplicity,	5.1.104	V, 104	quotation on cited line, with differences			100%		therefore	love and tongue-tied simplicity in least speak most,	love therefore and tonguetied simplicity
+Simply	Simply,	4.2.9	Mids. IV, 2, 9	quotation on cited line						he hath simply the best wit of any handicraft man,	no he hath simply the best wit of any
+Singer	Singer,	5.1.49	Mids. V, 49	headword on cited line							tearing the thracian singer in their rage
+Sinister	Sinister,	5.1.164	Mids. V, 164	quotation on cited line						this the cranny is, right and sinister	and this the cranny is right and sinister
+Sink2	Sink,	3.2.104	Mids. III, 2, 104	quotation on cited line						sink in apple of his eye,	sink in apple of his eye
+Skim	Skim,	2.1.36	Mids. II, 1, 36	quotation on cited line						skim milk,	skim milk and sometimes labor in the quern
+Skip	Skip,	2.1.61	Mids. II, 1, 61	headword on cited line							what jealous oberon fairies skip hence
+Sleek1	Sleek,	4.1.3	Mids. IV, 1, 3	quotation on cited line						thy sleek smooth head,	and stick muskroses in thy sleek smooth head
+Sleeper	Sleeper,	4.1.91	Mids. IV, 1, 91	headword on cited line						(graves at my command have waked their sleepers).	and rock the ground whereon these sleepers be
+Slip2	Slip,	2.1.53	Mids. II, 1, 53	quotation on cited line						then slip I from her bum,	then slip i from her bum down topples she
+Slumber2	Slumber,	5.1.432	Mids. V, 432	headword on cited line							that you have but slumbered here
+Smartly	Smartly,	2.1.159	Mids. II, 1, 159	quotation on cited line						and loosed his love-shaft smartly from his bow, as it should pierce a hundred thousand hearts,	and loosed his loveshaft smartly from his bow
+Smooth1	Smooth,	4.1.3	Mids. IV, 1, 3	quotation on cited line						thy sleek smooth head,	and stick muskroses in thy sleek smooth head
+Smooth1	Smooth,	1.1.134	Mids. I, 1, 134	quotation on cited line						the course of true love never did run smooth	the course of true love never did run smooth
+Snail	Snail,	2.2.23	Mids. II, 2, 23	headword on cited line							worm nor snail do no offence
+Snatch2	Snatch,	3.2.29	Mids. III, 2, 29	quotation on cited line						briers and thorns at their apparel snatch	for briers and thorns at their apparel snatch
+Snout	Snout,	1.2.63	Mids. I, 2, 63	headword on cited line							mother tom snout the tinker
+Snout	Snout,	4.1.208	IV, 1, 208	headword on cited line							bellowsmender snout the tinker star veling
+Snout	Snout,	5.1.157	V, 157	headword on cited line							that i one snout by name present a wall
+Snuff1	Snuff,	5.1.254	Mids. V, 254	headword on cited line							for you see it is already in snuff
+Snuff1	Snuff,	5.1.254	Mids. V, 254	quotation on cited line						it is already in snuff	for you see it is already in snuff
+Snug	Snug,	1.2.66	Mids. I, 2, 66	headword on cited line							father snug the joiner you the lions part
+Snug	Snug,	3.1.47	III, 1, 47	headword on cited line							and tell them plainly he is snug the joiner
+Snug	Snug,	5.1.226	V, 226	headword on cited line							then know that i one snug the joiner am
+Society	Society,	1.1.66	Mids. I, 1, 66	quotation on cited line, with differences			100%		for ever	to abjure the society of men,	for ever the society of men
+Sojourn2	Sojourn,	3.2.171	Mids. III, 2, 171	headword on cited line							my heart to her but as guestwise sojourned
+Sort1	Sort,	3.2.159	Mids. III, 2, 159	quotation on cited line						none of noble sort would so offend a virgin,	with your derision none of noble sort
+Sort1	Sort,	3.2.159	Mids. III, 2, 159	headword on cited line	3.2.388		100%			we are spirits of another sort	with your derision none of noble sort
+Sort1	Sort,	3.2.13	Mids. III, 2, 13	quotation on cited line						the shallowest thick-skin of that barren sort	the shallowest thickskin of that barren sort
+Sort1	Sort,	3.2.21	Mids. III, 2, 21	quotation on cited line						russet-pated choughs, many in sort	or russetpated choughs many in sort
+Sort3	Sort,	5.1.55	Mids. V, 55	quotation on cited line						not sorting with a nuptial ceremony,	not sorting with a nuptial ceremony
+Sort3	Sort,	3.2.352	Mids. III, 2, 352	quotation on cited line						so far am I glad it so did sort	and so far am i glad it so did sort
+Spangle	Spangle,	2.1.29	Mids. II, 1, 29	quotation on cited line						spangled starlight sheen,	by fountain clear or spangled starlight sheen
+Sparta	Sparta,	4.1.119	Mids. IV, 1, 119	quotation on cited line						hounds of Sparta	with hounds of sparta never did i hear
+Sparta	Sparta,	4.1.119	Mids. IV, 1, 119	headword on cited line							with hounds of sparta never did i hear
+Spartan	Spartan,	4.1.124	Mids. IV, 1, 124	quotation on cited line						hounds . . . of the Spartan kind,	my hounds are bred out of the spartan kind
+Speed2	Speed,	1.1.180	Mids. I, 1, 180	quotation on cited line						God speed fair Helena!	god speed fair helena whither away
+Spell1	Spell,	2.2.17	Mids. II, 2, 17	headword on cited line						(by charms, by spells).	nor spell nor charm
+Sphery	Sphery,	2.2.99	Mids. II, 2, 99	quotation on cited line						Hermia's sphery eyne,	made me compare with hermias sphery eyne
+Spice2	Spice,	2.1.124	Mids. II, 1, 124	headword on cited line							and in the spiced indian air by night
+Spinner	Spinner,	2.2.21	Mids. II, 2, 21	headword on cited line							hence you longlegged spinners hence
+Spite1	Spite,	3.2.420	Mids. III, 2, 420	quotation on cited line						I'll find Demetrius and revenge this spite	ill find demetrius and revenge this spite
+Spite1	Spite,	3.2.194	Mids. III, 2, 194	quotation on cited line						to fashion this false sport in spite of me,	to fashion this false sport in spite of me
+Spite1	Spite,	1.1.138	Mids. I, 1, 138	quotation on cited line						O s.! too old to be engaged to young,	o spite too old to be engaged to young
+Spite1	Spite,	3.2.145	III, 2, 145	headword on cited line							o spite o hell i see you all are bent
+Spite1	Spite,	5.1.281	V, 281	headword on cited line							but stay o spite
+Spleen	Spleen,	1.1.146	Mids. I, 1, 146	quotation on cited line, with differences			100%		in the collied night	the lightning, that, in a s., unfolds both heaven and earth,	that in a spleen unfolds both heaven and earth
+Square3	Square,	2.1.30	Mids. II, 1, 30	quotation on cited line						they never meet . . . but they do square	but they do square that all their elves for fear
+Squash	Squash,	3.1.191	Mids. III, 1, 191	quotation on cited line						mother,	squash your mother and to master peascod
+Squirrel	Squirrel,	4.1.40	Mids. IV, 1, 40	headword on cited line							the squirrels hoard and fetch thee new nuts
+Stall1	Stall,	3.2.10	Mids. III, 2, 10	quotation on cited line						work for bread upon Athenian stalls,	that work for bread upon athenian stalls
+Stamp1	Stamp,	3.2.25	Mids. III, 2, 25	quotation on cited line						at our stamp here o'er and o'er one falls,	and at our stamp here oer and oer one falls
+Starlight	Starlight,	2.1.29	Mids. II, 1, 29	headword on cited line							by fountain clear or spangled starlight sheen
+Starlight	Starlight,	5.1.320	V, 320	headword on cited line							she will find him by starlight here
+Starry	Starry,	3.2.356	Mids. III, 2, 356	quotation on cited line						the starry welkin,	the starry welkin cover thou anon
+Stature	Stature,	3.2.291	Mids. III, 2, 291	headword on cited line							between our statures she hath urged her height
+Stealth	Stealth,	3.2.310	Mids. III, 2, 310	quotation on cited line						your stealth unto this wood,	i told him of your stealth unto this wood
+Stealth	Stealth,	4.1.165	IV, 1, 165	headword on cited line							my lord fair helen told me of their stealth
+Steep1	Steep,	2.1.69	Mids. II, 1, 69	quotation on cited line, with differences			86%	steep	steppe	come from the farthest steep of India,	come from the farthest steppe of india
+Steep3	Steep,	1.1.7	Mids. I, 1, 7	quotation on cited line						four days will quickly steep themselves in night,	four days will quickly steep themselves in night
+Stem1	Stem,	3.2.211	Mids. III, 2, 211	quotation on cited line						two lovely berries moulded on one stem	two lovely berries moulded on one stem
+Step-dame	Step-dame,	1.1.5	Mids. I, 1, 5	headword on cited line							like to a stepdame or a dowager
+Steppe	Steppe,	2.1.69	Mids. II, 1, 69	quotation on cited line						from the farthest steppe of India,	come from the farthest steppe of india
+Stern2	Stern,	3.2.59	Mids. III, 2, 59	quotation on cited line						pierced through the heart with your stern cruelty,	pierced through the heart with your stern cruelty
+Stick2	Stick,	4.1.3	Mids. IV, 1, 3	quotation on cited line						stick musk-roses in thy sleek smooth head,	and stick muskroses in thy sleek smooth head
+Stop1	Stop,	5.1.120	Mids. V, 120	quotation on cited line						he hath rid his prologue like a rough colt; he knows not the stop	colt he knows not the stop a good moral my
+Stop1	Stop,	5.1.120	Mids. V, 120	headword on cited line							colt he knows not the stop a good moral my
+Straightway	Straightway,	3.2.34	Mids. III, 2, 34	headword on cited line							titania waked and straightway loved an ass
+Straightway	Straightway,	5.1.204	V, 204	headword on cited line							wilt thou at ninnys tomb meet me straightway
+Straw-colour	Straw-colour,	1.2.95	Mids. I, 2, 95	quotation on cited line, with differences			67%	strawcolour	strawcolor	your straw-colour beard,	i will discharge it in either your
+Stray2	Stray,	5.1.409	Mids. V, 409	headword on cited line							through this house each fairy stray
+Streak2	Streak,	2.1.257	Mids. II, 1, 257	quotation on cited line						with the juice of this I'll streak her eyes,	and with the juice of this ill streak her eyes
+Stream1	Stream,	5.1.279	Mids. V, 279	quotation on cited line, with differences			75%	streams		gracious, golden, glittering streams,	for by thy gracious golden glittering gleams
+Stream1	Stream,	3.2.393	Mids. III, 2, 393	quotation on cited line						salt green streams,	turns into yellow gold his salt green streams
+Stream2	Stream,	5.1.279	Mids. V, 279	headword not found near cited line							for by thy gracious golden glittering gleams
+Stretch	Stretch,	2.1.93	Mids. II, 1, 93	quotation on cited line, with differences			100%		therefore	the ox hath stretched his yoke in vain,	the ox hath therefore stretched his yoke in vain
+Stretch	Stretch,	5.1.80	Mids. V, 80	quotation on cited line						extremely stretched and conned with cruel pain,	extremely stretched and conned with cruel pain
+String1	String,	4.2.36	Mids. IV, 2, 36	quotation on cited line						good strings to your beards,	apparel together good strings to your beards
+Stubborn	Stubborn,	1.1.38	Mids. I, 1, 38	quotation on cited line, with differences			100%		which is due to me	turned her obedience to stubborn harshness,	to stubborn harshness and my gracious duke
+Suck2	Suck,	1.2.85	Mids. I, 2, 85	quotation on cited line						as gently as any sucking dove,	as gently as any sucking dove i will roar you
+Suck2	Suck,	2.1.89	Mids. II, 1, 89	headword on cited line							as in revenge have sucked up from the sea
+Sunder2	Sunder,	5.1.133	Mids. V, 133	quotation on cited line						that vile wall which did these lovers sunder	wall that vile wall which did these lovers sunder
+Sunny	Sunny,	5.1.277	Mids. V, 277	quotation on cited line						sweet moon, I thank thee for thy sunny beams,	sweet moon i thank thee for thy sunny beams
+Superpraise	Superpraise,	3.2.153	Mids. III, 2, 153	headword on cited line							to vow and swear and superpraise my parts
+Suppose2	Suppose,	5.1.22	Mids. V, 22	quotation on cited line						how easy is a bush supposed a bear,	how easy is a bush supposed a bear
+Surfeit1	Surfeit,	2.2.137	Mids. II, 2, 137	quotation on cited line						as a surfeit of the sweetest things the deepest loathing to the stomach brings,	for as a surfeit of the sweetest things
+Surfeit1	Surfeit,	2.2.137	Mids. II, 2, 137	headword on cited line	2.2.141		100%			thou, my surfeit and my heresy,	for as a surfeit of the sweetest things
+Sway1	Sway,	1.1.193	Mids. I, 1, 193	headword on cited line							you sway the motion of demetrius heart
+Sway2	Sway,	1.1.193	Mids. I, 1, 193	quotation on cited line						with what art you sway the motion of Demetrius' heart,	you sway the motion of demetrius heart
+Sway2	Sway,	2.2.115	II, 2, 115	quotation on cited line						the will of man is by his reason swayed,	the will of man is by his reason swayed
+Sweep2	Sweep,	5.1.397	Mids. V, 397	quotation on cited line						to sweep the dust behind the door,	to sweep the dust behind the door
+Sweep2	Sweep,	4.1.126	Mids. IV, 1, 126	quotation on cited line						ears that sweep away the morning dew,	with ears that sweep away the morning dew
+Sweep2	Sweep,	3.2.23	Mids. III, 2, 23	quotation on cited line						madly sweep the sky,	sever themselves and madly sweep the sky
+Sweet-faced	Sweet-faced,	1.2.88	Mids. I, 2, 88	headword on cited line							for pyramus is a sweetfaced man a proper man
+Sweetmeats	Sweetmeats,	1.1.34	Mids. I, 1, 34	headword on cited line							knacks trifles nosegays sweetmeats messengers
+Swift2	Swift,	2.1.7	Mids. II, 1, 7	quotation on cited line						I do wander every where, swifter than the moon's sphere,	swifter than the moons sphere
+Swift2	Swift,	3.2.94	III, 2, 94	quotation on cited line						about the wood go swifter than the wind,	about the wood go swifter than the wind
+Swift2	Swift,	3.2.94	III, 2, 94	headword on cited line							about the wood go swifter than the wind
+Swift2	Swift,	4.1.103	IV, 1, 103	headword on cited line							swifter than the wandering moon
+Tangle	Tangle,	5.1.125	Mids. V, 125	quotation on cited line						his speech was like a tangled chain,	his speech was like a tangled chain
+Tartar	Tartar,	3.2.101	Mids. III, 2, 101	quotation on cited line, with differences			86%	s	tartars	swifter than arrow from the --'s bow,	swifter than arrow from the tartars bow
+Tartar	Tartar,	3.2.101	Mids. III, 2, 101	headword on cited line	3.2.263		100%			out, tawny T., out!	swifter than arrow from the tartars bow
+Taste1	Taste,	4.1.179	Mids. IV, 1, 179	quotation on cited line						come to my natural taste	but as in health come to my natural taste
+Taste1	Taste,	1.1.236	Mids. I, 1, 236	quotation on cited line, with differences			88%	judgment	judgement	nor hath love's mind of any judgment taste	nor hath loves mind of any judgement taste
+Taste2	Taste,	4.1.218	Mids. IV, 1, 218	quotation on cited line						man's hand is not able to t., his tongue to conceive . . . what my dream was,	seen mans hand is not able to taste his tongue
+Taste2	Taste,	5.1.280	Mids. V, 280	quotation on cited line, with differences			75%	taste truest	take true	I trust to taste of truest Thisby sight,	i trust to take of true thisby sight
+Taurus	Taurus,	3.2.141	Mids. III, 2, 141	quotation on cited line, with differences			100%		taurus	high --' snow,	that pure congealed white high taurus snow
+Tawny	Tawny,	3.2.263	Mids. III, 2, 263	quotation on cited line						out, tawny Tartar,	sweet love thy love out tawny tartar out
+Team	Team,	5.1.391	Mids. V, 391	headword on cited line						(a team of horse).	by the triple hecates team
+Tear2	Tear,	3.2.286	Mids. III, 2, 286	quotation on cited line						will you tear impatient answers from my gentle tongue,	no touch of bashfulness what will you tear
+Tear2	Tear,	1.2.32	Mids. I, 2, 32	quotation on cited line						a part to tear a cat in,	part to tear a cat in to make all split
+Tear2	Tear,	3.2.443	Mids. III, 2, 443	quotation on cited line						torn with briers,	bedabbled with the dew and torn with briers
+Tear2	Tear,	5.1.49	V, 49	quotation on cited line						tearing the Thracian singer in their rage,	tearing the thracian singer in their rage
+Temple2	Temple,	4.1.56	Mids. IV, 1, 56	quotation on cited line						temples:	for she his hairy temples then had rounded
+Tend	Tend,	3.2.256	Mids. III, 2, 256	quotation on cited line						whereto tends all this?	quick come lysander whereto tends all this
+Tend	Tend,	3.1.158	Mids. III, 1, 158	quotation on cited line						the summer still doth tend upon my state,	the summer still doth tend upon my state
+Tender1	Tender,	3.2.87	Mids. III, 2, 87	quotation on cited line						will pay, if for his tender here I make some stay,	if for his tender here i make some stay
+Tender1	Tender,	3.2.87	Mids. III, 2, 87	headword on cited line							if for his tender here i make some stay
+Tender4	Tender,	3.2.230	Mids. III, 2, 230	quotation on cited line, with differences			100%		forsooth	tender me affection,	and tender me forsooth affection
+Tender4	Tender,	5.1.83	V, 83	quotation on cited line, with differences			spacing			never any thing can be amiss, when simpleness and duty tender it,	when simpleness and duty tender it
+Terribly	Terribly,	1.2.76	Mids. I, 2, 76	headword on cited line							an you should do it too terribly you
+Testy	Testy,	3.2.358	Mids. III, 2, 358	headword on cited line							and lead these testy rivals so astray
+That1	That,	5.1.328	Mids. V, 328	quotation on cited line						she hath spied him already with those sweet eyes,	she hath spied him already with those
+That1	That,	3.2.140	III, 2, 140	quotation on cited line						thy lips, those kissing cherries,	thy lips those kissing cherries tempting grow
+That1	That,	1.1.228	Mids. I, 1, 228	headword on cited line							but what of that demetrius thinks not so
+That1	That,	3.2.141	Mids. III, 2, 141	quotation on cited line						that pure congealed white, high Taurus' snow,	that pure congealed white high taurus snow
+That1	That,	5.1.1	Mids. V, 1	quotation on cited line, with differences			100%		my theseus	'tis strange, that these lovers speak of,	tis strange my theseus that these lovers speak of
+Thebes	Thebes,	5.1.51	Mids. V, 51	headword on cited line							when i from thebes came last a conqueror
+Theme	Theme,	5.1.434	Mids. V, 434	quotation on cited line						this weak and idle t., no more yielding but a dream,	and this weak and idle theme
+Thereby	Thereby,	4.1.162	Mids. IV, 1, 162	headword on cited line							thereby to have defeated you and me
+Theseus	Theseus,	1.1.20	Mids. I, 1, 20	headword on cited line							happy be theseus our renowned duke
+Thessalian	Thessalian,	4.1.127	Mids. IV, 1, 127	quotation on cited line						dew-lapped like Thessalian bulls,	crookkneeed and dewlapped like thessalian bulls
+Thessaly	Thessaly,	4.1.131	Mids. IV, 1, 131	quotation on cited line						a cry more tuneable was never holla'd to, nor cheered with horn, in Crete, in Sparta, nor in Thessaly	in crete in sparta nor in thessaly
+Thick-skin	Thick-skin,	3.2.13	Mids. III, 2, 13	quotation on cited line						the shallowest thick-skin of that barren sort,	the shallowest thickskin of that barren sort
+Thing	Thing,	2.2.34	Mids. II, 2, 34	quotation on cited line						wake when some vile thing is near,	wake when some vile thing is near
+Thing	Thing,	3.2.260	III, 2, 260	quotation on cited line						vile t., let loose,	hang off thou cat thou burr vile thing let loose
+Thing	Thing,	4.2.14	Mids. IV, 2, 14	headword on cited line							god bless us a thing of naught
+Thisne	Thisne,	1.2.55	Mids. I, 2, 55	headword on cited line						Thisbe:	thisne thisne ah pyramus my lover dear
+Thorn	Thorn,	1.1.77	Mids. I, 1, 77	quotation on cited line						withering on the virgin thorn	than that which withering on the virgin thorn
+Thorn	Thorn,	3.1.61	III, 1, 61	quotation on cited line						a bush of thorns,	bush of thorns and a lanthorn and say he comes to
+Thorn	Thorn,	3.2.29	III, 2, 29	quotation on cited line						briers and thorns,	for briers and thorns at their apparel snatch
+Thorn	Thorn,	5.1.136	V, 136	quotation on cited line						bush of thorn	this man with lanthorn dog and bush of thorn
+Thorn-bush	Thorn-bush,	5.1.263	Mids. V, 263	headword on cited line							moon this thornbush my thornbush and this
+Thorny	Thorny,	2.2.10	Mids. II, 2, 10	quotation on cited line						thorny hedgehogs,	thorny hedgehogs be not seen
+Thorough1	Thorough,	2.1.3	Mids. II, 1, 3	quotation on cited line						thorough bush, thorough brier, . . . thorough flood, thorough fire,	thorough bush thorough brier
+Though1	Though,	2.2.84	Mids. II, 2, 84	headword on cited line							stay though thou kill me sweet demetrius
+Though1	Though,	3.1.138	III, 1, 138	headword on cited line							bird who would give a bird the lie though he
+Though1	Though,	3.2.325	Mids. III, 2, 325	headword on cited line							and though she be but little she is fierce
+Though1	Though,	2.2.96	Mids. II, 2, 96	headword on cited line							therefore no marvel though demetrius
+Though1	Though,	2.2.109	Mids. II, 2, 109	quotation on cited line						what though he love your Hermia? Lord, what t.?	what though he love your hermia lord what though
+Though1	Though,	3.2.232	III, 2, 232	quotation on cited line						what though I be not so in grace as you, . . . this you should pity rather,	what though i be not so in grace as you
+Though2	Though,	3.2.343	Mids. III, 2, 343	quotation on cited line						your hands than mine are quicker for a fray, my legs are longer though to run away,	my legs are longer though to run away
+Thracian	Thracian,	5.1.49	Mids. V, 49	headword on cited line							tearing the thracian singer in their rage
+Thread1	Thread,	5.1.348	Mids. V, 348	quotation on cited line						you have shore with shears his thread of silk,	with shears his thread of silk
+Throne2	Throne,	2.1.158	Mids. II, 1, 158	quotation on cited line						a fair vestal throned by the west,	at a fair vestal throned by the west
+Throstle	Throstle,	3.1.130	Mids. III, 1, 130	headword on cited line							the throstle with his note so true
+Throttle	Throttle,	5.1.97	Mids. V, 97	quotation on cited line						throttle their practised accent in their fears,	throttle their practised accent in their fears
+Through1	Through,	1.1.227	Mids. I, 1, 227	quotation on cited line						through Athens I am thought as fair as she,	through athens i am thought as fair as she
+Through1	Through,	1.2.5	I, 2, 5	headword on cited line							which is thought fit through all athens to play
+Through1	Through,	2.1.259	II, 1, 259	quotation on cited line						seek through this grove,	take thou some of it and seek through this grove
+Through1	Through,	3.1.38	Mids. III, 1, 38	quotation on cited line						half his face must be seen through the lion's neck,	his face must be seen through the lions neck
+Through1	Through,	3.2.54	III, 2, 54	quotation on cited line						that the moon may through the centre creep,	may through the centre creep and so displease
+Through1	Through,	3.2.54	III, 2, 54	headword on cited line	3.2.59		100%			pierced through the heart,	may through the centre creep and so displease
+Through2	Through,	3.1.39	Mids. III, 1, 39	headword on cited line							and he himself must speak through saying thus
+Through2	Through,	5.1.178	V, 178	quotation on cited line						show me thy chink, to blink through with mine eyne,	show me thy chink to blink through with mine eyne
+Thrum	Thrum,	5.1.291	Mids. V, 291	quotation on cited line						O Fates, come, come, cut thread and thrum	cut thread and thrum
+Thyme	Thyme,	2.1.249	Mids. II, 1, 249	quotation on cited line						where the wild thyme blows,	i know a bank where the wild thyme blows
+Tickle2	Tickle,	4.1.28	Mids. IV, 1, 28	quotation on cited line, with differences			100%		do	if my hair but tickle me, I must scratch,	if my hair do but tickle me i must scratch
+Tide2	Tide,	5.1.205	Mids. V, 205	quotation on cited line						tide life, tide death, I come without delay,	tide life tide death i come without delay
+Tipsy	Tipsy,	5.1.48	Mids. V, 48	quotation on cited line						the riot of the tipsy Bacchanals,	the riot of the tipsy bacchanals
+Tiring-house	Tiring-house,	3.1.4	Mids. III, 1, 4	prose row break	3.1.5	1					shall be our stage this hawthornbrake our
+Toil3	Toil,	5.1.74	Mids. V, 74	quotation on cited line, with differences			100%		unbreathed	have toiled their memories,	and now have toiled their unbreathed memories
+Tongs	Tongs:	4.1.32	Mids. IV, 1, 32	quotation on cited line						let's have the tongs and the bones,	lets have the tongs and the bones
+Tongue-tied	Tongue-tied,	5.1.104	Mids. V, 104	quotation on cited line, with differences			100%		therefore	love and tongue-tied simplicity in least speak most,	love therefore and tonguetied simplicity
+Top1	Top,	4.1.114	Mids. IV, 1, 114	headword on cited line							we will fair queen up to the mountains top
+Top1	Top,	4.1.12	Mids. IV, 1, 12	quotation on cited line						on the top of a thistle,	redhipped humblebee on the top of a thistle
+Topple	Topple,	2.1.53	Mids. II, 1, 53	quotation on cited line						down topples she,	then slip i from her bum down topples she
+Touch1	Touch,	3.2.286	Mids. III, 2, 286	quotation on cited line						have you no modesty, no maiden shame, no touch of bashfulness,	no touch of bashfulness what will you tear
+Touch1	Touch,	3.2.70	Mids. III, 2, 70	quotation on cited line						hast thou killed him sleeping? O brave t.! could not a worm, an adder, do so much?	and hast thou killed him sleeping o brave touch
+Toward2	Toward,	3.1.81	Mids. III, 1, 81	quotation on cited line						a play toward	what a play toward ill be an auditor
+Toy1	Toy,	5.1.3	Mids. V, 3	quotation on cited line						I never may believe these antique fables nor these fairy toys,	these antique fables nor these fairy toys
+Trace2	Trace,	2.1.25	Mids. II, 1, 25	quotation on cited line						to trace the forests,	knight of his train to trace the forests wild
+Traders	Traders,	2.1.127	Mids. II, 1, 127	quotation on cited line						the embarked traders on the flood,	marking the embarked traders on the flood
+Tragedy	Tragedy,	5.1.367	Mids. V, 367	headword on cited line							been a fine tragedy and so it is truly and very
+Transfigure	Transfigure,	5.1.24	Mids. V, 24	quotation on cited line						all their minds transfigured so together,	and all their minds transfigured so together
+Transfix	Transfix,	5.60.9	60, 9	not a citation of this play							
+Transform	Transform,	4.1.69	Mids. IV, 1, 69	headword on cited line							and gentle puck take this transformed scalp
+Translate	Translate,	1.1.191	Mids. I, 1, 191	quotation on cited line, with differences			94%	ild	ied	were the world mine, Demetrius being bated, the rest I'ld give to be to you translated,	the rest ied give to be to you translated
+Translate	Translate,	3.1.122	III, 1, 122	quotation on cited line, with differences			100%		bless thee	Bottom, thou art translated,	art translated
+Translate	Translate,	3.2.32	III, 2, 32	quotation on cited line						left sweet Pyramus translated there,	and left sweet pyramus translated there
+Transparent	Transparent,	2.2.104	Mids. II, 2, 104	quotation on cited line						transparent Helena, nature shows art, that through thy bosom makes me see thy heart,	transparent helena nature shows art
+Transport	Transport,	4.2.4	Mids. IV, 2, 4	quotation on cited line						he cannot be heard of; out of doubt he is transported,	he is transported
+Transpose	Transpose,	1.1.233	Mids. I, 1, 233	quotation on cited line						things base and vile, holding no quantity, love can transpose to form and dignity,	love can transpose to form and dignity
+Tread1	Tread,	2.1.100	Mids. II, 1, 100	quotation on cited line						the quaint mazes . . . for lack of tread are undistinguishable,	for lack of tread are undistinguishable
+Treat	Treat,	1.2.9	Mids. I, 2, 9	quotation on cited line						say what the play treats on,	play treats on then read the names of the actors
+Trick1	Trick,	5.1.18	Mids. V, 18	quotation on cited line						such tricks hath strong imagination,	such tricks hath strong imagination
+Trim2	Trim,	3.2.157	Mids. III, 2, 157	quotation on cited line						a trim exploit,	a trim exploit a manly enterprise
+Trip2	Trip,	4.1.101	Mids. IV, 1, 101	quotation on cited line, with differences			83%	the		trip we after the night's shade,	trip we after nights shade
+Trip2	Trip,	5.1.428	V, 428	quotation on cited line						trip away, make no stay,	trip away make no stay
+Triple	Triple,	5.1.391	Mids. V, 391	quotation on cited line						by the triple Hecate's team,	by the triple hecates team
+Trippingly	Trippingly,	5.1.403	Mids. V, 403	quotation on cited line						sing and dance it trippingly	sing and dance it trippingly
+Triumphant	Triumphant,	3.1.96	Mids. III, 1, 96	quotation on cited line						the red rose on triumphant brier,	of color like the red rose on triumphant brier
+Triumphantly	Triumphantly,	4.1.94	Mids. IV, 1, 94	quotation on cited line						dance in Duke Theseus' house triumphantly	dance in duke theseus house triumphantly
+Troop2	Troop,	3.2.382	Mids. III, 2, 382	quotation on cited line						at whose approach ghosts . . . troop home to churchyards,	troop home to churchyards damned spirits all
+True-love	True-love	3.2.89	Mids. III, 2, 89	headword on cited line							and laid the lovejuice on some trueloves sight
+Trusty	Trusty,	5.1.141	Mids. V, 141	quotation on cited line						the trusty Thisby,	the trusty thisby coming first by night
+Trusty	Trusty,	5.1.141	Mids. V, 141	headword on cited line							the trusty thisby coming first by night
+Trusty	Trusty,	5.1.141	Mids. V, 141	headword on cited line	5.1.198		100%			like Limander am I trusty still,	the trusty thisby coming first by night
+Trusty	Trusty,	5.1.141	Mids. V, 141	headword on cited line	5.1.350		100%			come, trusty sword,	the trusty thisby coming first by night
+Tuneable	Tuneable,	1.1.184	Mids. I, 1, 184	quotation on cited line						more tuneable than lark to shepherd's ear,	more tuneable than lark to shepherds ear
+Tuneable	Tuneable,	4.1.129	IV, 1, 129	quotation on cited line						a cry more tuneable was never hollaed to,	each under each a cry more tuneable
+Turf	Turf,	2.2.41	Mids. II, 2, 41	quotation on cited line						one turf shall serve as pillow for us both,	one turf shall serve as pillow for us both
+Unbreathed	Unbreathed,	5.1.74	Mids. V, 74	quotation on cited line						have toiled their unbreathed memories,	and now have toiled their unbreathed memories
+Uncouple	Uncouple,	4.1.112	Mids. IV, 1, 112	quotation on cited line						uncouple in the western valley; let them go,	uncouple in the western valley let them go
+Undergo	Undergo	1.1.75	Mids. I, 1, 75	quotation on cited line, with differences			spacing			thrice blessed they that master so their blood to undergo such maiden pilgrimage,	to undergo such maiden pilgrimage
+Undistinguishable	Undistinguishable,	2.1.100	Mids. II, 1, 100	headword on cited line							for lack of tread are undistinguishable
+Undistinguishable	Undistinguishable,	4.1.192	IV, 1, 192	headword on cited line							these things seem small and undistinguishable
+Unearned	Unearned,	5.1.439	Mids. V, 439	quotation on cited line						if we have unearned luck now to 'scape the serpent's tongue,	if we have unearned luck
+Uneven	Uneven,	3.2.417	Mids. III, 2, 417	quotation on cited line						fallen am I in dark uneven way,	that fallen am i in dark uneven way
+Ungrateful	Ungrateful,	3.2.195	Mids. III, 2, 195	headword on cited line							injurious hermia most ungrateful maid
+Unhardened	Unhardened,	1.1.35	Mids. I, 1, 35	quotation on cited line						messengers of strong prevailment in unhardened youth,	of strong prevailment in unhardened youth
+Unheedy	Unheedy,	1.1.237	Mids. I, 1, 237	quotation on cited line						wings and no eyes figure unheedy haste,	wings and no eyes figure unheedy haste
+Union	Union,	3.2.210	Mids. III, 2, 210	quotation on cited line						an union in partition,	but yet an union in partition
+Unkindly	Unkindly,	3.2.183	Mids. III, 2, 183	headword on cited line							but why unkindly didst thou leave me so
+Unloved	Unloved,	3.2.234	Mids. III, 2, 234	headword on cited line							but miserable most to love unloved
+Unsay	Unsay,	1.1.181	Mids. I, 1, 181	headword on cited line							call you me fair that fair again unsay
+Unwished	Unwished,	1.1.81	Mids. I, 1, 81	headword on cited line							unto his lordship whose unwished yoke
+Upbraid	Upbraid,	4.1.55	Mids. IV, 1, 55	quotation on cited line						I did upbraid her and fall out with her,	i did upbraid her and fall out with her
+Upon1	Upon,	1.1.139	Mids. I, 1, 139	quotation on cited line						it stood upon the choice of friends,	or else it stood upon the choice of friends
+Upon1	Upon,	4.1.44	Mids. IV, 1, 44	quotation on cited line						I have an exposition of sleep come upon me,	come upon me
+Upon1	Upon,	4.1.160	Mids. IV, 1, 160	quotation on cited line, with differences			100%		the law	I beg the law upon his head,	i beg the law the law upon his head
+Upon1	Upon,	2.1.266	Mids. II, 1, 266	quotation on cited line						more fond on her than she upon her love,	more fond on her than she upon her love
+Upon1	Upon,	3.2.10	Mids. III, 2, 10	quotation on cited line						work for bread upon Athenian stalls,	that work for bread upon athenian stalls
+Upon1	Upon,	2.1.244	Mids. II, 1, 244	quotation on cited line, with differences			89%	loved	love	to die upon the hand I loved so well,	to die upon the hand i love so well
+Upon1	Upon,	2.2.107	Mids. II, 2, 107	headword not found near cited line							is that vile name to perish on my sword
+Urge	Urge,	3.2.291	Mids. III, 2, 291	quotation on cited line						she hath urged her height,	between our statures she hath urged her height
+Usual	Usual,	5.35	Mids. V, 35	not a citation of this play							
+Valley	Valley,	4.1.112	Mids. IV, 1, 112	headword on cited line							uncouple in the western valley let them go
+Vanish	Vanish,	5.1.275	Mids. V, 275	headword on cited line							and so the lion vanished
+Vantage1	Vantage,	1.1.102	Mids. I, 1, 102	quotation on cited line, with differences			100%		every way	my fortunes as fairly ranked, if not with v., as Demetrius',	if not with vantage as demetrius
+Vast1	Vast,	5.1.9	Mids. V, 9	quotation on cited line						more devils than vast hell can hold,	one sees more devils than vast hell can hold
+Vaward	Vaward,	4.1.110	Mids. IV, 1, 110	quotation on cited line						since we have the vaward of the day, my love shall hear the music of my hounds,	and since we have the vaward of the day
+Venturous	Venturous,	4.1.39	Mids. IV, 1, 39	headword on cited line							i have a venturous fairy that shall seek
+Versing	Versing,	2.1.67	Mids. II, 1, 67	quotation on cited line						versing love to amorous Phillida,	playing on pipes of corn and versing love
+Very1	Very,	4.2.12	Mids. IV, 2, 12	quotation on cited line						he is a very paramour for a sweet voice,	is a very paramour for a sweet voice
+Very1	Very,	5.234.12	V, 234	not a citation of this play						a very fox for his valour,	
+Very1	Very,	5.1.232	Mids. V, 232	quotation on cited line						the very best at a beast,	the very best at a beast my lord that
+Very1	Very,	2.1.48	Mids. II, 1, 48	quotation on cited line						in very likeness of a roasted crab,	in very likeness of a roasted crab
+Very1	Very,	2.1.155	Mids. II, 1, 155	quotation on cited line						that very time I saw . . . Cupid all armed,	that very time i saw but thou couldst not
+Vestal	Vestal,	2.1.158	Mids. II, 1, 158	quotation on cited line						a fair vestal throned by the west,	at a fair vestal throned by the west
+Vexation	Vexation,	4.1.74	Mids. IV, 1, 74	quotation on cited line						the fierce vexation of a dream,	but as the fierce vexation of a dream
+Vexation	Vexation,	1.1.22	Mids. I, 1, 22	quotation on cited line						full of vexation come I,	full of vexation come i with complaint
+View1	View,	3.1.144	Mids. III, 1, 144	quotation on cited line, with differences			100%		say to	on the first view to swear I love thee,	on the first view to say to swear i love thee
+View1	View,	3.2.377	III, 2, 377	quotation on cited line						then I will her charmed eye release from monster's view	from monsters view and all things shall be peace
+Villagery	Villagery,	2.1.35	Mids. II, 1, 35	quotation on cited line, with differences			83%	villagery		frights the maidens of the villagery	that frights the maidens of the viilagery
+Vixen	Vixen,	3.2.324	Mids. III, 2, 324	quotation on cited line						she was a vixen when she went to school,	she was a vixen when she went to school
+Vow2	Vow,	3.2.124	Mids. III, 2, 124	quotation on cited line						when I v., I weep,	look when i vow i weep and vows so born
+Vow2	Vow,	3.2.124	Mids. III, 2, 124	headword on cited line							look when i vow i weep and vows so born
+Vow2	Vow,	3.123.13	123, 13	not a citation of this play							
+Vow2	Vow,	3.152.4	152, 4	not a citation of this play							
+Waggish	Waggish,	1.1.240	Mids. I, 1, 240	headword on cited line							as waggish boys in game themselves forswear
+Walk1	Walk,	3.1.168	Mids. III, 1, 168	quotation on cited line						hop in his walks and gambol in his eyes,	hop in his walks and gambol in his eyes
+Walk1	Walk,	5.1.31	V, 31	quotation on cited line						than to us wait in your royal walks, your board, your bed,	wait in your royal walks your board your bed
+Wanderer	Wanderer,	2.1.43	Mids. II, 1, 43	quotation on cited line						I am that merry wanderer of the night,	i am that merry wanderer of the night
+Wanderer	Wanderer,	2.1.43	Mids. II, 1, 43	headword on cited line	2.1.247		100%			hast thou the flower there? welcome, wanderer	i am that merry wanderer of the night
+Wane1	Wane,	5.1.258	Mids. V, 258	headword on cited line							cretion that he is in the wane but yet in courtesy
+Wane2	Wane,	5.2.65	Shr. Ind. 2, 65.	not a citation of this play							
+Wane2	Wane,	2.403.65	II, 403	not a citation of this play							
+Wane2	Wane,	2.126.3	126, 3	not a citation of this play						who hast by waneing grown, and therein showest thy lovers withering as thy sweet self growest,	
+Wane2	Wane,	1.1.4	Mids. I, 1, 4	quotation on cited line						how slow this old moon wanes,	this old moon wanes she lingers my desires
+Wanton2	Wanton,	2.1.63	Mids. II, 1, 63	quotation on cited line						tarry, rash wanton	tarry rash wanton am not i thy lord
+Warble2	Warble,	3.2.206	Mids. III, 2, 206	quotation on cited line, with differences			80%	warbleing	warbling	both warbleing of one song,	both warbling of one song both in one key
+Warble2	Warble,	5.1.405	V, 405	quotation on cited line, with differences			91%	warbleing	warbling	rehearse your song by rote, to each word a warbleing note,	to each word a warbling note
+Warn	Warn,	5.1.326	Mids. V, 326	headword not found near cited line							man god warrant us she for a woman god
+Warn	Warn,	5.1.211	Mids. V, 211	quotation on cited line						when walls are so wilful to hear without warning,	wilful to hear without warning
+Waste3	Waste,	3.2.168	Mids. III, 2, 168	headword on cited line							never did mockers waste more idle breath
+Waste3	Waste,	2.1.57	Mids. II, 1, 57	quotation on cited line						a merrier hour was never wasted there,	a merrier hour was never wasted there
+Waste3	Waste,	5.1.382	V, 382	quotation on cited line, with differences			83%	de	do	now the wasted brands de glow,	now the wasted brands do glow
+Water2	Water,	3.1.200	Mids. III, 1, 200	quotation on cited line						your kindred hath made my eyes water	my eyes water ere now i desire your more
+Water2	Water,	5.1.69	V, 69	headword on cited line							made mine eyes water but more merry tears
+Wax1	Wax,	1.1.49	Mids. I, 1, 49	quotation on cited line						as a form in wax by him imprinted,	to whom you are but as a form in wax
+Waxen1	Waxen,	3.1.172	Mids. III, 1, 172	quotation on cited line						waxen thighs,	and for nighttapers crop their waxen thighs
+Waxen2	Waxen,	2.1.56	Mids. II, 1, 56	quotation on cited line						and waxen in their mirth and neeze and swear a merrier hour was never wasted there,	and waxen in their mirth and neeze and swear
+Weave	Weave	2.2.20	Mids. II, 2, 20	headword on cited line							weaving spiders come not here
+Wend	Wend	3.2.372	Mids. III, 2, 372	quotation on cited line						back to Athens shall the lovers wend	and back to athens shall the lovers wend
+West	West,	3.132.8	132, 8	not a citation of this play							
+West	West,	2.1.158	Mids. II, 1, 158	quotation on cited line						throned by the west	at a fair vestal throned by the west
+Wheat	Wheat,	1.1.185	Mids. I, 1, 185	headword on cited line							when wheat is green when hawthorn buds appear
+Wheresoeer	Wheresoe'er,	2.2.90	Mids. II, 2, 90	headword on cited line							happy is hermia wheresoeer she lies
+Whereto	Whereto,	3.2.256	Mids. III, 2, 256	quotation on cited line						whereto tends all this?	quick come lysander whereto tends all this
+Whistle2	Whistle,	2.1.86	Mids. II, 1, 86	headword on cited line							to dance our ringlets to the whistling wind
+Whit	Whit,	3.1.17	Mids. III, 1, 17	headword on cited line							not a whit i have a device to make all
+Wide1	Wide,	2.1.256	Mids. II, 1, 256	quotation on cited line						weed wide enough to wrap a fairy in,	weed wide enough to wrap a fairy in
+Wilful	Wilful,	5.1.211	Mids. V, 211	quotation on cited line						when walls are so wilful to hear without warning,	wilful to hear without warning
+Wilfully	Wilfully,	3.2.386	Mids. III, 2, 386	quotation on cited line						wilfully themselves exile from light,	they wilfully themselves exile from light
+Wilfully	Wilfully,	3.2.346	Mids. III, 2, 346	quotation on cited line, with differences			89%	committest	committst	still thou mistakest, or else committest thy knaveries wilfully	or else committst thy knaveries wilfully
+Wind3	Wind,	4.1.45	Mids. IV, 1, 45	quotation on cited line, with differences			86%	mine	my	I will wind thee in mine arms,	sleep thou and i will wind thee in my arms
+Wind3	Wind,	1.54.45	I, 54	not a citation of this play							
+Window	Window,	3.1.58	Mids. III, 1, 58	headword on cited line							the great chamber window where we play open
+Window	Window,	1.1.30	Mids. I, 1, 30	headword on cited line							thou hast by moonlight at her window sung
+Wisher	Wisher,	2.2.65	Mids. II, 2, 65	headword on cited line							with half that wish the wishers eyes be pressed
+Withhold	Withhold	2.1.26	Mids. II, 1, 26	headword on cited line							but she perforce withholds the loved boy
+Witty	Witty,	5.1.168	Mids. V, 168	quotation on cited line, with differences			90%	wittyest	wittiest	it is the wittyest partition that ever I heard discourse,	it is the wittiest partition that ever i
+Wood2	Wood,	2.1.192	Mids. II, 1, 192	quotation on cited line, with differences			88%	wood	wode	here am I, and wood within this wood,	and here am i and wode within this wood
+Woodbine	Woodbine,	2.1.251	Mids. II, 1, 251	headword on cited line							quite overcanopied with luscious woodbine
+Woodbine	Woodbine,	4.1.47	IV, 1, 47	headword on cited line							so doth the woodbine the sweet honeysuckle
+Wood-bird	Wood-bird,	4.1.145	Mids. IV, 1, 145	headword on cited line							begin these woodbirds but to couple now
+Wormy	Wormy,	3.2.384	Mids. III, 2, 384	quotation on cited line						damned spirits . . . already to their wormy beds are gone,	already to their wormy beds are gone
+Wot	Wot,	3.2.422	Mids. III, 2, 422	quotation on cited line						well I wot	abide me if thou darest for well i wot
+Wot	Wot,	4.1.169	Mids IV, 1, 169	headword on cited line							but my good lord i wot not by what power
+Wrap	Wrap,	2.1.256	Mids. II, 1, 256	headword on cited line							weed wide enough to wrap a fairy in
+Wrap	Wrap,	2.1.38	Shr. Ind. 1, 38.	not a citation of this play							
+Wrath2	Wrath,	2.1.20	Mids. II, 1, 20	quotation on cited line						Oberon is passing fell and wrath	for oberon is passing fell and wrath
+Wren	Wren,	3.1.131	Mids. III, 1, 131	headword on cited line							the wren with little quill
+Wretchedness	Wretchedness,	5.1.85	Mids. V, 85	headword on cited line							i love not to see wretchedness oercharged
+Yea	Yea,	4.1.201	Mids. IV, 1, 201	headword on cited line							yea and my father and hippolyta
+Yea	Yea,	1.1.48	Mids. I, 1, 48	quotation on cited line, with differences			100%		and	one that composed your beauties, yea, one to whom you are but as a form in wax,	one that composed your beauties yea and one
+Yea	Yea,	3.2.411	III, 2, 411	quotation on cited line						yea, art thou there?	that draws a sword on thee yea art thou there
+Yielder	Yielder,	3.2.30	Mids. III, 2, 30	quotation on cited line						briers and thorns at their apparel snatch; some sleeves, some hats, from yielders all things catch,	some sleeves some hats from yielders all things catch

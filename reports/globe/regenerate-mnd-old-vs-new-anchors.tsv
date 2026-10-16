@@ -1,0 +1,13 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in mnd.xml (sha256 09adab49695eabf9); not the shell's milestones or <l n>
+# transcribed anchors: 168; mapped (the row begins a line): 155; of those, carrying the same number: 148
+# in scenes that pass the gate: 155 mapped; agreeing: 148
+# unmapped (the row begins inside a line): 13; the P4's number is the containing line's for 6, the next line's for 7, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.1	10	disagree	9				And then the moon, like to
+4.1	80	disagree	82				Methought I was enamour'd of an
+4.1	120	disagree	128				Slow in pursuit, but match'd in
+4.1	141	disagree	149				That hatred is so far from
+4.1	150	disagree	158				Without the peril of the Athenian
+4.1	170	disagree	178				But, like in sickness, did I
+4.1	180	disagree	188				Our purposed hunting shall be set

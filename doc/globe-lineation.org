@@ -30,8 +30,11 @@ rows; =separate= rows that name lost words, or every repeat on a page);
 Errors was republished with them, one milestone moved one word. A Midsummer Night's Dream passed 20 of 20
 with eleven rows after one rule change (a table kind =inset=, for songs
 whose every row is a line, and two aligner rules). The Merchant of Venice passed 24 of 24 with six
-rows and no rule change. The open tasks are in canonical-engLit =doc/agenda.org= on
-=mvp=.
+rows and no rule change. Songs (=<lg type="song">=) and inset texts now convert: every printed row of
+a song is a Globe line, a heading is not, and a row is a turnover only if it
+completes a broken word or follows a full-measure row in the same P4 =<l>=
+(=lineate.in_song=; canonical-engLit =#build/inset-numbering=). The open
+tasks are in canonical-engLit =doc/agenda.org= on =mvp=.
 
 * The method
 

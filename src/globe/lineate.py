@@ -68,6 +68,16 @@ def continues(prev: Row, r: Row) -> bool:
     the same <l> as a full-measure row above continues it, where the P4
     marks verse: turnovers set a little deeper than the band ("the" /
     "match", "sullen," / "froward,", 2.89u, III.1, beside 2.28-2.37u)."""
+    if in_song(r):
+        # every printed row of a song is a Globe line, however short or deep it
+        # is set (canonical-engLit doc/agenda.org #build/inset-numbering); a
+        # P4 <l> often holds two rows, so a row of the same <l> is a turnover
+        # only if the row above ran to the full measure. A word broken at the
+        # end of the row above is always one.
+        if r.extra.get("completes_word"):
+            return True
+        cont = r.extra.get("cont")
+        return cont is not None and prev.extra.get("cont") is cont and prev.short_u < FULL_MEASURE_U
     if r.band in ("turnover", "indented") and r.extra.get("completes_word"):
         return True
     if r.band == "indented" and prev.short_u < FULL_MEASURE_U and _same_container(prev, r, "l"):
@@ -96,6 +106,13 @@ def continues(prev: Row, r: Row) -> bool:
         after = r.u(r.text_x) - prev.u(prev.extra.get("speech_r", prev.r))
         return after >= -SHARED_REACH_U or r.short_u < FULL_MEASURE_U
     return False
+
+
+def in_song(r: Row) -> bool:
+    """Does the row start in a P4 <lg type="song">?"""
+    cont = r.extra.get("cont")
+    return cont is not None and any(
+        etree.QName(a).localname == "lg" and a.get("type") == "song" for a in cont.iterancestors())
 
 
 def _same_container(prev: Row, r: Row, tag: str) -> bool:

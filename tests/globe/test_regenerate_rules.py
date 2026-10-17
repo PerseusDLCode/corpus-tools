@@ -112,6 +112,27 @@ def test_displaced_song_line_is_a_line():
     assert not lineate.continues(prev, row(5.4, "To give away thy land,", right_u=15.5))
 
 
+def _song_rows(prev_right_u, same_l=True):
+    """Two rows of a <lg type="song">, as Twelfth Night II.4 sets "My poor
+    corpse, where my bones shall / be thrown:"."""
+    body = etree.fromstring('<body><sp><lg type="song"><l>x</l><l>y</l></lg></sp></body>')
+    l1, l2 = body.findall("sp/lg/l")
+    prev = row(3.5, "My poor corpse, where my bones shall", right_u=prev_right_u)
+    r = row(5.8, "be thrown:", right_u=10.0)
+    prev.extra["cont"], r.extra["cont"] = l1, (l1 if same_l else l2)
+    return prev, r
+
+
+def test_every_row_of_a_song_is_a_line_unless_it_turns_over_a_full_row():
+    """#build/inset-numbering: the Globe numbers every printed row of a song,
+    a heading excepted. A row after a short row is a line of its own (Tempest
+    I.2, "And then take hands:", in one P4 <l> with the row below it); after a
+    row that ran to the measure, in the same <l>, it is the turnover."""
+    assert not lineate.continues(*_song_rows(prev_right_u=14.0))
+    assert lineate.continues(*_song_rows(prev_right_u=MEASURE - 0.2))
+    assert not lineate.continues(*_song_rows(prev_right_u=MEASURE - 0.2, same_l=False))
+
+
 def test_displaced_row_in_the_same_paragraph_is_prose():
     # Goneril's letter, p.873: "'Affectionate servant," set in, inside one <p>,
     # in a text that marks its verse with <l>

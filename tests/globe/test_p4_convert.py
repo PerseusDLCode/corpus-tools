@@ -6,7 +6,7 @@ import pytest
 from lxml import etree
 
 from globe import p4_convert
-from globe.p4_convert import XML_LANG, q
+from globe.p4_convert import XML_ID, XML_LANG, q
 
 
 def convert(line: str):
@@ -48,11 +48,29 @@ def test_q_drops_the_p4_default_direct_and_nothing_else():
         convert('<p><q direct="n">x</q></p>')
 
 
-@pytest.mark.parametrize("tag", ["lg", "text"])
-def test_inset_songs_and_letters_still_raise(tag):
-    """Undecided: whether the Globe numbers their rows (#build/inset-numbering)."""
-    with pytest.raises(p4_convert.ConversionError, match=f"Unhandled element <{tag}>"):
-        convert(f"<{tag}><l>x</l></{tag}>")
+def test_a_song_keeps_its_lg_and_a_split_one_its_links():
+    """#build/inset-numbering: Twelfth Night's catch and Hamlet's songs are one
+    <lg> in several parts; P4's @id/@next/@part are xml:id, a pointer, I/M/F."""
+    body, _ = convert('<lg id="s1" next="s2" part="I" type="song"><l>a</l></lg>'
+                      '<lg id="s2" next="s3" part="Y" type="song"><l>b</l></lg>'
+                      '<lg id="s3" part="F" type="song"><l>c</l></lg>')
+    lgs = body.findall(f".//{q('lg')}")
+    assert [(g.get(XML_ID), g.get("next"), g.get("part"), g.get("type")) for g in lgs] == [
+        ("s1", "#s2", "I", "song"), ("s2", "#s3", "M", "song"), ("s3", None, "F", "song")]
+    with pytest.raises(p4_convert.ConversionError, match="unexpected attributes"):
+        convert('<lg rend="x"><l>a</l></lg>')
+    with pytest.raises(p4_convert.ConversionError, match="only I, Y and F"):
+        convert('<lg part="N"><l>a</l></lg>')
+
+
+def test_an_inset_text_is_a_floating_text():
+    """A masque, a letter or a song set in a speech is a <text> in the P4; P5's
+    <floatingText> holds a <body> of its own."""
+    body, _ = convert('<l>Now, music.</l><text><body><head>SONG.</head>'
+                      '<lg type="song"><l>Pardon, goddess</l></lg></body></text>')
+    ft = body.find(f".//{q('floatingText')}")
+    assert ft is not None and ft.find(f"{q('body')}/{q('head')}").text == "SONG."
+    assert ft.find(f".//{q('lg')}").get("type") == "song"
 
 
 def test_the_other_plays_entities_resolve(tmp_path):

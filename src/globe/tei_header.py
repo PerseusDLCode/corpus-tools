@@ -43,6 +43,13 @@ PLAY_TITLES = {
     "err": "The Comedy of Errors",
     "lll": "Love's Labor's Lost",  # as its __cts__.xml names it
     "mnd": "A Midsummer Night's Dream",
+    "ado": "Much Ado About Nothing",
+    "tmp": "The Tempest",
+    "wiv": "The Merry Wives of Windsor",
+    "tn": "Twelfth Night",
+    "h8": "King Henry VIII.",  # as its __cts__.xml names it
+    "ham": "Hamlet",
+    "cym": "Cymbeline",
     "mv": "The Merchant of Venice",
 }
 
@@ -81,6 +88,15 @@ COPY_TEXT = {
     # Introduction printed 331 (contents: 331; CHOCR index 341), V.1 ends on 355
     # (index 365); King Henry IV Part I's introduction is 356 (printed = index - 10).
     "mv": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="331-355"),
+    # Introduction printed 497 (CHOCR index 507), V.4 ends on 521; As You Like
+    # It's introduction is 522 (printed = index - 10).
+    "ado": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="497-521"),
+    "wiv": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="471-496"),
+    "tn": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="547-570"),
+    "tmp": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="971-992"),
+    "ham": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="597-634"),
+    "cym": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="936-970"),
+    "h8": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="1023-1054"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

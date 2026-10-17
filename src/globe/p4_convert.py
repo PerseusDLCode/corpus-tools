@@ -117,15 +117,16 @@ PASSTHROUGH_ATTRS: dict[str, set[str]] = {
     "castGroup": set(),
     "castItem": {"type"},
     "roleDesc": set(),
-    # Inline in the other plays' P4s; none starts or ends a row. <lg> and a
-    # <text> inside the body (songs, masques, letters) are not here: whether
-    # the Globe numbers their rows is undecided (canonical-engLit
-    # doc/agenda.org #build/inset-numbering), so they still raise.
+    # Inline in the other plays' P4s; none starts or ends a row.
     "hi": {"rend"},
     "quote": {"rend"},
     "seg": set(),
     "closer": set(),
     "signed": set(),
+    # EXPERIMENT (inset-numbering): pass through to see what the pages say.
+    # A masque, a letter or a song set in a speech (converted to <floatingText>)
+    "text": set(),
+    "body": set(),
 }
 
 # The P4's <gap/> is the Globe's lacuna, its row of dots following it as text
@@ -272,8 +273,12 @@ def convert_element(old, stats: ConversionStats, ctx: str):
         new = _convert_foreign(old, stats, ctx)
     elif tag == "q":
         new = _convert_q(old, stats, ctx)
+    elif tag == "lg":
+        new = _convert_lg(old, stats, ctx)
     elif tag in PASSTHROUGH_ATTRS:
         new = _convert_passthrough(old, stats, ctx, tag)
+        if tag == "text":
+            new.tag = q("floatingText")
     else:
         raise ConversionError(f"Unhandled element <{tag}> at {ctx}")
 
@@ -473,6 +478,33 @@ def _reg_text(old, stats: ConversionStats, ctx: str) -> str:
     stats.element_counts_in["reg"] = stats.element_counts_in.get("reg", 0) + 1
     stats.reg_collapsed_to_text.append((ctx, orig, text))
     return text
+
+
+# A P4 <lg> split between speakers or across an interruption (Hamlet's Player's
+# speech, Ophelia's songs; Twelfth Night's catch) carries @id, @next and @part.
+# P5 spells them xml:id, @next as a pointer, and @part I/M/F; P4's Y ("incomplete
+# in some respect") is, between an I and an F, P5's M.
+LG_PART = {"I": "I", "Y": "M", "F": "F"}
+
+
+def _convert_lg(old, stats: ConversionStats, ctx: str):
+    attribs = dict(old.attrib)
+    extra = set(attribs) - {"type", "id", "next", "part"}
+    if extra:
+        raise ConversionError(f"<lg> has unexpected attributes {extra} at {ctx}")
+    new = etree.Element(q("lg"))
+    if "type" in attribs:
+        new.set("type", attribs["type"])
+    if "id" in attribs:
+        new.set(XML_ID, attribs["id"])
+    if "next" in attribs:
+        new.set("next", "#" + attribs["next"])
+    if "part" in attribs:
+        if attribs["part"] not in LG_PART:
+            raise ConversionError(f"<lg part={attribs['part']!r}> at {ctx}: only I, Y and F are known")
+        new.set("part", LG_PART[attribs["part"]])
+    convert_children(old, new, stats, ctx)
+    return new
 
 
 def _convert_passthrough(old, stats: ConversionStats, ctx: str, tag: str):

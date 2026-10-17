@@ -1,0 +1,215 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in ado.xml (sha256 47a8bf7a61370357); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	here that Don Peter hath bestowed
+1.1	20	row begins a line	20			agree	Mess. I have already delivered him
+1.1	30	row begins a line	30			agree	Beat. I pray you, is Signior
+1.1	40	row begins inside a line		39	40	unmapped (P4 number is the next line)	and challenged Cupid at the flight;
+1.1	50	row begins a line	50			agree	Beat. You had musty victual, and
+1.1	60	row begins inside a line		59	60	unmapped (P4 number is the next line)	are all mortal. Leon. You must
+1.1	70	row begins inside a line		69	70	unmapped (P4 number is the next line)	between himself and his horse; for
+1.1	80	row begins inside a line		79	80	unmapped (P4 number is the next line)	Beat. No; an he were, I
+1.1	90	row begins inside a line		89	90	unmapped (P4 number is the next line)	Benedick, it will cost him a
+1.1	100	row begins inside a line		99	100	unmapped (P4 number is the next line)	the likeness of your grace: for
+1.1	110	row begins a line	110			agree	D. Pedro. You have it full,
+1.1	120	row begins inside a line		119	120	unmapped (P4 number is the next line)	you yet living? Beat. Is it
+1.1	130	row begins inside a line		129	130	unmapped (P4 number is the next line)	would else have been troubled with
+1.1	140	row begins a line	140			agree	Beat. A bird of my tongue
+1.1	150	row begins inside a line		149	150	unmapped (P4 number is the next line)	him we shall stay here at
+1.1	160	row begins a line	160			agree	Leon. Please it your grace lead
+1.1	170	row begins inside a line		169	170	unmapped (P4 number is the next line)	as being a professed tyrant to
+1.1	180	row begins inside a line		180	181	unmapped (P4 number is the containing line)	Bene. Would you buy her, that
+1.1	190	row begins a line	190			agree	that ever I looked on. Bene.
+1.1	200	row begins a line	200			agree	the world one man but he
+1.1	210	row begins a line	210			agree	D. Pedro. I charge thee on
+1.1	220	row begins inside a line		219	220	unmapped (P4 number is the next line)	it should be so. Claud. If
+1.1	230	row begins inside a line		229	230	unmapped (P4 number is the next line)	Claud. That I love her, I
+1.1	240	row begins inside a line		239	240	unmapped (P4 number is the next line)	Bene. That a woman conceived me,
+1.1	250	row begins a line	250			agree	pale with love. Bene. With anger,
+1.1	260	row begins inside a line		259	260	unmapped (P4 number is the next line)	cat and shoot at me; and
+1.1	270	row begins inside a line		269	270	unmapped (P4 number is the next line)	you may see Benedick the married
+1.1	280	row begins inside a line		279	280	unmapped (P4 number is the next line)	for indeed he hath made great
+1.1	290	row begins inside a line		289	290	unmapped (P4 number is the next line)	basted on neither: ere you flout
+1.1	300	row begins a line	300			agree	I look'd upon her with a
+1.1	310	row begins a line	310			agree	If thou dost love fair Hero,
+1.1	320	row begins a line	320			agree	Look, what will serve is fit;
+1.1	330	row begins a line	330			agree	In practice let us put it
+1.2	10	row begins a line	11			disagree	much overheard by a man of
+1.2	20	row begins a line	20			agree	him; and question him yourself. Leon.
+1.3	10	row begins a line	10			agree	patient sufferance. D. John. I wonder
+1.3	20	row begins inside a line		19	20	unmapped (P4 number is the next line)	Con. Yea, but you must not
+1.3	30	row begins inside a line		29	30	unmapped (P4 number is the next line)	fits my blood to be disdained
+1.3	40	row begins inside a line		39	40	unmapped (P4 number is the next line)	Con. Can you make no use
+1.3	50	row begins inside a line		49	50	unmapped (P4 number is the next line)	betroths himself to unquietness? Bora. Marry,
+1.3	60	row begins a line	60			agree	Bora. Being entertained for a perfumer,
+1.3	70	row begins inside a line		69	70	unmapped (P4 number is the next line)	if I can cross him any
+2.1	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	says nothing, and the other too
+2.1	20	row begins a line	20			agree	get thee a husband, if thou
+2.1	30	row begins a line	31			disagree	every morning and evening. Lord, I
+2.1	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	youth is not for me, and
+2.1	50	row begins inside a line		49	50	unmapped (P4 number is the next line)	apes, and away to Saint Peter
+2.1	60	row begins a line	60			agree	Leon. Well, niece, I hope to
+2.1	70	row begins a line	70			agree	you: if the prince do solicit
+2.1	80	row begins inside a line		79	80	unmapped (P4 number is the next line)	the wedding, mannerly-modest, as a measure,
+2.1	100	row begins a line	100			agree	within the house is Jove. Hero.
+2.1	110	row begins a line	110			agree	may cry, Amen. Marg. God match
+2.1	120	row begins a line	120			agree	head. Ant. To tell you true,
+2.1	130	row begins inside a line		129	130	unmapped (P4 number is the next line)	Beat. Will you not tell me
+2.1	140	row begins inside a line		139	140	unmapped (P4 number is the next line)	Beat. Did he never make you
+2.1	150	row begins inside a line		149	150	unmapped (P4 number is the next line)	Bene. When I know the gentleman,
+2.1	160	row begins inside a line		159	160	unmapped (P4 number is the next line)	leave them at the next turning.
+2.1	170	row begins a line	170			agree	brother in his love: he is
+2.1	180	row begins a line	180			agree	But hear these ill news with
+2.1	190	row begins inside a line		189	190	unmapped (P4 number is the next line)	Bene. Count Claudio? Claud. Yea, the
+2.1	200	row begins inside a line		199	200	unmapped (P4 number is the next line)	Claud. I wish him joy of
+2.1	210	row begins inside a line		209	210	unmapped (P4 number is the next line)	creep into sedges. But that my
+2.1	220	row begins a line	220			agree	Bene. Troth, my lord, I have
+2.1	230	row begins a line	229			disagree	Bene. The flat transgression of a
+2.1	240	row begins a line	239			disagree	D. Pedro. I will but teach
+2.1	250	row begins inside a line		249	250	unmapped (P4 number is the next line)	She told me, not thinking I
+2.1	260	row begins a line	259			disagree	she were endowed with all that
+2.1	270	row begins inside a line		268	269	unmapped (neither)	disquiet, horror and perturbation follows her.
+2.1	280	row begins inside a line		278	279	unmapped (neither)	rather than hold three words' conference
+2.1	290	row begins inside a line		289	290	unmapped (P4 number is the next line)	he won it of me with
+2.1	300	row begins a line	300			agree	Claud. Not sad, my lord. D.
+2.1	310	row begins inside a line		310	311	unmapped (P4 number is the containing line)	have broke with her father, and
+2.1	320	row begins inside a line		319	320	unmapped (P4 number is the next line)	give away myself for you and
+2.1	330	row begins a line	331			disagree	every one to the world but
+2.1	340	row begins a line	341			disagree	another for working-days: your grace is
+2.1	350	row begins inside a line		350	351	unmapped (P4 number is the containing line)	Leon. Niece, will you look to
+2.1	360	row begins inside a line		360	361	unmapped (P4 number is the containing line)	dreamed of unhappiness and waked herself
+2.1	370	row begins inside a line		369	370	unmapped (P4 number is the next line)	D. Pedro. County Claudio, when mean
+2.1	380	row begins inside a line		379	380	unmapped (P4 number is the next line)	in the interim undertake one of
+2.1	390	row begins inside a line		389	390	unmapped (P4 number is the next line)	D. Pedro. And you too, gentle
+2.2	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	that no dishonesty shall appear in
+2.2	20	row begins inside a line		19	20	unmapped (P4 number is the next line)	death of this marriage? Bora. The
+2.2	30	row begins a line	30			agree	Look you for any other issue?
+2.2	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	thus. They will scarcely believe this
+2.2	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	be called assurance and all the
+2.3	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	to love, will, after he hath
+2.3	20	row begins inside a line		19	20	unmapped (P4 number is the next line)	doublet. He was wont to speak
+2.3	50	row begins a line	50			agree	I pray thee, sing, and let
+2.3	59	row begins a line	59			agree	Note, notes, forsooth, and nothing. [Air.
+2.3	80	row begins inside a line		79	80	unmapped (P4 number is the next line)	well enough for a shift. Bene.
+2.3	90	row begins a line	90			agree	Balth. The best I can, my
+2.3	101	row begins inside a line		100	101	unmapped (P4 number is the next line)	seemed ever to abhor. Bene. Is't
+2.3	111	row begins inside a line		110	111	unmapped (P4 number is the next line)	life of passion as she discovers
+2.3	120	row begins inside a line		119	120	unmapped (P4 number is the next line)	had been invincible against all assaults
+2.3	130	row begins inside a line		129	130	unmapped (P4 number is the next line)	that's her torment. Claud. 'Tis true,
+2.3	151	row begins inside a line		151	152	unmapped (P4 number is the containing line)	should.' Claud. Then down upon her
+2.3	179	row begins inside a line		178	179	unmapped (P4 number is the next line)	Leon. Were it good, think you?
+2.3	190	row begins inside a line		189	190	unmapped (P4 number is the next line)	D. Pedro. He hath indeed a
+2.3	200	row begins inside a line		199	200	unmapped (P4 number is the next line)	Christian-like fear. Leon. If he do
+2.3	210	row begins inside a line		211	212	unmapped (neither)	wear her heart out first. D.
+2.3	220	row begins inside a line		219	220	unmapped (P4 number is the next line)	I will never trust my expectation.
+2.3	261	row begins inside a line		260	261	unmapped (P4 number is the next line)	been painful, I would not have
+3.1	10	row begins a line	10			agree	Made proud by princes, that advance
+3.1	20	row begins a line	20			agree	My talk to thee must be
+3.1	30	row begins a line	30			agree	Is couched in the woodbine coverture.
+3.1	40	row begins a line	40			agree	Hero. They did entreat me to
+3.1	50	row begins a line	50			agree	Of prouder stuff than that of
+3.1	60	row begins a line	60			agree	How wise, how noble, young, how
+3.1	70	row begins a line	70			agree	Which simpleness and merit purchaseth. Urs.
+3.1	80	row begins a line	80			agree	Which is as bad as die
+3.1	90	row begins a line	90			agree	As she is prized to have—as
+3.1	100	row begins a line	100			agree	When are you married, madam? Hero.
+3.2	20	row begins inside a line		19	20	unmapped (P4 number is the next line)	with love: if he be sad,
+3.2	30	row begins a line	30			agree	Claud. Yet say I, he is
+3.2	51	row begins a line	51			agree	can you smell him out by
+3.2	71	row begins a line	71			agree	upwards. Bene. Yet is this no
+3.2	81	row begins inside a line		80	81	unmapped (P4 number is the next line)	when they meet. Enter DON JOHN.
+3.2	110	row begins a line	110			agree	Hero, every man's Hero. Claud. Disloyal?
+3.2	120	row begins a line	120			agree	Claud. May this be so? D.
+3.3	10	row begins a line	10			agree	man to be constable? First Watch.
+3.3	40	row begins inside a line		39	40	unmapped (P4 number is the next line)	we know what belongs to a
+3.3	51	row begins inside a line		50	51	unmapped (P4 number is the next line)	you took them for. Watch. Well,
+3.3	71	row begins inside a line		71	72	unmapped (P4 number is the containing line)	will not hear us? Dog. Why,
+3.3	81	row begins inside a line		80	81	unmapped (P4 number is the next line)	may stay him. Verg. Nay, by'r
+3.3	89	row begins a line	89			agree	Verg. By'r lady, I think it
+3.3	100	row begins inside a line		100	101	unmapped (P4 number is the containing line)	beseech you. [Exeunt Dogberry and Verges.
+3.3	129	row begins a line	129			agree	Con. Yes, the fashion is the
+3.3	161	row begins inside a line		161	162	unmapped (P4 number is the containing line)	amiable encounter. Con. And thought they
+3.3	181	row begins a line	181			agree	the commonwealth. First Watch. And one
+3.4	10	row begins a line	10			agree	warrant your cousin will say so.
+3.4	40	row begins inside a line		39	40	unmapped (P4 number is the next line)	Beat. Good morrow, sweet Hero. Hero.
+3.4	51	row begins a line	51			agree	that with my heels. Beat. 'Tis
+3.4	61	row begins a line	61			agree	their heart's desire! Hero. These gloves
+3.4	70	row begins a line	70			agree	wit become me rarely? Beat. It
+3.5	20	row begins a line	20			agree	Leon. Neighbors, you are tedious. Dog.
+3.5	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	hear it. Verg. And so am
+3.5	60	row begins a line	60			agree	your daughter to her husband. Leon.
+4.1	10	row begins a line	10			agree	to this count. Hero. I do.
+4.1	21	row begins inside a line		20	21	unmapped (P4 number is the next line)	what they do! Bene. How now!
+4.1	30	row begins a line	30			agree	D. Pedro. Nothing, unless you render
+4.1	40	row begins a line	40			agree	All you that see her, that
+4.1	50	row begins a line	51			disagree	And so extenuate the 'forehand sin:
+4.1	61	row begins a line	61			agree	Than Venus, or those pamper'd animals
+4.1	70	row begins a line	70			agree	Claud. Leonato, stand I here? Is
+4.1	80	row begins inside a line		79	80	unmapped (P4 number is the next line)	Claud. To make you answer truly
+4.1	90	row begins a line	90			agree	Myself, my brother and this grieved
+4.1	100	row begins a line	100			agree	I am sorry for thy much
+4.1	110	row begins inside a line		109	110	unmapped (P4 number is the next line)	Leon. Hath no man's dagger here
+4.1	120	row begins inside a line		119	120	unmapped (P4 number is the next line)	Leon. Dost thou look up? Friar.
+4.1	130	row begins a line	130			agree	Chid I for that at frugal
+4.1	140	row begins a line	140			agree	That I myself was to myself
+4.1	150	row begins a line	150			agree	Beat. No, truly not; although, until
+4.1	160	row begins a line	160			agree	By noting of the lady I
+4.1	170	row begins a line	170			agree	My reverence, calling, nor divinity, If
+4.1	180	row begins a line	180			agree	If I know more of any
+4.1	190	row begins a line	190			agree	The practice of it lives in
+4.1	200	row begins a line	200			agree	Both strength of limb and policy
+4.1	210	row begins a line	210			agree	That appertain unto a burial. Leon.
+4.1	219	row begins a line	219			agree	Of every hearer: for it so
+4.1	230	row begins a line	230			agree	More moving-delicate and full of life,
+4.1	240	row begins a line	240			agree	The supposition of the lady's death
+4.1	250	row begins a line	250			agree	As secretly and justly as your
+4.1	261	row begins inside a line		260	261	unmapped (P4 number is the next line)	Bene. Surely I do believe your
+4.1	270	row begins inside a line		269	270	unmapped (P4 number is the next line)	well as you: is not that
+4.1	280	row begins a line	280			agree	Beat. Will you not eat your
+4.1	291	row begins inside a line		290	291	unmapped (P4 number is the next line)	Beat. Kill Claudio. Bene. Ha! not
+4.1	301	row begins inside a line		300	301	unmapped (P4 number is the next line)	than fight with mine enemy. Bene.
+4.1	330	row begins inside a line		329	330	unmapped (P4 number is the next line)	than swearing by it. Bene. Think
+4.2	11	row begins inside a line		10	11	unmapped (P4 number is the next line)	me. What is your name, friend?
+4.2	40	row begins a line	40			agree	in the prince's name, accuse these
+4.2	51	row begins a line	51			agree	Lady Hero wrongfully. Dog. Flat burglary
+4.2	70	row begins a line	70			agree	Verg. Let them be in the
+4.2	90	row begins inside a line		90	1	unmapped (P4 number is the containing line)	an ass! [Exeunt. ACT V SCENE
+5.1	10	row begins a line	10			agree	And bid him speak of patience;
+5.1	20	row begins a line	20			agree	But there is no such man:
+5.1	30	row begins a line	30			agree	To be so moral when he
+5.1	40	row begins a line	40			agree	Make those that do offend you
+5.1	60	row begins a line	60			agree	As under privilege of age to
+5.1	70	row begins a line	70			agree	O, in a tomb where never
+5.1	81	row begins a line	81			agree	But that's no matter; let him
+5.1	90	row begins a line	90			agree	As I dare take a serpent
+5.1	100	row begins inside a line		100	101	unmapped (P4 number is the containing line)	Ant. Come, 'tis no matter: Do
+5.1	121	row begins inside a line		120	121	unmapped (P4 number is the next line)	valor. I came to seek you
+5.1	131	row begins a line	131			agree	pale. Art thou sick, or angry?
+5.1	141	row begins inside a line		140	141	unmapped (P4 number is the next line)	and more: I think he be
+5.1	151	row begins inside a line		151	152	unmapped (P4 number is the containing line)	you. Claud. Well, I will meet
+5.1	180	row begins inside a line		179	180	unmapped (P4 number is the next line)	told us all. Claud. All, all;
+5.1	200	row begins inside a line		199	200	unmapped (P4 number is the next line)	D. Pedro. And hath challenged thee.
+5.1	231	row begins a line	231			agree	well suited. D. Pedro. Who have
+5.1	260	row begins a line	260			agree	In the rare semblance that I
+5.1	270	row begins a line	269			disagree	That, when I note another man
+5.1	290	row begins a line	290			agree	Possess the people in Messina here
+5.1	300	row begins a line	300			agree	Give her the right you should
+5.1	310	row begins a line	310			agree	Nor knew not what she did
+5.2	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	why, shall I always keep below
+5.2	41	row begins inside a line		41	42	unmapped (P4 number is the containing line)	terms. Enter BEATRICE. Sweet Beatrice, wouldst
+5.2	51	row begins inside a line		50	51	unmapped (P4 number is the next line)	will kiss thee. Beat. Foul words
+5.2	61	row begins inside a line		60	61	unmapped (P4 number is the next line)	parts didst thou first fall in
+5.2	91	row begins inside a line		90	91	unmapped (P4 number is the next line)	now tell me, how doth your
+5.3	10	row begins a line	10			agree	Praising her when I am dumb.
+5.3	30	row begins a line	30			agree	Come, let us hence, and put
+5.4	10	row begins a line	10			agree	Leon. Well, daughter, and you gentlewomen
+5.4	20	row begins a line	20			agree	Bene. To bind me, or undo
+5.4	30	row begins a line	30			agree	In the state of honorable marriage:
+5.4	40	row begins a line	40			agree	D. Pedro. Good morrow, Benedick. Why,
+5.4	50	row begins a line	50			agree	And got a calf in that
+5.4	60	row begins inside a line		59	60	unmapped (P4 number is the next line)	Hero. And when I lived, I
+5.4	70	row begins a line	70			agree	Meantime let wonder seem familiar, And
+5.4	80	row begins inside a line		79	80	unmapped (P4 number is the next line)	Bene. They swore that you were
+5.4	90	row begins a line	90			agree	Containing her affection unto Benedick. Bene.
+5.4	100	row begins a line	100			agree	married man? Bene. I'll tell thee
+5.4	131	row begins inside a line		130	131	unmapped (P4 number is the next line)	Strike up, pipers. [Dance. [Exeunt.

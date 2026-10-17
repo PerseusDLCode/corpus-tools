@@ -1,0 +1,287 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+111	miun/kraken	1	26	replace	honor	honour	honour	same
+111	miun/kraken	1	40	replace	break	breal	break	
+111	miun/kraken	1	50	replace	you	vou	you	
+111	miun/kraken	2	1	delete		PERSONÆ. VERGES, a headborough. A A daughter to BEATRICE, niece to MARGARET, 7 gentlewomen attending on URSULA, 5 Messengers, Attendants, &c. SCENE:	NOTHING. PERSONÆ. VERGES, a headborough. A Sexton. A Boy. HERO, daughter to Leonato. BEATRICE, niece to Leonato. MARGARET, gentlewomen attending on URSULA, 5 Hero. Messengers, Watch, Attendants, &c. SCENE: Messina.	
+111	miun/kraken	2	17	replace	he'll	he ’Il	he ’ll	
+111	miun/kraken	2	27	replace	honorable	honourable	honourable	same
+111	miun/kraken	2	42	replace	Who is	Whois	Whois	same
+112	miun/kraken	1	16	replace	your	vour	your	
+112	miun/kraken	1	29	replace	honorable	honourable	honourable	same
+112	miun/kraken	1	48	replace	humor	humour	humour	same
+112	miun/kraken	1	57	replace	yours.	vours.	yours.	
+112	miun/kraken	2	3	replace	not	net	not	
+112	miun/kraken	2	4	replace	forsworn.	torsworn.	forsworn. ITo	
+112	miun/kraken	2	12	replace	[Exeunt	[E xveunt	(E xeunt	
+112	miun/kraken	2	23	replace	she's	she ’s	she’s	
+112	miun/kraken	2	42	replace	there's	there ’s	there’s	
+113	miun/kraken	1	8	replace	fetch	setch	fetch	
+113	miun/kraken	1	17	replace	opinion	oymion	opinion	
+113	miun/kraken	1	47	replace	Bene.		"voke."" Bene."	
+113	miun/kraken	1	60	replace	Bendick,	Benedick,	Benedick,	same
+113	miun/kraken	2	6	replace	[Exit.	IExit.	[Exit.	
+113	miun/kraken	2	52	replace	[Exeunt.	IExeunt.	(Exeunt.	
+113	miun/kraken	2	64	delete		thus	thus	same
+114	miun/kraken	1	12	replace	[Enter	LEnter	[Enter	
+114	miun/kraken	1	16	replace	[Exeunt.	LExeunt.	[Exeunt.	
+114	miun/kraken	1	37	replace	humor.	humour.	humour.	same
+114	miun/kraken	1	41	replace	your	vour	your	
+114	miun/kraken	2	32	replace	We'll	We’Il	We'Il	
+114	miun/kraken	2	32	replace	your	vour	your	
+114	miun/kraken	2	34	replace	ACT II	ACTII.	LExeunt. ACT II.	
+114	miun/kraken	2	59	replace	she's	she ’s	she’s	
+115	miun/kraken	1	9	replace	waiting- gentlewoman?	waiting-gentlewoman?	waiting-gentlewoman?	same
+115	miun/kraken	1	24	replace	[To Hero]	ITo Herol	[To Herol	
+115	miun/kraken	1	37	replace	I'll	I’Il	I’Il	same
+115	miun/kraken	1	44	replace	you	vou	you	
+115	miun/kraken	1	59	replace	[All	IAll	LAll	
+115	miun/kraken	1	60	replace	BALTHASAR,	BAL¬ THASAR,	BAL¬ THASAR,	same
+115	miun/kraken	1	61	replace	MARGARET,	MAR¬ GARET,	MAR¬ GARET,	same
+115	miun/kraken	1	62	replace	masked.	masfeed.	masked.	
+115	miun/kraken	2	3	replace	favor;	favour;	favour;	same
+115	miun/kraken	2	42	replace	Tales:'—well,	Tales: –well,	Tales: –well,	same
+115	miun/kraken	2	57	replace	I'll	I’Il	I’Il	same
+115	miun/kraken	2	59	replace	he'll	he’Il	he’ll	
+115	miun/kraken	2	63	replace	[Music.]	Husic.]	[Music.]	
+115	miun/kraken	2	68	replace	[Dance.	DDance.	[Dance.	
+115	miun/kraken	2	68	replace	except	excest	except	
+116	miun/kraken	1	10	replace	enamored	enamoured	enamoured	same
+116	miun/kraken	1	15	replace	John.		John.	
+116	miun/kraken	1	32	replace	BENEDICK.	BENEDICE.	BENEDICK.	
+116	miun/kraken	1	35	replace	Bene.		Benc.	
+116	miun/kraken	1	37	replace	your	vour	your	
+116	miun/kraken	1	51	replace	I'll	I 'll	I ’Il	
+116	miun/kraken	1	51	replace	[Exit.	IExit.	[E vit.	
+116	miun/kraken	2	19	replace	honestly.	honestlv.	honestly.	
+116	miun/kraken	2	48	replace	Re-enter	Enter	Re-enter	
+116	miun/kraken	2	62	replace	love	loye	love	
+116	miun/kraken	2	63	replace	[Exit.	IExit.	IExit.	same
+117	miun/kraken	1	19	replace	I'll	I’Il	I’Il	same
+117	miun/kraken	1	28	replace	Claud.		Clau.	
+117	miun/kraken	1	52	replace	your	vour	your	
+117	miun/kraken	1	65	replace	[Exit.	IExit.	[Exit.	
+117	miun/kraken	2	22	replace	labors;	labours;	labours;	same
+117	miun/kraken	2	38	replace	valor	valour	valour	same
+117	miun/kraken	2	39	replace	humor	humour	humour	same
+117	miun/kraken	2	46	replace	[Exeunt.	LExeunt.	IExeunt.	
+117	miun/kraken	2	58	delete		ro		
+117	miun/kraken	2	61	replace	favor	favour	favour	same
+118	miun/kraken	1	1	replace	John.		Yohn.	
+118	miun/kraken	1	5	replace	honor	honour	honour	same
+118	miun/kraken	1	6	replace	Claudio— whose	Claudio–whose	Claudio–whose	same
+118	miun/kraken	1	14	replace	endeavor	endeavour	endeavour	same
+118	miun/kraken	1	18	replace	as,—in	as, –in	as, –in	same
+118	miun/kraken	1	19	replace	honor,	honour,	honour,	same
+118	miun/kraken	1	26	replace	call	fcall	fcall	same
+118	miun/kraken	1	34	replace	John.		John.	
+118	miun/kraken	1	40	replace	[Exeunt.	IExeunt.	IExeunt.	same
+118	miun/kraken	1	50	replace	[Exit	IExit	[Exit	
+118	miun/kraken	1	52	replace	behaviors	behaviours	behaviours	same
+118	miun/kraken	1	60	replace	armor;	armour;	armour;	same
+118	miun/kraken	2	9	replace	I'll	I’Il	I’Il	same
+118	miun/kraken	2	10	replace	I'11	I ’ll	I’Il	
+118	miun/kraken	2	11	replace	I'll	I’Il	I’Il	same
+118	miun/kraken	2	14	replace	color	colour	colour	same
+118	miun/kraken	2	15	replace	arbor. [Withdraws.	arbour. IWithdrαws.	arbour. (Withdrazos.	
+118	miun/kraken	2	25	replace	We'll	We 'Il	We’ll	
+118	miun/kraken	2	27	replace	we'll	we ’ll	we ’ll	same
+118	miun/kraken	2	29	replace	a voice	avoice	avoice	same
+118	miun/kraken	2	46	replace	[Air.	IAiz.	LAir.	
+118	miun/kraken	2	63	replace	leavy:	leafy:	leavy:	
+119	miun/kraken	1	7	replace	night- raven,	night-raven,	night-raven,	same
+119	miun/kraken	1	14	replace	[Exit	LExit	[Exit	
+119	miun/kraken	1	23	replace	behaviors	behaviours	behaviours	same
+119	miun/kraken	1	24	delete		IOI		
+119	miun/kraken	1	49	replace	ta'en	ta' en	ta’en	
+119	miun/kraken	2	68	replace	your	vour	your	
+120	miun/kraken	1	5	delete		G		
+120	miun/kraken	1	8	replace	gentlewoman	gentlewomen	gentlewomen	same
+120	miun/kraken	1	13	replace	[Exeunt	LExeunt	[E xeunt	
+120	miun/kraken	1	14	replace	forward]	forwardl	forzard]	
+120	miun/kraken	1	30	replace	choice	chance	chance	same
+120	miun/kraken	1	36	replace	humor?	humour?	humour	
+120	miun/kraken	1	50	replace	take	takce	take	
+120	miun/kraken	1	53	replace	[Exit.	IExit.	[Exit.	
+120	miun/kraken	1	55	replace	there's	there ’s	there ’s	same
+120	miun/kraken	1	56	replace	that. 'I	that.I	that. “I	
+120	miun/kraken	1	61	replace	[Exit. ACT III	IExit. ACTIII.	IExit. ACT III.	
+120	miun/kraken	1	65	replace	parlor;	parlour;	parlour;	same
+120	miun/kraken	2	7	replace	favorites,	favourites,	favourites,	same
+120	miun/kraken	2	14	replace	[Exit.	LExit.	(Exit.	
+120	miun/kraken	2	37	replace	[Approaching	LApproaching	LApproaching	same
+120	miun/kraken	2	55	replace	yielded	vielded	yielded	
+121	miun/kraken	1	22	replace	to	te	to	
+121	miun/kraken	1	23	replace	cover'd	cover' d	cover’d	
+121	miun/kraken	1	30	replace	I'll	I’Il	I’Il	same
+121	miun/kraken	1	34	replace	can not	cannot	cannot	same
+121	miun/kraken	1	43	replace	valor,	valour,	valour,	same
+121	miun/kraken	1	51	replace	I'll	I'il	I 'll	
+121	miun/kraken	1	55	replace	If it	Ifit	If it	
+121	miun/kraken	1	57	replace	[Exeunt	LExeunt	LExeunt	same
+121	miun/kraken	1	69	replace	[Exit.	IExit.	WExit.	
+121	miun/kraken	2	6	replace	I'll	I’Il	I’Il	same
+121	miun/kraken	2	7	replace	you'll	you ’Il	you ’ll	
+121	miun/kraken	2	30	replace	humor	humour	humour	same
+122	miun/kraken	1	11	replace	[Exeunt	LExeunt	LE xeunt	
+122	miun/kraken	1	28	replace	[To Claudio]	ITo Claudiol	[To Claudiol	
+122	miun/kraken	1	40	replace	labor	labour	labour	same
+122	miun/kraken	1	56	replace	honor	honour	honour	same
+122	miun/kraken	1	65	replace	here	there	there	same
+122	miun/kraken	2	1	replace	witness:	witnesses:	witnesses	
+122	miun/kraken	2	7	replace	[Exeunt.	LExeunt.	IExeunt.	
+122	miun/kraken	2	9	replace	with	wvith	with	
+122	miun/kraken	2	16	replace	neighbor	neighbour	neighbour	same
+122	miun/kraken	2	22	replace	neighbor	neighbour	neighbour	same
+122	miun/kraken	2	24	replace	well-favored	well-favoured	well-favoured	same
+122	miun/kraken	2	28	replace	favor,	favour,	favour,	same
+122	miun/kraken	2	34	replace	your	vour	your	
+122	miun/kraken	2	52	replace	your	vour	your	
+123	miun/kraken	1	24	delete		e		
+123	miun/kraken	1	26	replace	on't,	ont,	on’t,	
+123	miun/kraken	1	27	replace	statutes,	statues,	statues,	same
+123	miun/kraken	1	32	replace	ha,	ah,	ah,	same
+123	miun/kraken	1	33	replace	by	be	be	same
+123	miun/kraken	1	35	replace	neighbor.	neighbour.	neighbour.	same
+123	miun/kraken	1	39	replace	neighbors.	neighbours.	neighbours.	same
+123	miun/kraken	1	43	delete		I01	I01	same
+123	miun/kraken	1	46	replace	[Aside]	[Asidel	[Aside]	
+123	miun/kraken	1	56	replace	[Aside]	[Asidel	[Asidel	same
+123	miun/kraken	1	67	replace	unconfirmed.	uncontirmed.	unconfirmed.	
+123	miun/kraken	2	9	replace	[Aside]	[Asidel	[Asidel	same
+123	miun/kraken	2	32	replace	chamber- window,	chamber-window,	chamber-window,	same
+123	miun/kraken	2	33	replace	night, —I tell	night,Itell	night,—I tell	
+123	miun/kraken	2	33	replace	vilely:—I	vilely: —I	vilely: I	
+124	miun/kraken	1	5	replace	Urs.		Urs.	
+124	miun/kraken	1	7	replace	[Exit.	LExit.	(Exit.	
+124	miun/kraken	1	10	replace	I'll	I’Il	I’ll	
+124	miun/kraken	1	14	replace	I'll	I’Il	I’Il	same
+124	miun/kraken	1	27	replace	exceedingly	exceeding	exceeding	same
+124	miun/kraken	1	32	replace	honorably?	honourably?	honourably?	same
+124	miun/kraken	1	32	replace	honorable	honourable	honourable	same
+124	miun/kraken	1	33	replace	honorable	honourable	honourable	same
+124	miun/kraken	1	35	replace	and	an	an	same
+124	miun/kraken	1	39	replace	otherwise 'tis	otherwise’tis	otherwise ’tis	
+124	miun/kraken	1	47	replace	into 'Light	into“Light	into “Light	
+124	miun/kraken	1	48	replace	I'll	I’Il	I’Il	same
+124	miun/kraken	1	51	replace	your	vour	your	
+124	miun/kraken	1	60	replace	and	an	an	same
+124	miun/kraken	2	5	replace	Ever	Even	Ever	
+124	miun/kraken	2	6	delete		O		
+124	miun/kraken	2	36	replace	[Exeunt.	IExeunt.	(Exeunt.	
+124	miun/kraken	2	40	replace	neighbor?	neighbour?	neighbour	
+124	miun/kraken	2	57	replace	neighbor	neighbour	neighbour	same
+124	miun/kraken	2	58	replace	Neighbors,	Neighbours,	Neighbours,	same
+125	miun/kraken	1	11	replace	neighbor	neighbour	neighbour	same
+125	miun/kraken	1	16	replace	neighbor!	neighbour!	neighbour	
+125	miun/kraken	1	17	replace	neighbor,	neighbour,	neighbour,	same
+125	miun/kraken	1	35	replace	[Exeunt	IExeunt	[Exeunt	
+125	miun/kraken	1	44	replace	[Exeunt.	LE xeunt.	IExeunt.	
+125	miun/kraken	2	22	replace	honor.	honour.	honour.	same
+125	miun/kraken	2	59	replace	dishonor'd,	dishonour'd,	dishonour’d,	
+126	miun/kraken	1	10	delete		e		
+126	miun/kraken	1	23	replace	honor,	honour,	honour,	same
+126	miun/kraken	1	34	replace	to utter	toutter	toutter	same
+126	miun/kraken	1	41	replace	I'll	I’Il	I’Il	same
+126	miun/kraken	1	46	replace	[Hero swoons.	LHero savoons.	(Hero savoons.	
+126	miun/kraken	1	52	replace	[Exeunt	LExeunt	[Exeunt	
+126	miun/kraken	1	52	replace	Claudio.		Clandio. Benc.	
+126	miun/kraken	2	10	replace	smirch'd	smirchid	smirched	
+126	miun/kraken	2	39	replace	This	tThis	tThis	same
+126	miun/kraken	2	49	replace	tenor	tenour	tenour	same
+127	miun/kraken	1	4	replace	honor;	honour;	honour;	same
+127	miun/kraken	1	11	replace	honor,	honour,	honour,	same
+127	miun/kraken	1	23	replace	Your	Vour	Your	
+127	miun/kraken	2	1	replace	honor,	honour,	honour,	same
+127	miun/kraken	2	12	replace	[Exeunt	IExeunt	IExeunt	same
+127	miun/kraken	2	30	replace	yet	vet	yet	
+127	miun/kraken	2	37	replace	your	vour	your	
+127	miun/kraken	2	38	replace	to it.	toit.	toit.	same
+127	miun/kraken	2	56	replace	We'll	We ’Il	We ’Il	same
+127	miun/kraken	2	61	replace	dishonored	dishonoured	dishonoured	same
+127	miun/kraken	2	65	replace	rancor,—O	rancour,—O	rancour,—O	same
+128	miun/kraken	1	10	replace	valor	valour	valour	same
+128	miun/kraken	1	12	replace	a	as	as	same
+128	miun/kraken	1	26	replace	you	vou	you	
+128	miun/kraken	1	28	replace	[Exeunt.	IExeunt.	IExeunt.	same
+128	miun/kraken	1	31	replace	gowns;	gozons;	gorons;	
+128	miun/kraken	1	52	delete			Bera.	
+128	miun/kraken	1	60	replace	Dog.		Dog.	
+128	miun/kraken	2	1	replace	way	wayy	way	
+128	miun/kraken	2	2	replace	that	thatt	that	
+128	miun/kraken	2	15	delete		a	a	same
+128	miun/kraken	2	35	delete		IExiv.	IExit.	
+128	miun/kraken	2	39	replace	where's	where ’s	where ’s	same
+128	miun/kraken	2	54	replace	losses,	losces,	losses,	
+128	miun/kraken	2	57	replace	[Exeunt. ACT V	IExeunt. ACTV.	(Exeunt. ACTV.	
+128	miun/kraken	2	62	replace	And 'tis	And'tis	And ’tis	
+129	miun/kraken	1	11	delete		f	t	
+129	miun/kraken	1	43	replace	dishonor	dishonour	dishonour	same
+129	miun/kraken	1	53	replace	you	ou	you	
+129	miun/kraken	1	57	replace	quarrelling,	quarreling,	quarreling,	same
+129	miun/kraken	2	10	replace	through	throtgh	through	
+129	miun/kraken	2	19	replace	I'll	I'Il	I’ll	
+129	miun/kraken	2	40	replace	Anthony,—	Antony.—	Antony.—	same
+129	miun/kraken	2	45	replace	Scrambling,	Scambling,	Scambling,	same
+129	miun/kraken	2	51	replace	Anthony,—	Antony,—	Antony,	
+129	miun/kraken	2	57	replace	honor,	honour,	honour,	same
+129	miun/kraken	2	63	replace	for it.	forit.	forit. LE-xeunt	
+130	miun/kraken	1	9	replace	valor.	valour.	valour.	same
+130	miun/kraken	1	24	replace	career, and	carcer, an	career, an	
+130	miun/kraken	1	43	replace	Pedro.		Pedro.	
+130	miun/kraken	1	46	replace	knife's	knife ’s	knife’s	
+130	miun/kraken	1	49	replace	I'll	I'Il	I’Il	
+130	miun/kraken	1	55	replace	she,'a	she, 'a	she, 'a	same
+130	miun/kraken	2	9	replace	humor:	humour	humour	same
+130	miun/kraken	2	9	replace	braggards	braggarts	braggarts	same
+130	miun/kraken	2	18	replace	Claud.		Claud.	
+130	miun/kraken	2	18	replace	I'll	1’11	I’Il	
+130	miun/kraken	2	19	replace	you,	vou,	you,	
+130	miun/kraken	2	30	replace	DOGBERRY,	DOGBERRV,	DOGBERRY,	
+130	miun/kraken	2	31	replace	with	vith	vvith	
+130	miun/kraken	2	60	replace	have	haye	have	
+130	miun/kraken	2	61	replace	could	couid	could	
+131	miun/kraken	1	27	replace	with	wvith	wvith	same
+131	miun/kraken	1	39	replace	honorable	honourable	honourable	same
+131	miun/kraken	1	52	replace	he'll	he ’ll	he’ll	
+131	miun/kraken	1	55	replace	Possess	Fossess	Possess	
+131	miun/kraken	1	57	replace	labor ought	labour sught	labour aught	
+131	miun/kraken	1	65	replace	Give	Cive	Give	
+131	miun/kraken	1	65	replace	heir	her	her	same
+131	miun/kraken	2	38	replace	neighbor. [Exeunt	neighbour. LExeunt	neighbour. E xeunt	
+131	miun/kraken	2	45	replace	I'll	I’Il	I’Il	same
+131	miun/kraken	2	46	replace	[To	ITo	(To	
+131	miun/kraken	2	46	replace	Watch]	Watchl	Watch]	
+131	miun/kraken	2	49	replace	[Exeunt,	LExeunt,	IExeunt,	
+131	miun/kraken	2	51	replace	BENEDICK	BENEDICE	BENEDiCE	
+132	trent/kraken	1	1	replace	Beatrice:	Bea-shall trice	Bea-shall trice	same
+132	trent/kraken	1	12	replace	[Sings]	ISingsI	ISings]	
+132	trent/kraken	1	31	replace	you bid	youbid	you bid	
+132	trent/kraken	1	35	replace	which is,	whichis,	whichis,	same
+132	trent/kraken	1	65	replace	Bene.		Bene.	
+132	trent/kraken	1	66	replace	neighbors.	neighbours.	neighbours.	same
+132	trent/kraken	2	4	replace	clamor	clamour	clamour	same
+132	trent/kraken	2	19	replace	Yonder's	Yonder ’s	Yonder’s	
+132	trent/kraken	2	22	replace	who is	whois	who is	
+132	trent/kraken	2	27	replace	[Exeunt.	IExeunt.	[Exeunt.	
+132	trent/kraken	2	30	replace	with	zoith	vith	
+132	trent/kraken	2	33	replace	scroll]	scrolll	scrolll	same
+132	trent/kraken	2	60	replace	Phoebus,	Phœbus,	Phœbus,	same
+133	miun/kraken	1	4	replace	Claud.		Claud.	
+133	miun/kraken	1	5	replace	speed's	speed ’s	speed 's	
+133	miun/kraken	1	7	replace	[Exeunt.	LExeunt.	IExeunt.	
+133	miun/kraken	1	9	replace	BENEDICK, BEATRICE,	BENEDICR, BEA¬ TRICE,	BENEDICE, BEA¬ TRICE,	
+133	miun/kraken	1	40	replace	favor.	favour.	favour.	same
+133	miun/kraken	1	52	replace	honorable	honourable	honourable	same
+133	miun/kraken	1	57	replace	or	o7	tavo or	
+133	miun/kraken	1	64	replace	I'll	I’Il	I’Il	same
+133	miun/kraken	1	66	replace	[Exit	LExit	(Exit	
+133	miun/kraken	2	31	replace	[Unmasking.	LUnmasking.	LUnmasking.	same
+133	miun/kraken	2	43	replace	I'll	I’Il	I’Il	same
+133	miun/kraken	2	47	replace	[Unmasking]	IUnmaskeingI	[Unmaskingl	
+134	miun/kraken	1	1	replace	I'll	I’Il	I’Il	same
+134	miun/kraken	1	9	replace	here's	here ’s	here’s	
+134	miun/kraken	1	17	replace	[Kissing	[issing	[Kissing	
+134	miun/kraken	1	21	replace	humor.	humour.	humour.	same
+134	miun/kraken	2	10	replace	exceedingly	exceeding	exceeding	same
+134	miun/kraken	2	10	replace	to thee.	tothee.	to thee.	
+134	miun/kraken	2	14	replace	We'll	We ’ll	We’Il	

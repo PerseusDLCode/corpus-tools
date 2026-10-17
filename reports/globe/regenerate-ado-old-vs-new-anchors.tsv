@@ -1,0 +1,18 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in ado.xml (sha256 47a8bf7a61370357); not the shell's milestones or <l n>
+# transcribed anchors: 212; mapped (the row begins a line): 113; of those, carrying the same number: 104
+# in scenes that pass the gate: 113 mapped; agreeing: 104
+# unmapped (the row begins inside a line): 99; the P4's number is the containing line's for 17, the next line's for 79, neither for 3
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.2	10	disagree	11				much overheard by a man of
+2.1	30	disagree	31				every morning and evening. Lord, I
+2.1	230	disagree	229				Bene. The flat transgression of a
+2.1	240	disagree	239				D. Pedro. I will but teach
+2.1	260	disagree	259				she were endowed with all that
+2.1	270	unmapped (neither)		268	269		disquiet, horror and perturbation follows her.
+2.1	280	unmapped (neither)		278	279		rather than hold three words' conference
+2.1	330	disagree	331				every one to the world but
+2.1	340	disagree	341				another for working-days: your grace is
+2.3	210	unmapped (neither)		211	212		wear her heart out first. D.
+4.1	50	disagree	51				And so extenuate the 'forehand sin:
+5.1	270	disagree	269				That, when I note another man

@@ -155,13 +155,26 @@ def infer_unmatched(rows: list[Row], toks: list[Token]) -> None:
     "well-favored.", "colour?" / "color?", Two Gentlemen I.1, II.1, II.4;
     canonical-engLit doc/agenda.org #build/batch-remaining), or a speech of
     its own ("Quin. Odours, odours." / "Odors, odors.", A Midsummer Night's
-    Dream III.1, p.168)."""
-    for prev, r, nxt in zip(rows, rows[1:], rows[2:]):
-        if r.start is not None or prev.start is None or nxt.start is None or "last" not in prev.extra:
+    Dream III.1, p.168). The page's last row, with no row after it, is
+    inferred only as a hyphenated compound printed as two words."""
+    for prev, r, nxt in zip(rows, rows[1:], list(rows[2:]) + [None]):
+        if r.start is not None or prev.start is None or "last" not in prev.extra:
             continue
-        lo, hi = prev.extra["last"] + 1, nxt.start
-        gap = [t for t in toks[lo:hi] if t.kind != "speaker"]
+        if nxt is not None and nxt.start is None:
+            continue
         words = [norm(w.t) for w in r.words[r.prefix_len:] if norm(w.t)]  # "colour ?" is one word
+        lo = prev.extra["last"] + 1
+        if nxt is None:
+            # The page's last row has no row after it to bound the words left
+            # over. It takes the one word after the row above, if that is a
+            # compound the P4 hyphenates and the page prints as two words
+            # ("chamber-window" / "chamber window.", Much Ado II.2, p.117):
+            # spelt like the row's words run together.
+            if len(words) < 2:
+                continue
+            gap, words = toks[lo:lo + 1], ["".join(words)]
+        else:
+            gap = [t for t in toks[lo:nxt.start] if t.kind != "speaker"]
         # a row with a speaker prefix takes words that begin a speech, not the
         # end of a word broken across rows under a prefix set across two
         # ("Quin. and" / "Mart. pany.", Titus I.1, p.691)

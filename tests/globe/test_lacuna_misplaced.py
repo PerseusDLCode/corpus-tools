@@ -72,6 +72,25 @@ def test_a_misplaced_numeral_moves_to_the_line_it_numbers():
     assert [ln.num for ln in new] == [10, None] and applied == [(0, table[0])]
 
 
+def test_a_numeral_may_be_printed_two_rows_low_but_no_further():
+    """Much Ado II.3 p.119: 210 is printed beside "her heart out first.", two
+    rows below "it out with good counsel." that Schmidt's 'impossible' 211 says
+    it numbers."""
+    rowsof = ["Never tell him, my lord: let her wear", "it out with good counsel.",
+              "Nay, that's impossible: she may wear", "her heart out first.", "Well, we will hear further of it by"]
+    body = body_of("".join(f'<l>{t} <lb ed="G"/></l>' for t in rowsof))
+    toks, rows = page(body, rowsof)
+    rows[3].num = 210
+    table = [shared_lines.Row("ado", "2.3", 119, "misplaced", "210", "her heart out", "it out with good", "image")]
+    new, applied, _ = regenerate.apply_table(lineate.globe_lines(rows, 119), None, toks, table, 119)
+    assert [ln.num for ln in new] == [None, 210, None, None, None]
+    rows[3].num = None
+    rows[4].num = 210
+    far = [shared_lines.Row("ado", "2.3", 119, "misplaced", "210", "well we will", "it out with good", "image")]
+    with pytest.raises(shared_lines.TableError, match="a line or two apart"):
+        regenerate.apply_table(lineate.globe_lines(rows, 119), None, toks, far, 119)
+
+
 def test_neither_kind_counts_as_a_junction_in_the_header():
     kinds = ["shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount", "inset"]
     table = [shared_lines.Row("r2", "1.1", 356, k, "a", "b", "", "image") for k in kinds]

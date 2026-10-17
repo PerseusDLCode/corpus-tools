@@ -309,11 +309,11 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
                   if ln.num == printed and shared_lines.line_words(new, k, toks, len(beside)) == beside]
             to = [k for k, ln in enumerate(new)
                   if shared_lines.line_words(new, k, toks, len(owner)) == owner]
-            if len(on) != 1 or len(to) != 1 or abs(on[0] - to[0]) != 1:
+            if len(on) != 1 or len(to) != 1 or not 1 <= abs(on[0] - to[0]) <= 2:
                 raise shared_lines.TableError(
                     f"shared-lines.tsv: p.{page} misplaced {printed} beside {r.second_half!r}, "
                     f"numbering {r.line!r}: matches {len(on)} and {len(to)} lines, expected one "
-                    f"each, next to each other")
+                    f"each, a line or two apart")
             new[to[0]].num, new[on[0]].num = printed, None
             applied.append((new[to[0]], r))
             continue
@@ -678,7 +678,7 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
             elif row.kind == "misplaced":
                 out.append((ln.start, emit_tei.review_comment(
                     "misplaced", f"shared-lines.tsv: the page prints {row.first_half}, this line's "
-                                 f"number, beside the line next to it ({row.second_half!r}) "
+                                 f"number, beside a line near it ({row.second_half!r}) "
                                  f"(basis {row.basis}, {state})")))
             elif row.kind == "miscount":
                 out.append((ln.start, emit_tei.review_comment(

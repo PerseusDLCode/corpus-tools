@@ -35,7 +35,8 @@ cuts one line in two, and one corrects a number:
             numbers (Richard II II.1.280); first_half is the first words of
             the line above. The P4 must have a wordless <l> there too.
   misplaced a marginal number the page prints beside a row of the line next
-            to the one it numbers (Richard II III.3, 10); first_half is the
+            to the one it numbers, or two off (Richard II III.3, 10; Much Ado
+            II.3, 210, two rows low); first_half is the
             printed value, second_half the first words of the line it is
             printed beside, `line` the first words of the line it numbers.
   miscount  two printed lines the Globe gives one number, though neither is

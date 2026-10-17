@@ -438,3 +438,30 @@ def test_a_speech_spelt_otherwise_in_the_p4_starts_at_the_words_left_over():
     rs = rows("Mart. pany.", 4, 7)  # "accompany" ends a speech, it does not open one
     align_play.infer_unmatched(rs, ts)
     assert rs[1].start is None
+
+
+def test_the_pages_last_row_is_a_hyphenated_compound_run_together():
+    """Much Ado II.2, p.117: the page ends "chamber window." and the P4 has
+    "chamber-window.". The last row has no row after it to bound the words left
+    over, so it takes the one word, spelt like its words run together; only
+    then. A last row of words unlike it, or of one word, is no line."""
+    from globe import align_play
+    from globe.tokens import Token
+
+    def toks(*ws):
+        return [Token(i, w, w, "speech", None, "text", 0, None, "2.2") for i, w in enumerate(ws)]
+
+    def rows(last):
+        a = Row(0, 0, 0, [Word(0, 1, w) for w in "the night appoint her".split()])
+        b = Row(0, 1, 0, [Word(0, 1, w) for w in last.split()])
+        a.start, a.extra["last"] = 0, 3
+        return [a, b]
+
+    ts = toks("the", "night", "appoint", "her", "chamberwindow", "what")
+    rs = rows("chamber window.")
+    align_play.infer_unmatched(rs, ts)
+    assert (rs[1].start, rs[1].speech) == (4, True)
+    for last in ["the end", "chamber"]:  # two words unlike the one, one word for one
+        rs = rows(last)
+        align_play.infer_unmatched(rs, ts)
+        assert rs[1].start is None

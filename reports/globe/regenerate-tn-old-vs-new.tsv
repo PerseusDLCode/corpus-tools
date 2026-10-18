@@ -1,0 +1,198 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tn.xml (sha256 b9ef5dc325d909de); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	10	row begins a line	10			agree	That, notwithstanding thy capacity Receiveth as
+1.1	20	row begins a line	20			agree	Methought she purged the air of
+1.1	30	row begins a line	30			agree	With eye-offending brine: all this to
+1.1	40	row begins a line	40			agree	Away before me to sweet beds
+1.2	10	row begins a line	10			agree	When you and those poor number
+1.2	20	row begins a line	20			agree	Whereto thy speech serves for authority,
+1.2	30	row begins a line	30			agree	Cap. And so is now, or
+1.2	40	row begins a line	40			agree	They say, she hath abjured the
+1.2	50	row begins a line	50			agree	I will believe thou hast a
+1.2	60	row begins a line	60			agree	What else may hap to time
+1.3	9	row begins inside a line		8	9	unmapped (P4 number is the next line)	within the modest limits of order.
+1.3	21	row begins a line	21			agree	Mar. What's that to the purpose?
+1.3	29	row begins inside a line		28	29	unmapped (P4 number is the next line)	hath all the good gifts of
+1.3	39	row begins a line	39			agree	nightly in your company. Sir To.
+1.3	50	row begins a line	50			agree	Sir And. Bless you, fair shrew.
+1.3	60	row begins inside a line		59	60	unmapped (P4 number is the next line)	front her, board her, woo her,
+1.3	70	row begins a line	70			agree	Mar. Sir, I have not you
+1.3	80	row begins inside a line		79	80	unmapped (P4 number is the next line)	your jest? Mar. A dry jest,
+1.3	91	row begins inside a line		90	91	unmapped (P4 number is the next line)	of beef and I believe that
+1.3	101	row begins inside a line		100	101	unmapped (P4 number is the next line)	head of hair. Sir And. Why,
+1.3	110	row begins inside a line		109	110	unmapped (P4 number is the next line)	thee between her legs and spin
+1.3	120	row begins a line	121			disagree	in masques and revels sometimes altogether.
+1.3	130	row begins a line	130			agree	Sir To. And I can cut
+1.4	10	row begins a line	10			agree	Duke. Who saw Cesario, ho? Vio.
+1.4	20	row begins a line	20			agree	As it is spoke, she never
+1.4	30	row begins a line	30			agree	For they shall yet belie thy
+1.5	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	colors.' Clo. Where, good Mistress Mary?
+1.5	19	row begins a line	19			agree	as good as a hanging to
+1.5	31	row begins inside a line		30	31	unmapped (P4 number is the next line)	any in Illyria. Mar. Peace, you
+1.5	40	row begins inside a line		39	40	unmapped (P4 number is the next line)	than a foolish wit.' Enter Lady
+1.5	60	row begins a line	60			agree	Oli. Sir, I bade them take
+1.5	71	row begins inside a line		70	71	unmapped (P4 number is the next line)	I'll bide your proof. Clo. Good
+1.5	80	row begins a line	80			agree	doth he not mend? Mal. Yes,
+1.5	111	row begins inside a line		110	111	unmapped (P4 number is the next line)	young man, and well attended. Oli.
+1.5	130	row begins a line	130			agree	Clo. Good Sir Toby! Oli. Cousin,
+1.5	160	row begins a line	160			agree	Mal. Why, of mankind. Oli. What
+1.5	171	row begins inside a line		171	172	unmapped (P4 number is the containing line)	of him. Oli. Let him approach:
+1.5	180	row begins a line	180			agree	Your will? Vio. Most radiant, exquisite
+1.5	189	row begins a line	189			agree	Oli. Whence came you, sir? Vio.
+1.5	220	row begins inside a line		219	220	unmapped (P4 number is the next line)	a messenger. Oli. Sure, you have
+1.5	229	row begins a line	229			agree	what would you? Vio. The rudeness
+1.5	240	row begins inside a line		239	240	unmapped (P4 number is the next line)	may be said of it. Where
+1.5	260	row begins a line	260			agree	If you will lead these graces
+1.5	270	row begins a line	270			agree	But, if you were the devil,
+1.5	280	row begins a line	280			agree	And in dimension and the shape
+1.5	291	row begins a line	291			agree	Halloo your name to the reverberate
+1.5	300	row begins a line	300			agree	Unless, perchance, you come to me
+1.5	310	row begins a line	310			agree	I am a gentleman.' I'll be
+1.5	321	row begins a line	321			agree	Would I or not: tell him
+2.1	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	are bound. Seb. No, sooth, sir:
+2.1	49	row begins a line	49			agree	That danger shall seem sport, and
+2.2	21	row begins a line	21			agree	That sure methought her eyes had
+2.2	30	row begins a line	30			agree	How easy is it for the
+2.2	41	row begins a line	41			agree	O time! thou must untangle this,
+2.3	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	not our life consist of the
+2.3	31	row begins a line	31			agree	fooling, when all is done. Now,
+2.3	70	row begins a line	70			agree	knight. Sir And. 'Tis not the
+2.3	79	row begins inside a line		78	79	unmapped (P4 number is the next line)	doors, never trust me. Sir To.
+2.3	91	row begins a line	91			agree	December,'— Mar. For the love o'
+2.3	101	row begins inside a line		100	101	unmapped (P4 number is the next line)	catches. Sneck up! Mal. Sir Toby,
+2.3	110	row begins a line	110			agree	needs be gone.' Mar. Nay, good
+2.3	121	row begins a line	121			agree	Clo. 'O no, no, no, no,
+2.3	141	row begins a line	141			agree	by word of mouth. Mar. Sweet
+2.3	150	row begins a line	150			agree	something of him. Mar. Marry, sir,
+2.3	180	row begins a line	180			agree	and that she's in love with
+2.3	201	row begins inside a line		200	201	unmapped (P4 number is the next line)	am a foul way out. Sir
+2.4	10	row begins a line	10			agree	Duke. Who was it? Cur. Feste,
+2.4	21	row begins a line	21			agree	Vio. It gives a very echo
+2.4	30	row begins a line	30			agree	Duke. Too old, by heaven: let
+2.4	39	row begins a line	39			agree	For women are as roses, whose
+2.4	50	row begins a line	50			agree	Clo. Are you ready, sir? Duke.
+2.4	70	row begins inside a line		69	70	unmapped (P4 number is the next line)	singing, sir. Duke. I'll pay thy
+2.4	90	row begins a line	90			agree	Vio. But if she cannot love
+2.4	100	row begins a line	100			agree	Alas, their love may be call'd
+2.4	110	row begins a line	110			agree	My father had a daughter loved
+2.4	120	row begins a line	120			agree	Our shows are more than will;
+2.5	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	a bear-baiting here. Sir To. To
+2.5	40	row begins a line	40			agree	Mal. To be Count Malvolio! Sir
+2.5	50	row begins a line	50			agree	her, sitting in my state,— Sir
+2.5	61	row begins inside a line		60	61	unmapped (P4 number is the next line)	do theirs, to ask for my
+2.5	71	row begins inside a line		70	71	unmapped (P4 number is the next line)	us with cars, yet peace. Mal.
+2.5	80	row begins a line	80			agree	Sir To. What, what? Mal. 'You
+2.5	90	row begins a line	90			agree	me fool. Mal. What employment have
+2.5	100	row begins inside a line		99	100	unmapped (P4 number is the next line)	why that? Mal. [Reads] 'To the
+2.5	110	row begins a line	110			agree	No man must know. 'No man
+2.5	120	row begins a line	120			agree	Sir To. Excellent wench, say I.
+2.5	140	row begins inside a line		139	140	unmapped (P4 number is the next line)	the cur is excellent at faults.
+2.5	150	row begins inside a line		149	150	unmapped (P4 number is the next line)	than fortunes before you. Mal. M,
+2.5	200	row begins a line	200			agree	Sir And. So could I too.
+2.5	209	row begins a line	209			agree	Sir And. I' faith, or I
+3.1	11	row begins inside a line		10	11	unmapped (P4 number is the next line)	by the church. Clo. You have
+3.1	20	row begins a line	20			agree	no name, sir. Vio. Why, man?
+3.1	31	row begins inside a line		30	31	unmapped (P4 number is the next line)	and carest for nothing. Clo. Not
+3.1	51	row begins a line	51			agree	hair, send thee a beard! Vio.
+3.1	70	row begins a line	70			agree	The quality of persons, and the
+3.1	81	row begins a line	81			agree	yours. Sir To. Will you encounter
+3.1	91	row begins inside a line		90	91	unmapped (P4 number is the next line)	me taste my legs. Sir To.
+3.1	120	row begins a line	120			agree	I had rather hear you to
+3.1	129	row begins a line	129			agree	Have you not set mine honor
+3.1	140	row begins a line	140			agree	To fall before the lion than
+3.1	160	row begins a line	160			agree	Than love that would seem hid:
+3.1	170	row begins a line	170			agree	I have one heart, one bosom
+3.2	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	boy? tell me that. Sir And.
+3.2	31	row begins a line	31			agree	laudable attempt either of valor or
+3.2	41	row begins inside a line		40	41	unmapped (P4 number is the next line)	with woman than report of valor.
+3.2	61	row begins a line	61			agree	but you'll not deliver't? Sir To.
+3.2	71	row begins a line	71			agree	nine comes. Mar. If you desire
+3.2	79	row begins a line	79			agree	Sir To. And cross-gartered? Mar. Most
+3.2	90	row begins a line	90			agree	Sir To. Come, bring us, bring
+3.3	10	row begins a line	10			agree	Unguided and unfriended, often prove Rough
+3.3	20	row begins a line	20			agree	Ant. To-morrow, sir: best first go
+3.3	30	row begins a line	30			agree	Ant. The offence is not of
+3.3	40	row begins a line	40			agree	Is best to lodge: I will
+3.4	20	row begins a line	20			agree	I sent for thee upon a
+3.4	31	row begins a line	31			agree	the sweet Roman hand. Oli. Wilt
+3.4	41	row begins a line	41			agree	boldness before my lady? Mal. 'Be
+3.4	50	row begins inside a line		49	50	unmapped (P4 number is the next line)	upon them.' Oli. Heaven restore thee!
+3.4	59	row begins a line	59			agree	Oli. Am I made? Mal. 'If
+3.4	70	row begins inside a line		70	71	unmapped (P4 number is the containing line)	miscarry for the half of my
+3.4	100	row begins inside a line		99	100	unmapped (P4 number is the next line)	my private: go off. Mar. Lo,
+3.4	110	row begins a line	110			agree	Mal. Do you know what you
+3.4	119	row begins a line	119			agree	Mar. O Lord! Sir To. Prithee,
+3.4	122	row begins inside a line		121	122	unmapped (P4 number is the next line)	me alone with him. Fab. No
+3.4	130	row begins a line	130			agree	with Satan: hang him, foul collier!
+3.4	139	row begins a line	139			agree	Sir To. Is't possible? Fab. If
+3.4	161	row begins a line	161			agree	read. Sir To. Give me. [Reads]
+3.4	169	row begins inside a line		168	169	unmapped (P4 number is the next line)	the blow of the law. Sir
+3.4	180	row begins inside a line		179	180	unmapped (P4 number is the next line)	rogue and a villain.' Fab. Still
+3.4	200	row begins inside a line		199	200	unmapped (P4 number is the next line)	have earned him. Away! Sir And.
+3.4	220	row begins inside a line		219	220	unmapped (P4 number is the next line)	some horrid message for a challenge.
+3.4	230	row begins a line	230			agree	And I beseech you come again
+3.4	239	row begins a line	239			agree	Vio. And you, sir. Sir To.
+3.4	250	row begins inside a line		249	250	unmapped (P4 number is the next line)	done to any man. Sir To.
+3.4	289	row begins a line	288			disagree	Vio. I beseech you, what manner
+3.4	300	row begins inside a line		299	300	unmapped (P4 number is the next line)	much of my mettle. [Exeunt. Re-enter
+3.4	310	row begins a line	310			agree	Fabian can scarce hold him yonder.
+3.4	319	row begins inside a line		318	319	unmapped (P4 number is the next line)	ride your horse as well as
+3.4	330	row begins inside a line		329	330	unmapped (P4 number is the next line)	his vow; he protests he will
+3.4	340	row begins inside a line		339	340	unmapped (P4 number is the next line)	hurt you. Come on; to't. Sir
+3.4	350	row begins a line	350			agree	for you. [They draw. Enter Officers.
+3.4	361	row begins inside a line		360	361	unmapped (P4 number is the next line)	of Count Orsino. Ant. You do
+3.4	370	row begins a line	370			agree	Much more for what I cannot
+3.4	400	row begins a line	400			agree	Thou hast, Sebastian, done good feature
+3.4	430	row begins a line	430			agree	Sir And. An I do not,—
+4.1	11	row begins a line	10			disagree	Seb. I prithee, vent thy folly
+4.1	21	row begins a line	21			agree	I shall give worse payment. Clo.
+4.1	31	row begins a line	31			agree	o'er the house. Clo. This will
+4.1	40	row begins a line	40			agree	Seb. Let go thy hand. Sir
+4.1	50	row begins a line	50			agree	Sir To. Madam! Oli. Will it
+4.1	61	row begins a line	61			agree	Mayst smile at this: thou shalt
+4.2	20	row begins a line	20			agree	Sir To. To him, Sir Topas.
+4.2	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	ladies? Sir To. Well said, master
+4.2	39	row begins a line	39			agree	Mal. As hell, Sir Topas. Clo.
+4.2	60	row begins a line	60			agree	approve his opinion. Clo. Fare thee
+4.2	70	row begins a line	70			agree	thy beard and gown: he sees
+4.2	80	row begins a line	80			agree	Mal. Fool! Clo. 'My lady is
+4.2	90	row begins a line	90			agree	Clo. Master Malvolio? Mal. Ay, good
+4.2	110	row begins a line	110			agree	Mal. Fool, fool, fool, I say!
+4.2	120	row begins inside a line		119	120	unmapped (P4 number is the next line)	more than ever the bearing of
+4.3	19	row begins a line	19			agree	With such a smooth, discreet and
+4.3	30	row begins a line	30			agree	What time we will our celebration
+5.1	9	row begins a line	9			agree	Duke. Belong you to the Lady
+5.1	31	row begins inside a line		30	31	unmapped (P4 number is the next line)	me: there's gold. Clo. But that
+5.1	60	row begins a line	60			agree	With the most noble bottom of
+5.1	71	row begins a line	71			agree	I know not what 'twas but
+5.1	90	row begins a line	90			agree	Not meaning to partake with me
+5.1	100	row begins a line	100			agree	Duke. Here comes the countess: now
+5.1	110	row begins a line	110			agree	Vio. My lord would speak; my
+5.1	120	row begins a line	120			agree	Duke. Why should I not, had
+5.1	130	row begins a line	130			agree	Him will I tear out of
+5.1	140	row begins a line	140			agree	If I do feign, you witnesses
+5.1	150	row begins a line	150			agree	That makes thee strangle thy propriety:
+5.1	161	row begins a line	161			agree	Attested by the holy close of
+5.1	169	row begins a line	169			agree	Or will not else thy craft
+5.1	181	row begins inside a line		180	181	unmapped (P4 number is the next line)	forty pound I were at home.
+5.1	190	row begins a line	190			agree	Vio. Why do you speak to
+5.1	200	row begins a line	200			agree	you? Sir To. That's all one:
+5.1	211	row begins a line	211			agree	we'll be dressed together. Sir To.
+5.1	220	row begins a line	220			agree	I do perceive it hath offended
+5.1	230	row begins a line	230			agree	An apple, cleft in two, is
+5.1	240	row begins a line	240			agree	Such a Sebastion was my brother
+5.1	250	row begins a line	250			agree	Seb. And so had mine. Vio.
+5.1	260	row begins a line	260			agree	That I am Viola: which to
+5.1	270	row begins a line	270			agree	You are betroth'd both to a
+5.1	290	row begins a line	290			agree	How does he, sirrah? Clo. Truly,
+5.1	300	row begins inside a line		299	300	unmapped (P4 number is the next line)	Lord, madam,'— Oli. How now! art
+5.1	320	row begins a line	320			agree	Oli. Did he write this? Clo.
+5.1	330	row begins a line	330			agree	So much against the mettle of
+5.1	339	row begins a line	339			agree	You must not now deny it
+5.1	350	row begins a line	350			agree	Kept in a dark house, visited
+5.1	360	row begins a line	360			agree	This practice hath most shrewdly pass'd
+5.1	370	row begins a line	370			agree	We had conceived against him: Maria
+5.1	390	row begins a line	390			agree	He hath not told us of
+5.1	400	row begins a line	400			agree	A foolish thing was but a
+5.1	410	row begins a line	410			agree	But when I came unto my

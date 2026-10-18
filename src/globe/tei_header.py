@@ -44,6 +44,7 @@ PLAY_TITLES = {
     "lll": "Love's Labor's Lost",  # as its __cts__.xml names it
     "mnd": "A Midsummer Night's Dream",
     "ado": "Much Ado About Nothing",
+    "ayl": "As You Like It",
     "tmp": "The Tempest",
     "wiv": "The Merry Wives of Windsor",
     "tn": "Twelfth Night",
@@ -91,6 +92,7 @@ COPY_TEXT = {
     # Introduction printed 497 (CHOCR index 507), V.4 ends on 521; As You Like
     # It's introduction is 522 (printed = index - 10).
     "ado": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="497-521"),
+    "ayl": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="522-546"),
     "wiv": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="471-496"),
     "tn": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="547-570"),
     "tmp": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="971-992"),

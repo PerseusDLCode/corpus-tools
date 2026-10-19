@@ -1,0 +1,177 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in wiv.xml (sha256 48a5e72ceddacf64); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	11	row begins inside a line		10	11	unmapped (P4 number is the next line)	or obligation, 'Armigero.' Shal. Ay, that
+1.1	21	row begins inside a line		20	21	unmapped (P4 number is the next line)	a familiar beast to man, and
+1.1	41	row begins a line	41			agree	the sword should end it. Evans.
+1.1	60	row begins a line	60			agree	hundred pound? Evans. Ay, and her
+1.1	90	row begins a line	90			agree	Slender. Slen. How does your fallow
+1.1	100	row begins inside a line		99	100	unmapped (P4 number is the next line)	Is Sir John Falstaff here? Page.
+1.1	110	row begins inside a line		110	111	unmapped (P4 number is the containing line)	wronged. Page. Here comes Sir John.
+1.1	120	row begins a line	120			agree	Shal. The council shall know this.
+1.1	130	row begins a line	130			agree	Bard. You Banbury cheese! Slen. Ay,
+1.1	150	row begins a line	150			agree	Pist. He hears with ears. Evans.
+1.1	180	row begins a line	180			agree	sentences. Evans. It is his five
+1.1	190	row begins a line	190			agree	drunken knaves. Evans. So Got udge
+1.1	200	row begins inside a line		199	200	unmapped (P4 number is the next line)	very well met: by your leave,
+1.1	220	row begins a line	220			agree	Slen. So I do, sir. Evans.
+1.1	231	row begins inside a line		230	231	unmapped (P4 number is the next line)	to Mistress Anne Page. Slen. Why,
+1.1	240	row begins a line	239			disagree	Shal. Cousin Abraham Slender, can you
+1.1	260	row begins inside a line		259	260	unmapped (P4 number is the next line)	that I am freely dissolved, and
+1.1	271	row begins a line	271			agree	desires your worships' company. Shal. I
+1.1	279	row begins a line	279			agree	Anne. The dinner attends you, sir.
+1.1	291	row begins a line	291			agree	as much as though I did.
+1.1	301	row begins a line	301			agree	talked of. Slen. I love the
+1.3	20	row begins a line	20			agree	adieu. Bard. It is a life
+1.3	31	row begins a line	31			agree	minute's rest. Pist. 'Convey,' the wise
+1.3	41	row begins a line	41			agree	good. Fal. My honest lads, I
+1.3	60	row begins inside a line		59	60	unmapped (P4 number is the next line)	of angels. Pist. As many devils
+1.3	70	row begins a line	70			agree	Pist. Then did the sun on
+1.3	90	row begins a line	90			agree	Rogues, hence, avaunt! vanish like hailstones
+1.3	100	row begins a line	100			agree	Pist. Wilt thou revenge? Nym. By
+1.4	21	row begins inside a line		20	21	unmapped (P4 number is the next line)	beard, like a glover's paring-knife? Sim.
+1.4	31	row begins a line	31			agree	were, and shut in his gait?
+1.4	43	row begins inside a line		42	43	unmapped (P4 number is the next line)	he be not well, that he
+1.4	52	row begins inside a line		51	52	unmapped (P4 number is the next line)	been horn-mad. Caius. Fe, fe, fe,
+1.4	62	row begins a line	62			agree	come after my heel to the
+1.4	72	row begins inside a line		71	72	unmapped (P4 number is the next line)	Rugby, my rapier! Quick. Good master,
+1.4	81	row begins inside a line		80	81	unmapped (P4 number is the next line)	me from Parson Hugh. Caius. Vell.
+1.4	91	row begins a line	91			agree	put my finger in the fire,
+1.4	141	row begins inside a line		140	141	unmapped (P4 number is the next line)	the house, I pray you. Enter
+1.4	151	row begins inside a line		150	151	unmapped (P4 number is the next line)	heaven for it. Fent. Shall I
+1.4	180	row begins inside a line		179	180	unmapped (P4 number is the next line)	have I forgot? [Exit. ACT II
+2.1	50	row begins a line	50			agree	eternal moment or so, I could
+2.1	70	row begins inside a line		70	71	unmapped (P4 number is the containing line)	ever hear the like? Mrs. Page.
+2.1	100	row begins inside a line		100	101	unmapped (P4 number is the containing line)	the Garter. Mrs. Ford. Nay, I
+2.1	109	row begins inside a line		108	109	unmapped (P4 number is the next line)	that I hope is an unmeasurable
+2.1	120	row begins a line	120			agree	Ford. Love my wife! Pist. With
+2.1	131	row begins a line	131			agree	out this. Nym. [To Page] And
+2.1	141	row begins inside a line		141	142	unmapped (P4 number is the containing line)	Adieu. [Exit. Page. 'The humor of
+2.1	150	row begins inside a line		149	150	unmapped (P4 number is the next line)	for a true man. Ford. 'Twas
+2.1	170	row begins a line	170			agree	good Mistress Anne? Mrs. Page. Go
+2.1	201	row begins inside a line		201	202	unmapped (P4 number is the containing line)	Cavaleiro-justice, I say! Enter SHALLOW. Shal.
+2.1	210	row begins inside a line		209	210	unmapped (P4 number is the next line)	French doctor. Ford. Good mine host
+2.1	221	row begins a line	221			agree	my guest-cavaleire? Ford. None, I protest:
+2.1	231	row begins inside a line		230	231	unmapped (P4 number is the next line)	good skill in his rapier. Shal.
+2.2	30	row begins inside a line		29	30	unmapped (P4 number is the next line)	your honour! You will not do
+2.2	80	row begins inside a line		79	80	unmapped (P4 number is the next line)	warrant you, all is one with
+2.2	111	row begins inside a line		110	111	unmapped (P4 number is the next line)	other charms. Quick. Blessing on your
+2.2	160	row begins a line	160			agree	Ford. Bless you, sir! Fal. And
+2.2	181	row begins inside a line		180	181	unmapped (P4 number is the next line)	be your porter. Ford. I will
+2.2	200	row begins a line	200			agree	Fal. Well, sir. Ford. I have
+2.2	221	row begins a line	220			disagree	Fal. Have you importuned her to
+2.2	239	row begins a line	239			agree	Fal. O, sir! Ford. Believe it,
+2.2	250	row begins inside a line		249	250	unmapped (P4 number is the next line)	very preposterously. Ford. O, understand my
+2.2	261	row begins inside a line		261	262	unmapped (P4 number is the containing line)	to't, Sir John? Fal. Master Brook,
+2.2	280	row begins a line	280			agree	you know Ford, sir? Fal. Hang
+2.3	11	row begins a line	11			agree	would kill him, if he came.
+2.3	20	row begins a line	20			agree	Page. Now, good master doctor! Slen.
+2.3	31	row begins inside a line		30	31	unmapped (P4 number is the next line)	bully stale? is he dead? Caius.
+2.3	51	row begins inside a line		50	51	unmapped (P4 number is the next line)	we are the sons of women,
+2.3	60	row begins inside a line		60	61	unmapped (P4 number is the containing line)	Mockwater. Caius. Mock-vater! vat is dat?
+2.3	100	row begins a line	100			agree	Caius. By gar, 'tis good; veil
+3.1	10	row begins a line	10			agree	Sim. I will, sir. [Exit. Evans.
+3.1	20	row begins a line	20			agree	And a thousand fragrant posies. To
+3.1	29	row begins a line	28			disagree	Evans. He's welcome. [Sings. To shallow
+3.1	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	Slen. [Aside] Ah, sweet Anne Page!
+3.1	50	row begins inside a line		49	50	unmapped (P4 number is the next line)	office, master parson. Evans. Fery well:
+3.1	71	row begins a line	71			agree	fight with him. Slen. [Aside] O
+3.1	80	row begins a line	80			agree	English. Caius. I pray you, let-a
+3.1	119	row begins inside a line		118	119	unmapped (P4 number is the next line)	make-a de sot of us, ha,
+3.2	21	row begins inside a line		20	21	unmapped (P4 number is the next line)	do you call your knight's name,
+3.2	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	there: I will go. Enter PAGE,
+3.2	60	row begins a line	60			agree	this day we shall have our
+3.2	71	row begins inside a line		71	72	unmapped (P4 number is the containing line)	carry't. Page. Not by my consent,
+3.3	20	row begins inside a line		19	20	unmapped (P4 number is the next line)	when you are called. [Exeunt Servants.
+3.3	41	row begins inside a line		40	41	unmapped (P4 number is the next line)	it, hiss me. [Exit. Mrs. Ford.
+3.3	61	row begins inside a line		61	62	unmapped (P4 number is the containing line)	admittance. Mrs. Ford. A plain kerchief,
+3.3	71	row begins a line	71			agree	thou canst not hide it. Mrs.
+3.3	81	row begins inside a line		80	81	unmapped (P4 number is the next line)	thee; and thou deserves it. Mrs.
+3.3	91	row begins inside a line		90	91	unmapped (P4 number is the next line)	do; or else I could not
+3.3	100	row begins a line	100			agree	What's the matter? how now! Mrs.
+3.3	111	row begins a line	111			agree	upon you! how am I mistook
+3.3	141	row begins inside a line		141	142	unmapped (P4 number is the containing line)	to Datchet-mead. Mrs. Ford. He's too
+3.3	150	row begins a line	150			agree	creep in here. I'll never-- [Gets
+3.3	220	row begins a line	220			agree	Ford. Amen! Mrs. Page. You do
+3.3	251	row begins a line	251			agree	the company. Caius. If dere be
+3.4	10	row begins a line	10			agree	I should love thee but as
+3.4	20	row begins a line	20			agree	If opportunity and humblest suit Cannot
+3.4	30	row begins inside a line		29	30	unmapped (P4 number is the next line)	speak a word with you. Anne.
+3.4	41	row begins inside a line		41	42	unmapped (P4 number is the containing line)	uncle. Shal. Mistress Anne, my cousin
+3.4	50	row begins inside a line		49	50	unmapped (P4 number is the next line)	fifty pounds jointure. Anne. Good Master
+3.4	62	row begins inside a line		61	62	unmapped (P4 number is the next line)	I give heaven praise. Anne. I
+3.4	70	row begins inside a line		69	70	unmapped (P4 number is the next line)	may ask your father; here he
+3.4	81	row begins a line	81			agree	Quick. Speak to Mistress Page. Fent.
+3.4	90	row begins a line	90			agree	Anne. Alas, I had rather be
+3.4	102	row begins inside a line		101	102	unmapped (P4 number is the next line)	this is my doing Fent. I
+3.5	21	row begins inside a line		20	21	unmapped (P4 number is the next line)	speak with you. Fal. Come, let
+3.5	30	row begins inside a line		29	30	unmapped (P4 number is the next line)	me a pottle of sack finely.
+3.5	41	row begins inside a line		40	41	unmapped (P4 number is the next line)	her men; they mistook their erection.
+3.5	60	row begins inside a line		59	60	unmapped (P4 number is the next line)	money well. O, here he comes.
+3.5	70	row begins a line	70			agree	determination? Fal. No, Master Brook; but
+3.5	80	row begins a line	80			agree	Ford. What, while you were there?
+3.5	39	row begins a line	89			disagree	Ford. A buck-basket! Fal. By the
+4.1	10	row begins a line	10			agree	How now. Sir Hugh! no school
+4.1	20	row begins a line	20			agree	head; answer your master, be not
+4.1	30	row begins inside a line		29	30	unmapped (P4 number is the next line)	than polecats, sure. Evans. You are
+4.1	40	row begins inside a line		39	40	unmapped (P4 number is the next line)	he, William, that does lend articles?
+4.1	51	row begins a line	51			agree	warrant you. Evans. Leave your prabbles.
+4.1	60	row begins a line	60			agree	William? Will. Genitive case! Evans. Ay.
+4.1	70	row begins inside a line		69	70	unmapped (P4 number is the next line)	to call 'horum:' fie upon you!
+4.2	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	Ford! what, ho! Mrs. Ford. Step
+4.2	20	row begins a line	20			agree	Mrs. Ford. Why? Mrs. Page. Why,
+4.2	30	row begins a line	30			agree	Mrs. Ford. Why, does he talk
+4.2	41	row begins a line	41			agree	be here anon. Mrs. Ford. I
+4.2	51	row begins a line	51			agree	May I not go out ere
+4.2	60	row begins a line	60			agree	Fal. Where is it? Mrs. Ford.
+4.2	69	row begins a line	69			agree	disguised-- Mrs. Ford. How might we
+4.2	81	row begins a line	85			disagree	you straight: put on the gown
+4.2	131	row begins a line	131			agree	a mad dog. Shal. Indeed, Master
+4.2	140	row begins inside a line		139	140	unmapped (P4 number is the next line)	if you suspect me in any
+4.2	150	row begins a line	150			agree	Mrs. Ford. Why, man, why? Ford.
+4.2	161	row begins a line	161			agree	Ford; this wrongs you. Evans. Master
+4.2	179	row begins a line	179			agree	Brentford. Ford. A witch, a quean,
+4.2	200	row begins inside a line		199	200	unmapped (P4 number is the next line)	goodly credit for you Ford. Hang
+4.2	211	row begins a line	211			agree	come, gentlemen. [Exeunt Ford, Page, Shal.,
+4.2	229	row begins a line	229			agree	we have served him? Mrs. Page.
+4.3	9	row begins a line	9			agree	Bard. Ay, sir; I'll call them
+4.4	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Page. 'Tis well, 'tis well; no
+4.4	30	row begins a line	30			agree	Doth all the winter-time, at still
+4.4	50	row begins a line	50			agree	With rounds of waxen tapers on
+4.4	60	row begins inside a line		60	61	unmapped (P4 number is the containing line)	Mrs. Ford. And till he tell
+4.4	70	row begins a line	70			agree	them vizards. Mrs. Page. My Nan
+4.4	81	row begins a line	81			agree	pleasures and fery honest knaveries. [Exeunt
+4.4	90	row begins a line	90			agree	Though twenty thousand worthier come to
+4.5	11	row begins inside a line		10	11	unmapped (P4 number is the next line)	knock, I say. Sim. There's an
+4.5	20	row begins inside a line		20	21	unmapped (P4 number is the containing line)	Fal. [Above] How now, mine host!
+4.5	30	row begins a line	30			agree	would you with her? Sim. My
+4.5	42	row begins inside a line		41	42	unmapped (P4 number is the next line)	spoken with her too from him.
+4.5	50	row begins a line	50			agree	Fal. 'Tis, 'tis his fortune. Sim.
+4.5	71	row begins inside a line		70	71	unmapped (P4 number is the next line)	devils, three Doctor Faustuses. Host. They
+4.5	91	row begins inside a line		90	91	unmapped (P4 number is the next line)	for good vill: adieu. [Exit. Host.
+4.5	130	row begins a line	130			agree	serve heaven well, that you are
+4.6	10	row begins a line	10			agree	Who mutually hath answer'd my affection,
+4.6	30	row begins a line	30			agree	While other sports are tasking of
+4.6	40	row begins a line	40			agree	For they must all be mask'd
+4.6	50	row begins a line	50			agree	And, in the lawful name of
+5.3	11	row begins inside a line		11	12	unmapped (P4 number is the containing line)	of heart-break. Mrs. Ford. Where is
+5.3	21	row begins inside a line		20	21	unmapped (P4 number is the next line)	be mocked. Mrs. Ford. We'll betray
+5.5	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	thus. Enter SIR HUGH EVANS, disguised
+5.5	50	row begins a line	50			agree	Our radiant queen hates sluts and
+5.5	59	row begins a line	59			agree	Quick. About, about; Search Windsor Castle,
+5.5	70	row begins a line	70			agree	Like to the Garter's compass, in
+5.5	80	row begins a line	80			agree	Of Herne the hunter, let us
+5.5	90	row begins a line	90			agree	And turn him to no pain;
+5.5	100	row begins a line	100			agree	Kindled with unchaste desire. Fed in
+5.5	110	row begins a line	110			agree	Now, good Sir John, how like
+5.5	119	row begins inside a line		119	120	unmapped (P4 number is the containing line)	it, Master Brook. Mrs. Ford. Sir
+5.5	140	row begins inside a line		139	140	unmapped (P4 number is the next line)	pray you. Ford. I will never
+5.5	149	row begins inside a line		148	149	unmapped (P4 number is the next line)	your belly is all putter. Fal.
+5.5	160	row begins a line	160			agree	Mrs. Page. A puffed man? Page.
+5.5	169	row begins inside a line		168	169	unmapped (P4 number is the next line)	pribbles and prabbles? Fal. Well, I
+5.5	189	row begins a line	189			agree	you dispatched? Slen. Dispatched! I'll make
+5.5	201	row begins a line	201			agree	wrong. Slen. What need you tell
+5.5	220	row begins inside a line		219	220	unmapped (P4 number is the next line)	Page: by gar, I am cozened.
+5.5	231	row begins inside a line		230	231	unmapped (P4 number is the next line)	went not with Master Slender? Mrs.
+5.5	240	row begins a line	240			agree	Of disobedience, or unduteous title, Since
+5.5	250	row begins a line	250			agree	Page. Well, what remedy? Fenton, heaven

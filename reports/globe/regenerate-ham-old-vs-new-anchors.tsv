@@ -1,0 +1,9 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in ham.xml (sha256 224f247a4f2244b0); not the shell's milestones or <l n>
+# transcribed anchors: 303; mapped (the row begins a line): 251; of those, carrying the same number: 249
+# in scenes that pass the gate: 251 mapped; agreeing: 249
+# unmapped (the row begins inside a line): 52; the P4's number is the containing line's for 32, the next line's for 19, neither for 1
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+2.2	30	unmapped (neither)		300	301		Ros. [Aside to Guil.] What say
+3.2	110	disagree	109				i' the Capitol; Brutus killed me.
+5.2	330	disagree	380				The ears are senseless that should

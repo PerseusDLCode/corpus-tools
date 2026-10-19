@@ -1,0 +1,11 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in wiv.xml (sha256 48a5e72ceddacf64); not the shell's milestones or <l n>
+# transcribed anchors: 174; mapped (the row begins a line): 97; of those, carrying the same number: 92
+# in scenes that pass the gate: 97 mapped; agreeing: 92
+# unmapped (the row begins inside a line): 77; the P4's number is the containing line's for 19, the next line's for 58, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.1	240	disagree	239				Shal. Cousin Abraham Slender, can you
+2.2	221	disagree	220				Fal. Have you importuned her to
+3.1	29	disagree	28				Evans. He's welcome. [Sings. To shallow
+3.5	39	disagree	89				Ford. A buck-basket! Fal. By the
+4.2	81	disagree	85				you straight: put on the gown

@@ -1,0 +1,306 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in ham.xml (sha256 224f247a4f2244b0); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Fran. Not a mouse stirring. Ber.
+1.1	20	row begins a line	20			agree	Ber. Welcome, Horatio: welcome, good Marcellus.
+1.1	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Ber. Sit down awhile; And let
+1.1	40	row begins a line	40			agree	Mar. Peace, break thee off; look,
+1.1	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	Ber. See, it stalks away! Hor.
+1.1	60	row begins a line	60			agree	Such was the very armour he
+1.1	70	row begins a line	70			agree	Mar. Good now, sit down, and
+1.1	81	row begins a line	81			agree	Whose image even but now appear'd
+1.1	90	row begins a line	90			agree	Against the which, a moiety competent
+1.1	101	row begins a line	101			agree	As it doth well appear unto
+1.1	110	row begins a line	110			agree	Comes armed through our watch; so
+1.1	120	row begins a line	120			agree	Was sick almost to doomsday with
+1.1	130	row begins a line	130			agree	If there be any good thing
+1.1	150	row begins a line	150			agree	The cock, that is the trumpet
+1.1	160	row begins a line	160			agree	The bird of dawning singeth all
+1.1	170	row begins a line	170			agree	Unto young Hamlet; for, upon my
+1.2	10	row begins a line	10			agree	Have we, as 'twere with a
+1.2	20	row begins a line	20			agree	Our state to be disjoint and
+1.2	30	row begins a line	30			agree	Of this his nephew's purpose,—to suppress
+1.2	40	row begins a line	40			agree	Cor., Volt. In that and all
+1.2	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	Laer. My dread lord, Your leave
+1.2	60	row begins a line	60			agree	Upon his will I seal'd my
+1.2	70	row begins a line	70			agree	Do not for ever with thy
+1.2	80	row begins a line	80			agree	No, nor the fruitful river in
+1.2	91	row begins a line	91			agree	In filial obligation for some term
+1.2	100	row begins a line	100			agree	Why should we in our peevish
+1.2	110	row begins a line	110			agree	And with no less nobility of
+1.2	120	row begins a line	120			agree	Ham. I shall in all my
+1.2	130	row begins a line	130			agree	Thaw and resolve itself into a
+1.2	139	row begins a line	139			agree	So excellent a king; that was,
+1.2	151	row begins a line	151			agree	Would have mourn'd longer—married with my
+1.2	160	row begins inside a line		160	161	unmapped (P4 number is the containing line)	Ham. I am glad to see
+1.2	171	row begins a line	171			agree	Nor shall you do mine ear
+1.2	180	row begins a line	180			agree	Ham. Thrift, thrift, Horatio! the funeral
+1.2	190	row begins a line	190			agree	Ham. Saw? who? Hor. My lord,
+1.2	200	row begins a line	200			agree	Armed at point exactly, cap-a-pe, Appears
+1.2	210	row begins a line	210			agree	Form of the thing, each word
+1.2	220	row begins inside a line		220	221	unmapped (P4 number is the containing line)	Ham. 'Tis very strange. Hor. As
+1.2	231	row begins a line	231			agree	Ham. What, look'd he frowningly? Hor.
+1.2	240	row begins inside a line		240	241	unmapped (P4 number is the containing line)	Ham. His beard was grizzled,—no? Hor.
+1.2	250	row begins a line	250			agree	Give it an understanding, but no
+1.3	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Laer. Think it no more: For
+1.3	30	row begins a line	30			agree	If with too credent ear you
+1.3	40	row begins a line	40			agree	Too oft before their buttons be
+1.3	51	row begins inside a line		51	52	unmapped (P4 number is the containing line)	Laer. O, fear me not. I
+1.3	60	row begins a line	60			agree	Nor any unproportion'd thought his act.
+1.3	70	row begins a line	70			agree	Costly thy habit as thy purse
+1.3	80	row begins a line	80			agree	Thou canst not then be false
+1.3	90	row begins a line	90			agree	Pol. Marry, well bethought: 'Tis told
+1.3	100	row begins a line	100			agree	Of his affection to me. Pol.
+1.3	110	row begins a line	110			agree	Oph. My lord, he hath importuned
+1.3	119	row begins a line	119			agree	Even in their promise, as it
+1.3	130	row begins a line	130			agree	Breathing like sanctified and pious bawds,
+1.4	11	row begins a line	11			agree	The kettle-drum and trumpet thus bray
+1.4	20	row begins a line	20			agree	Soil our addition; and indeed it
+1.4	31	row begins a line	31			agree	Carrying, I say, the stamp of
+1.4	50	row begins a line	50			agree	Hath oped his ponderous and marble
+1.4	60	row begins inside a line		60	61	unmapped (P4 number is the containing line)	Mar. Look, with what courteous action
+1.4	70	row begins a line	70			agree	Or to the dreadful summit of
+1.4	80	row begins inside a line		80	81	unmapped (P4 number is the containing line)	Ham. Hold off your hands. Hor.
+1.4	90	row begins a line	90			agree	Mar. Something is rotten in the
+1.5	20	row begins a line	20			agree	Like quills upon the fretful porpentine:
+1.5	30	row begins a line	30			agree	As meditation or the thoughts of
+1.5	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	Ham. O my prophetic soul! My
+1.5	50	row begins a line	50			agree	I made to her in marriage,
+1.5	60	row begins a line	60			agree	My custom always of the afternoon,
+1.5	70	row begins a line	70			agree	The thin and wholesome blood: so
+1.5	80	row begins a line	80			agree	O, horrible! O, horrible! most horrible!
+1.5	90	row begins a line	90			agree	And 'gins to pale his uneffectual
+1.5	101	row begins a line	101			agree	That youth and observation copied there;
+1.5	111	row begins a line	111			agree	It is 'Adieu, adieu! remember me.'
+1.5	120	row begins inside a line		120	121	unmapped (P4 number is the containing line)	Mar. Nor I, my lord. Ham.
+1.5	130	row begins a line	130			agree	For every man has business and
+1.5	140	row begins a line	140			agree	O'ermaster't as you may. And now,
+1.5	150	row begins a line	150			agree	Ham. Ah, ha, boy! say'st thou
+1.5	160	row begins a line	160			agree	Swear by my sword. Ghost. [Beneath]
+1.5	170	row begins a line	170			agree	How strange or odd soe'er I
+1.5	180	row begins a line	180			agree	So grace and mercy at your
+1.5	190	row begins a line	190			agree	That ever I was born to
+2.1	20	row begins a line	20			agree	What forgeries you please; marry, none
+2.1	30	row begins a line	30			agree	That he is open to incontinency;
+2.1	41	row begins a line	41			agree	Mark you, Your party in converse,
+2.1	60	row begins a line	60			agree	'I saw him enter such a
+2.1	70	row begins a line	70			agree	Rey. Good my lord! Pol. Observe
+2.1	80	row begins a line	80			agree	Ungarter'd, and down-gyved to his ancle;
+2.1	90	row begins a line	90			agree	He falls to such perusal of
+2.1	110	row begins inside a line		110	111	unmapped (P4 number is the containing line)	Pol. That hath made him mad.
+2.2	10	row begins a line	10			agree	I cannot dream of: I entreat
+2.2	21	row begins a line	21			agree	To whom he more adheres. If
+2.2	40	row begins a line	40			agree	Pol. The ambassadors from Norway, my
+2.2	50	row begins a line	50			agree	King. O, speak of that; that
+2.2	60	row begins a line	60			agree	Volt. Most fair return of greetings
+2.2	70	row begins a line	70			agree	Makes vow before his uncle never
+2.2	80	row begins inside a line		80	81	unmapped (P4 number is the containing line)	King. It likes us well; And
+2.2	90	row begins a line	90			agree	Therefore, since brevity is the soul
+2.2	101	row begins a line	101			agree	That we find out the cause
+2.2	110	row begins a line	110			agree	beautified Ophelia,’ That's an ill phrase,
+2.2	131	row begins a line	131			agree	Pol. I would fain prove so.
+2.2	141	row begins a line	141			agree	'Lord Hamlet is a prince, out
+2.2	150	row begins a line	150			agree	Into the madness wherein now he
+2.2	160	row begins a line	160			agree	Pol. You know, sometimes he walks
+2.2	180	row begins a line	180			agree	Pol. That's very true, my lord.
+2.2	210	row begins a line	210			agree	Ham. Into my grave. Pol. Indeed,
+2.2	230	row begins inside a line		229	230	unmapped (P4 number is the next line)	Good lads, how do ye both?
+2.2	240	row begins inside a line		239	240	unmapped (P4 number is the next line)	most true; she is a strumpet.
+2.2	250	row begins a line	250			agree	Ros. Then is the world one.
+2.2	260	row begins a line	260			agree	Ham. O God, I could be
+2.2	291	row begins inside a line		290	291	unmapped (P4 number is the next line)	good king and queen have sent
+2.2	30	row begins inside a line		300	301	unmapped (neither)	Ros. [Aside to Guil.] What say
+2.2	340	row begins inside a line		339	340	unmapped (P4 number is the next line)	What players are they? Ros. Even
+2.2	350	row begins a line	350			agree	followed? Ros. No, indeed, are they
+2.2	360	row begins inside a line		359	360	unmapped (P4 number is the next line)	quills and dare scarce come thither.
+2.2	379	row begins inside a line		378	379	unmapped (P4 number is the next line)	and his load too. Ham. It
+2.2	410	row begins a line	410			agree	When Roscius was an actor in
+2.2	421	row begins inside a line		421	422	unmapped (P4 number is the containing line)	only men. Ham. O Jephthah, judge
+2.2	431	row begins a line	431			agree	have a daughter that I love
+2.2	471	row begins inside a line		471	472	unmapped (P4 number is the containing line)	see— ‘The rugged Pyrrhus, like the
+2.2	520	row begins a line	520			agree	Pol. This is too long. Ham.
+2.2	559	row begins a line	559			agree	Pol. Come, sirs. Ham. Follow him,
+2.2	569	row begins a line	569			agree	First Play. Ay, my lord. Ham.
+2.2	581	row begins a line	581			agree	Tears in his eyes, distraction in's
+2.2	590	row begins a line	590			agree	Make mad the guilty and appal
+2.2	601	row begins a line	601			agree	Tweaks me by the nose? gives
+2.2	610	row begins a line	610			agree	O, vengeance! Why, what an ass
+2.2	620	row begins a line	620			agree	Been struck so to the soul
+2.2	630	row begins a line	630			agree	Out of my weakness and my
+3.1	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Queen. Did he receive you well?
+3.1	20	row begins a line	20			agree	And, as I think, they have
+3.1	30	row begins a line	30			agree	That he, as 'twere by accident,
+3.1	40	row begins a line	40			agree	Of Hamlet's wildness: so shall I
+3.1	50	row begins a line	50			agree	How smart a lash that speech
+3.1	61	row begins a line	61			agree	No more; and by a sleep
+3.1	70	row begins a line	70			agree	For who would bear the whips
+3.1	80	row begins a line	80			agree	No traveller returns, puzzles the will
+3.1	90	row begins inside a line		90	91	unmapped (P4 number is the containing line)	Oph. Good my lord, How does
+3.1	100	row begins a line	100			agree	Take these again; for to the
+3.1	110	row begins a line	110			agree	commerce than with honesty? Ham. Ay,
+3.1	120	row begins inside a line		119	120	unmapped (P4 number is the next line)	but we shall relish of it:
+3.1	130	row begins inside a line		129	130	unmapped (P4 number is the next line)	should such fellows as I do
+3.1	140	row begins a line	140			agree	plague for thy dowry: be thou
+3.1	150	row begins a line	150			agree	you make yourselves another: you jig,
+3.1	160	row begins a line	160			agree	The expectancy and rose of the
+3.1	170	row begins a line	170			agree	King. Love! his affections do not
+3.1	180	row begins a line	180			agree	With variable objects shall expel This
+3.1	190	row begins a line	190			agree	Let his queen mother all alone
+3.2	41	row begins a line	41			agree	indifferently with us, sir. Ham. O,
+3.2	60	row begins a line	60			agree	As e'er my conversation coped withal.
+3.2	71	row begins a line	71			agree	As one, in suffering all, that
+3.2	80	row begins a line	80			agree	There is a play to-night before
+3.2	90	row begins a line	90			agree	For I mine eyes will rivet
+3.2	100	row begins inside a line		99	100	unmapped (P4 number is the next line)	you cannot feed capons so. King.
+3.2	110	row begins a line	109			disagree	i' the Capitol; Brutus killed me.
+3.2	120	row begins a line	120			agree	Oph. No, my lord. Ham. I
+3.2	130	row begins a line	130			agree	Ham. Who, I? Oph. Ay, my
+3.2	150	row begins a line	150			agree	of the play. Enter Prologue. Ham.
+3.2	160	row begins a line	160			agree	Here stooping to your clemency, We
+3.2	170	row begins a line	170			agree	Unite communtual in most sacred bands.
+3.2	180	row begins a line	180			agree	And as my love is sized,
+3.2	189	row begins a line	189			agree	In second husband let me be
+3.2	200	row begins a line	200			agree	Which now, like fruit unripe, sticks
+3.2	211	row begins a line	211			agree	That even our loves should with
+3.2	220	row begins a line	220			agree	But, orderly to end where I
+3.2	239	row begins a line	239			agree	Ham. Madam, how like you this
+3.2	260	row begins a line	260			agree	off my edge. Oph. Still better,
+3.2	270	row begins a line	270			agree	Thy natural magic and dire property,
+3.2	280	row begins a line	280			agree	King. Give me some light: away!
+3.2	290	row begins a line	290			agree	Hor. Half a share. Ham. A
+3.2	300	row begins a line	300			agree	Ham. Upon the talk of the
+3.2	310	row begins a line	310			agree	Guil. The king, sir,— Ham. Ay,
+3.2	319	row begins inside a line		318	319	unmapped (P4 number is the next line)	plunge him into far more choler.
+3.2	331	row begins a line	331			agree	Ham. Sir, I cannot. Guil. What,
+3.2	349	row begins a line	349			agree	stealers. Ros. Good my lord, what
+3.2	359	row begins a line	359			agree	—the proverb is somewhat musty. Re-enter
+3.2	370	row begins a line	370			agree	Ham. I do beseech you. Guil.
+3.2	390	row begins a line	390			agree	God bless you, sir! Pol. My
+3.2	399	row begins a line	399			agree	Pol. Very like a whale. Ham.
+3.2	410	row begins a line	410			agree	Would quake to look on. Soft!
+3.3	10	row begins a line	10			agree	That live and feed upon your
+3.3	20	row begins a line	20			agree	Are mortised and adjoin'd; which, when
+3.3	30	row begins a line	30			agree	And, as you said, and wisely
+3.3	40	row begins a line	40			agree	My stronger guilt defeats my strong
+3.3	49	row begins a line	49			agree	To be forestalled ere we come
+3.3	60	row begins a line	60			agree	Buys out the law: but 'tis
+3.3	70	row begins a line	70			agree	Bow, stubborn knees; and, heart with
+3.3	80	row begins a line	80			agree	He took my father grossly, full
+3.3	90	row begins a line	90			agree	Or in the incestuous pleasure of
+3.4	10	row begins a line	10			agree	Ham. Mother, you have my father
+3.4	20	row begins a line	20			agree	Where you may see the inmost
+3.4	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Ham. Ay, lady, 'twas my word.
+3.4	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	Ham. Such an act That blurs
+3.4	50	row begins a line	50			agree	With tristful visage, as against the
+3.4	60	row begins a line	60			agree	A combination and a form indeed,
+3.4	70	row begins a line	70			agree	And waits upon the judgement: and
+3.4	80	row begins a line	80			agree	Or but a sickly part of
+3.4	110	row begins a line	110			agree	Ghost. Do not forget: this visitation
+3.4	120	row begins a line	120			agree	And, as the sleeping soldiers in
+3.4	130	row begins a line	130			agree	Will want true colour; tears perchance
+3.4	140	row begins a line	140			agree	My pulse, as yours, doth temperately
+3.4	160	row begins a line	160			agree	Assume a virtue, if you have
+3.4	170	row begins a line	170			agree	With wondrous potency. Once more, good
+3.4	180	row begins inside a line		180	181	unmapped (P4 number is the containing line)	Queen. What shall I do? Ham.
+3.4	190	row begins a line	190			agree	Would from a paddock, from a
+3.4	200	row begins inside a line		200	201	unmapped (P4 number is the containing line)	Queen. Alack, I had forgot: 'tis
+3.4	210	row begins a line	210			agree	When in one line two crafts
+4.1	10	row begins a line	10			agree	'Whips out his rapier, cries, 'A
+4.1	21	row begins a line	21			agree	But, like the owner of a
+4.1	30	row begins a line	30			agree	But we will ship him hence:
+4.1	40	row begins a line	40			agree	And what's untimely done........ Whose whisper
+4.2	10	row begins a line	10			agree	Ros. Believe what? Ham. That I
+4.2	31	row begins a line	31			agree	Guil. A thing, my lord! Ham.
+4.3	10	row begins a line	10			agree	By desperate appliance are relieved, Or
+4.3	19	row begins a line	19			agree	King. At supper where? Ham. Not
+4.3	30	row begins inside a line		29	30	unmapped (P4 number is the next line)	hath fed of that worm. King.
+4.3	40	row begins a line	40			agree	King. Go seek him there. [To
+4.3	60	row begins a line	60			agree	And, England, if my love thou
+4.4	10	row begins a line	10			agree	Cap. They are of Norway, sir.
+4.4	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Ros. Will't please you go, my
+4.4	40	row begins a line	40			agree	Bestial oblivion, or some craven scruple
+4.4	50	row begins a line	50			agree	Makes mouths at the invisible event,
+4.4	61	row begins a line	61			agree	That, for a fantasy and trick
+4.5	10	row begins a line	10			agree	And botch the words up fit
+4.5	20	row begins a line	20			agree	It spills itself in fearing to
+4.5	40	row begins a line	40			agree	King. How do you, pretty lady?
+4.5	80	row begins a line	80			agree	Next, your son gone; and he
+4.5	90	row begins a line	90			agree	And wants not buzzers to infect
+4.5	101	row begins a line	101			agree	Than young Laertes, in a riotous
+4.5	110	row begins a line	110			agree	O, this is counter, you false
+4.5	120	row begins inside a line		120	121	unmapped (P4 number is the containing line)	King. What is the cause, Laertes,
+4.5	130	row begins a line	130			agree	Laer. How came he dead? I'll
+4.5	140	row begins a line	140			agree	If you desire to know the
+4.5	150	row begins a line	150			agree	And am most sensibly in grief
+4.5	160	row begins a line	160			agree	Should be as moral as an
+4.5	179	row begins inside a line		178	179	unmapped (P4 number is the next line)	and remembrance fitted. Oph. There's fennel
+4.5	201	row begins a line	201			agree	Laer. Do you see this, O
+4.7	10	row begins a line	10			agree	Which may to you, perhaps, seem
+4.7	20	row begins a line	20			agree	Would, like the spring that turneth
+4.7	30	row begins a line	30			agree	King. Break not your sleeps for
+4.7	40	row begins a line	40			agree	They were given me by Claudio;
+4.7	50	row begins a line	50			agree	What should this mean? Are all
+4.7	60	row begins inside a line		60	61	unmapped (P4 number is the containing line)	Laer. Ay, my lord; So you
+4.7	70	row begins a line	70			agree	The rather, if you could devise
+4.7	80	row begins a line	80			agree	The light and careless livery that
+4.7	90	row begins a line	90			agree	That I, in forgery of shapes
+4.7	101	row begins a line	101			agree	If one could match you: the
+4.7	110	row begins inside a line		110	111	unmapped (P4 number is the containing line)	Laer. Why ask you this? King.
+4.7	120	row begins a line	120			agree	We should do when we would;
+4.7	130	row begins a line	130			agree	Will you do this, keep close
+4.7	140	row begins inside a line		140	141	unmapped (P4 number is the containing line)	Laer. I will do't: And, for
+4.7	150	row begins a line	150			agree	Weigh what convenience both of time
+4.7	160	row begins a line	160			agree	And that he calls for drink,
+4.7	170	row begins a line	170			agree	Of crow-flowers, nettles, daisies, and long
+4.7	180	row begins a line	180			agree	Or like a creature native and
+5.1	39	row begins a line	39			agree	Sec. Clo. Why, he had none.
+5.1	50	row begins inside a line		49	50	unmapped (P4 number is the next line)	frame outlives a thousand tenants. First
+5.1	60	row begins a line	60			agree	Sec. Clo. Marry, now I can
+5.1	89	row begins a line	89			agree	Hor. It might, my lord. Ham.
+5.1	140	row begins a line	140			agree	again, from me to you. Ham.
+5.1	170	row begins a line	170			agree	there the men are as mad
+5.1	191	row begins inside a line		190	191	unmapped (P4 number is the next line)	twenty years. Ham. Whose was it?
+5.1	200	row begins a line	200			agree	Ham. This? First Clo. E'en that.
+5.1	220	row begins a line	220			agree	Hor. E'en so. Ham. And smelt
+5.1	241	row begins a line	241			agree	The queen, the courtiers: who is
+5.1	251	row begins a line	251			agree	And, but that great command o'ersways
+5.1	260	row begins a line	260			agree	To sing a requiem and such
+5.1	270	row begins a line	270			agree	Fall ten times treble on that
+5.1	280	row begins a line	280			agree	Like wonder-wounded hearers? This is I,
+5.1	290	row begins a line	290			agree	Until my eyelids will no longer
+5.1	300	row begins a line	300			agree	I'll do't. Dost thou come here
+5.1	311	row begins inside a line		311	312	unmapped (P4 number is the containing line)	Ham. Hear you, sir; What is
+5.1	320	row begins a line	320			agree	This grave shall have a living
+5.2	10	row begins a line	10			agree	There's a divinity that shapes our
+5.2	20	row begins a line	20			agree	Larded with many several sorts of
+5.2	30	row begins a line	30			agree	Ere I could make a prologue
+5.2	40	row begins a line	40			agree	As love between them like the
+5.2	50	row begins a line	50			agree	Which was the model of that
+5.2	61	row begins a line	61			agree	Between the pass and fell incensed
+5.2	70	row begins a line	70			agree	In further evil? Hor. It must
+5.2	80	row begins inside a line		80	81	unmapped (P4 number is the containing line)	Hor. Peace! who comes here? Enter
+5.2	90	row begins inside a line		90	91	unmapped (P4 number is the containing line)	of dirt. Osr. Sweet lord, if
+5.2	99	row begins inside a line		98	99	unmapped (P4 number is the next line)	wind is northerly. Osr. It is
+5.2	130	row begins a line	130			agree	Osr. Sir? Hor. Is't not possible
+5.2	139	row begins a line	139			agree	Osr. I know you are not
+5.2	150	row begins inside a line		149	150	unmapped (P4 number is the next line)	meed he's unfellowed. Ham. What's his
+5.2	179	row begins inside a line		178	179	unmapped (P4 number is the next line)	your person in trial. Ham. Sir,
+5.2	211	row begins inside a line		210	211	unmapped (P4 number is the next line)	I be so able as now.
+5.2	229	row begins inside a line		228	229	unmapped (P4 number is the next line)	you are not fit. Ham. Not
+5.2	240	row begins a line	240			agree	And you must needs have heard,
+5.2	250	row begins a line	250			agree	His madness is poor Hamlet's enemy.
+5.2	260	row begins a line	260			agree	I have a voice and precedent
+5.2	270	row begins a line	270			agree	King. Give them the foils, young
+5.2	280	row begins a line	280			agree	Or quit in answer of the
+5.2	290	row begins a line	290			agree	And you, the judges, bear a
+5.2	310	row begins a line	310			agree	I am afeard you make a
+5.2	320	row begins a line	320			agree	Queen. No, no, the drink, the
+5.2	329	row begins a line	329			agree	Hath turn'd itself on me; lo,
+5.2	341	row begins a line	341			agree	Mine and my father's death come
+5.2	351	row begins inside a line		351	352	unmapped (P4 number is the containing line)	Hor. Never believe it: I am
+5.2	361	row begins a line	361			agree	Osr. Young Fortinbras, with conquest come
+5.2	370	row begins a line	370			agree	Hor. Now cracks a noble heart.
+5.2	330	row begins a line	380			disagree	The ears are senseless that should
+5.2	389	row begins a line	389			agree	High on a stage be placed
+5.2	401	row begins a line	401			agree	Which now to claim my vantage
+5.2	410	row begins a line	410			agree	The soldiers' music and the rites

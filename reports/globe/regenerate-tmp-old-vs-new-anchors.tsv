@@ -1,0 +1,14 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tmp.xml (sha256 fd696947587b5429); not the shell's milestones or <l n>
+# transcribed anchors: 177; mapped (the row begins a line): 151; of those, carrying the same number: 144
+# in scenes that pass the gate: 151 mapped; agreeing: 144
+# unmapped (the row begins inside a line): 26; the P4's number is the containing line's for 20, the next line's for 5, neither for 1
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.1	21	disagree	20				Gon. Good, yet remember whom thou
+1.2	380	disagree	379				The wild waves whist, Foot it
+1.2	400	disagree	399				Nothing of him that doth fade
+2.1	20	disagree	19				Gon. Dolour comes to him, indeed:
+2.1	230	disagree	226				You more invest it! Ebbing men,
+2.2	51	disagree	50				Loved Mall, Meg and Marian and
+3.3	81	disagree	82				And a clear life ensuing. He
+5.1	240	unmapped (neither)		241	242		Ari. [Aside to Pros.] Was't well

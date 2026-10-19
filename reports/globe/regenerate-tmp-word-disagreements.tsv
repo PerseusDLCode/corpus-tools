@@ -1,0 +1,292 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+1	miun/kraken	1	16	replace	sea:	seas	sea:	
+1	miun/kraken	1	23	replace	Exit.	IExit.	(Exit.	
+1	miun/kraken	1	29	replace	FERDINAND,	FERDIN¬ AND,	FERDIN¬ AND,	same
+1	miun/kraken	1	48	replace	yourself	vourself	yourself	
+1	miun/kraken	1	51	replace	Exit.	IExit.	IE-xit.	
+1	miun/kraken	1	56	replace	advantage.	advant¬ PERSONÆ. Boatswain. MIRANDA, daughter to Prospero. ARIEL, an airy CERES, LUNO, presented by Nymphs, Reapers, Other Spirits attending on Prospero. SCENE–A ship at Sea: an island. age.	advant¬ PERSONÆ. Boatswain. Mariners. MIRANDA, daughter to Prospero. ARIEL, an airy Spirit. IRIS, CERES, JUNO, presented by Spirits. Nymphs, Reapers, Other Spirits attending on Prospero. SCENE—A ship at Sea: an island. age.	
+1	miun/kraken	2	14	replace	[Exeunt	LE xeunt.	WExeunt.	
+1	miun/kraken	2	17	replace	[A	IA	(A	
+1	miun/kraken	2	18	replace	within.]	vithin.1	zithin.]	
+1	miun/kraken	2	23	replace	you bawling,	you-bawling,	you bawling,	
+1	miun/kraken	2	26	replace	Ant.		Ani.	
+1	miun/kraken	2	29	replace	I'll	I’Il	I’Il	same
+1	miun/kraken	2	31	replace	unstaunched	unstanched	unstanched	same
+1	miun/kraken	2	47	replace	He'll	He ’Il	He’Il	
+1	miun/kraken	2	48	replace	drop of	drop-of	drop of	
+1	miun/kraken	2	50	replace	[A	IA	IA	same
+1	miun/kraken	2	50	replace	within:	vithin:	within:	
+1	miun/kraken	2	51	replace	split!'--'Farewell	split!’—Farewell	split !’—Farewell	
+1	miun/kraken	2	53	replace	brother'--'We	"brother!""—“We"	Farcwell, brother !’—We	
+2	trent/kraken	1	6	replace	[Exeunt.	LExeunt.	IExeunt.	
+2	trent/kraken	1	9	replace	If by	Ifby	If by	
+2	trent/kraken	1	38	replace	down	dovn	ILays dozon	
+2	trent/kraken	1	50	replace	have	bave	Y ou have	
+2	trent/kraken	1	58	replace	do not	donot	do not	
+2	trent/kraken	1	58	replace	for then	forthen	forthen	same
+2	trent/kraken	1	59	replace	three	tnrce	three	
+2	trent/kraken	2	9	replace	year	vear	year	
+2	trent/kraken	2	28	replace	Pros.		Pr.	
+2	trent/kraken	2	30	replace	perfidious!--he	perfidious !–he	perfidious!–he	
+2	trent/kraken	2	51	replace	suck'd	sucke'd	suck’d	
+2	trent/kraken	2	51	replace	on 't.	on't.	on’t.	
+2	trent/kraken	2	55	replace	and	all	all	same
+2	trent/kraken	2	66	replace	Who	tWho	t Who	
+2	trent/kraken	2	66	replace	of it,	ofit,	of it,	
+2	trent/kraken	2	69	replace	was	vas	was	
+2	trent/kraken	2	69	replace	duke;	dute,	duke;	
+3	trent/kraken	1	22	replace	Mir.	Miz	Mir.	
+3	trent/kraken	1	42	replace	to 't.	to't.	to’t.	
+3	trent/kraken	1	44	replace	I'll	I’Il	I’Il	same
+3	trent/kraken	1	45	replace	upon 's;	upon’s;	now’s upon’s;	
+3	trent/kraken	2	24	replace	for 't!	for't!	for’t!	
+3	trent/kraken	2	26	replace	still 'tis	still’tis	still tis	
+3	trent/kraken	2	38	replace	sleeps.	slecps.	sleeps.	
+3	trent/kraken	2	44	replace	be 't	be’t	be’t	same
+3	trent/kraken	2	53	replace	sometimes	sometime	sometime	same
+4	miun/kraken	1	10	replace	Ari.	A ri.	Ari.	
+4	miun/kraken	1	13	replace	them 'bout	them’bout	them ’bout	
+4	miun/kraken	1	43	replace	yet	vet	yet	
+4	miun/kraken	2	14	replace	there	here	here	same
+4	miun/kraken	2	14	replace	my slave,	myslave,	my slave,	
+4	miun/kraken	2	17	replace	earthly	earthy	earthy	same
+4	miun/kraken	2	21	replace	rift	rist	rift	
+4	miun/kraken	2	42	replace	Pros.		Pr.	
+4	miun/kraken	2	56	replace	in 't:	in’t:	in’t	
+4	miun/kraken	2	57	replace	[Exit	IExit	IExit	same
+4	miun/kraken	2	63	replace	We'll	We ’Il	We ’Il	same
+4	miun/kraken	2	65	replace	Mir.		Mir.	
+4	miun/kraken	2	67	replace	as 'tis,	as’tis,	as ’tis,	
+5	miun/kraken	1	3	replace	[Within]	IWithinl]	(Within]	
+5	miun/kraken	1	10	replace	[Exit.	IExit.	[Exit.	
+5	miun/kraken	1	32	replace	in 't,	in’t,	in’t,	same
+5	miun/kraken	1	53	replace	would 't	would’t	would’t	same
+5	miun/kraken	1	66	replace	in 't	in’t	in’t	same
+5	miun/kraken	2	5	replace	on 't	on't	on’t	
+5	miun/kraken	2	10	replace	thou,malice?	thou, malice?	thou, malice?	same
+5	miun/kraken	2	12	replace	I'll	I’Il	I’Il	same
+5	miun/kraken	2	16	replace	[Aside]	[Asidel	(Aside]	
+5	miun/kraken	2	20	replace	ARIEL,	ARIet,	ARIEL,	
+5	miun/kraken	2	29	replace	[dispersedly]	Idisṕersedlyl.	[dispersedlyl.	
+5	miun/kraken	2	44	replace	But 'tis	But’tis	But ’tis	
+5	miun/kraken	2	62	replace	Mir.	Mix	Miz	
+5	miun/kraken	2	62	replace	is 't?	is’t?	is't?	
+5	miun/kraken	2	64	replace	But 'tis	But’tis	But ’tis	
+6	miun/kraken	1	4	replace	he 's	he’s	he ’s	
+6	miun/kraken	1	5	replace	that 's	that’s	that’s	same
+6	miun/kraken	1	12	replace	[Aside]	[Asidel	[Asidel	same
+6	miun/kraken	1	13	replace	I'll	I’Il	I’Il	same
+6	miun/kraken	1	19	replace	you	vou	you	
+6	miun/kraken	1	39	replace	[Aside]	LAsidel	(Asidel	
+6	miun/kraken	1	41	replace	now 'twere	now'twere	now ’twere	
+6	miun/kraken	1	43	delete		1		
+6	miun/kraken	1	46	replace	speaks	speakes	speaks	
+6	miun/kraken	1	51	replace	I'll	I’Il	I’ll	
+6	miun/kraken	1	54	replace	[Aside]	IAsidel	[Asidel	
+6	miun/kraken	1	69	replace	he 's	he's	he's	same
+6	miun/kraken	2	1	replace	I'll	I’Il	I’Il	same
+6	miun/kraken	2	9	replace	[Draws,	IDraws,	[Draws,	
+6	miun/kraken	2	9	replace	from	front	from	
+6	miun/kraken	2	16	delete		O		
+6	miun/kraken	2	22	replace	Mir.		Mir.	
+6	miun/kraken	2	47	replace	[Aside]	[Asidel	(Asidel	
+6	miun/kraken	2	47	replace	[To	ITo	ITo	same
+6	miun/kraken	2	50	replace	[To	ITo	(Ta	
+6	miun/kraken	2	60	replace	[Exeunt.	LExeunt.	LExeunt.	same
+7	miun/kraken	1	12	replace	he 's	he’s	he’s	same
+7	miun/kraken	1	42	replace	miss 't.	miss't.	miss't.	same
+7	miun/kraken	2	13	replace	said 'widower AEneas'	saidwidower Æneas'	said widower Æneas'	
+7	miun/kraken	2	68	replace	on 't.	on’t.	on-t.	
+8	miun/kraken	1	8	replace	Moe	More	Moe	
+8	miun/kraken	1	10	replace	fault 's	fault’s	fault’s	same
+8	miun/kraken	1	20	replace	Seb.	5eb.	Seb.	
+8	miun/kraken	1	22	replace	Gon.		Gon.	
+8	miun/kraken	1	23	replace	He'ld sow 't	He ’ld sow’t	He ’ld sow’t	same
+8	miun/kraken	1	25	replace	on 't,	on’t,	on’t,	same
+8	miun/kraken	1	26	replace	Seb.		Seb.	
+8	miun/kraken	1	38	replace	on 't.	on't.	on’t.	
+8	miun/kraken	1	46	replace	it	its	it	
+8	miun/kraken	1	48	replace	marrying 'mong	marrying'mong	marrying ’mong	
+8	miun/kraken	2	4	replace	you;	vou;	you;	
+8	miun/kraken	2	8	replace	All	IAIl	LA ll slecp	
+8	miun/kraken	2	22	replace	Alonso	LA lonso	(A lonso	
+8	miun/kraken	2	33	replace	methinks	me thinks	methinks	
+9	miun/kraken	1	4	replace	persuade,--the	persnade,–the	persuade,–the	
+9	miun/kraken	1	32	replace	my	mmy	my	
+9	miun/kraken	1	33	replace	'twixt	'wixt	’twixt	
+9	miun/kraken	2	1	replace	They'll	They’Il	They’Il	same
+9	miun/kraken	2	2	replace	They'll	They ’Il	They ’Il	same
+9	miun/kraken	2	9	replace	Ant.		Ant.	
+9	miun/kraken	2	12	replace	[They	IThey	[They	
+9	miun/kraken	2	13	replace	ARIEL,	ARIEI,	ARIEL,	
+9	miun/kraken	2	16	replace	you,	vou,	you,	
+9	miun/kraken	2	18	replace	[Sings	[ings	[Sings	
+9	miun/kraken	2	30	replace	looking?	dooking?	looking?	
+9	miun/kraken	2	34	replace	did 't	did’t	did’t	same
+9	miun/kraken	2	36	replace	Alon.	A lon.	A lon.	same
+9	miun/kraken	2	36	replace	heard	beard	keard	
+9	miun/kraken	2	40	replace	Gonzalo?	Gonzal»?	Gonzalo?	
+9	miun/kraken	2	42	replace	humming,	hurlming,	humming,	
+9	miun/kraken	2	58	replace	food.	wood.	wood	
+10	miun/kraken	1	8	replace	Their	l’heir	Their	
+10	miun/kraken	1	14	replace	I'll	I’Il	I ’Il	
+10	miun/kraken	1	34	replace	opinions;	opinion;	opinion;	same
+10	miun/kraken	1	37	replace	Alas,	Aïas,	Alas,	
+10	miun/kraken	1	39	replace	hereabouts:	he-eabout:	hereabout	
+10	miun/kraken	1	50	delete		so		
+10	miun/kraken	1	59	replace	[Drinks.	IDrinks.	IDrintes.	
+10	miun/kraken	1	62	replace	upon 's	upon’s	upon’s	same
+10	miun/kraken	2	11	replace	I'll	I’Il	I’ll	
+10	miun/kraken	2	24	replace	your	vour	your	
+10	miun/kraken	2	25	replace	you,	vou,	you,	
+10	miun/kraken	2	26	replace	your	vour	your	
+10	miun/kraken	2	27	replace	be--but	be –but	be –but	same
+10	miun/kraken	2	44	replace	I'll	I’1l	I’Il	
+10	miun/kraken	2	53	replace	moon-calf's gaberdine	moon-calf’sgaberdine	moon-calf’s gaberdine	
+10	miun/kraken	2	54	replace	Neapolitans 'scaped!	Neapolitans’scaped!	Neapolitans ’scaped	
+11	trent/kraken	1	26	replace	he'll	he ’Il	he 'll	
+11	trent/kraken	1	28	replace	I'll	I’Il	I’Il	same
+11	trent/kraken	1	39	replace	I'll	I’Il	I'Il	
+11	trent/kraken	1	49	replace	I'll	I ’Il	I’Il	
+11	trent/kraken	1	50	replace	I'll	I’Il	I’Il	same
+11	trent/kraken	1	57	replace	drunkenly]	drunkenlyl	drunkenlyl	same
+11	trent/kraken	1	68	replace	[Exeunt.	LExeunt.	LE xeunt.	
+11	trent/kraken	2	21	delete		t	t	same
+11	trent/kraken	2	23	replace	unseen.	aenseen.	uenseen.	
+11	trent/kraken	2	36	replace	I'll	I’Il	L’ll	
+12	trent/kraken	1	15	replace	so!--and	so !–and	so!–and	
+12	trent/kraken	1	40	replace	seeks	secks	seeks	
+12	trent/kraken	1	45	replace	I'll	I’Il	I’Il	same
+12	trent/kraken	1	51	replace	e'er	c’er	e’er	
+12	trent/kraken	1	59	replace	I'll	I 'll	I'll	
+12	trent/kraken	1	61	replace	[Exit.	IExit	IExit.	
+12	trent/kraken	1	67	replace	drink to	drinkto	drink to	
+12	trent/kraken	2	2	replace	there 's	there’s	there’s	same
+12	trent/kraken	2	2	replace	isle:we	isle: we	isle: we	same
+12	trent/kraken	2	39	replace	monster 's	monster’s	monster’s	same
+12	trent/kraken	2	63	replace	That's	That ’s	That’s	
+12	trent/kraken	2	64	replace	I'll	I’Il	I'll	
+12	trent/kraken	2	65	replace	Ste.	SSte.	Ste.	
+12	trent/kraken	2	67	replace	yield	vield	vield	same
+12	trent/kraken	2	67	replace	thee	thce	thee	
+13	miun/kraken	1	12	replace	I'll	I’Il	I’Il	same
+13	miun/kraken	1	14	replace	I'll	I’Il	I’ll	
+13	miun/kraken	1	22	replace	your	vour	your	
+13	miun/kraken	1	37	delete		roo		
+13	miun/kraken	1	52	replace	kill this	killthis	kill this	
+13	miun/kraken	1	53	replace	graces!--and	graces!— and	graces!— and	same
+13	miun/kraken	2	2	replace	flout 'em;	flout’em:	flout ’em;	
+13	miun/kraken	2	4	replace	That 's	That's	That’s	
+13	miun/kraken	2	5	replace	[Ariel	[A riel	[A riel	same
+13	miun/kraken	2	10	replace	take 't	take't	take’t	
+13	miun/kraken	2	20	replace	sometimes	sometime	sometime	same
+13	miun/kraken	2	36	replace	I'll	I’Il	I’Il	same
+13	miun/kraken	2	37	replace	[Exeunt.	IExeunt.	IExeunt.	same
+13	miun/kraken	2	38	replace	part	sart	part	
+13	miun/kraken	2	53	replace	he 's	he's	he’s	
+14	miun/kraken	1	1	replace	Enter several	EnteOf	Enterseveral	
+14	miun/kraken	1	3	replace	with	vith	voith	
+14	miun/kraken	1	4	replace	inviting the	invitingthe	inviting the	
+14	miun/kraken	1	10	replace	phoenix'	phœnix'	phœnix'	same
+14	miun/kraken	1	10	replace	phoenix	phœnix	phœnix	same
+14	miun/kraken	1	14	replace	I'll	I’Il	I’Il	same
+14	miun/kraken	1	14	replace	sworn 'tis	sworn’tis	sworn ’tis	
+14	miun/kraken	1	25	replace	[Aside]	[Asidel	(Asidel	
+14	miun/kraken	1	33	replace	[Aside]	LA sidel	(Asidel	
+14	miun/kraken	1	38	replace	Will 't	Will’t	Will’t	same
+14	miun/kraken	1	54	replace	ARIEL,	ARIEI,	ARIEL,	
+14	miun/kraken	1	55	replace	wings	vings	zoings	
+14	miun/kraken	1	56	replace	with	voith	voith	same
+14	miun/kraken	1	59	replace	in 't,	in’t,	in't,	
+14	miun/kraken	1	66	replace	Alon.,	HAlon.,	LAlon.,	
+14	miun/kraken	1	66	replace	swords.	sαordς.	swords.	
+14	miun/kraken	2	24	replace	soft	sost	soft	
+14	miun/kraken	2	25	replace	with	vuith	zuith	
+14	miun/kraken	2	26	replace	mows,	mozos,	moros,	
+14	miun/kraken	2	32	replace	kinds have	kinds’have	kinds have	
+14	miun/kraken	2	36	delete		or		
+14	miun/kraken	2	38	replace	Exit	IExit	(Exit	
+14	miun/kraken	2	48	replace	I'll	L’Il	I’Il	
+14	miun/kraken	2	49	replace	[Exit.	IExit.	IExit.	same
+14	miun/kraken	2	53	replace	[Exeunt	IExeunt	[Exeunt	
+14	miun/kraken	2	61	replace	[Exeunt.	IExeunt.	LExeunt.	
+15	miun/kraken	1	21	replace	you	vou	you	
+15	miun/kraken	1	30	replace	Phoebus'	Phœbus'	Phœbus'	same
+15	miun/kraken	1	34	replace	talk	tall	talk	
+15	miun/kraken	1	57	replace	I	1	1	same
+15	miun/kraken	1	57	replace	[Exit.	IExit.	IExit.	same
+15	miun/kraken	1	68	replace	[Soft	ISoft	[Sost	
+15	miun/kraken	2	2	replace	Iris.		Iris.	
+15	miun/kraken	2	27	replace	scaff	scarf	scarf	same
+15	miun/kraken	2	29	replace	Iris.		Tris.	
+15	miun/kraken	2	46	replace	return'd	returned	return’d	
+16	miun/kraken	1	14	replace	[Juno	[Tuno	[Juno	
+16	miun/kraken	1	14	replace	whisper,	vhisper,	whisper,	
+16	miun/kraken	1	15	replace	Iris	Tris	Iris	
+16	miun/kraken	1	20	replace	Iris.		Tris.	
+16	miun/kraken	1	33	replace	properly	properdy	Reagers, groperly	
+16	miun/kraken	1	39	replace	Aside.	Lside]	LAsidel	
+16	miun/kraken	1	42	replace	[To	ITo	(To	
+16	miun/kraken	1	49	replace	son,	sort,	sort,	same
+16	miun/kraken	2	27	replace	enter'd	entered	enter’d	
+16	miun/kraken	2	42	replace	with	avith	vvith	
+16	miun/kraken	2	43	replace	&c.	5c.	ec.	
+16	miun/kraken	2	46	replace	wet.	zoet.	avet.	
+16	miun/kraken	2	57	replace	Trin.		Trin.	
+16	miun/kraken	2	59	replace	I'll	I’Il	I’Il	same
+17	miun/kraken	1	17	delete		a	a	same
+17	miun/kraken	1	19	replace	I'll	I’Il	I’ll	
+17	miun/kraken	1	25	replace	he'll	he ’Il	he’Il	
+17	miun/kraken	1	36	replace	a	an	an	same
+17	miun/kraken	1	37	replace	for 't.	for't.	for’t.	
+17	miun/kraken	1	39	replace	sway	away	away	same
+17	miun/kraken	1	40	replace	on 't:	on’t:	on’t:	same
+17	miun/kraken	1	42	replace	turned	turn’d	turn’d	same
+17	miun/kraken	1	44	replace	lay to	lay-to	lay-to	same
+17	miun/kraken	1	45	replace	I'll	I’Il	I Il	
+17	miun/kraken	1	51	replace	ARIEL	ARIEI,	ARIEL	
+17	miun/kraken	1	55	replace	driven out.	drivenout.	driven out.	
+17	miun/kraken	1	67	replace	[Exeunt.	IExeunt.	[Exeunt. ACTV.	
+17	miun/kraken	2	7	replace	Ari.		Ar.	
+17	miun/kraken	2	15	replace	your	vour	your	
+17	miun/kraken	2	39	replace	purpose	parpose	purpose	
+17	miun/kraken	2	41	replace	I'll	I’Il	I’Il	same
+17	miun/kraken	2	41	replace	I'll	I’Il	l’Il	
+17	miun/kraken	2	43	replace	I'll	I’Il	I’ll	
+17	miun/kraken	2	55	replace	And 'twixt	And’twixt	And ’twixt	
+17	miun/kraken	2	58	replace	promon. tory	promontory	promontory	same
+17	miun/kraken	2	61	replace	let 'em	let’em	let’em	same
+17	miun/kraken	2	62	delete		5o		
+17	miun/kraken	2	66	replace	I'll	I’Il	I’ll	
+18	miun/kraken	1	2	replace	I'll	L’Il	I’ll	
+18	miun/kraken	1	3	replace	with	vith	AoNSo, with	
+18	miun/kraken	1	4	replace	SEBASTIAN	SE¬ BASTIAN	SE- BASTIAN	
+18	miun/kraken	1	8	replace	which	iCh	zohich	
+18	miun/kraken	1	9	replace	speaks:	speales:	speaks:	
+18	miun/kraken	1	11	replace	brain?, Now useless,	brains, Nowuseless,	brains, Now useless,	
+18	miun/kraken	1	26	replace	for 't	for't	for't	same
+18	miun/kraken	1	60	replace	your	vour	your	
+18	miun/kraken	2	5	replace	Alon.	A lon.	Alon.	
+18	miun/kraken	2	20	replace	Gon.		Gon.	
+18	miun/kraken	2	30	replace	[Aside]	[Asidel	[Asidel	same
+18	miun/kraken	2	40	replace	wreck'd upon	wreck’dupon	wreck’d upon	
+18	miun/kraken	2	43	replace	for 't,	for’t,	for’t,	same
+19	miun/kraken	1	3	replace	on 't.	on’t.	on’t.	same
+19	miun/kraken	1	13	replace	MIRANDA	MI¬ RANDA	MI¬ RANDA	same
+19	miun/kraken	1	28	replace	Alon.	A lon.	Alon.	
+19	miun/kraken	1	31	replace	Mir.		Mir.	
+19	miun/kraken	1	34	replace	in 't!	in't!	in’t!	
+19	miun/kraken	1	62	replace	Alon.	A lon.	Alon.	
+19	miun/kraken	2	9	replace	with	vvith	with	
+19	miun/kraken	2	10	replace	following.	follozving.	follozoing.	
+19	miun/kraken	2	31	replace	clapp'd under	clapp’dunder	clapp’d under	
+19	miun/kraken	2	35	replace	moe	more	moe	
+19	miun/kraken	2	43	delete		1		
+19	miun/kraken	2	53	replace	I'll	I’Il	I ’Il	
+20	miun/kraken	1	39	replace	disproportioned	disproportion'd	disproportion’d	
+20	miun/kraken	1	44	replace	seek	scek	seek	
+20	miun/kraken	2	4	replace	I'll	I’Il	I’Il	same
+20	miun/kraken	2	15	replace	life,	lise,	life,	
+20	miun/kraken	2	17	replace	I'll	I'Il	I'Il	same
+20	miun/kraken	2	20	delete		I		
+20	miun/kraken	2	23	replace	you,	vou,	you,	

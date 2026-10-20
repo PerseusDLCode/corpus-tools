@@ -105,7 +105,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 583d12b; sources: ham.xml sha256 224f247a4f2244b0; shared-lines.tsv sha256 0689fa30acaa05c5; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 44a2006; sources: ham.xml sha256 5e7954e687b61b7a; shared-lines.tsv sha256 0689fa30acaa05c5; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -4512,9 +4512,8 @@
       </p>
         <lg type="speech" xml:id="speech1.1" next="#speech1.2" part="I">
           <l>
-            <milestone unit="line" ed="Globe" n="472"/>‘The rugged Pyrrhus, like the Hyrcanian beast,’ </l>
+            <milestone unit="line" ed="Globe" n="472"/>‘The rugged Pyrrhus, like the Hyrcanian beast,’—</l>
         </lg>
-        <seg>—</seg>
         <p>
           <milestone unit="line" ed="Globe" n="473"/>it is not so:—it begins with Pyrrhus:— 
       </p>
@@ -4636,9 +4635,8 @@
         <speaker>First Play.</speaker>
         <lg type="speech" xml:id="speech1.4" next="#speech1.5" part="M">
           <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
-            <milestone unit="line" ed="Globe" n="524"/>‘But who, O, who had seen the <milestone unit="line" ed="Globe" n="525"/>mobled queen’ </l>
+            <milestone unit="line" ed="Globe" n="524"/>‘But who, O, who had seen the <milestone unit="line" ed="Globe" n="525"/>mobled queen’—</l>
         </lg>
-        <seg>—</seg>
       </sp>
       <sp who="ham.">
         <speaker>Ham.</speaker>

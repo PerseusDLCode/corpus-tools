@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.ham.globe.xml sha256 00e9590f7dfbe4cf; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.ham.globe.xml sha256 0d22a965287b7def; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 A5	A,	4.5.64	Hml. IV, 5, 64	quotation on cited line, with differences			80%	a	ha	so would I a done,	so would i ha done by yonder sun
 A7	A,	4.5.170	Hml. IV, 5, 170	quotation on cited line						you must sing adown, adown, an you call him adown-a,	you must sing adown adown

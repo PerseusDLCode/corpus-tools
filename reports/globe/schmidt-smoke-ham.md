@@ -1,6 +1,6 @@
 # Schmidt smoke test: Hamlet
 
-Sources: shakespeare.ham.globe.xml sha256 00e9590f7dfbe4cf; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.ham.globe.xml sha256 0d22a965287b7def; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Hamlet in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

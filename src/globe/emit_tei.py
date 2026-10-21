@@ -69,18 +69,19 @@ def _local(el) -> str:
     return etree.QName(el).localname
 
 
-def _hoistable(el) -> bool:
+def _hoistable(el, stay=()) -> bool:
     return (el.getparent() is not None and _local(el) not in CONTAINERS
-            and _local(el) not in ("body", "div", "sp"))
+            and _local(el) not in stay and _local(el) not in ("body", "div", "sp"))
 
 
-def insert_before(new, tok: Token) -> None:
+def insert_before(new, tok: Token, stay=()) -> None:
     """Insert `new` immediately before the token's word, hoisting out of any
-    inline element the word opens (a <stage>, a <head>)."""
+    inline element the word opens (a <stage>, a <head>) except those named in
+    `stay`."""
     node, slot, off = tok.node, tok.slot, tok.offset
     if slot == "text":
         text = node.text or ""
-        if text[:off].strip() or not _hoistable(node):
+        if text[:off].strip() or not _hoistable(node, stay):
             node.text = text[:off]
             new.tail = text[off:]
             node.insert(0, new)
@@ -90,7 +91,7 @@ def insert_before(new, tok: Token) -> None:
         while True:
             parent = node.getparent()
             opens_parent = node.getprevious() is None and not (parent.text or "").strip()
-            if opens_parent and _hoistable(parent):
+            if opens_parent and _hoistable(parent, stay):
                 node = parent
                 continue
             parent.insert(parent.index(node), new)
@@ -155,7 +156,10 @@ def apply_marks(toks: list[Token], marks: list[Mark]) -> None:
             el = etree.Element(q("lb"))
         else:
             el = etree.Comment(f" REVIEW {m.text} ")
-        insert_before(el, _target(toks, m.at))
+        tok = _target(toks, m.at)
+        # a line the title of a song opens: its milestone is the first child
+        # of the <head> (before the head, <lg> would not take it first)
+        insert_before(el, tok, stay=("head",) if m.kind == "milestone" and tok.kind == "head" else ())
 
 
 def review_comment(kind: str, detail: str) -> str:

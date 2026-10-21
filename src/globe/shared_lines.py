@@ -34,6 +34,10 @@ cuts one line in two, and one corrects a number:
   lacuna    a line the page prints without words, a row of dots the Globe
             numbers (Richard II II.1.280); first_half is the first words of
             the line above. The P4 must have a wordless <l> there too.
+  heading   the title of a song, a <head> the Globe numbers as a line (Cymbeline
+            II.3 "SONG."; the dirge in IV.2 has the same title and is not
+            counted, so no rule can say which): first_half is the first words
+            of the line above, second_half the heading's words.
   misplaced a marginal number the page prints beside a row of the line next
             to the one it numbers, or two off (Richard II III.3, 10; Much Ado
             II.3, 210, two rows low); first_half is the
@@ -83,10 +87,12 @@ TABLE = Path(__file__).resolve().parent.parent.parent / "data/globe/shared-lines
 COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line", "basis",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
-KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount", "inset")
+KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount", "inset",
+         "heading")
 # The kinds that decide where a Globe line begins, which the header counts
 # (canonical-engLit doc/agenda.org #build/header-junctions): not the numeral
-# kinds, and not a lacuna, which the page prints as a line of its own.
+# kinds, and not a lacuna or a heading, which the page prints as a line of its
+# own.
 JUNCTION_KINDS = ("shared", "turnover", "separate")
 
 

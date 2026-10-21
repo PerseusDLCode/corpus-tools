@@ -247,6 +247,33 @@ def lacuna_line(new, toks, page: int, page_rows_, r: shared_lines.Row):
     return k + 1, lineate.Line([dots], page, num=dots.num, lacuna_at=below.start)
 
 
+def heading_line(new, toks, page: int, page_rows_, r: shared_lines.Row):
+    """(index, line) for a `heading` row: the line after the one whose first
+    words are r.first_half, made of the page's one row between it and the
+    next line that is no speech but a P4 <head> and begins with r.second_half
+    ("SONG.", Cymbeline II.3, p.952)."""
+    want = tuple(r.first_half.split())
+    hits = [k for k in range(len(new) - 1) if shared_lines.line_words(new, k, toks, len(want)) == want]
+    if len(hits) != 1:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} heading after {r.first_half!r} matches {len(hits)} lines "
+            f"with a line after them on this page, expected 1")
+    k = hits[0]
+    above, below = new[k], new[k + 1]
+    order = {id(x): i for i, x in enumerate(page_rows_)}
+    lo, hi = order.get(id(above.rows[-1])), order.get(id(below.rows[0]))
+    words = tuple(r.second_half.split())
+    between = [] if lo is None or hi is None else [
+        x for x in page_rows_[lo + 1:hi]
+        if x.start is not None and not x.speech and toks[x.start].kind == "head"
+        and tuple(tokens.norm(w.t) for w in x.words if tokens.norm(w.t))[:len(words)] == words]
+    if len(between) != 1:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} heading {r.second_half!r} after {r.first_half!r}: "
+            f"{len(between)} head rows between it and the next line, expected 1")
+    return k + 1, lineate.Line([between[0]], page, num=between[0].num)
+
+
 def new_index_of_lacuna(new) -> int:
     return max(i for i, ln in enumerate(new) if ln.lacuna_at is not None)
 
@@ -299,8 +326,14 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
     for r in [r for r in rows if r.kind == "lacuna"]:
         new.insert(*lacuna_line(new, toks, page, page_rows_, r))
         applied.append((new[new_index_of_lacuna(new)], r))
+    # a heading the Globe numbers as a line: no row of speech, so it was
+    # never a line; insert it after the named line
+    for r in [r for r in rows if r.kind == "heading"]:
+        k, ln = heading_line(new, toks, page, page_rows_, r)
+        new.insert(k, ln)
+        applied.append((ln, r))
     for r in rows:
-        if r.kind in ("separate", "lacuna", "inset"):
+        if r.kind in ("separate", "lacuna", "inset", "heading"):
             continue
         if r.kind == "misplaced":
             printed = int(r.first_half)
@@ -670,6 +703,10 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                     "turnover", f"shared-lines.tsv: this line continues on a row the page sets "
                                 f"flush, not at the turnover indent; it begins "
                                 f"{row.second_half!r} (basis {row.basis}{ids}, {state})")))
+            elif row.kind == "heading":
+                out.append((ln.start, emit_tei.review_comment(
+                    "heading", f"shared-lines.tsv: the page prints this title as a row of its own "
+                               f"and the Globe numbers it as line {ln.n} (basis {row.basis}, {state})")))
             elif row.kind == "lacuna":
                 out.append((ln.start, emit_tei.review_comment(
                     "lacuna", f"shared-lines.tsv: the page prints line {ln.n} without words, a row "

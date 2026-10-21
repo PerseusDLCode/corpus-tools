@@ -1,0 +1,255 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in cym.xml (sha256 14ba1d89469e213b); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Sec. Gent. None but the king?
+1.1	30	row begins a line	30			agree	Against the Romans with Cassibelan, But
+1.1	41	row begins a line	41			agree	To his protection, calls him Posthumus
+1.1	60	row begins a line	60			agree	Were stol'n, and to this hour
+1.1	70	row begins a line	70			agree	Queen. No, be assured you shall
+1.1	80	row begins inside a line		80	81	unmapped (P4 number is the containing line)	Queen. You know the peril. I'll
+1.1	90	row begins a line	90			agree	Of angry eyes, not comforted to
+1.1	100	row begins a line	100			agree	And with mine eyes I'll drink
+1.1	120	row begins a line	120			agree	To your so infinite loss, so
+1.1	130	row begins inside a line		130	131	unmapped (P4 number is the containing line)	Imo. There cannot be a pinch
+1.1	140	row begins a line	140			agree	And did avoid a puttock. Cym.
+1.1	150	row begins inside a line		150	151	unmapped (P4 number is the containing line)	Cym. Thou foolish thing! Re-enter QUEEN.
+1.1	160	row begins inside a line		160	161	unmapped (P4 number is the containing line)	Queen. Ha! No harm, I trust,
+1.1	170	row begins a line	170			agree	Pis. On his command: he would
+1.2	40	row begins a line	40			agree	You'll go with us? First Lord.
+1.3	10	row begins a line	10			agree	Distinguish him from others, he did
+1.3	30	row begins a line	30			agree	Mine interest and his honour, or
+1.3	40	row begins inside a line		40	1	unmapped (P4 number is the containing line)	Pis. Madam, I shall. [Exeunt. SCENE
+1.4	109	row begins a line	109			agree	Let us leave here, gentlemen. Post.
+1.4	159	row begins a line	159			agree	I will have it no lay.
+1.5	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Queen. I wonder, doctor, Thou ask'st
+1.5	20	row begins a line	20			agree	We count not worth the hanging,
+1.5	40	row begins a line	40			agree	No danger in what show of
+1.5	50	row begins a line	50			agree	I'll tell thee on the instant
+1.5	70	row begins a line	70			agree	Who shall take notice of thee:
+1.6	11	row begins inside a line		11	12	unmapped (P4 number is the containing line)	Iach. Change you, madam? The worthy
+1.6	20	row begins a line	20			agree	Or, like the Parthian, I shall
+1.6	30	row begins a line	30			agree	Have words to bid you, and
+1.6	40	row begins a line	40			agree	'Twixt two such shes would chatter
+1.6	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	Imo. What, dear sir, Thus raps
+1.6	60	row begins a line	60			agree	So merry and so gamesome: he
+1.6	70	row begins a line	70			agree	By history, report, or his own
+1.6	81	row begins a line	81			agree	Whilst I am bound to wonder,
+1.6	90	row begins a line	90			agree	Iach. That others do-- I was
+1.6	99	row begins inside a line		99	100	unmapped (P4 number is the containing line)	Iach. Had I this cheek To
+1.6	110	row begins a line	110			agree	That's fed with stinking tallow; it
+1.6	120	row begins a line	120			agree	So fair, and fasten'd to an
+1.6	130	row begins a line	130			agree	As I have such a heart
+1.6	141	row begins a line	141			agree	Imo. Away! I do condemn mine
+1.6	150	row begins a line	150			agree	Of thy assault: if he shall
+1.6	160	row begins a line	160			agree	A lady to the worthiest sir
+1.6	170	row begins a line	170			agree	He hath a kind of honor
+1.6	780	row begins a line	180			disagree	Iach. My humble thanks. I had
+1.6	200	row begins a line	200			agree	Iach. Yes, I beseech; or I
+2.1	41	row begins a line	41			agree	'tis thought, one of Leonatus' friends.
+2.1	49	row begins a line	49			agree	Not easily, I think. Sec. Lord.
+2.1	61	row begins a line	61			agree	And leave eighteen. Alas, poor princess,
+2.1	69	row begins a line	69			agree	That temple, thy fair mind, that
+2.2	10	row begins a line	10			agree	Guard me, beseech ye. [Sleeps. Iachimo
+2.2	21	row begins a line	21			agree	To see the enclosed lights, now
+2.2	30	row begins a line	30			agree	Would testify, to enrich mine inventory.
+2.2	40	row begins a line	40			agree	Stronger than ever law could make:
+2.2	50	row begins a line	50			agree	Though this a heavenly angel, hell
+2.3	11	row begins a line	11			agree	Day, my lord. Clo. I would
+2.3	30	row begins a line	30			agree	Arise, arise. Clo. So, get you
+2.3	50	row begins a line	50			agree	Who lets go by no vantages
+2.3	60	row begins inside a line		60	61	unmapped (P4 number is the containing line)	Cym. A worthy fellow, Albeit he
+2.3	70	row begins inside a line		70	71	unmapped (P4 number is the containing line)	leave, ho! I know her women
+2.3	80	row begins a line	80			agree	I yet not understand the case
+2.3	90	row begins a line	90			agree	What I shall think is good?--The
+2.3	100	row begins a line	100			agree	I would not speak. I pray
+2.3	110	row begins a line	110			agree	You put me to forget a
+2.3	130	row begins a line	130			agree	Wert thou the son of Jupiter
+2.3	150	row begins a line	150			agree	I saw't this morning: confident I
+2.3	160	row begins inside a line		160	161	unmapped (P4 number is the containing line)	Clo. I'll be revenged: 'His meanest
+2.4	10	row begins a line	10			agree	O'erpays all I can do. By
+2.4	30	row begins inside a line		29	30	unmapped (P4 number is the next line)	Post. I hope the briefness of
+2.4	39	row begins inside a line		39	40	unmapped (P4 number is the containing line)	Post. All is well yet. Sparkles
+2.4	50	row begins a line	50			agree	If you keep covenant. Had I
+2.4	59	row begins a line	59			agree	You had of her pure honor
+2.4	70	row begins a line	70			agree	Proud Cleopatra, when she met her
+2.4	80	row begins inside a line		80	81	unmapped (P4 number is the containing line)	Iach. The chimney Is south the
+2.4	90	row begins a line	90			agree	Of silver, each on one foot
+2.4	100	row begins inside a line		100	101	unmapped (P4 number is the containing line)	Iach. Sir--I thank her--that: She stripped
+2.4	110	row begins a line	110			agree	Where there's another man: the vows
+2.4	130	row begins inside a line		130	131	unmapped (P4 number is the containing line)	Phi. Sir, be patient: This is
+2.4	140	row begins a line	140			agree	Another stain, as big as hell
+2.4	149	row begins inside a line		149	150	unmapped (P4 number is the containing line)	Phi. Quite besides The government of
+2.5	11	row begins a line	11			agree	A pudency so rosy the sweet
+2.5	20	row begins a line	20			agree	The woman's part in me! For
+2.5	31	row begins a line	31			agree	One vice, but of a minute
+3.1	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Queen. And, to kill the marvel,
+3.1	20	row begins a line	20			agree	With rocks unscaleable and roaring waters,
+3.1	30	row begins a line	30			agree	The famed Cassibelan, who was once
+3.1	39	row begins a line	39			agree	Cym. Son, let your mother end.
+3.1	50	row begins a line	50			agree	Which swell'd so much that it
+3.1	60	row begins a line	60			agree	Who was the first of Britain
+3.1	70	row begins a line	70			agree	Thy Cæsar knighted me; my youth
+3.2	10	row begins a line	10			agree	Thy mind to her is now
+3.2	20	row begins a line	20			agree	Black as the ink that's on
+3.2	30	row begins a line	30			agree	Let what is here contain'd relish
+3.2	39	row begins a line	39			agree	You clasp young Cupid's tables. Good
+3.2	80	row begins a line	80			agree	Imo. I see before me, man:
+3.3	10	row begins a line	10			agree	Bel. Now for our mountain sport:
+3.3	20	row begins a line	20			agree	The sharded beetle in a safer
+3.3	30	row begins a line	30			agree	If quiet life be best; sweeter
+3.3	40	row begins a line	40			agree	We are beastly, subtle as the
+3.3	50	row begins a line	50			agree	A pain that only seems to
+3.3	60	row begins a line	60			agree	Was not far off: then was
+3.3	70	row begins a line	70			agree	This rock and these demesnes have
+3.3	80	row begins a line	80			agree	These boys know little they are
+3.3	90	row begins a line	90			agree	The warlike feats I have done,
+3.3	100	row begins a line	100			agree	Thou didst unjustly banish me: whereon,
+3.4	20	row begins a line	20			agree	The most disdain'd of fortune. Imo.
+3.4	41	row begins a line	41			agree	This viperous slander enters. What cheer,
+3.4	50	row begins a line	50			agree	Thou then look'dst like a villain;
+3.4	60	row begins a line	60			agree	Imo. True honest men being heard,
+3.4	69	row begins inside a line		68	69	unmapped (P4 number is the next line)	I draw the sword myself: take
+3.4	80	row begins a line	80			agree	That cravens my weak hand. Come,
+3.4	89	row begins a line	89			agree	Stands in worse case of woe.
+3.4	101	row begins inside a line		101	102	unmapped (P4 number is the containing line)	Pis. O gracious lady, Since I
+3.4	120	row begins inside a line		120	121	unmapped (P4 number is the containing line)	Pis. Not so, neither: But if
+3.4	130	row begins inside a line		130	131	unmapped (P4 number is the containing line)	Imo. Why, good fellow, What shall
+3.4	140	row begins a line	140			agree	Are they not in Britain? I'
+3.4	150	row begins a line	150			agree	Pretty and full of view; yea,
+3.4	161	row begins a line	161			agree	Ready in gibes, quick-answer'd, saucy and
+3.4	170	row begins inside a line		170	171	unmapped (P4 number is the containing line)	Pis. First, make yourself but like
+3.4	190	row begins a line	190			agree	Your carriage from the court. My
+3.5	10	row begins a line	10			agree	Cym. My lords, you are appointed
+3.5	31	row begins a line	31			agree	Before the Roman, nor to us
+3.5	40	row begins a line	40			agree	So tender of rebukes that words
+3.5	50	row begins a line	50			agree	She wish'd me to make known;
+3.5	60	row begins a line	60			agree	Where is she gone? Haply, despair
+3.5	70	row begins a line	70			agree	Clo. I love and hate her:
+3.5	79	row begins a line	79			agree	To be revenged upon her. For
+3.5	90	row begins a line	90			agree	How can she be with him?
+3.5	99	row begins a line	99			agree	This paper is the history of
+3.6	10	row begins a line	10			agree	That have afflictions on them, knowing
+3.6	20	row begins a line	20			agree	Ere clean it o'erthrow nature, makes
+3.6	31	row begins a line	31			agree	The sweat of industry would dry
+3.6	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	Bel. [Looking into the cave] Stay;
+3.6	50	row begins a line	50			agree	Gold strew'd i' the floor. Here's
+3.6	60	row begins a line	60			agree	Bel. What's your name? Imo. Fidele,
+3.6	70	row begins a line	70			agree	I should woo hard but be
+3.6	80	row begins inside a line		80	81	unmapped (P4 number is the containing line)	Arv. Or I, whate'er it be,
+3.6	90	row begins a line	90			agree	Boys, we'll go dress our hunt.
+3.7	9	row begins a line	9			agree	For this immediate levy, he commends
+4.2	10	row begins a line	10			agree	Stick to your journal course: the
+4.2	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Arv. Brother, farewell. Imo. I wish
+4.2	40	row begins a line	40			agree	Dishonestly afflicted, but yet honest. Arv.
+4.2	51	row begins a line	51			agree	And he her dieter. Arv. Nobly
+4.2	70	row begins inside a line		70	71	unmapped (P4 number is the containing line)	Clo. Soft! What are you That
+4.2	80	row begins inside a line		80	81	unmapped (P4 number is the containing line)	Clo. Thou villain base, Know'st me
+4.2	90	row begins a line	90			agree	I cannot tremble at it: were
+4.2	100	row begins a line	100			agree	Yield, rustic mountaineer. Exeunt, fighting. Re-enter
+4.2	101	row begins a line	101			agree	Bel. No companies abroad? Arv. None
+4.2	110	row begins a line	110			agree	I mean, to man, he had
+4.2	121	row begins a line	121			agree	With his own single hand he'ld
+4.2	130	row begins inside a line		130	131	unmapped (P4 number is the containing line)	Bel. No single soul Can we
+4.2	141	row begins a line	141			agree	He'ld fetch us in; yet is't
+4.2	150	row begins a line	150			agree	Which he did wave against my
+4.2	160	row begins a line	160			agree	That possible strength might meet, would
+4.2	169	row begins inside a line		169	170	unmapped (P4 number is the containing line)	Bel. O thou goddess, Thou divine
+4.2	172	row begins a line	172			agree	As zephyrs blowing below the violet,
+4.2	190	row begins a line	190			agree	Gui. What does he mean? since
+4.2	201	row begins inside a line		201	202	unmapped (P4 number is the containing line)	Gui. O sweetest, fairest lily! My
+4.2	211	row begins a line	211			agree	Not as death's dart, being laugh'd
+4.2	221	row begins a line	221			agree	The flower that's like thy face,
+4.2	231	row begins a line	231			agree	Which is so serious. Let us
+4.2	241	row begins a line	241			agree	For notes of sorrow out of
+4.2	249	row begins a line	249			agree	Of place 'tween high and low.
+4.2	260	row begins a line	260			agree	Thou thy worldly task hast done,
+4.2	270	row begins a line	270			agree	Gui. Fear no more the lightning-flash,
+4.2	280	row begins a line	280			agree	Both. Quiet consummation have; And renowned
+4.2	310	row begins a line	310			agree	His foot Mercurial; his Martial thigh;
+4.2	320	row begins a line	320			agree	Struck the main-top! O Posthumus! alas,
+4.2	331	row begins a line	331			agree	That we the horrider may seem
+4.2	340	row begins a line	340			agree	Under the conduct of bold Iachimo,
+4.2	350	row begins a line	350			agree	There vanish'd in the sunbeams: which
+4.2	360	row begins a line	360			agree	Luc. He'll then instruct us of
+4.2	380	row begins a line	380			agree	Luc. Thou dost approve thyself the
+4.2	390	row begins a line	390			agree	With wild wood-leaves and weeds I
+4.2	401	row begins a line	401			agree	By thee to us, and he
+4.3	20	row begins a line	20			agree	There wants no diligence in seeking
+4.3	30	row begins a line	30			agree	Than what you hear of: come
+4.3	40	row begins a line	40			agree	What is betid to Cloten; but
+4.4	10	row begins a line	10			agree	Of Cloten's death--we being not known,
+4.4	21	row begins inside a line		21	22	unmapped (P4 number is the containing line)	Bel. O, I am known Of
+4.4	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Gui. Than be so Better to
+4.4	40	row begins a line	40			agree	Nor iron on his heel! I
+4.4	50	row begins a line	50			agree	My crack'd one to more care.
+5.1	10	row begins a line	10			agree	The noble Imogen to repent and
+5.1	21	row begins a line	21			agree	I'll give no wound to thee.
+5.1	30	row begins a line	30			agree	More valor in me than my
+5.2	10	row begins a line	10			agree	Is that we scarce are men
+5.3	10	row begins a line	10			agree	Some mortally, some slightly touch'd, some
+5.3	20	row begins a line	20			agree	The country base than to commit
+5.3	30	row begins a line	30			agree	For three performers are the file
+5.3	40	row begins a line	40			agree	A stop i' the chaser, a
+5.3	51	row begins a line	51			agree	The mortal bugs o' the field.
+5.3	61	row begins a line	61			agree	For if he'll do as he
+5.3	70	row begins a line	70			agree	Nor feel him where he struck:
+5.3	80	row begins a line	80			agree	Britons must take. For me, my
+5.3	90	row begins a line	90			agree	Who had not now been drooping
+5.4	10	row begins a line	10			agree	The penitent instrument to pick that
+5.4	20	row begins a line	20			agree	A sixth, a tenth, letting them
+5.4	31	row begins a line	31			agree	Thy spite on mortal flies: With
+5.4	40	row begins a line	40			agree	Thou orphans' father art, Thou shouldst
+5.4	51	row begins a line	51			agree	As great Sicilius' heir. First Bro.
+5.4	60	row begins a line	59			disagree	To be exiled, and thrown From
+5.4	70	row begins a line	70			agree	Our parents and us twain, That
+5.4	80	row begins a line	80			agree	Being all to dolours turn'd? Sici.
+5.4	90	row begins a line	90			agree	Against thy deity. Both Bro. Help,
+5.4	99	row begins a line	99			agree	Be not with mortal accidents opprest;
+5.4	111	row begins a line	111			agree	And so, away: no further with
+5.4	120	row begins a line	120			agree	Sici. The marble pavement closes, he
+5.4	130	row begins a line	130			agree	Many dream not to find, neither
+5.4	150	row begins a line	150			agree	The action of my life is
+5.5	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Cym. No tidings of him? Pis.
+5.5	20	row begins a line	20			agree	Arise my knights o' the battle;
+5.5	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	Cym. She alone knew this; And,
+5.5	49	row begins a line	49			agree	Cor. More, sir, and worse. She
+5.5	60	row begins a line	60			agree	The evils she hatch'd were not
+5.5	70	row begins a line	70			agree	The Britons have razed out, though
+5.5	80	row begins a line	80			agree	May be call'd ransom, let it
+5.5	90	row begins a line	90			agree	Cannot deny; he hath done no
+5.5	100	row begins inside a line		100	101	unmapped (P4 number is the containing line)	Imo. I humbly thank your highness.
+5.5	110	row begins a line	110			agree	What's best to ask. Know'st him
+5.5	120	row begins inside a line		120	121	unmapped (P4 number is the containing line)	Arv. One sand another Not more
+5.5	130	row begins inside a line		130	131	unmapped (P4 number is the containing line)	step you forth; Give answer to
+5.5	140	row begins inside a line		140	141	unmapped (P4 number is the containing line)	Cym. How! me? Iach. I am
+5.5	150	row begins a line	150			agree	Cym. My daughter! what of her?
+5.5	161	row begins a line	161			agree	Hearing us praise our loves of
+5.5	170	row begins a line	170			agree	Unless thou wouldst grieve quickly. This
+5.5	180	row begins a line	180			agree	He spake of her, as Dian
+5.5	190	row begins a line	190			agree	Of Phoebus' wheel, and might so
+5.5	201	row begins a line	201			agree	To make the noble Leonatus mad,
+5.5	220	row begins a line	220			agree	A sacrilegious thief, to do't: the
+5.5	230	row begins a line	230			agree	Mine and your mistress! O, my
+5.5	240	row begins a line	240			agree	The gods throw stones of sulphur
+5.5	250	row begins a line	250			agree	To temper poisons for her, still
+5.5	260	row begins inside a line		260	261	unmapped (P4 number is the containing line)	Gui. This is, sure, Fidele. Imo.
+5.5	270	row begins inside a line		270	271	unmapped (P4 number is the containing line)	Imo. I am sorry for 't,
+5.5	280	row begins a line	280			agree	Then in my pocket; which directed
+5.5	290	row begins inside a line		290	291	unmapped (P4 number is the containing line)	Gui. I have spoke it, and
+5.5	300	row begins inside a line		300	301	unmapped (P4 number is the containing line)	Cym. Bind the offender, And take
+5.5	310	row begins inside a line		310	311	unmapped (P4 number is the containing line)	Bel. We will die all three:
+5.5	320	row begins inside a line		320	321	unmapped (P4 number is the containing line)	Cym. Take him hence: The whole
+5.5	330	row begins a line	330			agree	They are the issue of your
+5.5	339	row begins a line	339			agree	Could put into them; my breeding
+5.5	350	row begins a line	350			agree	The benediction of these covering heavens
+5.5	359	row begins a line	359			agree	This gentleman, my Cadwal, Arviragus, Your
+5.5	380	row begins a line	380			agree	Continued so, until we thought he
+5.5	390	row begins a line	390			agree	And all the other by-dependencies, From
+5.5	400	row begins a line	400			agree	Imo. You are my father too,
+5.5	409	row begins a line	409			agree	In poor beseeming; 'twas a fitment
+5.5	420	row begins inside a line		420	421	unmapped (P4 number is the containing line)	Cym. Nobly doom'd! We'll learn our
+5.5	431	row begins a line	431			agree	Is so from sense in hardness,
+5.5	450	row begins a line	450			agree	Answering the letter of the oracle,
+5.5	460	row begins a line	460			agree	Although the victor, we submit to
+5.5	470	row begins a line	470			agree	Is full accomplish'd; for the Roman
+5.5	480	row begins a line	480			agree	A Roman and a British ensign

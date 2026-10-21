@@ -1,0 +1,21 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in h8.xml (sha256 227053da8fa55e0d); not the shell's milestones or <l n>
+# transcribed anchors: 245; mapped (the row begins a line): 208; of those, carrying the same number: 195
+# in scenes that pass the gate: 208 mapped; agreeing: 195
+# unmapped (the row begins inside a line): 37; the P4's number is the containing line's for 35, the next line's for 0, neither for 2
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+2.2	81	disagree	80				I would your grace would give
+2.4	11	disagree	10				Scribe. Say, Katharine Queen of England,
+2.4	141	disagree	142				And, like her true nobility, she
+2.4	161	disagree	162				But will you be more justified?
+3.2	400	disagree	401				Crom. That Cranmer is return'd with
+3.2	411	disagree	412				Or gild again the noble troops
+3.2	421	unmapped (neither)		422	423		Crom. O my lord, Must I,
+3.2	450	disagree	451				And,--prithee, lead me in: There take
+5.1	90	unmapped (neither)		91	92		Cran. [Kneeling] It is my duty
+5.1	111	disagree	112				And corn shall fly asunder: for,
+5.1	120	disagree	121				Yourself and your accusers; and to
+5.1	141	disagree	142				Protect mine innocence, or I fall
+5.1	150	disagree	151				Will render you no remedy, this
+5.1	159	disagree	161				Will make my boldness manners. Now,
+5.1	171	disagree	173				Old L. An hundred marks by

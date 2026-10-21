@@ -1,0 +1,411 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+592	miun/kraken	1	37	replace	I'll	I’Il	I’Il	same
+592	miun/kraken	1	54	replace	follow'd	follow d	follow’d	
+592	miun/kraken	1	57	replace	I'll	I’Il	I’ll	
+592	miun/kraken	2	1	replace	ACT I	THE EIGHTH. PERSONÆ. GRIFFITH, Gentleman-usher to Queen Katharine. Three Gentlemen. DOCTOR Physician to the Garter King-at-Arms. Surveyor to the Duke of Buckingham. BRANDON, and a Sergeant-at-Arms. Door-keeper of the Council-chamber. Porter, and his Page to Gardiner. A QUEEN KATHARINE, wife to Henry, afterwards divorced. BULLEN, her Maid of Honour, afterwards An old Lady, friend to PATIENCE, woman to Queen Katharine. Several Lords and Ladies in the Dumb Shows; Women attending upon the Queen; Scribes, Officers, Guards, and other Attendants. SCENE: London; Westminster; Kimbolton. ACTI.	THE EIGHTH. PERSONÆ. GRIFFITH, Gentleman-usher to Queen Katharine. Three Gentlemen. DOCTOR BUTTS, Physician to the King. Garter King-at-Arms. Surveyor to the Duke of Buckingham. BRANDON, and a Sergeant-at-Arms. Door-keeper of the Council-chamber. Porter, and his Man. Page to Gardiner. A Crier. QUEEN KATHARINE, wife to King Henry, afterwards divorced. ANNE BULLEN, her Maid of Honour, afterwards Queen. An old Lady, friend to Anne Bullen. PATIENCE, woman to Queen Katharine. Several Lords and Ladies in the Dumb Shows; Women attending upon the Queen; Scribes, Officers, Guards, and other Attendants. Spirits. SCENE: London; Westminster; Kimbolton. ACT I.	
+592	miun/kraken	2	27	replace	DUKE	DUrE	Duxe	
+592	miun/kraken	2	27	replace	NORFOLK	NORFOLE	NORFOLK	
+592	miun/kraken	2	28	replace	DUKE	DURE	DURE	same
+592	miun/kraken	2	54	replace	former	sormer	former	
+593	miun/kraken	2	5	replace	Must	tMust	Must	
+593	miun/kraken	2	5	replace	the	he	he	same
+593	miun/kraken	2	11	replace	on 'em	on’em	on’em	same
+593	miun/kraken	2	29	replace	ambassador is	ambassadoris	ambassador is	
+593	miun/kraken	2	35	delete		roo		
+593	miun/kraken	2	45	replace	Math	Hath	Hath	same
+593	miun/kraken	2	48	replace	You'll	You’Il	You’ll	
+593	miun/kraken	2	51	replace	before	betore	before	
+593	miun/kraken	2	52	replace	certain of	certainof	certainof	same
+593	miun/kraken	2	52	replace	two	tavo	tzvo	
+593	miun/kraken	2	53	replace	with papers.	vvith pagers.	zoith papers.	
+593	miun/kraken	2	54	replace	fixeth	Jixeth	fixeth	
+593	miun/kraken	2	54	replace	BUCKINGHAM	BUCRING¬ HAM	BUCKING¬ HAM	
+594	miun/kraken	1	11	replace	I'll	I’Il	I’ll	
+594	miun/kraken	1	14	replace	What 'tis	What’tis	What ’tis	
+594	miun/kraken	1	20	replace	I'll	I'Il	I’Il	
+594	miun/kraken	1	29	replace	That	The	The	same
+594	miun/kraken	1	44	replace	I'll	I’Il	I’Il	same
+594	miun/kraken	1	67	replace	treason,--Charles	treason,— Charles	treason, Charles	
+594	miun/kraken	1	69	replace	For 'twas	For'twas	For ’twas	
+594	miun/kraken	2	27	replace	I	1	I	
+594	miun/kraken	2	41	replace	I obey.		I obey.	
+594	miun/kraken	2	44	replace	[To	1T°	(To	
+594	miun/kraken	2	56	replace	Buck.		Buck.	
+594	miun/kraken	2	57	replace	pot:	plot:	plot:	same
+594	miun/kraken	2	59	replace	Buck.		Buck.	
+595	trent/kraken	1	9	replace	confederacy,	confedera cy,	confederacy,	
+595	trent/kraken	1	12	replace	I'll	I’Il	I’ll	
+595	trent/kraken	1	17	replace	DUKE	DURE	DURE	same
+595	trent/kraken	1	17	replace	SUFFOLK:	FOLK:	SUE¬ FOLK	
+595	trent/kraken	1	28	replace	Q.	O.	O.	same
+595	trent/kraken	1	34	replace	Q.	O.	O.	same
+596	trent/kraken	1	6	replace	[To	ITo	ITo	same
+596	trent/kraken	1	29	replace	enroll'd 'mongst	enroll’d’mongst	enroll’d’mongst	same
+596	trent/kraken	1	45	replace	Surv.		Surv.	
+596	trent/kraken	1	47	replace	he'll	he ’Il	he ’ll	
+596	trent/kraken	1	48	replace	make	malze	make	
+596	trent/kraken	1	66	replace	Surv.		Surv.	
+596	trent/kraken	2	12	replace	Spoke	Spokse	Spoke	
+596	trent/kraken	2	34	replace	I'll	I’Il	I’Il	same
+596	trent/kraken	2	62	replace	in's	in ’s	in ’s	same
+597	miun/kraken	1	8	replace	on's	on ’s	on ’s	same
+597	miun/kraken	1	17	replace	seek 't	seek't	seek ’t	
+597	miun/kraken	1	18	replace	Exeunt.	LExeunt.	(Exeunt.	
+597	miun/kraken	1	27	replace	let 'em	let’em	let ’em	
+597	miun/kraken	1	39	replace	saw 'em	saw’em	saw ’em	
+597	miun/kraken	1	43	replace	they've	they ve	they’ve	
+597	miun/kraken	2	6	replace	laugh'd at.	laugh’dat.	laugh’d at.	
+597	miun/kraken	2	10	replace	Cham.		Cham.	
+597	miun/kraken	2	19	replace	there's	there ’s	there’s	
+597	miun/kraken	2	22	replace	by 'r	by’r	by’r	same
+597	miun/kraken	2	35	replace	I'll	I’Il	I’Il	same
+597	miun/kraken	2	56	replace	Exeunt.	LExeunt.	LExeunt.	same
+597	miun/kraken	2	57	replace	York	Vorɇ	Vork	
+598	miun/kraken	1	12	delete		1o	1o	same
+598	miun/kraken	1	26	replace	I'll	I’Il	I’Il	same
+598	miun/kraken	1	29	replace	keep 'em	keep’em	keep’em	same
+598	miun/kraken	1	54	replace	Drinks.	IDrinkes.	IDrinks.	
+598	miun/kraken	2	2	replace	Here 's	Here’s	Here’s	same
+598	miun/kraken	2	3	replace	For 'tis	For’tis	For ’tis	
+598	miun/kraken	2	6	replace	Drum	IDrum	(Drum	
+598	miun/kraken	2	16	replace	they've	they ’ve	they ’ve	same
+598	miun/kraken	2	23	replace	receive 'em	receive’em	receive ’em	
+598	miun/kraken	2	23	replace	conduct 'em	conduct’em	conduct’em	same
+598	miun/kraken	2	26	replace	Exit	IExit	Exit	
+598	miun/kraken	2	26	replace	All	AIl	All	
+598	miun/kraken	2	28	replace	we'll	we’Il	we’Il	same
+598	miun/kraken	2	47	replace	with 'em.	with’em.	with’em.	same
+598	miun/kraken	2	50	replace	pay 'em	pay’em	pay’em	same
+598	miun/kraken	2	60	replace	tell 'em	tell’em	tell’em	same
+598	miun/kraken	2	61	replace	amongst 'em,	amongst’em,	amongst’em,	same
+598	miun/kraken	2	66	replace	Whispers	I'hispers	(Whispers	
+599	miun/kraken	1	6	replace	I'll	I’Il	I’Il	same
+599	miun/kraken	1	10	replace	Unmasking.	UUnmaskeing.	LUnmasking.	
+599	miun/kraken	1	12	replace	I'll	I’Il	I’Il	same
+599	miun/kraken	1	42	replace	Exeunt with	IE xeunt voith	LExeunt with	
+599	miun/kraken	1	43	replace	ACT II	ACTII.	ACTII.	same
+599	miun/kraken	1	44	replace	Westminster.	Westminstex:	Westminster.	
+599	miun/kraken	1	50	replace	I'll	I’Il	I’ll	
+599	miun/kraken	1	60	replace	upon 't.	upon't.	upon't.	same
+599	miun/kraken	1	64	replace	I'll	I’Il	I’Il	same
+599	miun/kraken	2	57	replace	tipstaves	tisstaves	tibstaves	
+599	miun/kraken	2	59	replace	ac- companied	accompanied	accompanied vith	
+599	miun/kraken	2	59	replace	NICHOLAS	NICH¬ OLAS	NICH¬ OLAS	same
+599	miun/kraken	2	62	replace	Let's stand	Let’sstand	Let’sstandclose,	
+600	miun/kraken	1	1	delete		60)	C0	
+600	miun/kraken	1	5	replace	sought it	soughtit	soughtit	same
+600	miun/kraken	1	8	replace	Yet	Vet	Vet	same
+600	miun/kraken	1	10	replace	against 'em.	against’em.	against ’em.	
+600	miun/kraken	1	42	replace	your	vour	your	
+600	miun/kraken	1	56	replace	seal it;	sealit;	sealit;	same
+600	miun/kraken	1	57	replace	make 'em	make’em	make ’em	
+600	miun/kraken	1	58	replace	for 't.	for't.	for’t.	
+600	miun/kraken	1	61	replace	Flying	Flving	Flying	
+600	miun/kraken	1	62	replace	betray'd,	betray d,	betray d,	same
+600	miun/kraken	2	5	replace	Yet	Vet	Yet	
+600	miun/kraken	2	24	replace	Exeunt	LExeunt	[Exeunt	
+600	miun/kraken	2	52	replace	at it.	at’it.	at it.	
+600	miun/kraken	2	55	replace	too,	tod,	too,	
+600	miun/kraken	2	62	replace	mark:	marke:	mark:	
+600	miun/kraken	2	63	replace	is 't	is’t	is’t	same
+601	miun/kraken	1	4	replace	Cham. 'My	Cham.My	Cham. “My	
+601	miun/kraken	1	16	replace	DUKES	DURES	DUKES	
+601	miun/kraken	1	17	replace	NORFOLK	NORFOLE	NORFOLK	
+601	miun/kraken	1	34	replace	he'll	he ’Il	he’ll	
+601	miun/kraken	1	57	replace	for 't:	for’t:	for’t:	same
+601	miun/kraken	1	57	delete		4o	do	
+601	miun/kraken	2	6	replace	I'll	I’Il	I’Il	same
+601	miun/kraken	2	15	replace	you'll	you ’Il	you’ll	
+601	miun/kraken	2	18	replace	You'll	You’Il	You ’Il	
+601	miun/kraken	2	21	replace	Exit	IExit	[Exit	
+601	miun/kraken	2	39	replace	with	wvith	vvith	
+601	miun/kraken	2	44	replace	[To Camp.]	ITo Camp.1	(To Camp.] You ’re	
+601	miun/kraken	2	47	replace	[To	ITo	ITo W’ol.]	
+601	miun/kraken	2	53	replace	[To	ITo	[To	
+601	miun/kraken	2	56	replace	[Aside	Lside	(Aside	
+601	miun/kraken	2	59	replace	[Aside	LAside	[Aside	
+601	miun/kraken	2	61	replace	[Aside	IAside	(Aside	
+601	miun/kraken	2	62	replace	Exeunt	IExeunt	LE-veunt	
+601	miun/kraken	2	67	replace	envy reach	envyreach	envy reach vou?	
+602	miun/kraken	1	34	replace	[Exit	IExit	(Exit	
+602	miun/kraken	1	36	replace	Card.]	Gard.]	Gard.]	same
+602	miun/kraken	1	37	replace	must	much	much	same
+602	miun/kraken	1	39	replace	Gar.		Gard.	
+602	miun/kraken	1	66	replace	griped	grip'd	grip’d	
+602	miun/kraken	2	6	replace	So	Se	Se	same
+602	miun/kraken	2	46	replace	Old L.		Old L.	
+602	miun/kraken	2	55	replace	your	vour	your	
+603	miun/kraken	1	54	replace	I'll	I'Il	I'll	
+603	miun/kraken	1	60	replace	And	Am	Am	same
+603	miun/kraken	1	63	replace	fresh fish	fresh-fish	fresh-fish	same
+603	miun/kraken	2	18	replace	on 't.	on’t.	on’t.	same
+603	miun/kraken	2	25	replace	[Exeunt.	LExeunt.	IE xeunt.	
+603	miun/kraken	2	27	replace	two	tgo	tavo	
+603	miun/kraken	2	31	replace	ROCHESTER,	Ro¬ CHESTER,	RO¬ CHESTER,	
+603	miun/kraken	2	32	replace	with	vith	with	
+603	miun/kraken	2	34	replace	with	voith	vith	
+603	miun/kraken	2	38	replace	two	tao	two	
+603	miun/kraken	2	39	replace	two	tvo	tavo	
+603	miun/kraken	2	39	replace	silver	siluer	silver	
+603	miun/kraken	2	40	replace	two	tao	two	
+603	miun/kraken	2	41	replace	with	vith	voith	
+603	miun/kraken	2	41	replace	sword	svord	sword	
+603	miun/kraken	2	42	replace	cloth	ctoth	cloth	
+603	miun/kraken	2	42	replace	two	tavo	t7oo	
+603	miun/kraken	2	57	replace	Be 't	Be’t	Be’t	same
+603	miun/kraken	2	65	replace	The	IThe	[The	
+603	miun/kraken	2	65	replace	answer,	answver,	ansaver,	
+604	trent/kraken	1	67	replace	Q.	O.	O. Katà.	
+604	trent/kraken	1	69	replace	Wol.		spealz. Wol.	
+604	trent/kraken	2	39	replace	Remove	Remoye	Remove	
+605	miun/kraken	1	2	replace	Q.	O.	Q.	
+605	miun/kraken	1	10	replace	ther	their	their	same
+605	miun/kraken	1	11	replace	Exeunt	IExeunt	LExeunt	
+605	miun/kraken	1	20	replace	she 's	she’s	she’s	same
+605	miun/kraken	1	32	replace	on 't?	on’t?	on’t?	same
+605	miun/kraken	1	40	replace	from 't.	from’t.	from’t.	same
+605	miun/kraken	1	46	replace	never	neyer	never	
+605	miun/kraken	2	10	replace	to 't	to’t	to’t	same
+605	miun/kraken	2	62	replace	[Aside]	IAsidel	[Asidel	
+605	miun/kraken	2	69	replace	[Exeunt	LExeunt	LE xeunt	
+606	miun/kraken	1	3	delete		Enter	Enter	same
+606	miun/kraken	1	4	replace	Q.	O.	Q.	
+606	miun/kraken	1	10	replace	As	And	And	same
+606	miun/kraken	1	28	replace	Q.	O.	O.	same
+606	miun/kraken	1	39	replace	your	vour	vour	same
+606	miun/kraken	1	40	replace	Q.	O.	Q.	
+606	miun/kraken	1	49	replace	Q.	O.	O.	same
+606	miun/kraken	1	63	replace	Q.	O.	Q.	
+606	miun/kraken	2	31	replace	Q.	O.	Q.	
+606	miun/kraken	2	31	replace	[Aside]	(Asidel	LAsidel	
+606	miun/kraken	2	32	replace	you	vou	vou	same
+606	miun/kraken	2	37	replace	lfe,	life,	life,	same
+606	miun/kraken	2	43	replace	greatness,--good	greatness,– good	greatness,–good	
+606	miun/kraken	2	49	replace	Q. Kath.	O.	O. Kath.	
+606	miun/kraken	2	58	delete		9o		
+606	miun/kraken	2	62	replace	Q.	O.	Q.	
+606	miun/kraken	2	63	replace	your	vour	your	
+606	miun/kraken	2	68	replace	You'll	You ’Il	You’ll	
+607	miun/kraken	1	1	replace	both,--my	my	both,— my	
+607	miun/kraken	1	7	replace	Q.	O.	Q.	
+607	miun/kraken	1	10	replace	nollow	hollow	hollow	same
+607	miun/kraken	1	22	replace	Q.	O.	Q.	
+607	miun/kraken	1	27	replace	ye	ve	ye	
+607	miun/kraken	1	36	replace	Q.	O.	Q.	
+607	miun/kraken	1	59	replace	Q.	O.	Q.	
+607	miun/kraken	2	1	replace	flourished,	flourish’d,	flourish’d,	same
+607	miun/kraken	2	4	delete		but	but	same
+607	miun/kraken	2	42	replace	[Exeunt.	IExeunt.	LExeunt.	
+607	miun/kraken	2	45	replace	DUKE	DURE	DUxE	
+607	miun/kraken	2	45	replace	NORFOLK,	NORFOLE,	NORFOLK,	
+607	miun/kraken	2	45	replace	DUKE	DUxE	DUxE	same
+607	miun/kraken	2	46	replace	SUFFOLK,	SUFFOLE,	SUFFOLK,	
+607	miun/kraken	2	50	replace	you	vou	you	
+608	miun/kraken	1	1	replace	witchcraft	witcheraft	witcheraft	same
+608	miun/kraken	1	2	replace	in's	in ’s	in ’s	same
+608	miun/kraken	1	42	replace	amend to 't!	amen to't!	amen to't!	same
+608	miun/kraken	1	48	replace	from her	fromher so	from her so	
+608	miun/kraken	1	51	replace	Sur.		Sur.	
+608	miun/kraken	2	30	replace	[Aside]	¡Asidel	(Asidel	
+608	miun/kraken	2	32	replace	I'll	I’Il	I’Il	same
+608	miun/kraken	2	34	replace	we'll	we ’Il	we ’Il	same
+608	miun/kraken	2	40	replace	Sur.		Sur.	
+608	miun/kraken	2	42	replace	gentle, woman,	gentlewoman,	gentlewoman,	same
+608	miun/kraken	2	50	delete		roo		
+608	miun/kraken	2	58	replace	on's	on 's	on ’s	
+608	miun/kraken	2	66	replace	thrift,	thrist,	thrift,	
+609	miun/kraken	1	32	replace	Lowell,	Lovell,	Lovell,	same
+609	miun/kraken	1	51	replace	tendance	tendence	tendance	
+609	miun/kraken	1	56	replace	saying!	saving!	saying!	
+609	miun/kraken	1	64	replace	Employ'd	Employ' d	Employ’ d’you	
+609	miun/kraken	1	67	replace	[Aside]	(Asidel	[Asidel	
+609	miun/kraken	1	68	replace	[Aside]	IAsidel	Lsidel	
+609	miun/kraken	2	14	replace	filled	filed	filed	same
+609	miun/kraken	2	15	replace	ever more	evermore	evermore	same
+609	miun/kraken	2	38	replace	tthat	t that	t that	same
+609	miun/kraken	2	54	replace	Exit King, frowning	IExit Ring, frowmning	LExit King, frozoning	
+609	miun/kraken	2	54	replace	Cardinal	Cardina!	Cardinal	
+609	miun/kraken	2	55	replace	throng	turong	throng aster	
+609	miun/kraken	2	62	replace	makes	makces	makes	
+609	miun/kraken	2	68	replace	popedome,	popedom,	popedom,	same
+610	miun/kraken	1	5	replace	know 'twill	know’twill	know ’twill	
+610	miun/kraken	1	18	replace	SUFFOLK,	SUFFOLE,	SUFFOLK,	
+610	miun/kraken	2	6	replace	lord,	tord,	lord,	
+610	miun/kraken	2	22	replace	goodness	gcodness	goodness	
+610	miun/kraken	2	36	replace	I'll	I’Il	I ’Il	
+610	miun/kraken	2	46	replace	Wol.	WVol.	Wol.	
+610	miun/kraken	2	53	replace	You'll	You’Il	You’Il	same
+610	miun/kraken	2	57	replace	those	tnose	those	
+611	miun/kraken	1	16	replace	are;	ares	are;	
+611	miun/kraken	1	20	replace	far! 'tis	far!'tis	far! ’tis	
+611	miun/kraken	1	29	replace	praemunire,	præmunire,	præmunire,	same
+611	miun/kraken	1	37	replace	to us,	tosus,	to us,	
+611	miun/kraken	1	58	replace	wretch'd	wretched	wretched	same
+611	miun/kraken	2	4	replace	Crom.		Crom.	
+611	miun/kraken	2	15	replace	burden,	burthen,	burthen,	same
+611	miun/kraken	2	15	replace	burden	burthen	burthen	same
+611	miun/kraken	2	35	replace	on 'em!	on’em!	on ’em	
+611	miun/kraken	2	40	replace	Crom.		Crom.	
+611	miun/kraken	2	55	replace	have told	have-told	have told	
+611	miun/kraken	2	64	replace	forgo	forego	forgo	
+611	miun/kraken	2	65	replace	so true	so-true	so true	
+612	miun/kraken	1	39	replace	I	T.	I.	
+612	miun/kraken	1	39	replace	Westminster.	IVestminster.	Westminster.	
+612	miun/kraken	1	41	replace	First	Finst	First	
+612	miun/kraken	1	54	replace	let 'em	let’em	let ’em	
+612	miun/kraken	1	66	replace	Suffolk	Suffolle	Suffolk	
+612	miun/kraken	1	66	replace	claims	daims	claims	
+612	miun/kraken	2	24	replace	Hautboys.	HHautboys.	Hautboys.	
+612	miun/kraken	2	28	replace	with	vith	zvith	
+612	miun/kraken	2	35	replace	With	Witu	IVith	
+612	miun/kraken	2	37	replace	with	vith	voith	
+612	miun/kraken	2	37	replace	crowned with	croumed vith	crormed with	
+612	miun/kraken	2	39	replace	robe	rode	robe	
+612	miun/kraken	2	39	replace	his	nis	his	
+612	miun/kraken	2	40	replace	white	volite	vhite	
+612	miun/kraken	2	42	replace	with	vvith	with	
+612	miun/kraken	2	44	replace	of SS.	ofSS.	ofSS.	same
+612	miun/kraken	2	45	replace	Cinque- ports;	Cinque-ports;	Cinque-ports;	same
+612	miun/kraken	2	46	replace	in her hair	ix behair	in her hair	
+612	miun/kraken	2	47	replace	with	vith	vith	same
+612	miun/kraken	2	47	replace	crowned.	crouned.	crozned.	
+612	miun/kraken	2	50	replace	NORFOLK,	NorroLx,	Norrolk,	
+612	miun/kraken	2	51	replace	wrought with flowers,	vrought vith florers,	arought voith fowvers,	
+612	miun/kraken	2	54	replace	without flowers.	vuithout florers.	voithout flouvers.	
+612	miun/kraken	2	64	replace	First	Furst	First	
+613	trent/kraken	1	19	replace	[Exit	LExit	IExit	
+613	trent/kraken	1	32	delete		the	the	same
+613	trent/kraken	1	44	delete		of,	of,	same
+613	trent/kraken	2	13	replace	Cardiner;	Gardiner;	Gardiner;	same
+613	trent/kraken	2	27	replace	hath	has	has	same
+613	trent/kraken	2	36	replace	[Exeunt.	IExeunt.	LExeunt.	
+613	trent/kraken	2	38	replace	between	hetzoeen	bateen GRIFRITH,	
+613	trent/kraken	2	39	replace	PATIENCE,	PA¬ TIENCE,	PA¬ TIENCE,	same
+613	trent/kraken	2	50	replace	to 't.	to’t.	to’t.	same
+613	trent/kraken	2	64	delete		abbot,	abbot,	same
+614	miun/kraken	1	7	replace	full	sull	full	
+614	miun/kraken	1	13	replace	Yet	Vet	Yet	
+614	miun/kraken	2	2	replace	white	vuhite	zohite	
+614	miun/kraken	2	3	replace	wearing	voearing	vearing	
+614	miun/kraken	2	4	replace	of	ol	of	
+614	miun/kraken	2	7	replace	first two	ferst tavo	first two	
+614	miun/kraken	2	8	replace	which	vhich	vhich	same
+614	miun/kraken	2	11	replace	who observe	vho ooserve	tro, vho observe	
+614	miun/kraken	2	11	replace	same	samne	same	
+614	miun/kraken	2	12	replace	garland	garlandl	garland	
+614	miun/kraken	2	13	replace	which	vhich	ahich	
+614	miun/kraken	2	14	replace	two, who	tavo, zvho	tao, who likezise	
+614	miun/kraken	2	15	replace	were	vere	vere	same
+614	miun/kraken	2	16	replace	sleep	sleet	slecp	
+614	miun/kraken	2	16	replace	of	ay	of	
+614	miun/kraken	2	17	replace	her	hex	her	
+614	miun/kraken	2	55	replace	you.	vou.	you.	
+614	miun/kraken	2	59	replace	Exeunt	IExeunt	[Exeunt	
+614	miun/kraken	2	59	replace	Messenger.	Messengex.	Messenger.	
+614	miun/kraken	2	60	replace	GRIFFTH,	GRIFFITH,	GRIFFITH, witk	
+615	miun/kraken	1	16	replace	Cap.		Cap.	
+615	miun/kraken	1	23	replace	Giving	IGiving	[Giving	
+615	miun/kraken	1	26	replace	willingly,	willing,	willing,	same
+615	miun/kraken	1	49	replace	paid 'em,	paid’em,	paid ’em,	
+615	miun/kraken	1	61	replace	Cap.		Cap.	
+615	miun/kraken	2	10	replace	ACT V	ACTV.	ACT V.	
+615	miun/kraken	2	11	replace	palace.		palace.	
+615	miun/kraken	2	13	replace	with	vvith	with	
+615	miun/kraken	2	24	replace	left	lest	left	
+615	miun/kraken	2	28	replace	I'll	I’Il	I’Il	same
+615	miun/kraken	2	42	replace	fear'd She'll	fear d She’Il	fear'd She’ll	
+615	miun/kraken	2	49	replace	Lov.		Lov.	
+615	miun/kraken	2	54	replace	you're	you re	you’re	
+615	miun/kraken	2	57	replace	take't	take ’t	take ’t	same
+615	miun/kraken	2	65	replace	lte	the	the	same
+616	miun/kraken	1	19	delete		so	5o	
+616	miun/kraken	1	26	replace	Exeunt	IExeunt	[Exeunt	
+616	miun/kraken	1	27	replace	SUFFOLK.	SUFFOLR.	SUFFOLK.	
+616	miun/kraken	1	37	replace	greatest	great’st	great’st	same
+616	miun/kraken	1	57	replace	Exit	IExit	[Exit	
+616	miun/kraken	2	3	replace	Exit	LExit	LExit	same
+616	miun/kraken	2	4	replace	[Aside]	LAsidel	LAsidel	same
+616	miun/kraken	2	7	replace	with	vitk	with	
+616	miun/kraken	2	10	replace	[Exeunt	LExeunt	[Exeunt	
+616	miun/kraken	2	11	replace	[Aside]	[Asidel	[Asidel	same
+616	miun/kraken	2	17	replace	[Kneeling]	IKneelingl	[Kneelingl	
+616	miun/kraken	2	40	replace	[Kneeling]	[Kneelingl	[Kneelingl	same
+616	miun/kraken	2	42	delete		11o		
+616	miun/kraken	2	43	replace	thoroughly	throughly	throughly	same
+617	miun/kraken	1	30	replace	He's	He 's	He’s	
+617	miun/kraken	1	34	replace	[Exit	IExit	IExit	same
+617	miun/kraken	1	38	replace	[Within]	[Withinl	[Withinl	same
+617	miun/kraken	1	40	replace	I'll	I’Il	I’Il	same
+617	miun/kraken	1	51	replace	Both	Roth	Both	
+617	miun/kraken	1	58	replace	I'll	I’Il	I’ll	
+617	miun/kraken	1	59	replace	[Exit.	IExit.	IExit.	same
+617	miun/kraken	1	61	replace	I'll	I'Il	I’ll	
+617	miun/kraken	1	64	replace	like	lile	like	
+617	miun/kraken	1	65	replace	unsay 't;	unsay't;	unsay ’t;	
+617	miun/kraken	1	66	replace	I'll	I’Il	I’Il	same
+617	miun/kraken	1	67	replace	[Exeunt.	LExeunt.	WExeunt.	
+617	miun/kraken	2	18	replace	[Aside]	[Asidel	[Asidel	same
+617	miun/kraken	2	21	replace	[Exit.	IExit.	IExit.	same
+617	miun/kraken	2	22	replace	[Aside]	LAsidel	(Asidel	
+617	miun/kraken	2	37	replace	I'll	I’Il	I’ll	
+617	miun/kraken	2	40	replace	Butts.	Butís.	Butts.	
+617	miun/kraken	2	53	replace	among 'em,	among’em,	among ’em,	
+618	miun/kraken	1	4	replace	CANTERBURY'S	CANTER¬ BURY'S	CANTER¬ BURY'S	same
+618	miun/kraken	1	5	replace	OF NORFOLK,	OE NORFOLE,	OF NORFOLK,	
+618	miun/kraken	1	6	replace	GARDINER,	DINER,	GAR¬ DINER,	
+618	miun/kraken	1	8	replace	lower end	lowerend,	lowverend,	
+618	miun/kraken	1	12	replace	met in	met’in	met in	
+618	miun/kraken	1	19	replace	Keep.		Keep.	
+618	miun/kraken	1	26	replace	[Cranmer	ICranmer	ICranmer	same
+618	miun/kraken	1	50	replace	his	this	this	same
+618	miun/kraken	2	10	delete		so		
+618	miun/kraken	2	19	replace	you	vou	vou	same
+618	miun/kraken	2	38	replace	Lord	Lerd	Lord	
+619	miun/kraken	1	9	replace	Gar.		Gar.	
+619	miun/kraken	1	33	replace	them;	thems	them;	
+619	miun/kraken	1	51	replace	thou takest	thoutakest	thou takest	
+619	miun/kraken	1	53	replace	[To	ITo	ITo	same
+619	miun/kraken	2	16	replace	I'm	L’m	I’m	
+619	miun/kraken	2	47	replace	thus, 'Do	thus,“Do	thus, “Do	
+619	miun/kraken	2	54	replace	[Exeunt.	LExeunt.	LExeunt.	same
+619	miun/kraken	2	58	replace	You'll	You’Il	You’ll	
+619	miun/kraken	2	59	replace	Paris- garden?	Paris-garden?	Paris-garden?	same
+619	miun/kraken	2	66	replace	I'll	I ’ll	I ’Il	
+620	miun/kraken	1	2	delete		I1	II	
+620	miun/kraken	1	7	replace	make 'em	make’em	make ’em	
+620	miun/kraken	1	9	replace	stir 'em.	stir’em.	stir’em.	same
+620	miun/kraken	1	18	replace	mow 'em	mow’em	mow’em	same
+620	miun/kraken	1	40	replace	fire- drake	fire-drake	fire-drake	same
+620	miun/kraken	1	53	replace	defied 'em	defied’em	defied ’em	
+620	miun/kraken	1	53	replace	when	wnen	when	
+620	miun/kraken	1	54	replace	behind 'em,	behind’em,	behind ’em,	
+620	miun/kraken	1	57	replace	amongst 'em,	amongst’em,	amongst ’em,	
+620	miun/kraken	1	62	replace	of 'em	of’em	of ’em	
+620	miun/kraken	2	10	replace	left	lest	left	
+620	miun/kraken	2	12	replace	An 't	An’t	An’t	same
+620	miun/kraken	2	12	replace	your	vour	your	
+620	miun/kraken	2	17	replace	I'll	I’Il	for ’t, I’ll	
+620	miun/kraken	2	25	replace	I'll	L’Il	I’Il	
+620	miun/kraken	2	30	replace	I'll	I 'll	I ’Il	
+620	miun/kraken	2	32	replace	[Exeunt	IExeunt.	(Exeunt.	
+620	miun/kraken	2	35	replace	DUKE OF	DUXE OE	DURE OF	
+620	miun/kraken	2	36	replace	DUKE	DUXE	DUkE	
+620	miun/kraken	2	38	replace	standing-bowls	standing-boiols	standing-bowls	
+620	miun/kraken	2	38	replace	then	theu	then	
+620	miun/kraken	2	39	replace	which	whick	avhich	
+620	miun/kraken	2	41	replace	&c.,	2c,	Ccc.,	
+620	miun/kraken	2	42	replace	follows	follovs	follozos	
+620	miun/kraken	2	44	replace	troop	troos	troop	
+620	miun/kraken	2	44	replace	the	tle	the	
+620	miun/kraken	2	45	replace	speaks.	speakes.	speaks.	
+620	miun/kraken	2	51	replace	[Kneeling]	Wneelingl	[Kneeling]	
+620	miun/kraken	2	61	replace	[The	IThe	UThe	
+621	miun/kraken	1	5	replace	they'll find 'em	they ’ll find’’em	they ’Il find’em	
+621	miun/kraken	1	27	replace	nighbours:	neighbours:	neighbours	
+621	miun/kraken	1	32	replace	phoenix,	phœnix,	phœnix,	same
+621	miun/kraken	1	43	delete		5o	so	
+621	miun/kraken	2	10	replace	must have	musthave	must have	
+621	miun/kraken	2	11	replace	fly	lily	lily	same
+621	miun/kraken	2	35	replace	They'll	They’Il	They’Il	same
+621	miun/kraken	2	38	replace	we 're	we're	we’re	
+621	miun/kraken	2	44	replace	bid 'em	bid’em	bid ’em	

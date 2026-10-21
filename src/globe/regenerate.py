@@ -821,7 +821,37 @@ def write_reports(play: str, rep: Path, pages, lines, results, toks, body=None, 
     folger = report_folger(rep / f"{stem}-folger-check.tsv", lines, toks, entry.dracor_path)
     if body is not None:
         report_part_vs_page(rep / f"{stem}-part-vs-page.tsv", lines, toks, body, table)
+    report_table_lines(rep / f"{stem}-table-lines.tsv", lines, results)
     return ovn, reviews, folger
+
+
+def report_table_lines(out: Path, lines, results) -> list[list]:
+    """Where each table row applied, in the order of the text: the Globe
+    act.scene.line of the line it acts on, so a row can be found in the
+    edition and the scene without reading the page. For a `shared` row that
+    is the folded line, for a `separate` row the line that now begins at the
+    second half; a `numeral` or `misplaced` row, the line that carries the
+    number. Rows from the page's carried-over junction (index -1) are
+    placed at the last line of the page before."""
+    rows, place = [], {id(ln): i for i, ln in enumerate(lines)}
+    for r in results:
+        for k, row in r.applied:
+            if 0 <= k < len(r.lines):
+                ln = r.lines[k]
+            else:
+                at = lines.index(r.lines[0]) - 1 if r.lines and r.lines[0] in lines else -1
+                ln = lines[at] if at >= 0 else None
+            where = f"{ln.div}.{ln.n}" if ln is not None else ""
+            rows.append((place.get(id(ln), -1), [where, row.scene, r.page, row.kind, row.first_half,
+                         row.second_half, row.line,
+                         "checked " + row.checked if row.checked.strip() else "PENDING"]))
+    rows.sort(key=lambda x: x[0])
+    rows = [x[1] for x in rows]
+    with out.open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, delimiter="\t", lineterminator="\n")
+        w.writerow(["globe_line", "scene", "page", "kind", "first_half", "second_half", "line", "state"])
+        w.writerows(rows)
+    return rows
 
 
 def report_part_vs_page(out: Path, lines, toks, body, table) -> list[list]:

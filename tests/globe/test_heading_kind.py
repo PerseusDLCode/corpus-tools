@@ -64,3 +64,18 @@ def test_the_milestone_of_a_title_line_stays_inside_the_head():
     el = etree.Element("milestone")
     emit_tei.insert_before(el, head, stay=("head",))
     assert el.getparent().tag.endswith("head")
+
+
+def test_the_table_lines_report_names_the_line_each_row_acted_on(tmp_path):
+    """Cliff, 2026-10-21: a row is hard to find with only act.scene in the table."""
+    from globe import lineate
+    from globe.page_rows import Row as PageRow
+
+    a, b = lineate.Line([PageRow(x=0.0, y=0.0, r=0.0, words=[], band="start")], 7), \
+        lineate.Line([PageRow(x=0.0, y=0.0, r=0.0, words=[], band="start")], 7)
+    a.div, a.n, b.div, b.n = "2.1", 5, "2.1", 6
+    row = shared_lines.Row("x", "2.1", 7, "shared", "one two", "three", "", "image", checked="2026 cliff")
+    res = regenerate.PageResult(7, "miun", [a, b], [], [], False, [(1, row)], 21)
+    out = tmp_path / "t.tsv"
+    regenerate.report_table_lines(out, [a, b], [res])
+    assert out.read_text().splitlines()[1].split("\t")[:4] == ["2.1.6", "2.1", "7", "shared"]

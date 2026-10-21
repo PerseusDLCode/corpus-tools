@@ -176,6 +176,22 @@ def test_a_line_outside_any_speech_or_scene_stops_the_build():
         tei_header.check_every_line_citable(_body(f'<div type="act" n="prologue"><l>{MS}O for a Muse</l></div>'))
 
 
+def test_a_speakerless_prologue_is_citable_only_where_the_refsdecl_has_the_branch():
+    """Henry VIII: the Prologue and Epilogue are <p> and <l> directly in the act."""
+    body = _body(f'<div type="act" n="prologue"><p>{MS}I come no more</p></div>'
+                 f'<div type="act" n="epilogue"><l>{MS}Tis ten to one</l></div>'
+                 f'<div type="act" n="1"><div type="scene" n="1"><sp><l>{MS}My lord</l></sp></div></div>')
+    assert tei_header.has_bare_act_lines(body)
+    tei_header.check_every_line_citable(body, True)
+    with pytest.raises(ValueError, match="2 of 3 Globe line milestones are not citable"):
+        tei_header.check_every_line_citable(body)
+    matches = [c.get("match") for c in tei_header.build_refs_decl(True).iter(f"{{{TEI}}}citeStructure")
+               if c.get("unit") == "line"]
+    assert matches[2] == " | ".join(f"{t}//milestone[@unit='line'][@ed='Globe']" for t in ("p", "l", "lg"))
+    assert len(tei_header.build_refs_decl().findall(f".//{{{TEI}}}citeStructure[@unit='line']")) == 2
+    assert not tei_header.has_bare_act_lines(_body(f'<div type="act" n="cast"><l>{MS}x</l></div>'))
+
+
 def test_a_line_in_the_cast_list_stops_the_build():
     with pytest.raises(ValueError, match="not citable"):
         tei_header.check_every_line_citable(_body(f'<div type="act" n="cast"><sp><l>{MS}x</l></sp></div>'))

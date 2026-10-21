@@ -258,14 +258,36 @@ def build_encoding_ps() -> list[etree.Element]:
 GLOBE_LINE = "milestone[@unit='line'][@ed='Globe']"
 
 
-def build_refs_decl() -> etree._Element:
+# What an act-level prologue or epilogue is made of where the Folio prints no
+# speaker (Henry VIII): lines directly under the act.
+BARE_LINE_PARENTS = ("p", "l", "lg")
+
+
+def has_bare_act_lines(body) -> bool:
+    """Does an act (not the cast list) hold a Globe milestone in a line, a
+    paragraph or a line group that is its own child, outside any speech?"""
+    ns = {"tei": TEI_XMLNS}
+    return any(body.xpath(f"tei:div[@type='act'][@n != 'cast']/tei:{tag}//tei:{GLOBE_LINE}", namespaces=ns)
+               for tag in BARE_LINE_PARENTS)
+
+
+def build_refs_decl(bare_act_lines: bool = False) -> etree._Element:
     """The Globe edition's one citation scheme: act.scene.line, the line a
     Globe milestone (canonical-engLit doc/forum.org
     #encoding/shakespeare-citestructures). The cast list is not an act. A
     line outside any scene (an act-level prologue, as in Henry V) is cited
     act.line, through the second branch, which reaches only speeches that are
     the act's own children. The scene is the chunk. Paths avoid XPath axes:
-    perseus-cts does not namespace-prefix a name after one."""
+    perseus-cts does not namespace-prefix a name after one.
+
+    An act-level prologue or epilogue with no speaker (Henry VIII's) has its
+    lines directly in the act, not in a speech: with `bare_act_lines` a third
+    branch cites them act.line as well. Only then, so that the plays without
+    them keep the refsDecl they were published with."""
+    bare = ""
+    if bare_act_lines:
+        match = " | ".join(f"{tag}//{GLOBE_LINE}" for tag in BARE_LINE_PARENTS)
+        bare = f'''<citeStructure unit="line" delim="." match="{match}" use="@n"/>'''
     xml = f"""<refsDecl n="CTS" xml:id="CTS">
       <citeStructure match="/TEI/text/body" use="@xml:base">
         <citeStructure unit="act" delim=":" match="div[@type='act'][@n != 'cast']" use="@n">
@@ -273,6 +295,7 @@ def build_refs_decl() -> etree._Element:
             <citeStructure unit="line" delim="." match=".//{GLOBE_LINE}" use="@n"/>
           </citeStructure>
           <citeStructure unit="line" delim="." match="sp//{GLOBE_LINE}" use="@n"/>
+          {bare}
         </citeStructure>
       </citeStructure>
     </refsDecl>"""
@@ -282,11 +305,13 @@ def build_refs_decl() -> etree._Element:
     return refs
 
 
-def check_every_line_citable(body) -> None:
+def check_every_line_citable(body, bare_act_lines: bool = False) -> None:
     """Each Globe milestone must be reachable exactly once through
     build_refs_decl(): in a scene, or in a speech that is an act's own child.
     One anywhere else (a line directly under an act outside a speech, or in
-    the cast list) would be uncitable, so the build stops instead."""
+    the cast list) would be uncitable, so the build stops instead; a line, a
+    paragraph or a line group that is the act's own child is citable only
+    where `bare_act_lines` is on (build_refs_decl)."""
     ns = {"tei": TEI_XMLNS}
     line = "tei:milestone[@unit='line'][@ed='Globe']"
     total = len(body.xpath(f".//{line}", namespaces=ns))
@@ -294,6 +319,8 @@ def check_every_line_citable(body) -> None:
     for act in body.xpath("tei:div[@type='act'][@n != 'cast']", namespaces=ns):
         reached += len(act.xpath(f"tei:div[@type='scene']//{line}", namespaces=ns))
         reached += len(act.xpath(f"tei:sp//{line}", namespaces=ns))
+        if bare_act_lines:
+            reached += sum(len(act.xpath(f"tei:{tag}//{line}", namespaces=ns)) for tag in BARE_LINE_PARENTS)
     if reached != total:
         raise ValueError(f"{total - reached} of {total} Globe line milestones are not citable "
                          f"through the CTS refsDecl (build_refs_decl)")
@@ -327,10 +354,11 @@ def rewrite(root, play: str, table: list[shared_lines.Row]) -> None:
     encoding_desc = root.find(f"{{{TEI_XMLNS}}}teiHeader/{{{TEI_XMLNS}}}encodingDesc")
     if encoding_desc is None:
         raise ValueError("no <encodingDesc> in the header to rewrite")
-    check_every_line_citable(body)
+    bare = has_bare_act_lines(body)
+    check_every_line_citable(body, bare)
     for child in list(encoding_desc):
         encoding_desc.remove(child)
-    encoding_desc.append(build_refs_decl())
+    encoding_desc.append(build_refs_decl(bare))
     junctions = count_junctions(shared_lines.for_play(table, play))
     encoding_desc.append(build_editorial_decl(play, junctions, manifest.dracor_pin(play)))
     for p in build_encoding_ps():

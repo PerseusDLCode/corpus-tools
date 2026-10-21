@@ -14,8 +14,8 @@ frozen at its tag =v1.0= as the record of how it was built (see
 King Lear, Antony and Cleopatra, Titus Andronicus, Richard II, Two
 Gentlemen of Verona, Measure for Measure, The Comedy of Errors,
 Love's Labour's Lost, A Midsummer Night's Dream, The Merchant of
-Venice, Much Ado About Nothing and As You Like It and Twelfth Night, The Merry Wives of Windsor, The Tempest, Hamlet and Cymbeline are built and published (canonical-engLit =mvp=,
-=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym}/shakespeare.*.globe.xml=). Titus and
+Venice, Much Ado About Nothing and As You Like It and Twelfth Night, The Merry Wives of Windsor, The Tempest, Hamlet, Cymbeline and Henry VIII are built and published (canonical-engLit =mvp=,
+=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym,h8}/shakespeare.*.globe.xml=). Titus and
 Richard II were the cold tests: Titus passed 22 of 24 pages with the
 classifier unchanged and needed only table rows; Richard II passed 22 of
 26 and needed two turnover rules and two new table kinds (=lacuna=,
@@ -33,7 +33,7 @@ whose every row is a line, and two aligner rules). The Merchant of Venice passed
 rows and no rule change. Much Ado About Nothing, the first play with songs in
 =<lg>=, passed 24 of 24 with five rows, one aligner rule (a page's last row that
 is a hyphenated compound printed as two words) and =misplaced= widened to two
-rows. As You Like It passed 24 of 24 with seven rows and no rule change: its P4 has no =<lg>=, so its four songs are =inset= rows. Twelfth Night passed 23 of 23 with five rows after a P4 correction (Act III's scene numbers) and no rule change. The Merry Wives of Windsor passed 25 of 25 with two =miscount= rows after a P4 correction (a line the Folio lacks and the Globe adds) and no rule change. Hamlet passed 36 of 36 with seventeen rows and two P4 corrections (a lost song line, an em-dash). Cymbeline passed 33 of 33 with thirteen rows after both songs were recoded as =<lg>= and one table kind (=heading=, for II.3's "SONG.", which the Globe numbers as a line; IV.2's identical title it does not). Songs (=<lg type="song">=) and inset texts now convert: every printed row of
+rows. As You Like It passed 24 of 24 with seven rows and no rule change: its P4 has no =<lg>=, so its four songs are =inset= rows. Twelfth Night passed 23 of 23 with five rows after a P4 correction (Act III's scene numbers) and no rule change. The Merry Wives of Windsor passed 25 of 25 with two =miscount= rows after a P4 correction (a line the Folio lacks and the Globe adds) and no rule change. Hamlet passed 36 of 36 with seventeen rows and two P4 corrections (a lost song line, an em-dash). Cymbeline passed 33 of 33 with thirteen rows after both songs were recoded as =<lg>= and one table kind (=heading=, for II.3's "SONG.", which the Globe numbers as a line; IV.2's identical title it does not). Henry VIII passed 30 of 30 with eighteen rows and no rule change; its speakerless Prologue and Epilogue needed a third refsDecl branch, and every build now reports where each row applied (=table-lines.tsv=). Songs (=<lg type="song">=) and inset texts now convert: every printed row of
 a song is a Globe line, a heading is not, and a row is a turnover only if it
 completes a broken word or follows a full-measure row in the same P4 =<l>=
 (=lineate.in_song=; canonical-engLit =#build/inset-numbering=). The open

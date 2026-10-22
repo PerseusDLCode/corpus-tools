@@ -4,69 +4,69 @@
 # build refuses while any re-read is unlisted or unchecked. `read` is what
 # `witness` read, `other_read` what `other_witness` read and the build took.
 play	page	scene	line	witness	read	other_witness	other_read	checked	note	cliff_note
-tmp	5	1.2	lord how it	miun/kraken	419	trent/kraken	410		miun leaf 00000019, trent leaf 0021	
-tmp	12	3.1	if i speak	trent/kraken	7	miun/kraken	70		miun leaf 00000026, trent leaf 0028	
-tmp	19	5.1	the best news	miun/kraken	271	trent/kraken	221		miun leaf 00000033, trent leaf 0035	
-tgv	25	2.1	what should i	miun/kraken	20	trent/kraken	80		miun leaf 00000039, trent leaf 0041	
-wiv	46	1.4	my rapier good	miun/kraken	722	trent/kraken	72		miun leaf 00000060, trent leaf 0062	
-wiv	52	2.3	by gar tis	miun/kraken	190	trent/kraken	100		miun leaf 00000066, trent leaf 0068	
-wiv	60	4.2	you straight put	miun/kraken	8	trent/kraken	85		miun leaf 00000074, trent leaf 0076	
-mm	73	2.1	what's o'clock think	miun/kraken	280	trent/kraken	290		miun leaf 00000087, trent leaf 0089	
-mm	73	2.1	come sir he's	miun/kraken	290	trent/kraken	300		miun leaf 00000087, trent leaf 0089	
-mm	88	5.1	words against me	miun/kraken	134	trent/kraken	131		miun leaf 00000102, trent leaf 0104	
-mm	92	5.1	slandering a prince	miun/kraken	5	trent/kraken	530		miun leaf 00000106, trent leaf 0108	
-ado	116	2.1	shows it his	miun/kraken	230	trent/kraken	231		miun leaf 00000130, trent leaf 0132	
-ado	118	2.2	overthrown grow this	miun/kraken	5	trent/kraken	51		miun leaf 00000132, trent leaf 0134	
-ado	119	2.3	though i love	miun/kraken	71	trent/kraken	151		miun leaf 00000133, trent leaf 0135	
-ado	121	3.2	can you smell	miun/kraken	1	trent/kraken	51		miun leaf 00000135, trent leaf 0137	
-ado	125	3.5	your daughter to	miun/kraken	160	trent/kraken	60		miun leaf 00000139, trent leaf 0141	
-lll	143	3.1	and to her	miun/kraken	160	trent/kraken	169		miun leaf 00000157, trent leaf 0159	
-lll	150	5.1	i do sans	miun/kraken	1	trent/kraken	91		miun leaf 00000164, trent leaf 0166	
-lll	159	5.2	a twelvemonth well	miun/kraken	889	trent/kraken	880		miun leaf 00000173, trent leaf 0175	
-mnd	165	2.1	with ariadne and	miun/kraken	89	trent/kraken	80		miun leaf 00000179, trent leaf 0181	
-mnd	171	3.2	would so offend	miun/kraken	169	trent/kraken	160		miun leaf 00000185, trent leaf 0187	
-mv	188	2.5	and the vile	miun/kraken	39	trent/kraken	30		miun leaf 00000202, trent leaf 0204	
-mv	188	2.5	out at window	miun/kraken	741	trent/kraken	41		miun leaf 00000202, trent leaf 0204	
-mv	203	5.1	for by these	miun/kraken	229	trent/kraken	220		miun leaf 00000217, trent leaf 0219	
-ayl	208	1.2	the wrestler no	miun/kraken	1	trent/kraken	179		miun leaf 00000222, trent leaf 0224	
-ayl	216	3.2	baggage yet with	miun/kraken	1	trent/kraken	171		miun leaf 00000230, trent leaf 0232	
-ayl	222	4.1	neighbor's bed and	miun/kraken	1	trent/kraken	171		miun leaf 00000236, trent leaf 0238	
-ayl	228	5.4	stay jaques stay	miun/kraken	4	trent/kraken	200		miun leaf 00000242, trent leaf 0244	
-tn	285	1.5	whence came you	miun/kraken	180	trent/kraken	189		miun leaf 00000299, trent leaf 0301	
-tn	293	3.2	than report of	miun/kraken	11	trent/kraken	41		miun leaf 00000307, trent leaf 0309	
-r2	365	2.2	sirrah get thee	miun/kraken	0	trent/kraken	90		miun leaf 00000379, trent leaf 0381	
-r2	375	4.1	fiend thou torment'st	miun/kraken	2	trent/kraken	270		miun leaf 00000389, trent leaf 0391	
-h8	609	3.2	this paper has	miun/kraken	270	trent/kraken	210		miun leaf 00000623, trent leaf 0625	
-h8	611	3.2	than my weakhearted	miun/kraken	300	trent/kraken	390		miun leaf 00000625, trent leaf 0627	
-h8	618	5.3	and not reform'd	miun/kraken	10	trent/kraken	19		miun leaf 00000632, trent leaf 0634	
-tit	691	1.1	and will create	miun/kraken	322	trent/kraken	320		miun leaf 00000705, trent leaf 0707	
-tit	692	1.1	he lives in	miun/kraken	300	trent/kraken	390		miun leaf 00000706, trent leaf 0708	
-tit	692	1.1	rise titus rise	miun/kraken	4	trent/kraken	459		miun leaf 00000706, trent leaf 0708	
-tit	700	3.1	the wofull'st man	miun/kraken	200	trent/kraken	290		miun leaf 00000714, trent leaf 0716	
-tit	701	4.1	unless the gods	miun/kraken	69	trent/kraken	60		miun leaf 00000715, trent leaf 0717	
-tit	705	4.3	shall i have	miun/kraken	70	trent/kraken	79		miun leaf 00000719, trent leaf 0721	
-ham	818	1.5	ah ha boy	miun/kraken	1	trent/kraken	150		miun leaf 00000832, trent leaf 0834	
-ham	837	4.5	remembrance fitted there's	miun/kraken	79	trent/kraken	179		miun leaf 00000851, trent leaf 0853	
-ham	841	5.1	her obsequies have	miun/kraken	240	trent/kraken	249		miun leaf 00000855, trent leaf 0857	
-lr	849	1.1	is queen of	miun/kraken	269	trent/kraken	260		miun leaf 00000863, trent leaf 0865	
-lr	852	1.4	when i think	miun/kraken	1	trent/kraken	71		miun leaf 00000866, trent leaf 0868	
-lr	861	2.4	let us withdraw	miun/kraken	299	trent/kraken	290		miun leaf 00000875, trent leaf 0877	
-ant	924	3.1	for quick accumulation	trent/kraken	10	miun/kraken	19		miun leaf 00000938, trent leaf 0940	
-ant	925	3.2	outgo my thinking	miun/kraken	60	trent/kraken	61		miun leaf 00000939, trent leaf 0941	
-ant	930	3.13	with principalities that	miun/kraken	10	trent/kraken	19		miun leaf 00000944, trent leaf 0946	
-cym	948	1.4	i will have	miun/kraken	150	trent/kraken	159		miun leaf 00000962, trent leaf 0964	
-cym	948	1.5	but though slow	miun/kraken	1	trent/kraken	10		miun leaf 00000962, trent leaf 0964	
-cym	948	1.5	to try the	miun/kraken	2	trent/kraken	21		miun leaf 00000962, trent leaf 0964	
-cym	948	1.5	doctor your service	miun/kraken	3	trent/kraken	30		miun leaf 00000962, trent leaf 0964	
-cym	948	1.5	no danger in	miun/kraken	4	trent/kraken	40		miun leaf 00000962, trent leaf 0964	
-cym	948	1.5	i'll tell thee	miun/kraken	5	trent/kraken	50		miun leaf 00000962, trent leaf 0964	
-cym	951	2.1	to no i	miun/kraken	0	trent/kraken	30		miun leaf 00000965, trent leaf 0967	
-cym	958	3.4	why tender'st thou	miun/kraken	1	trent/kraken	11		miun leaf 00000972, trent leaf 0974	
-cym	959	3.4	a man already	miun/kraken	176	trent/kraken	170		miun leaf 00000973, trent leaf 0975	
-cym	960	3.5	before the roman	miun/kraken	3	trent/kraken	31		miun leaf 00000974, trent leaf 0976	
-cym	966	4.2	under the conduct	miun/kraken	346	trent/kraken	340		miun leaf 00000980, trent leaf 0982	
-cym	972	5.5	thou comest not	miun/kraken	6	trent/kraken	69		miun leaf 00000986, trent leaf 0988	
-cym	973	5.5	that i return'd	miun/kraken	209	trent/kraken	200		miun leaf 00000987, trent leaf 0989	
-cym	973	5.5	italian fiend ay	miun/kraken	219	trent/kraken	210		miun leaf 00000987, trent leaf 0989	
-cym	974	5.5	then in my	miun/kraken	28	trent/kraken	280		miun leaf 00000988, trent leaf 0990	
-cym	976	5.5	answering the letter	miun/kraken	50	trent/kraken	450		miun leaf 00000990, trent leaf 0992	
+tmp	5	1.2	lord how it	miun/kraken	419	trent/kraken	410	2026-10-22 cliff	miun leaf 00000019, trent leaf 0021	Verified 410.
+tmp	12	3.1	if i speak	trent/kraken	7	miun/kraken	70	2026-10-22 cliff 	miun leaf 00000026, trent leaf 0028	Verified 70.
+tmp	19	5.1	the best news	miun/kraken	271	trent/kraken	221	2026-10-22 cliff	miun leaf 00000033, trent leaf 0035	Verified 221.
+tgv	25	2.1	what should i	miun/kraken	20	trent/kraken	80	2026-10-22 cliff	miun leaf 00000039, trent leaf 0041	Verified 80.
+wiv	46	1.4	my rapier good	miun/kraken	722	trent/kraken	72	2026-10-22 cliff	miun leaf 00000060, trent leaf 0062	Verified 72.
+wiv	52	2.3	by gar tis	miun/kraken	190	trent/kraken	100	2026-10-22 cliff	miun leaf 00000066, trent leaf 0068	Verified 100.
+wiv	60	4.2	you straight put	miun/kraken	8	trent/kraken	85	2026-10-22 cliff	miun leaf 00000074, trent leaf 0076	Unreadable in Michigan (marked through; there are many hand-written numbers in this play in this copy). Verified 85 in Trent.
+mm	73	2.1	what's o'clock think	miun/kraken	280	trent/kraken	290	2026-10-22 cliff	miun leaf 00000087, trent leaf 0089	Verified 280 in this copy; 290 is on Come, sir. In the Trent witness it is clearly 290.
+mm	73	2.1	come sir he's	miun/kraken	290	trent/kraken	300	2026-10-22 cliff	miun leaf 00000087, trent leaf 0089	Verified 290 in this copy; in the Trent witness it is clearly 300.
+mm	88	5.1	words against me	miun/kraken	134	trent/kraken	131	2026-10-22 cliff	miun leaf 00000102, trent leaf 0104	Verified 131.
+mm	92	5.1	slandering a prince	miun/kraken	5	trent/kraken	530	2026-10-22 cliff	miun leaf 00000106, trent leaf 0108	Verified 530.
+ado	116	2.1	shows it his	miun/kraken	230	trent/kraken	231	2026-10-22 cliff	miun leaf 00000130, trent leaf 0132	Verified 230 in Michigan copy and 231 in Trent.
+ado	118	2.2	overthrown grow this	miun/kraken	5	trent/kraken	51	2026-10-22 cliff	miun leaf 00000132, trent leaf 0134	Verified 51 in Michigan.
+ado	119	2.3	though i love	miun/kraken	71	trent/kraken	151	2026-10-22 cliff	miun leaf 00000133, trent leaf 0135	Verified 151 in Michigan.
+ado	121	3.2	can you smell	miun/kraken	1	trent/kraken	51	2026-10-22 cliff	miun leaf 00000135, trent leaf 0137	Verified 51 in Michigan.
+ado	125	3.5	your daughter to	miun/kraken	160	trent/kraken	60	2026-10-22 cliff	miun leaf 00000139, trent leaf 0141	Verified 60 in Michigan; a stray penmark makes it look like 160.
+lll	143	3.1	and to her	miun/kraken	160	trent/kraken	169	2026-10-22 cliff	miun leaf 00000157, trent leaf 0159	Verified 169 in Michigan.
+lll	150	5.1	i do sans	miun/kraken	1	trent/kraken	91	2026-10-22 cliff	miun leaf 00000164, trent leaf 0166	Verified 91 in Michigan.
+lll	159	5.2	a twelvemonth well	miun/kraken	889	trent/kraken	880	2026-10-22 cliff	miun leaf 00000173, trent leaf 0175	Verified 880 in Michigan.
+mnd	165	2.1	with ariadne and	miun/kraken	89	trent/kraken	80	2026-10-22 cliff	miun leaf 00000179, trent leaf 0181	Verified 80 in Michigan.
+mnd	171	3.2	would so offend	miun/kraken	169	trent/kraken	160	2026-10-22 cliff	miun leaf 00000185, trent leaf 0187	Verified 160 in Michigan.
+mv	188	2.5	and the vile	miun/kraken	39	trent/kraken	30	2026-10-22 cliff	miun leaf 00000202, trent leaf 0204	Verified 30 in Michigan.
+mv	188	2.5	out at window	miun/kraken	741	trent/kraken	41	2026-10-22 cliff	miun leaf 00000202, trent leaf 0204	Verified 41 in Michigan.
+mv	203	5.1	for by these	miun/kraken	229	trent/kraken	220	2026-10-22 cliff	miun leaf 00000217, trent leaf 0219	Verified 220 in Michigan.
+ayl	208	1.2	the wrestler no	miun/kraken	1	trent/kraken	179	2026-10-22 cliff	miun leaf 00000222, trent leaf 0224	Verified 179 in Michigan.
+ayl	216	3.2	baggage yet with	miun/kraken	1	trent/kraken	171	2026-10-22 cliff	miun leaf 00000230, trent leaf 0232	Verified 171 in Michigan.
+ayl	222	4.1	neighbor's bed and	miun/kraken	1	trent/kraken	171	2026-10-22 cliff	miun leaf 00000236, trent leaf 0238	Verified 171 in Michigan.
+ayl	228	5.4	stay jaques stay	miun/kraken	4	trent/kraken	200	2026-10-22 cliff	miun leaf 00000242, trent leaf 0244	Verified 200 in Michigan.
+tn	285	1.5	whence came you	miun/kraken	180	trent/kraken	189	2026-10-22 cliff	miun leaf 00000299, trent leaf 0301	Verified 189 in Michigan.
+tn	293	3.2	than report of	miun/kraken	11	trent/kraken	41	2026-10-22 cliff	miun leaf 00000307, trent leaf 0309	Verified 41 in Michigan.
+r2	365	2.2	sirrah get thee	miun/kraken	0	trent/kraken	90	2026-10-22 cliff	miun leaf 00000379, trent leaf 0381	Verified 90 in Michigan.
+r2	375	4.1	fiend thou torment'st	miun/kraken	2	trent/kraken	270	2026-10-22 cliff	miun leaf 00000389, trent leaf 0391	Verified 270 in Michigan.
+h8	609	3.2	this paper has	miun/kraken	270	trent/kraken	210	2026-10-22 cliff	miun leaf 00000623, trent leaf 0625	Verified 210 in Michigan.
+h8	611	3.2	than my weakhearted	miun/kraken	300	trent/kraken	390	2026-10-22 cliff	miun leaf 00000625, trent leaf 0627	Verified 390 in Michigan.
+h8	618	5.3	and not reform'd	miun/kraken	10	trent/kraken	19	2026-10-22 cliff	miun leaf 00000632, trent leaf 0634	Verified 19 in Michigan.
+tit	691	1.1	and will create	miun/kraken	322	trent/kraken	320	2026-10-22 cliff	miun leaf 00000705, trent leaf 0707	Verified 320 in Michigan.
+tit	692	1.1	he lives in	miun/kraken	300	trent/kraken	390	2026-10-22 cliff	miun leaf 00000706, trent leaf 0708	Verified 390 in Michigan.
+tit	692	1.1	rise titus rise	miun/kraken	4	trent/kraken	459	2026-10-22 cliff	miun leaf 00000706, trent leaf 0708	Verified 459 in Michigan.
+tit	700	3.1	the wofull'st man	miun/kraken	200	trent/kraken	290	2026-10-22 cliff	miun leaf 00000714, trent leaf 0716	Verified 290 in Michigan.
+tit	701	4.1	unless the gods	miun/kraken	69	trent/kraken	60	2026-10-22 cliff	miun leaf 00000715, trent leaf 0717	Verified 60 in Michigan.
+tit	705	4.3	shall i have	miun/kraken	70	trent/kraken	79	2026-10-22 cliff	miun leaf 00000719, trent leaf 0721	Verified 79 in Michigan.
+ham	818	1.5	ah ha boy	miun/kraken	1	trent/kraken	150	2026-10-22 cliff	miun leaf 00000832, trent leaf 0834	Verified 150 in Michigan.
+ham	837	4.5	remembrance fitted there's	miun/kraken	79	trent/kraken	179	2026-10-22 cliff	miun leaf 00000851, trent leaf 0853	Verified 179 in Michigan.
+ham	841	5.1	her obsequies have	miun/kraken	240	trent/kraken	249	2026-10-22 cliff	miun leaf 00000855, trent leaf 0857	Verified 249 in Michigan.
+lr	849	1.1	is queen of	miun/kraken	269	trent/kraken	260	2026-10-22 cliff	miun leaf 00000863, trent leaf 0865	Verified 260 in Michigan.
+lr	852	1.4	when i think	miun/kraken	1	trent/kraken	71	2026-10-22 cliff	miun leaf 00000866, trent leaf 0868	Verified 71 in Michigan.
+lr	861	2.4	let us withdraw	miun/kraken	299	trent/kraken	290	2026-10-22 cliff	miun leaf 00000875, trent leaf 0877	Verified 290 in Michigan.
+ant	924	3.1	for quick accumulation	trent/kraken	10	miun/kraken	19	2026-10-22 cliff	miun leaf 00000938, trent leaf 0940	Verified 19 in Michigan.
+ant	925	3.2	outgo my thinking	miun/kraken	60	trent/kraken	61	2026-10-22 cliff	miun leaf 00000939, trent leaf 0941	Verified 60 in Michigan.
+ant	930	3.13	with principalities that	miun/kraken	10	trent/kraken	19	2026-10-22 cliff	miun leaf 00000944, trent leaf 0946	Verified 19 in Michigan.
+cym	948	1.4	i will have	miun/kraken	150	trent/kraken	159	2026-10-22 cliff	miun leaf 00000962, trent leaf 0964	Verified 159 in Michigan.
+cym	948	1.5	but though slow	miun/kraken	1	trent/kraken	10	2026-10-22 cliff	miun leaf 00000962, trent leaf 0964	Verified 10 in Michigan.
+cym	948	1.5	to try the	miun/kraken	2	trent/kraken	21	2026-10-22 cliff	miun leaf 00000962, trent leaf 0964	Verified 21 in Michigan.
+cym	948	1.5	doctor your service	miun/kraken	3	trent/kraken	30	2026-10-22 cliff	miun leaf 00000962, trent leaf 0964	Verified 30 in Michigan.
+cym	948	1.5	no danger in	miun/kraken	4	trent/kraken	40	2026-10-22 cliff	miun leaf 00000962, trent leaf 0964	Verified 40 in Michigan.
+cym	948	1.5	i'll tell thee	miun/kraken	5	trent/kraken	50	2026-10-22 cliff	miun leaf 00000962, trent leaf 0964	Verified 50 in Michigan.
+cym	951	2.1	to no i	miun/kraken	0	trent/kraken	30	2026-10-22 cliff	miun leaf 00000965, trent leaf 0967	Verified 30 in Michigan.
+cym	958	3.4	why tender'st thou	miun/kraken	1	trent/kraken	11	2026-10-22 cliff	miun leaf 00000972, trent leaf 0974	Verified 11 in Michigan.
+cym	959	3.4	a man already	miun/kraken	176	trent/kraken	170	2026-10-22 cliff	miun leaf 00000973, trent leaf 0975	Verified 170 in Michigan.
+cym	960	3.5	before the roman	miun/kraken	3	trent/kraken	31	2026-10-22 cliff	miun leaf 00000974, trent leaf 0976	Verified 31 in Michigan.
+cym	966	4.2	under the conduct	miun/kraken	346	trent/kraken	340	2026-10-22 cliff	miun leaf 00000980, trent leaf 0982	Verified 340 in Michigan.
+cym	972	5.5	thou comest not	miun/kraken	6	trent/kraken	69	2026-10-22 cliff	miun leaf 00000986, trent leaf 0988	Verified 69 in Michigan.
+cym	973	5.5	that i return'd	miun/kraken	209	trent/kraken	200	2026-10-22 cliff	miun leaf 00000987, trent leaf 0989	Verified 200 in Michigan.
+cym	973	5.5	italian fiend ay	miun/kraken	219	trent/kraken	210	2026-10-22 cliff	miun leaf 00000987, trent leaf 0989	Verified 210 in Michigan.
+cym	974	5.5	then in my	miun/kraken	28	trent/kraken	280	2026-10-22 cliff	miun leaf 00000988, trent leaf 0990	Verified 280 in Michigan.
+cym	976	5.5	answering the letter	miun/kraken	50	trent/kraken	450	2026-10-22 cliff	miun leaf 00000990, trent leaf 0992	Verified 450 in Michigan.

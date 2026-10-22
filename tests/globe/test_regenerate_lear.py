@@ -214,6 +214,61 @@ def test_an_unchecked_table_row_refuses_the_canonical_build(lear, tmp_path):
 
 
 @needs_witnesses
+def test_numerals_re_read_from_the_other_witness_are_listed(lear):
+    """Lear takes three numerals from Trent where Michigan's do not close; each
+    names its line, so Cliff can find it on the page."""
+    from globe import numeral_checks
+
+    _, toks, _, _, results = lear
+    found = numeral_checks.rereads("lr", results, toks)
+    assert [(rr.page, rr.line, rr.read, rr.other_read) for rr in found] == [
+        (849, "is queen of", 269, 260),
+        (852, "when i think", 1, 71),
+        (861, "let us withdraw", 299, 290),
+    ]
+    assert {rr.other_witness for rr in found} == {"trent/kraken"}
+
+
+@needs_witnesses
+def test_an_unchecked_numeral_refuses_the_canonical_build(lear, tmp_path):
+    """A re-read numeral is OCR either way: until Cliff has checked it on the
+    image, the canonical build waits, as it does for a table row."""
+    from globe import numeral_checks
+    from globe import regenerate
+    from globe import shared_lines
+
+    _, toks, pages, lines, results = lear
+    found = numeral_checks.rereads("lr", results, toks)
+    checks = [numeral_checks.Check(*numeral_checks.as_row(rr)[:8]) for rr in found]
+    assert numeral_checks.unchecked(found, checks) == found
+    checks[0].checked = "2026-10-22 cliff"
+    assert numeral_checks.unchecked(found, checks) == found[1:]
+
+    _, reviews, _ = regenerate.write_reports("lr", tmp_path / "reports", pages, lines, results, toks)
+    written = regenerate.emit_builds("lr", lines, results, None, reviews, tmp_path,
+                                     allow_pending=False, table=shared_lines.read_table(),
+                                     unchecked_numerals=found[1:])
+    assert set(written) == {"review"}
+    report = (tmp_path / "reports" / "regenerate-lr-numerals.tsv").read_text().splitlines()
+    assert len(report) == 1 + len(found)
+
+
+def test_numeral_checks_tolerate_a_spreadsheet_and_find_stale_rows(tmp_path):
+    from globe import numeral_checks
+
+    p = tmp_path / "numeral-checks.tsv"
+    p.write_text('"# a comment, quoted"\t\t\n'
+                 + "\t".join(numeral_checks.COLUMNS) + "\t\n"
+                 + "lr\t852\t1.4\twhen i think\tmiun/kraken\t1\ttrent/kraken\t71\t2026-10-22 cliff\t\t\t\t\n"
+                 + "lr\t900\t5.3\tgone\tmiun/kraken\t5\ttrent/kraken\t50\t\t\t\n")
+    checks = numeral_checks.read_checks(p)
+    assert [(c.page, c.pending) for c in checks] == [(852, False), (900, True)]
+    found = [numeral_checks.Reread("lr", 852, "1.4", "when i think", "miun/kraken", 1, "trent/kraken", 71)]
+    assert numeral_checks.unchecked(found, checks) == []
+    assert [c.page for c in numeral_checks.stale("lr", found, checks)] == [900]
+
+
+@needs_witnesses
 def test_the_review_build_comments_every_page_and_every_kind(lear, tmp_path):
     """The review build is what Cliff reads, so each page says where it came
     from, and every kind the agenda lists appears where it applies."""
@@ -329,7 +384,8 @@ def test_a_scratch_run_writes_nothing_in_the_repo(tmp_path):
                               check=True, capture_output=True, text=True).stdout
     before = status()
     mtimes = {p: p.stat().st_mtime_ns for p in (REPO / "reports" / "globe").glob("regenerate-lr-*")}
-    assert regenerate.main("lr", f"--scratch={tmp_path}", "--any-corpus-branch") == 0
+    # --allow-pending: what is tested is where the run writes, not what it waits on
+    assert regenerate.main("lr", f"--scratch={tmp_path}", "--any-corpus-branch", "--allow-pending") == 0
     assert status() == before
     assert {p: p.stat().st_mtime_ns for p in (REPO / "reports" / "globe").glob("regenerate-lr-*")} == mtimes
     anchors = (tmp_path / "reports" / "regenerate-lr-old-vs-new-anchors.tsv").read_text()
@@ -349,5 +405,6 @@ def test_the_stamp_names_the_commit_as_it_was_before_the_reports_were_written(tm
     monkeypatch.setattr(regenerate, "write_reports", lambda *a, **k: written.append(1) or real(*a, **k))
     monkeypatch.setattr(emit_tei, "workshop_commit",
                         lambda repo: "abc1234-DIRTY" if written else "abc1234")
-    assert regenerate.main("lr", f"--scratch={tmp_path}", "--any-corpus-branch") == 0
+    # --allow-pending: what is tested is where the run writes, not what it waits on
+    assert regenerate.main("lr", f"--scratch={tmp_path}", "--any-corpus-branch", "--allow-pending") == 0
     assert "at corpus-tools commit abc1234;" in (tmp_path / "lr" / "shakespeare.lr.globe.xml").read_text()

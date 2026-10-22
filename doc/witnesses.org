@@ -39,7 +39,8 @@ recognizer rather than the page. Two witnesses have been retired
 
 A third book, the Doubleday comparandum, is discussed separately below
 ([[*Doubleday]]) and is not a witness -- see =doc/forum.org=
-=#lineation/word-authority=.
+=#lineation/word-authority=. Two copies of the 1864 first printing were
+sampled and not registered ([[*The 1864 printing (consulted, not registered)]]).
 
 * Layout
 
@@ -424,6 +425,95 @@ Extracted text stays under this gitignored
 directory and never lands in a tracked file beyond a short quoted reading
 and its immediate context (=reports/doubleday-lr-readings.tsv=, capped at
 four words either side).
+
+* The 1864 printing (consulted, not registered)
+:PROPERTIES:
+:CUSTOM_ID: printing-1864
+:END:
+
+*Not a witness.* Two HathiTrust copies of the first printing were
+sampled during the witness review of 2026-10-22, to learn whether an
+earlier printing differs from the two registered ones. Neither enters
+the registry (=data/globe/witnesses.toml=), the manifest, or the build.
+UVa is still read by hand when both registered witnesses fail on a
+numeral or a line (Love's Labour's Lost p.139; Measure for Measure p.80).
+
+** Identity
+/The Works of William Shakespeare/, ed. William George Clark and William
+Aldis Wright, Cambridge: Macmillan, 1864, "The Globe edition," viii,
+1079 p. One HathiTrust record (=008683442=) holds both copies:
+
+| Copy | Handle                   | Holding library              | Leaves |
+|------+--------------------------+------------------------------+--------|
+| NYPL | =nyp.33433074892161=     | New York Public Library      | 1,100  |
+| UVa  | =uva.x000027815=         | University of Virginia       | 1,114  |
+
+Both Google-digitized, public domain (HathiTrust colophon, leaf
+=00000000=). Colour JPEG, one per leaf, named =NNNNNNNN.jpg=.
+
+** Retrieval
+Downloaded by Cliff from HathiTrust, 2026-10-13. Kept in
+=$GLOBE_WITNESSES/nypl/= and =uva/=, *untracked* in the =globe-witnesses=
+repository. The =.ris= file is the HathiTrust record's citation export,
+the same for both.
+
+| Artifact                                | sha256 |
+|-----------------------------------------+------------------------------------------------------------------|
+| =nypl/nyp-33433074892161-1791906475.zip= | =fba26d79de71f9923986b7b2bdd01aef22658ffcc8efa5dc5ca1f913d5b592b2= |
+| =uva/uva-x000027815-1791908426.zip=      | =a1ade94b7677d12332fd10016ea1af89294f5f18c225fbb6052774e39dd2e3bc= |
+| =nypl/nypl.ris=, =uva/uva.ris=           | =c680b75fafef5b72be0e53a0b861568f94de1eab6c4d3e588fde3710d8413389= |
+
+** Leaf to printed page
+- *NYPL:* leaf = printed + *14*, constant at every sampled point from
+  p.1 to p.1051, the same offset as Michigan. Pages 253 and 254 are in
+  printed order (leaf 267 = p.253, the last page of the Shrew), which
+  confirms that Michigan's transposition at leaves 267/268 is that copy's
+  binding, not the printing's.
+- *UVa:* *no constant offset.* Leaf minus printed page runs +12 (p.15),
+  +18 (p.158), +22 (pp.257-549), +26 (pp.604-787), +24 (pp.834, 842),
+  +26 (p.852), +28 (pp.862-954), +31 (1866 p.1049). It runs backwards
+  between p.787 and p.834, so leaves are missing as well as added. Leaf
+  73 is a near-blank leaf with a torn stub at its edge. A leaf table
+  would need a running-head audit of the whole volume.
+
+** Sample: 1864 against 1866
+Nineteen printed pages (1, 47, 150, 253, 254, 400, 545, 604, 617, 704,
+787, 832, 840, 852, 864, 940, 945, 956, 1054), each copy OCR'd with the
+Kraken recipe of [[*OCR layer 2: Kraken ALTO]] (kraken 6.0.3, CATMuS
+Print Fondue Large, no binarization), read into rows by
+=src/globe/page_rows.py=, and compared column by column with the
+Michigan page: rows per column, row text (normalized to letters), and
+margin numerals. A UVa leaf was compared with the Michigan page it best
+matched within 20 pages, since its offset drifts. UVa leaf 73 (blank)
+yielded no rows.
+
+*Every play page sampled has the same type setting in 1864 as in 1866.*
+Rows per column, line breaks and numerals agree. Every disagreement
+examined was OCR (Kraken misreading a numeral in one copy or the other,
+e.g. 169 printed in both on p.617 but read as 160 in Michigan), or the
+page reader taking a short page's running head as body rows (NYPL
+p.787, checked on the image). A row comparison cannot exclude a
+one-word stop-press change, which looks like OCR noise.
+
+*The poems are repaginated.* Running heads agree leaf for leaf
+through p.1045 (/Sonnets/). After that the 1864 content runs three
+pages behind 1866: 1864 p.1052 (/A Lover's Complaint/) is 1866 p.1049
+in an identical setting, and 1864 p.1051 is still /A Lover's
+Complaint/ where 1866 p.1051 is /The Passionate Pilgrim/. The plays end
+at p.999 (/Pericles/), so no play page is affected.
+
+UVa's scans give the cleanest Kraken text of any copy sampled; NYPL's
+are muddier and its OCR noisier than Michigan's.
+
+** Why not registered
+A third printing helps only where both registered witnesses misread a
+numeral: 21 =numeral= rows of 180 in =data/globe/shared-lines.tsv=
+across the eighteen published plays. Every other kind of row records how
+the Globe set the text, which the 1864 printing sets identically.
+Against that: a whole-volume OCR (~1,100 leaves at ~90 s), a leaf table
+(an audit for UVa), manifest rows for every play, and a header change
+that republishes every edition. Revisit if the remaining plays show many
+pages where both witnesses fail.
 
 * Retired witnesses
 :PROPERTIES:

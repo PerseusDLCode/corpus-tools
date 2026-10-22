@@ -118,11 +118,24 @@ P4's, or the build stops.
 | =leaves-miun.tsv=, =leaves-trent.tsv= | leaf -> printed page, with the basis of each row  | reviewed; built by the workshop's =build_leaf_tables.py= |
 | =witness-offsets.tsv=  | the running-head audit's offsets per witness; the source of the leaf tables, not read by the build | as above |
 | =shared-lines.tsv=     | junctions the page cannot show -- folded (=shared=, =turnover=) or cut (=separate=) --, numerals both witnesses misread (=numeral=) or the page sets beside the next line (=misplaced=), lines the page prints without words (=lacuna=), and two printed lines the Globe gives one number by its own slip (=miscount=), each row naming its play and one of its pages | rows proposed by the build or from the Folger; =checked= is filled by Cliff, after looking at the page image |
+| =numeral-checks.tsv=  | each margin numeral the build took from the other witness, because the first witness's reading did not close the count: play, page, the line's first words, both readings | rows proposed from the =regenerate-PLAY-numerals.tsv= report; =checked= is filled by Cliff, after looking at the page image |
 | =witness-manifest.tsv= | sha256 of every witness file the build reads, per play, and of the play's DraCor file with its commit | =globe-lineation manifest PLAY=, deliberately |
 
 *=checked= is Cliff's.* The canonical build refuses to use a
 =shared-lines.tsv= row whose =checked= is empty; the review build is
 still written (=--allow-pending= overrides, for development only).
+
+*So is every re-read numeral.* Where one witness's margin numeral does
+not close the count and the other's does, the build takes the other's
+(=number_page=). Both readings are OCR, and Kraken reads margin numerals
+badly, so the canonical build also refuses while any re-read has no
+checked row in =numeral-checks.tsv= (=src/globe/numeral_checks.py=). A
+re-read changes no output; the check decides only whether the canonical
+build is written. Rows are matched on play, page, the line's first words
+and both readings; a row no re-read matches is reported when the play is
+built. The 66 re-reads in the eighteen plays published before the rule
+(2026-10-22) were proposed unchecked, so until Cliff checks them those
+plays verify only with =--allow-pending=.
 
 *A row is tried in each witness.* A row that does not apply in a witness
 (its words are not on that witness's lines) rules the witness out for
@@ -156,7 +169,8 @@ pinned at =c34c2d4=, the commit its published header already named.
   stops.
 - Reports: =reports/globe/regenerate-PLAY-*.tsv= (gate, intervals, word
   disagreements, old-vs-new P4 anchors, verse/prose, borderline rows,
-  Folger check, @part against the page), and the Schmidt smoke test,
+  Folger check, @part against the page, re-read numerals with each
+  witness's leaf and their check status), and the Schmidt smoke test,
   =schmidt-smoke-PLAY.{tsv,md}=, which records the edition's sha256.
 
 *Schmidt is a standing check.* Every build regenerate writes is checked
@@ -224,7 +238,8 @@ printed page, and its file in the ShakeDraCor clone. Lear and Antony have rows.
 A play also needs its rows in =witness-manifest.tsv=
 (=globe-lineation manifest PLAY=, which pins its DraCor file too and
 so needs the clone), its shared lines reviewed into
-=shared-lines.tsv=, and its title and copy-text in =tei_header.py=
+=shared-lines.tsv=, its re-read numerals checked in =numeral-checks.tsv=,
+and its title and copy-text in =tei_header.py=
 (=PLAY_TITLES=, =COPY_TEXT=), which the table does not yet hold.
 
 * References to the workshop

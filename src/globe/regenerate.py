@@ -33,6 +33,7 @@ from globe import align_play
 from globe import lineate
 from globe import manifest
 from globe import emit_tei
+from globe import numeral_checks
 from globe import folger_check
 from globe import page_rows
 from globe import plays
@@ -110,16 +111,18 @@ def number_page(lines, toks, state: NumberState, page: int, witness: str, carrie
         n = st.n
         base, base_n = (0, 0) if st.last_num is None else (st.last_num, st.last_num_n)
         frm = "scene start" if st.last_num is None else f"{st.last_num} (p.{st.last_num_page})"
-        reading = ""
+        reading, reread = "", None
         if ((n - base_n) != (num - base) and alt and ln is not None and ln.lacuna_at is None
                 and ln.start in alt):
             other_w, other = alt[ln.start]
             if other != num and (n - base_n) == (other - base):
                 reading = f"{witness} read {num}; {other_w} read {other}"
+                reread = (witness, num, other_w, other)  # waits on numeral_checks
                 num = other
         intervals.append(dict(page=page, witness=witness, div=d, frm=frm, to=num,
                               printed_gap=num - base, counted_gap=n - base_n,
-                              error=(n - base_n) - (num - base), counted_n=n, reading=reading))
+                              error=(n - base_n) - (num - base), counted_n=n, reading=reading,
+                              reread=reread, start=ln.start if ln is not None else None))
         st.last_num, st.last_num_n, st.last_num_page = num, n, page
     return intervals, st
 
@@ -510,6 +513,21 @@ def report_intervals(out: Path, results) -> None:
                     "numeral_reading"], rows)
 
 
+def report_numerals(out: Path, play: str, pages, results, toks) -> None:
+    """Every numeral taken from the other witness, with each witness's leaf so
+    the scans can be found, and whether Cliff has checked it. An unlisted row is
+    printed in numeral-checks.tsv's columns, ready to be added there."""
+    found = numeral_checks.rereads(play, results, toks)
+    checks = numeral_checks.read_checks()
+    keys = sorted({k for k, _ in pages})
+    rows = []
+    for rr, c in numeral_checks.match(found, checks):
+        status = "no row" if c is None else ("unchecked" if c.pending else "checked")
+        leaves = [f"{k.split('/')[0]}:{pages[(k, rr.page)][0].leaf}" for k in keys]
+        rows.append(numeral_checks.as_row(rr) + [status, " ".join(leaves)])
+    write_tsv(out, numeral_checks.COLUMNS + ["status", "leaves"], rows)
+
+
 def report_words(out: Path, pages, results) -> list[tuple[int, str]]:
     used = {r.page: r.witness for r in results}
     rows, reviews = [], []
@@ -757,10 +775,11 @@ def check_words(xml: bytes, source_words: list[str]) -> None:
 
 
 def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_pending: bool,
-                table, commit: str | None = None) -> dict:
+                table, commit: str | None = None, unchecked_numerals=()) -> dict:
     """Write the canonical and review builds. The canonical build is refused
     while any table row it applies is unchecked (doc/forum.org
-    #lineation/shared-lines-table)."""
+    #lineation/shared-lines-table), or any numeral it re-read from the other
+    witness is (src/globe/numeral_checks.py)."""
     entry = plays.get(play)
     p4_path = CORPUS / entry.p4
     shell = emit_tei.shell(play)  # the template, not the published edition: #globe/shell-template
@@ -787,10 +806,15 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
     check_words(review_bytes, source_words)
     (out_dir / tei_header.review_filename(play)).write_bytes(review_bytes)
     written = {"review": out_dir / tei_header.review_filename(play)}
-    if pending and not allow_pending:
-        print(f"canonical build refused: {len(pending)} shared-lines.tsv rows are unchecked "
-              f"({', '.join(sorted({r.scene for r in pending}))}); review build written",
-              file=sys.stderr)
+    if (pending or unchecked_numerals) and not allow_pending:
+        why = []
+        if pending:
+            why.append(f"{len(pending)} shared-lines.tsv rows are unchecked "
+                       f"({', '.join(sorted({r.scene for r in pending}))})")
+        if unchecked_numerals:
+            why.append(f"{len(unchecked_numerals)} re-read numerals are unchecked in "
+                       f"numeral-checks.tsv (pp. {', '.join(str(p) for p in sorted({rr.page for rr in unchecked_numerals}))})")
+        print(f"canonical build refused: {'; '.join(why)}; review build written", file=sys.stderr)
     else:
         canonical = one(False)
         check_words(canonical, source_words)
@@ -809,6 +833,7 @@ def write_reports(play: str, rep: Path, pages, lines, results, toks, body=None, 
     entry = plays.get(play)
     report_gate(rep / f"{stem}-gate.tsv", results)
     report_intervals(rep / f"{stem}-intervals.tsv", results)
+    report_numerals(rep / f"{stem}-numerals.tsv", play, pages, results, toks)
     reviews = build_reviews(results, lines, toks)
     reviews += report_words(rep / f"{stem}-word-disagreements.tsv", pages, results)
     failing_scenes = {iv["div"] for r in results for iv in r.failing}
@@ -986,8 +1011,14 @@ def main(play: str = "lr", *flags) -> int:
         print("gate failed: the play is not written", file=sys.stderr)
         return 1
 
+    found = numeral_checks.rereads(play, results, toks)
+    checks = numeral_checks.read_checks()
+    for c in numeral_checks.stale(play, found, checks):
+        print(f"numeral-checks.tsv: no re-read matches the row for p.{c.page} {c.line!r} "
+              f"({c.witness} {c.read}, {c.other_witness} {c.other_read})", file=sys.stderr)
     out_dir = Path(scratch) / play if scratch else REPO / "out" / "globe" / play
-    written = emit_builds(play, lines, results, toks, reviews, out_dir, allow_pending, table, commit)
+    written = emit_builds(play, lines, results, toks, reviews, out_dir, allow_pending, table, commit,
+                          unchecked_numerals=numeral_checks.unchecked(found, checks))
     for kind, path in written.items():
         print(f"{kind}: {path.relative_to(REPO) if REPO in path.parents else path}", file=sys.stderr)
     smoke(play, written.get("canonical") or written["review"], reports_dir)

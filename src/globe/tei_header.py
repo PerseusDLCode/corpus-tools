@@ -53,6 +53,7 @@ PLAY_TITLES = {
     "cym": "Cymbeline",
     "mv": "The Merchant of Venice",
     "shr": "The Taming of the Shrew",
+    "wt": "The Winter's Tale",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -103,6 +104,9 @@ COPY_TEXT = {
     # Introduction printed 445 (CHOCR index 455), V.2 ends on 470 (index 480);
     # The Merry Wives' introduction is 471 (printed = index - 10).
     "shr": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="445-470"),
+    # Introduction printed 993 (CHOCR index 433), V.3 ends on 1022 (index 462);
+    # King Henry VIII's introduction is 1023 (printed = index + 560).
+    "wt": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="993-1022"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

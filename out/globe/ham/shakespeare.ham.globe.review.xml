@@ -65,7 +65,7 @@
       lines were assembled from those rows, and the resulting count was
       checked on every page against every line number printed in that page's
       margins; a page whose count disagreed with any printed number was not
-      accepted. In sixteen places in this play the page's typography does
+      accepted. In fourteen places in this play the page's typography does
       not show where a Globe line begins: two speeches that may share a verse
       line, a speech's line continued on a row set flush with the margin, or
       a row set as though it completed the line above which the Globe numbers
@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-19">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 44a2006; sources: ham.xml sha256 5e7954e687b61b7a; shared-lines.tsv sha256 0689fa30acaa05c5; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-23">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit d3e0975; sources: ham.xml sha256 5e7954e687b61b7a; shared-lines.tsv sha256 69c4c8858486c086; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -2867,7 +2867,7 @@
       </sp>
       <sp who="hor.">
         <speaker>Hor.</speaker>
-        <l><!-- REVIEW witness: p.819 taken from trent/kraken: miun/kraken:table trent/kraken:0 (total count error) --><!-- REVIEW page: p.819 trent/kraken leaf 0835 -->
+        <l><!-- REVIEW witness: p.819 taken from trent/kraken: miun/kraken:1 trent/kraken:0 (total count error) --><!-- REVIEW page: p.819 trent/kraken leaf 0835 -->
           <milestone unit="line" ed="Globe" n="164"/>O day and night, but this is wondrous <lb/>strange! </l>
       </sp>
       <sp who="ham.">
@@ -3184,7 +3184,7 @@
       </sp>
       <sp who="pol.">
         <speaker>Pol.</speaker>
-        <l><!-- REVIEW shared: shared-lines.tsv: this line ends with a half the page cannot show as shared; second half begins 'how now ophelia' (basis image, checked 2026-10-19 cliff) -->
+        <l>
           <milestone unit="line" ed="Globe" n="74"/>Farewell! <stage type="exit">Exit Reynaldo.</stage>
           <lb/>
           <stage type="entrance"> Enter OPHELIA.</stage>
@@ -3194,7 +3194,7 @@
       </sp>
       <sp who="oph.">
         <speaker>Oph.</speaker>
-        <l><!-- REVIEW turnover: shared-lines.tsv: this line continues on a row the page sets flush, not at the turnover indent; it begins 'affrighted' (basis image, checked 2026-10-19 cliff) -->
+        <l>
           <milestone unit="line" ed="Globe" n="75"/>O, my lord, my lord, I have been so <lb/>affrighted! </l>
       </sp>
       <sp who="pol.">

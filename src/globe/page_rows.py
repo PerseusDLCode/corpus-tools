@@ -390,7 +390,10 @@ def column_margin(body: list[Row], pitch: float) -> float:
 MARGIN_NEAR = 10  # flush rows either side of a row that give its local margin
 
 
-def local_margins(body: list[Row], pitch: float) -> list[float]:
+MARGIN_HANG_U = 0.5  # a row this far left of its fitted margin says the fit is wrong
+
+
+def local_margins(body: list[Row], pitch: float, speakers: set[str] = frozenset()) -> list[float]:
     """Each row's left margin: a line fitted to the flush rows nearest it.
 
     The column's margin is not one x for the whole column. On Trent's leaves
@@ -403,9 +406,30 @@ def local_margins(body: list[Row], pitch: float) -> list[float]:
     squares) and a robust level (the median of x - slope*y), so a stray row
     moves nothing. A column with too few flush rows keeps one margin. A line
     over the whole column was tried and failed: the top of a page of prose,
-    with few flush rows, set its slope (p.943)."""
+    with few flush rows, set its slope (p.943).
+
+    Speech starts ("Tra. Even he") can sit inside the flush band, and where
+    flush rows are few they set the margin at the speech indent: on
+    Michigan's p.236 (The Taming of the Shrew) the margin drifts most of a
+    pitch down the column, and at its head the flush rows then hang a pitch
+    into the margin and the turnovers read as starts. Where a row hangs more
+    than MARGIN_HANG_U into its fitted margin, the fit is made again without
+    the rows opening with a speaker's prefix (the prefix's shape and a P4
+    speaker name). Only then: leaving them out everywhere moves margins the
+    published plays were built on (Hamlet pp.817-833 on Trent), and in
+    Cymbeline's masque (p.970) speeches are set flush."""
     m0 = column_margin(body, pitch)
-    flush = [(r.y, r.x) for r in body if abs(r.x - m0) < MARGIN_BAND_U * pitch]
+    flush = [r for r in body if abs(r.x - m0) < MARGIN_BAND_U * pitch]
+    out = _fit_margins(body, flush, m0)
+    if any((r.x - m) / pitch < -MARGIN_HANG_U for r, m in zip(body, out)):
+        from globe.tokens import norm  # page_rows otherwise needs nothing from the TEI side
+        out = _fit_margins(body, [r for r in flush if not (
+            r.words and PREFIX.match(r.words[0].t) and norm(r.words[0].t) in speakers)], m0)
+    return out
+
+
+def _fit_margins(body: list[Row], flush_rows: list[Row], m0: float) -> list[float]:
+    flush = [(r.y, r.x) for r in flush_rows]
     if len(flush) < 2 * MARGIN_NEAR:
         return [m0] * len(body)
     out = []
@@ -501,7 +525,7 @@ def prepare_column(col: list[Row], speakers: set[str] = frozenset()):
     measure = column_measure(body)
     nums, annotations = split_annotations(nums, measure, pitch)
     attach_numbers(body, nums)
-    for r, local in zip(body, local_margins(body, pitch)):
+    for r, local in zip(body, local_margins(body, pitch, speakers)):
         r.pitch, r.margin, r.measure = pitch, local, measure
         r.prefix_len = prefix_length(r, speakers)
         r.offset_u = (r.x - local) / pitch

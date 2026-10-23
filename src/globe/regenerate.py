@@ -277,6 +277,37 @@ def heading_line(new, toks, page: int, page_rows_, r: shared_lines.Row):
     return k + 1, lineate.Line([between[0]], page, num=between[0].num)
 
 
+def dropped_line(new, toks, page: int, r: shared_lines.Row):
+    """(index, line) for a `dropped` row: a row the page prints that both
+    witnesses' OCR lost, so its words ran on in the line whose first words are
+    r.first_half. The new line starts within it at the P4 words r.second_half,
+    on a row of no words standing for the lost one; any row of the line after
+    that point goes with it."""
+    want_a, want_b = tuple(r.first_half.split()), tuple(r.second_half.split())
+    hits = []
+    for k, ln in enumerate(new):
+        if shared_lines.line_words(new, k, toks, len(want_a)) != want_a:
+            continue
+        end = new[k + 1].start if k + 1 < len(new) else len(toks)
+        speech = [t for t in toks[ln.start:end] if t.kind == "speech"]
+        hits += [(k, speech[i].i) for i in range(1, len(speech))
+                 if tuple(t.t for t in speech[i:i + len(want_b)]) == want_b]
+    if len(hits) != 1:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} dropped {r.second_half!r} in the line beginning "
+            f"{r.first_half!r} matches {len(hits)} places on this page, expected 1")
+    k, s = hits[0]
+    ln = new[k]
+    j = next((j for j, x in enumerate(ln.rows) if x.start is not None and x.start > s), len(ln.rows))
+    above = ln.rows[j - 1]
+    lost = page_rows.Row(above.x, above.y, above.r, [], col=above.col, seq=above.seq, band="start",
+                         pitch=above.pitch, margin=above.margin, measure=above.measure, start=s,
+                         speech=True, extra={"dropped": True})
+    second = split(ln, j) if j < len(ln.rows) else lineate.Line([], page)
+    second.rows.insert(0, lost)
+    return k + 1, second
+
+
 def new_index_of_lacuna(new) -> int:
     return max(i for i, ln in enumerate(new) if ln.lacuna_at is not None)
 
@@ -335,8 +366,14 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
         k, ln = heading_line(new, toks, page, page_rows_, r)
         new.insert(k, ln)
         applied.append((ln, r))
+    # a row both witnesses' OCR lost: its words ran on in the line above;
+    # start a line where it begins
+    for r in [r for r in rows if r.kind == "dropped"]:
+        k, ln = dropped_line(new, toks, page, r)
+        new.insert(k, ln)
+        applied.append((ln, r))
     for r in rows:
-        if r.kind in ("separate", "lacuna", "inset", "heading"):
+        if r.kind in ("separate", "lacuna", "inset", "heading", "dropped"):
             continue
         if r.kind == "misplaced":
             printed = int(r.first_half)
@@ -735,6 +772,11 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                     "misplaced", f"shared-lines.tsv: the page prints {row.first_half}, this line's "
                                  f"number, beside a line near it ({row.second_half!r}) "
                                  f"(basis {row.basis}, {state})")))
+            elif row.kind == "dropped":
+                out.append((ln.start, emit_tei.review_comment(
+                    "dropped", f"shared-lines.tsv: the page prints a row here, beginning "
+                               f"{row.second_half!r}, that both witnesses' OCR lost; this line "
+                               f"starts there (basis {row.basis}, {state})")))
             elif row.kind == "miscount":
                 out.append((ln.start, emit_tei.review_comment(
                     "miscount", f"shared-lines.tsv: the Globe gives this line and the next printed "

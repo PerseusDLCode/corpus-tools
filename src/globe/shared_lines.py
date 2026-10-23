@@ -38,6 +38,11 @@ cuts one line in two, and one corrects a number:
             II.3 "SONG."; the dirge in IV.2 has the same title and is not
             counted, so no rule can say which): first_half is the first words
             of the line above, second_half the heading's words.
+  dropped   a row the page prints and both witnesses' OCR lost (The Winter's
+            Tale IV.2 p.317, three prose rows), so its words ran on in the
+            line above: first_half is the first words of that line,
+            second_half the P4 words the lost row begins with (a word
+            hyphenated onto it whole, as the build sets one).
   misplaced a marginal number the page prints beside a row of the line next
             to the one it numbers, or two off (Richard II III.3, 10; Much Ado
             II.3, 210, two rows low); first_half is the
@@ -88,7 +93,7 @@ COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
 KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount", "inset",
-         "heading")
+         "heading", "dropped")
 # The kinds that decide where a Globe line begins, which the header counts
 # (canonical-engLit doc/agenda.org #build/header-junctions): not the numeral
 # kinds, and not a lacuna or a heading, which the page prints as a line of its

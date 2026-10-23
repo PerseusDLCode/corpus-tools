@@ -52,6 +52,7 @@ PLAY_TITLES = {
     "ham": "Hamlet",
     "cym": "Cymbeline",
     "mv": "The Merchant of Venice",
+    "shr": "The Taming of the Shrew",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -99,6 +100,9 @@ COPY_TEXT = {
     "ham": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="597-634"),
     "cym": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="936-970"),
     "h8": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="1023-1054"),
+    # Introduction printed 445 (CHOCR index 455), V.2 ends on 470 (index 480);
+    # The Merry Wives' introduction is 471 (printed = index - 10).
+    "shr": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="445-470"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

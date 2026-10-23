@@ -322,6 +322,31 @@ def test_the_margin_follows_a_column_that_drifts():
     assert pr.local_margins(few, pitch) == [pr.column_margin(few, pitch)] * 10
 
 
+def test_speech_starts_in_the_flush_band_are_refit_out_where_a_row_hangs():
+    """Michigan, The Taming of the Shrew p.236: the margin drifts most of a
+    pitch down the column, and at its head speech starts (0.94u) outnumber
+    the flush rows, sit inside the flush band, and set the margin at the
+    speech indent: the flush rows hang 0.9u into it and the turnovers (2.4u)
+    read as starts. Only a hanging row brings the refit; Cymbeline's masque
+    (p.970) sets speeches flush, and they stay in."""
+    pitch = 50.0
+    def m(k): return 445 + 40 * k / 69
+    body = []
+    for k in range(70):
+        if k < 24 and k % 4 in (0, 2):
+            body.append(Row(m(k) + 47, 100 + 50 * k, 600, [Word(0, 1, "Tra."), Word(0, 1, "Even")]))
+        elif k < 24 and k % 4 == 1:
+            body.append(Row(m(k) + 120, 100 + 50 * k, 300, [Word(0, 1, "pray.")]))
+        else:
+            body.append(Row(m(k), 100 + 50 * k, 600, [Word(0, 1, "And")]))
+    before = [(r.x - x) / pitch for r, x in zip(body, pr.local_margins(body, pitch))]
+    assert before[1] < pr.START_MAX_U and before[3] < -pr.MARGIN_HANG_U
+    after = [(r.x - x) / pitch for r, x in zip(body, pr.local_margins(body, pitch, {"tra"}))]
+    assert pr.START_MAX_U < after[1] < pr.TURNOVER_MAX_U and abs(after[3]) < 0.1
+    masque = [Row(m(k), 100 + 50 * k, 600, [Word(0, 1, "Sici." if k % 2 else "No")]) for k in range(40)]
+    assert pr.local_margins(masque, pitch, {"sici"}) == pr.local_margins(masque, pitch)
+
+
 def test_the_margin_is_the_leftmost_cluster_of_flush_rows():
     """Love's Labour's Lost p.141, left column: 64 one-row speeches at the
     speaker indent (1u) and six flush rows. The 10th-percentile edge is the

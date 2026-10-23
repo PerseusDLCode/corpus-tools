@@ -1,0 +1,344 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+229	miun/kraken	1	17	replace	Sly.	Sìv.	Sly.	
+229	miun/kraken	1	19	replace	Sly.		Sly.	
+229	miun/kraken	1	20	replace	look	loole	look	
+229	miun/kraken	1	23	replace	Host.		Host.	
+229	miun/kraken	1	25	replace	Sly.		Sa.	
+229	miun/kraken	1	28	replace	Exit. Sly.	LExit. Sĺv.	Exit. Sly.	
+229	miun/kraken	1	29	delete		or	or	same
+229	miun/kraken	1	31	replace	asleep.	asleez.	aslech.	
+229	miun/kraken	1	34	replace	Lord.		Lord.	
+229	miun/kraken	1	36	delete		t	t	same
+229	miun/kraken	1	53	replace	Sec.		Sec.	
+229	miun/kraken	1	55	replace	bed	bod	bed	
+229	miun/kraken	2	1	delete		THE SHREW. PERSONÆ. TRANIO, BIONDELLO, servants to Lucentio. GRUMIO, servants to Petruchio. CURTIS, A KATHARINA, the shrew,) daughters to Baptista. BIANCA, Tailor, Haberdasher, and Servants attending on Baptista and Petruchio. SCENE: Padua, and Petruchio's country house.	THE SHREW. PERSONÆ. TRANIO, servants to Lucentio. BIONDELLO, GRUMIO, servants to Petruchio. CURTIS, A Pedant. KATHARINA, the shrew,) daughters to Baptista. BIANCA, Widow. Tailor, Haberdasher, and Servants attending on Baptista and Petruchio. SCENE: Padua, and Petruchio's country house.	
+229	miun/kraken	2	19	replace	out	put	put	same
+229	miun/kraken	2	43	replace	you	your	your	same
+229	miun/kraken	2	50	replace	And	tAnd	tAnd	same
+230	miun/kraken	1	4	replace	trumpet 'tis	trumpet’tis	trumpet ’tis	
+230	miun/kraken	1	44	replace	Exit	IExit	[Exit	
+230	miun/kraken	1	44	replace	with	vith	voith	
+230	miun/kraken	1	51	replace	honorable	honourable	honourable	same
+230	miun/kraken	2	5	replace	I'll	I’Il	I’Il	same
+230	miun/kraken	2	6	replace	Exit	IExit	(Exit	
+230	miun/kraken	2	13	replace	I'll	I'Il	I’Il	
+230	miun/kraken	2	16	replace	Exeunt.	IExeunt.	(Exeunt.	
+230	miun/kraken	2	18	replace	with	wvith	wvith	same
+230	miun/kraken	2	18	replace	with	voitk	with	
+230	miun/kraken	2	19	replace	ewer	evver	ewver	
+230	miun/kraken	2	27	replace	to-day?	to day?	to day?	same
+230	miun/kraken	2	29	replace	'honor'	"""honour'"	"""honour'"	same
+230	miun/kraken	2	32	replace	I'll	I'Il	l’Il	
+230	miun/kraken	2	42	replace	Sly.		Sly.	
+230	miun/kraken	2	44	replace	Burton- heath,	Burtonheath,	Burtonheath,	same
+230	miun/kraken	2	45	replace	card- maker,	cardmaker,	cardmaker,	same
+230	miun/kraken	2	45	replace	now,	noy	now	
+230	miun/kraken	2	50	replace	knave	lnave	knave	
+230	miun/kraken	2	51	replace	here's--	here s–	here’s–	
+230	miun/kraken	2	65	replace	Music.	IMusic.	HMusic.	
+230	miun/kraken	2	67	replace	we'll	we ’ll	we’Il	
+231	miun/kraken	1	16	replace	the	a	a	same
+231	miun/kraken	1	20	replace	We'll	We’Il	We’ll	
+231	miun/kraken	1	48	replace	your	vour	your	
+231	miun/kraken	1	63	replace	Cicely	Cigely	Cicely	
+231	miun/kraken	1	69	replace	Peer		Peter	
+231	miun/kraken	2	3	replace	Sly.	S'y.	S'y.	same
+231	miun/kraken	2	22	delete		11I		
+231	miun/kraken	2	40	replace	Sly.	Síy.	Sly.	
+231	miun/kraken	2	57	replace	tumbling-- trick?	tumblingtrick?	tumblingtrick?	same
+231	miun/kraken	2	62	replace	we'll	we ’Il	we’ll	
+232	trent/kraken	1	50	replace	us to	usto	us to	
+232	trent/kraken	1	51	replace	GREMIO,	MIO,	GRE¬ MIO,	
+232	trent/kraken	1	54	replace	Bap.		Bas.	
+232	trent/kraken	1	59	delete		Because I know you well and love you well,	Because I know you well and love you well,	same
+232	trent/kraken	1	61	replace	Aside	[Asidel	Hsidel	
+232	trent/kraken	2	14	replace	I see	Isee	I see	
+232	trent/kraken	2	19	replace	Bap.		Baz.	
+232	trent/kraken	2	25	delete		8o		
+232	trent/kraken	2	52	replace	Exit.	IExit.	IExit.	same
+233	miun/kraken	1	21	replace	to 't	to’t	to’t	same
+233	miun/kraken	1	25	replace	have	I had	I had	same
+233	miun/kraken	1	26	replace	him	hirn	him	
+233	miun/kraken	1	29	replace	Exeunt	LE xeunt	LE xeunt	same
+233	miun/kraken	1	47	replace	lad,	Iad,	lad,	
+233	miun/kraken	1	52	replace	yes,	ves,	yes,	
+233	miun/kraken	1	60	delete		to	to	same
+233	miun/kraken	1	68	replace	elder	eldest	eldest	same
+233	miun/kraken	2	27	replace	servants,as	servants, as	servants, as	same
+233	miun/kraken	2	30	replace	hatched	hatch’d	hatch’d	same
+233	miun/kraken	2	31	replace	colour'd	colour d	colour’d	
+233	miun/kraken	2	39	replace	think 'twas	think’twas	think ’twas	
+233	miun/kraken	2	51	replace	your	vour	your	
+233	miun/kraken	2	51	delete		stolen	stolen	same
+233	miun/kraken	2	64	replace	Tranio in	Traniorin	Tranio in	
+234	miun/kraken	1	16	replace	Serv.		Serv.	
+234	miun/kraken	1	23	replace	mark.	mare.	marke.	
+234	miun/kraken	1	37	replace	I'll	I’Il	I’Il	same
+234	miun/kraken	1	40	replace	know	lenow	know	
+234	miun/kraken	1	42	replace	you'll	you’Il	you’ll	
+234	miun/kraken	1	42	replace	I'll	I’Il	I’Il	same
+234	miun/kraken	1	43	replace	I'll	I’Il	I’ll	
+234	miun/kraken	1	44	replace	He	HHe	(He zorings	
+234	miun/kraken	1	55	replace	Hor. 'Alla	Hor.Alla	Hor.“Alla	
+234	miun/kraken	2	13	replace	chance 'twixt	chance'twixt	chance ’twixt	
+234	miun/kraken	2	19	replace	further	farther	farther	same
+234	miun/kraken	2	21	delete		stands	stands	same
+234	miun/kraken	2	30	replace	Thou 'ldst	Thou’ldst	Thou’ldst	same
+234	miun/kraken	2	31	replace	I'll	I’Il	I’Il	same
+234	miun/kraken	2	32	replace	thou't	thou’rt	thou’rt	same
+234	miun/kraken	2	33	replace	I'll	I’Il	I’Il	same
+234	miun/kraken	2	56	replace	wife	wise	wife	
+234	miun/kraken	2	66	replace	and 'tis	and'tis	and ’tis	
+235	miun/kraken	1	6	replace	will	vvill	will	
+235	miun/kraken	1	15	replace	he'll	he ’Il	he’Il	
+235	miun/kraken	1	15	replace	I'll	I’1l	I’Il	
+235	miun/kraken	1	36	replace	And	Aud	And	
+235	miun/kraken	1	52	replace	I'll	I’Il	I’Il	same
+235	miun/kraken	1	57	replace	I'll	I'Il	I’il	
+235	miun/kraken	1	61	replace	Wate'er	Whate’er	Whate’er	same
+235	miun/kraken	1	61	replace	I'll	I’Il	I’Il	same
+235	miun/kraken	2	4	replace	you whither	youwhither	you whither	
+235	miun/kraken	2	19	replace	to vent	tovent	tovent	same
+235	miun/kraken	2	21	replace	I'll	I’Il	I’Il	same
+235	miun/kraken	2	24	replace	Katharine,	Katherine,	Katherine,	same
+235	miun/kraken	2	41	replace	I'll	I’Il	I’Il	same
+235	miun/kraken	2	43	delete		z0o		
+235	miun/kraken	2	68	replace	Baptisa	Baptista	Baptista	same
+236	miun/kraken	1	2	replace	is' t	is't	is’t	
+236	miun/kraken	1	37	replace	he'll	he ’ll	he’ll	
+236	miun/kraken	1	60	delete		do	do	same
+236	miun/kraken	2	4	replace	Exeunt.	[Exeumt.	[Exeunt.	
+236	miun/kraken	2	13	replace	I'll	I’Il	I’Il	same
+236	miun/kraken	2	25	replace	I'll	I 'll	I’Il	
+236	miun/kraken	2	33	replace	her.	hex.	her.	
+236	miun/kraken	2	43	replace	Kath.		Kath.	
+236	miun/kraken	2	46	replace	Exit	IExit	IExit	same
+236	miun/kraken	2	51	replace	your	vour	your	
+236	miun/kraken	2	53	replace	Exit.	IExit.		
+236	miun/kraken	2	54	replace	asI?	as I?	as I?	same
+236	miun/kraken	2	57	replace	with	voith	wvith	
+236	miun/kraken	2	59	replace	books.	bools.	books.	
+237	miun/kraken	1	2	replace	Bap.		Bag.	
+237	miun/kraken	1	9	delete		so	so	same
+237	miun/kraken	1	15	replace	Presenting	PPresenting	(Presenting	
+237	miun/kraken	1	28	replace	your	vour	your	
+237	miun/kraken	1	35	replace	Beccare!	Baccare!	Baccare!	same
+237	miun/kraken	1	44	replace	Lucentio	Lucentiol,	Lucentiol,	same
+237	miun/kraken	1	50	replace	To Tranio	ITo Traniol	(To Tranio)	
+237	miun/kraken	1	52	replace	your	vour	your	
+237	miun/kraken	1	63	replace	your	vour	your	
+237	miun/kraken	2	10	replace	Exit	LExit	[Exit	
+237	miun/kraken	2	10	replace	Hortensio,Biondello	Hortensio, Biondello	Hortensio, Biondello folloving.	
+237	miun/kraken	2	22	replace	wife? Bap.	wise?	wife Bap.	
+237	miun/kraken	2	25	replace	I'll	I’Il	I’Il	same
+237	miun/kraken	2	29	replace	convenants	covenants	covenants	same
+237	miun/kraken	2	39	replace	yields	vields	yields	
+237	miun/kraken	2	55	replace	break	breal	break	
+237	miun/kraken	2	62	replace	'I'll	“I’Il	'I’Il	
+238	miun/kraken	1	10	replace	She's	She ’s	She’s	
+238	miun/kraken	1	13	replace	Exeunt	LExeunt	[Exeunt	
+238	miun/kraken	1	16	replace	I'll	I’Il	I’Il	same
+238	miun/kraken	1	18	replace	I'll	I’Il	I’Il	same
+238	miun/kraken	1	21	replace	I'll	I’Il	I’Il	same
+238	miun/kraken	1	23	replace	I'll	I’Il	I’ll	
+238	miun/kraken	1	29	replace	for that's	forthat’s	forthat’s	same
+238	miun/kraken	1	32	replace	my	me	me	same
+238	miun/kraken	1	38	replace	daintiest	dainties	dainties	same
+238	miun/kraken	1	46	replace	you	vou	you	
+238	miun/kraken	1	60	replace	Kath.		Kath.	
+238	miun/kraken	1	62	replace	take	tale	take	
+238	miun/kraken	2	11	replace	I'll	I’Il	I’Il	same
+238	miun/kraken	2	12	replace	Kath.		Kath.	
+238	miun/kraken	2	14	replace	gentleman,	gentlenian,	gentleman,	
+238	miun/kraken	2	17	replace	your	vour	your	
+238	miun/kraken	2	34	replace	wither'd.	wither d.	wither'd.	
+239	miun/kraken	1	5	replace	you	vou	you	
+239	miun/kraken	1	5	replace	dowry 'greed	dowry'greed	dowry ’greed	
+239	miun/kraken	1	18	replace	Bap.		Bab.	
+239	miun/kraken	1	21	replace	were	vere	were	
+239	miun/kraken	1	23	replace	your	vour	your	
+239	miun/kraken	1	30	replace	'tis	vtis	’tis	
+239	miun/kraken	1	48	replace	bargain'd 'twixt	bargain’d'twixt	bargain’d ’twixt	
+239	miun/kraken	1	59	replace	apparel 'gainst	apparel'gainst	apparel ’gainst	
+239	miun/kraken	2	11	replace	Bap.		Baf.	
+239	miun/kraken	2	11	replace	seek	seelz	seek	
+239	miun/kraken	2	16	replace	am one	amtone	am one	
+239	miun/kraken	2	36	replace	stuff'd	stuff ’d	stuff ’d	same
+239	miun/kraken	2	52	replace	I'll	I’Il	I’Il	same
+239	miun/kraken	2	61	replace	lying	Iying	lying	
+239	miun/kraken	2	65	delete		will	will	same
+239	miun/kraken	2	68	replace	have	haye	have	
+240	miun/kraken	1	7	replace	where's	where ’s	where’s	
+240	miun/kraken	1	23	replace	Exit.	IExit.	[Exit.	
+240	miun/kraken	1	25	replace	Yet	Vet	Yet	
+240	miun/kraken	1	32	replace	Exit. ACT III	IExit. ACTIII.	[Exit. ACT III.	
+240	miun/kraken	1	48	replace	unusual	usual	usual	same
+240	miun/kraken	1	50	replace	your	vour	your	
+240	miun/kraken	1	57	replace	I'll	I’Il	I’ll	
+240	miun/kraken	1	57	replace	nor 'pointed	nor'pointed	nor ’pointed	
+240	miun/kraken	2	2	replace	hic	bic	bic	same
+240	miun/kraken	2	4	replace	Construe	Construs	Construe	
+240	miun/kraken	2	10	replace	port, 'celsa	port,'celsa	port, “celsa	
+240	miun/kraken	2	24	replace	Aside	LAside]	LAside]	same
+240	miun/kraken	2	26	replace	I'll	I’Il	I’Il	same
+240	miun/kraken	2	28	replace	AEacides	Æacides	Æacides	same
+240	miun/kraken	2	35	replace	both.	botla.	both.	
+240	miun/kraken	2	40	replace	Aside	IAside]	[Aside)	
+241	miun/kraken	1	2	replace	Exit.	LExit.	IExit.	
+241	miun/kraken	1	9	replace	Exit.	LExit.	IExit.	
+241	miun/kraken	1	13	replace	Bap. To Tranio	ITo Traniol	Bap. (To Traniol	
+241	miun/kraken	1	29	replace	He'll	He’Il	He’ll	
+241	miun/kraken	1	35	replace	Tra.		Tra.	
+241	miun/kraken	1	43	replace	Exit	IExit	[Exit	
+241	miun/kraken	1	50	replace	Bap.		Bap.	
+241	miun/kraken	1	55	replace	Bap.		Bap.	
+241	miun/kraken	1	57	replace	Bap.		Bap.	
+241	miun/kraken	1	65	replace	town-armory,	town-armoury,	town-armoury,	same
+241	miun/kraken	2	1	replace	mothy saddle	mothysaddle	mothy saddle	
+241	miun/kraken	2	28	replace	Yet	Vet	Yet	
+241	miun/kraken	2	32	replace	Bap.		Bag.	
+241	miun/kraken	2	48	replace	Bap.		Bap.	
+241	miun/kraken	2	60	delete		we	we	same
+241	miun/kraken	2	64	replace	tells	tell	tell	same
+241	miun/kraken	2	66	replace	yourself?	vourself?	yourself?	
+242	miun/kraken	1	20	replace	kissl	kiss!	kiss	
+242	miun/kraken	1	21	replace	Petruchio	Petrucaio	Petruchio	
+242	miun/kraken	1	27	replace	Exeunt	LExeunt	LExeunt	same
+242	miun/kraken	1	32	replace	we'll	we’Il	we’Il	same
+242	miun/kraken	1	42	replace	I'll	I’Il	I’Il	same
+242	miun/kraken	1	45	replace	We'll	We’Il	We’Il	same
+242	miun/kraken	1	62	replace	I'll	I'Il	I'Il	same
+242	miun/kraken	1	65	replace	all-amazed,	all-amaxed,	all-amazed,	
+242	miun/kraken	2	1	replace	'if	cif	'if	
+242	miun/kraken	2	29	replace	Bap.		Bap.	
+242	miun/kraken	2	42	replace	Kath.		Kath.	
+242	miun/kraken	2	56	replace	I'll	I’Il	I’ll	
+242	miun/kraken	2	57	replace	you'll	you ’ll	you’Il	
+242	miun/kraken	2	64	replace	Kath.		Kath.	
+243	miun/kraken	1	12	replace	I'll	I Il	I’ll	
+243	miun/kraken	1	19	replace	Exeunt	LE xeunt	LExeunt	
+243	miun/kraken	1	23	replace	never was	never-was	never was	
+243	miun/kraken	1	44	replace	raved? was ever	rayed? was-ever	rayed? was ever	
+243	miun/kraken	2	28	replace	fusttian,	fustian,	fustian,	same
+243	miun/kraken	2	38	delete		co		
+243	miun/kraken	2	42	replace	him.		him.	
+243	miun/kraken	2	43	replace	hear a	hear-a	hear a	
+243	miun/kraken	2	47	replace	behind	belind	behind	
+243	miun/kraken	2	64	replace	unexpe rienced	unexperienced	unexperienced	same
+243	miun/kraken	2	69	replace	Nathaniiel,	Nathaniel,	Nathaniel,	same
+244	trent/kraken	1	1	replace	Suga sop	Sugarsop	Sugarsop	same
+244	trent/kraken	1	21	replace	Jos.		Jos.	
+244	trent/kraken	1	24	delete		you;–what,	you;–what,	same
+244	trent/kraken	1	25	replace	what, you;--fellow,	;–fellow,	you;–what, you:–fellow,	
+244	trent/kraken	1	31	replace	not--Cock's	not— Cock's	not— Cock’s	
+244	trent/kraken	1	59	replace	Exeunt	LExeunt	LExeunt	same
+244	trent/kraken	1	61	replace	those--Sit	those— Sit	those— Sit	same
+244	trent/kraken	2	3	replace	Sings	[Singsl	[Singsl	same
+244	trent/kraken	2	7	replace	Strikes	[trikes	[trikes	same
+244	trent/kraken	2	12	replace	acqainted	acquainted	acquainted	same
+244	trent/kraken	2	36	replace	Throws	TThrows	[Throws	
+244	trent/kraken	2	38	replace	I'll	I’Il	I'll	
+244	trent/kraken	2	48	replace	fed	feed	feed	same
+244	trent/kraken	2	52	replace	Exeunt.	IExeunt.	IExeunt.	same
+244	trent/kraken	2	55	replace	Pet.		Peter.	
+245	miun/kraken	1	5	replace	And	Arid	And	
+245	miun/kraken	1	15	replace	I'll	I'Il	I’ll	
+245	miun/kraken	1	16	replace	I'll	I’Il	I’Il	same
+245	miun/kraken	1	19	replace	That	lhat	That	
+245	miun/kraken	1	21	replace	I'll	I’Il	I’Il	same
+245	miun/kraken	1	34	replace	Hor.		Hor.	
+245	miun/kraken	1	45	delete		ro		
+245	miun/kraken	1	61	replace	my	mine	mine	same
+245	miun/kraken	2	18	replace	Exit.	IExit.	(Exit.	
+245	miun/kraken	2	28	replace	he'll	he ’Il	he ’Il	same
+245	miun/kraken	2	31	replace	he'll	he ’ll	he’ll	
+245	miun/kraken	2	56	replace	Exeunt	LExeunt	LE xeunt	
+246	miun/kraken	1	19	replace	but I	but.I	but I	
+246	miun/kraken	1	43	replace	I'll	I’Il	I’Il	same
+246	miun/kraken	1	45	replace	Exeunt.	[E xeunt.	(Exeunt.	
+246	miun/kraken	2	16	replace	Beats	LBeats	(Beats	
+246	miun/kraken	2	21	replace	with	vith	wvith	
+246	miun/kraken	2	40	replace	Aside	[Asidel	(sidel	
+246	miun/kraken	2	40	replace	thou	taou	thou	
+246	miun/kraken	2	41	delete		5o		
+246	miun/kraken	2	44	delete		we	we	same
+246	miun/kraken	2	50	replace	thy	the	thy	
+246	miun/kraken	2	58	replace	is the	isthe	isthe	same
+246	miun/kraken	2	60	replace	fie! 'tis	fie!'tis	fie ’tis	
+247	miun/kraken	1	2	replace	Aside	[Asidel	(Aside]	
+247	miun/kraken	1	17	replace	Exit	IExit	(Exit	
+247	miun/kraken	1	19	replace	see 't.	see’t.	see t.	
+247	miun/kraken	1	26	replace	Aside	[Asidel	[Asidel	same
+247	miun/kraken	1	34	replace	I'll	I’Il	I’ll	
+247	miun/kraken	1	51	replace	shall	shalt	shalt	same
+247	miun/kraken	1	60	replace	didst	did	did	same
+247	miun/kraken	2	13	replace	Tai. Reads	IReads]	Tai. [Reads]	
+247	miun/kraken	2	17	replace	I'll	I’Il	I’Il	same
+247	miun/kraken	2	39	replace	I'll	I’Il	I’Il	same
+247	miun/kraken	2	43	replace	Exit	LExit	LExit	same
+247	miun/kraken	2	48	replace	For 'tis	For'tis	For ’tis	
+248	trent/kraken	1	3	replace	Aside	[Asidel	[Asidel	same
+248	trent/kraken	1	4	replace	Exeunt.	IExeunt.	IExeunt.	same
+248	trent/kraken	1	6	replace	like	lihe	like	
+248	trent/kraken	1	14	replace	'Tis well;	"""Tiswell;"	"""Tis well;"	
+248	trent/kraken	1	21	replace	thoroughly,	throughly,	throughly,	same
+248	trent/kraken	1	34	replace	Pedant	Pedantl	Pedant]	
+248	trent/kraken	2	2	replace	And	As	As	same
+248	trent/kraken	2	2	delete		so	Bag.	
+248	trent/kraken	2	10	replace	We'll	We ’ll	We ’Il	
+248	trent/kraken	2	28	replace	Exeunt	LExeunt	LExeunt	same
+248	trent/kraken	2	63	replace	Exit.	LExit.	IExit.	
+248	trent/kraken	2	66	replace	I'll	I’Il	I’Il	same
+249	miun/kraken	1	22	replace	And	An	An	same
+249	miun/kraken	1	39	replace	To Vincentio	ITo Vincentiol	ITo Vincentiol	same
+249	miun/kraken	1	55	replace	bed-fellow!	bed-sellow!	bed-fellow!	
+249	miun/kraken	1	60	replace	Kath.		Kath.	
+249	miun/kraken	1	63	replace	perceive	percesve	perceive	
+249	miun/kraken	2	26	replace	thee,	thce,	thee,	
+249	miun/kraken	2	29	replace	Exeunt	LExeunt	LExeunt	same
+249	miun/kraken	2	33	replace	Exit. ACT V	ACTV.	IExit. ACT V.	
+249	miun/kraken	2	42	replace	I'll	I’Il	I’Il	same
+249	miun/kraken	2	42	replace	o'your	o' your	o' your	same
+249	miun/kraken	2	45	replace	Exeunt	LExeunt	[Exeunt	
+249	miun/kraken	2	49	replace	here 's	here’s	here’s	same
+249	miun/kraken	2	60	replace	window.	windoao.	window.	
+250	miun/kraken	1	29	replace	Biondello	Biondellol	Biondellol	same
+250	miun/kraken	1	39	delete		old	old	same
+250	miun/kraken	1	46	replace	Exit	LExit	[Exit	
+250	miun/kraken	1	59	replace	Tra.		Tra.	
+250	miun/kraken	1	60	replace	Bap.		Bap.	
+250	miun/kraken	1	62	replace	your	vour	your	
+250	miun/kraken	1	63	replace	what 'cerns	what'cerns	what ’cerns	
+250	miun/kraken	2	13	replace	me	ine,	me,	
+250	miun/kraken	2	16	replace	with	vith	woith	
+250	miun/kraken	2	21	replace	Bap.		Bap.	
+250	miun/kraken	2	39	replace	Kneeling	[Kneelingl	[Kneeling]	
+250	miun/kraken	2	50	replace	Here's	Here ’s	Here’s	
+250	miun/kraken	2	54	replace	Bap.		Bag.	
+250	miun/kraken	2	64	replace	I'll	I’Il	I’Il	same
+251	trent/kraken	1	6	replace	Bap.		Bap.	
+251	trent/kraken	1	10	replace	be	in	I’Il in	
+251	trent/kraken	1	27	replace	Exeunt,	LExeunt.	LExeunt.	same
+251	trent/kraken	1	30	replace	KATHARINA,	KA¬ THARINA,	KA¬ THARINA,	same
+251	trent/kraken	1	33	replace	with	vith	vitk	
+251	trent/kraken	1	33	replace	banquet.	banguet.	banquet.	
+251	trent/kraken	2	16	replace	marks,	marles,	marks,	
+251	trent/kraken	2	20	replace	Drinks	[Drinkes	(Drinkes	
+251	trent/kraken	2	21	replace	Bap.		Bap.	
+251	trent/kraken	2	21	replace	like	likes	likes	same
+251	trent/kraken	2	29	replace	Bion.		Bian.	
+251	trent/kraken	2	29	replace	I'll	I’Il	I’Il	same
+251	trent/kraken	2	38	replace	Exeunt	[E-veunt	LExeunè	
+251	trent/kraken	2	38	replace	Widow.		Widowo.	
+252	miun/kraken	1	10	replace	Bap.		Ba5.	
+252	miun/kraken	1	10	replace	I'll	I’Il	I’ll	
+252	miun/kraken	1	11	replace	I'll	Fll	I’ll	
+252	miun/kraken	1	39	replace	Pet.		Pet.	
+252	miun/kraken	1	42	replace	Bap.		Bap.	
+252	miun/kraken	1	60	replace	And awful	And-awful	And awful	
+252	miun/kraken	2	10	replace	with	witk	avith	
+252	miun/kraken	2	11	replace	Katharina,	Katharine,	Katharine,	same
+252	miun/kraken	2	33	replace	To	Te	To	
+252	miun/kraken	2	43	replace	they	thy	thy	same
+253	miun/kraken	2	7	delete		1		
+253	miun/kraken	2	10	replace	Exeunt	E xeunt	(E xeunt	

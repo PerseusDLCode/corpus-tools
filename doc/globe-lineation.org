@@ -25,9 +25,9 @@ King Lear, Antony and Cleopatra, Titus Andronicus, Richard II, Two
 Gentlemen of Verona, Measure for Measure, The Comedy of Errors, Love's
 Labour's Lost, A Midsummer Night's Dream, The Merchant of Venice, Much
 Ado About Nothing and As You Like It and Twelfth Night, The Merry
-Wives of Windsor, The Tempest, Hamlet, Cymbeline and Henry VIII are
-built and published (canonical-engLit =mvp=,
-=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym,h8}/shakespeare.*.globe.xml=). Titus
+Wives of Windsor, The Tempest, Hamlet, Cymbeline, Henry VIII and The Taming of the
+Shrew are built and published (canonical-engLit =mvp=,
+=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym,h8,shr}/shakespeare.*.globe.xml=). Titus
 and Richard II were the cold tests: Titus passed 22 of 24 pages with
 the classifier unchanged and needed only table rows; Richard II passed
 22 of 26 and needed two turnover rules and two new table kinds
@@ -60,7 +60,13 @@ kind (=heading=, for II.3's "SONG.", which the Globe numbers as a line;
 IV.2's identical title it does not). Henry VIII passed 30 of 30 with
 eighteen rows and no rule change; its speakerless Prologue and
 Epilogue needed a third refsDecl branch, and every build now reports
-where each row applied (=table-lines.tsv=). Songs (=<lg type="song">=) and
+where each row applied (=table-lines.tsv=). The Taming of the Shrew
+passed 25 of 25 with five rows and one rule change: where a row hangs
+more than half a pitch into its fitted margin, the margin is fitted
+again without speech starts (Michigan p.236, whose speech starts sat in
+the flush band at the column's head). It also let Trent read Hamlet
+p.819 unaided, so two Hamlet rows were retired and Hamlet republished,
+its lineation unchanged. Songs (=<lg type="song">=) and
 inset texts now convert: every printed row of a song is a Globe line,
 a heading is not, and a row is a turnover only if it completes a
 broken word or follows a full-measure row in the same P4 =<l>=

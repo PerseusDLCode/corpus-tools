@@ -1,0 +1,214 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in shr.xml (sha256 25ea4092c43c4de9); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+ind.1	9	row begins a line	9			agree	Sly. No, not a denier. Go
+ind.1	20	row begins a line	20			agree	At the hedge-corner, in the coldest
+ind.1	30	row begins a line	30			agree	First Hun. I will, my lord.
+ind.1	39	row begins a line	39			agree	A most delicious banquet by his
+ind.1	50	row begins a line	50			agree	Procure me music ready when he
+ind.1	60	row begins a line	60			agree	And ask him what apparel he
+ind.1	70	row begins a line	70			agree	As he shall think by our
+ind.1	80	row begins a line	80			agree	Players. We thank your honour. Lord.
+ind.1	90	row begins a line	90			agree	Well, you are come to me
+ind.1	100	row begins a line	100			agree	A Player. Fear not, my lord:
+ind.1	110	row begins a line	110			agree	He bear himself with honorable action,
+ind.1	120	row begins a line	120			agree	Bid him shed tears, as being
+ind.1	130	row begins a line	130			agree	Anon I'll give thee more instructions.
+ind.2	30	row begins a line	30			agree	Lord. Hence comes it that your
+ind.2	40	row begins a line	40			agree	Softer and sweeter than the lustful
+ind.2	50	row begins a line	50			agree	As breathed stags, ay, fleeter than
+ind.2	60	row begins a line	60			agree	Scratching her legs that one shall
+ind.2	80	row begins a line	80			agree	O, that once more you knew
+ind.2	90	row begins a line	90			agree	Because she brought stone jugs and
+ind.2	100	row begins a line	100			agree	All. Amen. Sly. I thank thee:
+ind.2	111	row begins a line	111			agree	Lord. Madam. Sly. Al'ce madam, or
+ind.2	120	row begins a line	120			agree	Page. Thrice-noble lord, let me entreat
+ind.2	130	row begins inside a line		129	130	unmapped (P4 number is the next line)	of the flesh and the blood.
+ind.2	141	row begins inside a line		140	141	unmapped (P4 number is the next line)	trick? Page. No, my good lord;
+1.1	10	row begins a line	10			agree	Pisa renown'd for grave citizens Gave
+1.1	20	row begins a line	20			agree	By virtue specially to be achieved.
+1.1	30	row begins a line	30			agree	This virtue and this moral discipline,
+1.1	40	row begins a line	40			agree	In brief, sir, study what you
+1.1	51	row begins a line	51			agree	Before I have a husband for
+1.1	60	row begins a line	60			agree	Unless you were of gentler, milder
+1.1	70	row begins a line	70			agree	Luc. But in the other's silence
+1.1	81	row begins a line	81			agree	Sir, to your pleasure humbly I
+1.1	91	row begins a line	91			agree	Go in, Bianca: Exit Bianca. And
+1.1	101	row begins a line	101			agree	For I have more to commune
+1.1	121	row begins inside a line		120	121	unmapped (P4 number is the next line)	effect one thing specially. Gre. What's
+1.1	150	row begins inside a line		150	151	unmapped (P4 number is the containing line)	on. Exeunt Gremio and Hortensio. Tra.
+1.1	160	row begins a line	160			agree	Tranio, I burn, I pine, I
+1.1	170	row begins a line	170			agree	Tra. Master you look'd so longly
+1.1	181	row begins a line	181			agree	Sacred and sweet was all I
+1.1	200	row begins a line	200			agree	And be in Padua here Vincentio's
+1.1	210	row begins a line	210			agree	Some Neapolitan, or meaner man of
+1.1	220	row begins a line	220			agree	Although I think 'twas in another
+1.1	230	row begins inside a line		229	230	unmapped (P4 number is the next line)	both? pray, what's the news? Luc.
+1.1	259	row begins a line	259			agree	madam lady: would 'twere done! They
+1.2	50	row begins a line	50			agree	Pet. Such wind as scatters young
+1.2	59	row begins a line	59			agree	Hor. Petruchio, shall I then come
+1.2	70	row begins a line	70			agree	As old as Sibyl and as
+1.2	91	row begins a line	91			agree	That, were my state far worser
+1.2	101	row begins a line	101			agree	Pet. I know her father, though
+1.2	120	row begins a line	120			agree	His youngest daughter, beautiful Bianca, And
+1.2	130	row begins a line	130			agree	A title for a maid of
+1.2	140	row begins inside a line		139	140	unmapped (P4 number is the next line)	heads together! Enter GREMIO, and LUCENTIO
+1.2	150	row begins a line	150			agree	Signior Baptista's liberality, I'll mend it
+1.2	162	row begins a line	162			agree	Pet. Peace, sirrah! Hor. Grumio, mum!
+1.2	170	row begins a line	170			agree	Fit for her turn, well read
+1.2	180	row begins a line	180			agree	Listen to me, and if you
+1.2	190	row begins a line	190			agree	Gre. No, say'st me so, friend?
+1.2	201	row begins a line	201			agree	Have I not in my time
+1.2	210	row begins a line	210			agree	As will a chestnut in a
+1.2	221	row begins a line	221			agree	To the house of Signior Baptisa
+1.2	230	row begins a line	230			agree	Are you a suitor to the
+1.2	240	row begins a line	240			agree	Baptista is a noble gentleman, To
+1.2	250	row begins a line	250			agree	Pet. Hortensio, to what end are
+1.2	262	row begins a line	262			agree	And will not promise her to
+1.2	270	row begins a line	270			agree	Will not so graceless be to
+1.2	280	row begins inside a line		279	280	unmapped (P4 number is the next line)	Gru. (with Bion.) O excellent motion!
+2.1	10	row begins a line	10			agree	Bian. Believe, me, sister, of all
+2.1	20	row begins a line	20			agree	You have but jested with me
+2.1	30	row begins a line	30			agree	Bap. What, in my sight? Bianca,
+2.1	41	row begins inside a line		40	41	unmapped (P4 number is the next line)	God save you, gentlemen! Pet. And
+2.1	50	row begins a line	50			agree	Her wondrous qualities and mild behaviour,
+2.1	60	row begins a line	60			agree	His name is Licio, born in
+2.1	70	row begins a line	70			agree	Bap. I know him well: you
+2.1	90	row begins a line	90			agree	That being a stranger in this
+2.1	100	row begins a line	100			agree	I here bestow a simple instrument,
+2.1	110	row begins a line	110			agree	To my daughters; and tell them
+2.1	120	row begins a line	120			agree	Then tell me, if I get
+2.1	130	row begins a line	130			agree	That is, her love; for that
+2.1	141	row begins a line	141			agree	Pet. Ay, to the proof; as
+2.1	150	row begins a line	150			agree	I did but tell her she
+2.1	160	row begins a line	160			agree	As had she studied to misuse
+2.1	169	row begins inside a line		169	170	unmapped (P4 number is the containing line)	I will attend her here, And
+2.1	180	row begins a line	180			agree	If she deny to wed, I'll
+2.1	191	row begins a line	191			agree	Take this of me, Kate of
+2.1	210	row begins a line	210			agree	Pet. Come, come, you wasp; i'
+2.1	220	row begins inside a line		220	221	unmapped (P4 number is the containing line)	Kath. That I'll try. She strikes
+2.1	231	row begins a line	231			agree	Pet. Why, here's no crab; and
+2.1	240	row begins a line	240			agree	Pet. 'Tis with cares. Kath. I
+2.1	250	row begins a line	250			agree	Nor bite the lip, as angry
+2.1	260	row begins a line	260			agree	Pet. Did ever Dian so become
+2.1	270	row begins a line	270			agree	And therefore, setting all this chat
+2.1	280	row begins a line	280			agree	Conformable as other household Kates. Here
+2.1	290	row begins a line	290			agree	A mad-cap ruffian and a swearing
+2.1	300	row begins a line	300			agree	That upon Sunday is the wedding-day.
+2.1	311	row begins a line	311			agree	She vied so fast, protesting oath
+2.1	320	row begins a line	320			agree	Bap. I know not what to
+2.1	330	row begins a line	330			agree	Tra. 'Twas a commodity lay fretting
+2.1	339	row begins a line	339			agree	Gre. Youngling, thou canst not love
+2.1	360	row begins a line	360			agree	Sixscore fat oxen standing in my
+2.1	370	row begins a line	370			agree	Old Signior Gremio has in Padua;
+2.1	380	row begins a line	380			agree	Than three great argosies; besides two
+2.1	391	row begins a line	391			agree	If you should die before him,
+2.1	399	row begins a line	400			disagree	And so, I take my leave,
+2.1	411	row begins a line	411			agree	And that's a wonder: fathers commonly
+3.1	11	row begins a line	11			agree	Was it not to refresh the
+3.1	20	row begins a line	20			agree	But learn my lessons as I
+3.1	30	row begins a line	30			agree	Bian. Construe them. Luc. 'Hic ibat,'
+3.1	50	row begins a line	50			agree	Pedascule, I'll watch you better yet.
+3.1	60	row begins a line	60			agree	My lessons make no music in
+3.1	70	row begins a line	70			agree	And there it is in writing,
+3.1	81	row begins a line	81			agree	To change true rules for old
+3.1	90	row begins a line	90			agree	To cast thy wandering eyes on
+3.2	10	row begins a line	10			agree	Unto a mad-brain rudesby full of
+3.2	31	row begins a line	31			agree	such news as you never heard
+3.2	41	row begins a line	40			disagree	Bion. When he stands where I
+3.2	80	row begins a line	80			agree	Bap. Ay, that Petruchio came. Bion.
+3.2	89	row begins a line	89			agree	Pet. Come, where be these gallants?
+3.2	110	row begins a line	110			agree	Which, at more leisure, I will
+3.2	120	row begins a line	120			agree	Could I repair what she will
+3.2	140	row begins a line	140			agree	Luc. Were it not that my
+3.2	150	row begins a line	150			agree	All for my master's sake, Lucentio.
+3.2	170	row begins a line	170			agree	As if the vicar meant to
+3.2	180	row begins a line	180			agree	And kiss'd her lips with such
+3.2	189	row begins a line	189			agree	But so it is, my haste
+3.2	210	row begins a line	210			agree	Do what thou canst, I will
+3.2	219	row begins a line	219			agree	Father, be quiet: he shall stay
+3.2	230	row begins a line	230			agree	Nay, look not big, nor stamp,
+3.2	240	row begins a line	240			agree	Fear not, sweet wench, they shall
+3.2	251	row begins a line	251			agree	Lucentio, you shall supply the bridegroom's
+4.1	21	row begins a line	21			agree	fire; cast on no water. Curt.
+4.1	60	row begins inside a line		59	60	unmapped (P4 number is the next line)	and thereby hangs a tale. Curt.
+4.1	101	row begins a line	101			agree	master to countenance my mistress. Gru.
+4.1	110	row begins a line	110			agree	Phil. How now, Grumio! Jos. What,
+4.1	119	row begins a line	118			disagree	Nath. All things is ready. How
+4.1	130	row begins a line	130			agree	Where is the foolish knave I
+4.1	140	row begins a line	140			agree	The rest were ragged, old, and
+4.1	150	row begins a line	150			agree	Out, you rogue! you pluck my
+4.1	160	row begins a line	160			agree	Pet. A whoreson beetle-headed, flap-ear'd knave!
+4.1	170	row begins a line	170			agree	What, do you grumble? I'll be
+4.1	179	row begins a line	179			agree	Be patient; tomorrow 't shall be
+4.1	200	row begins a line	190			disagree	Away, away! for he is coming
+4.1	220	row begins a line	210			disagree	And with the clamour keep her
+4.2	10	row begins a line	10			agree	Luc. While you, sweet dear, prove
+4.2	20	row begins a line	20			agree	And makes a god of such
+4.2	30	row begins a line	30			agree	As one unworthy all the former
+4.2	40	row begins a line	40			agree	And so farewell, Signior Lucentio. Kindness
+4.2	51	row begins a line	51			agree	That shall be woo'd and wedded
+4.2	60	row begins a line	60			agree	That I am dog-weary: but at
+4.2	70	row begins a line	70			agree	As if he were the right
+4.2	80	row begins a line	80			agree	Ped. My life, sir! how, I
+4.2	90	row begins a line	90			agree	From Florence and must here deliver
+4.2	99	row begins a line	99			agree	Tra. He is my father, sir;
+4.2	111	row begins a line	111			agree	If this be courtesy, sir, accept
+4.2	120	row begins a line	120			agree	Go with me to clothe you
+4.3	10	row begins a line	10			agree	With oaths kept waking and with
+4.3	20	row begins a line	20			agree	How say you to a fat
+4.3	30	row begins a line	30			agree	Gru. Why then, the mustard without
+4.3	39	row begins a line	39			agree	Here, love; thou see'st how diligent
+4.3	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	Pet. Aside Eat it up all,
+4.3	59	row begins a line	59			agree	What, hast thou dined? The tailor
+4.3	70	row begins a line	70			agree	And gentlewomen wear such caps as
+4.3	90	row begins a line	90			agree	Here's snip and nip and cut
+4.3	99	row begins a line	99			agree	For you shall hop without my
+4.3	120	row begins a line	120			agree	Tai. But how did you desire
+4.3	131	row begins a line	130			disagree	Tai. Why, here is the note
+4.3	141	row begins a line	141			agree	Gru. I confess the cape. Tai.
+4.3	151	row begins inside a line		150	151	unmapped (P4 number is the next line)	in place where, thou shouldst know
+4.3	160	row begins a line	160			agree	Gru. Villain, not for thy life:
+4.3	170	row begins a line	170			agree	Away! I say; commend me to
+4.3	180	row begins a line	180			agree	Because his painted skin contents the
+4.4	20	row begins inside a line		20	21	unmapped (P4 number is the containing line)	Sir, this is the gentleman I
+4.4	30	row begins a line	30			agree	And she to him, to stay
+4.4	40	row begins a line	40			agree	Right true it is, your son
+4.4	59	row begins a line	59			agree	My boy shall fetch the scrivener
+4.4	90	row begins a line	90			agree	Luc. And what of all this?
+4.5	10	row begins a line	10			agree	Evermore cross'd and cross'd; nothing but
+4.5	20	row begins a line	20			agree	And the moon changes even as
+4.5	29	row begins a line	29			agree	Hast thou beheld a fresher gentlewoman?
+4.5	40	row begins a line	40			agree	Happier the man, whom favourable stars
+4.5	50	row begins a line	50			agree	Pet. Do, good old grandsire; and
+4.5	60	row begins a line	60			agree	And now by law, as well
+4.5	70	row begins a line	70			agree	Who will of thy arrival be
+5.1	10	row begins a line	10			agree	My father's bears more toward the
+5.1	31	row begins a line	31			agree	Ped. Thou liest: his father is
+5.1	41	row begins inside a line		40	41	unmapped (P4 number is the next line)	my countenance. Re-enter BIONDELLO. Bion. I
+5.1	50	row begins a line	50			agree	you forgot me? Bion. Forgot you!
+5.1	61	row begins a line	60			disagree	Bion. Help, help, help! here's a
+5.1	79	row begins inside a line		78	79	unmapped (P4 number is the next line)	I am able to maintain it.
+5.1	89	row begins inside a line		88	89	unmapped (P4 number is the next line)	the lands of me, Signior Vincentio.
+5.1	100	row begins inside a line		99	100	unmapped (P4 number is the next line)	shall go to prison. Gre. Take
+5.1	110	row begins inside a line		109	110	unmapped (P4 number is the next line)	with him! Vin. Thus strangers may
+5.1	130	row begins a line	130			agree	And happily I have arrived at
+5.1	141	row begins a line	141			agree	Bap. And I, to sound the
+5.1	150	row begins a line	150			agree	Pet. What, art thou ashamed of
+5.2	11	row begins a line	11			agree	For now we sit to chat
+5.2	20	row begins a line	20			agree	Wid. He that is giddy thinks
+5.2	30	row begins a line	30			agree	And now you know my meaning.
+5.2	41	row begins a line	41			agree	Would say your head and butt
+5.2	50	row begins a line	50			agree	This bird you aim'd at, though
+5.2	60	row begins a line	60			agree	Pet. A' has a little gall'd
+5.2	70	row begins inside a line		70	71	unmapped (P4 number is the containing line)	Luc. Twenty crowns. Pet. Twenty crowns!
+5.2	90	row begins a line	90			agree	Now, where's my wife? Bion. She
+5.2	100	row begins a line	100			agree	Kath. What is your will, sir,
+5.2	110	row begins a line	110			agree	And, to be short, what not,
+5.2	120	row begins a line	120			agree	As prisoners to her womanly persuasion.
+5.2	130	row begins a line	130			agree	Pet. Katharine, I charge thee, tell
+5.2	140	row begins a line	140			agree	Confounds thy fame as whirlwinds shake
+5.2	151	row begins a line	151			agree	Whilst thou liest warm at home,
+5.2	160	row begins a line	160			agree	And graceless traitor to her loving
+5.2	170	row begins a line	170			agree	My mind hath been as big
+5.2	180	row begins a line	180			agree	Pet. Why, there's a wench! Come

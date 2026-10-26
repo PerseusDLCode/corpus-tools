@@ -54,6 +54,7 @@ PLAY_TITLES = {
     "mv": "The Merchant of Venice",
     "shr": "The Taming of the Shrew",
     "wt": "The Winter's Tale",
+    "jn": "King John",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -107,6 +108,9 @@ COPY_TEXT = {
     # Introduction printed 993 (CHOCR index 433), V.3 ends on 1022 (index 462);
     # King Henry VIII's introduction is 1023 (printed = index + 560).
     "wt": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="993-1022"),
+    # Introduction printed 306 (CHOCR index 316), V.7 ends on 330 (index 340);
+    # The Merchant of Venice's introduction is 331 (printed = index - 10).
+    "jn": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="306-330"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

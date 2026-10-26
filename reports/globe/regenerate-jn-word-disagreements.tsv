@@ -1,0 +1,269 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+332	miun/kraken	1	20	replace	palace	salace.	Balace.	
+332	miun/kraken	1	21	replace	PEMBROKE,	PEMBRORE,	PEMBROKE,	
+332	miun/kraken	1	46	replace	the	these	these	same
+332	miun/kraken	1	47	replace	John.		John.	
+332	miun/kraken	2	1	delete		JOHN. PERSONÆ. LEWIS, the LYMOGES, Duke of AUSTRIA. CARDINAL PANDULPH, the Pope’s legate. MELUN, a French CHATILLON, ambassador from France to King QUEEN ELINOR, mother to King CONSTANCE, mother to of Spain, niece to King LADY FAULCONBRIDGE. Lords, Citizens of Angiers, Sheriff, Heralds, Officers, Soldiers, Messengers, and other Attendants. SCENE: Partly in England, and partly in	DEATH OR JOHN. PERSONÆ. LEWIS, the Dauphin. LYMOGES, Duke of AUSTRIA. CARDINAL PANDULPH, the Pope’s legate. MELUN, a French Lord. CHATILLON, ambassador from France to King John. QUEEN ELINOR, mother to King John. CONSTANCE, mother to Arthur. BLANCH of Spain, niece to King John. LADY FAULCONBRIDGE. Lords, Citizens of Angiers, Sheriff, Heralds, Officers, Soldiers, Messengers, and other Attendants. SCENE: Partly in England, and partly in France.	
+332	miun/kraken	2	23	replace	honorable	honourable	honourable	same
+332	miun/kraken	2	24	replace	to 't.	to’t.	to’t.	same
+332	miun/kraken	2	37	delete		to		
+332	miun/kraken	2	52	replace	subject	subiect	subject	
+332	miun/kraken	2	52	delete		5o	5o	same
+333	miun/kraken	1	2	replace	honor-giving	honour-giving	honour-giving	same
+333	miun/kraken	1	3	replace	Coeur-de-lion	Cœur-de-lion	Cœur-de-lion	same
+333	miun/kraken	1	17	replace	honor	honour	honour	same
+333	miun/kraken	1	22	replace	honor	honour	honour	same
+333	miun/kraken	1	39	replace	Coeur-de-lion's	Cœur-de-lion's	Cœur-de-lion's	same
+333	miun/kraken	1	41	replace	Do	Bo	Do	
+333	miun/kraken	1	50	replace	pounds	pound	pound	same
+333	miun/kraken	1	57	replace	dispatched	dispatch’d	dispatch’d	same
+333	miun/kraken	1	59	replace	touching that	touching-that	touching that	
+333	miun/kraken	2	28	replace	Coeur-de-lion,	Cœur-de-lion,	Cœur-de-lion,	same
+333	miun/kraken	2	33	replace	arm	arms	arms	same
+333	miun/kraken	2	45	replace	I'll	I’Il	I’Il	same
+333	miun/kraken	2	48	replace	and 'tis	and'tis	and ’tis	
+333	miun/kraken	2	49	replace	I'll	I’Il	I’Il	same
+333	miun/kraken	2	54	replace	John.		John.	
+334	miun/kraken	1	6	replace	however	howe’er	howe’er	same
+334	miun/kraken	1	16	replace	[Exeunt	IExeunt	[Exeunt	
+334	miun/kraken	1	17	replace	fool or	foot of	foot of	same
+334	miun/kraken	1	20	replace	Richard!--'God-a-mercy,	"Richard!""—“God-a-mercy,"	"Richard!""— God-a-mercy,"	
+334	miun/kraken	1	33	replace	yes,'	sir,'	sir,'	same
+334	miun/kraken	1	34	replace	your	vour	your	
+334	miun/kraken	1	37	replace	a	in	in	same
+334	miun/kraken	1	55	replace	before	befpre	before	
+334	miun/kraken	1	62	replace	honor	honour	honour	same
+334	miun/kraken	2	7	replace	I'll	I 'll	I ’Il	
+334	miun/kraken	2	8	replace	[Exit	IExit	LExit	
+334	miun/kraken	2	20	replace	honor?	honour?	honour?	same
+334	miun/kraken	2	21	replace	untoward	untowarc	untoward	
+334	miun/kraken	2	34	replace	Lady F.		Lady F.	
+334	miun/kraken	2	34	replace	Coeur-de-lion	Cœur-de-lion	Cœur-de-lion	same
+334	miun/kraken	2	44	replace	yours;	vours;	vours;	same
+334	miun/kraken	2	54	replace	I'll	I’Il	I’Il	same
+334	miun/kraken	2	59	replace	[Exeunt.	IExeunt.	(Exeunt.	
+334	miun/kraken	2	64	replace	power;	pouver;	power;	
+334	miun/kraken	2	66	replace	Before	Beforc	Before	
+334	miun/kraken	2	67	replace	the	that	that	same
+335	miun/kraken	1	10	replace	Coeur-de-lion's	Cœur-de-lion's	Cœur-de-lion's	same
+335	miun/kraken	1	29	replace	the	that	that	same
+335	miun/kraken	1	45	replace	We'll	We’Il	We’Il	same
+335	miun/kraken	1	48	replace	your	vour	your	
+335	miun/kraken	1	67	replace	h:s	his	his	same
+335	miun/kraken	2	4	replace	humors	humours	humours	same
+335	miun/kraken	2	36	delete		or	or	same
+335	miun/kraken	2	59	replace	stirs good	stirsgood	stirs good	
+335	miun/kraken	2	65	replace	Phi.		John.	
+336	miun/kraken	1	11	replace	as	an	an	same
+336	miun/kraken	1	36	replace	Lew.		Lew.	
+336	miun/kraken	1	42	delete		I	I	same
+336	miun/kraken	1	45	replace	I'll	I'Il	I’Il	
+336	miun/kraken	1	46	replace	e'er	el er	e’er	
+336	miun/kraken	2	25	replace	K.-Phi.	K.	K. Phi.	
+336	miun/kraken	2	36	replace	K.-Phi.	K.	K. Phi.	
+336	miun/kraken	2	51	replace	proceeding	procceding	proceeding	
+336	miun/kraken	2	69	replace	labor'd	labour'd	labour'd	same
+337	miun/kraken	1	2	replace	harborage	harbourage	harbourage	same
+337	miun/kraken	1	3	replace	to us	tous	tous	same
+337	miun/kraken	1	19	replace	Save	Saye	Save	
+337	miun/kraken	1	31	replace	harbor'd	harbour'd	harbour’d	
+337	miun/kraken	1	51	replace	John.		Yohn.	
+337	miun/kraken	1	52	replace	K.-Phi.	K.	K. Phi.	
+337	miun/kraken	1	55	replace	K.-Phi.	K.	K. Phi.	
+337	miun/kraken	1	65	replace	K.-Phi.	K.	K. Phi.	
+337	miun/kraken	2	8	replace	we'll	we ’Il	we ’Il	same
+337	miun/kraken	2	13	replace	K.-Phi.	K.	K. Phi.	
+337	miun/kraken	2	15	replace	Exeunt.	LExeunt.	IExeunt.	
+337	miun/kraken	2	17	replace	with	vith	zoith	
+337	miun/kraken	2	31	replace	with	vith	with	
+337	miun/kraken	2	37	replace	armors,	armours,	armours,	same
+337	miun/kraken	2	41	replace	colors	colours	colours	same
+337	miun/kraken	2	51	replace	By	Ry	By	
+337	miun/kraken	2	60	replace	with	wvith	wvith	same
+337	miun/kraken	2	60	replace	powers,severally.	powers, severally.	powvers, severally.	
+338	miun/kraken	1	10	replace	We'll	We’Il	We’ll	
+338	miun/kraken	1	23	replace	You	Vou	You	
+338	miun/kraken	1	62	replace	colors	colours	colours	same
+338	miun/kraken	1	65	replace	of one	of-one	of one	
+338	miun/kraken	2	24	replace	I'll	I’Il	I’Il	same
+338	miun/kraken	2	32	replace	John.		John.	
+339	miun/kraken	1	48	replace	K.-Phi.	K.	K. Phi.	
+339	miun/kraken	1	54	delete		goo		
+339	miun/kraken	1	58	replace	[Whispers with	hispers voith	[IVhispers voith	
+339	miun/kraken	1	68	replace	makes	malces	makes	
+339	miun/kraken	2	8	replace	your	vour	your	
+339	miun/kraken	2	14	replace	John.		John.	
+339	miun/kraken	2	18	replace	John.		John.	
+339	miun/kraken	2	27	replace	your	vour	your	
+339	miun/kraken	2	40	replace	Phi.		Phil.	
+339	miun/kraken	2	42	replace	her sadness	her-sadness	her sadness	
+339	miun/kraken	2	48	replace	we'll	we ’Il	we’Il	
+339	miun/kraken	2	48	replace	young	voung	young	
+339	miun/kraken	2	58	replace	[Exeunt	LExeunt	LExeunt	same
+339	miun/kraken	2	63	replace	armor	armour	armour	same
+340	trent/kraken	1	17	replace	honorable	honourable	honourable	same
+340	trent/kraken	1	30	replace	by	be	be	same
+340	trent/kraken	1	30	replace	[Exit.	IExit.	[Exit.	
+340	trent/kraken	2	6	replace	Fellow,	Feilow,	Feilow,	same
+340	trent/kraken	2	44	replace	grief's	grief ’s	grief ’s	same
+341	miun/kraken	1	26	replace	discord 'twixt	discord’twixt	discord ’twixt	
+341	miun/kraken	1	56	replace	John.		John.	
+341	miun/kraken	2	3	replace	aforesaid	foresaid	foresaid	same
+341	miun/kraken	2	5	replace	earthly	earthy	earthy	same
+341	miun/kraken	2	29	replace	witchcraft	witcheraft	witcheraft	same
+342	miun/kraken	1	31	replace	perplexed,	perplex’d,	perplex’d,	same
+342	miun/kraken	1	55	replace	regret?	regreet?	regreet?	same
+342	miun/kraken	2	9	replace	Phi.		Phi.	
+342	miun/kraken	2	21	replace	The	Tho	The	
+342	miun/kraken	2	29	replace	But	By	By	same
+342	miun/kraken	2	44	replace	course	curses	curses	same
+342	miun/kraken	2	48	replace	Will 't	Will’t	Will't	
+342	miun/kraken	2	53	replace	slaughtered	slaughter'd	slaughter'd	same
+342	miun/kraken	2	55	replace	Clamors	Clamours	Clamours	same
+342	miun/kraken	2	59	replace	knees	knee	knee	same
+343	trent/kraken	1	1	replace	honor:	honour	honour	same
+343	trent/kraken	1	1	replace	honor,	honour,	honour,	same
+343	trent/kraken	1	1	replace	honor!	honour!	honour!	same
+343	trent/kraken	1	26	replace	Len.		play d. Lew.	
+343	trent/kraken	1	29	replace	John.		John.	
+343	trent/kraken	1	42	replace	BASTARD, with	BasTarp, vith	BASTARD, with	
+343	trent/kraken	1	57	replace	labor	labour	labour	same
+343	trent/kraken	1	57	replace	a	an	an	same
+343	trent/kraken	1	57	replace	[Exeunt.	IExeunt.	[Exeunt.	
+343	trent/kraken	1	62	replace	[to Elinor]	ITo Elinorl	ITo Elinorj	
+343	trent/kraken	2	1	replace	[To	ITo	[To	
+343	trent/kraken	2	31	replace	t'me.	time.	time.	same
+343	trent/kraken	2	39	replace	jo:	go:	go:	same
+343	trent/kraken	2	52	replace	cheeks	cheels	cheeks	
+343	trent/kraken	2	67	replace	I'll	I’Il	I’Il	same
+344	trent/kraken	1	4	replace	I'll	I’Il	I’Il	same
+344	trent/kraken	1	14	replace	I'll	I’Il	I’ll	
+344	trent/kraken	1	16	replace	John.		John.	
+344	trent/kraken	1	19	replace	[Exeunt.	LE xeunt.	IExeunt.	
+344	trent/kraken	2	5	delete		I	I	same
+344	trent/kraken	2	17	delete		I	I	same
+344	trent/kraken	2	35	replace	toether	together	together	same
+344	trent/kraken	2	57	replace	he 'l	he’Il	he ’ll	
+344	trent/kraken	2	64	replace	fond	sond	fond	
+345	miun/kraken	1	10	replace	curel [Exit.	cure! IExit.	cure [Exit.	
+345	miun/kraken	1	12	replace	I 'll	I’Il	I’Il	same
+345	miun/kraken	1	20	replace	yields	vields	vields	same
+345	miun/kraken	1	47	replace	unruly	tnruly	unruly	
+345	miun/kraken	2	23	replace	s'de,	side,	side,	same
+345	miun/kraken	2	28	replace	topfull	topful	topfull	
+345	miun/kraken	2	32	replace	[Exeunt.	LExeunt.	[Exeunt.	
+345	miun/kraken	2	34	replace	room	voom	room	
+345	miun/kraken	2	45	replace	to 't. [Exeunt	to’t. IExeunt	to’t. [Exeunt	
+345	miun/kraken	2	55	replace	Yet,	Vet,	Yet,	
+345	miun/kraken	2	61	replace	harm to	harmto	harm to	
+345	miun/kraken	2	64	replace	is 't	is’t	is’t	same
+346	trent/kraken	1	1	replace	[Aside]	[Asidel	[Asidel	same
+346	trent/kraken	1	8	delete		3o		
+346	trent/kraken	1	10	replace	[Aside]	[Asidel	[Aside]	
+346	trent/kraken	1	13	replace	[Aside]	(Asidel	[Aside]	
+346	trent/kraken	1	25	replace	handkerchief	handkercher	handkercher	same
+346	trent/kraken	1	34	delete		5o	5o	same
+346	trent/kraken	1	35	replace	spoken	spoke	spoke	same
+346	trent/kraken	1	60	replace	iron,	irons,	irons,	same
+346	trent/kraken	1	67	replace	Arth.	Art4.	Arth.	
+346	trent/kraken	2	7	replace	I'll	I’Il	I’Il	same
+346	trent/kraken	2	11	replace	[Exeunt	LExveunt	IExeunt	
+347	miun/kraken	1	7	replace	crowned,	crown’d,	crown’d,	same
+347	miun/kraken	1	23	replace	seek	seel	seek	
+347	miun/kraken	1	29	replace	unseasonable.	unscasonable.	unseasonable.	
+347	miun/kraken	1	43	replace	Piscredit	Discredit	Discredit	same
+347	miun/kraken	1	51	replace	your highness	your-highness	your highness	
+347	miun/kraken	1	59	replace	request.	requests.	requests.	same
+347	miun/kraken	2	25	replace	feared	fear'd	fear'd	same
+347	miun/kraken	2	51	replace	I'll	I’Il	I’Il	same
+347	miun/kraken	2	55	replace	breath	breadth	breadth	same
+348	miun/kraken	1	19	replace	rumor's	rumour's	rumour's	same
+348	miun/kraken	1	24	replace	WhatI	What!	What!	same
+348	miun/kraken	1	24	replace	deadly	dead!	dead!	same
+348	miun/kraken	1	35	replace	afraid	afeard	afeard	same
+348	miun/kraken	1	47	replace	rumors,	rumours,	rumours,	same
+348	miun/kraken	1	55	replace	John.		John.	
+348	miun/kraken	1	59	replace	K.	R.	K.	
+348	miun/kraken	1	64	replace	[Exeunt	LExit	[Exit	
+348	miun/kraken	1	64	replace	with	vith	voith	
+348	miun/kraken	2	19	replace	[Exit.	IExit.	(Exit.	
+348	miun/kraken	2	42	replace	wth	with	with	same
+348	miun/kraken	2	52	replace	John.		John.	
+348	miun/kraken	2	54	replace	young	voung	young	
+348	miun/kraken	2	62	replace	humors	humours	humours	same
+348	miun/kraken	2	67	replace	humor	humour	humour	same
+349	miun/kraken	1	10	replace	signed	sign’d	sign’d	same
+349	miun/kraken	1	19	replace	John.		John.	
+349	miun/kraken	1	42	replace	I'll	I’Il	I’Il	same
+349	miun/kraken	1	63	replace	[Exeunt.	IExeunt.	IExeunt.	same
+349	miun/kraken	1	65	replace	malls.	vvalls.	walls.	
+349	miun/kraken	2	5	replace	I 'll	I’Il	I’Il	same
+349	miun/kraken	2	7	replace	I'll	L’Il	I’Il	
+349	miun/kraken	2	7	replace	ge	get	get	same
+349	miun/kraken	2	9	replace	[Leaps	LLeaps	[Leaps dovn.	
+349	miun/kraken	2	13	replace	PEMBROKE,	PEMBRORE,	PEMBROKE,	
+349	miun/kraken	2	32	replace	honors,	honours,	honours,	same
+349	miun/kraken	2	41	replace	Pem.		Pem.	
+349	miun/kraken	2	48	replace	Sal.		Sal.	
+350	miun/kraken	1	11	delete		ce		
+350	miun/kraken	1	25	delete			Big.	
+350	miun/kraken	1	34	replace	[Drawing	IDrawing	(Drawing	
+350	miun/kraken	1	43	replace	your	vour	your	
+350	miun/kraken	1	51	replace	Yet	Vet	Yet	
+350	miun/kraken	1	61	replace	I'll	I’Il	I’Il	same
+350	miun/kraken	1	62	replace	I'll	I’Il	I’Il	same
+350	miun/kraken	2	4	replace	honor'd	honour'd	honour'd	same
+350	miun/kraken	2	12	replace	savors	savours	savours	same
+350	miun/kraken	2	17	replace	[Exeunt	[Exeuxt	Exeunt	
+350	miun/kraken	2	20	replace	Beyond	Bevond	Beyond	
+350	miun/kraken	2	22	replace	damned,	damn’d,	damn’d,	same
+350	miun/kraken	2	24	replace	I'll	I’Il	I’Il	same
+350	miun/kraken	2	48	replace	lost	lose	lose	same
+350	miun/kraken	2	66	replace	I'll	I’Il	I’Il	same
+351	trent/kraken	1	18	replace	humor	humour	humour	same
+351	trent/kraken	1	32	replace	[Exit.	IExit.	IExit.	same
+351	trent/kraken	1	48	replace	John.		John.	
+351	trent/kraken	1	64	replace	behaviors	behaviours	behaviours	same
+351	trent/kraken	2	9	replace	comes	come	comes	
+351	trent/kraken	2	22	replace	colors	colours	colours	same
+351	trent/kraken	2	32	replace	DAUPHIN'S	DaurmiN's	DAUPHIN'S camt	
+351	trent/kraken	2	53	replace	honorable	honourable	honourable	same
+351	trent/kraken	2	59	replace	is't	is ’t	is ’t	same
+351	trent/kraken	2	59	replace	friend,	friends,	friends,	same
+351	trent/kraken	2	64	replace	ranks,--I	ranks,— I	ranks,— I	same
+351	trent/kraken	2	67	replace	colors	colours	colours	same
+352	miun/kraken	1	7	replace	unneighborly!	unneighbourly!	unneighbourly!	same
+352	miun/kraken	1	13	replace	honorable	honourable	honourable	same
+352	miun/kraken	1	18	delete		so	5o	
+352	miun/kraken	1	23	delete		a		
+352	miun/kraken	1	44	replace	colors	colours	colours	same
+352	miun/kraken	1	62	replace	Yea,	Vea,	Yea,	
+352	miun/kraken	1	65	replace	honor	honour	honour	same
+352	miun/kraken	2	12	replace	yielded	vielded	vielded	same
+353	trent/kraken	1	6	replace	Lew.		Lewo.	
+353	trent/kraken	1	12	replace	clamor	clamour	clamour	same
+353	trent/kraken	1	26	replace	[Exeunt.	IExeunt.	IExeunt.	same
+353	trent/kraken	1	27	replace	battle.	batile.	battle.	
+353	trent/kraken	1	28	replace	JOHN	JOun	JOHN	
+353	trent/kraken	1	48	replace	up,	uj		
+353	trent/kraken	1	52	replace	[Exeunt.	WExeunt.	IExeunt.	
+353	trent/kraken	2	4	replace	Mel.		Mel.	
+353	trent/kraken	2	40	replace	rumor	rumour	rumour	same
+353	trent/kraken	2	45	replace	favor	favour	favour	same
+353	trent/kraken	2	58	replace	[Exeunt,	IExeunt,	LExeunt,	
+354	miun/kraken	1	2	replace	colors	colours	colours	same
+354	miun/kraken	1	6	replace	Lew.		Lezo.	
+354	miun/kraken	1	10	replace	wished	wish’d	wish’d	same
+354	miun/kraken	1	23	replace	neighborhood	neighbourhood	neighbourhood	same
+354	miun/kraken	1	24	replace	Swinstead	Savinstead	Szoinstead	
+354	miun/kraken	1	30	replace	Mess.		Bast.	
+354	miun/kraken	1	34	replace	Mess.		Bast.	
+354	miun/kraken	1	47	replace	Should 'scape	Should'scape	Should ’scape	
+354	miun/kraken	1	59	replace	I'll	I’Il	I’Il	same
+354	miun/kraken	2	29	replace	PEMBROKE.	PEMBRORE.	PEMBRORE.	same
+354	miun/kraken	2	35	replace	Hen.		Hen.	
+354	miun/kraken	2	37	replace	[Exit	IExit	(Exit	
+354	miun/kraken	2	45	replace	andt	and	and	same
+355	miun/kraken	2	10	replace	let us	letus	let us	
+355	miun/kraken	2	17	replace	honor	honour	honour	same
+355	miun/kraken	2	32	replace	interred;	interr’d;	interr’d	

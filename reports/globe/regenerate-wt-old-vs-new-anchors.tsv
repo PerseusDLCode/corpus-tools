@@ -1,0 +1,8 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in wt.xml (sha256 cfbbf3b5a7f4a065); not the shell's milestones or <l n>
+# transcribed anchors: 223; mapped (the row begins a line): 177; of those, carrying the same number: 176
+# in scenes that pass the gate: 177 mapped; agreeing: 176
+# unmapped (the row begins inside a line): 46; the P4's number is the containing line's for 32, the next line's for 13, neither for 1
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+2.3	140	disagree	141				Shall I dash out. Go, take
+4.4	420	unmapped (neither)		421	422		Flo. I yield all this; But

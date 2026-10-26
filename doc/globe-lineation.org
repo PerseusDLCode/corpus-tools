@@ -25,9 +25,9 @@ King Lear, Antony and Cleopatra, Titus Andronicus, Richard II, Two
 Gentlemen of Verona, Measure for Measure, The Comedy of Errors, Love's
 Labour's Lost, A Midsummer Night's Dream, The Merchant of Venice, Much
 Ado About Nothing and As You Like It and Twelfth Night, The Merry
-Wives of Windsor, The Tempest, Hamlet, Cymbeline, Henry VIII and The Taming of the
-Shrew are built and published (canonical-engLit =mvp=,
-=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym,h8,shr}/shakespeare.*.globe.xml=). Titus
+Wives of Windsor, The Tempest, Hamlet, Cymbeline, Henry VIII, The Taming of the
+Shrew and The Winter's Tale are built and published (canonical-engLit =mvp=,
+=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym,h8,shr,wt}/shakespeare.*.globe.xml=). Titus
 and Richard II were the cold tests: Titus passed 22 of 24 pages with
 the classifier unchanged and needed only table rows; Richard II passed
 22 of 26 and needed two turnover rules and two new table kinds
@@ -66,7 +66,12 @@ more than half a pitch into its fitted margin, the margin is fitted
 again without speech starts (Michigan p.236, whose speech starts sat in
 the flush band at the column's head). It also let Trent read Hamlet
 p.819 unaided, so two Hamlet rows were retired and Hamlet republished,
-its lineation unchanged. Songs (=<lg type="song">=) and
+its lineation unchanged. The Winter's Tale passed 28 of 28 with ten
+rows and one rule change: where a page fails in both witnesses on an
+interval from a number on the page before, that page is built again
+from the other witness (Michigan p.317, where Kraken lost three rows
+below the page's last number and the count fell short only on p.318).
+Songs (=<lg type="song">=) and
 inset texts now convert: every printed row of a song is a Globe line,
 a heading is not, and a row is a turnover only if it completes a
 broken word or follows a full-measure row in the same P4 =<l>=
@@ -99,7 +104,9 @@ Line starts come from the page:
 Two witnesses, both 1,054 leaves, OCR'd whole: =miun= (Michigan, 1866)
 and =trent= (Trent, 1887). They share plates, so either is authoritative
 for line breaks. Page by page, =miun= is tried first and =trent= if
-=miun= does not close (=regenerate.ORDER=). Their provenance is in
+=miun= does not close (=regenerate.ORDER=); where both fail on an
+interval from a number on the page before, that page is built again
+from the other witness. Their provenance is in
 =doc/witnesses.org=.
 
 * The gate

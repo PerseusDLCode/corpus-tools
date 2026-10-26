@@ -10,8 +10,9 @@ every report under DIR, and nothing in the repo.
 Words and structure come from the P4 (vendored conversion, src/globe/p4_convert.py);
 line starts come from the witness pages. Page by page, miun/kraken is tried
 first; if the page's printed marginal numbers do not close against the count,
-trent/kraken is tried from the same state. The two share plates, so either is
-authoritative for line breaks.
+trent/kraken is tried from the same state. Where both fail on an interval from
+a number on the page before, that page is built again from the other witness.
+The two share plates, so either is authoritative for line breaks.
 
 The gate: every printed marginal number must equal the count of its line,
 counted from the scene start. If any page fails, the play is not written; the
@@ -119,7 +120,7 @@ def number_page(lines, toks, state: NumberState, page: int, witness: str, carrie
                 reading = f"{witness} read {num}; {other_w} read {other}"
                 reread = (witness, num, other_w, other)  # waits on numeral_checks
                 num = other
-        intervals.append(dict(page=page, witness=witness, div=d, frm=frm, to=num,
+        intervals.append(dict(page=page, witness=witness, div=d, frm=frm, frm_page=st.last_num_page, to=num,
                               printed_gap=num - base, counted_gap=n - base_n,
                               error=(n - base_n) - (num - base), counted_n=n, reading=reading,
                               reread=reread, start=ln.start if ln is not None else None))
@@ -277,6 +278,37 @@ def heading_line(new, toks, page: int, page_rows_, r: shared_lines.Row):
     return k + 1, lineate.Line([between[0]], page, num=between[0].num)
 
 
+def dropped_line(new, toks, page: int, r: shared_lines.Row):
+    """(index, line) for a `dropped` row: a row the page prints that both
+    witnesses' OCR lost, so its words ran on in the line whose first words are
+    r.first_half. The new line starts within it at the P4 words r.second_half,
+    on a row of no words standing for the lost one; any row of the line after
+    that point goes with it."""
+    want_a, want_b = tuple(r.first_half.split()), tuple(r.second_half.split())
+    hits = []
+    for k, ln in enumerate(new):
+        if shared_lines.line_words(new, k, toks, len(want_a)) != want_a:
+            continue
+        end = new[k + 1].start if k + 1 < len(new) else len(toks)
+        speech = [t for t in toks[ln.start:end] if t.kind == "speech"]
+        hits += [(k, speech[i].i) for i in range(1, len(speech))
+                 if tuple(t.t for t in speech[i:i + len(want_b)]) == want_b]
+    if len(hits) != 1:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} dropped {r.second_half!r} in the line beginning "
+            f"{r.first_half!r} matches {len(hits)} places on this page, expected 1")
+    k, s = hits[0]
+    ln = new[k]
+    j = next((j for j, x in enumerate(ln.rows) if x.start is not None and x.start > s), len(ln.rows))
+    above = ln.rows[j - 1]
+    lost = page_rows.Row(above.x, above.y, above.r, [], col=above.col, seq=above.seq, band="start",
+                         pitch=above.pitch, margin=above.margin, measure=above.measure, start=s,
+                         speech=True, extra={"dropped": True})
+    second = split(ln, j) if j < len(ln.rows) else lineate.Line([], page)
+    second.rows.insert(0, lost)
+    return k + 1, second
+
+
 def new_index_of_lacuna(new) -> int:
     return max(i for i, ln in enumerate(new) if ln.lacuna_at is not None)
 
@@ -335,8 +367,14 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
         k, ln = heading_line(new, toks, page, page_rows_, r)
         new.insert(k, ln)
         applied.append((ln, r))
+    # a row both witnesses' OCR lost: its words ran on in the line above;
+    # start a line where it begins
+    for r in [r for r in rows if r.kind == "dropped"]:
+        k, ln = dropped_line(new, toks, page, r)
+        new.insert(k, ln)
+        applied.append((ln, r))
     for r in rows:
-        if r.kind in ("separate", "lacuna", "inset", "heading"):
+        if r.kind in ("separate", "lacuna", "inset", "heading", "dropped"):
             continue
         if r.kind == "misplaced":
             printed = int(r.first_half)
@@ -420,13 +458,12 @@ def build(play: str, table: list[shared_lines.Row] | None = None):
             floor = al.last + 1
             pages[(f"{wid}/{layer}", p)] = (pg, al)
 
-    lines: list[lineate.Line] = []
-    state = NumberState()
-    results: list[PageResult] = []
-    for p in range(first, last + 1):
+    def choose(p: int, lines, state, order) -> PageResult:
+        """The witness of `order` whose rows best close page p's count, built
+        on `lines` and `state`; nothing is committed."""
         best = None
         tried, refused = [], []
-        for wid, layer in ORDER:
+        for wid, layer in order:
             key = f"{wid}/{layer}"
             pg, _ = pages[(key, p)]
             new = lineate.globe_lines(pg.rows, p)
@@ -469,13 +506,54 @@ def build(play: str, table: list[shared_lines.Row] | None = None):
         if best is None:
             raise shared_lines.TableError("; ".join(refused))
         best.tried = tried
+        return best
+
+    def commit(best: PageResult, lines) -> tuple:
+        """Add a page's lines; return what undoes it."""
+        undo = (len(lines), lines[-1].rows[:], lines[-1].num) if lines else (0, None, None)
         if best._head is not None:
             lines[-1].rows += best._head.rows
         if best._carry is not None:  # a junction folded across the page break
             second, row = best._carry
             fold(lines[-1], second)
-            best.applied.append((-1, row))
+            if (-1, row) not in best.applied:
+                best.applied.append((-1, row))
         lines += best.lines
+        return undo
+
+    def uncommit(lines, undo) -> None:
+        n, rows, num = undo
+        del lines[n:]
+        if rows is not None:
+            lines[-1].rows, lines[-1].num = rows, num
+
+    lines: list[lineate.Line] = []
+    state = NumberState()
+    results: list[PageResult] = []
+    undos, before = [], []  # per page committed: its undo, and the state it was built on
+    for p in range(first, last + 1):
+        best = choose(p, lines, state, ORDER)
+        # the page fails in both witnesses on an interval from a number on the
+        # page before: the fault may be in that page's rows, so build it again
+        # from the other witness (The Winter's Tale p.317: Kraken lost three
+        # rows below the page's last number in Michigan, not in Trent, and the
+        # count fell short only at 50 on p.318)
+        if results and any(iv["frm_page"] == p - 1 for iv in best.failing):
+            prev = results[-1]
+            uncommit(lines, undos[-1])
+            again = choose(p - 1, lines, before[-1], [w for w in ORDER if "/".join(w) != prev.witness])
+            undo = commit(again, lines) if not again.failing else None
+            retry = choose(p, lines, again._state, ORDER) if undo is not None else None
+            if retry is not None and not retry.failing:
+                again.tried = [(prev.witness, f"p.{p}:{best.error}")] + again.tried
+                results[-1], undos[-1] = again, undo
+                state, best = again._state, retry
+            else:
+                if undo is not None:
+                    uncommit(lines, undo)
+                commit(prev, lines)
+        undos.append(commit(best, lines))
+        before.append(state)
         state = best._state
         results.append(best)
     return text, toks, pages, lines, results
@@ -735,6 +813,11 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                     "misplaced", f"shared-lines.tsv: the page prints {row.first_half}, this line's "
                                  f"number, beside a line near it ({row.second_half!r}) "
                                  f"(basis {row.basis}, {state})")))
+            elif row.kind == "dropped":
+                out.append((ln.start, emit_tei.review_comment(
+                    "dropped", f"shared-lines.tsv: the page prints a row here, beginning "
+                               f"{row.second_half!r}, that both witnesses' OCR lost; this line "
+                               f"starts there (basis {row.basis}, {state})")))
             elif row.kind == "miscount":
                 out.append((ln.start, emit_tei.review_comment(
                     "miscount", f"shared-lines.tsv: the Globe gives this line and the next printed "

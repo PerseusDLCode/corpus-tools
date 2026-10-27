@@ -36,6 +36,7 @@ PLAY_TITLES = {
     "2h4": "King Henry IV, Part II",
     "h5": "King Henry V",
     "1h6": "King Henry VI, Part I",
+    "2h6": "King Henry VI, Part II",
     "lr": "King Lear",
     "ant": "Antony and Cleopatra",
     "tit": "Titus Andronicus",
@@ -119,6 +120,7 @@ COPY_TEXT = {
     "2h4": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="384-413"),
     "h5": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="414-444"),
     "1h6": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="27-55"),
+    "2h6": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="146-177"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

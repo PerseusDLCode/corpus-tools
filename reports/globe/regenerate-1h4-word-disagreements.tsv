@@ -1,0 +1,293 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+382	miun/kraken	1	20	replace	palace.		palace.	
+382	miun/kraken	1	21	replace	HENRY,	HENRV,	RING HENRY,	
+382	miun/kraken	1	21	replace	OF LANCASTER,	Or LANCAS¬ TER,	OF LANCAS¬ TER,	
+382	miun/kraken	1	22	replace	WALTER	WAL¬ TER	WAL¬ TER	same
+382	miun/kraken	1	28	replace	No	tNo	tNo	same
+382	miun/kraken	1	31	replace	flowers	flowerets	flowerets	same
+382	miun/kraken	1	45	replace	England	English	English	same
+382	miun/kraken	1	52	replace	bootless 'tis	bootless'tis	bootless ’tis	
+382	miun/kraken	1	54	replace	you,	vou,	you,	
+382	miun/kraken	2	1	delete		THE FOURTH. GADSHILL. BARDOLPH. LADY PERCY, wife to Hotspur, and sister to Mortimer. LADY MORTIMER, daughter to Glendower, and wife to Mortimer. MISTRESS QUICKLY, hostess of a tavern in Eastcheap. Lords, Officers, Sheriff, Vintner, Chamberlain, Drawers, two Carriers, and Attendants. SCENE:	THE FOURTH. PERSONÆ. POINS. GADSHILL. PETO. BARDOLPH. LADY PERCY, wife to Hotspur, and sister to Mortimer. LADY MORTIMER, daughter to Glendower, and wife to Mortimer. MISTRESS QUICKLY, hostess of a tavern in Eastcheap. Lords, Officers, Sheriff, Vintner, Chamberlain, Drawers, two Carriers, Travellers, and Attendants. SCENE: England.	
+382	miun/kraken	2	45	replace	take	takce	take	
+383	miun/kraken	1	8	replace	West.	¡Vest.	West.	
+383	miun/kraken	1	10	replace	King.		King.	
+383	miun/kraken	1	36	delete		1or		
+383	miun/kraken	1	43	replace	[Exeunt.	LExeunt	IExeunt.	
+383	miun/kraken	1	62	replace	Phoebus,	Phœbus,	Phœbus,	same
+383	miun/kraken	1	67	replace	Prince.		Prince.	
+383	miun/kraken	2	38	replace	I'll	I’Il	I’Il	same
+383	miun/kraken	2	44	replace	apparent— But,	apparent–But,	apparent–But,	same
+383	miun/kraken	2	51	replace	I'll	I’Il	I’Il	same
+383	miun/kraken	2	68	replace	has	hast	hast	same
+384	miun/kraken	1	11	replace	are	art	art	same
+384	miun/kraken	1	18	replace	I'll	I’Il	I’Il	same
+384	miun/kraken	1	22	replace	I'll	I’Il	I’ll	
+384	miun/kraken	1	61	replace	I'll	I'Il	I’ll	
+384	miun/kraken	2	3	replace	I'll	I'Il	I’Il	
+384	miun/kraken	2	6	replace	I'll	I'Il	I’ll	
+384	miun/kraken	2	38	replace	we'll	we’Il	we’ll	
+384	miun/kraken	2	39	replace	but 'tis	but’tis	but ’tis	
+384	miun/kraken	2	52	replace	I'll	I’Il	I’ll	
+384	miun/kraken	2	58	replace	I'll	I’Il	I’Il	same
+384	miun/kraken	2	61	replace	[Exit.	IExit.	IExi.	
+384	miun/kraken	2	65	replace	Yet	Vet	Yet	
+385	miun/kraken	1	16	replace	I'll	I’Il	I’Il	same
+385	miun/kraken	1	18	replace	[Exit.	IExiit.	IExit.	
+385	miun/kraken	1	20	replace	WORCESTER,	WORCES¬ TER,	WORCES¬ TER,	same
+385	miun/kraken	1	49	replace	[Exit	IExit	IExit	same
+385	miun/kraken	1	51	replace	Yea,	Vea,	Yea,	
+385	miun/kraken	1	55	replace	Where,	Were,	Were,	same
+385	miun/kraken	2	3	replace	hos	his	his	same
+386	trent/kraken	1	27	replace	[Exeunt	LExeunt	IExeunt	
+386	trent/kraken	1	59	replace	pardon!—did	pardon !–did	pardon!–did	
+386	trent/kraken	2	20	replace	it!—have	it !–have	it!–have	
+386	trent/kraken	2	37	replace	I'll	I’Il	I’Il	same
+386	trent/kraken	2	37	replace	dangerous,	dangerous,190	dangerous,	
+386	trent/kraken	2	51	replace	honor	honour	honour	same
+386	trent/kraken	2	64	replace	I'll	I’Il	I'll	
+386	trent/kraken	2	67	replace	I'll	I’Il	L’Il	
+387	miun/kraken	1	6	replace	I'll	I’Il	I’Il	same
+387	miun/kraken	1	13	replace	how	hovr	how	
+387	miun/kraken	1	20	replace	I'll	I’Il	I’ll	
+387	miun/kraken	1	56	replace	[To	1To	1To	same
+387	miun/kraken	2	3	replace	chose	choose	choose	same
+387	miun/kraken	2	5	delete		of	of	same
+387	miun/kraken	2	22	replace	I'll	I’Il	I’Il	same
+387	miun/kraken	2	31	replace	[Exeunt.	LExeunt.	(Exeunt.	
+387	miun/kraken	2	33	replace	yard.	vard.	yard.	
+387	miun/kraken	2	36	replace	I'll	I’Il	I’ll	
+387	miun/kraken	2	39	replace	[Within]	[Withinl]	(Within)]	
+387	miun/kraken	2	50	replace	is	be	be	same
+387	miun/kraken	2	59	replace	Car.		Car.	
+388	miun/kraken	1	12	replace	i'	j'	i'	
+388	miun/kraken	1	15	replace	I'll	I ’Il	I ’Il	same
+388	miun/kraken	1	19	replace	enough	enougn	enough	
+388	miun/kraken	1	21	replace	we'll	we ’ll	we’ll	
+388	miun/kraken	1	23	replace	[Exeunt	LExeunt	[Exeunt	
+388	miun/kraken	1	25	replace	[Within]	[Withinl	[Within]	
+388	miun/kraken	1	40	replace	Sirrah,	Sirsah,	Sirrah,	
+388	miun/kraken	1	47	replace	I'll	I’Il	I’Il	same
+388	miun/kraken	1	54	replace	foot land-rakers,	foot-land rakers,	foot-land rakers,	same
+388	miun/kraken	2	19	replace	Falstaff.	FALSTAFE.	FALSTAFF.	
+388	miun/kraken	2	23	replace	Where's	Where ’s	Where’s	
+388	miun/kraken	2	25	replace	I'll	I’Il	I’Il	same
+388	miun/kraken	2	38	replace	I'll	I’il	I ’ll	
+388	miun/kraken	2	39	replace	I'll	I’Il	I’Il	same
+388	miun/kraken	2	46	replace	[They	LThey	[They	
+388	miun/kraken	2	53	replace	I'll	I’Il	I’Il	same
+388	miun/kraken	2	57	replace	no	not	not	same
+388	miun/kraken	2	60	replace	king's	kipg’s	king’s	
+388	miun/kraken	2	62	replace	theyself	thyself	thyself	same
+389	miun/kraken	1	32	replace	[Exeunt	LE xeunt	LExeunt	
+389	miun/kraken	1	36	replace	that	the	the	same
+389	miun/kraken	1	37	replace	we'll	we ’ll	we ’ll	same
+389	miun/kraken	1	46	replace	forever!	for ever!	for ever!	same
+389	miun/kraken	1	52	replace	[Here	LHere	[Here	
+389	miun/kraken	2	2	replace	[As	IAs	IAs	same
+389	miun/kraken	2	2	replace	and	und	and	
+389	miun/kraken	2	5	replace	two,	tuo,	tivo,	
+389	miun/kraken	2	5	replace	away	avay	away	
+389	miun/kraken	2	15	replace	Weren't	Were 't	Were ’t	
+389	miun/kraken	2	16	replace	roar'd! [Exeunt.	roar’'d! IExeunt.	roar'd! [Exeunt.	
+389	miun/kraken	2	19	replace	Hot. But,	Hot.“But,	Hot. “But,	
+389	miun/kraken	2	26	replace	dangerous; why,	dangerous;–why,	dangerous;–why,	same
+389	miun/kraken	2	29	replace	undertake	urzdertake	undertake	
+390	miun/kraken	1	5	delete		5o	5o	same
+390	miun/kraken	1	14	replace	The	Thy	Thy	same
+390	miun/kraken	1	15	replace	hast	hath	hath	same
+390	miun/kraken	1	18	replace	strong	strange	strange	same
+390	miun/kraken	1	30	replace	Serv. One	Serr., ane	Serv. One	
+390	miun/kraken	1	37	replace	[Exit	IExit	[Exit	
+390	miun/kraken	1	45	replace	I'll	I’Il	I’ll	
+390	miun/kraken	1	52	replace	I'll	I'Il	I’ll	
+390	miun/kraken	1	67	replace	horseback,	horsebacle,	horseback,	
+390	miun/kraken	2	17	replace	[Exeunt.	IExeunt.	IExeunt.	same
+390	miun/kraken	2	56	replace	I'll	I’Il	I’Il	same
+390	miun/kraken	2	60	replace	[Exit	IExit	IExit	same
+391	miun/kraken	1	10	replace	I'll	I’Il	I’ll	
+391	miun/kraken	1	12	replace	Points.		Poins.	
+391	miun/kraken	1	17	replace	[Within]	[Wethinl	(Within]	
+391	miun/kraken	1	21	replace	was't	wast’t	wast’t	same
+391	miun/kraken	1	26	replace	[Within]	[Withinl	[Withinl	same
+391	miun/kraken	1	36	replace	what	who	who	same
+391	miun/kraken	1	42	replace	[Within]	IWithin]	[Withinl	
+391	miun/kraken	1	44	replace	[Here	IHere	[Here	
+391	miun/kraken	1	44	replace	drawer	draver	drazer	
+391	miun/kraken	2	7	delete		a	a	same
+391	miun/kraken	2	13	replace	to-day?' 'Give	"to-day?""“Give"	"to-day?""“Give"	same
+391	miun/kraken	2	16	replace	I'll	I’Il	I’Il	same
+391	miun/kraken	2	20	replace	FALSTAFF,	FALSTAFE,	FALSTAFE,	same
+391	miun/kraken	2	21	replace	wine.	voine.	vith vine.	
+391	miun/kraken	2	26	replace	I'll	L’Il	I’ll	
+391	miun/kraken	2	29	replace	[He	HHe	IHe drinkes.	
+391	miun/kraken	2	51	replace	I'll	I’Il	I’ll	
+391	miun/kraken	2	58	replace	I'll	I’Il	I’ll	
+391	miun/kraken	2	59	replace	I'll	I’Il	I ’Il	
+392	miun/kraken	1	3	replace	drinks.]	drinks.1	drinkes.]	
+392	miun/kraken	1	9	replace	Jack?	Iack?	Jack?	
+392	miun/kraken	1	13	replace	half- sword	half-sword	half-sword	same
+392	miun/kraken	1	18	replace	hand-saw— ecce	hand-saw–ecce	hand-saw–ecce	same
+392	miun/kraken	1	36	replace	fify	fifty	fifty	same
+392	miun/kraken	1	69	replace	broken,—	brokcen,—	broken,—	
+392	miun/kraken	2	5	replace	monstrously	monstrous!	monstrous	
+392	miun/kraken	2	19	replace	mnen	men	men	same
+392	miun/kraken	2	24	replace	in	ir	in	
+392	miun/kraken	2	29	replace	I 'll	I’Il	I’ll	
+392	miun/kraken	2	46	replace	yea,	vea,	yea,	
+393	miun/kraken	1	22	replace	I'll	I’Il	I’Il	same
+393	miun/kraken	1	40	replace	years	vears.	years	
+393	miun/kraken	2	37	replace	i' faith;	i'faith;	i'faith;	same
+393	miun/kraken	2	54	replace	speak in	speakin	speak in	
+393	miun/kraken	2	61	replace	vain.	vamn.	vain.	
+394	miun/kraken	1	4	replace	youth,	vouth,	youth,	
+394	miun/kraken	1	29	replace	by 'r	by’r	by’r	same
+394	miun/kraken	1	39	replace	I'll	I’Il	I’ll	
+394	miun/kraken	1	50	replace	Fal. 'Sblood,	"Fal.""Sblood,"	Fal. “Sblood,	
+394	miun/kraken	1	50	replace	I'll	I’Il	I’Il	same
+394	miun/kraken	1	51	replace	i' faith.	i'faith.	i'faith.	same
+394	miun/kraken	2	9	replace	reverence,	reyerence,	reverence,	
+394	miun/kraken	2	21	replace	[A knocking	IA Enocking	IA Rnocking	
+394	miun/kraken	2	22	replace	[Exeunt	IExeunt	LE xeunt	
+394	miun/kraken	2	49	replace	therefore I'll	theresore I’Il	therefore I’Il	
+395	miun/kraken	1	12	replace	[Exeunt	IExeunt	LExeunt	
+395	miun/kraken	1	25	replace	5s.	gs.	5s.	
+395	miun/kraken	1	28	replace	Item,	Ftem,	Item,	
+395	miun/kraken	1	30	replace	half-penny- worth	half-pennyworth	half-pennyworth	same
+395	miun/kraken	1	33	replace	I'll	I 'll	I’ll	
+395	miun/kraken	1	34	replace	I'll	I’Il	I’Il	same
+395	miun/kraken	1	39	delete		LE xeunt.	LE xeunt.	same
+395	miun/kraken	2	50	replace	I'll	I’Il	I’ll	
+396	miun/kraken	1	29	replace	damned	damm’d	damm’d	same
+396	miun/kraken	1	45	replace	I'll	L’ll	I’Il	
+396	miun/kraken	1	46	replace	I'll	I’Il	I’Il	same
+396	miun/kraken	1	52	replace	speak it	speakit	speak it	
+396	miun/kraken	2	5	replace	I'll	I’Il	I’Il	same
+396	miun/kraken	2	9	replace	I'll	I’Il	I’Il	same
+396	miun/kraken	2	61	replace	Hot.	TTot.	Hot.	
+396	miun/kraken	2	67	replace	will	wilf	will	
+397	trent/kraken	1	1	replace	she'll	she ’ll	she ’Il	
+397	trent/kraken	1	5	replace	speaks	sṕeakes	speales	
+397	trent/kraken	1	5	replace	Welsh,	WVelsh,	Welsh,	
+397	trent/kraken	1	9	replace	[The	IThe	[The	
+397	trent/kraken	1	16	replace	speaks	speakes	speaks	
+397	trent/kraken	1	33	replace	the	such	Malcing such difference'twixt	
+397	trent/kraken	1	36	replace	Beg'ns	Begins	Begins	same
+397	trent/kraken	1	37	replace	I'll	I’Il	I’Il	same
+397	trent/kraken	1	48	replace	[The	TThe	The	
+397	trent/kraken	1	52	replace	By 'r	By’r	By’r	same
+397	trent/kraken	1	68	replace	I'll	I’Il	I’ll	
+397	trent/kraken	2	15	replace	I'll	I’Il	I 'll	
+397	trent/kraken	2	22	replace	[Exeunt.	IExeunt.	IExeunt.	same
+397	trent/kraken	2	34	replace	He'll	He ’ll	He ’ll	same
+398	miun/kraken	1	32	replace	Enfeoff'd	Enfeoft'd	Enfeoft’d	
+398	miun/kraken	1	44	replace	drowsed	drowzed	drowsed	
+398	miun/kraken	2	43	replace	your	vour	your	
+398	miun/kraken	2	64	delete		16.		
+398	miun/kraken	2	66	replace	full of	ful' f	full of	
+399	miun/kraken	1	12	replace	ths	this	this	same
+399	miun/kraken	1	22	replace	[Exeunt.	LExeunt.	LE xeunt.	
+399	miun/kraken	1	52	replace	I'll	I’Il	I’Il	same
+399	miun/kraken	1	58	replace	I'll	I’Il	I’Il	same
+399	miun/kraken	1	59	replace	Death's- head	Death's-head	Death’s-head	
+399	miun/kraken	1	64	replace	be 'By	be“By	be “By	
+399	miun/kraken	2	19	replace	Parlet	Partlet	Partlet	same
+399	miun/kraken	2	50	replace	I'll	I’Il	I’ll	
+399	miun/kraken	2	62	replace	playing on	playingon	playingon	same
+400	miun/kraken	1	65	replace	I'll	I’Il	I’Il	same
+400	miun/kraken	2	10	replace	up	u	up	
+400	miun/kraken	2	58	replace	[Exit.	LExit.	IExit.	
+400	miun/kraken	2	60	replace	Shrewsbury.	Shrewsourr.	Shrewsbury.	
+401	miun/kraken	1	10	replace	with	vith	with	
+401	miun/kraken	1	29	replace	Hot.		Hot.	
+401	miun/kraken	1	38	replace	Yet	Vet	Yet	
+401	miun/kraken	1	51	replace	for	ffor	ffor	same
+401	miun/kraken	2	40	replace	All	tAll	tAll	same
+401	miun/kraken	2	45	replace	youthful	vouthful	youthful	
+402	miun/kraken	1	15	replace	Talk	Talle	Talk	
+402	miun/kraken	1	17	replace	[Exeunt.	LExeunt.	[Exeunt.	
+402	miun/kraken	1	22	replace	we'll	we Il	we ’Il	
+402	miun/kraken	1	27	replace	I'll	I’Il	I’Il	same
+402	miun/kraken	1	35	replace	yeomen's	yeoman’s	yeomen’s	
+402	miun/kraken	1	60	replace	scarcecrows.	scarecrows.	scarecrows. I’Il	
+402	miun/kraken	1	67	replace	a	an	an	same
+402	miun/kraken	2	25	replace	they'll	they ’Il	they’Il	
+402	miun/kraken	2	32	replace	I'll	I’Il	I’ll	
+402	miun/kraken	2	41	replace	[Exeunt.	LExeunt.	[Exeunt.	
+402	miun/kraken	2	45	replace	We'll	We 'll	We’ll	
+402	miun/kraken	2	52	replace	cousins,	cousin,	cousin,	same
+403	miun/kraken	1	16	replace	[The	IThe	[The	
+403	miun/kraken	1	34	replace	breasts	breast	breast	same
+403	miun/kraken	1	62	delete		y0		
+403	miun/kraken	1	63	replace	gifts	gists	gifts	
+403	miun/kraken	2	25	delete		too	too	same
+403	miun/kraken	2	36	delete		x10		
+403	miun/kraken	2	42	replace	[Exeunt.	IExeunt.	IE xeunt.	
+403	miun/kraken	2	43	replace	York.		Vork.	
+403	miun/kraken	2	49	replace	is	to	to	same
+403	miun/kraken	2	57	delete		x0		
+404	miun/kraken	1	17	replace	Sir M.		Sir M.	
+404	miun/kraken	1	27	replace	[Exeunt.	IExeunt.	IExeunt.	same
+404	miun/kraken	1	29	replace	KING'S	KINd’s	KING's	
+404	miun/kraken	2	66	replace	valiant-young,	valiant-voung, 9e	valiant-young,	
+405	miun/kraken	1	16	replace	I'll	I ’ll	I’Il	
+405	miun/kraken	1	17	replace	your	vour	your	
+405	miun/kraken	1	18	replace	yield,	vield,	yield,	
+405	miun/kraken	1	23	replace	[Exeunt	IExeunt	[E xeunt	
+405	miun/kraken	1	31	replace	[Exeunt	LExeunt	just!120 LExeunt	
+405	miun/kraken	1	40	replace	[Exit.	IExit.	[Exit.	
+405	miun/kraken	1	55	replace	I'll	I’Il	I’Il	same
+405	miun/kraken	1	57	replace	[Exit.	LExit.	IExit.	
+405	miun/kraken	2	4	replace	lock'd up,	lock’dup, ro	lock’d up,	
+405	miun/kraken	2	20	replace	I'll	I’Il	I’Il	same
+405	miun/kraken	2	31	replace	[Exit.	IExit.	IExit.	same
+405	miun/kraken	2	52	delete		5o	so	
+406	miun/kraken	1	23	replace	And	An	An	same
+406	miun/kraken	1	42	replace	[The	IThe	[The	
+406	miun/kraken	1	59	replace	yield	vield	yield	
+406	miun/kraken	1	60	replace	yielder,	vielder,	yielder,	
+406	miun/kraken	1	61	replace	Scot;	Seot:	Scot;	
+406	miun/kraken	1	63	replace	[They	IThey	[They	
+406	miun/kraken	1	64	replace	Blunt.		Rills Blunt.	
+406	miun/kraken	2	12	replace	Semblaby	Semblably	Semblably	same
+406	miun/kraken	2	26	replace	FALSTAFF,	FALSTAFE,	FALSTAFF,	
+406	miun/kraken	2	33	replace	I	1	I	
+406	miun/kraken	2	45	replace	leave	leaye	leave	
+406	miun/kraken	2	59	replace	[He throws	IHe thxows	[He throws	
+406	miun/kraken	2	60	replace	I'll	I’Il	I’Il	same
+406	miun/kraken	2	65	replace	there's	therels	there's	
+407	miun/kraken	1	13	replace	I'll	I’Il	I’Il	same
+407	miun/kraken	1	16	replace	your	vour	vour	same
+407	miun/kraken	1	24	replace	[Exeunt	LExeunt	[Exeunt	
+407	miun/kraken	1	35	replace	[Exit.	IExit.	(ExTt.	
+407	miun/kraken	1	41	replace	counterfeit'st	counterfeit st	counterfeit’st	
+407	miun/kraken	1	50	replace	like	lilce	like	
+407	miun/kraken	1	51	replace	mind	mine	mine	same
+407	miun/kraken	1	61	replace	[They	IThey	IThey	same
+407	miun/kraken	1	64	replace	Clifton: I'll	Cliston: I’Il	Clifton: I’Il	
+407	miun/kraken	2	9	replace	I'll	I’Il	I’Il	same
+407	miun/kraken	2	28	replace	I'll	I’Il	I’Il	same
+407	miun/kraken	2	33	replace	[They	IThey	(They	
+407	miun/kraken	2	38	replace	down	dovon	dovon	same
+407	miun/kraken	2	38	replace	were	vere	vvere	
+407	miun/kraken	2	46	replace	time's fool;	time'sfool;	time’s fool;	
+407	miun/kraken	2	51	replace	[Dies.	IDies.	IDies.	same
+407	miun/kraken	2	54	delete		thou	thou	same
+407	miun/kraken	2	60	replace	senesible	sensible	sensible	same
+407	miun/kraken	2	63	replace	I'll	I’Il	I’Il	same
+408	trent/kraken	1	2	replace	[He	1He	He	
+408	trent/kraken	1	28	replace	I'll	I ’Il	I’Il	
+408	trent/kraken	1	28	replace	I'll	I ’Il	I’Il	
+408	trent/kraken	1	33	replace	[Takes	ITakes	Takes	
+408	trent/kraken	1	49	replace	[throwing	[throroing	[throwing	
+408	trent/kraken	1	49	replace	down]	dozon):	dornl:	
+408	trent/kraken	1	50	delete		will	will	same
+408	trent/kraken	1	61	replace	I'll	I’Il	I’ll	
+408	trent/kraken	2	3	replace	[A	IA	IA	same
+408	trent/kraken	2	8	replace	I'll	I’Il	I’Il	same
+408	trent/kraken	2	10	replace	I'll	I’Il	I’Il	same
+408	trent/kraken	2	10	replace	I'll	I’Il	I’ll	
+408	trent/kraken	2	12	replace	[Exit.	IExit.	[Exit.	
+408	trent/kraken	2	16	replace	with	wvith	with	
+408	trent/kraken	2	34	replace	[Exeunt Worcester	LE xeunt WVorcester	LExeunt Worcester	
+408	trent/kraken	2	55	delete		divide	divide	same

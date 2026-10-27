@@ -111,6 +111,9 @@ COPY_TEXT = {
     # Introduction printed 306 (CHOCR index 316), V.7 ends on 330 (index 340);
     # The Merchant of Venice's introduction is 331 (printed = index - 10).
     "jn": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="306-330"),
+    # Introduction printed 356 (CHOCR index 366), V.5 ends on 383 (index 393);
+    # Part II's introduction is 384 (printed = index - 10).
+    "1h4": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="356-383"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

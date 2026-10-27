@@ -279,8 +279,8 @@ def heading_line(new, toks, page: int, page_rows_, r: shared_lines.Row):
 
 
 def dropped_line(new, toks, page: int, r: shared_lines.Row):
-    """(index, line) for a `dropped` row: a row the page prints that both
-    witnesses' OCR lost, so its words ran on in the line whose first words are
+    """(index, line) for a `dropped` row: a row the page prints that the
+    OCR of the witness it is built from lost, so its words ran on in the line whose first words are
     r.first_half. The new line starts within it at the P4 words r.second_half,
     on a row of no words standing for the lost one; any row of the line after
     that point goes with it."""
@@ -367,7 +367,7 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
         k, ln = heading_line(new, toks, page, page_rows_, r)
         new.insert(k, ln)
         applied.append((ln, r))
-    # a row both witnesses' OCR lost: its words ran on in the line above;
+    # a row the witness's OCR lost: its words ran on in the line above;
     # start a line where it begins
     for r in [r for r in rows if r.kind == "dropped"]:
         k, ln = dropped_line(new, toks, page, r)
@@ -816,7 +816,7 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
             elif row.kind == "dropped":
                 out.append((ln.start, emit_tei.review_comment(
                     "dropped", f"shared-lines.tsv: the page prints a row here, beginning "
-                               f"{row.second_half!r}, that both witnesses' OCR lost; this line "
+                               f"{row.second_half!r}, that the witness's OCR lost; this line "
                                f"starts there (basis {row.basis}, {state})")))
             elif row.kind == "miscount":
                 out.append((ln.start, emit_tei.review_comment(

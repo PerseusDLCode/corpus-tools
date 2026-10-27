@@ -38,9 +38,9 @@ cuts one line in two, and one corrects a number:
             II.3 "SONG."; the dirge in IV.2 has the same title and is not
             counted, so no rule can say which): first_half is the first words
             of the line above, second_half the heading's words.
-  dropped   a row the page prints and both witnesses' OCR lost (The Winter's
-            Tale IV.2 p.317, three prose rows), so its words ran on in the
-            line above: first_half is the first words of that line,
+  dropped   a row the page prints and the OCR of the witness it is built
+            from lost (2 Henry IV II.1 p.416, Michigan; Trent has it), so its
+            words ran on in the line above: first_half is the first words of that line,
             second_half the P4 words the lost row begins with (a word
             hyphenated onto it whole, as the build sets one).
   misplaced a marginal number the page prints beside a row of the line next

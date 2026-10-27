@@ -1,0 +1,22 @@
+scene	line	page	finding	folger	folger_ids	rows
+1.1	53	497	our shared line	part	ftln-0056 ftln-0057	King. Uncle, how now! / Glou. Pardon me, gracious lord;
+2.1	29	502	our shared line	part	ftln-0723 ftln-0724	Glou. As who, my lord? / Suf. Why, as you, my lord,
+2.1	44	503	our shared line	part	ftln-0740 ftln-0741	King. How now, my lords! / Car. Believe me, cousin Gloucester,
+2.1	49	503	our shared line	part	ftln-0747 ftln-0748	Glou. [Aside to Car.] Cardinal, I am wit / you. / King. Why, how now, uncle Gloucester!
+2.1	95	503	our shared line	silent	p-0796 p-0797	Car. What, art thou lame ? / Simp. Ay, God Almighty help me !
+2.1	96	503	our shared line	silent	p-0798 p-0799	Suf. How camest thou so? / Simp. A fall off of a tree.
+2.1	97	503	our shared line	silent	p-0800 p-0801	Wife. A plum-tree, master. / Glou. How long hast thou been blind?
+2.1	98	503	our shared line	silent	p-0802 p-0803	Simp. O, born so, master. / Glou. What, and wouldst climb a tree?
+2.2	43	505	our shared line	part	ftln-0958 ftln-0959	But to the rest. / Vork. His eldest sister, Anne,
+2.4	5	506	our shared line	short	ftln-1112 ftln-1113	Sirs, what’s o’clock? / Serv. Ten, my lord.
+3.2	37	511	our shared line	part	ftln-1644 ftln-1645	King. O heavenly God! / Queen. How fares my gracious lord?
+3.2	408	514	our shared line	short	ftln-2029 ftln-2030	Suf. I go. / Queen. And take my heart with thee.
+3.2	412	514	our shared line	part	ftln-2034 ftln-2035	This way fall I to death. / Queen. This way for me.
+4.1	69	515	our shared line	part	ftln-2138 ftln-2139	Strike off his head. / Suf. Thou darest not, for thy own.
+4.1	70	515	our shared line	part	ftln-2140 ftln-2141	Cap. Yes, Pole. / Suf. Pole! / Cap. Pool! Sir Pool! lord!
+4.2	163	517	our shared line	silent	p-2376	Cade. [Asidel He lies, for I invented it / myself.
+5.1	23	522	our shared line	silent	ftln-2887	York. IAside] Scarce can I speak, my cho / is so great:
+5.3	7	525	our shared line	part	ftln-3181 ftln-3182	If Salisbury be lost. / Rich. My noble father,
+2.1	32	503	folger pair split across our lines	differ	ftln-0727 ftln-0728	Queen. And thy ambition, Gloucester. / King. I prithee, peace, good queen,
+2.1	52	503	folger pair split across our lines	differ	ftln-0752 ftln-0753	Or all my fence shall fail. / Car. [Aside to Glou. ] Medice, teipsum–
+4.2	142	517	folger pair split across our lines	differ	ftln-2355 ftln-2356	Cade. And Adam was a gardener. / Bro. And what of that?

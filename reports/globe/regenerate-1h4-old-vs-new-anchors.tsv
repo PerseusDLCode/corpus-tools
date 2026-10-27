@@ -1,0 +1,18 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in 1h4.xml (sha256 bc163fc455e7e791); not the shell's milestones or <l n>
+# transcribed anchors: 257; mapped (the row begins a line): 203; of those, carrying the same number: 197
+# in scenes that pass the gate: 203 mapped; agreeing: 197
+# unmapped (the row begins inside a line): 54; the P4's number is the containing line's for 4, the next line's for 44, neither for 6
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+2.1	60	disagree	59				holds current that I told you
+2.1	70	disagree	69				No, I'll none of it: I
+2.1	80	unmapped (neither)		78	79		content to do the profession some
+2.2	10	disagree	9				hill: I'll go seek him. Fal.
+2.2	20	unmapped (neither)		18	19		rogue's company. If the rascal have
+3.3	190	unmapped (neither)		188	189		another man, and therefore more frailty.
+3.3	200	disagree	199				Prince. O, my sweet beef, I
+3.3	220	disagree	219				Lancaster, to my brother John; this
+3.3	230	disagree	229				Rare words! brave world! Hostess, my
+4.2	30	unmapped (neither)		28	29		his sores; and such as indeed
+4.2	40	unmapped (neither)		38	39		swine-keeping, from eating draff and husks.
+4.2	50	unmapped (neither)		47	48		tacked together and thrown over the

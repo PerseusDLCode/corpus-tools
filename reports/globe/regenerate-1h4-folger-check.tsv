@@ -1,0 +1,45 @@
+scene	line	page	finding	folger	folger_ids	rows
+1.3	22	385	our shared line	part	ftln-0353 ftln-0354	You were about to speak. [To North. / North. Vea, my good lord.
+1.3	130	386	our shared line	part	ftln-0463 ftln-0464	Here comes your uncle. / Hot. Speak of Mortimer!
+1.3	157	386	our shared line	part	ftln-0491 ftln-0492	Heir to the crown? / North. He did; myself did hear it.
+1.3	187	386	our shared line	part	ftln-0522 ftln-0523	Therefore, I say, — / Wor. Peace, cousin, say no more :
+1.3	212	386	our shared line	part	ftln-0548 ftln-0549	Hot. I cry you mercy. / Wor. Those same noble Scots
+1.3	213	386	our shared line	part	ftln-0550 ftln-0551	That are your prisoners, — / Hot. I’Il keep them all;
+1.3	216	386	our shared line	part	ftln-0554 ftln-0555	I’Il keep them, by this hand. / Wor. You start away
+1.3	218	387	our shared line	short	ftln-0557 ftln-0558	Those prisoners you shall keep. / Hot. Nay, I will; that’s flat:
+1.3	258	387	our shared line	part	ftln-0598 ftln-0599	We will stay your leisure. / Hot. I have done, i' faith.
+1.3	281	387	our shared line	part	ftln-0622 ftln-0623	To join with Mortimer, ha? / Wor. And so they shall.
+2.3	73	390	our shared line	part	ftln-0938 ftln-0939	Serv. It is, my lord. / Hot. That roan shall be my throne.
+2.3	120	390	our shared line	part	ftln-0987 ftln-0988	Will this content you, Kate? / Lady. It must of force. IExeunt.
+2.4	560	394	our shared line	part	ftln-1518 ftln-1519	A gross fat man. / Car. As fat as butter.
+3.1	6	395	our shared line	silent	ftln-1564	I have forgot the map. / Glend. No, here it is.
+3.1	35	395	our shared line	part	ftln-1594 ftln-1595	In passion shook. / Glend. Cousin, of many men
+3.1	116	396	our shared line	short	ftln-1678 ftln-1679	Glend. I’Il not have it alter'd. / Hot. Will not you?
+3.1	117	396	our shared line	short	ftln-1680 ftln-1681	Glend. No, nor you shall not. / Hot. Who shall say me nay?
+3.1	271	397	our shared line	short	ftln-1833 ftln-1834	And then to horse immediately. / Mort. With all my heart. IExeunt.
+3.2	93	398	our shared line	short	ftln-1929 ftln-1930	Be more myself. / King. For all the world
+4.1	12	401	our shared line	part	ftln-2250 ftln-2251	But I will beard him. / Hot. Do so, and ’tis well.
+4.1	52	401	our shared line	short	ftln-2293 ftln-2294	"Of all our fortunes. / Doug. ""Faith, and so we should;"
+4.1	75	401	our shared line	part	ftln-2316 ftln-2317	Before not dreamt of. / Hot. You strain too far.
+4.1	90	401	our shared line	part	ftln-2332 ftln-2333	Hot. No harm: what more? / Ver. And further, I have learn’d,
+4.1	97	401	our shared line	part	ftln-2340 ftln-2341	And bid it pass? / Ver. All furnish’d, all in arms;
+4.1	124	401	our shared line	part	ftln-2368 ftln-2369	O that Glendower were come! / Ver. There is more news:
+4.1	130	402	our shared line	part	ftln-2375 ftln-2376	Ver. To thirty thousand. / Hot. Forty let it be:
+4.3	1	402	our shared line	part	ftln-2466 ftln-2467	Hot. We 'll fight with him to-night. / Wor. It may not be.
+4.3	2	402	our shared line	part	ftln-2468 ftln-2469	Doug. You give him then advantage. / Ver. Not a whit.
+4.3	4	402	our shared line	short	ftln-2471 ftln-2472	Ver. So do we. / Hot. His is certain, ours is doubtful.
+4.3	6	402	our shared line	part	ftln-2474 ftln-2475	Ver. Do not, my lord. / Doug. You do not counsel well:
+4.3	14	402	our shared line	short	ftln-2483 ftln-2484 ftln-2485	Which of us fears. / Doug. Yea, or to-night. / Ver Content.
+4.3	89	403	our shared line	part	ftln-2560 ftln-2561	Blunt. Tut, I came not to hear this. / Hot. Then to the point.
+4.3	113	403	our shared line	part	ftln-2585 ftln-2586	Hot. And may be so we shall. / Blunt. Pray God you do.
+4.4	7	403	our shared line	short	ftln-2593	I guess their tenour. / Arch. Like enough you do.
+5.1	3	404	our shared line	part	ftln-2630 ftln-2631	At his distemperature. / Prince. The southern wind
+5.2	3	405	our shared line	part	ftln-2772 ftln-2773	Ver. Twere best he did. / Wor. Then are we all undone.
+5.3	3	406	our shared line	part	ftln-2876 ftln-2877	Upon my head? / Doug. Know then, my name is Douglas;
+5.3	28	406	our shared line	part	ftln-2902 ftln-2903	Until I meet the king. / Hot. Up, and away!
+5.4	23	407	our shared line	silent	ftln-2961 ftln-2962	Of such an ungrown warrior. / Prince. O, this boy
+5.4	61	407	our shared line	part	ftln-2999 ftln-3000	Hot. My name is Harry Percy. / Prince. Why, then I see
+5.4	134	408	our shared line	part	ftln-3071 ftln-3072	Thy maiden sword. / Lan. But, soft! whom have we here ?
+5.5	24	408	our shared line	part	ftln-3131 ftln-3132	I may dispose of him. / King. With all my heart.
+3.1	10	395	folger pair split across our lines	differ	ftln-1568 ftln-1569	A rising sigh he wisheth you in heaven. / Hot. And you in hell, as oft as he hears
+3.1	17	395	folger pair split across our lines	differ	ftln-1575 ftln-1576	Shaked like a coward. / Hot. Why, so it would have done at the s

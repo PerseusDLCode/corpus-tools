@@ -33,6 +33,7 @@ TEI_XMLNS = "http://www.tei-c.org/ns/1.0"
 
 PLAY_TITLES = {
     "1h4": "King Henry IV, Part I",
+    "2h4": "King Henry IV, Part II",
     "1h6": "King Henry VI, Part I",
     "lr": "King Lear",
     "ant": "Antony and Cleopatra",
@@ -114,6 +115,7 @@ COPY_TEXT = {
     # Introduction printed 356 (CHOCR index 366), V.5 ends on 383 (index 393);
     # Part II's introduction is 384 (printed = index - 10).
     "1h4": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="356-383"),
+    "2h4": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="384-413"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

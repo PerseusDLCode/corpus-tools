@@ -1,0 +1,10 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in 2h4.xml (sha256 71c769551c30f407); not the shell's milestones or <l n>
+# transcribed anchors: 243; mapped (the row begins a line): 199; of those, carrying the same number: 196
+# in scenes that pass the gate: 199 mapped; agreeing: 196
+# unmapped (the row begins inside a line): 44; the P4's number is the containing line's for 9, the next line's for 34, neither for 1
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.2	160	disagree	161				your waste is great. Fal. I
+2.4	280	unmapped (neither)		277	278		avoirdupois. Prince. Would not this nave
+4.5	10	disagree	9				Prince. How now! rain within doors,
+5.3	101	disagree	102				man of this world. Pist. A

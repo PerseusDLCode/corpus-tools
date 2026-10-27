@@ -118,6 +118,7 @@ COPY_TEXT = {
     "1h4": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="356-383"),
     "2h4": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="384-413"),
     "h5": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="414-444"),
+    "1h6": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="27-55"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

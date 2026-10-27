@@ -1,0 +1,387 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+469	miun/kraken	1	33	delete		Westminster	Westminster Abbey.	
+469	miun/kraken	1	35	replace	DUKE OF	DuxE OE	DuxE OF	
+469	miun/kraken	1	36	replace	DUKE OF	DURE OE	DURE OE	same
+469	miun/kraken	1	37	replace	DUKE	DUxE	DUxE	same
+469	miun/kraken	1	37	replace	EXETER,	TER,	EXE¬ TER,	
+469	miun/kraken	1	39	replace	&c.	9vc.	Gpc.	
+469	miun/kraken	1	40	replace	yield	vield	yield	
+469	miun/kraken	1	42	replace	time	times	times	same
+469	miun/kraken	2	1	delete		THE SIXTH. PERSONÆ. BASSET, of the Red-Rose or Lancaster faction. A Mortimer’s CHARLES, Dauphin, and afterwards of REIGNIER, Duke of Anjou, and titular of DURE OF BURGUNDY. DUKE OF ALENÇON. BASTARD OF ORLEANS. Governor of Master-Gunner of Orleans, and his General of the French forces in Bourdeaux. A French Sergeant. A An old Shepherd, father to Joan la MARGARET, daughter to Reignier, afterwards married to COUNTESS OF AUVERGNE. JOAN LA PUCELLE, commonly called Joan of Lords, Warders of the Tower, Heralds, Officers, Soldiers, Messengers, and Attendants. Fiends appearing to La SCENE: Partey in England, and partly in	THE SIXTH. PERSONÆ. BASSET, of the Red-Rose or Lancaster faction. A Lawyer. Mortimer's Keepers. CHARLES, Dauphin, and afterwards King, of France. REIGNIER, Duke of Anjou, and titular King of Naples. DUKE OF BURGUNDY. DURE OF ALENÇON. BASTARD OF ORLEANS. Governor of Paris. Master-Gunner of Orleans, and his Son. General of the French forces in Bourdeaux. A French Sergeant. A Porter. An old Shepherd, father to Joan la Pucelle. MArGareT, daughter to Reignier, afterwards married to King Henry. COUNTESS OF AUVERGNE. JOAN LA PUCELLE, commonly called Joan of Arc. Lords, Warders of the Tower, Heralds, Officers, Soldiers, Messengers, and Attendants. Fiends appearing to La Pucelle. SCENE: Partly in England, and partly in France.	
+470	miun/kraken	1	10	replace	we'll	we ’ll	we ’ll	same
+470	miun/kraken	1	11	replace	Henry's	Henry ’s	Henry ’s	same
+470	miun/kraken	1	21	replace	Cesar	Cæsar	Cæsar	same
+470	miun/kraken	1	24	delete		I	I	same
+470	miun/kraken	1	32	replace	yielded	vielded	yielded	
+470	miun/kraken	1	56	replace	steel'd	steeled	steeled	same
+470	miun/kraken	1	56	replace	I'll	I’Il	I’ll	
+470	miun/kraken	2	7	replace	I'll	I’Il	I’ll	
+470	miun/kraken	2	13	replace	to your	toyour	to your	
+470	miun/kraken	2	20	replace	I'll	I’Il	I’ll	
+470	miun/kraken	2	36	replace	everywhere,	every where,	every where,	same
+470	miun/kraken	2	50	replace	in	into	into	same
+470	miun/kraken	2	54	delete		will	will	same
+470	miun/kraken	2	64	replace	I'll	I’Il	I’Il	same
+471	miun/kraken	1	2	replace	So you	Soyou	Soyou	same
+471	miun/kraken	1	14	replace	I'll go	I’Il	I’Il	same
+471	miun/kraken	1	17	replace	Exit.	IExit.	(Exit.	
+471	miun/kraken	1	20	replace	I'll	I’Il	I’Il	same
+471	miun/kraken	1	27	delete		Before	France. Before Orleans.	
+471	miun/kraken	1	29	replace	with	vith	vith	same
+471	miun/kraken	1	33	delete		is	is	same
+471	miun/kraken	1	55	replace	Exeunt.	IExeunt.	LExeunt.	
+471	miun/kraken	1	57	replace	with	vith	voith	
+471	miun/kraken	1	63	replace	me 'midst	me'midst	me ’midst	
+471	miun/kraken	2	2	replace	Alen.	A len.	A len.	same
+471	miun/kraken	2	8	replace	raw-bon'd	raw-boned	raw-boned	same
+471	miun/kraken	2	28	delete		so		
+471	miun/kraken	2	38	replace	[Exit	LExit	[Exit	
+471	miun/kraken	2	43	replace	with	vith	with	
+471	miun/kraken	2	45	replace	who will	wilt	wilt	same
+471	miun/kraken	2	47	replace	who	that	that	same
+471	miun/kraken	2	49	replace	Where is	Whereis	Where is	
+471	miun/kraken	2	51	replace	there's	there ’s	there ’s	same
+471	miun/kraken	2	53	replace	thou	you	you	same
+472	miun/kraken	1	24	replace	I'll	I’Il	I’ll	
+472	miun/kraken	1	26	replace	Here	HHere	HHere	same
+472	miun/kraken	1	27	replace	overcomes.	overcontes.	overcomes.	
+472	miun/kraken	1	40	replace	yield	vield	yield	
+472	miun/kraken	1	52	replace	Alen.	A leu.	Alen.	
+472	miun/kraken	1	60	replace	your	vour	your	
+472	miun/kraken	1	61	replace	I'll	I’Il	I’Il	same
+472	miun/kraken	1	61	replace	we'll	we’Il	we’ll	
+472	miun/kraken	1	64	replace	I'll	I’Il	I’Il	same
+472	miun/kraken	2	19	replace	Exeunt.	LExeunt.	LExeunt.	same
+472	miun/kraken	2	20	replace	Tower.		Tower.	
+472	miun/kraken	2	46	replace	Woodville	Woodvile	W'oodvile	
+472	miun/kraken	2	46	replace	speaks within. Woodv.	speakes vouithin. W'oodv.	Lientenant speals vithin. Woodv.	
+472	miun/kraken	2	52	replace	Woodv.	W'oodv.	W’oodv.	
+472	miun/kraken	2	57	replace	Woodville,	Woodvile,	Woodvile,	same
+472	miun/kraken	2	63	replace	I'll	I’Il	I’Il	same
+472	miun/kraken	2	66	replace	we'll	we ’ll	we’Il	
+473	miun/kraken	1	1	replace	Tower	Tover	Tower	
+473	miun/kraken	1	1	replace	WINCHESTER	CHESTER	WIN¬ CHESTER	
+473	miun/kraken	1	2	replace	tawny	tavny	tawny	
+473	miun/kraken	1	3	replace	Humphrey!	Humphry!	Humphry!	same
+473	miun/kraken	1	10	replace	dear	dead	dead	same
+473	miun/kraken	1	11	replace	indulgence	indulgences	indulgences	same
+473	miun/kraken	1	12	replace	I'll	I’Il	I’ll	
+473	miun/kraken	1	18	replace	I'll	I’Il	I’Il	same
+473	miun/kraken	1	21	replace	I'll	I’Il	I’Il	same
+473	miun/kraken	1	32	replace	I'll	I’Il	I’Il	same
+473	miun/kraken	1	37	replace	I'll	I’Il	I’Il	same
+473	miun/kraken	1	47	replace	not	nor	nor	same
+473	miun/kraken	1	57	replace	Here	HHere	(Here	
+473	miun/kraken	2	1	replace	or use	oruse	oruse	same
+473	miun/kraken	2	3	replace	I'll	I’Il	I’Il	same
+473	miun/kraken	2	8	replace	I'll	I’Il	I’ll	
+473	miun/kraken	2	15	replace	with	vuith	vith	
+473	miun/kraken	2	18	replace	should	sbould	should	
+473	miun/kraken	2	20	replace	Exeunt.	LExeunt.	IExeunt.	
+473	miun/kraken	2	21	delete			Orleans.	
+473	miun/kraken	2	36	replace	yonder	vonder	yonder	
+473	miun/kraken	2	39	replace	separate	intercept	intercept	same
+473	miun/kraken	2	45	replace	Exit.	IExit.	[Exit.	
+473	miun/kraken	2	47	replace	I'll	I’Il	I’ll	
+473	miun/kraken	2	49	replace	GLANDSDALE,	GLANSDALE,	GLANSDALE,	same
+473	miun/kraken	2	53	replace	releas'd?	released?	released	
+474	miun/kraken	1	15	replace	name 'mongst	name’mongst	name mongst	
+474	miun/kraken	1	19	replace	walk'd	walked	walked	same
+474	miun/kraken	1	22	replace	with	vith	with	
+474	miun/kraken	1	40	replace	Salisbury	Salisoury	Salisbury	
+474	miun/kraken	1	52	replace	Henry	Hepry	Henry	
+474	miun/kraken	2	4	replace	Here	LHere	(Here	
+474	miun/kraken	2	11	replace	phophetess	prophetess	prophetess	same
+474	miun/kraken	2	13	replace	Here	HHere	(Here	
+474	miun/kraken	2	17	replace	I'll	I ’ll	I ’Il	
+474	miun/kraken	2	19	replace	I'll	I’Il	I’Il	same
+474	miun/kraken	2	24	delete		The same.	The same.	same
+474	miun/kraken	2	28	replace	after	afier	after	
+474	miun/kraken	2	35	replace	I'll	I’Il	I’ll	
+474	miun/kraken	2	36	replace	I'll	I’Il	I’Il	same
+474	miun/kraken	2	40	replace	Here	HHere	HHere	same
+474	miun/kraken	2	43	replace	I'll	I’Il	I’Il	same
+474	miun/kraken	2	50	replace	A	LA	LA	same
+474	miun/kraken	2	50	replace	town with	tovon quiti	toron voith	
+474	miun/kraken	2	55	replace	Exit.	IExit.	[Exit.	
+474	miun/kraken	2	62	replace	Now, like to whelps, we crying run	Are from their hives and houses driven	Are from their hives and houses driven	same
+475	miun/kraken	1	7	replace	Alarum.	A larum.	LA larum.	
+475	miun/kraken	1	15	replace	flourish.	fourish.	Jlourish.	
+475	miun/kraken	1	16	delete		The same.	The same.	same
+475	miun/kraken	1	17	replace	walls,	valls,	walls,	
+475	miun/kraken	1	22	replace	performed	perform’d	perform’d	same
+475	miun/kraken	1	44	replace	I'll	I’Il	I’ll	
+475	miun/kraken	1	55	replace	Flourish.	FFlourish.	Wlourish.	
+475	miun/kraken	1	56	replace	ACT II	ACTII.	ACT II.	
+475	miun/kraken	1	57	delete		Before	Before Orleans.	
+475	miun/kraken	1	58	replace	two	tao	tao	same
+475	miun/kraken	1	63	replace	Exit	IExit	(Exit	
+475	miun/kraken	2	4	replace	with	vith	with	
+475	miun/kraken	2	35	replace	that	the	the	same
+475	miun/kraken	2	37	replace	I'll	I’Il	I’ll	
+475	miun/kraken	2	45	replace	[Cry:	ICry:	[Cry:	
+475	miun/kraken	2	46	replace	leap	leas	leap	
+475	miun/kraken	2	46	replace	walls	valls	voalls	
+476	miun/kraken	1	13	replace	have	haye	have	
+476	miun/kraken	1	35	replace	than	but	but	same
+476	miun/kraken	1	39	replace	fly,	fiy,	fy,	
+476	miun/kraken	1	41	replace	I'll	I’Il	I’ll	
+476	miun/kraken	1	45	replace	Exit.	IExit.	(Exit.	
+476	miun/kraken	1	46	delete		Within the ton.	Orleans. Within the town.	
+476	miun/kraken	1	53	replace	Retreat	IRetreat	[Retreat	
+476	miun/kraken	1	62	replace	I'll	I’Il	I’Il	same
+476	miun/kraken	2	19	replace	We'll	We’Il	We’Il	same
+476	miun/kraken	2	35	replace	into	unto	unto	same
+476	miun/kraken	2	50	replace	Whispers.	IWhispers.]	IWhispers.1	
+476	miun/kraken	2	52	replace	Cap.		Capt.	
+476	miun/kraken	2	53	replace	Exeunt.	LExeunt.	WExeunt.	
+476	miun/kraken	2	54	delete		Auvergne. The COUNTESS'S castle.	Auvergne. The COUNTESS'S castle.	same
+477	miun/kraken	1	22	replace	I'll	I'Il	I’Il	
+477	miun/kraken	1	28	delete		a	a	same
+477	miun/kraken	1	39	replace	Thou	That	That	same
+477	miun/kraken	1	46	replace	Talbot's shadow	Taibot’s nadow	Talbot’s shadow	
+477	miun/kraken	1	49	replace	indeed.	indeec.	indeed.	
+477	miun/kraken	1	51	delete		so	5o	
+477	miun/kraken	1	63	replace	Winds	IW'inds	(Winds	
+477	miun/kraken	1	63	replace	up:	ub:	ug:	
+477	miun/kraken	2	25	delete		The Temple-garden.	London. The Temple-garden.	
+477	miun/kraken	2	27	replace	VERNON,	NON,	VER¬ NON,	
+477	miun/kraken	2	65	replace	Let him	Let-him	Let him	
+478	miun/kraken	1	1	replace	from	srom	from	
+478	miun/kraken	1	11	replace	yield	vield	yield	
+478	miun/kraken	1	19	replace	off,	osf,	off,	
+478	miun/kraken	1	20	delete		5o	go	
+478	miun/kraken	1	26	replace	Law.		Lazo.	
+478	miun/kraken	1	28	replace	[To	ITo	ITo	same
+478	miun/kraken	1	47	replace	I'll	I’Il	I’ll	
+478	miun/kraken	1	58	replace	I'll	I'Il	Suy. I’ll	
+478	miun/kraken	1	61	replace	wrongst	wrong’st	wrong’st	same
+478	miun/kraken	1	68	replace	I'll	I’Il	l’il	
+478	miun/kraken	2	10	replace	I'll	I ’Il	I ’Il	same
+478	miun/kraken	2	13	replace	I'll	I’Il	I’Il	same
+478	miun/kraken	2	30	replace	Exit.	LExit.	Exit.	
+478	miun/kraken	2	54	replace	Exeunt.	LExeunt.	IE xeunt.	
+478	miun/kraken	2	55	delete		The Tower of	The Tower of London.	
+479	miun/kraken	1	40	replace	aganist	against	against	same
+479	miun/kraken	1	42	replace	I'll	I’Il	I’ll	
+479	miun/kraken	1	48	delete		5o		
+479	miun/kraken	1	63	replace	king,	keing,	king,	
+479	miun/kraken	2	4	replace	for that--young	forthat–voung	for that–young	
+479	miun/kraken	2	13	replace	rightful	rightsul	rightful	
+479	miun/kraken	2	60	replace	Exeunt	LExeunt	[Exeunt	
+479	miun/kraken	2	64	replace	these	those	those	same
+480	miun/kraken	1	2	delete		The Parliament-house.	London, The Parliament-house.	
+480	miun/kraken	1	4	replace	WARWICK,	WARWICE,	WARWICK,	
+480	miun/kraken	1	4	replace	SUFFOLK;	SUFFOLE;	SUFFOLK;	
+480	miun/kraken	1	5	replace	PLANTAGENET,	PLANTA¬ GENET,	PLANTA¬ GENET,	same
+480	miun/kraken	1	6	replace	put	pur	put	
+480	miun/kraken	1	65	replace	War.	WVar	War.	
+480	miun/kraken	2	6	replace	War.	IVar.	War.	
+480	miun/kraken	2	8	replace	Aside	[Asidel	(Asidel	
+480	miun/kraken	2	22	replace	A	IA	IA	same
+480	miun/kraken	2	26	replace	A	IA	IA	same
+480	miun/kraken	2	26	replace	again, 'Stones!	again,“Stones!	again, “Stones	
+480	miun/kraken	2	38	replace	with	vith	with	
+480	miun/kraken	2	45	replace	we'll	we ’ll	we’ll	
+480	miun/kraken	2	47	replace	Skirmish	[Skeirmish	[Skirmish	
+480	miun/kraken	2	58	delete		roo		
+480	miun/kraken	2	59	replace	slaughtered	slaughter'd	slaughter’d	
+481	miun/kraken	1	13	replace	yield.	vield.	yield.	
+481	miun/kraken	1	36	replace	[Aside]	[Asidel	[Asidel	same
+481	miun/kraken	1	42	replace	[Aside]	(Asidel	[Asidel	
+481	miun/kraken	1	48	replace	I'll	I’Il	I ’ll	
+481	miun/kraken	1	52	replace	&c.		Cec.	
+481	miun/kraken	2	2	replace	York,	Vork,	Yorke,	
+481	miun/kraken	2	18	replace	[Aside]	[Asidel	[Asidel	same
+481	miun/kraken	2	29	replace	Sennnet.	[Sennet.	[Sennet.	same
+481	miun/kraken	2	45	replace	hapless time.	haplesstime.	haplesstime. LE-xit.	
+481	miun/kraken	2	46	delete		Before	France. Before Rouen.	
+481	miun/kraken	2	47	replace	with	vith	with	
+481	miun/kraken	2	48	replace	with	voith	vith	
+481	miun/kraken	2	62	replace	we'll	we’Il	we’ll	
+481	miun/kraken	2	62	replace	Knocks.	[nocks.	[Knocks.	
+481	miun/kraken	2	63	replace	là?	là	là	same
+482	miun/kraken	1	1	replace	I'll	I’Il	I ’ll	
+482	miun/kraken	1	6	replace	we be lords and rulers over	once again we’Il sleep secure in	once again we ’Il sleep secure in	
+482	miun/kraken	1	10	replace	Reig.		Reign.	
+482	miun/kraken	1	24	replace	Reig.		Reign.	
+482	miun/kraken	1	28	replace	Alarum.	LAlarum.	HAlarum.	
+482	miun/kraken	1	36	replace	Exit.	IExit.	(Exit.	
+482	miun/kraken	1	38	replace	BURGUNDY without: within	BURGUN¬ DY vithout: vithin	BURGUNpy without: zvithin	
+482	miun/kraken	1	40	replace	REIG- NIER,	REIGNIER,	REIGNIER,	same
+482	miun/kraken	1	41	replace	walls.	valls.	vvalls.	
+482	miun/kraken	1	45	replace	he'll	he’Il	he’Il	same
+482	miun/kraken	1	64	replace	Tabot	Talbot	Talbot	same
+482	miun/kraken	2	4	replace	[The	LThe	The	
+482	miun/kraken	2	18	delete		O		
+482	miun/kraken	2	32	replace	Coeur-de-lion's	Cœur-de-lion’s	Cœur-de-lion’s	same
+482	miun/kraken	2	56	replace	Exeunt	LExeunt	IExeunt	
+482	miun/kraken	2	56	replace	Bedford	ford	Bedford	
+482	miun/kraken	2	57	replace	alarum:	alarune:	alarum:	
+483	miun/kraken	1	2	replace	Exit.	IExit.	IExit.	same
+483	miun/kraken	1	4	replace	fly.	fy.	fTy.	
+483	miun/kraken	1	11	replace	Bedford	IBedford	[Bedford	
+483	miun/kraken	1	11	replace	two	tavo	tavo	same
+483	miun/kraken	1	12	replace	chair.	chain	chair.	
+483	miun/kraken	1	24	replace	where's	where ’s	where ’s	same
+483	miun/kraken	1	42	delete		The Blains near	The plains near Rouen.	
+483	miun/kraken	1	51	replace	We'll	We’Il	We ’Il	
+483	miun/kraken	1	58	replace	We'll	We’Il	We’ll	
+483	miun/kraken	2	12	replace	Drum	IDrum	IDrum	same
+483	miun/kraken	2	20	replace	OF	Or	OF	
+484	miun/kraken	1	15	replace	yield	vield	yield	
+484	miun/kraken	1	32	replace	Exeunt.	[Exeune.	[Exeunt.	
+484	miun/kraken	1	33	delete		The palace.	Paris. The palace.	
+484	miun/kraken	1	34	replace	WINCHESTER,	CHESTER,	WIN¬ CHESTER,	
+484	miun/kraken	1	35	replace	WARWICK,	WICK,	WAR¬ WICK,	
+484	miun/kraken	1	37	replace	with	vith	with	
+484	miun/kraken	1	47	replace	word	sword	sword	same
+484	miun/kraken	1	64	replace	Yet	Vet	Yet	
+484	miun/kraken	1	66	replace	your	vour	your	
+484	miun/kraken	2	18	replace	Strikes	LStrites	[Strikes	
+484	miun/kraken	2	30	replace	[Exeunt.	LExeunt.	IExeunt.	
+484	miun/kraken	2	32	delete		Paris, A hall ofstate.	Paris. A hall of state.	
+484	miun/kraken	2	33	replace	WINCHESTER,	CHESTER,	OE WIN¬ CHESTER,	
+484	miun/kraken	2	34	replace	WARWICK,	WICK,	WAR¬ WICK,	
+484	miun/kraken	2	57	replace	Plucking	IPlucking	(Plucḱing	
+485	miun/kraken	1	2	replace	gentlement	gentlemen	gentlemen	same
+485	miun/kraken	1	27	replace	[Exit	IExit	IExit	same
+485	miun/kraken	2	5	replace	York.		Vorke.	
+485	miun/kraken	2	9	replace	King.	K.	King.	
+485	miun/kraken	2	17	replace	King.	K.	King.	
+485	miun/kraken	2	19	replace	I'll	I’Il	I’ll	
+485	miun/kraken	2	40	replace	York.		Vork.	
+485	miun/kraken	2	44	replace	King.	K.	King.	
+485	miun/kraken	2	50	replace	York.		Vork.	
+485	miun/kraken	2	55	replace	York.	Vorḱ.	Vork.	
+486	miun/kraken	1	3	replace	King.	K.	King.	
+486	miun/kraken	1	21	replace	blood!	blood!1150	blood!	
+486	miun/kraken	1	24	replace	[Putting	IPutting	(Putting	
+486	miun/kraken	1	38	replace	subjects,sons	subjects, sons	subjects, sons	same
+486	miun/kraken	1	40	replace	your	vour	your	
+486	miun/kraken	1	46	replace	York, Warwick,	Vorke, Warvick,	Vorke, Warwick,	
+486	miun/kraken	1	47	replace	Vernon.		Vernon.	
+486	miun/kraken	1	51	replace	York.		Vork.	
+486	miun/kraken	1	57	replace	York.		Vorké.	
+486	miun/kraken	1	59	replace	Exeunt	IExeunt	(Exeunt	
+486	miun/kraken	2	1	replace	that	tthat	that	
+486	miun/kraken	2	6	delete		Before Bourdeaux.	Before Bourdeaux.	same
+486	miun/kraken	2	16	replace	to us;	to’us;	to us;	
+486	miun/kraken	2	18	replace	I'll	I’Il	I’Il	same
+486	miun/kraken	2	47	replace	eyes,	eves,	eyes,	
+486	miun/kraken	2	49	replace	[Drum	IDrum	(Drum	
+486	miun/kraken	2	49	replace	off.	ofr.	ofr.	same
+486	miun/kraken	2	53	replace	Exeunt	LExeunt	(Exeunt	
+486	miun/kraken	2	62	delete		so		
+487	miun/kraken	1	4	replace	Exeunt.	IExeunt.	[Exeunt.	
+487	miun/kraken	1	5	delete		Plains in	Plains in Gascony.	
+487	miun/kraken	1	17	replace	joined	join'd	join’d	
+487	miun/kraken	1	19	replace	York.		Vork.	
+487	miun/kraken	1	38	replace	York.		Vork.	
+487	miun/kraken	1	45	replace	succor	succour	succour	same
+487	miun/kraken	1	47	replace	York.		Vork.	
+487	miun/kraken	1	51	replace	All 'long	All'long	All 'long	
+487	miun/kraken	1	59	replace	York.		Vork.	
+487	miun/kraken	2	2	replace	[Exit, with	IExit, zoith	IExit, with	
+487	miun/kraken	2	9	replace	honour,	honours,	honours,	same
+487	miun/kraken	2	9	replace	[Exit.	IExit.	(Exit.	
+487	miun/kraken	2	10	delete		Other plains in	Other plains in Gascony.	
+487	miun/kraken	2	11	replace	with	wvith	wvith	same
+487	miun/kraken	2	12	replace	with	vvith	zoith	
+487	miun/kraken	2	40	replace	succors	succours	succours	same
+487	miun/kraken	2	46	replace	have	haye	have	
+488	miun/kraken	1	4	replace	Exeunt. SCENE V	IExeunt. SCENEV. The English camp near Bourdeaux.	(Exeunt. SCENE V. The English camp near Bourdeaux.	
+488	miun/kraken	1	16	replace	I'll	I’Il	I’ll	
+488	miun/kraken	1	38	replace	they'll	they ’Il	they ’ll	
+488	miun/kraken	1	45	replace	I'll	I’Il	I’Il	same
+488	miun/kraken	2	7	replace	Exeunt.	LExeunt.	IExeunt.	
+488	miun/kraken	2	8	delete		A field of battle.	A field of battle.	same
+488	miun/kraken	2	61	replace	yours	vours	yours	
+488	miun/kraken	2	65	replace	young	voung	young	
+489	miun/kraken	1	11	replace	Exeunt.	LExeunt.	LExeunt.	same
+489	miun/kraken	1	12	delete		Another part of the field.	Another part of the field.	same
+489	miun/kraken	1	34	replace	TALBOT.	TALROT.	TaLor.	
+489	miun/kraken	1	40	replace	shall 'scape	shall’scape	shall ’scape	
+489	miun/kraken	1	54	replace	BASTARD,	TARD,	BAS¬ TARD,	
+489	miun/kraken	2	4	replace	noblee	noble	noble	same
+489	miun/kraken	2	21	replace	Dauphin! 'tis	"Dauphin!""tis"	Dauphin !’tis	
+489	miun/kraken	2	35	replace	Verdum	Verdun	Verdun	same
+489	miun/kraken	2	38	replace	thrice victorious	thrice-victorious	thrice-victorious	same
+489	miun/kraken	2	52	delete		So	8o	
+489	miun/kraken	2	65	replace	I'll	I’Il	I’Il	same
+489	miun/kraken	2	67	replace	phoenix	phœnix	phœnix	same
+490	miun/kraken	1	1	replace	with 'em	with’em	with ’em	
+490	miun/kraken	1	5	replace	Exeunt. ACT V	LExeunt. ACTV.	LE xeunt. ACTV.	
+490	miun/kraken	1	7	delete		The palace.	London. The palace.	
+490	miun/kraken	1	46	replace	He'll	He’Il	He’Il	same
+490	miun/kraken	1	65	replace	Winchester	WVinchester	Winchester	
+490	miun/kraken	2	7	replace	[Aside]	IAsidel	[Asidel	
+490	miun/kraken	2	13	replace	I'll	I’Il	I’ll	
+490	miun/kraken	2	15	delete		Plains in	France. Plains in Anjou.	
+490	miun/kraken	2	16	replace	BASTARD,	TARD,	BAS¬ TARD,	
+490	miun/kraken	2	25	replace	turn to us;	turntous;	turn tous;	
+490	miun/kraken	2	44	replace	Exeunt.	LExeunt.	(Exeunt.	
+490	miun/kraken	2	45	delete		Before	Before Angiers.	
+490	miun/kraken	2	61	replace	They	IThey	LThey wvalk,	
+491	miun/kraken	1	10	replace	to	te	to	
+491	miun/kraken	1	13	replace	They	IThey	[They	
+491	miun/kraken	1	20	replace	Exit.	IExit.	[Exit.	
+491	miun/kraken	1	22	replace	with	vith	with	
+491	miun/kraken	1	23	replace	French	Foench	French	
+491	miun/kraken	1	24	replace	York.		Vork.	
+491	miun/kraken	1	29	replace	witch	wench	witch	
+491	miun/kraken	1	33	replace	York.		Vorke.	
+491	miun/kraken	1	39	replace	York.		Vork.	
+491	miun/kraken	1	42	replace	York.		Vork.	
+491	miun/kraken	1	44	replace	SUFFOLK, with	SUFFOLE, zvitk	SUFFOLE, wvith	
+491	miun/kraken	1	63	replace	She	[he	(She	
+491	miun/kraken	2	8	delete		y0		
+491	miun/kraken	2	12	replace	preceive	perceive	perceive	same
+491	miun/kraken	2	33	replace	I'll	I’Il	I’Il	same
+491	miun/kraken	2	66	replace	freedom unto	freedomunto	freedom unto	
+491	miun/kraken	2	67	replace	I'll undertake	I'llundertake	I’llundertake	
+492	miun/kraken	1	13	replace	We'll	We’Il	We’ll	
+492	miun/kraken	1	14	replace	parley	pardey	parley	
+492	miun/kraken	1	14	replace	walls.	valls.	walls.	
+492	miun/kraken	1	19	replace	weep	wecp	weep	
+492	miun/kraken	1	32	replace	Exit	IExit	[Exit	
+492	miun/kraken	1	32	replace	walls.	valls.	walls.	
+492	miun/kraken	1	34	replace	below.	belows.	below.	
+492	miun/kraken	1	41	replace	my suit?	mysuit?	my suit	
+492	miun/kraken	1	58	replace	[Aside]	IAside]	HAside]	
+492	miun/kraken	2	18	replace	[Kisses	[isses	[Kisses	
+492	miun/kraken	2	21	replace	Exeunt	LE xeunt	LExeunt	
+492	miun/kraken	2	33	replace	Exit.	IExit.	IExit.	same
+492	miun/kraken	2	34	delete		Camp of the DUKE OF YORE in	Camp of the DUKE OF YORK in Anjou.	
+492	miun/kraken	2	36	replace	YORK,	YORE,	YORK,	
+492	miun/kraken	2	37	replace	York.		Vork.	
+492	miun/kraken	2	45	replace	I'll	I’Il	I’ll	
+492	miun/kraken	2	57	replace	York.		Vork.	
+492	miun/kraken	2	60	replace	Shep.		Sheb.	
+492	miun/kraken	2	60	replace	will	wilt	wilt	same
+492	miun/kraken	2	61	replace	ob, stacle!	obstacle!	obstacle!	same
+493	miun/kraken	1	15	replace	York.		IExit. Vork.	
+493	miun/kraken	1	25	replace	spirit:	spirits:	spirits	
+493	miun/kraken	1	37	replace	York.		York.	
+493	miun/kraken	1	50	replace	York.		Vork.	
+493	miun/kraken	1	55	replace	York.		Vork.	
+493	miun/kraken	1	64	replace	York.		Vork.	
+493	miun/kraken	1	66	replace	you:	vou:	you	
+493	miun/kraken	2	1	replace	York.		Vork.	
+493	miun/kraken	2	5	replace	York.		Vork.	
+493	miun/kraken	2	16	replace	York.		Vork.	
+493	miun/kraken	2	29	replace	York.	Vorḱ.	Vork.	
+493	miun/kraken	2	51	replace	York.		Vork.	
+493	miun/kraken	2	55	replace	Car.		Car.	
+493	miun/kraken	2	55	delete		12t		
+493	miun/kraken	2	60	replace	became	become	become	same
+494	miun/kraken	1	14	replace	York.		Vork.	
+494	miun/kraken	1	38	replace	York.		Vork.	
+494	miun/kraken	1	45	delete		The palace.	London. The palace.	
+494	miun/kraken	2	14	replace	vow'd	vow’'d	vow’d	
+494	miun/kraken	2	23	replace	Yes,	Ves,	Yes,	
+494	miun/kraken	2	36	replace	perfect	pertect	perfect	
+495	miun/kraken	1	9	delete		D0		
+495	miun/kraken	2	1	replace	you	vou	you	
+495	miun/kraken	2	8	replace	prevailed;	prevail’d;	prevail’d;	same
+495	miun/kraken	2	12	replace	that	than	than	same

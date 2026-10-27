@@ -1,0 +1,412 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+496	miun/kraken	1	29	replace	Enter	Entez	Enter	
+496	miun/kraken	1	31	replace	BEAUFORT,	BEAU¬ FORT,	BEAU¬ FORT,	same
+496	miun/kraken	1	33	replace	YORK,	YORE,	YORK,	
+496	miun/kraken	1	36	replace	from	for	for	same
+496	miun/kraken	2	1	delete		VI. PERSONÆ. BOLINGBROKE, a conjurer. THOMAS HORNER, an armourer. his man. of Mayor of Saint Alban's. SIMPCOX, an impostor. ALEXANDER a Kentish gentleman. JACK a rebel. GEORGE JOHN HOLLAND, DICE the butcher, the weaver, MICHAEL, &c., followers of Two Murderers. MARGARET, to ELEANOR, Duchess of Gloucester. MARGARET JOURDAIN, a witch. to Lords, Ladies, and Attendants, Petitioners, Aldermen, a Herald, a Beadle, Sheriff, and Officers, Citizens, Prentices, Falconers, Guards, Soldiers, Messengers, &c. A SCENE	PART OF VI. PERSONÆ. BÖLINGBROKE, a conjurer. THOMAS HORNER, an armourer. PETER, his man. Clerk of Chatham. Mayor of Saint Alban's. SIMPCOX, an impostor. ALEXANDER IDEN, a Kentish gentleman. JACK CADE, a rebel. GEORGE BEVIS, JOHN HOLLAND, DICK the butcher, SMITH the weaver, MICHAEL, 8c., followers of Cade. Two Murderers. MARGARET, Queen to King Henry. ELEANOR, Duchess of Gloucester. MARGARET JOURDAIN, a witch. Wife to Simpcox. Lords, Ladies, and Attendants, Petitioners, Aldermen, a Herald, a Beadle, Sheriff, and Officers, Citizens, Prentices, Falconers, Guards, Soldiers, Messengers, &c. A Spirit. SCENE: England.	
+496	miun/kraken	2	35	replace	you,	vou,	vou,	same
+496	miun/kraken	2	45	replace	kneeling	[hneelingl.	[kneeling).	
+496	miun/kraken	2	47	replace	Flourish. Suf.	[Flourise..	[Flourich. Suff.	
+496	miun/kraken	2	49	replace	your grace,	yougrace,	your grace,	
+497	miun/kraken	1	4	replace	Reignier-King	Reignier	Reignier King	
+497	miun/kraken	1	35	replace	Exeunt	[E xeunt	LExeunt	
+497	miun/kraken	2	21	replace	York.		Vork.	
+497	miun/kraken	2	33	replace	stay'd	stayed	stayed	same
+497	miun/kraken	2	39	replace	your	vour	your	
+497	miun/kraken	2	42	replace	But 'tis	But’tis	But ’tis	
+497	miun/kraken	2	46	replace	Lordlings,	Lordings,	Lordings,	same
+497	miun/kraken	2	47	replace	Exit.	LExit.	[Exit.	
+497	miun/kraken	2	54	replace	empire by	empire,by	empire by	
+498	miun/kraken	1	7	replace	[Exit.	[Eait.	(Exit.	
+498	miun/kraken	1	11	replace	haughty	haugnty	haughty	
+498	miun/kraken	1	17	replace	or	er	or	
+498	miun/kraken	1	18	replace	[Exeunt	[E xeunt	LExeunt	
+498	miun/kraken	1	24	delete		I	I	same
+498	miun/kraken	1	37	replace	fear'd and	fear' dand	fear’d and	
+498	miun/kraken	1	47	replace	York.		Vork.	
+498	miun/kraken	1	57	replace	[Exeunt	LExeunt	(Exeunt Waroick	
+498	miun/kraken	2	38	replace	I'll	I’Il	I’Il	same
+498	miun/kraken	2	38	replace	yield	vield	yield	
+498	miun/kraken	2	41	replace	[Exit.	IExit.	IExit.	same
+498	miun/kraken	2	42	replace	DUKE	DUxE	DUxE	same
+498	miun/kraken	2	43	replace	DUKE	DURE	DUxE	
+498	miun/kraken	2	43	replace	wife ELEANOR.	vife ELRANOR.	wife ELEANOR.	
+498	miun/kraken	2	47	replace	knit	kenit	knit	
+498	miun/kraken	2	57	replace	I'll	I’Il	I ’ll	
+498	miun/kraken	2	59	replace	We'll	We’Il	We ’ll	
+499	miun/kraken	1	3	replace	I'll	L’ll	I’ll	
+499	miun/kraken	1	16	replace	who	that	that	same
+499	miun/kraken	1	30	replace	pleasures	pleasure	pleasure	same
+499	miun/kraken	1	35	delete		5o		
+499	miun/kraken	1	38	replace	I'll	I’Il	I’Il	same
+499	miun/kraken	1	44	replace	You	Vou	You	
+499	miun/kraken	1	47	replace	I'll	I’Il	I’Il	same
+499	miun/kraken	1	48	replace	[Exeunt	IExeunt	[Exeunt	
+499	miun/kraken	1	49	delete		6r		
+499	miun/kraken	2	6	replace	your	vour	your	
+499	miun/kraken	2	10	replace	your	vour	your	
+499	miun/kraken	2	11	replace	I'll	I’Il	I’Il	same
+499	miun/kraken	2	14	replace	We'll	We'Il	We’Il	
+499	miun/kraken	2	17	replace	[Exit.	LExit.	[Exit.	
+499	miun/kraken	2	33	replace	Yet	Vet	Yet	
+499	miun/kraken	2	35	replace	crafty	crasty	crafty	
+499	miun/kraken	2	39	replace	[Exit.	LExit.	[Exit.	
+499	miun/kraken	2	49	replace	SUFFOLK	SUFFOLE	SUFFOLK	
+499	miun/kraken	2	51	replace	I'll	I’Il	I ’ll	
+499	miun/kraken	2	58	replace	[Reading]	IReading]	[Readingl	
+499	miun/kraken	2	66	replace	[Reads]	[Readsl	(Reads]	
+500	miun/kraken	1	9	replace	York	Vork	York	
+500	miun/kraken	1	15	replace	we'll	we ’ll	we’ll	
+500	miun/kraken	1	20	replace	Bring	Begin	Begin	same
+500	miun/kraken	1	21	replace	supplication.	supplications.	supplications.	same
+500	miun/kraken	1	23	replace	[Exeunt.	[E xeunt.	LExeunt.	
+500	miun/kraken	1	29	replace	Gloucester	Gloucester’s	Gloucester’s	same
+500	miun/kraken	1	41	replace	in	is	is	same
+500	miun/kraken	1	54	replace	The	And	And	same
+500	miun/kraken	2	1	replace	vaunted 'mongst	vaunted’mongst	vaunted ’mongst	
+500	miun/kraken	2	1	replace	t' other	t’other	t’other	same
+500	miun/kraken	2	5	replace	her,	lier,	her,	
+500	miun/kraken	2	14	delete		1oo		
+500	miun/kraken	2	18	replace	DUKE HUMPHREY	DURE HUM¬ PHREY	DUxE HUM¬ PHREY	
+500	miun/kraken	2	21	replace	WARWICK,	WARWICE,	WARWICK,	
+500	miun/kraken	2	25	replace	York.		Vork.	
+500	miun/kraken	2	30	replace	War.	WVar.	War.	
+500	miun/kraken	2	39	replace	preferr'd	preferred	preferred	same
+500	miun/kraken	2	55	replace	hath	hast	hast	same
+501	miun/kraken	1	2	delete		[She	[She	same
+501	miun/kraken	1	12	replace	She'll	She’Il	She’Il	same
+501	miun/kraken	1	15	replace	[Exit.	IExit.	IExit.	same
+501	miun/kraken	1	18	replace	She's	She ’s	She’s	
+501	miun/kraken	1	19	replace	She'll	She ’Il	She’ll	
+501	miun/kraken	1	34	replace	York. I'll	I’Il	Vork. I’Il	
+501	miun/kraken	1	52	replace	York.		Vork.	
+501	miun/kraken	1	66	replace	Peter.		Pet.	
+501	miun/kraken	2	3	replace	York.		Vork.	
+501	miun/kraken	2	4	replace	I'll	I’Il	I’Il	same
+501	miun/kraken	2	26	replace	Peter.		Pet.	
+501	miun/kraken	2	38	replace	SOUTHWELL,	SOUTH¬ WELL,	SOUTH¬ WELL,	same
+501	miun/kraken	2	39	replace	BOLINGBROKE.	BOLINGBRORE.	BOLINGBROKE.	
+501	miun/kraken	2	51	replace	[Exit	IExit	[Exit	
+501	miun/kraken	2	61	delete		zo		
+501	miun/kraken	2	62	replace	bandogs	ban-doys	ban-dogs	
+502	miun/kraken	1	2	replace	Here	HHere	HHere	same
+502	miun/kraken	1	3	replace	Bolingbroke	Bolingbrose	Bolingbroke	
+502	miun/kraken	1	4	replace	Southwell	Southzvell	Southwell	
+502	miun/kraken	1	7	replace	Spir.	52ir.	Spir.	
+502	miun/kraken	1	15	replace	Boling. 'First	Boling.“First	Boling.First	
+502	miun/kraken	1	20	replace	Spirit speaks, Southwell writes	Svirit spenks, Southvell vorites	Spirit speaks, Southwvell «vrites	
+502	miun/kraken	1	21	replace	answer.	ansver.	anszer.	
+502	miun/kraken	1	25	replace	Boling. 'What	Boling.“What	Boling.What	
+502	miun/kraken	1	27	replace	Spir.		Spir.	
+502	miun/kraken	1	35	replace	DUKE	DURE	Duxe or	
+502	miun/kraken	1	37	replace	York.		Vork.	
+502	miun/kraken	1	47	replace	where's	where ’s	where ’s	same
+502	miun/kraken	1	53	replace	[Exeunt	LExeunt	LE xeunt	
+502	miun/kraken	1	54	replace	We'll	We 'll	We’Il	
+502	miun/kraken	1	54	replace	your	vour	your	
+502	miun/kraken	1	56	replace	[Exeunt	IExeunt	LE xeunt	
+502	miun/kraken	1	56	replace	with Jourdain,	vith Zourdain,	with Jourdain,	
+502	miun/kraken	1	57	replace	York.		Vork.	
+502	miun/kraken	1	60	replace	let's	let ’s	let ’s	same
+502	miun/kraken	1	65	replace	AEacida,	Æacida,	Æacida,	same
+502	miun/kraken	2	17	replace	York.		Vork.	
+502	miun/kraken	2	22	replace	[Exeunt. ACT II	IExeunt. ACTII.	(Exeunt. ACT II.	
+502	miun/kraken	2	25	replace	CARDINAL,	DINAL,	CAR¬ DINAL,	
+503	trent/kraken	1	32	replace	[Aside	IAside	[Aside	
+503	trent/kraken	1	33	replace	I'll	I’Il	I’Il	same
+503	trent/kraken	1	57	replace	two	tivo	tavo	
+503	trent/kraken	2	10	replace	Glou.		Glou.	
+503	trent/kraken	2	13	replace	Simp.		Simb.	
+503	trent/kraken	2	57	replace	Simp.	Simó.	Simp.	
+504	miun/kraken	1	2	replace	Glou.		Glou.	
+504	miun/kraken	1	23	replace	[Exit	IExit	LExit	
+504	miun/kraken	1	38	replace	[After	IA fter	LAfter	
+504	miun/kraken	1	40	replace	away;	avay;	avay;	same
+504	miun/kraken	1	52	replace	&c.		&c.	
+504	miun/kraken	2	25	replace	Glou.		Glou.	
+504	miun/kraken	2	43	replace	Flourish.	FFlourish.	FFlourish.	same
+504	miun/kraken	2	44	replace	YORK'S	YORR'S	YORR'S	same
+504	miun/kraken	2	47	replace	York.		Vork.	
+504	miun/kraken	2	57	replace	York.		Vork.	
+504	miun/kraken	2	58	delete		ro		
+505	miun/kraken	1	15	replace	York.		Vork.	
+505	miun/kraken	1	21	replace	York.		Vork.	
+505	miun/kraken	1	33	replace	York.		Vork.	
+505	miun/kraken	1	43	delete		So,		
+505	miun/kraken	1	49	delete		reign:	reign:	same
+505	miun/kraken	1	58	replace	York.		Vork.	
+505	miun/kraken	2	3	replace	break	breals	break	
+505	miun/kraken	2	8	replace	York.		Vorke.	
+505	miun/kraken	2	11	replace	Exeunt.	LExeunt.	WExeunt.	
+505	miun/kraken	2	14	replace	SALISBURY; the	SALIS¬ BURY; Lhe	SALIS¬ BURY; the	
+505	miun/kraken	2	15	replace	MARGERY,	MAR¬ GERY	MAR¬ GERY	same
+505	miun/kraken	2	37	replace	[Exeunt	IExeunt	Exeunt	
+506	miun/kraken	1	6	replace	York.		Vork.	
+506	miun/kraken	1	17	replace	York.		Vork.	
+506	miun/kraken	1	22	replace	drunk;	drunse;	drunk;	
+506	miun/kraken	1	22	replace	with	vith	zoith	
+506	miun/kraken	1	25	replace	with	voith	with	
+506	miun/kraken	1	30	replace	Neigh.		Neigh.	
+506	miun/kraken	1	34	replace	I'll	I’Il	I’Il	same
+506	miun/kraken	1	39	delete		7.		
+506	miun/kraken	1	62	replace	York.		Vork.	
+506	miun/kraken	1	65	replace	strikeshim down.	strikes him dorn.	strikes him down.	
+506	miun/kraken	1	68	replace	Dies. York.	IDies.	(Dies. Vork.	
+506	miun/kraken	2	14	replace	[Sound	ISound	[Sound	
+506	miun/kraken	2	14	replace	flourish.	fourish.	flourish.	
+506	miun/kraken	2	17	replace	cloaks.	cloales.	cloaks.	
+506	miun/kraken	2	35	replace	I'll	I’Il	I’Il	same
+506	miun/kraken	2	48	replace	eyes	eves	eyes	
+506	miun/kraken	2	65	replace	I'll	I’Il	I’Il	same
+507	miun/kraken	1	3	replace	I'll	I’Il	I’Il	same
+507	miun/kraken	1	16	replace	they'll	they’Il	they’ll	
+507	miun/kraken	1	38	replace	[Exit	LExit	[Exit	
+507	miun/kraken	2	6	replace	Alhough	Although	Although	same
+507	miun/kraken	2	19	replace	[Exeunt.	IExeunt.	IExeunt.	same
+507	miun/kraken	2	32	replace	alter'd	alter d	alter’d	
+507	miun/kraken	2	50	replace	is	as	is	
+507	miun/kraken	2	56	replace	that	hath	hath	same
+508	miun/kraken	1	14	delete		5o		
+508	miun/kraken	1	24	replace	York.		Vork.	
+508	miun/kraken	1	27	replace	means	mneans	means	
+508	miun/kraken	1	47	replace	he's	he ’s	he’s	
+508	miun/kraken	1	60	replace	York. [Aside]	[Asidel	Vork. [Aside]	
+508	miun/kraken	2	4	replace	Suf.		Suf.	
+508	miun/kraken	2	15	replace	York.		York.	
+508	miun/kraken	2	17	replace	stay'd	stayed	stay’d	
+508	miun/kraken	2	37	replace	York.		Vork.	
+508	miun/kraken	2	52	replace	answer'd:	answered:	answer'd	
+509	miun/kraken	1	31	replace	your	vour	your	
+509	miun/kraken	1	38	replace	Glou.		Glou.	
+509	miun/kraken	1	42	replace	He'll	He’Il	He’ll	
+509	miun/kraken	1	54	replace	[Exit,	LExit,	LExit,	same
+509	miun/kraken	2	17	replace	[Exeunt	LExeunt	[E -xeunt	
+509	miun/kraken	2	18	replace	Suffolk,	Suffolle,	Suffolle,	same
+509	miun/kraken	2	18	replace	York;	Vork;	Vork;	same
+509	miun/kraken	2	18	replace	apart.	abœrt.	apart.	
+509	miun/kraken	2	41	replace	York.		Vork.	
+509	miun/kraken	2	44	replace	York.		Vork.	
+509	miun/kraken	2	49	replace	Were 't	Were’t	Were’t	same
+510	miun/kraken	1	13	replace	I'll	I’Il	I’Il	same
+510	miun/kraken	1	18	replace	York.		Vork.	
+510	miun/kraken	1	55	replace	your	vour	your	
+510	miun/kraken	1	66	replace	York.		Vork.	
+510	miun/kraken	2	8	replace	York.		Vork.	
+510	miun/kraken	2	11	replace	I'll	I’Il	I’ll	
+510	miun/kraken	2	13	replace	[Exeunt	IE xeunt	LE eunt	
+510	miun/kraken	2	13	replace	York. York.		l’ork. Vork.	
+510	miun/kraken	2	25	replace	Weaves	Weayes	Weaves	
+511	miun/kraken	1	10	replace	SUFFOLK.	SUFFOLE.	SUFFOLK.	
+511	miun/kraken	1	23	replace	with	vith	with	
+511	miun/kraken	1	29	replace	I'll	I’Il	I’ll	
+511	miun/kraken	1	30	replace	Exit.	IExit.	IExit.	same
+511	miun/kraken	1	33	replace	straiter 'gainst	straiter'gainst	straiter 'gainst	
+511	miun/kraken	1	51	replace	The	IThe	[The	
+511	miun/kraken	1	54	replace	up his	uphis	up his	
+511	miun/kraken	2	58	replace	AEolus	Æolus	Æolus	same
+511	miun/kraken	2	59	replace	And	But	But	same
+512	miun/kraken	1	21	replace	within.	zithin.	within.	
+512	miun/kraken	1	39	replace	Exit.	IExit.	(Exit.	
+512	miun/kraken	1	43	replace	Humphrey's life!	Humphrey’slife!	Humphrey’slife	
+512	miun/kraken	1	54	replace	GLOUCESTER'S	CESTER'S	GLOU¬ CESTER'S	
+512	miun/kraken	2	10	replace	ne'er	ne er	ne'er	
+512	miun/kraken	2	12	replace	cheek	check	cheek	
+512	miun/kraken	2	37	replace	Humprey's	Humphrey’s	Humphrey’s	same
+512	miun/kraken	2	41	replace	suspect 'twas	suspect’twas	suspect ’twas	
+512	miun/kraken	2	46	replace	Where's	Where 's	Where’s	
+512	miun/kraken	2	55	replace	[Exeunt	LExeunt	LExeunt	same
+513	miun/kraken	1	10	replace	mean'st,	meant’st,	meant’st,	same
+513	miun/kraken	1	11	replace	was	wast	wast	same
+513	miun/kraken	1	20	replace	I'll	I’Il	I’ll	
+513	miun/kraken	1	25	replace	arm'd	armed	armed	same
+513	miun/kraken	1	28	replace	[A	IA	IA	same
+513	miun/kraken	1	30	replace	SUFFOLK	SUFFOLR	SUFFOLK	
+513	miun/kraken	1	30	replace	WARWICK, with	WARWICE, vvith	WARWICK, vvith	
+513	miun/kraken	1	31	replace	weapons drawn.	veapons dracon.	zocapons drazon.	
+513	miun/kraken	1	39	replace	[To	ITo	(To	
+513	miun/kraken	1	41	replace	your	you	you	same
+513	miun/kraken	1	66	replace	fatal	satal	fatal	
+513	miun/kraken	2	23	replace	[Exit	IExit	(Exit	
+513	miun/kraken	2	38	replace	Exeunt	LExeunt	LExeunt	same
+513	miun/kraken	2	59	replace	eyes	eves	eyes	
+513	miun/kraken	2	63	replace	Shall	Should	Should	same
+514	miun/kraken	1	2	replace	their	the	the	same
+514	miun/kraken	1	3	replace	deep-seated	dark-seated	dark-seated	same
+514	miun/kraken	1	38	replace	thee	three	three	same
+514	miun/kraken	1	63	replace	[Exit	IExit	(Exit	
+514	miun/kraken	2	27	replace	I'l	I’Il	I’Il	same
+514	miun/kraken	2	33	delete		I	I	same
+514	miun/kraken	2	35	replace	Exeunt	IExeunt	LExeunt	
+515	miun/kraken	1	16	replace	them	themt	them	
+515	miun/kraken	1	18	replace	Cap.		Cap.	
+515	miun/kraken	1	19	replace	the bosom	the-bosom	the bosom	
+515	miun/kraken	1	42	replace	have lost	have-lost	have lost	
+515	miun/kraken	1	46	replace	I	L	I	
+515	miun/kraken	1	46	replace	for it	forit	forit	same
+515	miun/kraken	1	51	replace	[To	ITo	ITo	same
+515	miun/kraken	1	52	replace	any	my	my	same
+515	miun/kraken	1	66	replace	Gualtier,	Gaultier,	Gaultier,	same
+515	miun/kraken	2	5	replace	Therefore,	Theresore,	Therefore,	
+515	miun/kraken	2	6	replace	Broke be	Broke-be	Broke be	
+515	miun/kraken	2	14	replace	Cap.		Caz.	
+515	miun/kraken	2	29	replace	The	This	This	same
+515	miun/kraken	2	33	replace	Cap.		Cat.	
+515	miun/kraken	2	46	replace	up this	up-this	up this	
+515	miun/kraken	2	52	replace	shall	shalt	shalt	same
+515	miun/kraken	2	62	replace	through	thorough	thorough	same
+515	miun/kraken	2	68	replace	rising up	rising,up	rising up	
+515	miun/kraken	2	69	replace	York,	Yorle,	York,	
+516	trent/kraken	1	5	replace	'Invitus	“Invitis	Invitis	
+516	trent/kraken	1	44	replace	Cap.		Cap.	
+516	trent/kraken	1	53	replace	Exeunt Whitmore	LE xeunt Nhitmore	IExeunt Whitmore	
+516	trent/kraken	1	53	replace	with Suffolk.	vvith Suffolke.	vith Suffolk.	
+516	trent/kraken	1	58	replace	[Exeunt	LExeunt	IExeunt	
+516	trent/kraken	1	59	replace	SUFFOLK'S	SUFFOLR'S	SUFFOLR'S	same
+516	trent/kraken	1	62	replace	[Exit.	IExit.	IExit. Ferst	
+516	trent/kraken	2	4	delete		a	a	same
+516	trent/kraken	2	22	replace	become	be	be	same
+516	trent/kraken	2	39	replace	[Aside]	[Asidel	[Asidel	same
+516	trent/kraken	2	43	replace	princes,--Command	princes, —Command	princes,—Command	
+516	trent/kraken	2	49	replace	[Aside]	[Asidel	[Asidel	same
+516	trent/kraken	2	58	replace	[Aside]	(Asidel	[Asidel	
+516	trent/kraken	2	62	replace	[Aside]	[side]	[Asidel	
+517	miun/kraken	1	4	replace	[Aside]	[Asidel	[Aside)	
+517	miun/kraken	1	30	replace	forward	foxward	forward	
+517	miun/kraken	1	48	replace	you.	vou.	you.	
+517	miun/kraken	1	58	replace	Exit	IExit	IExit	same
+517	miun/kraken	1	58	replace	with	vuith	with	
+517	miun/kraken	1	65	replace	I'll	I’Il	I’Il	same
+517	miun/kraken	2	4	replace	[Rises]	[Risesl	[Risesl	same
+517	miun/kraken	2	6	replace	with	vith	vith	same
+517	miun/kraken	2	13	replace	yield,	vield,	yield,	
+517	miun/kraken	2	19	replace	Staf.	Stac	Staf.	
+517	miun/kraken	2	25	replace	Clarence's	Clarence'	Clarence'	same
+517	miun/kraken	2	50	replace	[Aside]	[Asidel	[Asidel	same
+517	miun/kraken	2	55	replace	I'll	I’Il	I’ll	
+517	miun/kraken	2	64	replace	speak	speal	speak	
+518	miun/kraken	1	15	replace	Exeunt	LExeunt	[Exeunt	
+518	miun/kraken	1	15	replace	two	tavo	twvo	
+518	miun/kraken	1	18	replace	yourselves	vourselves	vourselves	same
+518	miun/kraken	1	27	replace	[Exeunt.	LExeunt.	(Exxeunt.	
+518	miun/kraken	1	28	replace	Another	Anothex	Another	
+518	miun/kraken	1	29	replace	Alarums	A larums	Alarums	
+518	miun/kraken	1	29	replace	fight,	figat,	fight,	
+518	miun/kraken	1	29	replace	STAFFORDS	STAE¬ FORDS	STAF¬ FoRDS	
+518	miun/kraken	1	35	replace	behavest	behavedst	behavedst	same
+518	miun/kraken	1	43	replace	brigandine]	brigandinel;	brigandinel;	same
+518	miun/kraken	1	50	replace	[Exeunt.	IExeunt.	IExeunt.	same
+518	miun/kraken	1	51	replace	palace.	salace.	palace.	
+518	miun/kraken	1	53	replace	with	vvith	with	
+518	miun/kraken	1	53	replace	DUKE OF	DURE OE	DUxE OE	
+518	miun/kraken	1	64	replace	I'll	I’Il	I ’ll	
+518	miun/kraken	2	4	replace	I'll	I’Il	I’Il	same
+518	miun/kraken	2	17	replace	wouldst	wouldest	wouldest	same
+518	miun/kraken	2	35	replace	not	nfct	not	
+519	miun/kraken	1	2	replace	walking.	valking.	walking.	
+519	miun/kraken	1	3	replace	below.	belowo.	belozo.	
+519	miun/kraken	1	7	replace	withheld	withstand	withstand	same
+519	miun/kraken	1	18	replace	[Exeunt.	LExeunt.	I xeunt.	
+519	miun/kraken	1	20	replace	strikes	striles	strikes	
+519	miun/kraken	1	30	replace	Sold.	SSold.	Sold.	
+519	miun/kraken	1	40	replace	[Exeunt.	IExeunt.	IExeunt.	same
+519	miun/kraken	1	42	replace	GOFFE	GORFE	GOFFE	
+519	miun/kraken	1	43	replace	with	vith	vith	same
+519	miun/kraken	1	53	replace	Holl. [Aside]	LAsidel	Holl. [Asidel	
+519	miun/kraken	1	56	replace	[Aside]	[Asidel	[Asidel	same
+519	miun/kraken	1	62	replace	[Aside]	IAsidel	[Aside]	
+519	miun/kraken	2	8	replace	with	wvith	wvith	same
+519	miun/kraken	2	65	replace	heaven,	heave	heaven,	
+520	miun/kraken	1	2	replace	your	vour	your	
+520	miun/kraken	1	22	replace	I'll	I’Il	I’Il	same
+520	miun/kraken	1	36	replace	I'll	I’Il	I’Il	same
+520	miun/kraken	1	51	replace	ye. [Exeunt	ve. LExeunt	ve. [Exeunt	
+520	miun/kraken	1	51	replace	with	vith	with	
+520	miun/kraken	1	63	replace	with	voith	woith	
+520	miun/kraken	1	65	replace	one	se	one	
+520	miun/kraken	1	66	replace	alive.	re.	alive.	
+520	miun/kraken	1	67	replace	about	ut	about	
+520	miun/kraken	1	68	replace	France.	nce.	France.	
+520	miun/kraken	2	4	replace	[Exeunt.	IExeunt.	IExeunt.	same
+520	miun/kraken	2	5	replace	Southwark.	Southwaré.	Southwark.	
+520	miun/kraken	2	7	replace	rabblement.	raoblement.	rabblement.	
+520	miun/kraken	2	13	replace	BUCKINGHAM and old	BUCKINGHAMandold	EnterBUCKINGHAM andold	
+520	miun/kraken	2	23	replace	whilst 'tis	whilst'tis	whilst ’tis	
+520	miun/kraken	2	30	delete		he	he	same
+520	miun/kraken	2	47	replace	We'll	We ’Il	We’Il	
+520	miun/kraken	2	47	replace	we'll	we ’Il	we’Il	
+520	miun/kraken	2	49	replace	you'll	you’Il	you’ll	
+521	miun/kraken	1	1	replace	we'll	we’Il	we’ll	
+521	miun/kraken	1	13	replace	[Exit.	IExit.	(Exit.	
+521	miun/kraken	1	18	replace	[Exeunt	IExeunt	LExeunt	
+521	miun/kraken	1	19	replace	we'll	we ’Il	we’Il	
+521	miun/kraken	1	37	replace	with	vith	vith	same
+521	miun/kraken	1	51	replace	yourselves,	vourselves,	yourselves,	
+521	miun/kraken	2	3	replace	having 'scaped	having'scaped	having ’scaped	
+521	miun/kraken	2	9	replace	I'll	I’Il	I’Il	same
+521	miun/kraken	2	10	replace	thither,	hither, E	thither,	
+521	miun/kraken	2	13	replace	I'll yield	I’Il vield	I’ll yield	
+521	miun/kraken	2	23	replace	Flourish.	FFlourish.	[Flourish.	
+521	miun/kraken	2	57	replace	I'll	I’Il	I’Il	same
+522	miun/kraken	1	13	delete		5o	so	
+522	miun/kraken	1	56	replace	[Exit. ACT V	IExit. ACTV.	IExit. ACT V.	
+522	miun/kraken	1	60	replace	YORK,	YORR,	YoRK,	
+522	miun/kraken	1	60	replace	with	vith	Trish, with	
+522	miun/kraken	1	62	replace	York.	Vorḱ.	Fork.	
+522	miun/kraken	2	9	replace	I'll	I’Il	I’Il	same
+522	miun/kraken	2	16	replace	York.		Vork.	
+522	miun/kraken	2	26	replace	[Aside]	IAside]	(sidel	
+522	miun/kraken	2	45	replace	yielded	vielded	yielded	
+522	miun/kraken	2	47	replace	York.		Vork.	
+522	miun/kraken	2	49	replace	York.		Vork.	
+522	miun/kraken	2	57	replace	I'll	I’Il	I’ll	
+522	miun/kraken	2	66	replace	York.		Vork.	
+523	miun/kraken	1	3	replace	York.		Vork.	
+523	miun/kraken	1	3	replace	traitor	traiter	traitor	
+523	miun/kraken	1	11	replace	of	ef	of	
+523	miun/kraken	1	39	replace	York.		Vork.	
+523	miun/kraken	1	62	replace	York.		Vork.	
+523	miun/kraken	1	66	replace	[Exit	IExit	[Exit	
+523	miun/kraken	2	1	replace	They'll	They ’Il	They’Il	
+523	miun/kraken	2	7	replace	[Exit	IExit	LExit	
+523	miun/kraken	2	8	replace	York.	Vorḱ.	Vork.	
+523	miun/kraken	2	8	replace	blood-bespotted	blood-besotted	blood-bespotted	
+523	miun/kraken	2	14	replace	I'll	I’Il	I’Il	same
+523	miun/kraken	2	21	replace	York.		[Kneeds. Pork.	
+523	miun/kraken	2	37	replace	York.		Vork.	
+523	miun/kraken	2	44	replace	York.		Vork.	
+523	miun/kraken	2	44	replace	thy image	thyimage	thyimage	same
+523	miun/kraken	2	51	replace	we'll	we ’ll	we ’Il	
+523	miun/kraken	2	60	replace	yourselves	vourselves	yourselves	
+523	miun/kraken	2	64	replace	York.		Vork.	
+524	miun/kraken	1	13	replace	our	out	out	same
+524	miun/kraken	1	40	replace	York.		Vork.	
+524	miun/kraken	1	50	replace	I'll	I’Il	I’Il	same
+524	miun/kraken	1	55	replace	I'll	I’Il	I’Il	same
+524	miun/kraken	1	59	replace	I'll	I’Il	I’Il	same
+524	miun/kraken	1	63	replace	Y.	V.	Y	
+524	miun/kraken	1	68	replace	Y.	V.	V. Ctif.	
+524	miun/kraken	2	1	replace	you'll	you ’ll	you’ll	
+524	miun/kraken	2	3	replace	St.	Saint	Saint	same
+524	miun/kraken	2	15	replace	York.		Vork.	
+524	miun/kraken	2	21	replace	War.		War.	
+524	miun/kraken	2	22	replace	York.		Vork.	
+524	miun/kraken	2	29	replace	[Exit.	IExit.	IExit.	same
+524	miun/kraken	2	38	replace	York.		Vork.	
+524	miun/kraken	2	42	replace	York.		Vork.	
+524	miun/kraken	2	44	replace	Dies.	IDies.	[Dies. Vork.	
+524	miun/kraken	2	48	replace	[Exit.	IExit.	IExit.	same
+524	miun/kraken	2	50	replace	Y.	V.	Y.	
+524	miun/kraken	2	60	replace	father.	fatherl	fatherl	same
+525	miun/kraken	1	7	replace	while 'tis	while’tis	while ’tis	
+525	miun/kraken	1	9	replace	more will	morevwill	more will	
+525	miun/kraken	1	19	replace	AEneas	Æneas	Æneas	same
+525	miun/kraken	1	21	replace	AEneas	Æneas	Æneas	same
+525	miun/kraken	1	23	replace	Exit,	IExit,	IExit,	same
+525	miun/kraken	1	31	replace	[Exit.	LExit.	[Exit.	
+525	miun/kraken	1	43	replace	Alarum	HA larum	(Alarum	
+525	miun/kraken	2	2	replace	Y.	P.	V.	
+525	miun/kraken	2	8	replace	fortunes	fortune	fortune	same
+525	miun/kraken	2	9	replace	way!	away!	away!	same
+525	miun/kraken	2	12	replace	with	vith	zoith	
+525	miun/kraken	2	13	replace	York.		Vork.	
+525	miun/kraken	2	38	replace	York.		Vork.	

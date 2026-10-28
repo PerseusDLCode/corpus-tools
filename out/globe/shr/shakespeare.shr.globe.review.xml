@@ -105,7 +105,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-28">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit ae11b42; sources: shr.xml sha256 25ea4092c43c4de9; shared-lines.tsv sha256 d202a185b95a1a96; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 25c7f38; sources: shr.xml sha256 25ea4092c43c4de9; shared-lines.tsv sha256 bf3e4d6f93fcf9c0; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -1024,29 +1024,29 @@
       <sp who="sly.">
         <speaker>Sly.</speaker>
         <p>
-          <!-- REVIEW words: both witnesses read 'tumblingtrick?'; the P4 reads 'tumbling- trick?' --><milestone unit="line" ed="Globe" n="139"/>Marry, I will, let them play it. Is not <milestone unit="line" ed="Globe" n="140"/>a comonty a
-              Christmas gambold or a tumbling-- trick? </p>
+          <!-- REVIEW words: both witnesses read 'tumblingtrick?'; the P4 reads 'tumbling- trick?' --><!-- REVIEW dropped: shared-lines.tsv: the page prints a row here, beginning 'trick', that the witness's OCR lost; this line starts there (basis image+p4, checked 2026-10-28-cliff) --><milestone unit="line" ed="Globe" n="139"/>Marry, I will, let them play it. Is not <milestone unit="line" ed="Globe" n="140"/>a comonty a
+              Christmas gambold or a tumbling-- <milestone unit="line" ed="Globe" n="141"/>trick? </p>
       </sp>
       <sp who="page.">
         <speaker>Page.</speaker>
         <l>
-          <milestone unit="line" ed="Globe" n="141"/>No, my good lord; it is more pleasing <lb/>stuff. </l>
+          <milestone unit="line" ed="Globe" n="142"/>No, my good lord; it is more pleasing <lb/>stuff. </l>
       </sp>
       <sp who="sly.">
         <speaker>Sly.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="142"/>What, household stuff? </p>
+          <milestone unit="line" ed="Globe" n="143"/>What, household stuff? </p>
       </sp>
       <sp who="page.">
         <speaker>Page.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="143"/>It is a kind of history. </p>
+          <milestone unit="line" ed="Globe" n="144"/>It is a kind of history. </p>
       </sp>
       <sp who="sly.">
         <speaker>Sly.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="144"/>Well, we'll see't. Come, madam wife, <milestone unit="line" ed="Globe" n="145"/>sit by my side
-                and let the world slip: we shall <milestone unit="line" ed="Globe" n="146"/>ne'er be younger.
+          <milestone unit="line" ed="Globe" n="145"/>Well, we'll see't. Come, madam wife, <milestone unit="line" ed="Globe" n="146"/>sit by my side
+                and let the world slip: we shall <milestone unit="line" ed="Globe" n="147"/>ne'er be younger.
                 <lb/>
           <stage>Flourish.</stage>
         </p>

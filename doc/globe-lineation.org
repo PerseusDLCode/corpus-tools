@@ -83,6 +83,13 @@ restored a line lost after V.2's last numeral, where only Schmidt checks the cou
 a change to the margin fit: where the flush rows are speech prefixes and
 too few others are left, the rows that hang give the margin. It also
 corrected the end of the Shrew's V.2, republished.
+A sweep of every published play for errors after a scene's last numeral,
+where the page check compares nothing, found six, now corrected and
+republished (the Tempest, As You Like It, Antony, the Shrew, Cymbeline,
+2 Henry VI). A number printed on a row that is no line's now numbers the
+line above it, so such numbers are checked; and a table kind =stage=
+numbers a stage direction's rows where the Globe does (the Tempest's
+cries within).
 Songs (=<lg type="song">=) and
 inset texts now convert: every printed row of a song is a Globe line,
 a heading is not, and a row is a turnover only if it completes a

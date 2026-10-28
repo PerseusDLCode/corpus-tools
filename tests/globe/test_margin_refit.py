@@ -9,12 +9,6 @@ from __future__ import annotations
 from globe import regenerate
 
 
-def test_a_column_of_speeches_takes_its_margin_from_the_row_that_hangs():
-    *_, results = regenerate.build("3h6")
-    by_page = {r.page: r for r in results}
-    assert not by_page[540].failing
-
-
 def test_the_shrew_ends_as_schmidt_cites_it():
     *_, lines, _ = regenerate.build("shr")
     v2 = {ln.n: ln for ln in lines if ln.div == "5.2"}

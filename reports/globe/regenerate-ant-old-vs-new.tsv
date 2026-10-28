@@ -1,4 +1,4 @@
-# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in ant.xml (sha256 8e235e2c4ae6f375); not the shell's milestones or <l n>
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in ant.xml (sha256 b84842cf70f978c4); not the shell's milestones or <l n>
 # one row per transcribed number; lines the P4 does not number are not listed
 scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
 1.1	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Look, where they come: Take but

@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-12">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 0e4ad53; sources: ant.xml sha256 8e235e2c4ae6f375; shared-lines.tsv sha256 a026b04dcb9fb1b9; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-28">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit bf83a3e; sources: ant.xml sha256 b84842cf70f978c4; shared-lines.tsv sha256 bf3e4d6f93fcf9c0; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -6927,16 +6927,16 @@
                                                 <milestone unit="line" ed="Globe" n="38"/>Patient Octavia
                                           plough thy visage up <milestone unit="line" ed="Globe" n="39"/>With her prepared nails. <lb/>
           <stage>Exit Cleopatra.</stage>
-          <!-- REVIEW verse-prose: displaced row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><!-- REVIEW words: the P4 has '' here; neither witness has it --><!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><lb/>'Tis well thou'rt gone,
+          <!-- REVIEW verse-prose: displaced row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><lb/>'Tis well thou'rt gone,
                                                 <milestone unit="line" ed="Globe" n="40"/>If it be
                                           well to live; but better 'twere <milestone unit="line" ed="Globe" n="41"/>Thou fell'st into my fury, for one death
                                                 <milestone unit="line" ed="Globe" n="42"/>Might have
                                           prevented many. Eros, ho ! <milestone unit="line" ed="Globe" n="43"/>The shirt of Nessus is upon me: teach me,
-                                                <milestone unit="line" ed="Globe" n="44"/>Let me lodge
-                                          Lichas on the horns o' the moon; Alcides, thou mine ancestor, thy rage: <milestone unit="line" ed="Globe" n="45"/>And with those hands,
-                                          that grasp'd the heaviest <lb/>club, <milestone unit="line" ed="Globe" n="46"/>Subdue my worthiest self. The witch shall
-                                          die: <milestone unit="line" ed="Globe" n="47"/>To the young Roman
-                                          boy she hath sold me, and <lb/>I fall <milestone unit="line" ed="Globe" n="48"/>Under this plot; she dies for't. Eros, ho!
+                                                <milestone unit="line" ed="Globe" n="44"/>Alcides, thou mine ancestor, thy rage: <milestone unit="line" ed="Globe" n="45"/>Let me lodge
+                                          Lichas on the horns o' the moon; <milestone unit="line" ed="Globe" n="46"/>And with those hands,
+                                          that grasp'd the heaviest <lb/>club, <milestone unit="line" ed="Globe" n="47"/>Subdue my worthiest self. The witch shall
+                                          die: <milestone unit="line" ed="Globe" n="48"/>To the young Roman
+                                          boy she hath sold me, and <lb/>I fall <milestone unit="line" ed="Globe" n="49"/>Under this plot; she dies for't. Eros, ho!
                                                 <stage>Exit.</stage>
         </p>
       </sp>

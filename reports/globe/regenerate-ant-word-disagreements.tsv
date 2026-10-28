@@ -394,8 +394,7 @@ page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
 936	miun/kraken	1	24	replace	spot	"spot'z"""	spot	
 936	miun/kraken	1	26	replace	poor'st	poor' st	poor’st	
 936	miun/kraken	1	29	replace	Exit	IExit	(Exit	
-936	miun/kraken	1	35	delete		Alcides, thou mine ancestor, thy rage:	Alcides, thou mine ancestor, thy rage:	same
-936	miun/kraken	1	36	replace	moon; Alcides, thou mine ancestor, thy rage:	moone	moon;	
+936	miun/kraken	1	36	replace	moon;	moone	moon;	
 936	miun/kraken	1	40	replace	young	voung	young	
 936	miun/kraken	1	47	replace	Help me,	Helpme,	Helpme,	same
 936	miun/kraken	2	1	replace	Sometimes	Sometime	Sometime	same

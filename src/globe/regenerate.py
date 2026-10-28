@@ -313,6 +313,35 @@ def new_index_of_lacuna(new) -> int:
     return max(i for i, ln in enumerate(new) if ln.lacuna_at is not None)
 
 
+SIGNATURE = re.compile(r"^[\d\s—–-]*$")  # a sheet signature ("28—"), not a row of text
+
+
+def number_stray_rows(new, rows) -> None:
+    """A printed number on a row that is no line's, once the table is applied
+    (a stage direction, a row the OCR did not align), numbers the last line
+    above it on the page, if that line has none, so the count is checked
+    there too. As You Like It p.219 prints 109 beside '[Exit.', the row below
+    III.3's last line, and the Shrew p.231 141 beside 'tumbling-trick?', a row
+    Kraken read as one word: both checked nothing, and both scenes ended
+    wrong (canonical-engLit doc/agenda.org, the sweep of scene endings). A
+    number some line on the page already carries is left alone (Richard II's
+    lacuna 280, on its row of dots), and so is a sheet signature."""
+    at = {id(r): i for i, r in enumerate(rows)}
+    on = {id(r) for ln in new for r in ln.rows}
+    carried = {ln.num for ln in new if ln.num is not None}
+    pos, p = [], -1
+    for ln in new:  # a line's place: its last row on the page, or the line before's
+        p = max([p] + [at[id(r)] for r in ln.rows if id(r) in at])
+        pos.append(p)
+    for i, r in enumerate(rows):
+        if r.num is None or id(r) in on or r.num in carried or SIGNATURE.match(r.text):
+            continue
+        above = [k for k, q in enumerate(pos) if q < i]
+        if above and new[above[-1]].num is None:
+            new[above[-1]].num = r.num
+            carried.add(r.num)
+
+
 def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
     """Split the junctions the table records as `separate`, fold those it
     records as shared halves and unmarked turnovers, and take its numeral
@@ -484,6 +513,7 @@ def build(play: str, table: list[shared_lines.Row] | None = None):
                 refused.append(f"{key}: {e}")
                 tried.append((key, "table"))
                 continue
+            number_stray_rows(new, pg.rows)
             if top is not None:
                 applied.insert(0, (0, top))
             alt = {}

@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-23">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 8036be8; sources: shr.xml sha256 25ea4092c43c4de9; shared-lines.tsv sha256 69c4c8858486c086; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-28">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit ae11b42; sources: shr.xml sha256 25ea4092c43c4de9; shared-lines.tsv sha256 d202a185b95a1a96; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -8163,37 +8163,37 @@
       </sp>
       <sp who="vin.">
         <speaker>Vin.</speaker>
-        <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
-          <milestone unit="line" ed="Globe" n="182"/>'Tis a good hearing when children are <milestone unit="line" ed="Globe" n="183"/>toward. </l>
+        <l>
+          <milestone unit="line" ed="Globe" n="182"/>'Tis a good hearing when children are <lb/>toward. </l>
       </sp>
       <sp who="luc.">
         <speaker>Luc.</speaker>
-        <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
-          <milestone unit="line" ed="Globe" n="184"/>But a harsh hearing when women are <milestone unit="line" ed="Globe" n="185"/>froward. </l>
+        <l>
+          <milestone unit="line" ed="Globe" n="183"/>But a harsh hearing when women are <lb/>froward. </l>
       </sp>
       <sp who="pet.">
         <speaker>Pet.</speaker>
         <l>
-          <milestone unit="line" ed="Globe" n="186"/>Come, Kate, we'll to bed. </l>
+          <milestone unit="line" ed="Globe" n="184"/>Come, Kate, we'll to bed. </l>
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
-          <milestone unit="line" ed="Globe" n="187"/>We three are married, but you two are sped. <milestone unit="line" ed="Globe" n="188"/>
+          <milestone unit="line" ed="Globe" n="185"/>We three are married, but you two are sped. <milestone unit="line" ed="Globe" n="186"/>
           <stage>To Luc.</stage>
         </l>
-        <l>'Twas I won the wager, though you <milestone unit="line" ed="Globe" n="189"/>hit the white; </l>
+        <l>'Twas I won the wager, though you <lb/>hit the white; </l>
         <l>
-          <milestone unit="line" ed="Globe" n="190"/>And, being a winner, God give you good night! <lb/>
+          <milestone unit="line" ed="Globe" n="187"/>And, being a winner, God give you good night! <lb/>
           <stage type="exit">Exeunt Petruchio and Katharina. </stage>
         </l>
       </sp>
       <sp who="hor.">
         <speaker>Hor.</speaker>
-        <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
-          <milestone unit="line" ed="Globe" n="191"/>Now, go thy ways; thou hast tamed a <milestone unit="line" ed="Globe" n="192"/>curst shrew. </l>
+        <l>
+          <milestone unit="line" ed="Globe" n="188"/>Now, go thy ways; thou hast tamed a <lb/>curst shrew. </l>
       </sp>
       <sp who="luc.">
         <speaker>Luc.</speaker>
-        <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
-          <milestone unit="line" ed="Globe" n="193"/>'Tis a wonder, by your leave, she will <milestone unit="line" ed="Globe" n="194"/>be tamed so. <stage type="exit">Exeunt.
+        <l>
+          <milestone unit="line" ed="Globe" n="189"/>'Tis a wonder, by your leave, she will <lb/>be tamed so. <stage type="exit">Exeunt.
               </stage>
         </l>
       </sp>

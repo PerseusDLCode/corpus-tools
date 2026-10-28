@@ -1,6 +1,6 @@
 # Schmidt smoke test: As You Like It
 
-Sources: shakespeare.ayl.globe.xml sha256 97f901496078673b; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.ayl.globe.xml sha256 39bd44f7d8228205; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of As You Like It in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 
@@ -14,15 +14,14 @@ Every citation of As You Like It in Schmidt's *Shakespeare-Lexicon*, checked aga
 | headword on cited line | 616 |
 | quotation on cited line, with differences | 152 |
 | headword not found near cited line | 41 |
+| headword off by 1 | 13 |
 | not a citation of this play | 12 |
 | quotation not found; headword not found near cited line | 12 |
-| headword off by 1 | 11 |
-| quotation off by 1 | 9 |
+| quotation off by 1 | 11 |
 | prose row break | 8 |
-| headword off by 3 | 3 |
 | quotation elsewhere in scene | 2 |
-| quotation off by 2 | 2 |
 | quotation in another scene | 1 |
+| headword off by 3 | 1 |
 
 ## Runs
 
@@ -31,6 +30,7 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 | Scene | Cited lines | Offset | Citations |
 |---|---|---|---|
 | 1.1 | 92-93 | -1 | 4 |
+| 3.3 | 104-108 | +1 | 4 |
 
 ## Every failure
 
@@ -47,7 +47,7 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 | 4.1.215 | As IV, 1, 215 | Bastard | headword off by 1 | 4.1.216 |  | pour affection in it runs out |
 | 4.3.103 | As IV, 3, 103 | Befall. | headword not found near cited line |  |  | lo what befel he threw his eye aside |
 | 4.3.103 | As IV, 3, 103 | Befall. | headword not found near cited line |  |  | lo what befel he threw his eye aside |
-| 3.3.105 | As III, 3, 105 | Begone | headword off by 3 | 3.3.102 |  | knave of them all shall flout me out of my calling |
+| 3.3.105 | As III, 3, 105 | Begone | headword off by 1 | 3.3.106 |  | wind away |
 | 3.1.95 | Shr. Ind. 1, 95. | Behaviour | headword not found near cited line |  |  | (no such line) |
 | 1.2.36 | As I, 2, 36 | Benefit | headword off by 1 | 1.2.37 |  | henceforth be bestowed equally |
 | 3.2.186 | As III, 2, 186 | Berhyme | prose row break | 3.2.187 |  | what i found on a palmtree i was never so |
@@ -56,7 +56,7 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 | 3.2.273 | As III, 2, 273 | Buy | headword not found near cited line |  |  | god be wi you lets meet as little as |
 | 4.1.31 | IV, 1, 31 | Buy | headword not found near cited line |  |  | nay then god be wi you an you talk |
 | 5.3.41 | V, 3, 41 | Buy | headword not found near cited line |  |  | time lost to hear such a foolish song god be |
-| 3.3.108 | As III, 3, 108 | Calling | headword off by 3 | 3.3.105 |  | (no such line) |
+| 3.3.108 | As III, 3, 108 | Calling | headword off by 1 | 3.3.109 |  | tis no matter neer a fantastical |
 | 2.7.53 | As II, 7, 53 | Cannon | headword not found near cited line |  |  | he that a fool doth very wisely hit |
 | 3.52.9 | 52, 9 | Chest | not a citation of this play |  |  |  |
 | 3.65.10 | 65, 10 | Chest | not a citation of this play |  |  |  |
@@ -75,7 +75,7 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 | 1.2.35 | As I, 2, 35 | Equally | headword off by 1 | 1.2.36 |  | fortune from her wheel that her gifts may |
 | 3.2.8 | As III, 2, 8 | Everywhere | headword not found near cited line |  |  | shall see thy virtue witnessed every where |
 | 5.1.29 | As V, 1, 29 | Excellent | prose row break | 5.1.30 |  | so so is good very good very |
-| 3.3.107 | III, 3, 107 | Fantastical | quotation off by 2 | 3.3.104-105 | a fantastical knave, | (no such line) |
+| 3.3.107 | III, 3, 107 | Fantastical | quotation off by 1 | 3.3.108-109 | a fantastical knave, | i will not to wedding with thee |
 | 4.3.25 | As IV, 3, 25 | Freestone-coloured | headword not found near cited line |  |  | a freestonecolored hand i verily did think |
 | 1.28.9 | I, 28 | Goth | not a citation of this play |  |  |  |
 | 3.2.127 | Shr. Ind. 2, 127. | Hardly | headword not found near cited line |  |  | be half ripe and thats the right virtue of the |
@@ -136,4 +136,4 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 | 5.3.37 | As V, 3, 37 | Untimeable | headword not found near cited line |  |  | was very untuneable |
 | 3.5.87 | III, 5, 87 | Wherever | headword off by 1 | 3.5.86 |  | if you do sorrow at my grief in love |
 | 1.1.22 | I, 1 | Willing | headword off by 3 | 1.1.25 |  | gentility with my education this is it adam |
-| 3.3.104 | As III, 3, 104 | Wind | quotation off by 2 | 3.3.102 | wind away, be gone, I say, | tis no matter neer a fantastical |
+| 3.3.104 | As III, 3, 104 | Wind | quotation off by 1 | 3.3.105-106 | wind away, be gone, I say, | but |

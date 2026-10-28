@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.cym.globe.xml sha256 2be4d2b466b1e679; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.cym.globe.xml sha256 71abf3a31a147813; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abate	Abate,	1.4.73	Cymb. I, 4, 73	quotation on cited line						I would abate her nothing,	i would abate her nothing though i profess
 Abatement	Abatement,	5.4.21	Cymb. V, 4, 21	headword on cited line							on their abatement thats not my desire
@@ -646,7 +646,7 @@ Dull2	Dull,	1.5.37	Cymb. I, 5, 37	quotation on cited line, with differences			86
 Dullard	Dullard,	5.5.265	Cymb. V, 5, 265	quotation on cited line						makest thou me a dullard in this act? wilt thou not speak to me?	what makest thou me a dullard in this act
 Duly	Duly,	1.1.27	Cymb. I, 1, 27	headword on cited line							his measure duly whats his name and birth
 Dungeon	Dungeon,	1.6.87	Cymb. I, 6, 87	headword on cited line							i the dungeon by a snuff i pray you sir
-Duteous	Duteous,	3.5.159	Cymb. III, 5, 159	quotation off by 1	3.5.158	-1	100%			be but duteous	preferment shall tender itself to thee my revenge is
+Duteous	Duteous,	3.5.159	Cymb. III, 5, 159	quotation on cited line						be but duteous	my design be but duteous and true
 Duteous	Duteous,	5.5.86	V, 5, 86	headword on cited line							a page so kind so duteous diligent
 Earthly	Earthly,	3.6.43	Cymb. III, 6, 43	headword off by 1	3.6.44	1					by jupiter an angel or if not
 Earth-vexing	Earth-vexing,	5.4.42	Cymb. V, 4, 42	quotation on cited line						this earth-vexing smart,	from this earthvexing smart
@@ -781,7 +781,7 @@ Fleet4	Fleet,	5.3.25	Cymb. V, 3, 25	quotation on cited line						to darkness fle
 Floor	Floor,	4.2.212	Cymb. IV, 2, 212	quotation on cited line						o' the floor	reposing on a cushion where o the floor
 Floor	Floor,	3.6.50	III, 6, 50	quotation on cited line						i' the floor	gold strewed i the floor heres money for my meat
 Flow2	Flow,	3.3.93	Cymb. III, 3, 93	quotation on cited line						the princely blood flows in his cheek,	the princely blood flows in his cheek he sweats
-Flow2	Flow,	3.5.166	Cymb. III, 5, 166	quotation on cited line						f., f., you heavenly blessings, on her!	you heavenly blessings on her this fools speed
+Flow2	Flow,	3.5.166	Cymb. III, 5, 166	quotation on cited line						f., f., you heavenly blessings, on her!	and find not her whom thou pursuest flow flow
 Foam2	Foam,	5.5.276	Cymb. V, 5, 276	quotation on cited line						foamed at the mouth,	with his sword drawn foamed at the mouth and swore
 Fog	Fog,	3.2.81	Cymb. III, 2, 81	headword on cited line							nor what ensues but have a fog in them
 Foil4	Foil,	2.3.126	Cymb. II, 3, 126	quotation off by 1	2.3.127	1	100%			with a base slave,	the consequence o the crown and must not soil
@@ -1179,7 +1179,7 @@ Measure1	Measure,	2.4.113	Cymb. II, 4, 113	headword on cited line							o above 
 Medicinable	Medicinable	3.2.33	Cymb. III, 2, 33	quotation on cited line, with differences			93%	medicinable	medcinable	some griefs are m.; that is one of them, for it doth physic love,	some griefs are medcinable that is one of them
 Medicine1	Medicine,	5.5.29	Cymb. V, 5, 29	headword on cited line							by medicine life may be prolonged yet death
 Medicine2	Medicine,	4.2.243	Cymb. IV, 2, 243	quotation on cited line, with differences			100%		i see	great griefs medicine the less,	great griefs i see medicine the less for cloten
-Meed	Meed,	3.5.168	Cymb. III, 5, 168	quotation off by 1	3.5.167	-1	75%	labour		labour be his meed	(no such line)
+Meed	Meed,	3.5.168	Cymb. III, 5, 168	quotation on cited line, with differences			75%	labour		labour be his meed	be crossed with slowness labor be his meed
 Meeting-place	Meeting-place,	4.1.26	Cymb. IV, 1, 26	prose row break	4.1.27	1					hand this is the very description of their
 Mellow1	Mellow,	3.3.63	Cymb. III, 3, 63	headword on cited line							shook down my mellow hangings nay my leaves
 Melt	Melt	1.3.20	Cymb. I, 3, 20	quotation on cited line						till he had melted from the smallness of a gnat to air,	nay followed him till he had melted from
@@ -1244,7 +1244,7 @@ Mow1	Mow,	1.6.41	Cymb. I, 6, 41	quotation on cited line						contemn with mows t
 Multitude	Multitude,	3.6.86	Cymb. III, 6, 86	quotation on cited line						that nothing-gift of differing multitudes,	that nothinggift of differing multitudes
 Mutability	Mutability,	2.5.26	Cymb. II, 5, 26	headword on cited line							nice longing slanders mutability
 Mutation	Mutation,	4.2.133	Cymb. IV, 2, 133	quotation on cited line, with differences			93%	humour	humor	his humour was nothing but m., ay, and that from one bad thing to worse,	was nothing but mutation ay and that
-Mute2	Mute,	3.5.158	Cymb. III, 5, 158	quotation on cited line						that thou wilt be a voluntary mute to my design,	my design be but duteous and true
+Mute2	Mute,	3.5.158	Cymb. III, 5, 158	quotation on cited line						that thou wilt be a voluntary mute to my design,	the third is that thou wilt be a voluntary mute to
 Natural1	Natural,	2.2.28	Cymb. II, 2, 28	quotation on cited line						some natural notes about her body,	ah but some natural notes about her body
 Natural1	Natural,	3.5.140	III, 5, 140	quotation on cited line						she held the very garment of Posthumus in more respect than my noble and natural person,	natural person together with the adornment of
 Natural1	Natural,	3.1.18	Cymb. III, 1, 18	quotation on cited line						the natural bravery of your isle,	the natural bravery of your isle which stands
@@ -1793,7 +1793,7 @@ Slightly	Slightly,	5.3.10	Cymb. V, 3, 10	quotation on cited line						some sligh
 Slip2	Slip,	4.3.22	Cymb. IV, 3, 22	quotation on cited line						we'll slip you for a season,	well slip you for a season but our jealousy
 Slippery	Slippery,	2.2.34	Cymb. II, 2, 34	quotation on cited line						as slippery as the Gordian knot was hard,	as slippery as the gordian knot was hard
 Slippery	Slippery,	3.3.48	Cymb. III, 3, 48	quotation on cited line, with differences			100%		to climb certain falling or	whose top is so slippery	is certain falling or so slippery that
-Slowness	Slowness,	3.5.168	Cymb. III, 5, 168	quotation off by 1	3.5.166-167	-1	100%			this fool's speed be crossed with slowness	(no such line)
+Slowness	Slowness,	3.5.168	Cymb. III, 5, 168	quotation on cited line						this fool's speed be crossed with slowness	be crossed with slowness labor be his meed
 Sluggish	Sluggish,	4.2.205	Cymb. IV, 2, 205	headword on cited line							the ooze to show what coast thy sluggish crare
 Sluttery	Sluttery,	1.6.44	Cymb. I, 6, 44	headword on cited line							sluttery to such neat excellence opposed
 Sly2	Sly,	1.5.75	Cymb. I, 5, 75	headword on cited line							think on my words a sly and constant knave
@@ -1972,7 +1972,7 @@ Tender4	Tender,	1.6.140	Cymb. I, 6, 140	quotation on cited line						let me my s
 Tender4	Tender,	2.3.56	II, 3, 56	quotation on cited line						those duties which you tender to her,	you tender to her that you in all obey her
 Tender4	Tender,	3.4.11	III, 4, 11	quotation on cited line, with differences			86%	tenderest	tenderst	why tenderest thou that paper to me?	why tenderst thou that paper to me with
 Tender4	Tender,	3.5.31	III, 5, 31	quotation on cited line						nor to us hath tendered the duty of the day,	before the roman nor to us hath tendered
-Tender4	Tender,	3.5.160	Cymb. III, 5, 160	quotation off by 1	3.5.158-159	-1	100%			be but duteous, and true preferment shall tender itself to thee,	now at milford would i had wings to follow it
+Tender4	Tender,	3.5.160	Cymb. III, 5, 160	quotation on cited line						be but duteous, and true preferment shall tender itself to thee,	preferment shall tender itself to thee my revenge is
 Tenderness	Tenderness,	1.1.94	Cymb. I, 1, 94	quotation on cited line						more tenderness than doth become a man,	to be suspected of more tenderness
 Tenour	Tenour	2.4.36	Cymb. II, 4, 36	headword on cited line							their tenor good i trust tis very like
 Tenour	Tenour	3.7.1	III, 7, 1	headword on cited line							this is the tenor of the emperors writ
@@ -2181,7 +2181,7 @@ Viperous	Viperous,	3.4.41	Cymb. III, 4, 41	quotation on cited line						this vip
 Virgin-like	Virgin-like,	3.2.22	Cymb. III, 2, 22	quotation on cited line, with differences			92%	lookest	lookst	art thou a feodary for this act, and lookest so virgin-like without?	so virginlike without lo here she comes
 Visible	Visible,	3.4.152	Cymb. III, 4, 152	headword on cited line							that though his actions were not visible yet
 Volume	Volume,	3.4.140	Cymb. III, 4, 140	quotation on cited line, with differences			77%	ithe off it	of	i'the world's volume our Britain seems as off it, but not in it,	are they not in britain i the worlds volume
-Voluntary	Voluntary,	3.5.158	Cymb. III, 5, 158	quotation on cited line						that thou wilt be a voluntary mute to my design,	my design be but duteous and true
+Voluntary	Voluntary,	3.5.158	Cymb. III, 5, 158	quotation on cited line						that thou wilt be a voluntary mute to my design,	the third is that thou wilt be a voluntary mute to
 Vomit2	Vomit,	1.6.45	Cymb. I, 6, 45	headword on cited line							should make desire vomit emptiness
 Vouch2	Vouch,	1.4.63	Cymb. I, 4, 63	quotation on cited line, with differences			100%		at that time and upon warrant of bloody affirmation	this gentleman vouching . . . his to be more fair,	time vouching and upon warrant of bloody
 Voucher	Voucher,	2.2.39	Cymb. II, 2, 39	quotation on cited line						on her left breast a mole . . ., here's a voucher stronger than ever law could make,	i the bottom of a cowslip heres a voucher

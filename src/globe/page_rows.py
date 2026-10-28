@@ -46,6 +46,7 @@ PREFIX_GAP_U = 2.0  # prefix-to-text gap that marks a shared second half
 SAME_ROW_U = 0.6  # baselines this close vertically are one printed row
 
 PREFIX = re.compile(r"^[A-Z][a-z]{1,6}\.$")
+INITIAL = re.compile(r"^[A-Z]\.$")
 NUMERAL = re.compile(r"\d{1,3}")
 HYPHEN_END = re.compile(r"[A-Za-z][¬-]$")
 
@@ -415,17 +416,40 @@ def local_margins(body: list[Row], pitch: float, speakers: set[str] = frozenset(
     into the margin and the turnovers read as starts. Where a row hangs more
     than MARGIN_HANG_U into its fitted margin, the fit is made again without
     the rows opening with a speaker's prefix (the prefix's shape and a P4
-    speaker name). Only then: leaving them out everywhere moves margins the
-    published plays were built on (Hamlet pp.817-833 on Trent), and in
-    Cymbeline's masque (p.970) speeches are set flush."""
+    speaker name, or an initial and a name: "K. Edw.", "L. Grey."). Only
+    then: leaving them out everywhere moves margins the published plays were
+    built on (Hamlet pp.817-833 on Trent), and in Cymbeline's masque (p.970)
+    speeches are set flush. Where too few rows are left to fit a line, the
+    margin is the median of those rows and the rows that hung: 3 Henry VI
+    p.540 col.1 is speeches and their turnovers, with one row at the margin
+    ('Till youth take leave', 0.84u left of the fit); and The Taming of the
+    Shrew p.253 col.2, where 'toward.' and 'froward.', turnovers, had read
+    as lines after V.2's last numeral."""
     m0 = column_margin(body, pitch)
     flush = [r for r in body if abs(r.x - m0) < MARGIN_BAND_U * pitch]
     out = _fit_margins(body, flush, m0)
-    if any((r.x - m) / pitch < -MARGIN_HANG_U for r, m in zip(body, out)):
-        from globe.tokens import norm  # page_rows otherwise needs nothing from the TEI side
-        out = _fit_margins(body, [r for r in flush if not (
-            r.words and PREFIX.match(r.words[0].t) and norm(r.words[0].t) in speakers)], m0)
+    hang = [r for r, m in zip(body, out) if (r.x - m) / pitch < -MARGIN_HANG_U]
+    if hang:
+        rest = [r for r in flush if not opens_with_prefix(r, speakers)]
+        if len(rest) >= 2 * MARGIN_NEAR:
+            out = _fit_margins(body, rest, m0)
+        else:
+            out = [statistics.median(r.x for r in rest + hang)] * len(body)
     return out
+
+
+def opens_with_prefix(r: Row, speakers: set[str]) -> bool:
+    """Does the row open with a speaker's prefix: one shaped like one that is
+    a P4 speaker name ("Tra."), or an initial and a capitalised word with a
+    period ("K. Edw.", "L. Grey.", and the OCR's "K. Edzv.")?"""
+    from globe.tokens import norm  # page_rows otherwise needs nothing from the TEI side
+    ws = r.words
+    if not ws:
+        return False
+    if PREFIX.match(ws[0].t) and norm(ws[0].t) in speakers:
+        return True
+    return (len(ws) > 1 and bool(INITIAL.match(ws[0].t))
+            and ws[1].t[:1].isupper() and ws[1].t.endswith("."))
 
 
 def _fit_margins(body: list[Row], flush_rows: list[Row], m0: float) -> list[float]:

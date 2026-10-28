@@ -59,6 +59,7 @@ PLAY_TITLES = {
     "shr": "The Taming of the Shrew",
     "wt": "The Winter's Tale",
     "jn": "King John",
+    "r3": "Richard III",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -123,6 +124,9 @@ COPY_TEXT = {
     "1h6": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="27-55"),
     "2h6": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="146-177"),
     "3h6": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="178-208"),
+    # Introduction printed 209 (CHOCR index 219), V.5 ends on 246 (index 256);
+    # Romeo and Juliet's introduction is 247 (printed = index - 10).
+    "r3": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="209-246"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-18">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 9479256; sources: ayl.xml sha256 ff6675faf2c9f523; shared-lines.tsv sha256 a7742ceb8ca09aaf; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-28">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit b7d7e0c; sources: ayl.xml sha256 ff6675faf2c9f523; shared-lines.tsv sha256 bf3e4d6f93fcf9c0; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -4310,17 +4310,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="100"/>Farewell, good Master Oliver: not,-- </l>
         <l>
-          <lb/>O sweet Oliver, </l>
+<!-- REVIEW inset: shared-lines.tsv: the page sets this line and those after it, to 'i will not to', in from the margin, and numbers every row as a line (basis image, checked 2026-10-28-cliff) -->          <milestone unit="line" ed="Globe" n="101"/>O sweet Oliver, </l>
         <l>
-          <lb/>O brave Oliver, </l>
+          <milestone unit="line" ed="Globe" n="102"/>O brave Oliver, </l>
         <l>
-<!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->          <milestone unit="line" ed="Globe" n="101"/>Leave me not behind thee: <milestone unit="line" ed="Globe" n="102"/>but,-- </l>
+<!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->          <milestone unit="line" ed="Globe" n="103"/>Leave me not behind thee: <milestone unit="line" ed="Globe" n="104"/>but,-- </l>
         <l>
-          <lb/>Wind away, </l>
+          <milestone unit="line" ed="Globe" n="105"/>Wind away, </l>
         <l>
-          <lb/>Begone, I say, </l>
+          <milestone unit="line" ed="Globe" n="106"/>Begone, I say, </l>
         <l>
-          <milestone unit="line" ed="Globe" n="103"/>I will not to wedding with thee. <lb/>
+          <milestone unit="line" ed="Globe" n="107"/>I will not to wedding with thee. <lb/>
           <stage>[Exeunt Jaques, Touchstone and
                 Audrey.</stage>
         </l>
@@ -4328,7 +4328,7 @@
       <sp who="sir-oli.">
         <speaker>Sir Oli.</speaker>
         <p>
-          <!-- REVIEW anchor: P4 anchor says 109; its row begins inside line 105, before 1 --><milestone unit="line" ed="Globe" n="104"/>'Tis no matter: ne'er a fantastical <milestone unit="line" ed="Globe" n="105"/>knave of them all shall flout me out of my calling. <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads '[Exit.' --><stage>[Exit.</stage>
+          <milestone unit="line" ed="Globe" n="108"/>'Tis no matter: ne'er a fantastical <milestone unit="line" ed="Globe" n="109"/>knave of them all shall flout me out of my calling. <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads '[Exit.' --><stage>[Exit.</stage>
         </p>
       </sp>
     </div>

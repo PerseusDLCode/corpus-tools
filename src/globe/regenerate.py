@@ -278,6 +278,40 @@ def heading_line(new, toks, page: int, page_rows_, r: shared_lines.Row):
     return k + 1, lineate.Line([between[0]], page, num=between[0].num)
 
 
+def stage_lines(new, toks, page: int, page_rows_, r: shared_lines.Row):
+    """(index, lines) for a `stage` row: the lines after the one whose first
+    words are r.first_half, made of the page's rows between it and the next
+    line that are a P4 stage direction beginning with r.second_half (The
+    Tempest I.1, the cries within, p.1). A row in the start band opens a
+    line, a turnover continues it."""
+    want = tuple(r.first_half.split())
+    hits = [k for k in range(len(new) - 1) if shared_lines.line_words(new, k, toks, len(want)) == want]
+    if len(hits) != 1:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} stage after {r.first_half!r} matches {len(hits)} lines "
+            f"with a line after them on this page, expected 1")
+    k = hits[0]
+    order = {id(x): i for i, x in enumerate(page_rows_)}
+    lo, hi = order.get(id(new[k].rows[-1])), order.get(id(new[k + 1].rows[0]))
+    between = [] if lo is None or hi is None else [
+        x for x in page_rows_[lo + 1:hi] if x.start is not None and not x.speech and toks[x.start].kind == "stage"]
+    words = tuple(r.second_half.split())
+    if not between or tuple(t.t for t in toks[between[0].start:between[0].start + len(words)]) != words:
+        raise shared_lines.TableError(
+            f"shared-lines.tsv: p.{page} stage {r.second_half!r} after {r.first_half!r}: "
+            f"{len(between)} stage rows between it and the next line, the first not beginning so")
+    lines = []
+    for x in between:
+        if lines and x.band == "turnover":
+            lines[-1].rows.append(x)
+        else:
+            lines.append(lineate.Line([x], page))
+    for ln in lines:
+        nums = [x.num for x in ln.rows if x.num is not None]
+        ln.num = nums[-1] if nums else None
+    return k + 1, lines
+
+
 def dropped_line(new, toks, page: int, r: shared_lines.Row):
     """(index, line) for a `dropped` row: a row the page prints that the
     OCR of the witness it is built from lost, so its words ran on in the line whose first words are
@@ -311,6 +345,35 @@ def dropped_line(new, toks, page: int, r: shared_lines.Row):
 
 def new_index_of_lacuna(new) -> int:
     return max(i for i, ln in enumerate(new) if ln.lacuna_at is not None)
+
+
+SIGNATURE = re.compile(r"^[\d\s—–-]*$")  # a sheet signature ("28—"), not a row of text
+
+
+def number_stray_rows(new, rows) -> None:
+    """A printed number on a row that is no line's, once the table is applied
+    (a stage direction, a row the OCR did not align), numbers the last line
+    above it on the page, if that line has none, so the count is checked
+    there too. As You Like It p.219 prints 109 beside '[Exit.', the row below
+    III.3's last line, and the Shrew p.231 141 beside 'tumbling-trick?', a row
+    Kraken read as one word: both checked nothing, and both scenes ended
+    wrong (canonical-engLit doc/agenda.org, the sweep of scene endings). A
+    number some line on the page already carries is left alone (Richard II's
+    lacuna 280, on its row of dots), and so is a sheet signature."""
+    at = {id(r): i for i, r in enumerate(rows)}
+    on = {id(r) for ln in new for r in ln.rows}
+    carried = {ln.num for ln in new if ln.num is not None}
+    pos, p = [], -1
+    for ln in new:  # a line's place: its last row on the page, or the line before's
+        p = max([p] + [at[id(r)] for r in ln.rows if id(r) in at])
+        pos.append(p)
+    for i, r in enumerate(rows):
+        if r.num is None or id(r) in on or r.num in carried or SIGNATURE.match(r.text):
+            continue
+        above = [k for k, q in enumerate(pos) if q < i]
+        if above and new[above[-1]].num is None:
+            new[above[-1]].num = r.num
+            carried.add(r.num)
 
 
 def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
@@ -367,6 +430,12 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
         k, ln = heading_line(new, toks, page, page_rows_, r)
         new.insert(k, ln)
         applied.append((ln, r))
+    # a stage direction whose rows the Globe numbers as lines: no row of
+    # speech, so they were never lines; insert them after the named line
+    for r in [r for r in rows if r.kind == "stage"]:
+        k, made = stage_lines(new, toks, page, page_rows_, r)
+        new[k:k] = made
+        applied.append((made[0], r))
     # a row the witness's OCR lost: its words ran on in the line above;
     # start a line where it begins
     for r in [r for r in rows if r.kind == "dropped"]:
@@ -374,7 +443,7 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
         new.insert(k, ln)
         applied.append((ln, r))
     for r in rows:
-        if r.kind in ("separate", "lacuna", "inset", "heading", "dropped"):
+        if r.kind in ("separate", "lacuna", "inset", "heading", "dropped", "stage"):
             continue
         if r.kind == "misplaced":
             printed = int(r.first_half)
@@ -484,6 +553,7 @@ def build(play: str, table: list[shared_lines.Row] | None = None):
                 refused.append(f"{key}: {e}")
                 tried.append((key, "table"))
                 continue
+            number_stray_rows(new, pg.rows)
             if top is not None:
                 applied.insert(0, (0, top))
             alt = {}
@@ -803,6 +873,10 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                 out.append((ln.start, emit_tei.review_comment(
                     "heading", f"shared-lines.tsv: the page prints this title as a row of its own "
                                f"and the Globe numbers it as line {ln.n} (basis {row.basis}, {state})")))
+            elif row.kind == "stage":
+                out.append((ln.start, emit_tei.review_comment(
+                    "stage", f"shared-lines.tsv: the Globe numbers the rows of this stage direction "
+                             f"as lines, from line {ln.n} (basis {row.basis}, {state})")))
             elif row.kind == "lacuna":
                 out.append((ln.start, emit_tei.review_comment(
                     "lacuna", f"shared-lines.tsv: the page prints line {ln.n} without words, a row "

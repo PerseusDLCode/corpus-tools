@@ -1,25 +1,25 @@
 # Schmidt smoke test: Antony and Cleopatra
 
-Sources: shakespeare.ant.globe.xml sha256 32d4f831f956bb14; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.ant.globe.xml sha256 d7f8515bd9d99878; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Antony and Cleopatra in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 
-- **All citations:** 1913/2037 (93.9%) pass.
-- **With a quotation:** 1111/1148 (96.8%) have it on the cited line.
-- **Headword only:** 802/889 (90.2%) have it on the cited line.
+- **All citations:** 1917/2037 (94.1%) pass.
+- **With a quotation:** 1112/1148 (96.9%) have it on the cited line.
+- **Headword only:** 805/889 (90.6%) have it on the cited line.
 
 | Verdict | Citations |
 |---|---|
-| quotation on cited line | 843 |
-| headword on cited line | 828 |
+| quotation on cited line | 844 |
+| headword on cited line | 831 |
 | quotation on cited line, with differences | 242 |
 | headword not found near cited line | 51 |
 | not a citation of this play | 38 |
-| headword off by 1 | 13 |
-| prose row break | 10 |
+| headword off by 1 | 11 |
+| prose row break | 9 |
 | quotation elsewhere in scene | 5 |
-| quotation off by 1 | 3 |
 | quotation not found; headword not found near cited line | 3 |
+| quotation off by 1 | 2 |
 | quotation in another scene | 1 |
 
 ## Runs
@@ -57,7 +57,6 @@ None.
 | 3.7.74 | Ant. III, 7, 74 | Celius | headword not found near cited line |  |  | publicola and clius are for sea |
 | 5.2.120 | Ant. V, 2, 120 | Chance | prose row break | 5.2.117-119 | what injuries you did us, we shall remember as things but done by chance | sole sir o the world |
 | 5.2.120 | Ant. V, 2, 120 | Chance | quotation elsewhere in scene | 5.2.173-174 | I shall show the cinders of my spirits through the ashes of my c., | sole sir o the world |
-| 4.12.46 | Ant. IV, 12, 46 | Club | prose row break | 4.12.45 |  | subdue my worthiest self the witch shall die |
 | 3.73.3 | 73, 3 | Cold | not a citation of this play |  | shake against the cold |  |
 | 1.5.74 | Ant. I, 5, 74 | Coldblooded | headword not found near cited line |  |  | when i was green in judgment cold in blood |
 | 2.6.58 | Ant. II, 6, 58 | Composition | headword off by 1 | 2.6.59 |  | i hope so lepidus thus we are agreed |
@@ -94,7 +93,6 @@ None.
 | 5.5.8 | V, 5, 8 | Fury | not a citation of this play |  |  |  |
 | 2.3.19 | Ant. II, 3, 19 | Genius | headword not found near cited line |  |  | thy demon thats thy spirit which keeps thee is |
 | 4.2.33 | Ant. IV, 2, 33 | Godild | headword not found near cited line |  |  | and the gods yield you fort what mean you sir |
-| 4.12.46 | Ant. IV, 12, 46 | Grasp | headword off by 1 | 4.12.45 |  | subdue my worthiest self the witch shall die |
 | 3.0 | III Prol. 47 | Grizzled | not a citation of this play |  |  |  |
 | 3.0 | III Prol. 47 | Grizzly | not a citation of this play |  | Grisly |  |
 | 2.6.54 | II, 6, 54 | Harsh | quotation off by 1 | 2.6.55 | harsh fortune, | there is a change upon you well i know not |
@@ -112,7 +110,6 @@ None.
 | 4.15.15 | Ant. IV, 15 | Level | quotation elsewhere in scene | 4.15.65-66 | young boys and girls are level now with men, | but antonys hath triumphed on itself |
 | 4.15.15 | Ant. IV, 15 | Level | headword not found near cited line |  |  | but antonys hath triumphed on itself |
 | 2.6.48 | Ant. II, 6, 48 | Liberal-conceited | headword not found near cited line |  |  | and am well studied for a liberal thanks |
-| 4.12.45 | Ant. IV, 12, 45 | Lichas | headword off by 1 | 4.12.44 |  | and with those hands that grasped the heaviest club |
 | 4.14.33 | Ant. IV, 14, 33 | Life-rendering | headword not found near cited line |  |  | between her heart and lips she rendered life |
 | 3.11.5 | Ant. III, 11, 5 | Load | headword not found near cited line |  |  | laden with gold take that divide it fly |
 | 5.2.123 | V, 2, 123 | Load | headword not found near cited line |  |  | been laden with like frailties which before |
@@ -144,7 +141,6 @@ None.
 | 3.7.42 | III, 7, 42 | Soldiership | headword off by 1 | 3.7.43 |  | most worthy sir you therein throw away |
 | 4.8.20 | Ant. IV, 8, 20 | Something-settled | headword not found near cited line |  |  | do something mingle with our younger brown yet ha we |
 | 4.15.79 | Ant. IV, 15, 79 | Sottish | headword not found near cited line |  |  | patience is scottish and impatience does |
-| 4.12.47 | IV, 12, 47 | Subdue | quotation off by 1 | 4.12.45-46 | with those hands . . . subdue my worthiest self, | to the young roman boy she hath sold me and i fall |
 | 4.12.4 | Ant. IV, 12, 4 | Swallow | headword off by 1 | 4.12.3 |  | in cleopatras sails their nests the augurers |
 | 1.5.48 | Ant. I, 5, 48 | Termagant | headword not found near cited line |  |  | and soberly did mount an armgaunt steed |
 | 2.2.21 | Shr. Ind. 2, 21 | Transmutation | not a citation of this play |  | by education a card-maker, by transmutation a bear-herd, |  |

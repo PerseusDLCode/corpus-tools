@@ -1,22 +1,22 @@
 # Schmidt smoke test: Cymbeline
 
-Sources: shakespeare.cym.globe.xml sha256 2be4d2b466b1e679; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.cym.globe.xml sha256 71abf3a31a147813; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Cymbeline in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 
-- **All citations:** 2146/2255 (95.2%) pass.
-- **With a quotation:** 1242/1286 (96.6%) have it on the cited line.
+- **All citations:** 2150/2255 (95.3%) pass.
+- **With a quotation:** 1246/1286 (96.9%) have it on the cited line.
 - **Headword only:** 904/969 (93.3%) have it on the cited line.
 
 | Verdict | Citations |
 |---|---|
 | headword on cited line | 947 |
-| quotation on cited line | 930 |
-| quotation on cited line, with differences | 269 |
+| quotation on cited line | 933 |
+| quotation on cited line, with differences | 270 |
 | not a citation of this play | 49 |
 | headword not found near cited line | 32 |
-| quotation off by 1 | 10 |
 | quotation not found; headword not found near cited line | 7 |
+| quotation off by 1 | 6 |
 | headword off by 1 | 6 |
 | prose row break | 3 |
 | headword off by 3 | 2 |
@@ -69,7 +69,6 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 | 3.6.55 | Cymb. III, 6, 55 | Dirty | headword off by 1 | 3.6.54 |  | as tis no better reckoned but of those |
 | 5.5.384 | V, 5, 384 | Distinctively | headword not found near cited line |  |  | distinction should be rich in where how lived you |
 | 1.5.82 | Cymb. I, 5, 82 | Do | headword off by 3 | 1.5.85 |  | to taste of too so so well done well done |
-| 3.5.159 | Cymb. III, 5, 159 | Duteous | quotation off by 1 | 3.5.158 | be but duteous | preferment shall tender itself to thee my revenge is |
 | 3.6.43 | Cymb. III, 6, 43 | Earthly | headword off by 1 | 3.6.44 |  | by jupiter an angel or if not |
 | 5.19.7 | 19, 7 | Fade | not a citation of this play |  | all her fadeing sweets, |  |
 | 5.146.6 | 146, 6 | Fade | not a citation of this play |  | why so large cost dost thou upon thy fadeing mansion spend? |  |
@@ -94,7 +93,6 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 | 1.120.7 | 120, 7 | Leisure | not a citation of this play |  | I have no leisure taken to weigh how once I suffered, |  |
 | 4.0 | IV Prol. 52 | Leonine | not a citation of this play |  |  |  |
 | 2.3.25 | Cymb. II, 3, 25 | Mary-buds | quotation off by 1 | 2.3.26-27 | and winking mary-buds begin to ope their golden eyes, | on chaliced flowers that lies |
-| 3.5.168 | Cymb. III, 5, 168 | Meed | quotation off by 1 | 3.5.167 | labour be his meed | (no such line) |
 | 4.1.26 | Cymb. IV, 1, 26 | Meeting-place | prose row break | 4.1.27 |  | hand this is the very description of their |
 | 3.1.36 | Cymb. III, 1, 36 | Mo | quotation not found; headword not found near cited line |  | mo kings, | that time and as i said there is no moe such |
 | 5.3.72 | V, 3, 72 | Mo | quotation not found; headword not found near cited line |  | moe ministers, | sweet words or hath more ministers than we |
@@ -126,12 +124,10 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 | 5.3.78 | Cymb. V, 3, 78 | Shoulder-clapper | headword not found near cited line |  |  | once touch my shoulder great the slaughter is |
 | 4.0 | IV Prol. 21 | Silk | not a citation of this play |  |  |  |
 | 5.0 | V Prol. 8 | Silk | not a citation of this play |  |  |  |
-| 3.5.168 | Cymb. III, 5, 168 | Slowness | quotation off by 1 | 3.5.166-167 | this fool's speed be crossed with slowness | (no such line) |
 | 5.1.88 | Shr. Ind. 1, 88. | Soto | not a citation of this play |  |  |  |
 | 5.40.14 | 40, 14 | Spite | not a citation of this play |  | kill me with spites, yet we must not be foes, |  |
 | 1.14.12 | 14, 12 | Store | not a citation of this play |  | truth and beauty shall together thrive, if from thyself to store thou wouldst convert, |  |
 | 4.90.11 | 90, 11 | Taste | not a citation of this play |  | so shall I taste at first the very worst of fortune's might, |  |
-| 3.5.160 | Cymb. III, 5, 160 | Tender | quotation off by 1 | 3.5.158-159 | be but duteous, and true preferment shall tender itself to thee, | now at milford would i had wings to follow it |
 | 5.2.56 | V, 2, 56 | Tickle | quotation not found; headword not found near cited line |  | the devil Luxury . . . tickles these together, | (no such line) |
 | 1.4.45 | Cymb. I, 4, 45 | Troien | headword not found near cited line |  |  | upon importance of so slight and trivial a nature |
 | 5.5.177 | Cymb. V, 5, 177 | Trull | headword not found near cited line |  |  | were cracked of kitchentrulls or his description |

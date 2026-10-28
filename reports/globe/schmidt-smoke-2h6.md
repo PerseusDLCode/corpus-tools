@@ -1,23 +1,23 @@
 # Schmidt smoke test: King Henry VI, Part II
 
-Sources: shakespeare.2h6.globe.xml sha256 2506c91e2e701314; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.2h6.globe.xml sha256 0b2b7f55cb7daa5c; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of King Henry VI, Part II in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 
-- **All citations:** 1958/2036 (96.2%) pass.
-- **With a quotation:** 1010/1029 (98.2%) have it on the cited line.
+- **All citations:** 1963/2036 (96.4%) pass.
+- **With a quotation:** 1015/1029 (98.6%) have it on the cited line.
 - **Headword only:** 948/1007 (94.1%) have it on the cited line.
 
 | Verdict | Citations |
 |---|---|
 | headword on cited line | 979 |
-| quotation on cited line | 822 |
-| quotation on cited line, with differences | 157 |
+| quotation on cited line | 826 |
+| quotation on cited line, with differences | 158 |
 | headword not found near cited line | 44 |
 | not a citation of this play | 11 |
 | quotation not found; headword not found near cited line | 9 |
-| prose row break | 7 |
-| quotation off by 1 | 6 |
+| prose row break | 6 |
+| quotation off by 1 | 2 |
 | quotation elsewhere in scene | 1 |
 
 ## Runs
@@ -38,19 +38,15 @@ None.
 | 2.11.108 | II, 11 | Bargulus | not a citation of this play |  |  |  |
 | 4.9.33 | H6B IV, 9, 33 | Becalm | headword not found near cited line |  |  | is straightway calmed and boarded with a pirate |
 | 2.3.93 | H6B II, 3, 93 | Bevis | headword not found near cited line |  |  | downright blow |
-| 4.7.135 | H6B IV, 7, 135 | Bill | prose row break | 4.7.133-134 | when shall we go to Cheapside and take up commodities upon our bills? | marry presently |
 | 2.6.90 | H6B II, 6, 90 | Bona; | not a citation of this play |  | the lady B.: |  |
 | 3.3.56 | III, 3, 56 | Bona; | headword not found near cited line |  |  | (no such line) |
 | 3.2.320 | H6B III, 2, 320 | Burden | headword not found near cited line |  |  | and even now my burthened heart would break |
 | 2.1.100 | H6B II, 1, 100 | By | headword not found near cited line |  |  | too true and bought his climbing very dear |
-| 4.7.131 | H6B IV, 7, 131 | Capite: | quotation off by 1 | 4.7.130 | men shall hold of me in capite | and command that their wives be as free as |
 | 3.2.315 | H6B III, 2, 315 | Cave-keeping | headword not found near cited line |  |  | as leanfaced envy in her loathsome cave |
+| 4.7.134 | IV, 7, 134 | Cheapside | prose row break | 4.7.135 |  | my lord when shall we go to |
 | 4.10.13 | H6B IV, 10, 13 | Cleave | headword not found near cited line |  |  | my brainpan had been cleft with a brown bill |
 | 4.1.1 | 1, 1 | Combat | headword not found near cited line |  |  | the gaudy blabbing and remorseful day |
 | 4.1.1 | 1, 1 | Combat | headword not found near cited line |  |  | the gaudy blabbing and remorseful day |
-| 4.7.135 | H6B IV, 7, 135 | Commodity | quotation off by 1 | 4.7.134 | take up commodityies upon our bills, | marry presently |
-| 4.7.140 | H6B IV, 7, 140 | Consult | prose row break | 4.7.139 |  | about the giving up of some more towns in |
-| 4.7.145 | H6B IV, 7, 145 | Corner | quotation off by 1 | 4.7.144 | at every corner have them kiss, | (no such line) |
 | 1.1.1 | H6B I, 1 | Courtly | quotation elsewhere in scene | 1.1.27 | in courtly company, | as by your high imperial majesty |
 | 1.1.1 | H6B I, 1 | Courtly | headword not found near cited line |  |  | as by your high imperial majesty |
 | 4.0 | IV Prol. 35 | Dark | not a citation of this play |  |  |  |
@@ -76,7 +72,6 @@ None.
 | 3.1.77 | H6B III, 1, 77 | Lendings | headword not found near cited line |  |  | is he a lamb his skin is surely lent him |
 | 4.1.3 | H6B IV, 1, 3 | Loud | headword not found near cited line |  |  | and now loudhowling wolves arouse the jades |
 | 3.2.34 | Shr. Ind. 2, 34. | Lowly | quotation not found; headword not found near cited line |  | banish these abject lowly dreams, | rear up his body wring him by the nose |
-| 4.7.144 | H6B IV, 7, 144 | Mace | quotation off by 1 | 4.7.142-143 | with these borne before us instead of maces, | and at every corner have them kiss away |
 | 4.2.172 | H6B IV, 2, 172 | Maim | quotation not found; headword not found near cited line |  | maimed, | england mained and fain to go with a staff but that |
 | 1.1.235 | H6B I, 1, 235 | Meleager | headword not found near cited line |  |  | unto the princes heart of calydon |
 | 5.2.58 | H6B V, 2, 58 | Mess | headword not found near cited line |  |  | into as many gobbets will i cut it |

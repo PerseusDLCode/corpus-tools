@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.2h6.globe.xml sha256 2506c91e2e701314; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.2h6.globe.xml sha256 0b2b7f55cb7daa5c; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abase	Abase,	1.2.15	H6B I, 2, 15	quotation on cited line						abase our sight so low,	and never more abase our sight so low
 Abominable	Abominable,	4.7.44	H6B IV, 7, 44	headword on cited line							abominable words as no christian ear can endure
@@ -191,7 +191,7 @@ Bewail	Bewail,	3.1.217	H6B III, 1, 217	headword on cited line							even so myse
 Beyond1	Beyond,	1.3.128	H6B I, 3, 128	headword on cited line							the dauphin hath prevailed beyond the seas
 Bezonian	Bezonian,	4.1.134	H6B IV, 1, 134	headword on cited line							great men oft die by vile bezonians
 Bickering	Bickering,	1.1.144	H6B I, 1, 144	quotation on cited line						we shall begin our ancient bickerings,	we shall begin our ancient bickerings
-Bill2	Bill,	4.7.135	H6B IV, 7, 135	prose row break	4.7.133-134	-1	100%			when shall we go to Cheapside and take up commodities upon our bills?	marry presently
+Bill2	Bill,	4.7.135	H6B IV, 7, 135	quotation on cited line						when shall we go to Cheapside and take up commodities upon our bills?	cheapside and take up commodities upon our bills
 Bill2	Bill,	4.10.13	H6B IV, 10, 13	headword on cited line							my brainpan had been cleft with a brown bill
 Birth	Birth,	4.2.147	H6B IV, 2, 147	quotation on cited line						two children at one birth	by her he had two children at one birth
 Birth	Birth,	4.2.152	H6B IV, 2, 152	headword on cited line							and ignorant of his birth and parentage
@@ -307,7 +307,7 @@ Canker1	Canker,	1.2.18	H6B I, 2, 18	quotation on cited line						banish the cank
 Canonize	Canonize,	1.3.63	H6B I, 3, 63	headword on cited line							are brazen images of canonized saints
 Caper2	Caper,	3.1.365	H6B III, 1, 365	headword on cited line							him caper upright like a wild morisco
 Capital	Capital,	5.1.107	H6B V, 1, 107	headword on cited line							of capital treason gainst the king and crown
-Capite	Capite:	4.7.131	H6B IV, 7, 131	quotation off by 1	4.7.130	-1	100%			men shall hold of me in capite	and command that their wives be as free as
+Capite	Capite:	4.7.131	H6B IV, 7, 131	quotation on cited line						men shall hold of me in capite	men shall hold of me in capite and we charge
 Captivity	Captivity,	2.2.42	H6B II, 2, 42	headword on cited line							who kept him in captivity till he died
 Care1	Care,	2.4.4	H6B II, 4, 4	quotation on cited line						so cares and joys abound as seasons fleet,	so cares and joys abound as seasons fleet
 Care1	Care,	3.1.34	H6B III, 1, 34	quotation on cited line						the reverent care I bear unto my lord,	the reverent care i bear unto my lord
@@ -349,7 +349,7 @@ Chase2	Chase,	3.2.44	H6B III, 2, 44	headword on cited line							can chase away 
 Chatham	Chatham:	4.2.92	H6B IV, 2, 92	quotation on cited line						the clerk of C.,	the clerk of chatham he can write
 Cheap1	Cheap,	1.1.222	H6B I, 1, 222	headword on cited line							pirates may make cheap pennyworths of their pillage
 Cheapside	Cheapside,	4.2.74	H6B IV, 2, 74	headword on cited line							realm shall be in common and in cheapside
-Cheapside	Cheapside,	4.7.134	IV, 7, 134	headword on cited line							cheapside and take up commodities upon our bills
+Cheapside	Cheapside,	4.7.134	IV, 7, 134	prose row break	4.7.135	1					my lord when shall we go to
 Check2	Check,	1.2.54	H6B I, 2, 54	quotation on cited line						next time I'll keep my dreams unto myself, and not be checked,	and not be checked
 Checker	Checker,	3.1.229	H6B III, 1, 229	quotation on cited line						the snake . . . with shining checkered slough,	with shining checkered slough doth sting a child
 Cheese	Cheese,	4.7.14	H6B IV, 7, 14	headword on cited line							cheese
@@ -426,7 +426,7 @@ Commandment	Commandment,	1.3.145	H6B I, 3, 145	quotation on cited line						I'ld
 Commence	Commence,	3.2.118	H6B III, 2, 118	headword on cited line							his fathers acts commenced in burning troy
 Comment2	Comment,	3.2.133	H6B III, 2, 133	quotation on cited line						view his breathless corpse, and comment then upon his sudden death,	and comment then upon his sudden death
 Commentaries	Commentaries,	4.7.65	H6B IV, 7, 65	headword on cited line							kent in the commentaries csar writ
-Commodity	Commodity,	4.7.135	H6B IV, 7, 135	quotation off by 1	4.7.134	-1	83%	commodityies	commodities	take up commodityies upon our bills,	marry presently
+Commodity	Commodity,	4.7.135	H6B IV, 7, 135	quotation on cited line, with differences			83%	commodityies	commodities	take up commodityies upon our bills,	cheapside and take up commodities upon our bills
 Commotion	Commotion,	3.1.29	H6B III, 1, 29	quotation on cited line						to make commotion	and when he please to make commotion
 Commotion	Commotion,	3.1.29	H6B III, 1, 29	headword on cited line							and when he please to make commotion
 Companion1	Companion,	4.10.33	H6B IV, 10, 33	quotation on cited line, with differences			100%		whatsoeer thou be	why, rude c., I know thee not,	why rude companion whatsoeer thou be
@@ -447,7 +447,7 @@ Conquest	Conquest,	1.1.96	H6B I, 1, 96	headword on cited line							shall henrys
 Consider	Consider,	1.1.151	H6B I, 1, 151	headword on cited line							consider lords he is the next of blood
 Consider	Consider,	5.1.175	H6B V, 1, 175	quotation on cited line						I have considered with myself the title . . .,	my lord i have considered with myself
 Consort1	Consort,	3.2.327	H6B III, 2, 327	quotation on cited line, with differences			60%	consort full	their concert full all	screech-owls make the consort full,	and boding screechowls make their concert full
-Consult	Consult,	4.7.140	H6B IV, 7, 140	prose row break	4.7.139	-1					about the giving up of some more towns in
+Consult	Consult,	4.7.140	H6B IV, 7, 140	headword on cited line							alive now part them again lest they consult
 Contagious	Contagious,	4.1.7	H6B IV, 1, 7	quotation on cited line						darkness,	breathe foul contagious darkness in the air
 Contemptuous	Contemptuous,	1.3.86	H6B I, 3, 86	quotation on cited line						contemptuous base-born callet as she is,	contemptuous baseborn callet as she is
 Contend	Contend,	3.2.384	H6B III, 2, 384	headword on cited line							and with the southern clouds contend in tears
@@ -468,7 +468,7 @@ Converse2	Converse,	3.1.368	III, 1, 368	headword on cited line							hath he con
 Cool1	Cool,	3.1.177	H6B III, 1, 177	quotation on cited line						cool in zeal,	twill make them cool in zeal unto your grace
 Cope2	Cope,	3.2.230	H6B III, 2, 230	headword on cited line							unworthy though thou art ill cope with thee
 Copy1	Copy,	4.2.95	H6B IV, 2, 95	quotation on cited line, with differences			86%	copyies		we took him setting of boys' copyies,	we took him setting of boys copies
-Corner	Corner,	4.7.145	H6B IV, 7, 145	quotation off by 1	4.7.144	-1	100%			at every corner have them kiss,	(no such line)
+Corner	Corner,	4.7.145	H6B IV, 7, 145	quotation on cited line						at every corner have them kiss,	and at every corner have them kiss away
 Corner	Corner,	4.8.2	IV, 8, 2	quotation on cited line						down Saint Magnus' corner	corner kill and knock down throw them into
 Correct	Correct,	1.3.202	H6B I, 3, 202	headword on cited line							when i did correct him for his fault the other
 Corrosive1	Córrosive,	3.2.403	H6B III, 2, 403	quotation on cited line						though parting be a fretful c., it is applied to a deathful wound,	away though parting be a fretful corrosive
@@ -561,7 +561,7 @@ Deface	Deface,	4.1.42	H6B IV, 1, 42	headword on cited line							be my sword my 
 Deface	Deface,	1.1.102	H6B I, 1, 102	quotation on cited line, with differences			94%	defaceing	defacing	blotting your names from books of memory, razing the characters of your renown, defaceing monuments of conquered France,	defacing monuments of conquered france
 Defamed	Defamed,	3.1.123	H6B III, 1, 123	quotation on cited line, with differences			80%	defamedd	defamed	England was defamedd by tyranny,	that england was defamed by tyranny
 Defendant1	Defendant,	2.3.49	H6B II, 3, 49	headword on cited line							and ready are the appellant and defendant
-Defer	Defer,	4.7.142	H6B IV, 7, 142	quotation on cited line						defer the spoil of the city until night,	until night for with these borne before us
+Defer	Defer,	4.7.142	H6B IV, 7, 142	quotation on cited line						defer the spoil of the city until night,	france soldiers defer the spoil of the city
 Degenerate	Degenerate,	4.4.2	H6B IV, 4, 2	headword on cited line							and makes it fearful and degenerate
 Delay1	Delay,	1.1.170	H6B I, 1, 170	headword on cited line							this weighty business will not brook delay
 Demean	Demean,	1.1.188	H6B I, 1, 188	headword on cited line							swear like a ruffian and demean himself
@@ -1110,7 +1110,7 @@ Lowly1	Lowly,	4.1.50	H6B IV, 1, 50	quotation on cited line						obscure and lowl
 Lowly1	Lowly,	4.1.50	H6B IV, 1, 50	headword on cited line							obscure and lowly swain king henrys blood
 Lucky	Lucky,	3.1.291	H6B III, 1, 291	quotation on cited line						ruler,	tis meet that lucky ruler be employed
 Lump	Lump,	5.1.157	H6B V, 1, 157	quotation on cited line						foul indigested lump	hence heap of wrath foul indigested lump
-Mace2	Mace,	4.7.144	H6B IV, 7, 144	quotation off by 1	4.7.142-143	-1	100%			with these borne before us instead of maces,	and at every corner have them kiss away
+Mace2	Mace,	4.7.144	H6B IV, 7, 144	quotation on cited line						with these borne before us instead of maces,	instead of maces will we ride through the streets
 Mad2	Mad,	3.2.117	H6B III, 2, 117	quotation on cited line, with differences			90%	mading	madding	when he to mading Dido would unfold his father's acts,	when he to madding dido would unfold
 Mad-bred	Mad-bred,	3.1.354	H6B III, 1, 354	quotation on cited line						this mad-bred flaw,	do calm the fury of this madbred flaw
 Magnus	Magnus:	4.8.1	H6B IV, 8, 1	quotation on cited line						Saint Magnus Corner,	up fish street down saint magnus
@@ -1659,7 +1659,7 @@ Spite1	Spite,	4.10.37	H6B IV, 10, 37	headword on cited line							climbing my wa
 Spite1	Spite,	5.1.206	V, 1, 206	headword on cited line							that keeps his leaves in spite of any storm
 Spiteful	Spiteful,	1.3.158	H6B I, 3, 158	headword on cited line							as for your spiteful false objections
 Spleenful	Spleenful,	3.2.128	H6B III, 2, 128	quotation on cited line						myself have calmed their spleenful mutiny, until they hear the order of his death,	myself have calmed their spleenful mutiny
-Spoil1	Spoil,	4.7.142	H6B IV, 7, 142	quotation on cited line						defer the spoil of the city until night,	until night for with these borne before us
+Spoil1	Spoil,	4.7.142	H6B IV, 7, 142	quotation on cited line						defer the spoil of the city until night,	france soldiers defer the spoil of the city
 Spoil1	Spoil,	4.8.41	IV, 8, 41	quotation on cited line, with differences			100%		unless	to live but by the s., by robbing of your friends,	nor knows he how to live but by the spoil
 Spoil2	Spoil,	4.4.53	H6B IV, 4, 53	quotation on cited line						to spoil the city and your royal court,	to spoil the city and your royal court
 Spotless	Spotless,	5.1.186	H6B V, 1, 186	headword on cited line							to force a spotless virgins chastity

@@ -119,7 +119,7 @@ scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
 3.3	79	row begins a line	79			agree	Jaq. Will you be married, motley?
 3.3	90	row begins inside a line		89	90	unmapped (P4 number is the next line)	shrunk panel and, like green timber,
 3.3	100	row begins a line	100			agree	Farewell, good Master Oliver: not,-- O
-3.3	109	row begins inside a line		105	1	unmapped (neither)	calling. [Exit. SCENE IV The forest.
+3.3	109	row begins inside a line		109	1	unmapped (P4 number is the containing line)	calling. [Exit. SCENE IV The forest.
 3.4	10	row begins inside a line		9	10	unmapped (P4 number is the next line)	marry, his kisses are Judas's own
 3.4	21	row begins a line	21			agree	this morning, and comes not? Cel.
 3.4	30	row begins a line	30			agree	not in. Ros. You have heard

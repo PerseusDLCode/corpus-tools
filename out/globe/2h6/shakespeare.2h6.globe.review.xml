@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-27">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit cbbcb82; sources: 2h6.xml sha256 bbae63effa4d8f8a; shared-lines.tsv sha256 d202a185b95a1a96; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-28">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 92f44c4; sources: 2h6.xml sha256 bbae63effa4d8f8a; shared-lines.tsv sha256 bf3e4d6f93fcf9c0; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -5266,33 +5266,34 @@
       <sp who="cade.">
         <speaker>Cade.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="125"/>Away with him! and do as I command <lb/>ye. <stage type="exit">[Exeunt some with Lord
+          <!-- REVIEW dropped: shared-lines.tsv: the page prints a row here, beginning 'ye', that the witness's OCR lost; this line starts there (basis image+schmidt, checked 2026-10-28-cliff) --><milestone unit="line" ed="Globe" n="125"/>Away with him! and do as I command <milestone unit="line" ed="Globe" n="126"/>
+          <lb/>ye. <stage type="exit">[Exeunt some with Lord
                 Say.</stage>
         </p>
         <p>
-          <milestone unit="line" ed="Globe" n="126"/>The proudest peer in the realm shall not wear a
-              <milestone unit="line" ed="Globe" n="127"/>head on his shoulders, unless he pay me tribute;
-              <milestone unit="line" ed="Globe" n="128"/>there shall not a maid be married, but she shall <milestone unit="line" ed="Globe" n="129"/>pay
-              to me her maidenhead ere they have it: <milestone unit="line" ed="Globe" n="130"/>men shall
-              hold of me in capite; and we charge <milestone unit="line" ed="Globe" n="131"/>and command that
-              their wives be as free as <milestone unit="line" ed="Globe" n="132"/>heart can wish or tongue
+          <milestone unit="line" ed="Globe" n="127"/>The proudest peer in the realm shall not wear a
+              <milestone unit="line" ed="Globe" n="128"/>head on his shoulders, unless he pay me tribute;
+              <milestone unit="line" ed="Globe" n="129"/>there shall not a maid be married, but she shall <milestone unit="line" ed="Globe" n="130"/>pay
+              to me her maidenhead ere they have it: <milestone unit="line" ed="Globe" n="131"/>men shall
+              hold of me in capite; and we charge <milestone unit="line" ed="Globe" n="132"/>and command that
+              their wives be as free as <milestone unit="line" ed="Globe" n="133"/>heart can wish or tongue
               can tell. </p>
       </sp>
       <sp who="dick.">
         <speaker>Dick.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="133"/>My lord, when shall we go to <milestone unit="line" ed="Globe" n="134"/>Cheapside and take up
+          <milestone unit="line" ed="Globe" n="134"/>My lord, when shall we go to <milestone unit="line" ed="Globe" n="135"/>Cheapside and take up
               commodities upon our bills? </p>
       </sp>
       <sp who="cade.">
         <speaker>Cade.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="135"/>Marry, presently. </p>
+          <milestone unit="line" ed="Globe" n="136"/>Marry, presently. </p>
       </sp>
       <sp who="all.">
         <speaker>All.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="136"/>O, brave! <lb/>
+          <milestone unit="line" ed="Globe" n="137"/>O, brave! <lb/>
           <stage type="entrance">Re-enter one with the
                 heads.</stage>
         </p>
@@ -5300,10 +5301,10 @@
       <sp who="cade.">
         <speaker>Cade.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="137"/>But is not this braver? Let them kiss <milestone unit="line" ed="Globe" n="138"/>one another,
-              for they loved well when they were <milestone unit="line" ed="Globe" n="139"/>alive. Now part
-              them again, lest they consult <milestone unit="line" ed="Globe" n="140"/>about the giving up
-                of some more towns in <milestone unit="line" ed="Globe" n="141"/>France. Soldiers, defer the spoil of the city <milestone unit="line" ed="Globe" n="142"/>until night: for with these borne before us, <milestone unit="line" ed="Globe" n="143"/>instead of maces, will we ride through the streets; <milestone unit="line" ed="Globe" n="144"/>and at every corner have them kiss. Away! <!-- REVIEW words: both witnesses read 'IExeunt.'; the P4 reads '[Exeunt.' --><stage type="exit">[Exeunt.</stage>
+          <milestone unit="line" ed="Globe" n="138"/>But is not this braver? Let them kiss <milestone unit="line" ed="Globe" n="139"/>one another,
+              for they loved well when they were <milestone unit="line" ed="Globe" n="140"/>alive. Now part
+              them again, lest they consult <milestone unit="line" ed="Globe" n="141"/>about the giving up
+                of some more towns in <milestone unit="line" ed="Globe" n="142"/>France. Soldiers, defer the spoil of the city <milestone unit="line" ed="Globe" n="143"/>until night: for with these borne before us, <milestone unit="line" ed="Globe" n="144"/>instead of maces, will we ride through the streets; <milestone unit="line" ed="Globe" n="145"/>and at every corner have them kiss. Away! <!-- REVIEW words: both witnesses read 'IExeunt.'; the P4 reads '[Exeunt.' --><stage type="exit">[Exeunt.</stage>
         </p>
       </sp>
     </div>

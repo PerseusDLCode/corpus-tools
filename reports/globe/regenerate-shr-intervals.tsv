@@ -20,6 +20,7 @@ page	witness	scene	from	to	printed_gap	counted_gap	error	numeral_reading
 231	miun/kraken	ind.2	70 (p.231)	100	30	30	0	
 231	miun/kraken	ind.2	100 (p.231)	121	21	21	0	
 231	miun/kraken	ind.2	121 (p.231)	130	9	9	0	
+231	miun/kraken	ind.2	130 (p.231)	141	11	11	0	
 232	trent/kraken	1.1	scene start	10	10	10	0	
 232	trent/kraken	1.1	10 (p.232)	20	10	10	0	
 232	trent/kraken	1.1	20 (p.232)	30	10	10	0	
@@ -66,7 +67,8 @@ page	witness	scene	from	to	printed_gap	counted_gap	error	numeral_reading
 236	miun/kraken	1.2	270 (p.236)	280	10	10	0	
 236	miun/kraken	2.1	scene start	11	11	11	0	
 236	miun/kraken	2.1	11 (p.236)	20	9	9	0	
-237	miun/kraken	2.1	20 (p.236)	60	40	40	0	
+236	miun/kraken	2.1	20 (p.236)	30	10	10	0	
+237	miun/kraken	2.1	30 (p.236)	60	30	30	0	
 237	miun/kraken	2.1	60 (p.237)	70	10	10	0	
 237	miun/kraken	2.1	70 (p.237)	90	20	20	0	
 237	miun/kraken	2.1	90 (p.237)	100	10	10	0	

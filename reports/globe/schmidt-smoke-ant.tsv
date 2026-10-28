@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.ant.globe.xml sha256 32d4f831f956bb14; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.ant.globe.xml sha256 d7f8515bd9d99878; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abhorring	Abhorring,	5.2.60	Ant. V, 2, 60	quotation on cited line						blow me into abhorring	blow me into abhorring rather make
 Abode1	Abode,	1.2.182	Ant. I, 2, 182	headword on cited line							cleopatras which wholly depends on your abode
@@ -24,7 +24,7 @@ Aeneas	Aeneas,	4.14.53	Ant. IV, 14, 53	headword not found near cited line							
 Afterwards	Afterwards,	2.7.85	Ant. II, 7, 85	headword on cited line							i should have found it afterwards well done
 After-wrath	After-wrath	5.2.290	Ant. V, 2, 290	headword on cited line							to excuse their after wrath husband i come
 Aim1	Aim,	4.14.71	Ant. IV, 14, 71	quotation on cited line, with differences			100%		though enemy	the Parthian darts lost aim	though enemy lost aim and could not eros
-Alcides	Alcides,	4.12.44	Ant. IV, 12, 44	headword on cited line							let me lodge lichas on the horns o the moon alcides thou mine ancestor thy rage
+Alcides	Alcides,	4.12.44	Ant. IV, 12, 44	headword on cited line							alcides thou mine ancestor thy rage
 Alexandria	Alexandria,	1.4.3	Ant. I, 4, 3	headword on cited line							our great competitor from alexandria
 Alexandria	Alexandria,	2.2.72	II, 2, 72	headword on cited line							when rioting in alexandria you
 Alexandria	Alexandria,	3.6.2	III, 6, 2	headword on cited line							in alexandria heres the manner of t
@@ -320,7 +320,7 @@ Close4	Close,	5.2.319	Ant. V, 2, 319	quotation on cited line						downy windows,
 Clout	Clout,	4.7.6	Ant. IV, 7, 6	quotation on cited line						with clouts about their heads,	with clouts about their heads thou bleedst apace
 Cloy	Cloy,	2.2.241	Ant. II, 2, 241	headword on cited line							her infinite variety other women cloy
 Cloyless	Cloyless,	2.1.25	Ant. II, 1, 25	quotation on cited line						with cloyless sauce,	sharpen with cloyless sauce his appetite
-Club	Club,	4.12.46	Ant. IV, 12, 46	prose row break	4.12.45	-1					subdue my worthiest self the witch shall die
+Club	Club,	4.12.46	Ant. IV, 12, 46	headword on cited line							and with those hands that grasped the heaviest club
 Cneius	Cneius:	3.13.118	Ant. III, 13, 118	quotation on cited line, with differences			spacing			Cneius Pompey,	of cneius pompeys besides what hotter hours
 Coin2	Coin,	3.13.22	Ant. III, 13, 22	quotation on cited line						his c., ships, legions, may be a coward's,	something particular his coin ships legions
 Cold2	Cold,	3.73.3	73, 3	not a citation of this play						shake against the cold	
@@ -757,7 +757,7 @@ Govern	Govern,	2.3.29	Ant. II, 3, 29	headword on cited line							is all afraid 
 Graceful	Graceful,	2.2.60	Ant. II, 2, 60	quotation on cited line						could not with graceful eyes attend those wars,	could not with graceful eyes attend those wars
 Grand	Grand,	3.1.9	Ant. III, 1, 9	quotation on cited line						thy grand captain Antony,	the routed fly so thy grand captain antony
 Grand	Grand,	3.12.10	III, 12, 10	quotation on cited line, with differences			100%		to his ends on the myrtleleaf	as petty as is the morndew to his grand sea,	to his grand sea bet so declare thine office
-Grasp2	Grasp,	4.12.46	Ant. IV, 12, 46	headword off by 1	4.12.45	-1					subdue my worthiest self the witch shall die
+Grasp2	Grasp,	4.12.46	Ant. IV, 12, 46	headword on cited line							and with those hands that grasped the heaviest club
 Grate2	Grate,	1.1.18	Ant. I, 1, 18	quotation on cited line, with differences			100%		my good lord	news from Rome. grates me; the sum,	news my good lord from rome grates me the sum
 Graveless	Graveless,	3.13.166	Ant. III, 13, 166	headword on cited line							lie graveless till the flies and gnats of nile
 Greasy	Greasy,	5.2.210	Ant. V, 2, 210	headword on cited line							with greasy aprons rules and hammers shall
@@ -984,7 +984,7 @@ Levity	Levity,	3.7.14	III, 7, 14	headword on cited line							traduced for levit
 Liberal-conceited	Liberal-conceited,	2.6.48	Ant. II, 6, 48	headword not found near cited line							and am well studied for a liberal thanks
 Libertine	Libertine,	2.1.23	Ant. II, 1, 23	headword on cited line							tie up the libertine in a field of feasts
 License1	License,	1.2.112	Ant. I, 2, 112	quotation on cited line						taunt my faults with such full license	with such full license as both truth and malice
-Lichas	Lichas,	4.12.45	Ant. IV, 12, 45	headword off by 1	4.12.44	-1					and with those hands that grasped the heaviest club
+Lichas	Lichas,	4.12.45	Ant. IV, 12, 45	headword on cited line							let me lodge lichas on the horns o the moon
 Lictor	Lictor,	5.2.214	Ant. V, 2, 214	headword on cited line							nay tis most certain iras saucy lictors
 Lief	Lief	2.7.13	Ant. II, 7, 13	headword on cited line							great mens fellowship i had as lief have a reed
 Lieutenantry	Lieutenantry,	3.11.39	Ant. III, 11, 39	quotation on cited line						he alone dealt on lieutenantry	dealt on lieutenantry and no practice had
@@ -1730,7 +1730,7 @@ Strut	Strut,	3.13.114	Ant. III, 13, 114	headword on cited line							adore our e
 Studied	Studied,	2.6.48	Ant. II, 6, 48	quotation on cited line, with differences			100%		pompey	I have heard it, and am well studied for a liberal thanks which I do owe you,	and am well studied for a liberal thanks
 Sty1	Sty,	4.15.62	Ant. IV, 15, 62	headword on cited line							no better than a sty o see my women
 Subdue	Subdue,	3.13.36	Ant. III, 13, 36	quotation on cited line						thou hast subdued his judgment too,	answer his emptiness csar thou hast subdued
-Subdue	Subdue,	4.12.47	IV, 12, 47	quotation off by 1	4.12.45-46	-1	100%		that grasped the heaviest club	with those hands . . . subdue my worthiest self,	to the young roman boy she hath sold me and i fall
+Subdue	Subdue,	4.12.47	IV, 12, 47	quotation on cited line						with those hands . . . subdue my worthiest self,	subdue my worthiest self the witch shall die
 Subdue	Subdue,	4.14.74	Ant. IV, 14, 74	quotation on cited line						his face subdued to penetrative shame,	his corrigible neck his face subdued
 Submerged	Submerged,	2.5.94	Ant. II, 5, 94	quotation on cited line						so half my Egypt were submerged and made a cistern for scaled snakes,	so half my egypt were submerged and made
 Submit	Submit,	3.12.17	Ant. III, 12, 17	headword on cited line							submits her to thy might and of thee craves
@@ -1784,7 +1784,7 @@ Terrene	Terrene,	3.13.153	Ant. III, 13, 153	quotation on cited line						our ter
 Terrible	Terrible,	4.15.3	Ant. IV, 15, 3	headword on cited line							all strange and terrible events are welcome
 Thankful	Thankful,	1.2.167	Ant. I, 2, 167	headword on cited line							why sir give the gods a thankful
 That1	That,	3.13.19	Ant. III, 13, 19	quotation on cited line						head, my lord?	with principalities that head my lord
-That1	That,	4.12.46	Ant. IV, 12, 46	quotation on cited line						teach me, Alcides, thy rage, . . . and with those hands that grasped the heaviest club, subdue my worthiest self,	subdue my worthiest self the witch shall die
+That1	That,	4.12.46	Ant. IV, 12, 46	quotation on cited line						teach me, Alcides, thy rage, . . . and with those hands that grasped the heaviest club, subdue my worthiest self,	and with those hands that grasped the heaviest club
 That1	That,	2.3.6	Ant. II, 3, 6	quotation on cited line						that to come,	i have not kept my square but that to come
 That1	That,	2.3.19	Ant. II, 3, 19	quotation on cited line, with differences			88%	that	thats	thy demon, that thy spirit which keeps thee,	thy demon thats thy spirit which keeps thee is
 That1	That,	3.5.19	III, 5, 19	quotation on cited line						threats the throat of that his officer that murdered Pompey,	and threats the throat of that his officer

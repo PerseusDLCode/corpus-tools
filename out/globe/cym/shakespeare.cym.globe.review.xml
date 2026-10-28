@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-21">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 194cb58; sources: cym.xml sha256 14ba1d89469e213b; shared-lines.tsv sha256 2f6cd881a87f60ca; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-28">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 0b618c3; sources: cym.xml sha256 14ba1d89469e213b; shared-lines.tsv sha256 bf3e4d6f93fcf9c0; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -5689,36 +5689,36 @@
       <sp who="clo.">
         <speaker>Clo.</speaker>
         <p>
-          <!-- REVIEW words: both witnesses read 'Milford¬ Haven?'; the P4 reads 'Milford-Haven?' --><milestone unit="line" ed="Globe" n="153"/>How long is't since she went to Milford-Haven? </p>
+          <!-- REVIEW words: both witnesses read 'Milford¬ Haven?'; the P4 reads 'Milford-Haven?' --><!-- REVIEW dropped: shared-lines.tsv: the page prints a row here, beginning 'milfordhaven', that the witness's OCR lost; this line starts there (basis image+schmidt, checked 2026-10-28-cliff) --><milestone unit="line" ed="Globe" n="153"/>How long is't since she went to <milestone unit="line" ed="Globe" n="154"/>Milford-Haven? </p>
       </sp>
       <sp who="pis.">
         <speaker>Pis.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="154"/>She can scarce be there yet. </p>
+          <milestone unit="line" ed="Globe" n="155"/>She can scarce be there yet. </p>
       </sp>
       <sp who="clo.">
         <speaker>Clo.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="155"/>Bring this apparel to my chamber; that <milestone unit="line" ed="Globe" n="156"/>is the second
-       thing that I have commanded thee: <milestone unit="line" ed="Globe" n="157"/>the third is, that thou
-       wilt be a voluntary mute to <milestone unit="line" ed="Globe" n="158"/>my design. Be but duteous, and true <milestone unit="line" ed="Globe" n="159"/>preferment shall tender itself to thee. My revenge is <milestone unit="line" ed="Globe" n="160"/>now at Milford: would I had wings to follow
-       it! <milestone unit="line" ed="Globe" n="161"/>Come, and be true. <stage type="exit">[Exit.</stage>
+          <milestone unit="line" ed="Globe" n="156"/>Bring this apparel to my chamber; that <milestone unit="line" ed="Globe" n="157"/>is the second
+       thing that I have commanded thee: <milestone unit="line" ed="Globe" n="158"/>the third is, that thou
+       wilt be a voluntary mute to <milestone unit="line" ed="Globe" n="159"/>my design. Be but duteous, and true <milestone unit="line" ed="Globe" n="160"/>preferment shall tender itself to thee. My revenge is <milestone unit="line" ed="Globe" n="161"/>now at Milford: would I had wings to follow
+       it! <milestone unit="line" ed="Globe" n="162"/>Come, and be true. <stage type="exit">[Exit.</stage>
         </p>
       </sp>
       <sp who="pis.">
         <speaker>Pis.</speaker>
         <l>
-          <milestone unit="line" ed="Globe" n="162"/>Thou bid'st me to my loss: for true to <lb/>thee </l>
+          <milestone unit="line" ed="Globe" n="163"/>Thou bid'st me to my loss: for true to <lb/>thee </l>
         <l>
-          <milestone unit="line" ed="Globe" n="163"/>Were to prove false, which I will never be, </l>
+          <milestone unit="line" ed="Globe" n="164"/>Were to prove false, which I will never be, </l>
         <l>
-          <milestone unit="line" ed="Globe" n="164"/>To him that is most true. To Milford go, </l>
+          <milestone unit="line" ed="Globe" n="165"/>To him that is most true. To Milford go, </l>
         <l>
-          <milestone unit="line" ed="Globe" n="165"/>And find not her whom thou pursuest. Flow, <lb/>flow, </l>
+          <milestone unit="line" ed="Globe" n="166"/>And find not her whom thou pursuest. Flow, <lb/>flow, </l>
         <l>
-          <milestone unit="line" ed="Globe" n="166"/>You heavenly blessings, on her! This fool's <lb/>speed </l>
+          <milestone unit="line" ed="Globe" n="167"/>You heavenly blessings, on her! This fool's <lb/>speed </l>
         <l>
-          <!-- REVIEW words: both witnesses read 'labour'; the P4 reads 'labor' --><milestone unit="line" ed="Globe" n="167"/>Be cross'd with slowness; labor be his meed! <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads '[Exit.' --><stage type="exit">[Exit. </stage>
+          <!-- REVIEW words: both witnesses read 'labour'; the P4 reads 'labor' --><milestone unit="line" ed="Globe" n="168"/>Be cross'd with slowness; labor be his meed! <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads '[Exit.' --><stage type="exit">[Exit. </stage>
         </l>
       </sp>
     </div>

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.shr.globe.xml sha256 d695c543fab96a37; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.shr.globe.xml sha256 ad69492358bfaa06; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 A2	A,	3.1.74	Shr. III, 1, 74	headword on cited line							a re to plead hortensios passion
 Abjure	Abjure,	1.1.33	Shr. I, 1, 33	headword on cited line							as ovid be an outcast quite abjured
@@ -593,7 +593,7 @@ Harbinger	Harbinger,	4.2.12	2, 12	headword not found near cited line							you t
 Hard2	Hard,	4.2.80	Shr. IV, 2, 80	quotation on cited line						that goes hard	my life sir how i pray for that goes hard
 Hard2	Hard,	4.4.109	Shr. IV, 4, 109	quotation on cited line						it shall go hard if Cambio go without her,	it shall go hard if cambio go without her
 Harsh	Harsh,	3.2.107	Shr. III, 2, 107	quotation on cited line						tedious it were to tell and harsh to hear,	tedious it were to tell and harsh to hear
-Harsh	Harsh,	5.2.183	V, 2, 183	headword off by 1	5.2.184	1					toward
+Harsh	Harsh,	5.2.183	V, 2, 183	headword on cited line							but a harsh hearing when women are froward
 Hasty	Hasty,	4.3.169	Shr. IV, 3, 169	headword on cited line							take no unkindness of his hasty words
 Hasty-witted	Hasty-witted,	5.2.40	Shr. V, 2, 40	headword on cited line							head and butt an hastywitted body
 Hatch3	Hatch,	1.1.211	Shr. I, 1, 211	headword on cited line							tis hatched and shall be so tranio at once
@@ -1154,7 +1154,7 @@ Speed2	Speed,	2.1.283	Shr. II, 283	headword on cited line	2.1.285		100%			it wer
 Speed2	Speed,	1.2.247	Shr. I, 2, 247	headword on cited line							though paris came in hope to speed alone
 Speed2	Speed,	2.1.303	II, 303	headword on cited line							is this your speeding nay then good night our part
 Speed2	Speed,	3.2.53	Shr. III, 2, 53	quotation on cited line						sped with spavins,	fashions full of windgalls sped with spavins
-Speed2	Speed,	5.2.185	V, 2, 185	quotation off by 2	5.2.187	2	100%			we three are married, but you two are sped,	froward
+Speed2	Speed,	5.2.185	V, 2, 185	quotation on cited line						we three are married, but you two are sped,	we three are married but you two are sped
 Spite1	Spite,	4.3.2	Shr. IV, 3, 2	quotation on cited line						the more my wrong, the more his spite appears,	the more my wrong the more his spite appears
 Spite2	Spite,	4.3.11	Shr. IV, 3, 11	quotation on cited line						that which spites me more than all these wants,	and that which spites me more than all these wants
 Spleen	Spleen,	3.2.10	Shr. III, 2, 10	quotation on cited line						a mad-brain rudesby full of spleen	unto a madbrain rudesby full of spleen
@@ -1249,7 +1249,7 @@ Throughout1	Throughout,	2.1.69	Shr. II, 69	quotation on cited line						a man we
 Thrust2	Thrust,	1.2.55	Shr. I, 2, 55	quotation on cited line						I have thrust myself into this maze, haply to wive and thrive,	and i have thrust myself into this maze
 Thunder2	Thunder,	1.2.205	Shr. I, 2, 205	quotation on cited line						have I not heard . . . heaven's artillery thunder in the skies?	and heavens artillery thunder in the skies
 Tight	Tight,	2.1.381	Shr. II, 381	quotation on cited line						my father hath . . . twelve tight galleys,	and twelve tight galleys these will i assure her
-Toward1	Toward,	5.2.182	Shr. V, 2, 182	quotation on cited line						'tis a good hearing when children are toward	tis a good hearing when children are
+Toward1	Toward,	5.2.182	Shr. V, 2, 182	quotation on cited line						'tis a good hearing when children are toward	tis a good hearing when children are toward
 Toward2	Toward,	1.1.68	Shr. I, 1, 68	quotation on cited line						here's some good pastime toward	hush master heres some good pastime toward
 Toward2	Toward,	5.1.14	V, 1, 14	quotation on cited line						some cheer is toward	and by all likelihood some cheer is toward
 Toward3	Toward,	5.1.10	Shr. V, 1, 10	quotation on cited line						bears more toward the market-place,	my fathers bears more toward the marketplace
@@ -1357,7 +1357,7 @@ Widowhood	Widowhood,	2.1.125	Shr. II, 125	quotation on cited line						I'll assu
 Windgalls	Windgalls,	3.2.53	Shr. III, 2, 53	headword on cited line							fashions full of windgalls sped with spavins
 Window	Window,	5.1.32	Shr. V, 1, 32	quotation on cited line						looking out at the window	and here looking out at the window
 Window	Window,	5.1.32	Shr. V, 1, 32	headword on cited line							and here looking out at the window
-Winner	Winner,	5.2.187	Shr. V, 2, 187	headword off by 3	5.2.190	3					we three are married but you two are sped
+Winner	Winner,	5.2.187	Shr. V, 2, 187	headword on cited line							and being a winner god give you good night
 Withhold	Withhold	1.2.121	Shr. I, 2, 121	headword on cited line							and her withholds from me and other more
 Witless	Witless	2.1.266	Shr. II, 266	headword on cited line							a witty mother witless else her son
 Witty	Witty,	2.1.266	Shr. II, 266	headword on cited line							a witty mother witless else her son

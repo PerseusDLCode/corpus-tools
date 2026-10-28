@@ -1,21 +1,21 @@
 # Schmidt smoke test: The Taming of the Shrew
 
-Sources: shakespeare.shr.globe.xml sha256 d695c543fab96a37; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.shr.globe.xml sha256 ad69492358bfaa06; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of The Taming of the Shrew in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 
-- **All citations:** 1291/1372 (94.1%) pass.
-- **With a quotation:** 780/793 (98.4%) have it on the cited line.
-- **Headword only:** 511/579 (88.3%) have it on the cited line.
+- **All citations:** 1294/1372 (94.3%) pass.
+- **With a quotation:** 781/793 (98.5%) have it on the cited line.
+- **Headword only:** 513/579 (88.6%) have it on the cited line.
 
 | Verdict | Citations |
 |---|---|
-| quotation on cited line | 644 |
-| headword on cited line | 547 |
+| quotation on cited line | 645 |
+| headword on cited line | 549 |
 | quotation on cited line, with differences | 100 |
 | not a citation of this play | 27 |
 | headword not found near cited line | 27 |
-| headword off by 1 | 9 |
+| headword off by 1 | 8 |
 | quotation not found; headword not found near cited line | 4 |
 | prose row break | 3 |
 | quotation off by 1 | 3 |
@@ -23,8 +23,6 @@ Every citation of The Taming of the Shrew in Schmidt's *Shakespeare-Lexicon*, ch
 | quotation in another scene | 2 |
 | quotation off by 3 | 1 |
 | quotation elsewhere in scene | 1 |
-| quotation off by 2 | 1 |
-| headword off by 3 | 1 |
 
 ## Runs
 
@@ -83,7 +81,6 @@ None.
 | 1.1.95 | Shr. I, 1, 95 | Gremio | headword off by 1 | 1.1.96 |  | fit to instruct her youth if you hortensio |
 | 2.297 | Shr. II, 297 | Grissel | not a citation of this play |  |  |  |
 | 4.2.12 | 2, 12 | Harbinger | headword not found near cited line |  |  | you that durst swear that your mistress bianca |
-| 5.2.183 | V, 2, 183 | Harsh | headword off by 1 | 5.2.184 |  | toward |
 | 4.1.96 | Shr. IV, 1, 96 | Horse-tail | prose row break | 4.1.97 |  | presume to touch a hair of my masters |
 | 3.2.77 | Shr. III, 2, 77 | Howsoe'er | quotation off by 1 | 3.2.76 | I am glad he's come, howsoe'er he comes, | why sir he comes not |
 | 1.1.157 | Shr. I, 1, 157 | Idleness | headword off by 1 | 1.1.156 |  | and now in plainness do confess to thee |
@@ -109,11 +106,9 @@ None.
 | 4.1.3 | 1, 3 | Snipe | headword not found near cited line |  |  | beaten was ever man so raved was ever man |
 | 4.1.3 | 1, 3 | Snipe | headword not found near cited line |  |  | beaten was ever man so raved was ever man |
 | 3.1.76 | III, 1, 76 | Sol | headword off by 1 | 3.1.77 |  | c fa ut that loves with all affection |
-| 5.2.185 | V, 2, 185 | Speed | quotation off by 2 | 5.2.187 | we three are married, but you two are sped, | froward |
 | 1.1.175 | Shr. I, 1, 175 | Strond | headword not found near cited line |  |  | when with his knees he kissed the cretan strand |
 | 3.2.44 | Shr. Ind. 2, 44. | Studded | quotation not found; headword not found near cited line |  | their harness studded with gold and pearl, | and an old jerkin a pair of old breeches thrice |
 | 4.1.92 | Shr. IV, 1, 92 | Sugarsop | headword not found near cited line |  |  | nicholas philip walter suga sop and the rest |
 | 3.1.12 | Shr. III, 1, 12 | Usual | headword not found near cited line |  |  | after his studies or his unusual pain |
 | 3.2.56 | Shr. III, 2, 56 | Waid | headword not found near cited line |  |  | bots swayed in the back and shouldershotten |
 | 1.2.155 | Shr. I, 2, 155 | Whate'er | headword off by 1 | 1.2.154 |  | wateer i read to her ill plead for you |
-| 5.2.187 | Shr. V, 2, 187 | Winner | headword off by 3 | 5.2.190 |  | we three are married but you two are sped |

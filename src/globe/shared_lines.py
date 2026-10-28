@@ -38,7 +38,13 @@ cuts one line in two, and one corrects a number:
             II.3 "SONG."; the dirge in IV.2 has the same title and is not
             counted, so no rule can say which): first_half is the first words
             of the line above, second_half the heading's words.
-  dropped   a row the page prints and the OCR of the witness it is built
+  stage     a stage direction whose rows the Globe numbers as lines (The
+            Tempest I.1, the cries within, "Mercy on us!" ... "We split, we
+            split, we split!", five rows, 64-66): first_half is the first
+            words of the line above, second_half the direction's first
+            words. Its rows make lines as verse rows do: a row in the start
+            band opens one, a turnover continues it.
+  dropped  a row the page prints and the OCR of the witness it is built
             from lost (2 Henry IV II.1 p.416, Michigan; Trent has it), so its
             words ran on in the line above: first_half is the first words of that line,
             second_half the P4 words the lost row begins with (a word
@@ -93,7 +99,7 @@ COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
 KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount", "inset",
-         "heading", "dropped")
+         "heading", "dropped", "stage")
 # The kinds that decide where a Globe line begins, which the header counts
 # (canonical-engLit doc/agenda.org #build/header-junctions): not the numeral
 # kinds, and not a lacuna or a heading, which the page prints as a line of its

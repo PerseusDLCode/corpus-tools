@@ -104,8 +104,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-19">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 54e7814; sources: tmp.xml sha256 fd696947587b5429; shared-lines.tsv sha256 21edd68f055a68c3; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-10-28">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 444dc11; sources: tmp.xml sha256 cf9c16c84ed26ecd; shared-lines.tsv sha256 bf3e4d6f93fcf9c0; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -378,31 +378,31 @@
           <lb/>He'll be hang'd yet, </l>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>Though every drop of water swear against it </l>
-        <l>
-          <milestone unit="line" ed="Globe" n="63"/>And gape at widest to glut him. <lb/>
-          <!-- REVIEW words: both witnesses read 'IA'; the P4 reads '[A' --><stage>[A confused noise within: 'Mercy on us!'-- <lb/>'We split, we split!'--'Farewell
-                my wife and <lb/>children!'-- <lb/>'Farewell, brother'--'We
+        <l><!-- REVIEW verse-prose: one P4 <l> holds 4 Globe line starts: P4 tags this as one verse line, the page prints more -->
+          <milestone unit="line" ed="Globe" n="63"/>And gape at widest to glut him. <milestone unit="line" ed="Globe" n="64"/>
+          <!-- REVIEW stage: shared-lines.tsv: the Globe numbers the rows of this stage direction as lines, from line 64 (basis image+p4+schmidt, checked 2026-10-28-cliff) --><!-- REVIEW words: both witnesses read 'IA'; the P4 reads '[A' --><stage>[A confused noise within: 'Mercy on us!'-- <milestone unit="line" ed="Globe" n="65"/>'We split, we split!'--'Farewell
+                my wife and <lb/>children!'-- <milestone unit="line" ed="Globe" n="66"/>'Farewell, brother'--'We
                 split, we split, we <lb/>split!']</stage>
         </l>
       </sp>
       <sp who="ant.">
         <speaker>Ant.</speaker>
         <l>
-          <milestone unit="line" ed="Globe" n="64"/>Let's all sink with the king. </l>
+          <milestone unit="line" ed="Globe" n="67"/>Let's all sink with the king. </l>
       </sp>
       <sp who="seb.">
         <speaker>Seb.</speaker>
         <l><!-- REVIEW witness: p.2 taken from trent/kraken: miun/kraken:1 trent/kraken:0 (total count error) --><!-- REVIEW page: p.2 trent/kraken leaf 0018 -->
-          <milestone unit="line" ed="Globe" n="65"/>Let's take leave of him. <lb/>
+          <milestone unit="line" ed="Globe" n="68"/>Let's take leave of him. <lb/>
           <stage type="exit">[Exeunt Ant. and Seb.</stage>
         </l>
       </sp>
       <sp who="gon.">
         <speaker>Gon.</speaker>
         <p>
-          <milestone unit="line" ed="Globe" n="66"/>Now would I give a thousand furlongs <milestone unit="line" ed="Globe" n="67"/>of sea for an
-              acre of barren ground, long heath, <milestone unit="line" ed="Globe" n="68"/>brown furze, any
-              thing. The wills above be <milestone unit="line" ed="Globe" n="69"/>done! but I would fain die a
+          <milestone unit="line" ed="Globe" n="69"/>Now would I give a thousand furlongs <milestone unit="line" ed="Globe" n="70"/>of sea for an
+              acre of barren ground, long heath, <milestone unit="line" ed="Globe" n="71"/>brown furze, any
+              thing. The wills above be <milestone unit="line" ed="Globe" n="72"/>done! but I would fain die a
               dry death. <stage type="exit">[Exeunt.</stage>
         </p>
       </sp>
@@ -6605,6 +6605,23 @@
         </l>
       </sp>
     </div>
+  </div>
+  <div type="act" n="epilogue">
+    <lb/>
+    <head>EPILOGUE.</head>
+    <lb/>
+    <stage>SPOKEN BY PROSPERO.</stage>
+    <sp who="pros.">
+      <speaker>Pros.</speaker>
+      <p><!-- REVIEW inset: shared-lines.tsv: the page sets this line and those after it, to 'let your indulgence', in from the margin, and numbers every row as a line (basis image+p4, checked 2026-10-28-cliff) -->
+        <!-- REVIEW words: both witnesses read 'o’erthrown,'; the P4 reads 'overthrown,' --><milestone unit="line" ed="Globe" n="1"/>Now my charms are all overthrown, <milestone unit="line" ed="Globe" n="2"/>And what strength I
+            have's mine own, <milestone unit="line" ed="Globe" n="3"/>Which is most faint: now, 'tis true,
+              <milestone unit="line" ed="Globe" n="4"/>I must be here confined by you, <milestone unit="line" ed="Globe" n="5"/>Or sent to Naples. Let me not, <milestone unit="line" ed="Globe" n="6"/>Since I have my dukedom got <milestone unit="line" ed="Globe" n="7"/>And pardon'd the
+            deceiver, dwell <milestone unit="line" ed="Globe" n="8"/>In this bare island by your spell; <milestone unit="line" ed="Globe" n="9"/>But release me from my bands <milestone unit="line" ed="Globe" n="10"/>With the help of your good hands: <milestone unit="line" ed="Globe" n="11"/>Gentle breath of yours my sails <milestone unit="line" ed="Globe" n="12"/>Must fill, or else
+            my project fails, <milestone unit="line" ed="Globe" n="13"/>Which was to please. Now I want <milestone unit="line" ed="Globe" n="14"/>Spirits to enforce, art to enchant, <milestone unit="line" ed="Globe" n="15"/>And my ending is despair, <milestone unit="line" ed="Globe" n="16"/>Unless I
+            be relieved by prayer, <milestone unit="line" ed="Globe" n="17"/>Which pierces so that it
+            assaults <milestone unit="line" ed="Globe" n="18"/>Mercy itself and frees all faults. <milestone unit="line" ed="Globe" n="19"/>As you from crimes would pardon'd be, <milestone unit="line" ed="Globe" n="20"/>Let your indulgence set me free.</p>
+    </sp>
   </div>
 </body></text>
 </TEI>

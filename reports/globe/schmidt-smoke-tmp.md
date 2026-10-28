@@ -1,26 +1,24 @@
 # Schmidt smoke test: The Tempest
 
-Sources: shakespeare.tmp.globe.xml sha256 215442e06a48c766; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.tmp.globe.xml sha256 2231dee9085e3257; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of The Tempest in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 
-- **All citations:** 1676/1766 (94.9%) pass.
-- **With a quotation:** 1140/1180 (96.6%) have it on the cited line.
-- **Headword only:** 536/586 (91.5%) have it on the cited line.
+- **All citations:** 1683/1766 (95.3%) pass.
+- **With a quotation:** 1142/1180 (96.8%) have it on the cited line.
+- **Headword only:** 541/586 (92.3%) have it on the cited line.
 
 | Verdict | Citations |
 |---|---|
-| quotation on cited line | 880 |
-| headword on cited line | 604 |
+| quotation on cited line | 882 |
+| headword on cited line | 609 |
 | quotation on cited line, with differences | 192 |
 | not a citation of this play | 36 |
 | headword not found near cited line | 25 |
 | quotation off by 1 | 6 |
-| headword off by 3 | 5 |
 | headword off by 1 | 5 |
 | prose row break | 5 |
 | quotation not found; headword not found near cited line | 3 |
-| quotation off by 3 | 2 |
 | quotation off by 2 | 1 |
 | quotation elsewhere in scene | 1 |
 | quotation in another scene | 1 |
@@ -31,21 +29,17 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 
 | Scene | Cited lines | Offset | Citations |
 |---|---|---|---|
-| 1.1 | 69-72 | -3 | 7 |
 | 2.2 | 126-130 | -1 | 6 |
 
 ## Every failure
 
 | Cited | Schmidt | Headword | Verdict | Found at | Quotation | Our line |
 |---|---|---|---|---|---|---|
-| 1.1.71 | Tp. I, 1, 71 | Above | headword off by 3 | 1.1.68 |  | (no such line) |
 | 5.276 | Tp. V, 276 | Acknowledge | not a citation of this play |  | this thing of darkness I acknowledge mine, |  |
-| 1.1.70 | Tp. I, 1, 70 | Acre | quotation off by 3 | 1.1.67 | an acre of barren ground, | (no such line) |
 | 5.304 | Tp. V, 304 | Away | not a citation of this play |  | go quick away |  |
 | 4.1.224 | Tp. IV, 224 | Belong | quotation off by 1 | 4.1.225-226 | we know what belongs to a frippery, | let it alone thou fool it is but trash |
 | 3.2.38 | III, 2, 38 | Bite | headword off by 1 | 3.2.37 |  | prithee |
 | 5.241.83 | V, 241 | Bravely | not a citation of this play |  | was't well done? b., my diligence, |  |
-| 1.1.71 | Tp. I, 1, 71 | Brown | quotation off by 3 | 1.1.68 | brown furze, | (no such line) |
 | 4.112 | Tp. IV, 112 | Bunch | not a citation of this play |  | vines with clustering bunches, |  |
 | 3.1.17 | Tp. III, 1, 17 | Burn | headword off by 1 | 3.1.18 |  | burnt up those logs that you are enjoined to pile |
 | 3.1.15 | Tp. III, 1, 15 | Busyless | headword not found near cited line |  |  | most busy lest when i do it alas now pray you |
@@ -65,16 +59,12 @@ Stretches where 3 or more citations in a row, in one scene, are off by the same 
 | 5.241 | Tp. V, 241 | Diligence | not a citation of this play |  | was't well done? Bravely, my diligence |  |
 | 2.1.17 | Tp. II, 1, 17 | Dollar | quotation off by 2 | 2.1.19 | dolour: | comes to the entertainer |
 | 1.2.29 | Shr. Ind. 2, 29. | Droop | not a citation of this play |  | that makes your servants droop |  |
-| 1.1.72 | Tp. I, 1, 72 | Dry | headword off by 3 | 1.1.69 |  | (no such line) |
 | 2.1.63 | Tp. II, 1, 63 | Dye | headword not found near cited line |  |  | freshness and glosses being rather newdyed |
 | 2.2.131 | Tp. II, 2, 131 | Earthly | prose row break | 2.2.130 | the liquor is not earthly | here swear then how thou escapedst |
 | 1.2.125 | Tp. I, 2, 125 | Extol | headword not found near cited line |  |  | should presently extirpate me and mine |
 | 4.1.225 | Tp. IV, 225 | Frippery | headword off by 1 | 4.1.226 |  | o ho monster we know what belongs |
-| 1.1.69 | Tp. I, 1, 69 | Furlong | headword off by 3 | 1.1.66 |  | done but i would fain die a dry death |
-| 1.1.71 | Tp. I, 1, 71 | Furze | headword off by 3 | 1.1.68 |  | (no such line) |
 | 5.280 | Tp. V, 280 | Gíld | not a citation of this play |  | this grand liquor that hath gílded them, |  |
 | 5.280.274 | V, 280 | Grand | not a citation of this play |  | this grand liquor, |  |
-| 1.1.70 | Tp. I, 1, 70 | Heath | headword off by 3 | 1.1.67 |  | (no such line) |
 | 1.2.17 | Shr. Ind. 2, 17. | Infuse | not a citation of this play |  | infused with so foul a spirit, |  |
 | 1.1.46 | Tp. I, 1, 46 | Insolent | prose row break | 1.1.47 |  | hang cur hang you whoreson |
 | 4.1.60 | Tp. IV, 60 | Iris | headword not found near cited line |  |  | ceres most bounteous lady thy rich leas |

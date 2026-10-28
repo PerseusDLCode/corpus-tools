@@ -1,9 +1,9 @@
-# schmidt_smoke.py; sources: shakespeare.tmp.globe.xml sha256 215442e06a48c766; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.tmp.globe.xml sha256 2231dee9085e3257; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abate	Abate,	4.1.56	Tp. IV, 56	headword on cited line							abates the ardour of my liver well
 Abjure	Abjure,	5.1.51	Tp. V, 51	quotation on cited line						this rough magic I here abjure	i here abjure and when i have required
 Abominable	Abominable,	2.2.163	Tp. II, 2, 163	headword on cited line							an abominable monster
-Above1	Above,	1.1.71	Tp. I, 1, 71	headword off by 3	1.1.68	-3					(no such line)
+Above1	Above,	1.1.71	Tp. I, 1, 71	headword on cited line							brown furze any thing the wills above be
 Abstemious	Abstemious,	4.1.53	Tp. IV, 53	headword on cited line							to the fire i the blood be more abstemious
 Abundance	Abundance,	2.1.163	Tp. II, 1, 163	headword on cited line							of it own kind all foison all abundance
 Abysm	Abysm,	1.2.50	Tp. I, 2, 50	headword on cited line							in the dark backward and abysm of time
@@ -12,7 +12,7 @@ Acknowledge	Acknowledge,	5.276	Tp. V, 276	not a citation of this play						this 
 Acorn	Acorn,	1.2.464	Tp. I, 2, 464	headword on cited line							wherein the acorn cradled follow no
 Acquisition	Acquisition,	4.1.13	Tp. IV, 1, 13	headword on cited line							then as my gift and thine own acquisition
 Acre	Acre,	4.1.81	Tp. IV, 81	quotation on cited line						my bosky acres and my unshrubbed down,	my bosky acres and my unshrubbed down
-Acre	Acre,	1.1.70	Tp. I, 1, 70	quotation off by 3	1.1.67	-3	100%			an acre of barren ground,	(no such line)
+Acre	Acre,	1.1.70	Tp. I, 1, 70	quotation on cited line						an acre of barren ground,	of sea for an acre of barren ground long heath
 Adrian	Adrian,	2.1.28	Tp. II, 1, 28	headword on cited line							which of he or adrian for a good wager
 Advantageous	Advantageous,	2.1.49	Tp. II, 1, 49	quotation on cited line						every thing advantageous to life,	here is every thing advantageous to life
 Adventure2	Adventure,	2.1.187	Tp. II, 1, 187	quotation on cited line						I will not adventure my discretion so weakly,	no i warrant you i will not adventure
@@ -63,7 +63,7 @@ At	At,	2.2.9	Tp. II, 2, 9	quotation on cited line						mow and chatter at me,	so
 At	At,	4.1.114	Tp. IV, 114	headword on cited line							spring come to you at the farthest
 At	At,	1.1.63	Tp. I, 1, 63	quotation on cited line						gape at widest,	and gape at widest to glut him
 At	At,	1.2.70	Tp. I, 2, 70	quotation on cited line						at that time,	the manage of my state as at that time
-At	At,	5.1.4	V, 4	quotation on cited line						at which time,	on the sixth hour at which time my lord
+At	At,	5.1.4	V, 4	quotation on cited line						at which time,	on the sixth hour at which time my lord i must be here confined by you
 At	At,	1.2.228	I, 2, 228	quotation on cited line						at midnight,	thou calldst me up at midnight to fetch dew
 At	At,	4.1.263	IV, 263	quotation on cited line						at this hour,	let them be hunted soundly at this hour
 At	At,	1.2.440	Tp. I, 2, 440	quotation on cited line						at the first sight,	if now twere fit to dot at the first sight
@@ -200,16 +200,16 @@ Breakfast	Breakfast,	5.1.164	Tp. V, 164	headword on cited line							not a relat
 Breast2	Breast,	2.1.116	Tp. II, 1, 116	quotation on cited line						and breasted the surge,	whose enmity he flung aside and breasted
 Brew	Brew,	2.2.19	Tp. II, 2, 19	quotation on cited line						another storm brewing,	off any weather at all and another storm brewing
 Brim	Brim,	4.1.64	Tp. IV, 64	quotation on cited line						thy banks with pioned and twilled brims,	thy banks with pioned and twilled brims
-Brimful	Brimful,	5.1.14	Tp. V, 14	quotation on cited line						brimful of sorrow,	brimful of sorrow and dismay but chiefly
+Brimful	Brimful,	5.1.14	Tp. V, 14	quotation on cited line						brimful of sorrow,	brimful of sorrow and dismay but chiefly spirits to enforce art to enchant
 Brine	Brine,	3.2.74	Tp. III, 2, 74	quotation on cited line						he shall drink nought but brine	he shall drink nought but brine for ill not show him
 Brine	Brine,	1.2.211	Tp. I, 2, 211	quotation on cited line						plunged in the foaming brine	plunged in the foaming brine and quit the vessel
 Brine-pit	Brine-pit,	1.2.338	Tp. I, 2, 338	quotation on cited line						the fresh springs, brine-pits,	the fresh springs brinepits barren place and fertile
 Brood1	Brood,	3.2.113	Tp. III, 2, 113	quotation on cited line, with differences			100%		thee	bring forth brave brood	and bring thee forth brave brood
 Broom-grove	Broom-grove:	4.1.66	Tp. IV, 66	quotation on cited line						thy broom-groves, whose shadow the dismissed bachelor loves, being lass-lorn,	to make cold nymphs chaste crowns and thy broomgroves
-Brown	Brown,	1.1.71	Tp. I, 1, 71	quotation off by 3	1.1.68	-3	100%			brown furze,	(no such line)
+Brown	Brown,	1.1.71	Tp. I, 1, 71	quotation on cited line						brown furze,	brown furze any thing the wills above be
 Brush2	Brush,	1.2.321	Tp. I, 2, 321	quotation on cited line						as wicked dew as e'er my mother brushed with raven's feather from unwholesome fen,	as wicked dew as eer my mother brushed
 Brutish	Brutish,	1.2.357	Tp. I, 2, 357	quotation on cited line						wouldst gabble like a thing most brutish	a thing most brutish i endowed thy purposes
-Budge	Budge,	5.1.11	Tp. V, 11	quotation on cited line						they cannot budge till your release,	they cannot budge till your release the king
+Budge	Budge,	5.1.11	Tp. V, 11	quotation on cited line						they cannot budge till your release,	they cannot budge till your release the king gentle breath of yours my sails
 Buffet2	Buffet,	2.1.114	Tp. II, 1, 114	quotation on cited line						beat,	i saw him beat the surges under him
 Bulk	Bulk,	3.1.81	Tp. III, 1, 81	quotation on cited line						all the more it seeks to hide itself, the bigger bulk it shows,	the bigger bulk it shows hence bashful cunning
 Bully-monster	Bully-monster	5.1.258	Tp. V, 258	headword on cited line						bully):	fortune coragio bullymonster coragio
@@ -254,7 +254,7 @@ Care1	Care,	1.1.10	Tp. I, 1, 10	quotation on cited line						good boatswain, hav
 Care1	Care,	2.1.303	Tp. II, 1, 303	quotation on cited line						if of life you keep a care	if of life you keep a care
 Care1	Care,	5.1.257	Tp. V, 257	quotation on cited line						let no man take care for himself,	no man take care for himself for all is but
 Careful	Careful,	1.2.174	Tp. I, 2, 174	headword on cited line							for vainer hours and tutors not so careful
-Carriage	Carriage,	5.1.3	Tp. V, 3	quotation on cited line						time goes upright with his carriage	goes upright with his carriage hows the day
+Carriage	Carriage,	5.1.3	Tp. V, 3	quotation on cited line						time goes upright with his carriage	goes upright with his carriage hows the day which is most faint now tis true
 Case1	Case,	1.1.35	Tp. I, 1, 35	quotation on cited line						our case is miserable,	advantage if he be not born to be hanged our case
 Case1	Case,	1.1.35	Tp. I, 1, 35	headword on cited line							advantage if he be not born to be hanged our case
 Case1	Case,	2.1.290	II, 1, 290	headword on cited line							we say befits the hour thy case dear friend
@@ -356,7 +356,7 @@ Courtesy2	Courtesy,	1.2.378	Tp. I, 2, 378	headword on cited line							courtsied
 Crabbed	Crabbed,	3.1.8	Tp. III, 1, 8	headword on cited line							ten times more gentle than her fathers crabbed
 Crack2	Crack,	1.2.203	Tp. I, 2, 203	quotation on cited line						the fire and cracks of sulphurous roaring,	and sightoutrunning were not the fire and cracks
 Crack3	Crack,	3.1.26	Tp. III, 1, 26	quotation on cited line						crack my sinews,	i had rather crack my sinews break my back
-Crack3	Crack,	5.1.2	Tp. V, 2	quotation on cited line						my charms crack not,	my charms crack not my spirits obey and time
+Crack3	Crack,	5.1.2	Tp. V, 2	quotation on cited line						my charms crack not,	my charms crack not my spirits obey and time and what strength i haves mine own
 Cradle2	Cradle,	1.2.464	Tp. I, 2, 464	quotation on cited line						husks wherein the acorn cradled,	wherein the acorn cradled follow no
 Cram	Cram,	2.1.106	Tp. II, 1, 106	quotation on cited line, with differences			spacing			you cram these words into mine ear,	you cram these words into mine ears against
 Cramp	Cramp,	1.2.325	Tp. I, 2, 325	headword on cited line							for this be sure tonight thou shalt have cramps
@@ -434,7 +434,7 @@ Discharge1	Discharge,	2.1.254	Tp. II, 1, 254	quotation on cited line						an act
 Discourse1	Discourse,	3.3.39	Tp. III, 3, 39	quotation on cited line						a kind of excellent dumb discourse	of excellent dumb discourse praise in departing
 Discourse1	Discourse,	5.1.303	V, 303	quotation on cited line, with differences			100%		part of it	which I'll waste with such discourse . . .,	with such discourse as i not doubt shall make it
 Discovery	Discovery,	2.1.243	Tp. II, 1, 243	quotation on cited line						ambition cannot pierce a wink beyond, but doubt discovery there,	but doubt discovery there will you grant with me
-Dismay1	Dismay,	5.1.14	Tp. V, 14	headword on cited line							brimful of sorrow and dismay but chiefly
+Dismay1	Dismay,	5.1.14	Tp. V, 14	headword on cited line							brimful of sorrow and dismay but chiefly spirits to enforce art to enchant
 Dismay2	Dismay,	4.1.147	Tp. IV, 147	headword on cited line							as if you were dismayed be cheerful sir
 Disobey	Disobey,	4.1.77	Tp. IV, 1, 77	headword on cited line							dost disobey the wife of jupiter
 Disperse	Disperse,	1.2.220	Tp. I, 2, 220	quotation on cited line						in troops I have dispersed them 'bout the isle,	in troops i have dispersed them bout the isle
@@ -447,7 +447,7 @@ Dissolve	Dissolve,	4.1.154	IV, 154	quotation on cited line, with differences			1
 Distemper2	Distemper,	4.1.145	Tp. IV, 145	quotation on cited line, with differences			100%		till this day	never saw I him touched with anger, so distempered,	saw i him touched with anger so distempered
 Distinctly	Distinctly,	1.2.200	Tp. I, 2, 200	quotation on cited line						on the topmast, the yards and bowsprit, would I flame d., then meet and join,	the yards and bowsprit would i flame distinctly
 Distinctly	Distinctly,	2.1.217	Tp. II, 1, 217	quotation on cited line						thou dost snore distinctly	whiles thou art waking thou dost snore distinctly
-Distract	Distract,	5.1.12	Tp. V, 12	quotation on cited line						abide all three distracted,	his brother and yours abide all three distracted
+Distract	Distract,	5.1.12	Tp. V, 12	quotation on cited line						abide all three distracted,	his brother and yours abide all three distracted must fill or else my project fails
 Distraction	Distraction,	3.3.90	Tp. III, 3, 90	quotation on cited line						all knit up in their distractions,	in their distractions they now are in my power
 Dive	Dive,	1.2.191	Tp. I, 2, 191	headword on cited line							to swim to dive into the fire to ride
 Diversity	Diversity,	5.1.234	Tp. V, 234	quotation on cited line						diversity of sounds,	and moe diversity of sounds all horrible
@@ -467,7 +467,7 @@ Down3	Down,	3.3.6	III, 3, 6	headword on cited line							to the dulling of my sp
 Down3	Down,	3.1.18	III, 1, 18	quotation on cited line						set it down	pray set it down and rest you when this burns
 Down3	Down,	1.1.37	Tp. I, 1, 37	quotation on cited line						down with the topmast,	down with the topmast yare lower
 Down3	Down,	2.2.157	Tp. II, 2, 157	quotation on cited line						down and swear,	come on then down and swear
-Down4	Down,	5.1.16	Tp. V, 16	quotation on cited line						his tears run down his beard,	his tears run down his beard like winters drops
+Down4	Down,	5.1.16	Tp. V, 16	quotation on cited line						his tears run down his beard,	his tears run down his beard like winters drops unless i be relieved by prayer
 Dreg	Dreg	2.2.42	Tp. II, 2, 42	quotation on cited line						I will here shroud till the dregs of the storm be past,	bedfellows i will here shroud till the dregs of
 Drift	Drift,	5.1.29	Tp. V, 29	quotation on cited line						the sole drift of my purpose doth extend not a frown further,	the sole drift of my purpose doth extend
 Drollery	Drollery,	3.3.21	Tp. III, 3, 21	quotation on cited line, with differences			83%	are	were	what are these? a living drollery	a living drollery now i will believe
@@ -475,7 +475,7 @@ Droop	Droop,	1.2.184	Tp. I, 2, 184	quotation on cited line						my fortunes will
 Droop	Droop,	1.2.29	Shr. Ind. 2, 29.	not a citation of this play						that makes your servants droop	
 Dropsy	Dropsy,	4.1.230	Tp. IV, 230	quotation on cited line						the dropsy drown this fool!	the dropsy drown this fool what do you mean
 Drowsiness	Drowsiness,	2.1.199	Tp. II, 1, 199	headword on cited line							what a strange drowsiness possesses them
-Dry1	Dry,	1.1.72	Tp. I, 1, 72	headword off by 3	1.1.69	-3					(no such line)
+Dry1	Dry,	1.1.72	Tp. I, 1, 72	headword on cited line							done but i would fain die a dry death
 Dry1	Dry,	4.1.260	Tp. IV, 260	quotation on cited line						dry convulsions,	with dry convulsions shorten up their sinews
 Dry1	Dry,	1.2.112	Tp. I, 2, 112	quotation on cited line						so dry he was for sway,	so dry he was for sway wi the king of naples
 Dull2	Dull,	3.3.6	Tp. III, 3, 6	quotation on cited line						attached with weariness to the dulling of my spirits,	to the dulling of my spirits sit down and rest
@@ -488,7 +488,7 @@ Earthquake	Earthquake,	2.1.315	Tp. II, 1, 315	headword on cited line							to ma
 Earthy	Earthy,	1.2.273	Tp. I, 2, 273	quotation on cited line, with differences			86%	earthy	earthly	to act her earthy and abhorred commands,	to act her earthly and abhorred commands
 Ease1	Ease,	3.1.30	Tp. III, 1, 30	quotation on cited line						with much more ease	with much more ease for my good will is to it
 Easy1	Easy,	2.1.89	Tp. II, 1, 89	headword on cited line							easy next
-Eaves	Eaves,	5.1.17	Tp. V, 17	headword on cited line							from eaves of reeds your charm so strongly works em
+Eaves	Eaves,	5.1.17	Tp. V, 17	headword on cited line							from eaves of reeds your charm so strongly works em which pierces so that it assaults
 Ebb1	Ebb,	5.1.270	Tp. V, 270	headword on cited line							that could control the moon make flows and ebbs
 Ebb1	Ebb,	1.2.435	Tp. I, 2, 435	quotation on cited line						mine eyes, never since at ebb	who with mine eyes never since at ebb beheld
 Ebb2	Ebb,	5.1.35	Tp. V, 35	headword on cited line							do chase the ebbing neptune and do fly him
@@ -627,20 +627,20 @@ Full2	Full,	3.1.39	Tp. III, 1, 39	headword on cited line							whats dearest to 
 Full2	Full,	1.2.20	Tp. I, 2, 20	quotation on cited line						poor,	than prospero master of a full poor cell
 Full2	Full,	1.2.20	Tp. I, 2, 20	headword on cited line	1.2.155		100%			salt,	than prospero master of a full poor cell
 Fume1	Fume,	5.1.67	Tp. V, 67	quotation on cited line						the ignorant fumes that mantle their clearer reason,	begin to chase the ignorant fumes that mantle
-Furlong	Furlong,	1.1.69	Tp. I, 1, 69	headword off by 3	1.1.66	-3					done but i would fain die a dry death
+Furlong	Furlong,	1.1.69	Tp. I, 1, 69	headword on cited line							now would i give a thousand furlongs
 Furrow1	Furrow,	4.1.135	Tp. IV, 135	headword on cited line							come hither from the furrow and be merry
 Furtherer	Furtherer,	5.1.73	Tp. V, 73	headword on cited line							thy brother was a furtherer in the act
 Fury	Fury,	5.1.26	Tp. V, 26	headword on cited line							yet with my nobler reason gainst my fury
 Fury	Fury,	1.2.392	Tp. I, 2, 392	headword on cited line							allaying both their fury and my passion
 Fury	Fury,	4.1.258	Tp. IV, 258	headword on cited line							fury fury there tyrant there hark hark
-Furze	Furze	1.1.71	Tp. I, 1, 71	headword off by 3	1.1.68	-3					(no such line)
+Furze	Furze	1.1.71	Tp. I, 1, 71	headword on cited line							brown furze any thing the wills above be
 Furze	Furze	4.1.180	IV, 180	headword on cited line							toothed briers sharp furzes pricking goss and thorns
 Gabble2	Gabble,	1.2.356	Tp. I, 2, 356	headword on cited line							know thine own meaning but wouldst gabble like
 Gale	Gale,	5.1.314	Tp. V, 314	quotation on cited line						auspicious gales,	and promise you calm seas auspicious gales
 Gape	Gape,	1.1.63	Tp. I, 1, 63	headword on cited line							and gape at widest to glut him
 Gape	Gape,	1.2.292	Tp. I, 2, 292	quotation on cited line						made gape the pine,	when i arrived and heard thee that made gape
 Garner1	Garner,	4.1.111	Tp. IV, 111	headword on cited line							barns and garners never empty
-Gather	Gather,	5.1.1	Tp. V, 1	quotation on cited line						now does my project gather to a head,	now does my project gather to a head
+Gather	Gather,	5.1.1	Tp. V, 1	quotation on cited line						now does my project gather to a head,	now does my project gather to a head now my charms are all overthrown
 Generation	Generation,	3.3.33	Tp. III, 3, 33	quotation on cited line						our human generation	our human generation you shall find
 Genius	Genius,	4.1.27	Tp. IV, 1, 27	quotation on cited line, with differences			86%	strongest	most opportune place the strongst	the strongest suggestion our worser genius can,	our worser genius can shall never melt
 Gentle-kind	Gentle-kind,	3.3.32	Tp. III, 3, 32	quotation on cited line						their manners are more gentle-kind	their manners are more gentlekind than of
@@ -683,7 +683,7 @@ Hearken	Hearken,	3.2.44	Tp. III, 2, 44	quotation on cited line						to hearken o
 Hearken	Hearken,	1.2.122	Tp. I, 2, 122	quotation on cited line, with differences			100%		being an enemy to me inveterate	: this king of Naples hearkens my brother's suit,	to me inveterate hearkens my brothers suit
 Heart-sorrow	Heart-sorrow,	3.3.81	Tp. III, 3, 81	headword on cited line							upon your heads is nothing but heartsorrow
 Hearty	Hearty,	5.1.111	Tp. V, 111	headword on cited line							a hearty welcome whether thou best he or no
-Heath	Heath,	1.1.70	Tp. I, 1, 70	headword off by 3	1.1.67	-3					(no such line)
+Heath	Heath,	1.1.70	Tp. I, 1, 70	headword on cited line							of sea for an acre of barren ground long heath
 Hedgehog	Hedgehog,	2.2.10	Tp. II, 2, 10	headword on cited line							and after bite me then like hedgehogs which
 Heed2	Heed,	2.1.220	Tp. II, 1, 220	quotation on cited line						you must be so too, if heed me,	must be so too if heed me which to do
 Heedfully	Heedfully,	1.2.78	Tp. I, 2, 78	headword on cited line							dost thou attend me sir most heedfully
@@ -726,7 +726,7 @@ Hum2	Hum,	3.2.147	III, 2, 147	quotation on cited line						a thousand twangling 
 Humane	Humane	1.2.265	Tp. I, 2, 265	quotation on cited line						hearing,	to enter human hearing from argier
 Humane	Humane	1.2.265	Tp. I, 2, 265	headword on cited line	1.2.284		100%			shape,	to enter human hearing from argier
 Humane	Humane	3.3.33	III, 3, 33	quotation on cited line, with differences			67%	humane	human	our humane generation,	our human generation you shall find
-Humane	Humane	5.1.20	V, 20	quotation on cited line, with differences			67%	humane		were I humane	mine would sir were i human and mine shall
+Humane	Humane	5.1.20	V, 20	quotation on cited line, with differences			67%	humane		were I humane	mine would sir were i human and mine shall let your indulgence set me free
 Humane	Humane	1.2.346	Tp. I, 2, 346	quotation on cited line, with differences			86%	humane	filth as thou art human	I have used thee with humane care,	filth as thou art with human care and lodged thee
 Humanely	Humanely,	4.1.190	Tp. IV, 190	headword on cited line							humanely taken all all lost quite lost
 Hurry2	Hurry,	1.2.131	Tp. I, 2, 131	quotation on cited line, with differences			86%	hurryed		hurryed thence me and thy crying self,	the ministers for the purpose hurried thence
@@ -1073,7 +1073,7 @@ Over1	Over	2.1.120	Tp. II, 1, 120	quotation on cited line, with differences			10
 Over1	Over	4.1.38	Tp. IV, 38	quotation on cited line						o'er whom I give thee power,	oer whom i give thee power here to this place
 Over1	Over	4.1.38	IV, 1, 38	headword not found near cited line							oer whom i give thee power here to this place
 Over1	Over	4.1.214	Tp. IV, 214	quotation on cited line						though I be o'er ears for my labour,	oer ears for my labour
-Over1	Over	5.1.13	Tp. V, 13	quotation on cited line						the remainder mourning over them,	and the remainder mourning over them
+Over1	Over	5.1.13	Tp. V, 13	quotation on cited line						the remainder mourning over them,	and the remainder mourning over them which was to please now i want
 Overblown	Overblown	2.2.114	Tp. II, 2, 114	quotation on cited line						is the storm o.?	hope now thou art not drowned is the storm
 Overtop	Overtop	1.2.81	Tp. I, 2, 81	quotation on cited line, with differences			80%	overtoping		who to trash for overtoping,	to trash for overtopping new created
 Own1	Own,	5.1.275	Tp. V, 275	quotation on cited line						two of these fellows you must know and own	must know and own this thing of darkness i
@@ -1246,7 +1246,7 @@ Reasonable	Reasonable,	5.1.81	Tp. V, 81	quotation on cited line						their under
 Rectify	Rectify,	5.1.245	Tp. V, 245	quotation on cited line						some oracle must rectify our knowledge,	must rectify our knowledge sir my liege
 Red-hot	Red-hot,	4.1.171	Tp. IV, 171	headword on cited line							i told you sir they were redhot with drinking
 Reed	Reed,	1.2.213	Tp. I, 2, 213	headword on cited line							with hair upstaring then like reeds not hair
-Reed	Reed,	5.1.17	V, 17	headword on cited line							from eaves of reeds your charm so strongly works em
+Reed	Reed,	5.1.17	V, 17	headword on cited line							from eaves of reeds your charm so strongly works em which pierces so that it assaults
 Reel	Reel,	5.1.279	Tp. V, 279	quotation on cited line						Trinculo is reeling ripe,	and trinculo is reeling ripe where should they
 Refresh	Refresh,	3.1.14	Tp. III, 1, 14	headword on cited line							but these sweet thoughts do even refresh my labours
 Refresh	Refresh,	4.1.79	IV, 79	headword on cited line							diffusest honeydrops refreshing showers
@@ -1255,12 +1255,12 @@ Region	Region,	2.1.256	Tp. II, 1, 256	quotation on cited line						twixt which r
 Rejoice	Rejoice,	5.1.206	Tp. V, 206	headword on cited line							should become kings of naples o rejoice
 Rejoice	Rejoice,	5.1.39	Tp. V, 39	headword on cited line							is to make midnight mushrooms that rejoice
 Rejoice	Rejoice,	3.1.93	Tp. III, 1, 93	quotation on cited line, with differences			86%	rejoiceing	rejoicing	my rejoiceing at nothing can be more,	who are surprised withal but my rejoicing
-Release1	Release,	5.1.11	Tp. V, 11	quotation on cited line						they cannot budge till your release	they cannot budge till your release the king
+Release1	Release,	5.1.11	Tp. V, 11	quotation on cited line						they cannot budge till your release	they cannot budge till your release the king gentle breath of yours my sails
 Release2	Release,	5.1.30	Tp. V, 30	quotation on cited line						release them,	not a frown further go release them ariel
 Release2	Release,	5.1.30	Tp. V, 30	headword on cited line							not a frown further go release them ariel
 Relief	Relief,	2.2.70	Tp. II, 2, 70	quotation on cited line						I will give him some relief	i will give him some relief if it be but for that
 Relish2	Relish,	5.1.23	Tp. V, 23	quotation on cited line						one of their kind, that relish all as sharply,	one of their kind that relish all as sharply
-Remainder	Remainder,	5.1.13	Tp. V, 13	quotation on cited line						abide all three distracted, and the remainder mourning over them,	and the remainder mourning over them
+Remainder	Remainder,	5.1.13	Tp. V, 13	quotation on cited line						abide all three distracted, and the remainder mourning over them,	and the remainder mourning over them which was to please now i want
 Remorse	Remorse,	5.1.76	Tp. V, 76	quotation on cited line						expelled remorse and nature,	expelled remorse and nature who with sebastian
 Rend	Rend,	1.2.294	Tp. I, 2, 294	quotation on cited line						I will rend an oak,	if thou more murmurst i will rend an oak
 Renown1	Renown,	5.1.193	Tp. V, 193	quotation on cited line						of whom so often I have heard renown	of whom so often i have heard renown
@@ -1440,7 +1440,7 @@ Stripe	Stripe,	1.2.345	Tp. I, 2, 345	headword on cited line							whom stripes m
 Stroke2	Stroke,	1.2.333	Tp. I, 2, 333	headword on cited line							thou strokedst me and madest much of me wouldst give me
 Strong-based	Strong-based,	5.1.46	Tp. V, 46	quotation on cited line, with differences			spacing			the strong-based promontory,	with his own bolt the strongbased promon tory
 Strongly	Strongly,	4.1.144	Tp. IV, 144	quotation on cited line						some passion that works him strongly	that works him strongly never till this day
-Strongly	Strongly,	5.1.17	V, 17	quotation on cited line						your charm so strongly works 'em,	from eaves of reeds your charm so strongly works em
+Strongly	Strongly,	5.1.17	V, 17	quotation on cited line						your charm so strongly works 'em,	from eaves of reeds your charm so strongly works em which pierces so that it assaults
 Strut	Strut,	1.2.385	Tp. I, 2, 385	headword on cited line							the strain of strutting chanticleer
 Sty2	Sty,	1.2.342	Tp. I, 2, 342	quotation on cited line						here you sty me in this hard rock,	which first was mine own king and here you sty me
 Subdue	Subdue,	1.2.489	Tp. I, 2, 489	quotation on cited line						this man's threats, to whom I am subdued,	to whom i am subdued are but light to me
@@ -1679,7 +1679,7 @@ Upon1	Upon,	3.2.141	Tp. III, 2, 141	quotation on cited line						mercy upon us,	
 Upon1	Upon,	4.1.108	IV, 108	quotation on cited line						hourly joys be still upon you,	hourly joys be still upon you
 Upon1	Upon,	2.1.321	Tp. II, 1, 321	quotation on cited line						'tis best we stand upon our guard,	thats verily tis best we stand upon our guard
 Upon1	Upon,	1.2.388	Tp. I, 2, 388	quotation on cited line						it waits upon some god o' the island,	it sounds no more and sure it waits upon
-Upright	Upright,	5.1.3	Tp. V, 3	quotation on cited line						time goes upright with his carriage,	goes upright with his carriage hows the day
+Upright	Upright,	5.1.3	Tp. V, 3	quotation on cited line						time goes upright with his carriage,	goes upright with his carriage hows the day which is most faint now tis true
 Up-staring	Up-staring,	1.2.213	Tp. I, 2, 213	quotation on cited line						with hair up-staring	with hair upstaring then like reeds not hair
 Urchin	Urchin,	1.2.326	Tp. I, 2, 326	quotation on cited line, with differences			spacing			urchins shall forth at vast of night that they may work all exercise on thee,	sidestitches that shall pen thy breath up urchins
 Urchin	Urchin,	2.2.10	II, 2, 10	headword not found near cited line							and after bite me then like hedgehogs which

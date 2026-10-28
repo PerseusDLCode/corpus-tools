@@ -290,3 +290,6 @@ page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
 20	miun/kraken	2	17	replace	I'll	I'Il	I'Il	same
 20	miun/kraken	2	20	delete		I		
 20	miun/kraken	2	23	replace	you,	vou,	you,	
+20	miun/kraken	2	24	replace	[Exeunt.	IExeunt.	(Exeunt.	
+20	miun/kraken	2	27	replace	overthrown,	o’erthrown,	o’erthrown,	same
+20	miun/kraken	2	45	replace	you	vou	you	

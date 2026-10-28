@@ -1,6 +1,6 @@
 page	witness_used	tried(witness:total_error)	lines_starting_here	first_line	last_line	printed_numbers	counted_numbers	verdict
-1	miun/kraken	miun/kraken:0	64	1.1.1	1.1.64	11 21 40 60	11 21 40 60	pass
-2	trent/kraken	miun/kraken:1 trent/kraken:0	108	1.1.65	1.2.103	10 20 30 40 50 61 70 80 90 100	10 20 30 40 50 61 70 80 90 100	pass
+1	miun/kraken	miun/kraken:0	67	1.1.1	1.1.67	11 21 40 60	11 21 40 60	pass
+2	trent/kraken	miun/kraken:1 trent/kraken:0	108	1.1.68	1.2.103	10 20 30 40 50 61 70 80 90 100	10 20 30 40 50 61 70 80 90 100	pass
 3	trent/kraken	miun/kraken:table trent/kraken:0	108	1.2.104	1.2.211	110 120 130 140 150 160 170 180 190 201 210	110 120 130 140 150 160 170 180 190 201 210	pass
 4	miun/kraken	miun/kraken:0	101	1.2.212	1.2.312	220 230 240 250 260 280 290 300 310	220 230 240 250 260 280 290 300 310	pass
 5	miun/kraken	miun/kraken:0	99	1.2.313	1.2.411	320 330 341 350 361 370 380 390 400 410	320 330 341 350 361 370 380 390 400 410	pass
@@ -18,4 +18,4 @@ page	witness_used	tried(witness:total_error)	lines_starting_here	first_line	last
 17	miun/kraken	miun/kraken:0	112	4.1.211	5.1.55	220 230 240 250 20 30 40	220 230 240 250 20 30 40	pass
 18	miun/kraken	miun/kraken:0	105	5.1.56	5.1.160	70 80 90 100 110 120 140 160	70 80 90 100 110 120 140 160	pass
 19	miun/kraken	miun/kraken:0	98	5.1.161	5.1.258	170 180 190 200 210 221 240 251	170 180 190 200 210 221 240 251	pass
-20	miun/kraken	miun/kraken:0	60	5.1.259	5.1.318	260 271 280 291 300 310	260 271 280 291 300 310	pass
+20	miun/kraken	miun/kraken:0	80	5.1.259	epilogue.0.20	260 271 280 291 300 310 10 20	260 271 280 291 300 310 10 20	pass

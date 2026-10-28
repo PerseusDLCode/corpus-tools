@@ -1,6 +1,6 @@
-# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tmp.xml (sha256 fd696947587b5429); not the shell's milestones or <l n>
-# transcribed anchors: 177; mapped (the row begins a line): 151; of those, carrying the same number: 144
-# in scenes that pass the gate: 151 mapped; agreeing: 144
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tmp.xml (sha256 cf9c16c84ed26ecd); not the shell's milestones or <l n>
+# transcribed anchors: 179; mapped (the row begins a line): 153; of those, carrying the same number: 146
+# in scenes that pass the gate: 153 mapped; agreeing: 146
 # unmapped (the row begins inside a line): 26; the P4's number is the containing line's for 20, the next line's for 5, neither for 1
 # listed: every disagreement, and every unmapped anchor whose number is neither
 scene	old_n	verdict	new_n	row_inside_line	next_line	note	context

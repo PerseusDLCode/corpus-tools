@@ -1,0 +1,10 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in r3.xml (sha256 d77c30c01a5fd693); not the shell's milestones or <l n>
+# transcribed anchors: 328; mapped (the row begins a line): 319; of those, carrying the same number: 315
+# in scenes that pass the gate: 319 mapped; agreeing: 315
+# unmapped (the row begins inside a line): 9; the P4's number is the containing line's for 7, the next line's for 2, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.4	170	disagree	169				Sec. Murd. A man, as you
+3.1	50	disagree	49				To those whose dealings have deserved
+3.7	120	disagree	121				The lineal glory of your royal
+4.4	80	disagree	79				Q. Eliz. O, thou didst prophesy

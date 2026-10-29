@@ -135,6 +135,9 @@ class Line:
     # starts where the next line does, and its milestone goes in the P4's
     # wordless <l> (emit_tei.wordless_l_before).
     lacuna_at: int | None = None
+    # Numbers the Globe passes over after this line (shared-lines.tsv kind
+    # `skip`): the next line is counted that many more on.
+    skip_after: int = 0
 
     @property
     def start(self) -> int:

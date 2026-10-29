@@ -81,6 +81,7 @@ class NumberState:
     last_num: int | None = None  # last printed number met in this scene ...
     last_num_n: int | None = None  # ... and the count of its line
     last_num_page: int | None = None
+    skip: int = 0  # numbers to pass over before the next line (kind `skip`)
 
 
 def number_page(lines, toks, state: NumberState, page: int, witness: str, carried: int | None = None,
@@ -102,8 +103,9 @@ def number_page(lines, toks, state: NumberState, page: int, witness: str, carrie
             d = toks[ln.start].div
             if d != st.div:
                 st = NumberState(div=d)
-            st.n += 1
+            st.n += 1 + st.skip
             ln.div, ln.n = d, st.n
+            st.skip = ln.skip_after
             num = ln.num
         else:
             d, num = st.div, cnum
@@ -443,7 +445,7 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
         new.insert(k, ln)
         applied.append((ln, r))
     for r in rows:
-        if r.kind in ("separate", "lacuna", "inset", "heading", "dropped", "stage"):
+        if r.kind in ("separate", "lacuna", "inset", "heading", "dropped", "stage", "skip"):
             continue
         if r.kind == "misplaced":
             printed = int(r.first_half)
@@ -494,6 +496,20 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
         fold(first, second)
         new.remove(second)
         applied.append((first, r))
+    # a number the Globe passes over between two lines: mark the first, once
+    # the folds and splits above have made the lines it names
+    for r in [r for r in rows if r.kind == "skip"]:
+        want_a, want_b = tuple(r.first_half.split()), tuple(r.second_half.split())
+        hits = [k for k in range(len(new) - 1)
+                if new[k].div in (r.scene, "")
+                if shared_lines.line_words(new, k, toks, len(want_a)) == want_a
+                and shared_lines.line_words(new, k + 1, toks, len(want_b)) == want_b]
+        if len(hits) != 1:
+            raise shared_lines.TableError(
+                f"shared-lines.tsv: p.{page} skip after {r.first_half!r} / {r.second_half!r} "
+                f"matches {len(hits)} pairs of lines on this page, expected 1")
+        new[hits[0]].skip_after += 1
+        applied.append((new[hits[0] + 1], r))
     # each row applied, by the index of its line once every row is applied:
     # a split or a fold moves the lines after it
     def index(ln) -> int:  # a line folded into another is found in the line that holds its rows
@@ -887,6 +903,10 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                     "misplaced", f"shared-lines.tsv: the page prints {row.first_half}, this line's "
                                  f"number, beside a line near it ({row.second_half!r}) "
                                  f"(basis {row.basis}, {state})")))
+            elif row.kind == "skip":
+                out.append((ln.start, emit_tei.review_comment(
+                    "skip", f"shared-lines.tsv: the Globe passes over a number before this line, "
+                            f"which it counts {ln.n} (basis {row.basis}, {state})")))
             elif row.kind == "dropped":
                 out.append((ln.start, emit_tei.review_comment(
                     "dropped", f"shared-lines.tsv: the page prints a row here, beginning "

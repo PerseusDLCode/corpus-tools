@@ -1,0 +1,417 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+654	miun/kraken	1	17	replace	with	vuith	with	
+654	miun/kraken	1	28	replace	we'll	we ’ll	we’ll	
+654	miun/kraken	1	35	replace	yield	vield	vield	same
+654	miun/kraken	1	51	replace	for 't,	for't,	for’t,	
+654	miun/kraken	1	54	replace	you,	vou,	you,	
+654	miun/kraken	2	1	delete		PERSONÆ. Two Volscian VOLUMNIA, mother to Coriolanus. VIRGILIA, wife to Coriolanus. VALERIA, friend to Virgilia. Gentlewoman, attending on Virgilia. Roman and Volscian Patricians, Ædiles, Lictors, Soldiers, Messengers, Servants to Aufidius, and other Attendants. SCENE: Rome and the neighbourhood; Corioli and the neighbourhood;	PERSONÆ. Two Volscian Guards. VOLUMNIA, mother to Coriolanus. VIRGILIA, wife to Coriolanus. VALERIA, friend to Virgilia. Gentlewoman, attending on Virgilia. Roman and Volscian Senators, Patricians, Ædiles, Lictors, Soldiers, Citizens, Messengers, Servants to Aufidius, and other Attendants. SCENE Rome and the neighbourhood; Corioli and the neighbourhood; Antium.	
+654	miun/kraken	2	19	replace	[Shouts within.]	[houts vithin.	[Shouts zithin.]	
+654	miun/kraken	2	35	replace	we'll	we 'll	we ’ll	
+654	miun/kraken	2	39	replace	neighbors,	neighbours,	neighbours,	same
+654	miun/kraken	2	48	replace	crackling	cracking	cracking	same
+655	miun/kraken	1	18	replace	stale't	stale 't	stale ’t	
+655	miun/kraken	1	21	replace	an't	an ’t	an ’t	same
+655	miun/kraken	1	24	delete		r00		
+655	miun/kraken	1	59	replace	First	Finst	First	
+655	miun/kraken	1	65	replace	you'll	you ’ll	you ’Il	
+655	miun/kraken	2	13	replace	friends,'—this	friends,–this	friends,–this	same
+655	miun/kraken	2	20	replace	to 't?	to't?	to’t?	
+655	miun/kraken	2	48	replace	yourselves	vourselves	yourselves	
+656	trent/kraken	1	15	replace	Hang 'em!	Hang’em!	Hang’em!	same
+656	trent/kraken	1	16	replace	They'll	They ’Il	They 'Il	
+656	trent/kraken	1	34	replace	hang 'em!	hang’em!	hang’em!	same
+656	trent/kraken	1	66	replace	on't:	on 't:	on 't:	same
+656	trent/kraken	2	2	replace	VELUTUS.	VE¬ LUTUS.	VE¬ LUTUS.	same
+656	trent/kraken	2	32	replace	To	1To	To	
+656	trent/kraken	2	33	replace	To Mar.	ITo Mar.I	ITo Mar.]	
+656	trent/kraken	2	37	replace	To	ITo	[To	
+656	trent/kraken	2	65	replace	he's	he ’s	he 's	
+657	miun/kraken	1	5	replace	Marcius	Mareius	Marcius	
+657	miun/kraken	1	16	replace	Exeunt.	IExeunt.	[Exeunt.	
+657	miun/kraken	1	45	replace	appeared	appear'd	appear'd	same
+657	miun/kraken	1	53	replace	you'll	you ’Il	you ’ll	
+657	miun/kraken	1	54	replace	They've	They' ve	They've	
+657	miun/kraken	1	66	replace	Exeunt.	IExeunt.	IExeunt.	same
+657	miun/kraken	2	3	replace	down	dovn	dozon	
+657	miun/kraken	2	3	replace	sew.	sezo.	sewo.	
+657	miun/kraken	2	7	replace	honor	honour	honour	same
+657	miun/kraken	2	53	replace	Exit	LExit	[Exit	
+657	miun/kraken	2	55	replace	He'll	He’Il	He’Il	same
+657	miun/kraken	2	57	replace	with	vvith	vvith	same
+658	miun/kraken	1	1	delete		1		
+658	miun/kraken	1	10	replace	countence.	countenance.	countenance.	same
+658	miun/kraken	1	17	replace	on's	on ’s	on ’s	same
+658	miun/kraken	1	26	replace	I'll	I’Il	I’Il	same
+658	miun/kraken	1	45	replace	I'll	I’Il	I’Il	same
+658	miun/kraken	1	54	replace	your	vour	your	
+658	miun/kraken	1	58	replace	honor;	honour;	honour;	same
+658	miun/kraken	1	69	replace	[Exeunt.	LExeunt.	IExeunt.	
+658	miun/kraken	2	2	replace	with	voith	with	
+658	miun/kraken	2	3	replace	them	thent	them	
+658	miun/kraken	2	15	replace	I'll	I’Il	I’Il	same
+658	miun/kraken	2	26	replace	with	voith	tuo Senatois with	
+658	miun/kraken	2	27	replace	walls.	valls.	walls.	
+658	miun/kraken	2	38	replace	They'll	They ’Il	They’Il	
+658	miun/kraken	2	38	replace	Alarum afar off.	IAlarum afaroff.]	[Alarum afar og]	
+658	miun/kraken	2	53	replace	I'll	I’Il	I’Il	same
+658	miun/kraken	2	58	replace	you,	vou,	you,	
+659	trent/kraken	1	2	replace	fright	flight	flight	same
+659	trent/kraken	1	4	replace	I'll	I’Il	I’Il	same
+659	trent/kraken	1	6	replace	you'll	you’Il	you’Il	same
+659	trent/kraken	1	6	replace	we'll	we ’Il	we’Il	
+659	trent/kraken	1	9	replace	follows	follors	follows	
+659	trent/kraken	1	14	replace	Enters	LEnters	IEnters	
+659	trent/kraken	1	20	replace	Alarum	LA larum	LA larum	same
+659	trent/kraken	1	23	replace	All.	A ll.	Al	
+659	trent/kraken	1	26	delete		so		
+659	trent/kraken	1	47	replace	with	zoith	vuith	
+659	trent/kraken	2	26	replace	Exeunt.	IE -xeunt.	[Exeunt. SCENEVI,	
+659	trent/kraken	2	28	replace	were	vvere	vere	
+659	trent/kraken	2	49	replace	is 't	is’t	is’t	same
+659	trent/kraken	2	64	replace	Within	[Withinl	IWithin]	
+660	miun/kraken	1	68	replace	They	IThey	TThey	
+660	miun/kraken	1	68	replace	wave	nave	wave	
+660	miun/kraken	2	12	replace	And	tAnd	tAnd	same
+660	miun/kraken	2	19	replace	with	vith	with	
+660	miun/kraken	2	19	replace	toward	tozard	toward	
+660	miun/kraken	2	31	replace	Exeunt.	LExeunt.	[Exeunt.	
+660	miun/kraken	2	47	replace	blood	bloo¬	blood	
+660	miun/kraken	2	50	delete		1I	II	
+660	miun/kraken	2	53	replace	in	to	in	
+660	miun/kraken	2	57	replace	Exeunt.	IExeunt.	IExeunt.	same
+660	miun/kraken	2	61	replace	with	vvith	vwith	
+660	miun/kraken	2	61	replace	MARCIUS, with	CIUS, wvith	MAR¬ CIUS, avith	
+661	miun/kraken	1	1	replace	I'll	l’Il	I’Il	
+661	miun/kraken	1	5	replace	glady	gladly	gladly	same
+661	miun/kraken	1	12	replace	with	vvith	with	
+661	miun/kraken	1	12	replace	power,	pouer,	powver,	
+661	miun/kraken	1	52	replace	A	IA	1A	
+661	miun/kraken	2	6	replace	yourself	vourself	yourself	
+661	miun/kraken	2	17	delete		the	the	same
+661	miun/kraken	2	20	replace	Flourish.	FFlourish.	(Flourish.	
+661	miun/kraken	2	29	delete		us,	us,	same
+661	miun/kraken	2	54	replace	Exeunt.	IExeunt.	LExeunt.	
+661	miun/kraken	2	56	replace	flourish.	fourish.	flourish.	
+661	miun/kraken	2	57	replace	two	tavo	aoith tavo	
+662	miun/kraken	1	9	replace	I'll	I’Il	I’ll	
+662	miun/kraken	1	13	replace	valour's	valour ’s	valour’s	
+662	miun/kraken	1	14	replace	by him;	by-him;	by him;	
+662	miun/kraken	1	17	replace	time	times	times	same
+662	miun/kraken	1	25	replace	what	vhat	what	
+662	miun/kraken	1	31	replace	south the	southethe	south the	
+662	miun/kraken	1	35	replace	Exeunt.	LE xeunt.	(Exeunt.	
+662	miun/kraken	1	38	replace	with	qvith	with	
+662	miun/kraken	1	38	replace	two	tyo	tavo	
+662	miun/kraken	2	12	replace	your	vour	your	
+662	miun/kraken	2	37	replace	your	vour	vour	same
+663	miun/kraken	1	1	replace	honorable	honourable	honourable	same
+663	miun/kraken	1	7	replace	of 'em	of’em	of ’em	
+663	miun/kraken	1	11	replace	go	g0	go	
+663	miun/kraken	1	13	replace	ladies, —and	ladies,–and	ladies,–and	same
+663	miun/kraken	1	14	replace	nobler,— whither	nobler,–whither	nobler,–whither	same
+663	miun/kraken	1	17	replace	let's	let ’s	let ’s	same
+663	miun/kraken	1	30	replace	saw 't.	saw’t.	saw’t.	same
+663	miun/kraken	1	39	replace	for 't.	for’t.	for't.	
+663	miun/kraken	1	65	replace	To	ITo	(To	
+663	miun/kraken	2	1	replace	left	lest	lest	same
+663	miun/kraken	2	19	replace	between	betveen	betzoeen	
+663	miun/kraken	2	20	replace	crowned with	crovned vith	crowned vith	
+663	miun/kraken	2	29	replace	Flourish.	IFlourish.	[Flourish.	
+663	miun/kraken	2	36	replace	Kneels.	[neels.	[Kneels.	
+663	miun/kraken	2	49	replace	To Valeria	ITo Valerial	ITo Valerial	same
+663	miun/kraken	2	51	replace	Val.		Vol.	
+663	miun/kraken	2	57	replace	heart,	beart,	heart,	
+663	miun/kraken	2	58	replace	You	Nou	You	
+664	miun/kraken	1	25	replace	lockram 'bout	lockram’bout	lockram 'bout	
+664	miun/kraken	1	35	replace	Phoebus'	Phœbus'	Phœbus'	same
+664	miun/kraken	1	53	replace	do 't.	do’t.	do’t.	same
+664	miun/kraken	2	38	replace	Exeunt.	LExeunt.	LExeunt.	same
+664	miun/kraken	2	40	replace	two	tavo	twvo	
+664	miun/kraken	2	43	replace	Sec. Off.		Sec.Ofr.	
+665	miun/kraken	1	7	replace	honors	honours	honours	same
+665	miun/kraken	1	18	replace	take	tahe	take	
+665	miun/kraken	1	36	replace	To	ITo	ITo	same
+665	miun/kraken	1	40	replace	yield	vield	yield	
+665	miun/kraken	1	44	replace	to	of	of	same
+665	miun/kraken	2	10	replace	Exit.	IExit.	[Exit.	
+665	miun/kraken	2	16	replace	hear it?	hearit?	hear it?	
+665	miun/kraken	2	50	delete		a	a	same
+666	miun/kraken	1	7	replace	make	makze	make	
+666	miun/kraken	1	10	replace	Men.		Men.	
+666	miun/kraken	1	21	replace	to 't:	to’t:	to’t:	same
+666	miun/kraken	1	22	replace	customs	custom	custom	same
+666	miun/kraken	1	34	replace	upon 't.	upon’t.	upon’t.	same
+666	miun/kraken	1	41	replace	to use	touse	touse	same
+666	miun/kraken	1	46	replace	we'll	we’Il	we’Il	same
+666	miun/kraken	1	48	replace	Exeunt.	LExeunt.	IExeunt.	
+666	miun/kraken	2	28	replace	gown	goun	gozon	
+666	miun/kraken	2	29	replace	with	vith	with	
+666	miun/kraken	2	31	replace	behavior.	behaviour.	behaviour.	same
+666	miun/kraken	2	37	replace	I'll	I’Il	I’Il	same
+666	miun/kraken	2	42	replace	done't?	done t?	done 't?	
+666	miun/kraken	2	44	replace	sir,'—Plague	sir,–Plague	sir, —Plague	
+666	miun/kraken	2	45	replace	pace:—'Look,	pace:— Look,	pace:— Look,	same
+666	miun/kraken	2	56	replace	by 'em.	by’em.	by ’em.	
+666	miun/kraken	2	57	replace	You'll	You 'Il	You’Il	
+666	miun/kraken	2	58	replace	I'll	I’Il	I’ll	
+666	miun/kraken	2	60	replace	Exit.	IExit.	[Exit.	
+666	miun/kraken	2	62	replace	two	tqo	tuo	
+667	miun/kraken	1	14	replace	ha't,	ha' it,	ha’t,	
+667	miun/kraken	1	15	replace	There's	There ’s	There ’s	same
+667	miun/kraken	1	18	replace	And	An	An	same
+667	miun/kraken	1	19	replace	Exeunt	IExeunt	(Exeunt	
+667	miun/kraken	1	33	replace	learn	earn	earn	same
+667	miun/kraken	1	36	replace	practice	practise	practise	same
+667	miun/kraken	1	49	replace	Exeunt.	IExeunt.	LExeunt.	
+667	miun/kraken	1	55	replace	to 't:	to’t:	to’t	
+667	miun/kraken	1	56	replace	do 't,	do’t,	do’t,	same
+667	miun/kraken	1	61	replace	this.	thus.	thus.	same
+667	miun/kraken	1	64	replace	more	moe	moe	same
+667	miun/kraken	2	12	replace	Exeunt.	LExeunt.	IExeunt.	
+667	miun/kraken	2	29	replace	I'll	I’Il	I’Il	same
+667	miun/kraken	2	32	replace	keep	kcep	keep	
+667	miun/kraken	2	36	replace	Exeunt	LExeunt	[Exeunt	
+667	miun/kraken	2	38	replace	at's	at ’s	at ’s	same
+668	miun/kraken	1	7	replace	see 't,	see’t,	see’t,	same
+668	miun/kraken	1	9	replace	yield your	vield vour	yield your	
+668	miun/kraken	2	32	replace	your	vour	your	
+668	miun/kraken	2	36	replace	when	wnen	wnen	same
+668	miun/kraken	2	40	replace	Exeunt	[E xeunt	(Exeunt	
+668	miun/kraken	2	46	replace	anger. Sic.	angen.	anger. Sic.	
+668	miun/kraken	2	50	replace	Exeunt.	IExeunt.	IExeunt.	same
+668	miun/kraken	2	66	replace	Com.		Com.	
+669	trent/kraken	1	6	delete		1o	Vielded	
+669	trent/kraken	1	52	replace	Suffer 't,	Suffer’t,	Suffer’t,	same
+669	trent/kraken	2	17	replace	speak 't	speak’t	speak’t	same
+670	miun/kraken	1	25	replace	I'll	I’Il	I ’Il	
+670	miun/kraken	1	29	replace	They	That	They	
+670	miun/kraken	1	42	replace	request it;	requestit;	request it;	
+670	miun/kraken	1	64	replace	you,—	vou.—	you,	
+670	miun/kraken	1	65	replace	will be	will-be	will be	
+670	miun/kraken	1	69	replace	To	1To	tTo	
+670	miun/kraken	2	16	replace	what's not	what’smnot	what’s not	
+670	miun/kraken	2	25	replace	Ædile	Ædilel	Ædilel	same
+670	miun/kraken	2	31	replace	We'll	We ’Il	We’Il	
+670	miun/kraken	2	32	replace	Com.		Com.	
+670	miun/kraken	2	37	replace	with	vith	wvith	
+670	miun/kraken	2	40	replace	all	al	all	
+670	miun/kraken	2	44	replace	&c.	&ec.	eec.	
+670	miun/kraken	2	45	replace	crying	crving	crying	
+671	trent/kraken	1	19	replace	yield!	vield	vield!	
+671	trent/kraken	1	23	replace	To Brutus	ITo Brutusl	ITo Brutus)	
+671	trent/kraken	1	41	replace	himl In	him! Un	him! IIn	
+671	trent/kraken	2	8	replace	I'll	I’Il	I'Il	
+671	trent/kraken	2	13	replace	Exeunt	LExeunt	(Exeunt	
+671	trent/kraken	2	21	replace	within.	vithin.	within.	
+671	trent/kraken	2	27	replace	with	wvith	with	
+671	trent/kraken	2	47	replace	comes't	comes ’t	comes ’t	same
+672	trent/kraken	1	6	replace	cut	eut	cut	
+672	trent/kraken	1	21	replace	We'll	We ’ll	We ’Il	
+672	trent/kraken	1	54	replace	we'll	we’Il	we’Il	same
+672	trent/kraken	1	56	replace	I'll	I ’ll	I'll	
+672	trent/kraken	1	57	replace	Senators	Senatorsl	Senators]	
+672	trent/kraken	1	61	replace	Exeunt.	LExeunt.	LExeunt.	same
+672	trent/kraken	1	63	replace	with	wvith	wvith	same
+672	trent/kraken	2	7	delete		O		
+672	trent/kraken	2	38	replace	I	1I	t I	
+673	miun/kraken	1	3	replace	Because	Becalse	Because	
+673	miun/kraken	1	4	replace	speak	speakz	speak	
+673	miun/kraken	1	7	replace	roted	rooted	roted	
+673	miun/kraken	1	61	replace	will,	vill,	will,	
+673	miun/kraken	1	65	replace	Yet,	10r Vet,	Yet,	
+673	miun/kraken	2	1	replace	throw 't	throw’t	throw’t	same
+673	miun/kraken	2	5	replace	we'll	we ’Il	we’ll	
+673	miun/kraken	2	37	replace	I'll	I’Il	I’Il	same
+673	miun/kraken	2	41	replace	I'll	I’Il	I ’Il	
+673	miun/kraken	2	44	replace	Exit.	IExit.	LExit.	
+673	miun/kraken	2	56	replace	Exeunt.	IExeunt.	[Exeunt.	
+674	miun/kraken	1	29	replace	give 't	give’t	give’t	same
+674	miun/kraken	1	30	replace	Bru.		Bru.	
+674	miun/kraken	1	32	replace	Ever	tEver	t Ever	
+674	miun/kraken	1	45	replace	among 's!	among’s!	among ’s!	
+674	miun/kraken	1	67	delete		so	5o	
+674	miun/kraken	2	29	replace	lying	Iying	Iying	same
+674	miun/kraken	2	51	replace	I'll	I’Il	I’ll	
+674	miun/kraken	2	56	replace	check	gheck	check	
+675	trent/kraken	1	4	replace	He 's	He’s	He’s	same
+675	trent/kraken	1	39	replace	Exeunt	LExeunt	LExeunt	same
+675	trent/kraken	1	43	replace	throwing	throrving	throving	
+675	trent/kraken	1	52	replace	Exeunt.	LE xeunt.	IExeunt.	
+675	trent/kraken	1	55	replace	MENENIUS,	ME¬ NENIUS,	ME¬ NENIUS,	same
+675	trent/kraken	1	56	replace	with	vvith	with	
+675	trent/kraken	1	56	replace	of	ay	Q	
+675	trent/kraken	2	15	replace	you 'ld	you’ld	you’ld	same
+675	trent/kraken	2	18	replace	I'll	I 'll	I’ll	
+675	trent/kraken	2	27	replace	Believe 't	Believe’t	Believe’t	same
+675	trent/kraken	2	39	replace	I'll	I’Il	I’Il	same
+675	trent/kraken	2	59	replace	years	vears	years	
+675	trent/kraken	2	65	replace	and	aud	and	
+676	miun/kraken	1	9	replace	Exit	IExit	[Exit	
+676	miun/kraken	1	13	replace	she's	she ’s	she ’s	same
+676	miun/kraken	1	23	replace	To	ITo	ITo Brutusl	
+676	miun/kraken	1	25	replace	To	ITo	ITo	same
+676	miun/kraken	1	37	replace	I'll	I’Il	I’ll	
+676	miun/kraken	1	44	replace	He'ld	He ’ld	He’ld	
+676	miun/kraken	1	49	replace	Sic.	SSic.	Sic.	
+676	miun/kraken	1	52	replace	Bru.		Bru.	
+676	miun/kraken	1	53	replace	had'! 'Twas	had'!“Twas	"had'! ""Twas"	
+676	miun/kraken	1	66	replace	we'll	we’Il	we’ll	
+676	miun/kraken	2	10	delete		5o		
+676	miun/kraken	2	14	replace	Exeunt.	LE xeunt.	[Exeunt.	
+676	miun/kraken	2	22	replace	against 'em:	against’em:	against ’em:	
+676	miun/kraken	2	26	replace	your	vour	your	
+677	miun/kraken	1	29	replace	Exit	IExit	[Exit	
+677	miun/kraken	1	33	replace	hours,	house,	hours,	
+677	miun/kraken	1	35	replace	as 'twere,	as’twere,	as ’twere,	
+677	miun/kraken	1	45	replace	love's	love ’s	love ’s	same
+677	miun/kraken	1	46	replace	I'll	I ’ll	I’ll	
+677	miun/kraken	1	48	replace	Exit.	IExit.	LExit.	
+677	miun/kraken	1	51	replace	within.	vithin.	Musie within.	
+677	miun/kraken	1	53	replace	Exit.	IExit.	[Exit.	
+677	miun/kraken	1	55	replace	Serve.		Serv.	
+677	miun/kraken	1	56	replace	Exit.	IExit.	IExit.	same
+677	miun/kraken	2	2	replace	Serv.		Serv.	
+677	miun/kraken	2	4	replace	Exit.	IExit.	(Exit.	
+677	miun/kraken	2	14	replace	I'll	I’Il	I’Il	same
+677	miun/kraken	2	17	replace	that?	this?	this?	same
+677	miun/kraken	2	20	replace	Retires.	IRetires.	(Retires.	
+677	miun/kraken	2	51	replace	trencher,hence!	trencher, hence!	trencher, hence!	same
+677	miun/kraken	2	54	replace	with	wvith	AuripIUs with	
+677	miun/kraken	2	58	replace	Retires.	IRetires.	[Retires.	
+677	miun/kraken	2	62	replace	Unmuffling.	TUnmuffling.	[Unmuffling.	
+678	miun/kraken	1	7	replace	in't;	in ’t;	in ’t;	same
+678	miun/kraken	1	12	replace	who hath	whohath	whohath	same
+678	miun/kraken	1	42	replace	durst	darest	darest	same
+678	miun/kraken	1	44	replace	Thou 'rt	Thou’rt	Thou’rt	same
+678	miun/kraken	1	57	replace	I'ld	I'Id	I’ld	
+678	miun/kraken	2	7	replace	encounters 'twixt	encounters'twixt	encounters ’twixt	
+678	miun/kraken	2	24	replace	revenge,	revenges,	revenges,	same
+678	miun/kraken	2	37	replace	Exeunt	LExeunt	LExeunt	same
+678	miun/kraken	2	38	replace	two	tavo	tauo	
+678	miun/kraken	2	49	replace	methought,— I	methought,—I	methought,—I	same
+678	miun/kraken	2	56	replace	one.	on.	one.	
+678	miun/kraken	2	65	replace	Ay,and	Ay, and	Ay, and	same
+679	miun/kraken	1	16	replace	on 't:	on't:	on’t:	
+679	miun/kraken	1	26	replace	with's	with ’s	with ’s	same
+679	miun/kraken	1	27	replace	whites	white	white	same
+679	miun/kraken	1	31	replace	He'll	He ’ll	He ’ll	same
+679	miun/kraken	1	34	replace	do 't	do't	do't	same
+679	miun/kraken	1	61	replace	so it	soit	soit	same
+679	miun/kraken	1	69	replace	Exeunt.	LExeunt.	[Exeunt.	
+679	miun/kraken	2	9	replace	by 't,	by’t,	by’t,	same
+679	miun/kraken	2	13	replace	to 't	to’t	to’t	same
+679	miun/kraken	2	13	replace	EnterMenenius.	[Enter Menenius.]	[Enter Menenius.]	same
+679	miun/kraken	2	34	replace	our	and	and	same
+679	miun/kraken	2	43	replace	Exeunt	IExeunt	IE xeunt	
+679	miun/kraken	2	47	replace	Calus Marcus	Caius Marcius	Caius Marcius	same
+680	miun/kraken	1	28	replace	eyes:—his	eyes :his	eyes:—his	
+680	miun/kraken	1	39	replace	Sic.	SSic.	Sic.	
+680	miun/kraken	1	43	replace	on 't.	on’t.	on’t.	same
+680	miun/kraken	1	60	replace	your	vour	your	
+680	miun/kraken	1	60	replace	dishonour'd	dishonour	dishonour'd	
+680	miun/kraken	1	61	replace	What 's	What’s	What’s	same
+680	miun/kraken	1	61	replace	what 's	what’s	what’s	same
+680	miun/kraken	2	7	replace	men	man	man	same
+680	miun/kraken	2	21	replace	you'll	you’Il	you’ll	
+680	miun/kraken	2	28	delete			all	
+680	miun/kraken	2	53	replace	They'll	They’Il	They’Il	same
+680	miun/kraken	2	58	replace	troop	troos	troop	
+681	miun/kraken	1	16	replace	Exeunt	LExeunt	(Exeunt	
+681	miun/kraken	1	26	replace	Exeunt	LE xeunt	[E xeunt	
+681	miun/kraken	1	33	replace	Exeunt.	LExeunt.	IExeunt.	
+681	miun/kraken	1	38	replace	witchcraft's	witcheraft's	witcheraft's	same
+681	miun/kraken	1	52	replace	particular,—you	particular,–vou	particular,–you	
+681	miun/kraken	2	1	replace	he'll	he’Il	he’ll	
+681	miun/kraken	2	8	replace	he'll	he ’Il	he’ll	
+681	miun/kraken	2	12	replace	whether 'twas	whether’twas	whether ’twas	
+681	miun/kraken	2	35	replace	Exeunt. ACT V	IExeunt. ACTV.	IExeunt. ACT V.	
+681	miun/kraken	2	38	replace	SICINUS,	SICINIUS,	SICINIUS,	same
+681	miun/kraken	2	40	replace	I'll	I’Il	I’Il	same
+681	miun/kraken	2	47	replace	Cominous	Cominius	Cominius	same
+681	miun/kraken	2	47	replace	I'll	I 'Il	I’Il	
+681	miun/kraken	2	50	delete		did	did	same
+681	miun/kraken	2	51	delete		1o		
+681	miun/kraken	2	57	replace	you	vou	you	
+682	miun/kraken	1	2	replace	For 's	For’s	For’s	same
+682	miun/kraken	1	20	replace	I'll	I’Il	I’ll	
+682	miun/kraken	1	21	replace	go to	go-to	go to	
+682	miun/kraken	1	34	replace	I'll	L'Il	I’Il	
+682	miun/kraken	1	35	replace	he'll	he’Il	he’Il	same
+682	miun/kraken	1	44	replace	I'll	I ’Il	I’Il	
+682	miun/kraken	1	47	replace	I'll	I’Il	I ’Il	
+682	miun/kraken	1	51	replace	I'll	I’Il	I’ll	
+682	miun/kraken	1	54	replace	Exit.	IExit.	IExit.	same
+682	miun/kraken	1	55	replace	He'll	He’Il	He’ll	
+682	miun/kraken	1	69	replace	Exeunt.	LExeunt.	LExeunt.	same
+682	miun/kraken	2	17	replace	You'll	You’Il	You’ll	
+682	miun/kraken	2	29	delete		t	t	same
+682	miun/kraken	2	49	replace	Hath	Has	Has	same
+682	miun/kraken	2	65	replace	condemned,	condemhed,	condemned,	
+683	trent/kraken	1	12	replace	I'll	I’Il	I’Il	same
+683	trent/kraken	1	51	replace	Exeunt Coriolanus	LExeunt Coriolanns	LE xeunt Coriolanus	
+683	trent/kraken	1	51	replace	Aufidius.	Anfidins.	Aufidius.	
+683	trent/kraken	1	61	replace	there's	there ’s	there’s	
+683	trent/kraken	1	61	replace	ye're	ye re	ye’re	
+683	trent/kraken	1	66	replace	Exit.	IExit.	IExit.	same
+683	trent/kraken	2	1	replace	gen eral: he's a	general: he ’s the	general: he ’s the	same
+683	trent/kraken	2	3	replace	Exeunt.	IExeunt.	LExeunt.	
+683	trent/kraken	2	18	replace	crack'd	cracke’d	crack'd	
+683	trent/kraken	2	33	replace	VOLUMNIA,	Vo¬ LUMNIA,	Vo¬ LUMNIA,	same
+683	trent/kraken	2	54	replace	Vir.		Vir.	
+684	miun/kraken	1	3	delete		so	5o IKneels.	
+684	miun/kraken	1	23	replace	curdled	curdied	curdied	same
+684	miun/kraken	1	43	replace	your	you	you	same
+684	miun/kraken	1	56	replace	we'll	we ’II	we ’ll	
+684	miun/kraken	2	14	replace	through	thorough	thorough	same
+684	miun/kraken	2	23	replace	to 't,	to’t,	to’t,	same
+684	miun/kraken	2	29	replace	Young	Voung	Voung	same
+684	miun/kraken	2	30	replace	I'll	I’Il	I’Il	same
+684	miun/kraken	2	30	replace	I'll	I’Il	I’Il	same
+684	miun/kraken	2	33	replace	Rising.	IRising.	(Rising.	
+684	miun/kraken	2	43	replace	we received;'	ve receiyed?	we received	
+684	miun/kraken	2	62	replace	you:	vou:	you	
+685	miun/kraken	1	4	replace	request's	request 's	request ’s	
+685	miun/kraken	1	18	replace	deny't.	deny 't.	deny 't.	same
+685	miun/kraken	1	23	replace	I'll	I’Il	I’Il	same
+685	miun/kraken	1	26	replace	you	vou	you	
+685	miun/kraken	1	33	delete		it	it	same
+685	miun/kraken	1	42	replace	you'll	you’Il	you’ll	
+685	miun/kraken	1	46	replace	Aside	IAside.	(Aside.]	
+685	miun/kraken	1	48	replace	I'll	I’Il	I’Il	same
+685	miun/kraken	1	50	replace	The	IThe	IThe	same
+685	miun/kraken	1	52	replace	To	ITo	(To	
+685	miun/kraken	1	59	replace	Exeunt.	lExeunt.	(Exeunt.	
+685	miun/kraken	1	67	replace	prevail	pre¬ vail	pre¬ vail	same
+685	miun/kraken	2	3	replace	Is 't	Is’t	Is’t	same
+685	miun/kraken	2	8	replace	he is	he’s	he’s	same
+685	miun/kraken	2	33	replace	you 'ld	you’ld	you’ld	same
+685	miun/kraken	2	38	replace	They'll	They’Il	They’Il	same
+685	miun/kraken	2	58	replace	A shout within.	IA suout vithin.	(A shout wvithin.	
+685	miun/kraken	2	64	delete		so	so	same
+686	miun/kraken	1	11	replace	two	tavo	tao	
+686	miun/kraken	1	11	replace	with	vith	vuith	
+686	miun/kraken	1	12	replace	follomed	followed	follozved	
+686	miun/kraken	1	45	replace	we'll	we ’Il	we ’Il	same
+686	miun/kraken	2	1	replace	for 't,	for’t,	for’t,	same
+686	miun/kraken	2	6	replace	best and freshest men;	bestand freshestmen;	best and freshest men	
+686	miun/kraken	2	22	replace	I'll	I’Il	I’Il	same
+686	miun/kraken	2	23	replace	Drums	IDrums	(Drums	
+686	miun/kraken	2	37	replace	your	vour	your	
+686	miun/kraken	2	42	replace	All	AIl	All	
+686	miun/kraken	2	47	replace	hear 't.	hear’t.	hear't.	
+686	miun/kraken	2	53	replace	yielding,—this	vielding,–this	vielding,–this	same
+686	miun/kraken	2	55	replace	with	vith	with	
+686	miun/kraken	2	56	replace	with	vith	voith	
+687	miun/kraken	1	13	replace	I'll	I’Il	I’ll	
+687	miun/kraken	1	25	delete		r00		
+687	miun/kraken	1	37	delete		I10		
+687	miun/kraken	1	49	replace	All Consp.	A ll Consó.	ARee Consé.	
+687	miun/kraken	2	1	replace	pieces.' 'Do	pieces.Do	pieces. “Do	
+687	miun/kraken	2	14	replace	Consp.	Cons2.	Consé.	
+687	miun/kraken	2	15	replace	The	IThe	[The	
+687	miun/kraken	2	15	replace	draw,	dra,	drazo,	
+687	miun/kraken	2	15	replace	kill	Eill	kill	
+687	miun/kraken	2	28	replace	you'll	you ’ll	you ’Il	
+687	miun/kraken	2	30	replace	I'll	I’Il	I’Il	same
+687	miun/kraken	2	42	replace	I'll	I’Il	I’Il	same
+687	miun/kraken	2	48	replace	Exeunt,	IE xeunt,	[Exeunt,	

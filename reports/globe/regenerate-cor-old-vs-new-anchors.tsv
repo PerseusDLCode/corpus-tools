@@ -1,0 +1,7 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in cor.xml (sha256 3d3c39a9076a4410); not the shell's milestones or <l n>
+# transcribed anchors: 246; mapped (the row begins a line): 214; of those, carrying the same number: 213
+# in scenes that pass the gate: 214 mapped; agreeing: 213
+# unmapped (the row begins inside a line): 32; the P4's number is the containing line's for 28, the next line's for 4, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+4.6	91	disagree	90				He is their god: he leads

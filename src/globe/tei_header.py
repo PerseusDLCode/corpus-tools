@@ -61,6 +61,7 @@ PLAY_TITLES = {
     "jn": "King John",
     "r3": "Richard III",
     "aww": "All's Well That Ends Well",
+    "tro": "Troilus and Cressida",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -131,6 +132,9 @@ COPY_TEXT = {
     # Introduction printed 635 (CHOCR index 75), V.3 ends on 662 (index 102);
     # Measure for Measure's introduction is 663 (printed = index + 560).
     "aww": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="635-662"),
+    # Introduction printed 690 (CHOCR index 130), V.10 ends on 723 (index 163);
+    # Othello's introduction is 724 (printed = index + 560).
+    "tro": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="690-723"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

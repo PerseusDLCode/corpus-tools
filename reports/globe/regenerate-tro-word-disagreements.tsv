@@ -1,0 +1,482 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+622	miun/kraken	1	43	replace	Anternorides,	Antenorides,	Antenorides,	same
+622	miun/kraken	2	1	replace	ACT I	CRESSIDA PERSONÆ. THERSITES, a deformed scurrilous ALEXANDER, servant to Cressida. Servant to Servant to Servant to Diomedes. wife to Menelaus. ANDROMACHE, wife to CASSANDRA, daughter to Priam, a prophetess. CRESSIDA, daughter to Trojan Greek Soldiers, Attendants. SCENE: Troy, the Grecian camꝵ¬ before it. ACTI.	CRESSIDA. PERSONÆ. THERSITES, a deformed and scurrilous Grecian. ALEXANDER, servant to Cressida. Servant to Troilus. Servant to Paris. Servant to Diomedes. HELEN, wife to Menelaus. ANDROMACHE, wife to Hector. CASSANDRA, daughter to Priam, a prophetess. CRESSIDA, daughter to Calchas. Trojan and Greck Soldiers, and Attendants. SCENE: Troy, and the Grecian camg before it. ACT I.	
+622	miun/kraken	2	18	replace	Before Priam's	Besore Pxiam's	Before Priam's	
+622	miun/kraken	2	26	replace	strong	streng	strong	
+622	miun/kraken	2	34	replace	I'll	I 'll	I’Il	
+623	miun/kraken	1	40	replace	I'll	I’Il	I’ll	
+623	miun/kraken	1	42	replace	own	owr	own	
+623	miun/kraken	1	44	replace	labor	labour	labour	same
+623	miun/kraken	1	50	replace	she's	she 's	she ’s	
+623	miun/kraken	1	56	replace	do or	door	do or	
+623	miun/kraken	1	58	delete		so I’Il tell her the next time I see her	and so I’Il tell her the next time I see her:	
+623	miun/kraken	1	66	replace	[Exit	LExit	Exit	
+623	miun/kraken	1	67	replace	clamors!	clamours!	clamours!	same
+623	miun/kraken	2	15	replace	AENEAS. AEne.	ÆNRAS. Æne.	ÆNEAS. Æne.	
+623	miun/kraken	2	21	replace	AEneas,	Æneas,	Æneas,	same
+623	miun/kraken	2	22	replace	AEne.	Æne.	Æne.	same
+623	miun/kraken	2	22	delete		is	is	same
+623	miun/kraken	2	23	replace	AEneas? AEne.	Æneas? Æne.	Æneas? Æne.	same
+623	miun/kraken	2	27	replace	AEne.	Æne.	Æne.	same
+623	miun/kraken	2	32	replace	AEne.	Æne.	Æne.	same
+623	miun/kraken	2	45	replace	was	were	were	same
+623	miun/kraken	2	50	replace	the	his	his	same
+623	miun/kraken	2	51	replace	Alex.	A lex.	Alex.	
+623	miun/kraken	2	56	replace	Alex.	A lex.	Alex.	
+623	miun/kraken	2	64	replace	humors	humours	humours	same
+624	miun/kraken	1	4	replace	everything	every thing	every thing	same
+624	miun/kraken	1	11	delete		ever	ever	same
+624	miun/kraken	1	26	replace	not up,	not-up,	not up,	
+624	miun/kraken	1	34	replace	he'll	he’Il	he’ll	
+624	miun/kraken	2	9	replace	favor--for	favour–for	favour–for	same
+624	miun/kraken	2	9	replace	confess,-- not	confess,–not	confess,–not	same
+624	miun/kraken	2	16	replace	color	colour	colour	same
+624	miun/kraken	2	20	replace	color	colour	colour	same
+624	miun/kraken	2	41	replace	have	haye	have	
+624	miun/kraken	2	50	replace	you'll	you ’ll	you ’ll	same
+624	miun/kraken	2	59	delete		needs	needs	same
+625	miun/kraken	1	10	replace	'Here's	“Here ’s	“Here’s	
+625	miun/kraken	1	27	replace	Pan.		Pan. I’Il	
+625	miun/kraken	1	28	replace	and	an	an	same
+625	miun/kraken	1	29	replace	I'll	I’Il	I’Il	same
+625	miun/kraken	1	30	replace	[A	IA	[A	
+625	miun/kraken	1	30	replace	sounded. Pan.	xounded.	sounded. Pan.	
+625	miun/kraken	1	35	replace	your	vour	your	
+625	miun/kraken	1	37	replace	I'll	I’Il	I’Il	same
+625	miun/kraken	1	41	replace	AENEAS	ÆNEAS	ÆNEAS	same
+625	miun/kraken	1	42	replace	AEneas:	Æncas:	Æneas;	
+625	miun/kraken	1	51	replace	I'll	I’Il	I’Il	same
+625	miun/kraken	1	51	replace	sees	see	see	same
+625	miun/kraken	1	53	replace	Cres.		Cres.	
+625	miun/kraken	2	15	replace	passes.		passes.	
+625	miun/kraken	2	21	replace	he'll	he ’Il	he ’Il	same
+625	miun/kraken	2	23	delete		not	not	same
+625	miun/kraken	2	41	replace	comes	come	come	same
+625	miun/kraken	2	45	replace	i'	j'	i'	
+626	miun/kraken	1	4	delete		these	these	same
+626	miun/kraken	1	7	replace	I'll	I’Il	I’Il	same
+626	miun/kraken	1	10	replace	swells	swell	swell	same
+626	miun/kraken	1	18	replace	[Exit	LExit	LExit	same
+626	miun/kraken	1	21	replace	I'll	I’Il	I’ll	
+626	miun/kraken	1	25	replace	[Exit	IExit	[Exit	
+626	miun/kraken	1	41	replace	my	mine	mine	same
+626	miun/kraken	1	66	replace	abashed	abash’d	abash’d	same
+626	miun/kraken	2	18	replace	boasts	boats	boats	same
+626	miun/kraken	2	28	replace	harbor	harbour	harbour	same
+626	miun/kraken	2	30	replace	valor's	valour’s	valour’s	same
+626	miun/kraken	2	30	replace	valor's	valour’s	valour's	
+626	miun/kraken	2	33	replace	breeze	breese	breese	same
+626	miun/kraken	2	38	delete		with rage		
+626	miun/kraken	2	47	replace	To	The	The	same
+626	miun/kraken	2	47	replace	Agamemnon]	Agamemnonl	Agamemnonl	same
+626	miun/kraken	2	49	replace	[To Nestor]	ITo Nestorl	ITo Nestorl	same
+626	miun/kraken	2	49	replace	reverent	reverend	reverend	same
+626	miun/kraken	2	65	replace	down,	dowm,	down,	
+627	miun/kraken	1	26	replace	fixture!	fixure!	fixure!	same
+627	miun/kraken	1	28	replace	of	to	to	same
+627	miun/kraken	1	29	replace	The	Then	Then	same
+627	miun/kraken	2	19	replace	speaks,	speals,	speaks,	
+627	miun/kraken	2	39	replace	Valor	Valour	Valour	same
+628	miun/kraken	1	7	replace	[A	IA	(A	
+628	miun/kraken	1	10	replace	AENEAS.	ÆNEAS.	ÆNEAS.	same
+628	miun/kraken	1	12	replace	AEne.	Æne.	Æne.	same
+628	miun/kraken	1	15	replace	AEne.	Æne.	Æne.	same
+628	miun/kraken	1	21	replace	AEne.	Æne.	Æne.	same
+628	miun/kraken	1	25	replace	AEne.		Æne.	
+628	miun/kraken	1	29	replace	Phoebus:	Phœbus:	Phœbus	
+628	miun/kraken	1	35	replace	AEne.	Æne.	Ane.	
+628	miun/kraken	1	41	replace	AEneas,	Æneas,	Æneas,	same
+628	miun/kraken	1	49	replace	AEneas? AEne.	Æneas? Æne.	Æneas? Æne.	same
+628	miun/kraken	1	52	replace	AEne.	Æne.	Æne.	same
+628	miun/kraken	1	55	replace	AEne.	Æne.	Æne.	same
+628	miun/kraken	1	64	replace	AEne.	Æne.	Æne.	same
+628	miun/kraken	1	68	replace	[Trumpet	ITrumpet	[Trumpet	
+628	miun/kraken	2	6	replace	Greece	Grcece	Greece	
+628	miun/kraken	2	7	replace	honor	honour	honour	same
+628	miun/kraken	2	10	replace	valor,	valour,	valour,	same
+628	miun/kraken	2	22	replace	honor	honour	honour	same
+628	miun/kraken	2	23	replace	he'll	he ’Il	he ’ll	
+628	miun/kraken	2	27	replace	AEneas;	Æneas;	IEneas;	
+628	miun/kraken	2	31	replace	lovely	love!	love!	same
+628	miun/kraken	2	39	replace	I'll	I'Il	I’ll	
+628	miun/kraken	2	45	replace	AEne.	Æne.	Æne.	same
+628	miun/kraken	2	48	replace	AEneas,	Æneas,	Æneas,	same
+628	miun/kraken	2	55	replace	[Exeunt	IE eunt	Exeunt	
+629	miun/kraken	1	17	replace	honor	honour	honour	same
+629	miun/kraken	1	19	replace	Yet	Vet	Yet	
+629	miun/kraken	1	44	replace	they'll	they’Il	they’ll	
+629	miun/kraken	1	48	replace	honor	honour	honour	same
+629	miun/kraken	1	69	replace	We'll	We’Il	Ne'll	
+629	miun/kraken	2	1	replace	Yet	Vet	Yet	
+629	miun/kraken	2	10	replace	as 'twere	as’twere	as ’twere	
+629	miun/kraken	2	58	replace	him]	himl	himl	same
+630	miun/kraken	1	8	delete		Enter AcHILLES PATROCLUS.	Enter ACHILLES and PATROCLUS.	
+630	miun/kraken	1	13	replace	Achil.		Achil.	
+630	miun/kraken	1	27	replace	nineth	ninth	ninth	same
+630	miun/kraken	1	29	replace	I'll	I’Il	I’Il	same
+630	miun/kraken	1	33	replace	[Ajax	¡A jax	(Ayax	
+630	miun/kraken	1	50	replace	tenor	tenour	tenour	same
+630	miun/kraken	1	56	delete		the	the	same
+630	miun/kraken	2	13	replace	[Exit.	IExit.	IExit.	same
+630	miun/kraken	2	27	replace	[Exeunt.	IExeunt.	ofit. (Exeunt.	
+630	miun/kraken	2	34	replace	honor,	honour,	honour,	same
+630	miun/kraken	2	38	replace	to 't?	to’t?	to’t?	same
+630	miun/kraken	2	52	delete		z0		
+630	miun/kraken	2	57	replace	yielding	vielding	yielding	
+630	miun/kraken	2	59	replace	honor	honour	honour	same
+631	miun/kraken	1	17	replace	honor	honour	honour	same
+631	miun/kraken	1	41	replace	honor:	honour:	honour:	same
+631	miun/kraken	1	59	replace	you'll avouch 'twas	vou ’ll avouch’twas	you ’ll avouch ’twas	
+631	miun/kraken	1	61	replace	you'll	you?Il	you ’Il conress	
+631	miun/kraken	1	63	replace	'Inestimable!'--why	"“Inestimable!""–why"	"“Inestimable !""–why"	
+631	miun/kraken	2	16	replace	clamors!	clamours!	clamours!	same
+631	miun/kraken	2	22	replace	[Exit.	IExit.	[Exit.	
+631	miun/kraken	2	36	replace	honors	honours	honours	same
+631	miun/kraken	2	39	replace	amongst us	amongstus	amongst us	
+631	miun/kraken	2	48	replace	valor,	valour,	valour,	same
+631	miun/kraken	2	62	replace	honorable	honourable	honourable	same
+632	miun/kraken	1	38	replace	dependence	dependance	dependance	same
+632	miun/kraken	1	46	replace	honor	honour	honour	same
+632	miun/kraken	1	63	replace	tent.	tenz.	tent.	
+632	miun/kraken	1	66	replace	the	thy	thy	same
+632	miun/kraken	2	3	replace	I'll	I’Il	I’Il	same
+632	miun/kraken	2	4	replace	I'll	I’Il	I’Il	same
+632	miun/kraken	2	5	replace	engineer!	enginer!	enginer!	same
+632	miun/kraken	2	34	replace	upon 't	upon’t	upon’t	same
+632	miun/kraken	2	49	delete		C		
+632	miun/kraken	2	54	replace	I'll	I’Il	I’Il	same
+633	miun/kraken	1	9	delete		is	is	same
+633	miun/kraken	1	10	delete		a	a	same
+633	miun/kraken	1	14	replace	[Exit.	LExit́.	WExit.	
+633	miun/kraken	1	31	replace	favor	favour	favour	same
+633	miun/kraken	1	47	replace	Ulyss.		Ulyss.	
+633	miun/kraken	1	58	replace	your	yvour	your	
+633	miun/kraken	1	63	replace	outfly	outfiy	outfly	
+633	miun/kraken	2	17	replace	We'll	We 'Il	We’Il	
+633	miun/kraken	2	23	replace	[Exit.	IExit.	IExit.	same
+633	miun/kraken	2	24	replace	we'll	we’Il	we’Il	same
+633	miun/kraken	2	26	replace	[Exit	IExit	IExit	same
+633	miun/kraken	2	58	replace	with	witb	with	
+633	miun/kraken	2	66	replace	That 'twixt	That'twixt	That 'twixt	
+634	miun/kraken	1	2	replace	Cry 'No	Cry“No	Cry “No	
+634	miun/kraken	1	8	replace	We'll	We’Il	We ’Il	
+634	miun/kraken	1	16	delete		2oo		
+634	miun/kraken	1	33	replace	I'll	I’Il	I’Il	same
+634	miun/kraken	1	42	replace	humors	humours	humours	same
+634	miun/kraken	1	45	replace	Ajax.		Ajax.	
+634	miun/kraken	1	51	replace	will knead	willknead	will knead	
+634	miun/kraken	1	51	replace	I'll	I’Il	I’Il	same
+634	miun/kraken	1	51	replace	him supple.	himsupple.	him supple.	
+634	miun/kraken	1	61	replace	man--but 'tis	man–but’tis	man–but ’tis	
+634	miun/kraken	1	69	replace	Ajax	Aiax	Ajax	
+634	miun/kraken	2	13	replace	vigor,	vigour,	vigour,	same
+634	miun/kraken	2	20	replace	your	vour	your	
+634	miun/kraken	2	24	replace	Ajax.		Ayax.	
+634	miun/kraken	2	38	replace	[Exeunt.	LE xeunt.	IExeunt. ACTIII.	
+634	miun/kraken	2	43	replace	young	voung	young	
+634	miun/kraken	2	54	replace	honor	honour	honour	same
+634	miun/kraken	2	57	replace	honor	honour	honour	same
+634	miun/kraken	2	58	replace	my titles.	mytitles.	mytitles.	same
+635	miun/kraken	1	41	replace	we'll	we ’Il	we ’Il	same
+635	miun/kraken	1	68	replace	cousin	cou¬ sin	cou¬ sin	same
+635	miun/kraken	2	3	replace	I'll	I’Il	I’ll	
+635	miun/kraken	2	7	replace	I'll	I’Il	I’ll	
+635	miun/kraken	2	13	replace	Helen.		Helen.	
+635	miun/kraken	2	18	replace	she'll	she’Il	she’Il	same
+635	miun/kraken	2	22	replace	I'll	I’Il	I’ll	
+635	miun/kraken	2	23	replace	I'll	I’Il	I’ll	
+635	miun/kraken	2	53	replace	hot	het	hot	
+635	miun/kraken	2	63	replace	You'll	You’Il	You’ll	
+635	miun/kraken	2	68	replace	[Exit. [A	LExit. IA	[Exit. IA	
+636	miun/kraken	1	9	replace	kings,--disarm	kings,–d’sarm	kings,— disarm	
+636	miun/kraken	1	26	replace	[Exit	LExit	LExit Par.	
+636	miun/kraken	1	36	replace	I'll	I’Il	I’Il	same
+636	miun/kraken	1	37	replace	[Exit.	LExit.	[Exit.	
+636	miun/kraken	1	51	replace	she'll	she’Il	she’ll	
+636	miun/kraken	1	54	replace	I'll	I’Il	I’Il	same
+636	miun/kraken	1	56	replace	[Exit.	LExit.	IExit.	
+636	miun/kraken	1	63	replace	mith	witk	with	
+636	miun/kraken	2	7	replace	speak to	spealto	speak to	
+636	miun/kraken	2	9	replace	and	an	an	same
+636	miun/kraken	2	12	replace	Ay,	Nay,	Nay,	same
+636	miun/kraken	2	17	replace	she'll	she ’ll	she’ll	
+636	miun/kraken	2	20	replace	interchangeably'--Come	interchangeably —Come	interchangeably’—Come	
+636	miun/kraken	2	21	replace	[Exit.	IExit.	IExit.	same
+637	miun/kraken	1	1	replace	dedicate	de-Or dicate	dedicate	
+637	miun/kraken	1	4	delete		to	to	same
+637	miun/kraken	1	5	replace	flinch, chide	flinch,-chide	flinch, chide	
+637	miun/kraken	1	8	replace	I'll	I’Il	I’ll	
+637	miun/kraken	1	11	replace	they'll	they 'll	they’ll	
+637	miun/kraken	1	38	delete		do	do	same
+637	miun/kraken	2	7	replace	smipler	simpler	simpler	same
+637	miun/kraken	2	53	replace	your	vour	your	
+637	miun/kraken	2	57	replace	[Exeunt.	LExeunt.	(Exeunt.	
+637	miun/kraken	2	60	replace	NESTOR,	NES¬ TOR,	NES¬ TOR,	same
+637	miun/kraken	2	66	replace	That,	tThat,	That,	
+638	miun/kraken	1	2	replace	possess'd	possesɇ d	possess’d	
+638	miun/kraken	1	34	replace	and 'tis	and’tis	and ’tis	
+638	miun/kraken	1	36	replace	[Exeunt	[E xeunt	LExeunt	
+638	miun/kraken	1	44	replace	he'll	he’Il	he’Il	same
+638	miun/kraken	1	52	replace	We'll execute	We’llexecute	We ’llexecute	
+638	miun/kraken	1	59	replace	I'll	I’Il	I’ll	
+638	miun/kraken	1	68	replace	[Exeunt	LExeunt	LExeunt	same
+638	miun/kraken	2	2	replace	[Exit.	LExit.	IExit.	
+638	miun/kraken	2	8	replace	[Exit.	IExit.	[Exit.	
+638	miun/kraken	2	24	replace	honor,	honour,	honour,	same
+638	miun/kraken	2	24	replace	honor	honour	honour	same
+638	miun/kraken	2	24	replace	honors	honours	honours	same
+638	miun/kraken	2	25	replace	favor,	favour,	favour,	same
+638	miun/kraken	2	28	replace	To	The	The	same
+638	miun/kraken	2	30	replace	But 'tis	But’tis	But ’tis	
+638	miun/kraken	2	37	replace	I'll	I’Il	I’ll	
+638	miun/kraken	2	52	replace	eye	eve	eye	
+638	miun/kraken	2	57	replace	mirror'd	mirror' d	mirror’d	
+639	miun/kraken	1	18	replace	While	Whiles	Whiles	same
+639	miun/kraken	1	36	replace	honor	honour	honour	same
+639	miun/kraken	1	39	replace	honor	honour	honour	same
+639	miun/kraken	1	57	replace	seek	seekz	seek	
+639	miun/kraken	1	60	replace	vigor	vigour	vigour	same
+639	miun/kraken	2	14	replace	But 'gainst	But’gainst	But’gainst	same
+639	miun/kraken	2	19	replace	Ulyss.		Ulyss.	
+639	miun/kraken	2	39	replace	Farwell,	Farewell,	Farewell,	same
+639	miun/kraken	2	55	replace	honor	honour	honour	same
+639	miun/kraken	2	68	replace	I'll	I’'Il	I’Il	
+640	miun/kraken	1	7	replace	labor	labour	labour	same
+640	miun/kraken	1	21	replace	say There	say“There	say “There	
+640	miun/kraken	1	21	replace	his	this	this	same
+640	miun/kraken	1	22	replace	an 'twould	an’twould	an ’twould	
+640	miun/kraken	1	26	replace	break't	break 't	break ’t	
+640	miun/kraken	1	35	replace	he'll	he ’ll	he’ll	
+640	miun/kraken	2	12	replace	[Exeunt	IExerent	LExeunt	
+640	miun/kraken	2	16	replace	[Exit.	LExit.	WExit.	
+640	miun/kraken	2	19	replace	AENEAS,	ÆNEAS,	ÆNEAS,	same
+640	miun/kraken	2	19	replace	with	vith	with	
+640	miun/kraken	2	21	replace	with	uith	with	
+640	miun/kraken	2	24	replace	AEneas. AEne.	Æneas. Æne.	Æneas. Æne.	same
+640	miun/kraken	2	31	replace	AEneas.	Æneas.	Æneas.	same
+640	miun/kraken	2	32	replace	AEneas,--take	Æneas,–take	Æneas,–take	same
+640	miun/kraken	2	37	replace	AEne.	Æne.	Æne.	same
+640	miun/kraken	2	46	replace	AEne.	Æne.	Æne.	same
+640	miun/kraken	2	52	replace	AEneas	Æneas	Æneas	same
+640	miun/kraken	2	55	replace	honor,	honour,	honour,	same
+640	miun/kraken	2	57	replace	AEne.	Æne.	Æne.	same
+640	miun/kraken	2	63	replace	AEne.	Æne.	Æne.	same
+640	miun/kraken	2	65	replace	meets	neets	meets	
+641	miun/kraken	1	4	replace	think--	think–40	think—	
+641	miun/kraken	1	10	replace	AEne.	Æne.	Æne.	same
+641	miun/kraken	1	15	replace	we'll	we ’ll	we ’ll	same
+641	miun/kraken	1	16	replace	AEne.	Æne.	Æne.	same
+641	miun/kraken	1	27	replace	dishonor,	dishonour,	dishonour,	same
+641	miun/kraken	1	35	replace	are too	are-too	are too	
+641	miun/kraken	1	47	replace	We'll	We’Il	We’Il	same
+641	miun/kraken	1	48	replace	[Exeunt.	IExeunt.	IExeunt.	same
+641	miun/kraken	1	54	replace	I'll	I’Il	I’ll	
+641	miun/kraken	2	26	replace	you'll	you ’Il	you ’Il	same
+641	miun/kraken	2	33	replace	[Knocking within.	IEnocking vithin.	(Knocking within.	
+641	miun/kraken	2	39	replace	within.	vithin.	(K nocking within.	
+641	miun/kraken	2	42	replace	[Exeunt	LExeunt	[Exeunt	
+641	miun/kraken	2	46	replace	AENEAS. AEne.	ÆNEAS. Æne.	ÆNEAS. Æne.	same
+641	miun/kraken	2	48	replace	AEneas!	Æneas!	Æneas!	same
+641	miun/kraken	2	50	replace	knew	lnew.	knew	
+641	miun/kraken	2	51	replace	AEne.	Æne.	Æne.	same
+641	miun/kraken	2	53	replace	AEne.	Æne.	Æne.	same
+641	miun/kraken	2	57	replace	I'll be	I’ILbe	I’Il be	
+641	miun/kraken	2	59	replace	AEne.	Æne.	Æne.	same
+641	miun/kraken	2	59	replace	you'll	you’II	you ’ll	
+642	miun/kraken	1	11	replace	AEne.	Æne.	Æne.	same
+642	miun/kraken	1	15	replace	AEneas,	Æneas,	Æneas,	same
+642	miun/kraken	1	17	replace	AEne.	Æne.	Æne.	same
+642	miun/kraken	1	20	replace	[Exeunt	LExeunt	(E xeunt	
+642	miun/kraken	1	20	replace	AEneas.	Æneas.	Æneas.	same
+642	miun/kraken	1	21	replace	Is 't	Is't	Is't	same
+642	miun/kraken	1	24	replace	broke's	broke ’s	broke ’s	same
+642	miun/kraken	1	60	replace	I'll	I’Il	I’ll	
+642	miun/kraken	2	3	replace	AENEAS,	ÆNEAS,	ÆNEAS,	same
+642	miun/kraken	2	12	replace	I'll	I’Il	I'll	
+642	miun/kraken	2	36	replace	[Embracing him.	IEmbracing	(Embracing him.	
+642	miun/kraken	2	38	replace	too. 'O	too.“O	too.“O	same
+642	miun/kraken	2	43	delete		zo		
+642	miun/kraken	2	46	replace	have	haye	have	
+643	miun/kraken	1	3	replace	laboring	labouring	labouring	same
+643	miun/kraken	1	15	replace	AEne. [Within]	Æne. IWithin]	Æne. [Within]	
+643	miun/kraken	1	22	replace	[Exit.	IExit.	Wxit.	
+643	miun/kraken	1	42	replace	I'll	I'Il	I’ll	
+643	miun/kraken	1	43	replace	I'll	I 'll	I’ll	
+643	miun/kraken	2	9	replace	AEne.	Æne.	Æne. (Withinl	
+643	miun/kraken	2	13	replace	AEneas	Æneas	Æneas	same
+643	miun/kraken	2	23	replace	AENEAS,	ÆNEAS,	ÆNEAS,	same
+643	miun/kraken	2	24	delete		1.		
+643	miun/kraken	2	47	replace	Though	Thougk	Though	
+643	miun/kraken	2	55	replace	honor,	honour,	honour,	same
+643	miun/kraken	2	56	replace	I'll	I’Il	I’ll	
+643	miun/kraken	2	57	replace	they	thy	thy	same
+643	miun/kraken	2	60	replace	[Exeunt	LExeunt	LExeunt	same
+643	miun/kraken	2	61	replace	within.	vuithin.	within.	
+643	miun/kraken	2	63	replace	AEne.	Æne.	Æne.	same
+644	miun/kraken	1	2	replace	AEne.	Æne.	Æne.	same
+644	miun/kraken	1	16	replace	thither.	hither.	hither.	same
+644	miun/kraken	1	39	replace	I'll	I’Il	I’Il	same
+644	miun/kraken	1	41	replace	Achil.		Achil.	
+644	miun/kraken	1	50	replace	horns.	homns.	horns.	
+644	miun/kraken	1	56	replace	I'll	I’Il	I’Il	same
+644	miun/kraken	1	60	replace	I'll	I'Il	I’Il	
+644	miun/kraken	1	63	replace	I'll	I’Il	I’Il	same
+644	miun/kraken	2	19	replace	of you.	ofyou.	ofyou.	same
+644	miun/kraken	2	20	replace	I'll	I’Il	I’ll	
+644	miun/kraken	2	21	replace	[Exit	LE xit	(Exit woith	
+644	miun/kraken	2	35	replace	AENEAS,	ÆNEAS,	ÆNEAS,	same
+644	miun/kraken	2	37	replace	AEne.	Æne.	Æne.	same
+644	miun/kraken	2	47	replace	AEne.		Æne.	
+644	miun/kraken	2	47	replace	he'll	he ’Il	he’Il	
+644	miun/kraken	2	52	replace	AEne.	Æne.	Æne.	same
+644	miun/kraken	2	55	replace	AEne.	Æne.	Æne.	same
+644	miun/kraken	2	55	replace	whate'er,	whate er,	whate’er,	
+644	miun/kraken	2	58	replace	Valor	Valour	Valour	same
+644	miun/kraken	2	65	replace	Greek.		Greek.	
+645	miun/kraken	1	4	replace	AEneas	Æneas	Æneas	same
+645	miun/kraken	1	13	replace	Agam.		Ulyss.	
+645	miun/kraken	1	22	replace	impair	impure	impair	
+645	miun/kraken	1	29	replace	AEneas;	Æneas;	Æneas;	same
+645	miun/kraken	1	32	replace	[Alarum.	LAlarum.	Llarum.	
+645	miun/kraken	1	34	replace	How,	Now,	Now,	same
+645	miun/kraken	1	35	replace	Tro.		Tro.	
+645	miun/kraken	1	40	replace	AEne.	Æne.	Æne.	same
+645	miun/kraken	1	53	replace	Bounds	Rounds	Bounds	
+645	miun/kraken	1	60	replace	Be	Re	Be	
+645	miun/kraken	1	61	replace	By	Ey	By	
+645	miun/kraken	1	63	replace	honor	honour	honour	same
+645	miun/kraken	2	4	replace	honor	honour	honour	same
+645	miun/kraken	2	5	replace	AEne.	Æne.	Æne.	same
+645	miun/kraken	2	8	replace	We'll	We ’Il	We’ll	
+645	miun/kraken	2	16	replace	AEneas,	Æneas,	Æneas,	same
+645	miun/kraken	2	46	replace	AEne.	Æne.	Æne.	same
+645	miun/kraken	2	55	replace	oft Laboring	ost Labouring	oft Labouring	
+645	miun/kraken	2	67	replace	Greeks	Greels	Greeks	
+645	miun/kraken	2	69	replace	lock'd	locke'd	lock’d	
+646	miun/kraken	1	6	replace	AEne.	Æne.	Æne.	same
+646	miun/kraken	1	7	replace	enbrace	embrace	embrace	same
+646	miun/kraken	1	20	delete		here	here	same
+646	miun/kraken	1	21	replace	favor,	favour,	favour,	same
+646	miun/kraken	1	22	replace	there 's	there’s	there’s	same
+646	miun/kraken	1	23	delete		I	I	same
+646	miun/kraken	1	28	replace	yonder	vonder	yonder	
+646	miun/kraken	2	6	replace	I'll	I’ld	I’ld	same
+646	miun/kraken	2	8	replace	I'll	I'Il	I’ll	
+646	miun/kraken	2	10	replace	I'll	I’Il	I’ll	
+646	miun/kraken	2	13	replace	I'll endeavor	I’Il endeavour	I’Il endeavour	same
+646	miun/kraken	2	35	replace	Exeunt	LExeunt	LExeunt	same
+646	miun/kraken	2	35	replace	except	excest	except	
+646	miun/kraken	2	41	replace	feast	seast	feast	
+646	miun/kraken	2	50	replace	honor	honour	honour	same
+646	miun/kraken	2	58	replace	[Exeunt. ACT V	IExeunt. ACTV.	(Exeunt. ACT V.	
+646	miun/kraken	2	63	replace	I'll	I'Il	I’ll	
+646	miun/kraken	2	63	replace	Greekish	Greckish	Greekish	
+646	miun/kraken	2	65	replace	I'll	I’Il	I’Il	same
+647	miun/kraken	1	48	replace	honor	honour	honour	same
+647	miun/kraken	1	49	replace	I'll	I 'Il	I ’Il	
+647	miun/kraken	1	50	delete		5o	so	
+647	miun/kraken	1	53	replace	[Exeunt	IE xeunt	[Exeunt	
+647	miun/kraken	1	56	replace	I'll	I’Il	I’Il	same
+647	miun/kraken	1	64	replace	larded	lar ded	larded	
+647	miun/kraken	1	66	delete		were nothing; he is both ass ox: to an ox,	were nothing; he is both ass and ox: to an ox,	
+647	miun/kraken	2	8	replace	DIOMEDES, with	MEDES, wvith	DIO¬ MEDES, wvith	
+647	miun/kraken	2	26	replace	quoth a'!	quoth’a!	quoth ’a!	
+647	miun/kraken	2	32	replace	[Exeunt	LExeunt	[Exeunt	
+647	miun/kraken	2	43	replace	I'll	I’Il	I’ll	
+647	miun/kraken	2	44	replace	honor	honour	honour	same
+647	miun/kraken	2	46	replace	[Exit	IExit	LExit	
+647	miun/kraken	2	46	replace	Ulysses	Ulusses	Ulysses	
+647	miun/kraken	2	49	replace	[Exeunt	IExeunt	[Exeunt	
+648	miun/kraken	1	2	replace	your	vour	your	
+648	miun/kraken	1	3	replace	Cal.		Cal.	
+648	miun/kraken	1	5	replace	them,	themz,	them,	
+648	miun/kraken	1	14	replace	Ulyss.		Ulyss.	
+648	miun/kraken	1	36	replace	Bid me	Bid'me	Bid me	
+648	miun/kraken	1	62	replace	wither'd	wither d	wither'd	
+648	miun/kraken	2	18	replace	I'll	I’Il	I’Il	same
+648	miun/kraken	2	18	replace	[Exit.	LExit.	(Exit.	
+648	miun/kraken	2	31	replace	wench!--Give't	wench !–Give’t	wench !—Give’t	
+648	miun/kraken	2	32	delete		7.		
+648	miun/kraken	2	45	replace	to it,	toit,	to it,	
+648	miun/kraken	2	59	delete		g0		
+649	miun/kraken	1	15	replace	[Exit	LExit	[Exit	
+649	miun/kraken	1	24	replace	turned	turn’d	turn’d	same
+649	miun/kraken	1	58	replace	by	be	be	same
+649	miun/kraken	1	64	replace	With	Without	Without	same
+649	miun/kraken	1	67	replace	earth,	carth,	earth,	
+649	miun/kraken	1	68	delete		rso		
+649	miun/kraken	2	20	replace	I'll	’Il	’Il	same
+649	miun/kraken	2	25	replace	clamor	clamour	clamour	same
+649	miun/kraken	2	28	replace	He'll	He’Il	He’ll	
+649	miun/kraken	2	32	replace	they'll	they’Il	they’ll	
+649	miun/kraken	2	34	replace	draw	draws	draws	same
+649	miun/kraken	2	35	replace	AENEAS. AEne.	ÆNEAS. Æne.	ÆNEAS. Æne.	same
+649	miun/kraken	2	44	replace	I'll	I’Il	I’ll	
+649	miun/kraken	2	46	replace	AEneas,	Æneas,	Æneas,	same
+649	miun/kraken	2	54	replace	[Exit.	IExit.	IExit.	same
+650	miun/kraken	1	29	replace	honor	honour	honour	same
+650	miun/kraken	1	31	replace	honor	honour	honour	same
+650	miun/kraken	1	36	replace	[Exit	IE xit	[Exit	
+650	miun/kraken	1	40	delete		their	their	same
+650	miun/kraken	1	43	replace	I'll	I’Il	I’Il	same
+650	miun/kraken	1	58	replace	armors	armours	armours	same
+650	miun/kraken	2	6	replace	with	witk	avith	
+650	miun/kraken	2	18	replace	AEneas	Æneas	Æneas	same
+650	miun/kraken	2	20	replace	valor,	valour,	valour,	same
+650	miun/kraken	2	27	delete		here	here	same
+650	miun/kraken	2	28	replace	yield	vield	yield	
+650	miun/kraken	2	40	replace	dolors	dolours	dolours	same
+650	miun/kraken	2	47	replace	all our	allour	allour	same
+650	miun/kraken	2	47	replace	[Exit.	IExit.	[Exit.	
+650	miun/kraken	2	50	replace	we'll	we ’Il	we ’Il	same
+650	miun/kraken	2	50	replace	fight,	fighi,	fight,	
+650	miun/kraken	2	54	replace	[Exeunt	LExeunt	IE xeunt	
+650	miun/kraken	2	62	delete		I00		
+651	miun/kraken	1	10	replace	[Exeunt	IE xeunt	LExeunt	
+651	miun/kraken	1	11	replace	Troy and	Troyand	Troyand	same
+651	miun/kraken	1	12	replace	camp.	cam5.	canep.	
+651	miun/kraken	1	15	replace	I'll	I’Il	I’ll	
+651	miun/kraken	1	44	replace	[Exeunt	LExeunt	LE xeunt	
+651	miun/kraken	1	48	replace	honor?	honour?	honour?	same
+651	miun/kraken	1	53	replace	break	breal	break	
+651	miun/kraken	1	57	replace	I'll seek	I’Il seel	I’ll seek	
+651	miun/kraken	1	57	replace	[Exit.	IExit.	IExit.	same
+651	miun/kraken	1	60	replace	take	takce	take	
+651	miun/kraken	2	32	delete		c		
+651	miun/kraken	2	44	replace	every	very	very	same
+651	miun/kraken	2	52	replace	boy queller,	boy-queller,	boy-queller,	same
+651	miun/kraken	2	55	replace	[Exeunt.	LExeunt.	LExeunt.	same
+652	miun/kraken	1	4	replace	I say!	Isay!	Isay!	same
+652	miun/kraken	1	11	delete		1o		
+652	miun/kraken	1	13	replace	[Exeunt,	IExeunt,	(E xeunt,	
+652	miun/kraken	1	25	replace	[Exit.	IExit.	(Exit.	
+652	miun/kraken	1	30	replace	AEneas:	Æneas:	Æneas:	same
+652	miun/kraken	1	32	replace	I'll	I’il	I’Il	
+652	miun/kraken	1	34	replace	Exit.	IExit.	(Exit.	
+652	miun/kraken	1	35	replace	armor.	armour.	armour.	same
+652	miun/kraken	1	38	replace	armor	armour	armour	same
+652	miun/kraken	1	39	replace	I'll	I’Il	I’ll	
+652	miun/kraken	1	40	replace	I'll	L’Il	I’Il bemaster	
+652	miun/kraken	1	41	replace	I'll	I’Il	I’Il	same
+652	miun/kraken	1	42	replace	[Exeunt.	LExeunt.	IExeunt.	
+652	miun/kraken	1	43	replace	plains.		plains.	
+652	miun/kraken	1	54	replace	Exeunt.	IExeunt.	IExeunt.	same
+652	miun/kraken	1	61	replace	[Exeunt	IExeunt	(Exeunt	
+652	miun/kraken	2	7	replace	valor,	valour,	valour,	same
+652	miun/kraken	2	17	replace	armor	armour	armour	same
+652	miun/kraken	2	21	replace	Puts	PPuts	(uts	
+652	miun/kraken	2	21	replace	shield	shiedd	shield	
+652	miun/kraken	2	25	replace	net;	set;	set	
+652	miun/kraken	2	49	replace	[Exeunt.	IExeunt.	IExeunt.	same
+652	miun/kraken	2	53	replace	within.	wvithin.	within.	
+653	miun/kraken	1	3	replace	[Exeunt,	LExeunt,	[Exeunt,	
+653	miun/kraken	1	5	replace	AENEAS	ÆNEAS	ÆNEAS	same
+653	miun/kraken	1	6	replace	AEne.	Æne.	Æne.	same
+653	miun/kraken	1	21	replace	AEne.	Æne.	Æne.	same
+653	miun/kraken	2	1	replace	I'll	I’Il	I’ll	
+653	miun/kraken	2	8	replace	AEneas	neas	Æneas	
+653	miun/kraken	2	13	replace	name! [Exit.	name![Exit.	name! (Exit.	
+653	miun/kraken	2	18	replace	endeavor	endeavour	endeavour	same
+653	miun/kraken	2	29	delete		go	5o	
+653	miun/kraken	2	36	replace	I'll	I’Il	I’Il	same
+653	miun/kraken	2	37	replace	bequeath	bequeathe	bequeathe	same

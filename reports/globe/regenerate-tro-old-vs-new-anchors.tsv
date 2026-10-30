@@ -1,0 +1,12 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tro.xml (sha256 54273b000b8a9598); not the shell's milestones or <l n>
+# transcribed anchors: 68; mapped (the row begins a line): 57; of those, carrying the same number: 51
+# in scenes that pass the gate: 57 mapped; agreeing: 51
+# unmapped (the row begins inside a line): 11; the P4's number is the containing line's for 4, the next line's for 7, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+3.1	80	disagree	79				And to make a sweet lady
+3.1	90	disagree	89				What exploit's in hand? where sups
+3.1	111	disagree	110				He! no, she'll none of him;
+3.2	221	disagree	220				Bed, chamber, Pandar to provide this
+4.2	81	disagree	80				How now! what's the matter? who
+5.2	11	disagree	10				And any man may sing her,

@@ -1,0 +1,71 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tro.xml (sha256 54273b000b8a9598); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	80	row begins inside a line		80	81	unmapped (P4 number is the containing line)	to me. Tro. Say I she
+1.2	31	row begins inside a line		31	32	unmapped (P4 number is the containing line)	all eyes and no sight. Cres.
+1.2	40	row begins a line	40			agree	Hector's a gallant man. Alex. As
+1.2	61	row begins inside a line		60	61	unmapped (P4 number is the next line)	can tell them that too. Cres.
+1.2	70	row begins a line	70			agree	Well, I say Troilus is Troilus.
+1.2	80	row begins inside a line		80	81	unmapped (P4 number is the containing line)	India. Cres. He is not Hector,
+1.2	89	row begins a line	89			agree	Pardon me, pardon me. Pan. Th'
+1.2	109	row begins a line	109			agree	So he has. Cres. Then Troilus
+1.2	141	row begins inside a line		140	141	unmapped (P4 number is the next line)	you that Helen loves Troilus,-- Cres.
+1.2	151	row begins inside a line		150	151	unmapped (P4 number is the next line)	marvellous white hand, I must confess,--
+1.2	161	row begins inside a line		160	161	unmapped (P4 number is the next line)	under the pot of her eyes:
+1.2	189	row begins inside a line		188	189	unmapped (P4 number is the next line)	you, and 'twere a man born
+1.2	197	row begins a line	197			agree	Here, here, here's an excellent place;
+1.2	220	row begins a line	220			agree	O, a brave man! Pan. Is
+1.2	231	row begins a line	231			agree	Look ye yonder, niece; is't not
+1.2	241	row begins a line	241			agree	Can Helenus fight, uncle? Pan. Helenus?
+1.2	250	row begins a line	250			agree	Peace, for shame, peace! Pan. Mark
+1.2	269	row begins a line	269			agree	a better man than Troilus. Pan.
+1.2	282	row begins a line	282			agree	You are such a woman! one
+1.2	290	row begins a line	290			agree	Say one of your watches. Cres.
+1.2	299	row begins a line	299			agree	Where? Boy. At your own house;
+2.1	11	row begins a line	11			agree	Thou bitch-wolf's son, canst thou not
+2.1	22	row begins a line	22			agree	Toadstool, learn me the proclamation. Ther.
+2.1	40	row begins a line	40			agree	Thou shouldst strike him. Ajax. Cobloaf!
+2.1	59	row begins inside a line		58	59	unmapped (P4 number is the next line)	camel; do, do. Achil. Why, how
+2.1	71	row begins a line	71			agree	I know that, fool. Ther. Ay,
+2.1	81	row begins inside a line		81	82	unmapped (P4 number is the containing line)	him. Achil. What? Ther. I say,
+2.1	89	row begins a line	89			agree	Peace, fool! Ther. I would have
+2.1	101	row begins a line	101			agree	I serve thee not. Ajax. Well,
+2.1	121	row begins a line	121			agree	I shall cut out your tongue.
+2.1	140	row begins a line	140			agree	I know not: 'tis put to
+2.3	40	row begins a line	40			agree	Ay: the heavens hear me! Enter
+2.3	51	row begins a line	51			agree	Thy knower, Patroclus; then tell me,
+2.3	60	row begins a line	60			agree	Peace, fool! I have not done.
+2.3	101	row begins a line	101			agree	Who, Thersites? Ulyss. He. Nest. Then
+2.3	151	row begins a line	151			agree	What is he more than another?
+2.3	161	row begins a line	161			agree	Why should a man be proud?
+2.3	220	row begins a line	220			agree	Can he not be sociable? Ulyss.
+2.3	230	row begins a line	230			agree	A' would have ten shares. Ajax.
+3.1	10	row begins a line	10			agree	Faith, sir, superficially. Pan. Friend, know
+3.1	21	row begins a line	21			agree	Know you the musicians? Serv. Wholly,
+3.1	70	row begins a line	70			agree	Troilus,-- Helen. My Lord Pandarus; honey-sweet
+3.1	80	row begins a line	79			disagree	And to make a sweet lady
+3.1	90	row begins a line	89			disagree	What exploit's in hand? where sups
+3.1	99	row begins a line	99			agree	Well, I'll make excuse. Pan. Ay,
+3.1	111	row begins a line	110			disagree	He! no, she'll none of him;
+3.1	139	row begins inside a line		138	139	unmapped (P4 number is the next line)	the nose. Par. He eats nothing
+3.1	160	row begins a line	160			agree	I will, sweet queen. [Exit. [A
+3.2	72	row begins a line	72			agree	More dregs than water, if my
+3.2	82	row begins a line	82			agree	Nor nothing monstrous neither? Tro. Nothing,
+3.2	91	row begins a line	91			agree	They say all lovers swear more
+3.2	112	row begins a line	112			agree	I thank you for that: if
+3.2	221	row begins a line	220			disagree	Bed, chamber, Pandar to provide this
+3.3	250	row begins a line	250			agree	How can that be? Ther. Why,
+3.3	281	row begins a line	281			agree	Jove bless great Ajax! Ther. Hum!
+3.3	290	row begins a line	290			agree	Agamemnon! Patr. Ay, my lord. Ther.
+3.3	300	row begins a line	300			agree	Fare you well, with all my
+3.3	309	row begins a line	309			agree	Let me bear another to his
+4.2	39	row begins a line	39			agree	Ha, ha! Cres. Come, you are
+4.2	60	row begins a line	60			agree	How now! what's the matter? AEne.
+4.2	81	row begins a line	80			disagree	How now! what's the matter? who
+4.2	101	row begins a line	101			agree	Thou must. Cres. I will not,
+5.1	11	row begins a line	11			agree	Who keeps the tent now? Ther.
+5.1	29	row begins a line	29			agree	Why, thou damnable box of envy,
+5.1	40	row begins a line	40			agree	Out, gall! Ther. Finch-egg! Achil. My
+5.2	11	row begins a line	10			disagree	And any man may sing her,
+5.3	100	row begins a line	100			agree	Let me read. Pan. A whoreson
+5.4	30	row begins a line	30			agree	No, no, I am a rascal;

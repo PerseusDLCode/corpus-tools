@@ -60,6 +60,7 @@ PLAY_TITLES = {
     "wt": "The Winter's Tale",
     "jn": "King John",
     "r3": "Richard III",
+    "aww": "All's Well That Ends Well",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -127,6 +128,9 @@ COPY_TEXT = {
     # Introduction printed 209 (CHOCR index 219), V.5 ends on 246 (index 256);
     # Romeo and Juliet's introduction is 247 (printed = index - 10).
     "r3": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="209-246"),
+    # Introduction printed 635 (CHOCR index 75), V.3 ends on 662 (index 102);
+    # Measure for Measure's introduction is 663 (printed = index + 560).
+    "aww": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="635-662"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

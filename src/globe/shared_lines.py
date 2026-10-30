@@ -44,6 +44,13 @@ cuts one line in two, and one corrects a number:
             words of the line above, second_half the direction's first
             words. Its rows make lines as verse rows do: a row in the start
             band opens one, a turnover continues it.
+  skip      a number the Globe passes over between two lines, with no
+            junction or row to account for it: its own slip, kept so that
+            its numbers (and Schmidt's) hold (All's Well II.3 p.262: three
+            prose rows, "Lustig, as the Dutchman says" 46 to "head: why, he's
+            able to lead her a coranto" 49). first_half is the first words of
+            the line before the number passed over, second_half the next
+            line's; the next line is counted two on.
   dropped  a row the page prints and the OCR of the witness it is built
             from lost (2 Henry IV II.1 p.416, Michigan; Trent has it), so its
             words ran on in the line above: first_half is the first words of that line,
@@ -99,7 +106,7 @@ COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
 KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount", "inset",
-         "heading", "dropped", "stage")
+         "heading", "dropped", "stage", "skip")
 # The kinds that decide where a Globe line begins, which the header counts
 # (canonical-engLit doc/agenda.org #build/header-junctions): not the numeral
 # kinds, and not a lacuna or a heading, which the page prints as a line of its

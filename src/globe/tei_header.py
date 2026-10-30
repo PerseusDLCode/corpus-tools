@@ -62,6 +62,7 @@ PLAY_TITLES = {
     "r3": "Richard III",
     "aww": "All's Well That Ends Well",
     "tro": "Troilus and Cressida",
+    "cor": "Coriolanus",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -135,6 +136,9 @@ COPY_TEXT = {
     # Introduction printed 690 (CHOCR index 130), V.10 ends on 723 (index 163);
     # Othello's introduction is 724 (printed = index + 560).
     "tro": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="690-723"),
+    # Introduction printed 850 (CHOCR index 290), V.6 ends on 885 (index 325);
+    # Timon of Athens' introduction is 886 (printed = index + 560).
+    "cor": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="850-885"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

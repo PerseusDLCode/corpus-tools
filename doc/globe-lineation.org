@@ -26,8 +26,8 @@ Gentlemen of Verona, Measure for Measure, The Comedy of Errors, Love's
 Labour's Lost, A Midsummer Night's Dream, The Merchant of Venice, Much
 Ado About Nothing and As You Like It and Twelfth Night, The Merry
 Wives of Windsor, The Tempest, Hamlet, Cymbeline, Henry VIII, The Taming of the
-Shrew, The Winter's Tale, King John, 1 and 2 Henry IV, Henry V, 1, 2 and 3 Henry VI, Richard III and All's Well That Ends Well are built and published (canonical-engLit =mvp=,
-=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym,h8,shr,wt,jn,1h4,2h4,h5,1h6,2h6,3h6,r3,aww}/shakespeare.*.globe.xml=). Titus
+Shrew, The Winter's Tale, King John, 1 and 2 Henry IV, Henry V, 1, 2 and 3 Henry VI, Richard III, All's Well That Ends Well and Troilus and Cressida are built and published (canonical-engLit =mvp=,
+=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym,h8,shr,wt,jn,1h4,2h4,h5,1h6,2h6,3h6,r3,aww,tro}/shakespeare.*.globe.xml=). Titus
 and Richard II were the cold tests: Titus passed 22 of 24 pages with
 the classifier unchanged and needed only table rows; Richard II passed
 22 of 26 and needed two turnover rules and two new table kinds
@@ -98,6 +98,10 @@ P4 were put back, with thirteen rows and a new table kind =skip=, for a
 number the Globe passes over between two lines with no junction to
 account for it (II.3 p.262, no 48); its letters' signatures are
 numbered, as =separate= rows.
+Troilus and Cressida passed 32 of 32 with twelve rows and no rule
+change: nine shared lines the page cannot show (most of them Æneas'
+entries after a short line), two song rows the P4 does not set as
+=<lg>=, and one misread numeral.
 Songs (=<lg type="song">=) and
 inset texts now convert: every printed row of a song is a Globe line,
 a heading is not, and a row is a turnover only if it completes a

@@ -1,0 +1,376 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+712	trent/kraken	1	40	replace	with swords	zoith szvords	vith swords	
+712	trent/kraken	1	44	replace	we'll	we ’ll	we ’Il	
+712	trent/kraken	2	1	delete		JULIET. PERSONÆ. PETER, servant to Juliet's ABRAHAM, servant to Montague. An Apothecary. Three Musicians. to Paris; another an LADY MONTAGUE, wife to Montague LADY CAPULET, wife to Capulet JULIET, daughter to to Citizens of Verona; several Men and Women, relations to both houses; Maskers, Guards, Watchmen, and Attendants. SCENE: Verona:	PERSONÆ. PETER, servant to Juliet’s nurse. ABRAHAM, servant to Montague. An Apothecary. Three Musicians. Page to Paris; another Page; an Officer. LADY MONTAGUE, wife to Montague. LADY CAPULET, wife to Capulet. JULIET, daughter to Capulet. Nurse to Juliet. Citizens of Verona; several Men and Women, relations to both houses; Maskers, Guards, Watchmen, and Attendants. Chorus. SCENE: Verona: Mantua.	
+712	trent/kraken	2	51	delete		Enter ABRAHAM and BALTHASAR.	Enter ABRAHAM and BALTHASAR.	same
+713	miun/kraken	1	19	replace	down	dovn	dozon	
+713	miun/kraken	1	19	replace	swords.	suords.	swords.	
+713	miun/kraken	1	30	replace	to	at	at	same
+713	miun/kraken	1	37	replace	gown,	goumn,	gozon,	
+713	miun/kraken	2	13	replace	Exeunt	LExeunt	IExeunt	
+714	miun/kraken	1	4	replace	I'll	I’Il	I’ll	
+714	miun/kraken	1	7	replace	Exeunt	LE xeunt	[Exeunt	
+714	miun/kraken	1	29	replace	Here's	Here ’s	Here’s	
+714	miun/kraken	2	2	replace	she'll	she ’ll	she ’ll	same
+714	miun/kraken	2	30	replace	puts	put	put	same
+714	miun/kraken	2	37	replace	I'll	I’Il	I’Il	same
+714	miun/kraken	2	38	replace	Exeunt.	LExeunt.	IExeunt.	
+714	miun/kraken	2	42	replace	and 'tis	and'tis	and ’tis	
+714	miun/kraken	2	47	replace	Cap.		Cap.	
+715	miun/kraken	1	11	replace	To	ITo	TTo	
+715	miun/kraken	1	16	replace	Exeunt	[E xeunt	LExeunt	
+715	miun/kraken	1	36	replace	your	vour	your	
+715	miun/kraken	1	56	replace	Mercutio and	Mercutioand	Mercutio and	
+715	miun/kraken	1	67	replace	asked	ask’d	ask'd	
+715	miun/kraken	2	25	replace	I'll	I’Il	I’ll	
+715	miun/kraken	2	39	replace	Jul.		"Zud."""	
+715	miun/kraken	2	41	replace	Cap.		Cap.	
+715	miun/kraken	2	45	delete		ro		
+715	miun/kraken	2	48	replace	I'll	I’Il	I’ll	
+715	miun/kraken	2	62	replace	wean'd,--I	wean’d.— I	wean’d,— I	
+716	miun/kraken	1	2	delete		3o		
+716	miun/kraken	1	29	replace	young	voung	young	
+716	miun/kraken	1	31	replace	'Yea,'	"""Vea,»"	"""Yea,'"	
+716	miun/kraken	1	59	replace	Cap.		Cap.	
+716	miun/kraken	2	5	replace	and 'tis	and’tis	and ’tis	
+716	miun/kraken	2	15	replace	I'll	I'Il	I’Il	
+716	miun/kraken	2	27	replace	Exeunt.	LExeunt.	IExeunt.	
+716	miun/kraken	2	29	replace	with	vith	wuith Aive	
+716	miun/kraken	2	31	replace	for our	forour	for our	
+716	miun/kraken	2	35	replace	We'll	We’Il	We’Il	same
+716	miun/kraken	2	41	replace	We'll	We ’Il	We’ll	
+716	miun/kraken	2	57	delete		it,	it,	same
+717	miun/kraken	1	9	replace	I'll	I ’ll	I’ll	
+717	miun/kraken	2	24	replace	expires	expire	expire	same
+717	miun/kraken	2	29	replace	Exeunt.	IExeunt.	[Exeunt.	
+717	miun/kraken	2	31	replace	with napkins.	vith napleins.	with napkins.	
+717	miun/kraken	2	34	replace	take	taze	take	
+717	miun/kraken	2	37	replace	ytoo,	too,	too,	same
+717	miun/kraken	2	50	replace	with	vvith	wvith	
+717	miun/kraken	2	52	replace	Cap.		Cap.	
+717	miun/kraken	2	55	replace	mistress!	mistresses!	mistresses	
+718	miun/kraken	1	2	replace	they	ther	they	
+718	miun/kraken	1	3	delete		up,	up,	same
+718	miun/kraken	1	11	replace	Cap.		Cap.	
+718	miun/kraken	1	21	replace	To	ITo	[To	
+718	miun/kraken	1	21	replace	Servingman	Servingmanl	Servingman)	
+718	miun/kraken	1	23	replace	yonder	vonder	yonder	
+718	miun/kraken	1	31	replace	yonder	vonder	yonder	
+718	miun/kraken	1	32	replace	I'll	I’Il	I’Il	same
+718	miun/kraken	1	48	replace	Tyb.		Tyb.	
+718	miun/kraken	1	49	replace	Cap.		Cap.	
+718	miun/kraken	1	60	replace	I'll	L’Il	I’Il	
+718	miun/kraken	1	64	replace	You'll	You ’ll	You’ll	
+718	miun/kraken	1	66	replace	You'll	You ’Il	You’ll	
+718	miun/kraken	1	68	replace	Tyb.	7y6.	Tyb.	
+718	miun/kraken	2	6	replace	For shame! I'll	Forshame! I’Il	Forshame! I’ll	
+718	miun/kraken	2	8	replace	Tyb.		Tyb.	
+718	miun/kraken	2	12	replace	Exit.	IExit.	[Exit.	
+718	miun/kraken	2	13	replace	To	ITo	ITo Julietl	
+718	miun/kraken	2	60	replace	I'll	L'll	I’ll	
+718	miun/kraken	2	61	replace	Exeunt	LExeunt	(Exeunt	
+718	miun/kraken	2	62	replace	Jul.		Jul.	
+718	miun/kraken	2	66	replace	I think,	Ithink,	I think,	
+719	miun/kraken	1	14	replace	Exeunt. ACT II	IExeunt. ACTII.	(Exeunt. ACT II.	
+719	miun/kraken	1	18	delete			Chor.	
+719	miun/kraken	1	19	replace	young	voung	young	
+719	miun/kraken	1	41	replace	He	IHe	[He	
+719	miun/kraken	1	41	replace	down	dovon	dovon woithin	
+719	miun/kraken	1	49	replace	I'll	I’Il	I’Il	same
+719	miun/kraken	2	22	replace	caetera,	cætera,	cætera,	same
+719	miun/kraken	2	23	replace	I'll	I’Il	I’Il	same
+719	miun/kraken	2	23	replace	tuckle-bed!	truckle-bed;	truckle-bed;	same
+719	miun/kraken	2	28	replace	Exeunt.	LExeunt.	IExeunt.	
+719	miun/kraken	2	33	replace	above	aboye	above	
+719	miun/kraken	2	33	replace	window.	vindozo.	window.	
+720	miun/kraken	1	6	replace	I'll	I’Il	I’Il	same
+720	miun/kraken	1	17	replace	thy	that	that	same
+720	miun/kraken	1	22	replace	I'll	I’Il	I’ll	
+720	miun/kraken	1	22	delete		5o	5o	same
+720	miun/kraken	1	56	delete		thou	thou	same
+720	miun/kraken	1	61	replace	to	te	to	
+720	miun/kraken	2	3	delete		!89	!89	same
+720	miun/kraken	2	9	replace	Of	Or	Or	same
+720	miun/kraken	2	14	replace	I'll	I’Il	I ’Il	
+720	miun/kraken	2	19	replace	yielding	vielding	yielding	
+720	miun/kraken	2	31	replace	I'll	I’Il	I’Il	same
+720	miun/kraken	2	45	replace	Jul.		Jul.	
+720	miun/kraken	2	46	replace	to. night?	tonight?	tonight	
+720	miun/kraken	2	57	delete		to	to	same
+720	miun/kraken	2	59	replace	Nurse	INurse	(Nurse	
+720	miun/kraken	2	62	replace	Exit,	[E xit,	[Exit,	
+721	miun/kraken	1	3	replace	I'll	I’Il	I’Il	same
+721	miun/kraken	1	6	replace	I'll	I'Il	I’ll	
+721	miun/kraken	1	18	replace	Exit,	IExit,	LExit,	
+721	miun/kraken	1	24	replace	Retiring.	IRetiring.	[Retiring.	
+721	miun/kraken	1	41	replace	Jul.	Tal	Jul.	
+721	miun/kraken	1	47	replace	I'll	I’Il	Andl’Il	
+721	miun/kraken	1	62	replace	Exit	LExit	(Exit	
+721	miun/kraken	1	67	replace	Exit.	IExit.	(Exit.	
+721	miun/kraken	2	2	replace	with	avith	wvith	
+722	miun/kraken	1	28	delete		thou	thou	same
+722	miun/kraken	1	30	replace	strength in	strengthin	strength in	
+722	miun/kraken	1	32	replace	Fri.		Fri.	
+722	miun/kraken	1	43	replace	I'll	I’Il	I 'll	
+722	miun/kraken	1	48	replace	Exeunt.	IExeunt.	LExeunt.	
+722	miun/kraken	2	15	replace	accents! 'By	accents!“By	accents! “By	
+722	miun/kraken	2	56	delete		o		
+722	miun/kraken	2	60	replace	I'll	I’Il	I’ll	
+722	miun/kraken	2	66	replace	wast	was	was	same
+723	miun/kraken	1	9	delete		O1		
+723	miun/kraken	1	30	replace	Pet.		Peter.	
+723	miun/kraken	1	37	replace	I'll	I	I	same
+723	miun/kraken	1	51	replace	i'	r'	i'	
+723	miun/kraken	2	12	replace	I'll	I’Il	I’Il	same
+723	miun/kraken	2	17	replace	Pet.		Peter.	
+723	miun/kraken	2	20	replace	ocasion	occasion	occasion	same
+723	miun/kraken	2	23	replace	k nave!	knave!	knave!	same
+723	miun/kraken	2	57	replace	I'll	I’Il	I’Il	same
+723	miun/kraken	2	69	replace	thing:--O,	thing :—O,	thing:—O,	
+724	miun/kraken	1	4	replace	I'll	I’Il	I’Il	same
+724	miun/kraken	1	10	replace	that 's	that’s	that’s	same
+724	miun/kraken	1	11	replace	the--No;	the— No;	the— No;	same
+724	miun/kraken	1	16	replace	Exit	LExit	[Exit	
+724	miun/kraken	1	20	replace	Exeunt.	IExeunt.	IEwveunt.	
+724	miun/kraken	1	33	delete		ro	1o	
+724	miun/kraken	1	39	delete		t	t	same
+724	miun/kraken	1	46	replace	Jul.		Jul.	
+724	miun/kraken	2	1	replace	I'll	I’Il	I’Il	same
+724	miun/kraken	2	8	replace	yet	vet	yet	
+724	miun/kraken	2	12	replace	Jul.		Yul.	
+724	miun/kraken	2	17	replace	t'other	t' other	t' other	same
+724	miun/kraken	2	32	replace	your	vour	your	
+724	miun/kraken	2	46	replace	They'll	They 'Il	They 'Il	same
+724	miun/kraken	2	52	replace	I'll	I'Il	I ’ll	
+724	miun/kraken	2	54	replace	Exeunt	1Ixeunt.	WExeunt.	
+724	miun/kraken	2	55	replace	VI Friar	VI.-Friax	VI. Friar	
+725	trent/kraken	1	36	replace	public	publie	public	
+725	trent/kraken	1	41	replace	escape	scape	scape	same
+725	trent/kraken	1	65	replace	quarrelled	quar¬ relled	quar¬ YULIET. relled	
+725	trent/kraken	2	23	replace	Tyb.		Tyb.	
+725	trent/kraken	2	26	replace	here's	here ’s	here’s	
+725	trent/kraken	2	26	replace	here's	here ’s	here’’s	
+725	trent/kraken	2	35	replace	ROMEO.	ROMRO.	ROMEO.	
+725	trent/kraken	2	38	replace	I'll	I’Il	I’Il	same
+725	trent/kraken	2	40	replace	he'll	he’Il	he’Il	same
+725	trent/kraken	2	57	replace	Draws.		IDraws.	
+725	trent/kraken	2	59	replace	Tyb.		7yb.	
+726	miun/kraken	1	4	delete		9o		
+726	miun/kraken	1	9	replace	with	voith	vith	
+726	miun/kraken	1	9	replace	followers. Mer.	follouers.	follozvers. Mer.	
+726	miun/kraken	1	21	delete		me	me	same
+726	miun/kraken	1	34	replace	Exeunt	[E xeunt	(Exeunt	
+726	miun/kraken	1	43	replace	Mercutio's dead!	Mercutio'sdead!	Mercutio's dead!	
+726	miun/kraken	2	37	delete		take	take	same
+726	miun/kraken	2	48	replace	And 'twixt	And'twixt	And ’twixt	
+726	miun/kraken	2	57	replace	Cap.		Cap.	
+726	miun/kraken	2	65	replace	Mont.		Mon.	
+727	miun/kraken	1	7	replace	I'll	I ’ll	I ’ll	same
+727	miun/kraken	1	12	replace	he's	he ’s	he ’s	same
+727	miun/kraken	1	19	replace	Phoebus'	Phœbus'	Phœbus'	same
+727	miun/kraken	1	23	replace	runaways'	runaway’s	runaways'	
+727	miun/kraken	1	30	replace	Play'd	Play' d	Play’d	
+727	miun/kraken	1	56	replace	with	vith	with	
+727	miun/kraken	1	59	replace	did	bid	bid	same
+727	miun/kraken	1	61	replace	Throws	Turows	(Throros	
+727	miun/kraken	1	61	replace	down.	dozon.	dom. Yul.	
+727	miun/kraken	2	2	replace	he's	he ’s	he ’s	same
+727	miun/kraken	2	2	replace	he's	he ’s	he ’s	same
+727	miun/kraken	2	2	replace	he's	he ’s	he ’s	same
+727	miun/kraken	2	14	replace	eyes	eves	eyes	
+727	miun/kraken	2	52	delete		a	a	same
+727	miun/kraken	2	60	replace	vitae:	vitæ:	vitæ	
+728	miun/kraken	1	2	replace	your	vour	your	
+728	miun/kraken	1	50	replace	I'll	I’Il	I’Il	same
+728	miun/kraken	1	53	replace	Nurse.		Nurse.	
+728	miun/kraken	1	60	replace	Exeunt.	LExeunt.	WExeunt.	
+728	miun/kraken	1	61	replace	Laurence's	Laurences	Laurence's	
+728	miun/kraken	2	30	replace	my	thy	thy	same
+728	miun/kraken	2	52	replace	me?--'banished'?	me?—“banished'?	me?—“banished?	
+729	miun/kraken	1	1	replace	mad men	madmen	madmen	same
+729	miun/kraken	1	14	replace	Knocking	Inocking	[K nocking voithin.	
+729	miun/kraken	1	20	replace	Knocking.	IKnocking.	[Knocking.	
+729	miun/kraken	1	24	replace	Knocking.	IKnocking.	[Knocking.	
+729	miun/kraken	1	27	replace	Knocking.	IKnocking.	(Knocking.	
+729	miun/kraken	1	39	replace	mistress's	mistress'	mistress'	same
+729	miun/kraken	1	42	replace	Blubbering and	Blubberingand	Blubberingand	same
+729	miun/kraken	1	53	replace	removed	remoyed	removed	
+729	miun/kraken	1	63	replace	the	that	that	same
+729	miun/kraken	1	67	replace	Drawing	IDrazving	(Drazving	
+729	miun/kraken	1	67	replace	sword,	suvord.	swvord.	
+729	miun/kraken	2	8	replace	thy, self?	thyself?	thyself?	same
+729	miun/kraken	2	29	replace	dismember'd	dismember' d	dismember'd	
+729	miun/kraken	2	43	delete		till	till	same
+729	miun/kraken	2	57	replace	I'll	I’Il	I’ll	
+729	miun/kraken	2	63	replace	Exit.	IExit.	[Exit.	
+729	miun/kraken	2	69	replace	I'll	I’Il	I’Il	same
+730	miun/kraken	1	5	delete		a	a	same
+730	miun/kraken	1	13	replace	she'll	she’Il	she’Il	same
+730	miun/kraken	1	14	replace	your	vour	your	
+730	miun/kraken	1	20	replace	Cap.		Cab.	
+730	miun/kraken	1	24	replace	think she	think-she	think she	
+730	miun/kraken	1	36	replace	We'll	We ’Il	We’ll	
+730	miun/kraken	1	50	delete		very	very	same
+730	miun/kraken	1	52	replace	Exeunt.	LExeunt.	(Exeunt.	
+730	miun/kraken	1	55	replace	window.	vvindow.	zvindozo.	
+730	miun/kraken	1	59	replace	yond	yon	yon	same
+730	miun/kraken	1	61	replace	Rom. It	Rom.It	Rom. It	
+730	miun/kraken	2	2	replace	Yond	Yon	Yon	same
+730	miun/kraken	2	9	replace	I'll	I 'll	I’ll	
+730	miun/kraken	2	15	replace	let 's	let’s	let ’s	
+730	miun/kraken	2	30	replace	Jul.		Jul.	
+730	miun/kraken	2	36	replace	I'll	I’Il	I’Il	same
+730	miun/kraken	2	37	replace	He	HHe	HHe	same
+730	miun/kraken	2	46	delete		5o		
+730	miun/kraken	2	65	replace	Cap.		Cap.	
+731	trent/kraken	1	1	replace	LADY	Lapy	LADY	
+731	trent/kraken	1	21	replace	slaughtered	slaughter'd	slaughter'd	same
+731	trent/kraken	1	24	replace	Aside	(Asidel	[Asidel	
+731	trent/kraken	1	30	replace	Jul.		Jul.	
+731	trent/kraken	1	47	delete		1oo	roo	
+731	trent/kraken	1	53	replace	I'll	I’Il	I’Il	same
+731	trent/kraken	1	54	replace	Jul.		Jul.	
+731	trent/kraken	2	2	replace	his	this	this	same
+731	trent/kraken	2	5	replace	I	l	I	
+731	trent/kraken	2	11	replace	CAPULET	Capuler	CApULET	
+731	trent/kraken	2	39	replace	Cap.		Cap.	
+731	trent/kraken	2	41	replace	thank	thanle	thank	
+731	trent/kraken	2	67	replace	Cap.		Cap.	
+732	miun/kraken	1	10	replace	Day,	tDay,	tDay,	same
+732	miun/kraken	1	19	replace	'I'll	I’Il	I’Il	same
+732	miun/kraken	1	21	replace	I'll	I’Il	I’Il	same
+732	miun/kraken	1	24	replace	on 't,	on't,	on’t,	
+732	miun/kraken	1	26	replace	I'll	I’Il	I’Il	same
+732	miun/kraken	1	29	replace	I'll	I’Il	I’Il	same
+732	miun/kraken	1	31	replace	I'll	I’Il	I’Il	same
+732	miun/kraken	1	32	replace	Exit.	IExit.	IExit.	same
+732	miun/kraken	1	39	replace	I'll	I’Il	I’ll	
+732	miun/kraken	1	41	replace	Exit.	IExit.	[Exit.	
+732	miun/kraken	2	9	replace	Exit.	IExit.	IExit.	same
+732	miun/kraken	2	16	replace	I'll	I'Il	I’ll	
+732	miun/kraken	2	17	replace	Exit.	IExit.	IExit.	same
+732	miun/kraken	2	33	delete		xo		
+733	miun/kraken	1	18	replace	hear'st	hear' st	hear’st	
+733	miun/kraken	1	22	replace	I'll	I’Il	I’Il	same
+733	miun/kraken	1	53	replace	chapless-skulls;	chapless skulls;	chapless skulls;	same
+733	miun/kraken	2	27	replace	I'll	I’Il	I’Il	same
+733	miun/kraken	2	31	replace	Exeunt.	IExeunt.	IExeunt.	same
+733	miun/kraken	2	34	replace	two	tave	tavo	
+733	miun/kraken	2	35	replace	Cap.		Cap.	
+733	miun/kraken	2	36	replace	Exit First	IExit Furst	LExit First	
+733	miun/kraken	2	37	replace	me twenty	mestwenty	me twenty	
+733	miun/kraken	2	38	replace	I'll	I’Il	I’Il	same
+733	miun/kraken	2	44	replace	Exit	LExit	(Exit	
+733	miun/kraken	2	56	replace	Jul.		Jul.	
+734	miun/kraken	1	1	replace	I am	Iam	I am	
+734	miun/kraken	1	1	replace	this is	thisis	this is	
+734	miun/kraken	1	2	replace	as't	as ’t	as 't	
+734	miun/kraken	1	11	replace	Good	Go,	Go,	same
+734	miun/kraken	1	11	replace	we'll	we’Il	we ’Il	
+734	miun/kraken	1	12	replace	Juliet	Tuliet	Juliet	
+734	miun/kraken	1	13	replace	Cap.		Cap.	
+734	miun/kraken	1	19	replace	I'll	I’Il	I’ll	
+734	miun/kraken	1	24	delete		IExeunt.	[Exeunt.	
+734	miun/kraken	1	36	replace	Jul.		Jul.	
+734	miun/kraken	1	40	delete		ro		
+734	miun/kraken	1	45	replace	Exeunt	[E xeunt	[Exeunt	
+734	miun/kraken	1	48	replace	I have	Lhave	I have	
+734	miun/kraken	1	48	replace	feat	fear	fear	same
+734	miun/kraken	1	57	replace	down	dovn	dozvn	
+734	miun/kraken	1	62	replace	I	it	it	same
+734	miun/kraken	2	9	replace	pack'd:	pack d:	pack’d:	
+734	miun/kraken	2	21	replace	bone,	bonc,	bone,	
+734	miun/kraken	2	28	replace	Capulet's	Cavulet's	Cabulet's	
+734	miun/kraken	2	30	replace	Cap.		Cap.	
+734	miun/kraken	2	41	replace	you'll	you 'll	you’ll	
+734	miun/kraken	2	49	replace	Exeunt	LExeunt	LE xeunt	
+734	miun/kraken	2	50	replace	Cap.		Cap.	
+734	miun/kraken	2	51	replace	with	vith	with	
+734	miun/kraken	2	52	replace	baskets.	basseets.	baskets.	
+734	miun/kraken	2	57	replace	Exit	LExit	[Exit	
+734	miun/kraken	2	63	replace	Cap.		IExit. Cab.	
+735	trent/kraken	1	24	replace	i' faith.	i'faith.	i' faith.	
+735	trent/kraken	1	25	replace	Undraws	[Undrazos	LUndraws	
+735	trent/kraken	1	31	replace	vita,	vitæ,	vitæ,	same
+735	trent/kraken	1	37	replace	O me, O me!	Ome, Ome!	Ome, O me!	
+735	trent/kraken	1	37	replace	only life,	onlylife,	only life,	
+735	trent/kraken	1	40	replace	CAPULET.		CAPULET. Caz.	
+735	trent/kraken	1	45	replace	she's	she ’s	she ’s	same
+735	trent/kraken	2	10	replace	e'er	c’er	e’er	
+735	trent/kraken	2	24	replace	thee	thce	thee	
+735	trent/kraken	2	46	replace	She's	She ’s	She ’s	same
+735	trent/kraken	2	66	replace	Exeunt	LExeunt	LExeunt	same
+736	trent/kraken	1	1	replace	good fellows,	goodfellows,	good fellows,	
+736	trent/kraken	1	1	replace	put up;	putup;Strange	put up;	
+736	trent/kraken	1	25	replace	I'll	I’Il	L’Il	
+736	trent/kraken	1	46	replace	with her	with’her	with her	
+736	trent/kraken	2	6	replace	Where	When	When	same
+736	trent/kraken	2	8	replace	Verona!--How	Verona How	Verona!— How	
+736	trent/kraken	2	14	replace	Capels'	Capel’s	Capel’s	same
+736	trent/kraken	2	31	replace	I'll	I’Il	I'll	
+736	trent/kraken	2	32	replace	Exit	IExit	IExit	same
+736	trent/kraken	2	58	replace	Ap.	A2.	A	
+737	miun/kraken	1	19	replace	Rom. There's	There is	Rom. There is	
+737	miun/kraken	1	31	replace	J.	7.	7.	same
+737	miun/kraken	1	37	replace	J.	T.	J.	
+737	miun/kraken	1	44	replace	stay'd.	stay d.	stay’d.	
+737	miun/kraken	1	46	replace	J.	Y.	7.	
+737	miun/kraken	1	56	replace	I'll	I’Il	I’Il	same
+737	miun/kraken	1	57	replace	Exit.	IExit.	IExit.	same
+737	miun/kraken	1	65	replace	Exit.	LExit.	IExit.	
+737	miun/kraken	2	1	replace	tomb	tomd	tomo	
+737	miun/kraken	2	8	replace	thee	thce	thee	
+737	miun/kraken	2	26	replace	shall	shalF	shall	
+737	miun/kraken	2	27	replace	whistles.	whisiles.	whistles.	
+737	miun/kraken	2	34	replace	mattock,	mattocke,	mattock,	
+737	miun/kraken	2	39	replace	life,	lise,	life,	
+737	miun/kraken	2	40	replace	seeest,	seest,	seest,	same
+737	miun/kraken	2	59	replace	I'll	I’Il	I’ll	
+737	miun/kraken	2	62	replace	Retires.	IRetires.	[Retires.	
+738	miun/kraken	1	1	replace	I'll	I’Il	I’ll	
+738	miun/kraken	1	2	replace	Opens	IOpens	(Opens	
+738	miun/kraken	1	9	replace	forward.	forzvard.	forzoard.	
+738	miun/kraken	1	16	replace	youth,	vouth,	youth,	
+738	miun/kraken	1	28	replace	They	IThey	[They	
+738	miun/kraken	1	30	replace	Exit.	LExit.	[Exit.	
+738	miun/kraken	1	33	replace	Dies.	IDies.	[Dies.	
+738	miun/kraken	1	44	replace	I'll	I’Il	I’ll	
+738	miun/kraken	1	49	replace	Laying	[Laving	[Laying	
+738	miun/kraken	1	52	replace	may	mav	mayI	
+738	miun/kraken	2	16	replace	Dies.	IDies.	[Dies.	
+738	miun/kraken	2	42	replace	I'll	I ’ll	I’Il	
+738	miun/kraken	2	54	replace	Enters	LEnters	[Enters	
+738	miun/kraken	2	57	replace	chancel	chance!	chance!	same
+738	miun/kraken	2	62	replace	within.	vithin.	within.	
+739	miun/kraken	1	7	replace	Exit	IExit	IExit	same
+739	miun/kraken	1	16	delete		I		
+739	miun/kraken	1	22	replace	with	ith	with	
+739	miun/kraken	1	32	replace	Mantagues:	Montagues:	Montagues	
+739	miun/kraken	1	33	replace	whereon	whercon	whereon	
+739	miun/kraken	1	41	replace	Re-enter	Re-entex	Re-enter	
+739	miun/kraken	1	41	replace	with	wvith	with	
+739	miun/kraken	1	50	replace	Prin.		Prince.	
+739	miun/kraken	1	54	replace	shriek abroad?	shrielabroad?	shriek abroad?	
+739	miun/kraken	1	57	replace	outcry,	outery,	outcry,	
+739	miun/kraken	1	58	replace	Prin.		Prince.	
+739	miun/kraken	2	1	replace	Prin.		Prince.	
+739	miun/kraken	2	3	replace	slaughtered	slaughter'd	slaughter'd	same
+739	miun/kraken	2	7	replace	heavens!	heaven!	heavens!	
+739	miun/kraken	2	11	replace	it	is	it	
+739	miun/kraken	2	16	replace	Prin.		Prince.	
+739	miun/kraken	2	20	replace	mine	my	mine	
+739	miun/kraken	2	21	replace	Prin.		Prince.	
+739	miun/kraken	2	25	replace	Prin.		Prince.	
+739	miun/kraken	2	39	replace	Prin.		Prince.	
+739	miun/kraken	2	52	replace	Betroth'd and	Betroth' d’and	Betroth’d and	
+739	miun/kraken	2	54	replace	mean	means	mean	
+739	miun/kraken	2	64	replace	letter,	latter,	letter,	
+739	miun/kraken	2	65	replace	stay'd by	stay’d’by	stay’d by	
+740	miun/kraken	1	16	replace	Prin.		Prince.	
+740	miun/kraken	1	27	replace	Prin.		Prince.	
+740	miun/kraken	2	4	replace	Prin.		Prince.	
+740	miun/kraken	2	17	replace	Cap.		Cap.	
+740	miun/kraken	2	25	replace	Cap.		Cap.	
+740	miun/kraken	2	25	replace	Romeo's	Romeo	Romeo’s	
+740	miun/kraken	2	25	replace	lady's	lady	lady’s	
+740	miun/kraken	2	27	replace	Prin.		Prince.	

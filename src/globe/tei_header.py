@@ -64,6 +64,7 @@ PLAY_TITLES = {
     "tro": "Troilus and Cressida",
     "cor": "Coriolanus",
     "rom": "Romeo and Juliet",
+    "tim": "Timon of Athens",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -143,6 +144,9 @@ COPY_TEXT = {
     # Introduction printed 247 (CHOCR index 257), V.3 ends on 277 (index 287);
     # King Richard II's introduction is 278 (printed = index - 10).
     "rom": dict(volume="volume 1", ia_id="bwb_KT-315-451_1", pages="247-277"),
+    # Introduction printed 886 (CHOCR index 326), V.4 ends on 910 (index 350);
+    # Pericles' introduction is 911 (printed = index + 560).
+    "tim": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="886-910"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

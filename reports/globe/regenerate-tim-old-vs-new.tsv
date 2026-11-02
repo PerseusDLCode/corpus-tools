@@ -1,0 +1,192 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tim.xml (sha256 de937a88b312a9fe); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	10	row begins a line	10			agree	Mer. A most incomparable man, breathed,
+1.1	20	row begins inside a line		20	21	unmapped (P4 number is the containing line)	Poet. A thing slipp'd idly from
+1.1	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Poet. Admirable: how this grace Speaks
+1.1	41	row begins a line	41			agree	Pain. Look, more! Poet. You see
+1.1	50	row begins a line	50			agree	Leaving no tract behind. Pain. How
+1.1	70	row begins a line	70			agree	Whom fortune with her ivory hand
+1.1	80	row begins a line	80			agree	Follow his strides, his lobbies fill
+1.1	90	row begins a line	90			agree	A thousand moral paintings I can
+1.1	100	row begins a line	100			agree	I am not of that feather
+1.1	110	row begins inside a line		110	111	unmapped (P4 number is the containing line)	Tim. Freely, good father. Old Ath.
+1.1	120	row begins inside a line		120	121	unmapped (P4 number is the containing line)	Tim. Well; what further? Old Ath.
+1.1	130	row begins a line	130			agree	His honesty rewards him in itself;
+1.1	140	row begins a line	140			agree	If she be mated with an
+1.1	150	row begins a line	150			agree	That state or fortune fall into
+1.1	180	row begins a line	180			agree	When thou art Timon's dog, and
+1.1	191	row begins a line	191			agree	Tim. Whither art going? Apem. To
+1.1	199	row begins a line	199			agree	Apem. The best, for the innocence.
+1.1	211	row begins a line	211			agree	Tim. That's a lascivious apprehension. Apem.
+1.1	219	row begins a line	219			agree	Apem. Not worth my thinking. How
+1.1	230	row begins a line	230			agree	Poet. That's not feigned; he is
+1.1	240	row begins a line	240			agree	Tim. Wherefore? Apem. That I had
+1.1	251	row begins a line	251			agree	All of companionship. Tim. Pray, entertain
+1.1	260	row begins a line	260			agree	Into baboon and monkey. Alcib. Sir,
+1.1	269	row begins a line	269			agree	Sec. Lord. Thou art going to
+1.1	280	row begins a line	280			agree	Sec. Lord. Away, unpeaceable dog, or
+1.1	290	row begins a line	290			agree	But breeds the giver a return
+1.2	10	row begins a line	10			agree	I gave it freely ever; and
+1.2	20	row begins a line	20			agree	Than my fortunes to me. [They
+1.2	32	row begins a line	32			agree	Apem. Let me stay at thine
+1.2	52	row begins a line	52			agree	Lest they should spy my windpipe's
+1.2	61	row begins a line	61			agree	This and my food are equals;
+1.2	70	row begins a line	69			disagree	Or my friends, if I should
+1.2	78	row begins a line	78			agree	Tim. You had rather be at
+1.2	91	row begins a line	91			agree	Tim. O, no doubt, my good
+1.2	130	row begins a line	130			agree	Acknowledge thee their patron; and come
+1.2	140	row begins a line	140			agree	As this pomp shows to a
+1.2	150	row begins a line	150			agree	Men shut their doors against a
+1.2	160	row begins a line	160			agree	Tim. Ladies, there is an idle
+1.2	171	row begins a line	171			agree	First Lord. Where be our men?
+1.2	180	row begins a line	180			agree	Serv. My lord, there are certain
+1.2	190	row begins a line	190			agree	Tim. I shall accept them fairly;
+1.2	201	row begins a line	201			agree	To show him what a beggar
+1.2	210	row begins a line	210			agree	Than such that do e'en enemies
+1.2	220	row begins a line	220			agree	Tim. You may take my word,
+1.2	240	row begins a line	240			agree	Methinks, false hearts should never have
+2.1	10	row begins a line	10			agree	And able horses. No porter at
+2.1	20	row begins a line	20			agree	My uses cry to me, I
+2.1	31	row begins a line	31			agree	Lord Timon will be left a
+2.2	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Var. Serv. Is 't not your
+2.2	20	row begins a line	20			agree	To the succession of new days
+2.2	30	row begins a line	30			agree	Var. Serv. 'Twas due on forfeiture,
+2.2	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	Flav. Please you, gentlemen, The time
+2.2	50	row begins a line	50			agree	Isid. Serv. A plague upon him,
+2.2	59	row begins a line	59			agree	Caph. Where's the fool now? Apem.
+2.2	79	row begins a line	79			agree	Apem. Would I had a rod
+2.2	90	row begins a line	90			agree	Page. Thou wast whelped a dog,
+2.2	99	row begins a line	99			agree	Apem. So would I,--as good a
+2.2	109	row begins a line	109			agree	Var. Serv. I could render one.
+2.2	122	row begins a line	122			agree	Var. Serv. Thou art not altogether
+2.2	140	row begins a line	140			agree	And that unaptness made your minister,
+2.2	150	row begins a line	150			agree	Prompted you in the ebb of
+2.2	161	row begins a line	161			agree	Flav. O my good lord, the
+2.2	170	row begins a line	170			agree	Hath blazed with lights and bray'd
+2.2	180	row begins a line	180			agree	Feast-won, fast-lost; one cloud of winter
+2.2	190	row begins a line	190			agree	Tim. And, in some sort, these
+2.2	209	row begins a line	209			agree	For that I knew it the
+2.2	219	row begins a line	219			agree	And so, intending other serious matters,
+2.2	231	row begins inside a line		231	232	unmapped (P4 number is the containing line)	Ventidius lately Buried his father; by
+2.2	240	row begins a line	240			agree	That Timon's fortunes 'mong his friends
+3.1	12	row begins a line	12			agree	Flam. His health is well, sir.
+3.1	50	row begins a line	50			agree	And we alive that lived? Fly,
+3.1	59	row begins a line	59			agree	I feel my master's passion! this
+3.2	9	row begins a line	9			agree	Luc. Fie, no, do not believe
+3.2	42	row begins a line	42			agree	Luc. I know his lordship is
+3.2	70	row begins inside a line		70	71	unmapped (P4 number is the containing line)	Sec. Stran. Ay, too well. First
+3.2	81	row begins a line	81			agree	He does deny him, in respect
+3.2	90	row begins a line	90			agree	I would have put my wealth
+3.3	11	row begins a line	11			agree	Must I be his last refuge?
+3.3	20	row begins a line	20			agree	So it may prove an argument
+3.3	40	row begins a line	40			agree	Now to guard sure their master.
+3.4	10	row begins a line	10			agree	Phi. I wonder on 't; he
+3.4	20	row begins a line	20			agree	For which I wait for money.
+3.4	30	row begins a line	30			agree	First Var. Serv. 'Tis much deep:
+3.4	49	row begins a line	49			agree	Why then preferr'd you not your
+3.4	60	row begins a line	60			agree	First Var. Serv. How! what does
+3.4	80	row begins a line	80			agree	Tim. What, are my doors opposed
+3.4	90	row begins a line	90			agree	Phi. All our bills. Tim. Knock
+3.4	100	row begins a line	100			agree	Tim. Tear me, take me, and
+3.4	110	row begins a line	110			agree	Flav. Here, my lord. Tim. So
+3.5	10	row begins a line	10			agree	It pleases time and fortune to
+3.5	20	row begins a line	20			agree	He did oppose his foe: And
+3.5	30	row begins a line	30			agree	When sects and factions were newly
+3.5	40	row begins a line	40			agree	Alcib. My lords, then, under favour,
+3.5	50	row begins a line	50			agree	Loaden with irons wiser than the
+3.5	60	row begins a line	60			agree	At Lacedaemon and Byzantium. Were a
+3.5	70	row begins a line	70			agree	If there were no foes, that
+3.5	80	row begins a line	80			agree	And, for I know your reverend
+3.5	90	row begins a line	90			agree	I do beseech you, know me.
+3.5	100	row begins a line	100			agree	That makes the senate ugly. First
+3.5	110	row begins a line	110			agree	Is this the balsam that the
+3.6	9	row begins inside a line		9	10	unmapped (P4 number is the containing line)	of his new feasting. First Lord.
+3.6	20	row begins inside a line		19	20	unmapped (P4 number is the next line)	I understand how all things go.
+3.6	30	row begins inside a line		29	30	unmapped (P4 number is the next line)	of your lordship. Sec. Lord. The
+3.6	41	row begins inside a line		40	41	unmapped (P4 number is the next line)	empty messenger. Tim. O, sir, let
+3.6	50	row begins a line	50			agree	Sec. Lord. If you had sent
+3.6	60	row begins a line	60			agree	Third Lord. Alcibiades is banished: hear
+3.6	70	row begins inside a line		69	70	unmapped (P4 number is the next line)	Third Lord. Will 't hold? will't
+3.6	100	row begins a line	100			agree	Is your perfection. This is Timon's
+3.6	110	row begins a line	110			agree	Soft! take thy physic first--thou too--and
+3.6	120	row begins a line	120			agree	Fourth Lord. I have lost my
+4.1	10	row begins a line	10			agree	And cut your trusters' throats! bound
+4.1	20	row begins a line	20			agree	Decline to your confounding contraries. And
+4.1	30	row begins a line	30			agree	Be general leprosy! Breath infect breath,
+4.2	10	row begins a line	10			agree	So his familiars to his buried
+4.2	29	row begins a line	29			agree	Thus we part rich in sorrow,
+4.2	40	row begins a line	40			agree	Who, then, dares to be half
+4.3	10	row begins a line	10			agree	The senator shall bear contempt hereditary,
+4.3	20	row begins a line	20			agree	But direct villany. Therefore, be abhorr'd
+4.3	30	row begins a line	30			agree	Ha, you gods! why this? what
+4.3	40	row begins a line	40			agree	Would cast the gorge at, this
+4.3	50	row begins a line	50			agree	For showing me again the eyes
+4.3	60	row begins a line	60			agree	Religious canons, civil laws are cruel;
+4.3	70	row begins inside a line		70	71	unmapped (P4 number is the containing line)	Tim. None, but to Maintain my
+4.3	80	row begins a line	80			agree	Timan. Is this the Athenian minion,
+4.3	90	row begins a line	90			agree	I have but little gold of
+4.3	100	row begins inside a line		100	101	unmapped (P4 number is the containing line)	Tim. Keep it, I cannot eat
+4.3	110	row begins a line	110			agree	In the sick air: let not
+4.3	120	row begins a line	120			agree	Think it a bastard, whom the
+4.3	130	row begins a line	130			agree	Not all thy counsel. Tim. Dost
+4.3	140	row begins a line	140			agree	And he whose pious breath seeks
+4.3	160	row begins a line	160			agree	Smells from the general weal: make
+4.3	170	row begins a line	170			agree	If I thrive well, I'll visit
+4.3	180	row begins a line	180			agree	Whereof thy proud child, arrogant man,
+4.3	190	row begins a line	190			agree	Teem with new monsters, whom thy
+4.3	200	row begins a line	200			agree	Tim. 'Tis, then, because thou dost
+4.3	210	row begins a line	210			agree	Be thou a flatterer now, and
+4.3	220	row begins a line	220			agree	Apem. Thou hast cast away thyself,
+4.3	230	row begins a line	230			agree	To the conflicting elements exposed, Answer
+4.3	239	row begins a line	239			agree	Apem. If thou didst put this
+4.3	260	row begins a line	260			agree	Who had the world as my
+4.3	270	row begins a line	270			agree	They never flatter'd thee: what hast
+4.3	290	row begins inside a line		290	291	unmapped (P4 number is the containing line)	Tim. The best and truest; For
+4.3	299	row begins a line	299			agree	Tim. To sauce thy dishes. Apem.
+4.3	319	row begins inside a line		318	319	unmapped (P4 number is the next line)	thou nearest compare to thy flatterers?
+4.3	350	row begins a line	350			agree	Apem. If thou couldst please me
+4.3	360	row begins a line	360			agree	Tim. When there is nothing living
+4.3	370	row begins a line	370			agree	Apem. I would my tongue could
+4.3	389	row begins a line	389			agree	And makest them kiss! that speak'st
+4.3	413	row begins a line	410			disagree	First Ban. Is not this he?
+4.3	420	row begins a line	420			agree	Why should you want? Behold, the
+4.3	431	row begins a line	431			agree	In limited professions. Rascal thieves, Here's
+4.3	450	row begins a line	450			agree	Break open shops; nothing can you
+4.3	459	row begins a line	459			agree	Sec. Ban. I'll believe him as
+4.3	469	row begins a line	469			agree	Has desperate want made! What viler
+4.3	480	row begins a line	480			agree	Tim. Why dost ask that? I
+4.3	490	row begins a line	490			agree	Because thou art a woman, and
+4.3	500	row begins a line	500			agree	Let me behold thy face. Surely,
+4.3	510	row begins a line	510			agree	For, by oppressing and betraying me,
+4.3	520	row begins a line	520			agree	You should have fear'd false times
+4.3	530	row begins a line	530			agree	Tim. Look thee, 'tis so! Thou
+4.3	540	row begins inside a line		540	541	unmapped (P4 number is the containing line)	Flav. O, let me stay, And
+5.1	10	row begins a line	10			agree	Poet. Then this breaking of his
+5.1	23	row begins inside a line		22	23	unmapped (P4 number is the next line)	an intent that's coming toward him.
+5.1	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	I'll meet you at the turn.
+5.1	60	row begins a line	60			agree	Poet. Sir, Having often of your
+5.1	70	row begins a line	70			agree	Tim. Let it go naked, men
+5.1	80	row begins a line	80			agree	I am sure you have: speak
+5.1	90	row begins a line	90			agree	I must needs say you have
+5.1	100	row begins a line	100			agree	Keep in your bosom: yet remain
+5.1	110	row begins a line	110			agree	Each man apart, all single and
+5.1	120	row begins a line	120			agree	For he is set so only
+5.1	130	row begins a line	130			agree	Peace and content be here Lord
+5.1	140	row begins a line	140			agree	Tim. I thank them; and would
+5.1	150	row begins a line	150			agree	A lack of Timon's aid, hath
+5.1	161	row begins a line	161			agree	And I'll beweep these comforts, worthy
+5.1	180	row begins a line	181			disagree	And let him take't at worst;
+5.1	190	row begins a line	190			agree	Of health and living now begins
+5.1	199	row begins a line	199			agree	Sec. Sen. And enter in our
+5.1	210	row begins a line	210			agree	And shortly must I fell it:
+5.1	220	row begins a line	220			agree	Who once a day with his
+5.1	229	row begins a line	229			agree	Sec. Sen. Our hope in him
+5.2	10	row begins a line	10			agree	From Alcibiades to Timon's cave, With
+5.3	10	row begins a line	10			agree	Whose fall the mark of his
+5.4	21	row begins a line	21			agree	We were not all unkind, nor
+5.4	30	row begins a line	30			agree	Into our city with thy banners
+5.4	40	row begins a line	40			agree	Spare thy Athenian cradle and those
+5.4	50	row begins a line	50			agree	Or any token of thine honour
+5.4	60	row begins a line	60			agree	Shall pass his quarter, or offend
+5.4	80	row begins a line	80			agree	Is noble Timon: of whose memory

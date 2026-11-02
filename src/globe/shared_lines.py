@@ -74,6 +74,22 @@ cuts one line in two, and one corrects a number:
             first_half the first words of its first row, second_half of its
             last, both on the page. Not a junction: the page sets every row
             a line, and the row says only that the build must take them so.
+  runs-on   a scene the page heads as a scene but numbers on from the
+            scene before (Pericles V.2, Gower's 'Now our sands are almost
+            run', p.998: V.1 ends at 265, and the page prints 270 and 280
+            beside its 5th and 15th lines). Its lines are counted from 1, as
+            the heading has it and Schmidt cites them (Pageantry V.2.6); its
+            numerals are checked against the scene before's count plus its
+            own. first_half: the first words of the scene's first line.
+            Not a junction.
+  merged    a division of the P4 that the page prints inside the scene
+            before, with no heading, and numbers on from it (Pericles's
+            epilogue, the P4's scene "chorus2", 'In Antiochus and his
+            daughter', p.999: 91 and 100, V.3.85-102 as Schmidt cites it).
+            The build moves the division's content to the end of that scene
+            before it reads the P4's words, so its lines are the scene's.
+            scene: the P4 division (5.chorus2); first_half: the first words
+            of its first line. Not a junction.
 
 Every row names its play, and its page must be one of that play's printed
 pages (data/globe/plays.tsv): the build reads only the play's own rows, and
@@ -106,7 +122,7 @@ COLUMNS = ["play", "scene", "page", "kind", "first_half", "second_half", "line",
            "folger_ids", "checked", "note"]
 MATCH_WORDS = 3  # words compared at each half of a junction
 KINDS = ("shared", "turnover", "separate", "numeral", "lacuna", "misplaced", "miscount", "inset",
-         "heading", "dropped", "stage", "skip")
+         "heading", "dropped", "stage", "skip", "runs-on", "merged")
 # The kinds that decide where a Globe line begins, which the header counts
 # (canonical-engLit doc/agenda.org #build/header-junctions): not the numeral
 # kinds, and not a lacuna or a heading, which the page prints as a line of its

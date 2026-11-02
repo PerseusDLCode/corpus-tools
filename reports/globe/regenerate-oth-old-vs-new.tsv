@@ -1,0 +1,247 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in oth.xml (sha256 cfc5838b467e68fb); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	20	row begins a line	20			agree	One Michael Cassio, a Florentine, A
+1.1	30	row begins a line	30			agree	Christian and heathen, must be be-lee'd
+1.1	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	Rod. I would not follow him
+1.1	60	row begins a line	60			agree	But seeming so, for my peculiar
+1.1	70	row begins a line	70			agree	And, though he in a fertile
+1.1	80	row begins a line	80			agree	Look to your house, your daughter
+1.1	90	row begins a line	90			agree	Awake the snorting citizens with the
+1.1	100	row begins a line	100			agree	Upon malicious bravery, dost thou come
+1.1	120	row begins a line	120			agree	Bra. This thou shalt answer; I
+1.1	140	row begins a line	140			agree	Let loose on me the justice
+1.1	151	row begins a line	151			agree	With such loud reason to the
+1.1	160	row begins a line	160			agree	And there will I be with
+1.1	170	row begins a line	170			agree	Bra. O heaven! How got she
+1.1	180	row begins a line	180			agree	To get good guard and go
+1.2	10	row begins a line	10			agree	I did full hard forbear him.
+1.2	20	row begins a line	20			agree	Which, when I know that boasting
+1.2	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Oth. Not I; I must be
+1.2	40	row begins a line	40			agree	It is a business of some
+1.2	60	row begins a line	60			agree	Good signior, you shall more command
+1.2	70	row begins a line	70			agree	Run from her guardage to the
+1.2	80	row begins a line	80			agree	Lay hold upon him: if he
+1.2	90	row begins a line	90			agree	Upon some present business of the
+1.3	10	row begins a line	10			agree	I do not so secure me
+1.3	20	row begins a line	20			agree	The importancy of Cyprus to the
+1.3	30	row begins a line	30			agree	To wake and wage a danger
+1.3	40	row begins a line	40			agree	Your trusty and most valiant servitor,
+1.3	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	[To Brabantio] I did not see
+1.3	61	row begins a line	61			agree	By spells and medicines bought of
+1.3	70	row begins inside a line		70	71	unmapped (P4 number is the containing line)	Bra. Humbly I thank your grace.
+1.3	80	row begins a line	80			agree	The very head and front of
+1.3	90	row begins a line	90			agree	I will a round unvarnish'd tale
+1.3	100	row begins a line	100			agree	That will confess perfection so could
+1.3	110	row begins a line	110			agree	First Sen. But, Othello, speak: Did
+1.3	120	row begins inside a line		120	121	unmapped (P4 number is the containing line)	Duke. Fetch Desdemona hither. Oth. Ancient,
+1.3	131	row begins a line	131			agree	That I have pass'd. I ran
+1.3	140	row begins a line	140			agree	Wherein of antres vast and deserts
+1.3	160	row begins a line	160			agree	She swore, in faith, 'twas strange,
+1.3	170	row begins a line	170			agree	Here comes the lady; let her
+1.3	180	row begins inside a line		180	181	unmapped (P4 number is the containing line)	Des. My noble father, I do
+1.3	201	row begins a line	201			agree	Into your favor. When remedies are
+1.3	211	row begins a line	211			agree	We lose it not, so long
+1.3	220	row begins a line	220			agree	I humbly beseech you, proceed to
+1.3	240	row begins inside a line		240	241	unmapped (P4 number is the containing line)	If you please, Be't at her
+1.3	249	row begins a line	249			agree	Des. That I did love the
+1.3	260	row begins a line	260			agree	By his dear absence. Let me
+1.3	271	row begins a line	271			agree	My speculative and officed instruments, That
+1.3	280	row begins a line	280			agree	Duke. At nine i' the morning
+1.3	290	row begins a line	290			agree	If virtue no delighted beauty lack,
+1.3	300	row begins a line	300			agree	Of love, of worldly matters and
+1.3	381	row begins a line	381			agree	Rod. Where shall we meet i'
+1.3	390	row begins a line	390			agree	For I mine own gain'd knowledge
+1.3	401	row begins a line	401			agree	After some time, to abuse Othello's
+1.3	410	row begins a line	410			agree	Must bring this monstrous birth to
+2.1	10	row begins a line	10			agree	Sec. Gent. A segregation of the
+2.1	19	row begins a line	19			agree	It is impossible they bear it
+2.1	31	row begins a line	31			agree	But this same Cassio, though he
+2.1	50	row begins a line	50			agree	Therefore my hopes, not surfeited to
+2.1	60	row begins a line	60			agree	Mon. But, good lieutenant, is your
+2.1	71	row begins a line	71			agree	As having sense of beauty, do
+2.1	81	row begins a line	81			agree	Give renew'd fire to our extincted
+2.1	90	row begins a line	90			agree	But that he's well and will
+2.1	100	row begins a line	100			agree	That gives me this bold show
+2.1	110	row begins a line	110			agree	Iago. Come on, come on; you
+2.1	120	row begins a line	120			agree	For I am nothing, if not
+2.1	130	row begins a line	130			agree	If she be fair and wise,
+2.1	151	row begins a line	151			agree	Never lack'd gold and yet went
+2.1	160	row begins a line	160			agree	Des. To do what? Iago. To
+2.1	180	row begins inside a line		179	180	unmapped (P4 number is the next line)	I know his trumpet. Cas. 'Tis
+2.1	190	row begins a line	190			agree	Olympus-high and duck again as low
+2.1	199	row begins a line	199			agree	It stops me here; it is
+2.1	210	row begins a line	210			agree	Go to the bay and disembark
+2.1	295	row begins a line	295			agree	Iago. That Cassio loves her, I
+2.1	310	row begins a line	310			agree	At least into a jealousy so
+2.1	319	row begins a line	319			agree	And practising upon his peace and
+2.3	21	row begins a line	20			disagree	Cas. Indeed, she's a most fresh
+2.3	39	row begins a line	39			agree	I'll drink for you. Cas. I
+2.3	51	row begins a line	51			agree	With that which he hath drunk
+2.3	60	row begins a line	60			agree	Have I to-night fluster'd with flowing
+2.3	70	row begins a line	70			agree	Iago. Some wine, ho! [Sings] And
+2.3	81	row begins a line	81			agree	Hollander--Drink, ho!--are nothing to your English.
+2.3	100	row begins a line	100			agree	Some wine, ho! Cas. Why, this
+2.3	112	row begins a line	112			agree	Iago. And so do I too,
+2.3	126	row begins a line	126			agree	Iago. You see this fellow that
+2.3	131	row begins a line	131			agree	I fear the trust Othello puts
+2.3	139	row begins a line	139			agree	Prizes the virtue that appears in
+2.3	151	row begins a line	151			agree	Cas. A knave teach me my
+2.3	159	row begins a line	159			agree	Help, ho!--Lieutenant,--sir,--Montano,-sir;-- Help, masters!--Here's a goodly
+2.3	171	row begins a line	171			agree	Which heaven hath forbid the Ottomites?
+2.3	179	row begins a line	179			agree	Iago. I do not know: friends
+2.3	190	row begins a line	190			agree	Oth. Worthy Montano, you were wont
+2.3	200	row begins a line	200			agree	Of all that I do know:
+2.3	210	row begins a line	210			agree	How this foul rant began, who
+2.3	220	row begins inside a line		220	221	unmapped (P4 number is the containing line)	Iago. Touch me not so near:
+2.3	230	row begins a line	230			agree	Myself the crying fellow did pursue,
+2.3	240	row begins a line	240			agree	More of this matter cannot I
+2.3	250	row begins a line	250			agree	Look, if my gentle love be
+2.3	260	row begins a line	260			agree	Cas. Ay, past all surgery. Iago.
+2.3	340	row begins a line	340			agree	lieutenant; I must to the watch.
+2.3	350	row begins a line	350			agree	All seals and symbols of redeemed
+2.3	360	row begins a line	360			agree	Plies Desdemona to repair his fortunes
+2.3	381	row begins a line	381			agree	And thou, by that small hurt,
+2.3	390	row begins a line	390			agree	I'll set her on; Myself the
+3.1	41	row begins a line	41			agree	May be more free. Cas. I
+3.1	50	row begins a line	50			agree	He might not but refuse you,
+3.3	10	row begins a line	10			agree	Des. I know't; I thank you.
+3.3	30	row begins a line	30			agree	Cas. Madam, I'll take my leave.
+3.3	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	Oth. I do believe 'twas he.
+3.3	50	row begins a line	50			agree	I have no judgement in an
+3.3	60	row begins a line	60			agree	Des. Why, then, to-morrow night; or
+3.3	70	row begins a line	70			agree	Or stand so mammering on. What!
+3.3	81	row begins a line	81			agree	Wherein I mean to touch your
+3.3	90	row begins a line	90			agree	Oth. Excellent wretch! Perdition catch my
+3.3	101	row begins a line	101			agree	Iago. Indeed! Oth. Indeed! ay, indeed:
+3.3	109	row begins a line	109			agree	I heard thee say even now,
+3.3	120	row begins a line	120			agree	Therefore these stops of thine fright
+3.3	130	row begins a line	130			agree	Oth. Nay, yet there's more in
+3.3	140	row begins a line	140			agree	Keep leets and law-days and in
+3.3	150	row begins a line	150			agree	Would take no notice, nor build
+3.3	160	row begins a line	160			agree	Robs me of that which not
+3.3	170	row begins a line	170			agree	Who dotes, yet doubts, suspects, yet
+3.3	181	row begins a line	181			agree	When I shall turn the business
+3.3	200	row begins a line	200			agree	Out of self-bounty, be abused; look
+3.3	220	row begins a line	220			agree	Than to suspicion. Oth. I will
+3.3	250	row begins a line	250			agree	Note, if your lady strain his
+3.3	261	row begins a line	261			agree	Though that her jesses--were my dear
+3.3	270	row begins a line	270			agree	And not their appetites! I had
+3.3	280	row begins a line	280			agree	Your dinner, and the generous islanders
+3.3	301	row begins a line	301			agree	Emil. Do not you chide; I
+3.3	310	row begins a line	310			agree	Iago. Hast stol'n it from her?
+3.3	320	row begins a line	320			agree	Go, leave me. Exit Emilia. I
+3.3	330	row begins inside a line		330	331	unmapped (P4 number is the containing line)	Not poppy, nor mandragora, Nor all
+3.3	341	row begins inside a line		340	341	unmapped (P4 number is the next line)	I found not Cassio's kisses on
+3.3	350	row begins a line	350			agree	That make ambition virtue! O, farewell!
+3.3	360	row begins a line	360			agree	Be sure of it; give me
+3.3	370	row begins a line	370			agree	On horror's head horrors accumulate; Do
+3.3	401	row begins a line	401			agree	What shall I say? Where's satisfaction?
+3.3	410	row begins a line	410			agree	Iago. I do not like the
+3.3	420	row begins a line	420			agree	Let us be wary, let us
+3.3	430	row begins a line	430			agree	Iago. And this may help to
+3.3	450	row begins inside a line		450	451	unmapped (P4 number is the containing line)	Iago. Yet be content. Oth. O,
+3.3	460	row begins a line	460			agree	Swallow them up. Now, by yond
+3.3	470	row begins a line	470			agree	Not with vain thanks, but with
+3.4	10	row begins a line	10			agree	Des. Can any thing be made
+3.4	30	row begins a line	30			agree	Des. Who, he? I think the
+3.4	50	row begins a line	50			agree	Des. I have sent to bid
+3.4	60	row begins a line	60			agree	Entirely to her love, but if
+3.4	70	row begins inside a line		69	70	unmapped (P4 number is the next line)	A sibyl, that had number'd in
+3.4	80	row begins a line	80			agree	Oth. Is't lost? is't gone? speak,
+3.4	90	row begins a line	90			agree	Des. Come, come; You'll never meet
+3.4	100	row begins a line	100			agree	Des. I ne'er saw this before.
+3.4	110	row begins a line	110			agree	Cas. Madam, my former suit: I
+3.4	120	row begins a line	120			agree	So shall I clothe me in
+3.4	130	row begins a line	130			agree	What I can do I will;
+3.4	151	row begins a line	151			agree	I was, unhandsome warrior as I
+3.4	160	row begins a line	160			agree	They are not ever jealous for
+3.4	170	row begins a line	170			agree	How is it with you, my
+3.4	180	row begins inside a line		180	181	unmapped (P4 number is the containing line)	Bian. O Cassio, whence came this?
+3.4	200	row begins a line	200			agree	For I attend here: but I'll
+4.1	10	row begins a line	10			agree	But if I give my wife
+4.1	30	row begins a line	30			agree	Iago. He hath, my lord; but
+4.1	50	row begins a line	50			agree	Cas. What's the matter? Iago. My
+4.1	60	row begins a line	60			agree	How is it, general? have you
+4.1	70	row begins a line	70			agree	Which they dare swear peculiar: your
+4.1	80	row begins a line	80			agree	And laid good 'scuse upon your
+4.1	90	row begins inside a line		90	91	unmapped (P4 number is the containing line)	Oth. Dost thou hear, Iago? I
+4.1	101	row begins a line	101			agree	As he shall smile, Othello shall
+4.1	110	row begins a line	110			agree	Oth. Look, how he laughs already!
+4.1	120	row begins a line	120			agree	Cas. Ha, ha, ha! Oth. Do
+4.1	130	row begins a line	130			agree	Oth. Have you scored me? Well.
+4.1	190	row begins a line	190			agree	Iago. Nay, you must forget that.
+4.1	251	row begins inside a line		251	252	unmapped (P4 number is the containing line)	Devil! Des. I have not deserved
+4.1	260	row begins a line	260			agree	I do beseech your lordship, call
+4.1	270	row begins a line	270			agree	I'll send for you anon. Sir,
+4.1	280	row begins a line	280			agree	Lod. Are his wits safe? is
+4.1	290	row begins a line	290			agree	And his own courses will denote
+4.2	10	row begins a line	10			agree	Emil. Never, my lord. Oth. That's
+4.2	20	row begins a line	20			agree	She says enough; yet she's a
+4.2	40	row begins a line	40			agree	Des. To whom, my lord? with
+4.2	50	row begins a line	50			agree	Steep'd me in poverty to the
+4.2	60	row begins a line	60			agree	Or else dries up; to be
+4.2	70	row begins a line	70			agree	Des. Alas, what ignorant sin have
+4.2	80	row begins a line	80			agree	And will not hear it. What
+4.2	90	row begins inside a line		90	91	unmapped (P4 number is the containing line)	You, mistress, That have the office
+4.2	100	row begins a line	100			agree	Emil. Why, with my lord, madam.
+4.2	110	row begins a line	110			agree	Iago. What is your pleasure, madam?
+4.2	120	row begins a line	120			agree	Emil. He call'd her whore: a
+4.2	130	row begins a line	130			agree	Emil. I will be hang'd, if
+4.2	141	row begins a line	141			agree	O heaven, that such companions thou'ldst
+4.2	150	row begins a line	150			agree	Good friend, go to him; for,
+4.2	160	row begins a line	160			agree	And his unkindness may defeat my
+4.2	170	row begins a line	170			agree	The messengers of Venice stay the
+4.3	10	row begins a line	10			agree	Des. I will, my lord. Exeunt
+4.3	20	row begins a line	20			agree	That even his stubbornness, his checks,
+4.3	30	row begins a line	30			agree	And she died singing it: that
+4.3	50	row begins a line	50			agree	Prithee, hie thee; he'll come anon:--
+4.3	60	row begins a line	60			agree	Des. I have heard it said
+4.3	70	row begins inside a line		70	71	unmapped (P4 number is the containing line)	Des. In troth, I think thou
+4.3	79	row begins a line	79			agree	For the whole world. Emil. Why,
+4.3	90	row begins a line	90			agree	Or else break out in peevish
+4.3	100	row begins a line	100			agree	I think it doth: is 't
+5.1	10	row begins a line	10			agree	'Tis but a man gone. Forth,
+5.1	21	row begins a line	21			agree	May unfold me to him; there
+5.1	30	row begins a line	30			agree	Cas. O, help, ho! light! a
+5.1	40	row begins a line	40			agree	Lod. Hark! Rod. O wretched villains!
+5.1	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	Iago. What's the matter? Gra. This
+5.1	60	row begins a line	60			agree	Rod. O, help me here! Cas.
+5.1	80	row begins a line	80			agree	Cas. No. Gra. I am sorry
+5.1	91	row begins a line	91			agree	Gra. What, of Venice? Iago. Even
+5.1	100	row begins inside a line		100	101	unmapped (P4 number is the containing line)	For you, mistress, Save you your
+5.1	110	row begins a line	110			agree	Though tongues were out of use.
+5.1	120	row begins a line	120			agree	Iago. O, did he so? I
+5.2	20	row begins a line	20			agree	So sweet was ne'er so fatal.
+5.2	30	row begins a line	30			agree	Oth. Well, do it, and be
+5.2	40	row begins inside a line		40	41	unmapped (P4 number is the containing line)	Des. They are loves I bear
+5.2	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	Oth. Sweet soul, take heed, Take
+5.2	60	row begins a line	60			agree	But with such general warranty of
+5.2	71	row begins inside a line		70	71	unmapped (P4 number is the next line)	Oth. Ay. Des. He will not
+5.2	80	row begins a line	80			agree	Des. Kill me to-morrow: let me
+5.2	90	row begins inside a line		90	91	unmapped (P4 number is the containing line)	O, good my lord, I would
+5.2	101	row begins inside a line		101	102	unmapped (P4 number is the containing line)	I do beseech you That I
+5.2	111	row begins a line	111			agree	And makes men mad. Emil. Cassio,
+5.2	119	row begins a line	119			agree	Emil. Out, and alas! that was
+5.2	130	row begins inside a line		130	131	unmapped (P4 number is the containing line)	Emil. O, the more angel she,
+5.2	140	row begins a line	140			agree	Emil. My husband! Oth. Thy husband.
+5.2	150	row begins a line	150			agree	Oth. What needs this iteration, woman?
+5.2	171	row begins a line	171			agree	Gra. What is the matter? Emil.
+5.2	180	row begins a line	180			agree	Emil. You told a lie; an
+5.2	190	row begins a line	190			agree	Emil. Villany, villany, villany! I think
+5.2	200	row begins inside a line		200	201	unmapped (P4 number is the containing line)	O, she was foul! I scarce
+5.2	210	row begins a line	210			agree	Oth. 'Tis pitiful; but yet Iago
+5.2	220	row begins a line	220			agree	No, I will speak as liberal
+5.2	230	row begins a line	230			agree	Emil. She give it Cassio! no,
+5.2	241	row begins a line	241			agree	Come, guard the door without; let
+5.2	250	row begins a line	250			agree	So come my soul to bliss,
+5.2	260	row begins a line	260			agree	A better never did itself sustain
+5.2	270	row begins a line	270			agree	Man but a rush against Othello's
+5.2	290	row begins a line	290			agree	For, in my sense, 'tis happiness
+5.2	301	row begins a line	301			agree	Will you, I pray, demand that
+5.2	320	row begins inside a line		320	321	unmapped (P4 number is the containing line)	Cas. I found it in my
+5.2	330	row begins a line	330			agree	Lod. You must forsake this room,
+5.2	339	row begins a line	339			agree	I have done the state some
+5.2	350	row begins a line	350			agree	Drop tears as fast as the
+5.2	360	row begins a line	360			agree	Cas. This did I fear, but
+5.2	371	row begins a line	371			agree	This heavy act with heavy heart

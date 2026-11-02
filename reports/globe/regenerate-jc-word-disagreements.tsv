@@ -1,0 +1,297 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+764	miun/kraken	1	30	replace	laboring	labouring	labouring	same
+764	miun/kraken	2	1	delete		PERSONÆ. LUCILIUS, TITINIUS, friends to Brutus and MESSALA, Young VOLUMNIUS, VARRO, CLITUS, CLAUDIUS, servante to Brurus STRATO, LUCIUs, DARDANIUS.) PINDARUS, servant to CALPURNIA, wife to Cæsar. PORTIA, wife to Senators, Guards, Attendants, &c. SCENE Rome: the neighbourhood of Sardis: the neighbourhood of Philippi.	CÆSAR. PERSONÆ. LUCILIuS, TITINIUS, friends to Brutus and MESSALA, Cassius. Young CATO, VOLUMNIUS, VARRO, CLITUS, CLAUDIUS, servants to Brutus STRATO, LUCIUS, DARDANIUS.) PINDARUS, servant to Cassius. CALPURNIA, wife to Cæsar. PORTIA, wife to Brutus. Senators, Citizens, Guards, Attendants, 8c. SCENE: Rome: the neighbourhood af Sardis: the neighbourhood of Philippi.	
+764	miun/kraken	2	43	delete		5o		
+765	miun/kraken	1	4	replace	Exeunt	E xeunt	[Exeunt	
+765	miun/kraken	1	13	replace	Casar's	Cæsar's	Cæsar's	same
+765	miun/kraken	1	13	replace	I'll	I’Il	I’ll	
+765	miun/kraken	1	16	replace	Casar's	Cæsar's	Cæsar’s	
+765	miun/kraken	1	20	replace	Exeunt.	IExeunt.	[Exeunt.	
+765	miun/kraken	1	21	replace	public place.	Bublic	public place.	
+765	miun/kraken	1	25	replace	following,	Jollowing,	crozd following,	
+765	miun/kraken	1	38	replace	Casar	Cæsar	Cæsar	same
+765	miun/kraken	1	40	replace	Flourish.	FFlourish.	FFlourish.	same
+765	miun/kraken	1	59	replace	Sennet.	[ennet.	(Sennet.	
+765	miun/kraken	2	1	replace	I'll	I’Il	I’ll	
+765	miun/kraken	2	13	replace	behaviors;	behaviours;	behaviours;	same
+765	miun/kraken	2	27	replace	Brutus,	Prutus,	Brutus,	
+765	miun/kraken	2	34	replace	had	bad	had	
+765	miun/kraken	2	53	replace	Flourish,	FFlourish,	[Flourish,	
+765	miun/kraken	2	64	replace	honor	honour	honour	same
+765	miun/kraken	2	67	replace	honor	honour	honour	same
+766	miun/kraken	1	1	replace	honor	honour	honour	same
+766	miun/kraken	1	32	replace	color	colour	colour sly,	
+766	miun/kraken	1	42	replace	Flourish.	Flouxish.	Flourish.	
+766	miun/kraken	1	45	replace	honors	honours	honours	same
+766	miun/kraken	1	50	replace	dishonorable	dishonourable	dishonourable	same
+766	miun/kraken	1	59	replace	with 'em,	with’em,	with ’em,	
+766	miun/kraken	2	1	replace	one	ene	one	
+766	miun/kraken	2	11	replace	have	haye	have	
+766	miun/kraken	2	37	replace	Cæs.		Cœs.	
+766	miun/kraken	2	40	replace	o' nights:	o’nights:	o’nights: Vond	
+766	miun/kraken	2	43	replace	he's not	he’snot	he’s not	
+766	miun/kraken	2	54	replace	scorned	scorn’d	scorn’d	same
+766	miun/kraken	2	62	replace	think'st	think' st	think’st	
+767	miun/kraken	1	17	replace	neighbors	neighbours	neighbours	same
+767	miun/kraken	1	29	replace	off it.	offit.	off it.	
+767	miun/kraken	2	2	replace	I'll	I’Il	I’Il	same
+767	miun/kraken	2	3	replace	you	vou	you	
+767	miun/kraken	2	3	replace	un derstood	understood	understood	same
+767	miun/kraken	2	9	replace	foolery	toolery	foolery	
+767	miun/kraken	2	12	replace	you	vou	you	
+767	miun/kraken	2	25	replace	And so it	Andsoit	Andsoitis.	
+767	miun/kraken	2	25	replace	you:	vou:	you:	
+767	miun/kraken	2	30	replace	Exit	IExit	IExit	same
+767	miun/kraken	2	31	replace	yet,	vet,	vet,	same
+767	miun/kraken	2	32	replace	honorable	honourable	honourable	same
+767	miun/kraken	2	38	replace	humor	humour	humour	same
+767	miun/kraken	2	46	replace	Exit.	IExit.	(Exit.	
+767	miun/kraken	2	47	replace	street.	sízeet.	street.	
+767	miun/kraken	2	48	replace	opposite	obposite	obposite	same
+767	miun/kraken	2	49	replace	sword	swvord	sord	
+767	miun/kraken	2	57	replace	Have	Haye	Have	
+768	miun/kraken	1	21	replace	Come	Comes	Comes	same
+768	miun/kraken	1	27	replace	Exit	IExit	(Exit	
+768	miun/kraken	1	42	replace	seem'd	scem’d	seem’d	
+768	miun/kraken	1	63	replace	infused	insused	infused	
+768	miun/kraken	2	6	replace	Casar	Cæsar	Cæsar	same
+768	miun/kraken	2	18	replace	I	1	I	
+768	miun/kraken	2	56	replace	honorable-dangerous	honourable-dangerous	honourable-dangerous	same
+768	miun/kraken	2	61	replace	favor's	favour's	favour’s	
+768	miun/kraken	2	61	replace	the	che	the	
+769	miun/kraken	1	5	replace	on 't.	on’t.	on’t.	same
+769	miun/kraken	1	19	replace	find us.	findus.	findus.	same
+769	miun/kraken	1	25	replace	Exit	LExit	LExit	same
+769	miun/kraken	1	29	replace	yields	vields	yields	
+769	miun/kraken	1	49	replace	Lucius.		Lucius.	
+769	miun/kraken	1	55	delete		II		
+769	miun/kraken	2	13	replace	color	colour	colour	same
+769	miun/kraken	2	16	replace	therefore	thefefore	therefore	
+769	miun/kraken	2	25	replace	letter.	lettex	letter	
+769	miun/kraken	2	30	replace	Exit.	LExit.	IExit.	
+769	miun/kraken	2	50	replace	Luc.		Luc.	
+769	miun/kraken	2	51	replace	Knocking within.	IKnocking vithin.	(K nocking vithin.	
+769	miun/kraken	2	53	replace	knocks. Exit	lenocks. LExit	knocks. [Exit	
+770	miun/kraken	1	7	replace	favor.	favour.	favour.	same
+770	miun/kraken	1	8	replace	Let 'em	Let’em	Let’em	same
+770	miun/kraken	1	22	replace	your	vour	your	
+770	miun/kraken	1	29	replace	honors	honours	honours	same
+770	miun/kraken	1	42	replace	Brutus	IBrutus	(Brutus	
+770	miun/kraken	1	58	replace	Bru.		Bru.	
+770	miun/kraken	1	67	replace	valor	valour	valour	same
+770	miun/kraken	2	26	replace	judgment	judgement	judgement	same
+770	miun/kraken	2	68	replace	Yet	Vet	Yet	
+771	miun/kraken	1	23	replace	betray'd	betray d	betray’d	
+771	miun/kraken	1	29	replace	humor	humour	humour	same
+771	miun/kraken	1	41	replace	I'll	I’Il	I’ll	
+771	miun/kraken	1	45	replace	re member	remember	remember	same
+771	miun/kraken	1	53	replace	Exeunt	IExeunt	IE xeunt	
+771	miun/kraken	2	8	replace	your	vour	your	
+771	miun/kraken	2	12	replace	humor,	humour,	humour,	same
+771	miun/kraken	2	25	replace	humors	humours	humours	same
+771	miun/kraken	2	54	replace	honorable	honourable	honourable	same
+772	miun/kraken	1	3	replace	within.	vvithin.	voithin.	
+772	miun/kraken	1	10	replace	who's	who 's	who ’s	
+772	miun/kraken	1	11	replace	with	witk	with	
+772	miun/kraken	1	12	replace	He	Here	Here	same
+772	miun/kraken	1	14	replace	Bru.		Bru.	
+772	miun/kraken	1	22	replace	honor.	honour.	honour.	same
+772	miun/kraken	1	27	replace	honorable	honourable	honourable	same
+772	miun/kraken	1	45	replace	Cæsar's	Casar's	Cœsar's	
+772	miun/kraken	1	51	replace	Casar!'	Cæsar!'	Cæsar!“	
+772	miun/kraken	1	56	replace	Exit.	IExit.	IExit.	same
+772	miun/kraken	1	60	replace	your	vour	your	
+772	miun/kraken	1	63	replace	back;	backe;	back;	
+772	miun/kraken	2	2	replace	Yet	Vet	Yet	
+772	miun/kraken	2	6	replace	yielded	vielded	yielded	
+772	miun/kraken	2	25	replace	Cæs.		Cas.	
+772	miun/kraken	2	48	delete		c		
+772	miun/kraken	2	50	replace	We'll	We 'll	We’ll	
+772	miun/kraken	2	54	replace	humor,	humour,	humour,	same
+773	miun/kraken	1	1	replace	afraid	afeard	afeard	same
+773	miun/kraken	1	39	replace	Casar's	Cæsar's	Cæsar’s	
+773	miun/kraken	1	40	delete		1o0	1o0	same
+773	miun/kraken	1	45	replace	Cæs.		Cæs.	
+773	miun/kraken	1	58	replace	is 't	is't	is 't	
+773	miun/kraken	2	6	replace	Aside	[Asidel	[Asidel	same
+773	miun/kraken	2	14	replace	Aside	[Asidel	(Asidel	
+773	miun/kraken	2	17	replace	Exeunt.	IExeunt.	IExeunt.	same
+773	miun/kraken	2	27	replace	you:	vou:	you	
+773	miun/kraken	2	47	replace	mountain 'tween	mountain’tween	mountain’tween	same
+773	miun/kraken	2	61	replace	rumor,	rumour,	rumour,	same
+774	miun/kraken	1	26	replace	Exit.	IExit.	[Exit.	
+774	miun/kraken	1	39	replace	crowd	crozod	croud	
+774	miun/kraken	1	41	replace	METULLUS,	METELLUS,	METELLUS,	same
+774	miun/kraken	1	42	replace	POPLIUS,	Po¬ PILIUS,	Po¬ PILIUS,	same
+774	miun/kraken	1	44	replace	To	ITo	ITo	same
+774	miun/kraken	1	44	replace	Soothsayer	Soothsayerl	Soothsayerl	same
+774	miun/kraken	1	58	replace	Cæs.		10. Cas.	
+774	miun/kraken	1	63	replace	Pop.	Po5.	Pop.	
+774	miun/kraken	2	2	replace	Advances	IAdvances	(Advances	
+774	miun/kraken	2	4	replace	might	migbt	might	
+774	miun/kraken	2	18	replace	Exeunt	IExeunt	IExeunt	same
+775	miun/kraken	1	37	replace	Treb.		Tre.	
+775	miun/kraken	1	42	delete		ro0		
+775	miun/kraken	1	45	replace	years	vears	years	
+775	miun/kraken	2	10	replace	honor	honour	honour	same
+775	miun/kraken	2	11	replace	honor'd	honour’d	honour’d	same
+775	miun/kraken	2	23	replace	honor,	honour,	honour,	same
+775	miun/kraken	2	25	replace	I'll	I’Il	I’Il	same
+775	miun/kraken	2	34	replace	Casar	Cæsar!	Cæsar!	same
+775	miun/kraken	2	43	replace	beseech	bescech	bescech	same
+775	miun/kraken	2	46	replace	your	vour	your	
+775	miun/kraken	2	62	replace	Our	tOur	tOur	same
+776	miun/kraken	1	25	replace	Weeping	Wceping	Weeping	
+776	miun/kraken	1	61	replace	Aside	HAside	[Aside	
+776	miun/kraken	2	14	replace	speech	specch	speech	
+776	miun/kraken	2	18	replace	Exeunt	IExeunt	LE-veunt	
+776	miun/kraken	2	28	delete		t	t	same
+776	miun/kraken	2	66	replace	Exeunt with	IExeunt vith	(Exeunt with	
+777	miun/kraken	1	9	replace	let 'em	let’em	let ’em	
+777	miun/kraken	1	12	replace	Casar's	Cæsar’s	Cæsar’s	same
+777	miun/kraken	1	17	delete		IExit Cassius, with some of the	LExit Cassius, vith some of the Citizens.	
+777	miun/kraken	1	24	replace	honor,	honour,	honour,	same
+777	miun/kraken	1	25	replace	honor,	honour,	honour,	same
+777	miun/kraken	1	31	replace	answer:— Not	answer:–Not	answer:—Not	
+777	miun/kraken	1	34	replace	live'all	live	live all	
+777	miun/kraken	1	37	replace	honor	honour	honour	same
+777	miun/kraken	1	39	replace	honor	honour	honour	same
+777	miun/kraken	1	39	replace	valor;	valour;	valour;	same
+777	miun/kraken	2	4	replace	Well	We’Il	We’ll	
+777	miun/kraken	2	5	replace	clamors.	clamours.	clamours.	same
+777	miun/kraken	2	20	replace	We'll	We’Il	We 'll	
+777	miun/kraken	2	45	replace	honorable	honourable	honourable	same
+777	miun/kraken	2	46	replace	honorable	honourable	honourable	same
+777	miun/kraken	2	50	replace	honorable	honourable	honourable	same
+777	miun/kraken	2	57	replace	honorable	honourable	honourable	same
+777	miun/kraken	2	62	replace	honorable	honourable	honourable	same
+777	miun/kraken	2	68	replace	judgment!	judgement!	judgement	
+778	miun/kraken	1	1	replace	heart	neart	heart	
+778	miun/kraken	1	26	replace	honorable	honourable	honourable	same
+778	miun/kraken	1	29	replace	honorable	honourable	honourable	same
+778	miun/kraken	1	40	replace	We'll	We’Il	We’ll	
+778	miun/kraken	1	52	replace	we'll	we ’ll	we’ll	
+778	miun/kraken	1	58	replace	honorable	honourable	honourable	same
+778	miun/kraken	1	60	replace	honorable	honourable	honourable	same
+778	miun/kraken	2	4	replace	Antony	IAntony	(Antony	
+778	miun/kraken	2	4	replace	down.	dozon.	down.	
+778	miun/kraken	2	52	replace	Well	We’ll	We’Il	
+778	miun/kraken	2	52	replace	we'll	we ’Il	we’Il	
+778	miun/kraken	2	53	replace	well	we 'll	we ’ll	
+778	miun/kraken	2	57	replace	honorable:	honourable:	honourable	
+778	miun/kraken	2	60	replace	honorable,	honourable,	honourable,	same
+779	miun/kraken	1	5	replace	speak	speal	speak	
+779	miun/kraken	1	11	replace	We'll	We ’Il	We ’ll	
+779	miun/kraken	1	27	replace	seventy-five	seventy five	seventy five	same
+779	miun/kraken	1	28	replace	We'll	We’Il	We’ll	
+779	miun/kraken	1	34	replace	arbors	arbours	arbours	same
+779	miun/kraken	1	40	replace	We'll	We 'Il	We ’Il	
+779	miun/kraken	1	46	replace	Exeunt	IExeunt	(Exeunt	
+779	miun/kraken	1	46	replace	with	vith	with	
+779	miun/kraken	1	46	replace	body.	bodv.	body.	
+779	miun/kraken	1	62	replace	Exeunt.	IExeunt.	LExeunt.	
+779	miun/kraken	2	5	replace	your	vour	your	
+779	miun/kraken	2	22	replace	fu neral.	funeral.	funeral.	same
+779	miun/kraken	2	53	replace	Lep.		Lep.	
+779	miun/kraken	2	54	replace	Oct.		Ocz.	
+779	miun/kraken	2	62	replace	Lep.		Lep.	
+779	miun/kraken	2	64	replace	Exit	IExit	(Exit	
+780	miun/kraken	1	9	replace	honors	honours	honours	same
+780	miun/kraken	1	35	replace	Our	tOur	tOur	same
+780	miun/kraken	1	42	replace	Exeunt.	IExeunt.	(Exeunt.	
+780	miun/kraken	1	61	replace	honor.	honour.	honour.	same
+780	miun/kraken	2	16	replace	Low	LLow	(Low	
+780	miun/kraken	2	16	replace	within.	vuithin.	within.	
+780	miun/kraken	2	54	replace	wronged	wrong d	wrong’d	
+780	miun/kraken	2	64	replace	els	else	else	same
+780	miun/kraken	2	65	replace	honors	honours	honours	same
+781	miun/kraken	1	11	replace	honors	honours	honours	same
+781	miun/kraken	1	16	replace	I'll	I 'll	I’ll	
+781	miun/kraken	1	24	replace	your	vour	your	
+781	miun/kraken	1	27	replace	Bru.		Bru.	
+781	miun/kraken	1	38	replace	humor?	humour?	humour?	same
+781	miun/kraken	1	41	replace	I'll	I 'll	I ’ll	
+781	miun/kraken	2	18	replace	practice	practise	practise	same
+781	miun/kraken	2	33	delete		I01		
+781	miun/kraken	2	43	replace	dishonor	dishonour	dishonour	same
+781	miun/kraken	2	43	replace	humor.	humour.	humour.	same
+781	miun/kraken	2	58	replace	humor	humour	humour	same
+781	miun/kraken	2	62	replace	He'll	He ’ll	He’ll	
+781	miun/kraken	2	64	replace	Within	[Withinl	(Withinl	
+781	miun/kraken	2	68	replace	Within	[Withinl	[Within]	
+781	miun/kraken	2	69	replace	Within	(W'ithin]	(Withinl	
+782	trent/kraken	1	1	replace	followed	followved	followed	
+782	trent/kraken	1	12	replace	humor,	humour,	humour,	same
+782	trent/kraken	1	23	replace	Exeunt	IExeunt	LExeunt	
+782	trent/kraken	1	34	replace	How 'scaped	How’scaped	How scaped	
+782	trent/kraken	1	53	replace	Exit	IExit	LExit	
+782	trent/kraken	1	54	replace	with	wvith	witk	
+782	trent/kraken	1	64	replace	tenor.	tenour.	tenour.	same
+782	trent/kraken	2	63	replace	We'll	We ’Il	We ’Il	same
+783	miun/kraken	1	12	replace	Mess.		Mes.	
+783	miun/kraken	1	14	replace	Exeunt	IExeunt	Wxeunt	
+783	miun/kraken	1	22	replace	I'll	I’Il	I’Il	same
+783	miun/kraken	1	36	replace	Var.	IVar.	(Var,	
+783	miun/kraken	1	36	replace	down.	dozn.	dovon.	
+783	miun/kraken	1	49	replace	young	voung	young	
+783	miun/kraken	1	54	replace	Music,	IMusic,	(Music,	
+783	miun/kraken	1	61	replace	I'll	I'Il	I’Il	
+783	miun/kraken	1	65	replace	Ghost	Chost	Chost af	
+783	miun/kraken	2	14	replace	Exit	IExit	IE xit	
+783	miun/kraken	2	30	replace	To Var.	ITo Var.I	ITo Var.]	
+783	miun/kraken	2	44	replace	Exeunt. ACT V	LExeunt. ACTV.	(Exeunt. ACT V.	
+783	miun/kraken	2	46	replace	Philippi.	Philibpi.	Phidlippi.	
+783	miun/kraken	2	59	replace	But 'tis	But’tis	But 'tis	
+784	miun/kraken	1	11	replace	Bru.		Bru.	
+784	miun/kraken	1	30	replace	your	vour	your	
+784	miun/kraken	1	60	replace	Oct.		Oct.	
+784	miun/kraken	1	64	replace	honorable.	honourable.	honourable.	same
+784	miun/kraken	1	66	replace	honor,	honour,	honour,	same
+784	miun/kraken	2	1	replace	Oct.	Oc2.	Oc.	
+784	miun/kraken	2	10	replace	forth	forthl	forthl	same
+784	miun/kraken	2	13	replace	forth	forthl	forthl	same
+784	miun/kraken	2	42	replace	Let's	Let ’s	Let’s	
+784	miun/kraken	2	68	replace	we'll	we’Il	we’Il	same
+785	miun/kraken	1	6	replace	Exeunt.	LExeunt.	LExeunt.	same
+785	miun/kraken	1	11	replace	on the	onthe	on the	
+785	miun/kraken	1	13	replace	demeanor	demeanour	demeanour	same
+785	miun/kraken	1	16	replace	Exeunt.	LExeunt.	IExeunt.	
+785	miun/kraken	1	42	replace	Exit.	IExit.	[Exit.	
+785	miun/kraken	1	46	replace	Pindarus	IF'indarus	[P'indarus	
+785	miun/kraken	1	50	replace	Above	[Abovel	[Abovel	same
+785	miun/kraken	1	52	replace	Above	LAbovel	Lbove]	
+785	miun/kraken	1	57	replace	Shout.	[hout.]	[Shout.	
+785	miun/kraken	2	5	delete		c		
+785	miun/kraken	2	10	replace	as 'tis	as’tis	as’tis	same
+785	miun/kraken	2	18	replace	Exit.	IExit.	IExit.	same
+785	miun/kraken	2	19	replace	with	vvith	with	
+785	miun/kraken	2	56	replace	Messala.		Messala.	
+785	miun/kraken	2	57	replace	though	thou	thou	same
+785	miun/kraken	2	60	replace	giv	give	give	same
+786	trent/kraken	1	4	replace	LUCILIUS.	LU¬ CILIUS.	LU¬ CILIUS.	same
+786	trent/kraken	1	12	replace	Low	[Lozo	LLow	
+786	trent/kraken	1	31	replace	both	hoth	both	
+786	trent/kraken	1	32	replace	LUCILIUS,	Lu¬ CILIUS,	LU¬ CILIUS,	
+786	trent/kraken	1	44	replace	Exit.	IExit.	IExit.	same
+786	trent/kraken	1	48	replace	honor'd,	honour’d,	honour'd,	
+786	trent/kraken	1	52	replace	Offering	LOffering	IOffering	
+786	trent/kraken	1	53	replace	honor'd	honour'd	honour'd	same
+786	trent/kraken	2	10	replace	Exeunt.	LExeunt.	LExeunt.	same
+786	trent/kraken	2	12	replace	DARDANIUS,	DARpANIUS,	DARDANIUS,	
+786	trent/kraken	2	22	replace	Whispers.	IWhispers.	Whispers.	
+786	trent/kraken	2	33	replace	Cli.		Cli.	
+786	trent/kraken	2	54	replace	That's	That ’s	That ’s	same
+786	trent/kraken	2	55	replace	Alarum	LA larum	HAlarum	
+787	miun/kraken	1	4	replace	labor'd	labour'd	labour'd	same
+787	miun/kraken	1	7	replace	Bru.		Bru.	
+787	miun/kraken	1	8	replace	Exeunt	LExeunt	[E xeunt	
+787	miun/kraken	1	8	replace	Volumnius.	Volumnins.	Volumnius.	
+787	miun/kraken	1	11	replace	honor	honour	honour	same
+787	miun/kraken	1	17	replace	sword.	svord.	szvord.	
+787	miun/kraken	1	21	replace	Oct.		Oct.	
+787	miun/kraken	2	2	replace	honor	honour	honour	same
+787	miun/kraken	2	3	replace	Lucil.		Lucil.	
+787	miun/kraken	2	5	replace	Lucilus'	Lucilius'	Lucilius'	same
+787	miun/kraken	2	22	replace	world 'This	world“This	world “This	
+787	miun/kraken	2	26	replace	honorably.	honourably.	honourably.	same
+787	miun/kraken	2	27	delete		S0		

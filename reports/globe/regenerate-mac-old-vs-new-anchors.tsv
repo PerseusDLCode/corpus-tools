@@ -1,0 +1,9 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in mac.xml (sha256 42a3f1a31d2daa2a); not the shell's milestones or <l n>
+# transcribed anchors: 166; mapped (the row begins a line): 141; of those, carrying the same number: 138
+# in scenes that pass the gate: 141 mapped; agreeing: 138
+# unmapped (the row begins inside a line): 25; the P4's number is the containing line's for 24, the next line's for 1, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+4.2	50	disagree	49				L. Macd. Every one that does
+5.1	31	disagree	30				Doct. What is it she does
+5.1	71	disagree	72				Doct. Even so? Lady M. To

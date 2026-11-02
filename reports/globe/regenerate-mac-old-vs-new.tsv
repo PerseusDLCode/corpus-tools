@@ -1,0 +1,169 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in mac.xml (sha256 42a3f1a31d2daa2a); not the shell's milestones or <l n>
+# one row per transcribed number; lines the P4 does not number are not listed
+scene	old_n	row	new_n	row_inside_line	next_line	verdict	context
+1.1	10	row begins a line	10			agree	Third Witch. Anon. All. Fair is
+1.2	10	row begins a line	10			agree	Worthy to be a rebel, for
+1.2	20	row begins a line	20			agree	Till he faced the slave; Which
+1.2	30	row begins a line	30			agree	Compell'd these skipping kerns to trust
+1.2	40	row begins a line	40			agree	Or memorize another Golgotha, I cannot
+1.2	60	row begins a line	60			agree	Nor would we deign him burial
+1.3	10	row begins a line	10			agree	I'll do, I'll do, and I'll
+1.3	20	row begins a line	20			agree	Hang upon his pent-house lid; He
+1.3	30	row begins a line	30			agree	Third Witch. A drum, a drum!
+1.3	40	row begins a line	40			agree	So wither'd and so wild in
+1.3	50	row begins a line	50			agree	Third Witch. All hail, Macbeth, that
+1.3	70	row begins a line	70			agree	Macb. Stay, you imperfect speakers, tell
+1.3	80	row begins a line	80			agree	And these are of them. Whither
+1.3	100	row begins inside a line		100	101	unmapped (P4 number is the containing line)	Ang. We are sent To give
+1.3	120	row begins inside a line		120	121	unmapped (P4 number is the containing line)	Ban. That trusted home Might yet
+1.3	130	row begins inside a line		130	131	unmapped (P4 number is the containing line)	This supernatural soliciting Cannot be ill,
+1.3	141	row begins a line	141			agree	Is smother'd in surmise, and nothing
+1.3	150	row begins a line	150			agree	With things forgotten. Kind gentlemen, your
+1.4	10	row begins a line	10			agree	To throw away the dearest thing
+1.4	31	row begins a line	31			agree	No less to have done so,
+1.4	40	row begins a line	40			agree	Not unaccompanied invest him only, But
+1.5	20	row begins a line	20			agree	Art not without ambition, but without
+1.5	40	row begins a line	40			agree	That croaks the fatal entrance of
+1.5	50	row begins a line	50			agree	Wherever in your sightless substances You
+1.5	59	row begins inside a line		59	60	unmapped (P4 number is the containing line)	Macb. My dearest love, Duncan comes
+1.5	71	row begins a line	71			agree	Give solely sovereign sway and masterdom.
+1.6	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Dun. See, see, our honour'd hostess!
+1.6	20	row begins inside a line		20	21	unmapped (P4 number is the containing line)	Dun. Where's the thane of Cawdor?
+1.6	30	row begins a line	30			agree	And shall continue our graces towards
+1.7	10	row begins a line	10			agree	To plague the inventor: this even-handed
+1.7	20	row begins a line	20			agree	The deep damnation of his taking-off;
+1.7	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Lady M. Know you not he
+1.7	40	row begins a line	40			agree	To be the same in thine
+1.7	50	row begins a line	50			agree	And, to be more than what
+1.7	70	row begins a line	70			agree	The unguarded Duncan? what not put
+1.7	80	row begins a line	80			agree	Each corporal agent to this terrible
+2.1	30	row begins a line	30			agree	Ban. Thanks, sir: the like to
+2.1	40	row begins a line	40			agree	I see thee yet, in form
+2.1	51	row begins a line	51			agree	The curtain'd sleep; withcraft celebrates Pale
+2.1	60	row begins a line	60			agree	Which now suits with it. Whiles
+2.2	20	row begins inside a line		20	21	unmapped (P4 number is the containing line)	Lady M. Donalbain. Macb. This is
+2.2	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Lady M. Consider it not so
+2.2	41	row begins a line	41			agree	Macb. Still it cried 'Sleep no
+2.2	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	Macb. I'll go no more: I
+2.2	61	row begins a line	61			agree	Clean from my hand? No, this
+2.3	29	row begins a line	29			agree	Macd. What three things does drink
+2.3	41	row begins a line	41			agree	Macd. I believe drink gave thee
+2.3	51	row begins a line	51			agree	Macd. He did command me to
+2.3	60	row begins a line	60			agree	Our chimneys were blown down; and,
+2.3	90	row begins a line	90			agree	The repetition, in a woman's ear,
+2.3	101	row begins a line	101			agree	Is left this vault to brag
+2.3	110	row begins a line	110			agree	They stared, and were distracted; no
+2.3	120	row begins inside a line		119	120	unmapped (P4 number is the next line)	For ruin's wasteful entrance: there, the
+2.3	129	row begins a line	129			agree	Let's away; Our tears are not
+2.3	131	row begins inside a line		131	132	unmapped (P4 number is the containing line)	Ban. Look to the lady: [Lady
+2.3	141	row begins a line	141			agree	Mal. What will you do? Let's
+2.3	150	row begins a line	150			agree	And let us not be dainty
+2.4	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Old M. 'Tis unnatural, Even like
+2.4	20	row begins a line	20			agree	That look'd upon 't. Here comes
+2.4	30	row begins a line	30			agree	The sovereignty will fall upon Macbeth.
+2.4	40	row begins a line	40			agree	Old M. God's benison go with
+3.1	20	row begins a line	20			agree	Ban. Ay, my good lord. Macb.
+3.1	30	row begins a line	30			agree	Macb. We hear, our bloody cousins
+3.1	40	row begins a line	40			agree	Farewell. [Exit Banquo. Let every man
+3.1	50	row begins a line	50			agree	Stick deep; and in his royalty
+3.1	60	row begins a line	60			agree	They hail'd him father to a
+3.1	70	row begins a line	70			agree	To make them kings, the seed
+3.1	80	row begins a line	80			agree	In our last conference, pass'd in
+3.1	91	row begins inside a line		91	92	unmapped (P4 number is the containing line)	First Mur. We are men, my
+3.1	100	row begins a line	100			agree	Particular addition, from the bill That
+3.1	110	row begins a line	110			agree	Have so incensed that I am
+3.1	120	row begins a line	120			agree	And bid my will avouch it,
+3.1	140	row begins a line	140			agree	Macb. I'll call upon you straight:
+3.2	10	row begins a line	10			agree	Using those thoughts which should indeed
+3.2	20	row begins a line	20			agree	Whom we, to gain our peace,
+3.2	30	row begins a line	30			agree	Let your remembrance apply to Banquo;
+3.2	41	row begins a line	41			agree	His cloister'd flight, ere to black
+3.2	50	row begins a line	50			agree	Which keeps me pale! Light thickens;
+3.3	10	row begins a line	10			agree	That are within the note of
+3.3	20	row begins inside a line		20	21	unmapped (P4 number is the containing line)	Sec. Mur. We have lost Best
+3.4	9	row begins a line	9			agree	Macb. See, they encounter thee with
+3.4	20	row begins a line	20			agree	Fleance is 'scaped. Macb. Then comes
+3.4	30	row begins a line	30			agree	Hath nature that in time will
+3.4	40	row begins a line	40			agree	Macb. Here had we now our
+3.4	50	row begins a line	50			agree	Macb. Thou canst not say I
+3.4	60	row begins inside a line		60	61	unmapped (P4 number is the containing line)	Lady M. O proper stuff! This
+3.4	70	row begins a line	70			agree	Why, what care I? If thou
+3.4	90	row begins a line	90			agree	And to our dear friend Banquo,
+3.4	99	row begins a line	99			agree	Macb. What man dare, I dare:
+3.4	110	row begins inside a line		110	111	unmapped (P4 number is the containing line)	Macb. Can such things be, And
+3.4	120	row begins inside a line		120	121	unmapped (P4 number is the containing line)	Len. Good night; and better health
+3.4	141	row begins a line	141			agree	Lady M. You lack the season
+3.5	10	row begins a line	10			agree	And, which is worse, all you
+3.5	20	row begins a line	20			agree	I am for the air; this
+3.5	30	row begins a line	30			agree	He shall spurn fate, scorn death,
+3.6	10	row begins a line	10			agree	To kill their gracious father? damned
+3.6	21	row begins a line	21			agree	But, peace! for from broad words
+3.6	30	row begins a line	30			agree	Is gone to pray the holy
+3.6	40	row begins a line	40			agree	Lord. He did: and with an
+4.1	10	row begins a line	10			agree	All. Double, double toil and trouble;
+4.1	20	row begins a line	20			agree	All. Double, double toil and trouble;
+4.1	30	row begins a line	30			agree	Finger of birth-strangled babe Ditch-deliver'd by
+4.1	40	row begins a line	40			agree	And every one shall share i'
+4.1	50	row begins a line	50			agree	Macb. I conjure you, by that
+4.1	60	row begins a line	60			agree	Even till destruction sicken; answer me
+4.1	70	row begins a line	70			agree	Hear his speech, but say thou
+4.1	90	row begins a line	90			agree	Third App. Be lion-mettled, proud; and
+4.1	111	row begins a line	111			agree	Come like shadows, so depart! A
+4.1	130	row begins a line	130			agree	While you perform your antic round;
+4.1	141	row begins a line	141			agree	Len. 'Tis two or three, my
+4.1	150	row begins a line	150			agree	The castle of Macduff I will
+4.2	10	row begins a line	10			agree	The most diminutive of birds, will
+4.2	21	row begins a line	21			agree	But float upon a wild and
+4.2	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	L. Macd. Sirrah, your father's dead:
+4.2	40	row begins a line	40			agree	L. Macd. Why, I can buy
+4.2	50	row begins a line	49			disagree	L. Macd. Every one that does
+4.2	71	row begins a line	71			agree	To do worse to you were
+4.2	80	row begins a line	80			agree	First Mur. Where is your husband?
+4.3	10	row begins a line	10			agree	As I shall find the time
+4.3	30	row begins a line	30			agree	But mine own safeties. You may
+4.3	51	row begins a line	51			agree	All the particulars of vice so
+4.3	61	row begins a line	61			agree	In my voluptuousness: your wives, your
+4.3	70	row begins a line	70			agree	To take upon you what is
+4.3	80	row begins a line	80			agree	Desire his jewels and this other's
+4.3	90	row begins a line	90			agree	With other graces weigh'd. Mal. But
+4.3	100	row begins inside a line		100	101	unmapped (P4 number is the containing line)	Macd. O Scotland, Scotland! Mal. If
+4.3	110	row begins a line	110			agree	Oftener upon her knees than on
+4.3	140	row begins a line	140			agree	Mal. Well; more anon.--Comes the king
+4.3	150	row begins a line	150			agree	Himself best knows: but strangely-visited people,
+4.3	170	row begins a line	170			agree	A modern ecstasy: the dead man's
+4.3	180	row begins a line	180			agree	Macd. Be not a niggard of
+4.3	191	row begins a line	191			agree	An older and a better soldier
+4.3	210	row begins a line	210			agree	Whispers the o'er-fraught heart and bids
+4.3	220	row begins inside a line		220	221	unmapped (P4 number is the containing line)	Macd. I shall do so; But
+4.3	230	row begins a line	230			agree	Macd. O, I could play the
+4.3	240	row begins a line	240			agree	The night is long that never
+5.1	10	row begins a line	10			agree	Doct. A great perturbation in nature,
+5.1	22	row begins a line	22			agree	Lo you, here she comes! This
+5.1	31	row begins a line	30			disagree	Doct. What is it she does
+5.1	61	row begins a line	61			agree	Gent. I would not have such
+5.1	71	row begins a line	72			disagree	Doct. Even so? Lady M. To
+5.2	10	row begins a line	10			agree	And many unrough youths that even
+5.2	20	row begins a line	20			agree	Nothing in love: now does he
+5.2	30	row begins a line	30			agree	To dew the sovereign flower and
+5.3	11	row begins a line	11			agree	The devil damn thee black, thou
+5.3	30	row begins inside a line		30	31	unmapped (P4 number is the containing line)	Macb. What news more? Sey. All
+5.3	40	row begins a line	40			agree	Canst thou not minister to a
+5.3	50	row begins a line	50			agree	Come, sir, dispatch. If thou couldst,
+5.3	60	row begins a line	60			agree	Till Birnam forest come to Dunsinane.
+5.4	10	row begins inside a line		10	11	unmapped (P4 number is the containing line)	Mal. 'Tis his main hope: For
+5.4	20	row begins a line	20			agree	But certain issue strokes must arbitrate:
+5.5	10	row begins a line	10			agree	The time has been, my senses
+5.5	20	row begins a line	20			agree	Creeps in this petty pace from
+5.5	30	row begins a line	30			agree	Mess. Gracious my lord, I should
+5.5	41	row begins a line	41			agree	I care not if thou dost
+5.5	50	row begins a line	50			agree	And wish the estate o' the
+5.6	9	row begins a line	9			agree	Macd. Make all our trumpets speak;
+5.7	10	row begins a line	10			agree	Yo. Siw. Thou liest, abhorred tyrant;
+5.7	20	row begins a line	20			agree	I sheathe again undeeded. There thou
+5.7	29	row begins inside a line		29	1	unmapped (P4 number is the containing line)	Siw. Enter, sir, the castle. Exeunt.
+5.8	10	row begins a line	10			agree	With thy keen sword impress as
+5.8	20	row begins a line	20			agree	That palter with us in a
+5.8	29	row begins a line	29			agree	And to be baited with the
+5.8	40	row begins a line	40			agree	He only lived but till he
+5.8	50	row begins inside a line		50	51	unmapped (P4 number is the containing line)	Mal. He's worth more sorrow, And
+5.8	60	row begins a line	60			agree	Mal. We shall not spend a

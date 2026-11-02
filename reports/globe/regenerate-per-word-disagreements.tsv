@@ -1,0 +1,366 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+977	miun/kraken	2	1	delete		PERSONÆ. The Daughter of Antiochus. DIONYZA, wife to THAISA, daughter to Simonides. MARINA, daughter to Pericles and LYCHORIDA, nurse to A Lords, Gentlemen, Sailors, Pirates, Fishermen, and Messengers. DIANA. GOWER, as SCENE: Dispersedly in various countries.	PERSONÆ. The Daughter of Antiochus. DIONYZA, wife to Cleon. THAISA, daughter to Simonides. MARINA, daughter to Pericles and Thaisa. LYCHORIDA, nurse to Marina. A Bawd. Lords, Knights, Gentlemen, Sailors, Pirates, Fishermen, and Messengers. DIANA. GOWER, as Chorus. SCENE: Dispersedly in various countries.	
+977	miun/kraken	2	16	replace	[Exit.	IExit.	(Exit.	
+978	miun/kraken	1	18	replace	life's	life 's	life ’s	
+978	miun/kraken	1	19	replace	I'll	I’'Il	I’Il	
+978	miun/kraken	1	26	replace	[To	ITo	To	
+978	miun/kraken	1	40	replace	I	L	I	
+978	miun/kraken	1	42	replace	labor	labour	labour	same
+978	miun/kraken	1	54	replace	[Takes	[Tases	(Takes	
+978	miun/kraken	1	57	replace	he's	he ’s	he ’s	same
+978	miun/kraken	2	3	replace	yourself	vourself	yourself	
+978	miun/kraken	2	16	replace	law's	law 's	law ’s	
+978	miun/kraken	2	24	replace	[Aside]	(Asidel	[Asidel	
+978	miun/kraken	2	27	replace	tenor	tenour	tenour	same
+978	miun/kraken	2	27	delete		III		
+978	miun/kraken	2	34	replace	we'll	we ’Il	we ’ll	
+978	miun/kraken	2	37	replace	[Exeunt	LExeunt	LExeunt	same
+978	miun/kraken	2	44	replace	you're	you re	you 're	
+978	miun/kraken	2	59	replace	I'll	I’Il	I’Il	same
+979	trent/kraken	1	6	replace	par- takes	partakes	partakes	same
+979	trent/kraken	1	27	replace	I'll	I ’Il	I'Il	
+979	trent/kraken	1	34	replace	[To	ITo	ITo	same
+979	trent/kraken	1	34	replace	without]	zvithout)	vvithout)	
+979	trent/kraken	1	56	replace	honor	honour	honour	same
+979	trent/kraken	1	57	replace	dishonor	dishonour	dishonour	same
+979	trent/kraken	1	59	replace	He'll	He ’Il	He ’Il	same
+979	trent/kraken	1	60	replace	he'll	he ’Il	he ’Il	same
+979	trent/kraken	2	3	delete		3°		
+979	trent/kraken	2	6	replace	with	zvith	with	
+979	trent/kraken	2	39	replace	[Kneeling]	[Kneelingl	[neelingl	
+979	trent/kraken	2	59	replace	Are	tAre	tAre	same
+979	trent/kraken	2	65	replace	tme	time	time	same
+980	miun/kraken	1	1	replace	might succeed.	mightsucceed.	might succeed.	
+980	miun/kraken	1	8	replace	he'll	he ’ll	he ’Il	
+980	miun/kraken	1	34	replace	We'll	We ’ll	We’ll	
+980	miun/kraken	1	39	replace	I'll	I’Il	I’Il	same
+980	miun/kraken	1	40	replace	I'll	I’Il	I’Il	same
+980	miun/kraken	1	43	delete		*119		
+980	miun/kraken	1	49	replace	[Exeunt.	IExeunt.	LExeunt.	
+980	miun/kraken	1	51	replace	Palace.	balace.	palace.	
+980	miun/kraken	1	66	delete		I1	lvres	
+980	miun/kraken	2	4	replace	[Aside]	[Asidel	[Aside]	
+980	miun/kraken	2	15	replace	he'ld	he ’ld	he ’ld	same
+980	miun/kraken	2	18	replace	[Aside]	[Asidel	[Aside]	
+980	miun/kraken	2	20	replace	he's	he ’s	he ’s gone,t	
+980	miun/kraken	2	20	delete		t	he ’s gone,t	
+980	miun/kraken	2	22	replace	I'll	I’Il	I’ll	
+980	miun/kraken	2	34	replace	[Exeunt	LExeunt.	4° (Exeunt.	
+980	miun/kraken	2	37	replace	Tarsus,	Tharsus,	Tarsus,	
+980	miun/kraken	2	42	replace	Dion.		Dio.	
+980	miun/kraken	2	62	replace	Dion.		Dio.	
+981	miun/kraken	1	10	replace	Dion.		Dio.	
+981	miun/kraken	1	30	replace	Dion.		Dio.	
+981	miun/kraken	1	33	replace	superflous	superfluous	superfluous	same
+981	miun/kraken	1	42	replace	neighboring	neighbouring	neighbouring	same
+981	miun/kraken	1	47	replace	neighboring	neighbouring	neighbouring	same
+981	miun/kraken	1	55	replace	display'd,	display d,	display’d,	
+981	miun/kraken	1	56	replace	favorers,	favourers,	favourers,	same
+981	miun/kraken	1	67	replace	[Exit.	IExit.	LExit.	
+981	miun/kraken	2	18	replace	we'll	we ’ll	we’ll	
+981	miun/kraken	2	22	delete		ror		
+981	miun/kraken	2	29	replace	we'll	we ’ll	we’ll	
+981	miun/kraken	2	32	replace	[Exeunt.	LExeunt.	LExeunt. ACTII.	
+981	miun/kraken	2	41	replace	I'll	I’Il	I’ll	
+981	miun/kraken	2	53	replace	with	vith	with	
+981	miun/kraken	2	55	replace	shows	shozoς	shows	
+981	miun/kraken	2	56	replace	reward,	revard,	reward,	
+981	miun/kraken	2	61	replace	labors;	labours;	labours;	same
+982	miun/kraken	1	6	replace	there's	there ’s	there ’s	same
+982	miun/kraken	1	19	replace	[Exit.	IExit.	IExit.	same
+982	miun/kraken	1	22	replace	wet.	zvet.	wvet.	
+982	miun/kraken	1	23	replace	Yet	Vet	Vet	same
+982	miun/kraken	1	26	replace	yield	vield	yield	
+982	miun/kraken	1	35	replace	he'll	he ’Il	he ’ll	
+982	miun/kraken	1	39	replace	Fish.		Fish.	
+982	miun/kraken	1	42	replace	I'll	I’Il	I’Il	same
+982	miun/kraken	1	64	replace	[Aside]	(Asidel	(Aside]	
+982	miun/kraken	2	8	replace	[Aside]	[Asidel	(Asidel	
+982	miun/kraken	2	11	replace	[Aside]	[Asidel	[Asidel	same
+982	miun/kraken	2	16	replace	labor,	labour,	labour,	same
+982	miun/kraken	2	18	replace	search	fsearch	fsearch	same
+982	miun/kraken	2	47	replace	we'll	we’Il	we’ll	
+982	miun/kraken	2	54	replace	I'll	I’Il	I’Il	same
+982	miun/kraken	2	62	replace	Exit	IExit	(Exit	
+982	miun/kraken	2	63	replace	[Aside]	IAside]	[Asidel	
+982	miun/kraken	2	64	replace	labor!	labour!	labour	
+982	miun/kraken	2	68	replace	I'll	I’Il	I’Il	same
+983	miun/kraken	1	4	replace	called for	calledfor	calledfor	same
+983	miun/kraken	1	8	replace	jour- ney:	journey;	journey:	
+983	miun/kraken	1	9	replace	I'll	I’Il	I’Il	same
+983	miun/kraken	1	17	replace	for--his	for–t his	for–t his	same
+983	miun/kraken	1	23	replace	armor.	armour.	armour.	same
+983	miun/kraken	1	24	replace	armor,	armour,	armour,	same
+983	miun/kraken	1	32	replace	death;'--and	death;–and	death;’–and	
+983	miun/kraken	1	48	replace	you'ld	you ’ld	you ’ld	same
+983	miun/kraken	1	52	replace	I'll	I’Il	I’Il	same
+983	miun/kraken	1	54	replace	I'll	I’Il	I’Il	same
+983	miun/kraken	1	57	replace	hark you,	hark-you,	hark you,	
+983	miun/kraken	1	61	replace	you'll	you’Il	you’ll	
+983	miun/kraken	1	62	replace	Believe't,	Believe t,	Believe 't,	
+983	miun/kraken	1	64	replace	rapture	raptufe	rapture	
+983	miun/kraken	2	3	replace	We'll	We’Il	We’ll	
+983	miun/kraken	2	4	replace	I'll	I’Il	I’Il	same
+983	miun/kraken	2	6	replace	honor	honour	honour	same
+983	miun/kraken	2	7	replace	I'll	I’Il	I’Il	same
+983	miun/kraken	2	7	replace	[Exeunt.	IExeunt.	[Exeunt.	
+983	miun/kraken	2	8	replace	way	vay	way	
+983	miun/kraken	2	10	replace	of it	ofit	ofit	same
+983	miun/kraken	2	11	replace	&c.		Scc.	
+983	miun/kraken	2	20	replace	honor	honour	honour	same
+983	miun/kraken	2	23	replace	[Exit	IExit	[Exit	
+983	miun/kraken	2	27	replace	It's	It 's	Sam. It’s	
+983	miun/kraken	2	27	delete		ro	1o	
+983	miun/kraken	2	31	replace	honor,	honour,	honour,	same
+983	miun/kraken	2	32	replace	labor	labour	labour	same
+983	miun/kraken	2	33	replace	honor, I'll	honour, I’Il	honour, I’Il	same
+983	miun/kraken	2	35	replace	Enter a	Entera	Entera	same
+983	miun/kraken	2	45	replace	fa- ther;	father;	father;	same
+983	miun/kraken	2	47	replace	conquered	conquer'd	conquer'd	same
+983	miun/kraken	2	54	replace	pompae	pompæ	pompæ	same
+983	miun/kraken	2	57	replace	that's	that ’s	that’s	
+983	miun/kraken	2	62	replace	[The	1/- IThe	TThe	
+984	miun/kraken	1	15	delete		so		
+984	miun/kraken	1	20	replace	honor'd	honour'd	honour’d	
+984	miun/kraken	1	22	replace	armor	armour	armour	same
+984	miun/kraken	1	28	replace	[Exeunt.	LExeunt.	(Exeunt.	
+984	miun/kraken	1	51	replace	labor'd	labour'd	labour’d	
+984	miun/kraken	1	55	replace	honor'd	honour'd	honour'd	same
+984	miun/kraken	1	57	replace	honor	honour	honour	same
+984	miun/kraken	1	58	replace	love;	loye;	love;	
+984	miun/kraken	1	59	replace	honor	honour	honour	same
+984	miun/kraken	2	5	replace	unsavory,	unsavoury,	unsavoury,	same
+984	miun/kraken	2	6	replace	gentleman.	ger tleman.	gentleman.	
+984	miun/kraken	2	12	replace	father's	father'	father's	
+984	miun/kraken	2	19	replace	the	th	the	
+984	miun/kraken	2	22	replace	Time's	Time 's	Time ’s	
+984	miun/kraken	2	23	replace	He's	He ’s	He’s	
+984	miun/kraken	2	26	replace	presence?	pre sence?	presence	
+984	miun/kraken	2	43	replace	honor	honour	honour	same
+984	miun/kraken	2	47	replace	to	te	to	
+984	miun/kraken	2	54	replace	you'll	vou’ll	you’Il	
+984	miun/kraken	2	55	replace	[Aside]	[Asidel	[Aside]	
+985	miun/kraken	1	9	replace	Sim.	S'im.	Sim.	
+985	miun/kraken	1	13	replace	armors,	armours,	armours,	same
+985	miun/kraken	1	21	replace	which	that	that	same
+985	miun/kraken	1	32	replace	[To	ITo	ITo	same
+985	miun/kraken	1	34	replace	[To	ITo	(To	
+985	miun/kraken	1	35	delete		I		
+985	miun/kraken	1	42	replace	[Exeunt.	LExeunt.	LExeunt.	same
+985	miun/kraken	1	43	replace	room	xoom	room	
+985	miun/kraken	2	18	replace	we'll	we ’Il	we ’Il	same
+985	miun/kraken	2	19	replace	we'll	we ’ll	we’ll	
+985	miun/kraken	2	21	replace	give's	give ’s	give ’s	same
+985	miun/kraken	2	31	replace	honor's	honour’s	honour's	
+985	miun/kraken	2	36	replace	twelve month	twelvemonth	twelvemonth	same
+985	miun/kraken	2	49	replace	we'll	we ’Il	we ’Il	same
+985	miun/kraken	2	52	replace	[Exeunt.	LExeunt.	[Exeunt.	
+985	miun/kraken	2	54	replace	reading a	readinga	readinga	same
+985	miun/kraken	2	60	replace	she'll	she’Il	she’Il	same
+985	miun/kraken	2	66	replace	hath	has	hath	
+986	miun/kraken	1	1	replace	that 'tis	that'tis	that ’tis	
+986	miun/kraken	1	2	replace	she'll	she ’ll	she’ll	
+986	miun/kraken	1	11	replace	she'll	she ’Il	she’Il	
+986	miun/kraken	1	17	delete		be	be	same
+986	miun/kraken	1	38	replace	to it.	toit,	toit.	
+986	miun/kraken	1	48	replace	honor	honour	honour	same
+986	miun/kraken	1	61	replace	[Aside]	[Asidel	(Asidel	
+986	miun/kraken	1	65	replace	honor's	honour’s	honour's	
+986	miun/kraken	2	1	replace	honor's	honour’s	honour’s	same
+986	miun/kraken	2	12	replace	[Aside]	[Asidel	(Asidel	
+986	miun/kraken	2	13	replace	I'll	I’Il	I’ll	
+986	miun/kraken	2	24	replace	I'll	I’Il	I ’Il	
+986	miun/kraken	2	28	replace	my	or	my	
+986	miun/kraken	2	34	replace	[Exeunt.	LE xeunt.	(E xeunt.	
+986	miun/kraken	2	37	delete			Gowu.	
+986	miun/kraken	2	50	replace	I'll	I’Il	I’ll	
+986	miun/kraken	2	54	replace	kneels,	Rneels,	Eneels,	
+986	miun/kraken	2	55	replace	kneel	Rneel	Eneel te	
+986	miun/kraken	2	56	replace	LYCHORIDA	LyCHO¬ RIDA	LYCHO¬ RIDA	
+986	miun/kraken	2	58	replace	takes	take	take	same
+986	miun/kraken	2	58	replace	of	oj	of	
+987	miun/kraken	1	8	replace	tenor	tenour	tenour	same
+987	miun/kraken	1	31	replace	grisled	grisly	grisled	
+987	miun/kraken	1	44	replace	[Exit.	IExit.	IExit.	same
+987	miun/kraken	2	16	replace	honor	honour	honour	same
+987	miun/kraken	2	42	replace	over- board:	overboard:	overboard	
+987	miun/kraken	2	57	delete		6o	6o	same
+988	miun/kraken	1	12	replace	I'll	I ’Il	I ’Il	same
+988	miun/kraken	1	14	replace	[Exeunt.	IExeunt.	(Exeunt.	
+988	miun/kraken	1	21	replace	Phil.		Phil.	
+988	miun/kraken	1	32	replace	[Exeunt	LE xeunt	LExeunt	
+988	miun/kraken	1	33	replace	two	tavo	tuvo	
+988	miun/kraken	2	3	replace	doth	dot!	doth	
+988	miun/kraken	2	9	replace	Ephesus	Ephesu:	Ephesus	
+988	miun/kraken	2	19	replace	Cer.		Cer.	
+988	miun/kraken	2	20	replace	now	nov	now	
+988	miun/kraken	2	23	replace	Set 't	Set't	Set ’t	
+988	miun/kraken	2	23	replace	upon 't.	upon’t.	upon’t.	same
+988	miun/kraken	2	28	replace	'Tis	t'Tis	l’Tisa	
+988	miun/kraken	2	28	replace	upon us.	uponus.	upon us.	
+988	miun/kraken	2	30	replace	close 'tis	close’tis	close ’tis	
+988	miun/kraken	2	36	replace	odor.	odour.	odour.	same
+988	miun/kraken	2	62	replace	[Exit	IExit	IE xit	
+988	miun/kraken	2	65	replace	I	tI	II	
+989	miun/kraken	1	1	replace	with	vith	with	
+989	miun/kraken	1	1	replace	napkins,	napleins,	napkins,	
+989	miun/kraken	1	13	replace	Into	nto	Into	
+989	miun/kraken	1	19	replace	Which	Vhich	Which	
+989	miun/kraken	1	26	replace	Where	Vhere	Where	
+989	miun/kraken	1	33	replace	Get	Jet	Get	
+989	miun/kraken	1	34	replace	For	Tor	For	
+989	miun/kraken	1	35	replace	AEsculapius	Æsculapius	Æsculapius	same
+989	miun/kraken	1	36	replace	[Exeunt,	IExeunt,	LExeunt,	
+989	miun/kraken	1	38	replace	LYCHORIDA with	LYCHO¬ RIDA vvith	LYCHO¬ RIDA voith	
+989	miun/kraken	1	43	replace	In	n	In	
+989	miun/kraken	1	48	replace	Yet	(et	Yet	
+989	miun/kraken	1	50	replace	That	Chat	That	
+989	miun/kraken	1	54	replace	The	Che	The	
+989	miun/kraken	1	54	delete		ro	1o	
+989	miun/kraken	1	57	replace	For	Tor	For	
+989	miun/kraken	1	59	replace	The	"""he"	The	
+989	miun/kraken	1	61	replace	Mannered	Manner'd	Manner’d	
+989	miun/kraken	1	63	replace	Your	Tour	Vour	
+989	miun/kraken	1	64	replace	For	Tor	For	
+989	miun/kraken	1	65	replace	Must	Aust	Must	
+989	miun/kraken	1	66	replace	Should	hould	Should	
+989	miun/kraken	2	17	replace	We'll	We’Il	We’ll	
+989	miun/kraken	2	17	replace	e'en	c’en	c’en	same
+989	miun/kraken	2	26	replace	[Exeunt.	IExeunt.	IExeunt.	same
+989	miun/kraken	2	61	delete		1o		
+990	miun/kraken	1	38	replace	Exit.	IExit.	IExit.	same
+990	miun/kraken	1	54	replace	Here	tHere	tHere	same
+990	miun/kraken	1	57	replace	with	vvith	with	
+990	miun/kraken	2	1	replace	keep	keer	keep	
+990	miun/kraken	2	5	replace	favor's	favour ’s	favour ’s	same
+990	miun/kraken	2	12	replace	I'll	I’Il	I’ll	
+990	miun/kraken	2	27	replace	know 'tis	know’tis	know ’tis	
+990	miun/kraken	2	31	replace	I'll	I’Il	I’Il	same
+990	miun/kraken	2	36	replace	Exit	LExit	LExit	same
+990	miun/kraken	2	42	replace	cried 'Good	cried“Good	cried “Good	
+990	miun/kraken	2	58	delete		7e		
+991	miun/kraken	1	7	replace	favor'd,	favour’d,	favour’d,	same
+991	miun/kraken	1	17	replace	[Leonine	LLeonine	[Leonine	
+991	miun/kraken	1	21	replace	[Exeunt	LExeunt	[Exeunt	
+991	miun/kraken	1	26	replace	I'll	I’Il	I’Il	same
+991	miun/kraken	1	28	replace	I'll	I’Il	I’Il	same
+991	miun/kraken	1	32	replace	[Exit.	IExit.	IExit.	same
+991	miun/kraken	1	60	replace	I'll	I’Il	I’Il	same
+991	miun/kraken	1	61	replace	[Exit.	LExit.	LExit.	same
+991	miun/kraken	2	10	replace	Bawd.		Bazvd.	
+991	miun/kraken	2	10	replace	others	other	other	same
+991	miun/kraken	2	14	replace	with	aith	with	
+991	miun/kraken	2	15	replace	[To Marina]	ITo Marinal	ITo Marinal	same
+991	miun/kraken	2	26	replace	baited	bated	bated	same
+991	miun/kraken	2	32	replace	Exeunt	LExeunt	[Exeunt	
+991	miun/kraken	2	33	replace	Bawd.		Bawd.	
+991	miun/kraken	2	34	replace	color	colour	colour	same
+991	miun/kraken	2	39	replace	[Exit.	IExit.	(Exit.	
+991	miun/kraken	2	58	replace	you,	vou,	you,	
+992	miun/kraken	1	5	replace	you,	vou,	you,	
+992	miun/kraken	1	28	replace	Bawd.		Bawd.	
+992	miun/kraken	1	34	replace	[To	ITo	[To	
+992	miun/kraken	1	51	replace	Bawd.		Bawd.	
+992	miun/kraken	1	57	replace	Bawd.		Bawd.	
+992	miun/kraken	1	58	replace	you'll	vou’ll	you ’ll	
+992	miun/kraken	1	65	replace	I'll	I’Il	I’Il	same
+992	miun/kraken	1	67	replace	Bawd.		Bawd.	
+992	miun/kraken	2	6	replace	[Exeunt.	IExeunt.	[Exeunt.	
+992	miun/kraken	2	7	replace	Clean's	Cleon's	Cleon's	same
+992	miun/kraken	2	22	replace	to him,	tohim,	tohim,	same
+992	miun/kraken	2	28	replace	I'll	I’Il	I’Il	same
+992	miun/kraken	2	43	replace	honorable	honourable	honourable	same
+993	miun/kraken	1	3	replace	you'll	you ’ll	you’ll	
+993	miun/kraken	1	9	replace	for 't;	for’t;	for't;	
+993	miun/kraken	1	33	replace	I'll	I’Il	l’Il	
+993	miun/kraken	1	35	replace	with	vith	zvith	
+993	miun/kraken	1	37	replace	shows	ShOνOS	Shoτs	
+993	miun/kraken	1	37	replace	whereat	vhereat	whereat	
+993	miun/kraken	1	38	replace	makes	males	makes	
+993	miun/kraken	1	64	replace	bestow'd:	bestowr'd:	bestow’d:	
+993	miun/kraken	2	12	replace	A street	Astreet	A street	
+993	miun/kraken	2	21	replace	I'll	I’Il	I’ll	
+993	miun/kraken	2	23	replace	[Exeunt.	LExeunt.	LE xeunt.	
+993	miun/kraken	2	33	replace	quirks,	quirles,	quirks,	
+993	miun/kraken	2	36	replace	she'll	she ’Il	she ’ll	
+993	miun/kraken	2	49	replace	to bless	to-bless	to bless	
+993	miun/kraken	2	49	replace	honor!	honour!	honour!	same
+993	miun/kraken	2	58	replace	Lys.		Lys.	
+993	miun/kraken	2	60	replace	Bawd.		Bazd.	
+993	miun/kraken	2	60	replace	honor	honour	honour	same
+993	miun/kraken	2	60	replace	what 'tis	what’tis	what 'tis	
+994	miun/kraken	1	7	replace	[Exit	IExit	IExit	same
+994	miun/kraken	1	12	replace	Lys.		Lys.	
+994	miun/kraken	1	14	replace	honor,	honour,	honour,	same
+994	miun/kraken	1	15	replace	I'll	I’Il	I’Il	same
+994	miun/kraken	1	17	replace	Marina]	Marinal	Marina)	
+994	miun/kraken	1	18	replace	honorable	honourable	honourable	same
+994	miun/kraken	1	24	replace	honorable	honourable	honourable	same
+994	miun/kraken	1	32	replace	Bawd.		Bazd.	
+994	miun/kraken	1	34	replace	honor	honour	honour	same
+994	miun/kraken	1	52	replace	honorable	honourable	honourable	same
+994	miun/kraken	1	64	replace	honor,	honour,	honour,	same
+994	miun/kraken	2	10	replace	dream'd	dream’ó	dream’d	
+994	miun/kraken	2	13	replace	alter'd	alter d	alter'd	
+994	miun/kraken	2	13	replace	gold	golc	gold	
+994	miun/kraken	2	20	replace	savor	savour	savour	same
+994	miun/kraken	2	27	replace	BOULT.		Bouur.	
+994	miun/kraken	2	42	replace	We'll	We ’ll	We’Il	
+994	miun/kraken	2	65	replace	rose- mary	rosemary	rosemary	same
+995	miun/kraken	1	33	replace	here's	here ’s	here ’s	same
+995	miun/kraken	1	36	replace	I'll	I ’Il	I’Il	
+995	miun/kraken	1	49	replace	there's	there ’s	there’s	
+995	miun/kraken	1	52	replace	I'll	I’Il	I’Il	same
+995	miun/kraken	1	55	replace	ACT V	ACTV.	LExeunt. ACT V.	
+995	miun/kraken	1	62	replace	needle	neeld	neeld	same
+995	miun/kraken	2	1	delete		ro		
+995	miun/kraken	2	12	replace	fervor	fervour	fervour	same
+995	miun/kraken	2	17	replace	Exit.	IExit.	(E-it.	
+995	miun/kraken	2	20	replace	within	vithin	vithin	same
+995	miun/kraken	2	23	replace	HELICANUS.	HELI¬ CANUS.	HELI¬ CANUS.	same
+995	miun/kraken	2	25	replace	[To	ITo	ITo	same
+995	miun/kraken	2	25	replace	Mytilene]	Mytilenel	Mytilenel	same
+995	miun/kraken	2	28	replace	there's	there ’s	there ’s	same
+995	miun/kraken	2	34	replace	two	tavo	two	
+995	miun/kraken	2	39	replace	The	LThe	[The	
+995	miun/kraken	2	39	replace	Sailors	SSailors	tavo Sailors	
+995	miun/kraken	2	42	replace	with	vvith	with	
+995	miun/kraken	2	47	replace	you!	vou!	you	
+996	miun/kraken	1	25	replace	[Whispers	IWhispers	IIVhispers	
+996	miun/kraken	1	25	replace	who	vho	zvho	
+996	miun/kraken	1	27	replace	nothing we'll	hothing we’Il	nothing we’ll	
+996	miun/kraken	1	43	replace	with	vith	aith	
+996	miun/kraken	2	5	replace	Mar.		Mar.	
+996	miun/kraken	2	26	replace	that--What	that— What	that— What	same
+996	miun/kraken	2	38	delete		1ro		
+997	miun/kraken	1	23	replace	I'll	I ’Il	I’Il	
+997	miun/kraken	1	24	replace	I'll	I’Il	I’Il	same
+997	miun/kraken	1	30	replace	Per.	er.	Per.	
+997	miun/kraken	1	48	replace	[Aside]	[Asidel	[Asidel	same
+997	miun/kraken	1	53	replace	I'll	I'Il	I’Il	
+997	miun/kraken	1	53	replace	you	vou	you	
+997	miun/kraken	1	65	replace	do't,	doꝯt,	do’t,	
+997	miun/kraken	2	1	replace	You	Vou	Vou	same
+997	miun/kraken	2	10	replace	I know	Iknow	I know	
+997	miun/kraken	2	16	replace	honor'd	honour’d	honour'd	
+997	miun/kraken	2	23	replace	at	ne	at	
+997	miun/kraken	2	24	replace	O Helicanus,	OH maaus,	O Helicanus,	
+998	trent/kraken	1	7	replace	I'll	l’Il	I’Il	
+998	trent/kraken	1	16	replace	To mourn	To-mourn	To mourn	
+998	trent/kraken	1	30	replace	I'll	I 'll	I 'll	same
+998	trent/kraken	1	43	replace	of	e		
+998	trent/kraken	1	60	replace	they're	they ’re	they re	
+998	trent/kraken	1	64	replace	Exit.	IEne	IExit.	
+998	trent/kraken	2	6	replace	wlith	wvith	with	
+998	trent/kraken	2	12	replace	Pentapols	Pentapolis	Pentapolis	same
+998	trent/kraken	2	22	replace	favor!	favour!	favour!	same
+998	trent/kraken	2	39	replace	we	ve	we	
+998	trent/kraken	2	58	replace	[Shows	[Shozs	[Shows	
+999	miun/kraken	1	4	replace	yielded	vielded	yielded	
+999	miun/kraken	1	10	replace	left	lest	left	
+999	miun/kraken	1	23	replace	Per.	er.	er.	same
+999	miun/kraken	2	2	replace	I'll	I’Il	I’Il	same
+999	miun/kraken	2	6	replace	Yet there,	Yetthere,	Yetthere,	same
+999	miun/kraken	2	8	replace	We'll	We ’Il	We’Il	
+999	miun/kraken	2	13	replace	[Exeunt.	IExeunt.	IA-tennt.	
+999	miun/kraken	2	27	replace	honor'd	honour’d	honour'd	

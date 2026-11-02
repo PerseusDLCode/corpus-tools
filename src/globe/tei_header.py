@@ -67,6 +67,7 @@ PLAY_TITLES = {
     "tim": "Timon of Athens",
     "jc": "Julius Cæsar",  # as its __cts__.xml names it
     "mac": "Macbeth",
+    "oth": "Othello",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -155,6 +156,9 @@ COPY_TEXT = {
     # Introduction printed 792 (CHOCR index 232), V.8 ends on 815 (index 255);
     # Antony and Cleopatra's introduction is 816 (printed = index + 560).
     "mac": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="792-815"),
+    # Introduction printed 724 (CHOCR index 164), V.2 ends on 757 (index 197);
+    # King Lear's introduction is 758 (printed = index + 560).
+    "oth": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="724-757"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

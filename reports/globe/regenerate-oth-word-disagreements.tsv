@@ -1,0 +1,465 @@
+page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
+879	miun/kraken	1	34	replace	stuff'd	stuff d	stuff’d	
+879	miun/kraken	1	41	replace	A	tA	4A	
+879	miun/kraken	2	1	delete		OF VENICE. PERSONÆ. Clown, servant to DESDEMONA, daughter to Brabantio and wife to EMILIA, wife to BIANCA, mistress to Sailor, Messenger, Herald, Officers, Gentlemen, Musicians, and Attendants. SCENE Venice: a Sea-port in	OF VENICE. PERSONÆ. Clown, servant to Othello. DESDEMONA, daughter to Brabantio and wife to Othello. EMILIA, wife to lago. BIANCA, mistress to Cassio. Sailor, Messenger, Herald, Officers, Gentlemen, Musicians, and Attendants. SCENE: Venice: a Sea-port in Cyprus.	
+880	miun/kraken	1	6	replace	color.	colour.	colour.	same
+880	miun/kraken	1	7	replace	I'll	I’Il	I’Il	same
+880	miun/kraken	1	15	replace	Iago.		Yago.	
+880	miun/kraken	1	30	replace	your	vour	your	
+880	miun/kraken	1	60	replace	you'll	you’Il	you’ll	
+880	miun/kraken	1	62	replace	you'll	you Il	you’ll	
+880	miun/kraken	1	65	replace	Iago.		Iago.	
+880	miun/kraken	1	65	replace	you	vou	you	
+880	miun/kraken	2	31	replace	[Exit	LE xit	[Exit	
+880	miun/kraken	2	43	replace	Yet, for	Vet, sor	Yet, for	
+880	miun/kraken	2	49	replace	[Exit.	IExit.	IExit.	same
+880	miun/kraken	2	50	replace	below,	belozo,	belowo,	
+880	miun/kraken	2	50	replace	with	vuith	with	
+880	miun/kraken	2	55	replace	see	sce	see	
+880	miun/kraken	2	58	replace	know 'twas	know’twas	know ’twas	
+881	miun/kraken	1	3	replace	he	be	be	same
+881	miun/kraken	1	6	replace	Bra.		Bra.	
+881	miun/kraken	1	12	replace	I'll	I’Il	I’Il	same
+881	miun/kraken	1	18	replace	Another street.	Anotherstreet.	Another street.	
+881	miun/kraken	1	19	replace	with	vith	with	
+881	miun/kraken	1	21	replace	Iago.		Tago.	
+881	miun/kraken	1	23	replace	Yet	Vet	VYet	
+881	miun/kraken	1	31	replace	honor	honour	honour	same
+881	miun/kraken	1	45	replace	honor,	honour,	honour,	same
+881	miun/kraken	1	46	delete		2r		
+881	miun/kraken	1	49	replace	Iago,	lago,	lago,	same
+881	miun/kraken	1	57	replace	You	Vou	You	
+881	miun/kraken	2	17	replace	[Exit.	IExit.	(Exit.	
+881	miun/kraken	2	21	replace	he's	he ’s	he’s	
+881	miun/kraken	2	32	replace	weapons.	veapons.	veapons.	same
+881	miun/kraken	2	36	replace	[They draw	IThey drazo	[They draw	
+881	miun/kraken	2	45	replace	I'll	I ’Il	I ’Il	same
+881	miun/kraken	2	56	replace	I'll have't	I’Il have 't	I’Il have ’t	
+881	miun/kraken	2	66	replace	prompter. Where	prompter.Where	prompter. Where	
+882	miun/kraken	1	14	replace	Mine's	Mine 's	Mine ’s	
+882	miun/kraken	1	19	replace	[Exeunt.	IExeunt.	WExeunt.	
+882	miun/kraken	1	21	replace	DUKE	DURE	DUkE	
+882	miun/kraken	1	36	replace	articles	article	article	same
+882	miun/kraken	1	38	replace	Sail.		Sailor.	
+882	miun/kraken	2	27	replace	[To	1To	(7° Brabantiol	
+882	miun/kraken	2	29	replace	your	vour	your	
+882	miun/kraken	2	39	replace	Duke.		Duke.	
+882	miun/kraken	2	57	replace	for	sor	for	
+882	miun/kraken	2	59	replace	for 't.	for’t.	for't.	
+882	miun/kraken	2	60	replace	Othello]	Othellol	Othellol	same
+883	miun/kraken	1	46	replace	your	vour	your	
+883	miun/kraken	1	53	replace	I'll	I’Il	I’Il	same
+883	miun/kraken	2	11	replace	She'ld	She ’Id	She’ld	
+883	miun/kraken	2	17	replace	aid	did	did	same
+883	miun/kraken	2	60	replace	you!	vou!	you!	
+884	miun/kraken	1	5	replace	favor.	favour.	favour.	same
+884	miun/kraken	1	50	replace	Be't	Be 't	Be 't	same
+884	miun/kraken	1	51	replace	I'll	I’Il	I’Il	same
+884	miun/kraken	1	56	replace	your	vour	your	
+884	miun/kraken	1	66	replace	honors	honours	honours	same
+884	miun/kraken	2	1	replace	bereft	berest	bereft	
+884	miun/kraken	2	7	replace	young	voung	voung	same
+884	miun/kraken	2	8	replace	defunct--and	desunct–and	desunct–and	same
+884	miun/kraken	2	8	replace	satisfaction,	satissaction,	satisfaction,	
+884	miun/kraken	2	31	replace	you.	vou.	vou.	same
+884	miun/kraken	2	35	replace	shall	shali	shall	
+884	miun/kraken	2	39	replace	Bra.]		Brab.	
+884	miun/kraken	2	45	replace	Bra.		Bra.	
+884	miun/kraken	2	48	replace	[Exeunt	IExeunt	[Exeunt	
+884	miun/kraken	2	48	replace	Officers,	Offisers,	Officers, Ecc.	
+884	miun/kraken	2	49	replace	Iago,	lago,	lago,	same
+884	miun/kraken	2	67	replace	Iago.		Iago.	
+884	miun/kraken	2	67	replace	villainous!	villanous!	villanous!	same
+884	miun/kraken	2	68	replace	world	vorld	world	
+884	miun/kraken	2	68	replace	years;	vears;	years;	
+885	miun/kraken	1	32	replace	favor	favour	favour	same
+885	miun/kraken	1	39	replace	money:--the	money the	money the	same
+885	miun/kraken	1	57	replace	Iago.		Iago.	
+885	miun/kraken	1	57	replace	money:--I	money: —I	money: —I	same
+885	miun/kraken	1	68	replace	Iago.		Iago.	
+885	miun/kraken	2	6	replace	[Exit.	IExit.	IExιt.	
+885	miun/kraken	2	12	replace	hath	has	has	same
+885	miun/kraken	2	12	replace	if't	if ’t	if 't	
+885	miun/kraken	2	18	replace	how ?--Let's	how?–Let’s	knavery– How, how?— Let’s	
+885	miun/kraken	2	29	replace	[Exit.	IExit.	IExit.	same
+885	miun/kraken	2	38	replace	cannot, 'twixt	cannot,'twixt	cannot,’twixt	
+885	miun/kraken	2	61	replace	This	The	The	same
+886	miun/kraken	1	35	replace	[A	IA	IA	same
+886	miun/kraken	1	36	replace	fourth	fourtk	fourth	
+886	miun/kraken	1	47	replace	who 'tis	who’tis	who ’tis	
+886	miun/kraken	1	48	replace	[Exit.	IExit.	[Exit.	
+886	miun/kraken	1	59	replace	to the	tothe	tothe	same
+886	miun/kraken	1	60	replace	favorable	favourable	favourable	same
+886	miun/kraken	1	64	replace	gutter'd	gutter d	gutter'd	
+886	miun/kraken	2	1	replace	so	go	go	same
+886	miun/kraken	2	6	replace	lago,		lago,	
+886	miun/kraken	2	11	replace	love's	love ’s	love ’s	same
+886	miun/kraken	2	24	replace	nor know	norknow	norknow	same
+886	miun/kraken	2	29	replace	[Within 'A	¡Within“A	(Within “A	
+886	miun/kraken	2	33	replace	[Exit	IExit	[Exit	
+886	miun/kraken	2	34	replace	[To	ITo	ITo Emilial	
+886	miun/kraken	2	36	replace	Iago,	lago,	lago,	same
+886	miun/kraken	2	40	replace	Iago.		Tago.	
+886	miun/kraken	2	51	replace	Iago.	lago.	Yago.	
+886	miun/kraken	2	53	replace	parlors,	parlours,	parlours,	same
+886	miun/kraken	2	64	replace	to 't;	to’t;	to’t;	same
+886	miun/kraken	2	67	replace	harbor? Iago.	harbour?	harbour Jago.	
+887	miun/kraken	1	6	replace	labors,	labours,	labours,	same
+887	miun/kraken	1	13	replace	She'll	She’Il	She ’Il	
+887	miun/kraken	1	21	replace	Iago.	lago.	Iago.	
+887	miun/kraken	1	47	replace	Iago. Aside	IAside]	Iago. [Asidel	
+887	miun/kraken	2	2	replace	laboring	labouring	labouring	same
+887	miun/kraken	2	18	replace	[Aside]	[Asidel	[Aside)	
+887	miun/kraken	2	36	replace	[Exeunt	LE xeunt	(Exeunt	
+887	miun/kraken	2	37	replace	Iago.		Iago.	
+887	miun/kraken	2	38	replace	harbor.	harbour.	harbour.	same
+887	miun/kraken	2	38	replace	valiant, --as,	valiant,–as,	valiant,–as,	same
+887	miun/kraken	2	42	replace	this--Desdemona	this Desdemona	this Desdemona	same
+887	miun/kraken	2	54	replace	favor,	favour,	favour,	same
+888	miun/kraken	1	26	replace	I'll	I’Il	I’Il	same
+888	miun/kraken	1	30	replace	favorably	favourably	favourably	same
+888	miun/kraken	1	32	replace	Iago.		Iago.	
+888	miun/kraken	1	47	replace	[Exit.	IExit.	IExit.	same
+888	miun/kraken	1	53	replace	he'll	he ’Il	he ’ll	
+888	miun/kraken	2	7	replace	till used.	tillused.	tillused.	same
+888	miun/kraken	2	9	replace	with	vith	with	
+888	miun/kraken	2	25	replace	CASSIO,	CASsto,	CASSIO,	
+888	miun/kraken	2	29	replace	honorable	honourable	honourable	same
+888	miun/kraken	2	37	replace	Desdemona]	Desdemonal	Desdemonal	same
+888	miun/kraken	2	40	replace	come 'tween	come'tween	come ’tween	
+888	miun/kraken	2	46	replace	casts	cast	cast	same
+888	miun/kraken	2	51	replace	I'll	I’Il	I’ll	
+889	miun/kraken	1	8	replace	I'll	I’Il	I’ll	
+889	miun/kraken	1	17	replace	at the	atthe	atthe	same
+889	miun/kraken	1	17	replace	call them in.	callthemin.	callthemin.	same
+889	miun/kraken	1	18	replace	do 't;	do’t;	do’t;	same
+889	miun/kraken	1	19	delete		so	so	same
+889	miun/kraken	1	21	replace	He'll	He 'll	He ’ll	
+889	miun/kraken	1	28	replace	honors	honours	honours	same
+889	miun/kraken	1	37	replace	with	vith	vvith	
+889	miun/kraken	1	38	replace	with wine.	vvith voine.	with wine.	
+889	miun/kraken	1	44	replace	canakin	canalin	canakin	
+889	miun/kraken	1	53	replace	Hollander--Drink,	Hollander¬ Drink,	Hollander– Drink,	
+889	miun/kraken	1	62	replace	I'll	I’Il	I’Il	same
+889	miun/kraken	2	8	replace	Iago.		Iago.	
+889	miun/kraken	2	8	replace	hear't	hear ’t	hear ’t	same
+889	miun/kraken	2	10	replace	God's	God ’s	God 's	
+889	miun/kraken	2	13	replace	Iago.		Iago.	
+889	miun/kraken	2	20	replace	affairs.--Forgive	affairs.— Forgive	affairs.— Forgive	same
+889	miun/kraken	2	21	replace	sins!--Gentlemen,	sins !–Gentlemen,	sins !–Gentlemen,	same
+889	miun/kraken	2	28	replace	[Exit.	IExit.	(Exit.	
+889	miun/kraken	2	31	replace	Iago.		Iago.	
+889	miun/kraken	2	32	replace	Caesar	Cæsar	Cæsar	same
+889	miun/kraken	2	40	replace	Iago.	lago.	Iago.	
+889	miun/kraken	2	41	replace	He'll	He ’ll	He ’Il	
+889	miun/kraken	2	49	replace	him]	himl	him]	
+889	miun/kraken	2	52	replace	And 'tis	And’tis	And ’tis	
+889	miun/kraken	2	60	replace	within: 'Help!	within:“Help!	within: “Help	
+889	miun/kraken	2	65	replace	I'll	I’Il	I’ll	
+890	miun/kraken	1	4	replace	[Staying	[taying	[Staying	
+890	miun/kraken	1	7	replace	I'll	I’Il	I’Il	same
+890	miun/kraken	1	9	replace	[They	IThey	FThiey	
+890	miun/kraken	1	10	replace	Roderigo	Roderigol	Roderigol	same
+890	miun/kraken	1	13	replace	ho!--Lieutenant,--sir,--Montano,-sir;--	ho !–Lieutenant,–sir,—Montano,–sir	ho !—Lieutenant,–sir, —Montano,–sir	
+890	miun/kraken	1	24	replace	Lieutenant,--sir,--Montano,--gentlemen,--	Lieutenant,–sir,—Montano, –gentlemen,	Lieutenant,–sir, —Montano, –gentlemen,	
+890	miun/kraken	1	27	replace	speaks	spealss	speales	
+890	miun/kraken	1	38	replace	Iago,	lago,	lago,	same
+890	miun/kraken	1	63	replace	Iago,	lago,	lago,	same
+890	miun/kraken	2	9	replace	rant	rout	rout	same
+890	miun/kraken	2	31	replace	clamor--as	clamour–as	clamour–as	same
+890	miun/kraken	2	53	replace	I'll	I’Il	I’Il	same
+890	miun/kraken	2	63	replace	[Exeunt	LExeunt	LExeunt	same
+891	miun/kraken	1	2	replace	Iago,	lago,	Iago,	
+891	miun/kraken	1	3	replace	Iago.		Yago.	
+891	miun/kraken	1	7	replace	have	haye	have	
+891	miun/kraken	1	22	replace	Iago.		Yago.	
+891	miun/kraken	1	25	replace	Is't	Is ’t	Is 't	
+891	miun/kraken	1	38	replace	Iago.		Tago.	
+891	miun/kraken	1	56	replace	I'll	I’Il	I’Il	same
+891	miun/kraken	1	61	replace	yourself	vourself	yourself	
+891	miun/kraken	2	9	replace	Iago. [Exit.	lago. IExit.	Iago. (Exit. Tago.	
+891	miun/kraken	2	18	replace	Moor--were't	Moor–were ’t	Moor–were’t	
+891	miun/kraken	2	32	replace	I'll	I’Il	I’Il	same
+891	miun/kraken	2	64	replace	[Exit	IExit	(Exit	
+891	miun/kraken	2	67	replace	I'll	I'Il	I’Il	
+892	miun/kraken	1	3	replace	[Exit.	IExit.	IExit.	same
+892	miun/kraken	1	26	replace	to 't	to’t	to’t	same
+892	miun/kraken	1	28	replace	Mus.		Mus.	
+892	miun/kraken	1	38	replace	there's	there 's	there’s	
+892	miun/kraken	1	42	replace	Exit Clown.	IExit	IExit Clozon.	
+892	miun/kraken	1	47	replace	Iago,	lago,	Iago,	
+892	miun/kraken	1	51	replace	I'll	I’Il	I’Il	same
+892	miun/kraken	1	52	replace	I'll	I’Il	I’Il	same
+892	miun/kraken	2	15	replace	Exeunt.	IExeunt.	[Exeunt.	
+892	miun/kraken	2	22	replace	I'll	I’Il	I’ll	
+892	miun/kraken	2	25	replace	We'll	We’Il	We’ll	
+892	miun/kraken	2	34	replace	that's	thao’s	that’s	
+892	miun/kraken	2	55	replace	I'll	I'1l	I’ll	
+892	miun/kraken	2	57	replace	I'll	I’Il	I’ll	
+892	miun/kraken	2	59	replace	I'll	L’ll	I’Il	
+892	miun/kraken	2	63	replace	Emil.		Emil.	
+893	miun/kraken	1	5	replace	Iago.		IACO. Iago.	
+893	miun/kraken	1	7	replace	Iago.		Iago.	
+893	miun/kraken	1	25	delete		go		
+893	miun/kraken	1	33	replace	shall 't	shall’t	shall’t	same
+893	miun/kraken	1	38	replace	Oth.		Oth.	
+893	miun/kraken	2	1	replace	fearful	searful	fearful	
+893	miun/kraken	2	6	replace	I'll	I’Il	I’Il	same
+893	miun/kraken	2	13	delete		O		
+893	miun/kraken	2	17	replace	Iago?	lago?	lago? Tago.	
+893	miun/kraken	2	20	replace	your	vour	your	
+893	miun/kraken	2	29	replace	Iago.		Tago.	
+893	miun/kraken	2	34	replace	Oth.		Oth.	
+893	miun/kraken	2	62	replace	Iago.		Iago.	
+894	miun/kraken	1	18	replace	wrong'd and	wrong’dand	wrong’dand	same
+894	miun/kraken	1	20	replace	Iago.		Iago.	
+894	miun/kraken	1	22	replace	I	1	1	same
+894	miun/kraken	1	42	replace	I'll	I’Il	I’Il	same
+894	miun/kraken	1	43	replace	Iago.		Iago.	
+894	miun/kraken	1	45	replace	whilst 'tis	whilst'tis	whilst ’tis	
+894	miun/kraken	1	47	replace	Iago.		Iago.	
+894	miun/kraken	1	55	replace	Iago.		Iago.	
+894	miun/kraken	1	69	replace	fair,--feeds	fair, feeds	fair, feeds vell,	
+894	miun/kraken	2	5	replace	Iago; I'll	lago; I 'll	lago; I’ll	
+894	miun/kraken	2	15	replace	your eye	vour eve	your eye	
+894	miun/kraken	2	22	replace	leave 't	leave’t	leave’t	same
+894	miun/kraken	2	38	replace	Iago.		Iago.	
+894	miun/kraken	2	42	replace	you're	you re	you ’re	
+894	miun/kraken	2	66	replace	recoil ng	recoiling	recoiling	same
+894	miun/kraken	2	69	replace	Oth.		Oth.	
+895	miun/kraken	1	2	delete		lago.	lago.	same
+895	miun/kraken	1	3	replace	Iago. Going	[Goingl	[Goingl	same
+895	miun/kraken	1	13	replace	You	Y ou	You	
+895	miun/kraken	1	25	replace	jesses--were	jesses were	jesses were	same
+895	miun/kraken	1	45	replace	I'll	I'Il	I’ll	
+895	miun/kraken	1	47	replace	islanders	islanders28	islanders	
+895	miun/kraken	1	48	replace	you	vou	you	
+895	miun/kraken	1	58	replace	He	IHe	HHe	
+895	miun/kraken	1	60	replace	I'll	I’Il	I’Il	same
+895	miun/kraken	1	62	replace	Exeunt	LE xeunt	LExeunt	
+895	miun/kraken	2	6	replace	Iago.		Iago.	
+895	miun/kraken	2	11	replace	Iago.		Iago.	
+895	miun/kraken	2	22	replace	Iago.		Iago.	
+895	miun/kraken	2	26	replace	Snatching it	[Snatchingit]	[Snatchingit]	same
+895	miun/kraken	2	28	replace	Give't	Give 't	Give ’t	
+895	miun/kraken	2	28	replace	she'll	she ’Il	she’Il	
+895	miun/kraken	2	31	replace	Exit	LExit	(Exit	
+895	miun/kraken	2	35	replace	proofs of holy	proois ot holv	proofs of holy	
+895	miun/kraken	2	35	replace	ths	this	this	same
+895	miun/kraken	2	48	replace	of that.	ofthat.	of that.	
+895	miun/kraken	2	58	replace	I found	Ifound	I found	
+895	miun/kraken	2	60	replace	he 's	he’s	he’s	same
+895	miun/kraken	2	61	replace	Iago.	lago.	Iago.	
+896	miun/kraken	1	15	replace	Is 't	Is't	Yago. Is’t	
+896	miun/kraken	1	47	replace	I'll	I’Il	I’ll	
+896	miun/kraken	1	48	replace	Iago.		Iago.	
+896	miun/kraken	1	69	replace	have't.	have ’t.	have 't.	
+896	miun/kraken	2	4	replace	to't	to ’t	to ’t	same
+896	miun/kraken	2	10	replace	of	ef	of	
+896	miun/kraken	2	15	replace	Cry 'O	Cry'O	Cry “O	
+896	miun/kraken	2	21	replace	Iago.		Tago.	
+896	miun/kraken	2	22	replace	Oth.		Oth.	
+896	miun/kraken	2	24	replace	Iago.		Yago.	
+896	miun/kraken	2	27	replace	I'll	I'Il	I’Il	
+896	miun/kraken	2	28	replace	Iago.		Iago.	
+896	miun/kraken	2	40	replace	Iago.		Yago.	
+896	miun/kraken	2	45	replace	Iago;	lago;	lago;	same
+896	miun/kraken	2	55	replace	Iago.		Iago.	
+896	miun/kraken	2	66	replace	Kneels	IKneels]	[Kneels!	
+896	miun/kraken	2	68	replace	Iago.	lago.	Iago.	
+896	miun/kraken	2	69	replace	Kneels	IKneels]	[Knéelsl	
+897	miun/kraken	1	2	replace	Iago	lago	lago	same
+897	miun/kraken	1	3	replace	The	T’he	The	
+897	miun/kraken	1	7	replace	What	Vhat	What	
+897	miun/kraken	1	11	replace	to 't:	to't:	to 't:	
+897	miun/kraken	1	17	replace	Damn her,	Damn.her,	Damn her,	
+897	miun/kraken	1	21	replace	Exeunt.	LExeunt.	IExeunt.	
+897	miun/kraken	1	33	delete		r0		
+897	miun/kraken	1	64	replace	is't	is 't	is 't	same
+897	miun/kraken	1	65	replace	Aside	[Asidel	LAsidel	
+897	miun/kraken	2	32	replace	fault.	sault.	fault.	
+897	miun/kraken	2	47	replace	lose't	lose 't	lose ’t	
+897	miun/kraken	2	47	replace	give't	give ’t	give ’t	same
+897	miun/kraken	2	50	replace	there's	there ’s	there ’s	same
+897	miun/kraken	2	51	replace	A sibyl,	Asibyl,	A sibyl,	
+897	miun/kraken	2	58	replace	to 't	to’t	to ’t	
+897	miun/kraken	2	60	replace	seen 't!	seen't!	seen 't!	
+898	miun/kraken	1	1	replace	Fetch 't,	Fetch't,		
+898	miun/kraken	1	8	replace	You'll	You ’Il	You ’ll	
+898	miun/kraken	1	17	replace	Exit.	IExit.	IExit.	same
+898	miun/kraken	1	20	replace	there's	there 's	there ’s	
+898	miun/kraken	1	27	replace	CAsslo	CAssio	Cassio	
+898	miun/kraken	1	64	replace	There's	There 's	There’s	
+898	miun/kraken	1	65	replace	Exit Iago.	LExit lIago.	(Exit Iago.	
+898	miun/kraken	2	13	replace	you	yor	you	
+898	miun/kraken	2	18	replace	Emil.		Emid.	
+898	miun/kraken	2	26	replace	here about:	hereabout:	hereabout	
+898	miun/kraken	2	27	replace	I'll	I’Il	I’Il	same
+898	miun/kraken	2	53	replace	your	vour	your	
+898	miun/kraken	2	63	replace	will--I'ld	will–I’Id	will–I’ld	
+898	miun/kraken	2	64	replace	do 't;	do’t;	do’t;	same
+899	trent/kraken	1	7	replace	I'll	I’Il	I’Il	same
+899	trent/kraken	1	9	replace	Exeunt. ACT IV	IExeunt. ACTIV.	IExeunt. ACT IV.	
+899	trent/kraken	1	14	replace	Iago! Iago.	lago!	lago! Iago.	
+899	trent/kraken	1	53	replace	he'll	he ’ll	he ’Il	
+899	trent/kraken	1	58	replace	Iago.		Iago.	
+899	trent/kraken	1	64	replace	handkerchief!--To	handkerchief !—To	fulsome.— Handkerchief–confessions–handkerchief!—To	
+899	trent/kraken	1	64	replace	labour;--first,	labour; –first,	labour: –first,	
+899	trent/kraken	2	1	replace	with- out	without	without	same
+899	trent/kraken	2	3	replace	possible?--Confess--handkerchief!--O	possible ?—Confess–handkerchief !—O	possible?–Confess–handkerchief!—O	
+899	trent/kraken	2	30	replace	Iago.	lago.	Iago.	
+899	trent/kraken	2	34	replace	Iago.		Iago.	
+899	trent/kraken	2	48	replace	o'erwhelmed	d’erwhelmed	o’erwhelmed	
+899	trent/kraken	2	63	replace	Iago?	lago?	Iago?	
+900	miun/kraken	1	4	replace	as 'tis	as’tis	as’tis	same
+900	miun/kraken	1	17	replace	Speaking	[peaking	[Speaking lowerl	
+900	miun/kraken	1	28	replace	Oth.		Oth.	
+900	miun/kraken	1	44	replace	Oth. Have	Haye	Oth. Have	
+900	miun/kraken	1	60	replace	yours.	vours,	yours,	
+900	miun/kraken	1	62	replace	company.	companv.	company.	
+900	miun/kraken	2	1	replace	you!	vou!	you	
+900	miun/kraken	2	4	replace	work?-- A	work?–A	work?—A	
+900	miun/kraken	2	9	replace	I'll	I’Il	I’ll	
+900	miun/kraken	2	14	replace	you'll	you ’Il	you ’ll	
+900	miun/kraken	2	16	replace	Exit. Iago.	IExit.	[Exit. Iago.	
+900	miun/kraken	2	18	replace	she'll	she’Il	she ’ll	
+900	miun/kraken	2	22	replace	Iago.		Iago.	
+900	miun/kraken	2	25	replace	Exit	LExit	LExit	same
+900	miun/kraken	2	26	replace	Advancing	[Advancingl	[Advancingl	same
+900	miun/kraken	2	28	replace	Iago.		Iago.	
+900	miun/kraken	2	30	replace	Oth.		Oth.	
+900	miun/kraken	2	30	replace	Iago!	lago!	lago!	same
+900	miun/kraken	2	36	replace	a- killing.	a-killing.	a-killing.	same
+900	miun/kraken	2	50	replace	Iago.		Iago.	
+900	miun/kraken	2	53	replace	Iago.		Iago.	
+900	miun/kraken	2	55	replace	of it,	ofit,	ofit, lago!	
+900	miun/kraken	2	55	replace	Iago!	lago!	lago!	same
+900	miun/kraken	2	65	replace	I'll	I’il	I’ll	
+901	miun/kraken	1	7	replace	Iago.		Iago.	
+901	miun/kraken	1	17	replace	Opens	IOpens the	[Opens the	
+901	miun/kraken	1	35	delete		to	to	same
+901	miun/kraken	1	44	replace	Oth.		Oth.	
+901	miun/kraken	1	48	replace	her	herl	herl	same
+901	miun/kraken	2	4	replace	sir,--O	sir, —O	sir, —O	same
+901	miun/kraken	2	8	replace	Exit	IExxit	Exit	
+901	miun/kraken	2	12	replace	Exit.	IExit.	(Exit.	
+901	miun/kraken	2	20	replace	Iago.	lago.	Iago.	
+901	miun/kraken	2	23	replace	Iago.		Iago.	
+901	miun/kraken	2	25	replace	be: if	be,–if	be if	
+901	miun/kraken	2	34	replace	Iago.	lago.	Iago.	
+901	miun/kraken	2	42	replace	Exeunt.	IExeunt.	IExeunt.	same
+901	miun/kraken	2	43	replace	room	voom	room	
+902	miun/kraken	1	8	replace	with	witk	wvith	
+902	miun/kraken	1	25	replace	Oth.		Oth.	
+902	miun/kraken	1	34	replace	know	lnow	know	
+902	miun/kraken	1	53	replace	A	tA	A	
+902	miun/kraken	2	6	replace	goodly	goodsy	goodsy	same
+902	miun/kraken	2	30	replace	voice	voicel	voicel	same
+902	miun/kraken	2	39	replace	Exit.	IEæit.	IExit.	
+902	miun/kraken	2	44	replace	asleep.	aslecp.	asleep.	
+902	miun/kraken	2	56	replace	Exit.	IExit.	[Exit.	
+903	miun/kraken	1	6	replace	Iago? Iago.	lago? lago.	lago? Iago.	
+903	miun/kraken	1	11	replace	callet. Iago.	callat.	callat. lago.	
+903	miun/kraken	1	21	replace	Iago.	lago.	Tago.	
+903	miun/kraken	1	65	replace	doth	does	doth	
+903	miun/kraken	2	9	replace	Exeunt	LE xeunt	LExeunt	
+903	miun/kraken	2	16	replace	Iago;	lago;	lago;	same
+903	miun/kraken	2	22	replace	Iago.		Iago.	
+903	miun/kraken	2	27	replace	have	haye	have	
+903	miun/kraken	2	36	replace	fopped	fobbed	fopped	
+904	miun/kraken	1	9	replace	Iago.	lago.	Iago.	
+904	miun/kraken	1	40	replace	Exeunt	LExeunt	[Exeunt	
+904	miun/kraken	2	1	replace	thing 'twas,	thing’twas,	thing ’twas,	
+904	miun/kraken	2	14	replace	Singing	[Singingl	[Singingl	same
+904	miun/kraken	2	25	replace	Singing	[Singingl]	[Singingl	
+904	miun/kraken	2	26	replace	he'll	he ’ll	he ’Il	
+904	miun/kraken	2	29	replace	approve,--	approye.—	approve,—	
+904	miun/kraken	2	36	replace	you'll	you ’ll	you’ll	
+904	miun/kraken	2	59	replace	un- do't	undo’t	undo’t	same
+904	miun/kraken	2	68	replace	i' the	i'the	i'the	same
+905	miun/kraken	1	21	replace	is 't	is’t	is’t	same
+905	miun/kraken	1	29	replace	Exeunt, ACT V	IExeunt. ACTV.	(Exeunt. ACT V.	
+905	miun/kraken	1	32	replace	IAGO	IACo	IAco	
+905	miun/kraken	1	39	replace	in 't.	in’t.	in’t.	same
+905	miun/kraken	1	41	replace	Retires.	IRetires.	(Retires.	
+905	miun/kraken	1	45	replace	Iago.	lago.	Iago.	
+905	miun/kraken	2	2	replace	Draws, and wounds Roderigo.	IDraws, a	IDraws, and wounds Roderigo.	
+905	miun/kraken	2	4	replace	O, I am slain! Iago	Hago	O, I am slain Hlago	
+905	miun/kraken	2	6	replace	Falls.	LFalls.	FFalls.	
+905	miun/kraken	2	13	replace	Iago,	lago,	lago,	same
+905	miun/kraken	2	16	replace	I	1	I	
+905	miun/kraken	2	20	replace	Exit.	IExit.	IExit.	same
+905	miun/kraken	2	21	replace	LODOVlCO	LopoViCo	Lopovico	
+905	miun/kraken	2	28	replace	villains!	villain!	villain!	same
+905	miun/kraken	2	30	replace	think 't	think't	think’t	
+905	miun/kraken	2	35	replace	with	vuith	IAco, with	
+905	miun/kraken	2	38	replace	Iago.		Iago.	
+905	miun/kraken	2	41	replace	Iago.		Iago.	
+905	miun/kraken	2	43	delete		so		
+905	miun/kraken	2	56	replace	To	ITo	(To	
+905	miun/kraken	2	60	replace	Stabs Roderigo,	IStabs Roderiga.	[Stabs Roderigo.	
+905	miun/kraken	2	62	replace	Iago.		Iago.	
+905	miun/kraken	2	62	replace	dark!--Where	dark !—Where	dark!—Where	
+905	miun/kraken	2	64	replace	town! Ho!	town!–Ho!	town !—Ho!	
+906	trent/kraken	1	8	replace	is 't,	is’t,	is’t,	same
+906	trent/kraken	1	11	replace	I'll	I’Il	I’Il	same
+906	trent/kraken	1	33	replace	sure:--O heaven!	sure :—Oheaven!	sure :—Oheaven!	same
+906	trent/kraken	1	44	replace	A	IA	IA	same
+906	trent/kraken	1	47	replace	To Bianca	1To Biancal	ITo Bianca]	
+906	trent/kraken	2	4	replace	gentlemen	gentleman!	gentleman!	same
+906	trent/kraken	2	9	replace	Bianca	Biancal	ITo Biancal	
+906	trent/kraken	2	22	replace	Aside	(Asidel	[Asidel	
+906	trent/kraken	2	25	replace	Exeunt.	IExeunt.	LExeunt.	
+906	trent/kraken	2	26	replace	DESDEMONA	DEMONA	DEs¬ DEMONA	
+906	trent/kraken	2	31	replace	I'll	I ’ll	I'Il	
+906	trent/kraken	2	32	replace	her	hers	hers	same
+906	trent/kraken	2	34	replace	she'll	she ’Il	she ’Il	same
+906	trent/kraken	2	45	replace	Kissing	Iissing	[Kissing	
+906	trent/kraken	2	46	replace	doth	dost	dost	same
+907	miun/kraken	1	5	replace	fear	sear	fear	
+907	miun/kraken	1	25	delete		5o	so	
+907	miun/kraken	1	42	replace	intended	intend	intend	same
+907	miun/kraken	1	54	replace	Oth.	Ot4.	Oth.	
+907	miun/kraken	2	2	replace	He	HHe	IHe	
+907	miun/kraken	2	11	replace	Oth.		Oth.	
+907	miun/kraken	2	18	replace	were't	were 't	were ’t	
+907	miun/kraken	2	21	replace	she'll	she ’Il	she ’Il	same
+907	miun/kraken	2	31	replace	Unlocks	LUnlock̀s	LUnlocks	
+907	miun/kraken	2	40	delete		I11	I11	same
+907	miun/kraken	2	53	replace	lady's voice.	lady’svoice.	lady’svoice.	same
+907	miun/kraken	2	59	replace	Dies.	LDies.	[Dies.	
+908	miun/kraken	1	30	replace	Iago.	lago.	lago.	same
+908	miun/kraken	1	43	replace	I'll	I’Il	I’Il	same
+908	miun/kraken	1	57	replace	thou'rt	thou ’rt	thou’rt	
+908	miun/kraken	2	9	replace	Emil.	Emnil,	Emil.	
+908	miun/kraken	2	11	replace	then:--I'll	then:—I’Il	then :—I’Il	
+908	miun/kraken	2	13	replace	Iago.		Iago.	
+908	miun/kraken	2	19	replace	O! O! O!	O!O!0!	010	
+908	miun/kraken	2	20	replace	Emil.	E mit.	Emil.	
+908	miun/kraken	2	23	replace	Rising	[Risingl	(Risingl	
+908	miun/kraken	2	36	replace	Iago	lago	lago	same
+908	miun/kraken	2	52	replace	Iago	Hago	Hago	same
+908	miun/kraken	2	61	replace	Iago.		Iago.	
+908	miun/kraken	2	62	replace	found it,	foundit,	foundit,	same
+908	miun/kraken	2	63	replace	give't	give t	give’t	
+909	miun/kraken	1	1	replace	thunder? Precious	thunder?–Precious	thunder?—Precious	
+909	miun/kraken	1	2	replace	He	IHe	HHe	
+909	miun/kraken	1	2	replace	Iago:	lago:	Iago:	
+909	miun/kraken	1	8	replace	wife's	wife ’s	wife’s	
+909	miun/kraken	1	13	replace	I'll	I’Il	I’Il	same
+909	miun/kraken	1	15	replace	Exeunt Montana	LExeunt Montano	LExeunt Montano	same
+909	miun/kraken	1	15	replace	Cratiano.	Gratiano.	Gratiano.	same
+909	miun/kraken	1	22	replace	Singing	[Singingl	[Singingl	same
+909	miun/kraken	1	31	replace	Within	[Withinl	(Withinl	
+909	miun/kraken	1	37	delete		N		
+909	miun/kraken	1	64	replace	with	vuith	with	
+909	miun/kraken	2	9	replace	Iago.		Iago.	
+909	miun/kraken	2	10	replace	Oth.		Oth.	
+909	miun/kraken	2	16	replace	Oth.		Oth.	
+909	miun/kraken	2	25	delete		30r		
+909	miun/kraken	2	29	replace	speak	speal	speak	
+909	miun/kraken	2	42	replace	here 's	here’s	here’s	same
+910	trent/kraken	1	3	replace	know 't.	know't.	know’t.	
+910	trent/kraken	2	1	replace	Stabs	IStabs	[Stabs himsetf.	
+910	trent/kraken	2	11	replace	Iago	Iagol	ITo Tagol	
+910	trent/kraken	2	21	replace	with heavy	vithheavy	with heavy	

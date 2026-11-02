@@ -151,8 +151,8 @@ mac	788	1.2	worthy to be	miun/kraken	0	trent/kraken	10	2026-11-01 cliff	miun lea
 mac	794	2.2	what hands are	miun/kraken	50	trent/kraken	59	2026-11-01 cliff	miun leaf 00000808, trent leaf 0810	Verified 59 in Michigan.
 oth	887	2.1	and this and	miun/kraken	209	trent/kraken	200	2026-11-02 cliff	miun leaf 00000901, trent leaf 0903	Verified 200 in Michigan.
 oth	895	3.3	i am glad	miun/kraken	200	trent/kraken	290	2026-11-02 cliff	miun leaf 00000909, trent leaf 0911	Verified 290 in Michigan.
-per	984	2.3	by juno that	miun/kraken	2	trent/kraken	30		miun leaf 00000998, trent leaf 1000; the Michigan scan's gutter clips the second digit ('3'), Trent prints 30	
-per	984	2.3	here with a	miun/kraken	5	trent/kraken	50		miun leaf 00000998, trent leaf 1000; the Michigan scan's gutter clips the second digit ('5'), Trent prints 50	
-per	984	2.3	who freely give	miun/kraken	6	trent/kraken	60		miun leaf 00000998, trent leaf 1000; the Michigan scan's gutter clips the second digit ('6'), Trent prints 60	
-per	985	2.4	go search like	miun/kraken	3	trent/kraken	50		miun leaf 00000999, trent leaf 1001; Michigan prints 50 (Kraken read 3)	
-per	993	4.3	you are like	miun/kraken	40	trent/kraken	49		miun leaf 00001007, trent leaf 1009; Michigan prints 49 (Kraken read 40); IV.3 has 51 lines	
+per	984	2.3	by juno that	miun/kraken	2	trent/kraken	30	2026-11-02 cliff	miun leaf 00000998, trent leaf 1000; the Michigan scan's gutter clips the second digit ('3'), Trent prints 30	
+per	984	2.3	here with a	miun/kraken	5	trent/kraken	50	2026-11-02 cliff	miun leaf 00000998, trent leaf 1000; the Michigan scan's gutter clips the second digit ('5'), Trent prints 50	
+per	984	2.3	who freely give	miun/kraken	6	trent/kraken	60	2026-11-02 cliff	miun leaf 00000998, trent leaf 1000; the Michigan scan's gutter clips the second digit ('6'), Trent prints 60	
+per	985	2.4	go search like	miun/kraken	3	trent/kraken	50	2026-11-02 cliff	miun leaf 00000999, trent leaf 1001; Michigan prints 50 (Kraken read 3)	
+per	993	4.3	you are like	miun/kraken	40	trent/kraken	49	2026-11-02 cliff	miun leaf 00001007, trent leaf 1009; Michigan prints 49 (Kraken read 40); IV.3 has 51 lines	Confirm 49 in Michigan.

@@ -1,0 +1,9 @@
+# baseline: the Globe numbers the P4 transcribed, <lb ed="G" n="..."/> in tim.xml (sha256 de937a88b312a9fe); not the shell's milestones or <l n>
+# transcribed anchors: 189; mapped (the row begins a line): 169; of those, carrying the same number: 166
+# in scenes that pass the gate: 169 mapped; agreeing: 166
+# unmapped (the row begins inside a line): 20; the P4's number is the containing line's for 14, the next line's for 6, neither for 0
+# listed: every disagreement, and every unmapped anchor whose number is neither
+scene	old_n	verdict	new_n	row_inside_line	next_line	note	context
+1.2	70	disagree	69				Or my friends, if I should
+4.3	413	disagree	410				First Ban. Is not this he?
+5.1	180	disagree	181				And let him take't at worst;

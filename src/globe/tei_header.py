@@ -65,6 +65,7 @@ PLAY_TITLES = {
     "cor": "Coriolanus",
     "rom": "Romeo and Juliet",
     "tim": "Timon of Athens",
+    "jc": "Julius Cæsar",  # as its __cts__.xml names it
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -147,6 +148,9 @@ COPY_TEXT = {
     # Introduction printed 886 (CHOCR index 326), V.4 ends on 910 (index 350);
     # Pericles' introduction is 911 (printed = index + 560).
     "tim": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="886-910"),
+    # Introduction printed 571 (CHOCR index 11), V.5 ends on 596 (index 36);
+    # Hamlet's introduction is 597 (printed = index + 560).
+    "jc": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="571-596"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

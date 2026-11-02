@@ -66,6 +66,7 @@ PLAY_TITLES = {
     "rom": "Romeo and Juliet",
     "tim": "Timon of Athens",
     "jc": "Julius Cæsar",  # as its __cts__.xml names it
+    "mac": "Macbeth",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -151,6 +152,9 @@ COPY_TEXT = {
     # Introduction printed 571 (CHOCR index 11), V.5 ends on 596 (index 36);
     # Hamlet's introduction is 597 (printed = index + 560).
     "jc": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="571-596"),
+    # Introduction printed 792 (CHOCR index 232), V.8 ends on 815 (index 255);
+    # Antony and Cleopatra's introduction is 816 (printed = index + 560).
+    "mac": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="792-815"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

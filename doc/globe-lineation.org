@@ -26,8 +26,8 @@ Gentlemen of Verona, Measure for Measure, The Comedy of Errors, Love's
 Labour's Lost, A Midsummer Night's Dream, The Merchant of Venice, Much
 Ado About Nothing and As You Like It and Twelfth Night, The Merry
 Wives of Windsor, The Tempest, Hamlet, Cymbeline, Henry VIII, The Taming of the
-Shrew, The Winter's Tale, King John, 1 and 2 Henry IV, Henry V, 1, 2 and 3 Henry VI, Richard III, All's Well That Ends Well, Troilus and Cressida, Coriolanus, Romeo and Juliet, Timon of Athens and Julius Cæsar are built and published (canonical-engLit =mvp=,
-=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym,h8,shr,wt,jn,1h4,2h4,h5,1h6,2h6,3h6,r3,aww,tro,cor,rom,tim,jc}/shakespeare.*.globe.xml=). Titus
+Shrew, The Winter's Tale, King John, 1 and 2 Henry IV, Henry V, 1, 2 and 3 Henry VI, Richard III, All's Well That Ends Well, Troilus and Cressida, Coriolanus, Romeo and Juliet, Timon of Athens, Julius Cæsar and Macbeth are built and published (canonical-engLit =mvp=,
+=data/shakespeare/{lr,ant,tit,r2,tgv,mm,err,lll,mnd,mv,ado,ayl,tn,wiv,tmp,ham,cym,h8,shr,wt,jn,1h4,2h4,h5,1h6,2h6,3h6,r3,aww,tro,cor,rom,tim,jc,mac}/shakespeare.*.globe.xml=). Titus
 and Richard II were the cold tests: Titus passed 22 of 24 pages with
 the classifier unchanged and needed only table rows; Richard II passed
 22 of 26 and needed two turnover rules and two new table kinds
@@ -126,6 +126,10 @@ turnover set at the margin like a prose row (III.2 160, though a row
 set the same way on the same page is a line), and two shared lines the
 page cannot show, one across a stage direction, one whose second half
 opens with a direction.
+Macbeth passed 23 of 23 with six rows and no rule change: a half-line
+whose two speakers are braced over two rows, junctions the page cannot
+show, a turnover in the witches' charm, and a line of four parts, each
+set further right (IV.1 61).
 Songs (=<lg type="song">=) and
 inset texts now convert: every printed row of a song is a Globe line,
 a heading is not, and a row is a turnover only if it completes a

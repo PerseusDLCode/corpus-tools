@@ -138,6 +138,9 @@ class Line:
     # Numbers the Globe passes over after this line (shared-lines.tsv kind
     # `skip`): the next line is counted that many more on.
     skip_after: int = 0
+    # The first line of a scene whose numerals run on from the scene before
+    # (shared-lines.tsv kind `runs-on`): counted from 1, checked from there.
+    runs_on: bool = False
 
     @property
     def start(self) -> int:

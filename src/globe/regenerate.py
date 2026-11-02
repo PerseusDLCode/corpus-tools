@@ -102,7 +102,13 @@ def number_page(lines, toks, state: NumberState, page: int, witness: str, carrie
         if ln is not None:
             d = toks[ln.start].div
             if d != st.div:
-                st = NumberState(div=d)
+                if ln.runs_on and st.div is not None:
+                    # the page numbers this scene on from the scene before
+                    # (kind `runs-on`): its count starts at 1, its numerals
+                    # from the count the scene before ended on
+                    st = NumberState(div=d, last_num=st.n, last_num_n=0)
+                else:
+                    st = NumberState(div=d)
             st.n += 1 + st.skip
             ln.div, ln.n = d, st.n
             st.skip = ln.skip_after
@@ -113,7 +119,9 @@ def number_page(lines, toks, state: NumberState, page: int, witness: str, carrie
             continue
         n = st.n
         base, base_n = (0, 0) if st.last_num is None else (st.last_num, st.last_num_n)
-        frm = "scene start" if st.last_num is None else f"{st.last_num} (p.{st.last_num_page})"
+        frm = ("scene start" if st.last_num is None
+               else f"scene start, numbered on from {st.last_num}" if st.last_num_page is None
+               else f"{st.last_num} (p.{st.last_num_page})")
         reading, reread = "", None
         if ((n - base_n) != (num - base) and alt and ln is not None and ln.lacuna_at is None
                 and ln.start in alt):
@@ -444,8 +452,33 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
         k, ln = dropped_line(new, toks, page, r)
         new.insert(k, ln)
         applied.append((ln, r))
+    # a scene the page numbers on from the scene before, and a P4 division the
+    # page prints inside the scene before (build() has already moved it there):
+    # each names the first line, which must be on this page
+    for r in [r for r in rows if r.kind in ("runs-on", "merged")]:
+        want = tuple(r.first_half.split())
+        hits = [k for k, ln in enumerate(new)
+                if shared_lines.line_words(new, k, toks, len(want)) == want]
+        if len(hits) != 1:
+            raise shared_lines.TableError(
+                f"shared-lines.tsv: p.{page} {r.kind} {r.first_half!r} matches {len(hits)} "
+                f"lines on this page, expected 1")
+        ln = new[hits[0]]
+        d = toks[ln.start].div
+        before = new[hits[0] - 1] if hits[0] > 0 else prev_last
+        if r.kind == "runs-on":
+            if d != r.scene or (before is not None and toks[before.start].div == d):
+                raise shared_lines.TableError(
+                    f"shared-lines.tsv: p.{page} runs-on {r.first_half!r} is not the first "
+                    f"line of {r.scene} (it is in {d})")
+            ln.runs_on = True
+        elif d == r.scene:
+            raise shared_lines.TableError(
+                f"shared-lines.tsv: p.{page} merged {r.first_half!r} is still in {r.scene}")
+        applied.append((ln, r))
     for r in rows:
-        if r.kind in ("separate", "lacuna", "inset", "heading", "dropped", "stage", "skip"):
+        if r.kind in ("separate", "lacuna", "inset", "heading", "dropped", "stage", "skip",
+                      "runs-on", "merged"):
             continue
         if r.kind == "misplaced":
             printed = int(r.first_half)
@@ -517,11 +550,36 @@ def apply_table(new, prev_last, toks, table, page: int, done=(), page_rows_=()):
     return new, [(index(ln), r) for ln, r in applied], carry
 
 
+def merge_divisions(body, table: list[shared_lines.Row]) -> None:
+    """Move each P4 division a `merged` row names ("5.chorus2") to the end of
+    the scene before it, which the page prints it inside (Pericles's
+    epilogue): its content stays, in order, and the division goes."""
+    for r in [r for r in table if r.kind == "merged"]:
+        act, _, scene = r.scene.partition(".")
+        hits = body.xpath("//*[local-name()='div'][@type='act'][@n=$a]"
+                          "/*[local-name()='div'][@type='scene'][@n=$s]", a=act, s=scene)
+        before = hits[0].getprevious() if len(hits) == 1 else None
+        while before is not None and not (etree.QName(before).localname == "div"
+                                          and before.get("type") == "scene"):
+            before = before.getprevious()
+        if before is None:
+            raise shared_lines.TableError(
+                f"shared-lines.tsv: merged {r.scene}: the P4 has {len(hits)} such scenes"
+                + (", and no scene before it" if len(hits) == 1 else ", expected 1"))
+        div = hits[0]
+        if div.text and div.text.strip():
+            raise shared_lines.TableError(f"shared-lines.tsv: merged {r.scene}: text directly in the division")
+        for child in list(div):
+            before.append(child)
+        div.getparent().remove(div)
+
+
 def build(play: str, table: list[shared_lines.Row] | None = None):
     entry = plays.get(play)  # data/globe/plays.tsv: P4, edition, printed pages, DraCor file
     first, last = entry.first, entry.last
     table = shared_lines.for_play(shared_lines.read_table() if table is None else table, play)
     text = source_text.load_p4(CORPUS / entry.p4)
+    merge_divisions(text.body, table)
     toks = tokens.tokenize(text.body)
     enc = [t.t for t in toks]
     grams = align_play.trigram_index(enc)
@@ -922,6 +980,16 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
                     "inset", f"shared-lines.tsv: the page sets this line and those after it, "
                              f"to {row.second_half!r}, in from the margin, and numbers every "
                              f"row as a line (basis {row.basis}, {state})")))
+            elif row.kind == "runs-on":
+                out.append((ln.start, emit_tei.review_comment(
+                    "runs-on", f"shared-lines.tsv: the page heads this scene as a scene but "
+                               f"numbers it on from the scene before; its lines are counted "
+                               f"from 1 (basis {row.basis}, {state})")))
+            elif row.kind == "merged":
+                out.append((ln.start, emit_tei.review_comment(
+                    "merged", f"shared-lines.tsv: the P4 makes {row.scene} a division of its own; "
+                              f"the page prints it inside this scene, numbered on, and so it is "
+                              f"here, from line {ln.n} (basis {row.basis}, {state})")))
             elif row.kind == "separate":
                 out.append((ln.start, emit_tei.review_comment(
                     "separate", f"shared-lines.tsv: the page sets this row displaced, as if it "
@@ -970,6 +1038,8 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
 
     def one(with_reviews: bool) -> bytes:
         text = source_text.load_p4(p4_path)
+        # as build() did, so the tokens are the same; `table` may hold every play's rows
+        merge_divisions(text.body, shared_lines.for_play(table or [], play))
         fresh = tokens.tokenize(text.body)
         rows_in_order = [r for res in results for r in res.rows]
         marks = emit_tei.build_marks(lines, rows_in_order)

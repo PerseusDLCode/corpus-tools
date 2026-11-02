@@ -68,6 +68,7 @@ PLAY_TITLES = {
     "jc": "Julius Cæsar",  # as its __cts__.xml names it
     "mac": "Macbeth",
     "oth": "Othello",
+    "per": "Pericles Prince of Tyre",
 }
 
 # Established in doc/agenda.org #compare/doubleday (reports/doubleday-comparison.md):
@@ -159,6 +160,9 @@ COPY_TEXT = {
     # Introduction printed 724 (CHOCR index 164), V.2 ends on 757 (index 197);
     # King Lear's introduction is 758 (printed = index + 560).
     "oth": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="724-757"),
+    # Introduction printed 911 (CHOCR index 351), Gower's epilogue ends on 935
+    # (index 375); Cymbeline's introduction is 936 (printed = index + 560).
+    "per": dict(volume="volume 2", ia_id="bwb_S0-ATQ-198", pages="911-935"),
 }
 
 _ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

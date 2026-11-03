@@ -165,7 +165,6 @@ scene	line	page	finding	folger	folger_ids	rows
 4.1	90	899	our shared line	part	ftln-2484 ftln-2485	And nothing of a man. / Oth. Dost thou hear, lago?
 4.1	92	899	our shared line	part	ftln-2488	But–dost thou hear?–most bloody. / Iago. That’s not amiss;
 4.1	109	900	our shared line	part	ftln-2505 ftln-2506	How quickly should you speed! / Cas. Alas, poor caitiff!
-4.1	115	900	our shared line	part	ftln-2511 ftln-2512	Iago. Do you hear, Cassio? / Otk. Now he importunes him
 4.1	230	901	our shared line	short	ftln-2618	Lod. Save you, worthy general! / Oth. With all my heart, sir.
 4.1	240	901	our shared line	short	ftln-2628 ftln-2629 p-2630	Oth. Are you sure of that? / Des. My lord? / Oth. [Reads] “This fail you not to do, a / will–
 4.1	245	901	our shared line	short	ftln-2636 ftln-2637 ftln-2638	Oth. Fire and brimstone! / Des. My lord? / Oth. Are you wise?
@@ -285,6 +284,7 @@ scene	line	page	finding	folger	folger_ids	rows
 3.3	318	895	folger pair split across our lines	differ	ftln-1969 ftln-1970	When she shall lack it. / Iago. Be not acknown on’t; I have use fo
 3.3	473	897	folger pair split across our lines	differ	ftln-2141 ftln-2142	That Cassio’s not alive. / Iago. My friend is dead; ’tis done at yo / request:
 3.4	154	898	folger pair split across our lines	differ	ftln-2324 ftln-2325	And he’s indicted falsely. / Emil Pray heaven it be state-matters, as / think,
+4.1	114	900	folger pair split across our lines	differ	ftln-2511 ftln-2512	Iago. Do you hear, Cassio? / Otk. Now he importunes him
 4.1	119	900	folger pair split across our lines	differ	ftln-2515 ftln-2516	Do you intend it? / Cas. Ha, ha, ha!
 4.1	226	901	folger pair split across our lines	differ	ftln-2612 ftln-2613	Oth. Excellent good. [A trumpet within.] / What trumpet is that same?
 4.2	172	903	folger pair split across our lines	differ	ftln-2903 ftln-2904	How now, Roderigo! / Rod. I do not find that thou dealest jus

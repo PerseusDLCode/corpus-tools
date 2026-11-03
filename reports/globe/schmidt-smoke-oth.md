@@ -1,23 +1,23 @@
 # Schmidt smoke test: Othello
 
-Sources: shakespeare.oth.globe.xml sha256 46071431f2b93960; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.oth.globe.xml sha256 2441d7db13f9506d; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Othello in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 
-- **All citations:** 1893/1999 (94.7%) pass.
-- **With a quotation:** 1222/1257 (97.2%) have it on the cited line.
+- **All citations:** 1892/1999 (94.6%) pass.
+- **With a quotation:** 1221/1257 (97.1%) have it on the cited line.
 - **Headword only:** 671/742 (90.4%) have it on the cited line.
 
 | Verdict | Citations |
 |---|---|
-| quotation on cited line | 962 |
+| quotation on cited line | 961 |
 | headword on cited line | 694 |
 | quotation on cited line, with differences | 237 |
 | headword not found near cited line | 49 |
 | not a citation of this play | 32 |
 | quotation not found; headword not found near cited line | 7 |
 | quotation off by 1 | 6 |
-| prose row break | 5 |
+| prose row break | 6 |
 | headword off by 1 | 4 |
 | quotation elsewhere in scene | 3 |
 
@@ -52,6 +52,7 @@ None.
 | 2.2.7 | Oth. II, 2, 7 | Celebration | prose row break | 2.2.8 |  | for besides these beneficial news it is the |
 | 5.2.164 | Oth. V, 2, 164 | Clay-brained | headword not found near cited line |  |  | as ignorant as dirt thou hast done a deed |
 | 5.107.3 | 107, 3 | Control | not a citation of this play |  | not mine own fears, nor the prophetic soul of the wide world . . . can yet the lease of my true love control |  |
+| 4.1.123 | Oth. IV, 1, 123 | Customer | prose row break | 4.1.122 | I marry her? what? a c.! | prithee bear some charity to my wit do not think |
 | 1.2.68 | Oth. I, 2, 68 | Dearlings | headword not found near cited line |  |  | the wealthy curled darlings of our nation |
 | 1.1.235 | 1, 235 | Delicate | headword not found near cited line |  |  | (no such line) |
 | 1.3.369 | Oth. I, 3, 369 | Depend | prose row break | 1.3.370 |  | wilt thou be fast to my hopes if i |

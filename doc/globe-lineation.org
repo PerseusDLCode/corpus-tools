@@ -134,10 +134,12 @@ Othello passed 32 of 32 with seventeen rows and no rule change, after
 two fixes to its P4 (V.2 "What, now?" restored; II.3 "A soldier's a
 man;"): shared lines the page cannot show, two half-lines set at the
 turnover indent below a row a stage direction fills, a song, and a
-line of three parts closing with a letter. IV.1.110-130 is left open
-for Bartlett's concordance: the page's numbers there do not follow
-from its rows, nor from the Doubleday's (canonical-engLit agenda,
-Othello entry).
+line of three parts closing with a letter. IV.1.110-130, left open at
+first because the page's numbers there do not follow from its rows,
+was settled <2026-11-02> by Bartlett's concordance and the 1911 Globe's
+resetting of Iago's prose (canonical-engLit agenda, Othello entry): the
+displaced "Now he importunes him" is a line, 116 is passed over, and
+"her." (127) is a prose row.
 Pericles, the last of the thirty-seven, passed 23 of 23 with eight rows
 and two new table kinds for Gower's speeches: =runs-on= (V.2, headed as
 a scene but numbered on from V.1 on the page; counted 1-20, as Schmidt

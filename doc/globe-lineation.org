@@ -327,6 +327,52 @@ so needs the clone), its shared lines reviewed into
 and its title and copy-text in =tei_header.py=
 (=PLAY_TITLES=, =COPY_TEXT=), which the table does not yet hold.
 
+* The poems
+
+The six poems are not regenerated. Their published files
+(canonical-engLit =data/shakespeare/{ven,luc,son,lc,pp,pht}/=) carry a
+number on every =<l>=, continuous through each poem (the Sonnets restart
+at each sonnet), made from the P4's markup in September 2026.
+=globe-lineation poem-check POEM= (=src/globe/poem_check.py=) checks those
+numbers against the page: it reads each witness page with the play
+machinery, aligns the rows to the published file's own words, divides them
+into lines with the play rules, and reports every numeral interval that
+does not close and every line whose count differs from the published
+=@n=. It reads; it never writes. It accepts four-digit numerals, which
+the play build does not (Venus and Lucrece run past 999), only for its
+own run.
+
+Pages (Michigan, 1866): Venus 1000-1011, Lucrece 1011-1027, Sonnets
+1028-1046, A Lover's Complaint 1047-1049, The Passionate Pilgrim
+1050-1054, The Phoenix and Turtle 1054. Both witnesses end at p.1054.
+The 1864 printing (NYPL) sets the poems on other pages (the Phoenix is
+p.1057) with the same line numbers.
+
+Checked <2026-11-02>:
+- Venus: every numeral to 1189 closes; all 1,194 lines agree.
+- Lucrece: every numeral to 1851 closes (Trent's 1742 on p.1026 is
+  Michigan's 1740); all 1,855 agree. Lines 1-14, on p.1011 below the
+  end of Venus, were read on the scan: there Michigan's left margin is
+  clipped and the columns interleave, so the check starts at p.1012.
+- A Lover's Complaint: every numeral closes at 329, but the published file
+  had 331 =<l>=: the P4 marks two stanza breaks with an empty =<l>=, which
+  the file numbered 99 and 212, so it ran one line over from 100 and two
+  from 213, in two 15-line stanzas. Fixed in canonical-engLit: 47 stanzas
+  of seven lines, 329 lines.
+- The Passionate Pilgrim: the published 430 lines agree with every
+  numeral read (110, 120, 210, 420, 430; and on the 1864 printing's
+  p.1055, 201-290, by eye). 118 is a printed row of asterisks the Globe
+  numbers. The check itself fails here: that row has no OCR row, and
+  p.1052 sets "SONNETS TO SUNDRY NOTES OF MUSIC" across both columns in
+  mid-page, which breaks page_rows' reading order (one pair of columns per
+  page).
+- The Phoenix and Turtle: 67 lines; its small-type numerals are read as
+  letters, so they were checked by eye on the 1864 printing (10-60).
+- Sonnets: no line numerals are printed. Every sonnet has 14 lines but
+  XCIX (15) and CXXVI (12); the check agrees except at Sonnet 105 on
+  p.1041, where Michigan's clipped margin makes the turnover "affords."
+  look like a line.
+
 * References to the workshop
 
 The code and tests cite the workshop's deliberation in the form

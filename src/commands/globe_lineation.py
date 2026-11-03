@@ -65,6 +65,9 @@ def main() -> None:
             p.add_argument("--scratch", metavar="DIR", help="write builds and reports under DIR instead")
     p = sub.add_parser("manifest", help="rewrite the play's rows in data/globe/witness-manifest.tsv")
     p.add_argument("play")
+    p = sub.add_parser("poem-check", help="check a published poem's line numbers against the page "
+                                          "numerals (ven luc son lc pp pht); reads only")
+    p.add_argument("poem")
     p = sub.add_parser("smoke", help="check Schmidt's citations of PLAY against out/globe/PLAY")
     p.add_argument("play")
     p.add_argument("out_dir", nargs="?", type=Path, default=regenerate.REPO / "reports" / "globe")
@@ -72,6 +75,9 @@ def main() -> None:
 
     if args.command == "manifest":
         sys.exit(manifest.main(args.play))
+    if args.command == "poem-check":
+        from globe import poem_check
+        sys.exit(poem_check.main(args.poem))
     if args.command == "smoke":
         rows, sources = schmidt_smoke.run(args.play)
         schmidt_smoke.write(rows, sources, args.out_dir, args.play)

@@ -105,7 +105,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-02">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 2bc440d; sources: oth.xml sha256 cfc5838b467e68fb; shared-lines.tsv sha256 aef3229930e5eaa7; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 0b4963e; sources: oth.xml sha256 cfc5838b467e68fb; shared-lines.tsv sha256 ff50b05a907e4c68; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -6923,25 +6923,25 @@
       </sp>
       <sp who="oth.">
         <speaker>Oth.</speaker>
-        <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
-          <!-- REVIEW separate: shared-lines.tsv: the page sets this row displaced, as if it completed the line above, but numbers it as a line of its own (basis image+schmidt, checked 2026-11-02 cliff) --><milestone unit="line" ed="Globe" n="113"/>Now he denies it faintly, and laughs it <milestone unit="line" ed="Globe" n="114"/>out. </l>
+        <l>
+          <milestone unit="line" ed="Globe" n="113"/>Now he denies it faintly, and laughs it <lb/>out. </l>
       </sp>
       <sp who="iago.">
         <speaker>Iago.</speaker>
         <l part="I">
-          <milestone unit="line" ed="Globe" n="115"/>Do you hear, Cassio? </l>
+          <milestone unit="line" ed="Globe" n="114"/>Do you hear, Cassio? </l>
       </sp>
       <sp who="oth.">
         <speaker>Oth.</speaker>
-        <l part="F">
-          <lb/>Now he importunes him </l>
-        <l>
-          <milestone unit="line" ed="Globe" n="116"/>To tell it o'er: go to; well said, well said. </l>
+        <l part="F"><!-- REVIEW separate: shared-lines.tsv: the page sets this row displaced, as if it completed the line above, but numbers it as a line of its own (basis image+bartlett, checked 2026-11-02 cliff) -->
+          <milestone unit="line" ed="Globe" n="115"/>Now he importunes him </l>
+        <l><!-- REVIEW skip: shared-lines.tsv: the Globe passes over a number before this line, which it counts 117 (basis image+bartlett, checked 2026-11-02 cliff) -->
+          <milestone unit="line" ed="Globe" n="117"/>To tell it o'er: go to; well said, well said. </l>
       </sp>
       <sp who="iago.">
         <speaker>Iago.</speaker>
-        <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
-          <!-- REVIEW separate: shared-lines.tsv: the page sets this row displaced, as if it completed the line above, but numbers it as a line of its own (basis image+schmidt, checked 2026-11-02 cliff) --><milestone unit="line" ed="Globe" n="117"/>She gives it out that you shall marry <milestone unit="line" ed="Globe" n="118"/>her: </l>
+        <l>
+          <milestone unit="line" ed="Globe" n="118"/>She gives it out that you shall marry <lb/>her: </l>
         <l>
           <milestone unit="line" ed="Globe" n="119"/>Do you intend it? </l>
       </sp>
@@ -6957,20 +6957,20 @@
       </sp>
       <sp who="cas.">
         <speaker>Cas.</speaker>
-        <p><!-- REVIEW skip: shared-lines.tsv: the Globe passes over a number before this line, which it counts 123 (basis image+schmidt, checked 2026-11-02 cliff) -->
-          <milestone unit="line" ed="Globe" n="123"/>I marry her! what? a customer! <milestone unit="line" ed="Globe" n="124"/>Prithee, bear some
-       charity to my wit; do not think <milestone unit="line" ed="Globe" n="125"/>it so unwholesome. Ha,
+        <p>
+          <milestone unit="line" ed="Globe" n="122"/>I marry her! what? a customer! <milestone unit="line" ed="Globe" n="123"/>Prithee, bear some
+       charity to my wit; do not think <milestone unit="line" ed="Globe" n="124"/>it so unwholesome. Ha,
        ha, ha! </p>
       </sp>
       <sp who="oth.">
         <speaker>Oth.</speaker>
         <l>
-          <milestone unit="line" ed="Globe" n="126"/>So, so, so, so: they laugh that win. </l>
+          <milestone unit="line" ed="Globe" n="125"/>So, so, so, so: they laugh that win. </l>
       </sp>
       <sp who="iago.">
         <speaker>Iago.</speaker>
         <p>
-          <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="127"/>'Faith, the cry goes that you shall marry <lb/>her. </p>
+          <!-- REVIEW separate: shared-lines.tsv: the page sets this row displaced, as if it completed the line above, but numbers it as a line of its own (basis image+bartlett, checked 2026-11-02 cliff) --><milestone unit="line" ed="Globe" n="126"/>'Faith, the cry goes that you shall marry <milestone unit="line" ed="Globe" n="127"/>her. </p>
       </sp>
       <sp who="cas.">
         <speaker>Cas.</speaker>

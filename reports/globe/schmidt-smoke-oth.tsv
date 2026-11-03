@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.oth.globe.xml sha256 46071431f2b93960; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.oth.globe.xml sha256 2441d7db13f9506d; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abandon	Abandon,	3.3.369	Oth. III, 3, 369	quotation on cited line						abandon all remorse,	never pray more abandon all remorse
 A-bed	A-bed,	3.1.33	Oth. III, 1, 33	headword on cited line							you have not been abed then
@@ -416,7 +416,7 @@ Cunning2	Cunning,	4.1.91	Oth. IV, 1, 91	quotation on cited line						most cunnin
 Cunning2	Cunning,	4.2.89	IV, 2, 89	quotation on cited line						that cunning whore of Venice,	i took you for that cunning whore of venice
 Curl2	Curl,	1.2.68	Oth. I, 2, 68	quotation on cited line						the wealthy curled darlings of our nation,	the wealthy curled darlings of our nation
 Custody	Custody,	3.3.164	Oth. III, 3, 164	quotation on cited line						whilst 'tis in my custody	nor shall not whilst tis in my custody
-Customer	Customer,	4.1.123	Oth. IV, 1, 123	quotation on cited line						I marry her? what? a c.!	i marry her what a customer
+Customer	Customer,	4.1.123	Oth. IV, 1, 123	prose row break	4.1.122	-1	100%			I marry her? what? a c.!	prithee bear some charity to my wit do not think
 Daff	Daff,	4.2.176	Oth. IV, 2, 176	quotation on cited line						every day thou daffest me with some device,	every day thou daffest me with some
 Darling	Darling,	1.2.68	Oth. I, 2, 68	headword on cited line							the wealthy curled darlings of our nation
 Darling	Darling,	3.4.66	Oth. III, 4, 66	headword on cited line							make it a darling like your precious eye
@@ -661,7 +661,7 @@ Facile	Facile,	1.3.23	Oth. I, 3, 23	quotation on cited line						so may he with 
 Facility	Facility,	2.3.84	Oth. II, 3, 84	quotation on cited line						he drinks you with facility your Dane dead drunk,	why he drinks you with facility your
 Faint2	Faint,	5.1.84	Oth. V, 1, 84	headword on cited line							alas he faints o cassio cassio cassio
 Faintly	Faintly,	3.3.282	Oth. III, 3, 282	headword on cited line							i am to blame why do you speak so faintly
-Faintly	Faintly,	4.1.113	Oth. IV, 1, 113	quotation on cited line						now he denies it faintly	now he denies it faintly and laughs it
+Faintly	Faintly,	4.1.113	Oth. IV, 1, 113	quotation on cited line						now he denies it faintly	now he denies it faintly and laughs it out
 Fairness	Fairness,	2.1.130	Oth. II, 1, 130	headword on cited line							if she be fair and wise fairness and wit
 Falsely	Falsely,	3.4.154	Oth. III, 4, 154	quotation on cited line						he's indicted falsely	and hes indicted falsely
 Falsely	Falsely,	5.2.117	Oth. V, 2, 117	quotation on cited line						falsely murdered,	o falsely falsely murdered alas what cry is that

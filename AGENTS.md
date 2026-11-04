@@ -59,7 +59,7 @@ pdm run test        # or: .venv/bin/pytest
 
 ## Globe lineation (`src/globe/`)
 
-Regenerates a play's Globe line numbering from page images of the printed Globe. Design, tables and how to run it: `doc/globe-lineation.org`; witness provenance: `doc/witnesses.org`. Moved from `globe-lineation-workshop`, frozen at its tag `v1.0`; `doc/agenda.org #id` and `doc/forum.org #id` in this code refer to that workshop, not to files here. Open tasks are in canonical-engLit `doc/agenda.org` on `mvp`.
+Regenerates a play's Globe line numbering from page images of the printed Globe. Design, tables and how to run it: `doc/globe-lineation.org`; witness provenance: `witnesses.org` in the globe-witnesses repository. Moved from `globe-lineation-workshop`, frozen at its tag `v1.0`; `doc/agenda.org #id` and `doc/forum.org #id` in this code refer to that workshop, not to files here. Open tasks are in canonical-engLit `doc/agenda.org` on `mvp`.
 
 - `make globe-verify PLAY=lr` — build to a temp dir and compare with canonical-engLit's published file, ignoring only the regeneration stamp. Run it after any change to `src/globe/`.
 - `make globe-regenerate PLAY=lr` — writes `out/globe/lr/` and `reports/globe/`; **refuses on a dirty tree**. The canonical build (`out/globe/*/*.globe.xml`) is gitignored: its home is canonical-engLit.

@@ -180,8 +180,8 @@ and =trent= (Trent, 1887). They share plates, so either is authoritative
 for line breaks. Page by page, =miun= is tried first and =trent= if
 =miun= does not close (=regenerate.ORDER=); where both fail on an
 interval from a number on the page before, that page is built again
-from the other witness. Their provenance is in
-=doc/witnesses.org=.
+from the other witness. Their provenance is in globe-witnesses'
+=witnesses.org=, which lives with the files it describes.
 
 * The gate
 
@@ -289,7 +289,7 @@ Inputs, as siblings of this repository:
 - =../canonical-engLit=, with =mvp= checked out (the build refuses
   otherwise: the P4 is read from its working tree);
 - the witnesses: the =PerseusDLCode/globe-witnesses= repository, at
-  =$GLOBE_WITNESSES= (default =../globe-witnesses=; =doc/witnesses.org=);
+  =$GLOBE_WITNESSES= (default =../globe-witnesses=; its =witnesses.org=);
 - =../schmidt-lexicon-workshop/out/= for the Schmidt check (every play's
   quotations: the workshop's =quotes/corpus-wide= branch);
 - the ShakeDraCor clone at =$SHAKEDRACOR= (default =../../shakedracor=,

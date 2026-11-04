@@ -4,7 +4,7 @@
 # ../globe-witnesses); leaf tables are relative to the repo root.
 #
 # Provenance (what each witness is, how it was obtained and processed)
-# belongs in doc/witnesses.org, not here. This file says where things are,
+# belongs in globe-witnesses' witnesses.org, not here. This file says where things are,
 # how leaf names are formed, and what the scanner printed on every leaf
 # (`watermark`, which the page reader takes off with the foot), nothing else.
 #

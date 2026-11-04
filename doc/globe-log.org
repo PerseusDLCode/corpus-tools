@@ -1,0 +1,1099 @@
+#+TITLE: Globe lineation: the play-by-play record
+#+DATE: 2026-11-04
+#+OPTIONS: toc:nil num:nil
+
+The record of the batch, 12 October to 2 November 2026: for each play,
+its pages, the first run and the last, every =shared-lines.tsv= row and
+why, the fixes to the P4, the re-read numerals, and the Schmidt check;
+then the poems. Written as the work went, in canonical-engLit's
+=doc/agenda.org= (entry =#build/batch-remaining=, on =mvp=), and moved
+here verbatim on 2026-11-04 when that entry was closed. Commit ids are
+corpus-tools' unless the text names canonical-engLit. =#id= references
+without a file are to the globe-lineation-workshop at =v1.0=, or to
+canonical-engLit's =doc/agenda.org=. Method and status:
+=doc/globe-lineation.org=.
+
+* The batch
+From globe-lineation-workshop =doc/agenda.org= =#build/batch-remaining=.
+
+The other 41 texts (36 plays, 6 poems; the poems' layout differs and
+may need its own pass). Run, gate, report; a play whose pages all pass
+needs no reading. Groups B and C are in scope -- their deferral reasons
+no longer hold (=#deferred/group-b=, =#deferred/group-c=).
+
+Titus and Richard II are held out (=#phase2/held-out=): run them
+unchanged once the classifier is frozen, before the rest, as a cold
+test. Their held-out status is unspent; record it if it ever is.
+
+<2026-10-12>: the first Titus run stopped in the P4 conversion (an
+unhandled =<gap/>=, III.1), before any page was read, so its held-out
+status is still unspent. The conversion was extended (corpus-tools
+=6769601=, not a classifier change) and Titus run again.
+
+*Titus, cold <2026-10-12>; held-out status spent.* Run with the
+classifier unchanged: 2,524 Globe lines, *22 of 24 pages pass*, 2 failing
+intervals (corpus-tools =72dc080=). Antony's first build, by comparison,
+failed 24 of 33. Neither failure needs a rule change; each needs a
+=shared-lines.tsv= row, proposed and *not yet checked*:
+- p.693, II.1 (+1): "Dem. Ay, boy, grow ye so brave? [They draw." /
+  "Aar. [Coming forward] Why, how now, lords!" Both rows are set full
+  width, so the page cannot show the junction; counted from the printed
+  41 (OCR'd as "sheath41", hence the wide 30 -> 51 interval), the
+  printed 51 needs the fold. The Folger joins the two halves.
+- p.704, IV.2 (+3): the page prints 179 (seen on both scans); Kraken
+  reads 176 in Michigan and 170 in Trent.
+With both rows, 24 of 24 pages pass: 2,523 lines; Schmidt 1432/1496, no
+runs. The canonical build is refused until Cliff checks them; the review
+build is in corpus-tools =out/globe/tit/= (=083ab80=). The header needed
+Titus's title and its Doubleday pages (Volume One, =bwb_KT-315-451_1=,
+pp. 1-26: =c409398=), so every other play will need its own too.
+
+*Titus published <2026-10-12>.* Cliff checked both rows (the II.1
+junction is shared; p.704 prints 179 in both printings). Built on
+corpus-tools =main= (merge =2e79eed=): 24 of 24 pages, 2,523 Globe
+lines, Schmidt 1432/1496 with no runs; validates against
+=perseus_drama.rng=; =make globe-verify PLAY=tit= OK. Next: Richard II,
+once =#build/p4-coverage= lets its P4 convert.
+
+*Titus republished <2026-10-12>: the lacuna is an =<ellipsis>=.* At
+III.1.36 ("And bootless unto them . . . . . . . . .") the Globe marks the
+omission itself, so it is P5's =<ellipsis>= with the dots as its
+=<metamark function="ellipsis">=, not =<gap>=, which is for what the
+encoder leaves out (Cliff, from the TEI Guidelines, COEDADD). The
+Folger marks nothing there: "And bootless unto them." is an ordinary
+short line. =<ellipsis>= is new in TEI P5 4.12.0, so perseus-schemas now
+builds against 4.12.0 (=8900886=, branch =ellipsis=; the upgrade alone
+drops =<re>=, which no corpus file uses, and adds optional attributes).
+corpus-tools merge =5efc258=. Titus differs from the edition it replaces
+at that line only; it validates and =make globe-verify PLAY=tit= is OK.
+Richard II's lacuna (II.1.280) will be encoded the same way.
+
+*Richard II, cold <2026-10-12>; held-out status spent.* Run with the
+classifier unchanged, once its P4 converted (=#build/p4-coverage=):
+2,758 Globe lines, *22 of 26 pages pass*, 6 failing intervals on pp.
+362, 363, 364, 370 (corpus-tools =globe/regenerate-r2=, not merged).
+Header data added first: Doubleday Volume One pp. 278-305.
+- I.4 (+1, 30 -> 40, p.361): the row "friends;'" is set at the turnover
+  indent below "With 'Thanks, my countrymen, my loving" (seen on the
+  Michigan scan), and the P4 has the two in one =<l>=, but the classifier
+  made it a new line. The borderline-rows report gives the row above as
+  1.30 units short of the measure: the turnover test looks too strict
+  for a justified row that ends short. *A classifier rule, not a table
+  row.*
+- III.3 (+1 then -1 around 10, p.370): *our count is right; the page's
+  numeral is not where the count puts it.* Both printings print 10 beside
+  "York. The time hath been,", the second half of the shared line (Folger
+  I/F, "Left I his title out."), which the count makes 11. The printed 19
+  ("Against their will") and Schmidt (Mistake 10, Shorten 13, Oppose 18,
+  Castle 20) agree with the count, not with that numeral: it is set one
+  line low. No existing table kind says so (=numeral= is for a misread).
+- II.1, three causes (diagnosed <2026-10-12> from the build's own rows):
+  - 80 -> 90 (+1, p.363, Trent): "terest me." finishes "flat-" from the
+    row above, a turnover, but sits at 2.82 pitches, past
+    =TURNOVER_MAX_U= (2.8; the column's other turnovers are at
+    2.13-2.63), so it is classed indented, which never continues. *A
+    classifier rule*: a row completing a hyphenated word continues
+    whatever its indent, or the turnover band is wider.
+  - 110 -> 120 (+1, p.363): "And thou--" / "K. Rich. A lunatic
+    lean-witted fool," is one shared line, and the page sets the second
+    half as an ordinary speech row (seen on Trent). *A =shared= row in
+    =shared-lines.tsv=*, the kind the page cannot show.
+  - 270 -> 290 (-1, p.364): the Globe's lacuna. The P4 has a verse line
+    of dots, =<l>...................</l>=, after "Rainold Lord Cobham,";
+    the page prints a row of dots with 280 beside it, of which Kraken read
+    only ". 280". A line with no words has no tokens, so the build cannot
+    make it a line. *New code*: nothing in the conversion or the table
+    covers a numbered line with no words. (Titus's =<gap/>= was inside a
+    line that had words.)
+- So: two classifier rules (the turnover test for a short row above; the
+  turnover band for a hyphenated continuation), one table row, one line
+  with no words, and one numeral the page sets a line low.
+- *The two turnover rules, done <2026-10-12>* (corpus-tools =8220d18=,
+  branch =globe/turnover-rules=, on =globe/regenerate-r2=; neither
+  merged). A row completing a word broken at the end of the row above
+  continues, in the turnover band or the indented one; a turnover-band
+  row in the same P4 =<l>= as the row above continues however short
+  that row is. Each decides exactly one row in Richard II and none in
+  Lear, Antony or Titus, which are byte-identical. Richard II: 23 of 26
+  pages. Left: the shared row (p.363), the lacuna (p.364), the numeral
+  set a line low (p.370).
+- *The shared row*: proposed and checked by Cliff <2026-10-12>; the
+  Folger marks only its second half (ftln-0791 =part=F=), which is why the
+  build did not propose it. 24 of 26 pages.
+- *Two new =shared-lines.tsv= kinds, done <2026-10-12>* (corpus-tools
+  =29410f5=). Cliff's decisions: the names =lacuna= and =misplaced=; the
+  lacuna's dots are an =<ellipsis>= with a =<metamark>=, as Titus's are;
+  and *the header says nothing about the lacuna*. It is a famous crux,
+  but the edition reproduces the Globe as it is and draws no more
+  attention to this crux than to any other. Neither kind counts as a
+  junction.
+  - =lacuna=: a line the page prints without words. The row names the
+    line above; the build inserts the page's one row without letters
+    there as a line, with its numeral, and refuses unless the P4 has a
+    wordless =<l>= at that point too. The milestone opens that =<l>=. The
+    Folger has no such line, but its numbering skips 2.1.290 and
+    ftln-0959 for it.
+  - =misplaced=: a numeral the page prints beside a row of the next line.
+    The row names both lines, and the build checks the numeral against
+    the line it numbers. Kept apart from =numeral=, which corrects an OCR
+    misreading.
+  With both rows proposed (unchecked), *26 of 26 pages pass*; Schmidt
+  1758/1811, no runs. Lear, Antony and Titus are byte-identical.
+
+*Richard II published <2026-10-12>.* Cliff checked the lacuna and
+misplaced rows. Built on corpus-tools =main= (merge =50f1e36=): 2,756
+Globe lines, 26 of 26 pages, Schmidt 1758/1811 with no runs; the lacuna
+at II.1.280 is an =<ellipsis>= in the P4's wordless line. Validates
+against =perseus_drama.rng=; =make globe-verify PLAY=r2= OK. Its title
+stays "Richard II", as its =__cts__.xml= has it.
+
+*Both cold tests are spent.* Titus needed table rows only; Richard II
+needed two classifier rules (both about turnovers) and two new table
+kinds. Next is the rest of the batch. Each play needs its witness pins
+(=globe-lineation manifest PLAY=) and its header data (title and
+Doubleday pages, =tei_header.py=) first, and the seven
+=#build/inset-numbering= plays waited on that question (settled <2026-10-17>).
+
+*Two Gentlemen published <2026-10-13>* (corpus-tools merge =7420927=),
+the first of the batch. Doubleday Volume One pp. 103-124. First build
+17 of 21 pages; *21 of 21* after:
+- a rule: a one-word row whose word the P4 spells otherwise ("labour."
+  / "labor.", "favoured." / "well-favored.", "colour?" / "color?") had
+  no start, so was no line; it now starts at the one word left over
+  between the matched rows around it, if the two are spelt alike;
+- a rule: a row in the indented band in the same =<l>= as a full row
+  above continues it (turnovers at 2.89u, III.1);
+- two =separate= rows, checked by Cliff: prose rows set in at the
+  turnover indent (p.22, I.1). As a rule this broke Lear II.1.45, whose
+  P4 sets verse in =<p>=.
+Schmidt 1279/1316 once the smoke test took "Gentl." as well as "Gent."
+for the play (it had read 382 citations as another play's). Its one
+run, 4.4.133-134 +1, is Schmidt's own: he cites lines the page prints
+consecutively as 134 and 136.
+
+*Lear, Titus and Richard II republished* with the same build: every
+milestone unchanged; 4, 5 and 1 =<lb/>= added at turnovers the old build
+missed ("much o' the / savor"). In Richard II, Michigan's p.356 now
+passes and is chosen over Trent, and gives "ACT I" a row of its own:
+one more =<lb/>=. Antony unchanged. All five =globe-verify= OK.
+
+*Measure for Measure published <2026-10-13>* (corpus-tools merge
+=3051e88=). Doubleday Volume Two pp. 663-689. 2,822 Globe lines, *26 of
+26 pages*, with no rule change, after nine rows Cliff checked:
+- three =separate= ("to the world?", I.2 p.69; "Isab. Why,", III.1
+  p.78; "Ang. Happy return…", V.1 p.87) and three =shared= (Lucio's
+  asides set flush, II.2 p.74 ×2; "Be perfect." / "I warrant your
+  honour.", V.1 p.88);
+- two =numeral=: a damaged 130 read as 120 (II.4 p.76); and the "I"
+  ending "said even now, I" read as a marginal 1 (V.1 p.92), where no
+  number is printed: a =numeral= row may now leave =first_half= empty;
+- one =misplaced=: II.1 p.72 prints 160 a row below the line it
+  numbers. The 1864 first printing (UVa, leaf 90) is set identically,
+  so it is the Globe's own slip, not a later resetting.
+Schmidt 1682/1770. Its runs, III.2 43-77 −1, are Schmidt's: p.80 gives
+the printed 81 only if "cord, sir." is a turnover, as it is set (1864
+too, UVa leaf 98). All six =globe-verify= OK.
+
+*Comedy of Errors published <2026-10-15>* (corpus-tools merge
+=9af9d96=). Doubleday Volume One pp. 84-102. 1,777 Globe lines, *18 of
+18 pages*, after six rows Cliff checked and one new table kind:
+- two =shared= on p.99 (III.1): rhymed fourteeners whose second half is
+  set at the speaker indent ("Let my master in, Luce." / "Faith, no; he
+  comes too late;", "Thou baggage, let me in." / "Can you tell for whose
+  sake?"); and two =numeral= there: a stray mark read as 19, a 90 read
+  as 2. Trent reads that page's turnovers as starts; Michigan does not;
+- =misplaced=: V.1 p.109 prints 380 a row *above* the line it numbers
+  (Richard II's 10 was a row below);
+- =miscount=, new: V.1 p.108 prints eleven lines between 230 and 240,
+  none a turnover or a shared half, set so in the 1864 printing (UVa
+  leaf 126). The Globe's count runs one behind the rows to the scene's
+  end, and Schmidt follows it. The row folds "Of vile confederates.
+  Along with them" into the line above, as a shared half is folded, so
+  the edition keeps the Globe's numbers; it is not a junction. Which
+  neighbour shares the number the page does not show: Schmidt's
+  "rabble" 236 and "hungry" 237 allow either.
+Schmidt 1127/1175. Its one run, IV.4.40-45 +1, is Schmidt's: p.104
+prints no 30 or 40, and the prose rows from 21 give the 50 on p.105.
+All seven =globe-verify= OK.
+
+*Love's Labour's Lost published <2026-10-15>* (corpus-tools merge
+=970434b=). Doubleday Volume One pp. 56-83. 2,788 Globe lines, *26 of
+26 pages*, after nineteen rows Cliff checked and two rule changes he
+approved:
+- the page reader splits columns at the empty gutter, and takes a
+  column's margin from the leftmost cluster of flush rows (at least
+  four), not its leftmost row. Six published plays build byte-identical;
+  Errors moves one milestone one word (II.2.155 now starts at "When"),
+  and is republished here;
+- a =separate= row's second half may start with words the witnesses lost
+  ("silly thought my", III.1 p.142, where both read "thought"), and
+  =line= "all" applies a row to every identical junction on its page
+  (the refrains "Cuckoo;" and "Tu-whit;", V.2 p.160).
+The rows: seven =separate= (displaced lines, verse set with every other
+line indented, the refrains); two =shared= (IV.1 p.144, V.2 p.154); one
+=turnover= ("almighty,", V.2 p.158); four =misplaced= (II.1 p.141, IV.3
+pp.146-147, V.2 p.160); two =numeral= (59 read as 50, I.2 p.138; 30
+read as 50, II.1 p.139, where Trent, Michigan and UVa all print 30);
+two =miscount=: I.1 p.137 folds Armado's subscription "DON ADRIANO DE
+ARMADO." into the line above, though IV.1 numbers the same subscription
+(89); V.2 p.153 prints eleven lines between 160 and 171 (1864 too, UVa
+leaf 171), and the row folds "Out--" / "True; out indeed."; "Not to
+behold--" / "Once to behold, rogue." is the other candidate, and nothing
+decides between them.
+The P4 typo at I.2 ("gamester,sir." and a stray "ed=G>") is corrected
+(=5c60a64=). Schmidt 1872/1997. Its three runs are his: IV.3.42-45 and
+V.2.892-895 count from the misplaced 40 and 890; IV.3.212-215 contradicts
+his own 207, 211 and 220, and the printed 200 and 220. All eight
+=globe-verify= OK.
+
+*A Midsummer Night's Dream published <2026-10-16>* (corpus-tools merge
+=ca0d9b2=). Doubleday Volume One pp. 125-145. 2,174 Globe lines, *20 of
+20 pages*, after eleven rows Cliff checked and one rule change he
+approved (=a68c3ba=): a new table kind =inset=, for a passage every row
+of which is a line, with two aligner rules (a prefixed or multi-word row
+that opens a speech is taken from the P4; a row that opens a speech with
+any spoken word is speech). The eight earlier plays stay byte-identical.
+The rows: four =inset= (the songs and charms, I.2 p.163, II.1 p.164, III.2
+p.173, V.1 pp.178-179); three =separate= (II.2 p.166, IV.2 p.175, V.1
+p.179); two =turnover= (IV.1 p.174, V.1 p.178); one =misplaced= (I.1
+p.161, the 10 set a line high).
+=inset= answers the inset-numbering question (=#build/inset-numbering=)
+for plain =<l>= songs, as in this play: the Globe numbers every row.
+The =<lg>= and =<text>= plays (tmp wiv ado tn h8 ham cym) still wait on
+the P4 conversion. P4 anchors at IV.1 80-180 are wrong (the page and
+Schmidt agree with us). The P4 typos at II.2 ('conme', 'kyou') are
+corrected (=dc68e93=). Schmidt 1359/1440, no runs. All nine
+=globe-verify= OK.
+
+*The Merchant of Venice published <2026-10-16>* (corpus-tools merge
+=d7714d3=). Doubleday Volume One pp. 331-355. 2,658 Globe lines, *24 of
+24 pages* (first run 18 of 24, eight intervals), after six rows Cliff
+checked and no rule change. The rows: three =miscount= (I.1 p.182, two
+of the last three prose rows of Bassanio's "Gratiano speaks an infinite
+deal of nothing" share a number, which two the page does not show, and
+the row takes the line above; III.2 p.193, "Fair Portia's counterfeit"
+shares 115, as Schmidt's 'surfeit', 'counterfeit' and 'demi-god' do;
+III.2 p.194, "Besides, it should appear" shares 274, one of four rows
+that might, the P4's 280, 290, 310 and 330 standing one row above the
+page's); one =misplaced= (I.3 p.185, 160 printed beside "This bond
+expires", numbering "Of thrice three times"); one =numeral= (III.5 p.196,
+39 read as 3 and 30); one =separate= (III.2 p.193, the turnover "shadow"
+taken as a line of its own: the Globe's count runs one ahead of the
+rows from 128 to 130 and no kind says that a number is skipped, so this
+row is the nearest; it contradicts Schmidt's 'underprize' 128 by one).
+Schmidt 1512/1602, no runs. All ten =globe-verify= OK.
+This is the decision point the batch was waiting for. Titus needed no
+rule change; Richard II needs two, both about turnovers, plus a way to
+count a line with no words and to say that a numeral is set a line low. Decide whether to change it, with Lear, Antony and
+Titus required to stay byte-identical, before running the rest.
+
+*Much Ado About Nothing published <2026-10-17>* (corpus-tools merge
+=54e55b0=). Doubleday Volume One pp. 497-521. 2,825 Globe
+lines, *24 of 24 pages* (first run 18 of 24, eight intervals), after five
+rows Cliff checked, one aligner rule he approved, and one widening of a
+table kind:
+- the rule: a page's last row that is a hyphenated compound printed as
+  two words ("chamber window." / P4 "chamber-window.", II.2 p.117) starts
+  at the one word left over; nothing else of a page's last row is
+  inferred (a wider version broke Measure for Measure);
+- =misplaced= may now be two rows off (II.3 p.119 prints 210 beside "her
+  heart out first.", two rows below the line Schmidt's 'impossible' 211
+  puts it on); every earlier row is one row off;
+- the rows: one =miscount= (II.1 p.117, 371 to 391 is twenty numbers for
+  twenty-one rows; Schmidt's 'cost' 387, 'watching' 388, 'modest' 390 show
+  two of the three rows at "And I, my lord." share a number, which two the
+  page does not show); one =turnover= (II.3 p.118, "himself?" set flush);
+  two =misplaced= (II.3 p.119 210; V.1 p.131 270, a row high); one
+  =separate= (V.2 p.132, "shall live no longer", the top of a column, its
+  first word lost by both witnesses).
+The songs (II.3 "Sigh no more", V.2 "The god of love", V.3 "Pardon,
+goddess") passed on =#build/inset-numbering= with no row. The P5 with
+=<lg>= and =<floatingText>= in a speech validates against
+=perseus_drama.rng=. Schmidt 1301/1367, no runs. P4 anchors disagree at
+1.2.10, II.1 (30, 230, 240, 260, 330, 340) and IV.1.50, not examined; the
+pages and Schmidt agree with the build. All eleven =globe-verify= OK.
+
+*As You Like It published <2026-10-18>* (corpus-tools merge =b1cf30b=).
+Doubleday Volume One pp. 522-546. 2,852 Globe lines, *24 of 24 pages*
+(first run 17 of 24, nine intervals), after seven rows Cliff checked and
+no rule change:
+- four =inset= rows for the songs (II.5 p.212 and p.213 twice, II.7 p.215):
+  this P4 has no =<lg>= at all, so the automatic rule had nothing to read
+  (the p.215 row ends at "As friend remember'd not.", since the last row's
+  words repeat an earlier row's);
+- two =miscount= (I.2 p.208, "I am more proud" / "His youngest son", both
+  Schmidt 245; III.2 p.218, 419 to 450 is 31 numbers for 32 rows, Schmidt
+  agrees to 'cote' 448 and the fold is after it, taken at "woo me.", which
+  the P4's Globe line breaks set with the row above);
+- one =misplaced= (III.5 p.220, 80 a row high).
+Schmidt 1464/1565, one run off by a constant at I.1.92-93 (two citations,
+bracketed by the page's own 30 and 100; no row). P4 anchors disagree by one
+at five places (III.2, two in I.2, III.5, V.4), not examined. All twelve
+=globe-verify= OK.
+
+*Twelfth Night published <2026-10-18>* (corpus-tools merge =031c9ca=).
+Doubleday Volume One pp. 547-570. 2,691 Globe lines, *23 of 23 pages*
+(first run 18 of 23, six intervals), after five rows Cliff checked, one P4
+correction he approved and no rule change:
+- the P4: Act III's scenes were numbered 1, 1, 2, 3 (heads SCENE I, I, II,
+  III) where the Globe has four; renumbered 1-4 (engLit =4ee41ac=), which
+  cleared the p.293 interval that ran across the clash;
+- two =numeral= (II.3 p.287, 31 read 21; II.5 p.291, 209 read 200);
+- one =inset= and one =separate= for Malvolio's rhyme (II.5 p.290; the P4
+  has no =<lg>=, and its last row repeats the first words of the row after
+  it, so it is cut by a =separate= row instead of ending the inset);
+- one =separate= (IV.2 p.299, "Tell me how thy lady does." is a line of its
+  own though the P4 marks it part=F).
+Schmidt 1443/1514, no runs. P4 anchors disagree by one at II.5 (120, 289)
+and one place near 11, not examined. All thirteen =globe-verify= OK.
+
+*Merry Wives of Windsor published <2026-10-19>* (corpus-tools merge =e765837=).
+Doubleday Volume One pp. 471-496. 3,018 Globe lines, *25 of 25 pages*
+(first run 22 of 25, three intervals), after two rows Cliff checked, one P4
+addition he approved and no rule change:
+- the P4: IV.2 lacked Ford's "Well, he's not here I seek for." (p.60; both
+  witnesses print it, the Folio lacks it and the Globe adds it); inserted
+  as a speech of its own (engLit =9aafac8=);
+- two =miscount= rows: IV.4 p.61 (10 to 30 is 21 numbers for 22 rows;
+  Schmidt is one behind from 'terror' 23 on, cites nothing in the stretch
+  and the page does not show which junction, so the fold is taken at "So
+  think I too." with the line above, one of seven candidates); IV.5 p.63
+  (50 to 91 is 41 numbers for 42 rows; Schmidt 'grand' and 'Jamany' both
+  89).
+Schmidt 1515/1593, no runs. P4 anchors disagree at five places (240, 221,
+29, and two larger, 39/89 and 81/85, possibly P4 typos), not examined. The
+edition replaces an older file at the same path. All fourteen =globe-verify=
+OK.
+
+*The Tempest published <2026-10-19>* (corpus-tools merge =25c9ebf=).
+Doubleday Volume Two pp. 971-992. 2,040 Globe lines, *20 of 20 pages*
+(first run 7 of 20, 25 failing intervals), after 27 rows Cliff checked and
+no rule change, no P4 change:
+- 17 =shared= (7 proposed by the Folger; the rest from Schmidt or verse
+  metre: I.2 songs, III.3, IV.1, V.1 pp.19-20);
+- 4 =separate=, 3 =numeral= (I.2 p.5, 390 read 290; II.2 p.10, 121 read
+  120, unsettled; V.1 p.18, 90 read 9), 2 =misplaced= (IV.1 p.17, 220; V.1
+  p.19, 240), 1 =miscount= (V.1 p.20, 300).
+Weakest rows are the prose ones: II.1 p.7, II.2 p.10 and p.11. Schmidt
+1676/1766, two runs off by a constant: I.1.69-72 -3 (the five italic
+"confused noise within" rows; the page prints no numeral after 60) and
+II.2.126-130 -1 (tied to the p.10 reading). P4 anchors disagree at 7 of 151
+in the scenes that pass, not examined. The edition replaces an older file at
+the same path. All fifteen =globe-verify= OK.
+
+*Hamlet published <2026-10-20>* (corpus-tools merge =44a2006=, rebuilt =5c9a5fd=).
+Doubleday Volume Two pp. 597-634. 3,930 Globe lines, *36 of 36 pages*
+(first run 23 of 36, 14 failing intervals), after 17 rows Cliff checked,
+two P4 changes he approved and no rule change:
+- the P4: V.1 lacked the gravedigger's song line "And hath shipp'd me intil
+  the land," (p.840 prints it, and so does the Doubleday witness; lost in
+  the original encoding; both F1 line breaks had stacked on the line
+  above) -- restored as an =<l>= (engLit =d30915e=); and the em-dash after
+  the Pyrrhus quotation (II.2, Globe 472 and 525) was a =<seg>= directly in
+  the =<sp>=, which the schema does not allow, moved inside the =<l>=;
+- 10 =shared= and 1 =turnover= (one proposed by the Folger; I.2 p.813,
+  I.3 p.815, II.1 p.819 twice, II.2 p.825, III.1 p.825 and p.826, III.4
+  p.832, IV.5 p.837), 5 =separate= (II.2 p.821 and p.824, III.4 p.832, IV.7
+  p.838, V.1 p.841), 1 =numeral= (V.1 p.840, 89 read 80).
+Settled by Cliff: III.4 p.832 reads "O, I am slain! / O me, what hast
+thou done?" as one line and "Nay, I know not: is it the king?" as another
+(the Folger's reading and the metre, against the P4's part marks; the count
+only requires one fold in III.4.21-30), and IV.5 p.837 folds "As day does
+to your eye." with "Let her come in." (the other fold gives the same
+count). Schmidt 2771/2907, no runs.
+P4 anchors disagree at 2 of 251 in scenes that pass, not examined (52
+unmapped). The edition replaces an older file at the same path. All
+sixteen =globe-verify= OK.
+
+*Cymbeline published <2026-10-21>* (corpus-tools merge =62dfcc7=).
+Printed pp. 945-977. 3,341 Globe lines, *33 of 33 pages*, after 13 rows
+Cliff checked, two P4 changes he approved and one new table kind:
+- the P4: both songs were miscoded. In II.3 "SONG." was a =<stage>= inside
+  Cloten's =<p>=; in IV.2 the dirge ("Fear no more the heat o' the sun") had
+  no =<lg>= and "SONG." was a =<stage>= in Arviragus's line. Both are now
+  =<lg type="song">= with the title a =<head>=, the dirge as chained
+  stanzas (=next=, =part= I/Y/F) (engLit =de96a0a=);
+- the new kind =heading=: the Globe numbers II.3's "SONG." as a line (20
+  beside "words to it" and 30 beside "Arise, arise." are ten numbers for the
+  heading and the song's nine rows) but not IV.2's, which looks the same on
+  the page, so no rule can say which and the table does. The milestone sits
+  inside the =<head>=; the sixteen earlier editions are byte-identical;
+- 7 =shared= (I.5 p.948, III.1 p.956, III.5 p.960 and p.961, III.6 p.962,
+  4.3 p.967, V.5 p.975; the Folger proposed four), 2 =separate= (4.3 p.967,
+  V.4 p.970), 1 =heading= (II.3 p.952), 2 =numeral= (III.1 p.956, 39 read
+  30; I.1 p.945, the sheet signature "60" printed at the foot, no line
+  number), 1 =turnover= (4.2 p.963).
+Schmidt 2146/2255, one run left: 2.3.22-26 +1, inside the song, which
+Schmidt numbers one short of the printed 30 and of his own "consider" 32
+after it; not explained. P4 anchors disagree at 2 of 204 in scenes that pass,
+not examined (48 unmapped). The edition replaces an older file at the same
+path and validates against =perseus_drama.rng=. All seventeen
+=globe-verify= OK.
+
+*Henry VIII published <2026-10-21>* (corpus-tools merge =50cf58b=).
+Doubleday Volume Two pp. 1023-1054 (printed pp. 592-621). 2,822 Globe lines,
+*30 of 30 pages* (first run 20 of 30, 16 failing intervals), after 18 rows
+Cliff checked, no P4 change and no rule change, but one change to the
+header:
+- the Prologue (32 lines) and the Epilogue (14) are =<p>= and =<l>= directly
+  in =<div1 type="act">=, with no speaker (the Folio prints none), so the
+  refsDecl could not reach them. =build_refs_decl= now has a third =line=
+  branch (=p//M | l//M | lg//M=), cited =prologue.N= and =epilogue.N=,
+  emitted only where a play has such lines, so the seventeen earlier
+  editions keep their refsDecl;
+- 16 =shared= (nine proposed by the Folger; I.2 p.595 and p.597, II.2
+  p.601 three times and p.602, II.4 p.604, III.1 p.606 five times, III.2
+  p.607, IV.1 p.613, IV.2 p.613, V.1 p.616), 2 =numeral= (V.1 p.617: the
+  page prints 130 and 169, read 150 and 160 by Michigan and 129 by Trent).
+Schmidt 1620/1656, no runs. P4 anchors disagree at 13 of 208 in scenes
+that pass, not examined (37 unmapped). New: every build writes
+=reports/globe/regenerate-PLAY-table-lines.tsv=, each table row with the
+act.scene.line it acts on (Cliff, 2026-10-21: the table's scene column was
+too coarse to find a row). The edition replaces an older file at the same
+path and validates against =perseus_drama.rng=. All eighteen
+=globe-verify= OK.
+
+*Witness review <2026-10-22>* (corpus-tools merge =8f1e3c0=). The batch was
+paused for a review of the witnesses; it may now resume. Two outcomes:
+- *The 1864 printing is consulted, not registered.* The two HathiTrust
+  copies of the 1864 Macmillan Globe (NYPL, UVa) were OCR'd and sampled
+  against Michigan (1866): the same setting on every play page sampled.
+  NYPL adds nothing Michigan and Trent do not have; UVa's leaves drift
+  against the printed pages. See corpus-tools =doc/witnesses.org=.
+- *Every re-read numeral is checked.* Where one witness's margin numeral
+  does not close the count and the other's does, the build takes the
+  other's; both are OCR. Each such re-read now needs a checked row in
+  corpus-tools =data/globe/numeral-checks.tsv=, or the canonical build is
+  refused, as with =shared-lines.tsv=. Cliff checked the 66 re-reads in
+  the eighteen published plays against the scans; nearly all were Kraken
+  misreads of Michigan. No edition changed, and all eighteen
+  =globe-verify= OK without =--allow-pending=.
+
+*The Taming of the Shrew published <2026-10-23>* (corpus-tools merge
+=d3e0975=); *Hamlet republished* (=5e65b71=). Shrew: Doubleday Volume One
+pp. 445-470. 2,653 Globe lines, *25 of 25 pages* (first run 19 of 25, 8
+failing intervals), after 5 rows and 6 re-read numerals Cliff checked, no
+P4 change, and one rule change:
+- *the margin refit* (=50d3b82=): at the head of Michigan p.236's left
+  column the speech starts sit inside the flush band and outnumber the
+  flush rows, so the fitted margin was the speech indent and four
+  turnovers read as starts; Trent, which reads the page right, dropped the
+  row "Till I can find occasion of revenge." Where a row hangs more than
+  half a pitch into its fitted margin, the fit is now made again without
+  rows opening with a speaker's prefix. It also corrects Trent's Hamlet
+  pp.817, 819 and 831: Trent now reads p.819 as Cliff's two checked rows
+  there had it, and on his decision those rows are retired. Hamlet's text
+  and lineation are unchanged; its header counts fourteen table rows, not
+  sixteen.
+- rows: II.1 p.238 =separate= ("look not sour.": the Globe's count skips a
+  number between 230 and 240; Schmidt's /aim/ II.237 and /care/ II.240 put
+  it before "Well aim'd"), III.1 p.240 =numeral= (20, its 0 broken in both
+  printings), III.2 p.241 =inset= (Biondello's rhyme), III.2 p.242
+  =misplaced= 201, IV.3 p.247 =shared= (Folger and the P4 agree).
+- re-read numerals: pp.242, 245 (two), 246, 247, 250. Michigan misnumbers
+  IV.1 from p.244: it prints 199, 210, 220 where Trent prints 189, 200,
+  210, which the count bears out; a reader has corrected Michigan in
+  pencil (Cliff).
+Shrew's Act II is one scene, so Schmidt cites it =II, N=. Schmidt
+1291/1372, no runs. Both editions replace older files at the same paths
+and validate against =perseus_drama.rng=. All nineteen =globe-verify= OK.
+
+*The Winter's Tale published <2026-10-26>* (corpus-tools merge
+=642e0d8=). Doubleday Volume Two pp. 993-1022. 3,075 Globe lines, *28 of
+28 pages* (first run 18 of 28), after 10 rows and 3 re-read numerals Cliff
+checked, no P4 change, and one rule change:
+- *the page before, from the other witness* (=9067eb7=): on Michigan
+  p.317 Kraken has no line for three prose rows below the page's last
+  number ("sidered, as too much I cannot, to be more thank-" and two
+  more); Trent has them. The count fell short only at 50 on p.318, after
+  p.317 was set from Michigan. Where a page fails in both witnesses on an
+  interval from a number on the page before, that page is now built again
+  from the other witness, and kept if both pages then pass. p.317 comes
+  from Trent; so does p.310, as before. A table kind =dropped= (=9910822=)
+  was first made for these rows, on the mistaken note that Trent lost them
+  too; its rows are retired (=5c72170=) and the kind is unused.
+- rows: I.2 p.305 =numeral= (59 read 50), II.1 pp.309 (two), 310 and III.2
+  p.315 =shared=, II.3 p.311 =shared= ("How does the boy?" / "He took good
+  rest to-night;", chosen over a fold into line 9: each pair is a
+  pentameter), II.3 p.313 =misplaced= 140, IV.4 p.322 =separate=
+  ("after.", the turnover of "here-": the Globe's count skips a number
+  between 351 and 359, and the placement among the candidates is Cliff's
+  arbitrary choice), IV.4 p.325 =misplaced= 701 (the count and Schmidt's
+  /careful/ and /session/ put it at 702), V.1 p.327 =numeral= (the "I"
+  ending a row read as 1; no number printed).
+- re-read numerals: pp.322 (339), 324 (590), 325 (731).
+Schmidt 1889/1946, no runs. The edition replaces the older file at the
+same path and validates against =perseus_drama.rng=. All twenty
+=globe-verify= OK.
+
+*King John published <2026-10-26>* (corpus-tools merge =bae7ea9=).
+Doubleday Volume One pp. 306-330. 2,571 Globe lines, *24 of 24 pages*
+(first run 22 of 24), after 2 rows and 8 re-read numerals Cliff checked,
+no P4 change and no rule change:
+- rows: III.1 p.341 =shared= ("Because—" / "Your breeches best may carry
+  them.": Folger pairs them, and Schmidt's /breech/ 201 holds only with
+  the fold), IV.3 p.350 =turnover= ("Our souls religiously confirm thy
+  / words.", one speech for Pembroke and Bigot with their prefixes
+  braced on two rows; the second prefix made the turnover read as a
+  line).
+- re-read numerals: pp.334, 335, 339, 344, 349, 350 (two), 352. Six pages
+  come from Trent (340, 343, 344, 346, 351, 353).
+The Folger divides V.6's "What's that to thee? Why may not I demand" as
+the start of a line; the Globe does not, and Schmidt's /perfect/ V.6.6
+agrees with the Globe count. Schmidt 1816/1890, no runs. The edition
+replaces the older file at the same path and validates against
+=perseus_drama.rng=. All twenty-one =globe-verify= OK.
+
+*1 Henry IV published <2026-10-27>* (corpus-tools merge =de75b5f=).
+Doubleday Volume One pp. 356-383. 3,177 Globe lines, *27 of 27 pages*
+(first run 21 of 27), after 4 rows and 4 re-read numerals Cliff checked,
+no rule change, and one P4 change (=210d989=): II.2 restores "to make me
+love him, I'll be hanged; it could not be else; I have drunk medicines.",
+and III.2 puts "Which oft the ear of greatness needs must hear," back
+before "By smiling pick-thanks and base newsmongers,".
+- rows: I.2 p.384 =separate= ("hold", the turnover of "Prince. I know you
+  all, and will awhile up-": the Globe counts fifty-one lines between 169
+  and 220 where the page has fifty, and the placement among the candidates
+  is Cliff's choice), II.4 p.391 =turnover= ("How now, wool-sack! what
+  mutter / you?": the page prints 149 beside "you?", and Schmidt's /lath/
+  151 holds only with the fold), II.4 p.395 =inset= (Falstaff's tavern
+  bill in six printed rows, "Item, A capon" to "Item, Bread, ob.", counted
+  row by row as Schmidt's /gallon/ 587, /anchovy/ 588 and /ob/ 590 do),
+  V.4 p.408 =turnover= ("Why, Percy I killed myself and saw / thee
+  dead.", the turnover set at 2.9 pitches, just past the band).
+- re-read numerals: pp.391 (99), 392 (239), 402 (85), 406 (29). Three
+  pages come from Trent (386, 397, 408).
+Schmidt 1906/2009, one run: III.1.52 /vasty/ +1. Both witnesses set 50
+beside "Welsh. I'll to dinner.", one row under the full-measure "Hot. I
+think there's no man speaks better", as 61 is set on "hence."; the count
+stands and Schmidt is off by one. The six P4 anchors that disagree are
+all in prose, where the P4's Globe markers follow another setting of the
+rows. The edition replaces the older file at the same path and validates
+against =perseus_drama.rng=. All twenty-two =globe-verify= OK.
+
+*2 Henry IV published <2026-10-27>* (corpus-tools merge =fb42cab=).
+Doubleday Volume One pp. 384-413. 3,446 Globe lines, *30 of 30 pages*
+(first run 25 of 30), after 5 rows and 6 re-read numerals Cliff checked,
+one P4 change (=a4a1d5b=): IV.1 puts "Cried hate upon him; and all their
+prayers and love" (F1 2003) back before "Were set on Hereford, whom they
+doted on" (F1 2004), as both witnesses, the Folger and the P4's own Globe
+marker 141 have it. One change to a table kind (=cad1747=): a =dropped=
+row is one the OCR of the witness the page is built from lost, not
+necessarily both.
+- rows: I.2 p.413 =misplaced= 160 (printed beside "your waste is great.",
+  one row below "Ch. Just. Your means are very slender, and"; 171 eleven
+  rows on is exact), II.1 p.416 =dropped= ("Fal. Master Gower, if they
+  become me not,": Michigan's Kraken lost it, Trent has it; II.1 prints
+  no number after 200, and only Schmidt's /fence/ 206, /fair/ 207 and
+  /lighten/ 208 showed it), II.2 p.417 =dropped= ("cheap.", the turnover
+  of "in East-", lost in both witnesses), IV.5 p.432 =turnover= ("hence!"
+  at 2.85 pitches, just past the band), V.3 p.436 =inset= (Silence's "Do
+  me right, / And dub me knight: / Samingo.", three rows, as Schmidt's
+  /dub/ 78 and /Samingo/ 79 count them).
+- re-read numerals: pp.417 (170), 422 (70), 424 (249, 271), 428 (69), 430
+  (70).
+Schmidt 1995/2108, one run: I.2.159-166 +1, Schmidt counting from the
+misplaced 160. Of the P4's Globe anchors, 1.2 160 follows the misplaced
+numeral, and at 4.5 10 and 5.3 101 the page and Schmidt agree with our
+count. The edition replaces the older file at the same path and validates
+against =perseus_drama.rng=. All twenty-three =globe-verify= OK.
+
+*Henry V published <2026-10-27>* (corpus-tools merge =fcf6352=).
+Doubleday Volume One pp. 414-444. 3,380 Globe lines, *30 of 30 pages*
+(first run 26 of 30), after 3 rows and 6 re-read numerals Cliff checked,
+no rule change, and one P4 change (=dc97c7e=): I.2's entry "Enter the
+ARCHBISHOP OF CANTERBURY, and the BISHOP OF ELY." is one stage direction
+again. The P4 closed it after "and" and set "the BISHOP OF ELY." in the
+King's verse after an extra Globe marker, which put I.2 one line ahead.
+- rows: II.4 p.447 =shared= ("A little cloth." / "Think we King Harry
+  strong;", Folger part=I/F), III.6 p.452 =misplaced= 30 (beside "That
+  goddess blind,", one row above "That stands upon the rolling restless
+  stone—", the line it numbers; Schmidt's /roll/ 30), IV.3 p.458
+  =numeral= (29 read 20 in both witnesses).
+- re-read numerals: pp.442 (250), 450 (149), 467 (281, 330, 359, 380).
+  The Michigan copy's margin numbers are scratched out on pp.466-468;
+  the last three on p.467 are obscured there and come from Trent.
+Schmidt 1939/2225, no runs. Most of the failures are 203 citations of the
+act Choruses (II-V) that the smoke does not take as citations of the
+play, which is not a question of our count. The P4's Globe markers slip at
+I.2 161 (for 61), II.3 60, III.2 90 and III.4 20; the page's numerals
+agree with our count. The edition replaces the older file at the same
+path and validates against =perseus_drama.rng=. All twenty-four
+=globe-verify= OK.
+
+*1 Henry VI published <2026-10-27>* (corpus-tools merge =60e8c97=).
+Doubleday Volume One pp. 27-55. 2,677 Globe lines, *27 of 27 pages*
+(first run 22 of 27), after 2 rows and 4 re-read numerals Cliff checked,
+no rule change (the P4 has no =<l>=, handled as for Antony and 1 and 2
+Henry IV), and three P4 changes (=a034e50=): I.4 puts "And even these
+three days have I watch'd," (F1 480) back before "If I could see them."
+(F1 481); III.1 and IV.7 take "pates." and "of the French preceding."
+back into their entry directions, from which the P4 had left them out as
+speech, each counted as a Globe line.
+- rows: III.1 p.480 =shared= ("Rome shall remedy this." / "Roam thither,
+  then.", Folger part=I/F), V.3 p.491 =misplaced= 80 (beside "wife;", the
+  turnover of "Fond man, remember that thou hast a", not beside "Wilt thou
+  accept of ransom? yea, or no.", the line it numbers; Folger 5.3.80).
+- re-read numerals: pp.474 (60), 483 (49), 484 (30), 490 (19).
+Schmidt 2063/2103, no runs. The P4's Globe markers slip at III.1 90 (it
+makes "Nay, if we be forbidden stones, we'll fall to it with our teeth."
+one line, the page two rows) and III.3 41; the page and Schmidt agree
+with our count. The edition replaces the older file at the same path and
+validates against =perseus_drama.rng=. All twenty-five =globe-verify= OK.
+
+*2 Henry VI published <2026-10-27>* (corpus-tools merge =cedd1d5=).
+Doubleday Volume One pp. 146-177. 3,161 Globe lines, *30 of 30 pages*
+(first run 28 of 30), after 2 rows and 2 re-read numerals Cliff checked,
+no rule change, and one P4 change (=71b1183=): V.2 puts "I would speak
+blasphemy ere bid you fly:" (F1 3313) back before "But fly you must;
+uncurable discomfit" (F1 3314). With the P4's order Kraken's row "But fly
+you must" did not align, and the build lost a line after V.2's last
+numeral (80), where the page check compares nothing; Schmidt's
+/discomfit/ 86 and /relief/ 88 hold only with the fix. Lines after a
+scene's last numeral are checked only by Schmidt.
+- rows: II.1 p.503 =separate= ("and Saint Alban.", the turnover of "Yes,
+  master, clear as day, I thank God": the Globe counts ten lines from 100
+  to 110 where the page has nine, and every later number in II.1 is one
+  ahead; Schmidt's /clear/ 107 and /coal-black/ 112 place it between;
+  Cliff's choice, the Folger's 2.1.122, over "cloak of?"), V.1 p.523
+  =numeral= (90, read 2 in Michigan and 99 in Trent).
+- re-read numerals: pp.497 (140), 508 (60).
+Schmidt 1958/2036, no runs. The P4's Globe markers slip at I.3 10, II.3 99
+and IV.2 100; the page agrees with our count. The edition replaces the
+older file at the same path and validates against =perseus_drama.rng=.
+All twenty-six =globe-verify= OK.
+
+*The Taming of the Shrew republished <2026-10-28>* (corpus-tools merge
+=8171df3=). A change to the margin fit (=ae11b42=, Cliff's decision),
+made for 3 Henry VI p.540, whose left column is speeches and their
+turnovers with one row at the margin: the refit that leaves out speech
+prefixes now also leaves out an initial and a name ("K. Edw.", "L.
+Grey."), and where fewer than 20 rows are left to fit, the margin is the
+median of those and the rows that hang. It changes one column of the
+published plays, the Shrew's p.253 col.2, the end of V.2: five turnovers
+after the scene's last numeral (180), "toward.", "froward.", "hit the
+white;", "curst shrew." and "be tamed so.", had read as lines, and the
+published edition ran V.2 to 194. It now ends at 189, as the Globe does,
+and Schmidt's /harsh/ 183, /speed/ 185 and /winner/ 187 agree (they were
+off by 1, 2 and 3, a growing offset the smoke does not report as a run).
+Lines after a scene's last numeral are checked only by Schmidt. The other
+twenty-five =globe-verify= OK unchanged.
+
+*3 Henry VI published <2026-10-28>* (corpus-tools merge =ab5bbc6=).
+Doubleday Volume One pp. 178-208. 2,904 Globe lines, *30 of 30 pages*
+(first run 23 of 30), after 3 rows and 8 re-read numerals Cliff checked,
+the margin refit (=ae11b42=, above) for p.540, and two P4 changes
+(=10f6a68=): II.5 is set in the Globe's order, which transposes F1's
+"What time the shepherd, blowing of his nails," and "When dying clouds
+contend with growing light," (both witnesses, p.536; the F1 markers now
+run 1137, 1136); IV.1 puts "Tell me if you love Warwick more than me?"
+(F1 2171) back before "If it be so, then both depart to him;" (F1 2172).
+- rows: I.2 p.529 =separate= ("in the field.", the turnover of "She
+  shall not need; we'll meet her": the Globe counts ten lines from 60 to
+  70 where the page has nine; Schmidt's /Sandal/ 63 and /issue/ 71 agree
+  with the page; Cliff's choice), II.6 p.537 =numeral= (31, read 41 in
+  Michigan and 81 in Trent), IV.3 p.546 =turnover= ("Richard and
+  Hastings: let them go; here is / The duke.", the last row set flush;
+  Folger ftln-2092).
+- re-read numerals: pp.528 (220), 530 (30), 537 (120), 542 (70), 545
+  (100), 546 (19), 549 (60, 80).
+Schmidt 1734/1781, no runs. The P4's Globe markers slip at I.2 71 and II.1
+109 (for 190). The edition replaces the older file at the same path and
+validates against =perseus_drama.rng=. All twenty-seven =globe-verify= OK.
+
+*Scene endings swept; six plays republished <2026-10-28>* (corpus-tools
+merge =56a6215=). The page check compares the count only between printed
+numerals, so lines after a scene's last numeral were checked by nothing
+but Schmidt (2 Henry VI V.2, the Shrew V.2). Every published play was
+swept: Schmidt's citations after each scene's last numeral, and every
+number printed on a row that belongs to no line. (The Folger's scene
+lengths, and the P4's count of its Globe markers, differ too often to
+serve.) Two code changes (Cliff's decisions): a number on a row that is no
+line's now numbers the line above it, after the table rows are applied
+(=58a124c=), and a table kind =stage=, a stage direction whose rows the
+Globe numbers as lines (=63afacc=). Two P4 changes: Antony IV.12's F1
+2803-2804 back in order (=cf51e4c=), and the Tempest's Epilogue moved from
+=<back>=, which the build does not read, into =<body>= (=37f995e=). Six
+rows Cliff checked:
+- The Tempest (2,040 to 2,063 lines): the Epilogue was missing, twenty
+  lines with 10 and 20 printed (p.20, =inset=); and I.1's cries within,
+  printed as a stage direction in five rows, are Globe lines 64-66 (p.1,
+  =stage=), so I.1 ends at 72, not 69, as Schmidt's /furlong/ 69 to
+  /furze/ 71 have it.
+- As You Like It (2,852 to 2,856): III.3, Touchstone's song, every row a
+  line (p.219, =inset=); the page prints 109 beside "[Exit.", below the
+  scene's last line, where we had 105. Schmidt counts "but,— Wind away" as
+  one line and runs one behind the page from 104 to 108.
+- Antony (3,063 to 3,064): IV.12 lost a line after 40 to the P4's swap
+  (Kraken's row "Alcides" did not align); Schmidt's /Lichas/ 45 to
+  /subdue/ 47 hold.
+- The Taming of the Shrew (2,648 to 2,649): Ind.2, "tumbling-trick?", a
+  row Kraken read as one word, is 141, printed so (p.231, =dropped=).
+- Cymbeline (3,341 to 3,342): III.5, "Haven?", the turnover of
+  "Milford-", is a line of the prose (p.961, =dropped=); Schmidt's /mute/
+  158 to /meed/ 168 hold.
+- 2 Henry VI (3,161 to 3,162): IV.7, "ye. [Exeunt some with Lord Say.", a
+  row of Cade's prose read as a direction (p.520, =dropped=); Schmidt's
+  /capite/ 131 to /corner/ 145 hold.
+The six editions replace the published files and validate against
+=perseus_drama.rng=. All twenty-seven =globe-verify= OK.
+
+*Richard III published <2026-10-29>* (corpus-tools merge =150b01c=).
+Doubleday Volume One pp. 209-246. 3,621 Globe lines, *36 of 36 pages*
+(first run 28 of 36), after 12 rows and 2 re-read numerals Cliff
+checked; no rule change and no change to the P4.
+- rows: I.3 p.562 two =shared= for one line, "Margaret. Richard! Ha! I
+  call thee not.", each half set on after the one before (the Folger
+  pairs "detested—"/"Margaret." instead); I.4 p.565 =misplaced= (170
+  beside "A man, as you are.", numbering "But not, as I am, royal.";
+  Schmidt's /menace/ 175 and /scarcely/ 180); II.4 p.570 =shared=
+  ("Gloucester and Buckingham." / "For what offence?"); III.7 p.576
+  =shared= ("What says he?" / "My lord, he doth entreat your grace",
+  which the page cannot show); IV.4 p.584 two =shared= ("And wilt thou
+  learn of me?" / "Madam, with all my heart."; "To win your daughter." /
+  "There is no other way;"); IV.4 p.585 four =shared=, the oath
+  stichomythia ("I swear—", "Now, by the world—", "My father's death—",
+  "Why then, by God—", Folger ftln-3076 to 3091); V.3 p.588 =shared=
+  ("It's nine o'clock." / "I will not sup to-night.", which the page
+  cannot show).
+- re-read numerals: p.557 (50, 120).
+Michigan p.566 has a stray row ("O") the backtrack rule avoids by taking
+the page from Trent. Schmidt 2095/2202, no runs; after each scene's last
+numeral it holds where its headwords are found. The P4's Globe markers
+slip at III.1 50, III.7 120 and IV.4 80; the page agrees with our count.
+The edition replaces the older file at the same path and validates
+against =perseus_drama.rng=. All twenty-eight =globe-verify= OK.
+
+*All's Well That Ends Well published <2026-10-30>* (corpus-tools merge =a0cdf01=).
+Doubleday Volume Two pp. 635-662. 2,965 Globe lines, *27 of 27 pages*
+(first run 17 of 27), after 13 rows and 4 re-read numerals Cliff
+checked, one new table kind and a fix to the P4.
+- P4 (=893829d=): five F1 pairs set out of order (1197/1198, 1525/1526,
+  2026/2027, 2059/2060, 2075/2076) put back in the page's order, and two
+  word slips ("duty duty to", "shall persever"). This alone cleared III.2
+  110-120 and all of IV.2.
+- new kind =skip=: II.3 p.262 the Globe passes over 48 between "Lustig,
+  as the Dutchman says" (46) and "head: why, he's able to lead her a
+  coranto" (49), with no junction to account for it; the row sits after
+  "a maid the better", and the next line counts two on.
+- rows: =shared= I.2 p.256 ("A braving war." / "So 'tis reported") and
+  V.3 p.278 ("If I be one." / "He blushes"), both Folger pairs the page
+  cannot show; =shared= III.1 p.265 ("As often as I guess'd." / "Be it
+  his pleasure.") and III.2 p.266 ("'Tis bitter." / "Find you that
+  there?"), each half set on; IV.1 p.271 =shared= ("Inform on that." /
+  "So I will, sir."), after the scene's last numeral and on Schmidt alone
+  (/dark/, /safely/ 104); letter signatures the Globe numbers: III.2
+  p.266 two =separate= ("Your unfortunate son," / "BERTRAM."), IV.3
+  p.273 =separate= "PAROLLES." and two =turnover= in his letter ("him
+  drop gold", "make it"); =numeral= II.2 p.261 (39 read 30) and IV.1
+  p.270 (80 read 89).
+- re-read numerals: p.265 (29), p.270 (29), p.273 (169), p.279 (301).
+Schmidt 1673/1734, no runs. The P4's Globe markers slip at I.3 220, II.5
+90 and V.3 339; the page agrees with our count. The edition replaces the
+older file at the same path and validates against =perseus_drama.rng=.
+All twenty-nine =globe-verify= OK.
+
+*Troilus and Cressida published <2026-10-30>* (corpus-tools merge =ca0a79b=).
+Doubleday Volume Two pp. 690-723. 3,496 Globe lines, *32 of 32 pages*
+(first run 24 of 32), after 12 rows and 4 re-read numerals Cliff
+checked; no rule change and no change to the P4.
+- rows: nine =shared= the page cannot show, most of them Æneas'
+  entries after a short line: I.1 p.623 ("By whom, Æneas?" / "Troilus,
+  by Menelaus.", after the scene's last numeral, on Schmidt's Scar 114
+  and Gore 115), I.3 p.628 ("He tells thee so himself." / "Trumpet, blow
+  loud,"), IV.1 p.640 ("Did haunt you in the field." / "Health to you,
+  valiant sir,") and p.641 ("We shall be much unwelcome." / "That I
+  assure you:"), both of which the Folger sets as short lines, IV.4
+  p.643 ("Nay, good my lord,—" / "Come, kiss; and let us part."; "Hark!
+  Hector's trumpet." / "How have we spent this morning!"), IV.5 p.644
+  ("The knight opposed." / "If not Achilles, sir,") and p.645 ("You must
+  no more." / "Princes, enough, so please you."; "Who must we answer?" /
+  "The noble Menelaus."); III.1 p.635 two =separate= in Pandarus' song,
+  which the P4 does not set as =<lg>= ("Love, love, nothing but love,
+  still more!", "Doth turn oh! oh! to ha! ha! he!"); V.3 p.651 =numeral=
+  (109, its 9 set low, read 100 by both witnesses).
+- re-read numerals: p.624 (89), p.627 (200), p.635 (80; the Michigan
+  copy prints 40, with a vertical line drawn through the first figure
+  and 8 written in the margin), p.649 (160).
+Kraken read the 40 on p.641 into the text. Schmidt 2311/2411, no runs;
+after each scene's last numeral it holds where its headwords are found
+(V.2 /commodious/ and V.7 /illegitimate/ are cited on the row where the
+hyphenated word begins). The P4's Globe markers stand on a prose
+speech's first row where the page prints the number on a later one
+(III.1 80, 90, 111; IV.2 81; V.2 11), and slip at III.2 221, where the
+page prints 220 beside "Bed, chamber, Pandar to provide this gear!" and
+Schmidt's /gear/ and /provide/ agree. The edition replaces the
+older file at the same path and validates against =perseus_drama.rng=.
+All thirty =globe-verify= OK.
+
+*Coriolanus published <2026-10-30>* (corpus-tools merge =bc9a626=).
+Doubleday Volume Two pp. 850-885. 3,407 Globe lines, *34 of 34 pages*
+(first run 24 of 34), after 9 rows and 7 re-read numerals Cliff
+checked, and a fix to the P4; no rule change.
+- P4 (=d5779ad=): I.9 line 2, "Thou'ldst not believe thy deeds: but
+  I'll report it", which the P4 had dropped, restored as the page (p.661)
+  and the F1 have it, with a Globe marker only; the P4's F1 line count is
+  left as it was.
+- rows: =shared= the page cannot show: I.1 p.655 ("Make yourselves
+  scabs?" / "We have ever your good word."), I.2 p.657 ("Consider of
+  it." / "Our army's in the field:"), III.3 p.675 ("It shall be so." /
+  "It shall be so, it shall be so."), V.3 p.684 ("Living to time." / "A'
+  shall not tread on me;") and V.6 p.687 ("'Fore your own eyes and
+  ears?" / "Let him die for't."); III.2 p.672, of three short lines
+  ("Be thus to them." / "You do the nobler." / "I muse my mother"), the
+  last two, chosen on metre, the other pairing giving the same numbers;
+  IV.6 p.679 ("The gods preserve you both!" / "God-den, our neighbours.")
+  and p.680 ("O, you have made good work!" / "What news? what news?"),
+  each second half set to the right but starting left of where the row
+  above ends, which the P4 marks part=I/F; II.1 p.663 =dropped= "saw't.",
+  a prose row of its own that aligns with nothing because the P4 reads
+  "I saw 't."
+- re-read numerals: p.657 (40), p.658 (91, 10), p.663 (190), p.667 (99),
+  p.676 (19), p.684 (159).
+Schmidt 2069/2139, no runs; after each scene's last numeral it holds
+where its headwords are found (IV.3 /aptness/ and /fortunate/ are cited
+on the row where the hyphenated word begins). The P4's Globe marker
+slips at IV.6 91, set on "He is their god", where the page prints 90 and
+Schmidt's /deity/ 91 falls on the next line. The edition replaces the
+older file at the same path and validates against =perseus_drama.rng=.
+All thirty-one =globe-verify= OK.
+
+*Romeo and Juliet published <2026-10-31>* (corpus-tools merge =1c6e76d=).
+Doubleday Volume One pp. 247-277. 3,053 Globe lines, *29 of 29 pages*
+(first run 24 of 29), after 5 rows and 2 re-read numerals Cliff
+checked, and a fix to the P4; no rule change.
+- P4 (=d8fc8a6=): II.1 lines 26-28, "Till she had laid it and conjured
+  it down;" / "That were some spite: my invocation" / "Is fair and
+  honest, and in his mistress' name", which the P4 had dropped, restored
+  as the page (p.719) has them, with a Globe marker each; the P4's F1
+  markers 777-779, piled on line 25, are left where they were.
+- rows: I.5 p.718 two =separate= in the sonnet ("Ay, pilgrim, lips that
+  they must use in prayer." and "Then have my lips the sin that they
+  have took."), whose speeches the page sets at the margin, so the build
+  read them as displaced; II.4 p.723 =inset= Mercutio's song "An old hare
+  hoar," ... "When it hoars ere it be spent."; IV.4 p.734 =shared= "A
+  jealous-hood, a jealous-hood!" / "Now, fellow," / "What's there?", one
+  line (13) over three rows: the page prints 21 beside "The county will
+  be here", because line 20's row is full, as it prints 31 on p.718;
+  V.1 p.736 =shared= "What, ho! apothecary!" / "Who calls so loud?", the
+  page taken from Trent.
+- re-read numerals: p.737 (70), p.740 (290).
+Schmidt 1661/1750, one run: II.2.151-156 +1. The page prints 150 and
+160, and the build joins the two half-lines set to the right ("By and
+by, I come:" and "So thrive my soul"); Schmidt's /by/ 151, /thrive/ 153
+and /schoolboy/ 156, with his /falconer/ 159 and /lure/ 160, would need
+one line fewer between the two numerals than the page has. In IV.4
+Schmidt's /loggerhead/ 21 and /chat/ 26 fall a line late. After each
+scene's last numeral Schmidt holds where its headwords are found. Of the
+P4's Globe markers, the disagreements are prose speeches, where the P4
+sets its number at the speech's start or breaks the prose its own way,
+and III.3, where it reads 50 for the page's 60 ("It helps not, it
+prevails not"). The edition replaces the older file at the same path
+and validates against =perseus_drama.rng=. All thirty-two
+=globe-verify= OK.
+
+*Timon of Athens published <2026-11-02>* (corpus-tools merge =c73f0bb=).
+Doubleday Volume Two pp. 886-910. 2,374 Globe lines, *23 of 23 pages*
+(first run 14 of 23), after 9 rows and 2 re-read numerals Cliff
+checked, and a fix to the P4; no rule change. The Michigan copy of this
+play is heavily marked up by a reader.
+- P4 (=06b80de=): II.2.229 "Prithee, be not sad," taken out of the
+  stage direction "[To Flav.]" and given back to Timon.
+- rows: I.1 p.741 =shared= "He passes." / "I have a jewel here--";
+  I.1 p.742 =shared= "What levity's in youth." / "Love you the maid?";
+  I.2 p.744 =numeral= 79, which both witnesses' OCR read 78;
+  I.2 p.746 =shared= "Am I to you." / "So infinitely endear'd--", each
+  a junction the page cannot show, closed by the numerals and Schmidt;
+  II.2 p.747 =separate= "Apem. No, 'tis to thyself.", a prose row the
+  build joined to the line above (the 1911 Globe, p.794, prints 59 beside
+  "Caph. Where's the fool now?", which holds only with it a line); II.2
+  p.748 =turnover= "-- hum!"; II.2 p.749 =dropped= "[To a Serv.] Go to
+  Ventidius. [To Flav.]", read as a direction; III.5 p.753 =shared= "He
+  dies." / "Hard fate! he might have died in war."; III.6 p.754
+  =separate= "I feel 't upon my bones.", beside which the page prints
+  130.
+- re-read numerals: p.747 (10), p.758 (359).
+Schmidt 1441/1495, one run: II.2.32-36 +1, *left open for Bartlett*.
+The page (p.747) sets three half-lines as if each shared a line: "And
+past." (at the margin) before Isidore's "Your steward puts me off, my
+lord;", "Come hither: pray you." after "I'll wait upon you instantly.",
+and "Please you, gentlemen," after "Against my honour?". But 30 and 40
+close with only two of them joined. The build leaves "And past." alone;
+Schmidt's /expressly/ 32, /keep/ 34, /encounter/ 36 and /clamorous/ 37,
+with the P4's 40, would rather leave "Please you, gentlemen," alone,
+while the Folger marks Against/Please part=I/F (and runs "and past"
+into line 30, which may be how Schmidt's count came by its offset).
+Schmidt's /clamorous/ 37 and /detention/ 39 fall on adjacent rows, so he
+errs here on any reading. The 1911 Globe (pp.793-794) sets the passage
+the same way, with the same numerals.
+*Settled by Bartlett <2026-11-02>*: his /Concordance/ (1894; Internet
+Archive =completeconcorda00bart_0=) prints "Your steward puts me off, my
+lord" at ii 2 32 (p.1466, leaf n1475) and /Detention/ at ii 2 39 (p.364,
+leaf n373); its OCR has /Date-broke/ at 38. Only the build's reading,
+"And past." alone, puts the steward's line at 32: leaving "Come hither:
+pray you." or "Please you, gentlemen," alone puts it at 31 (and the
+second, which Schmidt's /expressly/ to /clamorous/ favour, puts
+/detention/ at 38). The published edition stands; the run is Schmidt's. Schmidt's /purchase/ and /right/ III.5.78 fall a line late. After
+each scene's last numeral Schmidt holds where its headwords are found.
+The P4's Globe markers disagree at I.2 70, IV.3 413 (the page's 410) and
+V.1 180, where the page and Schmidt agree with the build. The edition
+replaces the older file at the same path and validates against
+=perseus_drama.rng=. All thirty-three =globe-verify= OK.
+
+*Julius Cæsar published <2026-11-02>* (corpus-tools merge =0f7c6f1=).
+Doubleday Volume Two pp. 571-596. 2,478 Globe lines, *24 of 24 pages*
+(first run 21 of 24), after 3 rows and 9 re-read numerals Cliff
+checked; no rule change, no P4 change.
+- rows: III.2 p.778 =turnover= "will! read the will.", set at the
+  margin like a prose row but the turnover of "Sec. Cit. They were
+  villains, murderers: the", the page's 160 beside it as beside the last
+  row of a line (Schmidt's /compel/ 161, /hearse/ 169), though in the
+  next column "we'll die with him.", set the same way, is a line of its
+  own (the page's 221 needs it); IV.3 p.782 =shared= "Immediately to
+  us." / "Lucius, a bowl of wine!", a stage direction between; V.1 p.784
+  =shared= "Messala!" / "[Standing forth] What says my general?", the
+  second opening with a direction.
+- re-read numerals: p.765 (89), p.766 (200), p.767 (320), p.769 (30),
+  p.770 (130), p.776 (289), p.777 (109), p.782 (210), p.784 (71).
+Schmidt 1129/1184, no runs. After each scene's last numeral Schmidt
+holds where its headwords are found (his /overeye/ IV.1.95 is cited
+past the scene's 51 lines). Of the P4's Globe markers, IV.3 puts 120 at
+"Cas. O Brutus!", which the build counts in line 118 with "And my heart
+too." and "What's the matter?"; Schmidt's /forgetful/ 121 and
+/over-earnest/ 122 agree with the build. The edition replaces the older
+file at the same path and validates against =perseus_drama.rng=. All
+thirty-four =globe-verify= OK.
+
+*Macbeth published <2026-11-02>* (corpus-tools merge =2bb26fd=).
+Doubleday Volume Two pp. 792-815. 2,108 Globe lines, *23 of 23 pages*
+(first run 19 of 23), after 6 rows and 2 re-read numerals Cliff
+checked; no rule change, no P4 change.
+- rows: II.3 p.795 =shared= "Cannot conceive nor name thee!" / "What's
+  the matter?", set right, its two speakers braced over two rows (70);
+  "Courage to make 's love known?" / "Help me hence, ho!" / "Look to
+  the lady." (124) and "Our tears are not yet brew'd." / "Nor our
+  strong sorrow" (130), junctions the page cannot show; IV.1 p.801
+  =turnover= "wolf," under "Third Witch. Scale of dragon, tooth of";
+  two =shared= rows making line 61 of four parts, "To what I ask you."
+  / "Speak." / "Demand." / "We'll answer.", each set further right.
+- re-read numerals: p.788 (10), p.794 (59).
+Schmidt 1511/1559, no runs. After each scene's last numeral Schmidt
+holds where its headwords are found. Of the P4's Globe markers, the
+three disagreements (IV.2 50, V.1 31 and 71) are prose speeches, where
+the P4 numbers the speech's first row and the page prints its number
+beside a later one. The edition replaces the older file at the same
+path and validates against =perseus_drama.rng=. All thirty-five
+=globe-verify= OK.
+
+*Othello published <2026-11-02>* (corpus-tools merge =4fa8ef4=).
+Doubleday Volume Two pp. 724-757. 3,315 Globe lines, *32 of 32 pages*
+(first run 21 of 32), after 17 rows and 2 re-read numerals Cliff
+checked, and two fixes to the P4; no rule change. The P4's Globe
+markers, once noted as doubled, are one to a line. The Michigan copy
+of this play is extensively marked up with underlining and marginal
+brackets.
+- P4 (=4a61a60=): V.2 "Oth. What, now?" restored, where the P4 had an
+  empty =<l>= (its Globe and F1 3374 markers only) in Emilia's speech;
+  II.3, in Iago's song, "A soldier's but a man;" corrected to "A
+  soldier's a man;", as the page (p.889) and the Folger read.
+- rows: I.3 p.882 four =shared= the page cannot show ("That gives them
+  credit." / "Indeed, they are disproportion'd;" 2; "In fearful sense."
+  / "What, ho! ..." 12; "My daughter! O, my daughter!" / "Dead?" / "Ay,
+  to me;" 59; "Hath hither brought." / "We are very sorry for't." 73);
+  II.1 p.886 =separate= "Welcome, mistress:" and IV.1 p.901 =separate=
+  "What trumpet is that same?", each set at the turnover indent below a
+  row a stage direction fills; II.1 p.887 =shared= "That e'er our hearts
+  shall make!" / "O, you are well tuned now!" 201; II.3 p.889 =inset=
+  the canakin song; III.3 p.895 =shared= "To have me filch it?" /
+  "[Snatching it] Why, what's that to you?" 315; IV.1 p.901 line 240 in
+  three parts, "Are you sure of that?" / "My lord?" / the letter, whose
+  "will--" at the margin is its =turnover=; IV.3 p.904 =turnover=
+  "garland." in the willow song; V.2 p.908 =shared= "'Tis a strange
+  truth." / "O monstrous act!" 189.
+- *IV.1.110-130 (p.900) left open for Bartlett.* The page prints 110,
+  120 and 130, but its rows, which set the short speeches as verse with
+  turnovers at the indent, give two lines too few to 120 and one to 130,
+  however the indented rows ("loves me.", "out.", "her:", "umph?",
+  "her.") are read. The rows take "out." and "her:" as lines
+  (=separate=) and a =skip= after "Do you triumph, Roman? do you
+  tri-umph?": the minimum that fits the page and Schmidt's /faintly/
+  113, /triumph/ 121 and /customer/ 123. The 1864 printing (UVa) has
+  the same setting and numerals; the Doubleday (p.746) resets the
+  passage, prints the same numerals beside the same lines, and its rows
+  do not give them either. The P4's Globe markers here break the prose
+  as the Doubleday does.
+  *Settled by Bartlett <2026-11-02>* (corpus-tools merge =ba403e7=;
+  the edition republished). The 1911 Globe (p.956) keeps the setting
+  but sets Iago's "'Faith, the cry goes that you shall" / "marry her."
+  as prose, flush, and with that row a line 120 to 130 closes with no
+  number passed over. Bartlett's /Concordance/ (1894; Internet Archive
+  =completeconcorda00bart_0=), whose entries cite the line the headword
+  is on, agrees line for line: /faintly/, /laugh/ and /out/ 113 (so
+  "out." is a turnover), /Cassio/ 114 ("Do you hear, Cassio?"),
+  /importune/ 115 (the displaced "Now he importunes him", a line of its
+  own), /tell/ 117, /marry/, /give/ and /out/ 118 (so "her:" is a
+  turnover), /intend/ 119, /customer/ 122, /charity/ 123, /unwholesome/
+  124, /laugh/ 125, /marry/ 127, /true/ 128, /villain/ 129. He too passes
+  over a number, 116: no reading of the rows closes 110 to 120. The rows
+  are now =separate= "Now he importunes him", a =skip= after it, and
+  =separate= "her." (replacing the =separate= "out." and "her:" and the
+  =skip= at 122). IV.1.114-126 are renumbered; Schmidt's /customer/ 123
+  falls a line late (his slip, as at Timon II.2).
+- re-read numerals: p.887 (200), p.895 (290).
+Schmidt 1893/1999, no runs. After each scene's last numeral Schmidt
+holds where its headwords are found (in II.2, the herald's prose, his
+/celebration/ 7 falls on the row before the word's). Of the P4's Globe
+markers, the one disagreement (II.3 21) is a prose speech the P4
+numbers at its first row. The edition replaces the older file at the
+same path and validates against =perseus_drama.rng=. All thirty-six
+=globe-verify= OK.
+
+*Pericles published <2026-11-02>* (corpus-tools merge =d5d805f=; rule
+change =f74bbe9=). Doubleday Volume Two pp. 911-935. 2,388 Globe lines,
+*23 of 23 pages* (first run 19 of 23), after 8 rows and 5 re-read
+numerals Cliff checked. The last of the thirty-seven plays. Gower's
+speeches decided two new table kinds, both Cliff's choice:
+- =runs-on=: V.2 ("Now our sands are almost run", p.998) is headed
+  "Scene II", but the page numbers it on from V.1, which ends at 265
+  (270 beside its 5th line, 280 beside its 15th). It is numbered 1-20,
+  as the heading has it and Schmidt cites it (Pageantry V.2.6).
+- =merged=: the epilogue ("In Antiochus and his daughter", p.999), the
+  P4's scene "chorus2", is printed inside Scene III with no heading and
+  numbered on (91, 100), as Schmidt cites it (Descry V.3.91, Ending
+  V.3.102). It is V.3.85-102 here; the older file numbered it 1-18 as a
+  scene of its own.
+- rows: IV chorus pp.989-990 two =inset= (the chorus is set at the
+  turnover indent, and three of its lines were taken for turnovers of
+  the full rows above; Schmidt's Settle 2, Earn 13, Neeld 23, Cambric
+  24); V.2 p.998 =inset= (its first row joined to "Come, my Marina.
+  [Exeunt.", which runs to the full measure); IV.2 p.991 =numeral= 39
+  (both witnesses read 30); V.3 p.998 =shared= "Recovered." / "O, let me
+  look!" 28; V.3 p.999 =misplaced= 100, printed one row low.
+- re-read numerals: p.984 30, 50, 60 (the Michigan scan's gutter clips
+  the second digit; Trent prints them), p.985 50, p.993 49.
+- The page prints numerals that are not tens (I.3 11, IV.2 21 and 39,
+  IV.3 49, the epilogue's 91); each checked is where the count puts it.
+- Not tabled: I.2 p.979 prints 30 one row low, beside "them," (line 31);
+  Kraken read it "3°", so the build never took it. Schmidt's Care 28,
+  Top 29, Fence 30, Pine 31 follow the misplaced 30 and agree with the
+  count again at 36 and 39.
+Schmidt 1101 of 1205 (65 are Prologue citations the extraction left
+without a line number), no runs. Of the P4's 40 Globe markers 15 begin a
+line, all agreeing; I.3's 10 is a prose speech the page numbers 11. The
+edition replaces the older file at the same path and validates against
+=perseus_drama.rng=. All thirty-seven =globe-verify= OK.
+
+*The poems checked against the page <2026-11-02>* (corpus-tools
+=df713d7=, =globe-lineation poem-check=; account in corpus-tools
+=doc/globe-lineation.org=, "The poems"). The poems are not regenerated:
+their published line numbers were checked against the Globe's numerals
+(Michigan 1866 pp.1000-1054; the 1864 NYPL printing by eye where the OCR
+fails). Venus (1,194 lines), Lucrece (1,855), The Passionate Pilgrim
+(430, its row of asterisks 118 counted), The Phoenix and Turtle (67) and
+the Sonnets (each 14 lines, but XCIX 15 and CXXVI 12) agree with the page.
+- /A Lover's Complaint/ fixed: the P4 marks two stanza breaks with an
+  empty =<l>=, which the published file numbered 99 and 212, so it ran one
+  line over from 100 and two from 213, in two 15-line stanzas. Now 47
+  stanzas of seven lines, 329 lines, as the page numbers them (every
+  numeral, 20 to 329, closes); stanza numbers from 15 change with it.
+  Validates against =perseus_verse.rng=.

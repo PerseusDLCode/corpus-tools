@@ -120,7 +120,7 @@ a prose row and a verse row the build had joined to the line above
 (=separate=), a turnover, and a row opening with a direction
 (=dropped=). One question is left open, for Bartlett's concordance:
 which of three half-lines the page sets as shared is a line of its own
-in II.2.31-40 (canonical-engLit agenda, Timon entry).
+in II.2.31-40 (=doc/globe-log.org=, Timon entry).
 Julius Cæsar passed 24 of 24 with three rows and no rule change: a
 turnover set at the margin like a prose row (III.2 160, though a row
 set the same way on the same page is a line), and two shared lines the
@@ -137,7 +137,7 @@ turnover indent below a row a stage direction fills, a song, and a
 line of three parts closing with a letter. IV.1.110-130, left open at
 first because the page's numbers there do not follow from its rows,
 was settled <2026-11-02> by Bartlett's concordance and the 1911 Globe's
-resetting of Iago's prose (canonical-engLit agenda, Othello entry): the
+resetting of Iago's prose (=doc/globe-log.org=, Othello entry): the
 displaced "Now he importunes him" is a line, 116 is passed over, and
 "her." (127) is a prose row.
 Pericles, the last of the thirty-seven, passed 23 of 23 with eight rows
@@ -150,7 +150,8 @@ inset texts now convert: every printed row of a song is a Globe line,
 a heading is not, and a row is a turnover only if it completes a
 broken word or follows a full-measure row in the same P4 =<l>=
 (=lineate.in_song=; canonical-engLit =#build/inset-numbering=). The open
-tasks are in canonical-engLit =doc/agenda.org= on =mvp=.
+tasks are in canonical-engLit =doc/agenda.org= on =mvp=; the
+play-by-play record of the batch is =doc/globe-log.org=.
 
 * The method
 

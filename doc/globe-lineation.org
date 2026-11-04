@@ -21,6 +21,73 @@ frozen at its tag =v1.0= as the record of how it was built (see
 
 * Status
 
+All 37 plays are regenerated and published (canonical-engLit =mvp=,
+=data/shakespeare/<id>/shakespeare.<id>.globe.xml=), and every page passes
+the gate. The poems were checked against the page rather than
+regenerated ([[*The poems]]). Per play, in the Globe's order:
+
+| Play | id | Printed pp. | Pages | First run | From Trent | Numerals checked | Globe lines | Table rows | Published |
+|-
+| The Tempest | =tmp= | 1-20 | 20 | 7 of 20 | 4 | 163 | 2,063 | 29 | 2026-10-19 |
+| Two Gentlemen of Verona | =tgv= | 21-41 | 21 | 17 of 21 | 1 | 176 | 2,293 | 2 | 2026-10-13 |
+| The Merry Wives of Windsor | =wiv= | 42-66 | 25 | 22 of 25 | 4 | 164 | 3,018 | 2 | 2026-10-19 |
+| Measure for Measure | =mm= | 67-92 | 26 | -- | 1 | 207 | 2,822 | 9 | 2026-10-13 |
+| The Comedy of Errors | =err= | 93-110 | 18 | -- | 1 | 156 | 1,777 | 6 | 2026-10-15 |
+| Much Ado About Nothing | =ado= | 111-134 | 24 | 18 of 24 | 1 | 185 | 2,825 | 5 | 2026-10-17 |
+| Love's Labor's Lost | =lll= | 135-160 | 26 | -- | 3 | 215 | 2,788 | 19 | 2026-10-15 |
+| A Midsummer Night's Dream | =mnd= | 161-180 | 20 | -- | 3 | 175 | 2,174 | 11 | 2026-10-16 |
+| The Merchant of Venice | =mv= | 181-204 | 24 | 18 of 24 | 3 | 197 | 2,658 | 6 | 2026-10-16 |
+| As You Like It | =ayl= | 205-228 | 24 | 17 of 24 | 1 | 188 | 2,856 | 8 | 2026-10-18 |
+| The Taming of the Shrew | =shr= | 229-253 | 25 | 19 of 25 | 4 | 218 | 2,649 | 6 | 2026-10-23 |
+| All's Well That Ends Well | =aww= | 254-280 | 27 | 17 of 27 | 5 | 212 | 2,965 | 13 | 2026-10-30 |
+| Twelfth Night | =tn= | 281-303 | 23 | 18 of 23 | 2 | 195 | 2,691 | 5 | 2026-10-18 |
+| The Winter's Tale | =wt= | 304-331 | 28 | 18 of 28 | 2 | 240 | 3,075 | 10 | 2026-10-26 |
+| King John | =jn= | 332-355 | 24 | 22 of 24 | 6 | 239 | 2,571 | 2 | 2026-10-26 |
+| Richard II | =r2= | 356-381 | 26 | 22 of 26 | 3 | 248 | 2,756 | 3 | 2026-10-12 |
+| King Henry IV, Part I | =1h4= | 382-408 | 27 | 21 of 27 | 3 | 229 | 3,177 | 4 | 2026-10-27 |
+| King Henry IV, Part II | =2h4= | 409-438 | 30 | 25 of 30 | 1 | 239 | 3,446 | 5 | 2026-10-27 |
+| King Henry V | =h5= | 439-468 | 30 | 26 of 30 | 1 | 237 | 3,380 | 3 | 2026-10-27 |
+| King Henry VI, Part I | =1h6= | 469-495 | 27 | 22 of 27 | 0 | 237 | 2,677 | 2 | 2026-10-27 |
+| King Henry VI, Part II | =2h6= | 496-525 | 30 | 28 of 30 | 2 | 267 | 3,162 | 3 | 2026-10-27 |
+| King Henry VI, Part III | =3h6= | 526-555 | 30 | 23 of 30 | 0 | 250 | 2,904 | 3 | 2026-10-28 |
+| Richard III | =r3= | 556-591 | 36 | 28 of 36 | 8 | 323 | 3,621 | 12 | 2026-10-29 |
+| King Henry VIII | =h8= | 592-621 | 30 | 20 of 30 | 4 | 257 | 2,822 | 18 | 2026-10-21 |
+| Troilus and Cressida | =tro= | 622-653 | 32 | 24 of 32 | 0 | 282 | 3,496 | 12 | 2026-10-30 |
+| Coriolanus | =cor= | 654-687 | 34 | 24 of 34 | 7 | 271 | 3,407 | 9 | 2026-10-30 |
+| Titus Andronicus | =tit= | 688-711 | 24 | 22 of 24 | 2 | 220 | 2,523 | 2 | 2026-10-12 |
+| Romeo and Juliet | =rom= | 712-740 | 29 | 24 of 29 | 5 | 260 | 3,053 | 5 | 2026-10-31 |
+| Timon of Athens | =tim= | 741-763 | 23 | 14 of 23 | 4 | 191 | 2,374 | 9 | 2026-11-02 |
+| Julius Cæsar | =jc= | 764-787 | 24 | 21 of 24 | 2 | 214 | 2,478 | 3 | 2026-11-02 |
+| Macbeth | =mac= | 788-810 | 23 | 19 of 23 | 4 | 174 | 2,108 | 6 | 2026-11-02 |
+| Hamlet | =ham= | 811-846 | 36 | 23 of 36 | 5 | 320 | 3,930 | 15 | 2026-10-20 |
+| King Lear | =lr= | 847-878 | 32 | -- | 1 | 273 | 3,332 | 9 | 2026-09-29 |
+| Othello | =oth= | 879-910 | 32 | 21 of 32 | 3 | 276 | 3,315 | 17 | 2026-11-02 |
+| Antony and Cleopatra | =ant= | 911-943 | 33 | 9 of 33 | 9 | 261 | 3,064 | 19 | 2026-10-08 |
+| Cymbeline | =cym= | 944-976 | 33 | -- | 4 | 278 | 3,342 | 14 | 2026-10-21 |
+| Pericles Prince of Tyre | =per= | 977-999 | 23 | 19 of 23 | 2 | 191 | 2,388 | 8 | 2026-11-02 |
+|-
+| /37 plays/ | | 1-999 | 999 | 628 of 844 | 111 | 8,428 | 105,980 | 314 | |
+
+- /Pages/ and /Numerals checked/ come from each play's gate report
+  (=reports/globe/regenerate-<id>-gate.tsv=): every printed margin
+  numeral, each of which the count had to meet exactly. Every page passes
+  except Henry V p.468, the Epilogue, which prints no numeral and so has
+  nothing to check.
+- /First run/ is the gate on the play's first build, before any table
+  row or rule change, as =doc/globe-log.org= records it; it was not
+  recorded for Lear, Measure for Measure, The Comedy of Errors, Love's
+  Labour's Lost, A Midsummer Night's Dream or Cymbeline. Antony's is its
+  first build after Lear.
+- /From Trent/ counts the pages built from the 1887 printing because the
+  1866 page did not close.
+- /Globe lines/ counts the =milestone ed="Globe"= in the published
+  edition; /Table rows/ counts the play's rows in
+  =data/globe/shared-lines.tsv=; /Published/ is the first publication
+  (several plays were republished after later rule changes, with their
+  lineation unchanged or corrected as =doc/globe-log.org= records).
+
+** How the batch went
+
 King Lear, Antony and Cleopatra, Titus Andronicus, Richard II, Two
 Gentlemen of Verona, Measure for Measure, The Comedy of Errors, Love's
 Labour's Lost, A Midsummer Night's Dream, The Merchant of Venice, Much

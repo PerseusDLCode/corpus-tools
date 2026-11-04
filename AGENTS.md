@@ -40,14 +40,19 @@ Pre-normalization files in csel-dev and First1KGreek store the CTS URN on `div[@
 
 ### Corpus data locations
 
-All corpus forks live in `/Users/wulfmanc/repos/gh/PerseusDLCode/data-local/`:
-- `canonical-greekLit` — Greek literary texts
-- `canonical-latinLit` — Latin literary texts
+The classical corpus forks are on GitHub under `PerseusDLCode`, each with
+`editing` as its long-running integration branch:
+- `canonical-greekLit` — Greek literary texts (archived)
+- `canonical-latinLit` — Latin literary texts (archived)
 - `First1KGreek` — First 1K Years of Greek project
 - `csel-dev` — Corpus Scriptorum Ecclesiasticorum Latinorum
-- `canonical_pdlrefwk` — reference works
+- `canonical_pdlrefwk`, `canonical-pdlrefwk` — reference works
 
-Each fork uses `editing` as the long-running integration branch.
+The local clones in `/Users/wulfmanc/repos/gh/PerseusDLCode/data-local/`
+were removed on 2026-11-04, all of them clean and pushed; only the two
+pdlrefwk clones remain there. Clone a fork again before running the
+corpus commands on it (the `../data-local/...` paths in README.md are
+examples).
 
 ### Test suite
 
@@ -72,4 +77,4 @@ Regenerates a play's Globe line numbering from page images of the printed Globe.
 ## Related repos (siblings)
 
 - `../perseus-schemas` — TEI ODDs compiled to RELAX NG; `make` there recompiles `.rng` files
-- `../data-local/` — corpus data (see above)
+- `../data-local/` — local clones of the corpus forks, when there are any (see above)

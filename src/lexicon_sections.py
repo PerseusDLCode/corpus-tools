@@ -52,8 +52,9 @@ def flatten_lexicon_sections(text: str) -> tuple[str, int]:
     keeping @n and adding @xml:id="section-{n}".
 
     Raw-text substitution rather than a parse/reserialize pass, since these
-    lexicon files are hand-formatted -- see strip_bibl_wrapper.py and
-    schmidt_cit_unwrap.py for the same rationale. Raises
+    lexicon files are hand-formatted -- see canonical-engLit's
+    strip_bibl_wrapper.py and schmidt-lexicon-workshop's schmidt_cit_unwrap.py
+    for the same rationale. Raises
     LexiconStructureError rather than guessing if the file doesn't have
     exactly one <div type="edition">.
     """

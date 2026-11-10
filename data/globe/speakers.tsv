@@ -1,0 +1,1269 @@
+# The speakers of each Globe play (src/globe/speakers.py): one row per id the
+# P4 gives in <sp who>. kind: person or personGrp. name: for <persName> (or
+# <name> in a group). role: the printed <role>, as the P4 has it, that this
+# speaker is (empty if the Dramatis Personae does not list it); role_n: which
+# role of that text (1H4 prints HENRY PERCY twice), 1 if only one. basis: p4 (the
+# P4 put the id on that role), label (matched by speaker label), none.
+# `checked` is filled by Cliff for label and none rows; the canonical build
+# refuses one that is empty. Rows with basis p4 are checked "p4".
+play	id	kind	name	role	role_n	basis	checked	note
+tmp	alon.	person	Alonso	ALONSO	1	p4	p4	
+tmp	seb.	person	Sebastian	SEBASTIAN	1	p4	p4	
+tmp	pros.	person	Prospero	PROSPERO	1	p4	p4	
+tmp	ant.	person	Antonio	ANTONIO	1	p4	p4	
+tmp	fer.	person	Ferdinand	FERDINAND	1	p4	p4	
+tmp	gon.	person	Gonzalo	GONZALO	1	p4	p4	
+tmp	adr.	person	Adrian	ADRIAN	1	p4	p4	
+tmp	fran.	person	Francisco	FRANCISCO	1	p4	p4	
+tmp	cal.	person	Caliban	CALIBAN	1	p4	p4	
+tmp	trin.	person	Trinculo	TRINCULO	1	p4	p4	
+tmp	ste.	person	Stephano	STEPHANO	1	p4	p4	
+tmp	mast.	person	Master of a Ship	Master of a Ship	1	p4	p4	
+tmp	boats.	person	Boatswain	Boatswain	1	p4	p4	
+tmp	mariners.	personGrp	Mariners	Mariners	1	p4	p4	
+tmp	mir.	person	Miranda	MIRANDA	1	p4	p4	
+tmp	ari.	person	Ariel	ARIEL	1	p4	p4	
+tmp	iris.	person	Iris	IRIS	1	p4	p4	
+tmp	cer.	person	Ceres	CERES	1	p4	p4	
+tmp	juno.	person	Juno	JUNO	1	p4	p4	
+tmp	fer.-mir.	personGrp	Ferdinand and Miranda	Ferdinand and Miranda	1	p4	p4	never speaks
+tgv	tgv-10	person	Duke of Milan	DUKE OF MILAN	1	p4	p4	
+tgv	tgv-4	person	Valentine	VALENTINE	1	p4	p4	
+tgv	tgv-2	person	Proteus	PROTEUS	1	p4	p4	
+tgv	tgv-1	person	Antonio	ANTONIO	1	p4	p4	
+tgv	tgv-11	person	Thurio	THURIO	1	p4	p4	
+tgv	tgv-15	person	Eglamour	EGLAMOUR	1	p4	p4	
+tgv	tgv-16	person	Host	HOST	1	p4	p4	
+tgv	tgv-13	personGrp	Outlaws	Outlaws	1	p4	p4	
+tgv	tgv-3	person	Speed	SPEED	1	p4	p4	
+tgv	tgv-9	person	Launce	LAUNCE	1	p4	p4	
+tgv	tgv-7	person	Panthino	PANTHINO	1	p4	p4	
+tgv	tgv-5	person	Julia	JULIA	1	p4	p4	
+tgv	tgv-8	person	Silvia	SILVIA	1	p4	p4	
+tgv	tgv-6	person	Lucetta	LUCETTA	1	p4	p4	
+wiv	fal.	person	Sir John Falstaff	SIR JOHN FALSTAFF	1	p4	p4	
+wiv	fent.	person	Fenton	FENTON	1	p4	p4	
+wiv	shal.	person	Shallow	SHALLOW	1	p4	p4	
+wiv	slen.	person	Slender	SLENDER	1	p4	p4	
+wiv	ford.	person	Ford	FORD	1	p4	p4	
+wiv	page.	person	Page	PAGE	1	p4	p4	
+wiv	will.	person	William Page	WILLIAM PAGE	1	p4	p4	
+wiv	evans.	person	Sir Hugh Evans	SIR HUGH EVANS	1	p4	p4	
+wiv	caius.	person	Doctor Caius	DOCTOR CAIUS	1	p4	p4	
+wiv	host.	person	Host	Host	1	p4	p4	
+wiv	bard.	person	Bardolph	BARDOLPH	1	p4	p4	
+wiv	pist.	person	Pistol	PISTOL	1	p4	p4	
+wiv	nym.	person	Nym	NYM	1	p4	p4	
+wiv	rob.	person	Robin	ROBIN	1	p4	p4	
+wiv	sim.	person	Simple	SIMPLE	1	p4	p4	
+wiv	rug.	person	Rugby	RUGBY	1	p4	p4	
+wiv	mrs.-ford.	person	Mistress Ford	MISTRESS FORD	1	p4	p4	
+wiv	mrs.-page.	person	Mistress Page	MISTRESS PAGE	1	p4	p4	
+wiv	anne.	person	Anne Page	ANNE PAGE	1	p4	p4	
+wiv	quick.	person	Mistress Quickly	MISTRESS QUICKLY	1	p4	p4	
+wiv	first-serv.	person	First Servant	First Servant	1	p4	p4	
+wiv	sec.-serv.	person	Second Servant	Second Servant	1	p4	p4	
+wiv	serv.	person	Servant	Servant	1	p4	p4	
+wiv	all.	personGrp	All	All	1	p4	p4	
+mm	duke.	person	Vincentio	VINCENTIO	1	p4	p4	
+mm	ang.	person	Angelo	ANGELO	1	p4	p4	
+mm	escal.	person	Escalus	ESCALUS	1	p4	p4	
+mm	claud.	person	Claudio	CLAUDIO	1	p4	p4	
+mm	lucio.	person	Lucio	LUCIO	1	p4	p4	
+mm	first-gent.	person	First Gentleman	First Gentleman	1	p4	p4	
+mm	sec.-gent.	person	Second Gentleman	Second Gentleman	1	p4	p4	
+mm	prov.	person	Provost	PROVOST	1	p4	p4	
+mm	fri.-t.	person	Thomas	THOMAS	1	p4	p4	
+mm	fri.-p.	person	Peter	PETER	1	p4	p4	
+mm	just.	person	A Justice	A Justice	1	p4	p4	
+mm	elb.	person	Elbow	ELBOW	1	p4	p4	
+mm	froth.	person	Froth	FROTH	1	p4	p4	
+mm	pom.	person	Pompey	POMPEY	1	p4	p4	
+mm	abhor.	person	Abhorson	ABHORSON	1	p4	p4	
+mm	bar.	person	Barnardine	BARNARDINE	1	p4	p4	
+mm	isab.	person	Isabella	ISABELLA	1	p4	p4	
+mm	mari.	person	Mariana	MARIANA	1	p4	p4	
+mm	jul.	person	Juliet	JULIET	1	p4	p4	
+mm	fran.	person	Francisca	FRANCISCA	1	p4	p4	
+mm	mrs-ov.	person	Mistress Overdone	MISTRESS OVERDONE	1	p4	p4	
+mm	serv.	person	Servant	Servant	1	p4	p4	
+mm	boy.	person	Boy	Boy	1	p4	p4	
+err	duke.	person	Solinus	SOLINUS	1	p4	p4	
+err	aege.	person	Ægeon	ÆGEON	1	p4	p4	
+err	ant.-e.	person	Antipholus of Ephesus	ANTIPHOLUS of Ephesus	1	p4	p4	
+err	ant.-s.	person	Antipholus of Syracuse	ANTIPHOLUS of Syracuse	1	p4	p4	
+err	dro.-e.	person	Dromio of Ephsus	DROMIO of Ephsus	1	p4	p4	
+err	dro.-s.	person	Dromio of Syracuse	DROMIO of Syracuse	1	p4	p4	
+err	bal.	person	Balthazar	BALTHAZAR	1	p4	p4	
+err	ang.	person	Angelo	ANGELO	1	p4	p4	
+err	first-mer.	person	First Merchant	First Merchant	1	p4	p4	
+err	sec.-mer.	person	Second Merchant	Second Merchant	1	p4	p4	
+err	pinch.	person	Pinch	PINCH	1	p4	p4	
+err	abb.	person	Æmilia	ÆMILIA, wife to Ægeon	1	p4	p4	
+err	adr.	person	Adriana	ADRIANA	1	p4	p4	
+err	luc.	person	Luciana	LUCIANA	1	p4	p4	
+err	luce.	person	Luce	LUCE	1	p4	p4	
+err	cour.	person	A Courtezan	A Courtezan	1	p4	p4	
+err	off.	person	An Officer	An Officer	1	p4	p4	
+err	serv.	person	A Servant	A Servant	1	p4	p4	
+err	gaol.	person	A Gaoler	A Gaoler	1	p4	p4	
+ado	d.-pedro.	person	Don Pedro	DON PEDRO	1	p4	p4	
+ado	d.-john.	person	Don John	DON JOHN	1	p4	p4	
+ado	claud.	person	Claudio	CLAUDIO	1	p4	p4	
+ado	bene.	person	Benedick	BENEDICK	1	p4	p4	
+ado	leon.	person	Leonato	LEONATO	1	p4	p4	
+ado	ant.	person	Antonio	ANTONIO	1	p4	p4	
+ado	balth.	person	Balthasar	BALTHASAR	1	p4	p4	
+ado	con.	person	Conrade	CONRADE	1	p4	p4	
+ado	bora.	person	Borachio	BORACHIO	1	p4	p4	
+ado	friar.	person	Friar Francis	FRIAR FRANCIS	1	p4	p4	
+ado	dog.	person	Dogberry	DOGBERRY	1	p4	p4	
+ado	verg.	person	Verges	VERGES	1	p4	p4	
+ado	sex.	person	A Sexton	A Sexton	1	p4	p4	
+ado	boy.	person	A Boy	A Boy	1	p4	p4	
+ado	hero.	person	Hero	HERO	1	p4	p4	
+ado	beat.	person	Beatrice	BEATRICE	1	p4	p4	
+ado	marg.	person	Margaret	MARGARET	1	p4	p4	
+ado	urs.	person	Ursula	URSULA	1	p4	p4	
+ado	mess.	personGrp	Messengers	Messengers	1	p4	p4	
+ado	watch.	personGrp	Watch	Watch	1	p4	p4	
+ado	first-watch.	personGrp	First Watch	First Watch	1	p4	p4	
+ado	sec.-watch.	personGrp	Second Watch	Second Watch	1	p4	p4	
+ado	a-lord.	person	A Lord	A Lord.	1	p4	p4	
+lll	king.	person	Ferdinand	FERDINAND	1	p4	p4	
+lll	biron.	person	Biron	BIRON	1	p4	p4	
+lll	long.	person	Longaville	LONGAVILLE	1	p4	p4	
+lll	dum.	person	Dumain	DUMAIN	1	p4	p4	
+lll	boyet.	person	Boyet	BOYET	1	p4	p4	
+lll	mer.	person	Mercade	MERCADE	1	p4	p4	
+lll	arm.	person	Don Adriano de Armado	DON ADRIANO DE ARMADO	1	p4	p4	
+lll	nath.	person	Sir Nathaniel	SIR NATHANIEL	1	p4	p4	
+lll	hol.	person	Holofernes	HOLOFERNES	1	p4	p4	
+lll	dull.	person	Dull	DULL	1	p4	p4	
+lll	cost.	person	Costard	COSTARD	1	p4	p4	
+lll	moth.	person	Moth	MOTH	1	p4	p4	
+lll	for.	person	A Forester	A Forester	1	p4	p4	
+lll	prin.	person	The Princess of France	The PRINCESS of France	1	p4	p4	
+lll	ros.	person	Rosaline	ROSALINE	1	p4	p4	
+lll	mar.	person	Maria	MARIA	1	p4	p4	
+lll	kath.	person	Katharine	KATHARINE	1	p4	p4	
+lll	jaq.	person	Jaquenetta	JAQUENETTA	1	p4	p4	
+lll	first-lord.	personGrp	Lords	Lords	1	p4	p4	
+mnd	the.	person	Theseus	THESEUS	1	p4	p4	
+mnd	ege.	person	Egeus	EGEUS	1	p4	p4	
+mnd	lys.	person	Lysander	LYSANDER	1	p4	p4	
+mnd	dem.	person	Demetrius	DEMETRIUS	1	p4	p4	
+mnd	phil.	person	Philostrate	PHILOSTRATE	1	p4	p4	
+mnd	quin.	person	Quince	QUINCE	1	p4	p4	
+mnd	snug.	person	Snug	SNUG	1	p4	p4	
+mnd	bot.	person	Bottom	BOTTOM	1	p4	p4	
+mnd	flu.	person	Flute	FLUTE	1	p4	p4	
+mnd	snout.	person	Snout	SNOUT	1	p4	p4	
+mnd	star.	person	Starveling	STARVELING	1	p4	p4	
+mnd	hip.	person	Hippolyta	HIPPOLYTA	1	p4	p4	
+mnd	her.	person	Hermia	HERMIA	1	p4	p4	
+mnd	hel.	person	Helena	HELENA	1	p4	p4	
+mnd	obe.	person	Oberon	OBERON	1	p4	p4	
+mnd	tita.	person	Titania	TITANIA	1	p4	p4	
+mnd	puck.	person	Puck	PUCK	1	p4	p4	
+mnd	peas.	person	Peaseblossom	PEASEBLOSSOM	1	p4	p4	
+mnd	cob.	person	Cobweb	COBWEB	1	p4	p4	
+mnd	moth.	person	Moth	MOTH	1	p4	p4	
+mnd	mus.	person	Mustardseed	MUSTARDSEED	1	p4	p4	
+mnd	pro.	person	Prologue	Prologue	1	p4	p4	
+mnd	pyr.	person	Pyramus	Pyramus	1	p4	p4	
+mnd	this.	person	Thisbe	Thisbe	1	p4	p4	
+mnd	lion.	person	Lion	Lion	1	p4	p4	
+mnd	wall.	person	Wall	Wall	1	p4	p4	
+mnd	moon.	person	Moon	Moon	1	p4	p4	
+mnd	all.	personGrp	All	All	1	p4	p4	
+mnd	fai.	personGrp	Other fairies attending their King and Queen	Other fairies attending their King and Queen	1	p4	p4	
+mv	duke.	person	The Duke of Venice	The DUKE OF VENICE	1	p4	p4	
+mv	mor.	person	The Prince of Morocco	The PRINCE OF MOROCCO	1	p4	p4	
+mv	ar.	person	The Prince of Arragon	The PRINCE OF ARRAGON	1	p4	p4	
+mv	ant.	person	Antonio	ANTONIO	1	p4	p4	
+mv	bass.	person	Bassanio	BASSANIO	1	p4	p4	
+mv	salan.	person	Salanio	SALANIO	1	p4	p4	
+mv	salar.	person	Salarino	SALARINO	1	p4	p4	
+mv	gra.	person	Gratiano	GRATIANO	1	p4	p4	
+mv	saler.	person	Salerio	SALERIO	1	p4	p4	
+mv	lor.	person	Lorenzo	LORENZO	1	p4	p4	
+mv	shy.	person	Shylock	SHYLOCK	1	p4	p4	
+mv	tub.	person	Tubal	TUBAL	1	p4	p4	
+mv	laun.	person	Launcelot Gobbo	LAUNCELOT GOBBO	1	p4	p4	
+mv	gob.	person	Old Gobbo	OLD GOBBO	1	p4	p4	
+mv	leon.	person	Leonardo	LEONARDO	1	p4	p4	
+mv	balth.	person	Balthasar	BALTHASAR	1	p4	p4	
+mv	steph.	person	Stephano	STEPHANO	1	p4	p4	
+mv	por.	person	Portia	PORTIA	1	p4	p4	
+mv	ner.	person	Nerissa	NERISSA	1	p4	p4	
+mv	jes.	person	Jessica	JESSICA	1	p4	p4	
+mv	clerk.	person	Clerk	Clerk	1	p4	p4	
+mv	serv.	personGrp	Servants to Portia	Servants to Portia	1	p4	p4	
+mv	all.	personGrp	All	All.	1	p4	p4	
+ayl	duke-s.	person	Duke	DUKE	1	p4	p4	
+ayl	duke-f.	person	Frederick	FREDERICK	1	p4	p4	
+ayl	jaq.	person	Jaques	JAQUES	1	p4	p4	
+ayl	ami.	person	Amiens	AMIENS	1	p4	p4	
+ayl	le-beau.	person	Le Beau	LE BEAU	1	p4	p4	
+ayl	cha.	person	Charles	CHARLES	1	p4	p4	
+ayl	oli.	person	Oliver	OLIVER	1	p4	p4	
+ayl	jaq.-de-b.	person	Jaques	JAQUES	2	p4	p4	
+ayl	orl.	person	Orlando	ORLANDO	1	p4	p4	
+ayl	adam.	person	Adam	ADAM	1	p4	p4	
+ayl	den.	person	Dennis	DENNIS	1	p4	p4	
+ayl	touch.	person	Touchstone	Touchstone	1	p4	p4	
+ayl	sir-oli.	person	Sir Oliver Martext	SIR OLIVER MARTEXT	1	p4	p4	
+ayl	cor.	person	Corin	CORIN	1	p4	p4	
+ayl	sil.	person	Silvius	SILVIUS	1	p4	p4	
+ayl	will.	person	William	WILLIAM, a country fellow	1	p4	p4	
+ayl	hym.	person	A person representing Hymen	A person representing Hymen	1	p4	p4	
+ayl	ros.	person	Rosalind	ROSALIND	1	p4	p4	
+ayl	cel.	person	Celia	CELIA	1	p4	p4	
+ayl	phe.	person	Phebe	PHEBE	1	p4	p4	
+ayl	aud.	person	Audrey	AUDREY	1	p4	p4	
+ayl	first-lord.	person	First Lord	First Lord	1	p4	p4	
+ayl	sec.-lord.	person	Second Lord	Second Lord	1	p4	p4	
+ayl	for.	person	Forester	Forester	1	p4	p4	
+ayl	first-page	person	First Page	First Page	1	p4	p4	
+ayl	sec.-page	person	Second Page	Second Page	1	p4	p4	
+shr	lord.	person	A Lord	A Lord	1	p4	p4	
+shr	sly.	person	Christopher Sly	CHRISTOPHER SLY	1	p4	p4	
+shr	host.	person	Hostess	Hostess	1	p4	p4	
+shr	page.	person	Page	Page	1	p4	p4	
+shr	players.	personGrp	Players	Players	1	p4	p4	
+shr	first-hun.	personGrp	Huntsmen	Huntsmen	1	p4	p4	
+shr	sec.-hun.	person	Sec. Hun			none		label 'Sec. Hun.'
+shr	third-hun.	person	third-hun.			none		never speaks
+shr	mess.	person	Messenger	Messenger	1	p4	p4	
+shr	serv.	person	Servant	Servant	1	p4	p4	
+shr	first-serv.	person	First Servant	First Servant	1	p4	p4	
+shr	sec.-serv.	person	Second Servant	Second Servant	1	p4	p4	
+shr	third-serv.	person	Third Servant	Third Servant	1	p4	p4	
+shr	bap.	person	Baptista	BAPTISTA	1	p4	p4	
+shr	vin.	person	Vincentio	VINCENTIO	1	p4	p4	
+shr	luc.	person	Lucentio	LUCENTIO	1	p4	p4	
+shr	pet.	person	Petruchio	PETRUCHIO	1	p4	p4	
+shr	gre.	person	Gremio	GREMIO	1	p4	p4	
+shr	hor.	person	Hortensio	HORTENSIO	1	p4	p4	
+shr	tra.	person	Tranio	TRANIO	1	p4	p4	
+shr	bion.	person	Biondello	BIONDELLO	1	p4	p4	
+shr	gru.	person	Grumio	GRUMIO	1	p4	p4	
+shr	curt.	person	Curtis	CURTIS	1	p4	p4	
+shr	nath.	person	Nathaniel	Nathaniel	1	p4	p4	
+shr	phil.	person	Philip	Philip	1	p4	p4	
+shr	jos.	person	Joseph	Joseph	1	p4	p4	
+shr	nich.	person	Nicholas	Nicholas	1	p4	p4	
+shr	ped.	person	A Pedant	A Pedant	1	p4	p4	
+shr	kath.	person	Katharina	KATHARINA	1	p4	p4	
+shr	bian.	person	Bianca	BIANCA	1	p4	p4	
+shr	wid.	person	Widow	Widow	1	p4	p4	
+shr	all.	personGrp	All	All	1	p4	p4	
+shr	tai.	person	Tailor	Tailor	1	p4	p4	
+shr	hab.	person	Haberdasher	Haberdasher	1	p4	p4	
+shr	a-player.	person	A Player			none		label 'A Player.'
+shr	peter.	person	Peter			none		label 'Peter.'
+shr	all-serv.	personGrp	All Serv			none		label 'All Serv.'
+aww	aww-0	personGrp	All	All	1	label		label 'All.'
+aww	aww-1	person	Bertram	BERTRAM	1	label		label 'Ber.'; or: PAROLLES | COUNTESS OF ROUSILLON
+aww	aww-11	person	Second Lord	Second Lord	1	label		label 'Sec. Lord.'
+aww	aww-12	person	Clown	Clown	1	label		label 'Clo.'
+aww	aww-13	person	Steward	Steward	1	label		label 'Stew.'
+aww	aww-16	person	Duke of Florence	DUKE OF FLORENCE	1	label		label 'Duke.'
+aww	aww-18	person	Diana	DIANA	1	label		label 'Dia.'
+aww	aww-19	person	Mariana	MARIANA	1	label		label 'Mar.'
+aww	aww-2	person	Countess of Rousillon	COUNTESS OF ROUSILLON	1	label		label 'Count.'; or: BERTRAM | HELENA
+aww	aww-21	person	An old Widow of Florence	An old Widow of Florence	1	label		label 'Wid.'; or: DIANA
+aww	aww-22	person	First Soldier	First Soldier	1	label		label 'First Sold.'
+aww	aww-24	person	Servant	Servant	1	label		label 'Serv.'
+aww	aww-25	person	Gentleman	Gentleman	1	label		label 'Gent.'; or: First Gentleman | Second Gentleman | HELENA
+aww	aww-26	person	First Gentleman	First Gentleman	1	label		label 'First Gent.'
+aww	aww-3	person	Helena	HELENA	1	label		label 'Hel.'
+aww	aww-4	person	Lafeu	LAFEU	1	label		label 'Laf.'
+aww	aww-5	person	A Page	A Page	1	label		label 'Page.'
+aww	aww-6	person	Parolles	PAROLLES	1	label		label 'Par.'
+aww	aww-9	person	King of France	KING OF FRANCE	1	label		label 'King.'
+tn	duke.	person	Orsino	ORSINO	1	p4	p4	
+tn	seb.	person	Sebastian	SEBASTIAN	1	p4	p4	
+tn	ant.	person	Antonio	ANTONIO	1	p4	p4	
+tn	cap.	person	A Sea Captain	A Sea Captain	1	p4	p4	
+tn	val.	person	Valentine	VALENTINE	1	p4	p4	
+tn	cur.	person	Curio	CURIO	1	p4	p4	
+tn	sir-to.	person	Sir Toby Belch	SIR TOBY BELCH	1	p4	p4	
+tn	sir-and.	person	Sir Andrew Aguecheek	SIR ANDREW AGUECHEEK	1	p4	p4	
+tn	mal.	person	Malvolio	MALVOLIO	1	p4	p4	
+tn	fab.	person	Fabian	FABIAN	1	p4	p4	
+tn	clo.	person	Feste	FESTE	1	p4	p4	
+tn	oli.	person	Olivia	OLIVIA	1	p4	p4	
+tn	vio.	person	Viola	VIOLA	1	p4	p4	
+tn	mar.	person	Maria	MARIA	1	p4	p4	
+tn	priest.	person	Priests	Priests	1	p4	p4	
+tn	first-off.	person	First Officer	First Officer	1	p4	p4	
+tn	sec.-off.	person	Second Officer	Second Officer	1	p4	p4	
+tn	ser.	person	Servant	Servant	1	p4	p4	
+wt	leon.	person	Leontes	LEONTES	1	p4	p4	
+wt	mam.	person	Mamillius	MAMILLIUS	1	p4	p4	
+wt	cam.	person	Camillo	CAMILLO	1	p4	p4	
+wt	ant.	person	Antigonus	ANTIGONUS	1	p4	p4	
+wt	cleo.	person	Cleomenes	CLEOMENES	1	p4	p4	
+wt	dion.	person	Dion	DION	1	p4	p4	
+wt	pol.	person	Polixenes	POLIXENES	1	p4	p4	
+wt	flo.	person	Florizel	FLORIZEL	1	p4	p4	
+wt	arch.	person	Archidamus	ARCHIDAMUS	1	p4	p4	
+wt	shep.	person	Old Shepherd	Old Shepherd	1	p4	p4	
+wt	clo.	person	Clown	Clown	1	p4	p4	
+wt	aut.	person	Autolycus	AUTOLYCUS	1	p4	p4	
+wt	mar.	person	A Mariner	A Mariner	1	p4	p4	
+wt	gaol.	person	A Gaoler	A Gaoler	1	p4	p4	
+wt	her.	person	Hermione	HERMIONE	1	p4	p4	
+wt	per.	person	Perdita	PERDITA	1	p4	p4	
+wt	emil.	person	Emilia	EMILIA	1	p4	p4	
+wt	paul.	person	Paulina	PAULINA	1	p4	p4	
+wt	mop.	person	Mopsa	MOPSA	1	p4	p4	
+wt	dor.	person	Dorcas	DORCAS	1	p4	p4	
+wt	first-gent.	person	First Gentleman	First Gentleman	1	p4	p4	
+wt	sec.-gent.	person	Second Gentleman	Second Gentleman	1	p4	p4	
+wt	third-gent.	person	Third Gentleman	Third Gentleman	1	p4	p4	
+wt	first-lord.	person	First Lord	First Lord	1	p4	p4	
+wt	lord.	person	Lord	Lord	1	p4	p4	
+wt	first-lady.	person	First Lady	First Lady	1	p4	p4	
+wt	sec.-lady.	person	Second Lady	Second Lady	1	p4	p4	
+wt	serv.	person	Servant	Servant	1	p4	p4	
+wt	first-serv.	person	First Servant	First Servant	1	p4	p4	
+wt	sec-serv.	person	Second Servant	Second Servant	1	p4	p4	
+wt	off.	person	Officer	Officer	1	p4	p4	
+wt	lords.	personGrp	Other Lords	Other Lords	1	p4	p4	
+wt	gent.	personGrp	Other Gentlemen	Other Gentlemen	1	p4	p4	
+wt	time.	person	Time	Time	1	p4	p4	
+jn	k.-john.	person	King John	KING JOHN	1	p4	p4	
+jn	p.-hen.	person	Prince Henry	PRINCE HENRY	1	p4	p4	
+jn	arth.	person	Arthur	ARTHUR, Duke of Bretagne	1	p4	p4	
+jn	pem.	person	The Earl of Pembroke	The Earl of PEMBROKE	1	p4	p4	
+jn	sal.	person	The Earl of Salisbury	The Earl of SALISBURY	1	p4	p4	
+jn	big.	person	The Lord Bigot	The Lord BIGOT	1	p4	p4	
+jn	hub.	person	Hubert de Burgh	HUBERT DE BURGH	1	p4	p4	
+jn	rob.	person	Robert Faulconbridge	ROBERT FAULCONBRIDGE	1	p4	p4	
+jn	bast.	person	Philip the Bastard	PHILIP the BASTARD	1	p4	p4	
+jn	lew.	person	Lewis	LEWIS	1	p4	p4	
+jn	aust.	person	Lymoges	LYMOGES	1	p4	p4	
+jn	pand.	person	Cardinal Pandulph	CARDINAL PANDULPH	1	p4	p4	
+jn	mel.	person	Melun	MELUN	1	p4	p4	
+jn	chat.	person	Chatillon	CHATILLON	1	p4	p4	
+jn	eli.	person	Queen Elinor	QUEEN ELINOR	1	p4	p4	
+jn	const.	person	Constance	CONSTANCE	1	p4	p4	
+jn	blanch.	person	Blanch of Spain	BLANCH of Spain	1	p4	p4	
+jn	lady-f.	person	Lady Faulconbridge	LADY FAULCONBRIDGE	1	p4	p4	
+jn	gur.	person	James Gurney	JAMES GURNEY	1	p4	p4	
+jn	k.-phi.	person	King Philip	KING PHILIP	1	p4	p4	
+jn	fir.-cit.	person	First Citizen	FIRST CITIZEN	1	p4	p4	
+jn	f.-her.	person	French Herald	FRENCH HERALD	1	p4	p4	
+jn	e.-her.	person	English Herald	ENGLISH HERALD	1	p4	p4	
+jn	fir.-ex.	person	First Executioner	FIRST EXECUTIONER	1	p4	p4	
+jn	mess.	person	Messenger	MESSENGER	1	p4	p4	
+jn	pet.	person	Peter	PETER	1	p4	p4	
+r2	r2-0	personGrp	All	All	1	label		label 'All.'
+r2	r2-1	person	John of Gaunt	JOHN OF GAUNT	1	label		label 'Gaunt.'; or: HENRY
+r2	r2-10	person	First Herald	First Herald	1	label		label 'First Her.'
+r2	r2-11	person	Lord Marshal	Lord Marshal	1	label		label 'Mar.'
+r2	r2-12	person	Bushy	BUSHY	1	label		label 'Bushy.'
+r2	r2-13	person	Green	GREEN	1	label		label 'Green.'
+r2	r2-14	person	Earl of Northumberland	EARL OF NORTHUMBERLAND	1	label		label 'North.'
+r2	r2-15	person	Queen to King Richard	QUEEN to King Richard	1	label		label 'Queen.'; or: Lady attending on the Queen
+r2	r2-16	person	Lord Ross	LORD ROSS	1	label		label 'Ross.'
+r2	r2-17	person	Lord Willoughby	LORD WILLOUGHBY	1	label		label 'Willo.'
+r2	r2-18	person	Bagot	BAGOT	1	label		label 'Bagot.'
+r2	r2-20	person	Lord Berkeley	LORD BERKELEY	1	label		label 'Berk.'
+r2	r2-21	person	Henry Percy	HENRY PERCY	1	label		label 'Percy.'
+r2	r2-22	person	Captain of a band of Welshmen	Captain of a band of Welshmen	1	label		label 'Cap.'
+r2	r2-23	person	Earl of Salisbury	EARL OF SALISBURY	1	label		label 'Sal.'
+r2	r2-24	person	Bishop of Carlisle	Bishop of Carlisle	1	label		label 'Car.'
+r2	r2-25	person	Sir Stephen Scroop	SIR STEPHEN SCROOP	1	label		label 'Scroop.'
+r2	r2-26	personGrp	two Gardeners	two Gardeners	1	label		label 'Gard.'
+r2	r2-27	person	Lady attending on the Queen	Lady attending on the Queen	1	label		label 'Lady.'
+r2	r2-28	person	Servant	Servant	1	label		label 'Serv.'
+r2	r2-29	person	Abbot of Westminster	Abbot of Westminster	1	label		label 'Abbot.'
+r2	r2-3	person	Thomas Mowbray	THOMAS MOWBRAY	1	label		label 'Mow.'
+r2	r2-30	person	Lord Fitzwater	LORD FITZWATER	1	label		label 'Fitz.'
+r2	r2-32	person	Duke of Surrey	DUKE OF SURREY	1	label		label 'Surrey.'
+r2	r2-34	person	Duchess of York	DUCHESS OF YORK	1	label		label 'Duch Y.'
+r2	r2-35	person	Sir Pierce of Exton	SIR PIERCE of Exton	1	label		label 'Exton.'
+r2	r2-37	person	Groom	Groom	1	label		label 'Groom.'
+r2	r2-38	person	Keeper	Keeper	1	label		label 'Keep.'
+r2	r2-39	person	Edmund of Langley	EDMUND OF LANGLEY	1	label		label 'York.'; or: DUKE OF AUMERLE | DUCHESS OF YORK
+r2	r2-5	person	King Richard the Second	KING RICHARD the Second	1	label		label 'K. Rich.'; or: QUEEN to King Richard
+r2	r2-6	person	Henry	HENRY	1	label		label 'Boling.'
+r2	r2-8	person	Duke of Aumerle	DUKE OF AUMERLE	1	label		label 'Aum.'
+r2	r2-9	person	Duchess of Gloucester	DUCHESS OF GLOUCESTER	1	label		label 'Duch.'; or: DUCHESS OF YORK
+1h4	s-1h4-24	person	Sheriff	Sheriff	1	label		label 'Sher.'
+1h4	s-1h4-15	person	Ostler	Ostler	1	label		label 'Ost.'
+1h4	s-1h4-33	person	Richard Scroop	RICHARD SCROOP	1	label		label 'Arch.'; or: ARCHIBALD | SIR MICHAEL
+1h4	s-1h4-34	person	Messenger	Messenger	1	label		label 'Mess.'
+1h4	s-1h4-16	person	Bardolph	BARDOLPH	1	label		label 'Bard.'
+1h4	s-1h4-26	person	Vintner	Vintner	1	label		label 'Vint.'
+1h4	s-1h4-17	person	Peto	PETO	1	label		label 'Peto.'
+1h4	s-1h4-35	person	John of Lancaster	JOHN of Lancaster	1	label		label 'Lan.'
+1h4	s-1h4-27	person	Owen Glendower	OWEN GLENDOWER	1	label		label 'Glend.'; or: LADY MORTIMER, daughter to Glendower
+1h4	s-1h4-18	personGrp	Travellers	Travellers	1	label		label 'Travellers.'
+1h4	s-1h4-19	personGrp	Thieves	Thieves	1	label		label 'Thieves.'
+1h4	s-1h4-28	person	Edmund Mortimer	EDMUND MORTIMER	1	label		label 'Mort.'; or: LADY MORTIMER, daughter to Glendower | LADY PERCY, wife of Hotspur
+1h4	s-1h4-1	person	King Henry the Fourth	KING HENRY the Fourth	1	label		label 'King.'
+1h4	s-1h4-2	person	Earl of Westmoreland	EARL OF WESTMORELAND	1	label		label 'West.'
+1h4	s-1h4-3	person	Sir John Falstaff	SIR JOHN FALSTAFF	1	label		label 'Fal.'
+1h4	s-1h4-4	person	Henry	HENRY	1	label		label 'Prince.'
+1h4	s-1h4-6	person	Poins	POINS	1	label		label 'Poins.'
+1h4	s-1h4-7	person	Sir Walter Blunt	SIR WALTER BLUNT	1	label		label 'Blunt.'
+1h4	s-1h4-8	person	Henry Percy	HENRY PERCY	1	label		label 'North.'
+1h4	s-1h4-9	person	Henry Percy	HENRY PERCY	2	label		label 'Hot.'; or: LADY PERCY, wife of Hotspur
+1h4	s-1h4-10	person	Thomas Percy	THOMAS PERCY	1	label		label 'Wor.'
+1h4	s-1h4-20	person	Lady Percy	LADY PERCY, wife of Hotspur	1	label		label 'Lady P.'
+1h4	s-1h4-21	person	Servant	Servant	1	label		label 'Serv.'
+1h4	s-1h4-30	person	Archibald	ARCHIBALD	1	label		label 'Doug.'
+1h4	s-1h4-12	person	First Carrier	First Carrier	1	label		label 'First Car.'
+1h4	s-1h4-31	person	Sir Richard Vernon	SIR RICHARD VERNON	1	label		label 'Ver.'
+1h4	s-1h4-13	person	Chamberlain	Chamberlain	1	label		label 'Cham.'
+1h4	s-1h4-22	person	Francis	Francis	1	label		label 'Fran.'
+1h4	s-1h4-32	person	Sir Michael	SIR MICHAEL	1	label		label 'Sir M.'
+1h4	s-1h4-14	person	Gadshill	GADSHILL	1	label		label 'Gads.'
+1h4	s-1h4-23	person	Mistress Quickly	MISTRESS QUICKLY	1	label		label 'Host.'
+2h4	s-2h4-14	person	Scroop	SCROOP	1	label		label 'Arch.'
+2h4	s-2h4-50	person	Prince Humphrey of Gloucester	PRINCE HUMPHREY OF GLOUCESTER	1	label		label 'Glou.'
+2h4	s-2h4-33	person	King Henry the Fourth	KING HENRY the Fourth	1	label		label 'King.'; or: Lord Chief-Justice of the King's Bench | HENRY
+2h4	s-2h4-15	person	Fang	FANG	1	label		label 'Fang.'
+2h4	s-2h4-16	person	Gower	GOWER	1	label		label 'Gow.'
+2h4	s-2h4-35	person	Earl of Warwick	EARL OF WARWICK	1	label		label 'War.'; or: WART
+2h4	s-2h4-53	person	Davy	DAVY	1	label		label 'Davy.'
+2h4	s-2h4-54	person	First Beadle	First Beadle	1	label		label 'First Bead.'
+2h4	s-2h4-36	person	Bullcalf	BULLCALF	1	label		label 'Bull.'
+2h4	s-2h4-37	person	Feeble	FEEBLE	1	label		label 'Fee.'
+2h4	s-2h4-55	person	Harcourt	HARCOURT	1	label		label 'Har.'
+2h4	s-2h4-19	person	Snare	SNARE	1	label		label 'Snare.'
+2h4	s-2h4-56	person	First Groom	First Groom	1	label		label 'First Groom.'
+2h4	s-2h4-38	person	Mouldy	MOULDY	1	label		label 'Moul.'
+2h4	s-2h4-39	person	Shadow	SHADOW	1	label		label 'Shad.'
+2h4	s-2h4-2	person	Porter	Porter	1	label		label 'Port.'
+2h4	s-2h4-4	person	Lord Bardolph	LORD BARDOLPH.	1	label		label 'L. Bard.'
+2h4	s-2h4-5	person	Morton	MORTON	1	label		label 'Mor.'
+2h4	s-2h4-6	person	Earl of Northumberland	EARL OF NORTHUMBERLAND	1	label		label 'North.'; or: LADY NORTHUMBERLAND
+2h4	s-2h4-7	person	Travers	TRAVERS	1	label		label 'Tra.'
+2h4	s-2h4-8	person	Lord Chief-Justice of the King's Bench	Lord Chief-Justice of the King's Bench	1	label		label 'Ch. Just.'; or: A Servant of the Chief-Justice
+2h4	s-2h4-9	person	Sir John Falstaff	SIR JOHN FALSTAFF	1	label		label 'Fal.'
+2h4	s-2h4-20	person	Bardolph	BARDOLPH	1	label		label 'Bard.'; or: LORD BARDOLPH.
+2h4	s-2h4-21	person	Henry	HENRY	1	label		label 'Prince.'; or: PRINCE JOHN OF LANCASTER | PRINCE HUMPHREY OF GLOUCESTER
+2h4	s-2h4-40	person	Shallow	SHALLOW	1	label		label 'Shal.'; or: DAVY
+2h4	s-2h4-23	person	Poins	POINS	1	label		label 'Poins.'
+2h4	s-2h4-41	person	Silence	SILENCE	1	label		label 'Sil.'
+2h4	s-2h4-24	person	Lady Northumberland	LADY NORTHUMBERLAND	1	label		label 'Lady N.'
+2h4	s-2h4-42	person	Wart	WART	1	label		label 'Wart.'
+2h4	s-2h4-25	person	Lady Percy	LADY PERCY	1	label		label 'Lady P.'
+2h4	s-2h4-44	person	Rumour	RUMOUR	1	label		label 'Rum.'
+2h4	s-2h4-26	person	Mistress Quickly	MISTRESS QUICKLY	1	label		label 'Host.'
+2h4	s-2h4-27	person	First Drawer	First Drawer	1	label		label 'First Draw.'
+2h4	s-2h4-45	person	Messenger	Messenger	1	label		label 'Mess.'
+2h4	s-2h4-46	person	Earl of Westmoreland	EARL OF WESTMORELAND	1	label		label 'West.'
+2h4	s-2h4-47	person	Prince John of Lancaster	PRINCE JOHN OF LANCASTER	1	label		label 'Lan.'
+2h4	s-2h4-48	person	Sir John Colevile	SIR JOHN COLEVILE	1	label		label 'Cole.'
+2h4	s-2h4-49	person	Thomas	THOMAS	1	label		label 'Clar.'
+2h4	s-2h4-10	person	His Page	His Page	1	label		label 'Page.'
+2h4	s-2h4-11	person	A Servant of the Chief-Justice	A Servant of the Chief-Justice	1	label		label 'Serv.'; or: DAVY
+2h4	s-2h4-12	person	Lord Hastings	LORD HASTINGS	1	label		label 'Hast.'
+2h4	s-2h4-30	person	Peto	PETO	1	label		label 'Peto.'
+2h4	s-2h4-13	person	Lord Mowbray	LORD MOWBRAY	1	label		label 'Mowb.'
+2h4	s-2h4-31	person	Pistol	PISTOL	1	label		label 'Pist.'
+h5	k.-hen.	person	King Henry the Fifth	KING HENRY the Fifth	1	p4	p4	
+h5	glou.	person	Duke of Gloucester	DUKE OF GLOUCESTER	1	p4	p4	
+h5	bed.	person	Duke of Bedford	DUKE OF BEDFORD	1	p4	p4	
+h5	exe.	person	Duke of Exeter	DUKE OF EXETER	1	p4	p4	
+h5	york.	person	Duke of York	DUKE OF YORK	1	p4	p4	
+h5	sal.	person	Earl of Salisbury	EARL OF SALISBURY	1	p4	p4	
+h5	west.	person	Earl of Westmoreland	EARL OF WESTMORELAND	1	p4	p4	
+h5	war.	person	Earl of Warwick	EARL OF WARWICK	1	p4	p4	
+h5	cant.	person	Archbishop of Canterbury	ARCHBISHOP OF CANTERBURY	1	p4	p4	
+h5	ely.	person	Bishop of Ely	BISHOP OF ELY	1	p4	p4	
+h5	cam.	person	Earl of Cambridge	EARL OF CAMBRIDGE	1	p4	p4	
+h5	scroop.	person	Lord Scroop	LORD SCROOP	1	p4	p4	
+h5	grey.	person	Sir Thomas Grey	SIR THOMAS GREY	1	p4	p4	
+h5	erp.	person	Sir Thomas Erpingham	SIR THOMAS ERPINGHAM	1	p4	p4	
+h5	gow.	person	Gower	GOWER	1	p4	p4	
+h5	flu.	person	Fluellen	FLUELLEN	1	p4	p4	
+h5	mac.	person	Macmorris	MACMORRIS	1	p4	p4	
+h5	jamy.	person	Jamy	JAMY	1	p4	p4	
+h5	bates.	person	Bates	BATES	1	p4	p4	
+h5	court.	person	Court	COURT	1	p4	p4	
+h5	will.	person	Williams	WILLIAMS	1	p4	p4	
+h5	pist.	person	Pistol	PISTOL	1	p4	p4	
+h5	nym.	person	Nym	NYM	1	p4	p4	
+h5	bard.	person	Bardolph	BARDOLPH	1	p4	p4	
+h5	boy.	person	Boy	Boy	1	p4	p4	
+h5	her.	person	A Herald	A Herald	1	p4	p4	
+h5	fr.-king.	person	Charles the Sixth	CHARLES the Sixth	1	p4	p4	
+h5	dau.	person	Lewis	LEWIS	1	p4	p4	
+h5	bur.	person	Duke of Burgundy	DUKE OF BURGUNDY	1	p4	p4	
+h5	orl.	person	Duke of Orleans	DUKE OF ORLEANS	1	p4	p4	
+h5	bour.	person	Duke of Bourbon	DUKE OF BOURBON	1	p4	p4	
+h5	con.	person	The Constable of France	The Constable of France	1	p4	p4	
+h5	ram.	person	Rambures	RAMBURES	1	p4	p4	
+h5	grand.	person	Grandpre	GRANDPRE	1	p4	p4	
+h5	gov.	person	Governor of Harfleur	Governor of Harfleur	1	p4	p4	
+h5	mont.	person	Montjoy	MONTJOY	1	p4	p4	
+h5	first-amb.	person	Ambassadors to the King of England	Ambassadors to the King of England	1	p4	p4	
+h5	q.-isa.	person	Isabel	ISABEL	1	p4	p4	
+h5	kath.	person	Katherine	KATHERINE	1	p4	p4	
+h5	alice.	person	Alice	ALICE	1	p4	p4	
+h5	host.	person	Hostess of a tavern in Eastcheap	Hostess of a tavern in Eastcheap, formerly Mistress Quickly	1	p4	p4	
+h5	fr.-sol.	person	French Soldier	French Soldier	1	p4	p4	
+h5	mess.	person	Messenger(s)	Messenger(s)	1	p4	p4	
+h5	all.	personGrp	All	All	1	p4	p4	
+h5	chor.	personGrp	Chorus	Chorus	1	p4	p4	
+1h6	king.	person	King Henry the Sixth	KING HENRY the Sixth	1	p4	p4	
+1h6	glou.	person	Duke of Gloucester	DUKE OF GLOUCESTER	1	p4	p4	
+1h6	bed.	person	Duke of Bedford	DUKE OF BEDFORD	1	p4	p4	
+1h6	exe.	person	Thomas Beaufort	THOMAS BEAUFORT	1	p4	p4	
+1h6	win.	person	Henry Beaufort	HENRY BEAUFORT	1	p4	p4	
+1h6	car.	person	Henry Beaufort	HENRY BEAUFORT	2	p4	p4	
+1h6	som.	person	John Beaufort	JOHN BEAUFORT	1	p4	p4	
+1h6	york.	person	Richard Plantagenet	RICHARD PLANTAGENET	1	p4	p4	
+1h6	plan.	person	Richard Plantagenet	RICHARD PLANTAGENET	2	p4	p4	
+1h6	war.	person	Earl of Warwick	EARL OF WARWICK	1	p4	p4	
+1h6	sal.	person	Earl of Salisbury	EARL OF SALISBURY	1	p4	p4	
+1h6	suf.	person	Earl of Suffolk	EARL OF SUFFOLK	1	p4	p4	
+1h6	tal.	person	Lord Talbot	LORD TALBOT	1	p4	p4	
+1h6	john.	person	John Talbot	JOHN TALBOT	1	p4	p4	
+1h6	mor.	person	Edmund Mortimer	EDMUND MORTIMER	1	p4	p4	
+1h6	fast.	person	Sir John Fastolfe	SIR JOHN FASTOLFE	1	p4	p4	
+1h6	lucy.	person	Sir William Lucy	SIR WILLIAM LUCY	1	p4	p4	
+1h6	glan.	person	Sir William Glansdale	SIR WILLIAM GLANSDALE	1	p4	p4	
+1h6	gar.	person	Sir Thomas Gargrave	SIR THOMAS GARGRAVE	1	p4	p4	
+1h6	may.	person	Mayor of London	Mayor of London	1	p4	p4	
+1h6	woodv.	person	Woodville	WOODVILLE	1	p4	p4	
+1h6	ver.	person	Vernon	VERNON	1	p4	p4	
+1h6	bas.	person	Basset	BASSET	1	p4	p4	
+1h6	law.	person	A Lawyer	A Lawyer	1	p4	p4	
+1h6	char.	person	Charles	CHARLES	1	p4	p4	
+1h6	reig.	person	Reigner	REIGNER	1	p4	p4	
+1h6	bur.	person	Duke of Burgundy	DUKE OF BURGUNDY	1	p4	p4	
+1h6	alen.	person	Duke of Alencon	DUKE OF ALENCON	1	p4	p4	
+1h6	bast.	person	Bastard of Orleans	BASTARD OF ORLEANS	1	p4	p4	
+1h6	m.-gun.	person	Master-Gunner of Orleans	Master-Gunner of Orleans	1	p4	p4	
+1h6	boy.	person	his Son	his Son	1	p4	p4	
+1h6	gen.	person	General of the French forces in Bourdeaux	General of the French forces in Bourdeaux	1	p4	p4	
+1h6	serg.	person	A French Sergeant	A French Sergeant	1	p4	p4	
+1h6	port.	person	A Porter	A Porter	1	p4	p4	
+1h6	shep.	person	An Old Shepherd	An Old Shepherd	1	p4	p4	
+1h6	mar.	person	Margaret	MARGARET	1	p4	p4	
+1h6	count.	person	Countess of Auvergne	COUNTESS OF AUVERGNE	1	p4	p4	
+1h6	puc.	person	Joan la Pucelle	JOAN LA PUCELLE	1	p4	p4	
+1h6	first-gaol.	person	First Gaoler	First Gaoler	1	p4	p4	
+1h6	serv.	person	Servant	Servant	1	p4	p4	
+1h6	first-serv.	person	First Servant	First Servant	1	p4	p4	
+1h6	sec.-serv.	person	Second Servant	Second Servant	1	p4	p4	
+1h6	third-serv.	person	Third Servant	Third Servant	1	p4	p4	
+1h6	watch.	personGrp	Watch	Watch	1	p4	p4	
+1h6	first-warder.	person	First Warder of the Tower	First Warder of the Tower	1	p4	p4	
+1h6	second-warder.	person	Second Warder of the Tower	Second Warder of the Tower	1	p4	p4	
+1h6	leg.	person	Legate	Legate	1	p4	p4	
+1h6	all.	personGrp	All	All	1	p4	p4	
+1h6	sent.	person	Sentinel	Sentinel	1	p4	p4	
+1h6	first-sent.	person	First Sentinel	First Sentinel	1	p4	p4	
+1h6	scout.	person	Scout	Scout	1	p4	p4	
+1h6	off.	personGrp	Officers	Officers	1	p4	p4	
+1h6	cap.	person	Captain	Captain	1	p4	p4	
+1h6	soldiers.	personGrp	Soldiers	Soldiers	1	p4	p4	never speaks
+1h6	sold.	person	Soldier	Soldier	1	p4	p4	
+1h6	first-sol.	person	First Soldier	First Soldier	1	p4	p4	
+1h6	mess.	personGrp	Messengers	Messengers	1	p4	p4	
+2h6	king.	person	King Henry the Sixth	KING HENRY the Sixth	1	p4	p4	
+2h6	glou.	person	Humphrey	HUMPHREY	1	p4	p4	
+2h6	car.	person	Cardinal Beaufort	CARDINAL BEAUFORT	1	p4	p4	
+2h6	york.	person	Richard Plantagenet	RICHARD PLANTAGENET	1	p4	p4	
+2h6	edw.	person	Edward	EDWARD	1	p4	p4	
+2h6	rich.	person	Richard	RICHARD	1	p4	p4	
+2h6	som.	person	Duke of Somerset	DUKE OF SOMERSET	1	p4	p4	
+2h6	suf.	person	Duke of Suffolk	DUKE OF SUFFOLK	1	p4	p4	
+2h6	buck.	person	Duke of Buckingham	DUKE OF BUCKINGHAM	1	p4	p4	
+2h6	clif.	person	Lord Clifford	LORD CLIFFORD	1	p4	p4	
+2h6	y.-clif.	person	Young Clifford	Young CLIFFORD	1	p4	p4	
+2h6	sal.	person	Earl of Salisbury	EARL OF SALISBURY	1	p4	p4	
+2h6	war.	person	Earl of Warwick	EARL OF WARWICK	1	p4	p4	
+2h6	scales.	person	Lord Scales	LORD SCALES	1	p4	p4	
+2h6	say.	person	Lord Say	LORD SAY	1	p4	p4	
+2h6	staf.	person	Sir Humphrey Staffor	SIR HUMPHREY STAFFOR	1	p4	p4	
+2h6	bro.	person	William Stafford	WILLIAM STAFFORD	1	p4	p4	
+2h6	stan.	person	Sir John Stanley	SIR JOHN STANLEY	1	p4	p4	
+2h6	vaux.	person	Vaux	VAUX	1	p4	p4	
+2h6	cap.	person	A Sea-captain	A Sea-captain	1	p4	p4	
+2h6	mast.	person	Master	Master	1	p4	p4	
+2h6	mate.	person	Master's-Mate	Master's-Mate	1	p4	p4	
+2h6	whit.	person	Walter Whitmore	WALTER WHITMORE	1	p4	p4	
+2h6	first-gent.	person	First Gentleman	First Gentleman	1	p4	p4	
+2h6	sec.-gent.	person	Second Gentleman	Second Gentleman	1	p4	p4	
+2h6	hume.	person	John Hume	JOHN HUME	1	p4	p4	
+2h6	boling.	person	Bolingbroke	BOLINGBROKE	1	p4	p4	
+2h6	hor.	person	Thomas Horner	THOMAS HORNER	1	p4	p4	
+2h6	peter.	person	Peter	PETER	1	p4	p4	
+2h6	clerk.	person	Clerk of Chatham	Clerk of Chatham.	1	p4	p4	
+2h6	may.	person	Mayor of Saint Alban's	Mayor of Saint Alban's.	1	p4	p4	
+2h6	simp.	person	Simpcox	SIMPCOX	1	p4	p4	
+2h6	iden.	person	Alexander Iden	ALEXANDER IDEN	1	p4	p4	
+2h6	cade.	person	Jack Cade	JACK CADE	1	p4	p4	
+2h6	geo.	person	George Bevis	GEORGE BEVIS	1	p4	p4	
+2h6	bevis.	person	George Bevis	GEORGE BEVIS	2	p4	p4	
+2h6	holl.	person	John Holland	JOHN HOLLAND	1	p4	p4	
+2h6	dick.	person	Dick the butcher	DICK the butcher	1	p4	p4	
+2h6	smith.	person	Smith the weaver	SMITH the weaver	1	p4	p4	
+2h6	mich.	person	Michael	MICHAEL	1	p4	p4	
+2h6	first-mur.	person	First Murderer	First Murderer	1	p4	p4	
+2h6	sec.-mur.	person	Second Murderer	Second Murderer	1	p4	p4	
+2h6	queen	person	Margaret	MARGARET	1	p4	p4	
+2h6	duch.	person	Eleanor	ELEANOR	1	p4	p4	
+2h6	m.-jourd.	person	Margaret Jourdain	MARGARET JOURDAIN	1	p4	p4	
+2h6	wife.	person	Wife to Simpcox	Wife to Simpcox	1	p4	p4	
+2h6	first-petit.	person	First Petitioner	First Petitioner	1	p4	p4	
+2h6	sec.-petit.	person	Second Petitioner	Second Petitioner	1	p4	p4	
+2h6	first-neigh.	person	First Neighbor	First Neighbor	1	p4	p4	
+2h6	sec.-neigh.	person	Second Neighbor	Second Neighbor	1	p4	p4	
+2h6	third-neigh.	person	Third Neighbor	Third Neighbor	1	p4	p4	
+2h6	first-pren.	person	First 'Prentice	First 'Prentice	1	p4	p4	
+2h6	sec.-pren.	person	Second 'Prentice	Second 'Prentice	1	p4	p4	
+2h6	commons.	personGrp	Commons	Commons	1	p4	p4	
+2h6	all.	personGrp	All	All	1	p4	p4	
+2h6	first-cit.	person	First Citizen	First Citizen	1	p4	p4	
+2h6	post.	person	A Post	A Post	1	p4	p4	
+2h6	bead.	person	a Beadle	a Beadle	1	p4	p4	
+2h6	sher.	person	Sheriff	Sheriff	1	p4	p4	
+2h6	mess.	personGrp	Messengers	Messengers	1	p4	p4	
+2h6	towns.	person	Townsmen	Townsmen	1	p4	p4	
+2h6	her.	person	a Herald	a Herald	1	p4	p4	
+2h6	both.	personGrp	Sal and War together	Sal and War together	1	p4	p4	
+2h6	serv.	person	Servant	Servant	1	p4	p4	
+2h6	sold.	personGrp	Soldiers	Soldiers	1	p4	p4	
+2h6	spir.	person	A Spirit	A Spirit	1	p4	p4	
+3h6	k.-hen.	person	King Henry the Sixth	KING HENRY the Sixth	1	p4	p4	
+3h6	prince.	person	Edward	EDWARD	1	p4	p4	
+3h6	k.-lew.	person	Lewis Xi	LEWIS XI.	1	p4	p4	
+3h6	som.	person	Duke of Somerset	DUKE OF SOMERSET	1	p4	p4	
+3h6	exe.	person	Duke of Exeter	DUKE OF EXETER	1	p4	p4	
+3h6	oxf.	person	Earl of Oxford	EARL OF OXFORD	1	p4	p4	
+3h6	north.	person	Earl of Northumberland	EARL OF NORTHUMBERLAND	1	p4	p4	
+3h6	west.	person	Earl of Westmoreland	EARL OF WESTMORELAND	1	p4	p4	
+3h6	clif.	person	Lord Clifford	LORD CLIFFORD	1	p4	p4	
+3h6	york.	person	Richard Plantagenet	RICHARD PLANTAGENET	1	p4	p4	
+3h6	edw.	person	Edward	EDWARD	2	p4	p4	
+3h6	k.-edw.	person	Edward	EDWARD	3	p4	p4	
+3h6	rut.	person	Edmund	EDMUND	1	p4	p4	
+3h6	geo.	person	George	GEORGE	1	p4	p4	
+3h6	clar.	person	George	GEORGE	2	p4	p4	
+3h6	rich.	person	Richard	RICHARD	1	p4	p4	
+3h6	glou.	person	Richard	RICHARD	2	p4	p4	
+3h6	norf.	person	Duke of Norfolk	DUKE OF NORFOLK	1	p4	p4	
+3h6	mont.	person	Marquess of Montague	MARQUESS OF MONTAGUE	1	p4	p4	
+3h6	war.	person	Earl of Warwick	EARL OF WARWICK	1	p4	p4	
+3h6	hast.	person	Lord Hastings	LORD HASTINGS	1	p4	p4	
+3h6	sir-john.	person	Sir John Mortimer	SIR JOHN MORTIMER	1	p4	p4	
+3h6	riv.	person	Lord Rivers	LORD RIVERS	1	p4	p4	
+3h6	tut.	person	Tutor to Rutland	Tutor to Rutland	1	p4	p4	
+3h6	may.	person	Mayor of York	Mayor of York	1	p4	p4	
+3h6	lieu.	person	Lieutenant of the Tower	Lieutenant of the Tower	1	p4	p4	
+3h6	nob.	person	A Nobleman	A Nobleman	1	p4	p4	
+3h6	first-keep.	person	First Keeper	First Keeper	1	p4	p4	
+3h6	sec.-keep.	person	Second Keeper	Second Keeper	1	p4	p4	
+3h6	hunt.	person	A Huntsman	A Huntsman	1	p4	p4	
+3h6	son.	person	A Son that has killed his father	A Son that has killed his father	1	p4	p4	
+3h6	fath.	person	A Father that has killed his son	A Father that has killed his son	1	p4	p4	
+3h6	q.-mar.	person	Queen Margaret	QUEEN MARGARET	1	p4	p4	
+3h6	l.-grey.	person	Lady Grey	LADY GREY	1	p4	p4	
+3h6	bona.	person	Bona	BONA	1	p4	p4	
+3h6	soldiers.	personGrp	Soldiers	Soldiers	1	p4	p4	never speaks
+3h6	sold.	person	Soldier	Soldier	1	p4	p4	
+3h6	first-mess.	person	First Messenger	First Messenger	1	p4	p4	
+3h6	second-mess.	person	Second Messenger	Second Messenger	1	p4	p4	
+3h6	mess.	person	Messenger	Messenger	1	p4	p4	
+3h6	first-watch.	person	First Watchman	First Watchman	1	p4	p4	
+3h6	second-watch.	person	Second Watchman	Second Watchman	1	p4	p4	
+3h6	third-watch.	person	Third Watchman	Third Watchman	1	p4	p4	
+3h6	post.	person	Post	Post	1	p4	p4	
+3h6	all	personGrp	All	All	1	p4	p4	
+r3	k.-edw.	person	King Edward the Fourth	KING EDWARD the Fourth	1	p4	p4	
+r3	prince.	person	Edward	EDWARD, Prince of Wales	1	p4	p4	
+r3	york.	person	Richard	RICHARD	1	p4	p4	
+r3	clar.	person	George	GEORGE	1	p4	p4	
+r3	glou._k.-rich.	person	Richard	RICHARD	2	p4	p4	
+r3	boy.	person	A young son of Clarence	A young son of Clarence	1	p4	p4	
+r3	richm.	person	Henry	HENRY, Earl of Richmond	1	p4	p4	
+r3	card.	person	Cardinal Bourchier	CARDINAL BOURCHIER	1	p4	p4	
+r3	rot.	person	Thomas Rotherham	THOMAS ROTHERHAM	1	p4	p4	
+r3	ely.	person	John Morton	JOHN MORTON	1	p4	p4	
+r3	buck.	person	Duke of Buckingham	DUKE OF BUCKINGHAM	1	p4	p4	
+r3	nor.	person	Duke of Norfolk	DUKE OF NORFOLK	1	p4	p4	
+r3	sur.	person	Earl of Surrey	EARL OF SURREY	1	p4	p4	
+r3	riv.	person	Earl Rivers	EARL RIVERS	1	p4	p4	
+r3	dor.	person	Marquis of Dorset	MARQUIS OF DORSET	1	p4	p4	
+r3	grey.	person	Lord Grey	LORD GREY	1	p4	p4	
+r3	oxf.	person	Earl of Oxford	EARL OF OXFORD	1	p4	p4	
+r3	hast.	person	Lord Hastings	LORD HASTINGS	1	p4	p4	
+r3	stan.	person	Lord Stanley	LORD STANLEY	1	p4	p4	
+r3	der.	person	Lord Stanley	LORD STANLEY	2	p4	p4	
+r3	lov.	person	Lord Lovel	LORD LOVEL	1	p4	p4	
+r3	vaug.	person	Sir Thomas Vaughan	SIR THOMAS VAUGHAN	1	p4	p4	
+r3	rat.	person	Sir Richard Ratcliff	SIR RICHARD RATCLIFF	1	p4	p4	
+r3	cates.	person	Sir William Catesby	SIR WILLIAM CATESBY	1	p4	p4	
+r3	cate.	person	Sir William Catesby	SIR WILLIAM CATESBY	2	p4	p4	
+r3	tyr.	person	Sir James Tyrrel	SIR JAMES TYRREL	1	p4	p4	
+r3	blunt.	person	Sir James Blount	SIR JAMES BLOUNT	1	p4	p4	
+r3	herb.	person	Sir Walter Herbert	SIR WALTER HERBERT	1	p4	p4	
+r3	brak.	person	Sir Robert Brakenbury	SIR ROBERT BRAKENBURY	1	p4	p4	
+r3	chris.	person	Christopher Urswick	CHRISTOPHER URSWICK	1	p4	p4	
+r3	priest.	person	Another priest	Another priest	1	p4	p4	
+r3	gent.	person	Gentleman	Gentleman	1	p4	p4	
+r3	may.	person	Lord Mayor of London	Lord Mayor of London.	1	p4	p4	
+r3	sher.	person	Sheriff of Wiltshire	Sheriff of Wiltshire.	1	p4	p4	
+r3	q.-eliz.	person	Elizabeth	ELIZABETH	1	p4	p4	
+r3	q.-mar.	person	Margaret	MARGARET	1	p4	p4	
+r3	duch.	person	Duchess of York	DUCHESS OF YORK	1	p4	p4	
+r3	anne.	person	Lady Anne	LADY ANNE	1	p4	p4	
+r3	girl.	person	A young daughter of Clarence (margaret Plantagenet)	A young daughter of Clarence (MARGARET PLANTAGENET)	1	p4	p4	
+r3	ghost-of-g.	person	Ghost of Grey	Ghost of Grey	1	p4	p4	
+r3	ghost-of-v.	person	Ghost of Vaughn	Ghost of Vaughn	1	p4	p4	
+r3	ghost-of-r.	person	Ghost of Rivers	Ghost of Rivers	1	p4	p4	
+r3	ghost.	person	Ghosts of others murdered by Richard Iii	Ghosts of others murdered by Richard III.	1	p4	p4	
+r3	ghosts.	person	Ghosts of others murdered by Richard Iii	Ghosts of others murdered by Richard III.	2	p4	p4	
+r3	first.-murd.	person	First Murderer	First Murderer.	1	p4	p4	
+r3	sec.-murd.	person	Second Murderer	Second Murderer.	1	p4	p4	
+r3	cit.	person	Citizen	Citizen	1	p4	p4	
+r3	first-cit.	person	First Citizen	First Citizen	1	p4	p4	
+r3	sec.-cit.	person	Second Citizen	Second Citizen	1	p4	p4	
+r3	third.-cit.	person	Third Citizen	Third Citizen	1	p4	p4	
+r3	mess.	person	Messenger	Messenger	1	p4	p4	
+r3	sec.-mess.	person	Second Messenger	Second Messenger	1	p4	p4	
+r3	third-mess.	person	Third Messenger	Third Messenger	1	p4	p4	
+r3	fourth-mess.	person	Fourth Messenger	Fourth Messenger	1	p4	p4	
+r3	purs.	person	a Pursuivant	a Pursuivant	1	p4	p4	
+r3	lords.	personGrp	Lords	Lords.	1	p4	p4	
+r3	scriv.	person	Scivener	Scivener.	1	p4	p4	
+r3	page.	person	Page	Page	1	p4	p4	
+h8	king.	person	King Henry the Eighth	KING HENRY the Eighth	1	p4	p4	
+h8	wol.	person	Cardinal Wolsey	CARDINAL WOLSEY	1	p4	p4	
+h8	cam.	person	Cardinal Campeius	CARDINAL CAMPEIUS	1	p4	p4	
+h8	cap.	person	Capucius	CAPUCIUS	1	p4	p4	
+h8	cran.	person	Cranmer	CRANMER	1	p4	p4	
+h8	nor.	person	Duke of Norfolk	DUKE OF NORFOLK	1	p4	p4	
+h8	buck.	person	Duke of Buckingham	DUKE OF BUCKINGHAM	1	p4	p4	
+h8	suf.	person	Duke of Suffolk	DUKE OF SUFFOLK	1	p4	p4	
+h8	sur.	person	Earl of Surrey	EARL OF SURREY	1	p4	p4	
+h8	cham.	person	Lord Chamberlain	Lord Chamberlain	1	p4	p4	
+h8	chan.	person	Lord Chancellor	Lord Chancellor	1	p4	p4	
+h8	gar.	person	Gardiner	GARDINER	1	p4	p4	
+h8	lin.	person	Bishop of Lincoln	Bishop of Lincoln	1	p4	p4	
+h8	aber.	person	Lord Abergavenny	LORD ABERGAVENNY	1	p4	p4	
+h8	sands.	person	Lord Sands	LORD SANDS	1	p4	p4	
+h8	guild.	person	Sir Henry Guildford	SIR HENRY GUILDFORD	1	p4	p4	
+h8	lov.	person	Sir Thomas Lovell	SIR THOMAS LOVELL	1	p4	p4	
+h8	den.	person	Sir Anthony Denny	SIR ANTHONY DENNY	1	p4	p4	
+h8	vaux.	person	Sir Nicholas Vaux	SIR NICHOLAS VAUX	1	p4	p4	
+h8	first-secr.	person	First Secretary	First Secretary	1	p4	p4	
+h8	crom.	person	Cromwell	CROMWELL	1	p4	p4	
+h8	grif.	person	Griffith	GRIFFITH	1	p4	p4	
+h8	first-gent.	person	First Gentleman	First Gentleman	1	p4	p4	
+h8	sec.-gent.	person	Second Gentleman	Second Gentleman	1	p4	p4	
+h8	third-gent.	person	Third Gentleman	Third Gentleman	1	p4	p4	
+h8	butts.	person	Doctor Butts	DOCTOR BUTTS	1	p4	p4	
+h8	gart.	person	Garter King-at-Arms	Garter King-at-Arms	1	p4	p4	
+h8	surv.	person	Surveyor to the Duke of Buckingham	Surveyor to the Duke of Buckingham	1	p4	p4	
+h8	bran.	person	Brandon	BRANDON	1	p4	p4	
+h8	serg.	person	a Sergeant-at-Arms	a Sergeant-at-Arms	1	p4	p4	
+h8	keep.	person	Door-Keeper of the Council-chamber	Door-Keeper of the Council-chamber	1	p4	p4	
+h8	port.	person	Porter	Porter	1	p4	p4	
+h8	man.	person	His Man	His Man	1	p4	p4	
+h8	boy.	person	Page to Gardiner	Page to Gardiner	1	p4	p4	
+h8	crier.	person	A Crier	A Crier	1	p4	p4	
+h8	q.-kath.	person	Queen Katharine	QUEEN KATHARINE	1	p4	p4	
+h8	kath.	person	Queen Katharine	QUEEN KATHARINE	2	p4	p4	
+h8	anne.	person	Anne Bullen	ANNE BULLEN	1	p4	p4	
+h8	old-l.	person	An old Lady	An old Lady	1	p4	p4	
+h8	pat.	person	Patience	PATIENCE	1	p4	p4	
+h8	gent.	person	Gentlewoman	Gentlewoman	1	p4	p4	
+h8	mess.	person	Messenger	Messenger	1	p4	p4	
+h8	scribe.	person	Scribe	Scribe	1	p4	p4	
+h8	serv.	person	Servant	Servant	1	p4	p4	
+h8	both.	personGrp	Both Gentlemen together	Both Gentlemen together	1	p4	p4	
+h8	all.	personGrp	All	All	1	p4	p4	
+tro	pri.	person	Priam	PRIAM	1	p4	p4	
+tro	hect.	person	Hector	HECTOR	1	p4	p4	
+tro	tro.	person	Troilus	TROILUS	1	p4	p4	
+tro	par.	person	Paris	PARIS	1	p4	p4	
+tro	dei.	person	Deiphobus	DEIPHOBUS	1	p4	p4	
+tro	hel.	person	Helenus	HELENUS	1	p4	p4	
+tro	mar.	person	Margarelon	MARGARELON	1	p4	p4	
+tro	aene.	person	Aeneas	AENEAS	1	p4	p4	
+tro	cal.	person	Calchas	CALCHAS	1	p4	p4	
+tro	pan.	person	Pandarus	PANDARUS	1	p4	p4	
+tro	agam.	person	Agamemnon	AGAMEMNON	1	p4	p4	
+tro	men.	person	Menelaus	MENELAUS	1	p4	p4	
+tro	achil.	person	Achilles	ACHILLES	1	p4	p4	
+tro	ajax.	person	Ajax	AJAX	1	p4	p4	
+tro	ulyss.	person	Ulysses	ULYSSES	1	p4	p4	
+tro	nest.	person	Nestor	NESTOR	1	p4	p4	
+tro	dio.	person	Diomedes	DIOMEDES	1	p4	p4	
+tro	patr.	person	Patroclus	PATROCLUS	1	p4	p4	
+tro	ther.	person	Thersites	THERSITES	1	p4	p4	
+tro	alex.	person	Alexander	ALEXANDER	1	p4	p4	
+tro	boy.	person	Servant to Troilus	Servant to Troilus	1	p4	p4	
+tro	serv.	person	Servant to Paris	Servant to Paris	1	p4	p4	
+tro	dio.-serv.	person	Servant to Diomedes	Servant to Diomedes	1	p4	p4	never speaks
+tro	helen.	person	Helen	HELEN	1	p4	p4	
+tro	and.	person	Andromache	ANDROMACHE	1	p4	p4	
+tro	cas.	person	Cassandra	CASSANDRA	1	p4	p4	
+tro	cres.	person	Cressida	CRESSIDA	1	p4	p4	
+tro	myr.	person	Myrmidon	Myrmidon	1	p4	p4	
+cor	cor-6	person	Caius Marcius	CAIUS MARCIUS	1	p4	p4	
+cor	cor-15	person	Titus Lartius	Titus Lartius	1	p4	p4	
+cor	cor-8	person	Cominius	Cominius	1	p4	p4	
+cor	cor-20	person	Menenius Agrippa	Menenius Agrippa	1	p4	p4	
+cor	cor-31	person	Sicinius Velutus	Sicinius Velutus	1	p4	p4	
+cor	cor-13	person	Junius Brutus	Junius Brutus	1	p4	p4	
+cor	cor-19	person	Young Marcius	Young Marcius	1	p4	p4	
+cor	cor-12	person	A Roman Herald	A Roman Herald	1	p4	p4	
+cor	cor-34	person	Tullus Aufidius	Tullus Aufidius	1	p4	p4	never speaks
+cor	cor-16	person	Lieutenant to Aufidius	Lieutenant to Aufidius.	1	p4	p4	
+cor	cor-9	personGrp	Conspirators with Aufidius	Conspirators with Aufidius.	1	p4	p4	
+cor	cor-7a	person	A Citizen of Antium	A Citizen of Antium.	1	p4	p4	
+cor	cor-40	personGrp	Two Volscian Guards	Two Volscian Guards.	1	p4	p4	
+cor	cor-39	person	Volumnia	Volumnia	1	p4	p4	
+cor	cor-37	person	Virgilia	Virgilia	1	p4	p4	
+cor	cor-35	person	Valeria	Valeria	1	p4	p4	
+cor	cor-11	person	Gentlewoman	Gentlewoman	1	p4	p4	
+cor	cor-1	person	Adrian	Adrian	1	p4	p4	
+cor	cor-14	personGrp	Ladies	Ladies	1	p4	p4	never speaks
+cor	cor-17	personGrp	Lords	Lords	1	p4	p4	
+cor	cor-2	person	Aedile	Aedile, an	1	p4	p4	
+cor	cor-21	person	Messenger	Messenger	1	p4	p4	
+cor	cor-22	person	Nicanor	Nicanor	1	p4	p4	
+cor	cor-23	person	Noble	Noble, a	1	p4	p4	never speaks
+cor	cor-24	personGrp	Officers	Officers	1	p4	p4	
+cor	cor-25	person	Patrician	Patrician, a	1	p4	p4	
+cor	cor-26	person	Roman	Roman, a	1	p4	p4	
+cor	cor-27	personGrp	Romans	Romans	1	p4	p4	
+cor	cor-28	personGrp	Senators (Roman)	Senators (Roman)	1	p4	p4	
+cor	cor-29	personGrp	Senators (Of Corioles)	Senators (Of Corioles)	1	p4	p4	
+cor	cor-30	personGrp	Servingmen	Servingmen	1	p4	p4	
+cor	cor-32	personGrp	Soldiers	Soldiers	1	p4	p4	
+cor	cor-33	person	Titus Lartius	Titus Lartius	2	p4	p4	
+cor	cor-36	person	Velutus	Velutus, Sicinius	1	p4	p4	never speaks
+cor	cor-38	person	Volsce	Volsce, a	1	p4	p4	never speaks
+cor	cor-4	person	Aufidius	Aufidius, Tullus	1	p4	p4	
+cor	cor-7	personGrp	Citizens	Citizens	1	p4	p4	
+tit	tit-22	person	Saturninus	SATURNINUS	1	p4	p4	
+tit	tit-4	person	Bassianus	BASSIANUS	1	p4	p4	
+tit	tit-25	person	Titus Andronicus	TITUS ANDRONICUS	1	p4	p4	
+tit	tit-15	person	Marcus Andronicus	MARCUS ANDRONICUS	1	p4	p4	
+tit	tit-13	person	Lucius	LUCIUS	1	p4	p4	
+tit	tit-21	person	Quintus	QUINTUS	1	p4	p4	
+tit	tit-16	person	Martius	MARTIUS	1	p4	p4	
+tit	tit-18	person	Mutius	MUTIUS	1	p4	p4	
+tit	tit-14	person	Young Lucius	YOUNG Lucius	1	p4	p4	
+tit	tit-20	person	Publius	PUBLIUS	1	p4	p4	
+tit	tit-2	person	Aemilius	AEMILIUS	1	p4	p4	
+tit	tit-10	person	Demetrius	DEMETRIUS	1	p4	p4	
+tit	tit-8	person	Chiron	CHIRON	1	p4	p4	
+tit	tit-1	person	Aaron	AARON	1	p4	p4	
+tit	tit-7	person	A Captain	A Captain	1	p4	p4	
+tit	tit-26	person	Tribune	Tribune	1	p4	p4	
+tit	tit-17	person	Messenger	Messenger	1	p4	p4	
+tit	tit-9	person	Clown	Clown	1	p4	p4	
+tit	tit-11	personGrp	Goths and Romans	Goths and Romans	1	p4	p4	
+tit	tit-24	person	Tamora	TAMORA	1	p4	p4	
+tit	tit-12	person	Lavinia	LAVINIA	1	p4	p4	
+tit	tit-19	person	A Nurse	A Nurse	1	p4	p4	
+rom	prin.	person	Escalus	ESCALUS	1	p4	p4	
+rom	par.	person	Paris	PARIS	1	p4	p4	
+rom	mon.	person	Montague	MONTAGUE	1	p4	p4	
+rom	cap.	person	Capulet	CAPULET	1	p4	p4	
+rom	sec.-cap.	person	An old man	An old man	1	p4	p4	
+rom	rom.	person	Romeo	ROMEO	1	p4	p4	
+rom	mer.	person	Mercutio	MERCUTIO	1	p4	p4	
+rom	ben.	person	Benvolio	BENVOLIO	1	p4	p4	
+rom	tyb.	person	Tybalt	TYBALT	1	p4	p4	
+rom	fri.-l.	person	Friar Laurence	FRIAR LAURENCE	1	p4	p4	
+rom	fri.-j.	person	Friar John	FRIAR JOHN	1	p4	p4	
+rom	bal.	person	Balthasar	BALTHASAR	1	p4	p4	
+rom	sam.	person	Sampson	SAMPSON	1	p4	p4	
+rom	gre.	person	Gregory	GREGORY	1	p4	p4	
+rom	pet.	person	Peter	PETER	1	p4	p4	
+rom	abr.	person	Abraham	ABRAHAM	1	p4	p4	
+rom	ap.	person	An Apothecary	An Apothecary	1	p4	p4	
+rom	first-mus.	person	First Musician	First Musician	1	p4	p4	
+rom	sec.-mus.	person	Second Musician	Second Musician	1	p4	p4	
+rom	third-mus.	person	Third Musician	Third Musician	1	p4	p4	
+rom	page.	person	Page to Paris	Page to Paris	1	p4	p4	
+rom	la.-mon.	person	Lady Montague	LADY MONTAGUE	1	p4	p4	
+rom	la.-cap.	person	Lady Capulet	LADY CAPULET	1	p4	p4	
+rom	jul.	person	Juliet	JULIET	1	p4	p4	
+rom	nurse.	person	Nurse to Juliet	Nurse to Juliet	1	p4	p4	
+rom	first-watch.	person	First Watchman	First Watchman	1	p4	p4	
+rom	sec.-watch.	person	Second Watchman	Second Watchman	1	p4	p4	
+rom	third-watch.	person	Third Watchman	Third Watchman	1	p4	p4	
+rom	first-cit.	person	First Citizen	First Citizen	1	p4	p4	
+rom	first-serv.	person	First Servant	First Servant	1	p4	p4	
+rom	sec.-serv.	person	Second Servant	Second Servant	1	p4	p4	
+rom	serv.	person	Servant	Servant	1	p4	p4	
+rom	chorus.	personGrp	Chorus	Chorus	1	p4	p4	
+tim	tim.	person	Timon of Athens	TIMON of Athens	1	p4	p4	
+tim	lucul.	person	Lucullus	LUCULLUS	1	p4	p4	
+tim	sem.	person	Sempronius	SEMPRONIUS	1	p4	p4	
+tim	ven.	person	Ventidius	VENTIDIUS	1	p4	p4	
+tim	alcib.	person	Alcibiades	ALCIBIADES	1	p4	p4	
+tim	apem.	person	Apemantus	APEMANTUS	1	p4	p4	
+tim	flav.	person	Flavius	FLAVIUS	1	p4	p4	
+tim	poet.	person	Poet	Poet	1	p4	p4	
+tim	pain.	person	Painter	Painter	1	p4	p4	
+tim	jew.	person	Jeweller	Jeweller	1	p4	p4	
+tim	mer.	person	Merchant	Merchant	1	p4	p4	
+tim	old-ath.	person	An old Athenian	An old Athenian	1	p4	p4	
+tim	flam.	person	Flaminius	FLAMINIUS	1	p4	p4	
+tim	luc.	person	Lucilius	LUCILIUS	1	p4	p4	
+tim	ser.	person	Servilius	SERVILIUS	1	p4	p4	
+tim	caph.	person	Caphis	CAPHIS	1	p4	p4	
+tim	phi.	person	Philotus	PHILOTUS	1	p4	p4	
+tim	tit.	person	Titus	TITUS	1	p4	p4	
+tim	luc.-serv.	person	Lucius	LUCIUS	2	p4	p4	
+tim	hor.	person	Hortensius	HORTENSIUS	1	p4	p4	
+tim	page.	person	A Page	A Page	1	p4	p4	
+tim	fool.	person	A Fool	A Fool	1	p4	p4	
+tim	first-stran.	person	First Stranger	First Stranger	1	p4	p4	
+tim	sec.-stran.	person	Second Stranger	Second Stranger	1	p4	p4	
+tim	third-stran.	person	Third Stranger	Third Stranger	1	p4	p4	
+tim	phr.	person	Phrynia	Phrynia	1	p4	p4	
+tim	timan.	person	Timandra	Timandra	1	p4	p4	
+tim	cup.	person	Cupid	Cupid	1	p4	p4	
+tim	first-lord.	person	First Lord	First Lord	1	p4	p4	
+tim	sec.-lord.	person	Second Lord	Second Lord	1	p4	p4	
+tim	third-lord.	person	Third Lord	Third Lord	1	p4	p4	
+tim	fourth-lord.	person	Fourth Lord	Fourth Lord	1	p4	p4	
+tim	fir.-sec.-lords.	personGrp	First and Sec. Lords	First and Sec. Lords	1	p4	p4	
+tim	all-lords.	personGrp	All Lords	All Lords	1	p4	p4	
+tim	first-lady.	person	First Lady	First Lady	1	p4	p4	
+tim	all-ladies.	personGrp	All Ladies	All Ladies	1	p4	p4	
+tim	all.	personGrp	All	All	1	p4	p4	
+tim	both.	personGrp	Both	Both	1	p4	p4	
+tim	some.	person	Some	Some	1	p4	p4	
+tim	serv.	person	Servant	Servant	1	p4	p4	
+tim	first-serv.	person	First Servant	First Servant	1	p4	p4	
+tim	sec.-serv.	person	Second Servant	Second Servant	1	p4	p4	
+tim	third-serv.	person	Third Servant	Third Servant	1	p4	p4	
+tim	all-serv.	personGrp	All Servants	All Servants	1	p4	p4	
+tim	servants.	personGrp	Servants	Servants	1	p4	p4	
+tim	var.-serv.	person	Servant to Varro	Servant to Varro	1	p4	p4	
+tim	first-var.-serv.	person	First Servant to Varro	First Servant to Varro	1	p4	p4	
+tim	sec.-var.-serv.	person	Second Servant to Varro	Second Servant to Varro	1	p4	p4	
+tim	both-serv.	personGrp	Both Servants to Varro	Both Servants to Varro	1	p4	p4	
+tim	isid.-serv.	person	Servant to Isidore	Servant to Isidore	1	p4	p4	
+tim	sen.	person	Senator	Senator	1	p4	p4	
+tim	first-sen.	person	First Senator	First Senator	1	p4	p4	
+tim	sec.-sen.	person	Second Senator	Second Senator	1	p4	p4	
+tim	third-sen.	person	Third Senator	Third Senator	1	p4	p4	
+tim	mess.	person	Messenger	Messenger	1	p4	p4	
+tim	first-ban.	person	First Bandit	First Bandit	1	p4	p4	
+tim	sec.-ban.	person	Second Bandit	Second Bandit	1	p4	p4	
+tim	third-ban.	person	Third Bandit	Third Bandit	1	p4	p4	
+tim	banditti.	person	Banditti	Banditti	1	p4	p4	
+tim	sold.	person	Soldier	Soldier	1	p4	p4	
+jc	jc-22	person	Julius Cæsar	Julius Cæsar	1	p4	p4	
+jc	jc-33	person	Octavius Cæsar	Octavius Cæsar	1	p4	p4	
+jc	jc-1	person	Marcus Antonius	Marcus Antonius	1	p4	p4	
+jc	jc-23	person	M. Æmilius Lepidus	M. Æmilius Lepidus	1	p4	p4	
+jc	jc-11	person	Cicero	Cicero	1	p4	p4	
+jc	jc-39	person	Publius	Publius	1	p4	p4	
+jc	jc-37	person	Popilius Lena	Popilius Lena	1	p4	p4	
+jc	jc-4	person	Marcus Brutus	Marcus Brutus	1	p4	p4	
+jc	jc-9	person	Cassius	Cassius	1	p4	p4	
+jc	jc-8	person	Casca	Casca	1	p4	p4	
+jc	jc-45	person	Trebonius	Trebonius	1	p4	p4	
+jc	jc-24	person	Ligarius	Ligarius	1	p4	p4	
+jc	jc-19	person	Decius Brutus	Decius Brutus	1	p4	p4	
+jc	jc-12	person	Metellus Cimber	Metellus Cimber	1	p4	p4	
+jc	jc-13	person	Cinna	Cinna	1	p4	p4	
+jc	jc-20	person	Flavius	Flavius	1	p4	p4	
+jc	jc-32	person	Marullus	Marullus	1	p4	p4	
+jc	jc-2	person	Artemidorus of Cnidos	Artemidorus of Cnidos	1	p4	p4	
+jc	jc-42	person	A Soothsayer	A Soothsayer	1	p4	p4	
+jc	jc-14	person	Cinna	Cinna	2	p4	p4	
+jc	jc-36	person	Another Poet	Another Poet.	1	p4	p4	
+jc	jc-25	person	Lucilius	Lucilius	1	p4	p4	
+jc	jc-44	person	Titinius	Titinius	1	p4	p4	
+jc	jc-29	person	Messala	Messala	1	p4	p4	
+jc	jc-10	person	Young Cato	Young Cato	1	p4	p4	
+jc	jc-47	person	Volumnius	Volumnius	1	p4	p4	
+jc	jc-46	person	Varro	Varro	1	p4	p4	
+jc	jc-16	person	Clitus	Clitus	1	p4	p4	
+jc	jc-15	person	Claudius	Claudius	1	p4	p4	
+jc	jc-43	person	Strato	Strato	1	p4	p4	
+jc	jc-26	person	Lucius	Lucius	1	p4	p4	
+jc	jc-18	person	Dardanius	Dardanius	1	p4	p4	
+jc	jc-34	person	Pindarus	Pindarus	1	p4	p4	
+jc	jc-6	person	Calpurnia	Calpurnia	1	p4	p4	
+jc	jc-38	person	Portia	Portia	1	p4	p4	
+jc	jc-35	personGrp	Citizens	Citizens	1	p4	p4	
+jc	jc-7	person	First Com			none		label 'First Com.'
+jc	jc-41	person	First Sold			none		label 'First Sold.'
+jc	jc-21	person	Ghost			none		label 'Ghost.'
+jc	jc-30	person	Mess			none		label 'Mess.'
+jc	jc-17	person	Sec. Com			none		label 'Sec. Com.'
+jc	jc-40	person	Serv			none		label 'Serv.'
+mac	all.	personGrp	All	All	1	p4	p4	
+mac	ang.	person	Angus	Angus	1	p4	p4	
+mac	aten.	person	Attendant	Attendant	1	p4	p4	
+mac	ban.	person	Banquo	Banquo	1	p4	p4	
+mac	both-mur.	personGrp	Both Murderers	Both Murderers	1	p4	p4	
+mac	caith.	person	Caithness	Caithness	1	p4	p4	
+mac	doct.	person	Doctor	Doctor	1	p4	p4	
+mac	don.	person	Donalbain	Donalbain	1	p4	p4	
+mac	dun.	person	Duncan	Duncan	1	p4	p4	
+mac	first-app.	person	First Apparition	First Apparition	1	p4	p4	
+mac	first-mur.	person	First Murderer	First Murderer	1	p4	p4	
+mac	first-witch.	person	First Witch	First Witch	1	p4	p4	
+mac	fle.	person	Fleance	Fleance	1	p4	p4	
+mac	gent.	person	Gentlewoman	Gentlewoman	1	p4	p4	
+mac	hec.	person	Hecate	Hecate	1	p4	p4	
+mac	l.-macd.	person	Lady Macduff	Lady Macduff	1	p4	p4	
+mac	lady-m.	person	Lady Macbeth	Lady Macbeth	1	p4	p4	
+mac	len.	person	Lennox	Lennox	1	p4	p4	
+mac	lord.	person	Lord	Lord	1	p4	p4	
+mac	lords.	personGrp	Lords	Lords	1	p4	p4	
+mac	macb.	person	Macbeth	Macbeth	1	p4	p4	
+mac	macd.	person	Macduff	Macduff	1	p4	p4	
+mac	mal.	person	Malcolm	Malcolm	1	p4	p4	
+mac	ment.	person	Menteith	Menteith	1	p4	p4	
+mac	mess.	person	Messenger	Messenger	1	p4	p4	
+mac	mur.	person	Murderer	Murderer	1	p4	p4	
+mac	old-m.	person	Old Man	Old Man	1	p4	p4	
+mac	port.	person	Porter	Porter	1	p4	p4	
+mac	porter.	person	Porter	Porter	2	p4	p4	
+mac	ross.	person	Ross	Ross	1	p4	p4	
+mac	sec.-app.	person	Second Apparition	Second Apparition	1	p4	p4	
+mac	sec.-mur.	person	Second Murderer	Second Murderer	1	p4	p4	
+mac	sec.-witch.	person	Second Witch	Second Witch	1	p4	p4	
+mac	ser.	person	Sergeant	Sergeant	1	p4	p4	
+mac	serv.	person	Servant	Servant	1	p4	p4	
+mac	serve.	person	Servant	Servant	2	p4	p4	
+mac	sey.	person	Seyton	Seyton	1	p4	p4	
+mac	sin.	person	Siward	Siward	1	p4	p4	
+mac	sir.	person	Siward	Siward	2	p4	p4	
+mac	siw.	person	Siward	Siward	3	p4	p4	
+mac	soldier.	person	Soldier	Soldier	1	p4	p4	never speaks
+mac	soldiers.	person	Soldier	Soldier	2	p4	p4	
+mac	son.	person	Son to Macduff	Son to Macduff	1	p4	p4	
+mac	third-app.	person	Third Apparition	Third Apparition	1	p4	p4	
+mac	third-mur.	person	Third Murderer	Third Murderer	1	p4	p4	
+mac	third-witch.	person	Third Witch	Third Witch	1	p4	p4	
+mac	yo.-siw.	person	Young Siward	Young Siward	1	p4	p4	
+ham	king.	person	Claudius	CLAUDIUS	1	p4	p4	
+ham	ham.	person	Hamlet	HAMLET, son to the late	1	p4	p4	
+ham	pol.	person	Polonius	POLONIUS	1	p4	p4	
+ham	hor.	person	Horatio	HORATIO	1	p4	p4	
+ham	laer.	person	Laertes	LAERTES	1	p4	p4	
+ham	volt.	person	Voltimand	VOLTIMAND	1	p4	p4	
+ham	cor.	person	Cornelius	CORNELIUS	1	p4	p4	
+ham	ros.	person	Rosencrantz	ROSENCRANTZ	1	p4	p4	
+ham	guil.	person	Guildenstern	GUILDENSTERN	1	p4	p4	
+ham	osr.	person	Osric	OSRIC	1	p4	p4	
+ham	gent.	person	A Gentleman	A Gentleman	1	p4	p4	
+ham	first-priest.	person	A Priest	A Priest	1	p4	p4	
+ham	mar.	person	Marcellus	MARCELLUS	1	p4	p4	
+ham	ber.	person	Bernardo	BERNARDO	1	p4	p4	
+ham	fran.	person	Francisco	FRANCISCO	1	p4	p4	
+ham	rey.	person	Reynaldo	REYNALDO	1	p4	p4	
+ham	first-play.	personGrp	Players	Players	1	p4	p4	
+ham	first-clo.	person	First Clown	First Clown	1	p4	p4	
+ham	sec.-clo.	person	Second Clown	Second Clown	1	p4	p4	
+ham	fort.	person	Fortinbras	FORTINBRAS	1	p4	p4	
+ham	cap.	person	A Captain	A Captain	1	p4	p4	
+ham	first-amb.	person	English Ambassadors	English Ambassadors	1	p4	p4	
+ham	queen.	person	Gertrude	GERTRUDE	1	p4	p4	
+ham	oph.	person	Ophelia	OPHELIA	1	p4	p4	
+ham	all.	personGrp	All	All	1	p4	p4	
+ham	mar.-and-ber.	personGrp	Mar. and Ber	Mar. and Ber.	1	p4	p4	never speaks
+ham	mar.-and-hor.	personGrp	Mar. and Hor	Mar. and Hor.	1	p4	p4	never speaks
+ham	ros.-and-guil.	personGrp	Ros. and Guil	Ros. and Guil.	1	p4	p4	
+ham	danes.	person	Danes	Danes.	1	p4	p4	
+ham	pro.	person	Prologue	Prologue	1	p4	p4	
+ham	p.-king.	person	Player King	Player King	1	p4	p4	
+ham	p.-queen.	person	Player Queen	Player Queen	1	p4	p4	
+ham	luc.	person	Lucianus	Lucianus	1	p4	p4	
+ham	serv.	person	Servant	Servant	1	p4	p4	
+ham	sail.	person	Sailor	Sailor	1	p4	p4	
+ham	mess.	person	Mess	Mess.	1	p4	p4	
+ham	lord.	person	Lord	Lord.	1	p4	p4	
+ham	ghost.	person	Ghost of Hamlet's Father	Ghost of Hamlet's Father	1	p4	p4	
+lr	lr-11	person	Lear	LEAR	1	p4	p4	
+lr	lr-6	person	King of France	KING OF FRANCE	1	p4	p4	
+lr	lr-2	person	Duke of Burgundy	DUKE OF BURGUNDY	1	p4	p4	
+lr	lr-4	person	Duke of Cornwall	DUKE OF CORNWALL	1	p4	p4	
+lr	lr-1	person	Duke of Albany	DUKE OF ALBANY	1	p4	p4	
+lr	lr-9	person	Earl of Kent	EARL OF KENT	1	p4	p4	
+lr	lr-7	person	Earl of Gloucester	EARL OF GLOUCESTER	1	p4	p4	
+lr	lr-13	person	Edgar	EDGAR	1	p4	p4	
+lr	lr-5	person	Edmund	EDMUND	1	p4	p4	
+lr	lr-18	person	Curan	CURAN	1	p4	p4	
+lr	lr-20	person	Old Man	Old Man	1	p4	p4	
+lr	lr-22	person	Doctor	Doctor	1	p4	p4	
+lr	lr-15	person	Fool	Fool	1	p4	p4	
+lr	lr-14	person	Oswald	OSWALD	1	p4	p4	
+lr	lr-24	person	A Captain employed by Edmund	A Captain employed by Edmund	1	p4	p4	
+lr	lr-17	person	Gentleman attendant on Cordelia	Gentleman attendant on Cordelia	1	p4	p4	
+lr	lr-25	person	A Herald	A Herald	1	p4	p4	
+lr	lr-19	person	First Servant	First Servant	1	p4	p4	
+lr	lr-8	person	Goneril	GONERIL	1	p4	p4	
+lr	lr-12	person	Regan	REGAN	1	p4	p4	
+lr	lr-3	person	Cordelia	CORDELIA	1	p4	p4	
+lr	lr-16	personGrp	Knights of Lear's train	Knights of Lear's train	1	p4	p4	
+lr	lr-21	personGrp	Messengers	Messengers	1	p4	p4	
+oth	duke.	person	Duke of Venice	DUKE OF VENICE	1	p4	p4	
+oth	bra.	person	Brabantio	BRABANTIO	1	p4	p4	
+oth	sen.	personGrp	Other Senators	Other Senators	1	p4	p4	
+oth	gra.	person	Gratiano	GRATIANO	1	p4	p4	
+oth	lod.	person	Lodovico	LODOVICO	1	p4	p4	
+oth	oth.	person	Othello	OTHELLO	1	p4	p4	
+oth	cas.	person	Cassio	CASSIO	1	p4	p4	
+oth	iago.	person	Iago	IAGO	1	p4	p4	
+oth	rod.	person	Roderigo	RODERIGO	1	p4	p4	
+oth	mon.	person	Montano	MONTANO	1	p4	p4	
+oth	clo.	person	Clown	Clown	1	p4	p4	
+oth	des.	person	Desdemona	DESDEMONA	1	p4	p4	
+oth	emil.	person	Emilia	EMILIA	1	p4	p4	
+oth	bian.	person	Bianca	BIANCA	1	p4	p4	
+oth	sailor	person	Sailor	Sailor	1	p4	p4	
+oth	mess.	person	Messenger	Messenger	1	p4	p4	
+oth	her.	person	Herald	Herald	1	p4	p4	
+oth	officer	personGrp	Officers	Officers	1	p4	p4	
+oth	gent.	personGrp	Gentlemen	Gentlemen	1	p4	p4	
+oth	mus.	personGrp	Musicians	Musicians	1	p4	p4	
+oth	all.	personGrp	All	All.	1	p4	p4	
+ant	ant-26	person	Mark Antony	Mark Antony	1	p4	p4	
+ant	ant-32	person	Octavius Cæsar	Octavius Cæsar	1	p4	p4	
+ant	ant-23	person	M. Æmilius Lepidus	M. Æmilius Lepidus	1	p4	p4	
+ant	ant-34	person	Sextus Pompeius	Sextus Pompeius	1	p4	p4	
+ant	ant-16	person	Domitius Enobarbus	Domitius Enobarbus	1	p4	p4	
+ant	ant-49	person	Ventidius	Ventidius	1	p4	p4	
+ant	ant-17	person	Eros	Eros	1	p4	p4	
+ant	ant-37	person	Scarus	Scarus	1	p4	p4	
+ant	ant-11	person	Dercetas	Dercetas	1	p4	p4	
+ant	ant-12	person	Demetrius	Demetrius	1	p4	p4	
+ant	ant-33	person	Philo	Philo	1	p4	p4	
+ant	ant-25	person	Mecænas	Mecænas	1	p4	p4	
+ant	ant-1	person	Agrippa	Agrippa	1	p4	p4	
+ant	ant-14	person	Dolabella	Dolabella	1	p4	p4	
+ant	ant-35	person	Proculeius	Proculeius	1	p4	p4	
+ant	ant-47	person	Thyreus	Thyreus	1	p4	p4	
+ant	ant-19	person	Gallus	Gallus	1	p4	p4	
+ant	ant-28	person	Menas	Menas	1	p4	p4	
+ant	ant-29	person	Menecrates	Menecrates	1	p4	p4	
+ant	ant-48	person	Varius	Varius	1	p4	p4	
+ant	ant-46	person	Taurus	Taurus	1	p4	p4	
+ant	ant-6	person	Canidius	Canidius	1	p4	p4	
+ant	ant-43	person	Silius	Silius	1	p4	p4	
+ant	ant-18	person	Euphronius	Euphronius	1	p4	p4	
+ant	ant-2	person	Alexas	Alexas	1	p4	p4	
+ant	ant-27	person	Mardian	Mardian	1	p4	p4	
+ant	ant-39	person	Selucus	Selucus	1	p4	p4	
+ant	ant-13	person	Diomedes	Diomedes	1	p4	p4	
+ant	ant-45	person	A Soothsayer	A Soothsayer.	1	p4	p4	
+ant	ant-10	person	A Clown	A Clown.	1	p4	p4	
+ant	ant-9	person	Cleopatra	Cleopatra	1	p4	p4	
+ant	ant-31	person	Octavia	Octavia	1	p4	p4	
+ant	ant-8	person	Charmian	Charmian	1	p4	p4	
+ant	ant-21	person	Iras	Iras	1	p4	p4	
+ant	ant-44	personGrp	Soldiers	Soldiers	1	p4	p4	
+ant	ant-30	personGrp	Messengers	Messengers	1	p4	p4	
+ant	ant-5	personGrp	Attendants	Attendants	1	p4	p4	
+ant	ant-15	person	Egyptian	Egyptian	1	p4	p4	
+ant	ant-41	personGrp	Servants	Servants	1	p4	p4	
+ant	ant-20	personGrp	Guards	Guards	1	p4	p4	
+ant	ant-7	person	Captain	Captain	1	p4	p4	
+cym	cym.	person	Cymbeline	CYMBELINE	1	p4	p4	
+cym	clo.	person	Cloten	CLOTEN	1	p4	p4	
+cym	post.	person	Posthumus Leonatus	POSTHUMUS LEONATUS	1	p4	p4	
+cym	bel.	person	Belarius	BELARIUS	1	p4	p4	
+cym	gui.	person	Guiderius	GUIDERIUS	1	p4	p4	
+cym	arv.	person	Arviragus	ARVIRAGUS	1	p4	p4	
+cym	phi.	person	Philario	PHILARIO	1	p4	p4	
+cym	iach.	person	Iachimo	IACHIMO	1	p4	p4	
+cym	luc.	person	Caius Lucius	CAIUS LUCIUS	1	p4	p4	
+cym	pis.	person	Pisanio	PISANIO	1	p4	p4	
+cym	cor.	person	Cornelius	CORNELIUS	1	p4	p4	
+cym	cap.	person	A Roman Captain	A Roman Captain	1	p4	p4	
+cym	first-cap.	person	First Captain	First Captain	1	p4	p4	
+cym	sec.-cap.	person	Second Captain	Second Captain	1	p4	p4	
+cym	french.	person	A Frenchman	A Frenchman	1	p4	p4	
+cym	first-lord.	person	First Lord	First Lord	1	p4	p4	
+cym	sec.-lord.	person	Second Lord	Second Lord	1	p4	p4	
+cym	first-gent.	person	First Gentleman	First Gentleman	1	p4	p4	
+cym	sec.-gent.	person	Second Gentleman	Second Gentleman	1	p4	p4	
+cym	first-gaol.	person	First Gaoler	First Gaoler	1	p4	p4	
+cym	sec.-gaol.	person	Second Gaoler	Second Gaoler	1	p4	p4	
+cym	queen.	person	Queen	Queen	1	p4	p4	
+cym	imo.	person	Imogen	IMOGEN	1	p4	p4	
+cym	helen.	person	Helen	HELEN	1	p4	p4	
+cym	first-sen.	person	First Senator	First Senator	1	p4	p4	
+cym	sec.-sen.	person	Second Senator	Second Senator	1	p4	p4	
+cym	first-tri.	person	First Tribune	First Tribune	1	p4	p4	
+cym	mess.	person	Messenger	Messenger	1	p4	p4	
+cym	atten.	person	Attendant	Attendant	1	p4	p4	
+cym	sooth.	person	Soothsayer	Soothsayer	1	p4	p4	
+cym	lord.	person	a British Lord	a British Lord	1	p4	p4	
+cym	lords.	personGrp	Lords	Lords	1	p4	p4	
+cym	first-lady.	person	First Lady	First Lady	1	p4	p4	
+cym	lady.	person	a Lady	a Lady	1	p4	p4	
+cym	both.	personGrp	Both	Both	1	p4	p4	
+cym	gui.-and-arv.	personGrp	Gui. and Arv	Gui. and Arv.	1	p4	p4	
+cym	sici.	person	Sicilius Leonatus	SICILIUS LEONATUS	1	p4	p4	
+cym	moth.	person	his wife	his wife	1	p4	p4	
+cym	first-bro.	person	First of the Leonati	First of the Leonati	1	p4	p4	
+cym	sec.-bro.	person	Second of the Leonati	Second of the Leonati	1	p4	p4	
+cym	both-bro.	personGrp	Both together	Both together	1	p4	p4	
+cym	jup.	person	Jupiter	Jupiter	1	p4	p4	
+cym	all.	personGrp	All	All	1	p4	p4	
+per	all.	personGrp	All	All	1	p4	p4	
+per	ant.	person	Antiochus	ANTIOCHUS	1	p4	p4	
+per	bawd.	person	Bawd	Bawd	1	p4	p4	
+per	both.	personGrp	Both	Both	1	p4	p4	
+per	boult.	person	Boult	Boult	1	p4	p4	
+per	cer.	person	Cerimon	CERIMON	1	p4	p4	
+per	cle.	person	Cleon	Cleon	1	p4	p4	
+per	daugh.	person	Daughter of Antiochus	Daughter of Antiochus	1	p4	p4	
+per	dia.	person	Diana	Diana	1	p4	p4	
+per	dion.	person	Dionyza	Dionyza	1	p4	p4	
+per	esca.	person	Escanes	Escanes	1	p4	p4	
+per	first-fish.	person	First Fisherman	First Fisherman	1	p4	p4	
+per	first-gent.	person	First Gentleman	First Gentleman	1	p4	p4	
+per	first-knight.	person	First Knight	First Knight	1	p4	p4	
+per	first-lord.	person	First Lord	First Lord	1	p4	p4	
+per	first-pirate.	person	First Pirate	First Pirate	1	p4	p4	
+per	first-sail.	person	First Sailor	First Sailor	1	p4	p4	
+per	first-serv.	person	First Servant	First Servant	1	p4	p4	
+per	gow.	person	Gower	Gower	1	p4	p4	
+per	hel.	person	Helicanus	Helicanus	1	p4	p4	
+per	knights.	personGrp	Knights	Knights	1	p4	p4	
+per	leon.	person	Leonine	Leonine	1	p4	p4	
+per	lord.	person	Lord	Lord	1	p4	p4	
+per	lyc.	person	Lychorida	Lychorida	1	p4	p4	
+per	lys.	person	Lysimachus	LYSIMACHUS	1	p4	p4	
+per	mar.	person	Marina	Marina	1	p4	p4	
+per	marshal.	person	Marshal	Marshal	1	p4	p4	
+per	mess.	person	Messenger	Messenger	1	p4	p4	
+per	pand.	person	Pandar	Pandar	1	p4	p4	
+per	per.	person	Pericles	Pericles	1	p4	p4	
+per	phil.	person	Philemon	Philemon	1	p4	p4	
+per	sec.-fish.	person	Second Fisherman	Second Fisherman	1	p4	p4	
+per	sec.-gent.	person	Second Gentleman	Second Gentleman	1	p4	p4	
+per	sec.-knight.	person	Second Knight	Second Knight	1	p4	p4	
+per	sec.-lord.	person	Second Lord	Second Lord	1	p4	p4	
+per	sec.-pirate.	person	Second Pirate	Second Pirate	1	p4	p4	
+per	sec.-sail.	person	Second Sailor	Second Sailor	1	p4	p4	
+per	serv.	person	Servant	Servant	1	p4	p4	
+per	sim.	person	Simonides	Simonides	1	p4	p4	
+per	thai.	person	Thaisa	Thaisa	1	p4	p4	
+per	thal.	person	Thaliard	Thaliard	1	p4	p4	
+per	third-fish.	person	Third Fisherman	Third Fisherman	1	p4	p4	
+per	third-knight.	person	Third Knight	Third Knight	1	p4	p4	
+per	third-lord.	person	Third Lord	Third Lord	1	p4	p4	
+per	third-pirate.	person	Third Pirate	Third Pirate	1	p4	p4	
+per	tyr.-sail.	person	Tyrian Sailor	Tyrian Sailor	1	p4	p4	

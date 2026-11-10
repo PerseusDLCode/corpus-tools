@@ -72,6 +72,7 @@ Regenerates a play's Globe line numbering from page images of the printed Globe.
 - **canonical-engLit: `mvp` only.** The build refuses unless canonical-engLit has `mvp` checked out. Work only in the `PerseusDLCode` fork (`origin`), from `mvp`; never commit to, branch from, merge into or compare against its `main`, and never push to `upstream`.
 - A play's P4 source, published edition, printed pages and DraCor file are its row in `data/globe/plays.tsv` (`src/globe/plays.py`); name them nowhere else.
 - `shared-lines.tsv`'s `checked` column is filled by Cliff after looking at the page image; never fill it. The canonical build refuses unchecked rows.
+- A play's structure around its lined body is `src/globe/structure.py`, run last in `emit_tei.emit()`: divisions typed by what they are (act, scene, induction, prologue, epilogue, chorus; `@n` and so the URNs unchanged), the Dramatis Personae as `<front>/<castList>` (with `<set>`), the speakers as `<profileDesc>/<particDesc>/<listPerson>` with `<sp who="#id">` and each printed `<role corresp="#id">`. The speakers come from `data/globe/speakers.tsv` (`python -m globe.speakers` proposes rows, keeping checked ones); its `checked` column is Cliff's for `label` and `none` rows, never fill it; the canonical build refuses unchecked rows.
 - Byte identity depends on serialisation: keep lxml at the locked 6.1.3.
 
 ## Related repos (siblings)

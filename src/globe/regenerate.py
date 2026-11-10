@@ -41,6 +41,7 @@ from globe import plays
 from globe import schmidt_smoke
 from globe import shared_lines
 from globe import source_text
+from globe import speakers
 from globe import tei_header
 from globe import tokens
 from globe import witnesses
@@ -1008,6 +1009,15 @@ def build_reviews(results, lines, toks) -> list[tuple[int, str]]:
     return out
 
 
+def without_cast(body):
+    """The body less its cast division, which the edition puts in <front>
+    (src/globe/structure.py): what the output's body is compared with."""
+    for div in body.findall("{http://www.tei-c.org/ns/1.0}div"):
+        if div.get("n") == "cast":
+            body.remove(div)
+    return body
+
+
 def check_words(xml: bytes, source_words: list[str]) -> None:
     """Regeneration moves no words: the output's word stream is the P4's."""
     body = etree.fromstring(xml).find(f"{{http://www.tei-c.org/ns/1.0}}text/"
@@ -1032,7 +1042,8 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
     when = emit_tei.commit_date(REPO)
     sources = {p4_path.name: emit_tei.sha256(p4_path)[:16],
                "shared-lines.tsv": emit_tei.sha256(shared_lines.TABLE)[:16],
-               emit_tei.TEMPLATE.name: emit_tei.sha256(emit_tei.TEMPLATE)[:16]}
+               emit_tei.TEMPLATE.name: emit_tei.sha256(emit_tei.TEMPLATE)[:16],
+               speakers.TABLE.name: emit_tei.sha256(speakers.TABLE)[:16]}
     applied = [row for r in results for _, row in r.applied]
     pending = [row for row in applied if row.pending]
 
@@ -1048,12 +1059,13 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
                              emit_tei.review_marks(reviews) if with_reviews else None)
 
     out_dir.mkdir(parents=True, exist_ok=True)
-    source_words = tokens.word_stream(source_text.load_p4(p4_path).body)
+    source_words = tokens.word_stream(without_cast(source_text.load_p4(p4_path).body))
     review_bytes = one(True)
     check_words(review_bytes, source_words)
     (out_dir / tei_header.review_filename(play)).write_bytes(review_bytes)
     written = {"review": out_dir / tei_header.review_filename(play)}
-    if (pending or unchecked_numerals) and not allow_pending:
+    unchecked_speakers = [r for r in speakers.for_play(speakers.read_table(), play) if r.pending]
+    if (pending or unchecked_numerals or unchecked_speakers) and not allow_pending:
         why = []
         if pending:
             why.append(f"{len(pending)} shared-lines.tsv rows are unchecked "
@@ -1061,6 +1073,10 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
         if unchecked_numerals:
             why.append(f"{len(unchecked_numerals)} re-read numerals are unchecked in "
                        f"numeral-checks.tsv (pp. {', '.join(str(p) for p in sorted({rr.page for rr in unchecked_numerals}))})")
+        if unchecked_speakers:
+            why.append(f"{len(unchecked_speakers)} speakers.tsv rows are unchecked "
+                       f"({', '.join(r.id for r in unchecked_speakers[:6])}"
+                       f"{', ...' if len(unchecked_speakers) > 6 else ''})")
         print(f"canonical build refused: {'; '.join(why)}; review build written", file=sys.stderr)
     else:
         canonical = one(False)

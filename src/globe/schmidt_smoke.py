@@ -137,9 +137,12 @@ def read_edition(path: Path) -> dict[str, Scene]:
                     state["line"] = int(m.get("n"))
             return
         if el.tag == f"{TEI}div":
-            if el.get("type") == "act":
+            # by level, as the refsDecl cites (src/globe/tei_header.py): a division
+            # of the body (act, induction, prologue, epilogue), then one of those
+            # (scene, an act's prologue or chorus)
+            if el.getparent().tag == f"{TEI}body":
                 act = el.get("n")
-            elif el.get("type") == "scene":
+            else:
                 state["scene"] = scenes.setdefault(f"{act}.{el.get('n')}", Scene([], [], {}, set()))
                 state["line"] = None
         if el.tag == f"{TEI}milestone" and el.get("ed") == "Globe":

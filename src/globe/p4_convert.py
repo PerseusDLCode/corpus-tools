@@ -117,6 +117,7 @@ PASSTHROUGH_ATTRS: dict[str, set[str]] = {
     "castGroup": set(),
     "castItem": {"type"},
     "roleDesc": set(),
+    "set": set(),  # the setting, beside the cast list (src/globe/structure.py)
     # Inline in the other plays' P4s; none starts or ends a row.
     "hi": {"rend"},
     "quote": {"rend"},

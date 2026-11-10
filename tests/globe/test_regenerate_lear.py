@@ -183,7 +183,15 @@ def test_the_output_is_the_p4_text_with_a_milestone_on_every_line(lear, tmp_path
     assert refs_decl.find(f"{{{TEI_NS}}}citeStructure").get("match") == "/TEI/text/body"
     # every Globe line is citable through it, and the cast list is not an act
     tei_header.check_every_line_citable(body)
-    assert "@n != 'cast'" in etree.tostring(refs_decl, encoding="unicode")
+    # every division of the body is cited: the cast list is in <front> (src/globe/structure.py)
+    assert 'match="div" use="@n"' in etree.tostring(refs_decl, encoding="unicode")
+    front = root.find(f"{{{TEI_NS}}}text/{{{TEI_NS}}}front")
+    assert front is not None and front.find(f"{{{TEI_NS}}}castList") is not None
+    assert body.find(f"{{{TEI_NS}}}div[@n='cast']") is None
+    ids = {p.get("{http://www.w3.org/XML/1998/namespace}id")
+           for p in root.iter(f"{{{TEI_NS}}}person", f"{{{TEI_NS}}}personGrp")}
+    assert all(w.startswith("#") and w[1:] in ids
+               for sp in body.iter(f"{{{TEI_NS}}}sp") for w in sp.get("who", "").split())
 
 
 @needs_witnesses

@@ -328,20 +328,26 @@ BARE_LINE_PARENTS = ("p", "l", "lg")
 
 
 def has_bare_act_lines(body) -> bool:
-    """Does an act (not the cast list) hold a Globe milestone in a line, a
-    paragraph or a line group that is its own child, outside any speech?"""
+    """Does a top-level division (an act, induction, prologue or epilogue: the
+    cast list is in <front>, src/globe/structure.py) hold a Globe milestone in
+    a line, a paragraph or a line group that is its own child, outside any
+    speech?"""
     ns = {"tei": TEI_XMLNS}
-    return any(body.xpath(f"tei:div[@type='act'][@n != 'cast']/tei:{tag}//tei:{GLOBE_LINE}", namespaces=ns)
+    return any(body.xpath(f"tei:div/tei:{tag}//tei:{GLOBE_LINE}", namespaces=ns)
                for tag in BARE_LINE_PARENTS)
 
 
 def build_refs_decl(bare_act_lines: bool = False) -> etree._Element:
     """The Globe edition's one citation scheme: act.scene.line, the line a
     Globe milestone (canonical-engLit doc/forum.org
-    #encoding/shakespeare-citestructures). The cast list is not an act. A
-    line outside any scene (an act-level prologue, as in Henry V) is cited
-    act.line, through the second branch, which reaches only speeches that are
-    the act's own children. The scene is the chunk. Paths avoid XPath axes:
+    #encoding/shakespeare-citestructures). The first level is every division
+    of the body: an act, or an induction, prologue or epilogue (the cast list
+    is in <front>, src/globe/structure.py); the second, every division of one:
+    a scene, or an act's prologue or chorus. Matched as plain `div` at both, so
+    the citation path does not depend on the types. A line outside any scene
+    (the Prologue of Henry V) is cited division.line, through the second
+    branch, which reaches only speeches that are the division's own children.
+    The scene is the chunk. Paths avoid XPath axes:
     perseus-cts does not namespace-prefix a name after one.
 
     An act-level prologue or epilogue with no speaker (Henry VIII's) has its
@@ -354,8 +360,8 @@ def build_refs_decl(bare_act_lines: bool = False) -> etree._Element:
         bare = f'''<citeStructure unit="line" delim="." match="{match}" use="@n"/>'''
     xml = f"""<refsDecl n="CTS" xml:id="CTS">
       <citeStructure match="/TEI/text/body" use="@xml:base">
-        <citeStructure unit="act" delim=":" match="div[@type='act'][@n != 'cast']" use="@n">
-          <citeStructure unit="scene" delim="." match="div[@type='scene']" use="@n" n="chunk">
+        <citeStructure unit="act" delim=":" match="div" use="@n">
+          <citeStructure unit="scene" delim="." match="div" use="@n" n="chunk">
             <citeStructure unit="line" delim="." match=".//{GLOBE_LINE}" use="@n"/>
           </citeStructure>
           <citeStructure unit="line" delim="." match="sp//{GLOBE_LINE}" use="@n"/>
@@ -372,16 +378,16 @@ def build_refs_decl(bare_act_lines: bool = False) -> etree._Element:
 def check_every_line_citable(body, bare_act_lines: bool = False) -> None:
     """Each Globe milestone must be reachable exactly once through
     build_refs_decl(): in a scene, or in a speech that is an act's own child.
-    One anywhere else (a line directly under an act outside a speech, or in
-    the cast list) would be uncitable, so the build stops instead; a line, a
+    One anywhere else (a line directly under a division outside a speech)
+    would be uncitable, so the build stops instead; a line, a
     paragraph or a line group that is the act's own child is citable only
     where `bare_act_lines` is on (build_refs_decl)."""
     ns = {"tei": TEI_XMLNS}
     line = "tei:milestone[@unit='line'][@ed='Globe']"
     total = len(body.xpath(f".//{line}", namespaces=ns))
     reached = 0
-    for act in body.xpath("tei:div[@type='act'][@n != 'cast']", namespaces=ns):
-        reached += len(act.xpath(f"tei:div[@type='scene']//{line}", namespaces=ns))
+    for act in body.xpath("tei:div", namespaces=ns):
+        reached += len(act.xpath(f"tei:div//{line}", namespaces=ns))
         reached += len(act.xpath(f"tei:sp//{line}", namespaces=ns))
         if bare_act_lines:
             reached += sum(len(act.xpath(f"tei:{tag}//{line}", namespaces=ns)) for tag in BARE_LINE_PARENTS)

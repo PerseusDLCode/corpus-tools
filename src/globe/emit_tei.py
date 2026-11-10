@@ -33,7 +33,7 @@ from xml.sax.saxutils import escape
 from lxml import etree
 
 from globe.p4_convert import q
-from globe import tei_header
+from globe import p4_convert, plays, speakers, structure, tei_header
 from globe.tokens import Token, norm
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
@@ -275,6 +275,9 @@ def emit(shell_xml: bytes, body, toks, marks, tool: str, version: str, commit: s
     if xml_base:
         body.set("{http://www.w3.org/XML/1998/namespace}base", xml_base)
     old_body.getparent().replace(old_body, body)
+    # the Dramatis Personae, the division types and the speakers (src/globe/structure.py)
+    structure.restructure(root, p4_convert.parse_p4(speakers.CORPUS / plays.get(play).p4),
+                          speakers.for_play(speakers.read_table(), play))
     tei_header.rewrite(root, play, table)
     stamp(root, tool, version, commit, when, sources)
     header = root.find(f"{TEI}teiHeader")
@@ -283,6 +286,10 @@ def emit(shell_xml: bytes, body, toks, marks, tool: str, version: str, commit: s
     root.text = "\n  "
     text_el = root.find(f"{TEI}text")
     text_el.text, text_el.tail = "\n    ", "\n"
+    front = text_el.find(f"{TEI}front")
+    if front is not None:
+        etree.indent(front, space="  ")
+        front.tail = "\n    "
     etree.indent(body, space="  ")
     if reviews:
         apply_marks(toks, reviews)

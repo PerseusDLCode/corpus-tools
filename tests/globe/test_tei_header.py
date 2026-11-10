@@ -149,8 +149,7 @@ def test_rewrite_replaces_the_shells_refsdecl():
     refs = root.findall(f"{{{TEI}}}teiHeader/{{{TEI}}}encodingDesc/{{{TEI}}}refsDecl")
     assert len(refs) == 1 and refs[0].get("marker") is None
     ns = {"t": TEI}
-    assert refs[0].xpath("t:citeStructure/t:citeStructure/@match", namespaces=ns) == [
-        "div[@type='act'][@n != 'cast']"]
+    assert refs[0].xpath("t:citeStructure/t:citeStructure/@match", namespaces=ns) == ["div"]
     scene = refs[0].xpath(".//t:citeStructure[@unit='scene']", namespaces=ns)[0]
     assert scene.get("n") == "chunk"
     assert [c.get("match") for c in refs[0].iter(f"{{{TEI}}}citeStructure") if c.get("unit") == "line"] == [
@@ -178,8 +177,8 @@ def test_a_line_outside_any_speech_or_scene_stops_the_build():
 
 def test_a_speakerless_prologue_is_citable_only_where_the_refsdecl_has_the_branch():
     """Henry VIII: the Prologue and Epilogue are <p> and <l> directly in the act."""
-    body = _body(f'<div type="act" n="prologue"><p>{MS}I come no more</p></div>'
-                 f'<div type="act" n="epilogue"><l>{MS}Tis ten to one</l></div>'
+    body = _body(f'<div type="prologue" n="prologue"><p>{MS}I come no more</p></div>'
+                 f'<div type="epilogue" n="epilogue"><l>{MS}Tis ten to one</l></div>'
                  f'<div type="act" n="1"><div type="scene" n="1"><sp><l>{MS}My lord</l></sp></div></div>')
     assert tei_header.has_bare_act_lines(body)
     tei_header.check_every_line_citable(body, True)
@@ -189,12 +188,13 @@ def test_a_speakerless_prologue_is_citable_only_where_the_refsdecl_has_the_branc
                if c.get("unit") == "line"]
     assert matches[2] == " | ".join(f"{t}//milestone[@unit='line'][@ed='Globe']" for t in ("p", "l", "lg"))
     assert len(tei_header.build_refs_decl().findall(f".//{{{TEI}}}citeStructure[@unit='line']")) == 2
-    assert not tei_header.has_bare_act_lines(_body(f'<div type="act" n="cast"><l>{MS}x</l></div>'))
 
 
-def test_a_line_in_the_cast_list_stops_the_build():
+def test_a_line_outside_every_division_stops_the_build():
+    """The cast list is in <front> now (src/globe/structure.py); what is left
+    uncitable is a line in the body outside any division."""
     with pytest.raises(ValueError, match="not citable"):
-        tei_header.check_every_line_citable(_body(f'<div type="act" n="cast"><sp><l>{MS}x</l></sp></div>'))
+        tei_header.check_every_line_citable(_body(f'<sp><l>{MS}x</l></sp>'))
 
 
 def test_rewrite_replaces_source_desc_and_editorial_decl():

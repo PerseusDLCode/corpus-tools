@@ -244,11 +244,21 @@ def propose(play: str) -> list[Row]:
 
 
 def read_table(path: Path = TABLE) -> list[Row]:
+    """The table. Like plays.tsv and shared-lines.tsv, it may come back from a
+    spreadsheet with CRLF line ends, rows of bare tabs and quoted comments,
+    so comments and blank rows are recognised after parsing."""
     if not path.exists():
         return []
-    with open(path, encoding="utf-8") as f:
-        reader = csv.DictReader((x for x in f if not x.startswith("#")), delimiter="\t")
-        rows = [Row(**{k: r.get(k) or "" for k in COLUMNS}) for r in reader]
+    with path.open(newline="", encoding="utf-8") as fh:
+        raw = [[c.strip() for c in r] for r in csv.reader(fh, delimiter="\t")
+               if any(c.strip() for c in r) and not r[0].lstrip().startswith("#")]
+    if not raw:
+        return []
+    header = raw[0]
+    missing = [c for c in COLUMNS if c not in header]
+    if missing:
+        raise SpeakerError(f"{path.name}: header lacks {', '.join(missing)}")
+    rows = [Row(**{k: dict(zip(header, cells)).get(k, "") for k in COLUMNS}) for cells in raw[1:]]
     for r in rows:
         if r.kind not in KINDS or r.basis not in BASES:
             raise SpeakerError(f"speakers.tsv: {r.play} {r.id}: kind {r.kind!r}, basis {r.basis!r}")

@@ -24,7 +24,7 @@ from __future__ import annotations
 
 from lxml import etree
 
-from globe import p4_convert, speakers
+from globe import p4_convert, speakers, speech_fixes
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 XML_ID = "{http://www.w3.org/XML/1998/namespace}id"
@@ -99,7 +99,12 @@ def link_roles(cast_list, rows: list[speakers.Row]) -> None:
     """Each printed role points to its speaker (@corresp), by the table's role
     and role_n; its xml:id, now the speaker's, goes. An empty role (a P4
     placeholder) goes with its castItem."""
-    wanted = {(r.role, int(r.role_n)): r for r in rows if r.role}
+    # several speakers may be one printed role (JC's First and Second Commoner,
+    # "A Commoner"): its @corresp points to each. An empty role_n: the first.
+    wanted: dict[tuple[str, int], list[speakers.Row]] = {}
+    for r in rows:
+        if r.role:
+            wanted.setdefault((r.role, int(r.role_n or 1)), []).append(r)
     seen: dict[str, int] = {}
     for role in list(cast_list.iter(f"{TEI}role")):
         t = speakers.text(role)
@@ -112,11 +117,12 @@ def link_roles(cast_list, rows: list[speakers.Row]) -> None:
             parent.remove(item)
             continue
         seen[t] = seen.get(t, 0) + 1
-        row = wanted.pop((t, seen[t]), None)
-        if row is not None:
-            role.set("corresp", f"#{row.id}")
+        linked = wanted.pop((t, seen[t]), None)
+        if linked:
+            role.set("corresp", " ".join(f"#{r.id}" for r in linked))
     if wanted:
-        missing = ", ".join(f"{r.id} ({r.role!r} {r.role_n})" for r in wanted.values())
+        missing = ", ".join(f"{r.id} ({r.role!r} {r.role_n or 1})" for rs in wanted.values()
+                            for r in rs)
         raise StructureError(f"speakers.tsv names printed roles the cast list does not have: {missing}")
 
 
@@ -131,9 +137,10 @@ def point_who(body, rows: list[speakers.Row]) -> None:
             sp.set("who", " ".join(f"#{w}" for w in who))
 
 
-def restructure(root, p4_root, rows: list[speakers.Row]) -> None:
+def restructure(root, p4_root, rows: list[speakers.Row], fixes=()) -> None:
     """Rebuild the play's structure (module docstring). `root` is the TEI
-    document with its new body in place; `rows` the play's speakers."""
+    document with its new body in place; `rows` the play's speakers;
+    `fixes` its rows of speech-fixes.tsv (src/globe/speech_fixes.py)."""
     if not rows:
         raise StructureError("no speakers.tsv rows for this play")
     text_el = root.find(f"{TEI}text")
@@ -148,6 +155,7 @@ def restructure(root, p4_root, rows: list[speakers.Row]) -> None:
     if old is not None:
         text_el.remove(old)
     text_el.insert(list(text_el).index(body), front)
+    speech_fixes.apply(body, list(fixes))
     point_who(body, rows)
     profile = root.find(f"{TEI}teiHeader/{TEI}profileDesc")
     if profile is None:

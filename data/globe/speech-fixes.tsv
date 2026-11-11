@@ -1,0 +1,6 @@
+# Corrections to who speaks, applied by the build (src/globe/speech_fixes.py).
+# A row picks speeches by play, speaker label and id, and optionally scene and first words;
+# it gives them who_to (a speakers.tsv id) and, if given, a new label. checked: Cliff's.
+play	scene	label	first_words	who_from	who_to	label_to	checked	note
+shr	4.1	Pet.	He kills her in her own humour	pet.	peter.	Peter.		Found by Cliff: IV, 1, 183 is the servant Peter's ("Peter."), not Petruchio's
+aww		Sec. Gent.		aww-26	aww-26bis			Found by Cliff: the P4 gives the First and the Second Gentleman one id; the Second's speeches take aww-26bis (speakers.tsv)

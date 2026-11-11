@@ -41,7 +41,7 @@ from globe import plays
 from globe import schmidt_smoke
 from globe import shared_lines
 from globe import source_text
-from globe import speakers
+from globe import speakers, speech_fixes
 from globe import tei_header
 from globe import tokens
 from globe import witnesses
@@ -1043,7 +1043,8 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
     sources = {p4_path.name: emit_tei.sha256(p4_path)[:16],
                "shared-lines.tsv": emit_tei.sha256(shared_lines.TABLE)[:16],
                emit_tei.TEMPLATE.name: emit_tei.sha256(emit_tei.TEMPLATE)[:16],
-               speakers.TABLE.name: emit_tei.sha256(speakers.TABLE)[:16]}
+               speakers.TABLE.name: emit_tei.sha256(speakers.TABLE)[:16],
+               speech_fixes.TABLE.name: emit_tei.sha256(speech_fixes.TABLE)[:16]}
     applied = [row for r in results for _, row in r.applied]
     pending = [row for row in applied if row.pending]
 
@@ -1059,13 +1060,18 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
                              emit_tei.review_marks(reviews) if with_reviews else None)
 
     out_dir.mkdir(parents=True, exist_ok=True)
-    source_words = tokens.word_stream(without_cast(source_text.load_p4(p4_path).body))
+    # the P4's words, with its speakers corrected as the build corrects them
+    fixes = speech_fixes.for_play(speech_fixes.read_table(), play)
+    source_body = without_cast(source_text.load_p4(p4_path).body)
+    speech_fixes.apply(source_body, fixes)
+    source_words = tokens.word_stream(source_body)
     review_bytes = one(True)
     check_words(review_bytes, source_words)
     (out_dir / tei_header.review_filename(play)).write_bytes(review_bytes)
     written = {"review": out_dir / tei_header.review_filename(play)}
     unchecked_speakers = [r for r in speakers.for_play(speakers.read_table(), play) if r.pending]
-    if (pending or unchecked_numerals or unchecked_speakers) and not allow_pending:
+    unchecked_fixes = [f for f in fixes if f.pending]
+    if (pending or unchecked_numerals or unchecked_speakers or unchecked_fixes) and not allow_pending:
         why = []
         if pending:
             why.append(f"{len(pending)} shared-lines.tsv rows are unchecked "
@@ -1077,6 +1083,8 @@ def emit_builds(play: str, lines, results, toks, reviews, out_dir: Path, allow_p
             why.append(f"{len(unchecked_speakers)} speakers.tsv rows are unchecked "
                        f"({', '.join(r.id for r in unchecked_speakers[:6])}"
                        f"{', ...' if len(unchecked_speakers) > 6 else ''})")
+        if unchecked_fixes:
+            why.append(f"{len(unchecked_fixes)} speech-fixes.tsv rows are unchecked")
         print(f"canonical build refused: {'; '.join(why)}; review build written", file=sys.stderr)
     else:
         canonical = one(False)

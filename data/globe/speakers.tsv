@@ -234,8 +234,8 @@ shr	host.	person	Hostess	Hostess	1	p4	p4
 shr	page.	person	Page	Page	1	p4	p4	
 shr	players.	personGrp	Players	Players	1	p4	p4	
 shr	first-hun.	personGrp	Huntsmen	Huntsmen	1	p4	p4	
-shr	sec.-hun.	person	Sec. Hun	Second Huntsman		label	checked	label 'Sec. Hun.'
-shr	third-hun.	person	third-hun.	Third Huntsman		label	checked	never speaks
+shr	sec.-hun.	person	Sec. Hun			label	checked	label 'Sec. Hun.'
+shr	third-hun.	person	third-hun.			label	checked	never speaks
 shr	mess.	person	Messenger	Messenger	1	p4	p4	
 shr	serv.	person	Servant	Servant	1	p4	p4	
 shr	first-serv.	person	First Servant	First Servant	1	p4	p4	
@@ -263,7 +263,7 @@ shr	all.	personGrp	All	All	1	p4	p4
 shr	tai.	person	Tailor	Tailor	1	p4	p4	
 shr	hab.	person	Haberdasher	Haberdasher	1	p4	p4	
 shr	a-player.	person	A Player			none	checked	label 'A Player.'
-shr	peter.	person	Peter	a Servant		none	checked	label 'Peter.' 
+shr	peter.	person	Peter			none	checked	label 'Peter.' 
 shr	all-serv.	personGrp	All Serv			none	checked	label 'All Serv.'
 aww	aww-0	personGrp	All	All	1	label	checked	label 'All.'
 aww	aww-1	person	Bertram	BERTRAM	1	label	checked	label 'Ber.'
@@ -384,7 +384,7 @@ r2	r2-26	personGrp	two Gardeners	two Gardeners	1	label	checked	label 'Gard.'
 r2	r2-27	person	Lady attending on the Queen	Lady attending on the Queen	1	label	checked	label 'Lady.'
 r2	r2-28	person	Servant	Servant	1	label	checked	label 'Serv.'
 r2	r2-29	person	Abbot of Westminster	Abbot of Westminster	1	label	checked	label 'Abbot.'
-r2	r2-3	person	Thomas Mowbray	THOMAS MOWBRAY	1	label		label 'Mow.'
+r2	r2-3	person	Thomas Mowbray	THOMAS MOWBRAY	1	label	checked	label 'Mow.'
 r2	r2-30	person	Lord Fitzwater	LORD FITZWATER	1	label	checked	label 'Fitz.'
 r2	r2-32	person	Duke of Surrey	DUKE OF SURREY	1	label	checked	label 'Surrey.'
 r2	r2-34	person	Duchess of York	DUCHESS OF YORK	1	label	checked	label 'Duch Y.'
@@ -1004,11 +1004,11 @@ jc	jc-34	person	Pindarus	Pindarus	1	p4	p4
 jc	jc-6	person	Calpurnia	Calpurnia	1	p4	p4	
 jc	jc-38	person	Portia	Portia	1	p4	p4	
 jc	jc-35	personGrp	Citizens	Citizens	1	p4	p4	
-jc	jc-7	person	First Com	A Commoner		none	checked	label 'First Com.'
+jc	jc-7	person	First Com			none	checked	label 'First Com.'
 jc	jc-41	person	First Sold			none	checked	label 'First Sold.'
 jc	jc-21	person	Ghost			none	checked	label 'Ghost.'
-jc	jc-30	person	Messenger	Messenger		none	checked	label 'Mess.'
-jc	jc-17	person	Sec. Com	A Commoner		none	checked	label 'Sec. Com.'
+jc	jc-30	person	Messenger			none	checked	label 'Mess.'
+jc	jc-17	person	Sec. Com			none	checked	label 'Sec. Com.'
 jc	jc-40	person	Serv			none	checked	label 'Serv.'
 mac	all.	personGrp	All	All	1	p4	p4	
 mac	ang.	person	Angus	Angus	1	p4	p4	

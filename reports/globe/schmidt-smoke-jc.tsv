@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.jc.globe.xml sha256 14b6bd4974b34ac9; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.jc.globe.xml sha256 bee4bef0bc3d7163; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abridge	Abridge,	3.1.104	Caes. III, 1, 104	headword on cited line							so are we csars friends that have abridged
 Accent	Accent,	3.1.113	Caes. III, 1, 113	quotation on cited line						in states unborn and accents yet unknown,	in states unborn and accents yet unknown

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.aww.globe.review.xml sha256 d14cec1f3f25246c; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.aww.globe.xml sha256 4bc4e4aa30e22f04; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abandon	Abandon,	1.1.15	Alls I, 1, 15	quotation on cited line						he hath abandoned his physicians,	he hath abandoned his physicians
 A-bed	A-bed,	5.3.228	Alls V, 3, 228	headword on cited line							and this was it i gave him being abed

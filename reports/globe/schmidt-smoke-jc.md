@@ -1,6 +1,6 @@
 # Schmidt smoke test: Julius Cæsar
 
-Sources: shakespeare.jc.globe.xml sha256 14b6bd4974b34ac9; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.jc.globe.xml sha256 bee4bef0bc3d7163; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Julius Cæsar in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

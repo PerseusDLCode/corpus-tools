@@ -46,8 +46,8 @@
     <encodingDesc>
       <refsDecl n="CTS" xml:id="CTS">
         <citeStructure match="/TEI/text/body" use="@xml:base">
-          <citeStructure unit="act" delim=":" match="div[@type='act'][@n != 'cast']" use="@n">
-            <citeStructure unit="scene" delim="." match="div[@type='scene']" use="@n" n="chunk">
+          <citeStructure unit="act" delim=":" match="div" use="@n">
+            <citeStructure unit="scene" delim="." match="div" use="@n" n="chunk">
               <citeStructure unit="line" delim="." match=".//milestone[@unit='line'][@ed='Globe']" use="@n"/>
             </citeStructure>
             <citeStructure unit="line" delim="." match="sp//milestone[@unit='line'][@ed='Globe']" use="@n"/>
@@ -102,10 +102,80 @@
       <langUsage>
         <language ident="eng">English</language>
       </langUsage>
+      <particDesc>
+        <listPerson>
+          <person xml:id="tit-22">
+            <persName>Saturninus</persName>
+          </person>
+          <person xml:id="tit-4">
+            <persName>Bassianus</persName>
+          </person>
+          <person xml:id="tit-25">
+            <persName>Titus Andronicus</persName>
+          </person>
+          <person xml:id="tit-15">
+            <persName>Marcus Andronicus</persName>
+          </person>
+          <person xml:id="tit-13">
+            <persName>Lucius</persName>
+          </person>
+          <person xml:id="tit-21">
+            <persName>Quintus</persName>
+          </person>
+          <person xml:id="tit-16">
+            <persName>Martius</persName>
+          </person>
+          <person xml:id="tit-18">
+            <persName>Mutius</persName>
+          </person>
+          <person xml:id="tit-14">
+            <persName>Young Lucius</persName>
+          </person>
+          <person xml:id="tit-20">
+            <persName>Publius</persName>
+          </person>
+          <person xml:id="tit-2">
+            <persName>Aemilius</persName>
+          </person>
+          <person xml:id="tit-10">
+            <persName>Demetrius</persName>
+          </person>
+          <person xml:id="tit-8">
+            <persName>Chiron</persName>
+          </person>
+          <person xml:id="tit-1">
+            <persName>Aaron</persName>
+          </person>
+          <person xml:id="tit-7">
+            <persName>A Captain</persName>
+          </person>
+          <person xml:id="tit-26">
+            <persName>Tribune</persName>
+          </person>
+          <person xml:id="tit-17">
+            <persName>Messenger</persName>
+          </person>
+          <person xml:id="tit-9">
+            <persName>Clown</persName>
+          </person>
+          <personGrp xml:id="tit-11">
+            <name>Goths and Romans</name>
+          </personGrp>
+          <person xml:id="tit-24">
+            <persName>Tamora</persName>
+          </person>
+          <person xml:id="tit-12">
+            <persName>Lavinia</persName>
+          </person>
+          <person xml:id="tit-19">
+            <persName>A Nurse</persName>
+          </person>
+        </listPerson>
+      </particDesc>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-13">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 7316fb7; sources: tit.xml sha256 f2d3fc4d62914ba0; shared-lines.tsv sha256 faf45a0fa3999f0c; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-11-11">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit fc923b2; sources: tit.xml sha256 f2d3fc4d62914ba0; shared-lines.tsv sha256 ff50b05a907e4c68; edition-template.xml sha256 47381fe6c26e8920; speakers.tsv sha256 6f7a972c304ab2ed; speech-fixes.tsv sha256 58bacff70398b9c4. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -113,6 +183,114 @@
     </revisionDesc>
   </teiHeader>
   <text xml:lang="eng">
+    <front>
+  <castList>
+    <head>DRAMATIS PERSONÆ</head>
+    <castItem type="role">
+      <role corresp="#tit-22">SATURNINUS</role>
+      <roleDesc>son to the late Emperor of Rome and afterwards declared Emperor</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#tit-4">BASSIANUS</role>
+      <roleDesc>brother to Saturninus; in love with Lavinia</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#tit-25">TITUS ANDRONICUS</role>
+      <roleDesc>a noble Roman general against the Goths</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#tit-15">MARCUS ANDRONICUS</role>
+      <roleDesc>tribune of the people and brother to Titus</roleDesc>
+    </castItem>
+    <castGroup>
+      <head rend="braced">sons to Titus Andronicus.</head>
+      <castItem type="role">
+        <role corresp="#tit-13">LUCIUS</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#tit-21">QUINTUS</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#tit-16">MARTIUS</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#tit-18">MUTIUS</role>
+      </castItem>
+    </castGroup>
+    <castItem type="role">
+      <role corresp="#tit-14">YOUNG Lucius</role>
+      <roleDesc>a boy, son to Lucius</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#tit-20">PUBLIUS</role>
+      <roleDesc>son to Marcus the Tribune</roleDesc>
+    </castItem>
+    <castGroup>
+      <head rend="braced"> kinsmen to Titus.</head>
+      <castItem type="role">
+        <role>SEMPRONIUS</role>
+      </castItem>
+      <castItem type="role">
+        <role>CAIUS</role>
+      </castItem>
+      <castItem type="role">
+        <role>VALENTINE</role>
+      </castItem>
+    </castGroup>
+    <castItem type="role"/>
+    <castItem type="role">
+      <role corresp="#tit-2">AEMILIUS</role>
+      <roleDesc>a noble Roman</roleDesc>
+    </castItem>
+    <castGroup>
+      <head rend="braced"> sons to Tamora.</head>
+      <castItem type="role">
+        <role>ALARBUS</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#tit-10">DEMETRIUS</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#tit-8">CHIRON</role>
+      </castItem>
+    </castGroup>
+    <castItem type="role">
+      <role corresp="#tit-1">AARON</role>
+      <roleDesc>a Moor, beloved by Tamora</roleDesc>
+    </castItem>
+    <castItem type="list">
+      <role corresp="#tit-7">A Captain</role>
+      <role corresp="#tit-26">Tribune</role>
+      <role corresp="#tit-17">Messenger</role> and <role corresp="#tit-9">Clown</role>
+      <roleDesc>Romans</roleDesc>
+    </castItem>
+    <castItem type="list">
+      <role corresp="#tit-11">Goths and Romans</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#tit-24">TAMORA</role>
+      <roleDesc>Queen of the Goths</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#tit-12">LAVINIA</role>
+      <roleDesc>daughter to Titus Andronicus</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#tit-19">A Nurse</role>
+    </castItem>
+    <castItem type="list">
+      <roleDesc>Senators</roleDesc>
+      <roleDesc> Tribunes</roleDesc>
+      <roleDesc> Officers</roleDesc>
+      <roleDesc> Soldiers</roleDesc>
+      <roleDesc>and Attendants</roleDesc>
+    </castItem>
+    <castItem type="role"/>
+  </castList>
+  <set>
+    <p>Scene: Rome, and the country near it.</p>
+  </set>
+</front>
     <body xml:base="urn:cts:engLit:shakespeare.tit.globe">
   <div type="act" n="1">
     <head>ACT I</head>
@@ -125,7 +303,7 @@
             aloft.</stage>
       <stage type="entrance"> Enter, below, <lb/>from one side, SATURNINUS and his
             <lb/>Followers; and, from the other side, BASSIANUS <lb/>and his Followers; with drum and colours. </stage>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l><!-- REVIEW page: p.688 miun/kraken leaf 00000702 -->
           <milestone unit="line" ed="Globe" n="1"/>Noble patricians, patrons of my right, </l>
@@ -144,7 +322,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="8"/>Nor wrong mine age with this indignity. </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Romans, friends, followers, favourers of <lb/>my right, </l>
@@ -166,7 +344,7 @@
           <stage type="entrance">Enter MARCUS ANDRONICUS, aloft, with the <lb/>crown.</stage>
         </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="18"/>Princes, that strive by factions and by <lb/>friends </l>
@@ -225,12 +403,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Plead your deserts in peace and humbleness. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="46"/>How fair the tribune speaks to calm my <lb/>thoughts! </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="47"/>Marcus Andronicus, so I do affy </l>
@@ -254,7 +432,7 @@
                 Followers of Bassianus.</stage>
         </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>Friends, that have been thus forward in <lb/>my right, </l>
@@ -274,7 +452,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="62"/>Open the gates, and let me in. </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Tribunes, and me, a poor competitor. <lb/>
@@ -284,7 +462,7 @@
           <stage type="entrance">Enter a Captain.</stage>
         </l>
       </sp>
-      <sp who="tit-7">
+      <sp who="#tit-7">
         <speaker>Cap.</speaker>
         <l><!-- REVIEW witness: p.689 taken from trent/kraken: miun/kraken:398 trent/kraken:0 (total count error) --><!-- REVIEW page: p.689 trent/kraken leaf 0705 -->
           <milestone unit="line" ed="Globe" n="64"/>Romans, make way: the good <lb/>Andronicus, </l>
@@ -306,7 +484,7 @@
                 <lb/>Goths, prisoners; Soldiers and people <lb/>following. The Bearers set down the coffin, and <lb/>TITUS speaks.</stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>Hail, Rome, victorious in thy mourning <lb/>weeds! </l>
@@ -364,7 +542,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="95"/>That thou wilt never render to me more! </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'the'; the P4 reads 'thy' --><milestone unit="line" ed="Globe" n="96"/>Give us the proudest prisoner of thy <lb/>Goths, </l>
@@ -379,14 +557,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="101"/>Nor we disturb'd with prodigies on earth. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="102"/>I give him you, the noblest that survives, </l>
         <l>
           <milestone unit="line" ed="Globe" n="103"/>The eldest son of this distressed queen. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="104"/>Stay, Roman brethren! Gracious <lb/>conqueror, </l>
@@ -423,7 +601,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="120"/>Thrice noble Titus, spare my first-born son. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="121"/>Patient yourself, madam, and pardon me. </l>
@@ -438,7 +616,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="126"/>To appease their groaning shadows that are gone. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="127"/>Away with him! and make a fire straight; </l>
@@ -449,17 +627,17 @@
           <!-- REVIEW words: both witnesses read 'IExeunt'; the P4 reads 'Exeunt' --><stage type="exit">Exeunt Lucius, Quintus, Martius, and <!-- REVIEW words: both witnesses read 'vvith'; the P4 reads 'with' --><lb/>Mutius, with Alarbus.</stage>
         </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="130"/>O cruel, irreligious piety! </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="131"/>Was ever Scythia half so barbarous? </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="132"/>Oppose not Scythia to ambitious Rome. </l>
@@ -484,7 +662,7 @@
           <stage type="entrance">Re-enter Lucius, QUINTUS, MARTIUS, and <lb/>MUTIUS, with their swords bloody. </stage>
         </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'perform’d'; the P4 reads 'performed' --><milestone unit="line" ed="Globe" n="142"/>See, lord and father, how we have <lb/>performed </l>
@@ -499,7 +677,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="147"/>And with loud 'larums welcome them to Rome. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="148"/>Let it be so; and let Andronicus </l>
@@ -525,7 +703,7 @@
           <stage type="entrance">Enter LAVINIA.</stage>
         </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="157"/>In peace and honour live Lord Titus <lb/>long; </l>
@@ -544,7 +722,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="164"/>Whose fortunes Rome's best citizens applaud! </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="165"/>Kind Rome, that hast thus lovingly <lb/>reserved </l>
@@ -559,19 +737,19 @@
                 <lb/>attended.</stage>
         </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l><!-- REVIEW page: p.690 miun/kraken leaf 00000704 -->
           <milestone unit="line" ed="Globe" n="169"/>Long live Lord Titus, my beloved <lb/>brother, </l>
         <l>
           <milestone unit="line" ed="Globe" n="170"/>Gracious triumpher in the eyes of Rome! </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="171"/>Thanks, gentle tribune, noble brother <lb/>Marcus. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="172"/>And welcome, nephews, from <lb/>successful wars, </l>
@@ -604,7 +782,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="186"/>And help to set a head on headless Rome. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="187"/>A better head her glorious body fits </l>
@@ -635,22 +813,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="200"/>Upright he held it, lords, that held it last. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="201"/>Titus, thou shalt obtain and ask the <lb/>empery. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="202"/>Proud and ambitious tribune, canst thou <lb/>tell? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="203"/>Patience, Prince Saturninus. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l part="F">
           <lb/>Romans, do me right: </l>
@@ -663,21 +841,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="207"/>Rather than rob me of the people's hearts! </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="208"/>Proud Saturnine, interrupter of the <lb/>good </l>
         <l>
           <milestone unit="line" ed="Globe" n="209"/>That noble-minded Titus means to thee! </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="210"/>Content thee, prince; I will restore to <lb/>thee </l>
         <l>
           <milestone unit="line" ed="Globe" n="211"/>The people's hearts, and wean them from <lb/>themselves. </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="212"/>Andronicus, I do not flatter thee, </l>
@@ -690,7 +868,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="216"/>Of noble minds is honourable meed. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="217"/>People of Rome, and people's tribunes <lb/>here, </l>
@@ -699,7 +877,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="219"/>Will you bestow them friendly on Andronicus? </l>
       </sp>
-      <sp who="tit-26">
+      <sp who="#tit-26">
         <speaker>Tribunes.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="220"/>To gratify the good Andronicus, </l>
@@ -708,7 +886,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="222"/>The people will accept whom he admits. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="223"/>Tribunes, I thank you: and this suit <lb/>I make, </l>
@@ -725,7 +903,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="229"/>Crown him, and say 'Long live our emperor!' </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="230"/>With voices and applause of every sort, </l>
@@ -739,7 +917,7 @@
                 flourish till they come down.</stage>
         </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="234"/>Titus Andronicus, for thy favours done </l>
@@ -762,7 +940,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="243"/>Tell me, Andronicus, doth this motion please <lb/>thee ? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="244"/>It doth, my worthy lord; and in this <lb/>match </l>
@@ -783,7 +961,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="252"/>Mine honour's ensigns humbled at thy feet. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="253"/>Thanks, noble Titus, father of my life! </l>
@@ -796,7 +974,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="257"/>Romans, forget your fealty to me. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <milestone unit="line" ed="Globe" n="258"/>
         <stage>To Tamora</stage>
@@ -806,7 +984,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="260"/>Will use you nobly and your followers. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="261"/>A goodly lady, trust me; of the hue </l>
@@ -829,14 +1007,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="270"/>Lavinia, you are not displeased with this? </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="271"/>Not I, my lord; sith true nobility </l>
         <l>
           <milestone unit="line" ed="Globe" n="272"/>Warrants these words in princely courtesy. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="273"/>Thanks, sweet Lavinia. Romans, let <lb/>us go: </l>
@@ -848,49 +1026,49 @@
                 Tamora <lb/>in dumb show. </stage>
         </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="276"/>Lord Titus, by your leave, this maid is <lb/>mine. <stage>Seizing Lavinia. </stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="277"/>How, sir! are you in earnest then, my <lb/>lord? </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="278"/>Ay, noble Titus; and resolved withal </l>
         <l>
           <milestone unit="line" ed="Globe" n="279"/>To do myself this reason and this right. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l><!-- REVIEW page: p.691 miun/kraken leaf 00000705 -->
           <milestone unit="line" ed="Globe" n="280"/>'Suum cuique' is our Roman justice: </l>
         <l>
           <milestone unit="line" ed="Globe" n="281"/>This prince in justice seizeth but his own. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="282"/>And that he will, and shall, if Lucius live. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="283"/>Traitors, avaunt! Where is the <lb/>emperor's guard? </l>
         <l>
           <milestone unit="line" ed="Globe" n="284"/>Treason, my lord! Lavinia is surprised! </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="285"/>Surprised! by whom? </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l part="F">
           <lb/>By him that justly may </l>
@@ -900,7 +1078,7 @@
                 Lavinia.</stage>
         </l>
       </sp>
-      <sp who="tit-18">
+      <sp who="#tit-18">
         <speaker>Mut.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="287"/>Brothers, help to convey her hence away, </l>
@@ -910,17 +1088,17 @@
                 Marfius.</stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="289"/>Follow, my lord, and I'll soon bring her <lb/>back. </l>
       </sp>
-      <sp who="tit-18">
+      <sp who="#tit-18">
         <speaker>Mut.</speaker>
         <l part="I"><!-- REVIEW anchor: P4 anchor says 289; the page count says 290 here -->
           <milestone unit="line" ed="Globe" n="290"/>My lord, you pass not here. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l part="F">
           <lb/>What, villain boy! </l>
@@ -928,7 +1106,7 @@
           <milestone unit="line" ed="Globe" n="291"/>Barr'st me my way in Rome? <stage>Stabbing Mutius.</stage>
         </l>
       </sp>
-      <sp who="tit-18">
+      <sp who="#tit-18">
         <speaker>Mut.</speaker>
         <l part="F">
           <lb/>Help, Lucius. help! <stage>Dies.</stage>
@@ -939,14 +1117,14 @@
           <stage type="entrance">Re-enter Lucius.</stage>
         </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="292"/>My lord, you are unjust, and, more <lb/>than so, </l>
         <l>
           <milestone unit="line" ed="Globe" n="293"/>In wrongful quarrel you have slain your son. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="294"/>Nor thou, nor he, are any sons of mine; </l>
@@ -955,7 +1133,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="296"/>Traitor, restore Lavinia to the emperor. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="297"/>Dead, if you will; but not to be <lb/>his wife, </l>
@@ -963,7 +1141,7 @@
           <milestone unit="line" ed="Globe" n="298"/>That is another's lawful promised love. <stage type="exit">Exit.</stage>
         </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="299"/>No, Titus, no; the emperor needs her <lb/>not, </l>
@@ -984,12 +1162,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="307"/>That said'st I begg'd the empire at thy hands. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="308"/>O monstrous! what reproachful words <lb/>are these? </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="309"/>But go thy ways; go, give that <lb/>changing piece </l>
@@ -1002,12 +1180,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="313"/>To ruffle in the commonwealth of Rome. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="314"/>These words are razors to my wounded <lb/>heart. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="315"/>And therefore, lovely Tamora, queen of <lb/>Goths, </l>
@@ -1038,7 +1216,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="328"/>I lead espoused my bride along with me. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="329"/>And here, in sight of heaven, to Rome <lb/>I swear, </l>
@@ -1049,7 +1227,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="332"/>A loving nurse, a mother to his youth. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="333"/>Ascend, fair queen, Pantheon. Lords, <lb/>accompany </l>
@@ -1064,7 +1242,7 @@
           <!-- REVIEW words: both witnesses read 'LExeunt'; the P4 reads 'Exeunt' --><stage type="exit">Exeunt all but Titus.</stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="338"/>I am not bid to wait upon this bride. </l>
@@ -1075,14 +1253,14 @@
           <stage type="entrance">Re-enter MARCUS, Lucius, QUINTUS, and <lb/>MARTIUS.</stage>
         </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="341"/>O Titus, see, O, see what thou hast <lb/>done! </l>
         <l>
           <milestone unit="line" ed="Globe" n="342"/>In a bad quarrel slain a virtuous son. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="343"/>No, foolish tribune, no; no son of mine, </l>
@@ -1093,14 +1271,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="346"/>Unworthy brother, and unworthy sons! </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="347"/>But let us give him burial, as becomes; </l>
         <l>
           <milestone unit="line" ed="Globe" n="348"/>Give Mutius burial with our brethren. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="349"/>Traitors, away! he rests not in this <lb/>tomb: </l>
@@ -1115,7 +1293,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="354"/>Bury him where you can; he comes not here. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="355"/>My lord, this is impiety in you: </l>
@@ -1125,34 +1303,34 @@
           <milestone unit="line" ed="Globe" n="357"/>He must be buried with his brethren. 
               </l>
       </sp>
-      <sp who="tit-21 tit-16">
+      <sp who="#tit-21 #tit-16">
         <speaker>Quin. and Mart.</speaker>
         <l>And <milestone unit="line" ed="Globe" n="358"/>shall, or him we will accompany. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="359"/>'And shall!' what villain was it spake <lb/>that word? 
               </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="360"/>He that would vouch it in any place <lb/>but here. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="361"/>What, would you bury him in my <lb/>despite? </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="362"/>No, noble Titus, but entreat of thee </l>
         <l>
           <milestone unit="line" ed="Globe" n="363"/>To pardon Mutius and to bury him. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="364"/>Marcus, even thou hast struck upon <lb/>my crest, </l>
@@ -1163,12 +1341,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="367"/>So, trouble me no more, but get you gone. </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="368"/>He is not with himself; let us <lb/>withdraw. </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="369"/>Not I, till Mutius' bones be buried. <lb/>
@@ -1176,32 +1354,32 @@
                 of Titus kneel.</stage>
         </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="370"/>Brother, for in that name doth nature <lb/>plead,— </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="371"/>Father, and in that name doth nature <lb/>speak,— </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="372"/>Speak thou no more, if all the rest will <lb/>speed. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="373"/>Renowned Titus, more than half my <lb/>soul,— </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="374"/>Dear father, soul and substance of <lb/>us all,— </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="375"/>Suffer thy brother Marcus to inter </l>
@@ -1222,7 +1400,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="383"/>Be barr'd his entrance here. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l part="F">
           <lb/>Rise, Marcus, rise. </l>
@@ -1236,7 +1414,7 @@
                 the tomb.</stage>
         </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="387"/>There lie thy bones, sweet Mutius, with <lb/>thy friends, </l>
@@ -1251,7 +1429,7 @@
         <l><!-- REVIEW numeral: miun/kraken read 300; trent/kraken read 390 -->
           <milestone unit="line" ed="Globe" n="390"/>He lives in fame that died in virtue's cause. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="391"/>My lord, to step out of these dreary <lb/>dumps, </l>
@@ -1260,7 +1438,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="393"/>Is of a sudden thus advanced in Rome? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="394"/>I know not, Marcus; but I know it is: </l>
@@ -1277,28 +1455,28 @@
                 BASSIANUS, LAVINIA, <lb/>and others.</stage>
         </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="399"/>So, Bassianus, you have play'd your prize: </l>
         <l>
           <milestone unit="line" ed="Globe" n="400"/>God give you joy, sir, of your gallant bride! </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="401"/>And you of yours, my lord! I say no <lb/>more, </l>
         <l>
           <milestone unit="line" ed="Globe" n="402"/>Nor wish no less; and so, I take my leave. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="403"/>Traitor, if Rome have law or we have <lb/>power, </l>
         <l>
           <milestone unit="line" ed="Globe" n="404"/>Thou and thy faction shall repent this rape. </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="405"/>Rape, call you it, my lord, to seize my own, </l>
@@ -1309,14 +1487,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="408"/>Meanwhile I am possess'd of that is mine. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="409"/>'Tis good, sir: you are very short with us; </l>
         <l>
           <milestone unit="line" ed="Globe" n="410"/>But, if we live, we'll be as sharp with you. </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="411"/>My lord, what I have done, as best I may, </l>
@@ -1345,7 +1523,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="423"/>A father and a friend to thee and Rome. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="424"/>Prince Bassianus, leave to plead my deeds: </l>
@@ -1356,7 +1534,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="427"/>How I have loved and honour'd Saturnine! </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="428"/>My worthy lord, if ever Tamora </l>
@@ -1367,14 +1545,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="431"/>And at my suit, sweet, pardon what is past. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="432"/>What, madam! be dishonour'd openly, </l>
         <l>
           <milestone unit="line" ed="Globe" n="433"/>And basely put it up without revenge? </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="434"/>Not so, my lord; the gods of Rome <lb/>forfend </l>
@@ -1429,19 +1607,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="458"/>That dies in tempest of thy angry frown. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l><!-- REVIEW numeral: miun/kraken read 4; trent/kraken read 459 -->
           <milestone unit="line" ed="Globe" n="459"/>Rise, Titus, rise; my empress hath <lb/>prevail'd. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="460"/>I thank your majesty, and her, my lord: </l>
         <l>
           <milestone unit="line" ed="Globe" n="461"/>These words, these looks, infuse new life in me. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="462"/>Titus, I am incorporate in Rome, </l>
@@ -1468,7 +1646,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="473"/>You shall ask pardon of his majesty. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="474"/>We do, and vow to heaven and to his <lb/>highness, </l>
@@ -1477,17 +1655,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="476"/>Tendering our sister's honour and our own. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'doprotest.'; the P4 reads 'do protest.' --><milestone unit="line" ed="Globe" n="477"/>That, on mine honour, here I do protest. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="478"/>Away, and talk not; trouble us no more. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="479"/>Nay, nay, sweet emperor, we must all <lb/>be friends: </l>
@@ -1496,7 +1674,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="481"/>I will not be denied: sweet heart, look back. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="482"/>Marcus, for thy sake and thy brother's here, </l>
@@ -1519,7 +1697,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="491"/>This day shall be a love-day, Tamora. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="492"/>To-morrow, an it please your majesty </l>
@@ -1528,7 +1706,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="494"/>With horn and hound we'll give your grace bonjour. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="495"/>Be it so, Titus, and gramercy too. <lb/>
@@ -1545,7 +1723,7 @@
       <stage type="setting"> Rome. Before the palace. </stage>
       <lb/>
       <stage type="entrance">Enter AARON.</stage>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l><!-- REVIEW page: p.693 miun/kraken leaf 00000707 -->
           <milestone unit="line" ed="Globe" n="1"/>Now climbeth Tamora Olympus' top, </l>
@@ -1601,7 +1779,7 @@
                 DEMETRIUS and CHIRON, braving.</stage>
         </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>Chiron, thy years want wit, thy wit <lb/>wants edge, </l>
@@ -1610,7 +1788,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="28"/>And may, for aught thou know'st, affected be. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Demetrius, thou dost over-ween in all; </l>
@@ -1629,13 +1807,13 @@
         <l>
           <!-- REVIEW words: both witnesses read 'passions'; the P4 reads 'passion' --><milestone unit="line" ed="Globe" n="36"/>And plead my passion for Lavinia's love. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <milestone unit="line" ed="Globe" n="37"/>
         <stage>Aside</stage>
         <l>Clubs, clubs! these lovers will <lb/>not keep the peace. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="38"/>Why, boy, although our mother, <lb/>unadvised, </l>
@@ -1648,20 +1826,20 @@
         <l>
           <milestone unit="line" ed="Globe" n="42"/>Till you know better how to handle it. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>Meanwhile, sir, with the little skill I have, </l>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Full well shalt thou perceive how much I dare. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l part="I"><!-- REVIEW shared: shared-lines.tsv: this line ends with a half the page cannot show as shared; second half begins 'why how now' (basis image+folger ftln-0550 ftln-0551, checked 2026-10-12 cliff) -->
           <milestone unit="line" ed="Globe" n="45"/>Ay, boy, grow ye so brave? <stage>They draw.</stage>
         </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <lb/>
         <stage>Coming forward</stage>
@@ -1683,7 +1861,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="53"/>For shame, put up. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l part="F">
           <lb/>Not I, till I have sheathed </l>
@@ -1694,7 +1872,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="56"/>That he hath breathed in my dishonour here. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>For that I am prepared and full resolved. </l>
@@ -1703,7 +1881,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="59"/>And with thy weapon nothing darest perform! </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>Away, I say! </l>
@@ -1728,21 +1906,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="70"/>This discord's ground, the music would not please. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>I care not, I, knew she and all the world: </l>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>I love Lavinia more than all the world. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="73"/>Youngling, learn thou to make some <lb/>meaner choice: </l>
         <l>
           <milestone unit="line" ed="Globe" n="74"/>Lavinia is thine elder brother's hope. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="75"/>Why, are ye mad? or know ye not, in <lb/>Rome </l>
@@ -1755,19 +1933,19 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="79"/>By this device. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l part="F">
           <lb/>Aaron, a thousand deaths </l>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>Would I propose to achieve her whom I love. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="81"/>To achieve her! how? </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l part="F">
           <lb/>Why makest thou it so strange? </l>
@@ -1788,13 +1966,13 @@
         <l>
           <milestone unit="line" ed="Globe" n="89"/>Better than he have worn Vulcan's badge. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <milestone unit="line" ed="Globe" n="90"/>
         <stage>Aside</stage>
         <l>Ay, and as good as Saturninus <lb/>may. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>Then why should he despair that knows <lb/>to court it </l>
@@ -1805,24 +1983,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="94"/>And borne her cleanly by the keeper's nose? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>Why, then, it seems, some certain snatch <lb/>or so </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="96"/>Would serve your turns. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l part="F">
           <lb/>Ay, so the turn were served. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="97"/>Aaron, thou hast hit it. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l part="F">
           <lb/>Would you had hit it too! </l>
@@ -1835,17 +2013,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="101"/>That both should speed? </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="102"/>Faith, not me. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l part="F">
           <lb/>Nor me, so I were one. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="103"/>For shame, be friends, and join for that <lb/>you jar: </l>
@@ -1906,12 +2084,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="131"/>And revel in Lavinia's treasury. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="132"/>Thy counsel, lad, smells of no cowardice, </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="133"/>Sit fas aut nefas, till I find the stream </l>
@@ -1929,7 +2107,7 @@
       <lb/>
       <stage type="entrance">Enter TITUS ANDRONICUS, with Hunters, <!-- REVIEW words: both witnesses read '&c.,'; the P4 reads 'etc.,' -->etc.,
             <lb/>MARCUS, LUCIUS, QUINTUS, and MARTIUS.</stage>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>The hunt is up, the morn is bright and <lb/>grey, </l>
@@ -1964,26 +2142,26 @@
         <l>
           <milestone unit="line" ed="Globe" n="13"/>I promised your grace a hunter's peal. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>And you have rung it lustily, my lord; </l>
         <l>
           <milestone unit="line" ed="Globe" n="15"/>Somewhat too early for new-married ladies. </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="16"/>Lavinia, how say you? </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l part="F">
           <lb/>I say, no; </l>
         <l>
           <milestone unit="line" ed="Globe" n="17"/>I have been broad awake two hours and more. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="18"/>Come on, then; horse and chariots let <lb/>us have, </l>
@@ -1992,7 +2170,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="20"/>Our Roman hunting. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l part="F">
           <lb/>I have dogs, my lord, </l>
@@ -2001,14 +2179,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="22"/>And climb the highest promontory top. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="23"/>And I have horse will follow where the <lb/>game </l>
         <l>
           <milestone unit="line" ed="Globe" n="24"/>Makes way, and run like swallows o'er the plain. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>Chiron, we hunt not, we, with horse <lb/>nor hound, </l>
@@ -2023,7 +2201,7 @@
       <stage type="setting"> A lonely part of the forest.</stage>
       <lb/>
       <stage type="entrance">Enter AARON ,with a bag of gold.</stage>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>He that had wit would think that I had <lb/>none, </l>
@@ -2048,7 +2226,7 @@
           <stage type="entrance">Enter TAMORA.</stage>
         </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="10"/>My lovely Aaron, wherefore look'st <lb/>thou sad, </l>
@@ -2091,7 +2269,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Of lullaby to bring her babe asleep. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>Madam, though Venus govern your <lb/>desires, </l>
@@ -2137,12 +2315,12 @@
           <milestone unit="line" ed="Globe" n="50"/>Which dreads not yet their lives' destruction. 
               </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'life!'; the P4 reads 'lifel' --><milestone unit="line" ed="Globe" n="51"/>Ah, my sweet Moor, sweeter to me <lb/>than lifel </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="52"/>No more, great empress; Bassianus <lb/>comes: </l>
@@ -2154,7 +2332,7 @@
           <stage type="entrance"> Enter BASSIANUS and LAVINIA. </stage>
         </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l><!-- REVIEW page: p.695 miun/kraken leaf 00000709 -->
           <milestone unit="line" ed="Globe" n="55"/>Who have we here? Rome's royal <lb/>empress, </l>
@@ -2167,7 +2345,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="59"/>To see the general hunting in this forest? </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>Saucy controller of our private steps! </l>
@@ -2182,7 +2360,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="65"/>Unmannerly intruder as thou art! </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="66"/>Under your patience, gentle empress, </l>
@@ -2197,7 +2375,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="71"/>'Tis pity they should take him for a stag. </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>Believe me, queen, your swarth <lb/>Cimmerian </l>
@@ -2216,7 +2394,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="79"/>If foul desire had not conducted you? </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>And, being intercepted in your sport, </l>
@@ -2229,19 +2407,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="84"/>This valley fits the purpose passing well. </l>
       </sp>
-      <sp who="tit-4">
+      <sp who="#tit-4">
         <speaker>Bas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>The king my brother shall have note of <lb/>this. </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Ay, for these slips have made him noted <lb/>long: </l>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>Good king, to be so mightily abused! </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>Why have I patience to endure all this? <lb/>
@@ -2249,14 +2427,14 @@
                 Enter DEMETRIUS and CHIRON. </stage>
         </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="89"/>How now, dear sovereign, and our <lb/>gracious mother! </l>
         <l>
           <milestone unit="line" ed="Globe" n="90"/>Why doth your highness look so pale and wan? </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>Have I not reason, think you, to look <lb/>pale? </l>
@@ -2309,35 +2487,35 @@
         <l>
           <milestone unit="line" ed="Globe" n="115"/>Or be ye not henceforth call'd my children. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="116"/>This is a witness that I am thy son. <lb/>
           <stage>Stabs Bassianus.</stage>
         </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="117"/>And this for me, struck home to show my <lb/>strength. <stage>Also
                 stabs Bassianus, who dies.</stage>
         </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="118"/>Ay, come, Semiramis, nay, barbarous <lb/>Tamora, </l>
         <l>
           <milestone unit="line" ed="Globe" n="119"/>For no name fits thy nature but thy own! </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="120"/>Give me thy poniard; you shall know, <lb/>my boys, </l>
         <l>
           <milestone unit="line" ed="Globe" n="121"/>Your mother's hand shall right your mother's <lb/>wrong. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="122"/>Stay, madam; here is more belongs to <lb/>her; </l>
@@ -2352,7 +2530,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="127"/>And shall she carry this unto her grave? </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="128"/>An if she do, I would I were an eunuch. </l>
@@ -2361,14 +2539,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="130"/>And make his dead trunk pillow to our lust. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="131"/>But when ye have the honey ye desire, </l>
         <l>
        <!-- REVIEW words: both witnesses read 'this'; the P4 reads 'the' -->   <milestone unit="line" ed="Globe" n="132"/>Let not the wasp outlive, us both to sting. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="133"/>I warrant you, madam, we will make <lb/>that sure. </l>
@@ -2377,22 +2555,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="135"/>That nice-preserved honesty of yours. </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="136"/>O Tamora! thou bear'st a woman's <lb/>face,— </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="137"/>I will not hear her speak; away with <lb/>her! </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="138"/>Sweet lords, entreat her hear me but a <lb/>word. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="139"/>Listen, fair madam: let it be your glory </l>
@@ -2401,7 +2579,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="141"/>As unrelenting flint to drops of rain. </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="142"/>When did the tiger's young ones teach <lb/>the dam? </l>
@@ -2417,12 +2595,12 @@
         </l>
         <l>Do thou entreat her show a woman <lb/>pity. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="148"/>What, wouldst thou have me prove <lb/>myself a bastard? </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="149"/>'Tis true; the raven doth not hatch a <lb/>lark: </l>
@@ -2441,12 +2619,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="156"/>Nothing so kind, but something pitiful! </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="157"/>I know not what it means; away with <lb/>her! </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="158"/>O, let me teach thee! for my father's <lb/>sake, </l>
@@ -2455,7 +2633,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="160"/>Be not obdurate, open thy deaf ears. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="161"/>Hadst thou in person ne'er offended me, </l>
@@ -2472,7 +2650,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="167"/>The worse to her, the better loved of me. </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="168"/>O Tamora, be call'd a gentle queen, </l>
@@ -2482,12 +2660,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="171"/>Poor I was slain when Bassianus died. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="172"/>What begg'st thou, then? fond woman, <lb/>let me go. </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="173"/>'Tis present death I beg; and one thing <lb/>more </l>
@@ -2502,19 +2680,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="178"/>Do this, and be a charitable murderer. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="179"/>So should I rob my sweet sons of their <lb/>fee: </l>
         <l>
           <milestone unit="line" ed="Globe" n="180"/>No, let them satisfy their lust on thee. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="181"/>Away! for thou hast stay'd us here too <lb/>long. </l>
       </sp>
-      <sp who="tit-12">
+      <sp who="#tit-12">
         <speaker>Lav.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="182"/>No grace? no womanhood? Ah, beastly <lb/>creature! </l>
@@ -2523,7 +2701,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="184"/>Confusion fall— </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
          <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --> <milestone unit="line" ed="Globe" n="185"/>Nay, then I'll stop your mouth. Bring <lb/>thou her husband: </l>
@@ -2534,7 +2712,7 @@
                 Lavinia.</stage>
         </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="187"/>Farewell, my sons: see that you make <lb/>her sure. </l>
@@ -2551,7 +2729,7 @@
                 MARTIUS.</stage>
         </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="192"/>Come on, my lords, the better foot <lb/>before: </l>
@@ -2560,12 +2738,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="194"/>Where I espied the panther fast asleep. </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="195"/>My sight is very dull, whate'er it bodes. </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="196"/>And mine, I promise you; weren't not <lb/>for shame, </l>
@@ -2574,7 +2752,7 @@
           <!-- REVIEW words: both witnesses read 'FFalls'; the P4 reads 'Falls' --><stage>Falls into the pit.</stage>
         </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'fall’n?'; the P4 reads 'fallen?' --><milestone unit="line" ed="Globe" n="198"/>What, art thou fallen? What subtle <lb/>hole is this, </l>
@@ -2589,14 +2767,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="203"/>Speak, brother, hast thou hurt thee with the fall? </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="204"/>O, brother, with the dismall'st object <lb/>hurt </l>
         <l>
           <milestone unit="line" ed="Globe" n="205"/>That ever eye with sight made heart lament! </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <milestone unit="line" ed="Globe" n="206"/>
         <!-- REVIEW words: both witnesses read '[Asidel'; the P4 reads 'Aside' --><stage>Aside</stage>
@@ -2607,14 +2785,14 @@
           <milestone unit="line" ed="Globe" n="208"/>How these were they that made away his <lb/>brother. <stage type="exit">Exit. </stage>
         </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="209"/>Why dost not comfort me, and help <lb/>me out </l>
         <l>
           <milestone unit="line" ed="Globe" n="210"/>From this unhallowed and blood-stained hole? </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="211"/>I am surprised with an uncouth fear: </l>
@@ -2623,7 +2801,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="213"/>My heart suspects more than mine eye can see. </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="214"/>To prove thou hast a true-divining <lb/>heart, </l>
@@ -2632,7 +2810,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="216"/>And see a fearful sight of blood and death. </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="217"/>Aaron is gone, and my compassionate <lb/>heart </l>
@@ -2645,7 +2823,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="221"/>Was I a child to fear I know not what. </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="222"/>Lord Bassianus lies embrewed here, </l>
@@ -2654,12 +2832,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="224"/>In this detested, dark, blood-drinking pit. </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="225"/>If it be dark, how dost thou know 'tis he? </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="226"/>Upon his bloody finger he doth wear </l>
@@ -2684,7 +2862,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="236"/>As hateful as Cocytus' misty mouth. </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="237"/>Reach me thy hand, that I may help <lb/>thee out; </l>
@@ -2697,12 +2875,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="241"/>I have no strength to pluck thee to the brink. </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="242"/>Nor I no strength to climb without thy <lb/>help. </l>
       </sp>
-      <sp who="tit-21">
+      <sp who="#tit-21">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="243"/>Thy hand once more; I will not loose <lb/>again, </l>
@@ -2715,7 +2893,7 @@
           <stage type="entrance">Enter SATURNINUS with AARON. </stage>
         </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="246"/>Along with me: I'll see what hole is here, </l>
@@ -2726,7 +2904,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="249"/>Into this gaping hollow of the earth? </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="250"/>The unhappy son of old Andronicus; </l>
@@ -2735,7 +2913,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="252"/>To find thy brother Bassianus dead. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="253"/>My brother dead! I know thou dost <lb/>but jest: </l>
@@ -2746,7 +2924,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="256"/>'Tis not an hour since I left him there. </l>
       </sp>
-      <sp who="tit-16">
+      <sp who="#tit-16">
         <speaker>Mart.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="257"/>We know not where you left him all <lb/>alive; </l>
@@ -2756,29 +2934,29 @@
                 Lucius.</stage>
         </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="259"/>Where is my lord the king? </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="260"/>Here, Tamora, though grieved with <lb/>killing grief. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="261"/>Where is thy brother Bassianus? </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="262"/>Now to the bottom dost thou search my <lb/>wound: </l>
         <l>
           <milestone unit="line" ed="Globe" n="263"/>Poor Bassianus here lies murdered. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="264"/>Then all too late I bring this fatal writ, </l>
@@ -2792,7 +2970,7 @@
                 Saturnine a letter.</stage>
         </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <milestone unit="line" ed="Globe" n="268"/>
         <stage>Reads</stage>
@@ -2820,12 +2998,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="279"/>That should have murder'd Bassianus here. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="280"/>My gracious lord, here is the bag of <lb/>gold. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <milestone unit="line" ed="Globe" n="281"/>
         <stage>To Titus</stage>
@@ -2839,14 +3017,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="285"/>Some never-heard-of torturing pain for them. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="286"/>What, are they in this pit? O <lb/>wondrous thing! </l>
         <l>
           <milestone unit="line" ed="Globe" n="287"/>How easily murder is discovered! </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="288"/>High emperor, upon my feeble knee </l>
@@ -2857,19 +3035,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="291"/>Accursed, if the fault be proved in them,— </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="292"/>If it be proved! you see it is apparent. </l>
         <l>
           <milestone unit="line" ed="Globe" n="293"/>Who found this letter? Tamora, was it you? </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="294"/>Andronicus himself did take it up. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="295"/>I did, my lord: yet let me be their bail; </l>
@@ -2880,7 +3058,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="298"/>To answer their suspicion with their lives. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="299"/>Thou shalt not bail them: see thou <lb/>follow me. </l>
@@ -2893,14 +3071,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="303"/>That end upon them should be executed. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="304"/>Andronicus, I will entreat the king: </l>
         <l>
           <milestone unit="line" ed="Globe" n="305"/>Fear not thy sons; they shall do well enough. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="306"/>Come, Lucius, come; stay not to talk <lb/>with them.
@@ -2915,43 +3093,43 @@
       <lb/>
       <stage type="entrance">Enter DEMETRIUS and CHIRON with LAVINIA, <lb/>ravished; her hands cut
             off, and her tongue <lb/>cut out.</stage>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>So, now go tell, an if thy tongue can <lb/>speak, </l>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>Who 'twas that cut thy tongue and ravish'd thee. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="3"/>Write down thy mind, bewray thy <lb/>meaning so, </l>
         <l>
           <milestone unit="line" ed="Globe" n="4"/>An if thy stumps will let thee play the scribe. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="5"/>See, how with signs and tokens she can <lb/>scrowl. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="6"/>Go home, call for sweet water, wash <lb/>thy hands. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>She hath no tongue to call, nor hands <lb/>to wash; </l>
         <l>
           <milestone unit="line" ed="Globe" n="8"/>And so let's leave her to her silent walks. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>An 'twere my case, I should go hang <lb/>myself. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="10"/>If thou hadst hands to help thee knit <lb/>the cord. <stage type="exit">Exeunt Demetrius and Chiron. </stage>
@@ -2959,7 +3137,7 @@
           <stage type="entrance">Enter MARCUS.</stage>
         </l>
       </sp>
-      <sp who="tit-26">
+      <sp who="#tit-26">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="11"/>Who is this? my niece, that flies away <lb/>so fast! </l>
@@ -3070,7 +3248,7 @@
       <lb/>
       <stage type="entrance">Enter Judges, Senators and Tribunes, with <!-- REVIEW words: both witnesses read 'QUINTUS,'; the P4 reads 'QUINTIUS,' --><lb/>MARTIUS and QUINTIUS,
             bound, passing on to <lb/>the place of execution; TITUS going before, <lb/>pleading.</stage>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Hear me, grave fathers! noble tribunes, <lb/>stay! </l>
@@ -3132,7 +3310,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="26"/>My tears are now prevailing orators. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="27"/>O noble father, you lament in vain: </l>
@@ -3141,19 +3319,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="29"/>And you recount your sorrows to a stone. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>Ah, Lucius, for thy brothers let me plead. </l>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Grave tribunes, once more I entreat of you,— </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>My gracious lord, no tribune hears you <lb/>speak. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="33"/>Why, 'tis no matter, man: if they did <lb/>hear, </l>
@@ -3192,7 +3370,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="48"/>But wherefore stand'st thou with thy weapon <lb/>drawn ? </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>To rescue my two brothers from their <lb/>death: </l>
@@ -3201,7 +3379,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="51"/>My everlasting doom of banishment. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="52"/>O happy man! they have befriended thee. </l>
@@ -3220,7 +3398,7 @@
           <stage type="entrance">Enter MARCUS and LAVINIA.</stage>
         </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>Titus, prepare thy aged eyes to weep </l>
@@ -3229,27 +3407,27 @@
         <l>
           <milestone unit="line" ed="Globe" n="61"/>I bring consuming sorrow to thine age. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>Will it consume me? let me see it, then. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="63"/>This was thy daughter. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l part="F">
           <lb/>Why, Marcus, so she is. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>Ay me, this object kills me! </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>Faint-hearted boy, arise, and look upon <lb/>her. </l>
@@ -3284,12 +3462,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="80"/>For hands, to do Rome service, are but vain. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>Speak, gentle sister, who hath martyr'd <lb/>thee? </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>O, that delightful engine of her thoughts, </l>
@@ -3302,12 +3480,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Sweet varied notes, enchanting every ear! </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>O, say thou for her, who hath done this <lb/>deed? </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>O, thus I found her, straying in the <lb/>park, </l>
@@ -3316,7 +3494,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="90"/>That hath received some unrecuring wound. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>It was my deer; and he that wounded her </l>
@@ -3365,14 +3543,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="113"/>Upon a gather'd lily almost wither'd. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="114"/>Perchance she weeps because they <lb/>kill'd her husband; </l>
         <l>
           <milestone unit="line" ed="Globe" n="115"/>Perchance because she knows them innocent. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="116"/>If they did kill thy husband, then be <lb/>joyful, </l>
@@ -3415,19 +3593,19 @@
         <l>
           <!-- REVIEW words: both witnesses read "wonder'd"; the P4 reads 'wondered' --><milestone unit="line" ed="Globe" n="135"/>To make us wondered at in time to come. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="136"/>Sweet father, cease your tears; for, at <lb/>your grief, </l>
         <l>
           <milestone unit="line" ed="Globe" n="137"/>See how my wretched sister sobs and weeps. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="138"/>Patience, dear niece. Good Titus, dry <lb/>thine eyes. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="139"/>Ah, Marcus, Marcus! brother, well I wot </l>
@@ -3436,12 +3614,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="141"/>For thou, poor man, hast drown'd it with thine <lb/>own. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="142"/>Ah, my Lavinia, I will wipe thy cheeks. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="143"/>Mark, Marcus, mark! I understand her <lb/>signs: </l>
@@ -3460,7 +3638,7 @@
           <stage type="entrance">Enter AARON.</stage>
         </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="150"/>Titus Andronicus,my lord the emperor </l>
@@ -3477,7 +3655,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="156"/>And that shall be the ransom for their fault. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="157"/>O gracious emperor! O gentle Aaron! </l>
@@ -3492,7 +3670,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="162"/>Good Aaron, wilt thou help to chop it off ? </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="163"/>Stay, father! for that noble hand of thine, </l>
@@ -3505,7 +3683,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="167"/>And therefore mine shall save my brothers' lives. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="168"/>Which of your hands hath not defended <lb/>Rome, </l>
@@ -3522,69 +3700,69 @@
         <l>
           <milestone unit="line" ed="Globe" n="174"/>Then have I kept it to a worthy end. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="175"/>Nay, come, agree whose hand shall go <lb/>along, </l>
         <l>
           <milestone unit="line" ed="Globe" n="176"/>For fear they die before their pardon come. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="177"/>My hand shall go. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l part="F">
           <lb/>By heaven, it shall not go! </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="178"/>Sirs, strive no more: such wither'd herbs <lb/>as these </l>
         <l>
           <milestone unit="line" ed="Globe" n="179"/>Are meet for plucking up, and therefore mine. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="180"/>Sweet father, if I shall be thought thy <lb/>son, </l>
         <l>
           <milestone unit="line" ed="Globe" n="181"/>Let me redeem my brothers both from death. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="182"/>And, for our father's sake and mother's <lb/>care, </l>
         <l>
           <milestone unit="line" ed="Globe" n="183"/>Now let me show a brother's love to thee. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="184"/>Agree between you; I will spare my hand. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
     <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" -->      <milestone unit="line" ed="Globe" n="185"/>Then I'll go fetch an axe. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="186"/>But I will use the axe. <lb/>
           <stage type="exit">Exeunt Lucius and Marcus.</stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="187"/>Come hither, Aaron; I'll deceive them <lb/>both: </l>
         <l>
           <milestone unit="line" ed="Globe" n="188"/>Lend me thy hand, and I will give thee mine. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <milestone unit="line" ed="Globe" n="189"/>
         <stage>Aside</stage>
@@ -3601,7 +3779,7 @@
           <stage type="entrance">Re-enter Lucius and MARCUS.</stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'dispatch’d.'; the P4 reads 'dispatched.' --><milestone unit="line" ed="Globe" n="193"/>Now stay your strife: what shall be is <lb/>dispatched. </l>
@@ -3620,7 +3798,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="200"/>And yet dear too, because I bought mine own. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="201"/>I go, Andronicus: and for thy hand </l>
@@ -3637,7 +3815,7 @@
           <milestone unit="line" ed="Globe" n="206"/>Aaron will have his soul black like his face. <stage>Exit.</stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="207"/>O, here I lift this one hand up to heaven, </l>
@@ -3656,26 +3834,26 @@
         <l>
           <milestone unit="line" ed="Globe" n="214"/>When they do hug him in their melting bosoms. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="215"/>O brother, speak with possibilities, </l>
         <l>
           <milestone unit="line" ed="Globe" n="216"/>And do not break into these deep extremes. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="217"/>Is not my sorrow deep, having no bottom ? </l>
         <l>
           <milestone unit="line" ed="Globe" n="218"/>Then be my passions bottomless with them. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="219"/>But yet let reason govern thy lament. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="220"/>If there were reason for these miseries, </l>
@@ -3710,7 +3888,7 @@
           <stage type="entrance"> Enter a Messenger, with two heads and <lb/>a hand.</stage>
         </l>
       </sp>
-      <sp who="tit-17">
+      <sp who="#tit-17">
         <speaker>Mess.</speaker>
         <l><!-- REVIEW page: p.700 miun/kraken leaf 00000714 -->
           <milestone unit="line" ed="Globe" n="235"/>Worthy Andronicus, ill art thou repaid </l>
@@ -3728,7 +3906,7 @@
           <milestone unit="line" ed="Globe" n="241"/>More than remembrance of my father's death. <stage type="exit">Exit.</stage>
         </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="242"/>Now let hot Ætna cool in Sicily, </l>
@@ -3741,7 +3919,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="246"/>But sorrow flouted at is double death. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="247"/>Ah, that this sight should make so deep <lb/>a wound, </l>
@@ -3754,19 +3932,19 @@
           <stage>Lavinia kisses Titus.</stage>
         </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="251"/>Alas, poor heart, that kiss is <lb/>comfortless </l>
         <l>
           <milestone unit="line" ed="Globe" n="252"/>As frozen water to a starved snake. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="253"/>When will this fearful slumber have <lb/>an end? </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="254"/>Now, farewell, flattery: die, <lb/>Andronicus; </l>
@@ -3791,17 +3969,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="264"/>Now is a time to storm; why art thou still? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="265"/>Ha, ha, ha! </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="266"/>Why dost thou laugh? it fits not with <lb/>this hour. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="267"/>Why, I have not another tear to shed: </l>
@@ -3851,7 +4029,7 @@
                 and Lavinia.</stage>
         </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="289"/>Farewell, Andronicus, my noble father, </l>
@@ -3888,7 +4066,7 @@
       <stage type="setting"> A room in Titus's house. A <lb/>banquet set out. </stage>
       <lb/>
       <stage type="entrance">Enter TITUS, MARCUS, LAVINIA, and young <lb/>Lucius, a Boy.</stage>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>So, so; now sit: and look you eat no more </l>
@@ -3932,14 +4110,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="20"/>Drown the lamenting fool in sea-salt tears. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="21"/>Fie, brother, fie! teach her not thus <lb/>to lay </l>
         <l>
           <milestone unit="line" ed="Globe" n="22"/>Such violent hands upon her tender life. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="23"/>How now! has sorrow made thee dote <lb/>already ? </l>
@@ -3988,21 +4166,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="45"/>And by still practice learn to know thy meaning. </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Boy.</speaker>
         <l><!-- REVIEW page: p.701 miun/kraken leaf 00000715 -->
           <milestone unit="line" ed="Globe" n="46"/>Good grandsire, leave these bitter deep <lb/>laments: </l>
         <l>
           <milestone unit="line" ed="Globe" n="47"/>Make my aunt merry with some pleasing tale. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="48"/>Alas, the tender boy, in passion moved, </l>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>Doth weep to see his grandsire's heaviness. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="50"/>Peace, tender sapling; thou art made <lb/>of tears, </l>
@@ -4014,12 +4192,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="52"/>What dost thou strike at, Marcus, with thy knife ? </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>At that that I have kill'd, my lord; <lb/>a fly. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>Out on thee, murderer! thou kill'st my <lb/>heart; </l>
@@ -4032,12 +4210,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="58"/>I see thou art not for my company. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>Alas, my lord, I have but kill'd a fly. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l><!-- REVIEW numeral: miun/kraken read 69; trent/kraken read 60 -->
           <milestone unit="line" ed="Globe" n="60"/>But how, if that fly had a father and <lb/>mother ? </l>
@@ -4052,14 +4230,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="65"/>Came here to make us merry! and thou hast <lb/>kill'd him. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="66"/>Pardon me, sir; it was a black <lb/>ill-favour'd fly, </l>
         <l>
           <milestone unit="line" ed="Globe" n="67"/>Like to the empress' Moor; therefore I kill'd him. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="68"/>O, O, O, </l>
@@ -4084,14 +4262,14 @@
         <l>
           <!-- REVIEW words: both witnesses read 'coal-black'; the P4 reads 'cool-black' --><milestone unit="line" ed="Globe" n="78"/>That comes in likeness of a cool-black Moor. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>Alas, poor man! grief has so wrought <lb/>on him, </l>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>He takes false shadows for true substances. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>Come, take away. Lavinia, go with me: </l>
@@ -4116,7 +4294,7 @@
       <stage type="setting"> Rome. Titus's garden. </stage>
       <lb/>
       <stage type="entrance">Enter young Lucius, and LAVINIA running <lb/>after him, and the boy flies from her, with <lb/>books under his arm. Then enter TITUS and <lb/>MARCUS.</stage>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Voung'; the P4 reads 'Young' -->
           <milestone unit="line" ed="Globe" n="1"/>Help, grandsire, help! my aunt <lb/>Lavinia </l>
@@ -4127,27 +4305,27 @@
         <l>
           <milestone unit="line" ed="Globe" n="4"/>Alas, sweet aunt, I know not what you mean. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="5"/>Stand by me, Lucius; do not fear <lb/>thine aunt. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="6"/>She loves thee, boy, too well to do thee <lb/>harm. </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>Ay, when my father was in Rome <lb/>she did. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="8"/>What means my niece Lavinia by <lb/>these signs ? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Fear her not, Lucius: somewhat doth <lb/>she mean: </l>
@@ -4162,12 +4340,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="14"/>Sweet poetry and Tully's Orator. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="15"/>Canst thou not guess wherefore she <lb/>plies thee thus? </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Voung'; the P4 reads 'Young' -->
           <milestone unit="line" ed="Globe" n="16"/>My lord, I know not, I, nor can <lb/>I guess, </l>
@@ -4196,7 +4374,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="28"/>I will most willingly attend your ladyship. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Lucius, I will. <lb/>
@@ -4204,7 +4382,7 @@
                 let fall. </stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>How now, Lavinia! Marcus, what means <lb/>this? </l>
@@ -4223,7 +4401,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="37"/>Why lifts she up her arms in sequence thus? </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="38"/>I think she means that there was more <lb/>than one </l>
@@ -4232,26 +4410,26 @@
         <l>
           <milestone unit="line" ed="Globe" n="40"/>Or else to heaven she heaves them for revenge. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>Lucius, what book is that she tosseth so ? </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>Grandsire, 'tis Ovid's <lb/>Metamorphoses; </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="43"/>My mother gave it me. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l part="F">
           <lb/>For love of her that's gone, </l>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Perhaps she cull'd it from among the rest. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Soft! see how busily she turns the <lb/>leaves! <stage>Helping her. </stage>
@@ -4265,12 +4443,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="49"/>And rape, I fear, was root of thine annoy. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="50"/>See, brother, see; note how she quotes <lb/>the leaves. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="51"/>Lavinia, wert thou thus surprised, sweet <lb/>girl, </l>
@@ -4289,14 +4467,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="58"/>By nature made for murders and for rapes. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>O, why should nature build so foul a den, </l>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>Unless the gods delight in tragedies? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="61"/>Give signs, sweet girl, for here are none <lb/>but friends, </l>
@@ -4307,7 +4485,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="64"/>That left the camp to sin in Lucrece' bed? </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>Sit down, sweet niece: brother, sit <lb/>down by me. </l>
@@ -4341,28 +4519,28 @@
                 writes. </stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="77"/>O, do ye read, my lord, what she hath <lb/>writ? </l>
         <l>
           <milestone unit="line" ed="Globe" n="78"/>'Stuprum. Chiron. Demetrius.' </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>What, what! the lustful sons of Tamora </l>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>Performers of this heinous, bloody deed? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>Magni Dominator poli, </l>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>Tam lentus audis scelera? tam lentus vides? </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>O, calm thee, gentle lord; although I <lb/>know </l>
@@ -4389,7 +4567,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="94"/>And see their blood, or die with this reproach. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>'Tis sure enough, an you knew how. </l>
@@ -4416,7 +4594,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="106"/>And where's your lesson, then? Boy, what say <lb/>you? </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Voung'; the P4 reads 'Young' -->
           <milestone unit="line" ed="Globe" n="107"/>I say, my lord, that if I were a man, </l>
@@ -4425,19 +4603,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="109"/>For these bad bondmen to the yoke of Rome. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="110"/>Ay, that's my boy! thy father hath <lb/>full oft </l>
         <l>
           <milestone unit="line" ed="Globe" n="111"/>For his ungrateful country done the like. </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Voung'; the P4 reads 'Young' -->
           <milestone unit="line" ed="Globe" n="112"/>And, uncle, so will I, an if I live. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="113"/>Come, go with me into mine armoury; </l>
@@ -4450,12 +4628,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="117"/>Come, come; thou'lt do thy message, wilt thou not? </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Voung'; the P4 reads 'Young' -->
           <milestone unit="line" ed="Globe" n="118"/>Ay, with my dagger in their <lb/>bosoms, grandsire. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="119"/>No, boy, not so; I'll teach thee another <lb/>course. </l>
@@ -4469,7 +4647,7 @@
                 Lavinia, and <!-- REVIEW words: both witnesses read 'Voung'; the P4 reads 'Young' -->Young Luc.</stage>
         </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="123"/>O heavens, can you hear a good man <lb/>groan, </l>
@@ -4495,19 +4673,19 @@
       <lb/>
       <stage type="entrance">Enter, from one side, AARON, DEMETRIUS, and <lb/>CHIRON; from the other
               side, young LUCIUS, <lb/>and an Attendant, with a bundle of weapons, <lb/>and verses writ upon them. </stage>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Demetrius, here's the son of Lucius; </l>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>He hath some message to deliver us. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="3"/>Ay, some mad message from his mad <lb/>grandfather. </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Voung'; the P4 reads 'Young' -->
           <milestone unit="line" ed="Globe" n="4"/>My lords, with all the humbleness <lb/>I may, </l>
@@ -4517,12 +4695,12 @@
         </l>
         <l>And pray the Roman gods confound you <lb/>both! </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>Gramercy, lovely Lucius: what's the <lb/>news? </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <milestone unit="line" ed="Globe" n="8"/>
         <!-- REVIEW words: both witnesses read '[Asidel'; the P4 reads 'Aside' --><!-- REVIEW words: both witnesses read 'Voung'; the P4 reads 'Young' --><stage>Aside</stage>
@@ -4548,7 +4726,7 @@
           <stage type="exit">Exeunt young Lucius and Attendant.</stage>
         </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="18"/>What's here? A scroll; and written <lb/>round about? </l>
@@ -4560,14 +4738,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="21"/>Non eget Mauri jaculis, nec arcu.' </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="22"/>O, 'tis a verse in Horace; I know it well: </l>
         <l>
           <milestone unit="line" ed="Globe" n="23"/>I read it in the grammar long ago. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
           <milestone unit="line" ed="Globe" n="24"/>Ay, just; a verse in Horace; right, you <lb/>have it. <milestone unit="line" ed="Globe" n="25"/>
@@ -4597,50 +4775,50 @@
         <l>
           <milestone unit="line" ed="Globe" n="36"/>To brave the tribune in his brother's hearing. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="37"/>But me more good, to see so great a lord </l>
         <l>
           <milestone unit="line" ed="Globe" n="38"/>Basely insinuate and send us gifts. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="39"/>Had he not reason, Lord Demetrius? </l>
         <l><!-- REVIEW page: p.703 miun/kraken leaf 00000717 -->
           <milestone unit="line" ed="Globe" n="40"/>Did you not use his daughter very friendly? </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>I would we had a thousand Roman dames </l>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>At such a bay, by turn to serve our lust. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'love.'; the P4 reads 'iove.' --><milestone unit="line" ed="Globe" n="43"/>A charitable wish and full of iove. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Here lacks but your mother for to say <lb/>amen. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>And that would she for twenty thousand <lb/>more. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="46"/>Come, let us go; and pray to all the gods </l>
         <l>
           <milestone unit="line" ed="Globe" n="47"/>For our beloved mother in her pains. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <milestone unit="line" ed="Globe" n="48"/>
         <stage>Aside</stage>
@@ -4648,17 +4826,17 @@
           <stage>Trumpets sound within.</stage>
         </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>Why do the emperor's trumpets flourish <lb/>thus? </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="50"/>Belike, for joy the emperor hath a son. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="51"/>Soft! who comes here? <lb/>
@@ -4666,35 +4844,35 @@
                 Nurse, with a blackamoor Child in her arms. </stage>
         </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l part="F">
           <lb/>Good morrow, lords: </l>
         <l>
           <milestone unit="line" ed="Globe" n="52"/>O, tell me, did you see Aaron the Moor? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>Well, more or less, or ne'er a whit at all, </l>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>Here Aaron is; and what with Aaron now? </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="55"/>O gentle Aaron, we are all undone! </l>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>Now help, or woe betide thee evermore! </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>Why, what a caterwauling dost thou keep! </l>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>What dost thou wrap and fumble in thine arms ? </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>O, that which I would hide from heaven's <lb/>eye, </l>
@@ -4703,32 +4881,32 @@
         <l>
           <milestone unit="line" ed="Globe" n="61"/>She is deliver'd, lords; she is deliver'd. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>To whom? </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l>
           <lb/>I mean, she is brought a-bed. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Well, God give her good rest! What <lb/>hath he sent her? </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>A devil. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>Why, then she is the devil's dam; a <lb/>joyful issue. </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="66"/>A joyless, dismal, black, and sorrowful <lb/>issue: </l>
@@ -4741,34 +4919,34 @@
         <l><!-- REVIEW anchor: P4 anchor says 71; the page count says 70 here -->
           <milestone unit="line" ed="Globe" n="70"/>And bids thee christen it with thy dagger's point. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>'Zounds, ye whore! is black so base a hue? </l>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>Sweet blowse, you are a beauteous blossom, sure. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="73"/>Villain, what hast thou done? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="74"/>That which thou canst not undo. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="75"/>Thou hast undone our mother. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="76"/>Villain, I have done thy mother. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="77"/>And therein, hellish dog, thou hast <lb/>undone. </l>
@@ -4777,36 +4955,36 @@
         <l>
           <milestone unit="line" ed="Globe" n="79"/>Accursed the offspring of so foul a fiend! </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l><!-- REVIEW anchor: P4 anchor says 81; the page count says 80 here -->
           <milestone unit="line" ed="Globe" n="80"/>It shall not live. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l part="Y">
           <milestone unit="line" ed="Globe" n="81"/>It shall not die. </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>Aaron, it must; the mother wills it so. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>What, must it, nurse? then let no man but I </l>
         <l>
           <milestone unit="line" ed="Globe" n="84"/>Do execution on my flesh and blood. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l><!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" -->
           <milestone unit="line" ed="Globe" n="85"/>I'll broach the tadpole on my rapier's <lb/>point: </l>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Nurse, give it me; my sword shall soon dispatch it. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>Sooner this sword shall plough thy bowels <lb/>up. <lb/>
@@ -4850,12 +5028,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="105"/>To keep mine own, excuse it how she can. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="106"/>Wilt thou betray thy noble mistress thus? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="107"/>My mistress is my mistress; this myself, </l>
@@ -4868,27 +5046,27 @@
         <l>
           <milestone unit="line" ed="Globe" n="111"/>Or some of you shall smoke for it in Rome. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="112"/>By this our mother is for ever shamed. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="113"/>Rome will despise her for this foul escape. </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="114"/>The emperor, in his rage, will doom her <lb/>death. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="115"/>I blush to think upon this ignomy. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="116"/>Why, there's the privilege your beauty <lb/>bears: </l>
@@ -4915,12 +5093,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="127"/>Although my seal be stamped in his face. </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'untothe'; the P4 reads 'unto the' --><milestone unit="line" ed="Globe" n="128"/>Aaron, what shall I say unto the empress ? </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="129"/>Advise thee, Aaron, what is to be done, </l>
@@ -4929,7 +5107,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="131"/>Save thou the child, so we may all be safe. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="132"/>Then sit we down, and let us all consult. </l>
@@ -4939,12 +5117,12 @@
           <milestone unit="line" ed="Globe" n="134"/>Keep there: now talk at pleasure of your safety. <stage>They sit. </stage>
         </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="135"/>How many women saw this child of his? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="136"/>Why, so, brave lords! when we join in <lb/>league, </l>
@@ -4957,14 +5135,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="140"/>But say, again, how many saw the child? </l>
       </sp>
-      <sp who="tit-19">
+      <sp who="#tit-19">
         <speaker>Nur.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="141"/>Cornelia the midwife and myself; </l>
         <l>
           <milestone unit="line" ed="Globe" n="142"/>And no one else but the deliver'd empress. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="143"/>The empress, the midwife, and yourself: </l>
@@ -4977,12 +5155,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="146"/>Weke, weke! so cries a pig prepared to the spit. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="147"/>What mean'st thou, Aaron? wherefore <lb/>didst thou this? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="148"/>O Lord, sir, 'tis a deed of policy: </l>
@@ -5029,14 +5207,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="168"/>Then let the ladies tattle what they please. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="169"/>Aaron, I see thou wilt not trust the air </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="170"/>With secrets. </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l part="F">
           <lb/>For this care of Tamora, </l>
@@ -5046,7 +5224,7 @@
                 the <lb/>Nurse's body.</stage>
         </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="172"/>Now to the Goths, as swift as swallow <lb/>flies; </l>
@@ -5076,7 +5254,7 @@
       <lb/>
       <stage type="entrance"> Enter TITUS, bearing arrows with letters at <lb/>the ends of them; with
             him, MARCUS, young <lb/>LUCIUS, PUBLIUS, SEMPRONIUS, CAIUS, and <lb/>other Gentlemen, with bows.</stage>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'kinsmen;'; the P4 reads 'kinsman;' --><milestone unit="line" ed="Globe" n="1"/>Come, Marcus; come, kinsman; this is <lb/>the way. </l>
@@ -5127,14 +5305,14 @@
         <l>
           <!-- REVIEW words: the P4 has '' here; neither witness has it --><milestone unit="line" ed="Globe" n="24"/>And, kinsmen, then may we go pipe for justice. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>O Publius, is not this a heavy case, </l>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>To see thy noble uncle thus distract? </l>
       </sp>
-      <sp who="tit-20">
+      <sp who="#tit-20">
         <speaker>Pub.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="27"/>Therefore, my lord, it highly us <lb/>concerns </l>
@@ -5145,7 +5323,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="30"/>Till time beget some careful remedy. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Kinsmen, his sorrows are past remedy. </l>
@@ -5156,14 +5334,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="34"/>And vengeance on the traitor Saturnine. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="35"/>Publius, how now I how now, my masters ! </l>
         <l>
           <milestone unit="line" ed="Globe" n="36"/>What, have you met with her? </l>
       </sp>
-      <sp who="tit-20">
+      <sp who="#tit-20">
         <speaker>Pub.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="37"/>No, my good lord; but Pluto sends you <lb/>word, </l>
@@ -5176,7 +5354,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="41"/>So that perforce you must needs stay a time. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>He doth me wrong to feed me with delays. </l>
@@ -5219,28 +5397,28 @@
         <l>
           <milestone unit="line" ed="Globe" n="60"/>There's not a god left unsolicited. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="61"/>Kinsmen, shoot all your shafts into the <lb/>court: </l>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>We will afflict the emperor in his pride. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Now, masters, draw. <stage>They shoot.</stage>O, <lb/>well said, Lucius! </l>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>Good boy, in Virgo's lap; give it Pallas. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>My lord, I aim a mile beyond the moon; </l>
         <l>
           <milestone unit="line" ed="Globe" n="66"/>Your letter is with Jupiter by this. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="67"/>Ha, ha! </l>
@@ -5249,7 +5427,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="69"/>See, see, thou hast shot off one of Taurus' horns. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>This was the sport, my lord: when <lb/>Publius shot, </l>
@@ -5264,7 +5442,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="75"/>But give them to his master for a present. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="76"/>Why, there it goes: God give his <lb/>lordship joy! <lb/>
@@ -5277,59 +5455,59 @@
         <l><!-- REVIEW numeral: miun/kraken read 70; trent/kraken read 79 --><!-- REVIEW page: p.705 miun/kraken leaf 00000719 -->
           <milestone unit="line" ed="Globe" n="79"/>Shall I have justice? what says Jupiter? </l>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="80"/>O, the gibbet-maker! he says that he <milestone unit="line" ed="Globe" n="81"/>hath taken them down again, for the man must <milestone unit="line" ed="Globe" n="82"/>not be hanged till the next week. </p>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="83"/>But what says Jupiter, I ask thee? </p>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="84"/>Alas, sir, I know not Jupiter; I never <milestone unit="line" ed="Globe" n="85"/>drank with
               him in all my life. </p>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="86"/>Why, villain, art not thou the carrier? </p>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="87"/>Ay, of my pigeons, sir; nothing else. </p>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="88"/>Why, didst thou not come from heaven? </p>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="89"/>From heaven! alas, sir, I never came <milestone unit="line" ed="Globe" n="90"/>there: God
               forbid I should be so bold to press to <milestone unit="line" ed="Globe" n="91"/>heaven in my young days. Why, I am going <milestone unit="line" ed="Globe" n="92"/>with my pigeons to the tribunal plebs, to take up <milestone unit="line" ed="Globe" n="93"/>a matter of brawl betwixt my uncle and one of <milestone unit="line" ed="Globe" n="94"/>the emperial's men. </p>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="95"/>Why, sir, that is as fit as can be to <milestone unit="line" ed="Globe" n="96"/>serve for your oration; and let him deliver the <milestone unit="line" ed="Globe" n="97"/>pigeons to the emperor from you. </p>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="98"/>Tell me, can you deliver an oration to <milestone unit="line" ed="Globe" n="99"/>the emperor with a grace? </p>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="100"/>Nay, truly sir, I could never say grace <milestone unit="line" ed="Globe" n="101"/>in all my life. </p>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'hither:'; the P4 reads 'thither:' --><milestone unit="line" ed="Globe" n="102"/>Sirrah, come thither: make no more ado, </l>
@@ -5343,23 +5521,23 @@
           <milestone unit="line" ed="Globe" n="106"/>Give me pen and ink. Sirrah, can you with a <milestone unit="line" ed="Globe" n="107"/>grace
               deliver a supplication? </p>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="108"/>Ay, sir. </p>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="109"/>Then here is a supplication for you. <milestone unit="line" ed="Globe" n="110"/>And when you
               come to him, at the first approach <milestone unit="line" ed="Globe" n="111"/>you must kneel, then kiss his foot, then deliver <milestone unit="line" ed="Globe" n="112"/>up your pigeons, and then look for your reward <milestone unit="line" ed="Globe" n="113"/>I'll be at hand, sir; see you do it bravely. </p>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="114"/>I warrant you, sir, let me alone. </p>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="115"/>Sirrah, hast thou a knife? come, let me <lb/>see it. </l>
@@ -5372,12 +5550,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="119"/>Knock at my door, and tell me what he says. </l>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="120"/>God be with you, sir; I will. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="121"/>Come, Marcus, let us go. Publius, <lb/>follow me. <stage type="exit">Exeunt.</stage>
@@ -5391,7 +5569,7 @@
       <lb/>
       <stage type="entrance">Enter SATURNINUS, TAMORA, DEMETRIUS, <lb/>CHIRON, Lords, and others; SATURNINUS <lb/>with the arrows in his hand that
             TITUS shot.</stage>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Why, lords, what wrongs are these was <lb/>ever seen </l>
@@ -5446,7 +5624,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="26"/>Cut off the proud'st conspirator that lives. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="27"/>My gracious lord, my lovely Saturnine, </l>
@@ -5477,17 +5655,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="39"/>How now, good fellow! wouldst thou speak <lb/>with us? </l>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="40"/>Yea, forsooth, an your mistership be <lb/>emperial. </p>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>Empress I am, but yonder sits the <lb/>emperor. </l>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="42"/>'Tis he. God and Saint Stephen give <milestone unit="line" ed="Globe" n="43"/>you good den: I
@@ -5495,29 +5673,29 @@
           <stage>Saturninus reads the letter.</stage>
         </p>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Go, take him away, and hang him <lb/>presently. </l>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="46"/>How much money must I have? </p>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="47"/>Come, sirrah, you must be hanged. </p>
       </sp>
-      <sp who="tit-9">
+      <sp who="#tit-9">
         <speaker>Clo.</speaker>
         <p><!-- REVIEW words: both witnesses read 'Hanged!'; the P4 reads 'Hangedl' -->
           <milestone unit="line" ed="Globe" n="48"/>Hangedl by'r lady, then I have brought <milestone unit="line" ed="Globe" n="49"/>up a neck to
               a fair end. <stage type="exit">Exit, guarded.</stage>
         </p>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="50"/>Despiteful and intolerable wrongs! </l>
@@ -5546,7 +5724,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="61"/>What news with thee, Æmilius? </l>
       </sp>
-      <sp who="tit-2">
+      <sp who="#tit-2">
         <speaker>Æmil.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>Arm, arm, my lord;—Rome never had <lb/>more cause. </l>
@@ -5563,7 +5741,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="68"/>As much as ever Coriolanus did. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="69"/>Is warlike Lucius general of the Goths ? </l>
@@ -5584,19 +5762,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="77"/>And they have wish'd that Lucius were their <lb/>emperor. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="78"/>Why should you fear? is not your city <lb/>strong? </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>Ay, but the citizens favour Lucius, </l>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>And will revolt from me to succour him. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>King, be thy thoughts imperious, like <lb/>thy name. </l>
@@ -5625,12 +5803,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="93"/>The other rotted with delicious feed. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="94"/>But he will not entreat his son for us. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>If Tamora entreat him, then he will: </l>
@@ -5652,7 +5830,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="103"/>Even at his father's house, the old Andronicus. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="104"/>Æmilius, do this message honourably: </l>
@@ -5661,13 +5839,13 @@
         <l>
           <milestone unit="line" ed="Globe" n="106"/>Bid him demand what pledge will please him best. </l>
       </sp>
-      <sp who="tit-2">
+      <sp who="#tit-2">
         <speaker>Æmil.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="107"/>Your bidding shall I do effectually. <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads 'Exit.' --><stage type="exit">Exit.</stage>
         </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="108"/>Now will I to that old Andronicus, </l>
@@ -5680,7 +5858,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="112"/>And bury all thy fear in my devices. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="113"/>Then go successantly, and plead to him. <stage type="exit">Exeunt. </stage>
@@ -5697,7 +5875,7 @@
       <lb/>
       <stage type="entrance">Enter Lucius with an army of Goths, with <lb/>drum
             and colours.</stage>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Approved warriors, and my faithful <lb/>friends, </l>
@@ -5716,7 +5894,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="8"/>Let him make treble satisfaction. </l>
       </sp>
-      <sp who="tit-11">
+      <sp who="#tit-11">
         <speaker>First Goth.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Brave slip, sprung from the great <lb/>Andronicus, </l>
@@ -5740,7 +5918,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="17"/>And as he saith, so say we all <lb/>with him. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="18"/>I humbly thank him, and I thank you <lb/>all. </l>
@@ -5750,7 +5928,7 @@
                 arms.</stage>
         </l>
       </sp>
-      <sp who="tit-11">
+      <sp who="#tit-11">
         <speaker>Sec. Goth.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="20"/>Renowned Lucius, from our troops <lb/>I stray'd </l>
@@ -5793,7 +5971,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="39"/>To use as you think needful of the man. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="40"/>O worthy Goth, this is the incarnate <lb/>devil </l>
@@ -5814,12 +5992,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="48"/>And by his side his fruit of bastardy. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>Touch not the boy; he is of royal <lb/>blood. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="50"/>Too like the sire for ever being good. </l>
@@ -5833,7 +6011,7 @@
                 ascend.</stage>
         </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l part="F">
           <lb/>Lucius, save the child, </l>
@@ -5848,14 +6026,14 @@
         <l>
           <!-- REVIEW words: both witnesses read '“Vengeance'; the P4 reads "'Vengence" --><milestone unit="line" ed="Globe" n="58"/>I'll speak no more but 'Vengence rot you all!' </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>Say on: an if it please me which thou <lb/>speak'st, </l>
         <l><!-- REVIEW words: both witnesses read 'Thy'; the P4 reads 'The' -->
           <!-- REVIEW words: both witnesses read 'nourish’d.60'; the P4 reads "nourish'd." --><milestone unit="line" ed="Globe" n="60"/>The child shall live, and I will see it nourish'd. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'thee!'; the P4 reads 'theel' --><milestone unit="line" ed="Globe" n="61"/>An if it please theel why, assure thee, <lb/>Lucius, </l>
@@ -5874,24 +6052,24 @@
         <l><!-- REVIEW page: p.707 miun/kraken leaf 00000721 -->
           <milestone unit="line" ed="Globe" n="68"/>Unless thou swear to me my child shall live. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="69"/>Tell on thy mind; I say thy child shall <lb/>live. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>Swear that he shall, and then I will <lb/>begin. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>Who should I swear by? thou believest <lb/>no god: </l>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>That granted, how canst thou believe an oath? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="73"/>What if I do not? as, indeed, I do not; </l>
@@ -5920,22 +6098,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="85"/>Or else I will discover nought to thee. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Even by my god, I swear to thee I will. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>First know thou, I begot him on the <lb/>empress. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>O most insatiate and luxurious woman! </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'this'; the P4 reads 'that' --><milestone unit="line" ed="Globe" n="89"/>Tut, Lucius, that was but a deed of <lb/>charity </l>
@@ -5948,24 +6126,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="93"/>And cut her hands and trimm'd her as thou <lb/>saw'st. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="94"/>O detestable villain! call'st thou that <lb/>trimming? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>Why, she was wash'd and cut and <lb/>trimm'd, and 'twas </l>
         <l>
           <milestone unit="line" ed="Globe" n="96"/>Trim sport for them that had the doing of it. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="97"/>O barbarous, beastly villains, like <lb/>thyself! </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="98"/>Indeed, I was their tutor to instruct them: </l>
@@ -6014,22 +6192,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="120"/>And for my tidings gave me twenty kisses. </l>
       </sp>
-      <sp who="tit-11">
+      <sp who="#tit-11">
         <speaker>First Goth.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="121"/>What, canst thou say all this, and <lb/>never blush? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="122"/>Ay, like a black dog, as the saying is. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="123"/>Art thou not sorry for these heinous <lb/>deeds? </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="124"/>Ay, that I had not done a thousand <lb/>more. </l>
@@ -6074,14 +6252,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="144"/>But that I cannot do ten thousand more. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="145"/>Bring down the devil, for he must not die </l>
         <l>
           <milestone unit="line" ed="Globe" n="146"/>So sweet a death as hanging presently. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="147"/>If there be devils, would I were a devil, </l>
@@ -6092,21 +6270,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="150"/>But to torment you with my bitter tongue! </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="151"/>Sirs, stop his mouth, and let him speak <lb/>no more. <lb/>
           <stage type="entrance">Enter a Goth.</stage>
         </l>
       </sp>
-      <sp who="tit-11">
+      <sp who="#tit-11">
         <speaker>Third Goth.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="152"/>My lord, there is a messenger <lb/>from Rome </l>
         <l>
           <milestone unit="line" ed="Globe" n="153"/>Desires to be admitted to your presence. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="154"/>Let him come near. <lb/>
@@ -6115,7 +6293,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="155"/>Welcome, Æmilius: what's the news from Rome? </l>
       </sp>
-      <sp who="tit-2">
+      <sp who="#tit-2">
         <speaker>Æmil.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="156"/>Lord Lucius, and you princes of the <lb/>Goths, </l>
@@ -6130,12 +6308,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="161"/>And they shall be immediately deliver'd. </l>
       </sp>
-      <sp who="tit-11">
+      <sp who="#tit-11">
         <speaker>First Goth.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="162"/>What says our general? </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="163"/>Æmilius, let the emperor give his <lb/>pledges </l>
@@ -6152,7 +6330,7 @@
       <stage type="setting"> Rome. Before Titus's house. </stage>
       <lb/>
       <stage type="entrance">Enter TAMORA, DEMETRIUS, and CHIRON, <lb/>disguised.</stage>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Thus, in this strange and sad habiliment, </l>
@@ -6175,7 +6353,7 @@
           <stage type="entrance">Enter TITUS, above.</stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Who doth molest my contemplation? </l>
@@ -6192,12 +6370,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="15"/>And what is written shall be executed. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="16"/>Titus, I am come to talk with thee. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="17"/>No, not a word; how can I grace my <lb/>talk, </l>
@@ -6206,12 +6384,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="19"/>Thou hast the odds of me; therefore no more. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'wouldest'; the P4 reads 'wouldst' --><milestone unit="line" ed="Globe" n="20"/>If thou didst know me, thou wouldst <lb/>talk with me. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="21"/>I am not mad; I know thee well enough: </l>
@@ -6228,7 +6406,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="27"/>Is not thy coming for my other hand? </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="28"/>Know, thou sad man, I am not Tamora; </l>
@@ -6257,19 +6435,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="40"/>Revenge, which makes the foul offender quake. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>Art thou Revenge? and art thou sent <lb/>to me, </l>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>To be a torment to mine enemies? </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>I am; therefore come down, and <lb/>welcome me. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Do me some service, ere I come to thee. </l>
@@ -6304,24 +6482,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="59"/>So thou destroy Rapine and Murder there. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>These are my ministers, and come with <lb/>me. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="61"/>Are these thy ministers? what are they <lb/>called? </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>Rapine and Murder; therefore called so, </l>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Cause they take vengeance of such kind of men. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>Good Lord, how like the empress' sons <lb/>they are! </l>
@@ -6337,7 +6515,7 @@
           <milestone unit="line" ed="Globe" n="69"/>I will embrace thee in it by and by. <stage type="exit">Exit above.</stage>
         </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>This closing with him fits his lunacy: </l>
@@ -6365,7 +6543,7 @@
                 below.</stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>Long have I been forlorn, and all for <lb/>thee: </l>
@@ -6390,31 +6568,31 @@
         <l>
           <milestone unit="line" ed="Globe" n="91"/>But welcome, as you are. What shall we do? </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="92"/>What wouldst thou have us do, <lb/>Andronicus? </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="93"/>Show me a murderer, I'll deal with him. </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="94"/>Show me a villain that hath done a rape, </l>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>And I am sent to be revenged on him. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="96"/>Show me a thousand that have done <lb/>thee wrong, </l>
         <l>
           <milestone unit="line" ed="Globe" n="97"/>And I will be revenged on them all. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="98"/>Look round about the wicked streets of <lb/>Rome; </l>
@@ -6441,7 +6619,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="109"/>They have been violent to me and mine. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="110"/>Well hast thou lesson'd us; this shall <lb/>we do. </l>
@@ -6467,7 +6645,7 @@
           <milestone unit="line" ed="Globe" n="120"/>What says Andronicus to this device? 
               </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="121"/>Marcus, my brother I 'tis sad Titus calls. <lb/>
@@ -6493,21 +6671,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="130"/>As he regards his aged father's life. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="131"/>This will I do, and soon return again. <lb/>
           <stage type="exit">Exit. </stage>
         </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l><!-- REVIEW page: p.709 miun/kraken leaf 00000723 -->
           <milestone unit="line" ed="Globe" n="132"/>Now will I hence about thy business, </l>
         <l>
           <milestone unit="line" ed="Globe" n="133"/>And take my ministers along with me. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="134"/>Nay, nay, let Rape and Murder stay <lb/>with me; </l>
@@ -6516,7 +6694,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="136"/>And cleave to no revenge but Lucius. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="137"/>
@@ -6530,7 +6708,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="141"/>And tarry with him till I turn again. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="142"/>
@@ -6540,30 +6718,30 @@
         <l>
           <milestone unit="line" ed="Globe" n="144"/>A pair of cursed hell-hounds and their dam! </l>
       </sp>
-      <sp who="tit-10">
+      <sp who="#tit-10">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="145"/>Madam, depart at pleasure; leave us <lb/>here. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="146"/>Farewell, Andronicus: Revenge now <lb/>goes </l>
         <l>
           <milestone unit="line" ed="Globe" n="147"/>To lay a complot to betray thy foes. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="148"/>I know thou dost; and, sweet Revenge, <lb/>farewell. <stage type="exit">Exit Tamora. </stage>
         </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="149"/>Tell us, old man, how shall we be <lb/>employ'd? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="150"/>Tut, I have work enough for you to do. </l>
@@ -6573,23 +6751,23 @@
                 others.</stage>
         </l>
       </sp>
-      <sp who="tit-20">
+      <sp who="#tit-20">
         <speaker>Pub.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="152"/>What is your will? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="153"/>Know you these two? </l>
       </sp>
-      <sp who="tit-20">
+      <sp who="#tit-20">
         <speaker>Pub.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="154"/>The empress' sons, I take them, </l>
         <l> Chiron <milestone unit="line" ed="Globe" n="155"/>and Demetrius. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="156"/>Fie, Publius, fie! thou art too much <lb/>deceived; </l>
@@ -6609,12 +6787,12 @@
           <stage>Publius, &amp;c., lay hold on Chiron and <lb/>Demetrius.</stage>
         </l>
       </sp>
-      <sp who="tit-8">
+      <sp who="#tit-8">
         <speaker>Chi.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="163"/>Villains, forbear! we are the empress <lb/>sons. </l>
       </sp>
-      <sp who="tit-20">
+      <sp who="#tit-20">
         <speaker>Pub.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="164"/>And therefore do we what we are <lb/>commanded. </l>
@@ -6625,7 +6803,7 @@
           <stage type="entrance">Re-enter TITUS, with LAVINIA; he bearing a <lb/>knife, and she a basin.</stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="167"/>Come, come, Lavinia; look, thy foes are <lb/>bound. </l>
@@ -6720,19 +6898,19 @@
       <stage type="setting"> Court of Titus' house. A banquet <lb/>set out. </stage>
       <lb/>
       <stage type="entrance">Enter Lucius, MARCUS, and Goths, with <lb/>AARON prisoner.</stage>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Uncle Marcus, since it is my father's mind </l>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>That I repair to Rome, I am content. </l>
       </sp>
-      <sp who="tit-11">
+      <sp who="#tit-11">
         <speaker>First Goth.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="3"/>And ours with thine, befall what <lb/>fortune will. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="4"/>Good uncle, take you in this barbarous <lb/>Moor, </l>
@@ -6749,7 +6927,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="10"/>I fear the emperor means no good to us. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="11"/>Some devil whisper curses in mine ear, </l>
@@ -6758,7 +6936,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="13"/>The venomous malice of my swelling heart! </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>Away, inhuman dog! unhallow'd slave! </l>
@@ -6773,17 +6951,17 @@
           <stage type="entrance">Enter SATURNINUS and TAMORA, with <lb/>ÆMILIUS, Tribunes, Senators, and others.</stage>
         </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="17"/>What, hath the firmament more suns than <lb/>one? </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="18"/>What boots it thee to call thyself a sun? </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="19"/>Rome's emperor, and nephew, break <lb/>the parle; </l>
@@ -6798,7 +6976,7 @@
         <l><!-- REVIEW page: p.710 miun/kraken leaf 00000724 -->
           <milestone unit="line" ed="Globe" n="24"/>Please you, therefore, draw nigh, and take your <lb/>places. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>Marcus, we will. <lb/>
@@ -6809,7 +6987,7 @@
                 veiled, <lb/>young Lucius, and others. TITUS places the <lb/>dishes on the table. </stage>
         </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>Welcome, my gracious lord; welcome, <lb/>dread queen; </l>
@@ -6820,24 +6998,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="29"/>'Twill fill your stomachs; please you eat of it. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>Why art thou thus attired, Andronicus? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Because I would be sure to have all well, </l>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>To entertain your highness and your empress. </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="33"/>We are beholding to you, good <lb/>Andronicus. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="34"/>An if your highness knew my heart, you <lb/>were. </l>
@@ -6850,24 +7028,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="38"/>Because she was enforced, stain'd, and deflower'd ? </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="39"/>It was, Andronicus. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="40"/>Your reason, mighty lord? </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>Because the girl should not survive her <lb/>shame, </l>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>And by her presence still renew his sorrows. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>A reason mighty, strong, and effectual; </l>
@@ -6883,12 +7061,12 @@
           <milestone unit="line" ed="Globe" n="47"/>And, with thy shame, thy father's sorrow die! 
               </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="48"/>What hast thou done, unnatural and <lb/>unkind ? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>Kill'd her, for whom my tears have made <lb/>me blind. </l>
@@ -6899,22 +7077,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="52"/>To do this outrage: and it now is done. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>What, was she ravish'd? tell who did the <lb/>deed. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>Will't please you eat? will't please your <lb/>highness feed? </l>
       </sp>
-      <sp who="tit-24">
+      <sp who="#tit-24">
         <speaker>Tam.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="55"/>Why hast thou slain thine only daughter <lb/>thus? </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>Not I; 'twas Chiron and Demetrius: </l>
@@ -6923,12 +7101,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="58"/>And they, 'twas they, that did her all this wrong. </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>Go fetch them hither to us presently. </l>
       </sp>
-      <sp who="tit-25">
+      <sp who="#tit-25">
         <speaker>Tit.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>Why, there they are both, baked in that <lb/>pie; </l>
@@ -6941,14 +7119,14 @@
           <stage>Kills Tamora. </stage>
         </l>
       </sp>
-      <sp who="tit-22">
+      <sp who="#tit-22">
         <speaker>Sat.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>Die, frantic wretch, for this accursed deed! <lb/>
           <stage>Kills Titus. </stage>
         </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>Can the son's eye behold his father bleed ? </l>
@@ -6958,7 +7136,7 @@
                 great tumult. <lb/>Lucius, Marcus, and others go up <lb/>into the balcony.</stage>
         </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="67"/>You sad-faced men, people and sons of <lb/>Rome, </l>
@@ -7020,7 +7198,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="95"/>Your hearts will throb and weep to hear him speak. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="96"/>Then, noble auditory, be it known to you, </l>
@@ -7069,7 +7247,7 @@
         <l>
         <!-- REVIEW words: both witnesses read 'nofriends'; the P4 reads 'no friends' -->  <milestone unit="line" ed="Globe" n="118"/>For when no friends are by, men praise themselves. </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="119"/>Now is my turn to speak. Behold this <lb/>child: <lb/>
@@ -7111,7 +7289,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="136"/>Lo, hand in hand, Lucius and I will fall. </l>
       </sp>
-      <sp who="tit-2">
+      <sp who="#tit-2">
         <speaker>Æmil.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="137"/>Come, come, thou reverend man of <lb/>Rome, </l>
@@ -7127,7 +7305,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="141"/>Lucius, all hail, Rome's royal emperor! </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="142"/>Go, go into old Titus' sorrowful house, <lb/>
@@ -7149,7 +7327,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="146"/>Lucius, all hail, Rome's gracious governor! </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="147"/>Thanks, gentle Romans: may I govern so, </l>
@@ -7172,7 +7350,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="155"/>The last true duties of thy noble son! </l>
       </sp>
-      <sp who="tit-15">
+      <sp who="#tit-15">
         <speaker>Marc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="156"/>Tear for tear, and loving kiss for kiss, </l>
@@ -7183,7 +7361,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="159"/>Countless and infinite, yet would I pay them! </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="160"/>Come hither, boy; come, come, and learn <lb/>of us </l>
@@ -7210,7 +7388,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="171"/>Do him that kindness, and take leave of him. </l>
       </sp>
-      <sp who="tit-14">
+      <sp who="#tit-14">
         <speaker>Young Luc.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Voung'; the P4 reads 'Young' -->
           <milestone unit="line" ed="Globe" n="172"/>O grandsire, grandsire! even with <lb/>all my heart </l>
@@ -7224,7 +7402,7 @@
                 with AARON.</stage>
         </l>
       </sp>
-      <sp who="tit-2">
+      <sp who="#tit-2">
         <speaker>Æmil.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Æm.'; the P4 reads 'Æmil.' -->
           <milestone unit="line" ed="Globe" n="176"/>You sad Andronici, have done with woes: </l>
@@ -7233,7 +7411,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="178"/>That hath been breeder of these dire events. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="179"/>Set him breast-deep in earth, and famish <lb/>him; </l>
@@ -7246,7 +7424,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="183"/>Some stay to see him fasten'd in the earth. </l>
       </sp>
-      <sp who="tit-1">
+      <sp who="#tit-1">
         <speaker>Aar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="184"/>O, why should wrath be mute, and fury <lb/>dumb? </l>
@@ -7263,7 +7441,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="190"/>I do repent it from my very soul. </l>
       </sp>
-      <sp who="tit-13">
+      <sp who="#tit-13">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="191"/>Some loving friends convey the emperor <lb/>hence, </l>

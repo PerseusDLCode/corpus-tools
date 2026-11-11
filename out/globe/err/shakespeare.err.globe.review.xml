@@ -46,8 +46,8 @@
     <encodingDesc>
       <refsDecl n="CTS" xml:id="CTS">
         <citeStructure match="/TEI/text/body" use="@xml:base">
-          <citeStructure unit="act" delim=":" match="div[@type='act'][@n != 'cast']" use="@n">
-            <citeStructure unit="scene" delim="." match="div[@type='scene']" use="@n" n="chunk">
+          <citeStructure unit="act" delim=":" match="div" use="@n">
+            <citeStructure unit="scene" delim="." match="div" use="@n" n="chunk">
               <citeStructure unit="line" delim="." match=".//milestone[@unit='line'][@ed='Globe']" use="@n"/>
             </citeStructure>
             <citeStructure unit="line" delim="." match="sp//milestone[@unit='line'][@ed='Globe']" use="@n"/>
@@ -102,10 +102,71 @@
       <langUsage>
         <language ident="eng">English</language>
       </langUsage>
+      <particDesc>
+        <listPerson>
+          <person xml:id="duke.">
+            <persName>Solinus</persName>
+          </person>
+          <person xml:id="aege.">
+            <persName>Ægeon</persName>
+          </person>
+          <person xml:id="ant.-e.">
+            <persName>Antipholus of Ephesus</persName>
+          </person>
+          <person xml:id="ant.-s.">
+            <persName>Antipholus of Syracuse</persName>
+          </person>
+          <person xml:id="dro.-e.">
+            <persName>Dromio of Ephsus</persName>
+          </person>
+          <person xml:id="dro.-s.">
+            <persName>Dromio of Syracuse</persName>
+          </person>
+          <person xml:id="bal.">
+            <persName>Balthazar</persName>
+          </person>
+          <person xml:id="ang.">
+            <persName>Angelo</persName>
+          </person>
+          <person xml:id="first-mer.">
+            <persName>First Merchant</persName>
+          </person>
+          <person xml:id="sec.-mer.">
+            <persName>Second Merchant</persName>
+          </person>
+          <person xml:id="pinch.">
+            <persName>Pinch</persName>
+          </person>
+          <person xml:id="abb.">
+            <persName>Æmilia</persName>
+          </person>
+          <person xml:id="adr.">
+            <persName>Adriana</persName>
+          </person>
+          <person xml:id="luc.">
+            <persName>Luciana</persName>
+          </person>
+          <person xml:id="luce.">
+            <persName>Luce</persName>
+          </person>
+          <person xml:id="cour.">
+            <persName>A Courtezan</persName>
+          </person>
+          <person xml:id="off.">
+            <persName>An Officer</persName>
+          </person>
+          <person xml:id="serv.">
+            <persName>A Servant</persName>
+          </person>
+          <person xml:id="gaol.">
+            <persName>A Gaoler</persName>
+          </person>
+        </listPerson>
+      </particDesc>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-15">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 970434b; sources: err.xml sha256 d4e3e08d5b77eaf9; shared-lines.tsv sha256 0edbbaf5772d3bd2; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-11-11">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit fc923b2; sources: err.xml sha256 d4e3e08d5b77eaf9; shared-lines.tsv sha256 ff50b05a907e4c68; edition-template.xml sha256 47381fe6c26e8920; speakers.tsv sha256 6f7a972c304ab2ed; speech-fixes.tsv sha256 58bacff70398b9c4. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -113,90 +174,90 @@
     </revisionDesc>
   </teiHeader>
   <text xml:lang="eng">
-    <body xml:base="urn:cts:engLit:shakespeare.err.globe">
-  <div type="act" n="cast">
+    <front>
+  <castList>
     <head>DRAMATIS PERSONÆ</head>
-    <castList>
+    <castItem type="role">
+      <role corresp="#duke.">SOLINUS</role>
+      <roleDesc>duke of Ephesus</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#aege.">ÆGEON</role>
+      <roleDesc>a merchant of Syracuse</roleDesc>
+    </castItem>
+    <castGroup>
+      <head rend="braced"> twin brothers, and sons to Ægeon and Æmilia.</head>
       <castItem type="role">
-        <role xml:id="duke.">SOLINUS</role>
-        <roleDesc>duke of Ephesus</roleDesc>
+        <role corresp="#ant.-e.">ANTIPHOLUS of Ephesus</role>
       </castItem>
       <castItem type="role">
-        <role xml:id="aege.">ÆGEON</role>
-        <roleDesc>a merchant of Syracuse</roleDesc>
+        <role corresp="#ant.-s.">ANTIPHOLUS of Syracuse</role>
       </castItem>
-      <castGroup>
-        <head rend="braced"> twin brothers, and sons to Ægeon and Æmilia.</head>
-        <castItem type="role">
-          <role xml:id="ant.-e.">ANTIPHOLUS of Ephesus</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="ant.-s.">ANTIPHOLUS of Syracuse</role>
-        </castItem>
-      </castGroup>
-      <castGroup>
-        <head rend="braced"> twin brothers, and attendants on the two Antipholuses.</head>
-        <castItem type="role">
-          <role xml:id="dro.-e.">DROMIO of Ephsus</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="dro.-s.">DROMIO of Syracuse</role>
-        </castItem>
-      </castGroup>
+    </castGroup>
+    <castGroup>
+      <head rend="braced"> twin brothers, and attendants on the two Antipholuses.</head>
       <castItem type="role">
-        <role xml:id="bal.">BALTHAZAR</role>
-        <roleDesc>a merchant</roleDesc>
+        <role corresp="#dro.-e.">DROMIO of Ephsus</role>
       </castItem>
       <castItem type="role">
-        <role xml:id="ang.">ANGELO</role>
-        <roleDesc>a goldsmith</roleDesc>
+        <role corresp="#dro.-s.">DROMIO of Syracuse</role>
       </castItem>
-      <castItem type="role">
-        <role xml:id="first-mer.">First Merchant</role>
-        <roleDesc>friendto Antipholus of Syracuse</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="sec.-mer.">Second Merchant</role>
-        <roleDesc>to whom Angelo is a debtor</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="pinch.">PINCH</role>
-        <roleDesc>a schoolmaster</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="abb.">ÆMILIA, wife to Ægeon</role>
-        <roleDesc>an abbess at Ephesus</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="adr.">ADRIANA</role>
-        <roleDesc>wife to Antipholus of Ephesus</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="luc.">LUCIANA</role>
-        <roleDesc>her sister</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="luce.">LUCE</role>
-        <roleDesc>servant to Adriana</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="cour.">A Courtezan</role>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="off.">An Officer</role>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="serv.">A Servant</role>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="gaol.">A Gaoler</role>
-      </castItem>
-      <castItem type="role">
-        <roleDesc>and other Attendants</roleDesc>
-      </castItem>
-      <castItem type="role"/>
-    </castList>
-  </div>
+    </castGroup>
+    <castItem type="role">
+      <role corresp="#bal.">BALTHAZAR</role>
+      <roleDesc>a merchant</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#ang.">ANGELO</role>
+      <roleDesc>a goldsmith</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#first-mer.">First Merchant</role>
+      <roleDesc>friendto Antipholus of Syracuse</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#sec.-mer.">Second Merchant</role>
+      <roleDesc>to whom Angelo is a debtor</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#pinch.">PINCH</role>
+      <roleDesc>a schoolmaster</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#abb.">ÆMILIA, wife to Ægeon</role>
+      <roleDesc>an abbess at Ephesus</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#adr.">ADRIANA</role>
+      <roleDesc>wife to Antipholus of Ephesus</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#luc.">LUCIANA</role>
+      <roleDesc>her sister</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#luce.">LUCE</role>
+      <roleDesc>servant to Adriana</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#cour.">A Courtezan</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#off.">An Officer</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#serv.">A Servant</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#gaol.">A Gaoler</role>
+    </castItem>
+    <castItem type="role">
+      <roleDesc>and other Attendants</roleDesc>
+    </castItem>
+    <castItem type="role"/>
+  </castList>
+</front>
+    <body xml:base="urn:cts:engLit:shakespeare.err.globe">
   <div type="act" n="1">
     <head>ACT I</head>
     <div type="scene" n="1">
@@ -205,13 +266,13 @@
       <stage type="setting">A hall in the DUKE'S palace.</stage>
       <lb/>
       <stage type="entrance">Enter DUKE, ÆGEON, Gaoler, Officers, and other <lb/>Attendants.</stage>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <p><!-- REVIEW page: p.93 miun/kraken leaf 00000107 -->
           <milestone unit="line" ed="Globe" n="1"/>Proceed, Solinus, to procure my fall <milestone unit="line" ed="Globe" n="2"/>And by the doom of death end woes
        and all. </p>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'Syracusa,'; the P4 reads 'Syracuse,' --><milestone unit="line" ed="Globe" n="3"/>Merchant of Syracuse, plead no more; <milestone unit="line" ed="Globe" n="4"/>I am not partial to
@@ -226,14 +287,14 @@
        levied, <milestone unit="line" ed="Globe" n="23"/>To quit the penalty and to ransom him. <milestone unit="line" ed="Globe" n="24"/>Thy substance, valued at the highest rate, <milestone unit="line" ed="Globe" n="25"/>Cannot amount unto a hundred marks; <milestone unit="line" ed="Globe" n="26"/>Therefore by law
        thou art condemn'd to die. </p>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="27"/>Yet this my comfort: when your words <lb/>are done, </l>
         <l>
           <milestone unit="line" ed="Globe" n="28"/>My woes end likewise with the evening sun. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Well, Syracusian, say in brief the cause </l>
@@ -242,7 +303,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="31"/>And for what cause thou camest to Ephesus, </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>A heavier task could not have been <lb/>imposed </l>
@@ -375,14 +436,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="96"/>Gather the sequel by that went before. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="97"/>Nay, forward, old man; do not break <lb/>off so; </l>
         <l>
           <milestone unit="line" ed="Globe" n="98"/>For we may pity, though not pardon thee. </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="99"/>O, had the gods done so, I had not now </l>
@@ -431,7 +492,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="121"/>To tell sad stories of my own mishaps. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="122"/>And, for the sake of them thou <lb/>sorrowest for, </l>
@@ -440,7 +501,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="124"/>What hath befall'n of them and thee till now. </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="125"/>My youngest boy, and yet my eldest <lb/>care, </l>
@@ -475,7 +536,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="140"/>Could all my travels warrant me they live. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="141"/>Hapless Ægeon, whom the fates have <lb/>mark'd </l>
@@ -510,12 +571,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="156"/>Gaoler, take him to thy custody. </l>
       </sp>
-      <sp who="gaol.">
+      <sp who="#gaol.">
         <speaker>Gaol.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="157"/>I will, my lord. </p>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <!-- REVIEW turnover: row above ends 0.69u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="158"/>Hopeless and helpless doth Ægeon <lb/>wend, </l>
@@ -531,7 +592,7 @@
       <lb/>
       <stage type="entrance">Enter ANTIPHOLUS of Syracuse, DROMIO of <lb/>Syracuse, and First
       Merchant.</stage>
-      <sp who="first-mer.">
+      <sp who="#first-mer.">
         <speaker>First Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Therefore give out you are of <lb/>Epidamnum, </l>
@@ -550,7 +611,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="8"/>There is your money that I had to keep. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Go bear it to the Centaur, where we <lb/>host, </l>
@@ -569,7 +630,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="16"/>Get thee away. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="17"/>Many a man would take you at your <lb/>word, </l>
@@ -577,7 +638,7 @@
           <milestone unit="line" ed="Globe" n="18"/>And go indeed, having so good a mean. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="19"/>A trusty villain, sir, that very oft, </l>
@@ -590,7 +651,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="23"/>And then go to my inn and dine with me? </l>
       </sp>
-      <sp who="first-mer.">
+      <sp who="#first-mer.">
         <speaker>First Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="24"/>I am invited, sir, to certain <lb/>merchants, </l>
@@ -605,20 +666,20 @@
         <l>
           <milestone unit="line" ed="Globe" n="29"/>My present business calls me from you now. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>Farewell till then: I will go lose <lb/>myself </l>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>And wander up and down to view the city. </l>
       </sp>
-      <sp who="first-mer.">
+      <sp who="#first-mer.">
         <speaker>First Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>Sir, I commend you to your own <lb/>content. <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads '[Exit.' --><stage>[Exit. </stage>
         </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="33"/>He that commends me to mine own <lb/>content </l>
@@ -644,7 +705,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="42"/>What now? how chance thou art return'd so soon ? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>Return'd so soon! rather approach'd <lb/>too late: </l>
@@ -667,14 +728,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="52"/>Are penitent for your default to-day. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>Stop in your wind, sir: tell me this, <lb/>I pray: </l>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>Where have you left the money that I gave you? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="55"/>O,--sixpence, that I had o' <lb/>Wednesday last </l>
@@ -683,7 +744,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="57"/>The saddler had it, sir; I kept it not. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'humour'; the P4 reads 'humor' --><milestone unit="line" ed="Globe" n="58"/>I am not in a sportive humor now: </l>
@@ -694,7 +755,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="61"/>So great a charge from thine own custody? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>I pray you, jest, sir, as you sit at <lb/>dinner: </l>
@@ -709,7 +770,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="67"/>And strike you home without a messenger. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="68"/>Come, Dromio, come, these jests are <lb/>out of season; </l>
@@ -718,19 +779,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="70"/>Where is the gold I gave in charge to thee? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>To me, sir? why, you gave no gold <lb/>to me. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>Come on, sir knave, have done your <lb/>foolishness </l>
         <l>
           <milestone unit="line" ed="Globe" n="73"/>And tell me how thou hast disposed thy charge, </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="74"/>My charge was but to fetch you from <lb/>the mart </l>
@@ -739,7 +800,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="76"/>My mistress and her sister stays for you. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="77"/>Now, as I am a Christian, answer me </l>
@@ -752,7 +813,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="81"/>Where is the thousand marks thou hadst of me? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>I have some marks of yours upon my <lb/>pate, </l>
@@ -765,12 +826,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Perchance you will not bear them patiently. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>Thy mistress' marks? what mistress, <lb/>slave, hast thou? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>Your worship's wife, my mistress at <lb/>the Phoenix; </l>
@@ -779,14 +840,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="90"/>And prays that you will hie you home to dinner. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>What, wilt thou flout me thus unto <lb/>my face, </l>
         <l>
           <milestone unit="line" ed="Globe" n="92"/>Being forbid? There, take you that, sir knave. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="93"/>What mean you, sir? for God's sake, <lb/>hold your hands! </l>
@@ -794,7 +855,7 @@
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="94"/>Nay, an you will not, sir, I'll take my heels. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>Upon my life, by some device or other </l>
@@ -831,7 +892,7 @@
       <stage type="setting"> The house of ANTIPHOLUS of Ephesus. </stage>
       <lb/>
       <stage type="entrance"> Enter ADRIANA and LUCIANA.</stage>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Neither my husband nor the slave <lb/>return'd, </l>
@@ -840,7 +901,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="3"/>Sure, Luciana, it is two o'clock. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="4"/>Perhaps some merchant hath invited him </l>
@@ -855,32 +916,32 @@
         <l>
           <milestone unit="line" ed="Globe" n="9"/>They'll go or come: if so, be patient, sister. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="10"/>Why should their liberty than ours be <lb/>more ? </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="11"/>Because their business still lies out o' <lb/>door. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="12"/>Look, when I serve him so, he takes it <lb/>ill. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="13"/>O, know he is the bridle of your will. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>There's none but asses will be bridled so. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="15"/>Why, headstrong liberty is lash'd with <lb/>woe. </l>
@@ -905,37 +966,37 @@
         <l>
           <milestone unit="line" ed="Globe" n="25"/>Then let your will attend on their accords. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>This servitude makes you to keep unwed. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="27"/>Not this, but troubles of the marriagebed. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="28"/>But, were you wedded, you would bear <lb/>some sway. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Ere I learn love, I'll practise to obey. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>How if your husband start some other <lb/>where? </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Till he come home again, I would <lb/>forbear. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>Patience unmoved! no marvel though <lb/>she pause; </l>
@@ -958,7 +1019,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="41"/>This fool-begg'd patience in thee will be left. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>Well, I will marry one day, but to try. </l>
@@ -968,59 +1029,59 @@
         Enter DROMIO of Ephesus.</stage>
         </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Say, is your tardy master now at hand ? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <p><!-- REVIEW page: p.96 miun/kraken leaf 00000110 -->
           <milestone unit="line" ed="Globe" n="45"/>Nay, he's at two hands with me, and <milestone unit="line" ed="Globe" n="46"/>that my two ears can
        witness. </p>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="47"/>Say, didst thou speak with him? know'st <lb/>thou his mind? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="48"/>Ay, ay, he told his mind upon mine <lb/>ear: </p>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>Beshrew his hand, I scarce could understand it. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="50"/>Spake he so doubtfully, thou couldst not <milestone unit="line" ed="Globe" n="51"/>feel his
        meaning? </p>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="52"/>Nay, he struck so plainly, I could <milestone unit="line" ed="Globe" n="53"/>too well feel his
        blows; and withal so doubtfully <milestone unit="line" ed="Globe" n="54"/>that I could scarce
        understand them. </p>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="55"/>But say, I prithee, is he coming home? <milestone unit="line" ed="Globe" n="56"/>It seems he hath
        great care to please his wife. </p>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>Why, mistress, sure my master is <lb/>horn-mad. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="58"/>Horn-mad, thou villain! </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l part="F">
           <lb/>I mean not cuckold-mad; </l>
@@ -1045,12 +1106,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="68"/>I know not thy mistress; out on thy mistress!' </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="69"/>Quoth who? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>Quoth my master: </l>
@@ -1063,36 +1124,36 @@
         <l>
           <milestone unit="line" ed="Globe" n="74"/>For, in conclusion, he did beat me there. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="75"/>Go back again, thou slave, and fetch <lb/>him home. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="76"/>Go back again, and be new beaten <lb/>home? </l>
         <l>
           <milestone unit="line" ed="Globe" n="77"/>For God's sake, send some other messenger. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="78"/>Back, slave, or I will break thy pate <lb/>across. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>And he will bless that cross with <lb/>other beating: </l>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>Between you I shall have a holy head. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>Hence, prating peasant! fetch thy master <lb/>home. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
     <!-- REVIEW words: both witnesses read 'soround'; the P4 reads 'so round' -->      <milestone unit="line" ed="Globe" n="82"/>Am I so round with you as you with me, </l>
@@ -1104,12 +1165,12 @@
           <milestone unit="line" ed="Globe" n="85"/>If I last in this service, you must case me in <lb/>leather. <stage>[Exit. </stage>
         </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Fie, how impatience loureth in your <lb/>face! </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>His company must do his minions grace, </l>
@@ -1142,12 +1203,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="101"/>And feeds from home; poor I am but his stale. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="102"/>Self-harming jealousy! fie, beat it hence! </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="103"/>Unfeeling fools can with such wrongs <lb/>dispense. </l>
@@ -1176,7 +1237,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="115"/>I'll weep what's left away, and weeping die. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="116"/>How many fond fools serve mad jealousy! <!-- REVIEW words: both witnesses read 'IExeunt.'; the P4 reads '[Exeunt.' --><stage>[Exeunt. </stage>
@@ -1189,7 +1250,7 @@
       <stage type="setting"> A public place.</stage>
       <lb/>
       <stage type="entrance"> Enter ANTIPHOLUS of Syracuse. </stage>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>The gold I gave to Dromio is laid up </l>
@@ -1219,24 +1280,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="12"/>That thus so madly thou didst answer me? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="13"/>What answer, sir? when spake I such <lb/>a word? </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>Even now, even here, not half an <lb/>hour since. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="15"/>I did not see you since you sent me <lb/>hence, </l>
         <l>
           <milestone unit="line" ed="Globe" n="16"/>Home to the Centaur, with the gold you gave me. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="17"/>Villain, thou didst deny the gold's <lb/>receipt, </l>
@@ -1245,14 +1306,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="19"/>For which, I hope, thou felt'st I was displeased. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="20"/>I am glad to see you in this merry <lb/>vein: </l>
         <l>
           <milestone unit="line" ed="Globe" n="21"/>What means this jest? I pray you, master, tell <lb/>me. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="22"/>Yea, dost thou jeer and flout me in <lb/>the teeth ? </l>
@@ -1260,14 +1321,14 @@
           <milestone unit="line" ed="Globe" n="23"/>Think'st thou I jest? Hold, take thou that, and <lb/>that. <stage>[Beating him. </stage>
         </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="24"/>Hold, sir, for God's sake! now your <lb/>jest is earnest: </l>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>Upon what bargain do you give it me? </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>Because that I familiarly sometimes </l>
@@ -1288,42 +1349,42 @@
         <l>
           <milestone unit="line" ed="Globe" n="34"/>Or I will beat this method in your sconce. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="35"/>Sconce call you it? so you would leave <milestone unit="line" ed="Globe" n="36"/>battering, I had
        rather have it a head: an you <milestone unit="line" ed="Globe" n="37"/>use these blows long, I must
        get a sconce for my <milestone unit="line" ed="Globe" n="38"/>head and insconce it too; or else I shall seek my <milestone unit="line" ed="Globe" n="39"/>wit in my shoulders. But, I pray, sir, why am I <milestone unit="line" ed="Globe" n="40"/>beaten? </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="41"/>Dost thou not know? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="42"/>Nothing, sir, but that I am beaten. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>Shall I tell you why? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="44"/>Ay, sir, and wherefore; for they say <milestone unit="line" ed="Globe" n="45"/>every why hath a
        wherefore. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="46"/>Why, first,--for flouting me; and <lb/>then, wherefore,-- </l>
         <l>
           <milestone unit="line" ed="Globe" n="47"/>For urging it the second time to me. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="48"/>Was there ever any man thus beaten <lb/>out of season, </l>
@@ -1332,204 +1393,204 @@
         <l>
           <milestone unit="line" ed="Globe" n="50"/>Well, sir, I thank you. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="51"/>Thank me, sir! for what? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="52"/>Marry, sir, for this something that <milestone unit="line" ed="Globe" n="53"/>you gave me for
        nothing. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="54"/>I'll make you amends next, to give <milestone unit="line" ed="Globe" n="55"/>you nothing for
        something. But say, sir, is it <milestone unit="line" ed="Globe" n="56"/>dinner-time ? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>No, sir; I think the meat wants that <lb/>I have. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="58"/>In good time, sir; what's that?! </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="59"/>Basting. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>Well, sir, then 'twill be dry. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="61"/>If it be, sir, I pray you, eat none of it. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="62"/>Your reason? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="63"/>Lest it make you choleric and <milestone unit="line" ed="Globe" n="64"/>purchase me another dry
        basting. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="65"/>Well, sir, learn to jest in good time: <milestone unit="line" ed="Globe" n="66"/>there's a time for
        all things. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="67"/>I durst have denied that, before you <milestone unit="line" ed="Globe" n="68"/>were so choleric. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="69"/>By what rule, sir? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="70"/>Marry, sir, by a rule as plain as the <milestone unit="line" ed="Globe" n="71"/>plain bald pate of father Time himself. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="72"/>Let's hear it. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="73"/>There's no time for a man to recover <milestone unit="line" ed="Globe" n="74"/>his hair that grows
        bald by nature. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="75"/>May he not do it by fine and recovery? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="76"/>Yes, to pay a fine for a periwig and <milestone unit="line" ed="Globe" n="77"/>recover the lost hair
        of another man. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="78"/>Why is Time such a niggard of hair, <milestone unit="line" ed="Globe" n="79"/>being, as it is, so
        plentiful an excrement? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="80"/>Because it is a blessing that he <milestone unit="line" ed="Globe" n="81"/>bestows on beasts; and
        what he hath scanted men <milestone unit="line" ed="Globe" n="82"/>in hair he hath given them in wit.
         </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="83"/>Why, but there's many a man hath <milestone unit="line" ed="Globe" n="84"/>more hair than wit. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="85"/>Not a man of those but he hath the <milestone unit="line" ed="Globe" n="86"/>wit to lose his hair.
         </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="87"/>Why, thou didst conclude hairy men <milestone unit="line" ed="Globe" n="88"/>plain dealers without
        wit. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="89"/>The plainer dealer, the sooner lost: <milestone unit="line" ed="Globe" n="90"/>yet he loseth it in a kind of jollity. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="91"/>For what reason? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="92"/>For two; and sound ones too. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="93"/>Nay, not sound, I pray you. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="94"/>Sure ones, then. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="95"/>Nay, not sure, in a thing falsing. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="96"/>Certain ones then. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="97"/>Name them. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="98"/>The one, to save the money that he <milestone unit="line" ed="Globe" n="99"/>spends in trimming; the
        other that at dinner <milestone unit="line" ed="Globe" n="100"/>they should not drop in his porridge.
         </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p><!-- REVIEW anchor: P4 anchor says 100; the page count says 101 here -->
           <milestone unit="line" ed="Globe" n="101"/>You would all this time have proved <milestone unit="line" ed="Globe" n="102"/>there is no time for
        all things. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="103"/>Marry, and did, sir; namely, no time <milestone unit="line" ed="Globe" n="104"/>to recover hair lost
        by nature. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="105"/>But your reason was not substantial, <milestone unit="line" ed="Globe" n="106"/>why there is no time
        to recover. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="107"/>Thus I mend it: Time himself is <milestone unit="line" ed="Globe" n="108"/>bald and therefore to the
        world's end will have <milestone unit="line" ed="Globe" n="109"/>bald followers. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
  <!-- REVIEW words: both witnesses read 'knew’twould'; the P4 reads "knew 'twould" -->         <milestone unit="line" ed="Globe" n="110"/>I knew 'twould be a bald conclusion: </l>
@@ -1538,7 +1599,7 @@
           <stage type="entrance"> Enter ADRIANA and LUCIANA.</stage>
         </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="112"/>Ay, ay, Antipholus, look strange and <lb/>frown: </l>
@@ -1615,7 +1676,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'undishonoured.'; the P4 reads 'undishonored.' --><milestone unit="line" ed="Globe" n="148"/>I live unstain'd, thou undishonored. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <!-- REVIEW turnover: row above ends 1.30u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="149"/>Plead you to me, fair dame? I know <lb/>you not: </l>
@@ -1628,7 +1689,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="153"/>Want wit in all one word to understand. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <!-- REVIEW turnover: row above ends 1.31u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="154"/>Fie, brother! how the world is changed <lb/>with you! </l>
@@ -1636,17 +1697,17 @@
          <!-- REVIEW words: both witnesses read 'vou'; the P4 reads 'you' --> <milestone unit="line" ed="Globe" n="155"/>When were you wont to use my sister thus? </l>
         <l>She <milestone unit="line" ed="Globe" n="156"/>sent for you by Dromio home to dinner. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="157"/>By Dromio? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="158"/>By me? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l><!-- REVIEW page: p.98 miun/kraken leaf 00000112 -->
           <!-- REVIEW turnover: row above ends 0.75u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="159"/>By thee; and this thou didst return <lb/>from him, </l>
@@ -1655,38 +1716,38 @@
         <l>
           <milestone unit="line" ed="Globe" n="161"/>Denied my house for his, me for his wife. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="162"/>Did you converse, sir, with this <lb/>gentlewoman ? </l>
         <l>
           <milestone unit="line" ed="Globe" n="163"/>What is the course and drift of your compact? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="164"/>I, sir? I never saw her till this time. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <!-- REVIEW turnover: row above ends 0.67u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="165"/>Villain, thou liest; for even her very <lb/>words </l>
         <l>
           <milestone unit="line" ed="Globe" n="166"/>Didst thou deliver to me on the mart. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="167"/>I never spake with her in all my life. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="168"/>How can she thus then call us by <lb/>our names? </l>
         <l>
           <milestone unit="line" ed="Globe" n="169"/>Unless it be by inspiration. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="170"/>How ill agrees it with your gravity </l>
@@ -1715,7 +1776,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="182"/>Infect thy sap and live on thy confusion. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="183"/>To me she speaks; she moves me for <lb/>her theme: </l>
@@ -1730,12 +1791,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="188"/>I'll entertain the offer'd fallacy. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="189"/>Dromio, go bid the servants spread for <lb/>dinner. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="190"/>O, for my beads! I cross me for a <lb/>sinner. </l>
@@ -1748,44 +1809,44 @@
         <l>
           <milestone unit="line" ed="Globe" n="194"/>They'll suck our breath or pinch us black and <lb/>blue. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="195"/>Why pratest thou to thyself and <lb/>answer'st not? </l>
         <l>
           <milestone unit="line" ed="Globe" n="196"/>Dromio, thou drone, thou snail, thou slug, thou <lb/>sot! </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="197"/>I am transformed, master, am I not? </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="198"/>I think thou art in mind, and so am I. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="199"/>Nay, master, both in mind and in my <lb/>shape. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="200"/>Thou hast thine own form. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l part="F">
           <lb/>No, I am an ape. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="201"/>If thou art changed to aught, 'tis to an <lb/>ass. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="202"/>'Tis true; she rides me and I long <lb/>for grass. </l>
@@ -1794,7 +1855,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="204"/>But I should know her as well as she knows me. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="205"/>Come, come, no longer will I be a fool, </l>
@@ -1815,7 +1876,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="213"/>Come, sister. Dromio, play the porter well. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="214"/>Am I in earth, in heaven, or in hell? </l>
@@ -1828,17 +1889,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="218"/>And in this mist at all adventures go. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="219"/>Master, shall I be porter at the gate? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="220"/>Ay; and let none enter, lest I break your <lb/>pate. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <!-- REVIEW turnover: row above ends 0.70u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="221"/>Come, come, Antipholus, we dine too <lb/>late. <stage>[Exeunt. </stage>
@@ -1856,7 +1917,7 @@
       <lb/>
       <stage type="entrance">Enter ANTIPHOLUS of Ephesus, DROMIO of <lb/>Ephesus, ANGELO, and
       BALTHAZAR.</stage>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Good Signior Angelo, you must <lb/>excuse us all; </l>
@@ -1879,7 +1940,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="10"/>Thou drunkard, thou, what didst thou mean by <lb/>this? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="11"/>Say what you will, sir, but I know what <lb/>I know; </l>
@@ -1890,12 +1951,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="14"/>Your own handwriting would tell you what I think. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="15"/>I think thou art an ass. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l part="F">
           <lb/>Marry, so it doth appear </l>
@@ -1906,41 +1967,41 @@
         <l>
           <milestone unit="line" ed="Globe" n="18"/>You would keep from my heels and beware of <lb/>an ass. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="19"/>You're sad, Signior Balthazar: pray <lb/>God our cheer </l>
         <l>
           <milestone unit="line" ed="Globe" n="20"/>May answer my good will and your good <lb/>welcome here. </l>
       </sp>
-      <sp who="bal.">
+      <sp who="#bal.">
         <speaker>Bal.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="21"/>I hold your dainties cheap, sir, and your <lb/>welcome dear. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'Balthazar,'; the P4 reads 'Balthazer,' --><milestone unit="line" ed="Globe" n="22"/>O, Signior Balthazer, either at flesh <lb/>or fish, </l>
         <l>
           <!-- REVIEW words: both witnesses read 'makes'; the P4 reads 'make' --><milestone unit="line" ed="Globe" n="23"/>A table full of welcome make scarce one dainty <lb/>dish. </l>
       </sp>
-      <sp who="bal.">
+      <sp who="#bal.">
         <speaker>Bal.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="24"/>Good meat, sir, is common; that every <lb/>churl affords. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>And welcome more common; for <lb/>that's nothing but words. </l>
       </sp>
-      <sp who="bal.">
+      <sp who="#bal.">
         <speaker>Bal.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>Small cheer and great welcome makes a <lb/>merry feast. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="27"/>Ay to a niggardly host and more <lb/>sparing guest: </l>
@@ -1951,12 +2012,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="30"/>But, soft! my door is lock'd. Go bid them let <lb/>us in. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l><!-- REVIEW page: p.99 miun/kraken leaf 00000113 -->
           <!-- REVIEW words: both witnesses read 'Cicely,'; the P4 reads 'Cicel,' --><milestone unit="line" ed="Globe" n="31"/>Maud, Bridget, Marian, Cicel, <lb/>Gillian, Ginn! </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="32"/>
         <stage>[Within]</stage>
@@ -1968,51 +2029,51 @@
         <l>
           <milestone unit="line" ed="Globe" n="35"/>When one is one too many? Go, get thee from the <lb/>door. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="36"/>What patch is made our porter? My <lb/>master stays in the street. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="37"/>
         <!-- REVIEW numeral: shared-lines.tsv: the page prints no number here, but a word; both witnesses read 19 (image, checked 2026-10-14 cliff) --><stage>[Within]</stage>
         <l>Let him walk from whence <lb/>he came, lest he catch cold on's feet. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="38"/>Who talks within there? ho, open <lb/>the door! </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="39"/>
         <stage>[Within]</stage>
         <l>Right, sir; <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" -->I'll tell you <!-- REVIEW words: both witnesses read 'you ’ll'; the P4 reads "you'll" --><lb/>when, an you'll tell me wherefore. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="40"/>Wherefore? for my dinner: I have <lb/>not dined to-day. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="41"/>
         <stage>[Within]</stage>
         <l>Nor to-day here you must <lb/>not; come again when you may. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
     <!-- REVIEW words: both witnesses read 'art'; the P4 reads 'are' -->      <milestone unit="line" ed="Globe" n="42"/>What are thou that keepest me out <lb/>from the house I owe? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="43"/>
         <stage>[Within]</stage>
         <l>The porter for this time, <lb/>sir, and my name is Dromio. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>O villain! thou hast stolen both mine <lb/>office and my name. </l>
@@ -2025,25 +2086,25 @@
         <l>name <lb/>or thy name for an ass. 
        </l>
       </sp>
-      <sp who="luce.">
+      <sp who="#luce.">
         <speaker>Luce.</speaker>
         <milestone unit="line" ed="Globe" n="48"/>
         <stage>[Within]</stage>
         <l>What a coil is there, Dromio? <lb/>who are those at the gate? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l><!-- REVIEW shared: shared-lines.tsv: this line ends with a half the page cannot show as shared; second half begins 'faith no he' (basis image, checked 2026-10-14 cliff) -->
           <milestone unit="line" ed="Globe" n="49"/>Let my master in, Luce. </l>
       </sp>
-      <sp who="luce.">
+      <sp who="#luce.">
         <speaker>Luce.</speaker>
         <lb/>
         <stage>[Within]</stage>
         <l>Faith, no; he comes too late;</l>
         <l part="I">And <milestone unit="line" ed="Globe" n="50"/>so tell your master. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l part="F">
           <lb/>O Lord, I must laugh! </l>
@@ -2051,124 +2112,124 @@
           <milestone unit="line" ed="Globe" n="51"/>Have at you with a proverb--Shall I set in my
        staff? </l>
       </sp>
-      <sp who="luce.">
+      <sp who="#luce.">
         <speaker>Luce.</speaker>
         <milestone unit="line" ed="Globe" n="52"/>
         <stage>[Within]</stage>
         <l>Have at you with another; <lb/>that's--When? can you tell? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="53"/>
         <stage>[Within]</stage>
         <l>If thy name be call'd Luce,--Luce, <!-- REVIEW turnover: row above ends 0.65u short of the measure, near the 1.0u cut: read as a turnover; P4 has a different element --><lb/>thou hast answer'd him well. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'you ’ll'; the P4 reads "you'll" --><milestone unit="line" ed="Globe" n="54"/>Do you hear, you minion? you'll let <lb/>us in, I hope? </l>
       </sp>
-      <sp who="luce.">
+      <sp who="#luce.">
         <speaker>Luce.</speaker>
         <milestone unit="line" ed="Globe" n="55"/>
         <stage>[Within]</stage>
         <l>I thought to have <!-- REVIEW words: both witnesses read 'ask’d'; the P4 reads 'asked' -->asked you. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <lb/>
         <stage>[Within]</stage>
         <l>And you said no. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>So, come, help: well struck! there <lb/>was blow for blow. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l><!-- REVIEW shared: shared-lines.tsv: this line ends with a half the page cannot show as shared; second half begins 'can you tell' (basis image, checked 2026-10-14 cliff) -->
           <milestone unit="line" ed="Globe" n="57"/>Thou baggage, let me in. </l>
       </sp>
-      <sp who="luce.">
+      <sp who="#luce.">
         <speaker>Luce.</speaker>
         <lb/>
         <stage>[Within]</stage>
         <l>Can you tell for whose sake? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>Master, knock the door hard. </l>
       </sp>
-      <sp who="luce.">
+      <sp who="#luce.">
         <speaker>Luce.</speaker>
         <lb/>
         <stage>[Within]</stage>
         <l>Let him knock till it ache. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>You'll cry for this, minion, if I beat <lb/>the door down. </l>
       </sp>
-      <sp who="luce.">
+      <sp who="#luce.">
         <speaker>Luce.</speaker>
         <milestone unit="line" ed="Globe" n="60"/>
         <stage>[Within]</stage>
         <l>What needs all that, and a <lb/>pair of stocks in the town? 
        </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <milestone unit="line" ed="Globe" n="61"/>
         <stage>[Within]</stage>
         <l>Who is that at the door that <lb/>keeps all this noise? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="62"/>
         <stage>[Within]</stage>
         <l>By my troth, your town is <lb/>troubled with unruly boys. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Are you there, wife? you might <lb/>have come before. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <milestone unit="line" ed="Globe" n="64"/>
         <stage>[Within]</stage>
         <l>Your wife, sir knave! go get <lb/>you from the door. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>If you went in pain, master, this <lb/>'knave' would go sore. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="66"/>Here is neither cheer, sir, nor welcome: <lb/>we would fain have either.
         </l>
       </sp>
-      <sp who="bal.">
+      <sp who="#bal.">
         <speaker>Bal.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="67"/>In debating which was best, we shall <lb/>part with neither. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="68"/>They stand at the door, master; bid <lb/>them welcome hither. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="69"/>There is something in the wind, that <lb/>we cannot get in. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>You would say so, master, if your <lb/>garments were thin. </l>
@@ -2177,47 +2238,47 @@
         <l>
           <milestone unit="line" ed="Globe" n="72"/>It would make a man mad as a buck, to be so <lb/>bought and sold. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="73"/>Go fetch me something: I'll break <lb/>ope the gate. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="74"/>
         <stage>[Within]</stage>
         <l>Break any breaking here, <lb/>and I'll break your knave's pate. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="75"/>A man may break a word with you, <lb/>sir, and words are but wind, </l>
         <l>
           <milestone unit="line" ed="Globe" n="76"/>Ay, and break it in your face, so he break it not <lb/>behind. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="77"/>
         <stage>[Within]</stage>
         <l>It seems thou want'st <lb/>breaking: out upon thee, hind! </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="78"/>Here's too much 'out upon thee!' I <lb/>pray thee, let me in. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <milestone unit="line" ed="Globe" n="79"/>
         <stage>[Within]</stage>
         <l>Ay, when fowls have no <lb/>feathers and fish have no fin. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>Well, I'll break in: go borrow me a <lb/>crow. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>A crow without feather? Master, <lb/>mean you so? </l>
@@ -2226,12 +2287,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="83"/>If a crow help us in, sirrah, we'll pluck a crow <lb/>together. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="84"/>Go get thee gone; fetch me an iron <lb/>crow. </l>
       </sp>
-      <sp who="bal.">
+      <sp who="#bal.">
         <speaker>Bal.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>Have patience, sir; O, let it not be so! </l>
@@ -2278,7 +2339,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="106"/>For ever housed where it gets possession. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
         <!-- REVIEW words: both witnesses read 'prevail’d:'; the P4 reads 'prevailed:' -->  <milestone unit="line" ed="Globe" n="107"/>You have prevailed: I will depart <lb/>in quiet, </l>
@@ -2313,12 +2374,12 @@
         <l>
           <!-- REVIEW words: both witnesses read 'they ’ll'; the P4 reads "they'll" --><milestone unit="line" ed="Globe" n="121"/>I'll knock elsewhere, to see if they'll disdain me. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="122"/>I'll meet you at that place some hour <lb/>hence. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="123"/>Do so. This jest shall cost me some <lb/>expense. <stage>[Exeunt.
@@ -2332,7 +2393,7 @@
       <stage type="setting"> The same. </stage>
       <lb/>
       <stage type="entrance">Enter LUCIANA and ANTIPHOLUS of Syracuse.</stage>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>And may it be that you have quite <lb/>forgot </l>
@@ -2391,7 +2452,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="28"/>When the sweet breath of flattery conquers <lb/>strife. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Sweet mistress,--what your name is <lb/>else, I know not, </l>
@@ -2442,52 +2503,52 @@
         <l>
           <milestone unit="line" ed="Globe" n="52"/>Let Love, being light, be drowned if she <lb/>sink ! </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>What, are you mad, that you do <lb/>reason so ? </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>Not mad, but mated; how, I do not <lb/>know. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="55"/>It is a fault that springeth from your eye. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>For gazing on your beams, fair sun, <lb/>being by. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>Gaze where you should, and that will <lb/>clear your sight. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>As good to wink, sweet love, as look <lb/>on night. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>Why call you me love? call my <lb/>sister so. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="60"/>Thy sister's sister. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l part="M">
           <lb/>That's my sister. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l part="F">
           <lb/>No; </l>
@@ -2500,12 +2561,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="64"/>My sole earth's heaven and my heaven's claim. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>All this my sister is, or else should be. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="66"/>Call thyself sister, sweet, for I am thee. </l>
@@ -2516,7 +2577,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="69"/>Give me thy hand. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l part="F">
           <lb/>O, soft, sir! hold you still: </l>
@@ -2526,56 +2587,56 @@
           <stage type="entrance"> Enter DROMIO of Syracuse.</stage>
         </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="71"/>Why, how now, Dromio! where <milestone unit="line" ed="Globe" n="72"/>runn'st thou so fast? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="73"/>Do you know me, sir? am I Dromio? <milestone unit="line" ed="Globe" n="74"/>am I your man? am I
        myself? </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="75"/>Thou art Dromio, thou art my man, <milestone unit="line" ed="Globe" n="76"/>thou art thyself. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="77"/>I am an ass, I am a woman's man <milestone unit="line" ed="Globe" n="78"/>and besides myself. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="79"/>What woman's man? and how besides <milestone unit="line" ed="Globe" n="80"/>thyself? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="81"/>Marry, sir, besides myself, I am due <milestone unit="line" ed="Globe" n="82"/>to a woman; one that
        claims me, one that haunts <milestone unit="line" ed="Globe" n="83"/>me, one that will have me. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="84"/>What claim lays she to thee? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="85"/>Marry, sir, such claim as you would <milestone unit="line" ed="Globe" n="86"/>lay to your horse; and
        she would have me as a <milestone unit="line" ed="Globe" n="87"/>beast; not that, I being a beast, she
         would have <milestone unit="line" ed="Globe" n="88"/>me; but that she, being a very beastly creature, <milestone unit="line" ed="Globe" n="89"/>lays claim to me. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="90"/>What is she? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="91"/>A very reverent body; ay, such a <milestone unit="line" ed="Globe" n="92"/>one as a man may not
@@ -2583,12 +2644,12 @@
        luck in the <milestone unit="line" ed="Globe" n="94"/>match, and yet is she a wondrous fat marriage.
         </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="95"/>How dost thou mean a fat marriage ? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="96"/>Marry, sir, she's the kitchen wench <milestone unit="line" ed="Globe" n="97"/>and all grease; and I
@@ -2597,125 +2658,125 @@
        if <milestone unit="line" ed="Globe" n="101"/>she lives till doomsday, she'll burn a week longer <milestone unit="line" ed="Globe" n="102"/>than
        the whole world. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
-        <p><!-- REVIEW witness: p.101 taken from trent/kraken: miun/kraken:1 trent/kraken:0 (total count error) --><!-- REVIEW page: p.101 trent/kraken leaf 0117 -->
+        <p><!-- REVIEW page: p.101 miun/kraken leaf 00000115 -->
           <milestone unit="line" ed="Globe" n="103"/>What complexion is she of? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="104"/>Swart, like my shoe, but her face <milestone unit="line" ed="Globe" n="105"/>nothing like so clean
        kept: for why, she sweats; <milestone unit="line" ed="Globe" n="106"/>a man may go over shoes in the
        grime of it. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="107"/>That's a fault that water will mend. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="108"/>No, sir, 'tis in grain; Noah's flood <milestone unit="line" ed="Globe" n="109"/>could not do it. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="110"/>What's her name? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'that ’s'; the P4 reads "that's" --><milestone unit="line" ed="Globe" n="111"/>Nell, sir; but her name and three <milestone unit="line" ed="Globe" n="112"/>quarters, that's an ell
        and three quarters, will not <milestone unit="line" ed="Globe" n="113"/>measure her from hip to hip.
         </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="114"/>Then she bears some breadth? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="115"/>No longer from head to foot than <milestone unit="line" ed="Globe" n="116"/>from hip to hip: she is
        spherical, like a globe; I <milestone unit="line" ed="Globe" n="117"/>could find out countries in her.
         </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="118"/>In what part of her body stands <milestone unit="line" ed="Globe" n="119"/>Ireland? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="120"/>Marry, sir, in her buttocks: I found <milestone unit="line" ed="Globe" n="121"/>it out by the bogs.
         </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="122"/>Where Scotland? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="123"/>I found it by the barrenness; hard <milestone unit="line" ed="Globe" n="124"/>in the palm of the
        hand. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="125"/>Where France? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="126"/>In her forehead; armed and reverted, <milestone unit="line" ed="Globe" n="127"/>making war against
        her heir. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="128"/>Where England? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="129"/>I looked for the chalky cliffs, but I <milestone unit="line" ed="Globe" n="130"/>could find no
        whiteness in them; but I guess it <milestone unit="line" ed="Globe" n="131"/>stood in her chin, by the
        salt rheum that ran <milestone unit="line" ed="Globe" n="132"/>between France and it. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="133"/>Where Spain? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="134"/>Faith, I saw it not; but I felt it hot <milestone unit="line" ed="Globe" n="135"/>in her breath. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="136"/>Where America, the Indies? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="137"/>Oh, sir, upon her nose, all o'er <milestone unit="line" ed="Globe" n="138"/>embellished with rubies,
        carbuncles, sapphires, <milestone unit="line" ed="Globe" n="139"/>declining their rich aspect to the
        hot breath of <milestone unit="line" ed="Globe" n="140"/>Spain; who sent whole armadoes of caracks to <milestone unit="line" ed="Globe" n="141"/>be ballast at her nose. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="142"/>Where stood Belgia, the Netherlands? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="143"/>Oh, sir, I did not look so low. To <milestone unit="line" ed="Globe" n="144"/>conclude, this drudge,
@@ -2730,7 +2791,7 @@
           <milestone unit="line" ed="Globe" n="151"/>She had transform'd me to a curtal dog and made <lb/>me turn i' the wheel.
         </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="152"/>Go hie thee presently, post to the road: </l>
@@ -2747,7 +2808,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="158"/>'Tis time, I think, to trudge, pack and be gone. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="159"/>As from a bear a man would run for life, </l>
@@ -2755,7 +2816,7 @@
           <milestone unit="line" ed="Globe" n="160"/>So fly I from her that would be my wife. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="161"/>There's none but witches do inhabit <lb/>here; </l>
@@ -2778,17 +2839,17 @@
           <stage type="entrance"> Enter ANGELO with the chain.</stage>
         </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="170"/>Master Antipholus,-- </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l part="F">
           <lb/>Ay, that's my name. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="171"/>I know it well, sir, lo, here is the chain. </l>
@@ -2797,22 +2858,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="173"/>The chain unfinish'd made me stay thus long. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="174"/>What is your will that I shall do with <lb/>this? </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="175"/>What please yourself, sir: I have made <lb/>it for you. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="176"/>Made it for me, sir! I bespoke it not. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="177"/>Not once, nor twice, but twenty times <lb/>you have. </l>
@@ -2823,20 +2884,20 @@
         <l>
           <milestone unit="line" ed="Globe" n="180"/>And then receive my money for the chain. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="181"/>I pray you, sir, receive the money now, </l>
         <l>
           <milestone unit="line" ed="Globe" n="182"/>For fear you ne'er see chain nor money more. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="183"/>You are a merry man, sir: fare you well. <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads '[Exit.' --><stage>[Exit. </stage>
         </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="184"/>What I should think of this, I cannot <lb/>tell: </l>
@@ -2865,7 +2926,7 @@
       <stage type="setting"> A public place. </stage>
       <lb/>
       <stage type="entrance"> Enter Second Merchant, ANGELO, and an <lb/>Officer.</stage>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>You know since Pentecost the sum <lb/>is due, </l>
@@ -2880,7 +2941,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="6"/>Or I'll attach you by this officer. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>Even just the sum that I do owe to you </l>
@@ -2899,12 +2960,12 @@
           <stage type="entrance">Enter ANTIPHOLUS of Ephesus and DROMIO <lb/>of Ephesus from the courtezan's. </stage>
         </l>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <l>
     <!-- REVIEW words: both witnesses read 'labour'; the P4 reads 'labor' -->      <milestone unit="line" ed="Globe" n="14"/>That labor may you save; see where he <lb/>comes. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="15"/>While I go to the goldsmith's house, <lb/>go thou </l>
@@ -2919,13 +2980,13 @@
         <l>
           <milestone unit="line" ed="Globe" n="20"/>Buy thou a rope and bring it home to me. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="21"/>I buy a thousand pound a year: I <lb/>buy a rope. <stage>[Exit. </stage>
         </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="22"/>A man is well holp up that trusts to <lb/>you: </l>
@@ -2938,7 +2999,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="26"/>If it were chain'd together, and therefore came <lb/>not. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'humour,'; the P4 reads 'humor,' --><milestone unit="line" ed="Globe" n="27"/>Saving your merry humor, here's the <lb/>note </l>
@@ -2955,7 +3016,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="33"/>For he is bound to sea and stays but for it. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="34"/>I am not furnish'd with the present <lb/>money; </l>
@@ -2970,29 +3031,29 @@
         <l>
           <milestone unit="line" ed="Globe" n="39"/>Perchance I will be there as soon as you. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="40"/>Then you will bring the chain to her <lb/>yourself ? </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>No; bear it with you, lest I come <lb/>not time enough. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>Well, sir, I will. Have you the chain <lb/>about you? </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>An if I have not, sir, I hope you <lb/>have; </l>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Or else you may return without your money. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Nay, come, I pray you, sir, give me <lb/>the chain: </l>
@@ -3001,7 +3062,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="47"/>And I, to blame, have held him here too long. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="48"/>Good Lord! you use this dalliance <lb/>to excuse </l>
@@ -3012,36 +3073,36 @@
         <l>
           <milestone unit="line" ed="Globe" n="51"/>But, like a shrew, you first begin to brawl. </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="52"/>The hour steals on; I pray you, <lb/>sir, dispatch. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>You hear how he importunes me;--the <lb/>chain! </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>Why, give it to my wife and fetch <lb/>your money. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="55"/>Come, come, you know I gave it you <lb/>even now. </l>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>Either send the chain or send me by some token. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'humour'; the P4 reads 'humor' --><milestone unit="line" ed="Globe" n="57"/>Fie, now you run this humor out of <lb/>breath, </l>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>Come, where's the chain? I pray you, let me <lb/>see it. </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>My business cannot brook this <lb/>dalliance. </l>
@@ -3050,49 +3111,49 @@
         <l>
           <milestone unit="line" ed="Globe" n="61"/>If not, I'll leave him to the officer. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>I answer you! what should I answer <lb/>you? </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>The money that you owe me for the <lb/>chain. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>I owe you none till I receive the <lb/>chain. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>You know I gave it you half an hour <lb/>since. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="66"/>You gave me none: you wrong me <lb/>much to say so. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="67"/>You wrong me more, sir, in denying it; </l>
         <l>
           <milestone unit="line" ed="Globe" n="68"/>Consider how it stands upon my credit. </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="69"/>Well, officer, arrest him at my suit. </l>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>I do; and charge you in the duke's name <lb/>to obey me. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>This touches me in reputation. </l>
@@ -3101,14 +3162,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="73"/>Or I attach you by this officer. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="74"/>Consent to pay thee that I never <lb/>had! </l>
         <l>
           <milestone unit="line" ed="Globe" n="75"/>Arrest me, foolish fellow, if thou darest. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="76"/>Here is thy fee; arrest him, officer, </l>
@@ -3117,12 +3178,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="78"/>If he should scorn me so apparently. </l>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>I do arrest you, sir: you hear the suit. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>I do obey thee till I give thee bail. </l>
@@ -3131,7 +3192,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="82"/>As all the metal in your shop will answer. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>Sir, sir, I shall have law in Ephesus, </l>
@@ -3141,7 +3202,7 @@
         DROMIO of Syracuse, from the bay.</stage>
         </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>Master, there is a bark of Epidamnum </l>
@@ -3160,33 +3221,33 @@
         <l>
           <milestone unit="line" ed="Globe" n="92"/>But for their owner, master, and yourself. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="93"/>How now! a madman! Why, thou <lb/>peevish sheep, </l>
         <l>
           <milestone unit="line" ed="Globe" n="94"/>What ship of Epidamnum stays for me? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>A ship you sent me to, to hire waftage. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="96"/>Thou drunken slave, I sent thee for <lb/>a rope; </l>
         <l>
           <milestone unit="line" ed="Globe" n="97"/>And told thee to what purpose and what end. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="98"/>You sent me for a rope's end as soon: </l>
         <l>
           <milestone unit="line" ed="Globe" n="99"/>You sent me to the bay, sir, for a bark. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="100"/>I will debate this matter at more <lb/>leisure </l>
@@ -3210,7 +3271,7 @@
         E.</stage>
         </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="109"/>To Adriana! that is where we dined, </l>
@@ -3232,7 +3293,7 @@
       <stage type="setting"> The house of ANTIPHOLUS of <lb/>Ephesus. </stage>
       <lb/>
       <stage type="entrance"> Enter ADRIANA and LUCIANA.</stage>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Ah, Luciana, did he tempt thee so? </l>
@@ -3247,64 +3308,64 @@
         <l>
           <milestone unit="line" ed="Globe" n="6"/>Of his heart's meteors tilting in his face? </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>First he denied you had in him no right. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="8"/>He meant he did me none; the more <lb/>my spite. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Then swore he that he was a stranger <lb/>here. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l><!-- REVIEW page: p.103 miun/kraken leaf 00000117 -->
           <milestone unit="line" ed="Globe" n="10"/>And true he swore, though yet forsworn <lb/>he were. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="11"/>Then pleaded I for you. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l part="F">
           <lb/>And what said he? </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="12"/>That love I begg'd for you he begg'd <lb/>of me. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="13"/>With what persuasion did he tempt thy <lb/>love? </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>With words that in an honest suit might <lb/>move. </l>
         <l>
           <milestone unit="line" ed="Globe" n="15"/>First he did praise my beauty, then my speech. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="16"/>Didst speak him fair? </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l part="F">
           <lb/>Have patience, I beseech. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="17"/>I cannot, nor I will not, hold me still; </l>
@@ -3319,14 +3380,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="22"/>Stigmatical in making, worse in mind. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="23"/>Who would be jealous then of such a one? </l>
         <l>
           <milestone unit="line" ed="Globe" n="24"/>No evil lost is wail'd when it is gone. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>Ah, but I think him better than I say, </l>
@@ -3339,27 +3400,27 @@
           <stage type="entrance"> Enter DROMIO of Syracuse.</stage>
         </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Here! go; the desk, the purse! <lb/>sweet, now, make haste. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="30"/>How hast thou lost thy breath? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l part="F">
           <lb/>By running fast. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Where is thy master, Dromio? is he <lb/>well? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>No, he's in Tartar limbo, worse than <lb/>hell. </l>
@@ -3380,22 +3441,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="40"/>One that before the judgement carries poor souls <lb/>to hell. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>Why, man, what is the matter? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>I do not know the matter: he is <lb/>'rested on the case. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>What, is he arrested? Tell me at whose <lb/>suit. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>I know not at whose suit he is <lb/>arrested well; </l>
@@ -3404,7 +3465,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="46"/>Will you send him, mistress, redemption, the <lb/>money in his desk? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="47"/>Go fetch it, sister. <stage>Exit Luciana.</stage>
@@ -3417,41 +3478,41 @@
         <l>
           <milestone unit="line" ed="Globe" n="49"/>Tell me, was he arrested on a band? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="50"/>Not on a band, but on a stronger <lb/>thing; v</l>
         <l>
           <milestone unit="line" ed="Globe" n="51"/>A chain, a chain! Do you not hear it ring? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="52"/>What, the chain? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>No, no, the bell: 'tis time that I were <lb/>gone: </l>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>It was two ere I left him, and now the clock <lb/>strikes one, </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="55"/>The hours come back! that did I never <lb/>hear. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>O, yes; if any hour meet a sergeant, <lb/>a' turns back for very fear. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>As if Time were in debt! how fondly <lb/>dost thou reason! </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>Time is a very bankrupt, and owes <lb/>more than he's worth, to season.
@@ -3467,7 +3528,7 @@
           <stage type="entrance"> Re-enter LUCIANA with a purse. </stage>
         </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Go, Dromio; there's the money, bear it <lb/>straight, </l>
@@ -3486,7 +3547,7 @@
       <stage type="setting"> A public place.</stage>
       <lb/>
       <stage type="entrance"> Enter ANTIPHOLUS of Syracuse. </stage>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>There's not a man I meet but doth <lb/>salute me </l>
@@ -3514,61 +3575,61 @@
         DROMIO of Syracuse.</stage>
         </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="12"/>Master, here's the gold you sent me <milestone unit="line" ed="Globe" n="13"/>for. What, have you
        got the picture of old Adam <milestone unit="line" ed="Globe" n="14"/>new-apparelled? </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="15"/>What gold is this? what Adam dost <lb/>thou mean? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="16"/>Not that Adam that kept the <milestone unit="line" ed="Globe" n="17"/>Paradise, but that Adam that
        keeps the prison: he <milestone unit="line" ed="Globe" n="18"/>that goes in the calf's skin that was
        killed for the <milestone unit="line" ed="Globe" n="19"/>Prodigal; he that came behind you, sir, like an <milestone unit="line" ed="Globe" n="20"/>evil angel, and bid you forsake your liberty. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="21"/>I understand thee not. </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="22"/>No? why, 'tis a plain case: he that <milestone unit="line" ed="Globe" n="23"/>went, like a
        bass-viol, in a case of leather; the <milestone unit="line" ed="Globe" n="24"/>man, sir, that, when gentlemen are tired, gives <milestone unit="line" ed="Globe" n="25"/>them a sob and 'rests them: he, sir, that takes <milestone unit="line" ed="Globe" n="26"/>pity on decayed men and gives them suits of <milestone unit="line" ed="Globe" n="27"/>durance; he that sets up his rest to do more <milestone unit="line" ed="Globe" n="28"/>exploits with his mace than a morris-pike. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="29"/>What, thou meanest an officer? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="30"/>Ay, sir, the sergeant of the band; he <milestone unit="line" ed="Globe" n="31"/>that brings any man
        to answer it that breaks his <milestone unit="line" ed="Globe" n="32"/>band; one that thinks a man
        always going to bed, <milestone unit="line" ed="Globe" n="33"/>and says, 'God give you good rest!' </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="34"/>Well, sir, there rest in your foolery. <milestone unit="line" ed="Globe" n="35"/>Is there any ship
        puts forth to-night? may we be <milestone unit="line" ed="Globe" n="36"/>gone? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <!-- REVIEW page: p.104 miun/kraken leaf 00000118 --><milestone unit="line" ed="Globe" n="37"/>Why, sir, I brought you word an <milestone unit="line" ed="Globe" n="38"/>hour since that the bark
        Expedition put forth <milestone unit="line" ed="Globe" n="39"/>to-night; and then were you hindered
        by the <milestone unit="line" ed="Globe" n="40"/>sergeant, to tarry for the hoy Delay. Here <milestone unit="line" ed="Globe" n="41"/>are the angels that you sent for to deliver you. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>The fellow is distract, and so am I; </l>
@@ -3580,7 +3641,7 @@
         Enter a Courtezan.</stage>
         </l>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Well met, well met, Master <lb/>Antipholus. </l>
@@ -3589,22 +3650,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="47"/>Is that the chain you promised me to-day? </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="48"/>Satan, avoid! I charge thee, tempt <lb/>me not. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>Master, is this Mistress Satan? </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="50"/>It is the devil. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="51"/>Nay, she is worse, she is the devil's <milestone unit="line" ed="Globe" n="52"/>dam; and here she
@@ -3614,31 +3675,31 @@
        fire, and fire will burn; ergo, light <milestone unit="line" ed="Globe" n="58"/>wenches will burn.
        Come not near her. </p>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>Your man and you are marvellous <lb/>merry, sir. </l>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>Will you go with me? We'll mend our dinner <lb/>here ? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="61"/>Master, if you do, expect <milestone unit="line" ed="Globe" n="62"/>spoon-meat; or bespeak a long
        spoon. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="63"/>Why, Dromio? </p>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="64"/>Marry, he must have a long spoon <milestone unit="line" ed="Globe" n="65"/>that must eat with the
        devil. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="66"/>Avoid then, fiend! what tell'st thou <lb/>me of supping? </l>
@@ -3647,7 +3708,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="68"/>I conjure thee to leave me and be gone. </l>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="69"/>Give me the ring of mine you had at <lb/>dinner, </l>
@@ -3656,7 +3717,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="71"/>And I'll be gone, sir, and not trouble you. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>Some devils ask but the parings of <lb/>one's nail, </l>
@@ -3671,19 +3732,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="77"/>The devil will shake her chain and fright us <lb/>with it. </l>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="78"/>I pray you, sir, my ring, or else the <lb/>chain: </l>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>I hope you do not mean to cheat me so. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>Avaunt, thou witch! Come, Dromio, <lb/>let us go. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>'Fly pride,' says the peacock: <lb/>mistress, that you know.
@@ -3691,7 +3752,7 @@
           <stage>[Exeunt Ant. S. and Dro. S.</stage>
         </l>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>Now, out of doubt Antipholus is mad, </l>
@@ -3734,7 +3795,7 @@
       <stage type="setting"> A street. </stage>
       <lb/>
       <stage type="entrance">Enter ANTIPHOLUS of Ephesus and the Officer.</stage>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Fear me not, man; I will not break <lb/>away: </l>
@@ -3757,85 +3818,85 @@
         <l>
           <milestone unit="line" ed="Globe" n="9"/>How now, sir! have you that I sent you for? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="10"/>Here's that, I warrant you, will pay <lb/>them all. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="11"/>But where's the money? </p>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="12"/>Why, sir, I gave the money for <lb/>the rope. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="13"/>Five hundred ducats, villain, for <lb/>a rope? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>I'll serve you, sir, five hundred at <lb/>the rate. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="15"/>To what end did I bid thee hie thee <lb/>home ? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="16"/>To a rope's-end, sir; and to that end <milestone unit="line" ed="Globe" n="17"/>am I returned. </p>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="18"/>And to that end, sir, I will welcome <lb/>you. <stage>[Beating him. </stage>
         </p>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <p><!-- REVIEW anchor: P4 anchor says 20; the page count says 19 here -->
           <milestone unit="line" ed="Globe" n="19"/>Good sir, be patient. </p>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="20"/>Nay, 'tis for me to be patient; I am <milestone unit="line" ed="Globe" n="21"/>in adversity. </p>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="22"/>Good now, hold thy tongue. </p>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
           <milestone unit="line" ed="Globe" n="23"/>Nay, rather persuade him to hold <milestone unit="line" ed="Globe" n="24"/>his hands. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="25"/>Thou whoreson, senseless villain! </p>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="26"/>I would I were senseless, sir, that I <milestone unit="line" ed="Globe" n="27"/>might not feel your
        blows. </p>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="28"/>Thou art sensible in nothing but <milestone unit="line" ed="Globe" n="29"/>blows, and so is an ass.
         </p>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="30"/>I am an ass, indeed; you may prove <milestone unit="line" ed="Globe" n="31"/>it by my long ears. I
@@ -3849,30 +3910,30 @@
        
        </p>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>Come, go along; my wife is coming <lb/>yonder. <lb/>
           <stage type="entrance">Enter ADRIANA, LUCIANA, the Courtezan, <lb/>and PINCH.</stage>
         </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="44"/>Mistress, 'respice finem,' respect <milestone unit="line" ed="Globe" n="45"/>your end; or rather, the prophecy like the <milestone unit="line" ed="Globe" n="46"/>parrot, 'beware the rope's-end.' </p>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="47"/>Wilt thou still talk? <stage>[Beating him.</stage>
         </p>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l><!-- REVIEW page: p.105 miun/kraken leaf 00000119 -->
           <milestone unit="line" ed="Globe" n="48"/>How say you now? is not your <lb/>husband mad? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>His incivility confirms no less. </l>
@@ -3883,28 +3944,28 @@
         <l>
           <milestone unit="line" ed="Globe" n="52"/>And I will please you what you will demand. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>Alas, how fiery and how sharp he looks! </l>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>Mark how he trembles in his ecstasy! </l>
       </sp>
-      <sp who="pinch.">
+      <sp who="#pinch.">
         <speaker>Pinch.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="55"/>Give me your hand and let me feel <lb/>your pulse. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>There is my hand, and let it feel <lb/>your ear.<stage>[Striking him. </stage>
         </l>
       </sp>
-      <sp who="pinch.">
+      <sp who="#pinch.">
         <speaker>Pinch.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>I charge thee, Satan, housed within <lb/>this man, </l>
@@ -3915,17 +3976,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="60"/>I conjure thee by all the saints in heaven! </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <!-- REVIEW turnover: row above ends 0.75u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="61"/>Peace, doting wizard, peace! I am <lb/>not mad. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>O, that thou wert not, poor distressed <lb/>soul! </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>You minion, you, are these your <lb/>customers? </l>
@@ -3938,7 +3999,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="67"/>And I denied to enter in my house? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="68"/>O husband, God doth know you dined <lb/>at home; </l>
@@ -3947,112 +4008,112 @@
         <l>
           <milestone unit="line" ed="Globe" n="70"/>Free from these slanders and this open shame! </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>Dined at home! Thou villain, what <lb/>sayest thou? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>Sir, sooth to say, you did not dine at <lb/>home. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="73"/>Were not my doors lock'd up and I <lb/>shut out? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="74"/>Perdie, your doors were lock'd and <lb/>you shut out. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="75"/>And did not she herself revile me <lb/>there ? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="76"/>Sans fable, she herself reviled you <lb/>there. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="77"/>Did not her kitchen-maid rail, taunt, <lb/>and scorn me? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="78"/>Certes, she did; the kitchen-vestal <lb/>scorn'd you. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>And did not I in rage depart from <lb/>thence ? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>In verity you did; my bones bear <lb/>witness, </l>
         <l>
           <!-- REVIEW words: both witnesses read 'vigour'; the P4 reads 'vigor' --><milestone unit="line" ed="Globe" n="81"/>That since have felt the vigor of his rage. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>Is't good to soothe him in these <lb/>contraries ? </l>
       </sp>
-      <sp who="pinch.">
+      <sp who="#pinch.">
         <speaker>Pinch.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>It is no shame: the fellow finds his vein, </l>
         <l>
           <!-- REVIEW words: both witnesses read 'humours'; the P4 reads 'humors' --><milestone unit="line" ed="Globe" n="84"/>And yielding to him humors well his frenzy. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>Thou hast suborn'd the goldsmith to <lb/>arrest me. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Alas, I sent you money to redeem you, </l>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>By Dromio here, who came in haste for it. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>Money by me! heart and goodwill <lb/>you might; </l>
         <l>
           <milestone unit="line" ed="Globe" n="89"/>But surely, master, not a rag of money. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="90"/>Went'st not thou to her for a purse <lb/>of ducats? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>He came to me and I deliver'd it. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="92"/>And I am witness with her that she did. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="93"/>God and the rope-maker bear me <lb/>witness </l>
         <l>
           <milestone unit="line" ed="Globe" n="94"/>That I was sent for nothing but a rope! </l>
       </sp>
-      <sp who="pinch.">
+      <sp who="#pinch.">
         <speaker>Pinch.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>Mistress, both man and master is <lb/>possess'd; </l>
@@ -4061,31 +4122,31 @@
         <l>
           <milestone unit="line" ed="Globe" n="97"/>They must be bound and laid in some dark room. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="98"/>Say, wherefore didst thou lock me <lb/>forth to-day? </l>
         <l>
           <milestone unit="line" ed="Globe" n="99"/>And why dost thou deny the bag of gold? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="100"/>I did not, gentle husband, lock thee <lb/>forth. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="101"/>And, gentle master, I received no <lb/>gold; </l>
         <l>
           <milestone unit="line" ed="Globe" n="102"/>But I confess, sir, that we were lock'd out. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="103"/>Dissembling villain, thou speak'st false <lb/>in both. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="104"/>Dissembling harlot, thou art false in all; </l>
@@ -4100,22 +4161,22 @@
           <stage type="entrance">Enter three or four, and offer to bind him. He <lb/>strives.</stage>
         </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="109"/>O, bind him, bind him! let him not <lb/>come near me. </l>
       </sp>
-      <sp who="pinch.">
+      <sp who="#pinch.">
         <speaker>Pinch.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="110"/>More company! The fiend is strong <lb/>within him. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="111"/>Ay me, poor man, how pale and wan he <lb/>looks! </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="112"/>What, will you murder me? Thou <lb/>gaoler, thou, </l>
@@ -4124,21 +4185,21 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="114"/>To make a rescue? </l>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <l part="F">
           <lb/>Masters, let him go: </l>
         <l>
           <milestone unit="line" ed="Globe" n="115"/>He is my prisoner, and you shall not have him. </l>
       </sp>
-      <sp who="pinch.">
+      <sp who="#pinch.">
         <speaker>Pinch.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="116"/>Go bind this man, for he is frantic too. <lb/>
           <stage>[They offer to bind Dro. E. </stage>
         </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="117"/>What wilt thou do, thou peevish officer ? </l>
@@ -4147,14 +4208,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="119"/>Do outrage and displeasure to himself? </l>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="120"/>He is my prisoner: if I let him go, </l>
         <l>
           <milestone unit="line" ed="Globe" n="121"/>The debt he owes will be required of me. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="122"/>I will discharge thee ere I go from thee: </l>
@@ -4167,33 +4228,33 @@
         <l>
           <milestone unit="line" ed="Globe" n="126"/>Home to my house. O most unhappy day! </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="127"/>O most unhappy strumpet! </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="128"/>Master, I am here enter'd in bond <lb/>for you. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l><!-- REVIEW anchor: P4 anchor says 130; the page count says 129 here -->
           <milestone unit="line" ed="Globe" n="129"/>Out on thee, villain! wherefore dost <lb/>thou mad me? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
           <milestone unit="line" ed="Globe" n="130"/>Will you be bound for nothing? be <milestone unit="line" ed="Globe" n="131"/>mad, good master: cry
        'The devil!' </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="132"/>God help, poor souls, how idly do they <lb/>talk! </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="133"/>Go bear him hence. Sister, go you with <lb/>me. <stage>[Exeunt all but Adriana, Luciana, <lb/>Officer
@@ -4203,37 +4264,37 @@
           <milestone unit="line" ed="Globe" n="134"/>Say now, whose suit is he arrested at? 
        </l>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="135"/>One Angelo, a goldsmith: do you know <lb/>him? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="136"/>I know the man. What is the sum he <lb/>owes? </l>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="137"/>Two hundred ducats. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <p><!-- REVIEW verse-prose: displaced row inside a <p>: P4 tags this speech as prose, the page lays it out as verse -->
           <lb/>Say, how grows it due? </p>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="138"/>Due for a chain your husband had of him. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="139"/>He did bespeak a chain for me, but had <lb/>it not. </l>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l><!-- REVIEW page: p.106 miun/kraken leaf 00000120 -->
           <milestone unit="line" ed="Globe" n="140"/>When as your husband all in rage to-day </l>
@@ -4244,7 +4305,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="143"/>Straight after did I meet him with a chain. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="144"/>It may be so, but I did never see it. </l>
@@ -4256,12 +4317,12 @@
         Syracuse. </stage>
         </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="147"/>God, for thy mercy! they are loose again. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="148"/>And come with naked swords. </l>
@@ -4269,7 +4330,7 @@
           <milestone unit="line" ed="Globe" n="149"/>Let's call more help to have them bound again. 
        </l>
       </sp>
-      <sp who="off.">
+      <sp who="#off.">
         <speaker>Off.</speaker>
         <l>
      <!-- REVIEW words: both witnesses read 'they’Il'; the P4 reads "they'll" -->     <milestone unit="line" ed="Globe" n="150"/>Away! they'll kill us. <lb/>
@@ -4277,24 +4338,24 @@
         S.</stage>
         </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="151"/>I see these witches are afraid of <lb/>swords. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="152"/>She that would be your wife now ran <lb/>from you. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="153"/>Come to the Centaur; fetch our stuff <lb/>from thence: </l>
         <l>
           <milestone unit="line" ed="Globe" n="154"/>I long that we were safe and sound aboard. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'turn'; the P4 reads 'n=160turn' --><milestone unit="line" ed="Globe" n="155"/>Faith, stay here this night; they will <milestone unit="line" ed="Globe" n="156"/>surely do us no
@@ -4302,7 +4363,7 @@
        they are such a <milestone unit="line" ed="Globe" n="158"/>gentle nation that, but for the mountain
         of mad <milestone unit="line" ed="Globe" n="159"/>flesh that claims marriage of me, I could find in <milestone unit="line" ed="Globe" n="160"/>my heart to stay here still and  n=160turn witch. </p>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="161"/>I will not stay to-night for all the <lb/>town; </l>
@@ -4321,7 +4382,7 @@
       <stage type="setting"> A street before a Priory. </stage>
       <lb/>
       <stage type="entrance"> Enter Second Merchant and ANGELO.</stage>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'hinder d'; the P4 reads "hinder'd" --><milestone unit="line" ed="Globe" n="1"/>I am sorry, sir, that I have hinder'd you; </l>
@@ -4330,12 +4391,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="3"/>Though most dishonestly he doth deny it. </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'esteem’d'; the P4 reads 'esteemed' --><milestone unit="line" ed="Globe" n="4"/>How is the man esteemed here in <lb/>the city ? </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="5"/>Of very reverend reputation, sir, </l>
@@ -4346,14 +4407,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="8"/>His word might bear my wealth at any time. </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Speak softly; yonder, as I think, <lb/>he walks. <lb/>
           <stage type="entrance">Enter ANTIPHOLUS of Syracuse and DROMIO <lb/>of Syracuse.</stage>
         </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="10"/>'Tis so; and that self chain about his <lb/>neck </l>
@@ -4382,22 +4443,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="22"/>This chain you had of me; can you deny it? </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="23"/>I think I had; I never did deny it. </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="24"/>Yes, that you did, sir, and forswore <lb/>it too. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>Who heard me to deny it or forswear it? </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>These ears of mine, thou know'st, <lb/>did hear thee. </l>
@@ -4406,7 +4467,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'men'; the P4 reads 'man' --><milestone unit="line" ed="Globe" n="28"/>To walk where any honest man resort. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Thou art a villain to impeach me thus: </l>
@@ -4415,7 +4476,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Against thee presently, if thou darest stand. </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>I dare, and do defy thee for a villain. <lb/>
@@ -4424,7 +4485,7 @@
           <stage type="entrance">Enter ADRIANA, LUCIANA, the Courtezan, and <lb/>others.</stage>
         </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'sake!'; the P4 reads 'sakel' --><milestone unit="line" ed="Globe" n="33"/>Hold, hurt him not, for God's sakel he <lb/>is mad. </l>
@@ -4433,7 +4494,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="35"/>Bind Dromio too, and bear them to my house. </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="36"/>Run, master, run; for God's sake, <lb/>take a house! </l>
@@ -4445,12 +4506,12 @@
           <stage type="entrance"> Enter the Lady Abbess.</stage>
         </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="38"/>Be quiet, people. Wherefore throng you <lb/>hither? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="39"/>To fetch my poor distracted husband <lb/>hence. </l>
@@ -4459,22 +4520,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="41"/>And bear him home for his recovery. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>I knew he was not in his perfect wits, </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>I am sorry now that I did draw on <lb/>him. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>How long hath this possession held the <lb/>man? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>This week he hath been heavy, sour, sad, </l>
@@ -4485,7 +4546,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="48"/>Ne'er brake into extremity of rage. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>Hath he not lost much wealth by wreck <lb/>of sea? </l>
@@ -4500,49 +4561,49 @@
         <l>
           <milestone unit="line" ed="Globe" n="54"/>Which of these sorrows is he subject to? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="55"/>To none of these, except it be the last; </l>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>Namely, some love that drew him oft from home. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>You should for that have reprehended him. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="58"/>Why, so I did. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l part="F">
           <lb/>Ay, but not rough enough. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>As roughly as my modesty would let me. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="60"/>Haply, in private. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l part="F">
           <lb/>And in assemblies too. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="61"/>Ay, but not enough. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>It was the copy of our conference: </l>
@@ -4557,7 +4618,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="67"/>Still did I tell him it was vile and bad. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="68"/>And thereof came it that the man was <lb/>mad: </l>
@@ -4598,7 +4659,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Have scared thy husband from the use of wits. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>She never reprehended him but mildly. </l>
@@ -4607,24 +4668,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="89"/>Why bear you these rebukes and answer not? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="90"/>She did betray me to my own reproof. </l>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>Good people, enter and lay hold on him. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="92"/>No, not a creature enters in my house. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="93"/>Then let your servants bring my husband <lb/>forth. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="94"/>Neither: he took this place for sanctuary, </l>
@@ -4635,7 +4696,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'labour'; the P4 reads 'labor' --><milestone unit="line" ed="Globe" n="97"/>Or lose my labor in assaying it. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="98"/>I will attend my husband, be his nurse, </l>
@@ -4646,7 +4707,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="101"/>And therefore let me have him home with me. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="102"/>Be patient; for I will not let him stir </l>
@@ -4663,7 +4724,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="108"/>Therefore depart and leave him here with me, </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="109"/>I will not hence and leave my husband <lb/>here: </l>
@@ -4672,18 +4733,18 @@
         <l>
           <milestone unit="line" ed="Globe" n="111"/>To separate the husband and the wife. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="112"/>Be quiet and depart: thou shalt not have <lb/>him. <stage>[Exit. </stage>
         </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="113"/>Complain unto the duke of this indignity. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="114"/>Come, go: I will fall prostrate at his feet </l>
@@ -4694,7 +4755,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="117"/>And take perforce my husband from the abbess. </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="118"/>By this, I think, the dial points at <lb/>five: </l>
@@ -4707,12 +4768,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="122"/>Behind the ditches of the abbey here. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="123"/>Upon what cause? </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="124"/>To see a reverend Syracusian <lb/>merchant, </l>
@@ -4723,12 +4784,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="127"/>Beheaded publicly for his offence. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="128"/>See where they come: we will behold <lb/>his death. </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="129"/>Kneel to the duke before he pass the <lb/>abbey. <lb/>
@@ -4736,7 +4797,7 @@
         other Officers. </stage>
         </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="130"/>Yet once again proclaim it publicly, </l>
@@ -4745,19 +4806,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="132"/>He shall not die; so much we tender him. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="133"/>Justice, most sacred duke, against the <lb/>abbess! </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="134"/>She is a virtuous and a reverend lady: </l>
         <l>
           <milestone unit="line" ed="Globe" n="135"/>It cannot be that she hath done thee wrong. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="136"/>May it please your grace, Antipholus, <lb/>my husband, </l>
@@ -4810,7 +4871,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'forhelp.'; the P4 reads 'for help.' --><milestone unit="line" ed="Globe" n="160"/>Let him be brought forth and borne hence for help. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="161"/>Long since thy husband served me in <lb/>my wars, </l>
@@ -4830,7 +4891,7 @@
         Servant.</stage>
         </l>
       </sp>
-      <sp who="serv.">
+      <sp who="#serv.">
         <speaker>Serv.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="168"/>O mistress, mistress, shift and save <lb/>yourself! </l>
@@ -4853,14 +4914,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="177"/>Between them they will kill the conjurer. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="178"/>Peace, fool! thy master and his man are <lb/>here, </l>
         <l>
           <!-- REVIEW words: both witnesses read 'tous.'; the P4 reads 'to us.' --><milestone unit="line" ed="Globe" n="179"/>And that is false thou dost report to us. </l>
       </sp>
-      <sp who="serv.">
+      <sp who="#serv.">
         <speaker>Serv.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="180"/>Mistress, upon my life, I tell you true; </l>
@@ -4875,12 +4936,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="184"/>Hark, hark! I hear him, mistress: fly, be gone! </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'with'; the P4 reads 'and' --><milestone unit="line" ed="Globe" n="185"/>Come, stand by me; fear nothing. <lb/>Guard and halberds! </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="186"/>Ay me, it is my husband! Witness you, </l>
@@ -4893,7 +4954,7 @@
           <stage type="entrance">Enter ANTIPHOLUS of Ephesus and DROMIO of <lb/>Ephesus.</stage>
         </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l><!-- REVIEW page: p.108 miun/kraken leaf 00000122 -->
           <milestone unit="line" ed="Globe" n="190"/>Justice, most gracious duke, O, grant <lb/>me justice! </l>
@@ -4906,14 +4967,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="194"/>That then I lost for thee, now grant me justice. </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="195"/>Unless the fear of death doth make me <lb/>dote, </l>
         <l>
           <milestone unit="line" ed="Globe" n="196"/>I see my son Antipholus and Dromio. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="197"/>Justice, sweet prince, against that <lb/>woman there! </l>
@@ -4928,24 +4989,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="202"/>That she this day hath shameless thrown on me. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="203"/>Discover how, and thou shalt find me <lb/>just. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="204"/>This day, great duke, she shut the <lb/>doors upon me, </l>
         <l>
           <milestone unit="line" ed="Globe" n="205"/>While she with harlots feasted in my house. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="206"/>A grievous fault! Say, woman, didst <lb/>thou so? </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="207"/>No, my good lord: myself, he and my <lb/>sister </l>
@@ -4954,21 +5015,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="209"/>As this is false he burdens me withal! </l>
       </sp>
-      <sp who="luc.">
+      <sp who="#luc.">
         <speaker>Luc.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="210"/>Ne'er may I look on day, nor sleep on <lb/>night, </l>
         <l>
           <milestone unit="line" ed="Globe" n="211"/>But she tells to your highness simple truth! </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="212"/>O perjured woman! They are both <lb/>forsworn: </l>
         <l>
           <milestone unit="line" ed="Globe" n="213"/>In this the madman justly chargeth them. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="214"/>My liege, I am advised what I say, </l>
@@ -5053,26 +5114,26 @@
         <l>
           <milestone unit="line" ed="Globe" n="253"/>For these deep shames and great indignities. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="254"/>My lord, in truth, thus far I witness with <lb/>him, </l>
         <l>
           <milestone unit="line" ed="Globe" n="255"/>That he dined not at home, but was lock'd out. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="256"/>But had he such a chain of thee or no? </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="257"/>He had, my lord: and when he ran in <lb/>here, </l>
         <l>
           <milestone unit="line" ed="Globe" n="258"/>These people saw the chain about his neck. </l>
       </sp>
-      <sp who="sec.-mer.">
+      <sp who="#sec.-mer.">
         <speaker>Sec. Mer.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="259"/>Besides, I will be sworn these ears <lb/>of mine </l>
@@ -5087,7 +5148,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="264"/>From whence, I think, you are come by miracle. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="265"/>I never came within these <lb/>abbeywalls, </l>
@@ -5098,7 +5159,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="268"/>And this is false you burden me withal. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="269"/>Why, what an intricate impeach is <lb/>this! </l>
@@ -5113,32 +5174,32 @@
         <l>
           <milestone unit="line" ed="Globe" n="274"/>Denies that saying. Sirrah, what say you? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="275"/>Sir, he dined with her there, at the <lb/>Porpentine. </l>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="276"/>He did, and from my finger snatch'd <lb/>that ring. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="277"/>'Tis true, my liege; this ring I had <lb/>of her. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="278"/>Saw'st thou him enter at the abbey <lb/>here ? </l>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="279"/>As sure, my liege, as I do see your <lb/>grace. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="280"/>Why, this is strange. Go call the <lb/>abbess hither. </l>
@@ -5148,7 +5209,7 @@
         Abbess.</stage>
         </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="282"/>Most mighty duke, vouchsafe me speak <lb/>a word: </l>
@@ -5157,19 +5218,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="284"/>And pay the sum that may deliver me. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="285"/>Speak freely, Syracusian, what thou <lb/>wilt. </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="286"/>Is not your name, sir, call'd <lb/>Antipholus ? </l>
         <l>
           <milestone unit="line" ed="Globe" n="287"/>And is not that your bondman, Dromio? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="288"/>Within this hour I was his bondman, <lb/>sir, </l>
@@ -5178,12 +5239,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="290"/>Now am I Dromio and his man unbound. </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="291"/>I am sure you both of you remember <lb/>me. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="292"/>Ourselves we do remember, sir, by <lb/>you; </l>
@@ -5192,17 +5253,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="294"/>You are not Pinch's patient, are you, sir? </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l><!-- REVIEW page: p.109 miun/kraken leaf 00000123 -->
           <milestone unit="line" ed="Globe" n="295"/>Why look you strange on me? you <lb/>know me well. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="296"/>I never saw you in my life till now. </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="297"/>O, grief hath changed me since you <lb/>saw me last, </l>
@@ -5213,33 +5274,33 @@
         <l>
           <milestone unit="line" ed="Globe" n="300"/>But tell me yet, dost thou not know my voice? </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="301"/>Neither. </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="302"/>Dromio, nor thou? </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l part="F">
           <lb/>No, trust me, sir, nor I. </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="303"/>I am sure thou dost. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="304"/>Ay, sir, but I am sure I do not; and <milestone unit="line" ed="Globe" n="305"/>whatsoever a man
        denies, you are now bound to <milestone unit="line" ed="Globe" n="306"/>believe him. </p>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="307"/>Not know my voice! O time's <lb/>extremity, </l>
@@ -5266,12 +5327,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="318"/>Tell me thou art my son Antipholus, </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="319"/>I never saw my father in my life. </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="320"/>But seven years since, in Syracusa, <lb/>boy, </l>
@@ -5280,7 +5341,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="322"/>Thou shamest to acknowledge me in misery. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="323"/>The duke and all that know me in <lb/>the city </l>
@@ -5289,7 +5350,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="325"/>I ne'er saw Syracusa in my life. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="326"/>I tell thee, Syracusian, twenty years </l>
@@ -5302,18 +5363,18 @@
           <stage type="entrance">Re-enter Abbess, with ANTIPHOLUS of Syracuse <lb/>and DROMIO of Syracuse. </stage>
         </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="330"/>Most mighty duke, behold a man much <lb/>wrong'd. <stage>[All gather to see them. </stage>
         </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="331"/>I see two husbands, or mine eyes <lb/>deceive me. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="332"/>One of these men is Genius to the <lb/>other; </l>
@@ -5322,27 +5383,27 @@
         <l>
           <milestone unit="line" ed="Globe" n="334"/>And which the spirit? who deciphers them? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="335"/>I, sir, am Dromio: command him <lb/>away. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="336"/>I, sir, am Dromio: pray, let me <lb/>stay. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="337"/>Ægeon art thou not? or else his <lb/>ghost? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="338"/>O, my old master! who hath bound <lb/>him here? </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="339"/>Whoever bound him, I will loose his <lb/>bonds </l>
@@ -5359,7 +5420,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="345"/>And speak unto the same Æmilia! </l>
       </sp>
-      <sp who="aege.">
+      <sp who="#aege.">
         <speaker>Æge.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="346"/>If I dream not, thou art Æmilia: </l>
@@ -5368,7 +5429,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="348"/>That floated with thee on the fatal raft? </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="349"/>By men of Epidamnum he and I </l>
@@ -5385,7 +5446,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="355"/>I to this fortune that you see me in. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="356"/>Why, here begins his morning story <lb/>right: </l>
@@ -5402,54 +5463,54 @@
         <l>
           <milestone unit="line" ed="Globe" n="362"/>Antipholus, thou camest from Corinth first? </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="363"/>No, sir, not I; I came from Syracuse. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="364"/>Stay, stand apart; I know not which <lb/>is which. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="365"/>I came from Corinth, my most <lb/>gracious lord,-- </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="366"/>And I with him. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="367"/>Brought to this town by that most <lb/>famous warrior, </l>
         <l>
           <milestone unit="line" ed="Globe" n="368"/>Duke Menaphon, your most renowned uncle. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="369"/>Which of you two did dine with me <lb/>to-day ? </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="370"/>I, gentle mistress. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l part="F">
           <lb/>And are not you my husband? </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="371"/>No; I say nay to that. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="372"/>And so do I; yet did she call me so: </l>
@@ -5462,39 +5523,39 @@
         <l>
           <milestone unit="line" ed="Globe" n="376"/>If this be not a dream I see and hear. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="377"/>That is the chain, sir, which you had <lb/>of me. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="378"/>I think it be, sir; I deny it not. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="379"/>And you, sir, for this chain <lb/>arrested me. </l>
       </sp>
-      <sp who="ang.">
+      <sp who="#ang.">
         <speaker>Ang.</speaker>
-        <l><!-- REVIEW misplaced: shared-lines.tsv: the page prints 380, this line's number, beside the line next to it ('and you sir') (basis image, checked 2026-10-14 cliff) -->
+        <l><!-- REVIEW misplaced: shared-lines.tsv: the page prints 380, this line's number, beside a line near it ('and you sir') (basis image, checked 2026-10-14 cliff) -->
           <milestone unit="line" ed="Globe" n="380"/>I think I did, sir; I deny it not. </l>
       </sp>
-      <sp who="adr.">
+      <sp who="#adr.">
         <speaker>Adr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="381"/>I sent you money, sir, to be your bail, </l>
         <l>
           <milestone unit="line" ed="Globe" n="382"/>By Dromio; but I think he brought it not. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="383"/>No, none by me. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="384"/>This purse of ducats I received from <lb/>you, </l>
@@ -5507,27 +5568,27 @@
         <l>
           <milestone unit="line" ed="Globe" n="388"/>And thereupon these ERRORS are arose. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="389"/>These ducats pawn I for my father <lb/>here. </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="390"/>It shall not need; thy father hath his <lb/>life. </l>
       </sp>
-      <sp who="cour.">
+      <sp who="#cour.">
         <speaker>Cour.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="391"/>Sir, I must have that diamond from <lb/>you. </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="392"/>There, take it; and much thanks for <lb/>my good cheer. </l>
       </sp>
-      <sp who="abb.">
+      <sp who="#abb.">
         <speaker>Abb.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="393"/>Renowned duke, vouchsafe to take the <lb/>pains </l>
@@ -5558,29 +5619,29 @@
         <l>
           <milestone unit="line" ed="Globe" n="406"/>After so long grief, such festivity! </l>
       </sp>
-      <sp who="duke.">
+      <sp who="#duke.">
         <speaker>Duke.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="407"/>With all my heart I'll gossip at this <lb/>feast. <stage>[Exeunt all but
         Ant. S., Ant. E., <lb/>Dro. S., and Dro. E.</stage>
         </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <!-- REVIEW turnover: row above ends 0.69u short of the measure, near the 1.0u cut: read as a turnover; P4 has the same element --><milestone unit="line" ed="Globe" n="408"/>Master, shall I fetch your stuff from <lb/>shipboard ? </l>
       </sp>
-      <sp who="ant.-e.">
+      <sp who="#ant.-e.">
         <speaker>Ant. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="409"/>Dromio, what stuff of mine hast thou <lb/>embark'd? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="410"/>Your goods that lay at host, sir, in <lb/>the Centaur. </l>
       </sp>
-      <sp who="ant.-s.">
+      <sp who="#ant.-s.">
         <speaker>Ant. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="411"/>He speaks to me. I am your master, <lb/>Dromio: </l>
@@ -5591,7 +5652,7 @@
           <!-- REVIEW words: both witnesses read 'IExeunt'; the P4 reads '[Exeunt' --><stage>[Exeunt Ant. S. and Ant. E.</stage>
         </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="414"/>There is a fat friend at your master's <lb/>house, </l>
@@ -5600,7 +5661,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="416"/>She now shall be my sister, not my wife. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="417"/>Methinks you are my glass, and not <lb/>my brother: </l>
@@ -5609,22 +5670,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="419"/>Will you walk in to see their gossiping? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="420"/>Not I, sir; you are my elder. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="421"/>That's a question: how shall we <lb/>try it? </l>
       </sp>
-      <sp who="dro.-s.">
+      <sp who="#dro.-s.">
         <speaker>Dro. S.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="422"/>We'll draw cuts for the senior: till <lb/>then lead thou first. </l>
       </sp>
-      <sp who="dro.-e.">
+      <sp who="#dro.-e.">
         <speaker>Dro. E.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="423"/>Nay, then, thus: </l>

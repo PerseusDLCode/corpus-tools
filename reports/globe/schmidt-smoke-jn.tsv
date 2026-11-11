@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.jn.globe.xml sha256 cf30e62b2a83242b; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.jn.globe.xml sha256 9bc336abfaec68af; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abortive2	Abortive,	3.4.158	John III, 4, 158	quotation on cited line						abortives, presages and tongues of heaven,	abortives presages and tongues of heaven
 Absey-book	Absey-book,	1.1.196	John I, 196	headword on cited line							and then comes answer like an absey book

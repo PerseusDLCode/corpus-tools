@@ -1,6 +1,6 @@
 # Schmidt smoke test: Troilus and Cressida
 
-Sources: shakespeare.tro.globe.xml sha256 f7fbf58c64b27d54; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.tro.globe.xml sha256 0d198bf4d2be7548; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Troilus and Cressida in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

@@ -1,6 +1,6 @@
 # Schmidt smoke test: Pericles Prince of Tyre
 
-Sources: shakespeare.per.globe.xml sha256 41f5964bccd547b8; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.per.globe.xml sha256 0afd409274477132; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Pericles Prince of Tyre in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

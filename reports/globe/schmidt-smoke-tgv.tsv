@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.tgv.globe.xml sha256 feac8f0bb57f2742; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.tgv.globe.xml sha256 7f8188f3d4d57fd2; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abbey-wall	Abbey-wall,	5.1.9	Gent. V, 1, 9	headword on cited line							out at the postern by the abbeywall
 A B C	A B C,	2.1.23	Gent. II, 1, 23	headword not found near cited line							schoolboy that had lost his a b c to weep like a

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.h5.globe.xml sha256 f59e61667078d0d5; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.h5.globe.xml sha256 5fda4380ea8414ee; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abate	Abate,	3.2.24	H5 III, 2, 24	headword on cited line							abate thy rage abate thy manly rage
 Abate	Abate,	2.1.70	H5 II, 1, 70	quotation on cited line						and fury shall abate	an oath of mickle might and fury shall abate

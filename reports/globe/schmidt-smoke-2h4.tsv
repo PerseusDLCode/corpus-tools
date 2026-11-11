@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.2h4.globe.xml sha256 b2745f9100f44e12; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.2h4.globe.xml sha256 9849fdc2656b07d8; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 A7	A,	5.3.50	H4B V, 3, 50	quotation on cited line						and a merry heart lives long-a,	and a merry heart lives longa
 Abate	Abate,	1.1.117	H4B I, 1, 117	quotation on cited line						from his metal was his party steeled; which once in him abated, all the rest turned on themselves,	which once in him abated all the rest

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.1h4.globe.xml sha256 7b5a7fc8a4aff95b; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.1h4.globe.xml sha256 61ae946cfe8c479a; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abominable	Abominable,	2.4.508	H4A II, 4, 508	headword on cited line							that villanous abominable misleader
 Above1	Above,	2.4.550	H4A II, 4, 550	headword on cited line							rest walk up above now my masters for a true

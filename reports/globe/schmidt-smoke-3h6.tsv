@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.3h6.globe.xml sha256 e45a0496726877dc; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.3h6.globe.xml sha256 79c51f94e74b9eef; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abandon	Abandon,	1.1.188	H6C I, 1, 188	quotation on cited line						abandoned and despised,	or live in peace abandoned and despised
 Abode2	Abode,	5.6.45	H6C V, 6, 45	headword on cited line							the nightcrow cried aboding luckless time

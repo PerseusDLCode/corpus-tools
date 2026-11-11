@@ -201,13 +201,19 @@ page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
 153	miun/kraken	2	47	replace	I'll	I’Il	I’Il	same
 153	miun/kraken	2	61	replace	I'll	I’Il	I’ll	
 153	miun/kraken	2	62	replace	They	IThey	IThey	same
-154	trent/kraken	1	15	replace	They	IThey	They	
-154	trent/kraken	1	32	replace	Exeunt	IExeunt	LExeunt	
-154	trent/kraken	2	1	replace	favors;	favours;	favours;	same
-154	trent/kraken	2	12	replace	you'll	you ’ll	you ’ll	same
-154	trent/kraken	2	23	replace	Exeunt	LE xeunt	LExeunt	
-154	trent/kraken	2	35	replace	Exit.	IExit.	LExit.	
-154	trent/kraken	2	64	replace	BOYET; ROSALINE,	BoveT; ROSA¬ LINE,	BoyeT; ROSA¬ LINE,	
+154	miun/kraken	1	6	replace	Kath.		Kath.	
+154	miun/kraken	1	26	replace	break	breal	break	
+154	miun/kraken	1	32	replace	Exeunt	LExeunt	IExeunt	
+154	miun/kraken	1	51	replace	call'd	called	call’d	
+154	miun/kraken	2	1	replace	favors;	favours;	favours;	same
+154	miun/kraken	2	1	replace	they repair,	theyrepair,	they repair,	
+154	miun/kraken	2	9	replace	Are	tAre	Are	
+154	miun/kraken	2	12	replace	you'll	you ’ll	you ’ll	same
+154	miun/kraken	2	13	replace	Let's	Let 's	Let’s	
+154	miun/kraken	2	23	replace	Exeunt	LExeunt	LE xeunt	
+154	miun/kraken	2	26	replace	proper	groper	proper	
+154	miun/kraken	2	35	replace	Exit.	LExit.	IExit.	
+154	miun/kraken	2	64	replace	ROSALINE,	ROSA¬ LINE,	BoveT; ROSA¬ LINE,	
 155	miun/kraken	1	2	replace	King.		King.	
 155	miun/kraken	1	19	replace	yield	vield	yield	
 155	miun/kraken	1	65	replace	they'll	they ’ll	they’ll	

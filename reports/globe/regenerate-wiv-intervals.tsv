@@ -88,7 +88,8 @@ page	witness	scene	from	to	printed_gap	counted_gap	error	numeral_reading
 55	miun/kraken	3.3	100 (p.55)	111	11	11	0	
 55	miun/kraken	3.3	111 (p.55)	141	30	30	0	
 55	miun/kraken	3.3	141 (p.55)	150	9	9	0	
-56	miun/kraken	3.3	150 (p.55)	210	60	60	0	
+55	miun/kraken	3.3	150 (p.55)	180	30	30	0	
+56	miun/kraken	3.3	180 (p.55)	210	30	30	0	
 56	miun/kraken	3.3	210 (p.56)	220	10	10	0	
 56	miun/kraken	3.3	220 (p.56)	251	31	31	0	
 56	miun/kraken	3.3	251 (p.56)	260	9	9	0	

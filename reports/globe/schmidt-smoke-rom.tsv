@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.rom.globe.xml sha256 2f5a6d64c41e1f99; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.rom.globe.xml sha256 b1a38f650adf5da9; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abate	Abate,	4.1.120	Rom. IV, 1, 120	headword on cited line							abate thy valour in the acting it
 Abbey-wall	Abbey-wall,	2.4.199	Rom. II, 4, 199	headword on cited line							and stay good nurse behind the abbey wall

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.1h6.globe.xml sha256 94672b2f4adf2bc2; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.1h6.globe.xml sha256 aad0f295afb5f97e; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abel	Abel,	1.3.40	H6A I, 3, 40	headword on cited line							to slay thy brother abel if thou wilt
 Abode1	Abode,	5.4.88	H6A V, 4, 88	headword on cited line							upon the country where you make abode

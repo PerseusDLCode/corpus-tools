@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.oth.globe.xml sha256 2441d7db13f9506d; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.oth.globe.xml sha256 4449c7ba3ce55beb; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abandon	Abandon,	3.3.369	Oth. III, 3, 369	quotation on cited line						abandon all remorse,	never pray more abandon all remorse
 A-bed	A-bed,	3.1.33	Oth. III, 1, 33	headword on cited line							you have not been abed then

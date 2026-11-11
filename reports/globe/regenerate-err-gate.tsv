@@ -7,7 +7,7 @@ page	witness_used	tried(witness:total_error)	lines_starting_here	first_line	last
 98	miun/kraken	miun/kraken:0	93	2.2.159	3.1.30	160 170 180 190 200 210 220 10 20 30	160 170 180 190 200 210 220 10 20 30	pass
 99	miun/kraken	miun/kraken:0	85	3.1.31	3.1.115	40 60 70 80 90 100 110	40 60 70 80 90 100 110	pass
 100	miun/kraken	miun/kraken:0	110	3.1.116	3.2.102	120 10 20 30 40 50 60 70 80	120 10 20 30 40 50 60 70 80	pass
-101	trent/kraken	miun/kraken:1 trent/kraken:0	112	3.2.103	4.1.24	110 121 141 150 161 170 180 10 20	110 121 141 150 161 170 180 10 20	pass
+101	miun/kraken	miun/kraken:0	112	3.2.103	4.1.24	110 121 141 161 170 180 10 20	110 121 141 161 170 180 10 20	pass
 102	miun/kraken	miun/kraken:0	98	4.1.25	4.2.9	30 40 50 60 70 81 100 111	30 40 50 60 70 81 100 111	pass
 103	miun/kraken	miun/kraken:0	96	4.2.10	4.3.39	10 20 30 40 50 60 10 20	10 20 30 40 50 60 10 20	pass
 104	miun/kraken	miun/kraken:0	105	4.3.40	4.4.47	50 60 70 80 91 10 21	50 60 70 80 91 10 21	pass

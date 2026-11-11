@@ -1,6 +1,6 @@
 # Schmidt smoke test: The Merry Wives of Windsor
 
-Sources: shakespeare.wiv.globe.xml sha256 0aee8e24d165fb83; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.wiv.globe.xml sha256 2278af5a3c5784b4; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of The Merry Wives of Windsor in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

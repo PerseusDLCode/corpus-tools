@@ -1,6 +1,6 @@
 # Schmidt smoke test: Love's Labor's Lost
 
-Sources: shakespeare.lll.globe.xml sha256 238f4300583b2954; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.lll.globe.xml sha256 683e3a5c38d52512; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Love's Labor's Lost in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

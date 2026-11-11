@@ -46,8 +46,8 @@
     <encodingDesc>
       <refsDecl n="CTS" xml:id="CTS">
         <citeStructure match="/TEI/text/body" use="@xml:base">
-          <citeStructure unit="act" delim=":" match="div[@type='act'][@n != 'cast']" use="@n">
-            <citeStructure unit="scene" delim="." match="div[@type='scene']" use="@n" n="chunk">
+          <citeStructure unit="act" delim=":" match="div" use="@n">
+            <citeStructure unit="scene" delim="." match="div" use="@n" n="chunk">
               <citeStructure unit="line" delim="." match=".//milestone[@unit='line'][@ed='Globe']" use="@n"/>
             </citeStructure>
             <citeStructure unit="line" delim="." match="sp//milestone[@unit='line'][@ed='Globe']" use="@n"/>
@@ -102,10 +102,101 @@
       <langUsage>
         <language ident="eng">English</language>
       </langUsage>
+      <particDesc>
+        <listPerson>
+          <person xml:id="the.">
+            <persName>Theseus</persName>
+          </person>
+          <person xml:id="ege.">
+            <persName>Egeus</persName>
+          </person>
+          <person xml:id="lys.">
+            <persName>Lysander</persName>
+          </person>
+          <person xml:id="dem.">
+            <persName>Demetrius</persName>
+          </person>
+          <person xml:id="phil.">
+            <persName>Philostrate</persName>
+          </person>
+          <person xml:id="quin.">
+            <persName>Quince</persName>
+          </person>
+          <person xml:id="snug.">
+            <persName>Snug</persName>
+          </person>
+          <person xml:id="bot.">
+            <persName>Bottom</persName>
+          </person>
+          <person xml:id="flu.">
+            <persName>Flute</persName>
+          </person>
+          <person xml:id="snout.">
+            <persName>Snout</persName>
+          </person>
+          <person xml:id="star.">
+            <persName>Starveling</persName>
+          </person>
+          <person xml:id="hip.">
+            <persName>Hippolyta</persName>
+          </person>
+          <person xml:id="her.">
+            <persName>Hermia</persName>
+          </person>
+          <person xml:id="hel.">
+            <persName>Helena</persName>
+          </person>
+          <person xml:id="obe.">
+            <persName>Oberon</persName>
+          </person>
+          <person xml:id="tita.">
+            <persName>Titania</persName>
+          </person>
+          <person xml:id="puck.">
+            <persName>Puck</persName>
+          </person>
+          <person xml:id="peas.">
+            <persName>Peaseblossom</persName>
+          </person>
+          <person xml:id="cob.">
+            <persName>Cobweb</persName>
+          </person>
+          <person xml:id="moth.">
+            <persName>Moth</persName>
+          </person>
+          <person xml:id="mus.">
+            <persName>Mustardseed</persName>
+          </person>
+          <person xml:id="pro.">
+            <persName>Prologue</persName>
+          </person>
+          <person xml:id="pyr.">
+            <persName>Pyramus</persName>
+          </person>
+          <person xml:id="this.">
+            <persName>Thisbe</persName>
+          </person>
+          <person xml:id="lion.">
+            <persName>Lion</persName>
+          </person>
+          <person xml:id="wall.">
+            <persName>Wall</persName>
+          </person>
+          <person xml:id="moon.">
+            <persName>Moon</persName>
+          </person>
+          <personGrp xml:id="all.">
+            <name>All</name>
+          </personGrp>
+          <personGrp xml:id="fai.">
+            <name>Other fairies attending their King and Queen</name>
+          </personGrp>
+        </listPerson>
+      </particDesc>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-16">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit d4829bc; sources: mnd.xml sha256 09adab49695eabf9; shared-lines.tsv sha256 daa3430058f212bc; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-11-11">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit fc923b2; sources: mnd.xml sha256 09adab49695eabf9; shared-lines.tsv sha256 ff50b05a907e4c68; edition-template.xml sha256 47381fe6c26e8920; speakers.tsv sha256 6f7a972c304ab2ed; speech-fixes.tsv sha256 58bacff70398b9c4. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -113,126 +204,126 @@
     </revisionDesc>
   </teiHeader>
   <text xml:lang="eng">
-    <body xml:base="urn:cts:engLit:shakespeare.mnd.globe">
-  <div type="act" n="cast">
+    <front>
+  <castList>
     <head>DRAMATIS PERSONÆ</head>
-    <castList>
+    <castItem type="role">
+      <role corresp="#the.">THESEUS</role>
+      <roleDesc>Duke of Athens</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#ege.">EGEUS</role>
+      <roleDesc>father to Hermia</roleDesc>
+    </castItem>
+    <castGroup>
+      <head rend="braced">in love with Hermia.</head>
       <castItem type="role">
-        <role xml:id="the.">THESEUS</role>
-        <roleDesc>Duke of Athens</roleDesc>
+        <role corresp="#lys.">LYSANDER</role>
       </castItem>
       <castItem type="role">
-        <role xml:id="ege.">EGEUS</role>
-        <roleDesc>father to Hermia</roleDesc>
+        <role corresp="#dem.">DEMETRIUS</role>
       </castItem>
-      <castGroup>
-        <head rend="braced">in love with Hermia.</head>
-        <castItem type="role">
-          <role xml:id="lys.">LYSANDER</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="dem.">DEMETRIUS</role>
-        </castItem>
-      </castGroup>
+    </castGroup>
+    <castItem type="role">
+      <role corresp="#phil.">PHILOSTRATE</role>
+      <roleDesc>master of the revels to Theseus</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#quin.">QUINCE</role>
+      <roleDesc>a carpenter</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#snug.">SNUG</role>
+      <roleDesc>a joiner</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#bot.">BOTTOM</role>
+      <roleDesc>a weaver</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#flu.">FLUTE</role>
+      <roleDesc>a bellows-mender</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#snout.">SNOUT</role>
+      <roleDesc>a tinker</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#star.">STARVELING</role>
+      <roleDesc>a tailor</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#hip.">HIPPOLYTA</role>
+      <roleDesc>queen of the Amazons, betrothed to Theseus</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#her.">HERMIA</role>
+      <roleDesc>daughter to Egeus, in love with Lysander</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#hel.">HELENA</role>
+      <roleDesc>in love with Demetrius</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#obe.">OBERON</role>
+      <roleDesc>king of the fairies</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#tita.">TITANIA</role>
+      <roleDesc>queen of the fairies</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#puck.">PUCK</role>
+      <roleDesc>or Robin Goodfellow</roleDesc>
+    </castItem>
+    <castGroup>
+      <head rend="braced"> fairies.</head>
       <castItem type="role">
-        <role xml:id="phil.">PHILOSTRATE</role>
-        <roleDesc>master of the revels to Theseus</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="quin.">QUINCE</role>
-        <roleDesc>a carpenter</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="snug.">SNUG</role>
-        <roleDesc>a joiner</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="bot.">BOTTOM</role>
-        <roleDesc>a weaver</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="flu.">FLUTE</role>
-        <roleDesc>a bellows-mender</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="snout.">SNOUT</role>
-        <roleDesc>a tinker</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="star.">STARVELING</role>
-        <roleDesc>a tailor</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="hip.">HIPPOLYTA</role>
-        <roleDesc>queen of the Amazons, betrothed to Theseus</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="her.">HERMIA</role>
-        <roleDesc>daughter to Egeus, in love with Lysander</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="hel.">HELENA</role>
-        <roleDesc>in love with Demetrius</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="obe.">OBERON</role>
-        <roleDesc>king of the fairies</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="tita.">TITANIA</role>
-        <roleDesc>queen of the fairies</roleDesc>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="puck.">PUCK</role>
-        <roleDesc>or Robin Goodfellow</roleDesc>
-      </castItem>
-      <castGroup>
-        <head rend="braced"> fairies.</head>
-        <castItem type="role">
-          <role xml:id="peas.">PEASEBLOSSOM</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="cob.">COBWEB</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="moth.">MOTH</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="mus.">MUSTARDSEED</role>
-        </castItem>
-      </castGroup>
-      <castGroup>
-        <head>Players</head>
-        <castItem type="role">
-          <role xml:id="pro.">Prologue</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="pyr.">Pyramus</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="this.">Thisbe</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="lion.">Lion</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="wall.">Wall</role>
-        </castItem>
-        <castItem type="role">
-          <role xml:id="moon.">Moon</role>
-        </castItem>
-      </castGroup>
-      <castItem type="role">
-        <role xml:id="all.">All</role>
+        <role corresp="#peas.">PEASEBLOSSOM</role>
       </castItem>
       <castItem type="role">
-        <role xml:id="fai.">Other fairies attending their King and Queen</role>
+        <role corresp="#cob.">COBWEB</role>
       </castItem>
       <castItem type="role">
-        <roleDesc>Attendants on Theseus and Hippolyta</roleDesc>
+        <role corresp="#moth.">MOTH</role>
       </castItem>
-    </castList>
-  </div>
+      <castItem type="role">
+        <role corresp="#mus.">MUSTARDSEED</role>
+      </castItem>
+    </castGroup>
+    <castGroup>
+      <head>Players</head>
+      <castItem type="role">
+        <role corresp="#pro.">Prologue</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#pyr.">Pyramus</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#this.">Thisbe</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#lion.">Lion</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#wall.">Wall</role>
+      </castItem>
+      <castItem type="role">
+        <role corresp="#moon.">Moon</role>
+      </castItem>
+    </castGroup>
+    <castItem type="role">
+      <role corresp="#all.">All</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#fai.">Other fairies attending their King and Queen</role>
+    </castItem>
+    <castItem type="role">
+      <roleDesc>Attendants on Theseus and Hippolyta</roleDesc>
+    </castItem>
+  </castList>
+</front>
+    <body xml:base="urn:cts:engLit:shakespeare.mnd.globe">
   <div type="act" n="1">
     <head>ACT I</head>
     <div type="scene" n="1">
@@ -242,7 +333,7 @@
       <lb/>
       <stage type="entrance">Enter THESEUS, HIPPOLYTA, PHILOSTRATE, <lb/>and
                               Attendants.</stage>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l><!-- REVIEW page: p.161 miun/kraken leaf 00000175 -->
           <milestone unit="line" ed="Globe" n="1"/>Now, fair Hippolyta, our nuptial hour </l>
@@ -257,7 +348,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="6"/>Long withering out a young man's revenue. </l>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>Four days will quickly steep themselves <lb/>in night; </l>
@@ -265,12 +356,12 @@
           <milestone unit="line" ed="Globe" n="8"/>Four nights will quickly dream away the time; </l>
         <l><!-- REVIEW anchor: P4 anchor says 10; the page count says 9 here -->
           <milestone unit="line" ed="Globe" n="9"/>And then the moon, like to a silver bow </l>
-        <l><!-- REVIEW misplaced: shared-lines.tsv: the page prints 10, this line's number, beside the line next to it ('and then the') (basis image, checked 2026-10-15 cliff) -->
+        <l><!-- REVIEW misplaced: shared-lines.tsv: the page prints 10, this line's number, beside a line near it ('and then the') (basis image, checked 2026-10-15 cliff) -->
           <milestone unit="line" ed="Globe" n="10"/>New-bent in heaven, shall behold the night </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="11"/>Of our solemnities. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l part="F">
           <lb/>Go, Philostrate, </l>
@@ -296,17 +387,17 @@
           <stage type="entrance"> Enter EGEUS, HERMIA, LYSANDER, and <lb/>DEMETRIUS.</stage>
         </l>
       </sp>
-      <sp who="ege.">
+      <sp who="#ege.">
         <speaker>Ege.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="20"/>Happy be Theseus, our renowned duke! </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="21"/>Thanks, good Egeus: what's the news <lb/>with thee? </l>
       </sp>
-      <sp who="ege.">
+      <sp who="#ege.">
         <speaker>Ege.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="22"/>Full of vexation come I, with complaint </l>
@@ -358,7 +449,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Immediately provided in that case. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="46"/>What say you, Hermia? be advised, <lb/>fair maid: </l>
@@ -375,12 +466,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="52"/>Demetrius is a worthy gentleman. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="53"/>So is Lysander. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l part="F">
           <lb/>In himself he is; </l>
@@ -389,17 +480,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="55"/>The other must be held the worthier. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>I would my father look'd but with my <lb/>eyes. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>Rather your eyes must with his <lb/>judgement look. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>I do entreat your grace to pardon me. </l>
@@ -416,7 +507,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="64"/>If I refuse to wed Demetrius. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l><!-- REVIEW page: p.162 miun/kraken leaf 00000176 -->
           <milestone unit="line" ed="Globe" n="65"/>Either to die the death or to abjure </l>
@@ -447,7 +538,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="78"/>Grows, lives and dies in single blessedness. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>So will I grow, so live, so die, my lord, </l>
@@ -458,7 +549,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="82"/>My soul consents not to give sovereignty. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>Take time to pause; and, by the next <lb/>new moon-- </l>
@@ -477,21 +568,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="90"/>For aye austerity and single life. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>Relent, sweet Hermia: and, Lysander, <lb/>yield, </l>
         <l>
           <milestone unit="line" ed="Globe" n="92"/>Thy crazed title to my certain right. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="93"/>You have her father's love, Demetrius; </l>
         <l>
           <milestone unit="line" ed="Globe" n="94"/>Let me have Hermia's: do you marry him. </l>
       </sp>
-      <sp who="ege.">
+      <sp who="#ege.">
         <speaker>Ege.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>Scornful Lysander! true, he hath my <lb/>love, </l>
@@ -502,7 +593,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="98"/>I do estate unto Demetrius. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="99"/>I am, my lord, as well derived as he, </l>
@@ -529,7 +620,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="110"/>Upon this spotted and inconstant man. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="111"/>I must confess that I have heard so <lb/>much, </l>
@@ -564,28 +655,28 @@
         <l>
           <milestone unit="line" ed="Globe" n="126"/>Of something nearly that concerns yourselves. </l>
       </sp>
-      <sp who="ege.">
+      <sp who="#ege.">
         <speaker>Ege.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="127"/>With duty and desire we follow you. <lb/>
           <stage>[Exeunt all but Lysander and Hermia.</stage>
         </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="128"/>How now, my love! why is your cheek <lb/>so pale? </l>
         <l>
           <milestone unit="line" ed="Globe" n="129"/>How chance the roses there do fade so fast? </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="130"/>Belike for want of rain, which I could <lb/>well </l>
         <l>
           <milestone unit="line" ed="Globe" n="131"/>Beteem them from the tempest of my eyes. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="132"/>Ay me! for aught that I could ever read, </l>
@@ -596,32 +687,32 @@
         <l>
           <milestone unit="line" ed="Globe" n="135"/>But, either it was different in blood,-- </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="136"/>O cross! too high to be enthrall'd to low. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="137"/>Or else misgraffed in respect of years,-- </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="138"/>O spite! too old to be engaged to young. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="139"/>Or else it stood upon the choice of friends,-- </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="140"/>O hell! to choose love by another's eyes. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="141"/>Or, if there were a sympathy in choice, </l>
@@ -642,7 +733,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="149"/>So quick bright things come to confusion. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="150"/>If then true lovers have been ever cross'd, </l>
@@ -657,7 +748,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="155"/>Wishes and tears, poor fancy's followers. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="156"/>A good persuasion; therefore, hear me, <lb/>Hermia. </l>
@@ -686,7 +777,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="168"/>There will I stay for thee. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l part="F">
           <lb/>My good Lysander! </l>
@@ -711,19 +802,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="178"/>To-morrow truly will I meet with thee. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="179"/>Keep promise, love. Look, here comes <lb/>Helena. <lb/>
           <stage type="entrance"> Enter HELENA.</stage>
         </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="180"/>God speed, fair Helena! whither away? </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="181"/>Call you me fair? that fair again unsay. </l>
@@ -752,48 +843,48 @@
         <l>
           <milestone unit="line" ed="Globe" n="193"/>You sway the motion of Demetrius' heart. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="194"/>I frown upon him, yet he loves me still. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="195"/>O that your frowns would teach my <lb/>smiles such
                                    skill! </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="196"/>I give him curses, yet he gives me love. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="197"/>O that my prayers could such affection <lb/>move! </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="198"/>The more I hate, the more he follows me. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="199"/>The more I love, the more he hateth me. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="200"/>His folly, Helena, is no fault of mine. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="201"/>None, but your beauty: would that fault <lb/>were mine! </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="202"/>Take comfort: he no more shall see my <lb/>face; </l>
@@ -808,7 +899,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="207"/>That he hath turn'd a heaven unto a hell! </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="208"/>Helen, to you our minds we will unfold: </l>
@@ -823,7 +914,7 @@
         <l>
           <!-- REVIEW words: the P4 has '' here; neither witness has it --><milestone unit="line" ed="Globe" n="213"/>Through Athens' gates we have devised to steal. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="214"/>And in the wood, where often you and I </l>
@@ -847,7 +938,7 @@
           <milestone unit="line" ed="Globe" n="223"/>From lovers' food till morrow deep midnight. 
                                    </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="224"/>I will, my Hermia. <stage>[Exit Herm.</stage>
@@ -858,7 +949,7 @@
           <milestone unit="line" ed="Globe" n="225"/>As you on him, Demetrius dote on you! <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="226"/>How happy some o'er other some can be! </l>
@@ -922,66 +1013,66 @@
       <lb/>
       <stage type="entrance"> Enter QUINCE, SNUG, BOTTOM, FLUTE, SNOUT <lb/>and
                               STARVELING.</stage>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Is all our company here? </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="2"/>You were best to call them generally, <milestone unit="line" ed="Globe" n="3"/>man by man, according to the scrip. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="4"/>Here is the scroll of every man's name, <milestone unit="line" ed="Globe" n="5"/>which is thought fit, through all Athens, to play <milestone unit="line" ed="Globe" n="6"/>in our interlude before
                                    the duke and the duchess, <milestone unit="line" ed="Globe" n="7"/>on his wedding-day at night. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="8"/>First, good Peter Quince, say what the <milestone unit="line" ed="Globe" n="9"/>play treats on, then read the names of the actors, <milestone unit="line" ed="Globe" n="10"/>and so grow to a point.
                                         </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="11"/>Marry, our play is, The most <milestone unit="line" ed="Globe" n="12"/>lamentable comedy, and most cruel death of Pyramus
                                    <milestone unit="line" ed="Globe" n="13"/>and Thisby. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="14"/>A very good piece of work, I assure you, <milestone unit="line" ed="Globe" n="15"/>and a merry. Now, good Peter Quince, call <milestone unit="line" ed="Globe" n="16"/>forth your actors by the scroll.
                                    Masters, spread <milestone unit="line" ed="Globe" n="17"/>yourselves. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="18"/>Answer as I call you. Nick Bottom, <milestone unit="line" ed="Globe" n="19"/>the weaver. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="20"/>Ready. Name what part I am for, and <milestone unit="line" ed="Globe" n="21"/>proceed. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="22"/>You, Nick Bottom, are set down for <milestone unit="line" ed="Globe" n="23"/>Pyramus. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="24"/>What is Pyramus? a lover, or a tyrant? </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'gallant'; the P4 reads 'gal- lant' --><milestone unit="line" ed="Globe" n="25"/>A lover, that kills himself most gal- lant <milestone unit="line" ed="Globe" n="26"/>for love. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'humour'; the P4 reads 'humor' --><milestone unit="line" ed="Globe" n="27"/>That will ask some tears in the true <milestone unit="line" ed="Globe" n="28"/>performing of it: if I do it, let the audience look to <milestone unit="line" ed="Globe" n="29"/>their eyes; I will move
@@ -1008,113 +1099,113 @@
           <milestone unit="line" ed="Globe" n="41"/>This was lofty! Now name the rest of the <milestone unit="line" ed="Globe" n="42"/>players. This is Ercles' vein,
                                    a tyrant's vein; a <milestone unit="line" ed="Globe" n="43"/>lover is more condoling. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Francis Flute, the bellows-mender. </l>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Here, Peter Quince. </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="46"/>Flute, you must take Thisby on you, </l>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="47"/>What is Thisby? a wandering knight? </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="48"/>It is the lady that Pyramus must love. </l>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <p>
           <!-- REVIEW words: the P4 has '' here; neither witness has it --><milestone unit="line" ed="Globe" n="49"/>Nay, faith, let me not play a woman; </p>
         <l>I <milestone unit="line" ed="Globe" n="50"/>have a beard coming. </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="51"/>That's all one: you shall play it in a <milestone unit="line" ed="Globe" n="52"/>mask, and you may speak as small as you will. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="53"/>An I may hide my face, let me play <milestone unit="line" ed="Globe" n="54"/>Thisby too, I'll speak in a monstrous little voice, <milestone unit="line" ed="Globe" n="55"/>'Thisne, Thisne;' 'Ah, Pyramus, my
                                          lover dear! <milestone unit="line" ed="Globe" n="56"/>thy Thisby dear, and lady dear!' </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="57"/>No, no; you must play Pyramus: and, <milestone unit="line" ed="Globe" n="58"/>Flute, you Thisby. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>Well, proceed. </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>Robin Starveling, the tailor. </l>
       </sp>
-      <sp who="star.">
+      <sp who="#star.">
         <speaker>Star.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="61"/>Here, Peter Quince. </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="62"/>Robin Starveling, you must play Thisby's <milestone unit="line" ed="Globe" n="63"/>mother. Tom Snout, the tinker.
                                         </p>
       </sp>
-      <sp who="snout.">
+      <sp who="#snout.">
         <speaker>Snout.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>Here, Peter Quince. </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
     <!-- REVIEW words: both witnesses read "Pyramus' father:"; the P4 reads "Pyramus'father:" -->      <!-- REVIEW page: p.164 miun/kraken leaf 00000178 --><milestone unit="line" ed="Globe" n="65"/>You, Pyramus'father: myself, Thisby's <milestone unit="line" ed="Globe" n="66"/>father: Snug, the joiner; you, the lion's part: <milestone unit="line" ed="Globe" n="67"/>and, I hope, here is a play
                                    fitted. </p>
       </sp>
-      <sp who="snug.">
+      <sp who="#snug.">
         <speaker>Snug.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="68"/>Have you the lion's part written? pray <milestone unit="line" ed="Globe" n="69"/>you, if it be, give it me, for I am slow of study. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="70"/>You may do it extempore, for it is <milestone unit="line" ed="Globe" n="71"/>nothing but roaring. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="72"/>Let me play the lion too: I will roar, <milestone unit="line" ed="Globe" n="73"/>that I will do any man's heart good to hear me; <milestone unit="line" ed="Globe" n="74"/>I will roar, that I will
                                    make the duke say 'Let <milestone unit="line" ed="Globe" n="75"/>him roar again, let him roar again.' </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="76"/>An you should do it too terribly, you <milestone unit="line" ed="Globe" n="77"/>would fright the duchess and the ladies, that
                                    <milestone unit="line" ed="Globe" n="78"/>they would shriek; and that were enough to <milestone unit="line" ed="Globe" n="79"/>hang us all. </p>
       </sp>
-      <sp who="all.">
+      <sp who="#all.">
         <speaker>All.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>That would hang us, every mother's son. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="81"/>I grant you, friends, if that you should <milestone unit="line" ed="Globe" n="82"/>fright the ladies out of their wits, they would <milestone unit="line" ed="Globe" n="83"/>have no more discretion
@@ -1122,30 +1213,30 @@
                                    gently as any sucking dove; I will roar you <milestone unit="line" ed="Globe" n="86"/>an 'twere any nightingale.
                                         </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="87"/>You can play no part but Pyramus; <milestone unit="line" ed="Globe" n="88"/>for Pyramus is a sweet-faced man; a proper man, <milestone unit="line" ed="Globe" n="89"/>as one shall see in a summer's day; a
                                         most lovely <milestone unit="line" ed="Globe" n="90"/>gentleman-like man; therefore you must needs <milestone unit="line" ed="Globe" n="91"/>play
                                    Pyramus. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="92"/>Well, I will undertake it. What beard <milestone unit="line" ed="Globe" n="93"/>were I best to play it in? </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="94"/>Why, what you will. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'strawcolour'; the P4 reads 'straw-color' --><!-- REVIEW words: both witnesses read 'French-crowncolour'; the P4 reads 'French- crown-color' --><milestone unit="line" ed="Globe" n="95"/>I will discharge it in either your <milestone unit="line" ed="Globe" n="96"/>straw-color beard, your orange-tawny beard, your <milestone unit="line" ed="Globe" n="97"/>purple-in-grain beard, or your
                                    French- <milestone unit="line" ed="Globe" n="98"/>crown-color beard, your perfect yellow. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'barefaced.'; the P4 reads 'bare- faced.' --><milestone unit="line" ed="Globe" n="99"/>Some of your French crowns have no <milestone unit="line" ed="Globe" n="100"/>hair at all, and then you will play bare- faced. <milestone unit="line" ed="Globe" n="101"/>But, masters, here are your parts:
@@ -1157,17 +1248,17 @@
                                         such as our play wants. I
                                    <milestone unit="line" ed="Globe" n="109"/>pray you, fail me not. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="110"/>We will meet; and there we may <milestone unit="line" ed="Globe" n="111"/>rehearse most obscenely and courageously. Take <milestone unit="line" ed="Globe" n="112"/>pains; be perfect: adieu. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="113"/>At the duke's oak we meet. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="114"/>Enough; hold or cut bow-strings. <lb/>
@@ -1185,12 +1276,12 @@
       <lb/>
       <stage type="entrance">Enter, from opposite sides, a FAIRY, and
                               PUCK.</stage>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>How now, spirit! whither wander you? </l>
       </sp>
-      <sp who="fai.">
+      <sp who="#fai.">
         <speaker>Fai.</speaker>
         <l><!-- REVIEW inset: shared-lines.tsv: the page sets this line and those after it, to 'in those freckles', in from the margin, and numbers every row as a line (basis image, checked 2026-10-15 cliff) -->
           <milestone unit="line" ed="Globe" n="2"/>Over hill, over dale, </l>
@@ -1225,7 +1316,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="17"/>Our queen and all our elves come here anon. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="18"/>The king doth keep his revels here <lb/>to-night: </l>
@@ -1256,7 +1347,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Creep into acorn-cups and hide them there. </l>
       </sp>
-      <sp who="fai.">
+      <sp who="#fai.">
         <speaker>Fai.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>Either I mistake your shape and making <lb/>quite, </l>
@@ -1281,7 +1372,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="42"/>Are not you he? </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l part="F">
           <lb/>Thou speak'st aright; </l>
@@ -1318,7 +1409,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="58"/>But, room, fairy! here comes Oberon. </l>
       </sp>
-      <sp who="fai.">
+      <sp who="#fai.">
         <speaker>Fai.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>And here my mistress. Would that he <lb/>were gone!
@@ -1328,24 +1419,24 @@
                                         hers.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>Ill met by moonlight, proud Titania. </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="61"/>What, jealous Oberon! Fairies, skip <lb/>hence: </l>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>I have forsworn his bed and company. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Tarry, rash wanton: am not I thy lord? </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>Then I must be thy lady: but I know </l>
@@ -1368,7 +1459,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="73"/>To give their bed joy and prosperity. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l><!-- REVIEW page: p.165 miun/kraken leaf 00000179 -->
           <milestone unit="line" ed="Globe" n="74"/>How canst thou thus for shame, Titania, </l>
@@ -1385,7 +1476,7 @@
         <l><!-- REVIEW numeral: miun/kraken read 89; trent/kraken read 80 -->
           <milestone unit="line" ed="Globe" n="80"/>With Ariadne and Antiopa? </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>These are the forgeries of jealousy: </l>
@@ -1462,7 +1553,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="117"/>We are their parents and original. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="118"/>Do you amend it then; it lies in you: </l>
@@ -1473,7 +1564,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="121"/>To be my henchman. </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l part="F">
           <lb/>Set your heart at rest: </l>
@@ -1510,12 +1601,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="137"/>And for her sake I will not part with him. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="138"/>How long within this wood intend you <lb/>stay? </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="139"/>Perchance till after Theseus' <lb/>wedding-day. </l>
@@ -1526,12 +1617,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="142"/>If not, shun me, and I will spare your haunts. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="143"/>Give me that boy, and I will go with thee. </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="144"/>Not for thy fairy kingdom. Fairies, <lb/>away! </l>
@@ -1541,7 +1632,7 @@
                                         with her train.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="146"/>Well, go thy way: thou shalt not from <lb/>this grove </l>
@@ -1562,12 +1653,12 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="154"/>To hear the sea-maid's music. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l part="F">
           <lb/>I remember. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="155"/>That very time I saw, but thou couldst <lb/>not, </l>
@@ -1610,7 +1701,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="174"/>Ere the leviathan can swim a league. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l><!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" -->
           <milestone unit="line" ed="Globe" n="175"/>I'll put a girdle round about the earth </l>
@@ -1619,7 +1710,7 @@
                                         <!-- REVIEW words: both witnesses read 'LExit.'; the P4 reads '[Exit.' --><stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l part="F">
           <lb/>Having once this juice, </l>
@@ -1649,7 +1740,7 @@
                                         him.</stage>
         </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="188"/>I love thee not, therefore pursue me not. </l>
@@ -1666,7 +1757,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="194"/>Hence, get thee gone, and follow me no more. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="195"/>You draw me, you hard-hearted adamant; </l>
@@ -1677,7 +1768,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="198"/>And I shall have no power to follow you. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l><!-- REVIEW page: p.166 miun/kraken leaf 00000180 -->
           <milestone unit="line" ed="Globe" n="199"/>Do I entice you? do I speak you fair? </l>
@@ -1686,7 +1777,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="201"/>Tell you, I do not, nor I cannot love you? </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="202"/>And even for that do I love you the more. </l>
@@ -1707,19 +1798,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="210"/>Than to be used as you use your dog? </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="211"/>Tempt not too much the hatred of my <lb/>spirit; </l>
         <l>
           <milestone unit="line" ed="Globe" n="212"/>For I am sick when I do look on thee. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="213"/>And I am sick when I look not on you. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="214"/>You do impeach your modesty too much, </l>
@@ -1734,7 +1825,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="219"/>With the rich worth of your virginity. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="220"/>Your virtue is my privilege; for that </l>
@@ -1751,14 +1842,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="226"/>When all the world is here to look on me? </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l><!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" -->
           <milestone unit="line" ed="Globe" n="227"/>I'll run from thee and hide me in the <lb/>brakes, </l>
         <l>
           <milestone unit="line" ed="Globe" n="228"/>And leave thee to the mercy of wild beasts. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="229"/>The wildest hath not such a heart as you. </l>
@@ -1773,7 +1864,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'valour'; the P4 reads 'valor' --><milestone unit="line" ed="Globe" n="234"/>When cowardice pursues and valor flies. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="235"/>I will not stay thy questions; let me go: </l>
@@ -1782,7 +1873,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="237"/>But I shall do thee mischief in the wood. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="238"/>Ay, in the temple, in the town, the field, </l>
@@ -1802,7 +1893,7 @@
           <milestone unit="line" ed="Globe" n="244"/>To die upon the hand I love so well. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="245"/>Fare thee well, nymph: ere he do leave <lb/>this grove, </l>
@@ -1814,12 +1905,12 @@
           <milestone unit="line" ed="Globe" n="247"/>Hast thou the flower there? Welcome, wanderer. 
                                    </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="248"/>Ay, there it is. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l part="F">
           <lb/>I pray thee, give it me. </l>
@@ -1862,7 +1953,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="267"/>And look thou meet me ere the first cock crow. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'your'; the P4 reads 'you' --><milestone unit="line" ed="Globe" n="268"/>Fear not, my lord, you servant shall <lb/>do so. <stage>[Exeunt.
@@ -1876,7 +1967,7 @@
       <stage type="setting">Another part of the wood.</stage>
       <lb/>
       <stage type="entrance"> Enter TITANIA, with her train.</stage>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Come, now a roundel and a fairy song; </l>
@@ -1930,7 +2021,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="24"/>Philomel, with melody, &amp;c. </l>
       </sp>
-      <sp who="fai.">
+      <sp who="#fai.">
         <speaker>Fai.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>Hence, away! now all is well: </l>
@@ -1943,7 +2034,7 @@
                                         squeezes the flower on <lb/>TITANIA'S eyelids.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="27"/>What thou seest when thou dost wake, </l>
@@ -1966,7 +2057,7 @@
                                         HERMIA. </stage>
         </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'in'; the P4 reads 'is' --><milestone unit="line" ed="Globe" n="35"/>Fair love, you faint with wandering is the <lb/>wood; </l>
@@ -1977,28 +2068,28 @@
         <l>
           <milestone unit="line" ed="Globe" n="38"/>And tarry for the comfort of the day. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l><!-- REVIEW page: p.167 miun/kraken leaf 00000181 -->
           <milestone unit="line" ed="Globe" n="39"/>Be it so, Lysander: find you out a bed; </l>
         <l>
           <milestone unit="line" ed="Globe" n="40"/>For I upon this bank will rest my head. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>One turf shall serve as pillow for us <lb/>both; </l>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>One heart, one bed, two bosoms and one troth. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>Nay, good Lysander; for my sake, my <lb/>dear, </l>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Lie further off yet, do not lie so near. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>O, take the sense, sweet, of my <lb/>innocence! </l>
@@ -2017,7 +2108,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="52"/>For lying so, Hermia, I do not lie. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>Lysander riddles very prettily: </l>
@@ -2038,7 +2129,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="61"/>Thy love ne'er alter till thy sweet life end! </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>Amen, amen, to that fair prayer, say I; </l>
@@ -2047,7 +2138,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="64"/>Here is my bed: sleep give thee all his rest! </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>With half that wish the wisher's eyes <lb/>be press'd! 
@@ -2056,7 +2147,7 @@
           <stage type="entrance">Enter PUCK.</stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="66"/>Through the forest have I gone, </l>
@@ -2099,29 +2190,29 @@
                                         HELENA, running.</stage>
         </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="84"/>Stay, though thou kill me, sweet <lb/>Demetrius. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>I charge thee, hence, and do not haunt <lb/>me thus. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>O, wilt thou darkling leave me? do not so. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>Stay, on thy peril: I alone will go. <lb/>
           <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>O, I am out of breath in this fond chase! </l>
@@ -2154,7 +2245,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="102"/>Lysander, if you live, good sir, awake. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <milestone unit="line" ed="Globe" n="103"/>
         <stage>[Awaking]</stage>
@@ -2168,7 +2259,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="107"/>Is that vile name to perish on my sword! </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="108"/>Do not say so, Lysander; say not so </l>
@@ -2177,7 +2268,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="110"/>Yet Hermia still loves you: then be content. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="111"/>Content with Hermia! No; I do repent </l>
@@ -2204,7 +2295,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="122"/>Love's stories written in love's richest book. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="123"/>Wherefore was I to this keen mockery <lb/>born? </l>
@@ -2232,7 +2323,7 @@
           <milestone unit="line" ed="Globe" n="134"/>Should of another therefore be abused! <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="135"/>She sees not Hermia. Hermia, sleep <lb/>thou there: </l>
@@ -2256,7 +2347,7 @@
   <!-- REVIEW words: both witnesses read 'honour'; the P4 reads 'honor' -->        <milestone unit="line" ed="Globe" n="144"/>To honor Helen and to be her knight! <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <milestone unit="line" ed="Globe" n="145"/>
         <stage>[Awaking]</stage>
@@ -2297,45 +2388,45 @@
       <lb/>
       <stage type="entrance"> Enter QUINCE, SNUG, BOTTOM, FLUTE, SNOUT <lb/>and
                               STARVELING.</stage>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l><!-- REVIEW page: p.168 miun/kraken leaf 00000182 -->
           <milestone unit="line" ed="Globe" n="1"/>Are we all met? </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="2"/>Pat, pat; and here's a marvellous <milestone unit="line" ed="Globe" n="3"/>convenient place for our rehearsal. This green plot <milestone unit="line" ed="Globe" n="4"/>shall be our stage, this
                                    hawthorn-brake our <milestone unit="line" ed="Globe" n="5"/>tiring-house; and we will do it in action as we will do
                                    <milestone unit="line" ed="Globe" n="6"/>it before the duke. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>Peter Quince,-- </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="8"/>What sayest thou, bully Bottom? </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'himself;'; the P4 reads 'him- self;' --><milestone unit="line" ed="Globe" n="9"/>There are things in this comedy of <milestone unit="line" ed="Globe" n="10"/>Pyramus and Thisby that will never please. <milestone unit="line" ed="Globe" n="11"/>First, Pyramus must draw a sword to kill
                                    him- self; <milestone unit="line" ed="Globe" n="12"/>which the ladies cannot abide. How answer you <milestone unit="line" ed="Globe" n="13"/>that? </p>
       </sp>
-      <sp who="snout.">
+      <sp who="#snout.">
         <speaker>Snout.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>By'r lakin, a parlous fear. </l>
       </sp>
-      <sp who="star.">
+      <sp who="#star.">
         <speaker>Star.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="15"/>I believe we must leave the killing out, <milestone unit="line" ed="Globe" n="16"/>when all is done. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: the P4 has '' here; neither witness has it --><milestone unit="line" ed="Globe" n="17"/>Not a whit; I have a device to make all <milestone unit="line" ed="Globe" n="18"/>well. Write me a prologue; and let the prologue <milestone unit="line" ed="Globe" n="19"/>seem to say, we will do no harm
@@ -2343,39 +2434,39 @@
                                    assurance, tell that I, <milestone unit="line" ed="Globe" n="22"/>Pyramus,
                                    am not Pyramus, but Bottom the <milestone unit="line" ed="Globe" n="23"/>weaver: this will put them out of fear. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="24"/>Well, we will have such a prologue; <milestone unit="line" ed="Globe" n="25"/>and it shall be written in eight and six. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'written'; the P4 reads 'writ- ten' --><milestone unit="line" ed="Globe" n="26"/>No, make it two more; let it be writ- ten <milestone unit="line" ed="Globe" n="27"/>in eight and eight. </p>
       </sp>
-      <sp who="snout.">
+      <sp who="#snout.">
         <speaker>Snout.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="28"/>Will not the ladies be afeard of the lion? </p>
       </sp>
-      <sp who="star.">
+      <sp who="#star.">
         <speaker>Star.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>I fear it, I promise you. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="30"/>Masters, you ought to consider with <milestone unit="line" ed="Globe" n="31"/>yourselves: to bring in--God shield us!--a lion <milestone unit="line" ed="Globe" n="32"/>among ladies is a most dreadful
                                    thing; for there <milestone unit="line" ed="Globe" n="33"/>is not a more fearful wild-fowl than your lion <milestone unit="line" ed="Globe" n="34"/>living; and we
                                    ought to look to 't. </p>
       </sp>
-      <sp who="snout.">
+      <sp who="#snout.">
         <speaker>Snout.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="35"/>Therefore another prologue must tell <milestone unit="line" ed="Globe" n="36"/>he is not a lion. </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'you, –or'; the P4 reads "you,'-or" --><!-- REVIEW words: both witnesses read 'you,–not'; the P4 reads 'you, -not' --><!-- REVIEW words: both witnesses read 'indeed'; the P4 reads 'in- deed' --><milestone unit="line" ed="Globe" n="37"/>Nay, you must name his name, and half <milestone unit="line" ed="Globe" n="38"/>his face must be seen through the lion's neck: <milestone unit="line" ed="Globe" n="39"/>and he himself must speak through,
@@ -2387,35 +2478,35 @@
                                    and there in- deed let him name
                                    his name, <milestone unit="line" ed="Globe" n="47"/>and tell them plainly he is Snug the joiner. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="48"/>Well, it shall be so. But there is two <milestone unit="line" ed="Globe" n="49"/>hard things: that is, to bring the moonlight into <milestone unit="line" ed="Globe" n="50"/>a chamber; for, you know, Pyramus and
                                         Thisby <milestone unit="line" ed="Globe" n="51"/>meet by moonlight. </p>
       </sp>
-      <sp who="snout.">
+      <sp who="#snout.">
         <speaker>Snout.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="52"/>Doth the moon shine that night we <milestone unit="line" ed="Globe" n="53"/>play our play? </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'moonshine.'; the P4 reads 'moon- shine.' --><milestone unit="line" ed="Globe" n="54"/>A calendar, a calendar! look in the <milestone unit="line" ed="Globe" n="55"/>almanac; find out moonshine, find out moon- shine. 
                                    </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>Yes, it doth shine that night. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="57"/>Why, then may you leave a casement of <milestone unit="line" ed="Globe" n="58"/>the great chamber window, where we play, open, <milestone unit="line" ed="Globe" n="59"/>and the moon may shine in at the
                                    casement. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="60"/>Ay; or else one must come in with a <milestone unit="line" ed="Globe" n="61"/>bush of thorns and a lanthorn, and say he comes to <milestone unit="line" ed="Globe" n="62"/>disfigure, or to present, the
@@ -2423,19 +2514,19 @@
                                    the great chamber; for Pyramus and <milestone unit="line" ed="Globe" n="65"/>Thisby, says the story, did talk through the
                                         <milestone unit="line" ed="Globe" n="66"/>chink of a wall. </p>
       </sp>
-      <sp who="snout.">
+      <sp who="#snout.">
         <speaker>Snout.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="67"/>You can never bring in a wall. What <milestone unit="line" ed="Globe" n="68"/>say you, Bottom? </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="69"/>Some man or other must present Wall: <milestone unit="line" ed="Globe" n="70"/>and let him have some plaster, or some loam, or <milestone unit="line" ed="Globe" n="71"/>some rough-cast about him, to
                                    signify wall; and <milestone unit="line" ed="Globe" n="72"/>let him hold his fingers thus, and through that <milestone unit="line" ed="Globe" n="73"/>cranny
                                    shall Pyramus and Thisby whisper. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'rehearse'; the P4 reads 're- hearse' --><milestone unit="line" ed="Globe" n="74"/>If that may be, then all is well. Come, <milestone unit="line" ed="Globe" n="75"/>sit down, every mother's son, and re- hearse your <milestone unit="line" ed="Globe" n="76"/>parts. Pyramus, you begin;
@@ -2444,7 +2535,7 @@
           <stage type="entrance"> Enter PUCK behind.</stage>
         </p>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>What hempen home-spuns have we <lb/>swaggering here, </l>
@@ -2455,22 +2546,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="82"/>An actor too, perhaps, if I see cause. </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>Speak, Pyramus. Thisby, stand forth. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'savours'; the P4 reads 'savors' --><milestone unit="line" ed="Globe" n="84"/>Thisby, the flowers of odious savors <lb/>sweet,-- </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Odours, odours.'; the P4 reads 'Odors, odors.' -->
           <milestone unit="line" ed="Globe" n="85"/>Odors, odors. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l><!-- REVIEW words: both witnesses read 'odours savours'; the P4 reads '-odors savors' -->
           <milestone unit="line" ed="Globe" n="86"/>---odors savors sweet: </l>
@@ -2482,23 +2573,23 @@
           <milestone unit="line" ed="Globe" n="89"/>And by and by I will to thee appear.<stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="90"/>A stranger Pyramus than e'er played <lb/>here. <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads '[Exit.' --><stage>[Exit. </stage>
         </l>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>Must I speak now? </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="92"/>Ay, marry, must you; for you must <milestone unit="line" ed="Globe" n="93"/>understand he goes but to see a noise that he <milestone unit="line" ed="Globe" n="94"/>heard, and is to come again. </p>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>Most radiant Pyramus, most lily-white of <lb/>hue, </l>
@@ -2511,12 +2602,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="99"/>I'll meet thee, Pyramus, at Ninny's tomb. </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="100"/>'Ninus' tomb,' man: why, you must <milestone unit="line" ed="Globe" n="101"/>not speak that yet; that you answer to Pyramus: <milestone unit="line" ed="Globe" n="102"/>you speak all your part at once, cues and all. <milestone unit="line" ed="Globe" n="103"/>Pyramus enter: your cue is past; it is, 'never <milestone unit="line" ed="Globe" n="104"/>tire.' </p>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="105"/>O,--As true as truest horse; that yet <lb/>would never tire. <lb/>
@@ -2524,12 +2615,12 @@
                                         BOTTOM with an ass's head.</stage>
         </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="106"/>If I were fair, Thisby, I were only thine. </l>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
                                    
@@ -2542,7 +2633,7 @@
                                         and <lb/>Starveling.</stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l><!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" -->
           <milestone unit="line" ed="Globe" n="109"/>I'll follow you, I'll lead you about a <lb/>round, </l>
@@ -2559,7 +2650,7 @@
                                         <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="115"/>Why do they run away? this is a knavery <milestone unit="line" ed="Globe" n="116"/>of them to make me afeard. <lb/>
@@ -2567,12 +2658,12 @@
                                         Re-enter SNOUT.</stage>
         </p>
       </sp>
-      <sp who="snout.">
+      <sp who="#snout.">
         <speaker>Snout.</speaker>
         <p><!-- REVIEW page: p.169 miun/kraken leaf 00000183 -->
           <milestone unit="line" ed="Globe" n="117"/>O Bottom, thou art changed! what <milestone unit="line" ed="Globe" n="118"/>do I see on thee? </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'ass-head'; the P4 reads 'ass- head' --><milestone unit="line" ed="Globe" n="119"/>What do you see? you see an ass- head <milestone unit="line" ed="Globe" n="120"/>of your own, do you? <stage>[Exit Snout.</stage>
@@ -2581,13 +2672,13 @@
                                         QUINCE.</stage>
         </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="121"/>Bless thee, Bottom! bless thee! thou <milestone unit="line" ed="Globe" n="122"/>art translated. <stage>[Exit.</stage>
         </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="123"/>I see their knavery: this is to make an <milestone unit="line" ed="Globe" n="124"/>ass of me; to fright me, if they could. But I <milestone unit="line" ed="Globe" n="125"/>will not stir from this place, do what
@@ -2603,13 +2694,13 @@
         <l>
           <milestone unit="line" ed="Globe" n="131"/>The wren with little quill,--</l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <milestone unit="line" ed="Globe" n="132"/>
         <stage>[Awaking]</stage>
         <l>What angel wakes me from <lb/>my flowery bed? </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <!-- REVIEW words: both witnesses read '[Singsl'; the P4 reads '[Sings]' --><stage>[Sings]</stage>
         <l>
@@ -2626,7 +2717,7 @@
                                         he <milestone unit="line" ed="Globe" n="139"/>cry 'cuckoo' never so?
                                         </p>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="140"/>I pray thee, gentle mortal, sing again: </l>
@@ -2639,7 +2730,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="144"/>On the first view to say, to swear, I love thee. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'together'; the P4 reads 'to- gether' --><!-- REVIEW words: both witnesses read 'neighbours'; the P4 reads 'neighbors' --><milestone unit="line" ed="Globe" n="145"/>Methinks, mistress, you should have <milestone unit="line" ed="Globe" n="146"/>little reason for that: and yet, to say the truth, <milestone unit="line" ed="Globe" n="147"/>reason and love keep little company
@@ -2647,17 +2738,17 @@
                                    the pity that some honest <milestone unit="line" ed="Globe" n="149"/>neighbors will not make them friends. Nay, I
                                    <milestone unit="line" ed="Globe" n="150"/>can gleek upon occasion. </p>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="151"/>Thou art as wise as thou art beautiful. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="152"/>Not so, neither: but if I had wit enough <milestone unit="line" ed="Globe" n="153"/>to get out of this wood, I have enough to serve <milestone unit="line" ed="Globe" n="154"/>mine own turn. </p>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="155"/>Out of this wood do not desire to go: </l>
@@ -2685,32 +2776,32 @@
                                         and <lb/>MUSTARDSEED.</stage>
         </l>
       </sp>
-      <sp who="peas.">
+      <sp who="#peas.">
         <speaker>Peas.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="166"/>Ready. </l>
       </sp>
-      <sp who="cob.">
+      <sp who="#cob.">
         <speaker>Cob.</speaker>
         <l part="Y">
           <lb/>And I. </l>
       </sp>
-      <sp who="moth.">
+      <sp who="#moth.">
         <speaker>Moth.</speaker>
         <l part="Y">
           <lb/>And I. </l>
       </sp>
-      <sp who="mus.">
+      <sp who="#mus.">
         <speaker>Mus.</speaker>
         <l part="Y">
           <lb/>And I. </l>
       </sp>
-      <sp who="all.">
+      <sp who="#all.">
         <speaker>All.</speaker>
         <l part="F">
           <lb/>Where shall we go? </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="167"/>Be kind and courteous to this gentleman; </l>
@@ -2735,62 +2826,62 @@
         <l>
           <milestone unit="line" ed="Globe" n="177"/>Nod to him, elves, and do him courtesies. </l>
       </sp>
-      <sp who="peas.">
+      <sp who="#peas.">
         <speaker>Peas.</speaker>
         <l>
      <!-- REVIEW words: both witnesses read 'mortal!'; the P4 reads 'mortall' -->     <milestone unit="line" ed="Globe" n="178"/>Hail, mortall </l>
       </sp>
-      <sp who="cob.">
+      <sp who="#cob.">
         <speaker>Cob.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="179"/>Hail! </l>
       </sp>
-      <sp who="moth.">
+      <sp who="#moth.">
         <speaker>Moth.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="180"/>Hail! </l>
       </sp>
-      <sp who="mus.">
+      <sp who="#mus.">
         <speaker>Mus.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="181"/>Hail! </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'worships'; the P4 reads "worship's" --><!-- REVIEW words: both witnesses read 'beseech'; the P4 reads 'beeseech' --><milestone unit="line" ed="Globe" n="182"/>I cry your worship's mercy, heartily: I <milestone unit="line" ed="Globe" n="183"/>beeseech your worship's name. </p>
       </sp>
-      <sp who="cob.">
+      <sp who="#cob.">
         <speaker>Cob.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="184"/>Cobweb. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'acquaintance,'; the P4 reads 'acquaint- ance,' --><milestone unit="line" ed="Globe" n="185"/>I shall desire you of more acquaint- ance, <milestone unit="line" ed="Globe" n="186"/>good Master Cobweb: if I cut my finger, I shall <milestone unit="line" ed="Globe" n="187"/>make bold with you.
                                         Your name, honest
                                    <milestone unit="line" ed="Globe" n="188"/>gentleman? </p>
       </sp>
-      <sp who="peas.">
+      <sp who="#peas.">
         <speaker>Peas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="189"/>Peaseblossom. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="190"/>I pray you, commend me to Mistress <milestone unit="line" ed="Globe" n="191"/>Squash, your mother, and to Master Peascod, <milestone unit="line" ed="Globe" n="192"/>your father. Good Master Peaseblossom, I
                                         shall <milestone unit="line" ed="Globe" n="193"/>desire you of more acquaintance too. Your name, <milestone unit="line" ed="Globe" n="194"/>I beseech you,
                                    sir? </p>
       </sp>
-      <sp who="mus.">
+      <sp who="#mus.">
         <speaker>Mus.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="195"/>Mustardseed. 
                                    </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'giant-like'; the P4 reads 'giant- like' --><!-- REVIEW words: both witnesses read 'Mustardseed.'; the P4 reads 'Mus- tardseed.' --><milestone unit="line" ed="Globe" n="196"/>Good Master Mustardseed, I know your <milestone unit="line" ed="Globe" n="197"/>patience well: that same cowardly, giant- like <milestone unit="line" ed="Globe" n="198"/>ox-beef hath devoured
@@ -2798,7 +2889,7 @@
                                    water ere now. I desire your
                                    more <milestone unit="line" ed="Globe" n="201"/>acquaintance, good Master Mus- tardseed. </p>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="202"/>Come, wait upon him; lead him to my <lb/>bower. </l>
@@ -2820,7 +2911,7 @@
       <stage type="setting">Another part of the wood.</stage>
       <lb/>
       <stage type="entrance"> Enter OBERON.</stage>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>I wonder if Titania be awaked; </l>
@@ -2837,7 +2928,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="5"/>What night-rule now about this haunted grove ? </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="6"/>My mistress with a monster is in love. </l>
@@ -2898,7 +2989,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="34"/>Titania waked and straightway loved an ass. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="35"/>This falls out better than I could devise. </l>
@@ -2907,7 +2998,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="37"/>With the love-juice, as I did bid thee do? </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="38"/>I took him sleeping,--that is finish'd <lb/>too,-- </l>
@@ -2919,24 +3010,24 @@
                                         DEMETRIUS. </stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>Stand close: this is the same Athenian. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>This is the woman, but not this the man. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>O, why rebuke you him that loves you so? </l>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Lay breath so bitter on your bitter foe. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Now I but chide; but I should use thee <lb/>worse, </l>
@@ -2965,7 +3056,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="57"/>So should a murderer look, so dead, so grim. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>So should the murder'd look, and so <lb/>should I, </l>
@@ -2976,19 +3067,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="61"/>As yonder Venus in her glimmering sphere. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>What's this to my Lysander? where is <lb/>he </l>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Ah, good Demetrius, wilt thou give him me? </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>I had rather give his carcass to my <lb/>hounds. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>Out, dog! out, cur! thou drivest me <lb/>past the bounds </l>
@@ -3009,7 +3100,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="73"/>Than thine, thou serpent, never adder stung. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="74"/>You spend your passion on a misprised <lb/>mood: </l>
@@ -3018,17 +3109,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="76"/>Nor is he dead, for aught that I can tell. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="77"/>I pray thee, tell me then that he is well. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="78"/>An if I could, what should I get <lb/>therefore? </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>A privilege never to see me more. </l>
@@ -3038,7 +3129,7 @@
           <milestone unit="line" ed="Globe" n="81"/>See me no more, whether he be dead or no. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>There is no following her in this fierce <lb/>vein: </l>
@@ -3056,7 +3147,7 @@
                                         sleeps.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>What hast thou done? thou hast <lb/>mistaken quite </l>
@@ -3067,14 +3158,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="91"/>Some true love turn'd and not a false turn'd true. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="92"/>Then fate o'er-rules, that, one man <lb/>holding troth, </l>
         <l>
           <milestone unit="line" ed="Globe" n="93"/>A million fail, confounding oath on oath. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="94"/>About the wood go swifter than the <lb/>wind, </l>
@@ -3089,7 +3180,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="99"/>I'll charm his eyes against she do appear. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="100"/>I go, I go; look how I go, </l>
@@ -3097,7 +3188,7 @@
           <milestone unit="line" ed="Globe" n="101"/>Swifter than arrow from the Tartar's bow. <!-- REVIEW words: both witnesses read 'IExit.'; the P4 reads '[Exit.' --><stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="102"/>Flower of this purple dye, </l>
@@ -3118,7 +3209,7 @@
           <stage type="entrance"> Re-enter PUCK.</stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="110"/>Captain of our fairy band, </l>
@@ -3133,14 +3224,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="115"/>Lord, what fools these mortals be! </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="116"/>Stand aside; the noise they make </l>
         <l>
           <milestone unit="line" ed="Globe" n="117"/>Will cause Demetrius to awake. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="118"/>Then will two at once woo one; </l>
@@ -3153,7 +3244,7 @@
           <stage type="entrance">Enter Lysander and Helena.</stage>
         </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="122"/>Why should you think that I should woo <lb/>in scorn? </l>
@@ -3168,7 +3259,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="127"/>Bearing the badge of faith, to prove them true? </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="128"/>You do advance your cunning more and <lb/>more. </l>
@@ -3183,22 +3274,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="133"/>Will even weigh, and both as light as tales. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="134"/>I had no judgement when to her I swore. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="135"/>Nor none, in my mind, now you give <lb/>her o'er. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l><!-- REVIEW page: p.171 miun/kraken leaf 00000185 -->
           <milestone unit="line" ed="Globe" n="136"/>Demetrius loves her, and he loves not <lb/>you. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <milestone unit="line" ed="Globe" n="137"/>
         <!-- REVIEW words: both witnesses read '[Awakingl'; the P4 reads '[Awaking]' --><stage>[Awaking]</stage>
@@ -3218,7 +3309,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="144"/>This princess of pure white, this seal of bliss! </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="145"/>O spite! O hell! I see you all are bent </l>
@@ -3255,7 +3346,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="161"/>A poor soul's patience, all to make you sport. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="162"/>You are unkind, Demetrius; be not so; </l>
@@ -3270,12 +3361,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="167"/>Whom I do love and will do till my death. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="168"/>Never did mockers waste more idle breath. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="169"/>Lysander, keep thy Hermia; I will none: </l>
@@ -3288,12 +3379,12 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="173"/>There to remain. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="F">
           <lb/>Helen, it is not so. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="174"/>Disparage not the faith thou dost not <lb/>know, </l>
@@ -3304,7 +3395,7 @@
           <stage type="entrance"> Re-enter HERMIA.</stage>
         </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="177"/>Dark night, that from the eye his <lb/>function takes, </l>
@@ -3321,17 +3412,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="183"/>But why unkindly didst thou leave me so? </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="184"/>Why should he stay, whom love doth <lb/>press to go? </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="185"/>What love could press Lysander from <lb/>my side? </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="186"/>Lysander's love, that would not let him <lb/>bide, </l>
@@ -3344,12 +3435,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="190"/>The hate I bear thee made me leave thee so? </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="191"/>You speak not as you think; it cannot be. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="192"/>Lo, she is one of this confederacy! </l>
@@ -3408,14 +3499,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="219"/>Though I alone do feel the injury. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="220"/>I am amazed at your passionate words. </l>
         <l>
           <milestone unit="line" ed="Globe" n="221"/>I scorn you not: it seems that you scorn me. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="222"/>Have you not set Lysander, as in scorn, </l>
@@ -3446,12 +3537,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="235"/>This you should pity rather than despise. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="236"/>I understand not what you mean by this. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="237"/>Ay, do, persever, counterfeit sad looks, </l>
@@ -3470,29 +3561,29 @@
         <l>
           <milestone unit="line" ed="Globe" n="244"/>Which death or absence soon shall remedy. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="245"/>Stay, gentle Helena; hear my excuse: </l>
         <l>
           <milestone unit="line" ed="Globe" n="246"/>My love, my life, my soul, fair Helena! </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="247"/>O excellent! </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l part="F">
           <lb/>Sweet, do not scorn her so. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="248"/>If she cannot entreat, I can compel. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="249"/>Thou canst compel no more than she <lb/>entreat: </l>
@@ -3505,32 +3596,32 @@
         <l>
           <milestone unit="line" ed="Globe" n="253"/>To prove him false that says I love thee not. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="254"/>I say I love thee more than he can do. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="255"/>If thou say so, withdraw, and prove <lb/>it too. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="256"/>Quick, come! </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l part="F">
           <lb/>Lysander, whereto tends all this? </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="I"><!-- REVIEW witness: p.172 taken from trent/kraken: miun/kraken:1 trent/kraken:0 (total count error) --><!-- REVIEW page: p.172 trent/kraken leaf 0188 -->
           <milestone unit="line" ed="Globe" n="257"/>Away, you Ethiope! </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l part="F">
           <lb/>No, no; he'll... </l>
@@ -3539,57 +3630,57 @@
         <l>
           <milestone unit="line" ed="Globe" n="259"/>But yet come not: you are a tame man, go! </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="260"/>Hang off, thou cat, thou burr! vile <lb/>thing, let loose, </l>
         <l>
           <milestone unit="line" ed="Globe" n="261"/>Or I will shake thee from me like a serpent! </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="262"/>Why are you grown so rude? what <lb/>change is this? </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="263"/>Sweet love,-- </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="F">
           <lb/>Thy love! out, tawny Tartar, out! </l>
         <l>
           <milestone unit="line" ed="Globe" n="264"/>Out, loathed medicine! hated potion, hence! </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="265"/>Do you not jest? </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l part="F">
           <lb/>Yes, sooth; and so do you. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="266"/>Demetrius, I will keep my word with thee. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="267"/>I would I had your bond, for I perceive </l>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="268"/>A weak bond holds you: I'll not trust your word. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="269"/>What, should I hurt her, strike her, <lb/>kill her dead? </l>
         <l>
           <milestone unit="line" ed="Globe" n="270"/>Although I hate her, I'll not harm her so. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="271"/>What, can you do me greater harm <lb/>than hate? </l>
@@ -3606,7 +3697,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="277"/>In earnest, shall I say? </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="F">
           <lb/>Ay, by my life; </l>
@@ -3619,7 +3710,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="281"/>That I do hate thee and love Helena. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="282"/>O me! you juggler! you cankerblossom! </l>
@@ -3628,7 +3719,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="284"/>And stolen my love's heart from him? </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l part="F">
           <lb/>Fine, i'faith! </l>
@@ -3641,7 +3732,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="288"/>Fie, fie! you counterfeit, you puppet, you! </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="289"/>Puppet? why so? ay, that way goes <lb/>the game. </l>
@@ -3664,7 +3755,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="298"/>But that my nails can reach unto thine eyes. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="299"/>I pray you, though you mock me, <lb/>gentlemen, </l>
@@ -3681,12 +3772,12 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="305"/>That I can match her. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l part="F">
           <lb/>Lower! hark, again. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="306"/>Good Hermia, do not be so bitter with me. </l>
@@ -3713,37 +3804,37 @@
         <l>
           <milestone unit="line" ed="Globe" n="317"/>You see how simple and how fond I am. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="318"/>Why, get you gone: who is't that hinders <lb/>you? </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="319"/>A foolish heart, that I leave here behind. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="320"/>What, with Lysander? </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l part="F">
           <lb/>With Demetrius. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="321"/>Be not afraid; she shall not harm thee, <lb/>Helena. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="322"/>No, sir, she shall not, though you take <lb/>her part. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="323"/>O, when she's angry, she is keen and <lb/>shrewd! </l>
@@ -3752,7 +3843,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="325"/>And though she be but little, she is fierce. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="326"/>'Little' again! nothing but 'low' and <lb/>'little'! </l>
@@ -3761,7 +3852,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="328"/>Let me come to her. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="F">
           <lb/>Get you gone, you dwarf; </l>
@@ -3770,7 +3861,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="330"/>You bead, you acorn. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l part="F">
           <lb/>You are too officious </l>
@@ -3785,7 +3876,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="335"/>Thou shalt aby it. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="F">
           <lb/>Now she holds me not; </l>
@@ -3794,20 +3885,20 @@
         <l>
           <milestone unit="line" ed="Globe" n="337"/>Of thine or mine, is most in Helena. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="338"/>Follow! nay, I'll go with thee, cheek <lb/>by jole. <stage>[Exeunt <!-- REVIEW words: both witnesses read 'Lysanderand'; the P4 reads 'Lysander and' -->Lysander and Demetrius.</stage>
         </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="339"/>You, mistress, all this coil is 'long of you: </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="340"/>Nay, go not back. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l part="F">
           <lb/>I will not trust you, I, </l>
@@ -3819,20 +3910,20 @@
           <milestone unit="line" ed="Globe" n="343"/>My legs are longer though, to run away.<stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="344"/>I am amazed, and know not what to say. <lb/>
           <stage>[Exit. </stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l><!-- REVIEW words: both witnesses read 'Thisis'; the P4 reads 'This is' -->This <milestone unit="line" ed="Globe" n="345"/>is thy negligence: still thou mistakest, </l>
         <l>
           <milestone unit="line" ed="Globe" n="346"/>Or else committ'st thy knaveries wilfully. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="347"/>Believe me, king of shadows, I mistook. </l>
@@ -3849,7 +3940,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="353"/>As this their jangling I esteem a sport. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="354"/>Thou see'st these lovers seek a place to <lb/>fight: </l>
@@ -3900,7 +3991,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="377"/>From monster's view, and all things shall be peace. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="378"/>My fairy lord, this must be done with <lb/>haste, </l>
@@ -3923,7 +4014,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="387"/>And must for aye consort with black-brow'd night. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="388"/>But we are spirits of another sort: </l>
@@ -3943,7 +4034,7 @@
           <milestone unit="line" ed="Globe" n="395"/>We may effect this business yet ere day. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="396"/>Up and down, up and down, </l>
@@ -3959,23 +4050,23 @@
                                         Re-enter LYSANDER.</stage>
         </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="401"/>Where art thou, proud Demetrius? speak <lb/>thou
                                    now. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="402"/>Here, villain; drawn and ready. Where <lb/>art thou? </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="403"/>I will be with thee straight. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l part="F">
           <lb/>Follow me, then, </l>
@@ -3988,7 +4079,7 @@
                                         DEMETRIUS.</stage>
         </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l part="F">
           <lb/>Lysander! speak again: </l>
@@ -3997,7 +4088,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="406"/>Speak! In some bush? Where dost thou hide <lb/>thy head? </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="407"/>Thou coward, art thou bragging to the <lb/>stars, </l>
@@ -4010,12 +4101,12 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="411"/>That draws a sword on thee. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l part="F">
           <lb/>Yea, art thou there? </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="412"/>Follow my voice; we'll try no manhood <lb/>here. <!-- REVIEW words: both witnesses read 'IExeunt.'; the P4 reads '[Exeunt.' --><stage>[Exeunt. </stage>
@@ -4023,7 +4114,7 @@
           <stage type="entrance"> Re-enter LYSANDER.</stage>
         </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="413"/>He goes before me and still dares me on: </l>
@@ -4047,12 +4138,12 @@
                                         DEMETRIUS. </stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="421"/>Ho, ho, ho! Coward, why comest <lb/>thou not? </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="422"/>Abide me, if thou darest; for well I wot </l>
@@ -4063,12 +4154,12 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="425"/>Where art thou now? </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l part="F">
           <lb/>Come hither: I am here. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="426"/>Nay, then, thou mock'st me. Thou <lb/>shalt buy this dear, </l>
@@ -4087,7 +4178,7 @@
                                         HELENA.</stage>
         </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="431"/>O weary night, O long and tedious night, </l>
@@ -4105,7 +4196,7 @@
                                         sleeps.</stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="437"/>Yet but three? Come one more; </l>
@@ -4122,7 +4213,7 @@
                                         HERMIA.</stage>
         </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="442"/>Never so weary, never so in woe, </l>
@@ -4140,7 +4231,7 @@
                                         sleeps.</stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l><!-- REVIEW inset: shared-lines.tsv: the page sets this line and those after it, to 'nought shall go', in from the margin, and numbers every row as a line (basis image, checked 2026-10-15 cliff) -->
           <milestone unit="line" ed="Globe" n="448"/>On the ground </l>
@@ -4193,7 +4284,7 @@
       <lb/>
       <stage type="entrance">Enter TITANIA and BOTTOM; PEASEBLOSSOM, <lb/>COBWEB,
                               MOTH, MUSTARDSEED, and other <lb/>Fairies attending; OBERON behind unseen. </stage>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Come, sit thee down upon this flowery bed, </l>
@@ -4204,28 +4295,28 @@
         <l>
           <milestone unit="line" ed="Globe" n="4"/>And kiss thy fair large ears, my gentle joy. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="5"/>Where's Peaseblossom? </l>
       </sp>
-      <sp who="peas.">
+      <sp who="#peas.">
         <speaker>Peas.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="6"/>Ready. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>Scratch my head, Peaseblossom. </l>
         <l>Where's <milestone unit="line" ed="Globe" n="8"/>Mounsieur Cobweb? </l>
       </sp>
-      <sp who="cob.">
+      <sp who="#cob.">
         <speaker>Cob.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Ready. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'honey-bag,'; the P4 reads 'honey- bag,' --><milestone unit="line" ed="Globe" n="10"/>Mounsieur Cobweb, good mounsieur, get <milestone unit="line" ed="Globe" n="11"/>you your weapons in your hand, and kill me a <milestone unit="line" ed="Globe" n="12"/>red-hipped humble-bee on the top of
@@ -4234,45 +4325,45 @@
                                    <milestone unit="line" ed="Globe" n="15"/>mounsieur; and, good mounsieur, have a care the <milestone unit="line" ed="Globe" n="16"/>honey-bag break not; I would be loath to have you <milestone unit="line" ed="Globe" n="17"/>overflown with a
                                    honey- bag, signior. Where's <milestone unit="line" ed="Globe" n="18"/>Mounsieur Mustardseed? </p>
       </sp>
-      <sp who="mus.">
+      <sp who="#mus.">
         <speaker>Mus.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="19"/>Ready. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'Mustardseed.'; the P4 reads 'Mus- tardseed.' --><milestone unit="line" ed="Globe" n="20"/>Give me your neaf, Mounsieur Mus- <milestone unit="line" ed="Globe" n="21"/>tardseed. Pray you, leave your courtesy, good <milestone unit="line" ed="Globe" n="22"/>mounsieur. </p>
       </sp>
-      <sp who="mus.">
+      <sp who="#mus.">
         <speaker>Mus.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="23"/>What's your will? </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'mounsieur;'; the P4 reads 'monsieur;' --><!-- REVIEW words: both witnesses read 'marvellous'; the P4 reads 'mar- vellous' --><milestone unit="line" ed="Globe" n="24"/>Nothing, good mounsieur, but to help <milestone unit="line" ed="Globe" n="25"/>Cavalery Cobweb to scratch. I must to the <milestone unit="line" ed="Globe" n="26"/>barber's, monsieur; for methinks I am mar- vellous <milestone unit="line" ed="Globe" n="27"/>hairy about the face;
                                    and I am such a tender ass, <milestone unit="line" ed="Globe" n="28"/>if
                                    my hair do but tickle me, I must scratch. </p>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
           <milestone unit="line" ed="Globe" n="29"/>What, wilt thou hear some music, my <milestone unit="line" ed="Globe" n="30"/>sweet love? </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="31"/>I have a reasonable good ear in music. <milestone unit="line" ed="Globe" n="32"/>Let's have the tongs and the bones. 
                                    </p>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
           <milestone unit="line" ed="Globe" n="33"/>Or say, sweet love, what thou desirest <milestone unit="line" ed="Globe" n="34"/>to eat. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="35"/>Truly, a peck of provender: I could <milestone unit="line" ed="Globe" n="36"/>munch your good dry oats. Methinks I have a
@@ -4280,7 +4371,7 @@
                                         sweet <milestone unit="line" ed="Globe" n="38"/>hay, hath no fellow.
                                         </p>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="39"/>I have a venturous fairy that shall seek </l>
@@ -4288,13 +4379,13 @@
           <milestone unit="line" ed="Globe" n="40"/>The squirrel's hoard, and fetch thee new
                                    nuts. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="41"/>I had rather have a handful or two of <milestone unit="line" ed="Globe" n="42"/>dried peas. But, I pray you, let none of your <milestone unit="line" ed="Globe" n="43"/>people stir me: I have an exposition of
                                    sleep <milestone unit="line" ed="Globe" n="44"/>come upon me. </p>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Sleep thou, and I will wind thee in my <lb/>arms. </l>
@@ -4317,7 +4408,7 @@
                                    PUCK.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <milestone unit="line" ed="Globe" n="51"/>
         <!-- REVIEW turnover: shared-lines.tsv: this line continues on a row the page sets flush, not at the turnover indent; it begins "see'st thou this" (basis image, checked 2026-10-15 cliff) --><!-- REVIEW words: both witnesses read '[Advancingl'; the P4 reads '[Advancing]' --><stage>[Advancing]</stage>
@@ -4382,26 +4473,26 @@
         <l>
           <milestone unit="line" ed="Globe" n="80"/>Now, my Titania; wake you, my sweet queen. </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>My Oberon! what visions have I seen! </l>
         <l><!-- REVIEW anchor: P4 anchor says 80; the page count says 82 here -->
           <milestone unit="line" ed="Globe" n="82"/>Methought I was enamour'd of an ass. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="83"/>There lies your love. </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l part="F">
           <lb/>How came these things to pass? </l>
         <l>
           <milestone unit="line" ed="Globe" n="84"/>O, how mine eyes do loathe his visage now! </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>Silence awhile. Robin, take off this I head. </l>
@@ -4410,18 +4501,18 @@
         <l>
           <milestone unit="line" ed="Globe" n="87"/>Than common sleep of all these five the sense. </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>Music, ho! music, such as charmeth <lb/>sleep! <stage>[Music, still. </stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="89"/>Now, when thou wakest, with thine <lb/>own fool's eyes peep. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="90"/>Sound, music! Come, my queen, take <lb/>hands with me, </l>
@@ -4440,14 +4531,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="97"/>Wedded, with Theseus, all in jollity. </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="98"/>Fairy king, attend, and mark: </l>
         <l>
           <milestone unit="line" ed="Globe" n="99"/>I do hear the morning lark. </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="100"/>Then, my queen, in silence sad, </l>
@@ -4458,7 +4549,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="103"/>Swifter than the wandering moon. </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="104"/>Come, my lord, and in our flight </l>
@@ -4475,7 +4566,7 @@
                                         HIPPOLYTA, EGEUS, and train.</stage>
         </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="108"/>Go, one of you, find out the forester; </l>
@@ -4499,7 +4590,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="116"/>Of hounds and echo in conjunction. </l>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="117"/>I was with Hercules and Cadmus once, </l>
@@ -4516,7 +4607,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="123"/>So musical a discord, such sweet thunder. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="124"/>My hounds are bred out of the Spartan <lb/>kind, </l>
@@ -4537,7 +4628,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="132"/>Judge when you hear. But, soft! what nymphs <lb/>are these? </l>
       </sp>
-      <sp who="ege.">
+      <sp who="#ege.">
         <speaker>Ege.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="133"/>My lord, this is my daughter here <lb/>asleep; </l>
@@ -4548,7 +4639,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="136"/>I wonder of their being here together. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="137"/>No doubt they rose up early to observe </l>
@@ -4561,12 +4652,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="141"/>That Hermia should give answer of her choice? </l>
       </sp>
-      <sp who="ege.">
+      <sp who="#ege.">
         <speaker>Ege.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="142"/>It is, my lord. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="143"/>Go, bid the huntsmen wake them with <lb/>their horns. <stage>[Horns and shouts within.
@@ -4577,12 +4668,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="145"/>Begin these wood-birds but to couple now? </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="146"/>Pardon, my lord. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l part="F">
           <lb/>I pray you all, stand up. </l>
@@ -4595,7 +4686,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="150"/>To sleep by hate, and fear no enmity? </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="151"/>My lord, I shall reply amazedly, </l>
@@ -4614,7 +4705,7 @@
         <l><!-- REVIEW anchor: P4 anchor says 150; the page count says 158 here -->
           <milestone unit="line" ed="Globe" n="158"/>Without the peril of the Athenian law. </l>
       </sp>
-      <sp who="ege.">
+      <sp who="#ege.">
         <speaker>Ege.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="159"/>Enough, enough, my lord; you have <lb/>enough: </l>
@@ -4629,7 +4720,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="164"/>Of my consent that she should be your wife. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="165"/>My lord, fair Helen told me of their <lb/>stealth, </l>
@@ -4666,7 +4757,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="181"/>And will for evermore be true to it. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="182"/>Fair lovers, you are fortunately met: </l>
@@ -4692,21 +4783,21 @@
                                         train.</stage>
         </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="192"/>These things seem small and <lb/>undistinguishable, </l>
         <l>
           <milestone unit="line" ed="Globe" n="193"/>Like far-off mountains turned into clouds. </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="194"/>Methinks I see these things with parted <lb/>eye, </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="195"/>When every thing seems double. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l part="F">
           <lb/>So methinks: </l>
@@ -4715,7 +4806,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="197"/>Mine own, and not mine own. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l part="F">
           <lb/>Are you sure </l>
@@ -4726,22 +4817,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="200"/>The duke was here, and bid us follow him ? </l>
       </sp>
-      <sp who="her.">
+      <sp who="#her.">
         <speaker>Her.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="201"/>Yea; and my father. </l>
       </sp>
-      <sp who="hel.">
+      <sp who="#hel.">
         <speaker>Hel.</speaker>
         <l part="F">
           <lb/>And Hippolyta. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="202"/>And he did bid us follow to the temple. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="203"/>Why, then, we are awake; let's follow <lb/>him; </l>
@@ -4750,7 +4841,7 @@
                                    <stage>[Exeunt.</stage>
         </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <milestone unit="line" ed="Globe" n="205"/>
         <stage>[Awaking]</stage>
@@ -4777,51 +4868,51 @@
       <stage type="setting">Athens. QUINCE'S house.</stage>
       <lb/>
       <stage type="entrance"> Enter QUINCE, FLUTE, SNOUT, and <lb/>STARVELING.</stage>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="1"/>Have you sent to Bottom's house? is <milestone unit="line" ed="Globe" n="2"/>he come home yet? </p>
       </sp>
-      <sp who="star.">
+      <sp who="#star.">
         <speaker>Star.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="3"/>He cannot be heard of. Out of doubt <milestone unit="line" ed="Globe" n="4"/>he is transported. </p>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="5"/>If he come not, then the play is marred: <milestone unit="line" ed="Globe" n="6"/>it goes not forward, doth it? </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="7"/>It is not possible: you have not a man <milestone unit="line" ed="Globe" n="8"/>in all Athens able to discharge Pyramus but he. </p>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="9"/>No, he hath simply the best wit of any
                                    <milestone unit="line" ed="Globe" n="10"/>handicraft man in Athens. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p><!-- REVIEW separate: shared-lines.tsv: the page sets this row displaced, as if it completed the line above, but numbers it as a line of its own (basis image, checked 2026-10-15 cliff) -->
           <milestone unit="line" ed="Globe" n="11"/>Yea, and the best person too; and he <milestone unit="line" ed="Globe" n="12"/>is a very paramour for a sweet voice. </p>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="13"/>You must say 'paragon:' a paramour is, <milestone unit="line" ed="Globe" n="14"/>God bless us, a thing of naught. <lb/>
           <stage type="entrance"> Enter SNUG.</stage>
         </p>
       </sp>
-      <sp who="snug.">
+      <sp who="#snug.">
         <speaker>Snug.</speaker>
         <p><!-- REVIEW page: p.176 miun/kraken leaf 00000190 -->
           <milestone unit="line" ed="Globe" n="15"/>Masters, the duke is coming from the <milestone unit="line" ed="Globe" n="16"/>temple, and there is two or three lords and ladies <milestone unit="line" ed="Globe" n="17"/>more married: if our sport had
                                         gone forward, we <milestone unit="line" ed="Globe" n="18"/>had all been made men. </p>
       </sp>
-      <sp who="flu.">
+      <sp who="#flu.">
         <speaker>Flu.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="19"/>O sweet bully Bottom! Thus hath he <milestone unit="line" ed="Globe" n="20"/>lost sixpence a day during his life; he could not <milestone unit="line" ed="Globe" n="21"/>have 'scaped sixpence a day: an the
@@ -4832,28 +4923,28 @@
                                         BOTTOM.</stage>
         </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="25"/>Where are these lads? where are these <milestone unit="line" ed="Globe" n="26"/>hearts? </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="27"/>Bottom! O most courageous day! O <milestone unit="line" ed="Globe" n="28"/>most happy hour! </p>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="29"/>Masters, I am to discourse wonders: but <milestone unit="line" ed="Globe" n="30"/>ask me not what; for if I tell you, I am no true <milestone unit="line" ed="Globe" n="31"/>Athenian. I will tell
                                    you every thing, right as <milestone unit="line" ed="Globe" n="32"/>it fell out. </p>
       </sp>
-      <sp who="quin.">
+      <sp who="#quin.">
         <speaker>Quin.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="33"/>Let us hear, sweet Bottom. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <p>
           <!-- REVIEW words: the P4 has '' here; neither witness has it --><!-- REVIEW words: both witnesses read 'preferred.'; the P4 reads 'pre- ferred.' --><!-- REVIEW words: both witnesses read 'pare'; the P4 reads 'pair' --><milestone unit="line" ed="Globe" n="34"/>Not a word of me. All I will tell <milestone unit="line" ed="Globe" n="35"/>you is, that the duke hath dined. Get your <milestone unit="line" ed="Globe" n="36"/>apparel together, good strings to your
@@ -4878,12 +4969,12 @@
       <lb/>
       <stage type="entrance">Enter THESEUS, HIPPOLYTA, PHILOSTRATE, <lb/>Lords, and
                               Attendants.</stage>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>'Tis strange, my Theseus, that these <lb/>lovers speak of. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>More strange than true: I never may <lb/>believe </l>
@@ -4931,7 +5022,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="22"/>How easy is a bush supposed a bear! </l>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="23"/>But all the story of the night told over, </l>
@@ -4946,7 +5037,7 @@
                                    
                                    </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="28"/>Here come the lovers, full of joy and <lb/>mirth. <lb/>
@@ -4958,7 +5049,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="30"/>Accompany your hearts! </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l part="F">
           <lb/>More than to us </l>
@@ -4966,7 +5057,7 @@
           <milestone unit="line" ed="Globe" n="31"/>Wait in your royal walks, your board, your
                                    bed! </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>Come now; what masques, what dances <lb/>shall we
@@ -4984,12 +5075,12 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="38"/>Call Philostrate. </l>
       </sp>
-      <sp who="phil.">
+      <sp who="#phil.">
         <speaker>Phil.</speaker>
         <l part="F">
           <lb/>Here, mighty Theseus. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="39"/>Say, what abridgement have you for this <lb/>evening? </l>
@@ -4998,7 +5089,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="41"/>The lazy time, if not with some delight? </l>
       </sp>
-      <sp who="phil.">
+      <sp who="#phil.">
         <speaker>Phil.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>There is a brief how many sports are <lb/>ripe: </l>
@@ -5008,7 +5099,7 @@
                                         paper. </stage>
         </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <milestone unit="line" ed="Globe" n="44"/>
         <stage>[Reads]</stage>
@@ -5048,7 +5139,7 @@
           <milestone unit="line" ed="Globe" n="60"/>How shall we find the concord of this
                                    discord? </l>
       </sp>
-      <sp who="phil.">
+      <sp who="#phil.">
         <speaker>Phil.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="61"/>A play there is, my lord, some ten words <lb/>long, </l>
@@ -5073,12 +5164,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="70"/>The passion of loud laughter never shed. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>What are they that do play it? </l>
       </sp>
-      <sp who="phil.">
+      <sp who="#phil.">
         <speaker>Phil.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>Hard-handed men that work in Athens <lb/>here, </l>
@@ -5089,12 +5180,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="75"/>With this same play, against your nuptial. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="76"/>And we will hear it. </l>
       </sp>
-      <sp who="phil.">
+      <sp who="#phil.">
         <speaker>Phil.</speaker>
         <l part="F">
           <lb/>No, my noble lord; </l>
@@ -5109,7 +5200,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="81"/>To do you service. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l part="F">
           <lb/>I will hear that play; </l>
@@ -5122,24 +5213,24 @@
                                         Philostrate. </stage>
         </l>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>I love not to see wretchedness o'ercharged </l>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>And duty in his service perishing. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>Why, gentle sweet, you shall see no <lb/>such thing. </l>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>He says they can do nothing in this <lb/>kind. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="89"/>The kinder we, to give them thanks for <lb/>nothing. </l>
@@ -5179,12 +5270,12 @@
                                         Re-enter PHILOSTRATE.</stage>
         </l>
       </sp>
-      <sp who="phil.">
+      <sp who="#phil.">
         <speaker>Phil.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="106"/>So please your grace, the Prologue is <lb/>address'd. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="107"/>Let him approach. <stage>[Flourish of trumpets. </stage>
@@ -5193,7 +5284,7 @@
                                         Prologue. </stage>
         </l>
       </sp>
-      <sp who="pro.">
+      <sp who="#pro.">
         <speaker>Pro.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="108"/>If we offend, it is with our good will, </l>
@@ -5216,23 +5307,23 @@
         <l>
           <milestone unit="line" ed="Globe" n="117"/>You shall know all that you are like to know. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="118"/>This fellow doth not stand upon points. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="119"/>He hath rid his prologue like a rough <milestone unit="line" ed="Globe" n="120"/>colt; he knows not the stop. A good moral, my <milestone unit="line" ed="Globe" n="121"/>lord: it is not enough to
                                    speak, but to speak true. </p>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="122"/>Indeed he hath played on his prologue <milestone unit="line" ed="Globe" n="123"/>like a child on a recorder; a sound, but not in <milestone unit="line" ed="Globe" n="124"/>government. </p>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="125"/>His speech was like a tangled chain; <milestone unit="line" ed="Globe" n="126"/>nothing impaired, but all disordered. Who is <milestone unit="line" ed="Globe" n="127"/>next? 
@@ -5241,7 +5332,7 @@
                                         THISBE, <lb/>WALL,MOONSHINE, and LION.</stage>
         </p>
       </sp>
-      <sp who="pro.">
+      <sp who="#pro.">
         <speaker>Pro.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="128"/>Gentles, perchance you wonder at this <lb/>show; </l>
@@ -5297,18 +5388,18 @@
                                         <lb/>Moonshine.</stage>
         </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="153"/>I wonder if the lion be to speak. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="154"/>No wonder, my lord; one lion may, <milestone unit="line" ed="Globe" n="155"/>when many asses do. 
                                    </p>
       </sp>
-      <sp who="wall.">
+      <sp who="#wall.">
         <speaker>Wall.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="156"/>In this same interlude it doth befall </l>
@@ -5331,25 +5422,25 @@
         <l>
           <milestone unit="line" ed="Globe" n="165"/>Through which the fearful lovers are to whisper. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
           <milestone unit="line" ed="Globe" n="166"/>Would you desire lime and hair to speak <milestone unit="line" ed="Globe" n="167"/>better? </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="168"/>It is the wittiest partition that ever I <milestone unit="line" ed="Globe" n="169"/>heard discourse, my lord. <lb/>
           <stage type="entrance"> Re-enter PYRAMUS.</stage>
         </p>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="170"/>Pyramus draws near the wall: silence! 
                                    </l>
       </sp>
-      <sp who="pyr.">
+      <sp who="#pyr.">
         <speaker>Pyr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="171"/>O grim-look'd night! O night with hue <lb/>so black! </l>
@@ -5378,12 +5469,12 @@
         <l><!-- REVIEW words: both witnesses read 'Cursed'; the P4 reads 'Curst' -->
           <milestone unit="line" ed="Globe" n="182"/>Curst be thy stones for thus deceiving me! </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="183"/>The wall, methinks, being sensible, should <milestone unit="line" ed="Globe" n="184"/>curse again. </p>
       </sp>
-      <sp who="pyr.">
+      <sp who="#pyr.">
         <speaker>Pyr.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read '“Deceiving'; the P4 reads "'De- ceiving" --><!-- REVIEW page: p.178 miun/kraken leaf 00000192 --><milestone unit="line" ed="Globe" n="185"/>No. in truth, sir, he should not. 'De- <milestone unit="line" ed="Globe" n="186"/>ceiving me' is Thisby's cue: she is to enter now, <milestone unit="line" ed="Globe" n="187"/>and I am to spy her
@@ -5393,7 +5484,7 @@
                                         THISBE.</stage>
         </p>
       </sp>
-      <sp who="this.">
+      <sp who="#this.">
         <speaker>This.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="190"/>O wall, full often hast thou heard my <lb/>moans, </l>
@@ -5404,7 +5495,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="193"/>Thy stones with lime and hair knit up in thee. </l>
       </sp>
-      <sp who="pyr.">
+      <sp who="#pyr.">
         <speaker>Pyr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="194"/>I see a voice: now will I to the chink, </l>
@@ -5413,56 +5504,56 @@
         <l>
           <lb/>Thisby! </l>
       </sp>
-      <sp who="this.">
+      <sp who="#this.">
         <speaker>This.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="196"/>My love thou art, my love I think. </l>
       </sp>
-      <sp who="pyr.">
+      <sp who="#pyr.">
         <speaker>Pyr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="197"/>Think what thou wilt, I am thy lover's <lb/>grace; </l>
         <l>
           <milestone unit="line" ed="Globe" n="198"/>And, like Limander, am I trusty still. </l>
       </sp>
-      <sp who="this.">
+      <sp who="#this.">
         <speaker>This.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="199"/>And I like Helen, till the Fates me kill. </l>
       </sp>
-      <sp who="pyr.">
+      <sp who="#pyr.">
         <speaker>Pyr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="200"/>Not Shafalus to Procrus was so true. </l>
       </sp>
-      <sp who="this.">
+      <sp who="#this.">
         <speaker>This.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="201"/>As Shafalus to Procrus, I to you. </l>
       </sp>
-      <sp who="pyr.">
+      <sp who="#pyr.">
         <speaker>Pyr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="202"/>O, kiss me through the hole of this vile <lb/>wall! </l>
       </sp>
-      <sp who="this.">
+      <sp who="#this.">
         <speaker>This.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="203"/>I kiss the wall's hole, not your lips at all. </l>
       </sp>
-      <sp who="pyr.">
+      <sp who="#pyr.">
         <speaker>Pyr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="204"/>Wilt thou at Ninny's tomb meet me <lb/>straightway? </l>
       </sp>
-      <sp who="this.">
+      <sp who="#this.">
         <speaker>This.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="205"/>'Tide life, 'tide death, I come without <lb/>delay. <stage>[Exeunt
                                         Pyramus and Thisbe. </stage>
         </l>
       </sp>
-      <sp who="wall.">
+      <sp who="#wall.">
         <speaker>Wall.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="206"/>Thus have I, Wall, my part discharged <lb/>so; </l>
@@ -5470,40 +5561,40 @@
           <milestone unit="line" ed="Globe" n="207"/>And, being done, thus Wall away doth go. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="208"/>Now is the mural down between the two <milestone unit="line" ed="Globe" n="209"/>neighbours. </p>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="210"/>No remedy, my lord, when walls are  so <milestone unit="line" ed="Globe" n="211"/>wilful
                                         to hear without warning. </p>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="212"/>This is the silliest stuff that ever I heard. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="213"/>The best in this kind are but shadows; <milestone unit="line" ed="Globe" n="214"/>and the worst are no worse, if imagination amend <milestone unit="line" ed="Globe" n="215"/>them. </p>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="216"/>It must be your imagination then, and <milestone unit="line" ed="Globe" n="217"/>not theirs. </p>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'excellent'; the P4 reads 'excel- lent' --><milestone unit="line" ed="Globe" n="218"/>If we imagine no worse of them than <milestone unit="line" ed="Globe" n="219"/>they of themselves, they may pass for excel- lent <milestone unit="line" ed="Globe" n="220"/>men. Here come two noble beasts in,
                                    a man and a <milestone unit="line" ed="Globe" n="221"/>lion. 
                                    </p>
       </sp>
-      <sp who="lion.">
+      <sp who="#lion.">
         <speaker>Lion.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="222"/>You, ladies, you, whose gentle hearts do <lb/>fear </l>
@@ -5522,123 +5613,123 @@
         <l>
           <milestone unit="line" ed="Globe" n="229"/>Into this place, 'twere pity on my life. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="230"/>A very gentle beast, and of a good <milestone unit="line" ed="Globe" n="231"/>conscience.
                                         </p>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="232"/>The very best at a beast, my lord, that <milestone unit="line" ed="Globe" n="233"/>e'er I saw. </p>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'valour.'; the P4 reads 'valor.' --><milestone unit="line" ed="Globe" n="234"/>This lion is a very fox for his valor. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="235"/>True; and a goose for his discretion. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'valour cannot'; the P4 reads 'valor can- not' --><milestone unit="line" ed="Globe" n="236"/>Not so, my lord; for his valor can- not <milestone unit="line" ed="Globe" n="237"/>carry his discretion; and the fox carries the <milestone unit="line" ed="Globe" n="238"/>goose. </p>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'valour;'; the P4 reads 'valor;' --><milestone unit="line" ed="Globe" n="239"/>His discretion, I am sure, cannot carry <milestone unit="line" ed="Globe" n="240"/>his valor; for the goose carries not the fox. It is <milestone unit="line" ed="Globe" n="241"/>well: leave it to his
                                    discretion, and let us listen to <milestone unit="line" ed="Globe" n="242"/>the moon. </p>
       </sp>
-      <sp who="moon.">
+      <sp who="#moon.">
         <speaker>Moon.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="243"/>This lanthorn doth the horned moon <lb/>present;--
                                         </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
           <milestone unit="line" ed="Globe" n="244"/>He should have worn the horns on his <milestone unit="line" ed="Globe" n="245"/>head. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="246"/>He is no crescent, and his horns are <milestone unit="line" ed="Globe" n="247"/>invisible within the circumference. </p>
       </sp>
-      <sp who="moon.">
+      <sp who="#moon.">
         <speaker>Moon.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="248"/>This lanthorn doth the horned moon <lb/>present; </l>
         <l>
           <milestone unit="line" ed="Globe" n="249"/>Myself the man i' the moon do seem to be. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="250"/>This is the greatest error of all the rest: <milestone unit="line" ed="Globe" n="251"/>the man should be put into the lanthorn. How is <milestone unit="line" ed="Globe" n="252"/>it else the man i' the
                                    moon? </p>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="253"/>He dares not come there for the candle; <milestone unit="line" ed="Globe" n="254"/>for, you see, it is already in snuff. </p>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="255"/>I am aweary of this moon: would he <milestone unit="line" ed="Globe" n="256"/>would change! </p>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'discretion,'; the P4 reads 'dis- cretion,' --><milestone unit="line" ed="Globe" n="257"/>It appears, by his small light of dis- <milestone unit="line" ed="Globe" n="258"/>cretion, that
                                         he is in the wane; but yet, in courtesy, <milestone unit="line" ed="Globe" n="259"/>in all reason, we must stay the time. </p>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="260"/>Proceed, Moon. </l>
       </sp>
-      <sp who="moon.">
+      <sp who="#moon.">
         <speaker>Moon.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="261"/>All that I have to say, is, to tell you <milestone unit="line" ed="Globe" n="262"/>that the lanthorn is the moon; I, the man in the <milestone unit="line" ed="Globe" n="263"/>moon; this thorn-bush, my
                                    thorn-bush; and this <milestone unit="line" ed="Globe" n="264"/>dog, my dog. </p>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'lanthorn;'; the P4 reads 'lan- thorn;' --><milestone unit="line" ed="Globe" n="265"/>Why, all these should be in the lan- thorn; <milestone unit="line" ed="Globe" n="266"/>for all these are in the moon. But, silence! here <milestone unit="line" ed="Globe" n="267"/>comes Thisbe. <stage type="entrance"> Re-enter THISBE.</stage>
         </p>
       </sp>
-      <sp who="this.">
+      <sp who="#this.">
         <speaker>This.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="268"/>This is old Ninny's tomb. Where is <lb/>my love? </l>
       </sp>
-      <sp who="lion.">
+      <sp who="#lion.">
         <speaker>Lion.</speaker>
         <milestone unit="line" ed="Globe" n="269"/>
         <stage>[Roaring]</stage>
         <l>Oh--- <stage>[Thisbe runs off.</stage>
         </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="270"/>Well roared, Lion. </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="271"/>Well run, Thisbe. </l>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="272"/>Well shone, Moon. Truly, the moon <milestone unit="line" ed="Globe" n="273"/>shines with a good grace. <lb/>
@@ -5646,23 +5737,23 @@
                                         mantle, and exit.</stage>
         </p>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="274"/>Well moused, Lion. </l>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="275"/>And so the lion vanished. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="276"/>And then came Pyramus. <stage type="entrance"> Re-enter PYRAMUS.</stage>
         </l>
       </sp>
-      <sp who="pyr.">
+      <sp who="#pyr.">
         <speaker>Pyr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="277"/>Sweet Moon, I thank thee for thy sunny <lb/>beams; </l>
@@ -5697,17 +5788,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="292"/>Quail, crush, conclude, and quell! </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="293"/>This passion, and the death of a dear <milestone unit="line" ed="Globe" n="294"/>friend, would go near to make a man look sad. </p>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="295"/>Beshrew my heart, but I pity the man. </l>
       </sp>
-      <sp who="pyr.">
+      <sp who="#pyr.">
         <speaker>Pyr.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="296"/>O wherefore, Nature, didst thou lions <lb/>frame? </l>
@@ -5745,28 +5836,28 @@
           <milestone unit="line" ed="Globe" n="311"/>Now die, die, die, die, die.<stage>[Dies. </stage>
         </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="312"/>No die, but an ace, for him; for he is <milestone unit="line" ed="Globe" n="313"/>but one. </p>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="314"/>Less than an ace, man; for he is dead; <milestone unit="line" ed="Globe" n="315"/>he is nothing. </p>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="316"/>With the help of a surgeon he might yet <milestone unit="line" ed="Globe" n="317"/>recover, and prove an ass. </p>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'before'; the P4 reads 'be- fore' --><milestone unit="line" ed="Globe" n="318"/>How chance Moonshine is gone be- fore <milestone unit="line" ed="Globe" n="319"/>Thisbe comes back and finds her lover? 
                                    </p>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="320"/>She will find him by starlight. Here <milestone unit="line" ed="Globe" n="321"/>she comes; and her passion ends the play.
@@ -5774,27 +5865,27 @@
           <stage type="entrance"> Re-enter THISBE.</stage>
         </p>
       </sp>
-      <sp who="hip.">
+      <sp who="#hip.">
         <speaker>Hip.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="322"/>Methinks she should not use a long one <milestone unit="line" ed="Globe" n="323"/>for such a Pyramus: I hope she will be brief. </p>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="324"/>A mote will turn the balance, which <milestone unit="line" ed="Globe" n="325"/>Pyramus, which Thisbe, is the better; he for a <milestone unit="line" ed="Globe" n="326"/>man, God warrant us; she for a woman, God <milestone unit="line" ed="Globe" n="327"/>bless us. </p>
       </sp>
-      <sp who="lys.">
+      <sp who="#lys.">
         <speaker>Lys.</speaker>
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
           <milestone unit="line" ed="Globe" n="328"/>She hath spied him already with those <milestone unit="line" ed="Globe" n="329"/>sweet eyes. </l>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="330"/>And thus she means, videlicet:-- </l>
       </sp>
-      <sp who="this.">
+      <sp who="#this.">
         <speaker>This.</speaker>
         <l><!-- REVIEW inset: shared-lines.tsv: the page sets this line and those after it, to 'adieu adieu adieu', in from the margin, and numbers every row as a line (basis image, checked 2026-10-15 cliff) -->
           <milestone unit="line" ed="Globe" n="331"/>Asleep, my love? </l>
@@ -5848,17 +5939,17 @@
           <milestone unit="line" ed="Globe" n="354"/>Adieu, adieu, adieu. <!-- REVIEW words: both witnesses read 'IDies.'; the P4 reads '[Dies.' --><stage>[Dies. </stage>
         </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="355"/>Moonshine and Lion are left to bury <milestone unit="line" ed="Globe" n="356"/>the dead. </p>
       </sp>
-      <sp who="dem.">
+      <sp who="#dem.">
         <speaker>Dem.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="357"/>Ay, and Wall too. </l>
       </sp>
-      <sp who="bot.">
+      <sp who="#bot.">
         <speaker>Bot.</speaker>
         <milestone unit="line" ed="Globe" n="358"/>
         <stage>[Starting up]</stage>
@@ -5866,7 +5957,7 @@
                                    <milestone unit="line" ed="Globe" n="360"/>you to see the epilogue, or to hear a </p>
         <l>Bergomask <milestone unit="line" ed="Globe" n="361"/>dance between two of our company? </l>
       </sp>
-      <sp who="the.">
+      <sp who="#the.">
         <speaker>The.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="362"/>No epilogue, I pray you; for your play <milestone unit="line" ed="Globe" n="363"/>needs no excuse. Never excuse; for when the <milestone unit="line" ed="Globe" n="364"/>players are all dead,
@@ -5895,7 +5986,7 @@
           <stage type="entrance"> Enter PUCK.</stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="378"/>Now the hungry lion roars </l>
@@ -5941,7 +6032,7 @@
                                         train.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="398"/>Through the house give glimmering light, </l>
@@ -5956,7 +6047,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="403"/>Sing, and dance it trippingly. </l>
       </sp>
-      <sp who="tita.">
+      <sp who="#tita.">
         <speaker>Tita.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="404"/>First, rehearse your song by rote, </l>
@@ -5969,7 +6060,7 @@
           <stage>[Song and dance.</stage>
         </l>
       </sp>
-      <sp who="obe.">
+      <sp who="#obe.">
         <speaker>Obe.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="408"/>Now, until the break of day, </l>
@@ -6019,7 +6110,7 @@
                                         train.</stage>
         </l>
       </sp>
-      <sp who="puck.">
+      <sp who="#puck.">
         <speaker>Puck.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="430"/>If we shadows have offended, </l>

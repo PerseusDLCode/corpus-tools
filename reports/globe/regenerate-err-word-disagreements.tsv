@@ -91,15 +91,19 @@ page	witness	col	row	op	p4	witness_reading	other_witness_reading	witnesses_agree
 100	miun/kraken	2	35	replace	I'll	I’Il	I’ll	
 100	miun/kraken	2	35	replace	[Exit.	IExit.	IExit.	same
 100	miun/kraken	2	67	replace	she'll	she ’Il	she ’ll	
-101	trent/kraken	1	10	replace	that's	that ’s	that ’s	same
-101	trent/kraken	1	24	replace	Dro.		Dro.	
-101	trent/kraken	1	54	replace	harbor	harbour	harbour	same
-101	trent/kraken	2	2	replace	with	wvith	zvith	
-101	trent/kraken	2	16	replace	I'll	I’Il	I’Il	same
-101	trent/kraken	2	21	replace	[Exit.	IExit.	IExit.	same
-101	trent/kraken	2	28	replace	I'll	I’Il	I’Il	same
-101	trent/kraken	2	50	replace	Off.		Off.	
-101	trent/kraken	2	50	replace	labor	labour	labour	same
+101	miun/kraken	1	10	replace	that's	that ’s	that ’s	same
+101	miun/kraken	1	49	delete		I50		
+101	miun/kraken	1	54	replace	harbor	harbour	harbour	same
+101	miun/kraken	1	60	replace	[Exit.	IExit.	[Exit.	
+101	miun/kraken	2	2	replace	with	zvith	wvith	
+101	miun/kraken	2	16	replace	I'll	I’Il	I’Il	same
+101	miun/kraken	2	21	replace	[Exit.	IExit.	IExit.	same
+101	miun/kraken	2	28	replace	I'll	I’Il	I’Il	same
+101	miun/kraken	2	29	replace	[Exit.	IExit.	(Exit.	
+101	miun/kraken	2	31	replace	public	bublic	public	
+101	miun/kraken	2	40	replace	I'll	I’Il	I’ll	
+101	miun/kraken	2	50	replace	labor	labour	labour	same
+101	miun/kraken	2	60	replace	[Exit.	IExit.	[Exit.	
 102	miun/kraken	1	4	replace	humor,	humour,	humour,	same
 102	miun/kraken	1	27	replace	your	vour	your	
 102	miun/kraken	1	46	replace	humor	humour	humour	same

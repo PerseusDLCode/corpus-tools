@@ -106,6 +106,7 @@ page	witness	scene	from	to	printed_gap	counted_gap	error	numeral_reading
 293	miun/kraken	3.2	10 (p.293)	31	21	21	0	
 293	miun/kraken	3.2	31 (p.293)	41	10	10	0	miun/kraken read 11; trent/kraken read 41
 293	miun/kraken	3.2	41 (p.293)	61	20	20	0	
+293	miun/kraken	3.2	61 (p.293)	90	29	29	0	
 294	miun/kraken	3.3	scene start	10	10	10	0	
 294	miun/kraken	3.3	10 (p.294)	20	10	10	0	
 294	miun/kraken	3.3	20 (p.294)	30	10	10	0	

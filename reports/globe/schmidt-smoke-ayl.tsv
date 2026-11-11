@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.ayl.globe.xml sha256 39bd44f7d8228205; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.ayl.globe.xml sha256 bdb20a5541e0674a; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abandon	Abandon,	5.1.52	As V, 1, 52	quotation on cited line, with differences			100%		which is in the vulgar leave which in the boorish is company	abandon the society of this female,	therefore you clown abandon which is in the
 Abandon	Abandon,	5.1.52	As V, 1, 52	headword on cited line							therefore you clown abandon which is in the

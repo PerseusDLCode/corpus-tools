@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.tmp.globe.xml sha256 2231dee9085e3257; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.tmp.globe.xml sha256 348e1dc3bd957010; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abate	Abate,	4.1.56	Tp. IV, 56	headword on cited line							abates the ardour of my liver well
 Abjure	Abjure,	5.1.51	Tp. V, 51	quotation on cited line						this rough magic I here abjure	i here abjure and when i have required

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.r3.globe.xml sha256 b328fd0874375011; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.r3.globe.xml sha256 f6b4d43f80e4b15b; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abase	Abase,	1.2.247	R3 I, 2, 247	quotation on cited line, with differences			80%	abase		abase her eyes on me,	and will she yet debase her eyes on me
 Abate	Abate,	5.5.35	R3 V, 5, 35	quotation on cited line						abate the edge of traitors,	abate the edge of traitors gracious lord

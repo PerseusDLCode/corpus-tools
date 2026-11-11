@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.mnd.globe.xml sha256 f0112443c2d96514; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.mnd.globe.xml sha256 f136009752204731; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abate	Abate,	3.2.432	Mids. III, 2, 432	headword on cited line							abate thy hours shine comforts from the east
 Abjure	Abjure,	1.1.65	Mids. I, 1, 65	headword on cited line							either to die the death or to abjure

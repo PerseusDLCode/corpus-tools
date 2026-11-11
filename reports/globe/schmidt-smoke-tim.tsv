@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.tim.globe.xml sha256 732f34cdad72eb5f; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.tim.globe.xml sha256 c22729e4d7c887e6; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abandon	Abandon,	5.1.114	Tim. V, 1, 114	quotation on cited line						if thou wouldst not reside but where one villain is, then him abandon	but where one villain is then him abandon
 Above1	Above,	4.3.191	Tim. IV, 3, 191	headword on cited line							hath to the marbled mansion all above

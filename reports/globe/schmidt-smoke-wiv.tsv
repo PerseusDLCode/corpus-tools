@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.wiv.globe.xml sha256 0aee8e24d165fb83; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.wiv.globe.xml sha256 2278af5a3c5784b4; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 A7	A,	1.4.44	Wiv. I, 4, 44	quotation on cited line						down, down, adown-a,	and down down adowna c
 A7	A,	1.4.47	Wiv. I, 4, 47	headword on cited line							un boitier vert a box a greena box do intend

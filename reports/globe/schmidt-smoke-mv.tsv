@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.mv.globe.xml sha256 1ad8d16f58c217c6; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.mv.globe.xml sha256 7d0bcca50bb3766a; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abate	Abate,	5.1.198	Merch. V, 198	headword on cited line							you would abate the strength of your displeasure
 Abate	Abate,	5.1.137	Shr. Ind. 1, 137.	not a citation of this play							

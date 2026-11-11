@@ -1,6 +1,6 @@
 # Schmidt smoke test: Much Ado About Nothing
 
-Sources: shakespeare.ado.globe.xml sha256 301ebc135e238631; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.ado.globe.xml sha256 cf83c50a8b7cccff; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Much Ado About Nothing in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

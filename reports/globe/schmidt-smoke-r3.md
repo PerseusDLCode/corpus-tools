@@ -1,6 +1,6 @@
 # Schmidt smoke test: Richard III
 
-Sources: shakespeare.r3.globe.xml sha256 b328fd0874375011; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.r3.globe.xml sha256 f6b4d43f80e4b15b; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Richard III in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

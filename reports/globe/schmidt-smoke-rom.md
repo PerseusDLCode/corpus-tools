@@ -1,6 +1,6 @@
 # Schmidt smoke test: Romeo and Juliet
 
-Sources: shakespeare.rom.globe.xml sha256 2f5a6d64c41e1f99; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.rom.globe.xml sha256 b1a38f650adf5da9; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Romeo and Juliet in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

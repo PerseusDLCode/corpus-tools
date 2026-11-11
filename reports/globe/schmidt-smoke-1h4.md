@@ -1,6 +1,6 @@
 # Schmidt smoke test: King Henry IV, Part I
 
-Sources: shakespeare.1h4.globe.xml sha256 7b5a7fc8a4aff95b; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.1h4.globe.xml sha256 61ae946cfe8c479a; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of King Henry IV, Part I in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

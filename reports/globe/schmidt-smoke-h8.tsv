@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.h8.globe.xml sha256 32e15e6c29693bd0; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.h8.globe.xml sha256 ecf3006db4a40bd4; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abergany	Abergany,	1.1.211	H8 I, 1, 211	headword on cited line							o my lord abergavenny fare you well
 Abergany	Abergany,	1.2.137	I, 2, 137	headword on cited line							lord abergavenny to whom by oath he menaced

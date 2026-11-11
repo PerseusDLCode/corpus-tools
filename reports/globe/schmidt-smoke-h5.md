@@ -1,6 +1,6 @@
 # Schmidt smoke test: King Henry V
 
-Sources: shakespeare.h5.globe.xml sha256 f59e61667078d0d5; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.h5.globe.xml sha256 5fda4380ea8414ee; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of King Henry V in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

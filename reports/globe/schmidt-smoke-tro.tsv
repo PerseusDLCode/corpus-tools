@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.tro.globe.xml sha256 f7fbf58c64b27d54; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.tro.globe.xml sha256 0d198bf4d2be7548; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abandon	Abandon,	3.3.5	Troil. III, 3, 5	quotation on cited line						I have abandoned Troy,	i have abandoned troy left my possession
 Abashed	Abashed,	1.3.18	Troil. I, 3, 18	quotation on cited line						do you with cheeks abashed behold our works,	do you with cheeks abashed behold our works

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.mm.globe.xml sha256 232389531dce409f; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.mm.globe.xml sha256 279da4d1b4480d1a; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abhorson	Abhorson,	4.2.20	Meas. IV, 2, 20	headword on cited line							what ho abhorson wheres abhorson
 Abhorson	Abhorson,	4.3.41	IV, 3, 41	headword on cited line							how now abhorson whats the news

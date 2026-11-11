@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.2h6.globe.xml sha256 0b2b7f55cb7daa5c; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.2h6.globe.xml sha256 252e617c4610796e; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abase	Abase,	1.2.15	H6B I, 2, 15	quotation on cited line						abase our sight so low,	and never more abase our sight so low
 Abominable	Abominable,	4.7.44	H6B IV, 7, 44	headword on cited line							abominable words as no christian ear can endure

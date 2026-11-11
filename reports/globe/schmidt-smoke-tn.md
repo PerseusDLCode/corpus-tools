@@ -1,6 +1,6 @@
 # Schmidt smoke test: Twelfth Night
 
-Sources: shakespeare.tn.globe.xml sha256 7711a6b554585eec; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.tn.globe.xml sha256 f984744a541c1a0b; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of Twelfth Night in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

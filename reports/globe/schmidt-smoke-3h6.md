@@ -1,6 +1,6 @@
 # Schmidt smoke test: King Henry VI, Part III
 
-Sources: shakespeare.3h6.globe.xml sha256 e45a0496726877dc; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.3h6.globe.xml sha256 79c51f94e74b9eef; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of King Henry VI, Part III in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

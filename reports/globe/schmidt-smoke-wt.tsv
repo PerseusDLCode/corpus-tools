@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.wt.globe.xml sha256 90d7ffb37427ae47; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.wt.globe.xml sha256 b56a7e9f9f5d44be; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 A7	A,	4.3.133	Wint. IV, 3, 133	quotation on cited line						and merrily hent the stile-a,	and merrily hent the stilea
 A7	A,	4.3.133	Wint. IV, 3, 133	quotation off by 1	4.3.134	1	100%			your sad tires in a mile-a,	and merrily hent the stilea

@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.tn.globe.xml sha256 7711a6b554585eec; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.tn.globe.xml sha256 f984744a541c1a0b; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abandon	Abandon,	1.4.19	Tw. I, 4, 19	quotation on cited line						so abandoned to her sorrow,	if she be so abandoned to her sorrow
 Abatement	Abatement,	1.1.13	Tw. I, 1, 13	quotation on cited line						falls into abatement and low price,	but falls into abatement and low price

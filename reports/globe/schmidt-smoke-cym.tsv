@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.cym.globe.xml sha256 71abf3a31a147813; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.cym.globe.xml sha256 0efbe2883c15b360; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abate	Abate,	1.4.73	Cymb. I, 4, 73	quotation on cited line						I would abate her nothing,	i would abate her nothing though i profess
 Abatement	Abatement,	5.4.21	Cymb. V, 4, 21	headword on cited line							on their abatement thats not my desire

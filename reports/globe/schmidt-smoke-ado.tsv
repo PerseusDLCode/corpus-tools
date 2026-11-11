@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.ado.globe.xml sha256 301ebc135e238631; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.ado.globe.xml sha256 cf83c50a8b7cccff; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Ability	Ability,	4.1.201	Ado IV, 1, 201	quotation on cited line						ability in means,	ability in means and choice of friends
 Above1	Above,	5.2.27	Ado V, 2, 27	headword on cited line							that sits above

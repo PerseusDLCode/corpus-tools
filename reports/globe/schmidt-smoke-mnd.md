@@ -1,6 +1,6 @@
 # Schmidt smoke test: A Midsummer Night's Dream
 
-Sources: shakespeare.mnd.globe.xml sha256 f0112443c2d96514; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.mnd.globe.xml sha256 f136009752204731; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of A Midsummer Night's Dream in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

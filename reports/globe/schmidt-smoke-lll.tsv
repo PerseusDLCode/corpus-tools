@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.lll.globe.xml sha256 238f4300583b2954; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.lll.globe.xml sha256 683e3a5c38d52512; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 A5	A,	5.2.17	LLL V, 2, 17	quotation on cited line, with differences			83%	a	ha	she might a been a grandam,	she might ha been a grandam ere she died
 Abate	Abate,	5.2.547	LLL V, 2, 547	quotation on cited line						abate throw at novum,	abate throw at novum and the whole world again

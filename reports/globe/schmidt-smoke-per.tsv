@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.per.globe.xml sha256 41f5964bccd547b8; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.per.globe.xml sha256 0afd409274477132; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abominable	Abominable,	4.6.143	Per. IV, 6, 143	headword on cited line							o abominable
 Abundance	Abundance,	1.4.36	Per. I, 4, 36	headword on cited line							although they gave their creatures in abundance

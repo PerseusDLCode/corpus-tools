@@ -1,4 +1,4 @@
-# schmidt_smoke.py; sources: shakespeare.cor.globe.xml sha256 67fdc79c182f7e12; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
+# schmidt_smoke.py; sources: shakespeare.cor.globe.xml sha256 4a8b68795694d4e5; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca
 key	headword	cited	display	verdict	found_at	offset	match	missing	extra	quote	our_line
 Abate	Abate,	3.3.132	Cor. III, 3, 132	quotation on cited line						most abated captives,	abated captives to some nation
 A-bed	A-bed,	3.1.261	Cor. III, 1, 261	headword on cited line							heres goodly work i would they were abed

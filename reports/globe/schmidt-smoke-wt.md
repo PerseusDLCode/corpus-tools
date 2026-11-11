@@ -1,6 +1,6 @@
 # Schmidt smoke test: The Winter's Tale
 
-Sources: shakespeare.wt.globe.xml sha256 90d7ffb37427ae47; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
+Sources: shakespeare.wt.globe.xml sha256 b56a7e9f9f5d44be; citations.tsv sha256 814c223b582b6752; citation_quotes.tsv sha256 ba27389f931477ca.
 
 Every citation of The Winter's Tale in Schmidt's *Shakespeare-Lexicon*, checked against the regenerated edition: does the cited line contain the quotation, or (for a citation without one) the headword? Report only; nothing is fixed.
 

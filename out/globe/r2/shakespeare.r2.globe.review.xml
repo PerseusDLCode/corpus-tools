@@ -46,8 +46,8 @@
     <encodingDesc>
       <refsDecl n="CTS" xml:id="CTS">
         <citeStructure match="/TEI/text/body" use="@xml:base">
-          <citeStructure unit="act" delim=":" match="div[@type='act'][@n != 'cast']" use="@n">
-            <citeStructure unit="scene" delim="." match="div[@type='scene']" use="@n" n="chunk">
+          <citeStructure unit="act" delim=":" match="div" use="@n">
+            <citeStructure unit="scene" delim="." match="div" use="@n" n="chunk">
               <citeStructure unit="line" delim="." match=".//milestone[@unit='line'][@ed='Globe']" use="@n"/>
             </citeStructure>
             <citeStructure unit="line" delim="." match="sp//milestone[@unit='line'][@ed='Globe']" use="@n"/>
@@ -102,10 +102,113 @@
       <langUsage>
         <language ident="eng">English</language>
       </langUsage>
+      <particDesc>
+        <listPerson>
+          <personGrp xml:id="r2-0">
+            <name>All</name>
+          </personGrp>
+          <person xml:id="r2-1">
+            <persName>John of Gaunt</persName>
+          </person>
+          <person xml:id="r2-10">
+            <persName>First Herald</persName>
+          </person>
+          <person xml:id="r2-11">
+            <persName>Lord Marshal</persName>
+          </person>
+          <person xml:id="r2-12">
+            <persName>Bushy</persName>
+          </person>
+          <person xml:id="r2-13">
+            <persName>Green</persName>
+          </person>
+          <person xml:id="r2-14">
+            <persName>Earl of Northumberland</persName>
+          </person>
+          <person xml:id="r2-15">
+            <persName>Queen to King Richard</persName>
+          </person>
+          <person xml:id="r2-16">
+            <persName>Lord Ross</persName>
+          </person>
+          <person xml:id="r2-17">
+            <persName>Lord Willoughby</persName>
+          </person>
+          <person xml:id="r2-18">
+            <persName>Bagot</persName>
+          </person>
+          <person xml:id="r2-20">
+            <persName>Lord Berkeley</persName>
+          </person>
+          <person xml:id="r2-21">
+            <persName>Henry Percy</persName>
+          </person>
+          <person xml:id="r2-22">
+            <persName>Captain of a band of Welshmen</persName>
+          </person>
+          <person xml:id="r2-23">
+            <persName>Earl of Salisbury</persName>
+          </person>
+          <person xml:id="r2-24">
+            <persName>Bishop of Carlisle</persName>
+          </person>
+          <person xml:id="r2-25">
+            <persName>Sir Stephen Scroop</persName>
+          </person>
+          <personGrp xml:id="r2-26">
+            <name>two Gardeners</name>
+          </personGrp>
+          <person xml:id="r2-27">
+            <persName>Lady attending on the Queen</persName>
+          </person>
+          <person xml:id="r2-28">
+            <persName>Servant</persName>
+          </person>
+          <person xml:id="r2-29">
+            <persName>Abbot of Westminster</persName>
+          </person>
+          <person xml:id="r2-3">
+            <persName>Thomas Mowbray</persName>
+          </person>
+          <person xml:id="r2-30">
+            <persName>Lord Fitzwater</persName>
+          </person>
+          <person xml:id="r2-32">
+            <persName>Duke of Surrey</persName>
+          </person>
+          <person xml:id="r2-34">
+            <persName>Duchess of York</persName>
+          </person>
+          <person xml:id="r2-35">
+            <persName>Sir Pierce of Exton</persName>
+          </person>
+          <person xml:id="r2-37">
+            <persName>Groom</persName>
+          </person>
+          <person xml:id="r2-38">
+            <persName>Keeper</persName>
+          </person>
+          <person xml:id="r2-39">
+            <persName>Edmund of Langley</persName>
+          </person>
+          <person xml:id="r2-5">
+            <persName>King Richard the Second</persName>
+          </person>
+          <person xml:id="r2-6">
+            <persName>Henry</persName>
+          </person>
+          <person xml:id="r2-8">
+            <persName>Duke of Aumerle</persName>
+          </person>
+          <person xml:id="r2-9">
+            <persName>Duchess of Gloucester</persName>
+          </person>
+        </listPerson>
+      </particDesc>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-10-13">
-        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit 5cfccf2; sources: r2.xml sha256 fdaf120cc0ea253b; shared-lines.tsv sha256 faf45a0fa3999f0c; edition-template.xml sha256 47381fe6c26e8920. Generated file: DO NOT EDIT.</ab>
+      <change when="2026-11-11">
+        <ab>Globe lineation regenerated from the witness pages by regenerate.py 0.1.0 at corpus-tools commit fc923b2; sources: r2.xml sha256 fdaf120cc0ea253b; shared-lines.tsv sha256 ff50b05a907e4c68; edition-template.xml sha256 47381fe6c26e8920; speakers.tsv sha256 6f7a972c304ab2ed; speech-fixes.tsv sha256 58bacff70398b9c4. Generated file: DO NOT EDIT.</ab>
       </change>
       <change>
         <ab>converted to TEI P5</ab>
@@ -113,244 +216,145 @@
     </revisionDesc>
   </teiHeader>
   <text xml:lang="eng">
-    <body xml:base="urn:cts:engLit:shakespeare.r2.globe">
-  <div type="act" n="cast">
+    <front>
+  <castList>
     <head>DRAMATIS PERSONÆ</head>
-    <castList>
+    <castItem type="role">
+      <role corresp="#r2-5">KING RICHARD the Second</role>
+    </castItem>
+    <castGroup>
+      <head rend="braced"> uncles to the King.</head>
       <castItem type="role">
-        <role xml:id="r2-0"/>
+        <role corresp="#r2-1">JOHN OF GAUNT</role>
+        <roleDesc> Duke of Lancaster</roleDesc>
       </castItem>
       <castItem type="role">
-        <role xml:id="r2-1"/>
+        <role corresp="#r2-39">EDMUND OF LANGLEY</role>
+        <roleDesc>Duke of York</roleDesc>
       </castItem>
-      <castItem type="role">
-        <role xml:id="r2-10"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-11"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-12"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-13"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-14"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-15"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-16"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-17"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-18"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-20"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-21"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-22"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-23"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-24"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-25"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-26"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-27"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-28"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-29"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-3"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-30"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-32"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-34"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-35"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-37"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-38"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-39"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-5"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-6"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-8"/>
-      </castItem>
-      <castItem type="role">
-        <role xml:id="r2-9"/>
-      </castItem>
-      <castItem type="role">
-        <role>KING RICHARD the Second</role>
-      </castItem>
-      <castGroup>
-        <head rend="braced"> uncles to the King.</head>
-        <castItem type="role">
-          <role>JOHN OF GAUNT</role>
-          <roleDesc> Duke of Lancaster</roleDesc>
-        </castItem>
-        <castItem type="role">
-          <role>EDMUND OF LANGLEY</role>
-          <roleDesc>Duke of York</roleDesc>
-        </castItem>
-      </castGroup>
-      <castItem type="role">
-        <role>HENRY</role>
-        <roleDesc>surnamed BOLINGBROKE, Duke of Hereford, son to John of Gaunt; afterwards KING
+    </castGroup>
+    <castItem type="role">
+      <role corresp="#r2-6">HENRY</role>
+      <roleDesc>surnamed BOLINGBROKE, Duke of Hereford, son to John of Gaunt; afterwards KING
               HENRY IV</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-8">DUKE OF AUMERLE</role>
+      <roleDesc>son to the Duke of York</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-3">THOMAS MOWBRAY</role>
+      <roleDesc>Duke of Norfolk</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-32">DUKE OF SURREY</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-23">EARL OF SALISBURY</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-20">LORD BERKELEY</role>
+    </castItem>
+    <castGroup>
+      <head rend="braced">servants to King Richard.</head>
+      <castItem type="role">
+        <role corresp="#r2-12">BUSHY</role>
       </castItem>
       <castItem type="role">
-        <role>DUKE OF AUMERLE</role>
-        <roleDesc>son to the Duke of York</roleDesc>
+        <role corresp="#r2-18">BAGOT</role>
       </castItem>
       <castItem type="role">
-        <role>THOMAS MOWBRAY</role>
-        <roleDesc>Duke of Norfolk</roleDesc>
+        <role corresp="#r2-13">GREEN</role>
+      </castItem>
+    </castGroup>
+    <castItem type="role">
+      <role corresp="#r2-14">EARL OF NORTHUMBERLAND</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-21">HENRY PERCY</role>
+      <roleDesc>surnamed Hotspur, his son</roleDesc>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-16">LORD ROSS</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-17">LORD WILLOUGHBY</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-30">LORD FITZWATER</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-24">Bishop of Carlisle</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-29">Abbot of Westminster</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-11">Lord Marshal</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-25">SIR STEPHEN SCROOP</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-35">SIR PIERCE of Exton</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-22">Captain of a band of Welshmen</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-15">QUEEN to King Richard</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-34">DUCHESS OF YORK</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-9">DUCHESS OF GLOUCESTER</role>
+    </castItem>
+    <castItem type="role">
+      <role corresp="#r2-27">Lady attending on the Queen</role>
+    </castItem>
+    <castGroup>
+      <head rend="braced">minor</head>
+      <castItem type="role">
+        <role corresp="#r2-0">All</role>
       </castItem>
       <castItem type="role">
-        <role>DUKE OF SURREY</role>
+        <roleDesc>Lords</roleDesc>
       </castItem>
       <castItem type="role">
-        <role>EARL OF SALISBURY</role>
+        <role corresp="#r2-10">First Herald</role>
       </castItem>
       <castItem type="role">
-        <role>LORD BERKELEY</role>
-      </castItem>
-      <castGroup>
-        <head rend="braced">servants to King Richard.</head>
-        <castItem type="role">
-          <role>BUSHY</role>
-        </castItem>
-        <castItem type="role">
-          <role>BAGOT</role>
-        </castItem>
-        <castItem type="role">
-          <role>GREEN</role>
-        </castItem>
-      </castGroup>
-      <castItem type="role">
-        <role>EARL OF NORTHUMBERLAND</role>
+        <role>Second Herald</role>
       </castItem>
       <castItem type="role">
-        <role>HENRY PERCY</role>
-        <roleDesc>surnamed Hotspur, his son</roleDesc>
+        <role corresp="#r2-28">Servant</role>
       </castItem>
       <castItem type="role">
-        <role>LORD ROSS</role>
+        <role> Officers</role>
       </castItem>
       <castItem type="role">
-        <role>LORD WILLOUGHBY</role>
+        <role> Soldiers</role>
       </castItem>
       <castItem type="role">
-        <role>LORD FITZWATER</role>
+        <role corresp="#r2-26"> two Gardeners</role>
       </castItem>
       <castItem type="role">
-        <role>Bishop of Carlisle</role>
+        <role corresp="#r2-38"> Keeper</role>
       </castItem>
       <castItem type="role">
-        <role>Abbot of Westminster</role>
+        <role> Messenger</role>
       </castItem>
       <castItem type="role">
-        <role>Lord Marshal</role>
+        <role corresp="#r2-37"> Groom</role>
       </castItem>
       <castItem type="role">
-        <role>SIR STEPHEN SCROOP</role>
+        <role> and other Attendants.</role>
       </castItem>
-      <castItem type="role">
-        <role>SIR PIERCE of Exton</role>
-      </castItem>
-      <castItem type="role">
-        <role>Captain of a band of Welshmen</role>
-      </castItem>
-      <castItem type="role">
-        <role>QUEEN to King Richard</role>
-      </castItem>
-      <castItem type="role">
-        <role>DUCHESS OF YORK</role>
-      </castItem>
-      <castItem type="role">
-        <role>DUCHESS OF GLOUCESTER</role>
-      </castItem>
-      <castItem type="role">
-        <role>Lady attending on the Queen</role>
-      </castItem>
-      <castGroup>
-        <head rend="braced">minor</head>
-        <castItem type="role">
-          <role>All</role>
-        </castItem>
-        <castItem type="role">
-          <roleDesc>Lords</roleDesc>
-        </castItem>
-        <castItem type="role">
-          <role>First Herald</role>
-        </castItem>
-        <castItem type="role">
-          <role>Second Herald</role>
-        </castItem>
-        <castItem type="role">
-          <role>Servant</role>
-        </castItem>
-        <castItem type="role">
-          <role> Officers</role>
-        </castItem>
-        <castItem type="role">
-          <role> Soldiers</role>
-        </castItem>
-        <castItem type="role">
-          <role> two Gardeners</role>
-        </castItem>
-        <castItem type="role">
-          <role> Keeper</role>
-        </castItem>
-        <castItem type="role">
-          <role> Messenger</role>
-        </castItem>
-        <castItem type="role">
-          <role> Groom</role>
-        </castItem>
-        <castItem type="role">
-          <role> and other Attendants.</role>
-        </castItem>
-      </castGroup>
-    </castList>
-  </div>
+    </castGroup>
+  </castList>
+</front>
+    <body xml:base="urn:cts:engLit:shakespeare.r2.globe">
   <div type="act" n="1">
     <lb/>
     <head>ACT I</head>
@@ -360,7 +364,7 @@
       <stage type="setting">London. KING RICHARD'S palace.</stage>
       <lb/>
       <stage type="entrance">Enter KING RICHARD, JOHN OF GAUNT, with <lb/>other Nobles and Attendants.</stage>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l><!-- REVIEW page: p.356 miun/kraken leaf 00000370 -->
           <!-- REVIEW words: both witnesses read "time-honour'd"; the P4 reads "time-honor'd" --><milestone unit="line" ed="Globe" n="1"/>Old John of Gaunt, time-honor'd <lb/>Lancaster. </l>
@@ -375,12 +379,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="6"/>Against the Duke of Norfolk, Thomas Mowbray </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="7"/>I have, my liege. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="8"/>Tell me, moreover, hast thou sounded <lb/>him, </l>
@@ -391,7 +395,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="11"/>On some known ground of treachery in him? </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="12"/>As near as I could sift him on that <lb/>argument, </l>
@@ -400,7 +404,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="14"/>Aim'd at your highness, no inveterate malice. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="15"/>Then call them to our presence; <lb/>face to face, </l>
@@ -415,14 +419,14 @@
           <stage type="entrance">Enter BOLINGBROKE and MOWBRAY.</stage>
         </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="20"/>Many years of happy days befal </l>
         <l>
           <milestone unit="line" ed="Globe" n="21"/>My gracious sovereign, my most loving liege! </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="22"/>Each day still better other's happiness; </l>
@@ -431,7 +435,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="24"/>Add an immortal title to your crown! </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>We thank you both: yet one but <lb/>flatters us, </l>
@@ -444,7 +448,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Against the Duke of Norfolk, Thomas Mowbray? </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>First, heaven be the record to my <lb/>speech </l>
@@ -481,7 +485,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="46"/>What my tongue speaks my right drawn sword <lb/>may prove. </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="47"/>Let not my cold words here accuse my <lb/>zeal: </l>
@@ -528,7 +532,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="68"/>By all my hopes, most falsely doth he lie. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="69"/>Pale trembling coward, there I throw <lb/>my gage, </l>
@@ -549,7 +553,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="77"/>What I have spoke, or thou canst worse devise. </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="78"/>I take it up; and by that sword I swear, </l>
@@ -564,7 +568,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="83"/>If I be traitor or unjustly fight! </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="84"/>What doth our cousin lay to <lb/>Mowbray's charge? </l>
@@ -573,7 +577,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="86"/>So much as of a thought of ill in him. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>Look, what I speak, my life shall <lb/>prove it true: </l>
@@ -620,14 +624,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="108"/>This arm shall do it, or this life be spent. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="109"/>How high a pitch his resolution soars! </l>
         <l>
           <milestone unit="line" ed="Globe" n="110"/>Thomas of Norfolk, what say'st thou to this? </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="111"/>O, let my sovereign turn away his face </l>
@@ -638,7 +642,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="114"/>How God and good men hate so foul a liar. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="115"/>Mowbray, impartial are our eyes <lb/>and ears: </l>
@@ -659,7 +663,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="123"/>Free speech and fearless I to thee allow. </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="124"/>Then, Bolingbroke, as low as to thy <lb/>heart, </l>
@@ -718,7 +722,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="151"/>Your highness to assign our trial day. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="152"/>Wrath-kindled gentlemen, be ruled <lb/>by me; </l>
@@ -737,31 +741,31 @@
         <l>
           <milestone unit="line" ed="Globe" n="159"/>We'll calm the Duke of Norfolk, you your son. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="160"/>To be a make-peace shall become my <lb/>age: </l>
         <l>
           <milestone unit="line" ed="Globe" n="161"/>Throw down, my son, the Duke of Norfolk's <lb/>gage. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="162"/>And, Norfolk, throw down his. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l part="F">
           <lb/>When, Harry, when? </l>
         <l>
           <milestone unit="line" ed="Globe" n="163"/>Obedience bids I should not bid again. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="164"/>Norfolk, throw down, we bid; there <lb/>is no boot. </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="165"/>Myself I throw, dread sovereign, at <lb/>thy foot. </l>
@@ -782,14 +786,14 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="173"/>Which breathed this poison. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l part="F">
           <lb/>Rage must be withstood: </l>
         <l>
           <milestone unit="line" ed="Globe" n="174"/>Give me his gage: lions make leopards tame. </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="175"/>Yea, but not change his spots: take <lb/>but my shame, </l>
@@ -814,12 +818,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="185"/>In that I live and for that will I die. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="186"/>Cousin, throw up your gage; do <lb/>you begin. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="187"/>O, God defend my soul from such <lb/>deep sin! </l>
@@ -842,7 +846,7 @@
                 Gaunt.</stage>
         </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="196"/>We were not born to sue, but to <lb/>command; </l>
@@ -873,7 +877,7 @@
       <stage type="setting">The DUKE OF LANCASTER'S palace.</stage>
       <lb/>
       <stage type="entrance">Enter JOHN OF GAUNT with the DUCHESS <lb/>OF GLOUCESTER.</stage>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Alas, the part I had in Woodstock's <lb/>blood </l>
@@ -892,7 +896,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="8"/>Will rain hot vengeance on offenders' heads. </l>
       </sp>
-      <sp who="r2-9">
+      <sp who="#r2-9">
         <speaker>Duch.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Finds brotherhood in thee no sharper <lb/>spur? </l>
@@ -951,7 +955,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="36"/>The best way is to venge my Gloucester's death. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="37"/>God's is the quarrel; for God's <lb/>substitute, </l>
@@ -964,17 +968,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="41"/>An angry arm against His minister. </l>
       </sp>
-      <sp who="r2-9">
+      <sp who="#r2-9">
         <speaker>Duch.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="42"/>Where then, alas, may I complain <lb/>myself? </p>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="43"/>To God, the widow's champion and <lb/>defence. </p>
       </sp>
-      <sp who="r2-9">
+      <sp who="#r2-9">
         <speaker>Duch.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="44"/>Why, then, I will. Farewell, old <lb/>Gaunt. </l>
@@ -1001,14 +1005,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="55"/>With her companion grief must end her life. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>Sister, farewell; I must to Coventry: </l>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>As much good stay with thee as go with me! </l>
       </sp>
-      <sp who="r2-9">
+      <sp who="#r2-9">
         <speaker>Duch.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>Yet one word more: grief boundeth <lb/>where it falls, </l>
@@ -1053,24 +1057,24 @@
       <stage type="setting">The lists at Coventry.</stage>
       <lb/>
       <stage type="entrance">Enter the Lord Marshal and the DUKE OF <lb/>AUMERLE.</stage>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="1"/>My Lord Aumerle, is Harry Hereford <lb/>arm'd? </p>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="2"/>Yea, at all points; and longs to enter in. </p>
       </sp>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="3"/>The Duke of Norfolk, sprightfully and <lb/>bold, </l>
         <l>
           <milestone unit="line" ed="Globe" n="4"/>Stays but the summons of the appellant's trumpet. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="5"/>Why, then, the champions are prepared, <lb/>and stay </l>
@@ -1080,7 +1084,7 @@
                   a Herald.</stage>
         </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l><!-- REVIEW page: p.359 miun/kraken leaf 00000373 -->
           <milestone unit="line" ed="Globe" n="7"/>Marshal, demand of yonder <lb/>champion </l>
@@ -1091,7 +1095,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="10"/>To swear him in the justice of his cause. </l>
       </sp>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="11"/>In God's name and the king's, say who <lb/>thou art </l>
@@ -1104,7 +1108,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="15"/>As so defend thee heaven and thy valor! </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="16"/>My name is Thomas Mowbray. Duke <lb/>of Norfolk; </p>
@@ -1130,7 +1134,7 @@
                 sound. Enter <lb/>BOLINGBROKE,appellant, in armor, with a Herald.</stage>
         </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>Marshal, ask yonder knight in arms, </l>
@@ -1143,7 +1147,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="30"/>Depose him in the justice of his cause. </l>
       </sp>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>What is thy name? and wherefore <lb/>comest thou hither, </l>
@@ -1154,7 +1158,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="34"/>Speak like a true knight, so defend thee heaven! </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="35"/>Harry of Hereford, Lancaster and <lb/>Derby </l>
@@ -1171,7 +1175,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="41"/>And as I truly fight, defend me heaven! </l>
       </sp>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>On pain of death, no person be so bold </l>
@@ -1182,7 +1186,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Appointed to direct these fair designs. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="46"/>Lord marshal, let me kiss my <lb/>sovereign's hand, </l>
@@ -1197,14 +1201,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="51"/>And loving farewell of our several friends. </l>
       </sp>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="52"/>The appellant in all duty greets your <lb/>highness, </l>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>And craves to kiss your hand and take his leave. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>We will descend and fold him in <lb/>our arms. </l>
@@ -1217,7 +1221,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="58"/>Lament we may, but not revenge thee dead. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>O, let no noble eye profane a tear </l>
@@ -1258,7 +1262,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'haviour'; the P4 reads 'havior' --><milestone unit="line" ed="Globe" n="77"/>Even in the lusty havior of his son. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="78"/>God in thy good cause make thee <lb/>prosperous! </l>
@@ -1273,12 +1277,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="83"/>Rouse up thy youthful blood, be valiant and live. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="84"/>Mine innocency and Saint George to <lb/>thrive! </p>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>However God or fortune cast my lot, </l>
@@ -1305,7 +1309,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="96"/>Go I to fight: truth hath a quiet breast. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="97"/>Farewell, my lord: securely I espy </l>
@@ -1314,24 +1318,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="99"/>Order the trial, marshal, and begin. </l>
       </sp>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="100"/>Harry of Hereford, Lancaster and <lb/>Derby, </l>
         <l>
           <milestone unit="line" ed="Globe" n="101"/>Receive thy lance; and God defend the right! </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="102"/>Strong as a tower in hope, I cry <lb/>amen. </p>
       </sp>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="103"/>Go bear this lance to Thomas, Duke of <lb/>Norfolk. </l>
       </sp>
-      <sp who="r2-10">
+      <sp who="#r2-10">
         <speaker>First Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="104"/>Harry of Hereford, Lancaster <lb/>and Derby, </l>
@@ -1346,7 +1350,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="109"/>And dares him to set forward to the fight. </l>
       </sp>
-      <sp who="r2-10">
+      <sp who="#r2-10">
         <speaker>Sec. Her.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="110"/>Here standeth Thomas Mowbray, <lb/>Duke of Norfolk, </l>
@@ -1363,7 +1367,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="116"/>Attending but the signal to begin. </l>
       </sp>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="117"/>Sound, trumpets; and set forward <lb/>combatants. <stage>[A charge sounded.</stage>
@@ -1371,7 +1375,7 @@
         <l><!-- REVIEW page: p.360 miun/kraken leaf 00000374 -->
           <!-- REVIEW words: both witnesses read 'hath'; the P4 reads 'has' --><milestone unit="line" ed="Globe" n="118"/>Stay, the king has thrown his warder down. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="119"/>Let them lay by their helmets and <lb/>their spears, </l>
@@ -1427,7 +1431,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="143"/>But tread the stranger paths of banishment. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="144"/>Your will be done: this must my <lb/>comfort be. </l>
@@ -1438,7 +1442,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="147"/>Shall point on me and gild my banishment. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="148"/>Norfolk, for thee remains a heavier <lb/>doom, </l>
@@ -1453,7 +1457,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="153"/>Breathe I against thee, upon pain of life. </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="154"/>A heavy sentence, my most sovereign <lb/>liege, </l>
@@ -1496,21 +1500,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="173"/>Which robs my tongue from breathing native <lb/>breath? </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="174"/>It boots thee not to be <lb/>compassionate: </l>
         <l>
           <milestone unit="line" ed="Globe" n="175"/>After our sentence plaining comes too late. </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="176"/>Then thus I turn me from my country's <lb/>light. </l>
         <l>
           <milestone unit="line" ed="Globe" n="177"/>To dwell in solemn shades of endless night. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="178"/>Return again, and take an oath with <lb/>thee. </l>
@@ -1539,17 +1543,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="190"/>'Gainst us, our state, our subjects, or our land. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="191"/>I swear. </p>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <p><!-- REVIEW anchor: P4 anchor says 191; the page count says 192 here -->
           <milestone unit="line" ed="Globe" n="192"/>And I, to keep all this. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="193"/>Norfolk, so far as to mine enemy:-- </l>
@@ -1568,7 +1572,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'burthen'; the P4 reads 'burden' --><milestone unit="line" ed="Globe" n="200"/>The clogging burden of a guilty soul. </l>
       </sp>
-      <sp who="r2-3">
+      <sp who="#r2-3">
         <speaker>Mow.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="201"/>No, Bolingbroke, if ever I were traitor, </l>
@@ -1586,7 +1590,7 @@
           <milestone unit="line" ed="Globe" n="207"/>Save back to England, all the world's my way. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="208"/>Uncle, even in the glasses of thine <lb/>eyes </l>
@@ -1599,7 +1603,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="212"/>Return with welcome home from banishment. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="213"/>How long a time lies in one little word </l>
@@ -1608,7 +1612,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="215"/>End in a word: such is the breath of kings. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="216"/>I thank my liege, that in regard of me </l>
@@ -1629,12 +1633,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="224"/>And blindfold death not let me see my son. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="225"/>Why, uncle, thou hast many years <lb/>to live. </p>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="226"/>But not a minute, king, that thou canst <lb/>give: </l>
@@ -1651,7 +1655,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="232"/>But dead, thy kingdom cannot buy my breath. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="233"/>Thy son is banish'd upon good <lb/>advice, </l>
@@ -1660,7 +1664,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="235"/>Why at our justice seem'st thou then to lour? </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l><!-- REVIEW page: p.361 miun/kraken leaf 00000375 -->
           <milestone unit="line" ed="Globe" n="236"/>Things sweet to taste prove in <lb/>digestion sour. </l>
@@ -1685,7 +1689,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="246"/>Against my will to do myself this wrong. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="247"/>Cousin, farewell; and, uncle, bid <lb/>him so: </l>
@@ -1695,28 +1699,28 @@
                 Exeunt King Richard and train,</stage>
         </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="249"/>Cousin, farewell: what presence must <lb/>not know, </l>
         <l>
           <milestone unit="line" ed="Globe" n="250"/>From where you do remain let paper show. </l>
       </sp>
-      <sp who="r2-11">
+      <sp who="#r2-11">
         <speaker>Mar.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="251"/>My lord, no leave take I, for I will ride, </l>
         <l>
           <milestone unit="line" ed="Globe" n="252"/>As far as land will let me, by your side. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="253"/>O, to what purpose dost thou hoard <lb/>thy words, </l>
         <l>
           <milestone unit="line" ed="Globe" n="254"/>That thou return'st no greeting to thy friends? </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="255"/>I have too few to take my leave of you, </l>
@@ -1725,39 +1729,39 @@
         <l>
           <!-- REVIEW words: both witnesses read 'dolour'; the P4 reads 'dolor' --><milestone unit="line" ed="Globe" n="257"/>To breathe the abundant dolor of the heart. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="258"/>Thy grief is but thy absence for a time. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="259"/>Joy absent, grief is present for that time. </p>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="260"/>What is six winters? they are quickly <lb/>gone. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="261"/>To men in joy; but grief makes one <lb/>hour ten. </p>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'takest'; the P4 reads 'takes' --><!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="262"/>Call it a travel that thou takes for <lb/>pleasure. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="263"/>My heart will sigh when I miscall it so, </l>
         <l>
           <milestone unit="line" ed="Globe" n="264"/>Which finds it an inforced pilgrimage. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="265"/>The sullen passage of thy weary steps </l>
@@ -1766,7 +1770,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="267"/>The precious jewel of thy home return. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="268"/>Nay, rather, every tedious stride I make </l>
@@ -1783,7 +1787,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="274"/>But that I was a journeyman to grief? </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="275"/>All places that the eye of heaven visits </l>
@@ -1824,7 +1828,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="293"/>The man that mocks at it and sets it light. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="294"/>O, who can hold a fire in his hand </l>
@@ -1847,14 +1851,14 @@
         <l>
          <!-- REVIEW words: both witnesses read 'he'; the P4 reads 'it' --> <milestone unit="line" ed="Globe" n="303"/>Than when it bites. but lanceth not the sore. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="304"/>Come, come, my son, I'll bring thee <lb/>on thy way: </l>
         <l>
           <milestone unit="line" ed="Globe" n="305"/>Had I thy youth and cause, I would not stay. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="306"/>Then, England's ground, farewell; <lb/>sweet soil, adieu; </l>
@@ -1874,26 +1878,26 @@
       <lb/>
       <stage type="entrance">Enter the KING, with BAGOT and GREEN all at one <lb/>door; and the DUKE
             OF AUMERLE at another.</stage>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>We did observe. Cousin Aumerle, </l>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>How far brought you high Hereford on his way? </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="3"/>I brought high Hereford, if you call <lb/>him so, </l>
         <l>
           <milestone unit="line" ed="Globe" n="4"/>But to the next highway, and there I left him. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="5"/>And say, what store of parting tears <lb/>were shed? </p>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="6"/>Faith, none for me; except the <lb/>northeast wind, </l>
@@ -1904,12 +1908,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Did grace our hollow parting with a tear. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="10"/>What said our cousin when you <lb/>parted with him? </p>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="11"/>'Farewell:' </l>
@@ -1930,7 +1934,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="19"/>But since it would not, he had none of me. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="20"/>He is our cousin, cousin; but 'tis <lb/>doubt, </l>
@@ -1967,7 +1971,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="36"/>And he our subjects' next degree in hope. </l>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="37"/>Well, he is gone; and with him go <lb/>these thoughts. </l>
@@ -1980,7 +1984,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="41"/>For their advantage and your highness' loss. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>We will ourself in person to this war: </l>
@@ -2009,7 +2013,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="53"/>Bushy, what news? </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>Old John of Gaunt is grievous sick, <lb/>my lord, </l>
@@ -2018,17 +2022,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="56"/>To entreat your majesty to visit him. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="57"/>Where lies he? </p>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="58"/>At Ely House. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>Now put it, God, in the physician's <lb/>mind </l>
@@ -2043,7 +2047,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="64"/>Pray God we may make haste, and come too late! </l>
       </sp>
-      <sp who="r2-0">
+      <sp who="#r2-0">
         <speaker>All.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="65"/>Amen. </p>
@@ -2059,21 +2063,21 @@
       <stage type="setting">Ely House.</stage>
       <lb/>
       <stage type="entrance">Enter JOHN OF GAUNT sick, with the DUKE OF <lb/>YORK, &amp;c.</stage>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Will the king come, that I may breathe <lb/>my last </l>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>In wholesome counsel to his unstaid youth? </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="3"/>Vex not yourself, nor strive not with <lb/>your breath; </l>
         <l>
           <milestone unit="line" ed="Globe" n="4"/>For all in vain comes counsel to his ear. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="5"/>O, but they say the tongues of dying <lb/>men </l>
@@ -2100,7 +2104,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="16"/>My death's sad tale may yet undeaf his ear. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="17"/>No; it is stopp'd with other flattering <lb/>sounds, </l>
@@ -2131,7 +2135,7 @@
         <l><!-- REVIEW anchor: P4 anchor says 301; the page count says 30 here -->
           <milestone unit="line" ed="Globe" n="30"/>'Tis breath thou lack'st, and that breath wilt thou <lb/>lose. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Methinks I am a prophet new inspired </l>
@@ -2213,24 +2217,24 @@
                 ROSS, and WIL <lb/>LOUGHBY.</stage>
         </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="69"/>The king is come: deal mildly with <lb/>his youth; </l>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>For young hot colts being raged do rage the more. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>How fares our noble uncle, Lancaster? </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>What comfort, man? how is't with <lb/>aged Gaunt? </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="73"/>O, how that name befits my <lb/>composition! </l>
@@ -2255,12 +2259,12 @@
         <l><!-- REVIEW witness: p.363 taken from trent/kraken: miun/kraken:1 trent/kraken:0 (total count error) --><!-- REVIEW page: p.363 trent/kraken leaf 0379 -->
           <!-- REVIEW words: both witnesses read 'nought'; the P4 reads 'naught' --><milestone unit="line" ed="Globe" n="83"/>Whose hollow womb inherits naught but bones. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="84"/>Can sick men play so nicely with <lb/>their names? </p>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>No, misery makes sport to mock itself: </l>
@@ -2269,32 +2273,32 @@
         <l>
           <milestone unit="line" ed="Globe" n="87"/>I mock my name, great king, to flatter thee. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="88"/>Should dying men flatter with those <lb/>that live? </p>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="89"/>No, no, men living flatter those that die. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: indented row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="90"/>Thou, now a-dying, say'st thou <lb/>flatterest me. </p>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="91"/>O, no! thou diest, though I the <lb/>sicker be. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="92"/>I am in health, I breathe, and see <lb/>thee ill. </p>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="93"/>Now He that made me knows I see <lb/>thee ill; </l>
@@ -2343,7 +2347,7 @@
         <l part="I"><!-- REVIEW shared: shared-lines.tsv: this line ends with a half the page cannot show as shared; second half begins 'a lunatic leanwitted' (basis image+folger ftln-0790 ftln-0791, checked 2026-10-12 cliff) -->
           <milestone unit="line" ed="Globe" n="115"/>And thou-- </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l part="F">
           <lb/>A lunatic lean-witted fool, </l>
@@ -2364,7 +2368,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="123"/>Should run thy head from thy unreverent shoulders. </l>
       </sp>
-      <sp who="r2-1">
+      <sp who="#r2-1">
         <speaker>Gaunt.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="124"/>O, spare me not, my brother Edward's <lb/>son, </l>
@@ -2400,14 +2404,14 @@
                 Attendants.</stage>
         </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="139"/>And let them die that age and <lb/>sullens have; </l>
         <l>
           <milestone unit="line" ed="Globe" n="140"/>For both hast thou, and both become the grave. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="141"/>I do beseech your majesty, impute his <lb/>words </l>
@@ -2418,7 +2422,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="144"/>As Harry Duke of Hereford, were he here. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="145"/>Right, you say true: as Hereford's <lb/>love, so his; </l>
@@ -2426,17 +2430,17 @@
           <milestone unit="line" ed="Globe" n="146"/>As theirs, so mine; and all be as it is. <lb/>
           <stage type="entrance">Enter NORTHUMBERLAND.</stage> v </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="147"/>My liege, old Gaunt commends him <lb/>to your majesty. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="148"/>What says he? </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l part="F">
           <lb/>Nay, nothing; all is said: </l>
@@ -2445,14 +2449,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="150"/>Words, life and all, old Lancaster hath spent. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="151"/>Be York the next that must be <lb/>bankrupt so! </l>
         <l>
           <milestone unit="line" ed="Globe" n="152"/>Though death be poor, it ends a mortal woe. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="153"/>The ripest fruit first falls, and so <lb/>doth he; </l>
@@ -2475,7 +2479,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="162"/>Whereof our uncle Gaunt did stand posess'd. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="163"/>How long shall I be patient? ah, how <lb/>long </l>
@@ -2524,12 +2528,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="185"/>Or else he never would compare between. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="186"/>Why, uncle, what's the matter? </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l part="F">
           <lb/>O my liege, </l>
@@ -2578,14 +2582,14 @@
         <l>
      <!-- REVIEW words: both witnesses read 'honour'; the P4 reads 'honor' -->     <milestone unit="line" ed="Globe" n="208"/>Which honor and allegiance cannot think. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="209"/>Think what you will, we seize into <lb/>our hands </l>
         <l>
           <milestone unit="line" ed="Globe" n="210"/>His plate, his goods, his money and his lands. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="211"/>I'll not be by the while: my liege, <lb/>farewell: </l>
@@ -2597,7 +2601,7 @@
           <milestone unit="line" ed="Globe" n="214"/>That their events can never fall out good. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="215"/>Go, Bushy, to the Earl of Wiltshire <lb/>straight: </l>
@@ -2621,41 +2625,41 @@
                 Aumerle, <lb/>Bushy, Green, and Bagot.</stage>
         </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="224"/>Well, lords, the Duke of Lancaster is <lb/>dead. </p>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="225"/>And living too; for now his son is duke. </p>
       </sp>
-      <sp who="r2-17">
+      <sp who="#r2-17">
         <speaker>Willo.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'revenue.'; the P4 reads 'revenues.' --><milestone unit="line" ed="Globe" n="226"/>Barely in title, not in revenues. </p>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="227"/>Richly in both, if justice had her right. </p>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="228"/>My heart is great; but it must break <lb/>with silence, </l>
         <l>
           <milestone unit="line" ed="Globe" n="229"/>Ere't be disburden'd with a liberal tongue. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="230"/>Nay, speak thy mind; and let him <lb/>ne'er speak more </l>
         <l>
           <milestone unit="line" ed="Globe" n="231"/>That speaks thy words again to do thee harm! </l>
       </sp>
-      <sp who="r2-17">
+      <sp who="#r2-17">
         <speaker>Willo.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="232"/>Tends that thou wouldst speak to the <lb/>Duke of Hereford? </l>
@@ -2664,7 +2668,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="234"/>Quick is mine ear to hear of good towards him. </l>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="235"/>No good at all that I can do for him; </l>
@@ -2673,7 +2677,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="237"/>Bereft and gelded of his patrimony. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="238"/>Now, afore God, 'tis shame such <lb/>wrongs are borne </l>
@@ -2692,7 +2696,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="245"/>'Gainst us, our lives, our children, and our heirs. </l>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="246"/>The commons hath he pill'd with grievous <lb/>taxes, </l>
@@ -2701,7 +2705,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="248"/>For ancient quarrels, and quite lost their hearts. </l>
       </sp>
-      <sp who="r2-17">
+      <sp who="#r2-17">
         <speaker>Willo.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="249"/>And daily new exactions are devised, </l>
@@ -2710,7 +2714,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="251"/>But what, o' God's name, doth become of this? </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="252"/>Wars have not wasted it, for warr'd he <lb/>hath not, </l>
@@ -2721,22 +2725,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="255"/>More hath he spent in peace than they in wars. </l>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="256"/>The Earl of Wiltshire hath the realm <lb/>in farm. </p>
       </sp>
-      <sp who="r2-17">
+      <sp who="#r2-17">
         <speaker>Willo.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="257"/>The king's grown bankrupt, like a <lb/>broken man. </p>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="258"/>Reproach and dissolution hangeth over <lb/>him. </p>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="259"/>He hath not money for these Irish wars, </l>
@@ -2745,7 +2749,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="261"/>But by the robbing of the banish'd duke. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="262"/>His noble kinsman: most degenerate <lb/>king ! </l>
@@ -2758,7 +2762,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="266"/>And yet we strike not, but securely perish. </l>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="267"/>We see the very wreck that we must <lb/>suffer; </l>
@@ -2767,7 +2771,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="269"/>For suffering so the causes of our wreck. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="270"/>Not so; even through the hollow eyes <lb/>of death </l>
@@ -2776,12 +2780,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="272"/>How near the tidings of our comfort is. </l>
       </sp>
-      <sp who="r2-17">
+      <sp who="#r2-17">
         <speaker>Willo.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="273"/>Nay, let us share thy thoughts, as thou <lb/>dost ours. </p>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="274"/>Be confident to speak, Northumberland: </l>
@@ -2790,7 +2794,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="276"/>Thy words are but as thoughts; therefore, be bold. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="277"/>Then thus: I have from Port le Blanc, <lb/>a bay </l>
@@ -2841,12 +2845,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="298"/>Stay and be secret, and myself will go. </l>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="299"/>To horse, to horse! urge doubts to them <lb/>that fear. </p>
       </sp>
-      <sp who="r2-17">
+      <sp who="#r2-17">
         <speaker>Willo.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="300"/>Hold out my horse, and I will first be <lb/>there. <stage>[Exeunt.
@@ -2860,7 +2864,7 @@
       <stage type="setting">The palace..</stage>
       <lb/>
       <stage type="entrance">Enter QUEEN, BUSHY and BAGOT.</stage>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Madam, your majesty is too much sad: </l>
@@ -2871,7 +2875,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="4"/>And entertain a cheerful disposition. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l><!-- REVIEW page: p.365 miun/kraken leaf 00000379 -->
           <milestone unit="line" ed="Globe" n="5"/>To please the king I did; to please <lb/>myself </l>
@@ -2892,7 +2896,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="13"/>More than with parting from my lord the king. </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>Each substance of a grief hath twenty <lb/>shadows, </l>
@@ -2923,7 +2927,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="27"/>Which for things true weeps things imaginary. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="28"/>It may be so; but yet my inward soul </l>
@@ -2936,12 +2940,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="32"/>Makes me with heavy nothing faint and shrink. </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="33"/>'Tis nothing but conceit, my gracious <lb/>lady. </p>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="34"/>'Tis nothing less: conceit is still derived </l>
@@ -2960,14 +2964,14 @@
           <stage type="entrance">Enter GREEN.</stage>
         </l>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>God save your majesty! and well met, <lb/>gentlemen: </l>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>I hope the king is not yet shipp'd for Ireland. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="43"/>Why hopest thou so? 'tis better hope <lb/>he is; </l>
@@ -2976,7 +2980,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="45"/>Then wherefore dost thou hope he is not shipp'd? </l>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="46"/>That he, our hope, might have retired <lb/>his power, </l>
@@ -2991,12 +2995,12 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="51"/>At Ravenspurgh. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l part="F">
           <lb/>Now God in heaven forbid! </l>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="52"/>Ah, madam, 'tis too true: and that is <lb/>worse, </l>
@@ -3007,14 +3011,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="55"/>With all their powerful friends, are fled to him. </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>Why have you not proclaim'd <lb/>Northumberland </l>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>And all the rest revolted faction traitors? </l>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>We have: whereupon the Earl of <lb/>Worcester </l>
@@ -3023,7 +3027,7 @@
         <l><!-- REVIEW verse-prose: one P4 <l> holds 2 Globe line starts: P4 tags this as one verse line, the page prints more -->
           <milestone unit="line" ed="Globe" n="60"/>And all the household servants fled with him <milestone unit="line" ed="Globe" n="61"/>To Bolingbroke. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>So, Green, thou art the midwife to my <lb/>woe, </l>
@@ -3036,12 +3040,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="66"/>Have woe to woe, sorrow to sorrow join'd. </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="67"/>Despair not, madam. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l part="F">
           <lb/>Who shall hinder me? </l>
@@ -3058,12 +3062,12 @@
           <stage type="entrance">Enter YORK.</stage>
         </l>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="73"/>Here comes the Duke of York. </p>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="74"/>With signs of war about his aged neck: </l>
@@ -3072,7 +3076,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="76"/>Uncle, for God's sake, speak comfortable words. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="77"/>Should I do so, I should belie my <lb/>thoughts: </l>
@@ -3096,12 +3100,12 @@
                 Servant.</stage>
         </l>
       </sp>
-      <sp who="r2-28">
+      <sp who="#r2-28">
         <speaker>Serv.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="86"/>My lord, your son was gone before <lb/>I came. </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>He was? Why, so! go all which way <lb/>it will! </l>
@@ -3116,7 +3120,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="92"/>Hold, take my ring. </l>
       </sp>
-      <sp who="r2-28">
+      <sp who="#r2-28">
         <speaker>Serv.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="93"/>My lord, I had forgot to tell your <lb/>lordship, </l>
@@ -3125,17 +3129,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="95"/>But I shall grieve you to report the rest. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <p>
     <!-- REVIEW words: both witnesses read 'is’t,'; the P4 reads "is 't," -->      <milestone unit="line" ed="Globe" n="96"/>What is 't, knave? </p>
       </sp>
-      <sp who="r2-28">
+      <sp who="#r2-28">
         <speaker>Serv.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="97"/>An hour before I came, the duchess <lb/>died. </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="98"/>God for his mercy! what a tide of woes </l>
@@ -3192,7 +3196,7 @@
           <stage>[Exeunt <!-- REVIEW words: both witnesses read 'Vork'; the P4 reads 'York' -->York and Queen.</stage>
         </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="123"/>The wind sits fair for news to go to <lb/>Ireland, </l>
@@ -3203,14 +3207,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="126"/>Is all unpossible. </l>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="127"/>Besides, our nearness to the king in <lb/>love </l>
         <l>
           <milestone unit="line" ed="Globe" n="128"/>Is near the hate of those love not the king. </l>
       </sp>
-      <sp who="r2-18">
+      <sp who="#r2-18">
         <speaker>Bagot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="129"/>And that's the wavering commons: <lb/>for their love </l>
@@ -3219,26 +3223,26 @@
         <l>
           <milestone unit="line" ed="Globe" n="131"/>By so much fills their hearts with deadly hate. </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="132"/>Wherein the king stands generally <lb/>condemn'd. </p>
       </sp>
-      <sp who="r2-18">
+      <sp who="#r2-18">
         <speaker>Bagot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="133"/>If judgement lie in them, then so do we, </l>
         <l>
           <milestone unit="line" ed="Globe" n="134"/>Because we ever have been near the king. </l>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="135"/>Well, I will for refuge straight to <lb/>Bristol castle: </l>
         <l>
           <milestone unit="line" ed="Globe" n="136"/>The Earl of Wiltshire is already there. </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="137"/>Thither will I with you; for little <lb/>office </l>
@@ -3249,7 +3253,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="140"/>Will you go along with us? </l>
       </sp>
-      <sp who="r2-18">
+      <sp who="#r2-18">
         <speaker>Bagot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="141"/>No; I will to Ireland to his majesty. </l>
@@ -3258,12 +3262,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="143"/>We three here part that ne'er shall meet again. </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="144"/>That's as York thrives to beat back <lb/>Bolingbroke. </p>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="145"/>Alas, poor duke! the task he <lb/>undertakes </l>
@@ -3274,12 +3278,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="148"/>Farewell at once, for once, for all, and ever. </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="149"/>Well, we may meet again. </l>
       </sp>
-      <sp who="r2-18">
+      <sp who="#r2-18">
         <speaker>Bagot.</speaker>
         <l part="F">
           <lb/>I fear me, never. <!-- REVIEW words: both witnesses read 'IExeunt.'; the P4 reads '[Exeunt.' --><stage>[Exeunt.</stage>
@@ -3293,12 +3297,12 @@
       <lb/>
       <stage type="entrance">Enter BOLINGBROKE and NORTHUMBERLAND, <lb/>with
             Forces.</stage>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="1"/>How far is it, my lord, to Berkeley <lb/>now? </p>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>Believe me, noble lord, </l>
@@ -3335,7 +3339,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="18"/>By sight of what I have, your noble company. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="19"/>Of much less value is my company </l>
@@ -3344,7 +3348,7 @@
           <stage type="entrance">Enter HENRY PERCY.</stage>
         </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="21"/>It is my son, young Harry Percy, </l>
@@ -3353,17 +3357,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="23"/>Harry, how fares your uncle? </l>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="24"/>I had thought, my lord, to have learn'd <lb/>his health of you. </p>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="25"/>Why, is he not with the queen? </p>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>No, my good lord; he hath forsook <lb/>the court, </l>
@@ -3372,14 +3376,14 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="28"/>The household of the king. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l part="F">
           <lb/>What was his reason? </l>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>He was not so resolved when last we spake <lb/>together. </l>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>Because your lordship was proclaimed <lb/>traitor. </l>
@@ -3394,12 +3398,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="35"/>Then with directions to repair to Ravenspurgh. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="36"/>Have you forgot the Duke of <lb/>Hereford, boy? </p>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="37"/>No, my good lord, for that is not <lb/>forgot </l>
@@ -3408,12 +3412,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="39"/>I never in my life did look on him. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="40"/>Then learn to know him now; this is <lb/>the duke. </p>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>My gracious lord, I tender you my <lb/>service, </l>
@@ -3424,7 +3428,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="44"/>To more approved service and desert. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="45"/>I thank thee, gentle Percy; and be <lb/>sure </l>
@@ -3439,14 +3443,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="50"/>My heart this covenant makes, my hand thus <lb/>seals it. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="51"/>How far is it to Berkeley? and what <lb/>stir </l>
         <l>
           <milestone unit="line" ed="Globe" n="52"/>Keeps good old York there with his men of war? </l>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="53"/>There stands the castle, by yon tuft <lb/>of trees, </l>
@@ -3459,14 +3463,14 @@
           <stage type="entrance">Enter ROSS and WILLOUGHBY.</stage>
         </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>Here come the Lords of Ross and <lb/>Willoughby, </l>
         <l>
           <milestone unit="line" ed="Globe" n="58"/>Bloody with spurring, fiery-red with haste. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>Welcome, my lords. I wot your love <lb/>pursues </l>
@@ -3477,17 +3481,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="62"/>Shall be your love and labor's recompense. </l>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <p><!-- REVIEW page: p.367 miun/kraken leaf 00000381 -->
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="63"/>Your presence makes us rich, most <lb/>noble lord. </p>
       </sp>
-      <sp who="r2-17">
+      <sp who="#r2-17">
         <speaker>Willo.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="64"/>And far surmounts our labor to <lb/>attain it. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="65"/>Evermore thanks, the exchequer of <lb/>the poor; </l>
@@ -3498,17 +3502,17 @@
           <stage type="entrance">Enter BERKELEY.</stage>
         </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="68"/>It is my Lord of Berkeley, as I guess. </p>
       </sp>
-      <sp who="r2-20">
+      <sp who="#r2-20">
         <speaker>Berk.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="69"/>My Lord of Hereford, my message is <lb/>to you. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>My lord, my answer is--to Lancaster; </l>
@@ -3519,7 +3523,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="73"/>Before I make reply to aught you say. </l>
       </sp>
-      <sp who="r2-20">
+      <sp who="#r2-20">
         <speaker>Berk.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="74"/>Mistake me not, my lord; 'tis not my <lb/>meaning </l>
@@ -3538,7 +3542,7 @@
           <stage type="entrance">Enter YORK attended.</stage>
         </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>I shall not need transport my words <lb/>by you; </l>
@@ -3548,19 +3552,19 @@
           <lb/>My noble uncle! <stage>[Kneels.</stage>
         </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>Show me thy humble heart, and not <lb/>thy knee, </l>
         <l>
           <milestone unit="line" ed="Globe" n="84"/>Whose duty is deceiveable and false. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="85"/>My gracious uncle-- </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Tut, tut! </l>
@@ -3602,14 +3606,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="105"/>And minister correction to thy fault! </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="106"/>My gracious uncle, let me know my <lb/>fault: </l>
         <l>
           <milestone unit="line" ed="Globe" n="107"/>On what condition stands it and wherein? </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="108"/>Even in condition of the worst degree, </l>
@@ -3622,7 +3626,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="112"/>In braving arms against thy sovereign. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="113"/>As I was banish'd, I was banish'd <lb/>Hereford; </l>
@@ -3673,22 +3677,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="136"/>To my inheritance of free descent. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="137"/>The noble duke hath been too much <lb/>abused. </p>
       </sp>
-      <sp who="r2-16">
+      <sp who="#r2-16">
         <speaker>Ross.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="138"/>It stands your grace upon to do him <lb/>right. </p>
       </sp>
-      <sp who="r2-17">
+      <sp who="#r2-17">
         <speaker>Willo.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="139"/>Base men by his endowments are <lb/>made great. </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="140"/>My lords of England, let me tell you this: </l>
@@ -3707,7 +3711,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="147"/>Cherish rebellion and are rebels all. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="148"/>The noble duke hath sworn his <lb/>coming is </l>
@@ -3718,7 +3722,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="151"/>And let him ne'er see joy that breaks that oath! </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="152"/>Well, well, I see the issue of these arms: </l>
@@ -3741,7 +3745,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="161"/>And there repose you for this night. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="162"/>An offer, uncle, that we will accept: </l>
@@ -3756,7 +3760,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="167"/>Which I have sworn to weed and pluck away. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="168"/>It may be I will go with you: but yet <lb/>I'll pause; </l>
@@ -3775,7 +3779,7 @@
       <stage type="setting">A camp in Wales.</stage>
       <lb/>
       <stage type="entrance">Enter SALISBURY and a Welsh Captain.</stage>
-      <sp who="r2-22">
+      <sp who="#r2-22">
         <speaker>Cap.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>My Lord of Salisbury, we have stay'd <lb/>ten days, </l>
@@ -3786,14 +3790,14 @@
         <l><!-- REVIEW witness: p.368 taken from trent/kraken: miun/kraken:1 trent/kraken:0 (total count error) --><!-- REVIEW page: p.368 trent/kraken leaf 0384 -->
           <milestone unit="line" ed="Globe" n="4"/>Therefore we will disperse ourselves: farewell. </l>
       </sp>
-      <sp who="r2-23">
+      <sp who="#r2-23">
         <speaker>Sal.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="5"/>Stay yet another day, thou trusty <lb/>Welshman: </l>
         <l>
           <milestone unit="line" ed="Globe" n="6"/>The king reposeth all his confidence in thee. </l>
       </sp>
-      <sp who="r2-22">
+      <sp who="#r2-22">
         <speaker>Cap.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>'Tis thought the king is dead; we will <lb/>not stay. </l>
@@ -3820,7 +3824,7 @@
           <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="r2-23">
+      <sp who="#r2-23">
         <speaker>Sal.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="18"/>Ah, Richard, with the eyes of heavy mind </l>
@@ -3850,7 +3854,7 @@
       <lb/>
       <stage type="entrance">Enter BOLINGBROKE, YORK, <!-- REVIEW words: both witnesses read 'NORTHUMBER¬ LAND,'; the P4 reads 'NORTHUMBERLAND,' --><lb/>NORTHUMBERLAND, ROSS, PERCY, WILLOUGHBY, with BUSHY <lb/>and GREEN,
             prisoners.</stage>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Bring forth these men. </l>
@@ -3913,21 +3917,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="30"/>To execution and the hand of death. </l>
       </sp>
-      <sp who="r2-12">
+      <sp who="#r2-12">
         <speaker>Bushy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>More welcome is the stroke of death <lb/>to me </l>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>Than Bolingbroke to England. Lords, farewell. </l>
       </sp>
-      <sp who="r2-13">
+      <sp who="#r2-13">
         <speaker>Green.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="33"/>My comfort is that heaven will take <lb/>our souls </l>
         <l>
           <milestone unit="line" ed="Globe" n="34"/>And plague injustice with the pains of hell. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="35"/>My Lord Northumberland, see them <lb/>dispatch'd. <lb/>
@@ -3943,14 +3947,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="39"/>Take special care my greetings be deliver'd. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="40"/>A gentleman of mine I have dispatch'd </l>
         <l>
           <milestone unit="line" ed="Globe" n="41"/>With letters of your love to her at large. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="42"/>Thanks, gentle uncle. Come, lords, <lb/>away. </l>
@@ -3969,19 +3973,19 @@
       <stage>Drums: flourish and <!-- REVIEW words: both witnesses read 'colours.'; the P4 reads 'colors.' -->colors.</stage>
       <stage type="entrance">Enter KING <!-- REVIEW words: both witnesses read 'the'; the P4 reads 'and' --><lb/>RICHARD and BISHOP OF CARLISLE, AUMERLE, <lb/>and
             Soldiers.</stage>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="1"/>Barkloughly castle call they this at <lb/>hand? </p>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>Yea, my lord. How brooks your grace <lb/>the air? </l>
         <l>
           <milestone unit="line" ed="Globe" n="3"/>After your late tossing on the breaking seas? </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="4"/>Needs must I like it well: I weep <lb/>for joy </l>
@@ -4030,7 +4034,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="26"/>Shall falter under foul rebellion's arms. </l>
       </sp>
-      <sp who="r2-24">
+      <sp who="#r2-24">
         <speaker>Car.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="27"/>Fear not, my lord: that Power that <lb/>made you king </l>
@@ -4045,7 +4049,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'succour'; the P4 reads 'succor' --><milestone unit="line" ed="Globe" n="32"/>The proffer'd means of succor and redress. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="33"/>He means, my lord, that we are too <lb/>remiss; </l>
@@ -4054,7 +4058,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="35"/>Grows strong and great in substance and in <lb/>power. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="36"/>Discomfortable cousin! know'st thou <lb/>not </l>
@@ -4115,7 +4119,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Welcome, my lord: how far off lies your power? </l>
       </sp>
-      <sp who="r2-23">
+      <sp who="#r2-23">
         <speaker>Sal.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="64"/>Nor near nor farther off, my gracious <lb/>lord, </l>
@@ -4140,12 +4144,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="74"/>Are gone to Bolingbroke, dispersed and fled. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="75"/>Comfort, my liege; why looks your <lb/>grace so pale? </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="76"/>But now the blood of twenty <lb/>thousand men </l>
@@ -4160,12 +4164,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="81"/>For time hath set a blot upon my pride. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="82"/>Comfort, my liege; remember who you <lb/>are. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>I had forgot myself; am I not king? </l>
@@ -4186,14 +4190,14 @@
           <stage type="entrance">Enter SCROOP.</stage>
         </l>
       </sp>
-      <sp who="r2-25">
+      <sp who="#r2-25">
         <speaker>Scroop.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>More health and happiness betide my <lb/>liege </l>
         <l>
           <milestone unit="line" ed="Globe" n="92"/>Than can my care-tuned tongue deliver him! </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="93"/>Mine ear is open and my heart <lb/>prepared; </l>
@@ -4218,7 +4222,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="103"/>The worst is death, and death will have his day. </l>
       </sp>
-      <sp who="r2-25">
+      <sp who="#r2-25">
         <speaker>Scroop.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="104"/>Glad am I that your highness is so <lb/>arm'd </l>
@@ -4255,7 +4259,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="120"/>And all goes worse than I have power to tell. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="121"/>Too well, too well thou tell'st a tale <lb/>so ill. </l>
@@ -4272,12 +4276,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="127"/>I warrant they have made peace with <lb/>Bolingbroke. </l>
       </sp>
-      <sp who="r2-25">
+      <sp who="#r2-25">
         <speaker>Scroop.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="128"/>Peace have they made with him <lb/>indeed, my lord. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="129"/>O villains, vipers, damn'd without <lb/>redemption! </l>
@@ -4292,7 +4296,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="134"/>Upon their spotted souls for this offence! </l>
       </sp>
-      <sp who="r2-25">
+      <sp who="#r2-25">
         <speaker>Scroop.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="135"/>Sweet love, I see, changing his <lb/>property, </l>
@@ -4307,22 +4311,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="140"/>And lie full low, graved in the hollow ground. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="141"/>Is Bushy, Green, and the Earl of <lb/>Wiltshire dead? </p>
       </sp>
-      <sp who="r2-25">
+      <sp who="#r2-25">
         <speaker>Scroop.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="142"/>Ay, all of them at Bristol lost their <lb/>heads. </p>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="143"/>Where is the duke my father with his <lb/>power? </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="144"/>No matter where; of comfort no <lb/>man speak: </l>
@@ -4393,7 +4397,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="177"/>How can you say to me, I am a king? </l>
       </sp>
-      <sp who="r2-24">
+      <sp who="#r2-24">
         <speaker>Car.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="178"/>My lord, wise men ne'er sit and wail <lb/>their woes, </l>
@@ -4412,14 +4416,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="185"/>Where fearing dying pays death servile breath. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="186"/>My father hath a power; inquire of <lb/>him, </l>
         <l>
           <milestone unit="line" ed="Globe" n="187"/>And learn to make a body of a limb. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="188"/>Thou chidest me well: proud <lb/>Bolingbroke, I come </l>
@@ -4434,7 +4438,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="193"/>Speak sweetly, man, although thy looks be sour. </l>
       </sp>
-      <sp who="r2-25">
+      <sp who="#r2-25">
         <speaker>Scroop.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="194"/>Men judge by the complexion of the <lb/>sky </l>
@@ -4457,7 +4461,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="203"/>Upon his party. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l part="F">
           <lb/>Thou hast said enough. </l>
@@ -4485,12 +4489,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="214"/>To alter this, for counsel is but vain. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="215"/>My liege, one word. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l part="F">
           <lb/>He does me double wrong </l>
@@ -4509,7 +4513,7 @@
       <stage type="setting">Wales. Before Flint Castle.</stage>
       <lb/>
       <stage type="entrance">Enter, with drum and colors, BOLINGBROKE, <lb/>YORK, NORTHUMBERLAND, Attendants, and <lb/>forces.</stage>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>So that by this intelligence we learn </l>
@@ -4520,14 +4524,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="4"/>With some few private friends upon this coast. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="5"/>The news is very fair and good, my <lb/>lord: </l>
         <l>
           <milestone unit="line" ed="Globe" n="6"/>Richard not far from hence hath hid his head. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>It would beseem the Lord <lb/>Northumberland </l>
@@ -4536,14 +4540,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="9"/>When such a sacred king should hide his head. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
-        <l><!-- REVIEW misplaced: shared-lines.tsv: the page prints 10, this line's number, beside the line next to it ('left i his') (basis image, checked 2026-10-12 cliff) -->
+        <l><!-- REVIEW misplaced: shared-lines.tsv: the page prints 10, this line's number, beside a line near it ('left i his') (basis image, checked 2026-10-12 cliff) -->
           <milestone unit="line" ed="Globe" n="10"/>Your grace mistakes; only to be brief, </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="11"/>Left I his title out. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l part="F">
         <!-- REVIEW words: both witnesses read 'hath'; the P4 reads 'bath' -->  <lb/>The time bath been, </l>
@@ -4554,19 +4558,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="14"/>For taking so the head, your whole head's length. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="15"/>Mistake not, uncle, further than you <lb/>should. </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="16"/>Take not, good cousin, further than <lb/>you should. </l>
         <l>
           <milestone unit="line" ed="Globe" n="17"/>Lest you mistake the heavens are o'er our heads. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="18"/>I know it, uncle, and oppose not <lb/>myself </l>
@@ -4577,21 +4581,21 @@
         <l>
           <milestone unit="line" ed="Globe" n="20"/>Welcome, Harry: what, will not this castle yield? </l>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <!-- REVIEW words: the P4 has '' here; neither witness has it --><milestone unit="line" ed="Globe" n="21"/>The castle is royally mann'd, my lord, </l>
         <l>
           <milestone unit="line" ed="Globe" n="22"/>Against thy entrance. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="23"/>Royally! </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="24"/>Why, it contains no king? </l>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l part="F">
           <lb/>Yes, my good lord, </l>
@@ -4606,12 +4610,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Of holy reverence; who, I cannot learn. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="30"/>O, belike it is the Bishop of Carlisle. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Noble lords. </l>
@@ -4693,7 +4697,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="67"/>Of his bright passage to the occident. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="68"/>Yet looks he like a king: behold, <lb/>his eye, </l>
@@ -4704,7 +4708,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="71"/>That any harm should stain so fair a show! </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>We are amazed; and thus long <lb/>have we stood </l>
@@ -4767,7 +4771,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="100"/>Her pastures' grass with faithful English blood. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="101"/>The king of heaven forbid our lord <lb/>the king </l>
@@ -4810,7 +4814,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="120"/>And, as I am a gentleman, I credit him. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="121"/>Northumberland, say thus the king <lb/>returns: </l>
@@ -4835,14 +4839,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="130"/>Defiance to the traitor, and so die? </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="131"/>No, good my lord; let's fight with <lb/>gentle words </l>
         <l>
           <milestone unit="line" ed="Globe" n="132"/>Till time lend friends and friends their helpful <lb/>swords. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="133"/>O God, O God! that e'er this tongue <lb/>of mine, </l>
@@ -4863,12 +4867,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="141"/>Since foes have scope to beat both thee and me. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="142"/>Northumberland comes back from <lb/>Bolingbroke. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="143"/>What must the king do now? must <lb/>he submit? </l>
@@ -4937,14 +4941,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="175"/>You make a leg, and Bolingbroke says ay. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="176"/>My lord, in the base court he doth <lb/>attend </l>
         <l>
           <milestone unit="line" ed="Globe" n="177"/>To speak with you; may it please you to come <lb/>down. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="178"/>Down, down I come; like glistering <lb/>Phaethon, </l>
@@ -4961,12 +4965,12 @@
                 above.</stage>
         </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="184"/>What says his majesty? </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l part="F">
           <lb/>Sorrow and grief of heart </l>
@@ -4978,7 +4982,7 @@
                 below.</stage>
         </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="187"/>Stand all apart. </l>
@@ -4988,7 +4992,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="189"/>My gracious lord,-- </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="190"/>Fair cousin, you debase your princely <lb/>knee </l>
@@ -5003,24 +5007,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="195"/>Thus high at least, although your knee be low. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="196"/>My gracious lord, I come but for <lb/>mine own. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="197"/>Your own is yours, and I am yours, <lb/>and all. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="198"/>So far be mine, my most redoubted <lb/>lord, </l>
         <l>
           <milestone unit="line" ed="Globe" n="199"/>As my true service shall deserve your love. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="200"/>Well you deserve: they well deserve <lb/>to have. </l>
@@ -5041,12 +5045,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="208"/>Set on towards London, cousin, is it so? </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="209"/>Yea, my good lord. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l><!-- REVIEW anchor: P4 anchor says 210; its row begins inside line 209, before 1 -->
           <lb/>Then I must not say no. <lb/>
@@ -5060,31 +5064,31 @@
       <stage type="setting">Langley. The DUKE OF YORK's <lb/>Garden.</stage>
       <lb/>
       <stage type="entrance">Enter the QUEEN and <!-- REVIEW words: both witnesses read 'tavo'; the P4 reads 'two' -->two LADIES.</stage>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'devise'; the P4 reads 'devie' --><milestone unit="line" ed="Globe" n="1"/>What sport shall we devie here in <lb/>this garden, </l>
         <l>
           <milestone unit="line" ed="Globe" n="2"/>To drive away the heavy thought of care? </l>
       </sp>
-      <sp who="r2-27">
+      <sp who="#r2-27">
         <speaker>Lady.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="3"/>Madam, we'll play at bowls. </p>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="4"/>'Twill make me think the world is full <lb/>of rubs, </l>
         <l>
           <!-- REVIEW words: both witnesses read 'runs'; the P4 reads 'rubs' --><milestone unit="line" ed="Globe" n="5"/>And that my fortune rubs against the bias. </l>
       </sp>
-      <sp who="r2-27">
+      <sp who="#r2-27">
         <speaker>Lady.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="6"/>Madam, we'll dance. </p>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>My legs can keep no measure in delight, </l>
@@ -5093,22 +5097,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="9"/>Therefore, no dancing, girl: some other sport. </l>
       </sp>
-      <sp who="r2-27">
+      <sp who="#r2-27">
         <speaker>Lady.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="10"/>Madam, we'll tell tales. </p>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="11"/>Of sorrow or of joy? </l>
       </sp>
-      <sp who="r2-27">
+      <sp who="#r2-27">
         <speaker>Lady.</speaker>
         <l part="F">
           <lb/>Of either, madam. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="12"/>Of neither, girl: </l>
@@ -5125,24 +5129,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="18"/>And what I want it boots not to complain. </l>
       </sp>
-      <sp who="r2-27">
+      <sp who="#r2-27">
         <speaker>Lady.</speaker>
         <l part="I">
       <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" -->    <milestone unit="line" ed="Globe" n="19"/>Madam, I'll sing. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l part="F">
           <lb/>'Tis well that thou hast cause; </l>
         <l>
           <milestone unit="line" ed="Globe" n="20"/>But thou shouldst please me better, wouldst thou <lb/>weep. </l>
       </sp>
-      <sp who="r2-27">
+      <sp who="#r2-27">
         <speaker>Lady.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="21"/>I could weep, madam, would it do you <lb/>good. </p>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="22"/>And I could sing, would weeping do <lb/>me good, </l>
@@ -5164,7 +5168,7 @@
           <stage>[Queen and Ladies retire.</stage>
         </l>
       </sp>
-      <sp who="r2-26">
+      <sp who="#r2-26">
         <speaker>Gard.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="29"/>Go, bind thou up yon dangling apricocks, </l>
@@ -5189,7 +5193,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="39"/>The soil's fertility from wholesome flowers. </l>
       </sp>
-      <sp who="r2-28">
+      <sp who="#r2-28">
         <speaker>Serv.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="40"/>Why should we in the compass of a pale </l>
@@ -5208,7 +5212,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="47"/>Swarming with caterpillars? </l>
       </sp>
-      <sp who="r2-26">
+      <sp who="#r2-26">
         <speaker>Gard.</speaker>
         <l part="F">
           <lb/>Hold thy peace: </l>
@@ -5225,12 +5229,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="53"/>I mean the Earl of Wiltshire, Bushy, Green. </l>
       </sp>
-      <sp who="r2-28">
+      <sp who="#r2-28">
         <speaker>Serv.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="54"/>What, are they dead? </l>
       </sp>
-      <sp who="r2-26">
+      <sp who="#r2-26">
         <speaker>Gard.</speaker>
         <l part="F">
           <lb/>They are; and Bolingbroke </l>
@@ -5259,12 +5263,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="66"/>Which waste of idle hours hath quite thrown down. </l>
       </sp>
-      <sp who="r2-28">
+      <sp who="#r2-28">
         <speaker>Serv.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="67"/>What, think you then the king shall be <lb/>deposed? </p>
       </sp>
-      <sp who="r2-26">
+      <sp who="#r2-26">
         <speaker>Gard.</speaker>
         <l>
          <!-- REVIEW words: both witnesses read 'he is'; the P4 reads "he's" --> <milestone unit="line" ed="Globe" n="68"/>Depress'd he's already, and deposed </l>
@@ -5275,7 +5279,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="71"/>That tell black tidings. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
        <!-- REVIEW words: both witnesses read 'press’d'; the P4 reads 'pressed' -->   <milestone unit="line" ed="Globe" n="72"/>O, I am pressed to death through want <lb/>of speaking! <stage>[Coming forward.</stage>
@@ -5297,7 +5301,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="80"/>Camest thou by this ill tidings? speak, thou <lb/>wretch. </l>
       </sp>
-      <sp who="r2-26">
+      <sp who="#r2-26">
         <speaker>Gard.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>Pardon me, madam: little joy have I </l>
@@ -5322,7 +5326,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="91"/>I speak no more than every one doth know. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="92"/>Nimble mischance, that art so light of <lb/>foot, </l>
@@ -5348,7 +5352,7 @@
                 Ladies.</stage>
         </l>
       </sp>
-      <sp who="r2-26">
+      <sp who="#r2-26">
         <speaker>Gard.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="102"/>Poor queen! so that thy state might <lb/>be no worse, </l>
@@ -5377,7 +5381,7 @@
       <stage type="entrance">Enter, as to the Parliament, BOLINGBROKE, <lb/>AUMERLE, NORTHUMBERLAND,
               PERCY, <lb/>FITZWATER, SURREY, the BISHOP OF CARLISLE, <lb/>the ABBOT OF WESTMINSTER, and another <lb/>Lord, Herald, Officers, and
             BAGOT.</stage>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Call forth Bagot. </l>
@@ -5390,17 +5394,17 @@
         <l>
           <milestone unit="line" ed="Globe" n="5"/>The bloody office of his timeless end. </l>
       </sp>
-      <sp who="r2-18">
+      <sp who="#r2-18">
         <speaker>Bagot.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="6"/>Then set before my face the Lord <lb/>Aumerle. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="7"/>Cousin, stand forth, and look upon <lb/>that man. </p>
       </sp>
-      <sp who="r2-18">
+      <sp who="#r2-18">
         <speaker>Bagot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="8"/>My Lord Aumerle, I know your daring <lb/>tongue </l>
@@ -5427,7 +5431,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="19"/>In this your cousin's death. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l part="F">
           <lb/>Princes and noble lords, </l>
@@ -5452,19 +5456,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="29"/>To stain the temper of my knightly sword. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="30"/>Bagot, forbear; thou shalt not take <lb/>it up. </p>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="31"/>Excepting one, I would he were the best </l>
         <l>
           <milestone unit="line" ed="Globe" n="32"/>In all this presence that hath moved me so. </l>
       </sp>
-      <sp who="r2-30">
+      <sp who="#r2-30">
         <speaker>Fitz.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'valour'; the P4 reads 'valor' --><milestone unit="line" ed="Globe" n="33"/>If that thy valor stand on sympathy, </l>
@@ -5483,22 +5487,22 @@
         <l>
           <milestone unit="line" ed="Globe" n="40"/>Where it was forged, with my rapier's point. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="41"/>Thou darest not, coward, live to see <lb/>that day. </p>
       </sp>
-      <sp who="r2-30">
+      <sp who="#r2-30">
         <speaker>Fitz.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="42"/>Now, by my soul, I would it were this <lb/>hour. </p>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="43"/>Fitzwater, thou art damn'd to hell for <lb/>this. </p>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'honour'; the P4 reads 'honor' --><milestone unit="line" ed="Globe" n="44"/>Aumerle, thou liest; his honor is as true </l>
@@ -5511,7 +5515,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="48"/>Of mortal breathing: seize it, if thou darest. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>An if I do not, may my hands rot off </l>
@@ -5520,7 +5524,7 @@
         <l><!-- REVIEW page: p.374 miun/kraken leaf 00000388 -->
           <milestone unit="line" ed="Globe" n="51"/>Over the glittering helmet of my foe! </l>
       </sp>
-      <sp who="r2-32">
+      <sp who="#r2-32">
         <speaker>Another Lord.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="52"/>I task the earth to the like, <lb/>forsworn Aumerle; </l>
@@ -5533,7 +5537,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="56"/>Engage it to the trial, if thou darest. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><milestone unit="line" ed="Globe" n="57"/>Who sets me else? by heaven, I'll throw <lb/>at all: </l>
@@ -5542,31 +5546,31 @@
         <l>
           <milestone unit="line" ed="Globe" n="59"/>To answer twenty thousand such as you. </l>
       </sp>
-      <sp who="r2-32">
+      <sp who="#r2-32">
         <speaker>Surrey.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>My lord Fitzwater, I do remember <lb/>well </l>
         <l>
           <milestone unit="line" ed="Globe" n="61"/>The very time Aumerle and you did talk. </l>
       </sp>
-      <sp who="r2-30">
+      <sp who="#r2-30">
         <speaker>Fitz.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="62"/>'Tis very true: you were in presence then; </l>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>And you can witness with me this is true. </l>
       </sp>
-      <sp who="r2-32">
+      <sp who="#r2-32">
         <speaker>Surrey.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="64"/>As false, by heaven, as heaven itself <lb/>is true. </p>
       </sp>
-      <sp who="r2-30">
+      <sp who="#r2-30">
         <speaker>Fitz.</speaker>
         <l part="I">
           <!-- REVIEW words: both witnesses read 'liest.'; the P4 reads 'list.' --><milestone unit="line" ed="Globe" n="65"/>Surrey. thou list. </l>
       </sp>
-      <sp who="r2-32">
+      <sp who="#r2-32">
         <speaker>Surrey.</speaker>
         <l part="F"><!-- REVIEW words: both witnesses read 'Dishonourable'; the P4 reads 'Dishonorable' -->
           <lb/>Dishonorable boy! </l>
@@ -5583,7 +5587,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="71"/>Engage it to the trial, if thou darest. </l>
       </sp>
-      <sp who="r2-30">
+      <sp who="#r2-30">
         <speaker>Fitz.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>How fondly dost thou spur a forward <lb/>horse! </l>
@@ -5608,7 +5612,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="82"/>To execute the noble duke at Calais. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>Some honest Christian trust me with a <lb/>gage, </l>
@@ -5617,7 +5621,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'honour.'; the P4 reads 'honor.' --><milestone unit="line" ed="Globe" n="85"/>If he may be repeal'd, to try his honor. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>These differences shall all rest under <lb/>gage </l>
@@ -5630,7 +5634,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="90"/>Against Aumerle we will enforce his trial. </l>
       </sp>
-      <sp who="r2-24">
+      <sp who="#r2-24">
         <speaker>Car.</speaker>
         <l>
     <!-- REVIEW words: both witnesses read 'honourable'; the P4 reads 'honorable' -->      <milestone unit="line" ed="Globe" n="91"/>That honorable day shall ne'er be seen. </l>
@@ -5653,17 +5657,17 @@
         <l>
           <!-- REVIEW words: both witnesses read 'colours'; the P4 reads 'colors' --><milestone unit="line" ed="Globe" n="100"/>Under whose colors he had fought so long. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="101"/>Why, bishop, is Norfolk dead? </p>
       </sp>
-      <sp who="r2-24">
+      <sp who="#r2-24">
         <speaker>Car.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="102"/>As surely as I live, my lord. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="103"/>Sweet peace conduct his sweet soul <lb/>to the bosom </l>
@@ -5676,7 +5680,7 @@
           <stage type="entrance">Enter YORK. attended.</stage>
         </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="107"/>Great Duke of Lancaster, I come to <lb/>thee </l>
@@ -5691,12 +5695,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="112"/>And long live Henry, fourth of that name! </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" --><!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="113"/>In God's name, I'll ascend the regal <lb/>throne. </p>
       </sp>
-      <sp who="r2-24">
+      <sp who="#r2-24">
         <speaker>Car.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="114"/>Marry, God forbid! </l>
@@ -5771,7 +5775,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="149"/>Lest child, child's children, cry against you <lb/>'woe!' </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="150"/>Well have you argued, sir; and, for <lb/>your pains, </l>
@@ -5784,7 +5788,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="154"/>May it please you, lords, to grant the commons' <lb/>suit. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="155"/>Fetch hither Richard, that in <lb/>common view </l>
@@ -5793,13 +5797,13 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="157"/>Without suspicion. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l part="F">
           <lb/>I will be his conduct. <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <!-- REVIEW words: the P4 has '' here; neither witness has it --><milestone unit="line" ed="Globe" n="158"/>Lords, you that are here under our <lb/>arrest, </l>
@@ -5813,7 +5817,7 @@
                 regalia.</stage>
         </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="162"/>Alack, why am I sent for to a king, </l>
@@ -5846,7 +5850,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="176"/>To do what service am I sent for hither? </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="177"/>To do that office of thine own good will </l>
@@ -5857,7 +5861,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="180"/>To Henry Bolingbroke. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="181"/>Give me the crown. Here, cousin, <lb/>seize the crown; </l>
@@ -5878,12 +5882,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="189"/>Drinking my griefs, whilst you mount up on high. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="190"/>I thought you had been willing to <lb/>resign. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="191"/>My crown I am; but still my griefs <lb/>are mine: </l>
@@ -5892,12 +5896,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="193"/>But not my griefs; still am I king of those. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="194"/>Part of your cares you give me with <lb/>your crown. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="195"/>Your cares set up do not pluck my <lb/>cares down. </l>
@@ -5910,12 +5914,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="199"/>They tend the crown, yet still with me they <lb/>stay. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="200"/>Are you contented to resign the <lb/>crown? 200 </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="201"/>Ay, no; no, ay; for I must <lb/>nothing be; </l>
@@ -5962,7 +5966,7 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="222"/>What more remains? </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l part="F">
           <lb/>No more, but that you read </l>
@@ -5977,7 +5981,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="227"/>May deem that you are worthily deposed. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="228"/>Must I do so? and must I ravel out </l>
@@ -6010,12 +6014,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="242"/>And water cannot wash away your sin. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="243"/>My lord, dispatch; read o'er these <lb/>articles. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="244"/>Mine eyes are full of tears, I <lb/>cannot see: </l>
@@ -6036,12 +6040,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="252"/>Proud majesty a subject, state a peasant. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="253"/>My lord,-- </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="254"/>No lord of thine, thou haught <lb/>insulting man, </l>
@@ -6071,33 +6075,33 @@
         <l>
           <milestone unit="line" ed="Globe" n="267"/>Since it is bankrupt of his majesty. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="268"/>Go some of you and fetch a <lb/>looking-glass. <stage>[Exit an attendant.</stage>
         </p>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
          <!-- REVIEW words: both witnesses read 'this'; the P4 reads 'thi' --> <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="269"/>Read o'er thi paper while the glass <lb/>doth come. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p><!-- REVIEW numeral: miun/kraken read 2; trent/kraken read 270 -->
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="270"/>Fiend, thou torment'st me ere I <lb/>come to hell! </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="271"/>Urge it no more, my Lord <lb/>Northumberland. </p>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="272"/>The commons will not then be <lb/>satisfied. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="273"/>They shall be satisfied: I'll read <lb/>enough, </l>
@@ -6144,14 +6148,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="291"/>How soon my sorrow hath destroy'd my face. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="292"/>The shadow of your sorrow hath <lb/>destroy'd </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="293"/>The shadow of your face. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l part="F">
           <lb/>Say that again. </l>
@@ -6178,12 +6182,12 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="304"/>Shall I obtain it? </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l part="F">
           <lb/>Name it, fair cousin. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="305"/>'Fair cousin'? I am greater than <lb/>a king: </l>
@@ -6196,42 +6200,42 @@
         <l>
           <milestone unit="line" ed="Globe" n="309"/>Being so great, I have no need to beg. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="310"/>Yet ask. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="311"/>And shall I have? </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p><!-- REVIEW anchor: P4 anchor says 310; the page count says 312 here -->
           <milestone unit="line" ed="Globe" n="312"/>You shall. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="313"/>Then give me leave to go. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="314"/>Whither? </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="315"/>Whither you will, so I were from <lb/>your sights. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="316"/>Go, some of you convey him to the <lb/>Tower. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="317"/>O, good! convey? conveyers are <lb/>you all, </l>
@@ -6241,7 +6245,7 @@
                 <lb/>and a Guard.</stage>
         </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="319"/>On Wednesday next we solemnly set <lb/>down </l>
@@ -6251,26 +6255,26 @@
                 Carlisle, the <lb/>Abbot of Westminsler and Aumerle.</stage>
         </l>
       </sp>
-      <sp who="r2-29">
+      <sp who="#r2-29">
         <speaker>Abbot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="321"/>A woeful pageant have we here beheld. </l>
       </sp>
-      <sp who="r2-24">
+      <sp who="#r2-24">
         <speaker>Car.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="322"/>The woe's to come; the children yet <lb/>unborn. </l>
         <l>
           <milestone unit="line" ed="Globe" n="323"/>Shall feel this day as sharp to them as thorn. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="324"/>You holy clergymen, is there no plot </l>
         <l>
           <milestone unit="line" ed="Globe" n="325"/>To rid the realm of this pernicious blot? </l>
       </sp>
-      <sp who="r2-29">
+      <sp who="#r2-29">
         <speaker>Abbot.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="326"/>My lord, </l>
@@ -6303,7 +6307,7 @@
       <stage type="setting">London. A street leading to the <lb/>Tower.</stage>
       <lb/>
       <stage type="entrance">Enter QUEEN and Ladies.</stage>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>This way the king will come; this is <lb/>the way </l>
@@ -6338,7 +6342,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="15"/>When triumph is become an alehouse guest? </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="16"/>Join not with grief, fair woman, do <lb/>not so, </l>
@@ -6361,7 +6365,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="25"/>Which our profane hours here have stricken down. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>What, is my Richard both in shape <lb/>and mind </l>
@@ -6382,7 +6386,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="34"/>Which art a lion and a king of beasts? </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="35"/>A king of beasts, indeed; if aught <lb/>but beasts, </l>
@@ -6419,7 +6423,7 @@
           <stage type="entrance">Enter NORTHUMBERLAND and others.</stage>
         </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="51"/>My lord, the mind of Bolingbroke is <lb/>changed; </l>
@@ -6430,7 +6434,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="54"/>With all swift speed you must away to France. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="55"/>Northumberland, thou ladder <lb/>wherewithal </l>
@@ -6461,14 +6465,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="68"/>To worthy danger and deserved death. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="69"/>My guilt be on my head, and there an <lb/>end. </l>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>Take leave and part; for you must part forthwith. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>Doubly divorced! Bad men, you <lb/>violate </l>
@@ -6491,32 +6495,32 @@
         <l>
           <milestone unit="line" ed="Globe" n="80"/>Sent back like Hallowmas or short'st of day. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>And must we be divided? must we part? </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>Ay, hand from hand, my love, and <lb/>heart from heart. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>Banish us both and send the king <lb/>with me. </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="84"/>That were some love but little policy. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>Then whither he goes, thither let me go. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>So two, together weeping, make <lb/>one woe. </l>
@@ -6527,12 +6531,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="89"/>Go, count thy way with sighs; I mine with groans. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="90"/>So longest way shall have the longest <lb/>moans. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="91"/>Twice for one step I'll groan, the <lb/>way being short, </l>
@@ -6547,7 +6551,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="96"/>Thus give I mine, and thus take I thy heart. </l>
       </sp>
-      <sp who="r2-15">
+      <sp who="#r2-15">
         <speaker>Queen.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="97"/>Give me mine own again; 'twere no <lb/>good part </l>
@@ -6558,7 +6562,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="100"/>That I may strive to kill it with a groan. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="101"/>We make woe wanton with this fond <lb/>delay: </l>
@@ -6573,7 +6577,7 @@
       <stage type="setting">The <!-- REVIEW words: both witnesses read 'DURE'; the P4 reads 'DUKE' -->DUKE OF YORK'S palace.</stage>
       <lb/>
       <stage type="entrance">Enter YORK and his DUCHESS.</stage>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>My lord, you told me you would tell <lb/>the rest, </l>
@@ -6582,12 +6586,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="3"/>Of our two cousins coming into London. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="4"/>Where did I leave? </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>At that sad stop, my lord, </l>
@@ -6596,7 +6600,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="6"/>Threw dust and rubbish on King Richard's head. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>Then, as I said, the duke, great <lb/>Bolingbroke, </l>
@@ -6629,12 +6633,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="21"/>And thus still doing, thus he pass'd along. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="22"/>Alack, poor Richard! where rode he <lb/>the whilst? </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="23"/>As in a theatre, the eyes of men, </l>
@@ -6674,12 +6678,12 @@
           <!-- REVIEW words: both witnesses read 'honour'; the P4 reads 'honor' --><milestone unit="line" ed="Globe" n="40"/>Whose state and honor I for aye allow. 
               </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="41"/>Here comes my son Aumerle. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l part="F">
           <lb/>Aumerle that was; </l>
@@ -6695,21 +6699,21 @@
                 AUMERLE.</stage>
         </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="46"/>Welcome, my son: who are the violets <lb/>now </l>
         <l>
           <milestone unit="line" ed="Globe" n="47"/>That strew the green lap of the new come spring? </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="48"/>Madam, I know not, nor I greatly care <lb/>not: </l>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>God knows I had as lief be none as one. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="50"/>Well, bear you well in this new spring <lb/>of time, </l>
@@ -6718,41 +6722,41 @@
         <l>
           <milestone unit="line" ed="Globe" n="52"/>What news from Oxford? hold those justs and <lb/>triumphs? </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="53"/>For aught I know, my lord, they do. </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="54"/>You will be there, I know. </p>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="55"/>If God prevent not, I purpose so. </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="56"/>What seal is that, that hangs without <lb/>thy bosom? </l>
         <l>
           <milestone unit="line" ed="Globe" n="57"/>Yea, look'st thou pale? let me see the writing. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l part="I"><!-- REVIEW page: p.378 miun/kraken leaf 00000392 -->
           <milestone unit="line" ed="Globe" n="58"/>My lord, 'tis nothing. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l part="F">
           <lb/>No matter, then, who see it: </l>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>I will be satisfied; let me see the writing. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="60"/>I do beseech your grace to pardon me: </l>
@@ -6761,14 +6765,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="62"/>Which for some reasons I would not have seen. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="63"/>Which for some reasons, sir, I mean <lb/>to see. </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="64"/>I fear, I fear-- </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>What should you fear? </l>
@@ -6777,7 +6781,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="66"/>For gay apparel 'gainst the triumph day. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="67"/>Bound to himself! what doth he with <lb/>a bond </l>
@@ -6786,12 +6790,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="69"/>Boy, let me see the writing. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="70"/>I do beseech you, pardon me; I may <lb/>not show it. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="71"/>I will be satisfied; let me see it, I say. <lb/>
@@ -6801,12 +6805,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="72"/>Treason! foul treason! Villain! traitor! slave! </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="73"/>What is the matter, my lord? </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="74"/>Ho! who is within there? <lb/>
@@ -6817,12 +6821,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="75"/>God for his mercy, what treachery is here! </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="76"/>Why, what is it, my lord? </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="77"/>Give me my boots, I say; saddle my <lb/>horse. <stage>[Exit Servant.</stage>
@@ -6832,54 +6836,54 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="79"/>I will appeach the villain. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>What is the matter? </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="80"/>Peace, foolish woman. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>I will not peace. What is the matter, <lb/>Aumerle? </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>Good mother, be content; it is no <lb/>more </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="83"/>Than my poor life must answer. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>Thy life answer! 
               </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="84"/>Bring me my boots: I will unto the <lb/>king. <lb/>
           <stage>Re-enter Servant <!-- REVIEW words: both witnesses read 'vith'; the P4 reads 'with' -->with boots.</stage>
         </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="85"/>Strike him, Aumerle. Poor boy, thou <lb/>art amazed. </l>
         <l>
           <milestone unit="line" ed="Globe" n="86"/>Hence, villain! never more come in my sight. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="87"/>Give me my boots, I say. </p>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>Why, York, what wilt thou do? </l>
@@ -6896,7 +6900,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="94"/>Is he not like thee? is he not thine own? </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="95"/>Thou fond mad woman, </l>
@@ -6909,21 +6913,21 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="99"/>To kill the king at Oxford. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>He shall be none; </l>
         <l>
           <milestone unit="line" ed="Globe" n="100"/>We'll keep him here: then what is that to him? </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="101"/>Away, fond woman! were he twenty <lb/>times my son, </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="102"/>I would appeach him. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>Hadst thou groan'd for him </l>
@@ -6944,14 +6948,14 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="110"/>And yet I love him. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l part="F">
           <lb/>Make way, unruly woman! <lb/>
           <stage>[Exit.</stage>
         </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="111"/>After, Aumerle! mount thee upon his <lb/>horse; </l>
@@ -6976,7 +6980,7 @@
       <stage type="setting">A royal palace.</stage>
       <lb/>
       <stage type="entrance">Enter BOLINGBROKE, PERCY, and other Lords.</stage>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Can no man tell me of my unthrifty <lb/>son? </l>
@@ -7003,19 +7007,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="12"/>So dissolute a crew. </l>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="13"/>My lord, some two days since I saw <lb/>the prince, </l>
         <l>
           <milestone unit="line" ed="Globe" n="14"/>And told him of those triumphs held at Oxford. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="15"/>And what said the gallant? </p>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="16"/>His answer was, he would unto the <lb/>stews, </l>
@@ -7026,7 +7030,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="19"/>He would unhorse the lustiest challenger. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="20"/>As dissolute as desperate; yet through <lb/>both </l>
@@ -7037,26 +7041,26 @@
           <stage type="entrance">Enter AUMERLE.</stage>
         </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="23"/>Where is the king? </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="24"/>What means our cousin, that he stares <lb/>and looks </l>
         <l>
           <milestone unit="line" ed="Globe" n="25"/>So wildly? </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="26"/>God save your grace! I do beseech <lb/>your majesty, </l>
         <l>
           <milestone unit="line" ed="Globe" n="27"/>To have some conference with your grace alone. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="28"/>Withdraw yourselves, and leave us <lb/>here alone. <stage>[Exeunt Percy and Lords.</stage>
@@ -7064,7 +7068,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="29"/>What is the matter with our cousin now? </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>For ever may my knees grow to the <lb/>earth, </l>
@@ -7073,7 +7077,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="32"/>Unless a pardon ere I rise or speak. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="33"/>Intended or committed was this fault? </l>
@@ -7082,19 +7086,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="35"/>To win thy after-love I pardon thee. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="36"/>Then give me leave that I may turn <lb/>the key, </l>
         <l><!-- REVIEW page: p.379 miun/kraken leaf 00000393 -->
           <milestone unit="line" ed="Globe" n="37"/>That no man enter till my tale be done. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="38"/>Have thy desire. </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <milestone unit="line" ed="Globe" n="39"/>
         <stage>[Within]</stage>
@@ -7102,19 +7106,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="40"/>Thou hast a traitor in thy presence there. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
         <!-- REVIEW words: both witnesses read 'I’Il'; the P4 reads "I'll" -->  <milestone unit="line" ed="Globe" n="41"/>Villain, I'll make thee safe. <lb/>
           <stage>[Drawing.</stage>
         </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="42"/>Stay thy revengeful hand; thou hast <lb/>no cause to fear. </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <milestone unit="line" ed="Globe" n="43"/>
         <stage>[Within]</stage>
@@ -7126,7 +7130,7 @@
           <stage type="entrance">Enter YORK.</stage>
         </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="46"/>What is the matter, uncle? speak; </l>
@@ -7135,14 +7139,14 @@
         <l>
           <milestone unit="line" ed="Globe" n="48"/>That we may arm us to encounter it. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="49"/>Peruse this writing here, and thou <lb/>shalt know </l>
         <l>
           <milestone unit="line" ed="Globe" n="50"/>The treason that my haste forbids me show. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="51"/>Remember, as thou read'st, thy <lb/>promise pass'd: </l>
@@ -7151,7 +7155,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="53"/>My heart is not confederate with my hand. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="54"/>It was, villain, ere thy hand did set it <lb/>down. </l>
@@ -7164,7 +7168,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="58"/>A serpent that will sting thee to the heart. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="59"/>O heinous, strong and bold <lb/>conspiracy! </l>
@@ -7183,7 +7187,7 @@
         <l>
           <!-- REVIEW words: both witnesses read 'digressing'; the P4 reads 'digresing' --><milestone unit="line" ed="Globe" n="66"/>This deadly blot in thy digresing son. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="67"/>So shall my virtue be his vice's bawd; </l>
@@ -7201,18 +7205,18 @@
           <milestone unit="line" ed="Globe" n="73"/>The traitor lives, the true man's put to death. 
               </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <milestone unit="line" ed="Globe" n="74"/>
         <stage>[Within]</stage>
         <p>What ho, my liege! for <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><lb/>God's sake, let me in. </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="75"/>What shrill-voiced suppliant makes <lb/>this eager cry? </p>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="76"/>A woman, and thy aunt, great king; <lb/>'tis I. </l>
@@ -7221,7 +7225,7 @@
         <l>
  <!-- REVIEW words: both witnesses read 'beggar'; the P4 reads 'begger' -->         <milestone unit="line" ed="Globe" n="78"/>A begger begs that never begg'd before. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="79"/>Our scene is alter'd from a serious thing, </l>
@@ -7232,7 +7236,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="82"/>I know she is come to pray for your foul sin. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>If thou do pardon, whosoever pray, </l>
@@ -7245,32 +7249,32 @@
           <stage type="entrance">Enter DUCHESS.</stage>
         </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="87"/>O king, believe not this hard-hearted <lb/>man! </l>
         <l>
           <milestone unit="line" ed="Globe" n="88"/>Love loving not itself none other can. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="89"/>Thou frantic woman, what dost thou <lb/>make here? </l>
         <l>
           <milestone unit="line" ed="Globe" n="90"/>Shall thy old dugs once more a traitor rear? </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="91"/>Sweet York, be patient. Hear me, <lb/>gentle liege. <stage>[Kneels.</stage>
         </p>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="92"/>Rise up, good aunt. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>Not yet, I thee beseech: </l>
@@ -7283,19 +7287,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="96"/>By pardoning Rutland, my transgressing boy. </l>
       </sp>
-      <sp who="r2-8">
+      <sp who="#r2-8">
         <speaker>Aum.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="97"/>Unto my mother's prayers I bend my <lb/>knee. </p>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="98"/>Against them both my true joints <lb/>bended be. </l>
         <l>
           <milestone unit="line" ed="Globe" n="99"/>Ill mayst thou thrive, if thou grant any grace! </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="100"/>Pleads he in earnest? look upon his <lb/>face; </l>
@@ -7320,12 +7324,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="110"/>That mercy which true prayer ought to have. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="111"/>Good aunt, stand up. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>Nay, do not say, 'stand up;' </l>
@@ -7344,12 +7348,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="118"/>No word like 'pardon' for kings' mouths so meet. </l>
       </sp>
-      <sp who="r2-39">
+      <sp who="#r2-39">
         <speaker>York.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="119"/>Speak it in French, king; say, <lb/>'pardonne moi.' </p>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="120"/>Dost thou teach pardon pardon to <lb/>destroy? </l>
@@ -7370,24 +7374,24 @@
         <l>
           <milestone unit="line" ed="Globe" n="128"/>Pity may move thee 'pardon' to rehearse. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="129"/>Good aunt, stand up. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>I do not sue to stand; </l>
         <l>
           <milestone unit="line" ed="Globe" n="130"/>Pardon is all the suit I have in hand. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="131"/>I pardon him, as God shall pardon me. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="132"/>O happy vantage of a kneeling knee! </l>
@@ -7398,19 +7402,19 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="135"/>But makes one pardon strong. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l part="F">
           <lb/>With all my heart </l>
         <l part="I">
           <milestone unit="line" ed="Globe" n="136"/>I pardon him. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <l part="F">
           <lb/>A god on earth thou art. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="137"/>But for our trusty brother-in-law and <lb/>the abbot, </l>
@@ -7431,7 +7435,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="145"/>Your mother well hath pray'd, and prove you true. </l>
       </sp>
-      <sp who="r2-34">
+      <sp who="#r2-34">
         <speaker>Duch Y.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="146"/>Come, my old son: I pray God make <lb/>thee new. <stage>[Exeunt.</stage>
@@ -7444,7 +7448,7 @@
       <stage type="setting">The same.</stage>
       <lb/>
       <stage type="entrance">Enter EXTON and Servant.</stage>
-      <sp who="r2-35">
+      <sp who="#r2-35">
         <speaker>Exton.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Didst thou not mark the king, what <lb/>words he spake, </l>
@@ -7453,24 +7457,24 @@
         <l part="I">
           <milestone unit="line" ed="Globe" n="3"/>Was it not so? </l>
       </sp>
-      <sp who="r2-28">
+      <sp who="#r2-28">
         <speaker>Serv.</speaker>
         <l part="F">
           <lb/>These were his very words. </l>
       </sp>
-      <sp who="r2-35">
+      <sp who="#r2-35">
         <speaker>Exton.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="4"/>'Have I no friend?' quoth he: he <lb/>spake it twice, </l>
         <l>
           <milestone unit="line" ed="Globe" n="5"/>And urged it twice together, did he not? </l>
       </sp>
-      <sp who="r2-28">
+      <sp who="#r2-28">
         <speaker>Serv.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="6"/>He did. </p>
       </sp>
-      <sp who="r2-35">
+      <sp who="#r2-35">
         <speaker>Exton.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="7"/>And speaking it, he wistly look'd <lb/>on me; </l>
@@ -7491,7 +7495,7 @@
       <stage type="setting">Pomfret castle.</stage>
       <lb/>
       <stage type="entrance">Enter KING RICHARD.</stage>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>I have been studying how I may <lb/>compare </l>
@@ -7629,12 +7633,12 @@
           <stage type="entrance">Enter a Groom of the Stable.</stage>
         </l>
       </sp>
-      <sp who="r2-37">
+      <sp who="#r2-37">
         <speaker>Groom.</speaker>
         <l part="I">
           <milestone unit="line" ed="Globe" n="67"/>Hail, royal prince! </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l part="F">
           <lb/>Thanks, noble peer; </l>
@@ -7647,7 +7651,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="71"/>That brings me food to make misfortune live? </l>
       </sp>
-      <sp who="r2-37">
+      <sp who="#r2-37">
         <speaker>Groom.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="72"/>I was a poor groom of thy stable, king, </l>
@@ -7668,19 +7672,19 @@
         <l>
           <milestone unit="line" ed="Globe" n="80"/>That horse that I so carefully have dress'd! </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="81"/>Rode he on Barbary? Tell me, <lb/>gentle friend, </l>
         <l>
           <milestone unit="line" ed="Globe" n="82"/>How went he under him? </l>
       </sp>
-      <sp who="r2-27">
+      <sp who="#r2-27">
         <speaker>Groom.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="83"/>So proudly as if he disdain'd the <lb/>ground. </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="84"/>So proud that Bolingbroke was on <lb/>his back! </l>
@@ -7707,40 +7711,40 @@
           <stage type="entrance">Enter Keeper, with a dish.</stage>
         </l>
       </sp>
-      <sp who="r2-38">
+      <sp who="#r2-38">
         <speaker>Keep.</speaker>
         <p><!-- REVIEW page: p.381 miun/kraken leaf 00000395 -->
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="95"/>Fellow, give place; here is no longer <lb/>stay. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="96"/>If thou love me, 'tis time thou wert <lb/>away. </p>
       </sp>
-      <sp who="r2-37">
+      <sp who="#r2-37">
         <speaker>Groom.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="97"/>What my tongue dares not, that my <lb/>heart shall say.
                 <stage>[Exit.</stage>
         </p>
       </sp>
-      <sp who="r2-38">
+      <sp who="#r2-38">
         <speaker>Keep.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="98"/>My lord, will't please you to fall to? </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <p>
           <!-- REVIEW verse-prose: turnover row inside a <p>: P4 tags this speech as prose, the page lays it out as verse --><milestone unit="line" ed="Globe" n="99"/>Taste of it first, as thou art wont <lb/>to do. </p>
       </sp>
-      <sp who="r2-38">
+      <sp who="#r2-38">
         <speaker>Keep.</speaker>
         <p>
           <milestone unit="line" ed="Globe" n="100"/>My lord, I dare not: Sir Pierce of <milestone unit="line" ed="Globe" n="101"/>Exton, who lately came
               from the king, commands <milestone unit="line" ed="Globe" n="102"/>the contrary. </p>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="103"/>The devil take Henry of Lancaster <lb/>and thee! </l>
@@ -7749,7 +7753,7 @@
           <stage>[Beats the keeper.</stage>
         </l>
       </sp>
-      <sp who="r2-38">
+      <sp who="#r2-38">
         <speaker>Keep.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="105"/>Help, help, help! <lb/>
@@ -7757,7 +7761,7 @@
                 armed.</stage>
         </l>
       </sp>
-      <sp who="r2-5">
+      <sp who="#r2-5">
         <speaker>K. Rich.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="106"/>How now! what means death in <lb/>this rude assault? </l>
@@ -7782,7 +7786,7 @@
           <milestone unit="line" ed="Globe" n="113"/>Whilst my gross flesh sinks downward, here to <lb/>die. <stage>[Dies.</stage>
         </l>
       </sp>
-      <sp who="r2-35">
+      <sp who="#r2-35">
         <speaker>Exton.</speaker>
         <l>
           <!-- REVIEW words: both witnesses read 'valour'; the P4 reads 'valor' --><milestone unit="line" ed="Globe" n="114"/>As full of valor as of royal blood: </l>
@@ -7806,7 +7810,7 @@
       <lb/>
       <stage>Flourish. Enter BOLINGBROKE, YORK, with <lb/>other Lords, and
             Attendants.</stage>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="1"/>Kind uncle York, the latest news we <lb/>hear </l>
@@ -7821,7 +7825,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="5"/>Welcome, my lord: what is the news? </l>
       </sp>
-      <sp who="r2-14">
+      <sp who="#r2-14">
         <speaker>North.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="6"/>First, to thy sacred state wish I all <lb/>happiness. </l>
@@ -7834,7 +7838,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="10"/>At large discoursed in this paper here. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="11"/>We thank thee, gentle Percy, for thy <lb/>pains; </l>
@@ -7843,7 +7847,7 @@
           <stage type="entrance">Enter FITZWATER.</stage>
         </l>
       </sp>
-      <sp who="r2-30">
+      <sp who="#r2-30">
         <speaker>Fitz.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="13"/>My lord, I have from Oxford sent to <lb/>London </l>
@@ -7854,7 +7858,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="16"/>That sought at Oxford thy dire overthrow. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="17"/>Thy pains, Fitzwater, shall not be <lb/>forgot; </l>
@@ -7863,7 +7867,7 @@
           <stage type="entrance">Enter PERCY, and the BISHOP OF CARLISLE.</stage>
         </l>
       </sp>
-      <sp who="r2-21">
+      <sp who="#r2-21">
         <speaker>Percy.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="19"/>The grand conspirator, Abbot of <lb/>Westminster, </l>
@@ -7876,7 +7880,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="23"/>Thy kingly doom and sentence of his pride. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="24"/>Carlisle, this is your doom: </l>
@@ -7893,7 +7897,7 @@
           <stage type="entrance">Enter EXTON, with persons bearing a coffin.</stage>
         </l>
       </sp>
-      <sp who="r2-35">
+      <sp who="#r2-35">
         <speaker>Exton.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="30"/>Great king, within this coffin I <lb/>present </l>
@@ -7904,7 +7908,7 @@
         <l>
           <milestone unit="line" ed="Globe" n="33"/>Richard of Bordeaux, by me hither brought. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="34"/>Exton, I thank thee not; for thou <lb/>hast wrought </l>
@@ -7913,12 +7917,12 @@
         <l>
           <milestone unit="line" ed="Globe" n="36"/>Upon my head and all this famous land. </l>
       </sp>
-      <sp who="r2-35">
+      <sp who="#r2-35">
         <speaker>Exton.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="37"/>From your own mouth, my lord, did <lb/>I this deed. </l>
       </sp>
-      <sp who="r2-6">
+      <sp who="#r2-6">
         <speaker>Boling.</speaker>
         <l>
           <milestone unit="line" ed="Globe" n="38"/>They love not poison that do poison <lb/>need, </l>

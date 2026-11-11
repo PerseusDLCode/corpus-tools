@@ -1,11 +1,12 @@
-# The speakers of each Globe play (src/globe/speakers.py): one row per id the
-# P4 gives in <sp who>. kind: person or personGrp. name: for <persName> (or
-# <name> in a group). role: the printed <role>, as the P4 has it, that this
-# speaker is (empty if the Dramatis Personae does not list it); role_n: which
-# role of that text (1H4 prints HENRY PERCY twice), 1 if only one. basis: p4 (the
-# P4 put the id on that role), label (matched by speaker label), none.
-# `checked` is filled by Cliff for label and none rows; the canonical build
-# refuses one that is empty. Rows with basis p4 are checked "p4".
+# The speakers of each Globe play (src/globe/speakers.py): one row per id the								
+# P4 gives in <sp who>. kind: person or personGrp. name: for <persName> (or								
+# <name> in a group). role: the printed <role>, as the P4 has it, that this								
+# speaker is (empty if the Dramatis Personae does not list it); role_n: which								
+# role of that text (1H4 prints HENRY PERCY twice), 1 if only one. basis: p4 (the								
+# P4 put the id on that role), label (matched by speaker label), none.								
+# `checked` is filled by Cliff for label and none rows; the canonical build								
+# refuses one that is empty. Rows with basis p4 are checked "p4".								
+								
 play	id	kind	name	role	role_n	basis	checked	note
 tmp	alon.	person	Alonso	ALONSO	1	p4	p4	
 tmp	seb.	person	Sebastian	SEBASTIAN	1	p4	p4	
@@ -233,8 +234,8 @@ shr	host.	person	Hostess	Hostess	1	p4	p4
 shr	page.	person	Page	Page	1	p4	p4	
 shr	players.	personGrp	Players	Players	1	p4	p4	
 shr	first-hun.	personGrp	Huntsmen	Huntsmen	1	p4	p4	
-shr	sec.-hun.	person	Sec. Hun			none		label 'Sec. Hun.'
-shr	third-hun.	person	third-hun.			none		never speaks
+shr	sec.-hun.	person	Sec. Hun	Second Huntsman		label	checked	label 'Sec. Hun.'
+shr	third-hun.	person	third-hun.	Third Huntsman		label	checked	never speaks
 shr	mess.	person	Messenger	Messenger	1	p4	p4	
 shr	serv.	person	Servant	Servant	1	p4	p4	
 shr	first-serv.	person	First Servant	First Servant	1	p4	p4	
@@ -261,28 +262,28 @@ shr	wid.	person	Widow	Widow	1	p4	p4
 shr	all.	personGrp	All	All	1	p4	p4	
 shr	tai.	person	Tailor	Tailor	1	p4	p4	
 shr	hab.	person	Haberdasher	Haberdasher	1	p4	p4	
-shr	a-player.	person	A Player			none		label 'A Player.'
-shr	peter.	person	Peter			none		label 'Peter.'
-shr	all-serv.	personGrp	All Serv			none		label 'All Serv.'
-aww	aww-0	personGrp	All	All	1	label		label 'All.'
-aww	aww-1	person	Bertram	BERTRAM	1	label		label 'Ber.'; or: PAROLLES | COUNTESS OF ROUSILLON
-aww	aww-11	person	Second Lord	Second Lord	1	label		label 'Sec. Lord.'
-aww	aww-12	person	Clown	Clown	1	label		label 'Clo.'
-aww	aww-13	person	Steward	Steward	1	label		label 'Stew.'
-aww	aww-16	person	Duke of Florence	DUKE OF FLORENCE	1	label		label 'Duke.'
-aww	aww-18	person	Diana	DIANA	1	label		label 'Dia.'
-aww	aww-19	person	Mariana	MARIANA	1	label		label 'Mar.'
-aww	aww-2	person	Countess of Rousillon	COUNTESS OF ROUSILLON	1	label		label 'Count.'; or: BERTRAM | HELENA
-aww	aww-21	person	An old Widow of Florence	An old Widow of Florence	1	label		label 'Wid.'; or: DIANA
-aww	aww-22	person	First Soldier	First Soldier	1	label		label 'First Sold.'
-aww	aww-24	person	Servant	Servant	1	label		label 'Serv.'
-aww	aww-25	person	Gentleman	Gentleman	1	label		label 'Gent.'; or: First Gentleman | Second Gentleman | HELENA
-aww	aww-26	person	First Gentleman	First Gentleman	1	label		label 'First Gent.'
-aww	aww-3	person	Helena	HELENA	1	label		label 'Hel.'
-aww	aww-4	person	Lafeu	LAFEU	1	label		label 'Laf.'
-aww	aww-5	person	A Page	A Page	1	label		label 'Page.'
-aww	aww-6	person	Parolles	PAROLLES	1	label		label 'Par.'
-aww	aww-9	person	King of France	KING OF FRANCE	1	label		label 'King.'
+shr	a-player.	person	A Player			none	checked	label 'A Player.'
+shr	peter.	person	Peter	a Servant		none	checked	label 'Peter.' 
+shr	all-serv.	personGrp	All Serv			none	checked	label 'All Serv.'
+aww	aww-0	personGrp	All	All	1	label	checked	label 'All.'
+aww	aww-1	person	Bertram	BERTRAM	1	label	checked	label 'Ber.'
+aww	aww-11	person	Second Lord	Second Lord	1	label	checked	label 'Sec. Lord.'
+aww	aww-12	person	Clown	Clown	1	label	checked	label 'Clo.'
+aww	aww-13	person	Steward	Steward	1	label	checked	label 'Stew.'
+aww	aww-16	person	Duke of Florence	DUKE OF FLORENCE	1	label	checked	label 'Duke.'
+aww	aww-18	person	Diana	DIANA	1	label	checked	label 'Dia.'
+aww	aww-19	person	Mariana	MARIANA	1	label	checked	label 'Mar.'
+aww	aww-2	person	Countess of Rousillon	COUNTESS OF ROUSILLON	1	label	checked	label 'Count.'
+aww	aww-21	person	An old Widow of Florence	An old Widow of Florence	1	label	checked	label 'Wid.'
+aww	aww-22	person	First Soldier	First Soldier	1	label	checked	label 'First Sold.'
+aww	aww-24	person	Servant	Servant	1	label	checked	label 'Serv.'
+aww	aww-25	person	Gentleman	Gentleman	1	label	checked	label 'Gent.'
+aww	aww-26	person	First Gentleman	First Gentleman	1	label	checked	label 'First Gent.'
+aww	aww-3	person	Helena	HELENA	1	label	checked	label 'Hel.'
+aww	aww-4	person	Lafeu	LAFEU	1	label	checked	label 'Laf.'
+aww	aww-5	person	A Page	A Page	1	label	checked	label 'Page.'
+aww	aww-6	person	Parolles	PAROLLES	1	label	checked	label 'Par.'
+aww	aww-9	person	King of France	KING OF FRANCE	1	label	checked	label 'King.'
 tn	duke.	person	Orsino	ORSINO	1	p4	p4	
 tn	seb.	person	Sebastian	SEBASTIAN	1	p4	p4	
 tn	ant.	person	Antonio	ANTONIO	1	p4	p4	
@@ -328,6 +329,7 @@ wt	first-lord.	person	First Lord	First Lord	1	p4	p4
 wt	lord.	person	Lord	Lord	1	p4	p4	
 wt	first-lady.	person	First Lady	First Lady	1	p4	p4	
 wt	sec.-lady.	person	Second Lady	Second Lady	1	p4	p4	
+aww	aww-26bis	person	Second Gentleman	Second Gentleman		label	checked	label 'Sec. Gent.'
 wt	serv.	person	Servant	Servant	1	p4	p4	
 wt	first-serv.	person	First Servant	First Servant	1	p4	p4	
 wt	sec-serv.	person	Second Servant	Second Servant	1	p4	p4	
@@ -361,114 +363,114 @@ jn	e.-her.	person	English Herald	ENGLISH HERALD	1	p4	p4
 jn	fir.-ex.	person	First Executioner	FIRST EXECUTIONER	1	p4	p4	
 jn	mess.	person	Messenger	MESSENGER	1	p4	p4	
 jn	pet.	person	Peter	PETER	1	p4	p4	
-r2	r2-0	personGrp	All	All	1	label		label 'All.'
-r2	r2-1	person	John of Gaunt	JOHN OF GAUNT	1	label		label 'Gaunt.'; or: HENRY
-r2	r2-10	person	First Herald	First Herald	1	label		label 'First Her.'
-r2	r2-11	person	Lord Marshal	Lord Marshal	1	label		label 'Mar.'
-r2	r2-12	person	Bushy	BUSHY	1	label		label 'Bushy.'
-r2	r2-13	person	Green	GREEN	1	label		label 'Green.'
-r2	r2-14	person	Earl of Northumberland	EARL OF NORTHUMBERLAND	1	label		label 'North.'
-r2	r2-15	person	Queen to King Richard	QUEEN to King Richard	1	label		label 'Queen.'; or: Lady attending on the Queen
-r2	r2-16	person	Lord Ross	LORD ROSS	1	label		label 'Ross.'
-r2	r2-17	person	Lord Willoughby	LORD WILLOUGHBY	1	label		label 'Willo.'
-r2	r2-18	person	Bagot	BAGOT	1	label		label 'Bagot.'
-r2	r2-20	person	Lord Berkeley	LORD BERKELEY	1	label		label 'Berk.'
-r2	r2-21	person	Henry Percy	HENRY PERCY	1	label		label 'Percy.'
-r2	r2-22	person	Captain of a band of Welshmen	Captain of a band of Welshmen	1	label		label 'Cap.'
-r2	r2-23	person	Earl of Salisbury	EARL OF SALISBURY	1	label		label 'Sal.'
-r2	r2-24	person	Bishop of Carlisle	Bishop of Carlisle	1	label		label 'Car.'
-r2	r2-25	person	Sir Stephen Scroop	SIR STEPHEN SCROOP	1	label		label 'Scroop.'
-r2	r2-26	personGrp	two Gardeners	two Gardeners	1	label		label 'Gard.'
-r2	r2-27	person	Lady attending on the Queen	Lady attending on the Queen	1	label		label 'Lady.'
-r2	r2-28	person	Servant	Servant	1	label		label 'Serv.'
-r2	r2-29	person	Abbot of Westminster	Abbot of Westminster	1	label		label 'Abbot.'
+r2	r2-0	personGrp	All	All	1	label	checked	label 'All.'
+r2	r2-1	person	John of Gaunt	JOHN OF GAUNT	1	label	checked	label 'Gaunt.'
+r2	r2-10	person	First Herald	First Herald	1	label	checked	label 'First Her.'
+r2	r2-11	person	Lord Marshal	Lord Marshal	1	label	checked	label 'Mar.'
+r2	r2-12	person	Bushy	BUSHY	1	label	checked	label 'Bushy.'
+r2	r2-13	person	Green	GREEN	1	label	checked	label 'Green.'
+r2	r2-14	person	Earl of Northumberland	EARL OF NORTHUMBERLAND	1	label	checked	label 'North.'
+r2	r2-15	person	Queen to King Richard	QUEEN to King Richard	1	label	checked	label 'Queen.'
+r2	r2-16	person	Lord Ross	LORD ROSS	1	label	checked	label 'Ross.'
+r2	r2-17	person	Lord Willoughby	LORD WILLOUGHBY	1	label	checked	label 'Willo.'
+r2	r2-18	person	Bagot	BAGOT	1	label	checked	label 'Bagot.'
+r2	r2-20	person	Lord Berkeley	LORD BERKELEY	1	label	checked	label 'Berk.'
+r2	r2-21	person	Henry Percy	HENRY PERCY	1	label	checked	label 'Percy.'
+r2	r2-22	person	Captain of a band of Welshmen	Captain of a band of Welshmen	1	label	checked	label 'Cap.'
+r2	r2-23	person	Earl of Salisbury	EARL OF SALISBURY	1	label	checked	label 'Sal.'
+r2	r2-24	person	Bishop of Carlisle	Bishop of Carlisle	1	label	checked	label 'Car.'
+r2	r2-25	person	Sir Stephen Scroop	SIR STEPHEN SCROOP	1	label	checked	label 'Scroop.'
+r2	r2-26	personGrp	two Gardeners	two Gardeners	1	label	checked	label 'Gard.'
+r2	r2-27	person	Lady attending on the Queen	Lady attending on the Queen	1	label	checked	label 'Lady.'
+r2	r2-28	person	Servant	Servant	1	label	checked	label 'Serv.'
+r2	r2-29	person	Abbot of Westminster	Abbot of Westminster	1	label	checked	label 'Abbot.'
 r2	r2-3	person	Thomas Mowbray	THOMAS MOWBRAY	1	label		label 'Mow.'
-r2	r2-30	person	Lord Fitzwater	LORD FITZWATER	1	label		label 'Fitz.'
-r2	r2-32	person	Duke of Surrey	DUKE OF SURREY	1	label		label 'Surrey.'
-r2	r2-34	person	Duchess of York	DUCHESS OF YORK	1	label		label 'Duch Y.'
-r2	r2-35	person	Sir Pierce of Exton	SIR PIERCE of Exton	1	label		label 'Exton.'
-r2	r2-37	person	Groom	Groom	1	label		label 'Groom.'
-r2	r2-38	person	Keeper	Keeper	1	label		label 'Keep.'
-r2	r2-39	person	Edmund of Langley	EDMUND OF LANGLEY	1	label		label 'York.'; or: DUKE OF AUMERLE | DUCHESS OF YORK
-r2	r2-5	person	King Richard the Second	KING RICHARD the Second	1	label		label 'K. Rich.'; or: QUEEN to King Richard
-r2	r2-6	person	Henry	HENRY	1	label		label 'Boling.'
-r2	r2-8	person	Duke of Aumerle	DUKE OF AUMERLE	1	label		label 'Aum.'
-r2	r2-9	person	Duchess of Gloucester	DUCHESS OF GLOUCESTER	1	label		label 'Duch.'; or: DUCHESS OF YORK
-1h4	s-1h4-24	person	Sheriff	Sheriff	1	label		label 'Sher.'
-1h4	s-1h4-15	person	Ostler	Ostler	1	label		label 'Ost.'
-1h4	s-1h4-33	person	Richard Scroop	RICHARD SCROOP	1	label		label 'Arch.'; or: ARCHIBALD | SIR MICHAEL
-1h4	s-1h4-34	person	Messenger	Messenger	1	label		label 'Mess.'
-1h4	s-1h4-16	person	Bardolph	BARDOLPH	1	label		label 'Bard.'
-1h4	s-1h4-26	person	Vintner	Vintner	1	label		label 'Vint.'
-1h4	s-1h4-17	person	Peto	PETO	1	label		label 'Peto.'
-1h4	s-1h4-35	person	John of Lancaster	JOHN of Lancaster	1	label		label 'Lan.'
-1h4	s-1h4-27	person	Owen Glendower	OWEN GLENDOWER	1	label		label 'Glend.'; or: LADY MORTIMER, daughter to Glendower
-1h4	s-1h4-18	personGrp	Travellers	Travellers	1	label		label 'Travellers.'
-1h4	s-1h4-19	personGrp	Thieves	Thieves	1	label		label 'Thieves.'
-1h4	s-1h4-28	person	Edmund Mortimer	EDMUND MORTIMER	1	label		label 'Mort.'; or: LADY MORTIMER, daughter to Glendower | LADY PERCY, wife of Hotspur
-1h4	s-1h4-1	person	King Henry the Fourth	KING HENRY the Fourth	1	label		label 'King.'
-1h4	s-1h4-2	person	Earl of Westmoreland	EARL OF WESTMORELAND	1	label		label 'West.'
-1h4	s-1h4-3	person	Sir John Falstaff	SIR JOHN FALSTAFF	1	label		label 'Fal.'
-1h4	s-1h4-4	person	Henry	HENRY	1	label		label 'Prince.'
-1h4	s-1h4-6	person	Poins	POINS	1	label		label 'Poins.'
-1h4	s-1h4-7	person	Sir Walter Blunt	SIR WALTER BLUNT	1	label		label 'Blunt.'
-1h4	s-1h4-8	person	Henry Percy	HENRY PERCY	1	label		label 'North.'
-1h4	s-1h4-9	person	Henry Percy	HENRY PERCY	2	label		label 'Hot.'; or: LADY PERCY, wife of Hotspur
-1h4	s-1h4-10	person	Thomas Percy	THOMAS PERCY	1	label		label 'Wor.'
-1h4	s-1h4-20	person	Lady Percy	LADY PERCY, wife of Hotspur	1	label		label 'Lady P.'
-1h4	s-1h4-21	person	Servant	Servant	1	label		label 'Serv.'
-1h4	s-1h4-30	person	Archibald	ARCHIBALD	1	label		label 'Doug.'
-1h4	s-1h4-12	person	First Carrier	First Carrier	1	label		label 'First Car.'
-1h4	s-1h4-31	person	Sir Richard Vernon	SIR RICHARD VERNON	1	label		label 'Ver.'
-1h4	s-1h4-13	person	Chamberlain	Chamberlain	1	label		label 'Cham.'
-1h4	s-1h4-22	person	Francis	Francis	1	label		label 'Fran.'
-1h4	s-1h4-32	person	Sir Michael	SIR MICHAEL	1	label		label 'Sir M.'
-1h4	s-1h4-14	person	Gadshill	GADSHILL	1	label		label 'Gads.'
-1h4	s-1h4-23	person	Mistress Quickly	MISTRESS QUICKLY	1	label		label 'Host.'
-2h4	s-2h4-14	person	Scroop	SCROOP	1	label		label 'Arch.'
-2h4	s-2h4-50	person	Prince Humphrey of Gloucester	PRINCE HUMPHREY OF GLOUCESTER	1	label		label 'Glou.'
-2h4	s-2h4-33	person	King Henry the Fourth	KING HENRY the Fourth	1	label		label 'King.'; or: Lord Chief-Justice of the King's Bench | HENRY
-2h4	s-2h4-15	person	Fang	FANG	1	label		label 'Fang.'
-2h4	s-2h4-16	person	Gower	GOWER	1	label		label 'Gow.'
-2h4	s-2h4-35	person	Earl of Warwick	EARL OF WARWICK	1	label		label 'War.'; or: WART
-2h4	s-2h4-53	person	Davy	DAVY	1	label		label 'Davy.'
-2h4	s-2h4-54	person	First Beadle	First Beadle	1	label		label 'First Bead.'
-2h4	s-2h4-36	person	Bullcalf	BULLCALF	1	label		label 'Bull.'
-2h4	s-2h4-37	person	Feeble	FEEBLE	1	label		label 'Fee.'
-2h4	s-2h4-55	person	Harcourt	HARCOURT	1	label		label 'Har.'
-2h4	s-2h4-19	person	Snare	SNARE	1	label		label 'Snare.'
-2h4	s-2h4-56	person	First Groom	First Groom	1	label		label 'First Groom.'
-2h4	s-2h4-38	person	Mouldy	MOULDY	1	label		label 'Moul.'
-2h4	s-2h4-39	person	Shadow	SHADOW	1	label		label 'Shad.'
-2h4	s-2h4-2	person	Porter	Porter	1	label		label 'Port.'
-2h4	s-2h4-4	person	Lord Bardolph	LORD BARDOLPH.	1	label		label 'L. Bard.'
-2h4	s-2h4-5	person	Morton	MORTON	1	label		label 'Mor.'
-2h4	s-2h4-6	person	Earl of Northumberland	EARL OF NORTHUMBERLAND	1	label		label 'North.'; or: LADY NORTHUMBERLAND
-2h4	s-2h4-7	person	Travers	TRAVERS	1	label		label 'Tra.'
-2h4	s-2h4-8	person	Lord Chief-Justice of the King's Bench	Lord Chief-Justice of the King's Bench	1	label		label 'Ch. Just.'; or: A Servant of the Chief-Justice
-2h4	s-2h4-9	person	Sir John Falstaff	SIR JOHN FALSTAFF	1	label		label 'Fal.'
-2h4	s-2h4-20	person	Bardolph	BARDOLPH	1	label		label 'Bard.'; or: LORD BARDOLPH.
-2h4	s-2h4-21	person	Henry	HENRY	1	label		label 'Prince.'; or: PRINCE JOHN OF LANCASTER | PRINCE HUMPHREY OF GLOUCESTER
-2h4	s-2h4-40	person	Shallow	SHALLOW	1	label		label 'Shal.'; or: DAVY
-2h4	s-2h4-23	person	Poins	POINS	1	label		label 'Poins.'
-2h4	s-2h4-41	person	Silence	SILENCE	1	label		label 'Sil.'
-2h4	s-2h4-24	person	Lady Northumberland	LADY NORTHUMBERLAND	1	label		label 'Lady N.'
-2h4	s-2h4-42	person	Wart	WART	1	label		label 'Wart.'
-2h4	s-2h4-25	person	Lady Percy	LADY PERCY	1	label		label 'Lady P.'
-2h4	s-2h4-44	person	Rumour	RUMOUR	1	label		label 'Rum.'
-2h4	s-2h4-26	person	Mistress Quickly	MISTRESS QUICKLY	1	label		label 'Host.'
-2h4	s-2h4-27	person	First Drawer	First Drawer	1	label		label 'First Draw.'
-2h4	s-2h4-45	person	Messenger	Messenger	1	label		label 'Mess.'
-2h4	s-2h4-46	person	Earl of Westmoreland	EARL OF WESTMORELAND	1	label		label 'West.'
-2h4	s-2h4-47	person	Prince John of Lancaster	PRINCE JOHN OF LANCASTER	1	label		label 'Lan.'
-2h4	s-2h4-48	person	Sir John Colevile	SIR JOHN COLEVILE	1	label		label 'Cole.'
-2h4	s-2h4-49	person	Thomas	THOMAS	1	label		label 'Clar.'
-2h4	s-2h4-10	person	His Page	His Page	1	label		label 'Page.'
-2h4	s-2h4-11	person	A Servant of the Chief-Justice	A Servant of the Chief-Justice	1	label		label 'Serv.'; or: DAVY
-2h4	s-2h4-12	person	Lord Hastings	LORD HASTINGS	1	label		label 'Hast.'
-2h4	s-2h4-30	person	Peto	PETO	1	label		label 'Peto.'
-2h4	s-2h4-13	person	Lord Mowbray	LORD MOWBRAY	1	label		label 'Mowb.'
-2h4	s-2h4-31	person	Pistol	PISTOL	1	label		label 'Pist.'
+r2	r2-30	person	Lord Fitzwater	LORD FITZWATER	1	label	checked	label 'Fitz.'
+r2	r2-32	person	Duke of Surrey	DUKE OF SURREY	1	label	checked	label 'Surrey.'
+r2	r2-34	person	Duchess of York	DUCHESS OF YORK	1	label	checked	label 'Duch Y.'
+r2	r2-35	person	Sir Pierce of Exton	SIR PIERCE of Exton	1	label	checked	label 'Exton.'
+r2	r2-37	person	Groom	Groom	1	label	checked	label 'Groom.'
+r2	r2-38	person	Keeper	Keeper	1	label	checked	label 'Keep.'
+r2	r2-39	person	Edmund of Langley	EDMUND OF LANGLEY	1	label	checked	label 'York.'
+r2	r2-5	person	King Richard the Second	KING RICHARD the Second	1	label	checked	label 'K. Rich.'
+r2	r2-6	person	Henry	HENRY	1	label	checked	label 'Boling.'
+r2	r2-8	person	Duke of Aumerle	DUKE OF AUMERLE	1	label	checked	label 'Aum.'
+r2	r2-9	person	Duchess of Gloucester	DUCHESS OF GLOUCESTER	1	label	checked	label 'Duch.'
+1h4	s-1h4-24	person	Sheriff	Sheriff	1	label	checked	label 'Sher.'
+1h4	s-1h4-15	person	Ostler	Ostler	1	label	checked	label 'Ost.'
+1h4	s-1h4-33	person	Richard Scroop	RICHARD SCROOP	1	label	checked	label 'Arch.'; or: ARCHIBALD | SIR MICHAEL
+1h4	s-1h4-34	person	Messenger	Messenger	1	label	checked	label 'Mess.'
+1h4	s-1h4-16	person	Bardolph	BARDOLPH	1	label	checked	label 'Bard.'
+1h4	s-1h4-26	person	Vintner	Vintner	1	label	checked	label 'Vint.'
+1h4	s-1h4-17	person	Peto	PETO	1	label	checked	label 'Peto.'
+1h4	s-1h4-35	person	John of Lancaster	JOHN of Lancaster	1	label	checked	label 'Lan.'
+1h4	s-1h4-27	person	Owen Glendower	OWEN GLENDOWER	1	label	checked	label 'Glend.'
+1h4	s-1h4-18	personGrp	Travellers	Travellers	1	label	checked	label 'Travellers.'
+1h4	s-1h4-19	personGrp	Thieves	Thieves	1	label	checked	label 'Thieves.'
+1h4	s-1h4-28	person	Edmund Mortimer	EDMUND MORTIMER	1	label	checked	label 'Mort.'; or: LADY MORTIMER, daughter to Glendower | LADY PERCY, wife of Hotspur
+1h4	s-1h4-1	person	King Henry the Fourth	KING HENRY the Fourth	1	label	checked	label 'King.'
+1h4	s-1h4-2	person	Earl of Westmoreland	EARL OF WESTMORELAND	1	label	checked	label 'West.'
+1h4	s-1h4-3	person	Sir John Falstaff	SIR JOHN FALSTAFF	1	label	checked	label 'Fal.'
+1h4	s-1h4-4	person	Henry	HENRY	1	label	checked	label 'Prince.'
+1h4	s-1h4-6	person	Poins	POINS	1	label	checked	label 'Poins.'
+1h4	s-1h4-7	person	Sir Walter Blunt	SIR WALTER BLUNT	1	label	checked	label 'Blunt.'
+1h4	s-1h4-8	person	Henry Percy	HENRY PERCY	1	label	checked	label 'North.'
+1h4	s-1h4-9	person	Henry Percy	HENRY PERCY	2	label	checked	label 'Hot.';
+1h4	s-1h4-10	person	Thomas Percy	THOMAS PERCY	1	label	checked	label 'Wor.'
+1h4	s-1h4-20	person	Lady Percy	LADY PERCY, wife of Hotspur	1	label	checked	label 'Lady P.'
+1h4	s-1h4-21	person	Servant	Servant	1	label	checked	label 'Serv.'
+1h4	s-1h4-30	person	Archibald	ARCHIBALD	1	label	checked	label 'Doug.'
+1h4	s-1h4-12	person	First Carrier	First Carrier	1	label	checked	label 'First Car.'
+1h4	s-1h4-31	person	Sir Richard Vernon	SIR RICHARD VERNON	1	label	checked	label 'Ver.'
+1h4	s-1h4-13	person	Chamberlain	Chamberlain	1	label	checked	label 'Cham.'
+1h4	s-1h4-22	person	Francis	Francis	1	label	checked	label 'Fran.'
+1h4	s-1h4-32	person	Sir Michael	SIR MICHAEL	1	label	checked	label 'Sir M.'
+1h4	s-1h4-14	person	Gadshill	GADSHILL	1	label	checked	label 'Gads.'
+1h4	s-1h4-23	person	Mistress Quickly	MISTRESS QUICKLY	1	label	checked	label 'Host.'
+2h4	s-2h4-14	person	Scroop	SCROOP	1	label	checked	label 'Arch.'
+2h4	s-2h4-50	person	Prince Humphrey of Gloucester	PRINCE HUMPHREY OF GLOUCESTER	1	label	checked	label 'Glou.'
+2h4	s-2h4-33	person	King Henry the Fourth	KING HENRY the Fourth	1	label	checked	label 'King.'
+2h4	s-2h4-15	person	Fang	FANG	1	label	checked	label 'Fang.'
+2h4	s-2h4-16	person	Gower	GOWER	1	label	checked	label 'Gow.'
+2h4	s-2h4-35	person	Earl of Warwick	EARL OF WARWICK	1	label	checked	label 'War.'
+2h4	s-2h4-53	person	Davy	DAVY	1	label	checked	label 'Davy.'
+2h4	s-2h4-54	person	First Beadle	First Beadle	1	label	checked	label 'First Bead.'
+2h4	s-2h4-36	person	Bullcalf	BULLCALF	1	label	checked	label 'Bull.'
+2h4	s-2h4-37	person	Feeble	FEEBLE	1	label	checked	label 'Fee.'
+2h4	s-2h4-55	person	Harcourt	HARCOURT	1	label	checked	label 'Har.'
+2h4	s-2h4-19	person	Snare	SNARE	1	label	checked	label 'Snare.'
+2h4	s-2h4-56	person	First Groom	First Groom	1	label	checked	label 'First Groom.'
+2h4	s-2h4-38	person	Mouldy	MOULDY	1	label	checked	label 'Moul.'
+2h4	s-2h4-39	person	Shadow	SHADOW	1	label	checked	label 'Shad.'
+2h4	s-2h4-2	person	Porter	Porter	1	label	checked	label 'Port.'
+2h4	s-2h4-4	person	Lord Bardolph	LORD BARDOLPH.	1	label	checked	label 'L. Bard.' or 'Bard.' Same as s-2h4-20 
+2h4	s-2h4-5	person	Morton	MORTON	1	label	checked	label 'Mor.'
+2h4	s-2h4-6	person	Earl of Northumberland	EARL OF NORTHUMBERLAND	1	label	checked	label 'North.'
+2h4	s-2h4-7	person	Travers	TRAVERS	1	label	checked	label 'Tra.'
+2h4	s-2h4-8	person	Lord Chief-Justice of the King's Bench	Lord Chief-Justice of the King's Bench	1	label	checked	label 'Ch. Just.'
+2h4	s-2h4-9	person	Sir John Falstaff	SIR JOHN FALSTAFF	1	label	checked	label 'Fal.'
+2h4	s-2h4-20	person	Bardolph	BARDOLPH	1	label	checked	label 'Bard.'; or: LORD BARDOLPH.
+2h4	s-2h4-21	person	Henry	HENRY	1	label	checked	label 'Prince.'
+2h4	s-2h4-40	person	Shallow	SHALLOW	1	label	checked	label 'Shal.'
+2h4	s-2h4-23	person	Poins	POINS	1	label	checked	label 'Poins.'
+2h4	s-2h4-41	person	Silence	SILENCE	1	label	checked	label 'Sil.'
+2h4	s-2h4-24	person	Lady Northumberland	LADY NORTHUMBERLAND	1	label	checked	label 'Lady N.'
+2h4	s-2h4-42	person	Wart	WART	1	label	checked	label 'Wart.'
+2h4	s-2h4-25	person	Lady Percy	LADY PERCY	1	label	checked	label 'Lady P.'
+2h4	s-2h4-44	person	Rumour	RUMOUR	1	label	checked	label 'Rum.'
+2h4	s-2h4-26	person	Mistress Quickly	MISTRESS QUICKLY	1	label	checked	label 'Host.'
+2h4	s-2h4-27	person	First Drawer	First Drawer	1	label	checked	label 'First Draw.'
+2h4	s-2h4-45	person	Messenger	Messenger	1	label	checked	label 'Mess.'
+2h4	s-2h4-46	person	Earl of Westmoreland	EARL OF WESTMORELAND	1	label	checked	label 'West.'
+2h4	s-2h4-47	person	Prince John of Lancaster	PRINCE JOHN OF LANCASTER	1	label	checked	label 'Lan.'
+2h4	s-2h4-48	person	Sir John Colevile	SIR JOHN COLEVILE	1	label	checked	label 'Cole.'
+2h4	s-2h4-49	person	Thomas	THOMAS	1	label	checked	label 'Clar.'
+2h4	s-2h4-10	person	His Page	His Page	1	label	checked	label 'Page.'
+2h4	s-2h4-11	person	A Servant of the Chief-Justice	A Servant of the Chief-Justice	1	label	checked	label 'Serv.'
+2h4	s-2h4-12	person	Lord Hastings	LORD HASTINGS	1	label	checked	label 'Hast.'
+2h4	s-2h4-30	person	Peto	PETO	1	label	checked	label 'Peto.'
+2h4	s-2h4-13	person	Lord Mowbray	LORD MOWBRAY	1	label	checked	label 'Mowb.'
+2h4	s-2h4-31	person	Pistol	PISTOL	1	label	checked	label 'Pist.'
 h5	k.-hen.	person	King Henry the Fifth	KING HENRY the Fifth	1	p4	p4	
 h5	glou.	person	Duke of Gloucester	DUKE OF GLOUCESTER	1	p4	p4	
 h5	bed.	person	Duke of Bedford	DUKE OF BEDFORD	1	p4	p4	
@@ -1002,12 +1004,12 @@ jc	jc-34	person	Pindarus	Pindarus	1	p4	p4
 jc	jc-6	person	Calpurnia	Calpurnia	1	p4	p4	
 jc	jc-38	person	Portia	Portia	1	p4	p4	
 jc	jc-35	personGrp	Citizens	Citizens	1	p4	p4	
-jc	jc-7	person	First Com			none		label 'First Com.'
-jc	jc-41	person	First Sold			none		label 'First Sold.'
-jc	jc-21	person	Ghost			none		label 'Ghost.'
-jc	jc-30	person	Mess			none		label 'Mess.'
-jc	jc-17	person	Sec. Com			none		label 'Sec. Com.'
-jc	jc-40	person	Serv			none		label 'Serv.'
+jc	jc-7	person	First Com	A Commoner		none	checked	label 'First Com.'
+jc	jc-41	person	First Sold			none	checked	label 'First Sold.'
+jc	jc-21	person	Ghost			none	checked	label 'Ghost.'
+jc	jc-30	person	Messenger	Messenger		none	checked	label 'Mess.'
+jc	jc-17	person	Sec. Com	A Commoner		none	checked	label 'Sec. Com.'
+jc	jc-40	person	Serv			none	checked	label 'Serv.'
 mac	all.	personGrp	All	All	1	p4	p4	
 mac	ang.	person	Angus	Angus	1	p4	p4	
 mac	aten.	person	Attendant	Attendant	1	p4	p4	
